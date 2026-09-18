@@ -1,0 +1,43 @@
+==== PURE B1 run_all_tests | 2026-09-18 12:47:49 | MATLAB 25.2.0.3177638 (R2025b) Update 5 ====
+
+--- 1. unit tests (matlab/tests) ---
+正在运行 test_codegen_and_provenance
+.generated C:\Users\sean\AppData\Local\Temp\tp0eca8a82_7300_4285_9848_c026955c502e.m (consistency check skipped)
+....
+已完成 test_codegen_and_provenance
+__________
+
+正在运行 test_pure_literature_reference
+.........
+已完成 test_pure_literature_reference
+__________
+
+test_codegen_and_provenance/test_sha256_known_vector                   passed=1 failed=0 (0.37 s)
+test_codegen_and_provenance/test_generator_output_in_sync              passed=1 failed=0 (0.05 s)
+test_codegen_and_provenance/test_generated_matches_baseline_snapshot   passed=1 failed=0 (0.10 s)
+test_codegen_and_provenance/test_stoichiometry_matches_code            passed=1 failed=0 (0.02 s)
+test_codegen_and_provenance/test_git_state_live                        passed=1 failed=0 (0.24 s)
+test_pure_literature_reference/test_parameter_lock_tables_1_and_2      passed=1 failed=0 (0.03 s)
+test_pure_literature_reference/test_rate_law_spot_values               passed=1 failed=0 (0.07 s)
+test_pure_literature_reference/test_initial_rate_sanity                passed=1 failed=0 (0.03 s)
+test_pure_literature_reference/test_balance_derivative_identities_random_states passed=1 failed=0 (0.01 s)
+test_pure_literature_reference/test_finite_difference_short_step       passed=1 failed=0 (0.18 s)
+test_pure_literature_reference/test_observable_mapping                 passed=1 failed=0 (0.06 s)
+test_pure_literature_reference/test_ktl_rna_derived_value              passed=1 failed=0 (0.02 s)
+test_pure_literature_reference/test_short_run_mass_balance_and_nonnegativity passed=1 failed=0 (0.06 s)
+test_pure_literature_reference/test_repeatability_deterministic        passed=1 failed=0 (0.03 s)
+unit tests: 14 passed, 0 failed
+
+--- 2. benchmark smoke test ---
+smoke test: PASS (600 s @ 6.8 nM; min state 0 uM; max scaled balance residual 3.183e-15)
+
+--- 3. release preflight (development mode) ---
+release_preflight.m not present - skipped
+
+==== run_all_tests summary ====
+    unit_tests_passed: 14
+    unit_tests_failed: 0
+           smoke_test: 'passed'
+            preflight: 'not_present'
+
+log file: C:\Users\sean\Desktop\SynCell\logs\20260918_124749_tests.log
