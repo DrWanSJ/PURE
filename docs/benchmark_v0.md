@@ -65,40 +65,27 @@ only DNA varied; `ode15s`, t ∈ [0, 14400] s, RelTol 1e-9, AbsTol 1e-12. All th
 
 ### 5. Do nt/a trajectories match the paper's calculated curves in magnitude and shape?
 
-**Yes — quantitatively, against an automated digitization of the raster Fig. 4** (second
-pass, after the decrypted normalized PDF became available; first pass used text anchors
-only and reached the same conclusions):
+**Yes — with the evidence kept in two strictly separate tiers** (audit hardening pass
+reclassified the raster-based comparison as non-independent; see below):
 
-| endpoint at 4 h | digitized Fig. 4 (calculated) | new_simulation | rel. dev. |
-| --- | --- | --- | --- |
-| nt, 6.8 nM (µM) | 775.4 | 778.8 | +0.4 % |
-| nt, 1.7 nM (µM) | 345.2 | 344.5 | −0.2 % |
-| nt, 0.34 nM (µM) | 90.5 | 86.6 | −4.2 % |
-| a, 6.8 nM (µM) | 138.0 | 140.1 | +1.6 % |
-| a, 1.7 nM (µM) | 91.7 | 93.1 | +1.6 % |
-| a, 0.34 nM (µM) | 34.2 | 34.6 | +1.3 % |
+**Tier 3a — independent (paper-text anchors):** protein(4h) at 6.8 nM = 0.589 µM vs paper
+0.58 µM (**+1.5 %**); energy split Q_TX/Q_TL/Q_RS = 72.0/15.4/12.5 % vs paper 74/15/11
+(≤ 2 pp); φ_RS(1 min) = 87.1 % (paper ≈ 85 %); RS-rate minimum ≈ 280 s (paper ≈ 4 min);
+φ_TL+φ_RS(32 min) = 35.2 % (paper ≈ 36 %); correct DNA ordering (6.8 > 1.7 > 0.34 nM);
+sigmoidal a(t); nt(t) near-linear with mild saturation as TLcat decays.
 
-Full comparison at 8 sampled times (0.5–4 h): `results/literature_reference/fig4_digitized_comparison.csv`.
-
-- **[a] panel: relative deviation ≤ 1.8 % at every sampled point and condition.**
-- **[nt] panel: absolute deviation ≤ 13 µM ≈ 1.3 % of full scale at every point**;
-  relative deviations ≤ 3.2 % for t ≥ 1.5 h. Larger relative deviations occur only at
-  early small values (largest: 0.34 nM at 1 h, 31.6 vs 22.2 µM — abs 9.5 µM), where the
-  merged calculated+experimental cluster biases the raster reading.
-- Digitization method: automated (`matlab/simulate/digitize_fig4.m`): axes-box detection,
-  tick-mark calibration (the x-limit is ≈ 4.18 h, not 4 h — the box corners are NOT the
-  limits), color-cluster extraction with per-point flags; provenance
-  `digitized_from_Mavelli_2015_Fig4`; reading precision ~1–2 % of full scale; raw clusters
-  in `data/processed/fig4_digitized_all_clusters.csv`. The digitized values are the
-  paper's CALCULATED curves (the reproduction target), not experimental data.
-- Shape: nt(t) near-linear with mild saturation; a(t) sigmoidal with late plateau as
-  TLcat decays — matching the paper's description ("sigmoidal time course", TX "continues
-  to produce mRNA" while TL stops).
-- Energy split at 6.8 nM: **Q_TX/Q_TL/Q_RS = 72.0/15.4/12.5 %** vs paper 74/15/11 (≤ 2 pp).
-  Trend across DNA consistent with paper Fig. 9 (TX share falls, RS share rises as DNA
-  decreases: 43/21/36 at 0.34 nM).
-- φ milestones (Fig. 8 narrative): φ_RS(1 min) = 87.1 % (paper ≈ 85 %); RS-rate minimum at
-  ≈ 280 s (paper ≈ 4 min); φ_TL+φ_RS(32 min) = 35.2 % (paper ≈ 36 % at ≈ 30 min).
+**Tier 3b — NOT independent (exploratory envelope only):** automated digitization of the
+raster Fig. 4 (`matlab/simulate/digitize_fig4.m`) reports [a]-panel deviations ≤ 1.8 % and
+[nt]-panel absolute deviations ≤ 13 µM (≈ 1.3 % of full scale) at all 24 sampled points,
+endpoints nt(4h) 775.4/345.2/90.5 vs sim 778.8/344.5/86.6 µM and a(4h) 138.0/91.7/34.2 vs
+sim 140.1/93.1/34.6 µM. **However**, where the continuous (calculated) and dotted
+(experimental) curves separate, the digitizer assigns the "calculated" cluster by
+nearest-to-simulation tracking — `validation_status = non_independent_assignment` — so
+this comparison is **circular and must not be cited as reproduction acceptance evidence
+on its own**. Raw clusters are preserved (`fig4_digitized_all_clusters.csv`) for
+independent re-assignment; the blind human protocol
+(`docs/manual_fig4_audit_protocol.md`) is the sanctioned independent check and is
+**`pending_human_audit`**.
 
 ### 6. Is the observable mapping correct?
 
@@ -153,13 +140,15 @@ equations_verified: true   # incl. page-by-page audit vs decrypted normalized PD
 reproduced: true
 ```
 
-`reproduced = true` is justified by: code actually executed in the locked environment
-(MATLAB R2025b, `ode15s`); 9/9 equation-level tests pass; per-condition QC
+`reproduced = true` is justified **per evidence level** (see `docs/evidence_levels.json`):
+code actually executed in the locked environment (MATLAB R2025b, `ode15s`); 9/9 baseline
+tests + hardening tests pass (AI-written tests, not human review); per-condition QC
 `passed_all_qc` (nonnegativity, mass balance ≈ 4e-15 scaled, repeatability exact,
-tolerance convergence ≤ 3.8e-9); quantitative text anchors reproduced (+1.5 % protein
-yield at 6.8 nM; energy split within 2 pp; φ milestones within 2 %); and the calculated
-curves of Fig. 4 quantitatively matched by automated raster digitization
-([a] panel ≤ 1.8 % everywhere; [nt] panel ≤ 1.3 % of full scale in absolute terms).
+tolerance convergence ≤ 3.8e-9); independent paper-text anchors reproduced (+1.5 % protein
+yield at 6.8 nM; energy split within 2 pp; φ milestones within 2 %). The Fig. 4 raster
+digitization match is recorded separately as **`non_independent_assignment`** and is not
+part of the acceptance evidence; `fig4_independent_human_audit = pending_human_audit`;
+`experimental_data_validation = false`.
 
 ## Test suite result (final code state)
 

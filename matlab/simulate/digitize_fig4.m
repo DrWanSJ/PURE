@@ -1,6 +1,18 @@
 function digitize_fig4()
 %DIGITIZE_FIG4 Automated raster digitization of Mavelli 2015 Fig. 4.
 %
+%   *** VALIDATION STATUS: non_independent_assignment (audit hardening) ***
+%   Where the calculated (continuous) and experimental (dotted) curves of
+%   the same color separate, the cluster assigned to the "calculated" curve
+%   is the one NEAREST TO THE NEW_SIMULATION TRAJECTORY. Comparing the
+%   assigned clusters against that same simulation is therefore NOT an
+%   independent validation and must NOT be used as reproduction acceptance
+%   evidence on its own. Independent validation requires the BLIND HUMAN
+%   protocol: docs/manual_fig4_audit_protocol.md with the template
+%   data/manual_audit/fig4_human_digitization_template.csv (simulator
+%   output hidden during reading). Status is also written to
+%   data/processed/fig4_digitized_validation_status.json.
+%
 %   DIGITIZE_FIG4()
 %
 %   Extracts the six curves (3 DNA conditions x [nt]/[a] panels) from the
@@ -250,7 +262,30 @@ T2 = cell2table(cmprows, 'VariableNames', {'dna_nM', 'time_h', ...
     'a_digitized_uM', 'a_simulation_uM', 'a_rel_dev', 'digitization_flag'});
 writetable(T2, fullfile(resd, 'fig4_digitized_comparison.csv'));
 
+% ---- validation status (audit hardening: non-independent assignment) ----
+status = struct();
+status.validation_status = 'non_independent_assignment';
+status.reason = ['where the calculated (continuous) and experimental (dotted) curves ' ...
+    'of the same color separate, the cluster assigned to the calculated curve is ' ...
+    'the one nearest to the new_simulation trajectory; comparing the assignment ' ...
+    'against the same simulation is not an independent check'];
+status.assignment_rule = 'nearest_to_simulation_tracker';
+status.assignment_rule_justification = ['visual identification: in the [a] panel the ' ...
+    'experimental curves plateau at about 114/103/19 uM (red/green/blue) while the ' ...
+    'calculated curves do not, and the calculated red curve reaches the paper-stated ' ...
+    'a(4h) = 0.58*238 = 138 uM; all raw clusters are preserved in ' ...
+    'fig4_digitized_all_clusters.csv for independent re-assignment'];
+status.independent_validation = 'pending_human_audit';
+status.independent_validation_protocol = 'docs/manual_fig4_audit_protocol.md';
+status.independent_validation_template = 'data/manual_audit/fig4_human_digitization_template.csv';
+status.valid_use = 'exploratory digitization; order-of-magnitude and shape comparison; envelope check';
+status.invalid_use = 'standalone reproduction acceptance evidence';
+fid = fopen(fullfile(proc, 'fig4_digitized_validation_status.json'), 'w');
+fprintf(fid, '%s', jsonencode(status, 'PrettyPrint', true));
+fclose(fid);
+
 fprintf('\n== Fig. 4 digitized (calculated curve) vs new_simulation ==\n');
+fprintf('VALIDATION STATUS: non_independent_assignment (see fig4_digitized_validation_status.json)\n');
 disp(T2);
 for ci = 1:3
     s = T2(T2.dna_nM == color_dna(ci), :);

@@ -13,7 +13,7 @@ deterministic coarse-grained PURE model of
 | --- | --- | --- |
 | `bibliography_verified` | **true** | Title, authors, journal, volume/pages, year, DOI read from the source document itself; hashes locked in `environment_lock.md` and `data/provenance.csv` |
 | `equations_verified` | **true** | Sect. 2 transcribed literally (first pass from the text conversion), then **audited page-by-page (pages 5–14) against the decrypted normalized PDF (2026-09-18): Eqs. (1)–(29), Table 1 and Table 2 confirmed identical — no discrepancies**; double-entry parameter lock in the test suite; balance-derivative identities and finite-difference check pass (see `docs/benchmark_v0.md`) |
-| `reproduced` | **true** | All three Fig. 4 DNA conditions actually executed with MATLAB R2025b `ode15s`; 9/9 tests pass; QC per condition `passed_all_qc` (`results/literature_reference/*/qc.json`); calculated curves additionally match an automated digitization of the paper's Fig. 4 (below) |
+| `reproduced` | **true (with the evidence-level split below)** | All three Fig. 4 DNA conditions actually executed with MATLAB R2025b `ode15s`; 9/9 baseline tests + hardening tests pass; QC per condition `passed_all_qc`; paper-text anchors matched (independent); Fig. 4 raster digitization match is **non-independent** (simulation-assisted assignment) and counts only as an envelope check — see verification layering |
 
 ## Source-input completeness (tasklist D1 checklist)
 
@@ -55,30 +55,24 @@ No original-author numerical trajectory exists (only the raster Fig. 4). Therefo
    (Eqs. (15)–(19)) hold to scaled residuals ≈ 4–6e-15; all states nonnegative with no
    clipping; no NaN/Inf; three repeat runs bitwise identical; tolerance study
    (RelTol 1e-9→1e-11, AbsTol 1e-12→1e-14) changes trajectories by ≤ 3.8e-9 (scaled).
-3. **Fig. 4 reproduction, quantitative against an automated raster digitization** — the
-   calculated (continuous) curves of Fig. 4 were digitized from a 300-dpi render of the
-   normalized PDF (`matlab/simulate/digitize_fig4.m`; axes-box + tick-mark calibration,
-   color-cluster extraction, provenance `digitized_from_Mavelli_2015_Fig4` →
-   `data/processed/fig4_digitized.csv`). Comparison against `new_simulation`
-   (`results/literature_reference/fig4_digitized_comparison.csv`):
-   - **[a] panel: relative deviation ≤ 1.8 % at every sampled time and condition**
-     (0.5–4 h, 0.34/1.7/6.8 nM);
-   - **[nt] panel: absolute deviation ≤ 13 µM ≈ 1.3 % of full scale at every sampled
-     point**; relative deviations ≤ 3.2 % for t ≥ 1.5 h; larger relative deviations occur
-     only at early small values (e.g. 0.34 nM at 1 h: 31.6 vs 22.2 µM, abs 9.5 µM) where
-     the merged calculated+experimental cluster and curve steepness bias the reading;
-   - endpoints: nt(4h) 775.4/345.2/90.5 vs sim 778.8/344.5/86.6 µM; a(4h) 138.0/91.7/34.2
-     vs sim 140.1/93.1/34.6 µM;
-   - text anchors all confirmed: protein(4h) 0.589 vs 0.58 µM (+1.5 %); energy split
-     72.0/15.4/12.5 % vs 74/15/11; φ_RS(1 min) 87.1 % vs ~85 %; RS minimum ≈ 280 s vs
-     ~4 min; φ_TL+φ_RS(32 min) 35.2 % vs ~36 %; correct DNA ordering and sigmoidal a(t).
-   Limitations: where the dotted (experimental) and continuous (calculated) curves
-   overlap they cannot be separated in the raster; such points are flagged
-   `merged_with_experimental` and represent both curves. Where they separate, the
-   calculated curve was identified visually (experimental curves plateau at ≈ 114/103/19 µM
-   in the [a] panel; the calculated red curve reaches the paper-stated a(4h) ≈ 138 µM) and
-   tracked by nearest-to-simulation assignment (flagged in the CSV; raw clusters in
-   `fig4_digitized_all_clusters.csv`). The digitized values are NOT experimental data.
+3. **Fig. 4 comparison — TWO tiers, kept strictly separate (audit hardening):**
+   - **Tier 3a (independent, text anchors):** protein(4h) at 6.8 nM = 0.589 µM vs paper
+     0.58 µM (+1.5 %); energy split 72.0/15.4/12.5 % vs 74/15/11 (≤ 2 pp); φ_RS(1 min)
+     87.1 % vs ~85 %; RS minimum ≈ 280 s vs ~4 min; φ_TL+φ_RS(32 min) 35.2 % vs ~36 %;
+     correct DNA ordering and sigmoidal a(t). These are usable as reproduction evidence.
+   - **Tier 3b (NOT independent, exploratory only):** automated raster digitization of the
+     calculated curves (`matlab/simulate/digitize_fig4.m` →
+     `data/processed/fig4_digitized.csv`, provenance `digitized_from_Mavelli_2015_Fig4`).
+     Where the continuous and dotted curves separate, the "calculated" cluster is chosen
+     by **nearest-to-simulation tracking** — `validation_status =
+     non_independent_assignment`. The resulting deviations ([a] panel ≤ 1.8 %, [nt] panel
+     ≤ 1.3 % of full scale) are an envelope/consistency observation and **must not be
+     cited as independent reproduction acceptance evidence**. Raw clusters are preserved
+     in `fig4_digitized_all_clusters.csv` for independent re-assignment.
+   - Independent validation requires the blind human protocol
+     (`docs/manual_fig4_audit_protocol.md`); until then
+     `fig4_independent_human_audit = pending_human_audit`.
+   - The digitized values are NOT experimental data (Stögbauer 2012 data absent).
 
 ## Data handling decisions
 
@@ -109,6 +103,7 @@ No original-author numerical trajectory exists (only the raster Fig. 4). Therefo
 | L5 | Initial values of newly-created species (nt, AT, a, NXP, C) not explicitly stated in the paper | minor | no | zeros used; implied by the curves starting at 0 and required by conservation Eqs. (15)–(19) |
 | L6 | OCR artifact "k_TXz" in the text conversion of Eq. (5) prose | trivial | no | resolved as `k_TX` from context; confirmed as k_TX by the normalized PDF |
 | L7 | Fig. 4 x-axis limit is not exactly 4 h (calibration gives ≈ 4.18–4.19 h at the right box edge); the plotted curves end at t = 4 h | trivial | no | handled by tick-mark calibration in the digitization |
+| L8 | Fig. 4 digitization cluster assignment is **simulation-assisted** (`non_independent_assignment`): where continuous/dotted curves separate, the "calculated" cluster is chosen nearest to the new_simulation trajectory, so the digitization-vs-simulation comparison is not an independent check | limitation (validation-status) | no (Tier 3a text anchors remain independent evidence) | status recorded in `data/processed/fig4_digitized_validation_status.json` and `docs/evidence_levels.json`; independent validation = blind human protocol (`docs/manual_fig4_audit_protocol.md`), currently `pending_human_audit` |
 
 No ambiguity blocks the reproduction. Nothing was guessed where the paper gives a value;
 no parameter was invented.

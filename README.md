@@ -13,12 +13,15 @@ as the model `PURE_literature_reference` (deterministic, 10 ODE states,
 6 Michaelis–Menten rate laws, 16 kinetic parameters; time in s,
 concentrations in µM).
 
-**Status: `bibliography_verified = true`, `equations_verified = true`,
-`reproduced = true`** (executed with MATLAB R2025b, `ode15s`; 9/9 tests pass;
-all QC passed; curves quantitatively matched to an automated digitization of
-the paper's Fig. 4 — [a] panel ≤ 1.8 % everywhere, [nt] panel ≤ 1.3 % of full
-scale). Details: [`docs/benchmark_v0.md`](docs/benchmark_v0.md),
-[`docs/benchmark_registry.md`](docs/benchmark_registry.md).
+**Status (evidence levels, see `docs/evidence_levels.json`):**
+`bibliography_verified = true`, `equations_transcribed = true`,
+`equation_level_tests_passed = true` (AI-written tests — **not** human scientific review),
+`numerical_solver_qc_passed = true`, `paper_text_anchor_match = true`,
+`fig4_simulation_assisted_digitization_match = true` (**`non_independent_assignment`** —
+not usable as independent evidence),
+`fig4_independent_human_audit = pending_human_audit`,
+`experimental_data_validation = false` (no machine-readable Stögbauer 2012 data).
+**The repo is in engineering/audit hardening; the scientific human audit is pending.**
 
 ## Repository layout
 

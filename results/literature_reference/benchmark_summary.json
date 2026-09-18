@@ -1,6 +1,7 @@
 {
   "provenance_status": "legacy_unbound_to_execution_commit",
   "provenance_note": "AI-baseline run produced before the provenance system existed; session records point to commit ee3dedcfac3ceb51015836756a22a347c9fecd7c but this is NOT cryptographically bound; numerical values are untouched",
+  "fig4_validation_status": "non_independent_assignment (label added during audit hardening; the fig4_note below was written before this classification)",
   "model_id": "PURE_literature_reference",
   "source": "Mavelli_2015",
   "generated_by": "run_fig4_benchmark.m",
