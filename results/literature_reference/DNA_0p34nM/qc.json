@@ -1,0 +1,68 @@
+{
+  "execution_status": "completed",
+  "scientific_status": "passed_all_qc",
+  "model_id": "PURE_literature_reference",
+  "source": "Mavelli_2015",
+  "solver": "ode15s",
+  "time_unit": "s",
+  "concentration_unit": "uM",
+  "relative_tolerance": 1E-9,
+  "absolute_tolerance": 1E-12,
+  "dna_uM": 0.00034,
+  "dna_nM": 0.34,
+  "nonnegativity_pass": true,
+  "min_state_value": 0,
+  "min_state_name": "NXP",
+  "mass_balance_pass": true,
+  "max_balance_residual": 5.820766091346741E-15,
+  "max_balance_residual_per_relation": {
+    "B_NTP": 2.7284841053187848E-15,
+    "B_AA": 3.1832314562052489E-15,
+    "B_tRNA": 9.755735502427005E-16,
+    "B_CP": 5.820766091346741E-15,
+    "B_TLcat": 2.2204460492503131E-15
+  },
+  "balance_max_abs_residual_per_relation": {
+    "B_NTP": 1.6370904631912708E-11,
+    "B_AA": 1.9099388737231493E-11,
+    "B_tRNA": 8.5265128291212022E-14,
+    "B_CP": 1.1641532182693481E-10,
+    "B_TLcat": 4.8849813083506888E-15
+  },
+  "repeatability_pass": true,
+  "repeatability_max_abs_diff": 0,
+  "solver_convergence_pass": true,
+  "solver_convergence_max_scaled_diff": 3.766169433361055E-9,
+  "tolerance_study": {
+    "RelTol": 1E-11,
+    "AbsTol": 1E-14
+  },
+  "equations_verified": true,
+  "equation_guard_note": "five balance-derivative identities of Eqs. (15)-(19) hold to roundoff along the trajectory; initial-rate sanity (V_TL(0)=0, V_EN(0)=0, V_TX(0)>0, V_RS(0)>0) holds; full test suite: matlab/tests/test_pure_literature_reference.m",
+  "energy_split_percent": {
+    "Q_TX": 43.16461614408118,
+    "Q_TL": 20.579821020190661,
+    "Q_RS": 36.255562835728156
+  },
+  "anchors": {
+    "protein_4h_molecules_uM": 0.14550798298537346,
+    "a_4h_uM": 34.630899950518881,
+    "nt_4h_uM": 86.649112857530767,
+    "mRNA_4h_molecules_uM": 0.12135730092091143
+  },
+  "endpoints": {
+    "nt_uM": 86.649112857530767,
+    "a_uM": 34.630899950518881,
+    "mRNA_molecules_uM": 0.12135730092091143,
+    "protein_molecules_uM": 0.14550798298537346,
+    "NTP_uM": 1463.6780767828232,
+    "CP_uM": 19808.742287183337,
+    "TLcat_uM": 0.15108047504157307
+  },
+  "accumulators_vs_trapz": {
+    "D_nt_rel": 7.74208273149102E-8,
+    "D_TLcat_rel": 2.88783402426475E-7
+  },
+  "fig4_reproduction_status": "calculated_curves_reproduced_qualitative",
+  "unresolved_items": []
+}

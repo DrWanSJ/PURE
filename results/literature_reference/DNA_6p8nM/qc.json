@@ -1,0 +1,81 @@
+{
+  "execution_status": "completed",
+  "scientific_status": "passed_all_qc",
+  "model_id": "PURE_literature_reference",
+  "source": "Mavelli_2015",
+  "solver": "ode15s",
+  "time_unit": "s",
+  "concentration_unit": "uM",
+  "relative_tolerance": 1E-9,
+  "absolute_tolerance": 1E-12,
+  "dna_uM": 0.0068,
+  "dna_nM": 6.8,
+  "nonnegativity_pass": true,
+  "min_state_value": 0,
+  "min_state_name": "NXP",
+  "mass_balance_pass": true,
+  "max_balance_residual": 3.9411437076826889E-15,
+  "max_balance_residual_per_relation": {
+    "B_NTP": 1.2126596023639043E-15,
+    "B_AA": 3.9411437076826889E-15,
+    "B_tRNA": 1.1381691419498173E-15,
+    "B_CP": 2.1827872842550276E-15,
+    "B_TLcat": 2.0185873175002844E-15
+  },
+  "balance_max_abs_residual_per_relation": {
+    "B_NTP": 7.2759576141834259E-12,
+    "B_AA": 2.3646862246096134E-11,
+    "B_tRNA": 9.9475983006414026E-14,
+    "B_CP": 4.3655745685100555E-11,
+    "B_TLcat": 4.4408920985006262E-15
+  },
+  "repeatability_pass": true,
+  "repeatability_max_abs_diff": 0,
+  "solver_convergence_pass": true,
+  "solver_convergence_max_scaled_diff": 3.7419180718037109E-9,
+  "tolerance_study": {
+    "RelTol": 1E-11,
+    "AbsTol": 1E-14
+  },
+  "equations_verified": true,
+  "equation_guard_note": "five balance-derivative identities of Eqs. (15)-(19) hold to roundoff along the trajectory; initial-rate sanity (V_TL(0)=0, V_EN(0)=0, V_TX(0)>0, V_RS(0)>0) holds; full test suite: matlab/tests/test_pure_literature_reference.m",
+  "energy_split_percent": {
+    "Q_TX": 72.025973872192637,
+    "Q_TL": 15.440583648656785,
+    "Q_RS": 12.53344247915059
+  },
+  "anchors": {
+    "protein_4h_molecules_uM": 0.588713135282847,
+    "a_4h_uM": 140.11372619731759,
+    "nt_4h_uM": 778.75889297450692,
+    "mRNA_4h_molecules_uM": 1.0906987296561721,
+    "paper_protein_4h_molecules_uM": 0.58,
+    "paper_a_4h_uM": 138.04,
+    "protein_anchor_rel_dev": 0.015022647039391391,
+    "paper_energy_split_percent": [
+      74,
+      15,
+      11
+    ],
+    "energy_split_abs_dev_pp": [
+      -1.9740261278073632,
+      0.44058364865678534,
+      1.5334424791505903
+    ]
+  },
+  "endpoints": {
+    "nt_uM": 778.75889297450692,
+    "a_uM": 140.11372619731759,
+    "mRNA_molecules_uM": 1.0906987296561721,
+    "protein_molecules_uM": 0.588713135282847,
+    "NTP_uM": 1173.1930773315014,
+    "CP_uM": 19492.358304606252,
+    "TLcat_uM": 0.15108047497967764
+  },
+  "accumulators_vs_trapz": {
+    "D_nt_rel": 7.8634157412349828E-8,
+    "D_TLcat_rel": 2.885989578140217E-7
+  },
+  "fig4_reproduction_status": "calculated_curves_reproduced_quantitative_anchor_within_5pct",
+  "unresolved_items": []
+}

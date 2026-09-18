@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "model_id": "PURE_literature_reference",
+  "version": "1.0-b1-benchmark",
+  "created": "2026-09-18",
+  "source": {
+    "id": "Mavelli_Marangoni_Stano_2015",
+    "doi": "10.1007/s11538-015-0082-8",
+    "bibliography": "Mavelli, F., Marangoni, R., Stano, P. (2015) Bull. Math. Biol. 77:1185-1212"
+  },
+  "relation_to_source": "literal_translation",
+  "scope_statement": "Verbatim deterministic translation of the coarse-grained PURE model of the source paper (Sect. 2, Eqs. (1)-(29)). This is the B1 literature benchmark ONLY. It is not the project working model PURE_resource_core, and no equation, parameter, or species was added, removed, or re-fitted relative to the paper.",
+  "boundary": [
+    "batch",
+    "fixed_volume",
+    "well_mixed"
+  ],
+  "model_type": "deterministic ODE (Michaelis-Menten effective rate laws)",
+  "units": {"time": "s", "concentration": "uM", "rate": "uM/s"},
+  "states": [
+    {"id": "NTP",   "definition": "average nucleoside-triphosphate concentration (per nucleotide species; total = n_NTP*[NTP])", "unit": "uM", "initial_value": 1500,  "dynamic": true,  "source": "Table 1; ODE Eq. (20)"},
+    {"id": "NXP",   "definition": "overall pool of exhausted nucleotides (NDP + NMP pooled)", "unit": "uM", "initial_value": 0,     "dynamic": true,  "source": "newly-created (Sect. 2.4); ODE Eq. (21)"},
+    {"id": "nt",    "definition": "overall concentration of polymerized nucleotides (mRNA in monomer units; mRNA molecules = nt/(3L))", "unit": "uM", "initial_value": 0,     "dynamic": true,  "source": "newly-created (Sect. 2.1); ODE Eq. (22)"},
+    {"id": "A",     "definition": "average amino-acid concentration (per species; total = n_A*[A])", "unit": "uM", "initial_value": 300,   "dynamic": true,  "source": "Table 1; ODE Eq. (23)"},
+    {"id": "T",     "definition": "average tRNA concentration (per species; total = n_T*[T])", "unit": "uM", "initial_value": 1.9,   "dynamic": true,  "source": "Table 1; ODE Eq. (24)"},
+    {"id": "AT",    "definition": "average aminoacyl-tRNA concentration (per tRNA species; total = n_T*[AT])", "unit": "uM", "initial_value": 0,     "dynamic": true,  "source": "newly-created (Sect. 2.2); ODE Eq. (24)"},
+    {"id": "a",     "definition": "overall concentration of polymerized amino acids (protein in residue units; protein molecules = a/L)", "unit": "uM", "initial_value": 0,     "dynamic": true,  "source": "newly-created (Sect. 2.3); ODE Eq. (25)"},
+    {"id": "CP",    "definition": "creatine phosphate", "unit": "uM", "initial_value": 20000, "dynamic": true,  "source": "Table 1; ODE Eq. (26)"},
+    {"id": "C",     "definition": "creatine (dephosphorylation product of CP)", "unit": "uM", "initial_value": 0,     "dynamic": true,  "source": "newly-created (Sect. 2.4); ODE Eq. (26)"},
+    {"id": "TLcat", "definition": "fictitious effective translation catalyst (ribosomes + translation factors pooled; decays, Eq. (11)-(12))", "unit": "uM", "initial_value": 2.2,   "dynamic": true,  "source": "Table 1 (fitting); ODE Eq. (27)"},
+    {"id": "DNA",   "definition": "DNA template (promoter region) concentration; fixed input parameter, not a state", "unit": "uM", "initial_value": "per-run: 0.00034 / 0.0017 / 0.0068 (Fig. 4 conditions)", "dynamic": false, "source": "Table 1; enters Eq. (5)"},
+    {"id": "TXcat", "definition": "T7 RNA polymerase; fixed input parameter, not a state", "unit": "uM", "initial_value": 0.1,  "dynamic": false, "source": "Table 1; enters Eq. (5)"},
+    {"id": "RScat", "definition": "average aminoacyl-tRNA synthetase concentration; fixed input parameter", "unit": "uM", "initial_value": 0.16, "dynamic": false, "source": "Table 1; enters Eq. (8)"},
+    {"id": "ENcat", "definition": "fictitious effective energy-regeneration enzyme; fixed input parameter", "unit": "uM", "initial_value": 0.08, "dynamic": false, "source": "Table 1; enters Eq. (14)"},
+    {"id": "D_nt",    "definition": "auxiliary integrator of the nt-decay flux (the 'degradation species' of conservation Eq. (15)); pure accounting, no feedback", "unit": "uM", "initial_value": 0, "dynamic": true, "source": "reconstruction of Eq. (15) sink, integrated Eq. (6)"},
+    {"id": "D_TLcat", "definition": "auxiliary integrator of the TLcat-decay flux (the 'degradation species' of conservation Eq. (19)); pure accounting, no feedback", "unit": "uM", "initial_value": 0, "dynamic": true, "source": "reconstruction of Eq. (19) sink, integrated Eq. (12)"}
+  ],
+  "rates": [
+    {"id": "V_TX",     "definition": "transcription: NTP -> nt polymerization rate", "unit": "uM/s", "paper_equation": "Eq. (5)",  "reaction": "Eq. (2)"},
+    {"id": "V_nt_deg", "definition": "polymerized-nucleotide (mRNA) degradation, pseudo-first-order", "unit": "uM/s", "paper_equation": "Eq. (6)",  "reaction": "Eq. (4)"},
+    {"id": "V_RS",     "definition": "aminoacylation: A + T + NTP -> AT + NXP", "unit": "uM/s", "paper_equation": "Eq. (8)",  "reaction": "Eq. (7)"},
+    {"id": "V_TL",     "definition": "translation elongation: AT + 2NTP -> a + T + 2NXP (rate = polymerized amino-acid residues/s)", "unit": "uM/s", "paper_equation": "Eq. (10)", "reaction": "Eq. (9)"},
+    {"id": "V_TL_deg", "definition": "TL machinery decay, pseudo-first-order", "unit": "uM/s", "paper_equation": "Eq. (12)", "reaction": "Eq. (11)"},
+    {"id": "V_EN",     "definition": "energy regeneration: CP + NXP -> C + NTP", "unit": "uM/s", "paper_equation": "Eq. (14)", "reaction": "Eq. (13)"}
+  ],
+  "multiplicity_factors": {
+    "n_NTP": 4,
+    "n_A": 20,
+    "n_T": 46,
+    "n_T_over_n_A": 2.3,
+    "usage": "Eqs. (8) and (10) contain the factor 2.3[T] and 2.3[AT]; ODEs (20),(23),(24) divide by n_NTP, n_A, n_T; conservation Eqs. (15)-(17) use n_NTP, n_A, n_T weights"
+  },
+  "parameters_file": "parameters.json",
+  "parameter_inventory": {
+    "kinetic_constants_s^-1": 6,
+    "michaelis_menten_constants_uM_independent": 10,
+    "note_on_K_TL_RNA": "Table 2 also lists K_TL_RNA = 0.32 uM, but Eq. (29) gives K_TL_RNA = K_TL_nt/(3L) = 226/714 = 0.3165 uM: a derived QC quantity, not an 11th independent MM parameter, and not used in the RHS.",
+    "parameter_origins": {"fitted": ["k_TX", "k_TL", "k_nt_deg", "k_TL_deg", "K_TX_DNA", "K_TL_nt", "TLcat(=2.2 uM, Table 1)"], "literature_database": ["k_RS", "k_EN", "K_TX_NTP", "K_RS_A", "K_RS_T", "K_RS_NTP", "K_EN_CP", "K_EN_NXP"], "estimated": ["K_TL_AT", "K_TL_NTP"], "derived": ["K_TL_RNA"]}
+  },
+  "observables": [
+    {"id": "nt",         "definition": "polymerized nucleotides (Fig. 4 top-panel quantity)", "unit": "uM", "mapping": "state nt"},
+    {"id": "a",          "definition": "polymerized amino acids (Fig. 4 bottom-panel quantity)", "unit": "uM", "mapping": "state a"},
+    {"id": "mRNA",       "definition": "mRNA molecule concentration", "unit": "uM", "mapping": "nt / (3L) = nt / 714  (paper Sect. 2.5)"},
+    {"id": "protein",    "definition": "protein molecule concentration", "unit": "uM", "mapping": "a / L = a / 238  (paper Sect. 2.5)"}
+  ],
+  "conservation_relations": [
+    {"id": "B_NTP",   "paper_equation": "Eq. (15)", "expression": "n_NTP*[NTP] + [nt] + [NXP] + D_nt = n_NTP*C_NTP0", "reference_value": 6000.0},
+    {"id": "B_AA",    "paper_equation": "Eq. (16)", "expression": "n_A*[A] + [a] + n_T*[AT] = n_A*C_A0",              "reference_value": 6000.0},
+    {"id": "B_tRNA",  "paper_equation": "Eq. (17)", "expression": "n_T*[T] + n_T*[AT] = n_T*C_T0",                    "reference_value": 87.4},
+    {"id": "B_CP",    "paper_equation": "Eq. (18)", "expression": "[CP] + [C] = C_CP0",                               "reference_value": 20000.0},
+    {"id": "B_TLcat", "paper_equation": "Eq. (19)", "expression": "[TLcat] + D_TLcat = C_TLcat0",                     "reference_value": 2.2}
+  ],
+  "assumptions": [
+    "deterministic model (continuous concentrations; no stochastic effects)",
+    "batch operation, fixed volume, well mixed",
+    "generic averaged NTP (ATP/GTP/CTP/UTP pooled as one average species; NOT split into ATP and GTP)",
+    "generic averaged amino acid (20 species pooled)",
+    "generic averaged tRNA (46 species pooled)",
+    "stationary effective enzymatic stages (pre-stationary phases neglected, paper Sect. 2)",
+    "Michaelis-Menten effective rate laws, one rectangular-hyperbolic factor per substrate/template (paper Eq. (1))",
+    "each translation elongation event consumes two NTP molecules in the stoichiometry (Eq. (20)-(21)), but the NTP dependence of V_TL remains a single rectangular-hyperbolic factor (paper Sect. 2.3, explicit choice)",
+    "PPi hydrolysis (paper Eq. (3)) not explicitly integrated; PPi and Pi do not affect any rate law",
+    "GFP maturation (cyclo-oxidation, ~5 min) omitted, following the paper's justification (Sect. 2.3)",
+    "TLcat is a fictitious effective translation catalyst (ribosomes + factors pooled) with first-order decay",
+    "nt and a are overall polymerized-monomer concentrations, NOT molecule concentrations; molecule concentrations are nt/(3L) and a/L",
+    "newly-created species (NXP, nt, AT, a, C) start at zero; DNA, TXcat, RScat, ENcat are fixed inputs"
+  ],
+  "disclaimer_stochastic_use": "The effective Michaelis-Menten rate laws of this reference model must NOT automatically be interpreted as validated stochastic propensity functions. The paper itself states the model was designed for conditions where intrinsic stochastic effects are negligible, and the project tasklist forbids SSA use of MM-propensity models without separate validation.",
+  "files": {
+    "parameters": "models/literature_reference/parameters.json",
+    "rhs_matlab": "matlab/generated/rhs_pure_literature_reference.m",
+    "params_loader": "matlab/generated/pure_literature_reference_params.m",
+    "simulator": "matlab/simulate/simulate_pure_literature_reference.m",
+    "benchmark": "matlab/simulate/run_fig4_benchmark.m",
+    "tests": "matlab/tests/test_pure_literature_reference.m"
+  }
+}

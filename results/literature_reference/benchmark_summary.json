@@ -1,0 +1,61 @@
+{
+  "model_id": "PURE_literature_reference",
+  "source": "Mavelli_2015",
+  "generated_by": "run_fig4_benchmark.m",
+  "date": "2026-09-18 11:27:19",
+  "solver": "ode15s",
+  "time_unit": "s",
+  "concentration_unit": "uM",
+  "conditions": [
+    {
+      "label": "DNA_0p34nM",
+      "dna_nM": 0.34,
+      "scientific_status": "passed_all_qc",
+      "protein_4h_molecules_uM": 0.14550798298537346,
+      "a_4h_uM": 34.630899950518881,
+      "nt_4h_uM": 86.649112857530767,
+      "energy_split_percent": [
+        43.16461614408118,
+        20.579821020190661,
+        36.255562835728156
+      ]
+    },
+    {
+      "label": "DNA_1p7nM",
+      "dna_nM": 1.7,
+      "scientific_status": "passed_all_qc",
+      "protein_4h_molecules_uM": 0.3912048119374732,
+      "a_4h_uM": 93.106745241118617,
+      "nt_4h_uM": 344.48714940620778,
+      "energy_split_percent": [
+        61.174984868139582,
+        19.71645409704907,
+        19.108561034811359
+      ]
+    },
+    {
+      "label": "DNA_6p8nM",
+      "dna_nM": 6.8,
+      "scientific_status": "passed_all_qc",
+      "protein_4h_molecules_uM": 0.588713135282847,
+      "a_4h_uM": 140.11372619731759,
+      "nt_4h_uM": 778.75889297450692,
+      "energy_split_percent": [
+        72.025973872192637,
+        15.440583648656785,
+        12.53344247915059
+      ]
+    }
+  ],
+  "anchor_paper": {
+    "protein_4h_uM_at_6p8nM": 0.58,
+    "source": "paper Sect. 4.1 / Fig. 5 text (standard composition, [DNA]=6.8 nM)",
+    "energy_split_percent_at_6p8nM": [
+      74,
+      15,
+      11
+    ],
+    "source_energy": "paper Sect. 5, Table 4 entry 1"
+  },
+  "fig4_note": "Calculated curves reproduced from the literal model translation. No experimental overlay (Stogbauer 2012 machine-readable data absent from the repo). The paper's CALCULATED curves were digitized from the raster figure by matlab/simulate/digitize_fig4.m (provenance: digitized_from_Mavelli_2015_Fig4) -> data/processed/fig4_digitized.csv; quantitative comparison: results/literature_reference/fig4_digitized_comparison.csv (a-panel deviations <= 1.8 % everywhere; nt-panel absolute deviations <= 13 uM, i.e. <= 1.3 % of full scale)."
+}

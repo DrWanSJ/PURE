@@ -1,0 +1,12 @@
+# Third-party papers not used by the B1 benchmark (kept locally only,
+# excluded from the public repo for licensing caution; see data/provenance.csv)
+Gene Expression Dynamics In a Cell-Free System.pdf
+Gene Expression Dynamics In a Cell-Free System.md
+Modeling Cell-Free RNA and Protein Systhesis with Minimal Systems.pdf
+Modeling Cell-Free RNA and Protein Systhesis with Minimal Systems.md
+
+# MATLAB / OS artifacts
+*.asv
+*.mex*
+matlab/crash_dump.*
+heapdump*

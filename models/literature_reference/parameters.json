@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "model_id": "PURE_literature_reference",
+  "relation_to_source": "literal_translation",
+  "source": {
+    "authors": "Mavelli, F.; Marangoni, R.; Stano, P.",
+    "year": 2015,
+    "title": "A Simple Protein Synthesis Model for the PURE System Operation",
+    "journal": "Bulletin of Mathematical Biology",
+    "volume": 77,
+    "pages": "1185-1212",
+    "doi": "10.1007/s11538-015-0082-8",
+    "parameter_tables": "Table 1 (initial concentrations), Table 2 (kinetic parameters)",
+    "no_refitting": true
+  },
+  "units": {
+    "time": "s",
+    "concentration": "uM",
+    "rate": "uM/s"
+  },
+  "multiplicity": {
+    "n_NTP": 4,
+    "n_A": 20,
+    "n_T": 46,
+    "n_T_over_n_A": 2.3,
+    "source": "paper Sect. 2 and Eqs. (8),(10),(15)-(19)"
+  },
+  "protein": {
+    "id": "GFP",
+    "length_aa_L": 238,
+    "source": "paper Sect. 3 and Fig. 4 caption (L = 238)"
+  },
+  "parameters": {
+    "k_TX":     {"value": 1.67,     "unit": "s^-1", "origin": "fitted",     "source": "Table 2 (fitting vs Stoegbauer 2012 mRNA/protein curves); 1.67 +/- 0.14"},
+    "k_TL":     {"value": 0.085,    "unit": "s^-1", "origin": "fitted",     "source": "Table 2 (fitting); 0.085 +/- 0.020"},
+    "k_RS":     {"value": 6.2,      "unit": "s^-1", "origin": "literature", "source": "Table 2 (BRENDA average of the 20 aminoacyl-tRNA synthases)"},
+    "k_EN":     {"value": 100,      "unit": "s^-1", "origin": "literature", "source": "Table 2 (BRENDA, EC 2.7.2.3 creatine kinase)"},
+    "k_nt_deg": {"value": 7.92e-05, "unit": "s^-1", "origin": "fitted",     "source": "Table 2 (fitting); 7.92e-5 +/- 0.51e-5"},
+    "k_TL_deg": {"value": 1.86e-04, "unit": "s^-1", "origin": "fitted",     "source": "Table 2 (fitting); 1.86e-4 +/- 0.11e-4"},
+    "K_TX_DNA": {"value": 5.0e-03,  "unit": "uM",   "origin": "fitted",     "source": "Table 2 (fitting); 5.00e-3 +/- 0.75e-3"},
+    "K_TX_NTP": {"value": 80,       "unit": "uM",   "origin": "literature", "source": "Table 2 (BRENDA, EC 2.7.7.6, T7 RNA polymerase)"},
+    "K_TL_nt":  {"value": 226,      "unit": "uM",   "origin": "fitted",     "source": "Table 2 (fitting); 226 +/- 16"},
+    "K_TL_AT":  {"value": 10,       "unit": "uM",   "origin": "estimated",  "source": "Table 2 (estimated)"},
+    "K_TL_NTP": {"value": 10,       "unit": "uM",   "origin": "estimated",  "source": "Table 2 (estimated)"},
+    "K_RS_A":   {"value": 23,       "unit": "uM",   "origin": "literature", "source": "Table 2 (BRENDA average)"},
+    "K_RS_T":   {"value": 0.7,      "unit": "uM",   "origin": "literature", "source": "Table 2 (BRENDA average)"},
+    "K_RS_NTP": {"value": 200,      "unit": "uM",   "origin": "literature", "source": "Table 2 (BRENDA average)"},
+    "K_EN_CP":  {"value": 200,      "unit": "uM",   "origin": "literature", "source": "Table 2 (BRENDA, EC 2.7.2.3)"},
+    "K_EN_NXP": {"value": 40,      "unit": "uM",   "origin": "literature", "source": "Table 2 (BRENDA, EC 2.7.2.3)"},
+    "TXcat":    {"value": 0.1,      "unit": "uM",   "origin": "literature", "source": "Table 1 (PURE system; T7 RNA polymerase); fixed input, not a dynamic state"},
+    "RScat":    {"value": 0.16,     "unit": "uM",   "origin": "literature", "source": "Table 1 (PURE system, average of 20 synthases); fixed input"},
+    "ENcat":    {"value": 0.08,     "unit": "uM",   "origin": "literature", "source": "Table 1 (PURE system, average of 3 enzymes + PPase group); fixed input"}
+  },
+  "initial_conditions": {
+    "NTP":   {"value": 1500,  "unit": "uM", "dynamic": true,  "source": "Table 1 (PURE system, x4 species, average concentration)"},
+    "NXP":   {"value": 0,     "unit": "uM", "dynamic": true,  "source": "newly-created species (Sect. 2.5); zero initial value (curves start at 0; mass balances Eqs. (15)-(19) require it)"},
+    "nt":    {"value": 0,     "unit": "uM", "dynamic": true,  "source": "newly-created species; zero initial value"},
+    "A":     {"value": 300,   "unit": "uM", "dynamic": true,  "source": "Table 1 (PURE system, x20 species)"},
+    "T":     {"value": 1.9,   "unit": "uM", "dynamic": true,  "source": "Table 1 (PURE system, x46 species, average)"},
+    "AT":    {"value": 0,     "unit": "uM", "dynamic": true,  "source": "newly-created species; zero initial value"},
+    "a":     {"value": 0,     "unit": "uM", "dynamic": true,  "source": "newly-created species; zero initial value"},
+    "CP":    {"value": 20000, "unit": "uM", "dynamic": true,  "source": "Table 1 (PURE system)"},
+    "C":     {"value": 0,     "unit": "uM", "dynamic": true,  "source": "newly-created species; zero initial value"},
+    "TLcat": {"value": 2.2,   "unit": "uM", "dynamic": true,  "source": "Table 1 (fictitious effective TL catalyst; fitting; 2.2 +/- 0.3; central value used)"},
+    "DNA":   {"value": null,  "unit": "uM", "dynamic": false, "source": "Table 1 (0.34 to 6.8e-3 uM); Fig. 4 conditions 0.34 / 1.7 / 6.8 nM; set per run, never a dynamic state"},
+    "D_nt":    {"value": 0,   "unit": "uM", "dynamic": true,  "source": "auxiliary pure integrator of the Eq. (6) decay flux; represents the 'degradation species' of Eq. (15); no feedback into any rate law"},
+    "D_TLcat": {"value": 0,   "unit": "uM", "dynamic": true,  "source": "auxiliary pure integrator of the Eq. (12) decay flux; represents the 'degradation species' of Eq. (19); no feedback into any rate law"}
+  },
+  "derived_quantities": {
+    "K_TL_RNA": {
+      "value": 0.3165266106442577,
+      "unit": "uM",
+      "formula": "K_TL_nt/(3*L)",
+      "paper_equation": "Eq. (29)",
+      "paper_reported": 0.32,
+      "paper_uncertainty": 0.02,
+      "note": "Table 2 lists K_TL_RNA = 0.32 +/- 0.02 uM, but Eq. (29) defines it as K_TL_nt/(3L); with K_TL_nt = 226 uM and L = 238 it is exactly 226/714 = 0.31653 uM, consistent with the reported value within its uncertainty. It is a derived QC quantity, NOT an independent parameter, and it is NOT used in the RHS (the nt-formulation uses K_TL_nt directly)."
+    }
+  },
+  "state_order":  ["NTP", "NXP", "nt", "A", "T", "AT", "a", "CP", "C", "TLcat"],
+  "rate_order":   ["V_TX", "V_nt_deg", "V_RS", "V_TL", "V_TL_deg", "V_EN"],
+  "fig4_conditions_nM": [0.34, 1.7, 6.8],
+  "simulation": {
+    "t_final_s": 14400,
+    "duration_label": "4 h",
+    "solver": "ode15s",
+    "RelTol": 1e-09,
+    "AbsTol": 1e-12,
+    "tolerance_study": {"RelTol_tight": 1e-11, "AbsTol_tight": 1e-14}
+  }
+}
