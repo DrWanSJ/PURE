@@ -1,0 +1,65 @@
+{
+  "record": "redundancy_evidence for the 2026-09-18 repository reorganization",
+  "explanation": "The provenance-bound rerun b1_fig4_hardening_20260918 (commit 10235db, branch audit/b1-hardening) repeated the B1 Fig.4 benchmark of the legacy AI baseline (results/literature_reference, now results/baselines/b1_mavelli2015). Before deleting its trajectory/rates CSVs and figures, byte identity against the baseline was verified. Only the numerical CSVs are scientific evidence; they were byte-identical (SHA-256 below), so the copies were removed. The manifest.json, benchmark_summary.json and per-condition qc.json of the hardened run are kept as provenance evidence. The two PNG figures were re-rendered from identical trajectories but are NOT byte-identical (MATLAB embeds render-time metadata; identical pixel dimensions and byte sizes); they were removed as regenerable duplicates and the baseline figures remain in results/baselines/b1_mavelli2015/.",
+  "verified_at": "2026-09-18",
+  "verification_method": "SHA-256 of files on disk (hardening run vs legacy baseline) and of git blobs of the deleted files (git cat-file blob HEAD:results/b1_fig4_hardening_20260918/...)",
+  "deleted_files": [
+    {
+      "path": "DNA_0p34nM/trajectory.csv",
+      "sha256_equal_to_baseline": true,
+      "sha256": "0b196e1d9d4cc3ac2f454847346a733e9230ff26c11c1abefd771ecd95100338",
+      "baseline_copy": "results/baselines/b1_mavelli2015/DNA_0p34nM/trajectory.csv"
+    },
+    {
+      "path": "DNA_1p7nM/trajectory.csv",
+      "sha256_equal_to_baseline": true,
+      "sha256": "0e8d60bd584c7e7c5928f3867f31760c7653ab484491e2e00d1aa1977a76b6bb",
+      "baseline_copy": "results/baselines/b1_mavelli2015/DNA_1p7nM/trajectory.csv"
+    },
+    {
+      "path": "DNA_6p8nM/trajectory.csv",
+      "sha256_equal_to_baseline": true,
+      "sha256": "cedbf55a426c479ac9913095b76e71c896e8e6cb0ea9d2b8e519ff4ba49ad511",
+      "baseline_copy": "results/baselines/b1_mavelli2015/DNA_6p8nM/trajectory.csv"
+    },
+    {
+      "path": "DNA_0p34nM/rates.csv",
+      "sha256_equal_to_baseline": true,
+      "sha256": "53c0d9039d1d0916526a6311fecf4f602c0e8ed839827179329d5e77f17c724c",
+      "baseline_copy": "results/baselines/b1_mavelli2015/DNA_0p34nM/rates.csv"
+    },
+    {
+      "path": "DNA_1p7nM/rates.csv",
+      "sha256_equal_to_baseline": true,
+      "sha256": "997eeec15a12f13eb6231b51a4b78492bd22b0a9d3245aeb364e12c902a3e669",
+      "baseline_copy": "results/baselines/b1_mavelli2015/DNA_1p7nM/rates.csv"
+    },
+    {
+      "path": "DNA_6p8nM/rates.csv",
+      "sha256_equal_to_baseline": true,
+      "sha256": "87b56da29bbe1f10663f39690d4ef672c59595af7d7e8bbfdd5b08916a15ff25",
+      "baseline_copy": "results/baselines/b1_mavelli2015/DNA_6p8nM/rates.csv"
+    },
+    {
+      "path": "fig4_reproduction.png",
+      "sha256_equal_to_baseline": false,
+      "sha256": "07bb1ebf5b80d5932331137f7f2c609f6b0d4d36d16340d5722696f59b2237e1",
+      "note": "identical byte size (125857) as baseline figure but different render metadata; removed as regenerable duplicate",
+      "baseline_copy": "results/baselines/b1_mavelli2015/fig4_reproduction.png"
+    },
+    {
+      "path": "observables_mRNA_protein.png",
+      "sha256_equal_to_baseline": false,
+      "sha256": "1f77c9e58dd491c7405859afdd897f7094dcd15495fe82aa7cd5fd6aa4f80907",
+      "note": "identical byte size (92136) as baseline figure but different render metadata; removed as regenerable duplicate",
+      "baseline_copy": "results/baselines/b1_mavelli2015/observables_mRNA_protein.png"
+    }
+  ],
+  "kept_provenance_evidence": [
+    "manifest.json",
+    "benchmark_summary.json",
+    "DNA_0p34nM/qc.json",
+    "DNA_1p7nM/qc.json",
+    "DNA_6p8nM/qc.json"
+  ]
+}

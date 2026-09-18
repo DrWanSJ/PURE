@@ -10,15 +10,15 @@ function summary = run_all_tests()
 %
 %   All output is appended to logs/<timestamp>_tests.log — test results must
 %   exist as logs, not only as claims in a README. CI status is
-%   not_verified (docs/audit_status.md); this script is the manual path.
+%   not_verified (docs/audit/audit_status.md); this script is the manual path.
 
 d0   = fileparts(mfilename('fullpath'));         % .../scripts
 root = fileparts(d0);
 addpath(fullfile(root, 'matlab', 'tests'));
-addpath(fullfile(root, 'matlab', 'simulate'));
+addpath(fullfile(root, 'matlab', 'src', 'simulate'));
 addpath(fullfile(root, 'matlab', 'generated'));
 addpath(fullfile(root, 'matlab', 'codegen'));
-addpath(fullfile(root, 'matlab', 'provenance'));
+addpath(fullfile(root, 'matlab', 'src', 'provenance'));
 
 logdir = fullfile(root, 'logs');
 if ~exist(logdir, 'dir'); mkdir(logdir); end

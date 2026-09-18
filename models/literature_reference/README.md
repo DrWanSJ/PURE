@@ -68,7 +68,7 @@ matlab -batch "run_fig4_benchmark"                          % full benchmark + f
 Single runs:
 
 ```matlab
-addpath('matlab/generated','matlab/simulate');
+addpath('matlab/generated','matlab/src/simulate');
 out = simulate_pure_literature_reference(0.0068);   % 6.8 nM, 0-4 h
 ```
 

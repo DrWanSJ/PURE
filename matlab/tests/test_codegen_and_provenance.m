@@ -17,9 +17,10 @@ function tests = test_codegen_and_provenance()
 thisdir = fileparts(mfilename('fullpath'));   % .../matlab/tests
 root    = fileparts(fileparts(thisdir));      % project root
 addpath(fullfile(root, 'matlab', 'generated'));
-addpath(fullfile(root, 'matlab', 'simulate'));
+addpath(fullfile(root, 'matlab', 'src', 'simulate'));
 addpath(fullfile(root, 'matlab', 'codegen'));
-addpath(fullfile(root, 'matlab', 'provenance'));
+addpath(fullfile(root, 'matlab', 'src', 'provenance'));
+addpath(fullfile(root, 'matlab', 'tests', 'fixtures'));   % frozen baseline snapshot
 tests = functiontests(localfunctions);
 end
 

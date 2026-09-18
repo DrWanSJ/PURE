@@ -1,0 +1,5 @@
+# Provenance hashes are SHA-256 over raw file bytes and are recorded in run
+# manifests (results/*/manifest.json, qc.json). Pin line endings for JSON so
+# any fresh checkout reproduces those hashes exactly, regardless of
+# core.autocrlf on the cloning machine.
+*.json text eol=lf

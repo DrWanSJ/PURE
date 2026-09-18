@@ -20,7 +20,7 @@ function tests = test_pure_literature_reference()
 thisdir = fileparts(mfilename('fullpath'));   % .../matlab/tests
 root    = fileparts(fileparts(thisdir));      % project root
 addpath(fullfile(root, 'matlab', 'generated'));
-addpath(fullfile(root, 'matlab', 'simulate'));
+addpath(fullfile(root, 'matlab', 'src', 'simulate'));
 tests = functiontests(localfunctions);
 end
 

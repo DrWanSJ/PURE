@@ -14,8 +14,8 @@ function tests = test_release_preflight()
 
 thisdir = fileparts(mfilename('fullpath'));   % .../matlab/tests
 root    = fileparts(fileparts(thisdir));      % project root
-addpath(fullfile(root, 'matlab', 'simulate'));
-addpath(fullfile(root, 'matlab', 'provenance'));
+addpath(fullfile(root, 'scripts'));
+addpath(fullfile(root, 'matlab', 'src', 'provenance'));
 addpath(fullfile(root, 'matlab', 'codegen'));
 addpath(fullfile(root, 'matlab', 'generated'));
 tests = functiontests(localfunctions);
@@ -56,7 +56,7 @@ end
 function test_evidence_levels_locked_values(tc)
 thisdir0 = fileparts(mfilename('fullpath'));
 root    = fileparts(fileparts(thisdir0));
-ev = jsondecode(fileread(fullfile(root, 'docs', 'evidence_levels.json')));
+ev = jsondecode(fileread(fullfile(root, 'docs', 'project', 'evidence_levels.json')));
 tc.verifyEqual(ev.evidence_levels.fig4_independent_human_audit, 'pending_human_audit', ...
     'independent Fig.4 audit status must not be flipped by automation');
 tc.verifyEqual(ev.evidence_levels.experimental_data_validation, false, ...
@@ -72,7 +72,7 @@ end
 function test_legacy_results_cannot_claim_provenance_bound(tc)
 thisdir0 = fileparts(mfilename('fullpath'));
 root    = fileparts(fileparts(thisdir0));
-legacy = fullfile(root, 'results', 'literature_reference');
+legacy = fullfile(root, 'results', 'baselines', 'b1_mavelli2015');
 dnas = {'DNA_0p34nM', 'DNA_1p7nM', 'DNA_6p8nM'};
 files = cell(1, numel(dnas) + 1);
 for i = 1:numel(dnas)

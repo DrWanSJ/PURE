@@ -7,7 +7,7 @@ function [dydt, rates] = rhs_pure_literature_reference(~, y, p)
 %   Canonical SHA-256  : 21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14
 %   Parameter values   : models/literature_reference/parameters.json (Tables 1-2, locked, no refitting)
 %
-%   Regenerate with: addpath('matlab/codegen','matlab/provenance'); generate_pure_literature_reference
+%   Regenerate with: addpath('matlab/codegen','matlab/src/provenance'); generate_pure_literature_reference
 %   Hand edits are detected by test_codegen_and_provenance (regeneration sync test).
 %
 %   Literal deterministic translation of:

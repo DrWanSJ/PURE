@@ -90,8 +90,8 @@
     "parameters": "models/literature_reference/parameters.json",
     "rhs_matlab": "matlab/generated/rhs_pure_literature_reference.m",
     "params_loader": "matlab/generated/pure_literature_reference_params.m",
-    "simulator": "matlab/simulate/simulate_pure_literature_reference.m",
-    "benchmark": "matlab/simulate/run_fig4_benchmark.m",
+    "simulator": "matlab/src/simulate/simulate_pure_literature_reference.m",
+    "benchmark": "matlab/src/simulate/run_fig4_benchmark.m",
     "tests": "matlab/tests/test_pure_literature_reference.m"
   }
 }

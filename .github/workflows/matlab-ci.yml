@@ -1,7 +1,7 @@
 # =====================================================================
 # DRAFT WORKFLOW — NOT VERIFIED (do not trust until human-validated)
 #
-# docs/audit_status.md records CI = not_verified. This file has never run:
+# docs/audit/audit_status.md records CI = not_verified. This file has never run:
 # MATLAB on GitHub-hosted runners requires a MATLAB license/setup
 # (e.g. matlab-actions/setup-matlab + license, or MATLAB Batch for public
 # repos). A human must confirm licensing/runner availability, then remove

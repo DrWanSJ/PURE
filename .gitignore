@@ -5,8 +5,23 @@ Gene Expression Dynamics In a Cell-Free System.md
 Modeling Cell-Free RNA and Protein Systhesis with Minimal Systems.pdf
 Modeling Cell-Free RNA and Protein Systhesis with Minimal Systems.md
 
+# Ordinary simulation run outputs: reproducible from their manifests, never
+# versioned. Only results/baselines/ and results/releases/ are committed.
+results/runs/*
+!results/runs/README.md
+
+# Scratch test/run logs at the repo root (deliberately committed evidence
+# lives in docs/audit/logs/)
+/logs/
+
 # MATLAB / OS artifacts
 *.asv
+*.autosave
 *.mex*
 matlab/crash_dump.*
 heapdump*
+.DS_Store
+Thumbs.db
+
+# Future frontend/service build artifacts
+node_modules/
