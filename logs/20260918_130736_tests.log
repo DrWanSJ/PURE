@@ -1,0 +1,88 @@
+==== PURE B1 run_all_tests | 2026-09-18 13:07:36 | MATLAB 25.2.0.3177638 (R2025b) Update 5 ====
+
+--- 1. unit tests (matlab/tests) ---
+正在运行 test_codegen_and_provenance
+.generated C:\Users\sean\AppData\Local\Temp\tp6c186503_7a85_4535_897f_f595e9300a81.m (consistency check skipped)
+....
+已完成 test_codegen_and_provenance
+__________
+
+正在运行 test_pure_literature_reference
+.........
+已完成 test_pure_literature_reference
+__________
+
+正在运行 test_release_preflight
+generated C:\Users\sean\AppData\Local\Temp\tp30b9e711_27e1_4d7c_8586_84aaddf59291.m (consistency check skipped)
+release_preflight (development mode):
+  [ok ] git_in_repo                in_repo=1
+  [ok ] head_resolvable            HEAD = fccf621fc28b7475e8ad6da1152defdf8549baae
+  [ok ] git_dirty_determined       git_dirty=true (recorded; new-run manifests must carry it; dirty does not block development)
+  [ok ] hashes_computable          definition=21329848a008 parameters=5f6473b38a7d
+  [ok ] generated_in_sync          checked-in generated RHS == regenerated output
+  [ok ] legacy_provenance_labels   legacy files carry legacy_unbound_to_execution_commit and never claim provenance_bound
+  [ok ] manifests_wellformed       1 manifest(s) checked; 
+  [ok ] evidence_guards            pending/false evidence levels are intact; flipping them requires editing this check too
+  [ok ] tests_evidence_log         2 test log file(s) under logs/ (AI-written tests, not human review)
+  => release_ready: 0
+.generated C:\Users\sean\AppData\Local\Temp\tpfcd6935d_e1f9_4a8c_9f8f_1241a6507fa9.m (consistency check skipped)
+release_preflight (release mode):
+  [ok ] git_in_repo                in_repo=1
+  [ok ] head_resolvable            HEAD = fccf621fc28b7475e8ad6da1152defdf8549baae
+  [FAIL] git_dirty                  git_dirty=true (dirty tree blocks release-ready)
+  [ok ] hashes_computable          definition=21329848a008 parameters=5f6473b38a7d
+  [ok ] generated_in_sync          checked-in generated RHS == regenerated output
+  [ok ] legacy_provenance_labels   legacy files carry legacy_unbound_to_execution_commit and never claim provenance_bound
+  [ok ] manifests_wellformed       1 manifest(s) checked; 
+  [ok ] evidence_guards            pending/false evidence levels are intact; flipping them requires editing this check too
+  [ok ] tests_evidence_log         2 test log file(s) under logs/ (AI-written tests, not human review)
+  => release_ready: 0
+...
+已完成 test_release_preflight
+__________
+
+test_codegen_and_provenance/test_sha256_known_vector                   passed=1 failed=0 (0.40 s)
+test_codegen_and_provenance/test_generator_output_in_sync              passed=1 failed=0 (0.05 s)
+test_codegen_and_provenance/test_generated_matches_baseline_snapshot   passed=1 failed=0 (0.13 s)
+test_codegen_and_provenance/test_stoichiometry_matches_code            passed=1 failed=0 (0.02 s)
+test_codegen_and_provenance/test_git_state_live                        passed=1 failed=0 (0.25 s)
+test_pure_literature_reference/test_parameter_lock_tables_1_and_2      passed=1 failed=0 (0.03 s)
+test_pure_literature_reference/test_rate_law_spot_values               passed=1 failed=0 (0.08 s)
+test_pure_literature_reference/test_initial_rate_sanity                passed=1 failed=0 (0.03 s)
+test_pure_literature_reference/test_balance_derivative_identities_random_states passed=1 failed=0 (0.01 s)
+test_pure_literature_reference/test_finite_difference_short_step       passed=1 failed=0 (0.20 s)
+test_pure_literature_reference/test_observable_mapping                 passed=1 failed=0 (0.07 s)
+test_pure_literature_reference/test_ktl_rna_derived_value              passed=1 failed=0 (0.02 s)
+test_pure_literature_reference/test_short_run_mass_balance_and_nonnegativity passed=1 failed=0 (0.05 s)
+test_pure_literature_reference/test_repeatability_deterministic        passed=1 failed=0 (0.03 s)
+test_release_preflight/test_development_checks_all_pass                passed=1 failed=0 (0.22 s)
+test_release_preflight/test_dirty_tree_blocks_release_ready            passed=1 failed=0 (0.18 s)
+test_release_preflight/test_evidence_levels_locked_values              passed=1 failed=0 (0.01 s)
+test_release_preflight/test_legacy_results_cannot_claim_provenance_bound passed=1 failed=0 (0.01 s)
+unit tests: 18 passed, 0 failed
+
+--- 2. benchmark smoke test ---
+smoke test: PASS (600 s @ 6.8 nM; min state 0 uM; max scaled balance residual 3.183e-15)
+
+--- 3. release preflight (development mode) ---
+generated C:\Users\sean\AppData\Local\Temp\tp0cb84e6d_48ba_4bab_adec_6a195483e899.m (consistency check skipped)
+release_preflight (development mode):
+  [ok ] git_in_repo                in_repo=1
+  [ok ] head_resolvable            HEAD = fccf621fc28b7475e8ad6da1152defdf8549baae
+  [ok ] git_dirty_determined       git_dirty=true (recorded; new-run manifests must carry it; dirty does not block development)
+  [ok ] hashes_computable          definition=21329848a008 parameters=5f6473b38a7d
+  [ok ] generated_in_sync          checked-in generated RHS == regenerated output
+  [ok ] legacy_provenance_labels   legacy files carry legacy_unbound_to_execution_commit and never claim provenance_bound
+  [ok ] manifests_wellformed       1 manifest(s) checked; 
+  [ok ] evidence_guards            pending/false evidence levels are intact; flipping them requires editing this check too
+  [ok ] tests_evidence_log         2 test log file(s) under logs/ (AI-written tests, not human review)
+  => release_ready: 0
+preflight release_ready (release mode): 0
+
+==== run_all_tests summary ====
+    unit_tests_passed: 18
+    unit_tests_failed: 0
+           smoke_test: 'passed'
+            preflight: [1×1 struct]
+
+log file: C:\Users\sean\Desktop\SynCell\logs\20260918_130736_tests.log

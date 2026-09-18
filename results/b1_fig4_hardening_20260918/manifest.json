@@ -1,0 +1,23 @@
+{
+  "run_id": "b1_fig4_hardening_20260918",
+  "model_id": "PURE_literature_reference",
+  "model_definition_hash": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14",
+  "parameter_hash": "5f6473b38a7d2bfdb021aa29c36c818483056bf28ef45f9d6a442530b687699c",
+  "input_hash": "29d40f9fbf29c8aa6cdb7152ec8f4b8ca505dfc9ced30b38c2c902eb75660755",
+  "git_commit": "fccf621fc28b7475e8ad6da1152defdf8549baae",
+  "git_dirty": false,
+  "matlab_version": "25.2.0.3177638 (R2025b) Update 5",
+  "solver": "ode15s",
+  "solver_options": {
+    "RelTol": 1E-9,
+    "AbsTol": 1E-12,
+    "t_final_s": 14400,
+    "output_dt_s": 10
+  },
+  "command": "run_fig4_benchmark('RunId', 'b1_fig4_hardening_20260918')",
+  "created_at": "2026-09-18 13:06:45",
+  "execution_status": "completed",
+  "scientific_status": "passed_all_qc",
+  "hash_algorithm": "SHA-256 (FIPS 180-4), lowercase hex",
+  "provenance_note": "git_commit/git_dirty read live via pure_git_state (git rev-parse HEAD; git status --porcelain); hashes = SHA-256 of models/literature_reference/{model_definition.json,parameters.json} and of the canonical JSON of the run inputs"
+}
