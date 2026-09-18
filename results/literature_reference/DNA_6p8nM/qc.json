@@ -1,4 +1,6 @@
 {
+  "provenance_status": "legacy_unbound_to_execution_commit",
+  "provenance_note": "AI-baseline run produced before the provenance system existed; session records point to commit ee3dedcfac3ceb51015836756a22a347c9fecd7c but this is NOT cryptographically bound; numerical values are untouched",
   "execution_status": "completed",
   "scientific_status": "passed_all_qc",
   "model_id": "PURE_literature_reference",

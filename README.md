@@ -39,11 +39,21 @@ environment_lock.md            locked environment and source hashes
 # tests (equation-level verification)
 matlab -batch "r = runtests('matlab/tests/test_pure_literature_reference.m'); assert(all([r.Passed]))"
 # full benchmark: three DNA conditions (0.34 / 1.7 / 6.8 nM), 0-4 h
-matlab -batch "addpath('matlab/simulate','matlab/generated'); run_fig4_benchmark"
+matlab -batch "addpath('matlab/simulate','matlab/generated','matlab/provenance'); run_fig4_benchmark"
 ```
 
-Outputs land in `results/literature_reference/` (trajectory.csv, rates.csv,
-qc.json per condition, `fig4_reproduction.png`, digitization comparison).
+New runs write `results/<run_id>/` with `manifest.json` (live git commit,
+dirty-tree status, SHA-256 of model definition / parameters / inputs).
+
+## Results: legacy vs provenance-bound (read before citing numbers)
+
+| location | status | meaning |
+| --- | --- | --- |
+| `results/literature_reference/` | `provenance_status = "legacy_unbound_to_execution_commit"` | AI-baseline results produced **before** the provenance system existed (session records point to commit `ee3dedc`; NOT cryptographically bound). Numerical values are frozen and untouched. |
+| `results/<run_id>/` (new runs) | `provenance_status = "provenance_bound"`, `manifest.json` present | git commit read live via `git rev-parse HEAD` at run time, live dirty-tree check, SHA-256 hashes of model definition, parameter file and run inputs. |
+
+Legacy results are never overwritten and never back-filled with execution
+provenance that cannot be proven.
 
 ## Scope statement
 

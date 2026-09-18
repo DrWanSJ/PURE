@@ -1,37 +1,62 @@
-function run_fig4_benchmark()
+function run_fig4_benchmark(varargin)
 %RUN_FIG4_BENCHMARK B1 benchmark: reproduce Mavelli 2015 Fig. 4 (calculated curves).
 %
-%   RUN_FIG4_BENCHMARK()
+%   RUN_FIG4_BENCHMARK('RunId', RUN_ID)
 %
 %   Runs the PURE_literature_reference model (literal translation of
 %   Mavelli, Marangoni, Stano 2015, Bull Math Biol 77:1185-1212,
 %   DOI 10.1007/s11538-015-0082-8) at the three Fig. 4 DNA template
-%   concentrations (0.34 / 1.7 / 6.8 nM) for 0-4 h with ode15s, and writes:
+%   concentrations (0.34 / 1.7 / 6.8 nM) for 0-4 h with ode15s.
 %
-%     results/literature_reference/DNA_0p34nM/{trajectory.csv,rates.csv,qc.json}
-%     results/literature_reference/DNA_1p7nM/ {...}
-%     results/literature_reference/DNA_6p8nM/ {...}
-%     results/literature_reference/fig4_reproduction.png
-%     results/literature_reference/observables_mRNA_protein.png
-%     results/literature_reference/benchmark_summary.json
+%   Provenance (audit hardening): every run writes
+%     results/<run_id>/manifest.json
+%   with the LIVE git commit (git rev-parse HEAD), a live dirty-tree check
+%   and SHA-256 hashes of the canonical model definition, the parameter
+%   file and the run inputs. Legacy results in results/literature_reference/
+%   predate this system and are labeled
+%   provenance_status = "legacy_unbound_to_execution_commit"; they are
+%   never overwritten and never back-filled with execution provenance.
 %
-%   Validation layering (no original-author numerical trajectory exists in
-%   the repo; only the raster Fig. 4):
-%     1. equation-level verification  -> matlab/tests/test_pure_literature_reference.m
+%   Outputs (per run):
+%     results/<run_id>/DNA_0p34nM/{trajectory.csv,rates.csv,qc.json}
+%     results/<run_id>/DNA_1p7nM/ {...}
+%     results/<run_id>/DNA_6p8nM/ {...}
+%     results/<run_id>/fig4_reproduction.png
+%     results/<run_id>/observables_mRNA_protein.png
+%     results/<run_id>/benchmark_summary.json
+%     results/<run_id>/manifest.json
+%
+%   Validation layering:
+%     1. equation-level verification  -> matlab/tests/
 %     2. internal numerical/QC checks -> conservation Eqs. (15)-(19), nonnegativity,
-%        repeatability, solver-tolerance study, in this script
-%     3. qualitative/approximate Fig. 4 reproduction -> quantitative anchors from
-%        the paper TEXT (protein yield 0.58 uM at 4 h for 6.8 nM, Fig. 5;
-%        energy split Q_TX/Q_TL/Q_RS = 74/15/11 %, Sect. 5) + shape checks.
-%   Experimental dotted curves are NOT overlaid and NOT digitized here
-%   (no machine-readable Stoegbauer 2012 data in the repo).
+%        repeatability, solver-tolerance study (this script)
+%     3. Fig. 4 comparison            -> paper-text anchors (independent) and the
+%        raster digitization (matlab/simulate/digitize_fig4.m) whose calculated-vs-
+%        experimental cluster assignment is SIMULATION-ASSISTED and therefore
+%        NON-INDEPENDENT (validation_status = non_independent_assignment); see
+%        docs/audit_status.md and docs/manual_fig4_audit_protocol.md.
+%   Experimental dotted curves are NOT overlaid and the experimental curves were
+%   NOT digitized (no machine-readable Stoegbauer 2012 data in the repo).
 
 d    = fileparts(mfilename('fullpath'));   % .../matlab/simulate
 root = fileparts(fileparts(d));
 addpath(fullfile(root, 'matlab', 'generated'));
 addpath(fullfile(root, 'matlab', 'simulate'));
+addpath(fullfile(root, 'matlab', 'provenance'));
 
-outdir = fullfile(root, 'results', 'literature_reference');
+ip = inputParser;
+ip.addParameter('RunId', '', @(s) ischar(s) || isstring(s));
+ip.parse(varargin{:});
+run_id = ip.Results.RunId;
+if isempty(run_id)
+    run_id = sprintf('b1_fig4_%s', char(datetime('now', 'Format', 'yyyyMMdd_HHmmssSSS')));
+end
+
+run_inputs = struct('dna_uM', {[0.00034, 0.0017, 0.0068]}, ...
+    't_final_s', 14400, 'output_dt_s', 10);
+prov = pure_run_provenance(root, run_inputs);
+
+outdir = fullfile(root, 'results', run_id);
 if ~exist(outdir, 'dir'); mkdir(outdir); end
 
 p0 = pure_literature_reference_params();
@@ -52,6 +77,12 @@ res = cell(nCond, 1);
 summary = struct();
 summary.model_id = p0.meta.model_id;
 summary.source   = 'Mavelli_2015';
+summary.run_id   = run_id;
+summary.provenance_status = 'provenance_bound';
+summary.git_commit = prov.git_commit;
+summary.git_dirty = prov.git_dirty;
+summary.model_definition_hash = prov.model_definition_hash;
+summary.parameter_hash = prov.parameter_hash;
 summary.generated_by = 'run_fig4_benchmark.m';
 summary.date     = char(datetime('now', 'Format', 'yyyy-MM-dd HH:mm:ss'));
 summary.solver   = 'ode15s';
@@ -126,6 +157,12 @@ for k = 1:nCond
     end
     qcStruct.model_id = 'PURE_literature_reference';
     qcStruct.source   = 'Mavelli_2015';
+    qcStruct.run_id   = run_id;
+    qcStruct.provenance_status = 'provenance_bound';
+    qcStruct.git_commit = prov.git_commit;
+    qcStruct.git_dirty  = prov.git_dirty;
+    qcStruct.model_definition_hash = prov.model_definition_hash;
+    qcStruct.parameter_hash = prov.parameter_hash;
     qcStruct.solver   = 'ode15s';
     qcStruct.time_unit = 's';
     qcStruct.concentration_unit = 'uM';
@@ -247,7 +284,37 @@ fid = fopen(fullfile(outdir, 'benchmark_summary.json'), 'w');
 fprintf(fid, '%s', jsonencode(summary, 'PrettyPrint', true));
 fclose(fid);
 
+% ---- run manifest (audit hardening: provenance-bound runs) ----
+all_qc_ok = all(cellfun(@(c) strcmp(c.scientific_status, 'passed_all_qc'), ...
+    summary.conditions));
+manifest = struct();
+manifest.run_id   = run_id;
+manifest.model_id = prov.model_id;
+manifest.model_definition_hash = prov.model_definition_hash;
+manifest.parameter_hash = prov.parameter_hash;
+manifest.input_hash = prov.input_hash;
+manifest.git_commit = prov.git_commit;
+manifest.git_dirty  = prov.git_dirty;
+manifest.matlab_version = prov.matlab_version;
+manifest.solver = 'ode15s';
+manifest.solver_options = struct('RelTol', 1e-9, 'AbsTol', 1e-12, ...
+    't_final_s', run_inputs.t_final_s, 'output_dt_s', run_inputs.output_dt_s);
+manifest.command = sprintf("run_fig4_benchmark('RunId', '%s')", run_id);
+manifest.created_at = char(datetime('now', 'Format', 'yyyy-MM-dd HH:mm:ss'));
+manifest.execution_status = 'completed';
+manifest.scientific_status = ternary(all_qc_ok, 'passed_all_qc', 'failed_qc');
+manifest.hash_algorithm = prov.hash_algorithm;
+manifest.provenance_note = ['git_commit/git_dirty read live via pure_git_state ' ...
+    '(git rev-parse HEAD; git status --porcelain); hashes = SHA-256 of ' ...
+    'models/literature_reference/{model_definition.json,parameters.json} and of the ' ...
+    'canonical JSON of the run inputs'];
+fid = fopen(fullfile(outdir, 'manifest.json'), 'w');
+fprintf(fid, '%s', jsonencode(manifest, 'PrettyPrint', true));
+fclose(fid);
+
 fprintf('\nBenchmark finished. Outputs in %s\n', outdir);
+fprintf('Run manifest: results/%s/manifest.json (git %s, dirty=%s)\n', ...
+    run_id, manifest.git_commit, num2str(manifest.git_dirty));
 end % function
 
 % -------------------------------------------------------------------------
@@ -314,4 +381,9 @@ s = struct();
 for i = 1:numel(names)
     s.(names{i}) = values(i);
 end
+end
+
+% -------------------------------------------------------------------------
+function out = ternary(cond, a, b)
+if cond; out = a; else; out = b; end
 end
