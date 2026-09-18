@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "model_id": "PURE_literature_reference",
+  "canonical": true,
+  "purpose": "Single machine-readable source for code generation of the B1 benchmark RHS. The scientific content is the literal translation of Mavelli, Marangoni, Stano (2015), Bull Math Biol 77:1185-1212, DOI 10.1007/s11538-015-0082-8, Sect. 2, Eqs. (1)-(29). Changing anything here changes the generated model; the parameter VALUES live in parameters.json and are equally locked.",
+  "no_refitting": true,
+  "source": {
+    "authors": "Mavelli, Marangoni, Stano",
+    "year": 2015,
+    "doi": "10.1007/s11538-015-0082-8",
+    "audited_pages": "5-14 of A_Simple_Protein_Synthesis_Model_PURE_normalized.pdf"
+  },
+  "units": {"time": "s", "concentration": "uM", "rate": "uM/s"},
+  "parameters_ref": "parameters.json",
+  "fixed_inputs": {
+    "TXcat": {"value_ref": "parameters.json:parameters.TXcat", "role": "catalyst of Eq. (5)"},
+    "RScat": {"value_ref": "parameters.json:parameters.RScat", "role": "catalyst of Eq. (8)"},
+    "ENcat": {"value_ref": "parameters.json:parameters.ENcat", "role": "catalyst of Eq. (14)"},
+    "DNA":   {"value_ref": "per-run (Fig. 4: 0.00034 / 0.0017 / 0.0068 uM)", "role": "template of Eq. (5)"}
+  },
+  "intermediates": [
+    {"id": "n_NTP", "codegen": "p.n_NTP", "value": 4,   "paper_equation": "Sect. 2 / Eq. (15)"},
+    {"id": "n_A",   "codegen": "p.n_A",   "value": 20,  "paper_equation": "Sect. 2 / Eq. (16)"},
+    {"id": "n_T",   "codegen": "p.n_T",   "value": 46,  "paper_equation": "Sect. 2 / Eq. (17)"},
+    {"id": "fTA",   "codegen": "p.n_T/p.n_A", "value": 2.3, "paper_equation": "Sect. 2.2 (n_T/n_A = 46/20)"}
+  ],
+  "states": [
+    {"index": 1,  "id": "NTP",   "unit": "uM", "paper_ode": "(20)", "doc": "average NTP concentration (per nucleotide species)"},
+    {"index": 2,  "id": "NXP",   "unit": "uM", "paper_ode": "(21)", "doc": "overall exhausted-nucleotide pool (NDP + NMP pooled)"},
+    {"index": 3,  "id": "nt",    "unit": "uM", "paper_ode": "(22)", "doc": "overall polymerized nucleotides (mRNA in monomer units)"},
+    {"index": 4,  "id": "A",     "unit": "uM", "paper_ode": "(23)", "doc": "average amino-acid concentration (per species)"},
+    {"index": 5,  "id": "T",     "unit": "uM", "paper_ode": "(24)", "doc": "average tRNA concentration (per species)"},
+    {"index": 6,  "id": "AT",    "unit": "uM", "paper_ode": "(24)", "doc": "average aminoacyl-tRNA concentration (per species)"},
+    {"index": 7,  "id": "a",     "unit": "uM", "paper_ode": "(25)", "doc": "overall polymerized amino acids (protein monomer units)"},
+    {"index": 8,  "id": "CP",    "unit": "uM", "paper_ode": "(26)", "doc": "creatine phosphate"},
+    {"index": 9,  "id": "C",     "unit": "uM", "paper_ode": "(26)", "doc": "creatine"},
+    {"index": 10, "id": "TLcat", "unit": "uM", "paper_ode": "(27)", "doc": "fictitious effective translation catalyst"}
+  ],
+  "rates": [
+    {"index": 1, "id": "V_TX",     "unit": "uM/s", "paper_equation": "(5)",  "reaction": "(2)", "doc": "transcription polymerization (TXcat, DNA template, NTP)",
+     "codegen": "p.k_TX * p.TXcat * (p.DNA/(p.K_TX_DNA + p.DNA)) * (NTP/(p.K_TX_NTP + NTP))"},
+    {"index": 2, "id": "V_nt_deg", "unit": "uM/s", "paper_equation": "(6)",  "reaction": "(4)", "doc": "polymerized-nucleotide (mRNA) degradation, pseudo-first order",
+     "codegen": "p.k_nt_deg * nt"},
+    {"index": 3, "id": "V_RS",     "unit": "uM/s", "paper_equation": "(8)",  "reaction": "(7)", "doc": "aminoacylation (RScat; multiplicity factor fTA*T)",
+     "codegen": "p.k_RS * p.RScat * (A/(p.K_RS_A + A)) * (fTA*T/(p.K_RS_T + fTA*T)) * (NTP/(p.K_RS_NTP + NTP))"},
+    {"index": 4, "id": "V_TL",     "unit": "uM/s", "paper_equation": "(10)", "reaction": "(9)", "doc": "translation elongation (TLcat, nt template; single rectangular-hyperbolic NTP factor by paper Sect. 2.3 even though each event consumes 2 NTP)",
+     "codegen": "p.k_TL * TLcat * (nt/(p.K_TL_nt + nt)) * (fTA*AT/(p.K_TL_AT + fTA*AT)) * (NTP/(p.K_TL_NTP + NTP))"},
+    {"index": 5, "id": "V_TL_deg", "unit": "uM/s", "paper_equation": "(12)", "reaction": "(11)", "doc": "TL machinery decay, pseudo-first order",
+     "codegen": "p.k_TL_deg * TLcat"},
+    {"index": 6, "id": "V_EN",     "unit": "uM/s", "paper_equation": "(14)", "reaction": "(13)", "doc": "energy regeneration (CP + NXP -> C + NTP)",
+     "codegen": "p.k_EN * p.ENcat * (CP/(p.K_EN_CP + CP)) * (NXP/(p.K_EN_NXP + NXP))"}
+  ],
+  "state_codegen": [
+    {"index": 1,  "id": "NTP",   "paper_ode": "(20)", "codegen": "(-V_TX - 2*V_TL - V_RS + V_EN)/n_NTP"},
+    {"index": 2,  "id": "NXP",   "paper_ode": "(21)", "codegen": "2*V_TL + V_RS - V_EN"},
+    {"index": 3,  "id": "nt",    "paper_ode": "(22)", "codegen": "V_TX - V_nt_deg"},
+    {"index": 4,  "id": "A",     "paper_ode": "(23)", "codegen": "-V_RS/n_A"},
+    {"index": 5,  "id": "T",     "paper_ode": "(24)", "codegen": "(-V_RS + V_TL)/n_T"},
+    {"index": 6,  "id": "AT",    "paper_ode": "(24)", "codegen": "(V_RS - V_TL)/n_T"},
+    {"index": 7,  "id": "a",     "paper_ode": "(25)", "codegen": "V_TL"},
+    {"index": 8,  "id": "CP",    "paper_ode": "(26)", "codegen": "-V_EN"},
+    {"index": 9,  "id": "C",     "paper_ode": "(26)", "codegen": "V_EN"},
+    {"index": 10, "id": "TLcat", "paper_ode": "(27)", "codegen": "-V_TL_deg"}
+  ],
+  "stoichiometry": {
+    "note": "rows = states (canonical order), columns = rates [V_TX, V_nt_deg, V_RS, V_TL, V_TL_deg, V_EN]; entry = net molecules of the state produced per rate event BEFORE the species divisor (average-species normalization). The generator verifies that the state_codegen expressions agree with (S*rates)./divisor at random states; test_stoichiometry_matches_code re-verifies on every test run.",
+    "rates_order": ["V_TX", "V_nt_deg", "V_RS", "V_TL", "V_TL_deg", "V_EN"],
+    "species_order": ["NTP", "NXP", "nt", "A", "T", "AT", "a", "CP", "C", "TLcat"],
+    "matrix": [
+      [-1,  0, -1, -2,  0,  1],
+      [ 0,  0,  1,  2,  0, -1],
+      [ 1, -1,  0,  0,  0,  0],
+      [ 0,  0, -1,  0,  0,  0],
+      [ 0,  0, -1,  1,  0,  0],
+      [ 0,  0,  1, -1,  0,  0],
+      [ 0,  0,  0,  1,  0,  0],
+      [ 0,  0,  0,  0,  0, -1],
+      [ 0,  0,  0,  0,  0,  1],
+      [ 0,  0,  0,  0, -1,  0]
+    ],
+    "species_divisor": {
+      "NTP": "n_NTP",
+      "A":   "n_A",
+      "T":   "n_T",
+      "AT":  "n_T"
+    }
+  },
+  "observables": [
+    {"id": "nt",      "definition": "polymerized nucleotides (Fig. 4 top-panel quantity)", "mapping": "state nt"},
+    {"id": "a",       "definition": "polymerized amino acids (Fig. 4 bottom-panel quantity)", "mapping": "state a"},
+    {"id": "mRNA",    "definition": "mRNA molecule concentration", "mapping": "nt/(3*L)", "L_ref": "parameters.json:protein.length_aa_L (=238)"},
+    {"id": "protein", "definition": "protein molecule concentration", "mapping": "a/L", "L_ref": "parameters.json:protein.length_aa_L (=238)"}
+  ],
+  "generation": {
+    "generator": "matlab/codegen/generate_pure_literature_reference.m",
+    "output": "matlab/generated/rhs_pure_literature_reference.m",
+    "baseline_snapshot": "matlab/generated/rhs_pure_literature_reference_baseline_snapshot.m",
+    "deterministic": true,
+    "note": "output embeds the SHA-256 of this file; regeneration must be byte-stable (idempotence test)"
+  }
+}
