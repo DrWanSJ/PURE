@@ -64,3 +64,29 @@ This benchmark model is a **literal literature reference**. Its effective
 Michaelis–Menten rate laws must not be read as validated stochastic propensity
 functions, and nothing here is the project's working model
 (`PURE_resource_core`): no parameters were refitted, no mechanisms added.
+
+## Project status (honest, 2026-09-18)
+
+> **PURE_literature_reference B1 benchmark: engineering/audit hardening in
+> progress; scientific human audit pending.**
+
+What exists: locked sources, literal equation transcription, a real
+single-source code-generation chain, an equation-level test suite (AI-written,
+18/18 passing, logs in `logs/`), provenance-bound run manifests, preflight
+guards, and executed benchmark runs with QC.
+
+What this is **not** (none of these claims may be made yet):
+
+- **not human-verified** — no human scientific audit of the transcription,
+  the tests, or the Fig. 4 digitization has been performed
+  (`docs/audit_status.md`, `docs/mutation_test_protocol.md`,
+  `docs/manual_fig4_audit_protocol.md` define the pending human work);
+- **not experimentally validated** — no machine-readable Stögbauer 2012 data
+  exist here; `experimental_data_validation = false`;
+- **not "fully reproduced"** in a strong sense — the Fig. 4 raster
+  digitization match is simulation-assisted (`non_independent_assignment`)
+  and counts only as an envelope check; the independent evidence so far is
+  the paper-text anchor match;
+- the following tasklist items have **not been started**: PURE_resource_core,
+  nondimensionalization, QSSA/reduction, stability analysis, flow frontend,
+  SSA, MCP. CI is a draft and `not_verified`.
