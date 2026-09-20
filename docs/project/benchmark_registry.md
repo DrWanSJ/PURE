@@ -13,7 +13,7 @@ deterministic coarse-grained PURE model of
 | --- | --- | --- |
 | `bibliography_verified` | **true** | Title, authors, journal, volume/pages, year, DOI read from the source document itself; hashes locked in `environment_lock.md` and `data/provenance.csv` |
 | `equations_verified` | **true** | Sect. 2 transcribed literally (first pass from the text conversion), then **audited page-by-page (pages 5–14) against the decrypted normalized PDF (2026-09-18): Eqs. (1)–(29), Table 1 and Table 2 confirmed identical — no discrepancies**; double-entry parameter lock in the test suite; balance-derivative identities and finite-difference check pass (see `docs/validation/benchmark_v0.md`) |
-| `reproduced` | **true (with the evidence-level split below)** | All three Fig. 4 DNA conditions actually executed with MATLAB R2025b `ode15s`; 9/9 baseline tests + hardening tests pass; QC per condition `passed_all_qc`; paper-text anchors matched (independent); Fig. 4 raster digitization match is **non-independent** (simulation-assisted assignment) and counts only as an envelope check — see verification layering |
+| `reproduced` | **true (with the evidence-level split below)** | All three Fig. 4 DNA conditions executed with MATLAB R2025b `ode15s`; 9/9 baseline tests + hardening tests pass; QC per condition `passed_all_qc`; paper-text anchors matched; on 2026-09-20 the user also completed a 48-point manual visual review of the calculated Fig. 4 curves and reran all three conditions with QC passing. The human reading was non-blind and the local rerun was not Git-commit-bound, so these are recorded separately rather than promoted to independent blind evidence. |
 
 ## Source-input completeness (tasklist D1 checklist)
 
@@ -55,7 +55,7 @@ No original-author numerical trajectory exists (only the raster Fig. 4). Therefo
    (Eqs. (15)–(19)) hold to scaled residuals ≈ 4–6e-15; all states nonnegative with no
    clipping; no NaN/Inf; three repeat runs bitwise identical; tolerance study
    (RelTol 1e-9→1e-11, AbsTol 1e-12→1e-14) changes trajectories by ≤ 3.8e-9 (scaled).
-3. **Fig. 4 comparison — TWO tiers, kept strictly separate (audit hardening):**
+3. **Fig. 4 comparison — three evidence streams, kept strictly separate:**
    - **Tier 3a (independent, text anchors):** protein(4h) at 6.8 nM = 0.589 µM vs paper
      0.58 µM (+1.5 %); energy split 72.0/15.4/12.5 % vs 74/15/11 (≤ 2 pp); φ_RS(1 min)
      87.1 % vs ~85 %; RS minimum ≈ 280 s vs ~4 min; φ_TL+φ_RS(32 min) 35.2 % vs ~36 %;
@@ -69,7 +69,16 @@ No original-author numerical trajectory exists (only the raster Fig. 4). Therefo
      ≤ 1.3 % of full scale) are an envelope/consistency observation and **must not be
      cited as independent reproduction acceptance evidence**. Raw clusters are preserved
      in `fig4_digitized_all_clusters.csv` for independent re-assignment.
-   - Independent validation requires the blind human protocol
+   - **Tier 3c (human visual review, non-blind; 2026-09-20):** the user manually read all
+     48 calculated-curve points (3 DNA × 2 panels × 8 times at 0.5 h spacing) and stored them in
+     `data/manual_audit/fig4_human_digitization_sean.csv`. The readings support the reproduced
+     curves' ordering, shape, and magnitude. However, the auditor had already seen simulation
+     outputs and did not declare per-point numerical reading errors, so this is **not** the
+     simulation-blind independent audit defined by `docs/audit/manual_fig4_audit_protocol.md`.
+     The same D4 session reran `run_fig4_benchmark('RunId','d4_human_check')`; all three
+     conditions passed numerical QC, but the local downloaded directory had no readable Git
+     metadata, so the rerun is not commit-bound.
+   - Independent validation still requires the blind human protocol
      (`docs/audit/manual_fig4_audit_protocol.md`); until then
      `fig4_independent_human_audit = pending_human_audit`.
    - The digitized values are NOT experimental data (Stögbauer 2012 data absent).
@@ -89,6 +98,10 @@ No original-author numerical trajectory exists (only the raster Fig. 4). Therefo
   (`results/baselines/b1_mavelli2015/fig4_digitized_comparison.csv`). Reading precision is
   ~1–2 % of each panel's full scale; the digitized values are an approximation of a raster
   figure, not experimental data.
+- **Human manual reading recorded (2026-09-20).** All 48 approximate Fig. 4 calculated-curve
+  readings are stored in `data/manual_audit/fig4_human_digitization_sean.csv`. They are marked
+  `simulation_hidden_during_reading=false`; no numerical reading-error bars were declared, so
+  they are D4 human-review evidence rather than a formal blind digitization.
 - **No refitting.** Table 2 central values used as-is; TLcat = 2.2 µM (central value of
   2.2 ± 0.3); no Hill coefficient; no ATP/GTP split; no additional states.
 

@@ -1,6 +1,6 @@
 # benchmark_v0.md — B1 `PURE_literature_reference` execution and QC report
 
-Date: 2026-09-18. Environment: MATLAB R2025b Update 5 (25.2.0.3177638), Windows 10 x64
+Date: 2026-09-18; human D4 review added 2026-09-20. Environment: MATLAB R2025b Update 5 (25.2.0.3177638), Windows 10 x64
 (see `environment_lock.md`). All internal times in **seconds**, all concentrations in **µM**;
 figures display hours.
 
@@ -83,9 +83,21 @@ sim 140.1/93.1/34.6 µM. **However**, where the continuous (calculated) and dott
 nearest-to-simulation tracking — `validation_status = non_independent_assignment` — so
 this comparison is **circular and must not be cited as reproduction acceptance evidence
 on its own**. Raw clusters are preserved (`fig4_digitized_all_clusters.csv`) for
-independent re-assignment; the blind human protocol
-(`docs/audit/manual_fig4_audit_protocol.md`) is the sanctioned independent check and is
-**`pending_human_audit`**.
+independent re-assignment.
+
+**Tier 3c — human visual review, non-blind (2026-09-20):** the user manually read all 48
+calculated-curve points at 0.5 h intervals and stored them in
+`data/manual_audit/fig4_human_digitization_sean.csv`. The readings support the same curve
+ordering, shape, and magnitude as the simulation. Because the auditor had already seen
+simulation outputs and did not declare per-point numerical reading errors, this does **not**
+satisfy the simulation-blind independent protocol. In the same D4 session the user reran
+`run_fig4_benchmark('RunId','d4_human_check')`; all three conditions reported
+`scientific_status = passed_all_qc`. The local run had
+`git_commit = unavailable_git_not_found` and `git_dirty = unknown`, so it is not
+commit-bound and is not committed under `results/runs/`.
+
+The blind human protocol (`docs/audit/manual_fig4_audit_protocol.md`) remains the sanctioned
+independent raster check and is **`pending_human_audit`**.
 
 ### 6. Is the observable mapping correct?
 
@@ -146,9 +158,11 @@ tests + hardening tests pass (AI-written tests, not human review); per-condition
 `passed_all_qc` (nonnegativity, mass balance ≈ 4e-15 scaled, repeatability exact,
 tolerance convergence ≤ 3.8e-9); independent paper-text anchors reproduced (+1.5 % protein
 yield at 6.8 nM; energy split within 2 pp; φ milestones within 2 %). The Fig. 4 raster
-digitization match is recorded separately as **`non_independent_assignment`** and is not
-part of the acceptance evidence; `fig4_independent_human_audit = pending_human_audit`;
-`experimental_data_validation = false`.
+digitization match is recorded separately as **`non_independent_assignment`**. A 48-point
+human visual review was completed on 2026-09-20 and is recorded as
+`fig4_human_visual_review = completed_nonblind`; it supports the D4 review but does not
+replace the blind independent protocol. Therefore
+`fig4_independent_human_audit = pending_human_audit`; `experimental_data_validation = false`.
 
 ## Test suite result (final code state)
 

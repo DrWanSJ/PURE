@@ -18,7 +18,14 @@
     "experimental_data_validation": false,
     "experimental_data_validation_reason": "no machine-readable Stoegbauer 2012 data in the repo; experimental dotted curves not digitized",
     "b2_predictive_validation": false,
-    "b2_predictive_validation_reason": "B2 is out of B1 scope and has not been started"
+    "b2_predictive_validation_reason": "B2 is out of B1 scope and has not been started",
+    "fig4_human_visual_review": "completed_nonblind",
+    "fig4_human_visual_review_date": "2026-09-20",
+    "fig4_human_visual_review_evidence": "data/manual_audit/fig4_human_digitization_sean.csv",
+    "fig4_human_visual_review_note": "48 approximate manual readings of the paper Fig. 4 calculated continuous curves were recorded at 0.5 h intervals for [nt] and [a] across all three DNA conditions. The auditor had already seen simulation outputs, and no per-point numerical reading-error estimates were declared, so this is a human D4 visual review but NOT the independent blind audit.",
+    "d4_manual_benchmark_rerun": "passed_all_qc",
+    "d4_manual_benchmark_rerun_id": "d4_human_check",
+    "d4_manual_benchmark_rerun_note": "User reran run_fig4_benchmark in MATLAB R2025b Update 5. All three conditions reported passed_all_qc; max scaled balance residuals were 5.821e-15, 4.396e-15, 3.941e-15 and solver-convergence scaled differences were 3.766e-9, 3.757e-9, 3.742e-9. Local Git metadata was unavailable (git_commit=unavailable_git_not_found, git_dirty=unknown), so this rerun is not commit-bound."
   },
   "guard": {
     "policy": "test_release_preflight.m asserts the pending/false values above; silently flipping them in this file must fail the preflight guard",
@@ -28,5 +35,7 @@
       "fig4_simulation_assisted_digitization_status": "non_independent_assignment",
       "b2_predictive_validation": false
     }
-  }
+  },
+  "last_updated": "2026-09-20",
+  "last_updated_by": "human D4 review recorded from user-supplied readings and local MATLAB run"
 }
