@@ -19,6 +19,22 @@ Outputs: `results/baselines/b1_mavelli2015/DNA_{0p34,1p7,6p8}nM/{trajectory.csv,
 `results/baselines/b1_mavelli2015/fig4_reproduction.png`, `observables_mRNA_protein.png`,
 `benchmark_summary.json`.
 
+## D4 timing and benchmark-level QC
+
+On 2026-09-20 the user executed:
+
+```matlab
+tic
+run_fig4_benchmark('RunId','d4_timing_check')
+elapsed_s = toc
+```
+
+Measured wall clock: **7.5450 s** in MATLAB R2025b Update 5. This is the **full three-condition benchmark workflow**, not one `ode15s` trajectory: each DNA condition includes one baseline run, two repeatability runs, and one tightened-tolerance run, followed by CSV/JSON/figure generation.
+
+All three conditions again reported `scientific_status = passed_all_qc`. The benchmark-level machine-readable D4 summary is `docs/validation/qc_v0.json`.
+
+The timing run was executed from `C:\\Users\\sean\\Desktop\\PURE-main`, which had no `.git/` metadata. Therefore Git provenance is **unbound** for this run: `git_commit = unavailable_git_not_found`, `git_dirty = unknown`. The numerical evidence remains valid, but this local run cannot be cryptographically tied to a commit. The source ZIP supplied for audit has SHA-256 `b6477ac3498c5b64b0cf6e2e219fdb2858f6e3c40890a51b3921b5c7ded1a490`.
+
 ## Answers to the eleven benchmark questions
 
 ### 1. Were Eqs. (5), (6), (8), (10), (12), (14), (20)–(27) implemented equation-by-equation?
@@ -65,7 +81,7 @@ only DNA varied; `ode15s`, t ∈ [0, 14400] s, RelTol 1e-9, AbsTol 1e-12. All th
 
 ### 5. Do nt/a trajectories match the paper's calculated curves in magnitude and shape?
 
-**Yes — with the evidence kept in two strictly separate tiers** (audit hardening pass
+**Yes — with three evidence streams kept strictly separate** (audit hardening pass
 reclassified the raster-based comparison as non-independent; see below):
 
 **Tier 3a — independent (paper-text anchors):** protein(4h) at 6.8 nM = 0.589 µM vs paper

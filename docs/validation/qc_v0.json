@@ -1,0 +1,102 @@
+{
+  "schema_version": "0.1",
+  "benchmark_id": "B1_PURE_literature_reference",
+  "source": "Mavelli_2015",
+  "status": "passed_all_qc",
+  "recorded_date": "2026-09-20",
+  "source_run": "d4_timing_check",
+  "matlab_version": "25.2.0.3177638 (R2025b) Update 5",
+  "solver": "ode15s",
+  "solver_options": {
+    "RelTol": 1e-9,
+    "AbsTol": 1e-12,
+    "t_final_s": 14400,
+    "output_dt_s": 10
+  },
+  "timing": {
+    "wall_clock_s": 7.545,
+    "measurement": "MATLAB tic/toc around run_fig4_benchmark('RunId','d4_timing_check')",
+    "scope": "full 3-condition benchmark workflow including repeatability and tightened-tolerance runs plus output generation"
+  },
+  "aggregate": {
+    "all_conditions_completed": true,
+    "all_conditions_passed_qc": true,
+    "nonnegativity_pass": true,
+    "repeatability_pass": true,
+    "solver_convergence_pass": true,
+    "equation_guard_pass": true,
+    "max_scaled_mass_balance_residual": 5.820766091346741e-15,
+    "max_solver_convergence_scaled_diff": 3.766169433361055e-9
+  },
+  "conditions": [
+    {
+      "dna_nM": 0.34,
+      "scientific_status": "passed_all_qc",
+      "max_scaled_mass_balance_residual": 5.820766091346741e-15,
+      "solver_convergence_max_scaled_diff": 3.766169433361055e-9,
+      "endpoints": {
+        "nt_uM": 86.64911285753077,
+        "a_uM": 34.63089995051888,
+        "protein_molecules_uM": 0.14550798298537346
+      }
+    },
+    {
+      "dna_nM": 1.7,
+      "scientific_status": "passed_all_qc",
+      "max_scaled_mass_balance_residual": 4.395891058569153e-15,
+      "solver_convergence_max_scaled_diff": 3.756955158931268e-9,
+      "endpoints": {
+        "nt_uM": 344.4871494062078,
+        "a_uM": 93.10674524111862,
+        "protein_molecules_uM": 0.3912048119374732
+      }
+    },
+    {
+      "dna_nM": 6.8,
+      "scientific_status": "passed_all_qc",
+      "max_scaled_mass_balance_residual": 3.941143707682689e-15,
+      "solver_convergence_max_scaled_diff": 3.741918071803711e-9,
+      "endpoints": {
+        "nt_uM": 778.7588929745069,
+        "a_uM": 140.1137261973176,
+        "protein_molecules_uM": 0.588713135282847
+      }
+    }
+  ],
+  "reference_anchors": {
+    "protein_4h_6p8nM": {
+      "paper_uM": 0.58,
+      "simulation_uM": 0.588713135282847,
+      "relative_deviation": 0.015022647039391391
+    },
+    "energy_split_6p8nM": {
+      "paper_percent": {
+        "Q_TX": 74,
+        "Q_TL": 15,
+        "Q_RS": 11
+      },
+      "simulation_percent": {
+        "Q_TX": 72.02597387219264,
+        "Q_TL": 15.440583648656785,
+        "Q_RS": 12.53344247915059
+      }
+    }
+  },
+  "human_fig4_review": {
+    "status": "completed_nonblind",
+    "evidence": "data/manual_audit/fig4_human_digitization_sean.csv",
+    "independent_blind_audit": "pending_human_audit",
+    "experimental_data_validation": false
+  },
+  "provenance": {
+    "git_in_repo": false,
+    "git_commit": "unavailable_git_not_found",
+    "git_dirty": "unknown",
+    "status": "unbound_git_metadata_unavailable",
+    "reason": "Timing run executed from downloaded PURE-main source tree without .git metadata.",
+    "model_definition_hash": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14",
+    "parameter_hash": "5f6473b38a7d2bfdb021aa29c36c818483056bf28ef45f9d6a442530b687699c",
+    "input_hash": "29d40f9fbf29c8aa6cdb7152ec8f4b8ca505dfc9ced30b38c2c902eb75660755",
+    "source_archive_sha256": "b6477ac3498c5b64b0cf6e2e219fdb2858f6e3c40890a51b3921b5c7ded1a490"
+  }
+}

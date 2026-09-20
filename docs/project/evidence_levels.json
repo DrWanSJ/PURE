@@ -25,7 +25,15 @@
     "fig4_human_visual_review_note": "48 approximate manual readings of the paper Fig. 4 calculated continuous curves were recorded at 0.5 h intervals for [nt] and [a] across all three DNA conditions. The auditor had already seen simulation outputs, and no per-point numerical reading-error estimates were declared, so this is a human D4 visual review but NOT the independent blind audit.",
     "d4_manual_benchmark_rerun": "passed_all_qc",
     "d4_manual_benchmark_rerun_id": "d4_human_check",
-    "d4_manual_benchmark_rerun_note": "User reran run_fig4_benchmark in MATLAB R2025b Update 5. All three conditions reported passed_all_qc; max scaled balance residuals were 5.821e-15, 4.396e-15, 3.941e-15 and solver-convergence scaled differences were 3.766e-9, 3.757e-9, 3.742e-9. Local Git metadata was unavailable (git_commit=unavailable_git_not_found, git_dirty=unknown), so this rerun is not commit-bound."
+    "d4_manual_benchmark_rerun_note": "User reran run_fig4_benchmark in MATLAB R2025b Update 5. All three conditions reported passed_all_qc; max scaled balance residuals were 5.821e-15, 4.396e-15, 3.941e-15 and solver-convergence scaled differences were 3.766e-9, 3.757e-9, 3.742e-9. Local Git metadata was unavailable (git_commit=unavailable_git_not_found, git_dirty=unknown), so this rerun is not commit-bound.",
+    "d4_timing_run_id": "d4_timing_check",
+    "d4_timing_wall_clock_s": 7.545,
+    "d4_timing_scope": "full run_fig4_benchmark workflow: 3 DNA conditions; baseline + 2 repeatability + tightened-tolerance run per condition; output/figure generation included",
+    "d4_qc_v0": "docs/validation/qc_v0.json",
+    "d4_timing_provenance": "unbound_git_metadata_unavailable",
+    "d4_source_archive_sha256": "b6477ac3498c5b64b0cf6e2e219fdb2858f6e3c40890a51b3921b5c7ded1a490",
+    "provenance_status_hardcoding_bug": "fixed_2026-09-20",
+    "provenance_status_hardcoding_bug_note": "The pre-fix benchmark runner hard-coded provenance_status=provenance_bound even when no Git work tree was available. The d4_timing_check run is interpreted as unbound; future outputs derive the label from live Git state."
   },
   "guard": {
     "policy": "test_release_preflight.m asserts the pending/false values above; silently flipping them in this file must fail the preflight guard",
@@ -37,5 +45,5 @@
     }
   },
   "last_updated": "2026-09-20",
-  "last_updated_by": "human D4 review recorded from user-supplied readings and local MATLAB run"
+  "last_updated_by": "human D4 timing/QC evidence from user-supplied run archive"
 }
