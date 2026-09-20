@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1",
+  "fixture_id": "enzyme_qssa",
+  "evidence_type": "synthetic_fixture",
+  "units": {
+    "time": "s",
+    "concentration": "uM",
+    "k1": "uM^-1 s^-1",
+    "first_order_rates": "s^-1"
+  },
+  "profiles": {
+    "valid": {
+      "description": "small enzyme/substrate ratio; standard QSSA should be accurate",
+      "k1": 10,
+      "k_minus1": 10,
+      "k2": 1,
+      "e_T": 0.1,
+      "s0": 10,
+      "c0": 0,
+      "p0": 0,
+      "t_final": 20,
+      "output_dt": 0.05
+    },
+    "failure": {
+      "description": "large enzyme/substrate ratio; standard free-substrate QSSA should fail while total QSSA remains much better",
+      "k1": 10,
+      "k_minus1": 1,
+      "k2": 1,
+      "e_T": 5,
+      "s0": 10,
+      "c0": 0,
+      "p0": 0,
+      "t_final": 10,
+      "output_dt": 0.02
+    }
+  },
+  "solver": {
+    "name": "ode15s",
+    "RelTol": 1e-10,
+    "AbsTol": 1e-12
+  },
+  "acceptance": {
+    "full_conservation_scaled_residual_max": 1e-9,
+    "positivity_floor_uM": -1e-10,
+    "valid_standard_product_scaled_error_max": 0.01,
+    "valid_total_product_scaled_error_max": 0.01,
+    "failure_standard_product_scaled_error_min": 0.05,
+    "failure_total_product_scaled_error_max": 0.02
+  }
+}

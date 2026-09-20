@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.1",
+  "id": "appendix_a",
+  "benchmark_level": "B0",
+  "evidence_type": "synthetic_fixture",
+  "parameter_origin": "synthetic_test",
+  "purpose": "Verify feasible-domain logic, bracketed root finding, analytic Jacobian, eigenvalue signs, and Appendix-A asymptotic approximations",
+  "scientific_scope": "Dimensionless teaching/test model; NOT R01 and NOT PURE stoichiometry",
+  "states": [
+    "u",
+    "e"
+  ],
+  "flux": "psi(u,e)=u/(1+u)*e/(K_e+e)",
+  "equations": [
+    "du/dtau=alpha*e-u",
+    "de/dtau=rho*(1-e)-eta*psi(u,e)-delta*e"
+  ],
+  "feasible_domain": "u>=0, 0<=e<=1",
+  "fixed_point_relation": "u_star=alpha*e_star; H(e_star)=0"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "0.1",
+  "id": "enzyme_qssa",
+  "benchmark_level": "B0",
+  "evidence_type": "synthetic_fixture",
+  "purpose": "Verify full enzyme kinetics, conservation, standard QSSA, total QSSA, and an explicit standard-QSSA failure regime",
+  "scientific_scope": "Tasklist Sect. 7.3 teaching/verification enzyme module; not a specific PURE enzyme",
+  "reaction": "E + S <-> C -> E + P",
+  "states_full": [
+    "s",
+    "c",
+    "p"
+  ],
+  "conserved_enzyme": "e_T = e + c",
+  "conserved_substrate_product": "s + c + p",
+  "definitions": {
+    "K_M": "(k_minus1+k2)/k1",
+    "standard_qssa_complex": "e_T*s/(K_M+s)",
+    "total_qssa_complex": "smaller quadratic root evaluated in rationalized form"
+  }
+}

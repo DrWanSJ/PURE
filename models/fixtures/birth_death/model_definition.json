@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1",
+  "id": "birth_death",
+  "benchmark_level": "B0",
+  "evidence_type": "synthetic_fixture",
+  "purpose": "Known-answer deterministic mean, exact Poisson distribution, and propensity reference for later SSA validation",
+  "scientific_scope": "Mathematical/software verification only; NOT a PURE model",
+  "units": {
+    "time": "s",
+    "state": "molecule",
+    "birth_rate": "molecule/s",
+    "death_rate": "s^-1"
+  },
+  "reactions": [
+    {
+      "id": "birth",
+      "equation": "empty -> X",
+      "propensity": "alpha_b"
+    },
+    {
+      "id": "death",
+      "equation": "X -> empty",
+      "propensity": "beta_b * X"
+    }
+  ],
+  "deterministic_mean_equation": "dE[X]/dt = alpha_b - beta_b*E[X]",
+  "exact_reference": {
+    "condition": "X(0)=0",
+    "distribution": "Poisson",
+    "mean": "alpha_b/beta_b * (1-exp(-beta_b*t))",
+    "variance": "same as mean"
+  },
+  "note": "The exact distribution is the target for the generic SSA machinery scheduled later; this fixture does not claim that a fixture-specific simulator validates future SSA code."
+}

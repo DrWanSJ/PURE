@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1",
+  "fixture_id": "appendix_a",
+  "evidence_type": "synthetic_fixture",
+  "parameter_origin": "synthetic_test",
+  "profiles": {
+    "baseline": {
+      "alpha": 2,
+      "rho": 1,
+      "eta": 0.6,
+      "delta": 0.2,
+      "K_e": 0.5,
+      "u0": 0.2,
+      "e0": 0.8,
+      "tau_final": 20,
+      "output_dt": 0.02,
+      "description": "general interior test; no asymptotic approximation assumed"
+    },
+    "low_load": {
+      "alpha": 0.05,
+      "rho": 1,
+      "eta": 0.2,
+      "delta": 0.1,
+      "K_e": 10,
+      "u0": 0,
+      "e0": 0.5,
+      "tau_final": 20,
+      "output_dt": 0.02,
+      "description": "alpha*e_star << 1 and e_star << K_e for Eq. A.13"
+    },
+    "saturated": {
+      "alpha": 100,
+      "rho": 2,
+      "eta": 0.5,
+      "delta": 0.1,
+      "K_e": 0.01,
+      "u0": 1,
+      "e0": 0.5,
+      "tau_final": 10,
+      "output_dt": 0.01,
+      "description": "alpha*e_star >> 1 and e_star >> K_e for Eq. A.14"
+    }
+  },
+  "solver": {
+    "name": "ode15s",
+    "RelTol": 1e-10,
+    "AbsTol": 1e-12
+  },
+  "acceptance": {
+    "feasible_floor": -1e-10,
+    "feasible_ceiling": 1.0000000001,
+    "fixed_point_residual_max": 1e-10,
+    "jacobian_fd_max_abs_error": 0.00001,
+    "low_load_relative_error_max": 0.01,
+    "saturated_relative_error_max": 0.02
+  }
+}

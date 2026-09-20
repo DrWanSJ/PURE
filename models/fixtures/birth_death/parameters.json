@@ -1,0 +1,41 @@
+{
+  "schema_version": "0.1",
+  "fixture_id": "birth_death",
+  "evidence_type": "synthetic_fixture",
+  "parameters": {
+    "alpha_b": {
+      "value": 4,
+      "unit": "molecule/s"
+    },
+    "beta_b": {
+      "value": 0.5,
+      "unit": "s^-1"
+    }
+  },
+  "initial_conditions": {
+    "X0": {
+      "value": 0,
+      "unit": "molecule"
+    }
+  },
+  "simulation": {
+    "t_final": {
+      "value": 10,
+      "unit": "s"
+    },
+    "output_dt": {
+      "value": 0.1,
+      "unit": "s"
+    },
+    "solver": "ode15s",
+    "RelTol": 1e-10,
+    "AbsTol": 1e-12
+  },
+  "acceptance": {
+    "mean_trajectory_scaled_error_max": 1e-8,
+    "pmf_tail_mass_max": 1e-12,
+    "pmf_moment_abs_error_max": 1e-10,
+    "positivity_floor": -1e-12
+  },
+  "stochastic_validation_status": "reference_ready_generic_ssa_pending_D16"
+}
