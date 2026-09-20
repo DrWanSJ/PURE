@@ -1,13 +1,18 @@
-# fixtures (B0 verification models — not yet implemented)
+# fixtures (B0 verification models)
 
-Small, fully specified toy models for mathematical/software verification
-(planned for B0):
+Small, fully specified toy models for mathematical/software verification:
 
-- `reversible_conversion`
-- `birth_death`
-- `enzyme_qssa`
-- `appendix_a`
+- `reversible_conversion` — **implemented**; deterministic solver,
+  conservation, positivity and analytic-trajectory verification
+- `birth_death` — pending
+- `enzyme_qssa` — pending
+- `appendix_a` — pending
 
 These verify solver, conservation, reduction and stochastic machinery against
-known analytical answers. They are NOT scientific claims about the PURE system.
-Directories are placeholders until B0 starts; do not commit fabricated data.
+known analytical answers. They are NOT scientific claims about the PURE
+system and must be labeled `synthetic_fixture`.
+
+Implemented fixture models live in their own subdirectories under
+`models/fixtures/`. MATLAB test code remains under `matlab/tests/`; do not
+confuse these B0 scientific/software verification models with frozen
+regression snapshots under `matlab/tests/fixtures/`.

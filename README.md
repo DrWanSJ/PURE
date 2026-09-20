@@ -40,9 +40,7 @@ What this is **not** (none of these claims may be made yet):
 - **not "fully reproduced"** in a strong sense — the Fig. 4 raster
   digitization match is simulation-assisted and counts only as an envelope
   check; the independent evidence so far is the paper-text anchor match;
-- the following tasklist items have **not been started**: PURE_resource_core,
-  B0 fixtures, nondimensionalization, QSSA/reduction, stability analysis, flow
-  frontend, SSA, MCP. CI is a draft and `not_verified`.
+- `reversible_conversion`, the first B0 mathematical/software fixture, is implemented; the remaining B0 fixtures and the following tasklist items have **not been started**: PURE_resource_core, nondimensionalization, QSSA/reduction, stability analysis, flow frontend, SSA, MCP. CI is a draft and `not_verified`.
 
 ## 3. Model identities
 
@@ -50,7 +48,7 @@ What this is **not** (none of these claims may be made yet):
 | --- | --- | --- |
 | `PURE_literature_reference` | frozen literal B1 reproduction of Mavelli, Marangoni, Stano (2015), *Bull. Math. Biol.* 77:1185–1212, DOI [10.1007/s11538-015-0082-8](https://doi.org/10.1007/s11538-015-0082-8) — deterministic, 10 ODE states, 6 Michaelis–Menten rate laws, 16 kinetic parameters; time in s, concentrations in µM | implemented, frozen; never extended or "upgraded" |
 | `PURE_resource_core` | the project's own working model (D6–D15 mechanisms) | **not yet implemented** — separate identity, lives in `models/pure_resource_core/` |
-| fixtures (`reversible_conversion`, `birth_death`, `enzyme_qssa`, `appendix_a`) | B0 mathematical/software verification models | **not yet implemented** |
+| fixtures (`reversible_conversion`, `birth_death`, `enzyme_qssa`, `appendix_a`) | B0 mathematical/software verification models | `reversible_conversion` implemented; remaining fixtures pending |
 
 ## 4. Repository layout
 

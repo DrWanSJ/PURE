@@ -1,0 +1,60 @@
+{
+  "schema_version": "0.1",
+  "id": "reversible_conversion",
+  "benchmark_level": "B0",
+  "evidence_type": "synthetic_fixture",
+  "purpose": "Verify deterministic solver, conservation, positivity, and analytic trajectory comparison",
+  "scientific_scope": "Mathematical/software verification only; NOT a PURE model",
+  "units": {
+    "time": "s",
+    "concentration": "uM",
+    "rate_constant": "s^-1"
+  },
+  "species": [
+    {
+      "id": "A",
+      "role": "dynamic",
+      "unit": "uM"
+    },
+    {
+      "id": "B",
+      "role": "dynamic",
+      "unit": "uM"
+    }
+  ],
+  "reactions": [
+    {
+      "id": "forward_conversion",
+      "equation": "A -> B",
+      "stoichiometry": {
+        "A": -1,
+        "B": 1
+      },
+      "rate_law": "k_f * A"
+    },
+    {
+      "id": "reverse_conversion",
+      "equation": "B -> A",
+      "stoichiometry": {
+        "A": 1,
+        "B": -1
+      },
+      "rate_law": "k_r * B"
+    }
+  ],
+  "conservation_relations": [
+    {
+      "id": "total_AB",
+      "expression": "A + B",
+      "target": "A0 + B0"
+    }
+  ],
+  "analytic_reference": {
+    "M0": "A0 + B0",
+    "lambda": "k_f + k_r",
+    "A_eq": "k_r/(k_f+k_r) * M0",
+    "B_eq": "k_f/(k_f+k_r) * M0",
+    "A_t": "A_eq + (A0-A_eq)*exp(-(k_f+k_r)*t)",
+    "B_t": "M0 - A_t"
+  }
+}
