@@ -384,26 +384,196 @@ $$
 
 这些 \(\widetilde V\) 均以 \(V_*\) 归一。
 
-### 最终无量纲 ODE
+### 最终无量纲 ODE：显式 \(dy_i/d\tau=f_i(\mathbf y)\) 形式
 
-记撇号为 \(d/d\tau\)，则
+记
 
-$$
+$
+\mathbf y=(y_1,y_2,\ldots,y_{12})^T,
+\qquad
+\tau=k_{nt,deg}t.
+$
+
+将上面的 \(\widetilde V_{TX},\widetilde V_{RS},\widetilde V_{TL},\widetilde V_{EN}\) 全部代回，可得
+
+$
+\boxed{
 \begin{aligned}
-y_1' &= -\widetilde V_{TX}-\widetilde V_{RS}-2\widetilde V_{TL}+\widetilde V_{EN},\\
-y_2' &= \widetilde V_{RS}+2\widetilde V_{TL}-\widetilde V_{EN},\\
-y_3' &= \widetilde V_{TX}-y_3,\\
-y_4' &= -\rho_A\widetilde V_{RS},\\
-y_5' &= \rho_T(-\widetilde V_{RS}+\widetilde V_{TL}),\\
-y_6' &= \rho_T(\widetilde V_{RS}-\widetilde V_{TL}),\\
-y_7' &= \rho_A\widetilde V_{TL},\\
-y_8' &= -\rho_C\widetilde V_{EN},\\
-y_9' &= \rho_C\widetilde V_{EN},\\
-y_{10}' &= -\mu_{TL,deg}y_{10},\\
-y_{11}' &= y_3,\\
-y_{12}' &= \mu_{TL,deg}y_{10}.
+\frac{dy_1}{d\tau}
+={}&
+-\mu_{TX}\theta_{DNA}
+\frac{y_1}{\kappa_{TX,NTP}+y_1}
+\\
+&-\mu_{RS}
+\frac{y_4}{\kappa_{RS,A}+y_4}
+\frac{y_5}{\kappa_{RS,T}+y_5}
+\frac{y_1}{\kappa_{RS,NTP}+y_1}
+\\
+&-2\mu_{TL}y_{10}
+\frac{y_3}{\kappa_{TL,nt}+y_3}
+\frac{y_6}{\kappa_{TL,AT}+y_6}
+\frac{y_1}{\kappa_{TL,NTP}+y_1}
+\\
+&+\mu_{EN}
+\frac{y_8}{\kappa_{EN,CP}+y_8}
+\frac{y_2}{\kappa_{EN,NXP}+y_2}.
 \end{aligned}
-$$
+}
+$
+
+$
+\boxed{
+\begin{aligned}
+\frac{dy_2}{d\tau}
+={}&
+\mu_{RS}
+\frac{y_4}{\kappa_{RS,A}+y_4}
+\frac{y_5}{\kappa_{RS,T}+y_5}
+\frac{y_1}{\kappa_{RS,NTP}+y_1}
+\\
+&+2\mu_{TL}y_{10}
+\frac{y_3}{\kappa_{TL,nt}+y_3}
+\frac{y_6}{\kappa_{TL,AT}+y_6}
+\frac{y_1}{\kappa_{TL,NTP}+y_1}
+\\
+&-\mu_{EN}
+\frac{y_8}{\kappa_{EN,CP}+y_8}
+\frac{y_2}{\kappa_{EN,NXP}+y_2}.
+\end{aligned}
+}
+$
+
+$
+\boxed{
+\frac{dy_3}{d\tau}
+=
+\mu_{TX}\theta_{DNA}
+\frac{y_1}{\kappa_{TX,NTP}+y_1}
+-y_3
+}
+$
+
+$
+\boxed{
+\frac{dy_4}{d\tau}
+=
+-\rho_A\mu_{RS}
+\frac{y_4}{\kappa_{RS,A}+y_4}
+\frac{y_5}{\kappa_{RS,T}+y_5}
+\frac{y_1}{\kappa_{RS,NTP}+y_1}
+}
+$
+
+$
+\boxed{
+\begin{aligned}
+\frac{dy_5}{d\tau}
+={}&
+\rho_T
+\Bigg[
+-\mu_{RS}
+\frac{y_4}{\kappa_{RS,A}+y_4}
+\frac{y_5}{\kappa_{RS,T}+y_5}
+\frac{y_1}{\kappa_{RS,NTP}+y_1}
+\\
+&\qquad
++\mu_{TL}y_{10}
+\frac{y_3}{\kappa_{TL,nt}+y_3}
+\frac{y_6}{\kappa_{TL,AT}+y_6}
+\frac{y_1}{\kappa_{TL,NTP}+y_1}
+\Bigg].
+\end{aligned}
+}
+$
+
+$
+\boxed{
+\begin{aligned}
+\frac{dy_6}{d\tau}
+={}&
+\rho_T
+\Bigg[
+\mu_{RS}
+\frac{y_4}{\kappa_{RS,A}+y_4}
+\frac{y_5}{\kappa_{RS,T}+y_5}
+\frac{y_1}{\kappa_{RS,NTP}+y_1}
+\\
+&\qquad
+-\mu_{TL}y_{10}
+\frac{y_3}{\kappa_{TL,nt}+y_3}
+\frac{y_6}{\kappa_{TL,AT}+y_6}
+\frac{y_1}{\kappa_{TL,NTP}+y_1}
+\Bigg].
+\end{aligned}
+}
+$
+
+$
+\boxed{
+\frac{dy_7}{d\tau}
+=
+\rho_A\mu_{TL}y_{10}
+\frac{y_3}{\kappa_{TL,nt}+y_3}
+\frac{y_6}{\kappa_{TL,AT}+y_6}
+\frac{y_1}{\kappa_{TL,NTP}+y_1}
+}
+$
+
+$
+\boxed{
+\frac{dy_8}{d\tau}
+=
+-\rho_C\mu_{EN}
+\frac{y_8}{\kappa_{EN,CP}+y_8}
+\frac{y_2}{\kappa_{EN,NXP}+y_2}
+}
+$
+
+$
+\boxed{
+\frac{dy_9}{d\tau}
+=
+\rho_C\mu_{EN}
+\frac{y_8}{\kappa_{EN,CP}+y_8}
+\frac{y_2}{\kappa_{EN,NXP}+y_2}
+}
+$
+
+$
+\boxed{
+\frac{dy_{10}}{d\tau}
+=
+-\mu_{TL,deg}y_{10}
+}
+$
+
+$
+\boxed{
+\frac{dy_{11}}{d\tau}
+=
+y_3
+}
+$
+
+$
+\boxed{
+\frac{dy_{12}}{d\tau}
+=
+\mu_{TL,deg}y_{10}
+}
+$
+
+因此可以统一写成
+
+$
+\boxed{
+\frac{d\mathbf y}{d\tau}
+=
+\mathbf f(\mathbf y;\boldsymbol\pi)
+}
+$
+
+其中 \(\boldsymbol\pi\) 表示全部无量纲参数组合。该显式形式与前面的 compact \(\widetilde V\) 写法完全等价，但更适合后续直接计算 Jacobian、rank、局部线性化与独立坐标降维。
 
 这里 NTP / NXP 方程的不对称是原模型定义导致的：\([NTP]\) 是 \(n_{NTP}=4\) 种 NTP 的平均浓度，而 \([NXP]\)、\([nt]\)、\(D_{nt}\) 使用 overall pool concentration。
 
