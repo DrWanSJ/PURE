@@ -208,3 +208,278 @@ $$
 -y_3
 }
 $$
+
+
+---
+
+## 完整 12 状态无量纲模型（审计定稿）
+
+本节是在上面的 \(nt\) 单方程手推基础上，对全部 12 个状态统一无量纲化后的结果。这里保留前面的手推记号作为推导记录；完整系统统一使用 \(\mu\)、\(\kappa\)、\(\rho_A,\rho_T,\rho_C\) 与 \(\theta_{DNA}\)。
+
+统一时间尺度与反应速率尺度为
+
+$$
+\tau=k_{nt,deg}t,
+\qquad
+V_* = k_{nt,deg}n_{NTP}c_{NTP,0}.
+$$
+
+### 无量纲速率参数
+
+$$
+\begin{aligned}
+\mu_{TX}
+&=
+\frac{k_{TX}C_{TXcat}}
+{k_{nt,deg}n_{NTP}c_{NTP,0}},
+&
+\mu_{RS}
+&=
+\frac{k_{RS}C_{RScat}}
+{k_{nt,deg}n_{NTP}c_{NTP,0}},
+\\
+\mu_{TL}
+&=
+\frac{k_{TL}c_{TLcat,0}}
+{k_{nt,deg}n_{NTP}c_{NTP,0}},
+&
+\mu_{EN}
+&=
+\frac{k_{EN}C_{ENcat}}
+{k_{nt,deg}n_{NTP}c_{NTP,0}},
+\\
+\mu_{TL,deg}
+&=
+\frac{k_{TL,deg}}{k_{nt,deg}}.
+\end{aligned}
+$$
+
+其中 \(\mu_{TX},\mu_{RS},\mu_{TL},\mu_{EN}\) 都表示对应模块的 catalytic-capacity scale 相对于统一 nucleotide degradation-rate scale 的比值；\(\mu_{TL,deg}\) 是 TLcat degradation 与 nt degradation 的时间尺度比。
+
+DNA 在本 reference model 中是固定输入，定义
+
+$$
+\theta_{DNA}
+=
+\frac{[DNA]}{K_{TX,DNA}+[DNA]}.
+$$
+
+因此前面单独推导得到的
+
+$$
+\kappa_{TX,eff}
+=
+\mu_{TX}\theta_{DNA}.
+$$
+
+### 无量纲饱和常数
+
+$$
+\begin{aligned}
+\kappa_{TX,NTP}
+&=
+\frac{K_{TX,NTP}}{c_{NTP,0}},
+&
+\kappa_{RS,A}
+&=
+\frac{K_{RS,A}}{c_{A,0}},
+\\
+\kappa_{RS,T}
+&=
+\frac{K_{RS,T}}{(n_T/n_A)c_{T,0}},
+&
+\kappa_{RS,NTP}
+&=
+\frac{K_{RS,NTP}}{c_{NTP,0}},
+\\
+\kappa_{TL,nt}
+&=
+\frac{K_{TL,nt}}{n_{NTP}c_{NTP,0}},
+&
+\kappa_{TL,AT}
+&=
+\frac{K_{TL,AT}}{(n_T/n_A)c_{T,0}},
+\\
+\kappa_{TL,NTP}
+&=
+\frac{K_{TL,NTP}}{c_{NTP,0}},
+&
+\kappa_{EN,CP}
+&=
+\frac{K_{EN,CP}}{c_{CP,0}},
+\\
+\kappa_{EN,NXP}
+&=
+\frac{K_{EN,NXP}}{n_{NTP}c_{NTP,0}}.
+\end{aligned}
+$$
+
+在 Mavelli reference 参数下
+
+$$
+\frac{n_T}{n_A}
+=
+\frac{46}{20}
+=
+2.3.
+$$
+
+这里 \(2.3\) 只对应 T / AT multiplicity bookkeeping，不意味着 \(\rho_A=\rho_T\)。
+
+### 尺度耦合比
+
+$$
+\rho_A
+=
+\frac{n_{NTP}c_{NTP,0}}
+{n_Ac_{A,0}},
+\qquad
+\rho_T
+=
+\frac{n_{NTP}c_{NTP,0}}
+{n_Tc_{T,0}},
+\qquad
+\rho_C
+=
+\frac{n_{NTP}c_{NTP,0}}
+{c_{CP,0}}.
+$$
+
+\(\rho_A,\rho_T,\rho_C\) 只反映不同 coarse-grained pool reference scales 之间的换算关系。特别地，\(\rho_A\) 与 \(\rho_T\) 是独立参数，不要求相等。
+
+### 无量纲反应速率
+
+$$
+\widetilde V_{TX}
+=
+\mu_{TX}\theta_{DNA}
+\frac{y_1}{\kappa_{TX,NTP}+y_1},
+$$
+
+$$
+\widetilde V_{RS}
+=
+\mu_{RS}
+\frac{y_4}{\kappa_{RS,A}+y_4}
+\frac{y_5}{\kappa_{RS,T}+y_5}
+\frac{y_1}{\kappa_{RS,NTP}+y_1},
+$$
+
+$$
+\widetilde V_{TL}
+=
+\mu_{TL}y_{10}
+\frac{y_3}{\kappa_{TL,nt}+y_3}
+\frac{y_6}{\kappa_{TL,AT}+y_6}
+\frac{y_1}{\kappa_{TL,NTP}+y_1},
+$$
+
+$$
+\widetilde V_{EN}
+=
+\mu_{EN}
+\frac{y_8}{\kappa_{EN,CP}+y_8}
+\frac{y_2}{\kappa_{EN,NXP}+y_2}.
+$$
+
+这些 \(\widetilde V\) 均以 \(V_*\) 归一。
+
+### 最终无量纲 ODE
+
+记撇号为 \(d/d\tau\)，则
+
+$$
+\begin{aligned}
+y_1' &= -\widetilde V_{TX}-\widetilde V_{RS}-2\widetilde V_{TL}+\widetilde V_{EN},\\
+y_2' &= \widetilde V_{RS}+2\widetilde V_{TL}-\widetilde V_{EN},\\
+y_3' &= \widetilde V_{TX}-y_3,\\
+y_4' &= -\rho_A\widetilde V_{RS},\\
+y_5' &= \rho_T(-\widetilde V_{RS}+\widetilde V_{TL}),\\
+y_6' &= \rho_T(\widetilde V_{RS}-\widetilde V_{TL}),\\
+y_7' &= \rho_A\widetilde V_{TL},\\
+y_8' &= -\rho_C\widetilde V_{EN},\\
+y_9' &= \rho_C\widetilde V_{EN},\\
+y_{10}' &= -\mu_{TL,deg}y_{10},\\
+y_{11}' &= y_3,\\
+y_{12}' &= \mu_{TL,deg}y_{10}.
+\end{aligned}
+$$
+
+这里 NTP / NXP 方程的不对称是原模型定义导致的：\([NTP]\) 是 \(n_{NTP}=4\) 种 NTP 的平均浓度，而 \([NXP]\)、\([nt]\)、\(D_{nt}\) 使用 overall pool concentration。
+
+### 无量纲守恒量
+
+由有量纲守恒律直接得到
+
+$$
+I_{NTP}
+=
+y_1+y_2+y_3+y_{11},
+$$
+
+$$
+I_{AA}
+=
+\frac{y_4+y_7}{\rho_A}
++
+\frac{y_6}{\rho_T},
+$$
+
+$$
+I_{tRNA}
+=
+y_5+y_6,
+\qquad
+I_{CP}
+=
+y_8+y_9,
+\qquad
+I_{TLcat}
+=
+y_{10}+y_{12}.
+$$
+
+沿上述无量纲 ODE，
+
+$$
+\frac{dI_{NTP}}{d\tau}
+=
+\frac{dI_{AA}}{d\tau}
+=
+\frac{dI_{tRNA}}{d\tau}
+=
+\frac{dI_{CP}}{d\tau}
+=
+\frac{dI_{TLcat}}{d\tau}
+=
+0.
+$$
+
+注意 AA 守恒是
+
+$$
+n_A[A]+[a]+n_T[AT]=constant,
+$$
+
+而不是 \([A]+[AT]=constant\)。因此 A 方程除以 \(n_A\)，T / AT 方程除以 \(n_T\) 是正确的 multiplicity bookkeeping。
+
+### 验证状态
+
+当前完整无量纲模型已经完成独立审计：
+
+- Wolfram kernel：12/12 ODE 的 direct-vs-compact symbolic equivalence 均严格化简为 0；
+- dimensional conservation：5/5 通过；
+- dimensionless conservation：5/5 通过；
+- Wolfram 数值独立检查：5 trials × 12 equations，global max absolute residual \(8.88\times10^{-16}\)；
+- Python / SymPy 与 MATLAB 路径均实际运行通过；
+- MATLAB 与真实 generated RHS 的 5 × 12 比较最大残差约 \(1.78\times10^{-15}\)；
+- accounting integrators \(D_{nt},D_{TLcat}\) 已显式检查为 no-feedback states；
+- 故障注入可识别错误 TL stoichiometry、错误 accounting mapping 与错误 \(\rho_T\)。
+
+审计证据冻结在：
+
+\`docs/audit/dimensionless_20260921/REPORT.md\`
+
+因此，当前这套无量纲方程可以作为后续 conservation reduction、timescale analysis、QSSA / fast-slow analysis 的 validated baseline。
+
+尚未完成的是下一步 D6：从 stoichiometric structure 系统计算 rank、left nullspace 与 independent coordinates，并据此做精确守恒降维。不要把“5 条守恒式已验证”等同于“D6 守恒降维已经完成”。
