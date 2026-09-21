@@ -94,3 +94,113 @@ t^* = \frac{1}{k_{\text{nt,deg}}},
 \qquad
 \tau = \frac{t}{t^*} = k_{\text{nt,deg}} t.
 $$
+
+
+### nt 方程的无量纲化
+
+由
+
+$$
+\frac{d[nt]}{dt}=V_{TX}-V_{nt,deg}
+$$
+
+以及
+
+$$
+[nt]=n_{NTP}c_{NTP,0}y_3,
+\qquad
+\tau=k_{nt,deg}t,
+$$
+
+可得
+
+$$
+\frac{d y_3}{d \tau}
+=
+\frac{k_{TX}C_{TXcat}}
+{k_{nt,deg}n_{NTP}c_{NTP,0}}
+\frac{[DNA]}{K_{TX,DNA}+[DNA]}
+\frac{y_1}
+{\dfrac{K_{TX,NTP}}{c_{NTP,0}}+y_1}
+-y_3.
+$$
+
+定义
+
+$$
+\rho_1=k_{TX}C_{TXcat}.
+$$
+
+$\rho_1$ 表示 TX 的本征最大催化能力，即在 DNA 和 NTP 均充分饱和时的 $V_{TX,max}$，在本模型中为常数。
+
+定义
+
+$$
+\rho_2=k_{nt,deg}n_{NTP}c_{NTP,0}.
+$$
+
+$\rho_2$ 表示一个理论降解速率上界：假设初始总体 nucleotide pool 全部转化为 $nt$，则在一阶降解律下对应的最大 $nt$ 降解速率。在当前缩放下，它同时也是由 characteristic concentration $n_{NTP}c_{NTP,0}$ 与 characteristic time $1/k_{nt,deg}$ 共同确定的 degradation-rate scale。
+
+定义
+
+$$
+\rho_3=
+\frac{[DNA]}{K_{TX,DNA}+[DNA]}.
+$$
+
+$\rho_3$ 表示 DNA template saturation factor；由于本模型中 DNA 为固定输入，因此在单次给定 DNA 条件的仿真中为常数。
+
+于是
+
+$$
+\frac{d y_3}{d \tau}
+=
+\frac{\rho_1\rho_3}{\rho_2}
+\frac{y_1}
+{\dfrac{K_{TX,NTP}}{c_{NTP,0}}+y_1}
+-y_3.
+$$
+
+再定义无量纲比值
+
+$$
+R_{TX}
+=
+\frac{\rho_1}{\rho_2},
+$$
+
+其物理意义为 TX 的本征最大合成能力与上述 $nt$ 理论最大降解速率尺度之比。
+
+定义
+
+$$
+\kappa_{TX,eff}
+=
+R_{TX}\rho_3
+=
+\frac{\rho_1\rho_3}{\rho_2},
+$$
+
+其物理意义为：在当前 DNA 条件下、且 NTP 处于饱和极限时，effective maximum transcription rate 与 $nt$ 理论最大降解速率尺度之比。
+
+定义
+
+$$
+\kappa_{TX,NTP}
+=
+\frac{K_{TX,NTP}}{c_{NTP,0}},
+$$
+
+其物理意义为 TX 对 NTP 的半饱和浓度相对于初始 NTP 平均浓度尺度的比值。$\kappa_{TX,NTP}\ll1$ 表示初始 NTP 相对于半饱和尺度较充足；$\kappa_{TX,NTP}\gg1$ 表示 TX 更容易受到 NTP availability 限制。
+
+最终，
+
+$$
+\boxed{
+\frac{d y_3}{d \tau}
+=
+\kappa_{TX,eff}
+\frac{y_1}{\kappa_{TX,NTP}+y_1}
+-y_3
+}
+$$
