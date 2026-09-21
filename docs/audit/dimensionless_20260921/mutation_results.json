@@ -1,0 +1,37 @@
+[
+  {
+    "case": "original_wrong_TL_stoichiometry",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "expected_marker": "T1 ALL PASS: False",
+    "pass": true
+  },
+  {
+    "case": "fixed_wrong_TL_stoichiometry",
+    "exit_code": 1,
+    "expected_exit": 1,
+    "expected_marker": "AUDIT ALL PASS: False",
+    "pass": true
+  },
+  {
+    "case": "fixed_wrong_accounting_mappings",
+    "exit_code": 1,
+    "expected_exit": 1,
+    "expected_marker": "STATE MAPPING (12): False",
+    "pass": true
+  },
+  {
+    "case": "fixed_wrong_rhoT",
+    "exit_code": 1,
+    "expected_exit": 1,
+    "expected_marker": "AUDIT ALL PASS: False",
+    "pass": true
+  },
+  {
+    "case": "fixed_contaminated_global_context",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "expected_marker": "AUDIT ALL PASS: True",
+    "pass": true
+  }
+]

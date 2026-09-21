@@ -1,0 +1,17 @@
+{����ʹ�� - (�� 7 ��)
+Array sizes must match.
+
+���� derive_dimensionless (�� 107 ��)
+    -vTX - vRS - 2*vTL + vEN; ...
+         ^
+���� run (�� 112 ��)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+���� run_matlab_original (�� 8 ��)
+run(target);
+^^^^^^^^^^^
+���� run (�� 112 ��)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

@@ -1,0 +1,19 @@
+Dimensionless rates: v_j = V_j/(k_ntdeg*n_NTP*c_NTP0)
+v_TX = \frac{\mu _{\mathrm{TX}}\,y_{1}}{\left(\mathrm{kapTXntp}+y_{1}\right)\,\left(\mathrm{kapTXdna}+1\right)}
+v_RS = \frac{\mu _{\mathrm{RS}}\,y_{1}\,y_{4}\,y_{5}}{\left(\mathrm{kapRSa}+y_{4}\right)\,\left(\mathrm{kapRSt}+y_{5}\right)\,\left(\mathrm{kapRSntp}+y_{1}\right)}
+v_TL = \frac{\mu _{\mathrm{TL}}\,y_{1}\,y_{3}\,y_{6}\,y_{10}}{\left(\mathrm{kapTLat}+y_{6}\right)\,\left(\mathrm{kapTLnt}+y_{3}\right)\,\left(\mathrm{kapTLntp}+y_{1}\right)}
+v_EN = \frac{\mu _{\mathrm{EN}}\,y_{2}\,y_{8}}{\left(\mathrm{kapENcp}+y_{8}\right)\,\left(\mathrm{kapENnxp}+y_{2}\right)}
+
+Dimensionless ODEs: dy_i/dtau
+dy1 [NTP]/dtau = \frac{\mu _{\mathrm{EN}}\,y_{2}\,y_{8}}{\left(\mathrm{kapENcp}+y_{8}\right)\,\left(\mathrm{kapENnxp}+y_{2}\right)}-\frac{\mu _{\mathrm{TX}}\,y_{1}}{\left(\mathrm{kapTXntp}+y_{1}\right)\,\left(\mathrm{kapTXdna}+1\right)}-\frac{\mu _{\mathrm{RS}}\,y_{1}\,y_{4}\,y_{5}}{\left(\mathrm{kapRSa}+y_{4}\right)\,\left(\mathrm{kapRSt}+y_{5}\right)\,\left(\mathrm{kapRSntp}+y_{1}\right)}-\frac{2\,\mu _{\mathrm{TL}}\,y_{1}\,y_{3}\,y_{6}\,y_{10}}{\left(\mathrm{kapTLat}+y_{6}\right)\,\left(\mathrm{kapTLnt}+y_{3}\right)\,\left(\mathrm{kapTLntp}+y_{1}\right)}
+dy2 [NXP]/dtau = \frac{\mu _{\mathrm{RS}}\,y_{1}\,y_{4}\,y_{5}}{\left(\mathrm{kapRSa}+y_{4}\right)\,\left(\mathrm{kapRSt}+y_{5}\right)\,\left(\mathrm{kapRSntp}+y_{1}\right)}-\frac{\mu _{\mathrm{EN}}\,y_{2}\,y_{8}}{\left(\mathrm{kapENcp}+y_{8}\right)\,\left(\mathrm{kapENnxp}+y_{2}\right)}+\frac{2\,\mu _{\mathrm{TL}}\,y_{1}\,y_{3}\,y_{6}\,y_{10}}{\left(\mathrm{kapTLat}+y_{6}\right)\,\left(\mathrm{kapTLnt}+y_{3}\right)\,\left(\mathrm{kapTLntp}+y_{1}\right)}
+dy3 [nt]/dtau = \frac{\mu _{\mathrm{TX}}\,y_{1}}{\left(\mathrm{kapTXntp}+y_{1}\right)\,\left(\mathrm{kapTXdna}+1\right)}-y_{3}
+dy4 [A]/dtau = -\frac{c_{\mathrm{NTP0}}\,\mu _{\mathrm{RS}}\,n_{\mathrm{NTP}}\,y_{1}\,y_{4}\,y_{5}}{\mathrm{cA}_{0}\,n_{A}\,\left(\mathrm{kapRSa}+y_{4}\right)\,\left(\mathrm{kapRSt}+y_{5}\right)\,\left(\mathrm{kapRSntp}+y_{1}\right)}
+dy5 [T]/dtau = -\frac{c_{\mathrm{NTP0}}\,n_{\mathrm{NTP}}\,\left(\frac{\mu _{\mathrm{RS}}\,y_{1}\,y_{4}\,y_{5}}{\left(\mathrm{kapRSa}+y_{4}\right)\,\left(\mathrm{kapRSt}+y_{5}\right)\,\left(\mathrm{kapRSntp}+y_{1}\right)}-\frac{\mu _{\mathrm{TL}}\,y_{1}\,y_{3}\,y_{6}\,y_{10}}{\left(\mathrm{kapTLat}+y_{6}\right)\,\left(\mathrm{kapTLnt}+y_{3}\right)\,\left(\mathrm{kapTLntp}+y_{1}\right)}\right)}{\mathrm{cT}_{0}\,n_{T}}
+dy6 [AT]/dtau = \frac{c_{\mathrm{NTP0}}\,n_{\mathrm{NTP}}\,\left(\frac{\mu _{\mathrm{RS}}\,y_{1}\,y_{4}\,y_{5}}{\left(\mathrm{kapRSa}+y_{4}\right)\,\left(\mathrm{kapRSt}+y_{5}\right)\,\left(\mathrm{kapRSntp}+y_{1}\right)}-\frac{\mu _{\mathrm{TL}}\,y_{1}\,y_{3}\,y_{6}\,y_{10}}{\left(\mathrm{kapTLat}+y_{6}\right)\,\left(\mathrm{kapTLnt}+y_{3}\right)\,\left(\mathrm{kapTLntp}+y_{1}\right)}\right)}{\mathrm{cT}_{0}\,n_{T}}
+dy7 [a]/dtau = \frac{c_{\mathrm{NTP0}}\,\mu _{\mathrm{TL}}\,n_{\mathrm{NTP}}\,y_{1}\,y_{3}\,y_{6}\,y_{10}}{\mathrm{cA}_{0}\,n_{A}\,\left(\mathrm{kapTLat}+y_{6}\right)\,\left(\mathrm{kapTLnt}+y_{3}\right)\,\left(\mathrm{kapTLntp}+y_{1}\right)}
+dy8 [CP]/dtau = -\frac{c_{\mathrm{NTP0}}\,\mu _{\mathrm{EN}}\,n_{\mathrm{NTP}}\,y_{2}\,y_{8}}{\mathrm{cCP}_{0}\,\left(\mathrm{kapENcp}+y_{8}\right)\,\left(\mathrm{kapENnxp}+y_{2}\right)}
+dy9 [C]/dtau = \frac{c_{\mathrm{NTP0}}\,\mu _{\mathrm{EN}}\,n_{\mathrm{NTP}}\,y_{2}\,y_{8}}{\mathrm{cCP}_{0}\,\left(\mathrm{kapENcp}+y_{8}\right)\,\left(\mathrm{kapENnxp}+y_{2}\right)}
+dy10 [TLcat]/dtau = -\mu _{\mathrm{TLdeg}}\,y_{10}
+dy11 [D_nt]/dtau = y_{3}
+dy12 [D_TLcat]/dtau = \mu _{\mathrm{TLdeg}}\,y_{10}

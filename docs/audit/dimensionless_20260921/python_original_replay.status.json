@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "timed_out": false,
+  "command": [
+    "C:\\Users\\CZ\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "-u",
+    "C:\\Users\\CZ\\Desktop\\PURE\\results\\runs\\dimensionless_audit_20260921\\original\\derive_dimensionless.py"
+  ],
+  "duration_seconds": 21.29625910008326,
+  "timeout_seconds": 60
+}

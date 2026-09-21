@@ -1,0 +1,326 @@
+{
+  "recorded_at_utc": "2026-09-21T06:46:45.533256+00:00",
+  "baseline_commit": "1aed08253ab73311282c00aff2b5ae8a31f47dbc",
+  "sources": [
+    {
+      "path": "models/literature_reference/model_definition.json",
+      "sha256": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14",
+      "unchanged_from_HEAD_ignoring_CRLF": true
+    },
+    {
+      "path": "models/literature_reference/parameters.json",
+      "sha256": "5f6473b38a7d2bfdb021aa29c36c818483056bf28ef45f9d6a442530b687699c",
+      "unchanged_from_HEAD_ignoring_CRLF": true
+    },
+    {
+      "path": "models/literature_reference/model_manifest.json",
+      "sha256": "fd5bfee5406fe3eadf087eb1b81b360bd49c0f95044c2a2801cf985f268de9e4",
+      "unchanged_from_HEAD_ignoring_CRLF": true
+    },
+    {
+      "path": "models/literature_reference/species.csv",
+      "sha256": "eb78a23cd77a1a5c2d40b2069e6a519e22babc42f46a7eff4c5c5251dd8bcda1",
+      "unchanged_from_HEAD_ignoring_CRLF": true
+    },
+    {
+      "path": "models/literature_reference/reactions.csv",
+      "sha256": "07426002ce5482c5cd2b2e10966c74a8eff2f487a687c09859ecead4919fff34",
+      "unchanged_from_HEAD_ignoring_CRLF": true
+    },
+    {
+      "path": "matlab/generated/rhs_pure_literature_reference.m",
+      "sha256": "79ddb8c755ccb5ed1ece2d08b1b1be00d35669ef857edc9e7206094eb77fa358",
+      "unchanged_from_HEAD_ignoring_CRLF": true
+    },
+    {
+      "path": "matlab/generated/pure_literature_reference_params.m",
+      "sha256": "41d12a621652da91c8d1d420cb686689a5681db1593b87fbf10b5331c20c6982",
+      "unchanged_from_HEAD_ignoring_CRLF": true
+    },
+    {
+      "path": "matlab/src/simulate/simulate_pure_literature_reference.m",
+      "sha256": "2788263f212d49eab5cf5204ae4e2b525b22f68065a323f191d17f16e97b40ad",
+      "unchanged_from_HEAD_ignoring_CRLF": true
+    },
+    {
+      "path": "matlab/tests/test_pure_literature_reference.m",
+      "sha256": "324f145526c5039fa224c602851d836939ca342908424b55909ab3b76b70d9fc",
+      "unchanged_from_HEAD_ignoring_CRLF": true
+    },
+    {
+      "path": "models/literature_reference/dimensionless/verify_wolfram_v2.wl",
+      "sha256": "ebb1da6879070c46c354211459ec343d7847f33cf6287d4b0aebadeeba1473f1",
+      "unchanged_from_HEAD_ignoring_CRLF": false
+    },
+    {
+      "path": "models/literature_reference/dimensionless/derive_dimensionless.py",
+      "sha256": "acaaaeb323c20616818430c517bbb6fe2e762edda3b2cb28c376127e4bbfa7ca",
+      "unchanged_from_HEAD_ignoring_CRLF": false
+    },
+    {
+      "path": "models/literature_reference/dimensionless/derive_dimensionless.m",
+      "sha256": "a4c095742586adcfde5f7c494d2b235387b9bf7a63b377ffd6e773d9ab1e087f",
+      "unchanged_from_HEAD_ignoring_CRLF": false
+    },
+    {
+      "path": "models/literature_reference/dimensionless/README.md",
+      "sha256": "e106d109588af8eb2c150b9e67ec3944a3389d89da937da356b4a89256021a2c",
+      "unchanged_from_HEAD_ignoring_CRLF": false
+    },
+    {
+      "path": "models/literature_reference/dimensionless/dimensionless_result.txt",
+      "sha256": "4e617f6bd5d1ec12cae03dbc4a5149ff0cfbf67fa0dcd49cf2b9c131b45a3ba9",
+      "unchanged_from_HEAD_ignoring_CRLF": true
+    },
+    {
+      "path": "models/literature_reference/dimensionless/dimensionless_result_matlab.txt",
+      "sha256": "f470db4c39cf612d256fcfffc511c76674f1dbc960136d017fdd0ba859e7b562",
+      "unchanged_from_HEAD_ignoring_CRLF": false
+    },
+    {
+      "path": "docs/theory_notes.md",
+      "sha256": "9c3c75e74c8a2dc33842d3b23e7412ff547f7ef16dfce927bc874279504699b2",
+      "unchanged_from_HEAD_ignoring_CRLF": false
+    }
+  ],
+  "verified_fixed_runs": {
+    "wolfram_fixed": {
+      "exit_code": 0,
+      "success_marker": "AUDIT ALL PASS: True",
+      "stderr_empty": true
+    },
+    "python_fixed_direct": {
+      "exit_code": 0,
+      "success_marker": "ALL PASS (5 trials x 12 eqs)",
+      "stderr_empty": true
+    },
+    "python_fixed_source_bridge": {
+      "exit_code": 0,
+      "success_marker": "SOURCE BRIDGE ALL PASS",
+      "stderr_empty": true
+    },
+    "matlab_fixed": {
+      "exit_code": 0,
+      "success_marker": "MATLAB AUDIT ALL PASS (9 existing model tests)",
+      "stderr_empty": true
+    },
+    "mutations": {
+      "exit_code": 0,
+      "success_marker": "MUTATION / CONTEXT CHECKS: ALL PASS",
+      "stderr_empty": true
+    }
+  },
+  "evidence_artifacts": [
+    {
+      "path": "docs/audit/dimensionless_20260921/audit_source_bridge.py",
+      "sha256": "87f681341ae29835ad958b6b538dda31efa3c33b6a4e74951e345fed2aac9f63"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/check_wolfram_mutations.py",
+      "sha256": "ce0eec1187b9a706f120c39be1ecf244eb06d5b4deae50565ae30229cf96e5d6"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/finalize_evidence.py",
+      "sha256": "55c003de1b1e83775f4557a023386e7282e1b6bd246a7bc9a0c2e2bbeeb1b8ba"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_contaminated_global_context.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_contaminated_global_context.stdout.txt",
+      "sha256": "ca6dfd4414b741bb5076335d51056b81a1d1b29864aa43dd58a5d11a7dae1abc"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_wrong_accounting_mappings.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_wrong_accounting_mappings.stdout.txt",
+      "sha256": "a8c6d1a1bf0074e2ace2f75a7681394aac0d4f53956743ab15a72b14bb807d46"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_wrong_rhoT.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_wrong_rhoT.stdout.txt",
+      "sha256": "d04800b6c9477ca3198ae27108eaa2bc2ccc455f17d7da13c34a4f7e94eb77ea"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_wrong_TL_stoichiometry.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_wrong_TL_stoichiometry.stdout.txt",
+      "sha256": "9f082dbfec4f06c18efa986c7e7703d9b07448339aa19b017d1107f2eee4764f"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_fixed.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_fixed.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_fixed.stderr.utf8.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_fixed.stdout.txt",
+      "sha256": "70a58d9102d0ead73b9c1bd6ad204339fcd68d4bd4bd215a24a0bbfc60617269"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_fixed.stdout.utf8.txt",
+      "sha256": "de68f04854f3ea290be8e73bb1fbf42ff840afa212a7aa916e466ecf6229d3ce"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_original.exitcode.txt",
+      "sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_original.stderr.txt",
+      "sha256": "611200e3dc18505451e0e841647cb21246fc0d88f226e82418d361869b943e51"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_original.stderr.utf8.txt",
+      "sha256": "b32ce7aaf96450c32e954b4ba01e557d40a132519381b97c49408bba046b674f"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_original.stdout.txt",
+      "sha256": "809d0d7ffe0bdbc0dd1273cd7aa0d0de6dd506a50aebc2caf1a228ac0668c070"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_original.stdout.utf8.txt",
+      "sha256": "3ab1ef8a9ad4e9f73667dcabc31bcd76ead63b3cc1c992e38cc4904ad8446069"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/mutation_results.json",
+      "sha256": "0afa9555ef838c8db6a323e5e1ba6d1d7d48196fdb45d2b51b0bdea92ca1d51f"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/mutations.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/mutations.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/mutations.stdout.txt",
+      "sha256": "881904074974dae16c8940ade074f7a2f8fd63753f533c4626c7d1ec9b17aadb"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/original_wrong_TL_stoichiometry.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/original_wrong_TL_stoichiometry.stdout.txt",
+      "sha256": "ad94b71acabb2dabf5fc63a10572520a00cd973b043833518ef6a4761562d737"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_fixed_direct.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_fixed_direct.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_fixed_direct.stdout.txt",
+      "sha256": "5580b365df442d83b427884b147f7a588215f41572c691b5de7dd10961e4c317"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_fixed_source_bridge.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_fixed_source_bridge.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_fixed_source_bridge.stdout.txt",
+      "sha256": "273ea490709b1dc164f8aafb7eb2ae6663965d666debe58df950f124f04c78b9"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_original.exitcode.txt",
+      "sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_original.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_original.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_original_replay.status.json",
+      "sha256": "3c4b2ddf9cf8a0e0cc8985996963c371280c9f2882bd1727b661a189b32756cd"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_original_replay.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_original_replay.stdout.txt",
+      "sha256": "b54d95054397ce32ec38048127dcb0eae081a882fd7f014d1ae3105359744ea1"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/REPORT.md",
+      "sha256": "9af800fb59eb24dc76a225597436359ffd5d05c5dd12a37298eea9acc094861e"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/reproduce_python_original.py",
+      "sha256": "38500857c09aa0f95f761450ed7c52e9394d40556c5c82d710c53390201a0251"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/run_matlab_fixed.m",
+      "sha256": "c9a5a390e1e72302d2d0e5c3607bd0f73ac2b3dcb183d05e1356554c94c72c1c"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/run_matlab_original.m",
+      "sha256": "5f5611619ca29887d2e531068f2c54f555a6d3d24d06f2a6c8a587270e70e092"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolfram_fixed.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolfram_fixed.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolfram_fixed.stdout.txt",
+      "sha256": "26f9c7bf6387c973f86a0fa221d7f3b1c0a9506a56335d5116cf1db7c2337135"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolfram_original.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolfram_original.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolfram_original.stdout.txt",
+      "sha256": "e3af4c16c4a75958d109a7a28d18574e860e86953a60063a55ed6be56d54e85f"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolframscript_version.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolframscript_version.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolframscript_version.stdout.txt",
+      "sha256": "6c21e0a49adae109bc420acf366f1b4ec4978be03df388d54fff2355bc2ca602"
+    }
+  ],
+  "canonical_assets_unchanged": true,
+  "git_diff_check": "PASS",
+  "original_python_initial_run": "manually terminated during display factorization; exit -1; later original-source replay completed with exit 0"
+}

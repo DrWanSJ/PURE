@@ -39,6 +39,8 @@ $$
 
 ## ODEs
 
+以下 `D_nt` 和 `D_TLcat` 是仓库添加的无反馈 accounting integrators，用于显式闭合守恒账本；它们不是原文中额外的独立物理动力学状态，也不进入任何 rate law。
+
 $$
 \begin{align}
 \frac{d[\text{NTP}]}{dt} &= \frac{-V_{\text{TX}} - 2V_{\text{TL}} - V_{\text{RS}} + V_{\text{EN}}}{n_{\text{NTP}}} \\
@@ -182,6 +184,8 @@ R_{TX}\rho_3
 $$
 
 其物理意义为：在当前 DNA 条件下、且 NTP 处于饱和极限时，effective maximum transcription rate 与 $nt$ 理论最大降解速率尺度之比。
+
+与完整系统记号的对应是 $R_{TX}=\mu_{TX}$、$\rho_3=\theta_{DNA}$，因此 $\kappa_{TX,eff}=\mu_{TX}\theta_{DNA}$。这里的理论上界使用当前 reference 初值 `nt=NXP=D_nt=0`；若初始其他 nucleotide 池非零，总量上界应使用完整 $B_{NTP}(0)$。
 
 定义
 

@@ -8,6 +8,7 @@ The physical ODEs follow Mavelli 2015. D_nt and D_TLcat are auxiliary
 accounting integrators used only to close conservation ledgers.
 """
 
+import math
 import random
 import sympy as sp
 
@@ -48,7 +49,8 @@ kTXdna, kTXntp, kRSa, kRSt, kRSntp, kTLnt, kTLat, kTLntp, kENcp, kENnxp = sp.sym
 )
 rhoA, rhoT, rhoC = sp.symbols("rho_A rho_T rho_C", **pos)
 
-s23 = sp.Rational(23, 10)
+# Match the canonical RHS also during symbolic/random multiplicity checks.
+s23 = n_T / n_A  # 46/20 = 23/10 in the literature-reference model.
 
 # Dimensional rates.
 V_TX = k_TX * C_TXcat * DNA / (K_TX_DNA + DNA) * NTP / (K_TX_NTP + NTP)
@@ -89,6 +91,14 @@ rhs = [
     V_ntdeg,
     V_TLdeg,
 ]
+
+dimensional_residuals = [
+    n_NTP * rhs[0] + rhs[2] + rhs[1] + rhs[10],
+    n_A * rhs[3] + rhs[6] + n_T * rhs[5],
+    n_T * (rhs[4] + rhs[5]), rhs[7] + rhs[8], rhs[9] + rhs[11],
+]
+assert all(sp.simplify(r) == 0 for r in dimensional_residuals)
+print("DIMENSIONAL CONSERVATION: ALL PASS (5 laws)")
 
 scales = [
     c_NTP0,
@@ -203,6 +213,8 @@ pdim = [
 state_dim = [NTP, NXP, nt, A, T, AT, a, CP, C, TLcat, Dnt, DTL]
 
 ok = True
+max_residual = 0.0
+equations_checked = 0
 for trial in range(5):
     vals = {s: random.uniform(0.05, 5.0) for s in pdim}
 
@@ -220,10 +232,10 @@ for trial in range(5):
         kTXdna: vals[K_TX_DNA] / vals[DNA],
         kTXntp: vals[K_TX_NTP] / vals[c_NTP0],
         kRSa: vals[K_RS_A] / vals[cA0],
-        kRSt: vals[K_RS_T] / (float(s23) * vals[cT0]),
+        kRSt: vals[K_RS_T] / ((vals[n_T] / vals[n_A]) * vals[cT0]),
         kRSntp: vals[K_RS_NTP] / vals[c_NTP0],
         kTLnt: vals[K_TL_nt] / (vals[n_NTP] * vals[c_NTP0]),
-        kTLat: vals[K_TL_AT] / (float(s23) * vals[cT0]),
+        kTLat: vals[K_TL_AT] / ((vals[n_T] / vals[n_A]) * vals[cT0]),
         kTLntp: vals[K_TL_NTP] / vals[c_NTP0],
         kENcp: vals[K_EN_CP] / vals[cCP0],
         kENnxp: vals[K_EN_NXP] / (vals[n_NTP] * vals[c_NTP0]),
@@ -239,12 +251,15 @@ for trial in range(5):
     for i in range(12):
         direct = rhs[i].subs(vals) / (scales[i].subs(vals) * vals[k_ntdeg])
         compact = dy[i].subs(compact_subs)
-        err = abs(float(sp.N(direct - compact)))
-        if err > 1e-9 * max(1.0, abs(float(sp.N(direct)))):
+        err = abs(float(sp.N(direct)) - float(sp.N(compact)))
+        equations_checked += 1
+        max_residual = max(max_residual, err)
+        if not math.isfinite(err) or err >= 1e-12:
             print(f"MISMATCH trial={trial} eq={i+1}: err={err}")
             ok = False
 
 print("NUMERIC CHECK:", "ALL PASS (5 trials x 12 eqs)" if ok else "FAILED")
+print(f"GLOBAL MAX ABSOLUTE RESIDUAL: {max_residual:.17g}; equations checked: {equations_checked}")
 
 if not ok:
     raise SystemExit(1)
@@ -257,4 +272,6 @@ print("v_EN =", sp.latex(vEN))
 
 print("\nCompact dimensionless ODEs:")
 for i, expr in enumerate(dy, start=1):
-    print(f"dy{i}/dtau =", sp.latex(sp.factor(expr)))
+    # Factoring the full multivariate rational sum can dominate the entire run.
+    # The individual rate expressions above are already factored.
+    print(f"dy{i}/dtau =", sp.latex(expr))

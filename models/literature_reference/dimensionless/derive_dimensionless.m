@@ -21,7 +21,7 @@ syms mu_TX mu_RS mu_TL mu_EN mu_TLdeg positive
 syms kapTXdna kapTXntp kapRSa kapRSt kapRSntp positive
 syms kapTLnt kapTLat kapTLntp kapENcp kapENnxp positive
 
-s23 = sym(23)/10;
+s23 = n_T/n_A; % canonical RHS; exactly 23/10 at n_T=46, n_A=20
 
 %% 2. Dimensional rates
 V_TX = k_TX*C_TXcat * DNA/(K_TX_DNA + DNA) * NTP/(K_TX_NTP + NTP);
@@ -89,7 +89,8 @@ for j = 1:numel(rateDim)
     expr = subs(rateDim{j}, oldConc, newConc);
     expr = subs(expr, oldK, newK);
     expr = subs(expr, oldMu, newMu);
-    v{j} = factor(simplify(expr/Vstar));
+    v{j} = simplify(expr/Vstar); % factor returns a VECTOR of factors in MATLAB
+    assert(isscalar(v{j}));
 end
 vTX = v{1};
 vRS = v{2};
@@ -99,7 +100,7 @@ vEN = v{4};
 rhoA = n_NTP*c_NTP0/(n_A*cA0);
 rhoT = n_NTP*c_NTP0/(n_T*cT0);
 rhoC = n_NTP*c_NTP0/cCP0;
-muTLD = k_TLdeg/k_ntdeg;
+muTLD = mu_TLdeg;
 
 %% 6. Compact dimensionless ODEs
 % dy_i/dtau = rhs_i/(scale_i*k_ntdeg)
@@ -129,13 +130,24 @@ for j = 1:numel(resDim)
     assert(isAlways(resDim{j} == 0));
 end
 
+% Independent chain-rule path from each dimensional ODE.
+for i = 1:12
+    direct = subs(rhs{i}, oldConc, newConc)/(scales{i}*k_ntdeg);
+    direct = subs(subs(direct, oldK, newK), oldMu, newMu);
+    residual = simplify(dy{i} - direct);
+    assert(isscalar(residual) && isAlways(residual == 0));
+    fprintf('ODE %d symbolic equivalence: PASS (residual 0)\n', i);
+end
+
 %% 7. Write generated result
 names = {'y1 [NTP]','y2 [NXP]','y3 [nt]','y4 [A]','y5 [T]','y6 [AT]', ...
          'y7 [a]','y8 [CP]','y9 [C]','y10 [TLcat]','y11 [D_nt]','y12 [D_TLcat]'};
 
-outPath = fullfile(fileparts(mfilename('fullpath')), 'dimensionless_result.txt');
+% Keep the curated compact reference intact; this is generated CAS output.
+outPath = fullfile(fileparts(mfilename('fullpath')), 'dimensionless_result_matlab.txt');
 fid = fopen(outPath, 'w');
-cleanupObj = onCleanup(@() fclose(fid)); %#ok<NASGU>
+assert(fid ~= -1, 'Cannot open generated output: %s', outPath);
+cleanupObj = onCleanup(@() fclose(fid));
 
 fprintf(fid, 'Dimensionless rates: v_j = V_j/(k_ntdeg*n_NTP*c_NTP0)\n');
 fprintf(fid, 'v_TX = %s\n', char(latex(vTX)));
@@ -145,8 +157,9 @@ fprintf(fid, 'v_EN = %s\n\n', char(latex(vEN)));
 
 fprintf(fid, 'Dimensionless ODEs: dy_i/dtau\n');
 for i = 1:12
-    fprintf(fid, 'd%s/dtau = %s\n', names{i}, char(latex(factor(dy{i}))));
+    fprintf(fid, 'd%s/dtau = %s\n', names{i}, char(latex(simplify(dy{i}))));
 end
 
 fprintf('\nAll dimensional and dimensionless conservation checks passed.\n');
 fprintf('Result written to %s\n', outPath);
+clear cleanupObj; % Close the file even when invoked from a shared workspace.

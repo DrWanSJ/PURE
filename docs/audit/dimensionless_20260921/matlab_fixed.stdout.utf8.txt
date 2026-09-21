@@ -1,0 +1,33 @@
+MATLAB: 25.2.0.3150157 (R2025b) Update 4
+       Name: 'Symbolic Math Toolbox'
+    Version: '25.2'
+    Release: '(R2025b)'
+       Date: '28-Jul-2025'
+
+ODE 1 symbolic equivalence: PASS (residual 0)
+ODE 2 symbolic equivalence: PASS (residual 0)
+ODE 3 symbolic equivalence: PASS (residual 0)
+ODE 4 symbolic equivalence: PASS (residual 0)
+ODE 5 symbolic equivalence: PASS (residual 0)
+ODE 6 symbolic equivalence: PASS (residual 0)
+ODE 7 symbolic equivalence: PASS (residual 0)
+ODE 8 symbolic equivalence: PASS (residual 0)
+ODE 9 symbolic equivalence: PASS (residual 0)
+ODE 10 symbolic equivalence: PASS (residual 0)
+ODE 11 symbolic equivalence: PASS (residual 0)
+ODE 12 symbolic equivalence: PASS (residual 0)
+
+All dimensional and dimensionless conservation checks passed.
+Result written to C:\Users\CZ\Desktop\PURE\models\literature_reference\dimensionless\dimensionless_result_matlab.txt
+Generated RHS trial 1 max residual: 1.7763568394002505e-15
+Generated RHS trial 2 max residual: 1.1102230246251565e-16
+Generated RHS trial 3 max residual: 2.2204460492503131e-16
+Generated RHS trial 4 max residual: 2.2204460492503131e-16
+Generated RHS trial 5 max residual: 2.2204460492503131e-16
+GENERATED RHS: PASS (5 x 12), global max absolute residual 1.7763568394002505e-15
+正在运行 test_pure_literature_reference
+.........
+已完成 test_pure_literature_reference
+__________
+
+MATLAB AUDIT ALL PASS (9 existing model tests)

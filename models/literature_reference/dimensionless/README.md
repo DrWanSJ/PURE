@@ -1,13 +1,16 @@
-# SynCell 无细胞表达系统 —— 无量纲化推导与守恒律检验（审计修订版 v2）
+# PURE literature-reference —— 无量纲化推导与守恒律检验
 
 > 生成日期：2026-09-21 · 参考时间尺度 τ = k_nt,deg·t · 依据 **Mavelli 2015 PURE** 原始物理 ODE；额外加入 `D_nt` 与 `D_TLcat` 两个仅用于守恒记账的积分器，不反馈任何速率
-> 检验引擎：Wolfram Language 14.3（`wolframscript -script verify_wolfram_v2.wl`）
-> 结论：**12 个 ODE 代数等价 + 5 条守恒律（有量纲层与无量纲层）全部符号恒等通过；数值残差 ≤ 3.3e-16**
+> 实际检验引擎：Wolfram kernel 14.3.0、Python 3.14.3 / SymPy 1.14.0、MATLAB R2025b / Symbolic Math Toolbox 25.2。
+> 2026-09-21 修复后：**Wolfram 12 式符号等价、两层各 5 条守恒全部通过；5×12 独立数值求值的最大绝对残差为 8.881784197001252e-16（阈值 1e-12），进程退出码 0。**
+> 完整原版/修复版日志、缺陷说明与源模型交叉检查见 [严格审计报告](../../../docs/audit/dimensionless_20260921/REPORT.md)。
 > Multiplicity 约定：n_NTP = 4，n_A = 20，n_T = 46（符号保留，具体化亦复核）
 
 ---
 
 ## 0. 本次审计修订摘要
+
+原版 Wolfram 的符号等价检查实际通过，但失败不影响退出码；原版 MATLAB 因 `factor` 返回因子向量而无法执行完成。此次最小修复增加失败退出、独立数值求值和状态映射检查，修复 MATLAB 标量表达式，并将三份脚本的 `s23` 统一为 canonical RHS 使用的 `n_T/n_A`。在物理 multiplicities `4,20,46` 下它仍严格等于 `2.3`。随机 multiplicity 仅用于代数压力检查，不代表新的物理模型。未改变原始模型或拟合参数。
 
 | 项 | 上一版结论 | 本次修正 |
 |---|---|---|
@@ -52,6 +55,29 @@ y₁=[NTP]/c_NTP,0 · y₂=[NXP]/(n·c) · y₃=[nt]/(n·c) · y₄=[A]/c_A,0 ·
 - 饱和常数 κ_X = K_X/(底物尺度)，2.3 吸收进 κ_RS,T、κ_TL,AT；对固定 DNA 输入，κ_TX,DNA = K_TX,DNA/[DNA]，因此 θ_DNA=1/(1+κ_TX,DNA)=[DNA]/(K_TX,DNA+[DNA])
 - **独立的**尺度耦合比：ρ_A = n·c/(n_A·c_A,0)，ρ_T = n·c/(n_T·c_T,0)，ρ_C = n·c/c_CP,0
   —— ρ_A、ρ_T **互不约束**。
+
+完整参数定义（`f=n_T/n_A=46/20`；仅 T/AT 饱和项含此因子）：
+
+| 参数 | 定义 |
+|---|---|
+| μ_TX | k_TX C_TXcat / V_star |
+| μ_RS | k_RS C_RScat / V_star |
+| μ_TL | k_TL c_TLcat,0 / V_star |
+| μ_EN | k_EN C_ENcat / V_star |
+| μ_TL,deg | k_TL,deg / k_nt,deg |
+| θ_DNA | DNA / (K_TX,DNA + DNA) |
+| κ_TX,DNA | K_TX,DNA / DNA（DNA > 0） |
+| κ_TX,NTP | K_TX,NTP / c_NTP,0 |
+| κ_RS,A | K_RS,A / c_A,0 |
+| κ_RS,T | K_RS,T / (f c_T,0) |
+| κ_RS,NTP | K_RS,NTP / c_NTP,0 |
+| κ_TL,nt | K_TL,nt / (n_NTP c_NTP,0) |
+| κ_TL,AT | K_TL,AT / (f c_T,0) |
+| κ_TL,NTP | K_TL,NTP / c_NTP,0 |
+| κ_EN,CP | K_EN,CP / c_CP,0 |
+| κ_EN,NXP | K_EN,NXP / (n_NTP c_NTP,0) |
+
+其中 `V_star=k_nt,deg n_NTP c_NTP,0`。对每个状态，链式法则为 `dy_i/dτ=RHS_i/(scale_i k_nt,deg)`。`V_nt,deg/V_star=y3`；`V_TL,deg/V_star=μ_TL,deg c_TLcat,0 y10/(n_NTP c_NTP,0)`，在 TLcat 自身浓度尺度下才得到 `dy10/dτ=−μ_TL,deg y10`。各尺度和速率分母为正；状态可为零。Wolfram 的 θ_DNA 写法支持 DNA=0，此时 θ_DNA=0；κ_TX,DNA 写法在 DNA=0 需取极限，不能直接除以零。
 
 ---
 
@@ -119,12 +145,15 @@ d/dτ = (−ρ_AṼ_RS+ρ_AṼ_TL)/ρ_A + ρ_T(Ṽ_RS−Ṽ_TL)/ρ_T = −Ṽ_RS
 T2  dimensional conservation residuals: NTP / AA / tRNA / CP / TLcat  → 全 0 (True)
 T1  per-ODE symbolic equivalence (12):  {1..12, 0, True}   → T1 ALL PASS: True
 T3  dimensionless conservation (5):     全 0               → T3 ALL PASS: True
-T4  numeric residuals (5 trials):       max|residual| = 3.33e-16 (< 1e-12) → True
+T4  numeric residuals (5 x 12):        max|residual| = 8.881784197001252e-16 (< 1e-12) → True
 T5  n_NTP=4, n_A=20, n_T=46 具体化:     B_NTP/B_AA/B_tRNA 残差 全 0
+AUDIT ALL PASS: True; process exit code: 0
 ```
 
 - **T1（代数等价性）**：把紧凑式 μ/κ/ρ 回填有量纲定义，与「dimensional→链式法则直推」逐式相减，12 式 FullSimplify 全 0。
 - **T2/T3（模型结构一致性）**：原始 ODE 与声明的守恒律一致；无量纲守恒律系数正确，未假设任何 pool scale 相等。
+- **T4（数值补充）**：分别计算原始 dimensional RHS 的数值链式法则结果与 compact RHS 的数值结果，然后相减；不先形成符号差。符号证明与浮点残差是两类证据。
+- 源模型一致性另由审计目录内 `audit_source_bridge.py` 读取 canonical JSON、WL 和 Python 源表达式验证；MATLAB wrapper 实际调用生成的 RHS 比对 5×12 式。
 
 ---
 
@@ -133,7 +162,7 @@ T5  n_NTP=4, n_A=20, n_T=46 具体化:     B_NTP/B_AA/B_tRNA 残差 全 0
 1. **dimensional → dimensionless 代数等价性**：由 T1 保证（12/12 = 0）。
 2. **原始 ODE 与守恒律的结构一致性**：由 T2（有量纲）+ T3（无量纲）保证，且不要求 ρ_A=ρ_T 或 n_A·c_A,0=n_T·c_T,0。
 
-**已彻底移除**上一版"A+AT 守恒需 ρ_A=ρ_T"的错误判断。除此之外未发现其他代数错误；原始 Mavelli 模型未作任何改动。
+**已彻底移除**上一版"A+AT 守恒需 ρ_A=ρ_T"的错误判断。此次另外修复验证程序中的执行与测试缺陷；原始 Mavelli 模型未作任何改动。
 
 ---
 
@@ -141,8 +170,10 @@ T5  n_NTP=4, n_A=20, n_T=46 具体化:     B_NTP/B_AA/B_tRNA 残差 全 0
 
 | 文件 | 用途 | 状态 |
 |---|---|---|
-| `verify_wolfram_v2.wl` | WL 14.3 五层检验（本文所有结果来源） | 本次新增 |
-| `derive_dimensionless.py` | sympy 推导 + 数值校验 | ρ_A/ρ_T 独立，无错误逻辑，保留 |
-| `derive_dimensionless.m` | MATLAB Symbolic Toolbox 推导（同构） | ρ_A/ρ_T 独立；已统一使用 MATLAB `subs`/`simplify` 语法并加入守恒检查 |
+| `verify_wolfram_v2.wl` | 独立手写 compact 与 dimensional 链式法则对照 | 已在本机 Wolfram kernel 实际通过 |
+| `derive_dimensionless.py` | SymPy 推导、两层守恒与数值校验 | 已实际通过；ρ_A/ρ_T 独立 |
+| `derive_dimensionless.m` | MATLAB 符号推导、12 式等价与两层守恒 | 已实际通过；标量 RHS |
+| `dimensionless_result.txt` | 人工整理的 compact reference | 与脚本表达式一致，保留原文件 |
+| `dimensionless_result_matlab.txt` | MATLAB 实际生成的 CAS 表达式 | 由 `.m` 写出，避免覆盖 compact reference |
 
-> 注：`.py`/`.m` 经 grep 审计，均以 n_A 除 A、以 n_T 除 T/AT，且 ρ_A、ρ_T、ρ_C 各自独立定义，**不存在** `rho_A==rho_T` 或 `n_A·c_A0==n_T·c_T0` 的隐含假设，无需修改。错误仅存在于旧版 Markdown 文档的叙述，已在本 v2 文档修正。
+> 核验范围是当前仓库 literature-reference 方程的代数无量纲化；不据此扩大为生物学有效性或任意模型版本的证明。完整 stdout、退出状态和源文件哈希均保存在上述审计目录。

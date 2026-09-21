@@ -11,7 +11,13 @@
    T5: conservation check with nN=4, nA=20, nT=46
 *)
 
-$s23 = 23/10;
+(* Isolate symbols from Global` and ignore any ambient Simplify assumptions. *)
+BeginPackage["PURENondimensionalizationAudit`"];
+ClearAll["PURENondimensionalizationAudit`*"];
+Block[{$Assumptions = True},
+Print["Wolfram kernel: ", $Version];
+(* The canonical RHS uses this ratio; it is exactly 23/10 at 46/20. *)
+$s23 = nT/nA;
 
 (* ---------- 0. Dimensional model ---------- *)
 Vtx = kTX Ct DNA/(Kd + DNA) NTP/(Kt + NTP);
@@ -44,6 +50,8 @@ Print["AA: ", FullSimplify[resAAraw]];
 Print["tRNA: ", FullSimplify[resTraw]];
 Print["CP: ", FullSimplify[dCP + dC]];
 Print["TLcat: ", FullSimplify[dTLc + dDTL]];
+t2 = FullSimplify /@ {resNTPraw, resAAraw, resTraw, dCP + dC, dTLc + dDTL};
+Print["T2 ALL PASS: ", AllTrue[t2, SameQ[#, 0] &]];
 
 (* ---------- 1. Scales and definitions ---------- *)
 subc = {
@@ -55,6 +63,13 @@ subc = {
 
 scales = {cN, nN cN, nN cN, cA, cT, cT, nA cA, cC, cC, cL, nN cN, cL};
 rhs = {dNTP, dNXP, dnt, dA, dT, dAT, da, dCP, dC, dTLc, dDnt, dDTL};
+states = {NTP, NXP, nt, A, T, AT, a, CP, C, TLcat, Dnt, DTL};
+ys = {y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y11, y12};
+(* Check passive-state mappings too: the RHS alone cannot observe them. *)
+mappingResiduals = FullSimplify[(states /. subc)/scales - ys];
+mappingPass = SameQ[mappingResiduals, ConstantArray[0, 12]];
+noFeedbackPass = FreeQ[{Vtx, Vrs, Vtl, Ven, Vnd, Vld}, Dnt | DTL];
+Print["STATE MAPPING (12): ", mappingPass, "; NO ACCOUNTING FEEDBACK: ", noFeedbackPass];
 
 direct = Table[
  FullSimplify[(rhs[[i]] /. subc)/(scales[[i]] knd)],
@@ -103,6 +118,13 @@ compact = {
   muTLD y10
 };
 compactDim = compact /. dimDef;
+(* Immediate one-level rules; no dimensionless symbols may remain. *)
+definitionsPass = FreeQ[compactDim, Alternatives @@ (First /@ dimDef)];
+dnaResidual = FullSimplify[DNA/(Kd + DNA) - 1/(1 + Kd/DNA),
+ Assumptions -> DNA > 0 && Kd > 0];
+effectiveTXResidual = FullSimplify[(muTX thD /. dimDef) -
+ kTX Ct DNA/(knd nN cN (Kd + DNA))];
+Print["DNA parametrization: ", dnaResidual, "; effective TX: ", effectiveTXResidual];
 
 (* ---------- T1. Per-ODE symbolic equivalence ---------- *)
 Print["
@@ -118,7 +140,6 @@ Print["T1 ALL PASS: ", TrueQ[And @@ (#[[3]] & /@ t1)]];
 (* ---------- T3. Dimensionless conservation ---------- *)
 Print["
 ========== T3: dimensionless conservation =========="];
-ys = {y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y11, y12};
 invList = {
  y1 + y2 + y3 + y11,
  (y4 + y7)/rhoA + y6/rhoT,
@@ -148,16 +169,30 @@ parsDim = {
  kEn, Ce, Kcp, Knxp, knd, kld, nN, nA, nT, cN, cA, cT, cC, cL, DNA
 };
 maxRes = 0.;
+numericPass = True;
+numericCount = 0;
 Do[
  vals = Thread[parsDim -> RandomReal[{0.05, 5}, Length[parsDim]]];
  yv = Thread[ys -> RandomReal[{0.05, 3}, 12]];
- res = Max[Abs[N[(compactDim - direct) /. vals /. yv]]];
+ (* Evaluate both sides numerically BEFORE subtraction. The direct path uses
+    the original dimensional RHS and explicit X_i = scale_i y_i. *)
+ stateVals = Thread[states -> N[(scales /. vals) (ys /. yv)]];
+ directNum = N[(rhs /. vals /. stateVals)/((scales /. vals) (knd /. vals))];
+ dimVals = (First[#] -> N[Last[#] /. vals]) & /@ dimDef;
+ compactNum = N[compact /. dimVals /. yv];
+ residuals = Abs[compactNum - directNum];
+ trialPass = Length[residuals] == 12 && VectorQ[residuals, NumberQ] &&
+   TrueQ[Max[residuals] < 10^-12];
+ numericPass = numericPass && trialPass;
+ numericCount += Length[residuals];
+ res = Max[residuals];
  maxRes = Max[maxRes, res];
- Print["trial ", tr, ": max|residual| = ", res],
+ Print["trial ", tr, ": residuals = ", residuals,
+   "; max|residual| = ", res, "; PASS: ", trialPass],
  {tr, 5}
 ];
 Print["T4 global max |residual| = ", maxRes,
-      "  (<1e-12: ", TrueQ[maxRes < 10^-12], ")"];
+      "  (<1e-12: ", TrueQ[numericPass], "); equations checked: ", numericCount];
 
 (* ---------- T5. PURE multiplicities ---------- *)
 Print["
@@ -165,3 +200,16 @@ Print["
 Print["AA: ", FullSimplify[resAAraw /. {nA -> 20, nT -> 46}]];
 Print["tRNA: ", FullSimplify[resTraw /. nT -> 46]];
 Print["NTP: ", FullSimplify[resNTPraw /. nN -> 4]];
+physicalMultiplicityPass = SameQ[$s23 /. {nA -> 20, nT -> 46}, 23/10];
+t5 = FullSimplify[t2 /. {nN -> 4, nA -> 20, nT -> 46}];
+Print["T5 ratio 46/20 == 23/10: ", physicalMultiplicityPass];
+
+allPass = mappingPass && noFeedbackPass && definitionsPass &&
+ SameQ[dnaResidual, 0] && SameQ[effectiveTXResidual, 0] &&
+ And @@ (#[[3]] & /@ t1) && AllTrue[t2, SameQ[#, 0] &] &&
+ And @@ (#[[3]] & /@ t3) && numericPass && numericCount == 60 &&
+ physicalMultiplicityPass && AllTrue[t5, SameQ[#, 0] &];
+Print["AUDIT ALL PASS: ", TrueQ[allPass]];
+Exit[If[TrueQ[allPass], 0, 1]];
+];
+EndPackage[];

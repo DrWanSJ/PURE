@@ -1,0 +1,42 @@
+========== T2: dimensional conservation residuals ==========
+NTP: 0
+AA: 0
+tRNA: 0
+CP: 0
+TLcat: 0
+
+========== T1: per-ODE symbolic equivalence ==========
+{1, (23*cL*cN*cT*kTl*y1*y10*y3*y6)/(knd*(Kn3 + cN*y1)*(Knt + cN*nN*y3)*(10*Kat + 23*cT*y6)), False}
+{2, 0, True}
+{3, 0, True}
+{4, 0, True}
+{5, 0, True}
+{6, 0, True}
+{7, 0, True}
+{8, 0, True}
+{9, 0, True}
+{10, 0, True}
+{11, 0, True}
+{12, 0, True}
+T1 ALL PASS: False
+
+========== T3: dimensionless conservation ==========
+{nucleotide, (muTL*y1*y10*y3*y6)/((kxTLN + y1)*(kxTLn + y3)*(kxTLa + y6)), False}
+{amino-acid, 0, True}
+{tRNA, 0, True}
+{CP, 0, True}
+{TLcat, 0, True}
+T3 ALL PASS: False
+
+========== T4: numeric residuals ==========
+trial 1: max|residual| = 0.028979171051838823
+trial 2: max|residual| = 0.08676457301918727
+trial 3: max|residual| = 0.37615604259682733
+trial 4: max|residual| = 0.08205354400636011
+trial 5: max|residual| = 0.04102036978083634
+T4 global max |residual| = 0.37615604259682733  (<1e-12: False)
+
+========== T5: nN=4, nA=20, nT=46 ==========
+AA: 0
+tRNA: 0
+NTP: 0
