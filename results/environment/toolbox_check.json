@@ -1,0 +1,30 @@
+{
+  "MATLAB": {
+    "installed": true,
+    "version": "25.2.0.3177638 (R2025b) Update 5",
+    "smoke_test": true,
+    "message": "ode15s executed successfully"
+  },
+  "Symbolic": {
+    "function_found": true,
+    "license_available": 1,
+    "smoke_test": true,
+    "message": "symbolic simplify executed successfully"
+  },
+  "Optimization": {
+    "function_found": true,
+    "license_available": 1,
+    "smoke_test": true,
+    "message": "fsolve executed successfully; x = 1.41421356237469"
+  },
+  "SimBiology": {
+    "function_found": true,
+    "license_available": 1,
+    "smoke_test": true,
+    "message": "SimBiology model construction executed successfully"
+  },
+  "overall_pass": true,
+  "checked_at": "2026-09-22 00:20:01",
+  "matlab_version": "25.2.0.3177638 (R2025b) Update 5",
+  "computer": "PCWIN64"
+}

@@ -67,3 +67,21 @@ kept their content (the source PDFs/MD only got path-safe names, sha256 unchange
 `results/baselines/b1_mavelli2015/`; new runs write unversioned outputs to
 `results/runs/<run_id>/`. `.gitattributes` pins `*.json` to LF so provenance SHA-256
 hashes reproduce on fresh checkouts.
+
+## Project toolbox smoke test (2026-09-22)
+
+A project-level environment smoke test was executed on the user's Windows machine. This
+check is broader than the B1 runtime requirement: B1 itself still requires only base
+MATLAB, while later analysis may use the additional toolboxes.
+
+| component | license/function | executed smoke test | status |
+| --- | --- | --- | --- |
+| MATLAB R2025b Update 5 | available | `ode15s` on `dy/dt=-y` | **PASS** |
+| Symbolic Math Toolbox | license available | symbolic `simplify` identity | **PASS** |
+| Optimization Toolbox | license available | `fsolve(x^2-2)` | **PASS** |
+| SimBiology | license available | construct minimal model/compartment/species | **PASS** |
+
+Machine-readable evidence: `results/environment/toolbox_check.json`.
+
+Reproducible checker: `matlab/tools/check_environment.m`.
+
