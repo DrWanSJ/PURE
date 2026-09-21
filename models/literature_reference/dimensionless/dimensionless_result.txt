@@ -1,0 +1,69 @@
+PURE literature-reference dimensionless model
+Time scale: tau = k_ntdeg * t
+Common reaction-rate scale: V* = k_ntdeg * n_NTP * c_NTP0
+
+Dimensionless rates
+-------------------
+v_TX = mu_TX * theta_DNA * y1/(kappa_TX_NTP + y1)
+
+v_RS = mu_RS
+       * y4/(kappa_RS_A + y4)
+       * y5/(kappa_RS_T + y5)
+       * y1/(kappa_RS_NTP + y1)
+
+v_TL = mu_TL * y10
+       * y3/(kappa_TL_nt + y3)
+       * y6/(kappa_TL_AT + y6)
+       * y1/(kappa_TL_NTP + y1)
+
+v_EN = mu_EN
+       * y8/(kappa_EN_CP + y8)
+       * y2/(kappa_EN_NXP + y2)
+
+Dimensionless ODEs
+------------------
+dy1/dtau  = -v_TX - v_RS - 2*v_TL + v_EN
+dy2/dtau  =  v_RS + 2*v_TL - v_EN
+dy3/dtau  =  v_TX - y3
+dy4/dtau  = -rho_A*v_RS
+dy5/dtau  =  rho_T*(-v_RS + v_TL)
+dy6/dtau  =  rho_T*( v_RS - v_TL)
+dy7/dtau  =  rho_A*v_TL
+dy8/dtau  = -rho_C*v_EN
+dy9/dtau  =  rho_C*v_EN
+dy10/dtau = -mu_TLdeg*y10
+dy11/dtau =  y3
+dy12/dtau =  mu_TLdeg*y10
+
+Dimensionless parameter definitions
+-----------------------------------
+mu_TX    = k_TX*C_TXcat/(k_ntdeg*n_NTP*c_NTP0)
+mu_RS    = k_RS*C_RScat/(k_ntdeg*n_NTP*c_NTP0)
+mu_TL    = k_TL*c_TLcat0/(k_ntdeg*n_NTP*c_NTP0)
+mu_EN    = k_EN*C_ENcat/(k_ntdeg*n_NTP*c_NTP0)
+mu_TLdeg = k_TLdeg/k_ntdeg
+
+theta_DNA     = DNA/(K_TX_DNA + DNA)
+kappa_TX_NTP  = K_TX_NTP/c_NTP0
+kappa_RS_A    = K_RS_A/c_A0
+kappa_RS_T    = K_RS_T/(2.3*c_T0)
+kappa_RS_NTP  = K_RS_NTP/c_NTP0
+kappa_TL_nt   = K_TL_nt/(n_NTP*c_NTP0)
+kappa_TL_AT   = K_TL_AT/(2.3*c_T0)
+kappa_TL_NTP  = K_TL_NTP/c_NTP0
+kappa_EN_CP   = K_EN_CP/c_CP0
+kappa_EN_NXP  = K_EN_NXP/(n_NTP*c_NTP0)
+
+rho_A = n_NTP*c_NTP0/(n_A*c_A0)
+rho_T = n_NTP*c_NTP0/(n_T*c_T0)
+rho_C = n_NTP*c_NTP0/c_CP0
+
+Dimensionless invariants
+------------------------
+I_NTP   = y1 + y2 + y3 + y11
+I_AA    = (y4 + y7)/rho_A + y6/rho_T
+I_tRNA  = y5 + y6
+I_CP    = y8 + y9
+I_TLcat = y10 + y12
+
+All five derivatives vanish identically under the compact ODEs.
