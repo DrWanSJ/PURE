@@ -1,0 +1,461 @@
+{
+  "schema_version": "0.2",
+  "contract_id": "PURE_literature_reference_flow_v0",
+  "model_id": "PURE_literature_reference",
+  "model_type": "fixed_volume_batch",
+  "purpose": "Machine-readable contract mapping the validated PURE literature-reference model to frontend controls, graph nodes, reaction flows, observables, conservation ledgers, and debug views.",
+  "canonical_model_source": "models/literature_reference/model_definition.json",
+  "units": {
+    "time": "s",
+    "concentration": "uM",
+    "rate": "uM/s"
+  },
+  "controls": {
+    "initial_conditions": {
+      "primary": [
+        {
+          "id": "NTP0",
+          "state": "NTP",
+          "label": "Initial NTP",
+          "unit": "uM",
+          "default_ref": "parameters.json:initial_conditions.NTP",
+          "editable": true
+        },
+        {
+          "id": "A0",
+          "state": "A",
+          "label": "Initial amino acid",
+          "unit": "uM",
+          "default_ref": "parameters.json:initial_conditions.A",
+          "editable": true
+        },
+        {
+          "id": "T0",
+          "state": "T",
+          "label": "Initial tRNA",
+          "unit": "uM",
+          "default_ref": "parameters.json:initial_conditions.T",
+          "editable": true
+        },
+        {
+          "id": "CP0",
+          "state": "CP",
+          "label": "Initial creatine phosphate",
+          "unit": "uM",
+          "default_ref": "parameters.json:initial_conditions.CP",
+          "editable": true
+        },
+        {
+          "id": "TLcat0",
+          "state": "TLcat",
+          "label": "Initial translation machinery",
+          "unit": "uM",
+          "default_ref": "parameters.json:initial_conditions.TLcat",
+          "editable": true
+        }
+      ],
+      "advanced": [
+        {"id": "NXP0", "state": "NXP", "unit": "uM", "default": 0, "editable": true},
+        {"id": "nt0", "state": "nt", "unit": "uM", "default": 0, "editable": true},
+        {"id": "AT0", "state": "AT", "unit": "uM", "default": 0, "editable": true},
+        {"id": "a0", "state": "a", "unit": "uM", "default": 0, "editable": true},
+        {"id": "C0", "state": "C", "unit": "uM", "default": 0, "editable": true},
+        {"id": "D_nt0", "state": "D_nt", "unit": "uM", "default": 0, "editable": false},
+        {"id": "D_TLcat0", "state": "D_TLcat", "unit": "uM", "default": 0, "editable": false}
+      ]
+    },
+    "fixed_inputs": [
+      {
+        "id": "DNA",
+        "label": "DNA template",
+        "role": "fixed_input",
+        "unit": "uM",
+        "value_ref": "per-run",
+        "editable": true
+      },
+      {
+        "id": "TXcat",
+        "label": "Transcription catalyst",
+        "role": "fixed_input",
+        "unit": "uM",
+        "value_ref": "parameters.json:parameters.TXcat",
+        "editable": true
+      },
+      {
+        "id": "RScat",
+        "label": "Aminoacylation catalyst",
+        "role": "fixed_input",
+        "unit": "uM",
+        "value_ref": "parameters.json:parameters.RScat",
+        "editable": true
+      },
+      {
+        "id": "ENcat",
+        "label": "Energy-regeneration catalyst",
+        "role": "fixed_input",
+        "unit": "uM",
+        "value_ref": "parameters.json:parameters.ENcat",
+        "editable": true
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "NTP",
+      "label": "NTP",
+      "role": "dynamic_state",
+      "state_index": 1,
+      "initial_control": "NTP0",
+      "unit": "uM",
+      "group": "nucleotide",
+      "definition": "Average concentration per nucleotide species over ATP/GTP/CTP/UTP.",
+      "display": true,
+      "debug_display": true
+    },
+    {
+      "id": "NXP",
+      "label": "NXP",
+      "role": "dynamic_state",
+      "state_index": 2,
+      "unit": "uM",
+      "group": "nucleotide",
+      "definition": "Overall exhausted-nucleotide pool; NDP and NMP are pooled.",
+      "display": true,
+      "debug_display": true
+    },
+    {
+      "id": "nt",
+      "label": "polymerized nucleotide",
+      "role": "dynamic_state",
+      "state_index": 3,
+      "unit": "uM",
+      "group": "RNA",
+      "definition": "Overall polymerized nucleotide residues; not mRNA molecule concentration.",
+      "display": true,
+      "debug_display": true
+    },
+    {
+      "id": "A",
+      "label": "amino acid",
+      "role": "dynamic_state",
+      "state_index": 4,
+      "initial_control": "A0",
+      "unit": "uM",
+      "group": "amino_acid",
+      "definition": "Average amino-acid concentration over 20 amino acids.",
+      "display": true,
+      "debug_display": true
+    },
+    {
+      "id": "T",
+      "label": "uncharged tRNA",
+      "role": "dynamic_state",
+      "state_index": 5,
+      "initial_control": "T0",
+      "unit": "uM",
+      "group": "tRNA",
+      "definition": "Average uncharged-tRNA concentration over 46 tRNA species.",
+      "display": true,
+      "debug_display": true
+    },
+    {
+      "id": "AT",
+      "label": "aminoacyl-tRNA",
+      "role": "dynamic_state",
+      "state_index": 6,
+      "unit": "uM",
+      "group": "tRNA",
+      "definition": "Average aminoacyl-tRNA concentration per tRNA species.",
+      "display": true,
+      "debug_display": true
+    },
+    {
+      "id": "a",
+      "label": "polymerized amino acid",
+      "role": "dynamic_state",
+      "state_index": 7,
+      "unit": "uM",
+      "group": "protein",
+      "definition": "Overall polymerized amino-acid residues; not protein molecule concentration.",
+      "display": true,
+      "debug_display": true
+    },
+    {
+      "id": "CP",
+      "label": "creatine phosphate",
+      "role": "dynamic_state",
+      "state_index": 8,
+      "initial_control": "CP0",
+      "unit": "uM",
+      "group": "energy",
+      "display": true,
+      "debug_display": true
+    },
+    {
+      "id": "C",
+      "label": "creatine",
+      "role": "dynamic_state",
+      "state_index": 9,
+      "unit": "uM",
+      "group": "energy",
+      "display": true,
+      "debug_display": true
+    },
+    {
+      "id": "TLcat",
+      "label": "translation machinery",
+      "role": "dynamic_state",
+      "state_index": 10,
+      "initial_control": "TLcat0",
+      "unit": "uM",
+      "group": "catalyst",
+      "definition": "Fictitious effective translation catalyst representing ribosomes and translation factors.",
+      "display": true,
+      "debug_display": true
+    },
+    {
+      "id": "D_nt",
+      "label": "degraded nt accounting pool",
+      "role": "accounting_state",
+      "state_index": 11,
+      "unit": "uM",
+      "group": "accounting",
+      "feeds_back_into_rates": false,
+      "display": false,
+      "debug_display": true
+    },
+    {
+      "id": "D_TLcat",
+      "label": "degraded TLcat accounting pool",
+      "role": "accounting_state",
+      "state_index": 12,
+      "unit": "uM",
+      "group": "accounting",
+      "feeds_back_into_rates": false,
+      "display": false,
+      "debug_display": true
+    }
+  ],
+  "flows": [
+    {
+      "id": "R_TX",
+      "label": "Transcription",
+      "module": "TX",
+      "modeled_in_rhs": true,
+      "reaction_equation": "NTP -> nt + PPi",
+      "rate_source": "V_TX",
+      "rate_unit": "uM/s",
+      "rate_law_ref": "model_definition.json:rates[V_TX]",
+      "chemical_stoichiometry_prediv": {"NTP": -1, "nt": 1},
+      "state_divisors": {"NTP": "n_NTP"},
+      "modulators": ["DNA", "TXcat"],
+      "parameters": ["k_TX", "K_TX_DNA", "K_TX_NTP"],
+      "untracked_context": ["PPi"],
+      "display": true
+    },
+    {
+      "id": "R_nt_deg",
+      "label": "nt degradation",
+      "module": "TX",
+      "modeled_in_rhs": true,
+      "reaction_equation": "nt -> degradation species",
+      "rate_source": "V_nt_deg",
+      "rate_unit": "uM/s",
+      "rate_law_ref": "model_definition.json:rates[V_nt_deg]",
+      "chemical_stoichiometry_prediv": {"nt": -1, "D_nt": 1},
+      "state_divisors": {},
+      "parameters": ["k_nt_deg"],
+      "display": true
+    },
+    {
+      "id": "R_RS",
+      "label": "Aminoacylation",
+      "module": "RS",
+      "modeled_in_rhs": true,
+      "reaction_equation": "A + T + NTP -> AT + NXP",
+      "rate_source": "V_RS",
+      "rate_unit": "uM/s",
+      "rate_law_ref": "model_definition.json:rates[V_RS]",
+      "chemical_stoichiometry_prediv": {"A": -1, "T": -1, "NTP": -1, "AT": 1, "NXP": 1},
+      "state_divisors": {"NTP": "n_NTP", "A": "n_A", "T": "n_T", "AT": "n_T"},
+      "modulators": ["RScat"],
+      "parameters": ["k_RS", "K_RS_A", "K_RS_T", "K_RS_NTP"],
+      "display": true
+    },
+    {
+      "id": "R_TL",
+      "label": "Translation",
+      "module": "TL",
+      "modeled_in_rhs": true,
+      "reaction_equation": "AT + 2 NTP -> a + T + 2 NXP",
+      "rate_source": "V_TL",
+      "rate_unit": "uM/s",
+      "rate_law_ref": "model_definition.json:rates[V_TL]",
+      "chemical_stoichiometry_prediv": {"AT": -1, "NTP": -2, "a": 1, "T": 1, "NXP": 2},
+      "state_divisors": {"NTP": "n_NTP", "T": "n_T", "AT": "n_T"},
+      "modulators": ["nt", "TLcat"],
+      "parameters": ["k_TL", "K_TL_nt", "K_TL_AT", "K_TL_NTP"],
+      "display": true
+    },
+    {
+      "id": "R_TL_deg",
+      "label": "TLcat degradation",
+      "module": "TL",
+      "modeled_in_rhs": true,
+      "reaction_equation": "TLcat -> degradation species",
+      "rate_source": "V_TL_deg",
+      "rate_unit": "uM/s",
+      "rate_law_ref": "model_definition.json:rates[V_TL_deg]",
+      "chemical_stoichiometry_prediv": {"TLcat": -1, "D_TLcat": 1},
+      "state_divisors": {},
+      "parameters": ["k_TL_deg"],
+      "display": true
+    },
+    {
+      "id": "R_EN",
+      "label": "Energy regeneration",
+      "module": "EN",
+      "modeled_in_rhs": true,
+      "reaction_equation": "CP + NXP -> C + NTP",
+      "rate_source": "V_EN",
+      "rate_unit": "uM/s",
+      "rate_law_ref": "model_definition.json:rates[V_EN]",
+      "chemical_stoichiometry_prediv": {"CP": -1, "NXP": -1, "C": 1, "NTP": 1},
+      "state_divisors": {"NTP": "n_NTP"},
+      "modulators": ["ENcat"],
+      "parameters": ["k_EN", "K_EN_CP", "K_EN_NXP"],
+      "display": true
+    }
+  ],
+  "context_flows": [
+    {
+      "id": "R_PPi_hydrolysis_context",
+      "label": "PPi hydrolysis",
+      "modeled_in_rhs": false,
+      "reaction_equation": "PPi -> 2 Pi",
+      "rate_source": null,
+      "context_only": true,
+      "display": false,
+      "debug_display": true,
+      "note": "Paper reaction retained as chemical context; PPi and Pi are outside the B1 state vector and do not feed back."
+    }
+  ],
+  "observables": {
+    "parameters": [
+      {
+        "id": "L",
+        "label": "protein length",
+        "unit": "aa/protein",
+        "default": 238,
+        "value_ref": "parameters.json:protein.length_aa_L",
+        "source": "Mavelli 2015 Sect. 3 and Fig. 4 caption"
+      }
+    ],
+    "mappings": [
+      {
+        "id": "nt",
+        "label": "polymerized nucleotide",
+        "expression": "nt",
+        "unit": "uM"
+      },
+      {
+        "id": "a",
+        "label": "polymerized amino acid",
+        "expression": "a",
+        "unit": "uM"
+      },
+      {
+        "id": "mRNA",
+        "label": "mRNA concentration",
+        "expression": "nt / (3 * L)",
+        "source_state": "nt",
+        "parameter_refs": ["L"],
+        "unit": "uM"
+      },
+      {
+        "id": "protein",
+        "label": "protein concentration",
+        "expression": "a / L",
+        "source_state": "a",
+        "parameter_refs": ["L"],
+        "unit": "uM"
+      }
+    ]
+  },
+  "conservation_ledgers": [
+    {
+      "id": "B_NTP",
+      "expression": "n_NTP*NTP + nt + NXP + D_nt",
+      "reference_multiplicity": {"n_NTP": 4}
+    },
+    {
+      "id": "B_AA",
+      "expression": "n_A*A + a + n_T*AT",
+      "reference_multiplicity": {"n_A": 20, "n_T": 46}
+    },
+    {
+      "id": "B_tRNA",
+      "expression": "n_T*T + n_T*AT",
+      "reference_multiplicity": {"n_T": 46}
+    },
+    {
+      "id": "B_CP",
+      "expression": "CP + C"
+    },
+    {
+      "id": "B_TLcat",
+      "expression": "TLcat + D_TLcat"
+    }
+  ],
+  "dimensionless_mapping": {
+    "source_ref": "models/literature_reference/dimensionless/dimensionless_result.txt",
+    "time": {"tau": "k_nt_deg * t"},
+    "states": {
+      "NTP": "y1",
+      "NXP": "y2",
+      "nt": "y3",
+      "A": "y4",
+      "T": "y5",
+      "AT": "y6",
+      "a": "y7",
+      "CP": "y8",
+      "C": "y9",
+      "TLcat": "y10",
+      "D_nt": "y11",
+      "D_TLcat": "y12"
+    }
+  },
+  "display": {
+    "default": {
+      "show_accounting_states": false,
+      "show_fixed_inputs": true,
+      "show_context_flows": false,
+      "show_reaction_rates": true,
+      "show_stoichiometry": false
+    },
+    "debug": {
+      "show_accounting_states": true,
+      "show_fixed_inputs": true,
+      "show_context_flows": true,
+      "show_all_state_ids": true,
+      "show_rate_ids": true,
+      "show_stoichiometry": true,
+      "show_state_divisors": true
+    }
+  },
+  "source_refs": {
+    "model_definition": "models/literature_reference/model_definition.json",
+    "parameters": "models/literature_reference/parameters.json",
+    "species": "models/literature_reference/species.csv",
+    "reactions": "models/literature_reference/reactions.csv",
+    "theory_notes": "docs/theory_notes.md",
+    "dimensionless_audit": "docs/audit/dimensionless_20260921/REPORT.md"
+  },
+  "notes": [
+    "Flows represent modeled processes/reactions, not kinetic parameters.",
+    "rate_source gives the instantaneous flux/rate for a flow; parameters lists the kinetic parameters used by the canonical rate law.",
+    "chemical_stoichiometry_prediv is the pre-divisor event stoichiometry. Averaged states NTP, A, T, and AT require the state_divisors shown here to recover the canonical ODE coordinates.",
+    "D_nt and D_TLcat are repository accounting integrators. They are hidden by default and visible in debug mode.",
+    "The canonical scientific definitions remain in model_definition.json and parameters.json; this file is an interface contract, not a second source of scientific truth."
+  ]
+}
