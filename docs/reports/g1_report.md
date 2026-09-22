@@ -164,7 +164,7 @@ Base MATLAB remains sufficient for the B1 benchmark itself; the additional toolb
 
 The human audit record is `docs/audit/human_b1_audit.md`: H01-H06 are `Y`, both MATLAB test suites passed, and H07 records that a strict blind Fig. 4 audit is not required for the B1 literature-reproduction claim. This does **not** upgrade the evidence to independent experimental validation.
 
-The nondimensional audit is recorded in [dimensionless audit report](../audit/dimensionless_20260921/REPORT.md). Exact stoichiometric rank, left-nullspace basis and independent-coordinate reduction remain G2 work.
+The nondimensional audit is recorded in [dimensionless audit report](../audit/dimensionless_20260921/REPORT.md). The D6 stoichiometric rank and complete left-nullspace basis were subsequently verified on 2026-09-22 (`rank(S_eff)=6`, `rank(L)=6`, `L*S_eff≈0`); independent-coordinate reduction and trajectory-level equivalence remain G2 work.
 
 ## 6. What G1 does not claim
 
@@ -185,7 +185,7 @@ The main open evidence / later-stage items are:
 
 1. **Independent experimental data.** Machine-readable Stögbauer 2012 RNA/protein trajectories are absent from the repository; current Fig. 4 reproduction targets the literature's calculated curves. A strict blind raster audit was explicitly judged unnecessary for the B1 reproduction scope.
 2. **Project-core definition.** The exact `PURE_resource_core` state set and equations must be decided from later structural and data evidence, not assumed at G1.
-3. **G2 structural analysis.** The five published material/accounting balances are established. The readable total high-energy ledger `4*NTP + CP + nt + D_nt + NXP + C = constant` is only `B_NTP + B_CP` and is therefore not independent. A separate sixth structural relation has been derived analytically as `I6 = NXP + C - 3*a - 46*AT = constant`; under the standard zero initial condition, `NXP + C = 3*a + 46*AT`. It is linearly independent of the five published balances, but stoichiometric rank, completeness of the left-nullspace basis and independent coordinates still remain formal D6 work.
+3. **G2 structural analysis.** The five published material/accounting balances and the sixth relation `I6 = NXP + C - 3*a - 46*AT = constant` have now been assembled into a readable basis. MATLAB verification on 2026-09-22 gave `rank(S_eff)=6`, `rank(L)=6`, and `L*S_eff≈0` (maximum residual about `2.78e-17`), so the six relations form the complete left-nullspace basis for the 12-state augmented B1 representation. Independent-coordinate construction remains D6 work.
 4. **Trajectory-level inverse transform.** The nondimensional equations have strong symbolic/numerical equivalence evidence, but the D6 dimensional-vs-back-transformed trajectory comparison remains a separate deliverable.
 
 Human-owned and later-stage actions are tracked separately in [g1_pending_human_actions.md](g1_pending_human_actions.md).
@@ -226,7 +226,7 @@ The following items must remain visible as explicit open work rather than being 
 
 - independent human B1 scientific audit;
 - dimensional ↔ nondimensional trajectory back-transform verification;
-- formal conservation structure: rank, left nullspace and independent coordinates;
+- formal conservation reduction beyond the now-verified rank/left-nullspace result: independent coordinates and exact reduced-trajectory verification;
 - evidence-based definition and later freeze of `PURE_resource_core`.
 
 These are carried forward without reclassifying the completed B1 literature reconstruction as independent experimental validation.
