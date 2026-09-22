@@ -7,7 +7,7 @@ simulation-blind** reading of the paper's Fig. 4 calculated curves, so that
 `fig4_independent_human_audit` can eventually be set to a passed value by a
 human — not by the AI session that produced the model and the simulation.
 
-Status until that is done: **`independent_fig4_validation_status = "pending_human_audit"`.**
+Project scope decision (2026-09-22): **this strict blind audit is not required for B1 literature reproduction**. The protocol is retained for any future claim of independent Fig. 4 raster validation. If that stronger evidence stream is pursued, its status remains `pending_human_audit` until the protocol is completed.
 
 ## Why this is needed
 
