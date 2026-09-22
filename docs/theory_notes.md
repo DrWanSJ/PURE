@@ -514,7 +514,95 @@ $$
 
 因此，\(I_6\) 最适合解释为 **RS/TL energy-cost coupling invariant** 或 **exhausted-nucleotide accounting invariant**。它仍然不是完整热力学能量守恒。
 
-正式 D6 仍需从 stoichiometric matrix 机器计算 rank 与完整 left nullspace，确认这六条线性独立关系是否构成完整 basis；当前这里先记录解析上已经验证的第六条结构关系。
+### 4.4 D6 MATLAB 结构验证：rank 与完整 left-nullspace basis
+
+2026-09-22 使用上节人工核对后的 \(S_{eff}\) 在 MATLAB 中计算：
+
+$
+\boxed{
+\operatorname{rank}(S_{eff})=6.
+}
+$
+
+这里 \(S_{eff}\) 有 12 行、6 列。其 6 列分别对应 TX、nt degradation、RS、TL、TLcat degradation、EN 六个反应方向。rank = 6 表示这六个反应方向彼此线性独立，没有一个反应的状态变化模式可以由其余反应方向线性组合得到。
+
+根据 rank-nullity relation，
+
+$
+\dim\ker(S_{eff}^{T})
+=
+12-\operatorname{rank}(S_{eff})
+=
+12-6
+=
+6.
+$
+
+物理上，这表示 12 个状态虽然都可以随时间变化，但它们被 6 条彼此独立的结构约束限制，因此系统只允许沿 6 个独立的 stoichiometric directions 运动。
+
+把前面五条 published material / moiety balances 与第六条 \(I_6\) 写成行向量，得到
+
+$
+L=
+\begin{bmatrix}
+4&1&1&0&0&0&0&0&0&0&1&0\\
+0&0&0&20&0&46&1&0&0&0&0&0\\
+0&0&0&0&46&46&0&0&0&0&0&0\\
+0&0&0&0&0&0&0&1&1&0&0&0\\
+0&0&0&0&0&0&0&0&0&1&0&1\\
+0&1&0&0&0&-46&-3&0&1&0&0&0
+\end{bmatrix}.
+$
+
+六行依次对应
+
+$
+B_{NTP},quad
+B_{AA},quad
+B_{tRNA},quad
+B_{CP},quad
+B_{TLcat},quad
+I_6.
+$
+
+MATLAB 验证得到
+
+$
+L S_{eff}\approx 0,
+$
+
+其中浮点计算的最大残差约为
+
+$
+2.78\times10^{-17},
+$
+
+属于机器舍入误差；同时
+
+$
+\boxed{
+\operatorname{rank}(L)=6.
+}
+$
+
+因此：
+
+1. 每一行都满足 \(l_i S_{eff}=0\)，即六条关系对所有 6 个反应方向都保持不变；
+2. \(L\) 的 6 行彼此线性独立；
+3. left nullspace 的维数本身也是 6。
+
+所以可以得到 D6 的正式结构结论：
+
+$
+\boxed{
+\text{这六条可读关系构成 }\ker(S_{eff}^{T})\text{ 的完整 basis。}
+}
+$
+
+也就是说，当前 12-state augmented B1 representation 的完整独立结构约束已经找全，不再存在第七条与它们线性独立的守恒 / accounting relation。
+
+这一步完成的是 **rank + complete left-nullspace basis**。D6 还没有全部完成；下一步仍需选择 6 个有物理意义的 independent coordinates，并验证 full 12-state 与 exact reduced representation 的轨迹一致性。
+
 ## 5. 无量纲化
 
 $$
@@ -1176,4 +1264,6 @@ $$
 
 则是从已冻结 ODE 解析得到、且相对于前五条 published balances 线性独立的第六条结构关系；它不属于此前“5/5”审计的检查范围。
 
-尚未完成的是下一步 D6：从 stoichiometric structure 系统计算 rank、完整 left nullspace 与 independent coordinates，并机器确认这六条关系是否构成完整 basis，据此做精确守恒降维。不要把“五条论文账本已验证”或“解析得到第六条 invariant”直接等同于“D6 守恒降维已经完成”。
+D6 的 rank 与完整 left-nullspace basis 已于 2026-09-22 用 MATLAB 验证：\(\operatorname{rank}(S_{eff})=6\)、\(\operatorname{rank}(L)=6\)、\(LS_{eff}\approx0\)（最大浮点残差约 \(2.78\times10^{-17}\)）。因此上述六条关系已经确认构成完整 left-nullspace basis。
+
+尚未完成的是 D6 的后半部分：选择有物理意义的 6 个 independent coordinates，构造 exact reduced representation，并完成 full/reduced trajectory 与 dimensional/dimensionless back-transform trajectory 的数值一致性验证。
