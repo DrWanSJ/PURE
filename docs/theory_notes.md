@@ -74,17 +74,131 @@ $$
 \end{align}
 $$
 
-## 4. 物质守恒
+## 4. 五条物质 / 组分账本守恒
 
-$$
+以下五条是当前 B1 模型中具有直接物理含义的 material / moiety balances。它们对应论文 Eqs. (15)–(19)；仓库用无反馈的 \(D_{nt}\) 与 \(D_{TLcat}\) 显式闭合两个降解账本。
+
+$
 \begin{align}
-B_{NTP}&=4[NTP]+[nt]+[NXP]+D_{nt}=\mathrm{const} \\
-B_{AA}&=20[A]+[a]+46[AT]=\mathrm{const} \\
-B_{tRNA}&=46[T]+46[AT]=\mathrm{const} \\
-B_{CP}&=[CP]+[C]=\mathrm{const} \\
+B_{NTP}&=4[NTP]+[nt]+[NXP]+D_{nt}=\mathrm{const}
+&&\text{（nucleotide-residue / base bookkeeping）} \\
+B_{AA}&=20[A]+[a]+46[AT]=\mathrm{const}
+&&\text{（amino-acid residue bookkeeping）} \\
+B_{tRNA}&=46[T]+46[AT]=\mathrm{const}
+&&\text{（tRNA pool bookkeeping）} \\
+B_{CP}&=[CP]+[C]=\mathrm{const}
+&&\text{（creatine moiety bookkeeping）} \\
 B_{TLcat}&=[TLcat]+D_{TLcat}=\mathrm{const}
+&&\text{（TLcat bookkeeping）}
 \end{align}
-$$
+$
+
+这里的“守恒”是在当前 coarse-grained 模型分辨率下成立的组分账本，不应扩大解释为完整元素守恒、电荷守恒或热力学能量守恒。
+
+### 4.1 论文的高能资源账本 \(\chi_e\)
+
+论文另外定义
+
+$
+\chi_e
+=
+n_{NTP}[NTP]+[CP]
+=
+4[NTP]+[CP].
+$
+
+\(\chi_e\) 表示当前模型中“还没有被表达过程消耗掉的 energy-rich phosphate resource”的浓度账本。它的单位仍是浓度，不是 J，也不是 Gibbs free energy。
+
+由有量纲 ODE 直接得到
+
+$
+-\frac{d\chi_e}{dt}
+=
+V_{TX}+2V_{TL}+V_{RS}.
+$
+
+其中 EN 不出现在右端，因为 EN 只把高能磷酸资源从 CP 转移回 NTP；在 \(4[NTP]+[CP]\) 这个账本中属于内部转移。
+
+### 4.2 由 \(\chi_e\) 导出的 energy-cost accounting invariant
+
+定义“已经发生的表达合成成本账本”
+
+$
+C_{expr}
+=
+[nt]+D_{nt}+3[a]+n_T[AT].
+$
+
+在本模型中，
+
+$
+\frac{d}{dt}\bigl([nt]+D_{nt}\bigr)=V_{TX},
+$
+
+$
+\frac{d}{dt}\bigl(3[a]\bigr)=3V_{TL},
+$
+
+$
+\frac{d}{dt}\bigl(n_T[AT]\bigr)=V_{RS}-V_{TL}.
+$
+
+因此
+
+$
+\frac{dC_{expr}}{dt}
+=
+V_{TX}+2V_{TL}+V_{RS}
+=
+-\frac{d\chi_e}{dt}.
+$
+
+于是得到一个严格的 stoichiometric accounting invariant：
+
+$
+\boxed{
+B_E^{acct}
+=
+\chi_e+C_{expr}
+=
+4[NTP]+[CP]+[nt]+D_{nt}+3[a]+46[AT]
+=
+\mathrm{const}
+}
+$
+
+其最直观的解释是
+
+$
+\boxed{
+\text{还没花掉的高能资源}
++
+\text{已经发生的合成成本账本}
+=
+\text{常数}
+}
+$
+
+各项系数的账本意义是：
+
+- \([nt]+D_{nt}\)：每生成 1 个 nucleotide residue 记 1 个 NTP-equivalent；RNA 后续降解不会把已经支付的成本“退回”；
+- \(46[AT]\)：仍停留在 charged tRNA pool 中的 aminoacylation 成本，每个 charged tRNA 记 1 个 NTP-equivalent；
+- \(3[a]\)：每个已经聚合进蛋白的 amino-acid residue，总账本成本为 1（aminoacylation）+ 2（translation）= 3 个 NTP-equivalent。
+
+对当前 reference 初值 \(nt=D_{nt}=a=AT=0\)，有
+
+$
+C_{expr}(t)
+=
+\int_0^t
+\left(
+V_{TX}+2V_{TL}+V_{RS}
+\right)dt.
+$
+
+因此 \(B_E^{acct}\) 可以看成“剩余高能资源 + 已累计表达成本”的总账本。
+
+**重要边界：** \(B_E^{acct}\) 不是第六种新的“物质种类守恒”，也不是完整热力学能量守恒。它是由当前 coarse-grained stoichiometry 与论文 \(\chi_e\) 定义导出的 energy-cost / stoichiometric accounting invariant。正式 D6 做 left-nullspace 时，应优先选这种具有物理可解释性的 basis；left-nullspace basis 本身并不唯一，软件直接返回的某个线性组合可以非常难读。
 
 ## 5. 无量纲化
 
@@ -645,19 +759,49 @@ $$
 
 注意 AA 守恒是
 
-$$
+$
 n_A[A]+[a]+n_T[AT]=\mathrm{const},
-$$
+$
 
 而不是 \([A]+[AT]=\mathrm{const}\)。因此 A 方程除以 \(n_A\)，T / AT 方程除以 \(n_T\) 是正确的 multiplicity bookkeeping。
+
+除上述五条 material / moiety balances 外，4.2 节的 energy-cost accounting invariant 在当前无量纲变量下可写成
+
+$
+\boxed{
+I_E^{acct}
+=
+y_1
++\frac{y_8}{\rho_C}
++y_3+y_{11}
++\frac{3y_7}{\rho_A}
++\frac{y_6}{\rho_T}
+=
+\mathrm{const}
+}
+$
+
+这是对
+
+$
+4[NTP]+[CP]+[nt]+D_{nt}+3[a]+n_T[AT]
+$
+
+除以统一尺度 \(n_{NTP}c_{NTP,0}\) 后得到的表达式。把完整无量纲 ODE 代入可直接得到
+
+$
+\frac{dI_E^{acct}}{d\tau}=0.
+$
+
+同样地，这一不变量是 energy-cost / stoichiometric bookkeeping，不应改称“第六条物质守恒”或“热力学能量守恒”。
 
 ## 7. 验证状态
 
 当前完整无量纲模型已经完成独立审计：
 
 - Wolfram kernel：12/12 ODE 的 direct-vs-compact symbolic equivalence 均严格化简为 0；
-- dimensional conservation：5/5 通过；
-- dimensionless conservation：5/5 通过；
+- 论文 Eqs. (15)–(19) 对应的五条 dimensional material/accounting balances：5/5 通过；
+- 对应的五条 dimensionless balances：5/5 通过；
 - Wolfram 数值独立检查：5 trials × 12 equations，global max absolute residual \(8.88\times10^{-16}\)；
 - Python / SymPy 与 MATLAB 路径均实际运行通过；
 - MATLAB 与真实 generated RHS 的 5 × 12 比较最大残差约 \(1.78\times10^{-15}\)；
@@ -670,4 +814,6 @@ $$
 
 因此，当前这套无量纲方程可以作为后续 conservation reduction、timescale analysis、QSSA / fast-slow analysis 的 validated baseline。
 
-尚未完成的是下一步 D6：从 stoichiometric structure 系统计算 rank、left nullspace 与 independent coordinates，并据此做精确守恒降维。不要把“5 条守恒式已验证”等同于“D6 守恒降维已经完成”。
+4.2 / 6.6 中记录的 \(B_E^{acct}\) / \(I_E^{acct}\) 是在这次讨论中从已冻结 ODE 与论文 \(\chi_e\) 定义解析导出的额外 stoichiometric accounting invariant；它不属于此前“5/5”审计所指的五条论文 balance relations。
+
+尚未完成的是下一步 D6：从 stoichiometric structure 系统计算 rank、完整 left nullspace 与 independent coordinates，并机器核对包括 \(I_E^{acct}\) 在内的可解释 basis，据此做精确守恒降维。不要把“五条论文账本已验证”或“又找到一个 accounting invariant”等同于“D6 守恒降维已经完成”。
