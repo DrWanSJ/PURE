@@ -1,0 +1,21 @@
+{
+  "name": "wolfram_kernel",
+  "argv": [
+    "C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE",
+    "-code",
+    "$Version"
+  ],
+  "command": "\"C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE\" -code $Version",
+  "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+  "started": "2026-09-22T14:35:28.611489+08:00",
+  "duration_seconds": 3.768,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+14.3.0 for Microsoft Windows (64-bit) (July 8, 2025)
+STDERR:
+(empty)

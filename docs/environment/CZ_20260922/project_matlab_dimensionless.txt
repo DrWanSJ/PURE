@@ -1,0 +1,36 @@
+{
+  "name": "project_matlab_dimensionless",
+  "argv": [
+    "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+    "-batch",
+    "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_project('dimensionless')"
+  ],
+  "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_project('dimensionless')\"",
+  "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+  "started": "2026-09-22T14:37:16.253044+08:00",
+  "duration_seconds": 14.114,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+ODE 1 symbolic equivalence: PASS (residual 0)
+ODE 2 symbolic equivalence: PASS (residual 0)
+ODE 3 symbolic equivalence: PASS (residual 0)
+ODE 4 symbolic equivalence: PASS (residual 0)
+ODE 5 symbolic equivalence: PASS (residual 0)
+ODE 6 symbolic equivalence: PASS (residual 0)
+ODE 7 symbolic equivalence: PASS (residual 0)
+ODE 8 symbolic equivalence: PASS (residual 0)
+ODE 9 symbolic equivalence: PASS (residual 0)
+ODE 10 symbolic equivalence: PASS (residual 0)
+ODE 11 symbolic equivalence: PASS (residual 0)
+ODE 12 symbolic equivalence: PASS (residual 0)
+
+All dimensional and dimensionless conservation checks passed.
+Result written to C:\Users\CZ\AppData\Local\Temp\PURE_CZ_environment_2js_r8qd\models\literature_reference\dimensionless\dimensionless_result_matlab.txt
+PROJECT_PASS=dimensionless
+STDERR:
+(empty)

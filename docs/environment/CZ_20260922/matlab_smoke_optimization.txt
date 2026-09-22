@@ -1,0 +1,25 @@
+{
+  "name": "matlab_smoke_optimization",
+  "argv": [
+    "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+    "-batch",
+    "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('optimization')"
+  ],
+  "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('optimization')\"",
+  "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+  "started": "2026-09-22T14:36:29.209267+08:00",
+  "duration_seconds": 13.924,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+SMOKE_START=optimization
+lsqnonlin: x=2; resnorm=0; optimizer_exitflag=1
+LICENSE_INUSE_FEATURE=matlab
+LICENSE_INUSE_FEATURE=optimization_toolbox
+SMOKE_PASS=optimization
+STDERR:
+(empty)

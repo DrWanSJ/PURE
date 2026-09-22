@@ -1,0 +1,51 @@
+{
+  "name": "platform",
+  "requested_argv": [
+    "C:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+    "-NoProfile",
+    "-Command",
+    "\n$ErrorActionPreference='Stop'\n$os=Get-CimInstance Win32_OperatingSystem\n$cpu=Get-CimInstance Win32_Processor\n$cs=Get-CimInstance Win32_ComputerSystem\n$win=Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion'\n[ordered]@{\n user=$env:USERNAME; hostname=$env:COMPUTERNAME; cwd=(Get-Location).Path\n os_caption=$os.Caption; os_version=$os.Version; os_build=$os.BuildNumber\n display_version=$win.DisplayVersion; update_build_revision=$win.UBR\n os_architecture=$os.OSArchitecture; system_type=$cs.SystemType\n cpu=@($cpu | Select-Object Name,NumberOfCores,NumberOfLogicalProcessors)\n logical_processors=$cs.NumberOfLogicalProcessors; physical_memory_bytes=$cs.TotalPhysicalMemory\n shell_executable=(Get-Process -Id $PID).Path; powershell_version=$PSVersionTable.PSVersion.ToString()\n powershell_edition=$PSVersionTable.PSEdition\n} | ConvertTo-Json -Depth 5\n"
+  ],
+  "argv": [
+    "C:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+    "-NoProfile",
+    "-Command",
+    "\n$ErrorActionPreference='Stop'\n$os=Get-CimInstance Win32_OperatingSystem\n$cpu=Get-CimInstance Win32_Processor\n$cs=Get-CimInstance Win32_ComputerSystem\n$win=Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion'\n[ordered]@{\n user=$env:USERNAME; hostname=$env:COMPUTERNAME; cwd=(Get-Location).Path\n os_caption=$os.Caption; os_version=$os.Version; os_build=$os.BuildNumber\n display_version=$win.DisplayVersion; update_build_revision=$win.UBR\n os_architecture=$os.OSArchitecture; system_type=$cs.SystemType\n cpu=@($cpu | Select-Object Name,NumberOfCores,NumberOfLogicalProcessors)\n logical_processors=$cs.NumberOfLogicalProcessors; physical_memory_bytes=$cs.TotalPhysicalMemory\n shell_executable=(Get-Process -Id $PID).Path; powershell_version=$PSVersionTable.PSVersion.ToString()\n powershell_edition=$PSVersionTable.PSEdition\n} | ConvertTo-Json -Depth 5\n"
+  ],
+  "command": "C:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE -NoProfile -Command \"\n$ErrorActionPreference='Stop'\n$os=Get-CimInstance Win32_OperatingSystem\n$cpu=Get-CimInstance Win32_Processor\n$cs=Get-CimInstance Win32_ComputerSystem\n$win=Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion'\n[ordered]@{\n user=$env:USERNAME; hostname=$env:COMPUTERNAME; cwd=(Get-Location).Path\n os_caption=$os.Caption; os_version=$os.Version; os_build=$os.BuildNumber\n display_version=$win.DisplayVersion; update_build_revision=$win.UBR\n os_architecture=$os.OSArchitecture; system_type=$cs.SystemType\n cpu=@($cpu | Select-Object Name,NumberOfCores,NumberOfLogicalProcessors)\n logical_processors=$cs.NumberOfLogicalProcessors; physical_memory_bytes=$cs.TotalPhysicalMemory\n shell_executable=(Get-Process -Id $PID).Path; powershell_version=$PSVersionTable.PSVersion.ToString()\n powershell_edition=$PSVersionTable.PSEdition\n} | ConvertTo-Json -Depth 5\n\"",
+  "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+  "started": "2026-09-22T14:36:35.025204+08:00",
+  "duration_seconds": 2.664,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+{
+  "user": "CZ",
+  "hostname": "DESKTOP-EDVOOH0",
+  "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+  "os_caption": "Microsoft Windows 10 专业版",
+  "os_version": "10.0.19045",
+  "os_build": "19045",
+  "display_version": "22H2",
+  "update_build_revision": 6466,
+  "os_architecture": "64 位",
+  "system_type": "x64-based PC",
+  "cpu": [
+    {
+      "Name": "AMD EPYC 7702 64-Core Processor                ",
+      "NumberOfCores": 64,
+      "NumberOfLogicalProcessors": 128
+    }
+  ],
+  "logical_processors": 128,
+  "physical_memory_bytes": 549614985216,
+  "shell_executable": "C:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+  "powershell_version": "7.6.5",
+  "powershell_edition": "Core"
+}
+STDERR:
+(empty)

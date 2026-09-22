@@ -1,0 +1,109 @@
+[
+  {
+    "name": "wolfram_version",
+    "argv": [
+      "C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE",
+      "-version"
+    ],
+    "command": "\"C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE\" -version",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:35:28.407109+08:00",
+    "duration_seconds": 0.204,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "WolframScript 1.13.0 for Microsoft Windows (64-bit)\n",
+    "stderr": ""
+  },
+  {
+    "name": "wolfram_kernel",
+    "argv": [
+      "C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE",
+      "-code",
+      "$Version"
+    ],
+    "command": "\"C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE\" -code $Version",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:35:28.611489+08:00",
+    "duration_seconds": 3.768,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "14.3.0 for Microsoft Windows (64-bit) (July 8, 2025)\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "wolfram_system",
+    "argv": [
+      "C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE",
+      "-code",
+      "$SystemID"
+    ],
+    "command": "\"C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE\" -code $SystemID",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:35:32.380508+08:00",
+    "duration_seconds": 3.488,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "Windows-x86-64\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "wolfram_symbolic",
+    "argv": [
+      "C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE",
+      "-code",
+      "Simplify[D[x^2,x]-2 x]"
+    ],
+    "command": "\"C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE\" -code \"Simplify[D[x^2,x]-2 x]\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:35:35.869445+08:00",
+    "duration_seconds": 3.392,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "0\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "project_wolfram",
+    "argv": [
+      "C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE",
+      "-file",
+      "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd\\models\\literature_reference\\dimensionless\\verify_wolfram_v2.wl"
+    ],
+    "command": "\"C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE\" -file C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd\\models\\literature_reference\\dimensionless\\verify_wolfram_v2.wl",
+    "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+    "started": "2026-09-22T14:35:39.261803+08:00",
+    "duration_seconds": 14.563,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "Wolfram kernel: 14.3.0 for Microsoft Windows (64-bit) (July 8, 2025)\r\n========== T2: dimensional conservation residuals ==========\r\nNTP: 0\r\nAA: 0\r\ntRNA: 0\r\nCP: 0\r\nTLcat: 0\r\nT2 ALL PASS: True\r\nSTATE MAPPING (12): True; NO ACCOUNTING FEEDBACK: True\r\nDNA parametrization: 0; effective TX: 0\r\n\r\r\n========== T1: per-ODE symbolic equivalence ==========\r\n{1, 0, True}\r\n{2, 0, True}\r\n{3, 0, True}\r\n{4, 0, True}\r\n{5, 0, True}\r\n{6, 0, True}\r\n{7, 0, True}\r\n{8, 0, True}\r\n{9, 0, True}\r\n{10, 0, True}\r\n{11, 0, True}\r\n{12, 0, True}\r\nT1 ALL PASS: True\r\n\r\r\n========== T3: dimensionless conservation ==========\r\n{nucleotide, 0, True}\r\n{amino-acid, 0, True}\r\n{tRNA, 0, True}\r\n{CP, 0, True}\r\n{TLcat, 0, True}\r\nT3 ALL PASS: True\r\n\r\r\n========== T4: numeric residuals ==========\r\ntrial 1: residuals = {0., 2.6020852139652106*^-18, 0., 2.6020852139652106*^-18, 2.0816681711721685*^-17, 6.938893903907228*^-18, 6.938893903907228*^-18, 5.551115123125783*^-17, 5.551115123125783*^-17, 0., 5.551115123125783*^-17, 0.}; max|residual| = 5.551115123125783*^-17; PASS: True\r\ntrial 2: residuals = {2.220446049250313*^-16, 0., 4.440892098500626*^-16, 0., 2.220446049250313*^-16, 2.220446049250313*^-16, 0., 1.1102230246251565*^-16, 1.1102230246251565*^-16, 1.1102230246251565*^-16, 0., 1.1102230246251565*^-16}; max|residual| = 4.440892098500626*^-16; PASS: True\r\ntrial 3: residuals = {4.440892098500626*^-16, 3.3306690738754696*^-16, 0., 2.7755575615628914*^-17, 3.3306690738754696*^-16, 4.440892098500626*^-16, 6.661338147750939*^-16, 0., 0., 8.881784197001252*^-16, 0., 8.881784197001252*^-16}; max|residual| = 8.881784197001252*^-16; PASS: True\r\ntrial 4: residuals = {0., 2.220446049250313*^-16, 0., 3.469446951953614*^-18, 6.938893903907228*^-18, 6.938893903907228*^-18, 1.0408340855860843*^-17, 2.220446049250313*^-16, 2.220446049250313*^-16, 4.440892098500626*^-16, 0., 4.440892098500626*^-16}; max|residual| = 4.440892098500626*^-16; PASS: True\r\ntrial 5: residuals = {2.7755575615628914*^-17, 0., 2.220446049250313*^-16, 0., 1.1102230246251565*^-16, 5.551115123125783*^-17, 0., 4.336808689942018*^-19, 4.336808689942018*^-19, 2.220446049250313*^-16, 2.220446049250313*^-16, 2.220446049250313*^-16}; max|residual| = 2.220446049250313*^-16; PASS: True\r\nT4 global max |residual| = 8.881784197001252*^-16  (<1e-12: True); equations checked: 60\r\n\r\r\n========== T5: nN=4, nA=20, nT=46 ==========\r\nAA: 0\r\ntRNA: 0\r\nNTP: 0\r\nT5 ratio 46/20 == 23/10: True\r\nAUDIT ALL PASS: True\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "git_status_after_wolfram",
+    "argv": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "command": "git status --short",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:35:53.826121+08:00",
+    "duration_seconds": 0.067,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "?? docs/environment/\n",
+    "stderr": ""
+  }
+]

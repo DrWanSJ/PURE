@@ -1,0 +1,56 @@
+{
+  "name": "powershell_version",
+  "requested_argv": [
+    "C:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+    "-NoProfile",
+    "-Command",
+    "$PSVersionTable | Format-List; (Get-Process -Id $PID).Path"
+  ],
+  "argv": [
+    "C:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+    "-NoProfile",
+    "-Command",
+    "$PSVersionTable | Format-List; (Get-Process -Id $PID).Path"
+  ],
+  "command": "C:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE -NoProfile -Command \"$PSVersionTable | Format-List; (Get-Process -Id $PID).Path\"",
+  "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+  "started": "2026-09-22T14:36:37.690802+08:00",
+  "duration_seconds": 0.897,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+
+Name  : PSVersion
+Value : 7.6.5
+
+Name  : PSEdition
+Value : Core
+
+Name  : GitCommitId
+Value : 7.6.5
+
+Name  : OS
+Value : Microsoft Windows 10.0.19045
+
+Name  : Platform
+Value : Win32NT
+
+Name  : PSCompatibleVersions
+Value : {1.0, 2.0, 3.0, 4.0…}
+
+Name  : PSRemotingProtocolVersion
+Value : 2.4
+
+Name  : SerializationVersion
+Value : 1.1.0.1
+
+Name  : WSManStackVersion
+Value : 3.0
+
+C:\Users\CZ\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pwsh.EXE
+STDERR:
+(empty)

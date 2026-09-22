@@ -1,0 +1,21 @@
+{
+  "name": "git_status_after_wolfram",
+  "argv": [
+    "git",
+    "status",
+    "--short"
+  ],
+  "command": "git status --short",
+  "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+  "started": "2026-09-22T14:35:53.826121+08:00",
+  "duration_seconds": 0.067,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+?? docs/environment/
+STDERR:
+(empty)

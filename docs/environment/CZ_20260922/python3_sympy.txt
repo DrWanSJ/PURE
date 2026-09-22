@@ -1,0 +1,27 @@
+{
+  "name": "python3_sympy",
+  "requested_argv": [
+    "python3",
+    "-c",
+    "import sympy; print(sympy.__version__); print(sympy.__file__)"
+  ],
+  "argv": [
+    "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE",
+    "-c",
+    "import sympy; print(sympy.__version__); print(sympy.__file__)"
+  ],
+  "command": "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE -c \"import sympy; print(sympy.__version__); print(sympy.__file__)\"",
+  "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+  "started": "2026-09-22T14:36:39.550613+08:00",
+  "duration_seconds": 0.556,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+1.14.0
+C:\Users\CZ\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sympy\__init__.py
+STDERR:
+(empty)

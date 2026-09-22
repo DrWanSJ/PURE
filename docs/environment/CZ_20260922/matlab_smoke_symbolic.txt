@@ -1,0 +1,25 @@
+{
+  "name": "matlab_smoke_symbolic",
+  "argv": [
+    "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+    "-batch",
+    "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('symbolic')"
+  ],
+  "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('symbolic')\"",
+  "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+  "started": "2026-09-22T14:36:17.997869+08:00",
+  "duration_seconds": 11.21,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+SMOKE_START=symbolic
+symbolic residual=0
+LICENSE_INUSE_FEATURE=matlab
+LICENSE_INUSE_FEATURE=symbolic_toolbox
+SMOKE_PASS=symbolic
+STDERR:
+(empty)

@@ -1,0 +1,24 @@
+{
+  "name": "where_python3",
+  "requested_argv": [
+    "where.exe",
+    "python3"
+  ],
+  "argv": [
+    "C:\\Windows\\system32\\where.exe",
+    "python3"
+  ],
+  "command": "C:\\Windows\\system32\\where.exe python3",
+  "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+  "started": "2026-09-22T14:36:34.770033+08:00",
+  "duration_seconds": 0.126,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+C:\Users\CZ\AppData\Local\Python\bin\python3.exe
+STDERR:
+(empty)

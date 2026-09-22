@@ -1,0 +1,24 @@
+{
+  "name": "python_version",
+  "requested_argv": [
+    "python",
+    "--version"
+  ],
+  "argv": [
+    "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
+    "--version"
+  ],
+  "command": "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE --version",
+  "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+  "started": "2026-09-22T14:36:38.598204+08:00",
+  "duration_seconds": 0.104,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+Python 3.11.15
+STDERR:
+(empty)

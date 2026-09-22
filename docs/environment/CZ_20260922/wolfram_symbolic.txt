@@ -1,0 +1,21 @@
+{
+  "name": "wolfram_symbolic",
+  "argv": [
+    "C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE",
+    "-code",
+    "Simplify[D[x^2,x]-2 x]"
+  ],
+  "command": "\"C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE\" -code \"Simplify[D[x^2,x]-2 x]\"",
+  "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+  "started": "2026-09-22T14:35:35.869445+08:00",
+  "duration_seconds": 3.392,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+0
+STDERR:
+(empty)

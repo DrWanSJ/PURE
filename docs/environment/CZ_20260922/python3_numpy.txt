@@ -1,0 +1,27 @@
+{
+  "name": "python3_numpy",
+  "requested_argv": [
+    "python3",
+    "-c",
+    "import numpy; print(numpy.__version__); print(numpy.__file__)"
+  ],
+  "argv": [
+    "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE",
+    "-c",
+    "import numpy; print(numpy.__version__); print(numpy.__file__)"
+  ],
+  "command": "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE -c \"import numpy; print(numpy.__version__); print(numpy.__file__)\"",
+  "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+  "started": "2026-09-22T14:36:40.118198+08:00",
+  "duration_seconds": 0.184,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+2.4.4
+C:\Users\CZ\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\numpy\__init__.py
+STDERR:
+(empty)

@@ -1,0 +1,40 @@
+{
+  "name": "project_matlab_literature",
+  "argv": [
+    "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+    "-batch",
+    "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_project('literature')"
+  ],
+  "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_project('literature')\"",
+  "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+  "started": "2026-09-22T14:36:52.758592+08:00",
+  "duration_seconds": 23.493,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "gb18030",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+正在运行 test_pure_literature_reference
+.........
+已完成 test_pure_literature_reference
+__________
+
+                                           Name                                            Passed    Failed    Incomplete    Duration      Details
+    ___________________________________________________________________________________    ______    ______    __________    ________    ____________
+
+    {'test_pure_literature_reference/test_parameter_lock_tables_1_and_2'              }    true      false       false         0.6761    {1×1 struct}
+    {'test_pure_literature_reference/test_rate_law_spot_values'                       }    true      false       false         0.3265    {1×1 struct}
+    {'test_pure_literature_reference/test_initial_rate_sanity'                        }    true      false       false       0.070246    {1×1 struct}
+    {'test_pure_literature_reference/test_balance_derivative_identities_random_states'}    true      false       false       0.016374    {1×1 struct}
+    {'test_pure_literature_reference/test_finite_difference_short_step'               }    true      false       false        0.31964    {1×1 struct}
+    {'test_pure_literature_reference/test_observable_mapping'                         }    true      false       false        0.14375    {1×1 struct}
+    {'test_pure_literature_reference/test_ktl_rna_derived_value'                      }    true      false       false       0.035153    {1×1 struct}
+    {'test_pure_literature_reference/test_short_run_mass_balance_and_nonnegativity'   }    true      false       false       0.090163    {1×1 struct}
+    {'test_pure_literature_reference/test_repeatability_deterministic'                }    true      false       false       0.057188    {1×1 struct}
+
+LITERATURE_TESTS total=9 passed=9 failed=0 incomplete=0
+PROJECT_PASS=literature
+STDERR:
+(empty)

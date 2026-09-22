@@ -1,0 +1,182 @@
+[
+  {
+    "name": "matlab_version",
+    "argv": [
+      "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+      "-batch",
+      "disp(version); disp(version('-release')); ver"
+    ],
+    "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"disp(version); disp(version('-release')); ver\"",
+    "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+    "started": "2026-09-22T14:35:28.104051+08:00",
+    "duration_seconds": 15.194,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "gb18030",
+    "stderr_encoding": "utf-8",
+    "stdout": "25.2.0.3150157 (R2025b) Update 4\r\n2025b\r\n---------------------------------------------------------\r\nMATLAB 版本: 25.2.0.3150157 (R2025b) Update 4\r\nMATLAB 许可证编号: [REDACTED]\r\n操作系统: Microsoft Windows 10 专业版 Version 10.0 (Build 19045)\r\nJava 版本: Java is not loaded\r\n---------------------------------------------------------\r\nMATLAB                                                版本 25.2             (R2025b)\r\nSimulink                                              版本 25.2             (R2025b)\r\n5G Toolbox                                            版本 25.2             (R2025b)\r\nAUTOSAR Blockset                                      版本 25.2             (R2025b)\r\nAerospace Blockset                                    版本 25.2             (R2025b)\r\nAerospace Toolbox                                     版本 25.2             (R2025b)\r\nAntenna Toolbox                                       版本 25.2             (R2025b)\r\nAudio Toolbox                                         版本 25.2             (R2025b)\r\nAutomated Driving Toolbox                             版本 25.2             (R2025b)\r\nBioinformatics Toolbox                                版本 25.2             (R2025b)\r\nBluetooth Toolbox                                     版本 25.2             (R2025b)\r\nC2000 Microcontroller Blockset                        版本 25.2             (R2025b)\r\nCommunications Toolbox                                版本 25.2             (R2025b)\r\nComputer Vision Toolbox                               版本 25.2             (R2025b)\r\nControl System Toolbox                                版本 25.2             (R2025b)\r\nCurve Fitting Toolbox                                 版本 25.2             (R2025b)\r\nDDS Blockset                                          版本 25.2             (R2025b)\r\nDSP HDL Toolbox                                       版本 25.2             (R2025b)\r\nDSP System Toolbox                                    版本 25.2             (R2025b)\r\nData Acquisition Toolbox                              版本 25.2             (R2025b)\r\nDatabase Toolbox                                      版本 25.2             (R2025b)\r\nDatafeed Toolbox                                      版本 25.2             (R2025b)\r\nDeep Learning HDL Toolbox                             版本 25.2             (R2025b)\r\nDeep Learning Toolbox                                 版本 25.2             (R2025b)\r\nEconometrics Toolbox                                  版本 25.2             (R2025b)\r\nEmbedded Coder                                        版本 25.2             (R2025b)\r\nFinancial Instruments Toolbox                         版本 25.2             (R2025b)\r\nFinancial Toolbox                                     版本 25.2             (R2025b)\r\nFixed-Point Designer                                  版本 25.2             (R2025b)\r\nFuzzy Logic Toolbox                                   版本 25.2             (R2025b)\r\nGPU Coder                                             版本 25.2             (R2025b)\r\nGlobal Optimization Toolbox                           版本 25.2             (R2025b)\r\nHDL Coder                                             版本 25.2             (R2025b)\r\nHDL Verifier                                          版本 25.2             (R2025b)\r\nImage Acquisition Toolbox                             版本 25.2             (R2025b)\r\nImage Processing Toolbox                              版本 25.2             (R2025b)\r\nIndustrial Communication Toolbox                      版本 25.2             (R2025b)\r\nInstrument Control Toolbox                            版本 25.2             (R2025b)\r\nLTE Toolbox                                           版本 25.2             (R2025b)\r\nLidar Toolbox                                         版本 25.2             (R2025b)\r\nMATLAB Coder                                          版本 25.2             (R2025b)\r\nMATLAB Compiler                                       版本 25.2             (R2025b)\r\nMATLAB Compiler SDK                                   版本 25.2             (R2025b)\r\nMATLAB Report Generator                               版本 25.2             (R2025b)\r\nMATLAB Test                                           版本 25.2             (R2025b)\r\nMapping Toolbox                                       版本 25.2             (R2025b)\r\nMedical Imaging Toolbox                               版本 25.2             (R2025b)\r\nMixed-Signal Blockset                                 版本 25.2             (R2025b)\r\nModel Predictive Control Toolbox                      版本 25.2             (R2025b)\r\nModel-Based Calibration Toolbox                       版本 25.2             (R2025b)\r\nMotor Control Blockset                                版本 25.2             (R2025b)\r\nNavigation Toolbox                                    版本 25.2             (R2025b)\r\nOptimization Toolbox                                  版本 25.2             (R2025b)\r\nParallel Computing Toolbox                            版本 25.2             (R2025b)\r\nPartial Differential Equation Toolbox                 版本 25.2             (R2025b)\r\nPhased Array System Toolbox                           版本 25.2             (R2025b)\r\nPowertrain Blockset                                   版本 25.2             (R2025b)\r\nPredictive Maintenance Toolbox                        版本 25.2             (R2025b)\r\nRF Blockset                                           版本 25.2             (R2025b)\r\nRF PCB Toolbox                                        版本 25.2             (R2025b)\r\nRF Toolbox                                            版本 25.2             (R2025b)\r\nROS Toolbox                                           版本 25.2             (R2025b)\r\nRadar Toolbox                                         版本 25.2             (R2025b)\r\nReinforcement Learning Toolbox                        版本 25.2             (R2025b)\r\nRequirements Toolbox                                  版本 25.2             (R2025b)\r\nRisk Management Toolbox                               版本 25.2             (R2025b)\r\nRobotics System Toolbox                               版本 25.2             (R2025b)\r\nRobust Control Toolbox                                版本 25.2             (R2025b)\r\nSatellite Communications Toolbox                      版本 25.2             (R2025b)\r\nSensor Fusion and Tracking Toolbox                    版本 25.2             (R2025b)\r\nSerDes Toolbox                                        版本 25.2             (R2025b)\r\nSignal Integrity Toolbox                              版本 25.2             (R2025b)\r\nSignal Processing Toolbox                             版本 25.2             (R2025b)\r\nSimBiology                                            版本 25.2             (R2025b)\r\nSimEvents                                             版本 25.2             (R2025b)\r\nSimscape                                              版本 25.2             (R2025b)\r\nSimscape Battery                                      版本 25.2             (R2025b)\r\nSimscape Driveline                                    版本 25.2             (R2025b)\r\nSimscape Electrical                                   版本 25.2             (R2025b)\r\nSimscape Fluids                                       版本 25.2             (R2025b)\r\nSimscape Multibody                                    版本 25.2             (R2025b)\r\nSimulink 3D Animation                                 版本 25.2             (R2025b)\r\nSimulink Check                                        版本 25.2             (R2025b)\r\nSimulink Code Inspector                               版本 25.2             (R2025b)\r\nSimulink Coder                                        版本 25.2             (R2025b)\r\nSimulink Compiler                                     版本 25.2             (R2025b)\r\nSimulink Control Design                               版本 25.2             (R2025b)\r\nSimulink Coverage                                     版本 25.2             (R2025b)\r\nSimulink Design Optimization                          版本 25.2             (R2025b)\r\nSimulink Design Verifier                              版本 25.2             (R2025b)\r\nSimulink Desktop Real-Time                            版本 25.2             (R2025b)\r\nSimulink Fault Analyzer                               版本 25.2             (R2025b)\r\nSimulink PLC Coder                                    版本 25.2             (R2025b)\r\nSimulink Real-Time                                    版本 25.2             (R2025b)\r\nSimulink Report Generator                             版本 25.2             (R2025b)\r\nSimulink Test                                         版本 25.2             (R2025b)\r\nSoC Blockset                                          版本 25.2             (R2025b)\r\nSpreadsheet Link                                      版本 25.2             (R2025b)\r\nStateflow                                             版本 25.2             (R2025b)\r\nStatistics and Machine Learning Toolbox               版本 25.2             (R2025b)\r\nSymbolic Math Toolbox                                 版本 25.2             (R2025b)\r\nSystem Composer                                       版本 25.2             (R2025b)\r\nSystem Identification Toolbox                         版本 25.2             (R2025b)\r\nText Analytics Toolbox                                版本 25.2             (R2025b)\r\nUAV Toolbox                                           版本 25.2             (R2025b)\r\nVehicle Dynamics Blockset                             版本 25.2             (R2025b)\r\nVehicle Network Toolbox                               版本 25.2             (R2025b)\r\nVision HDL Toolbox                                    版本 25.2             (R2025b)\r\nWLAN Toolbox                                          版本 25.2             (R2025b)\r\nWavelet Toolbox                                       版本 25.2             (R2025b)\r\nWireless HDL Toolbox                                  版本 25.2             (R2025b)\r\nWireless Testbench                                    版本 25.2             (R2025b)\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "matlab_capability",
+    "argv": [
+      "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+      "-batch",
+      "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_capability"
+    ],
+    "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_capability\"",
+    "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+    "started": "2026-09-22T14:35:43.299249+08:00",
+    "duration_seconds": 10.531,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "MATLAB_RUNTIME=25.2.0.3150157 (R2025b) Update 4\r\nRELEASE=2025b\r\nARCH=PCWIN64\r\nPRODUCT | 5G Toolbox | 25.2 | (R2025b)\r\nPRODUCT | AUTOSAR Blockset | 25.2 | (R2025b)\r\nPRODUCT | Aerospace Blockset | 25.2 | (R2025b)\r\nPRODUCT | Aerospace Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Antenna Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Audio Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Automated Driving Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Bioinformatics Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Bluetooth Toolbox | 25.2 | (R2025b)\r\nPRODUCT | C2000 Microcontroller Blockset | 25.2 | (R2025b)\r\nPRODUCT | Communications Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Computer Vision Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Control System Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Curve Fitting Toolbox | 25.2 | (R2025b)\r\nPRODUCT | DDS Blockset | 25.2 | (R2025b)\r\nPRODUCT | DSP HDL Toolbox | 25.2 | (R2025b)\r\nPRODUCT | DSP System Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Data Acquisition Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Database Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Datafeed Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Deep Learning HDL Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Deep Learning Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Econometrics Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Embedded Coder | 25.2 | (R2025b)\r\nPRODUCT | Financial Instruments Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Financial Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Fixed-Point Designer | 25.2 | (R2025b)\r\nPRODUCT | Fuzzy Logic Toolbox | 25.2 | (R2025b)\r\nPRODUCT | GPU Coder | 25.2 | (R2025b)\r\nPRODUCT | Global Optimization Toolbox | 25.2 | (R2025b)\r\nPRODUCT | HDL Coder | 25.2 | (R2025b)\r\nPRODUCT | HDL Verifier | 25.2 | (R2025b)\r\nPRODUCT | Image Acquisition Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Image Processing Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Industrial Communication Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Instrument Control Toolbox | 25.2 | (R2025b)\r\nPRODUCT | LTE Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Lidar Toolbox | 25.2 | (R2025b)\r\nPRODUCT | MATLAB | 25.2 | (R2025b)\r\nPRODUCT | MATLAB Coder | 25.2 | (R2025b)\r\nPRODUCT | MATLAB Compiler | 25.2 | (R2025b)\r\nPRODUCT | MATLAB Compiler SDK | 25.2 | (R2025b)\r\nPRODUCT | MATLAB Report Generator | 25.2 | (R2025b)\r\nPRODUCT | MATLAB Test | 25.2 | (R2025b)\r\nPRODUCT | Mapping Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Medical Imaging Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Mixed-Signal Blockset | 25.2 | (R2025b)\r\nPRODUCT | Model Predictive Control Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Model-Based Calibration Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Motor Control Blockset | 25.2 | (R2025b)\r\nPRODUCT | Navigation Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Optimization Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Parallel Computing Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Partial Differential Equation Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Phased Array System Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Powertrain Blockset | 25.2 | (R2025b)\r\nPRODUCT | Predictive Maintenance Toolbox | 25.2 | (R2025b)\r\nPRODUCT | RF Blockset | 25.2 | (R2025b)\r\nPRODUCT | RF PCB Toolbox | 25.2 | (R2025b)\r\nPRODUCT | RF Toolbox | 25.2 | (R2025b)\r\nPRODUCT | ROS Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Radar Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Reinforcement Learning Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Requirements Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Risk Management Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Robotics System Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Robust Control Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Satellite Communications Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Sensor Fusion and Tracking Toolbox | 25.2 | (R2025b)\r\nPRODUCT | SerDes Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Signal Integrity Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Signal Processing Toolbox | 25.2 | (R2025b)\r\nPRODUCT | SimBiology | 25.2 | (R2025b)\r\nPRODUCT | SimEvents | 25.2 | (R2025b)\r\nPRODUCT | Simscape | 25.2 | (R2025b)\r\nPRODUCT | Simscape Battery | 25.2 | (R2025b)\r\nPRODUCT | Simscape Driveline | 25.2 | (R2025b)\r\nPRODUCT | Simscape Electrical | 25.2 | (R2025b)\r\nPRODUCT | Simscape Fluids | 25.2 | (R2025b)\r\nPRODUCT | Simscape Multibody | 25.2 | (R2025b)\r\nPRODUCT | Simulink | 25.2 | (R2025b)\r\nPRODUCT | Simulink 3D Animation | 25.2 | (R2025b)\r\nPRODUCT | Simulink Check | 25.2 | (R2025b)\r\nPRODUCT | Simulink Code Inspector | 25.2 | (R2025b)\r\nPRODUCT | Simulink Coder | 25.2 | (R2025b)\r\nPRODUCT | Simulink Compiler | 25.2 | (R2025b)\r\nPRODUCT | Simulink Control Design | 25.2 | (R2025b)\r\nPRODUCT | Simulink Coverage | 25.2 | (R2025b)\r\nPRODUCT | Simulink Design Optimization | 25.2 | (R2025b)\r\nPRODUCT | Simulink Design Verifier | 25.2 | (R2025b)\r\nPRODUCT | Simulink Desktop Real-Time | 25.2 | (R2025b)\r\nPRODUCT | Simulink Fault Analyzer | 25.2 | (R2025b)\r\nPRODUCT | Simulink PLC Coder | 25.2 | (R2025b)\r\nPRODUCT | Simulink Real-Time | 25.2 | (R2025b)\r\nPRODUCT | Simulink Report Generator | 25.2 | (R2025b)\r\nPRODUCT | Simulink Test | 25.2 | (R2025b)\r\nPRODUCT | SoC Blockset | 25.2 | (R2025b)\r\nPRODUCT | Spreadsheet Link | 25.2 | (R2025b)\r\nPRODUCT | Stateflow | 25.2 | (R2025b)\r\nPRODUCT | Statistics and Machine Learning Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Symbolic Math Toolbox | 25.2 | (R2025b)\r\nPRODUCT | System Composer | 25.2 | (R2025b)\r\nPRODUCT | System Identification Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Text Analytics Toolbox | 25.2 | (R2025b)\r\nPRODUCT | UAV Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Vehicle Dynamics Blockset | 25.2 | (R2025b)\r\nPRODUCT | Vehicle Network Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Vision HDL Toolbox | 25.2 | (R2025b)\r\nPRODUCT | WLAN Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Wavelet Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Wireless HDL Toolbox | 25.2 | (R2025b)\r\nPRODUCT | Wireless Testbench | 25.2 | (R2025b)\r\nLICENSE_TEST | MATLAB | 1\r\nFUNCTION | ode15s | C:\\Program Files\\MATLAB\\R2025b\\toolbox\\matlab\\funfun\\ode15s.m\r\nLICENSE_TEST | Symbolic_Toolbox | 1\r\nFUNCTION | syms | C:\\Program Files\\MATLAB\\R2025b\\toolbox\\symbolic\\symbolic\\syms.m\r\nLICENSE_TEST | Optimization_Toolbox | 1\r\nFUNCTION | lsqnonlin | C:\\Program Files\\MATLAB\\R2025b\\toolbox\\shared\\optimlib\\lsqnonlin.m\r\nLICENSE_TEST | SimBiology | 1\r\nFUNCTION | sbiomodel | C:\\Program Files\\MATLAB\\R2025b\\toolbox\\simbio\\simbio\\sbiomodel.m\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "matlab_checkcode",
+    "argv": [
+      "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+      "-batch",
+      "fprintf('CHECKCODE %s\\n', 'matlab_capability.m'); disp(checkcode('C:/Users/CZ/Desktop/PURE/docs/environment/probes/matlab_capability.m', '-id')); fprintf('CHECKCODE %s\\n', 'matlab_smoke.m'); disp(checkcode('C:/Users/CZ/Desktop/PURE/docs/environment/probes/matlab_smoke.m', '-id')); fprintf('CHECKCODE %s\\n', 'matlab_project.m'); disp(checkcode('C:/Users/CZ/Desktop/PURE/docs/environment/probes/matlab_project.m', '-id')); fprintf('CHECKCODE %s\\n', 'test_pure_literature_reference.m'); disp(checkcode('C:/Users/CZ/AppData/Local/Temp/PURE_CZ_environment_2js_r8qd/matlab/tests/test_pure_literature_reference.m', '-id')); fprintf('CHECKCODE %s\\n', 'derive_dimensionless.m'); disp(checkcode('C:/Users/CZ/AppData/Local/Temp/PURE_CZ_environment_2js_r8qd/models/literature_reference/dimensionless/derive_dimensionless.m', '-id'))"
+    ],
+    "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"fprintf('CHECKCODE %s\\n', 'matlab_capability.m'); disp(checkcode('C:/Users/CZ/Desktop/PURE/docs/environment/probes/matlab_capability.m', '-id')); fprintf('CHECKCODE %s\\n', 'matlab_smoke.m'); disp(checkcode('C:/Users/CZ/Desktop/PURE/docs/environment/probes/matlab_smoke.m', '-id')); fprintf('CHECKCODE %s\\n', 'matlab_project.m'); disp(checkcode('C:/Users/CZ/Desktop/PURE/docs/environment/probes/matlab_project.m', '-id')); fprintf('CHECKCODE %s\\n', 'test_pure_literature_reference.m'); disp(checkcode('C:/Users/CZ/AppData/Local/Temp/PURE_CZ_environment_2js_r8qd/matlab/tests/test_pure_literature_reference.m', '-id')); fprintf('CHECKCODE %s\\n', 'derive_dimensionless.m'); disp(checkcode('C:/Users/CZ/AppData/Local/Temp/PURE_CZ_environment_2js_r8qd/models/literature_reference/dimensionless/derive_dimensionless.m', '-id'))\"",
+    "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+    "started": "2026-09-22T14:35:53.831987+08:00",
+    "duration_seconds": 10.438,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "gb18030",
+    "stderr_encoding": "utf-8",
+    "stdout": "CHECKCODE matlab_capability.m\r\nCHECKCODE matlab_smoke.m\r\n         id: 'ISCL'\r\n    message: '要提高性能，请使用 'isscalar' 而不是长度比较。'\r\n        fix: 1\r\n       line: 33\r\n     column: [46 71]\r\n\r\nCHECKCODE matlab_project.m\r\nCHECKCODE test_pure_literature_reference.m\r\n         id: 'NASGU'\r\n    message: '赋给变量的值可能未使用。'\r\n        fix: 0\r\n       line: 169\r\n     column: [1 3]\r\n\r\nCHECKCODE derive_dimensionless.m\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "matlab_smoke_base",
+    "argv": [
+      "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+      "-batch",
+      "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('base')"
+    ],
+    "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('base')\"",
+    "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+    "started": "2026-09-22T14:36:04.270784+08:00",
+    "duration_seconds": 13.725,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "SMOKE_START=base\r\node15s: PASS; final=0.36787943738034734; expected=0.36787944117144233\r\njsondecode: PASS\r\nwritetable/readback: PASS\r\nLICENSE_INUSE_FEATURE=matlab\r\nSMOKE_PASS=base\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "matlab_smoke_symbolic",
+    "argv": [
+      "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+      "-batch",
+      "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('symbolic')"
+    ],
+    "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('symbolic')\"",
+    "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+    "started": "2026-09-22T14:36:17.997869+08:00",
+    "duration_seconds": 11.21,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "SMOKE_START=symbolic\r\nsymbolic residual=0\r\nLICENSE_INUSE_FEATURE=matlab\r\nLICENSE_INUSE_FEATURE=symbolic_toolbox\r\nSMOKE_PASS=symbolic\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "matlab_smoke_optimization",
+    "argv": [
+      "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+      "-batch",
+      "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('optimization')"
+    ],
+    "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('optimization')\"",
+    "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+    "started": "2026-09-22T14:36:29.209267+08:00",
+    "duration_seconds": 13.924,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "SMOKE_START=optimization\r\nlsqnonlin: x=2; resnorm=0; optimizer_exitflag=1\r\nLICENSE_INUSE_FEATURE=matlab\r\nLICENSE_INUSE_FEATURE=optimization_toolbox\r\nSMOKE_PASS=optimization\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "matlab_smoke_simbiology",
+    "argv": [
+      "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+      "-batch",
+      "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('simbiology')"
+    ],
+    "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('simbiology')\"",
+    "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+    "started": "2026-09-22T14:36:43.134511+08:00",
+    "duration_seconds": 9.623,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "SMOKE_START=simbiology\r\nsbiomodel: PASS; class=SimBiology.Model; compartments=1; species=1\r\nLICENSE_INUSE_FEATURE=matlab\r\nLICENSE_INUSE_FEATURE=simbiology\r\nLICENSE_INUSE_FEATURE=statistics_toolbox\r\nSMOKE_PASS=simbiology\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "project_matlab_literature",
+    "argv": [
+      "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+      "-batch",
+      "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_project('literature')"
+    ],
+    "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_project('literature')\"",
+    "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+    "started": "2026-09-22T14:36:52.758592+08:00",
+    "duration_seconds": 23.493,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "gb18030",
+    "stderr_encoding": "utf-8",
+    "stdout": "正在运行 test_pure_literature_reference\r\n.........\r\n已完成 test_pure_literature_reference\r\n__________\r\n\r\n                                           Name                                            Passed    Failed    Incomplete    Duration      Details   \r\n    ___________________________________________________________________________________    ______    ______    __________    ________    ____________\r\n\r\n    {'test_pure_literature_reference/test_parameter_lock_tables_1_and_2'              }    true      false       false         0.6761    {1×1 struct}\r\n    {'test_pure_literature_reference/test_rate_law_spot_values'                       }    true      false       false         0.3265    {1×1 struct}\r\n    {'test_pure_literature_reference/test_initial_rate_sanity'                        }    true      false       false       0.070246    {1×1 struct}\r\n    {'test_pure_literature_reference/test_balance_derivative_identities_random_states'}    true      false       false       0.016374    {1×1 struct}\r\n    {'test_pure_literature_reference/test_finite_difference_short_step'               }    true      false       false        0.31964    {1×1 struct}\r\n    {'test_pure_literature_reference/test_observable_mapping'                         }    true      false       false        0.14375    {1×1 struct}\r\n    {'test_pure_literature_reference/test_ktl_rna_derived_value'                      }    true      false       false       0.035153    {1×1 struct}\r\n    {'test_pure_literature_reference/test_short_run_mass_balance_and_nonnegativity'   }    true      false       false       0.090163    {1×1 struct}\r\n    {'test_pure_literature_reference/test_repeatability_deterministic'                }    true      false       false       0.057188    {1×1 struct}\r\n\r\nLITERATURE_TESTS total=9 passed=9 failed=0 incomplete=0\r\nPROJECT_PASS=literature\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "project_matlab_dimensionless",
+    "argv": [
+      "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+      "-batch",
+      "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_project('dimensionless')"
+    ],
+    "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_project('dimensionless')\"",
+    "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+    "started": "2026-09-22T14:37:16.253044+08:00",
+    "duration_seconds": 14.114,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "ODE 1 symbolic equivalence: PASS (residual 0)\r\nODE 2 symbolic equivalence: PASS (residual 0)\r\nODE 3 symbolic equivalence: PASS (residual 0)\r\nODE 4 symbolic equivalence: PASS (residual 0)\r\nODE 5 symbolic equivalence: PASS (residual 0)\r\nODE 6 symbolic equivalence: PASS (residual 0)\r\nODE 7 symbolic equivalence: PASS (residual 0)\r\nODE 8 symbolic equivalence: PASS (residual 0)\r\nODE 9 symbolic equivalence: PASS (residual 0)\r\nODE 10 symbolic equivalence: PASS (residual 0)\r\nODE 11 symbolic equivalence: PASS (residual 0)\r\nODE 12 symbolic equivalence: PASS (residual 0)\r\n\r\nAll dimensional and dimensionless conservation checks passed.\r\nResult written to C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd\\models\\literature_reference\\dimensionless\\dimensionless_result_matlab.txt\r\nPROJECT_PASS=dimensionless\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "git_status_after_matlab",
+    "argv": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "command": "git status --short",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:37:30.368479+08:00",
+    "duration_seconds": 0.061,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "?? docs/environment/\n",
+    "stderr": ""
+  }
+]

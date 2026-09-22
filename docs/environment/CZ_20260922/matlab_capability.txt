@@ -1,0 +1,143 @@
+{
+  "name": "matlab_capability",
+  "argv": [
+    "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+    "-batch",
+    "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_capability"
+  ],
+  "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_capability\"",
+  "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+  "started": "2026-09-22T14:35:43.299249+08:00",
+  "duration_seconds": 10.531,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+MATLAB_RUNTIME=25.2.0.3150157 (R2025b) Update 4
+RELEASE=2025b
+ARCH=PCWIN64
+PRODUCT | 5G Toolbox | 25.2 | (R2025b)
+PRODUCT | AUTOSAR Blockset | 25.2 | (R2025b)
+PRODUCT | Aerospace Blockset | 25.2 | (R2025b)
+PRODUCT | Aerospace Toolbox | 25.2 | (R2025b)
+PRODUCT | Antenna Toolbox | 25.2 | (R2025b)
+PRODUCT | Audio Toolbox | 25.2 | (R2025b)
+PRODUCT | Automated Driving Toolbox | 25.2 | (R2025b)
+PRODUCT | Bioinformatics Toolbox | 25.2 | (R2025b)
+PRODUCT | Bluetooth Toolbox | 25.2 | (R2025b)
+PRODUCT | C2000 Microcontroller Blockset | 25.2 | (R2025b)
+PRODUCT | Communications Toolbox | 25.2 | (R2025b)
+PRODUCT | Computer Vision Toolbox | 25.2 | (R2025b)
+PRODUCT | Control System Toolbox | 25.2 | (R2025b)
+PRODUCT | Curve Fitting Toolbox | 25.2 | (R2025b)
+PRODUCT | DDS Blockset | 25.2 | (R2025b)
+PRODUCT | DSP HDL Toolbox | 25.2 | (R2025b)
+PRODUCT | DSP System Toolbox | 25.2 | (R2025b)
+PRODUCT | Data Acquisition Toolbox | 25.2 | (R2025b)
+PRODUCT | Database Toolbox | 25.2 | (R2025b)
+PRODUCT | Datafeed Toolbox | 25.2 | (R2025b)
+PRODUCT | Deep Learning HDL Toolbox | 25.2 | (R2025b)
+PRODUCT | Deep Learning Toolbox | 25.2 | (R2025b)
+PRODUCT | Econometrics Toolbox | 25.2 | (R2025b)
+PRODUCT | Embedded Coder | 25.2 | (R2025b)
+PRODUCT | Financial Instruments Toolbox | 25.2 | (R2025b)
+PRODUCT | Financial Toolbox | 25.2 | (R2025b)
+PRODUCT | Fixed-Point Designer | 25.2 | (R2025b)
+PRODUCT | Fuzzy Logic Toolbox | 25.2 | (R2025b)
+PRODUCT | GPU Coder | 25.2 | (R2025b)
+PRODUCT | Global Optimization Toolbox | 25.2 | (R2025b)
+PRODUCT | HDL Coder | 25.2 | (R2025b)
+PRODUCT | HDL Verifier | 25.2 | (R2025b)
+PRODUCT | Image Acquisition Toolbox | 25.2 | (R2025b)
+PRODUCT | Image Processing Toolbox | 25.2 | (R2025b)
+PRODUCT | Industrial Communication Toolbox | 25.2 | (R2025b)
+PRODUCT | Instrument Control Toolbox | 25.2 | (R2025b)
+PRODUCT | LTE Toolbox | 25.2 | (R2025b)
+PRODUCT | Lidar Toolbox | 25.2 | (R2025b)
+PRODUCT | MATLAB | 25.2 | (R2025b)
+PRODUCT | MATLAB Coder | 25.2 | (R2025b)
+PRODUCT | MATLAB Compiler | 25.2 | (R2025b)
+PRODUCT | MATLAB Compiler SDK | 25.2 | (R2025b)
+PRODUCT | MATLAB Report Generator | 25.2 | (R2025b)
+PRODUCT | MATLAB Test | 25.2 | (R2025b)
+PRODUCT | Mapping Toolbox | 25.2 | (R2025b)
+PRODUCT | Medical Imaging Toolbox | 25.2 | (R2025b)
+PRODUCT | Mixed-Signal Blockset | 25.2 | (R2025b)
+PRODUCT | Model Predictive Control Toolbox | 25.2 | (R2025b)
+PRODUCT | Model-Based Calibration Toolbox | 25.2 | (R2025b)
+PRODUCT | Motor Control Blockset | 25.2 | (R2025b)
+PRODUCT | Navigation Toolbox | 25.2 | (R2025b)
+PRODUCT | Optimization Toolbox | 25.2 | (R2025b)
+PRODUCT | Parallel Computing Toolbox | 25.2 | (R2025b)
+PRODUCT | Partial Differential Equation Toolbox | 25.2 | (R2025b)
+PRODUCT | Phased Array System Toolbox | 25.2 | (R2025b)
+PRODUCT | Powertrain Blockset | 25.2 | (R2025b)
+PRODUCT | Predictive Maintenance Toolbox | 25.2 | (R2025b)
+PRODUCT | RF Blockset | 25.2 | (R2025b)
+PRODUCT | RF PCB Toolbox | 25.2 | (R2025b)
+PRODUCT | RF Toolbox | 25.2 | (R2025b)
+PRODUCT | ROS Toolbox | 25.2 | (R2025b)
+PRODUCT | Radar Toolbox | 25.2 | (R2025b)
+PRODUCT | Reinforcement Learning Toolbox | 25.2 | (R2025b)
+PRODUCT | Requirements Toolbox | 25.2 | (R2025b)
+PRODUCT | Risk Management Toolbox | 25.2 | (R2025b)
+PRODUCT | Robotics System Toolbox | 25.2 | (R2025b)
+PRODUCT | Robust Control Toolbox | 25.2 | (R2025b)
+PRODUCT | Satellite Communications Toolbox | 25.2 | (R2025b)
+PRODUCT | Sensor Fusion and Tracking Toolbox | 25.2 | (R2025b)
+PRODUCT | SerDes Toolbox | 25.2 | (R2025b)
+PRODUCT | Signal Integrity Toolbox | 25.2 | (R2025b)
+PRODUCT | Signal Processing Toolbox | 25.2 | (R2025b)
+PRODUCT | SimBiology | 25.2 | (R2025b)
+PRODUCT | SimEvents | 25.2 | (R2025b)
+PRODUCT | Simscape | 25.2 | (R2025b)
+PRODUCT | Simscape Battery | 25.2 | (R2025b)
+PRODUCT | Simscape Driveline | 25.2 | (R2025b)
+PRODUCT | Simscape Electrical | 25.2 | (R2025b)
+PRODUCT | Simscape Fluids | 25.2 | (R2025b)
+PRODUCT | Simscape Multibody | 25.2 | (R2025b)
+PRODUCT | Simulink | 25.2 | (R2025b)
+PRODUCT | Simulink 3D Animation | 25.2 | (R2025b)
+PRODUCT | Simulink Check | 25.2 | (R2025b)
+PRODUCT | Simulink Code Inspector | 25.2 | (R2025b)
+PRODUCT | Simulink Coder | 25.2 | (R2025b)
+PRODUCT | Simulink Compiler | 25.2 | (R2025b)
+PRODUCT | Simulink Control Design | 25.2 | (R2025b)
+PRODUCT | Simulink Coverage | 25.2 | (R2025b)
+PRODUCT | Simulink Design Optimization | 25.2 | (R2025b)
+PRODUCT | Simulink Design Verifier | 25.2 | (R2025b)
+PRODUCT | Simulink Desktop Real-Time | 25.2 | (R2025b)
+PRODUCT | Simulink Fault Analyzer | 25.2 | (R2025b)
+PRODUCT | Simulink PLC Coder | 25.2 | (R2025b)
+PRODUCT | Simulink Real-Time | 25.2 | (R2025b)
+PRODUCT | Simulink Report Generator | 25.2 | (R2025b)
+PRODUCT | Simulink Test | 25.2 | (R2025b)
+PRODUCT | SoC Blockset | 25.2 | (R2025b)
+PRODUCT | Spreadsheet Link | 25.2 | (R2025b)
+PRODUCT | Stateflow | 25.2 | (R2025b)
+PRODUCT | Statistics and Machine Learning Toolbox | 25.2 | (R2025b)
+PRODUCT | Symbolic Math Toolbox | 25.2 | (R2025b)
+PRODUCT | System Composer | 25.2 | (R2025b)
+PRODUCT | System Identification Toolbox | 25.2 | (R2025b)
+PRODUCT | Text Analytics Toolbox | 25.2 | (R2025b)
+PRODUCT | UAV Toolbox | 25.2 | (R2025b)
+PRODUCT | Vehicle Dynamics Blockset | 25.2 | (R2025b)
+PRODUCT | Vehicle Network Toolbox | 25.2 | (R2025b)
+PRODUCT | Vision HDL Toolbox | 25.2 | (R2025b)
+PRODUCT | WLAN Toolbox | 25.2 | (R2025b)
+PRODUCT | Wavelet Toolbox | 25.2 | (R2025b)
+PRODUCT | Wireless HDL Toolbox | 25.2 | (R2025b)
+PRODUCT | Wireless Testbench | 25.2 | (R2025b)
+LICENSE_TEST | MATLAB | 1
+FUNCTION | ode15s | C:\Program Files\MATLAB\R2025b\toolbox\matlab\funfun\ode15s.m
+LICENSE_TEST | Symbolic_Toolbox | 1
+FUNCTION | syms | C:\Program Files\MATLAB\R2025b\toolbox\symbolic\symbolic\syms.m
+LICENSE_TEST | Optimization_Toolbox | 1
+FUNCTION | lsqnonlin | C:\Program Files\MATLAB\R2025b\toolbox\shared\optimlib\lsqnonlin.m
+LICENSE_TEST | SimBiology | 1
+FUNCTION | sbiomodel | C:\Program Files\MATLAB\R2025b\toolbox\simbio\simbio\sbiomodel.m
+STDERR:
+(empty)

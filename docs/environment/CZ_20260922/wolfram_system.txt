@@ -1,0 +1,21 @@
+{
+  "name": "wolfram_system",
+  "argv": [
+    "C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE",
+    "-code",
+    "$SystemID"
+  ],
+  "command": "\"C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.EXE\" -code $SystemID",
+  "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+  "started": "2026-09-22T14:35:32.380508+08:00",
+  "duration_seconds": 3.488,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+Windows-x86-64
+STDERR:
+(empty)

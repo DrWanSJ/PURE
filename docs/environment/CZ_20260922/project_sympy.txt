@@ -1,0 +1,53 @@
+{
+  "name": "project_sympy",
+  "requested_argv": [
+    "python3",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd\\models\\literature_reference\\dimensionless\\derive_dimensionless.py"
+  ],
+  "argv": [
+    "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd\\models\\literature_reference\\dimensionless\\derive_dimensionless.py"
+  ],
+  "command": "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE -B -X utf8 C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd\\models\\literature_reference\\dimensionless\\derive_dimensionless.py",
+  "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+  "started": "2026-09-22T14:36:41.630166+08:00",
+  "duration_seconds": 3.627,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+DIMENSIONAL CONSERVATION: ALL PASS (5 laws)
+CONSERVATION CHECK: ALL PASS (5 invariants)
+NUMERIC CHECK: ALL PASS (5 trials x 12 eqs)
+GLOBAL MAX ABSOLUTE RESIDUAL: 2.2204460492503131e-16; equations checked: 60
+
+Compact dimensionless rates:
+v_TX = \frac{\mu_{TX} y_{1}}{\left(\kappa_{TX DNA} + 1\right) \left(\kappa_{TX NTP} + y_{1}\right)}
+v_RS = \frac{\mu_{RS} y_{1} y_{4} y_{5}}{\left(\kappa_{RS A} + y_{4}\right) \left(\kappa_{RS NTP} + y_{1}\right) \left(\kappa_{RS T} + y_{5}\right)}
+v_TL = \frac{\mu_{TL} y_{1} y_{10} y_{3} y_{6}}{\left(\kappa_{TL AT} + y_{6}\right) \left(\kappa_{TL NTP} + y_{1}\right) \left(\kappa_{TL nt} + y_{3}\right)}
+v_EN = \frac{\mu_{EN} y_{2} y_{8}}{\left(\kappa_{EN CP} + y_{8}\right) \left(\kappa_{EN NXP} + y_{2}\right)}
+
+Compact dimensionless ODEs:
+dy1/dtau = \frac{\mu_{EN} y_{2} y_{8}}{\left(\kappa_{EN CP} + y_{8}\right) \left(\kappa_{EN NXP} + y_{2}\right)} - \frac{\mu_{RS} y_{1} y_{4} y_{5}}{\left(\kappa_{RS A} + y_{4}\right) \left(\kappa_{RS NTP} + y_{1}\right) \left(\kappa_{RS T} + y_{5}\right)} - \frac{2 \mu_{TL} y_{1} y_{10} y_{3} y_{6}}{\left(\kappa_{TL AT} + y_{6}\right) \left(\kappa_{TL NTP} + y_{1}\right) \left(\kappa_{TL nt} + y_{3}\right)} - \frac{\mu_{TX} y_{1}}{\left(\kappa_{TX DNA} + 1\right) \left(\kappa_{TX NTP} + y_{1}\right)}
+dy2/dtau = - \frac{\mu_{EN} y_{2} y_{8}}{\left(\kappa_{EN CP} + y_{8}\right) \left(\kappa_{EN NXP} + y_{2}\right)} + \frac{\mu_{RS} y_{1} y_{4} y_{5}}{\left(\kappa_{RS A} + y_{4}\right) \left(\kappa_{RS NTP} + y_{1}\right) \left(\kappa_{RS T} + y_{5}\right)} + \frac{2 \mu_{TL} y_{1} y_{10} y_{3} y_{6}}{\left(\kappa_{TL AT} + y_{6}\right) \left(\kappa_{TL NTP} + y_{1}\right) \left(\kappa_{TL nt} + y_{3}\right)}
+dy3/dtau = \frac{\mu_{TX} y_{1}}{\left(\kappa_{TX DNA} + 1\right) \left(\kappa_{TX NTP} + y_{1}\right)} - y_{3}
+dy4/dtau = - \frac{\mu_{RS} \rho_{A} y_{1} y_{4} y_{5}}{\left(\kappa_{RS A} + y_{4}\right) \left(\kappa_{RS NTP} + y_{1}\right) \left(\kappa_{RS T} + y_{5}\right)}
+dy5/dtau = \rho_{T} \left(- \frac{\mu_{RS} y_{1} y_{4} y_{5}}{\left(\kappa_{RS A} + y_{4}\right) \left(\kappa_{RS NTP} + y_{1}\right) \left(\kappa_{RS T} + y_{5}\right)} + \frac{\mu_{TL} y_{1} y_{10} y_{3} y_{6}}{\left(\kappa_{TL AT} + y_{6}\right) \left(\kappa_{TL NTP} + y_{1}\right) \left(\kappa_{TL nt} + y_{3}\right)}\right)
+dy6/dtau = \rho_{T} \left(\frac{\mu_{RS} y_{1} y_{4} y_{5}}{\left(\kappa_{RS A} + y_{4}\right) \left(\kappa_{RS NTP} + y_{1}\right) \left(\kappa_{RS T} + y_{5}\right)} - \frac{\mu_{TL} y_{1} y_{10} y_{3} y_{6}}{\left(\kappa_{TL AT} + y_{6}\right) \left(\kappa_{TL NTP} + y_{1}\right) \left(\kappa_{TL nt} + y_{3}\right)}\right)
+dy7/dtau = \frac{\mu_{TL} \rho_{A} y_{1} y_{10} y_{3} y_{6}}{\left(\kappa_{TL AT} + y_{6}\right) \left(\kappa_{TL NTP} + y_{1}\right) \left(\kappa_{TL nt} + y_{3}\right)}
+dy8/dtau = - \frac{\mu_{EN} \rho_{C} y_{2} y_{8}}{\left(\kappa_{EN CP} + y_{8}\right) \left(\kappa_{EN NXP} + y_{2}\right)}
+dy9/dtau = \frac{\mu_{EN} \rho_{C} y_{2} y_{8}}{\left(\kappa_{EN CP} + y_{8}\right) \left(\kappa_{EN NXP} + y_{2}\right)}
+dy10/dtau = - \mu_{TLdeg} y_{10}
+dy11/dtau = y_{3}
+dy12/dtau = \mu_{TLdeg} y_{10}
+STDERR:
+(empty)

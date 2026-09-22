@@ -1,0 +1,290 @@
+{
+  "scratch": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+  "copied_files": [
+    {
+      "path": "matlab/README.md",
+      "sha256": "c1704e14c50e8743b353c7ab41070e265b304e904c00b2c639847f871bfa0da6"
+    },
+    {
+      "path": "matlab/codegen/generate_pure_literature_reference.m",
+      "sha256": "6da20f77ee6b0f667b86ebd0130cc82bd482bf63157db9a45509592b82c8ed4a"
+    },
+    {
+      "path": "matlab/generated/pure_literature_reference_params.m",
+      "sha256": "41d12a621652da91c8d1d420cb686689a5681db1593b87fbf10b5331c20c6982"
+    },
+    {
+      "path": "matlab/generated/rhs_pure_literature_reference.m",
+      "sha256": "79ddb8c755ccb5ed1ece2d08b1b1be00d35669ef857edc9e7206094eb77fa358"
+    },
+    {
+      "path": "matlab/src/fixtures/analytic_birth_death.m",
+      "sha256": "6828e8e2a7fc383eaae8cfbf40a3b5da448acca64af920ec1854743aa75e1fa2"
+    },
+    {
+      "path": "matlab/src/fixtures/analytic_reversible_conversion.m",
+      "sha256": "bca8cecfe410d3e92bb1f983c90d90e20b2e6aa4c3eef6ef69611fa8f844c700"
+    },
+    {
+      "path": "matlab/src/fixtures/appendix_a_H.m",
+      "sha256": "b6b4190a65bee9dad3f21fd1f83df7fb02c1be9321afe2827b4717fbb52a70c1"
+    },
+    {
+      "path": "matlab/src/fixtures/appendix_a_approximations.m",
+      "sha256": "1f1d4665bb72b28eb14cef45492671d0be2f2bb30126b0b403572cd86db17cb2"
+    },
+    {
+      "path": "matlab/src/fixtures/appendix_a_fixed_point.m",
+      "sha256": "4ef7f306203b1f75323d2589e65538ca09fc1c91abc3864e86ef226b5ef15374"
+    },
+    {
+      "path": "matlab/src/fixtures/appendix_a_jacobian.m",
+      "sha256": "9ce5b94a8a988995856cf35fefacbeb2fef7061eef4c79ea80c0caab423ac564"
+    },
+    {
+      "path": "matlab/src/fixtures/appendix_a_params.m",
+      "sha256": "db9aa7f61877b41bb957e4edc2445aeb55617300fa2d918292f3eda492d7570b"
+    },
+    {
+      "path": "matlab/src/fixtures/appendix_a_psi.m",
+      "sha256": "1094c13a6a954d9a10ef11febf6ea9efb7e13ff3c75da872464a3fda6b11d725"
+    },
+    {
+      "path": "matlab/src/fixtures/birth_death_exact_distribution.m",
+      "sha256": "e765e9fe7c5514e89d081eea1627a5bc376dc21fefda379abf738b658514e154"
+    },
+    {
+      "path": "matlab/src/fixtures/birth_death_params.m",
+      "sha256": "5dde118476a5aa5e930f8f9c3fbf2d0efc4f0ab63cd9bec06ccc8099e29e204b"
+    },
+    {
+      "path": "matlab/src/fixtures/birth_death_propensities.m",
+      "sha256": "9c5a42c2f1e718bdb4bb471cd228fdaeeb4c9fc3146f418445cb86df0d92feed"
+    },
+    {
+      "path": "matlab/src/fixtures/compare_enzyme_qssa.m",
+      "sha256": "b02f88d06694bb9198954734209cbe78c0ecc033bd33ed3ecb801a7a83a3e5e6"
+    },
+    {
+      "path": "matlab/src/fixtures/enzyme_qssa_algebraic_complex.m",
+      "sha256": "95d8a8f311eb94f87aee9b420a1daa2dbd4540163a6f61887cd5a24b992dc505"
+    },
+    {
+      "path": "matlab/src/fixtures/enzyme_qssa_params.m",
+      "sha256": "3e482f1afec7cdbcfffb9187e9beac84544852933de9c2b5887f865db08260f9"
+    },
+    {
+      "path": "matlab/src/fixtures/reversible_conversion_params.m",
+      "sha256": "ac76b18e7f8a85fbb3dd81579b678bab4369d471a5c080a7f7d82061665602ec"
+    },
+    {
+      "path": "matlab/src/fixtures/rhs_appendix_a.m",
+      "sha256": "369bd66ef864cd59e0471b239abf4efab60ffd7f46bdc1589d63b376791b1c1e"
+    },
+    {
+      "path": "matlab/src/fixtures/rhs_birth_death_mean.m",
+      "sha256": "03ab0196c7f3dde47945f0b6070b43443b0bc022afa845527dda1608a9c12b5e"
+    },
+    {
+      "path": "matlab/src/fixtures/rhs_enzyme_qssa_full.m",
+      "sha256": "d851cb02b91f212a12605dd4dc6936ba2f96118db64f63fa4cbffb92c1aef3cf"
+    },
+    {
+      "path": "matlab/src/fixtures/rhs_reversible_conversion.m",
+      "sha256": "ec53e1cbe61b09749131bf48e7d61717ef3209efdfb494549fea915ecf8b6b43"
+    },
+    {
+      "path": "matlab/src/fixtures/simulate_appendix_a.m",
+      "sha256": "3be5c7b01332892e65ae10d2b87a2bfa0f54ff2aa8cef6b0bd21f3a01b016507"
+    },
+    {
+      "path": "matlab/src/fixtures/simulate_birth_death_mean.m",
+      "sha256": "e342d11fd8b2b93de174e531985dd012d66524e089ea1fa3930413fdb70a7169"
+    },
+    {
+      "path": "matlab/src/fixtures/simulate_enzyme_qssa_full.m",
+      "sha256": "202b37adda5d7e703971b661c28d336d665b89f01487854f0e46b83fa598b535"
+    },
+    {
+      "path": "matlab/src/fixtures/simulate_enzyme_qssa_reduced.m",
+      "sha256": "f5d2cd6e99e7b9867e31819a38e76644a8f2b5120f745a3a0e4c0f8b6c2f0785"
+    },
+    {
+      "path": "matlab/src/fixtures/simulate_reversible_conversion.m",
+      "sha256": "1dbd2a8858caa707d6c598b62b2851eff0bc3d055ab3068cb4344d420d695c4d"
+    },
+    {
+      "path": "matlab/src/provenance/pure_git_state.m",
+      "sha256": "b3561994ac1f2a00b3e87e49f0e77055af0a3cd971f6e7efb90cb40d4476c7bc"
+    },
+    {
+      "path": "matlab/src/provenance/pure_run_provenance.m",
+      "sha256": "7f8b93af1689273e3aacdc4b5e7dcfaf0bf1181cb7340cf2e58f8dba14bbf245"
+    },
+    {
+      "path": "matlab/src/provenance/pure_sha256_file.m",
+      "sha256": "4e5a21a7b073e1907ab8af8502e814b395f0666140fce19e2544fb156d4c5c9d"
+    },
+    {
+      "path": "matlab/src/provenance/pure_sha256_string.m",
+      "sha256": "42d00eb2a43ccec2611d7789c9247387cb81fe64916737ffe8e5fe3f08fcd0db"
+    },
+    {
+      "path": "matlab/src/simulate/run_fig4_benchmark.m",
+      "sha256": "7d3fd3f47436e6f8abfa3f0b771f34192929cb9e5735027dda960b1a5c886240"
+    },
+    {
+      "path": "matlab/src/simulate/simulate_pure_literature_reference.m",
+      "sha256": "2788263f212d49eab5cf5204ae4e2b525b22f68065a323f191d17f16e97b40ad"
+    },
+    {
+      "path": "matlab/tests/fixtures/rhs_pure_literature_reference_baseline_snapshot.m",
+      "sha256": "c4c7cabe093b5937317677be7f916fa031d4170f8b098593afed71a10737c636"
+    },
+    {
+      "path": "matlab/tests/test_codegen_and_provenance.m",
+      "sha256": "f95186c7c26122822cad53a8ef52ba8cf6f11bdd429d27d8d4962b4f4d61e28e"
+    },
+    {
+      "path": "matlab/tests/test_fixture_appendix_a.m",
+      "sha256": "e17121225d3b0d754956951804c6bdea25a1b48c74e8fc43a87e0f32f5416cf7"
+    },
+    {
+      "path": "matlab/tests/test_fixture_birth_death.m",
+      "sha256": "59199823c240ff836b1b5708c6f618a827e0fa47493ec0f26777faddb2b9ca04"
+    },
+    {
+      "path": "matlab/tests/test_fixture_enzyme_qssa.m",
+      "sha256": "bf9d04986b2debb2677ea5ecc12cc9614def2efbcb5ddd20023857f560cf5d67"
+    },
+    {
+      "path": "matlab/tests/test_fixture_reversible_conversion.m",
+      "sha256": "9880f40c96f944f5440d685e5cfd3a0475f9ae792766956267f7122c316ff20f"
+    },
+    {
+      "path": "matlab/tests/test_pure_literature_reference.m",
+      "sha256": "324f145526c5039fa224c602851d836939ca342908424b55909ab3b76b70d9fc"
+    },
+    {
+      "path": "matlab/tests/test_release_preflight.m",
+      "sha256": "2c6ec75d6ba9d05651f1d5e1fb0d4699c06c297648b2c5d2352ec3d5433ebb45"
+    },
+    {
+      "path": "matlab/tools/check_environment.m",
+      "sha256": "93d3823e234a4289206cfc132378ed4eac61a8b67341ff7e469c66f5b11628ab"
+    },
+    {
+      "path": "matlab/tools/digitization/digitize_fig4.m",
+      "sha256": "f222ea5c2dc9622e9297c68e3561d4000174f09d063fdfc171834b070f5380f3"
+    },
+    {
+      "path": "models/README.md",
+      "sha256": "6dca86ed6984c30ff6d5f5135ea48927e8e5d135f7d21aee11712e028f6aeb27"
+    },
+    {
+      "path": "models/fixtures/README.md",
+      "sha256": "e248e4a2e1f8b819208140e86156daa8b55458f0b608753c1986cffc51815561"
+    },
+    {
+      "path": "models/fixtures/appendix_a/README.md",
+      "sha256": "38f24ac79e461596c913e1170c9233144a858409221cd4441b13322a0e20ed1a"
+    },
+    {
+      "path": "models/fixtures/appendix_a/model_definition.json",
+      "sha256": "2c779dc6ac6d1a8cc0ca77fd6c6552efd123bd775823d8e8d9b9629a4e1bb164"
+    },
+    {
+      "path": "models/fixtures/appendix_a/parameters.json",
+      "sha256": "111592690ac6d8036d1d2f4c1ae73945d283e4488344da6b3a67b5aa1daf2288"
+    },
+    {
+      "path": "models/fixtures/birth_death/README.md",
+      "sha256": "1bafb7c591215b497dd24e1c21e7015510fb42aaf9d2be097812e88d228dd21f"
+    },
+    {
+      "path": "models/fixtures/birth_death/model_definition.json",
+      "sha256": "159284f70fdea91ff5d1c72f104018e73a7188f3bbb1581bed9b43adbaf75596"
+    },
+    {
+      "path": "models/fixtures/birth_death/parameters.json",
+      "sha256": "9871467f67b7c61b8899364275a80ee2ef38d465c99a7fb7516f0db8754d6c18"
+    },
+    {
+      "path": "models/fixtures/enzyme_qssa/README.md",
+      "sha256": "ec9555c1f848ff2911b9856ab5e9154c5cd08b805640399a8cd7a1f81d2b23be"
+    },
+    {
+      "path": "models/fixtures/enzyme_qssa/model_definition.json",
+      "sha256": "92ddfadb3bd0b09e5cd8f4aabe4d73d404d7897640fc7a62d9471ac6f5d96269"
+    },
+    {
+      "path": "models/fixtures/enzyme_qssa/parameters.json",
+      "sha256": "656c62a7f33a8532437fea5ae090d4ee0a06e98445666d602293127e6a942ad7"
+    },
+    {
+      "path": "models/fixtures/reversible_conversion/README.md",
+      "sha256": "5ad1c4567c0bbecbfeee3c5bab059f1f90124f9761a63354b59a415583e0e08c"
+    },
+    {
+      "path": "models/fixtures/reversible_conversion/model_definition.json",
+      "sha256": "87a5cb84ec40fc9580f5fb609029f3c19c503e93b4597bc80cb93d9350bb5610"
+    },
+    {
+      "path": "models/fixtures/reversible_conversion/parameters.json",
+      "sha256": "86a55492750858f604b0f9d618d7963d97a6d947bf36e2e2c94b8960ddf9b8fa"
+    },
+    {
+      "path": "models/literature_reference/README.md",
+      "sha256": "17040e799695e129a51d9bff38cf1d0ae2719c160c2a6032e6c3cb87def3ab40"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/README.md",
+      "sha256": "e106d109588af8eb2c150b9e67ec3944a3389d89da937da356b4a89256021a2c"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/derive_dimensionless.m",
+      "sha256": "a4c095742586adcfde5f7c494d2b235387b9bf7a63b377ffd6e773d9ab1e087f"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/derive_dimensionless.py",
+      "sha256": "acaaaeb323c20616818430c517bbb6fe2e762edda3b2cb28c376127e4bbfa7ca"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/dimensionless_result.txt",
+      "sha256": "4e617f6bd5d1ec12cae03dbc4a5149ff0cfbf67fa0dcd49cf2b9c131b45a3ba9"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/dimensionless_result_matlab.txt",
+      "sha256": "f470db4c39cf612d256fcfffc511c76674f1dbc960136d017fdd0ba859e7b562"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/verify_wolfram_v2.wl",
+      "sha256": "ebb1da6879070c46c354211459ec343d7847f33cf6287d4b0aebadeeba1473f1"
+    },
+    {
+      "path": "models/literature_reference/model_definition.json",
+      "sha256": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14"
+    },
+    {
+      "path": "models/literature_reference/model_manifest.json",
+      "sha256": "fd5bfee5406fe3eadf087eb1b81b360bd49c0f95044c2a2801cf985f268de9e4"
+    },
+    {
+      "path": "models/literature_reference/parameters.json",
+      "sha256": "5f6473b38a7d2bfdb021aa29c36c818483056bf28ef45f9d6a442530b687699c"
+    },
+    {
+      "path": "models/literature_reference/reactions.csv",
+      "sha256": "07426002ce5482c5cd2b2e10966c74a8eff2f487a687c09859ecead4919fff34"
+    },
+    {
+      "path": "models/literature_reference/species.csv",
+      "sha256": "eb78a23cd77a1a5c2d40b2069e6a519e22babc42f46a7eff4c5c5251dd8bcda1"
+    },
+    {
+      "path": "models/pure_resource_core/README.md",
+      "sha256": "f2b45b50b24aa7e1e00986ce0ffba3b5851e2279adcc1ddf7c37c5e274e8202c"
+    }
+  ],
+  "byte_identity_verified": true
+}

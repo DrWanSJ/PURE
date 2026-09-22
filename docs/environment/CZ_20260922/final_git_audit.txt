@@ -1,0 +1,184 @@
+{
+  "argv": [
+    "git",
+    "status",
+    "--short"
+  ],
+  "command": "git status --short",
+  "exit_code": 0
+}
+
+STDOUT:
+?? docs/environment/
+STDERR:
+(empty)
+
+{
+  "argv": [
+    "git",
+    "diff",
+    "--check"
+  ],
+  "command": "git diff --check",
+  "exit_code": 0
+}
+
+STDOUT:
+
+STDERR:
+(empty)
+
+{
+  "argv": [
+    "git",
+    "diff",
+    "--stat"
+  ],
+  "command": "git diff --stat",
+  "exit_code": 0
+}
+
+STDOUT:
+
+STDERR:
+(empty)
+
+{
+  "argv": [
+    "git",
+    "diff",
+    "--name-only"
+  ],
+  "command": "git diff --name-only",
+  "exit_code": 0
+}
+
+STDOUT:
+
+STDERR:
+(empty)
+
+{
+  "argv": [
+    "git",
+    "diff",
+    "--cached",
+    "--name-only"
+  ],
+  "command": "git diff --cached --name-only",
+  "exit_code": 0
+}
+
+STDOUT:
+
+STDERR:
+(empty)
+
+{
+  "argv": [
+    "git",
+    "rev-parse",
+    "HEAD"
+  ],
+  "command": "git rev-parse HEAD",
+  "exit_code": 0
+}
+
+STDOUT:
+444a90e4503a7b824f38bc8f5daf8551d3c3efed
+STDERR:
+(empty)
+
+{
+  "argv": [
+    "git",
+    "rev-parse",
+    "origin/main"
+  ],
+  "command": "git rev-parse origin/main",
+  "exit_code": 0
+}
+
+STDOUT:
+444a90e4503a7b824f38bc8f5daf8551d3c3efed
+STDERR:
+(empty)
+
+{
+  "argv": [
+    "git",
+    "status",
+    "--porcelain=v1",
+    "--untracked-files=all"
+  ],
+  "command": "git status --porcelain=v1 --untracked-files=all",
+  "exit_code": 0
+}
+
+STDOUT:
+?? docs/environment/CZ_20260922/README.md
+?? docs/environment/CZ_20260922/artifact_manifest.json
+?? docs/environment/CZ_20260922/diagnostic_initial_resolution.json
+?? docs/environment/CZ_20260922/final_audit.json
+?? docs/environment/CZ_20260922/final_git_audit.txt
+?? docs/environment/CZ_20260922/git_status.txt
+?? docs/environment/CZ_20260922/git_status_after_inventory.txt
+?? docs/environment/CZ_20260922/git_status_after_matlab.txt
+?? docs/environment/CZ_20260922/git_status_after_wolfram.txt
+?? docs/environment/CZ_20260922/git_version.txt
+?? docs/environment/CZ_20260922/initial_state.json
+?? docs/environment/CZ_20260922/integrity_inventory.json
+?? docs/environment/CZ_20260922/integrity_matlab.json
+?? docs/environment/CZ_20260922/integrity_wolfram.json
+?? docs/environment/CZ_20260922/isolation.json
+?? docs/environment/CZ_20260922/matlab_capability.txt
+?? docs/environment/CZ_20260922/matlab_checkcode.txt
+?? docs/environment/CZ_20260922/matlab_smoke_base.txt
+?? docs/environment/CZ_20260922/matlab_smoke_optimization.txt
+?? docs/environment/CZ_20260922/matlab_smoke_simbiology.txt
+?? docs/environment/CZ_20260922/matlab_smoke_symbolic.txt
+?? docs/environment/CZ_20260922/matlab_version.txt
+?? docs/environment/CZ_20260922/platform.txt
+?? docs/environment/CZ_20260922/powershell_version.txt
+?? docs/environment/CZ_20260922/project_matlab_dimensionless.txt
+?? docs/environment/CZ_20260922/project_matlab_literature.txt
+?? docs/environment/CZ_20260922/project_sympy.txt
+?? docs/environment/CZ_20260922/project_wolfram.txt
+?? docs/environment/CZ_20260922/python3_matplotlib.txt
+?? docs/environment/CZ_20260922/python3_numpy.txt
+?? docs/environment/CZ_20260922/python3_pandas.txt
+?? docs/environment/CZ_20260922/python3_runtime.txt
+?? docs/environment/CZ_20260922/python3_scipy.txt
+?? docs/environment/CZ_20260922/python3_sympy.txt
+?? docs/environment/CZ_20260922/python3_version.txt
+?? docs/environment/CZ_20260922/python_matplotlib.txt
+?? docs/environment/CZ_20260922/python_numpy.txt
+?? docs/environment/CZ_20260922/python_pandas.txt
+?? docs/environment/CZ_20260922/python_runtime.txt
+?? docs/environment/CZ_20260922/python_scipy.txt
+?? docs/environment/CZ_20260922/python_sympy.txt
+?? docs/environment/CZ_20260922/python_version.txt
+?? docs/environment/CZ_20260922/results_inventory.json
+?? docs/environment/CZ_20260922/results_matlab.json
+?? docs/environment/CZ_20260922/results_wolfram.json
+?? docs/environment/CZ_20260922/smoke_tests.txt
+?? docs/environment/CZ_20260922/status.json
+?? docs/environment/CZ_20260922/where_git.txt
+?? docs/environment/CZ_20260922/where_matlab.txt
+?? docs/environment/CZ_20260922/where_python.txt
+?? docs/environment/CZ_20260922/where_python3.txt
+?? docs/environment/CZ_20260922/where_wolframscript.txt
+?? docs/environment/CZ_20260922/wolfram_kernel.txt
+?? docs/environment/CZ_20260922/wolfram_symbolic.txt
+?? docs/environment/CZ_20260922/wolfram_system.txt
+?? docs/environment/CZ_20260922/wolfram_version.txt
+?? docs/environment/README.md
+?? docs/environment/environment_lock_CZ.md
+?? docs/environment/probes/README.md
+?? docs/environment/probes/audit_environment.py
+?? docs/environment/probes/finalize_evidence.py
+?? docs/environment/probes/matlab_capability.m
+?? docs/environment/probes/matlab_project.m
+?? docs/environment/probes/matlab_smoke.m
+STDERR:
+(empty)

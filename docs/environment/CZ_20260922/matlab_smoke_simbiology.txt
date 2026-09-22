@@ -1,0 +1,26 @@
+{
+  "name": "matlab_smoke_simbiology",
+  "argv": [
+    "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+    "-batch",
+    "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('simbiology')"
+  ],
+  "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('simbiology')\"",
+  "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+  "started": "2026-09-22T14:36:43.134511+08:00",
+  "duration_seconds": 9.623,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+SMOKE_START=simbiology
+sbiomodel: PASS; class=SimBiology.Model; compartments=1; species=1
+LICENSE_INUSE_FEATURE=matlab
+LICENSE_INUSE_FEATURE=simbiology
+LICENSE_INUSE_FEATURE=statistics_toolbox
+SMOKE_PASS=simbiology
+STDERR:
+(empty)

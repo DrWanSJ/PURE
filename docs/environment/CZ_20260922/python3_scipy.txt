@@ -1,0 +1,27 @@
+{
+  "name": "python3_scipy",
+  "requested_argv": [
+    "python3",
+    "-c",
+    "import scipy; print(scipy.__version__); print(scipy.__file__)"
+  ],
+  "argv": [
+    "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE",
+    "-c",
+    "import scipy; print(scipy.__version__); print(scipy.__file__)"
+  ],
+  "command": "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE -c \"import scipy; print(scipy.__version__); print(scipy.__file__)\"",
+  "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+  "started": "2026-09-22T14:36:40.315733+08:00",
+  "duration_seconds": 0.218,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+1.17.1
+C:\Users\CZ\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scipy\__init__.py
+STDERR:
+(empty)

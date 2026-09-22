@@ -1,0 +1,26 @@
+{
+  "name": "matlab_smoke_base",
+  "argv": [
+    "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE",
+    "-batch",
+    "addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('base')"
+  ],
+  "command": "\"C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.EXE\" -batch \"addpath('C:/Users/CZ/Desktop/PURE/docs/environment/probes'); matlab_smoke('base')\"",
+  "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+  "started": "2026-09-22T14:36:04.270784+08:00",
+  "duration_seconds": 13.725,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+SMOKE_START=base
+ode15s: PASS; final=0.36787943738034734; expected=0.36787944117144233
+jsondecode: PASS
+writetable/readback: PASS
+LICENSE_INUSE_FEATURE=matlab
+SMOKE_PASS=base
+STDERR:
+(empty)

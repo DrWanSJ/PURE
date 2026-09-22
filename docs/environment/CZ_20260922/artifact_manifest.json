@@ -1,0 +1,320 @@
+{
+  "excludes": "This manifest only (self-reference)",
+  "files": [
+    {
+      "path": "docs/environment/CZ_20260922/diagnostic_initial_resolution.json",
+      "bytes": 21385,
+      "sha256": "1319e30816a46b171bbd5b7f0f3faeeff696232aa71b6b40e2f409061c22ebb5"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/final_audit.json",
+      "bytes": 710,
+      "sha256": "1a2d49813f52785a780691b0f4ed2505907c85bb098b6b2f081c5b429dc79029"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/final_git_audit.txt",
+      "bytes": 4602,
+      "sha256": "0cd72dfee6bb7ae99a7b5566bec561634d5b8bbbe55d2f88546eed3227946220"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/git_status.txt",
+      "bytes": 882,
+      "sha256": "891f1bfe9b6ad3db3b2ea5ec3fae617e20b949407db8c0784b02d889051bbe41"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/git_status_after_inventory.txt",
+      "bytes": 548,
+      "sha256": "1bccdd407fcc76a1d839d805345c0371d2a2609e1fd3be348a333825bccd68a5"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/git_status_after_matlab.txt",
+      "bytes": 409,
+      "sha256": "d62b52f0bce0c616b95a2aae36f778a1693f21fcdae53d0edcc0fd4f26dd3ec8"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/git_status_after_wolfram.txt",
+      "bytes": 410,
+      "sha256": "9ab3b1f28e132d377bb116516d1e396099d628a6975c61fae296107c098316a6"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/git_version.txt",
+      "bytes": 512,
+      "sha256": "7f02c96014a84764686faf6b2d4ae25b8df39e54e7be577acd568e56cf689f42"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/initial_state.json",
+      "bytes": 27062,
+      "sha256": "24be5acf4bbb68d16a84fff61425c9569849c77354396d3eadaea658264ad4fc"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/integrity_inventory.json",
+      "bytes": 135,
+      "sha256": "c558355756e5488d694b21ad34b98bc7ff89fa3df3e50f3acb500f778326d075"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/integrity_matlab.json",
+      "bytes": 135,
+      "sha256": "afb4feb1286af070157d8f1d992ceddd5134065c4aa39eca9c958c10e08e3e24"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/integrity_wolfram.json",
+      "bytes": 135,
+      "sha256": "19fb79dc11b7331d2749f292945ee53409657f2d03f6cadb4c6c5a626e5993bf"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/isolation.json",
+      "bytes": 11700,
+      "sha256": "df6b10d9e0d157f62361e7b82d0353aab16b0c2b1dc77c1d4239a5972b2886c6"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_capability.txt",
+      "bytes": 6629,
+      "sha256": "c208b7daf792dd0897886929e67bd6a01953d962721876e7353dfe9991f53688"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_checkcode.txt",
+      "bytes": 2596,
+      "sha256": "7db745687acb9f5df9d1b2a4911962e26102bf563334b90feb926fb03a5b1fcf"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_smoke_base.txt",
+      "bytes": 845,
+      "sha256": "5e7d7e263662d6ad75156b6dab82d6f9d556cbcd7637525f5d9cc2e760be9a0a"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_smoke_optimization.txt",
+      "bytes": 863,
+      "sha256": "7beea6937759a093a9f91055d970f6fdb6cd221358d33acd9eabcd77fc6ee240"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_smoke_simbiology.txt",
+      "bytes": 902,
+      "sha256": "c84e281fa404d7da837ac2c892f082fd05355f8de419b2c59fea8e116e4b9fd5"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_smoke_symbolic.txt",
+      "bytes": 810,
+      "sha256": "83c645dfe1749f79475bd4f97b97044e13a98bf0b901c4b9a1b158fa108a01cd"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_version.txt",
+      "bytes": 10683,
+      "sha256": "20bc261c045ed21901fe4238cd6b02edc0911b750b64436e06e45cbbbbd480cb"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/platform.txt",
+      "bytes": 4182,
+      "sha256": "09501ee660a39cc13b5d69b1638d94a99a6376227fe85b933d212c322d79b27d"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/powershell_version.txt",
+      "bytes": 1436,
+      "sha256": "a897b37d965488d67acbb53e306de90c3bc998ec25132a38dcb4a02eaca5aa4e"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/project_matlab_dimensionless.txt",
+      "bytes": 1500,
+      "sha256": "6c689938267a6e113449958b8461687176e71de9833c1ac852864c9ba3200c16"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/project_matlab_literature.txt",
+      "bytes": 2541,
+      "sha256": "742efe4e22f205aaa7532d25d7a5980c850df4eb68c5ab31dbb36d39ff091b0f"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/project_sympy.txt",
+      "bytes": 4150,
+      "sha256": "0cce056cb22e49e875290437bff9fa852fd2847cd6bfc5325b20c67cf2db2530"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/project_wolfram.txt",
+      "bytes": 3196,
+      "sha256": "3777835ce70016ab820c874ac91c313cd3ba198e76f9b75b18a9531a69820589"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_matplotlib.txt",
+      "bytes": 856,
+      "sha256": "2d40c5538be7c0b5cb93b08b98d6cda1bde6d4c1def3754503c7bbb33eb4baa8"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_numpy.txt",
+      "bytes": 800,
+      "sha256": "028449501f50a95cb8f71ccfd6cdbe62df4cebce70245be5ba05297b85766bdc"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_pandas.txt",
+      "bytes": 800,
+      "sha256": "d0e088fc383a8d6d56db1932a81a9ebed6ce46be141c410d42b7b3e35daaa3e7"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_runtime.txt",
+      "bytes": 828,
+      "sha256": "d16dc3915874b725fa6994535dcd37c16cda457d5e1f2ec373d374308ff74bc2"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_scipy.txt",
+      "bytes": 801,
+      "sha256": "787cb504bd2b1325ec9993e0225e77daed6a3427580711ecf7b61b960d3aea51"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_sympy.txt",
+      "bytes": 801,
+      "sha256": "4f47acb7e599376ea6e0dbc0b6c617eb17e45a41a53c1c612a33ef32f1728e3c"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_version.txt",
+      "bytes": 539,
+      "sha256": "e56711de6f71bacbba8d349e4fe1dab606ccffdf30669cfe19765b67856ecd29"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_matplotlib.txt",
+      "bytes": 915,
+      "sha256": "2523d6d64875bd61e560732965863402f2f19ab57dd0fc59e7c37608082ad772"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_numpy.txt",
+      "bytes": 862,
+      "sha256": "b7e60a4beae7643472d9f8660566ab58aaa5aaa152991dc9711db81ec359808a"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_pandas.txt",
+      "bytes": 873,
+      "sha256": "dd833af76c588d735cf554d9dd06d3ff71d4355c43890fb23a37947374392c66"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_runtime.txt",
+      "bytes": 864,
+      "sha256": "9954edced74e2217d683d41ff7ce7e8de194cbe610d17ea652a01cd3650c2920"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_scipy.txt",
+      "bytes": 862,
+      "sha256": "d024271093f9153cebbed030a1dbd8557af5637ce8f3dc3fea34b07c00ff580d"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_sympy.txt",
+      "bytes": 860,
+      "sha256": "b111a681b5172a1bd30c651ca50739761a0a2256b8a6717dd624c4f645f37310"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_version.txt",
+      "bytes": 584,
+      "sha256": "5f53c73d9484f5fe93e3bbcba192e185df637e2fc93fe57647039beb2883bf05"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/README.md",
+      "bytes": 3346,
+      "sha256": "829d41fd5d977d998016c40962c9cffa4cbaf6906499ffe0a541ae4aaa753aab"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/results_inventory.json",
+      "bytes": 27481,
+      "sha256": "853bd4394eea16b72605a84f71b8c92ae4412f81aab64ab877bb18e8ce5925d5"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/results_matlab.json",
+      "bytes": 29399,
+      "sha256": "e57c95b83dc4b09adf5dde22e733bcdb0d5cf697542ba16fc49c6e913163743f"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/results_wolfram.json",
+      "bytes": 6339,
+      "sha256": "97c4058fbf8f3bf38fa027ba48f75a0f74b2ae650026794b5c5b690b1cf78ec8"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/smoke_tests.txt",
+      "bytes": 670,
+      "sha256": "fd41e9c879ab223abb5efc05791e1539ae4d520a81c54d614876eda9c554f98c"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/status.json",
+      "bytes": 914,
+      "sha256": "b614328e3b94dfff7f41ed9214593a55e2f12b60b6519e54467d2585374be9bb"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/where_git.txt",
+      "bytes": 582,
+      "sha256": "d65b98ef3b4ab84d65062ac3b13370f41926c81af74cfa44ed7dff5c6dbcf7a2"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/where_matlab.txt",
+      "bytes": 515,
+      "sha256": "b67483993e12ad829853fdc0bcd930ea3374d5ba6f9223a812ba065e8e1eab0f"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/where_python.txt",
+      "bytes": 587,
+      "sha256": "b7403543b8e8ce54f195ea704426a3ab8a2707ca71963c259e2f3a13e4a46327"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/where_python3.txt",
+      "bytes": 522,
+      "sha256": "0a55c537e4e7bec9a7f877c6fed841cf2b95a5503aac2ae1d36de28349aa0f7c"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/where_wolframscript.txt",
+      "bytes": 563,
+      "sha256": "b3707d67103448bf3ae33ff7c5f7658cd8d261735e31199e57d1fa47e6660916"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/wolfram_kernel.txt",
+      "bytes": 568,
+      "sha256": "dacca328c40e182009e47f417108e6f371262eeaa4cd019a6b5e7b93b4fa0577"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/wolfram_symbolic.txt",
+      "bytes": 551,
+      "sha256": "e2e138f8bcbc31afb5bb121dabfffdccc8121959db9a6e46cc70410ffc6029fd"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/wolfram_system.txt",
+      "bytes": 532,
+      "sha256": "63326b54a991e5899febc3cba6eec3fe6758fb81efe96d36531ede18878ee3c0"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/wolfram_version.txt",
+      "bytes": 549,
+      "sha256": "cd6965da3c97aa97a51bb12b89a27cdbdc189ab197de21e0d2cb615b24c454d5"
+    },
+    {
+      "path": "docs/environment/environment_lock_CZ.md",
+      "bytes": 13412,
+      "sha256": "c9f0b223599087ddbecd9eabedaf794ce4ef97892bfb440de8f857c0c31cbb30"
+    },
+    {
+      "path": "docs/environment/probes/audit_environment.py",
+      "bytes": 10217,
+      "sha256": "e656496c40b338431ceaddd4c5b0f70b30f3d86e5ccac33c5faafe618fd0d388"
+    },
+    {
+      "path": "docs/environment/probes/finalize_evidence.py",
+      "bytes": 7461,
+      "sha256": "29437beb95618da287a08439ae3d976415b4beb546be30b0f554e5c28fed81af"
+    },
+    {
+      "path": "docs/environment/probes/matlab_capability.m",
+      "bytes": 636,
+      "sha256": "e71a3e02936d12702b17e262125d9527705f33ee475dbd66050e9eb5c9b5c106"
+    },
+    {
+      "path": "docs/environment/probes/matlab_project.m",
+      "bytes": 911,
+      "sha256": "6b77ec60311738221be43e85579986ca8fd529b60500179cd316730ed74e1f2a"
+    },
+    {
+      "path": "docs/environment/probes/matlab_smoke.m",
+      "bytes": 2087,
+      "sha256": "899c401c60cde0029472ff685a99c9830f9710c84ca45e14fad87bf5f08b4c25"
+    },
+    {
+      "path": "docs/environment/probes/README.md",
+      "bytes": 4383,
+      "sha256": "9939dff9a97b9d0259173b9b4fa87d6ed8d82db4a4f6f687a263d0a7d69fbee7"
+    },
+    {
+      "path": "docs/environment/README.md",
+      "bytes": 1230,
+      "sha256": "8121a523344a6a7bf3e89af893505d2d801e53d2f8cba2e0f837484e08f34655"
+    }
+  ]
+}

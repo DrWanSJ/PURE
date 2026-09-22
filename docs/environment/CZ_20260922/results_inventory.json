@@ -1,0 +1,546 @@
+[
+  {
+    "name": "git_version",
+    "requested_argv": [
+      "git",
+      "--version"
+    ],
+    "argv": [
+      "C:\\Program Files\\Git\\cmd\\git.EXE",
+      "--version"
+    ],
+    "command": "\"C:\\Program Files\\Git\\cmd\\git.EXE\" --version",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:34.254416+08:00",
+    "duration_seconds": 0.046,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "git version 2.54.0.windows.1\n",
+    "stderr": ""
+  },
+  {
+    "name": "where_git",
+    "requested_argv": [
+      "where.exe",
+      "git"
+    ],
+    "argv": [
+      "C:\\Windows\\system32\\where.exe",
+      "git"
+    ],
+    "command": "C:\\Windows\\system32\\where.exe git",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:34.306323+08:00",
+    "duration_seconds": 0.199,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "C:\\Program Files\\Git\\cmd\\git.exe\r\nC:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\git\\cmd\\git.exe\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "where_matlab",
+    "requested_argv": [
+      "where.exe",
+      "matlab"
+    ],
+    "argv": [
+      "C:\\Windows\\system32\\where.exe",
+      "matlab"
+    ],
+    "command": "C:\\Windows\\system32\\where.exe matlab",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:34.510564+08:00",
+    "duration_seconds": 0.124,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "C:\\Program Files\\MATLAB\\R2025b\\bin\\matlab.exe\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "where_python",
+    "requested_argv": [
+      "where.exe",
+      "python"
+    ],
+    "argv": [
+      "C:\\Windows\\system32\\where.exe",
+      "python"
+    ],
+    "command": "C:\\Windows\\system32\\where.exe python",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:34.639314+08:00",
+    "duration_seconds": 0.126,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe\r\nC:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python.exe\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "where_python3",
+    "requested_argv": [
+      "where.exe",
+      "python3"
+    ],
+    "argv": [
+      "C:\\Windows\\system32\\where.exe",
+      "python3"
+    ],
+    "command": "C:\\Windows\\system32\\where.exe python3",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:34.770033+08:00",
+    "duration_seconds": 0.126,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.exe\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "where_wolframscript",
+    "requested_argv": [
+      "where.exe",
+      "wolframscript"
+    ],
+    "argv": [
+      "C:\\Windows\\system32\\where.exe",
+      "wolframscript"
+    ],
+    "command": "C:\\Windows\\system32\\where.exe wolframscript",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:34.900943+08:00",
+    "duration_seconds": 0.123,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "C:\\Program Files\\Wolfram Research\\WolframScript\\wolframscript.exe\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "platform",
+    "requested_argv": [
+      "C:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+      "-NoProfile",
+      "-Command",
+      "\n$ErrorActionPreference='Stop'\n$os=Get-CimInstance Win32_OperatingSystem\n$cpu=Get-CimInstance Win32_Processor\n$cs=Get-CimInstance Win32_ComputerSystem\n$win=Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion'\n[ordered]@{\n user=$env:USERNAME; hostname=$env:COMPUTERNAME; cwd=(Get-Location).Path\n os_caption=$os.Caption; os_version=$os.Version; os_build=$os.BuildNumber\n display_version=$win.DisplayVersion; update_build_revision=$win.UBR\n os_architecture=$os.OSArchitecture; system_type=$cs.SystemType\n cpu=@($cpu | Select-Object Name,NumberOfCores,NumberOfLogicalProcessors)\n logical_processors=$cs.NumberOfLogicalProcessors; physical_memory_bytes=$cs.TotalPhysicalMemory\n shell_executable=(Get-Process -Id $PID).Path; powershell_version=$PSVersionTable.PSVersion.ToString()\n powershell_edition=$PSVersionTable.PSEdition\n} | ConvertTo-Json -Depth 5\n"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+      "-NoProfile",
+      "-Command",
+      "\n$ErrorActionPreference='Stop'\n$os=Get-CimInstance Win32_OperatingSystem\n$cpu=Get-CimInstance Win32_Processor\n$cs=Get-CimInstance Win32_ComputerSystem\n$win=Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion'\n[ordered]@{\n user=$env:USERNAME; hostname=$env:COMPUTERNAME; cwd=(Get-Location).Path\n os_caption=$os.Caption; os_version=$os.Version; os_build=$os.BuildNumber\n display_version=$win.DisplayVersion; update_build_revision=$win.UBR\n os_architecture=$os.OSArchitecture; system_type=$cs.SystemType\n cpu=@($cpu | Select-Object Name,NumberOfCores,NumberOfLogicalProcessors)\n logical_processors=$cs.NumberOfLogicalProcessors; physical_memory_bytes=$cs.TotalPhysicalMemory\n shell_executable=(Get-Process -Id $PID).Path; powershell_version=$PSVersionTable.PSVersion.ToString()\n powershell_edition=$PSVersionTable.PSEdition\n} | ConvertTo-Json -Depth 5\n"
+    ],
+    "command": "C:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE -NoProfile -Command \"\n$ErrorActionPreference='Stop'\n$os=Get-CimInstance Win32_OperatingSystem\n$cpu=Get-CimInstance Win32_Processor\n$cs=Get-CimInstance Win32_ComputerSystem\n$win=Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion'\n[ordered]@{\n user=$env:USERNAME; hostname=$env:COMPUTERNAME; cwd=(Get-Location).Path\n os_caption=$os.Caption; os_version=$os.Version; os_build=$os.BuildNumber\n display_version=$win.DisplayVersion; update_build_revision=$win.UBR\n os_architecture=$os.OSArchitecture; system_type=$cs.SystemType\n cpu=@($cpu | Select-Object Name,NumberOfCores,NumberOfLogicalProcessors)\n logical_processors=$cs.NumberOfLogicalProcessors; physical_memory_bytes=$cs.TotalPhysicalMemory\n shell_executable=(Get-Process -Id $PID).Path; powershell_version=$PSVersionTable.PSVersion.ToString()\n powershell_edition=$PSVersionTable.PSEdition\n} | ConvertTo-Json -Depth 5\n\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:35.025204+08:00",
+    "duration_seconds": 2.664,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "{\r\n  \"user\": \"CZ\",\r\n  \"hostname\": \"DESKTOP-EDVOOH0\",\r\n  \"cwd\": \"C:\\\\Users\\\\CZ\\\\Desktop\\\\PURE\",\r\n  \"os_caption\": \"Microsoft Windows 10 专业版\",\r\n  \"os_version\": \"10.0.19045\",\r\n  \"os_build\": \"19045\",\r\n  \"display_version\": \"22H2\",\r\n  \"update_build_revision\": 6466,\r\n  \"os_architecture\": \"64 位\",\r\n  \"system_type\": \"x64-based PC\",\r\n  \"cpu\": [\r\n    {\r\n      \"Name\": \"AMD EPYC 7702 64-Core Processor                \",\r\n      \"NumberOfCores\": 64,\r\n      \"NumberOfLogicalProcessors\": 128\r\n    }\r\n  ],\r\n  \"logical_processors\": 128,\r\n  \"physical_memory_bytes\": 549614985216,\r\n  \"shell_executable\": \"C:\\\\Users\\\\CZ\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.EXE\",\r\n  \"powershell_version\": \"7.6.5\",\r\n  \"powershell_edition\": \"Core\"\r\n}\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "powershell_version",
+    "requested_argv": [
+      "C:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+      "-NoProfile",
+      "-Command",
+      "$PSVersionTable | Format-List; (Get-Process -Id $PID).Path"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+      "-NoProfile",
+      "-Command",
+      "$PSVersionTable | Format-List; (Get-Process -Id $PID).Path"
+    ],
+    "command": "C:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE -NoProfile -Command \"$PSVersionTable | Format-List; (Get-Process -Id $PID).Path\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:37.690802+08:00",
+    "duration_seconds": 0.897,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "\r\nName  : PSVersion\r\nValue : 7.6.5\r\n\r\nName  : PSEdition\r\nValue : Core\r\n\r\nName  : GitCommitId\r\nValue : 7.6.5\r\n\r\nName  : OS\r\nValue : Microsoft Windows 10.0.19045\r\n\r\nName  : Platform\r\nValue : Win32NT\r\n\r\nName  : PSCompatibleVersions\r\nValue : {1.0, 2.0, 3.0, 4.0…}\r\n\r\nName  : PSRemotingProtocolVersion\r\nValue : 2.4\r\n\r\nName  : SerializationVersion\r\nValue : 1.1.0.1\r\n\r\nName  : WSManStackVersion\r\nValue : 3.0\r\n\r\nC:\\Users\\CZ\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "python_version",
+    "requested_argv": [
+      "python",
+      "--version"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
+      "--version"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE --version",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:38.598204+08:00",
+    "duration_seconds": 0.104,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "Python 3.11.15\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "python_runtime",
+    "requested_argv": [
+      "python",
+      "-c",
+      "import sys; print(sys.executable); print(sys.version)"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
+      "-c",
+      "import sys; print(sys.executable); print(sys.version)"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE -c \"import sys; print(sys.executable); print(sys.version)\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:38.712670+08:00",
+    "duration_seconds": 0.105,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE\r\n3.11.15 (main, Jun 23 2026, 15:20:37) [MSC v.1944 64 bit (AMD64)]\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "python_sympy",
+    "requested_argv": [
+      "python",
+      "-c",
+      "import sympy; print(sympy.__version__); print(sympy.__file__)"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
+      "-c",
+      "import sympy; print(sympy.__version__); print(sympy.__file__)"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE -c \"import sympy; print(sympy.__version__); print(sympy.__file__)\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:38.827117+08:00",
+    "duration_seconds": 0.1,
+    "exit_code": 1,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\nModuleNotFoundError: No module named 'sympy'\r\n"
+  },
+  {
+    "name": "python_numpy",
+    "requested_argv": [
+      "python",
+      "-c",
+      "import numpy; print(numpy.__version__); print(numpy.__file__)"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
+      "-c",
+      "import numpy; print(numpy.__version__); print(numpy.__file__)"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE -c \"import numpy; print(numpy.__version__); print(numpy.__file__)\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:38.937849+08:00",
+    "duration_seconds": 0.103,
+    "exit_code": 1,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\nModuleNotFoundError: No module named 'numpy'\r\n"
+  },
+  {
+    "name": "python_scipy",
+    "requested_argv": [
+      "python",
+      "-c",
+      "import scipy; print(scipy.__version__); print(scipy.__file__)"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
+      "-c",
+      "import scipy; print(scipy.__version__); print(scipy.__file__)"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE -c \"import scipy; print(scipy.__version__); print(scipy.__file__)\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:39.050986+08:00",
+    "duration_seconds": 0.098,
+    "exit_code": 1,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\nModuleNotFoundError: No module named 'scipy'\r\n"
+  },
+  {
+    "name": "python_pandas",
+    "requested_argv": [
+      "python",
+      "-c",
+      "import pandas; print(pandas.__version__); print(pandas.__file__)"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
+      "-c",
+      "import pandas; print(pandas.__version__); print(pandas.__file__)"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE -c \"import pandas; print(pandas.__version__); print(pandas.__file__)\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:39.159357+08:00",
+    "duration_seconds": 0.102,
+    "exit_code": 1,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\nModuleNotFoundError: No module named 'pandas'\r\n"
+  },
+  {
+    "name": "python_matplotlib",
+    "requested_argv": [
+      "python",
+      "-c",
+      "import matplotlib; print(matplotlib.__version__); print(matplotlib.__file__)"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
+      "-c",
+      "import matplotlib; print(matplotlib.__version__); print(matplotlib.__file__)"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE -c \"import matplotlib; print(matplotlib.__version__); print(matplotlib.__file__)\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:39.272051+08:00",
+    "duration_seconds": 0.1,
+    "exit_code": 1,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\nModuleNotFoundError: No module named 'matplotlib'\r\n"
+  },
+  {
+    "name": "python3_version",
+    "requested_argv": [
+      "python3",
+      "--version"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE",
+      "--version"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE --version",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:39.385828+08:00",
+    "duration_seconds": 0.073,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "Python 3.14.3\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "python3_runtime",
+    "requested_argv": [
+      "python3",
+      "-c",
+      "import sys; print(sys.executable); print(sys.version)"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE",
+      "-c",
+      "import sys; print(sys.executable); print(sys.version)"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE -c \"import sys; print(sys.executable); print(sys.version)\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:39.470529+08:00",
+    "duration_seconds": 0.069,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "C:\\Users\\CZ\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe\r\n3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "python3_sympy",
+    "requested_argv": [
+      "python3",
+      "-c",
+      "import sympy; print(sympy.__version__); print(sympy.__file__)"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE",
+      "-c",
+      "import sympy; print(sympy.__version__); print(sympy.__file__)"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE -c \"import sympy; print(sympy.__version__); print(sympy.__file__)\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:39.550613+08:00",
+    "duration_seconds": 0.556,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "1.14.0\r\nC:\\Users\\CZ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\sympy\\__init__.py\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "python3_numpy",
+    "requested_argv": [
+      "python3",
+      "-c",
+      "import numpy; print(numpy.__version__); print(numpy.__file__)"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE",
+      "-c",
+      "import numpy; print(numpy.__version__); print(numpy.__file__)"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE -c \"import numpy; print(numpy.__version__); print(numpy.__file__)\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:40.118198+08:00",
+    "duration_seconds": 0.184,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "2.4.4\r\nC:\\Users\\CZ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\numpy\\__init__.py\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "python3_scipy",
+    "requested_argv": [
+      "python3",
+      "-c",
+      "import scipy; print(scipy.__version__); print(scipy.__file__)"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE",
+      "-c",
+      "import scipy; print(scipy.__version__); print(scipy.__file__)"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE -c \"import scipy; print(scipy.__version__); print(scipy.__file__)\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:40.315733+08:00",
+    "duration_seconds": 0.218,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "1.17.1\r\nC:\\Users\\CZ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\scipy\\__init__.py\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "python3_pandas",
+    "requested_argv": [
+      "python3",
+      "-c",
+      "import pandas; print(pandas.__version__); print(pandas.__file__)"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE",
+      "-c",
+      "import pandas; print(pandas.__version__); print(pandas.__file__)"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE -c \"import pandas; print(pandas.__version__); print(pandas.__file__)\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:40.545619+08:00",
+    "duration_seconds": 0.658,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "3.0.3\r\nC:\\Users\\CZ\\AppData\\Roaming\\Python\\Python314\\site-packages\\pandas\\__init__.py\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "python3_matplotlib",
+    "requested_argv": [
+      "python3",
+      "-c",
+      "import matplotlib; print(matplotlib.__version__); print(matplotlib.__file__)"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE",
+      "-c",
+      "import matplotlib; print(matplotlib.__version__); print(matplotlib.__file__)"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE -c \"import matplotlib; print(matplotlib.__version__); print(matplotlib.__file__)\"",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:41.214895+08:00",
+    "duration_seconds": 0.403,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "3.10.9\r\nC:\\Users\\CZ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\matplotlib\\__init__.py\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "project_sympy",
+    "requested_argv": [
+      "python3",
+      "-B",
+      "-X",
+      "utf8",
+      "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd\\models\\literature_reference\\dimensionless\\derive_dimensionless.py"
+    ],
+    "argv": [
+      "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE",
+      "-B",
+      "-X",
+      "utf8",
+      "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd\\models\\literature_reference\\dimensionless\\derive_dimensionless.py"
+    ],
+    "command": "C:\\Users\\CZ\\AppData\\Local\\Python\\bin\\python3.EXE -B -X utf8 C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd\\models\\literature_reference\\dimensionless\\derive_dimensionless.py",
+    "cwd": "C:\\Users\\CZ\\AppData\\Local\\Temp\\PURE_CZ_environment_2js_r8qd",
+    "started": "2026-09-22T14:36:41.630166+08:00",
+    "duration_seconds": 3.627,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "DIMENSIONAL CONSERVATION: ALL PASS (5 laws)\r\nCONSERVATION CHECK: ALL PASS (5 invariants)\r\nNUMERIC CHECK: ALL PASS (5 trials x 12 eqs)\r\nGLOBAL MAX ABSOLUTE RESIDUAL: 2.2204460492503131e-16; equations checked: 60\r\n\r\nCompact dimensionless rates:\r\nv_TX = \\frac{\\mu_{TX} y_{1}}{\\left(\\kappa_{TX DNA} + 1\\right) \\left(\\kappa_{TX NTP} + y_{1}\\right)}\r\nv_RS = \\frac{\\mu_{RS} y_{1} y_{4} y_{5}}{\\left(\\kappa_{RS A} + y_{4}\\right) \\left(\\kappa_{RS NTP} + y_{1}\\right) \\left(\\kappa_{RS T} + y_{5}\\right)}\r\nv_TL = \\frac{\\mu_{TL} y_{1} y_{10} y_{3} y_{6}}{\\left(\\kappa_{TL AT} + y_{6}\\right) \\left(\\kappa_{TL NTP} + y_{1}\\right) \\left(\\kappa_{TL nt} + y_{3}\\right)}\r\nv_EN = \\frac{\\mu_{EN} y_{2} y_{8}}{\\left(\\kappa_{EN CP} + y_{8}\\right) \\left(\\kappa_{EN NXP} + y_{2}\\right)}\r\n\r\nCompact dimensionless ODEs:\r\ndy1/dtau = \\frac{\\mu_{EN} y_{2} y_{8}}{\\left(\\kappa_{EN CP} + y_{8}\\right) \\left(\\kappa_{EN NXP} + y_{2}\\right)} - \\frac{\\mu_{RS} y_{1} y_{4} y_{5}}{\\left(\\kappa_{RS A} + y_{4}\\right) \\left(\\kappa_{RS NTP} + y_{1}\\right) \\left(\\kappa_{RS T} + y_{5}\\right)} - \\frac{2 \\mu_{TL} y_{1} y_{10} y_{3} y_{6}}{\\left(\\kappa_{TL AT} + y_{6}\\right) \\left(\\kappa_{TL NTP} + y_{1}\\right) \\left(\\kappa_{TL nt} + y_{3}\\right)} - \\frac{\\mu_{TX} y_{1}}{\\left(\\kappa_{TX DNA} + 1\\right) \\left(\\kappa_{TX NTP} + y_{1}\\right)}\r\ndy2/dtau = - \\frac{\\mu_{EN} y_{2} y_{8}}{\\left(\\kappa_{EN CP} + y_{8}\\right) \\left(\\kappa_{EN NXP} + y_{2}\\right)} + \\frac{\\mu_{RS} y_{1} y_{4} y_{5}}{\\left(\\kappa_{RS A} + y_{4}\\right) \\left(\\kappa_{RS NTP} + y_{1}\\right) \\left(\\kappa_{RS T} + y_{5}\\right)} + \\frac{2 \\mu_{TL} y_{1} y_{10} y_{3} y_{6}}{\\left(\\kappa_{TL AT} + y_{6}\\right) \\left(\\kappa_{TL NTP} + y_{1}\\right) \\left(\\kappa_{TL nt} + y_{3}\\right)}\r\ndy3/dtau = \\frac{\\mu_{TX} y_{1}}{\\left(\\kappa_{TX DNA} + 1\\right) \\left(\\kappa_{TX NTP} + y_{1}\\right)} - y_{3}\r\ndy4/dtau = - \\frac{\\mu_{RS} \\rho_{A} y_{1} y_{4} y_{5}}{\\left(\\kappa_{RS A} + y_{4}\\right) \\left(\\kappa_{RS NTP} + y_{1}\\right) \\left(\\kappa_{RS T} + y_{5}\\right)}\r\ndy5/dtau = \\rho_{T} \\left(- \\frac{\\mu_{RS} y_{1} y_{4} y_{5}}{\\left(\\kappa_{RS A} + y_{4}\\right) \\left(\\kappa_{RS NTP} + y_{1}\\right) \\left(\\kappa_{RS T} + y_{5}\\right)} + \\frac{\\mu_{TL} y_{1} y_{10} y_{3} y_{6}}{\\left(\\kappa_{TL AT} + y_{6}\\right) \\left(\\kappa_{TL NTP} + y_{1}\\right) \\left(\\kappa_{TL nt} + y_{3}\\right)}\\right)\r\ndy6/dtau = \\rho_{T} \\left(\\frac{\\mu_{RS} y_{1} y_{4} y_{5}}{\\left(\\kappa_{RS A} + y_{4}\\right) \\left(\\kappa_{RS NTP} + y_{1}\\right) \\left(\\kappa_{RS T} + y_{5}\\right)} - \\frac{\\mu_{TL} y_{1} y_{10} y_{3} y_{6}}{\\left(\\kappa_{TL AT} + y_{6}\\right) \\left(\\kappa_{TL NTP} + y_{1}\\right) \\left(\\kappa_{TL nt} + y_{3}\\right)}\\right)\r\ndy7/dtau = \\frac{\\mu_{TL} \\rho_{A} y_{1} y_{10} y_{3} y_{6}}{\\left(\\kappa_{TL AT} + y_{6}\\right) \\left(\\kappa_{TL NTP} + y_{1}\\right) \\left(\\kappa_{TL nt} + y_{3}\\right)}\r\ndy8/dtau = - \\frac{\\mu_{EN} \\rho_{C} y_{2} y_{8}}{\\left(\\kappa_{EN CP} + y_{8}\\right) \\left(\\kappa_{EN NXP} + y_{2}\\right)}\r\ndy9/dtau = \\frac{\\mu_{EN} \\rho_{C} y_{2} y_{8}}{\\left(\\kappa_{EN CP} + y_{8}\\right) \\left(\\kappa_{EN NXP} + y_{2}\\right)}\r\ndy10/dtau = - \\mu_{TLdeg} y_{10}\r\ndy11/dtau = y_{3}\r\ndy12/dtau = \\mu_{TLdeg} y_{10}\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "git_status_after_inventory",
+    "requested_argv": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "argv": [
+      "C:\\Program Files\\Git\\cmd\\git.EXE",
+      "status",
+      "--short"
+    ],
+    "command": "\"C:\\Program Files\\Git\\cmd\\git.EXE\" status --short",
+    "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+    "started": "2026-09-22T14:36:45.265888+08:00",
+    "duration_seconds": 0.065,
+    "exit_code": 0,
+    "execution_status": "completed",
+    "stdout_encoding": "utf-8",
+    "stderr_encoding": "utf-8",
+    "stdout": "?? docs/environment/\n",
+    "stderr": ""
+  }
+]

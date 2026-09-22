@@ -1,0 +1,27 @@
+{
+  "environment_recorded": true,
+  "base_matlab_available": true,
+  "symbolic_available": true,
+  "optimization_available": true,
+  "simbiology_available": true,
+  "python_sympy_available": true,
+  "python_sympy_runtime": "python3 / CPython 3.14.3 / SymPy 1.14.0",
+  "default_python_sympy_available": false,
+  "wolfram_available": true,
+  "project_smoke_tests_passed": true,
+  "scientific_files_modified": false,
+  "historical_sean_record_modified": false,
+  "commit_performed": false,
+  "push_performed": false,
+  "checks": {
+    "matlab_smoke_base": true,
+    "matlab_smoke_symbolic": true,
+    "matlab_smoke_optimization": true,
+    "matlab_smoke_simbiology": true,
+    "project_matlab_literature": true,
+    "project_matlab_dimensionless": true,
+    "project_sympy": true,
+    "project_wolfram": true
+  },
+  "scope": "Only listed native capability and four project checks; no full benchmark/release rerun."
+}

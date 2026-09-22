@@ -1,0 +1,27 @@
+{
+  "name": "python_runtime",
+  "requested_argv": [
+    "python",
+    "-c",
+    "import sys; print(sys.executable); print(sys.version)"
+  ],
+  "argv": [
+    "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
+    "-c",
+    "import sys; print(sys.executable); print(sys.version)"
+  ],
+  "command": "C:\\Users\\CZ\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE -c \"import sys; print(sys.executable); print(sys.version)\"",
+  "cwd": "C:\\Users\\CZ\\Desktop\\PURE",
+  "started": "2026-09-22T14:36:38.712670+08:00",
+  "duration_seconds": 0.105,
+  "exit_code": 0,
+  "execution_status": "completed",
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8"
+}
+
+STDOUT:
+C:\Users\CZ\AppData\Local\hermes\hermes-agent\venv\Scripts\python.EXE
+3.11.15 (main, Jun 23 2026, 15:20:37) [MSC v.1944 64 bit (AMD64)]
+STDERR:
+(empty)

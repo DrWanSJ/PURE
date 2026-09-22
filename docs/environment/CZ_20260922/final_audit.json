@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-09-22T14:44:33.588666+08:00",
+  "source_commit": "444a90e4503a7b824f38bc8f5daf8551d3c3efed",
+  "tracked_files_checked": 201,
+  "all_original_tracked_files_sha256_unchanged": true,
+  "changed_files": [],
+  "original_root_environment_sha256": "cd69648821665da0a665cc8aea00cb9ac48435831b0639275e4883e70749ca09",
+  "working_tree_scope": "Only untracked docs/environment/ additions",
+  "staged_changes": false,
+  "git_diff_check_exit_code": 0,
+  "git_diff_stat": "",
+  "note": "Git diff excludes untracked additions. The separate manifest inventories every environment artifact.",
+  "privacy": "Only whitelisted platform fields; MATLAB ver license identifier redacted before persistence."
+}
