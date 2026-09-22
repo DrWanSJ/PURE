@@ -384,7 +384,19 @@ $$
 }
 $$
 
-Interpretation: the left side records cumulative RS/TL exhausted-nucleotide equivalents (with EN transferring NXP into C), while the right side records the corresponding cost stored in charged tRNA and polymerized amino-acid residues. This is an **RS/TL energy-cost coupling / exhausted-nucleotide accounting invariant**, not a sixth material species and not a thermodynamic free-energy conservation law. Formal D6 must still compute rank and the complete left nullspace to establish whether these six readable relations form a complete basis.
+Interpretation: the left side records cumulative RS/TL exhausted-nucleotide equivalents (with EN transferring NXP into C), while the right side records the corresponding cost stored in charged tRNA and polymerized amino-acid residues. This is an **RS/TL energy-cost coupling / exhausted-nucleotide accounting invariant**, not a sixth material species and not a thermodynamic free-energy conservation law.
+
+D6 MATLAB structural verification on 2026-09-22 gave
+
+$
+\operatorname{rank}(S_{eff})=6,
+\qquad
+\operatorname{rank}(L)=6,
+\qquad
+L S_{eff}\approx0,
+$
+
+with maximum floating-point residual about \(2.78\times10^{-17}\). Since the 12-state representation therefore has a six-dimensional left nullspace, these six readable relations form a complete left-nullspace basis. Independent-coordinate construction and exact trajectory reduction remain subsequent D6 work.
 ## 13. Main coarse-graining assumptions
 
 1. ATP, GTP, CTP, and UTP are pooled into one average NTP state.
