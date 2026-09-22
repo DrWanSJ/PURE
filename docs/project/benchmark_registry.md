@@ -12,7 +12,7 @@ deterministic coarse-grained PURE model of
 | flag | value | evidence |
 | --- | --- | --- |
 | `bibliography_verified` | **true** | Title, authors, journal, volume/pages, year, DOI read from the source document itself; hashes locked in `environment_lock.md` and `data/provenance.csv` |
-| `equations_verified` | **true** | Sect. 2 transcribed literally (first pass from the text conversion), then **audited page-by-page (pages 5–14) against the decrypted normalized PDF (2026-09-18): Eqs. (1)–(29), Table 1 and Table 2 confirmed identical — no discrepancies**; double-entry parameter lock in the test suite; balance-derivative identities and finite-difference check pass (see `docs/validation/benchmark_v0.md`) |
+| `equations_verified` | **true** | Sect. 2 transcribed literally and audited against the decrypted normalized PDF; on **2026-09-22** the human B1 checklist was completed with H01-H06 = `Y`, while both MATLAB test suites passed. This source audit is distinct from independent experimental validation. |
 | `reproduced` | **true (with the evidence-level split below)** | All three Fig. 4 DNA conditions executed with MATLAB R2025b `ode15s`; 9/9 baseline tests + hardening tests pass; QC per condition `passed_all_qc`; paper-text anchors matched; on 2026-09-20 the user also completed a 48-point manual visual review of the calculated Fig. 4 curves and reran all three conditions with QC passing. The human reading was non-blind and the local rerun was not Git-commit-bound, so these are recorded separately rather than promoted to independent blind evidence. |
 
 ## Source-input completeness (tasklist D1 checklist)
@@ -79,8 +79,7 @@ No original-author numerical trajectory exists (only the raster Fig. 4). Therefo
      conditions passed numerical QC, but the local downloaded directory had no readable Git
      metadata, so the rerun is not commit-bound.
    - Independent validation still requires the blind human protocol
-     (`docs/audit/manual_fig4_audit_protocol.md`); until then
-     `fig4_independent_human_audit = pending_human_audit`.
+     (`docs/audit/manual_fig4_audit_protocol.md`). On 2026-09-22 the human reviewer explicitly decided that this strict blind audit is **not required for B1 literature reproduction**. It remains unperformed and would only be needed for a stronger independent raster-validation claim; no independent experimental-validation claim is made.
    - The digitized values are NOT experimental data (Stögbauer 2012 data absent).
 
 ## Data handling decisions
@@ -116,7 +115,7 @@ No original-author numerical trajectory exists (only the raster Fig. 4). Therefo
 | L5 | Initial values of newly-created species (nt, AT, a, NXP, C) not explicitly stated in the paper | minor | no | zeros used; implied by the curves starting at 0 and required by conservation Eqs. (15)–(19) |
 | L6 | OCR artifact "k_TXz" in the text conversion of Eq. (5) prose | trivial | no | resolved as `k_TX` from context; confirmed as k_TX by the normalized PDF |
 | L7 | Fig. 4 x-axis limit is not exactly 4 h (calibration gives ≈ 4.18–4.19 h at the right box edge); the plotted curves end at t = 4 h | trivial | no | handled by tick-mark calibration in the digitization |
-| L8 | Fig. 4 digitization cluster assignment is **simulation-assisted** (`non_independent_assignment`): where continuous/dotted curves separate, the "calculated" cluster is chosen nearest to the new_simulation trajectory, so the digitization-vs-simulation comparison is not an independent check | limitation (validation-status) | no (Tier 3a text anchors remain independent evidence) | status recorded in `data/processed/literature/R01/fig4/fig4_digitized_validation_status.json` and `docs/project/evidence_levels.json`; independent validation = blind human protocol (`docs/audit/manual_fig4_audit_protocol.md`), currently `pending_human_audit` |
+| L8 | Fig. 4 digitization cluster assignment is **simulation-assisted** (`non_independent_assignment`): where continuous/dotted curves separate, the "calculated" cluster is chosen nearest to the new_simulation trajectory, so the digitization-vs-simulation comparison is not an independent check | limitation (validation-status) | no (Tier 3a text anchors remain independent evidence) | status recorded in `data/processed/literature/R01/fig4/fig4_digitized_validation_status.json` and `docs/project/evidence_levels.json`; independent validation = optional blind human protocol (`docs/audit/manual_fig4_audit_protocol.md`); 2026-09-22 human scope decision: not required for B1 literature reproduction |
 
 No ambiguity blocks the reproduction. Nothing was guessed where the paper gives a value;
 no parameter was invented.
