@@ -185,7 +185,7 @@ The main open evidence / later-stage items are:
 
 1. **Independent experimental data.** Machine-readable Stögbauer 2012 RNA/protein trajectories are absent from the repository; current Fig. 4 reproduction targets the literature's calculated curves. A strict blind raster audit was explicitly judged unnecessary for the B1 reproduction scope.
 2. **Project-core definition.** The exact `PURE_resource_core` state set and equations must be decided from later structural and data evidence, not assumed at G1.
-3. **G2 structural analysis.** Stoichiometric rank, left nullspace and independent coordinates are not yet computed as the formal D6 reduction package.
+3. **G2 structural analysis.** The five published material/accounting balances are established, and an additional physically readable energy-cost accounting invariant has been derived analytically as `4*NTP + CP + nt + D_nt + 3*a + 46*AT = constant`. This extra relation is not a sixth material-species conservation law. Stoichiometric rank, the complete left nullspace, basis independence and independent coordinates are still not computed as the formal D6 reduction package.
 4. **Trajectory-level inverse transform.** The nondimensional equations have strong symbolic/numerical equivalence evidence, but the D6 dimensional-vs-back-transformed trajectory comparison remains a separate deliverable.
 
 Human-owned and later-stage actions are tracked separately in [g1_pending_human_actions.md](g1_pending_human_actions.md).
