@@ -1,0 +1,150 @@
+{
+  "scope": "All additions from the initially clean worktree; excludes this manifest",
+  "files": [
+    {
+      "path": "docs/audit/exact_conservation_20260922/README.md",
+      "sha256": "554035300b3c2446eacc746d174933107f860b722bc810ef370418d0afc52a0b",
+      "bytes": 5250
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/acceptance_criteria.json",
+      "sha256": "db92abcc13edf18523e930e75468d203396cf782d0053f05480a97e72ac16d97",
+      "bytes": 945
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/finalize_evidence.py",
+      "sha256": "11e250c375d1c1b239cfec9abe1cd026d1de4f391c039586968a677afeca3593",
+      "bytes": 4364
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/git_log_before.txt",
+      "sha256": "f66065847f066f27f900bd36510e9b7ffd57ff62f566a0e9470ea635eaff91e8",
+      "bytes": 281
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/git_status_after.txt",
+      "sha256": "15602788d784a3141895915677892b44ebee5709fd1db50a5f168ea2b257598d",
+      "bytes": 1902
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/git_status_before.txt",
+      "sha256": "8859f8e4f67de878b66adbef710f3857d652a42c5b7ab3e6e5d687ca498965d8",
+      "bytes": 104
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/integrity_after.json",
+      "sha256": "df0b5a15ee58b4aec0b0c5f893071499d13143936b085e05535e63947b7cd46e",
+      "bytes": 352
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/matlab_checkcode_exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "bytes": 3
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/matlab_checkcode_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/matlab_checkcode_stdout.txt",
+      "sha256": "5b701a4f755048234bccb118a169b2dac90ce8de24ce99ece1bab1e21c9dc98e",
+      "bytes": 373
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/matlab_checkcode_stdout.utf8.txt",
+      "sha256": "e347d2ba8a7adb46c70d0120545036eb3438c0ff5db3ee0ff4f29d6aa9bb125d",
+      "bytes": 385
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/matlab_exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "bytes": 3
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/matlab_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/matlab_stdout.txt",
+      "sha256": "ac933c5474c09bfd792117de2eacfc25a887b2cc18e304a8d4f2f85fcb613e86",
+      "bytes": 13370
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/matlab_stdout.utf8.txt",
+      "sha256": "fe4063635bf3ef5855f41c248ed522b3c333f468a8aeaf8a5303e17e7de38764",
+      "bytes": 13403
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/preregistration.json",
+      "sha256": "bcb9e2cd089bc8b271c90a0f1b2042ff06231280b6cdc8ac1297f77b62171c9e",
+      "bytes": 1382
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/source_inventory_before.json",
+      "sha256": "12af70ade4350819ed2706d699aa643f207874e671b110e04129fde7aa29a498",
+      "bytes": 44093
+    },
+    {
+      "path": "docs/audit/exact_conservation_20260922/validation_results.json",
+      "sha256": "aa53c8c3d0391bbb22a7eb22e9fb8a953a7b5bd15b6a0701ab050c7ecfbf9dd8",
+      "bytes": 13890
+    },
+    {
+      "path": "docs/project/GRAPH_REPORT.md",
+      "sha256": "5da4536a685ccd2e6e051d17fe086d64426d365229e511a8635e862a1cd8d446",
+      "bytes": 1827
+    },
+    {
+      "path": "docs/project/graph.html",
+      "sha256": "b19ae3c9ba835456fcea02a828123ff6c6f5fc8475418868dc433ebc016ce42c",
+      "bytes": 49822
+    },
+    {
+      "path": "docs/project/graph.json",
+      "sha256": "2dd724d359f74574e6517957b31042cd0ef7c53a97ba130822aeedbc06ac80ad",
+      "bytes": 60278
+    },
+    {
+      "path": "docs/theory/conservation_report.md",
+      "sha256": "b2b897e622ef96ada96aa921900f271288f9aae99e42581711afb72d68525934",
+      "bytes": 9577
+    },
+    {
+      "path": "matlab/src/theory/pure_exact_conservation_constants.m",
+      "sha256": "4f1f611674998bd7bc4c07ac7d1d88fbf6b18d97e3162e3a5e1916b24103c21d",
+      "bytes": 553
+    },
+    {
+      "path": "matlab/src/theory/reconstruct_pure_exact_reduced_state.m",
+      "sha256": "5e4e3ae882dfcc2039cbf2e7aca4b6fa97dff4aea4843b286ab9e49ed8b4dc57",
+      "bytes": 849
+    },
+    {
+      "path": "matlab/src/theory/rhs_pure_exact_reduced.m",
+      "sha256": "2bb0e336982ac9bd058e99fe09d81b84604ce7e02bb9627526043cce11b3809f",
+      "bytes": 425
+    },
+    {
+      "path": "matlab/src/theory/simulate_pure_exact_reduced.m",
+      "sha256": "aca812c965aeb95acd6747db17135f9440b8a000855da7010256bea5673a848f",
+      "bytes": 2056
+    },
+    {
+      "path": "matlab/tests/test_exact_conservation_reduction.m",
+      "sha256": "9fbcad5fa1fccc7e0b07c2dde33e65964dbe091b719fde74f4f3988a3bab81ea",
+      "bytes": 7995
+    },
+    {
+      "path": "scripts/build_project_graph.py",
+      "sha256": "551f7c75e2e959431e77e127c8a29b73115b032e7217c788be81142bb88ab4a9",
+      "bytes": 17863
+    },
+    {
+      "path": "scripts/run_exact_conservation_validation.m",
+      "sha256": "037fe51c87153769caa0678677a52d0aea85f9040cd691950500c637a588c5fa",
+      "bytes": 1623
+    }
+  ]
+}

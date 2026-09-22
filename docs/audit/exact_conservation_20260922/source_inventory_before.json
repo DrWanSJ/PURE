@@ -1,0 +1,1066 @@
+{
+  "recorded_at": "2026-09-22T23:42:32.2313791+08:00",
+  "head": "91bb36488ad159a8becffc2addfadea99a8adbc4",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "4bc53df9ede6439c31569cd8fbfd09020122c2d326349d0d662a262d54d6ead1"
+    },
+    {
+      "path": ".github/workflows/matlab-ci.yml",
+      "sha256": "6198ef6ad584517ced161a964dc0cee6453885837418850ec07cdb29fe607cdd"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "d39f969eb045bcf839a962b63702ffc52513e66c2743dbcee549b00fd1d8f21d"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "c4ec8d6e4be76825922ca141a9535f2ad1dd30c24fe994321da9f956be480f71"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d675fbfece22b55ff07871ff91e2cd9f0a9040e8d65e7da9fa58abcc0b9d0952"
+    },
+    {
+      "path": "configs/README.md",
+      "sha256": "31ebd75189f33c08a54093e6fe240c1a865f5895283b355b64aa16d8f800ed16"
+    },
+    {
+      "path": "configs/benchmarks/b1_fig4/README.md",
+      "sha256": "e7d39ee97abfeb4b34daa0a5e1994b1747599841548dc5ffaed0e4325f09d8cc"
+    },
+    {
+      "path": "data/README.md",
+      "sha256": "de1880019b4891ed729ee8fb01cbbc3245c4dacbf36f4d0c6f4282ed6464aba1"
+    },
+    {
+      "path": "data/manual_audit/fig4_human_digitization_sean.csv",
+      "sha256": "0d5296916a12c371838aacbb71db2074987a96332d295d17a253e24946a43b6c"
+    },
+    {
+      "path": "data/manual_audit/fig4_human_digitization_template.csv",
+      "sha256": "9e3c62b7a464b1d9735ac302d0b03e975192985c97cb8d6c13bb375f1e193725"
+    },
+    {
+      "path": "data/processed/literature/R01/fig4/fig4_digitized.csv",
+      "sha256": "350b611a8c940b1890e9c28bf81648de8ed7d09254e1f5e3d605727e19bac068"
+    },
+    {
+      "path": "data/processed/literature/R01/fig4/fig4_digitized_all_clusters.csv",
+      "sha256": "d32c2e2dab9f3f1bc978fb00a98f9859ee97fe5773ac18eb0195ee4d6fc4fb10"
+    },
+    {
+      "path": "data/processed/literature/R01/fig4/fig4_digitized_validation_status.json",
+      "sha256": "72f548ceaa5cfd05105a8a401c6da2e277d35dda4f66676de12535ec76fe4e87"
+    },
+    {
+      "path": "data/provenance.csv",
+      "sha256": "aa0a5963227e29c566500db8328a85c2133ff7a518148e763a8aceb07dc6a821"
+    },
+    {
+      "path": "data/raw/literature/R01/mavelli2015_fig4_page14_300dpi.png",
+      "sha256": "d9810d4973ac57ec868e3015e035b0b0c786505a5f29681443b483bb146b7dad"
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "f2fcacdba53ea09312aaec950785d69e69fbe5736398d1e9824e9fb42aaf98c6"
+    },
+    {
+      "path": "docs/audit/audit_status.md",
+      "sha256": "f51b381f31362e0a33cea55af107a49ee69d4c56afe7f9b065a601090d5e34fb"
+    },
+    {
+      "path": "docs/audit/b1_hardening_report.md",
+      "sha256": "385af5567641e0750168b002f979c4d30085fe063e343cc59f2dd766849003e9"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/REPORT.md",
+      "sha256": "a25828688696a63d6f1978bbf9c307d37a2dfd23862b39d604737ada659ee7d3"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/audit_source_bridge.py",
+      "sha256": "030956316a3d254555526f546c86636621eea49cf2634e065d383b5077663328"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/check_wolfram_mutations.py",
+      "sha256": "6206f118ba7247baf418234f7d9ffb1b8d17ac720b7470012c9fb0037e63762e"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/finalize_evidence.py",
+      "sha256": "574761e3aa26240074f542f5fc8e0c3394c8e0252a2a4ec1db6f974de2fdeaa4"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_contaminated_global_context.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_contaminated_global_context.stdout.txt",
+      "sha256": "ca6dfd4414b741bb5076335d51056b81a1d1b29864aa43dd58a5d11a7dae1abc"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_wrong_TL_stoichiometry.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_wrong_TL_stoichiometry.stdout.txt",
+      "sha256": "9f082dbfec4f06c18efa986c7e7703d9b07448339aa19b017d1107f2eee4764f"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_wrong_accounting_mappings.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_wrong_accounting_mappings.stdout.txt",
+      "sha256": "a8c6d1a1bf0074e2ace2f75a7681394aac0d4f53956743ab15a72b14bb807d46"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_wrong_rhoT.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/fixed_wrong_rhoT.stdout.txt",
+      "sha256": "d04800b6c9477ca3198ae27108eaa2bc2ccc455f17d7da13c34a4f7e94eb77ea"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_fixed.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_fixed.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_fixed.stderr.utf8.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_fixed.stdout.txt",
+      "sha256": "70a58d9102d0ead73b9c1bd6ad204339fcd68d4bd4bd215a24a0bbfc60617269"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_fixed.stdout.utf8.txt",
+      "sha256": "de68f04854f3ea290be8e73bb1fbf42ff840afa212a7aa916e466ecf6229d3ce"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_original.exitcode.txt",
+      "sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_original.stderr.txt",
+      "sha256": "611200e3dc18505451e0e841647cb21246fc0d88f226e82418d361869b943e51"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_original.stderr.utf8.txt",
+      "sha256": "b32ce7aaf96450c32e954b4ba01e557d40a132519381b97c49408bba046b674f"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_original.stdout.txt",
+      "sha256": "809d0d7ffe0bdbc0dd1273cd7aa0d0de6dd506a50aebc2caf1a228ac0668c070"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/matlab_original.stdout.utf8.txt",
+      "sha256": "3ab1ef8a9ad4e9f73667dcabc31bcd76ead63b3cc1c992e38cc4904ad8446069"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/mutation_results.json",
+      "sha256": "3c3bc7973f7e4f1fe199dd43743d5cb5bfd8d2455f354c76ea16e6ba74e920f2"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/mutations.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/mutations.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/mutations.stdout.txt",
+      "sha256": "881904074974dae16c8940ade074f7a2f8fd63753f533c4626c7d1ec9b17aadb"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/original_wrong_TL_stoichiometry.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/original_wrong_TL_stoichiometry.stdout.txt",
+      "sha256": "ad94b71acabb2dabf5fc63a10572520a00cd973b043833518ef6a4761562d737"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/provenance.json",
+      "sha256": "a9d16865046f25a5cf930c986d4b9d2a2d239d1a7ca13ac03ea7c5dec7293a5c"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_fixed_direct.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_fixed_direct.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_fixed_direct.stdout.txt",
+      "sha256": "5580b365df442d83b427884b147f7a588215f41572c691b5de7dd10961e4c317"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_fixed_source_bridge.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_fixed_source_bridge.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_fixed_source_bridge.stdout.txt",
+      "sha256": "273ea490709b1dc164f8aafb7eb2ae6663965d666debe58df950f124f04c78b9"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_original.exitcode.txt",
+      "sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_original.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_original.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_original_replay.status.json",
+      "sha256": "09e58ab1f103c3f5a9681e5f57ba1d598ef5f5040dd72ad24ba134531587e930"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_original_replay.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/python_original_replay.stdout.txt",
+      "sha256": "b54d95054397ce32ec38048127dcb0eae081a882fd7f014d1ae3105359744ea1"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/reproduce_python_original.py",
+      "sha256": "b4681435fd2f0d5e99d20720a155069f684e2c0f9d6005ce7789697b6d431302"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/run_matlab_fixed.m",
+      "sha256": "94bbe6a77c625f6f9f064cf4c484b8c8679cf9ad004447bd1daf44e5c20e42d4"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/run_matlab_original.m",
+      "sha256": "386216f89fb42ecb713133c0f8d7576bf9904c1589a15b9850b1c5fc4fbf6b77"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolfram_fixed.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolfram_fixed.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolfram_fixed.stdout.txt",
+      "sha256": "26f9c7bf6387c973f86a0fa221d7f3b1c0a9506a56335d5116cf1db7c2337135"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolfram_original.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolfram_original.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolfram_original.stdout.txt",
+      "sha256": "e3af4c16c4a75958d109a7a28d18574e860e86953a60063a55ed6be56d54e85f"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolframscript_version.exitcode.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolframscript_version.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/dimensionless_20260921/wolframscript_version.stdout.txt",
+      "sha256": "6fdb9385cca36ae6c983927bd77ab90713beb7e2a495e35f459b530766a05a1a"
+    },
+    {
+      "path": "docs/audit/human_b1_audit.md",
+      "sha256": "a2fb5b693c1d5f953a190cc1bdbebc091f402ce66958efbb6291fc5ab7146945"
+    },
+    {
+      "path": "docs/audit/logs/20260918_124749_tests.log",
+      "sha256": "1307672b37215399df37e9128b4a39dd6d3594854e2529dc954bf8c71601be38"
+    },
+    {
+      "path": "docs/audit/logs/20260918_130736_tests.log",
+      "sha256": "377d4d4e5bb1a0dfd06b8397f5bca70c9482525f4508ac089625aeb97252757f"
+    },
+    {
+      "path": "docs/audit/logs/20260918_155628_tests.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/logs/20260918_161634_tests.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/manual_fig4_audit_protocol.md",
+      "sha256": "d91f3a9a26d2e260fd7839eb105ec44b2d95cc2759f763df50dcc0fca1b9b839"
+    },
+    {
+      "path": "docs/audit/mutation_test_protocol.md",
+      "sha256": "694f441eed718d2712643dfbab7d7eb70f72f06a83863e76e00f7b2070d0ad58"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/README.md",
+      "sha256": "6a5f8c2c95e39d6e426cc1948571e969a65bd75a6b7bfa6742005e334cd0f5f5"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/artifact_manifest.json",
+      "sha256": "5937558c59eaa2a8fa8ea197c5d04996608c6fa4a0c6fb7bc2a28f180a55eeb2"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/diagnostic_initial_resolution.json",
+      "sha256": "e7b664592cd4bab9c12b0667bfa96f67e83f1857e44f3bcf3418f0e36517df8b"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/final_audit.json",
+      "sha256": "1a2d49813f52785a780691b0f4ed2505907c85bb098b6b2f081c5b429dc79029"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/final_git_audit.txt",
+      "sha256": "5398597022efd7ba70986114af272780bed18c3333954bac6d46ad2fa7593d06"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/git_status.txt",
+      "sha256": "891f1bfe9b6ad3db3b2ea5ec3fae617e20b949407db8c0784b02d889051bbe41"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/git_status_after_inventory.txt",
+      "sha256": "895ce78bf42d65dae63502633424fc0307414a471dc5d42240182189974ac7d3"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/git_status_after_matlab.txt",
+      "sha256": "4633162679920d88ee1a17c6d5cf23f62c9466886295a7c08cccda9f56a87c78"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/git_status_after_wolfram.txt",
+      "sha256": "e975e172a575d4f75aa3e0763c27b6e4bee839f470f69339dc47f593129aacaf"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/git_version.txt",
+      "sha256": "761996f94a518e456f2c8d7abc990dd35f60f9d97306bf69f74fc6ddf1939100"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/initial_state.json",
+      "sha256": "f98e8f6f27b02ed543fb5d1b8db7a8ff29a9ce1a702ffc0fb284b51ea8c56b50"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/integrity_inventory.json",
+      "sha256": "d6ee30cb977759ba0a959bcf6ecfc80c4c466b2afccf55dd91eed9766ad09c5c"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/integrity_matlab.json",
+      "sha256": "267cfef83d08b4cb3893d46995f73d0e4b2fdffc73a1e9ba35043420b5f8031d"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/integrity_wolfram.json",
+      "sha256": "78e10e62fdbc2492e9f2f88c28c4d97fd2d3c74c448d80a756b6f184f6a30092"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/isolation.json",
+      "sha256": "1d0398656d6be11014112299100eeb1c4e597b868e9cc3ab102fd62c808ff580"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_capability.txt",
+      "sha256": "3dfceb2418a6c7a6bc05a09008de86caf2066df0fb33644c720ba122e8aed0b0"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_checkcode.txt",
+      "sha256": "6cd2b03e23bbd3da4e9557979e622b3062b4ac8d3bd053f788c9aac97d341836"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_smoke_base.txt",
+      "sha256": "195f68bbd3312d9c60cbb876a29454bb3986feae42cb4c67f417ac2e26617729"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_smoke_optimization.txt",
+      "sha256": "4d4f6c10b75503a9caafdbeb76a37104f7a3a453b1642a3782405612f207f0df"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_smoke_simbiology.txt",
+      "sha256": "b6b2407f9397589f3d0331c43f8f01fa2ea46ab64672abe0ed4b48ee1691df05"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_smoke_symbolic.txt",
+      "sha256": "772bbc1063de4fded44524d42de2f1e6bfa26c49b36ec0cc76e75095255c50a5"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/matlab_version.txt",
+      "sha256": "d904dc15731c63182c5fb16f773f92d29c3d8760e5e199fe5b33013e6de2b9e1"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/platform.txt",
+      "sha256": "d517a5a520fa8e82c399d892aafb15b7eb716b17ad3287ee29ba5b5463f586d4"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/powershell_version.txt",
+      "sha256": "1a29ad9417c78449edb052ab49b414cf5aef7d870c8b5d85c05d84df090d59eb"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/project_matlab_dimensionless.txt",
+      "sha256": "726a3634899e0d72d9f8dd809e2f2325dd09bdcde74dcb86f68f42fae73c85e0"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/project_matlab_literature.txt",
+      "sha256": "82a51107387d0d7d8cdbf046792669f87a3dfceb76dcc71ca8110dce74570258"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/project_sympy.txt",
+      "sha256": "f59d2da1dcef9c46c4971fde488495cc454894113299c2ec28aa0458c6ac846d"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/project_wolfram.txt",
+      "sha256": "fb14c8f8a15f7b66781ee4f7652e5f68313edf69ee256ca8527498dde787c332"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_matplotlib.txt",
+      "sha256": "72acd3c0f5eb66f48f159ef8e8f8b6f1c97768616e4c7c1976a4d1b745813b20"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_numpy.txt",
+      "sha256": "46ba61564b28abc22cc5fcc2411fa682d8d6731bd95f59632227517ad541efa5"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_pandas.txt",
+      "sha256": "9a6a0898e04eb3090a0a670043df164f9372dc0012f42c9e9c27e907df716ca6"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_runtime.txt",
+      "sha256": "89a0a8ce57bb7a951f5ee237826a27e59014a79da5fe7ae01353a65341d582d2"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_scipy.txt",
+      "sha256": "48189915d1bafdf83a1d97b09a53a29df3ee5b9cc028e53f688afc89cd9415a5"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_sympy.txt",
+      "sha256": "0d67849dcd8e08d371263b01831e8c55f55e370980b3f8076e11fd60de1879aa"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python3_version.txt",
+      "sha256": "77b753b30e1f15b26b78e9ec780c4070620b146367debfa205ead19eaf8fc354"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_matplotlib.txt",
+      "sha256": "c5cbe344fb08be29d50e4ab2bf02e50e8c563f591d13d06782c41d7b610aea0f"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_numpy.txt",
+      "sha256": "8b2d6e5e23b6b8e913026c8d59b795774c43d789ff3d7fb862348a11f4e768ad"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_pandas.txt",
+      "sha256": "bd17c2a07accbff4d0a13914ab39468fab3cff6f85baeab707cba792526921b4"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_runtime.txt",
+      "sha256": "d83a51388b285052db0a0392bce3bc6c701a1ac9277a969696c85e7d8af160bd"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_scipy.txt",
+      "sha256": "d6df296e7e5579c3b74451d0924aedf8e63d6bd7666caa32cb0ccbd02e8c2b15"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_sympy.txt",
+      "sha256": "a5d9959ebbce8210522f9c07828d0164cecea8d0463bc988c1f746e78e82881f"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/python_version.txt",
+      "sha256": "daad80bf2bcc65efa2ec93a856f35363439d81bf8ce6db4052f25ad663c4ef3a"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/results_inventory.json",
+      "sha256": "5cad1f41b3b9c8d2b2469426c2e7daf6ce191c4a272be6fbd9eadbba95996de1"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/results_matlab.json",
+      "sha256": "9931528fae901e4b8c16eaa917b502f1ecd938f6185506ba9bbef4a7544ff09a"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/results_wolfram.json",
+      "sha256": "8f0e07f804d91844145e3172dc14c8ee7d2ae486a9bc9c8dd9ec794965a8d65d"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/smoke_tests.txt",
+      "sha256": "e70a1dec5b0ac4d3cf6cc2fc0b86bf447758e54816bca92b6c8a260771314d6a"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/status.json",
+      "sha256": "b614328e3b94dfff7f41ed9214593a55e2f12b60b6519e54467d2585374be9bb"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/where_git.txt",
+      "sha256": "0bbc44f9a0faf87cc5c23139c269a67d1afffdb1e849c0a7121de311078ef630"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/where_matlab.txt",
+      "sha256": "3c870b45ecf10a0a06d4634515aa64e4e5701efcffdae9d34f2ea38d8e638cf2"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/where_python.txt",
+      "sha256": "c840bb76afec9c5b358dfb4034ac62f3d881d4ea27e6f013fbd893262a5ba858"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/where_python3.txt",
+      "sha256": "dd5b02972054f9c27bb60d6c384f5e6ee75842a5c03f9393a8b384c90646e590"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/where_wolframscript.txt",
+      "sha256": "39cd72154a11e9fdf953adeba2f5cd4263cafb3c140232f37ac4497eb65cb659"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/wolfram_kernel.txt",
+      "sha256": "9879633cfcccdbe45ba223873c9f11073b26074fc92e08bcddfe4b99a1fee9f9"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/wolfram_symbolic.txt",
+      "sha256": "fa3808ee92802a9cd8494ded18c4d0d479041268fbebbde72d3d9361bfa713f2"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/wolfram_system.txt",
+      "sha256": "54d963f7b76c9adf42c85c1c8822f6f9f38fe23fe78746a289ee78b69b0a71fd"
+    },
+    {
+      "path": "docs/environment/CZ_20260922/wolfram_version.txt",
+      "sha256": "dd8b1ff05ae85e750fe0b150cda3fadd24e2549c571f2cb64923d353d8d4b4d3"
+    },
+    {
+      "path": "docs/environment/README.md",
+      "sha256": "0f33a3d0f8e273badf25f238d12896b679feb2e390e4ca6f60e321bd8472a5a7"
+    },
+    {
+      "path": "docs/environment/environment_lock_CZ.md",
+      "sha256": "d66472cbbccd3e21649251671200a012718b7c697581496d532ae059b3ea2f3d"
+    },
+    {
+      "path": "docs/environment/probes/README.md",
+      "sha256": "24ecaa41c13b546508d82058494bf959c560b1792276f0f245482b386390618d"
+    },
+    {
+      "path": "docs/environment/probes/audit_environment.py",
+      "sha256": "10bf4154ff663110b7a844b7a159d1ba3c4921fcd564a856eafb773fcce16466"
+    },
+    {
+      "path": "docs/environment/probes/finalize_evidence.py",
+      "sha256": "fc976676035fdc2a599befe75510476423478f730d03df5f4fcbadc70c10fd36"
+    },
+    {
+      "path": "docs/environment/probes/matlab_capability.m",
+      "sha256": "e6b0ac9cb24084b5e0e3afdac998243029c5d742574c5e49a5307acd7605d146"
+    },
+    {
+      "path": "docs/environment/probes/matlab_project.m",
+      "sha256": "0c2f11f81c73b7f0a0cc1f756726064b7228c51525944f6304b1cbda1d710277"
+    },
+    {
+      "path": "docs/environment/probes/matlab_smoke.m",
+      "sha256": "6e03efb6b37b0f344f93266486f036461ef4b208276fa80124ff829b29e79b91"
+    },
+    {
+      "path": "docs/interfaces/flow_contract.json",
+      "sha256": "d1bb701ccf259e8289d9e19a0c64df511cce741b044f07237b520aac914af8b8"
+    },
+    {
+      "path": "docs/interfaces/frontend_wireframe.md",
+      "sha256": "534d888a76f03e548ff797f7042970480f9b9cfa44265f9608d84407a93ae5ac"
+    },
+    {
+      "path": "docs/model_card.md",
+      "sha256": "51ca78c801bcc9b24b81d07676fd0bfd7f0b3e8956408963be33133eae42d70d"
+    },
+    {
+      "path": "docs/project/benchmark_registry.md",
+      "sha256": "2d1a08ea2ee9a3192cfc623ebb878a69ebb3c40b788ac7f62c853a7cb2e51798"
+    },
+    {
+      "path": "docs/project/evidence_levels.json",
+      "sha256": "796094187791c6ef0ea6c36992bb3cc404f3e6f65c7fb2d90cb6c9fa989b5a3f"
+    },
+    {
+      "path": "docs/project/licensing_review.md",
+      "sha256": "7ba90a158caacc4f43c2eb8a2a63619fa9871e74810e2b78623a645c1f9ed12f"
+    },
+    {
+      "path": "docs/reports/g1_pending_human_actions.md",
+      "sha256": "e7f5951d8e9573d9c6e990ea60134094df01f02a0730fffa88bcecccf0d7d681"
+    },
+    {
+      "path": "docs/reports/g1_report.md",
+      "sha256": "e9df8db18485a59af9edf10c6903730ee5703519593a0bc1e35379cb1a4fc7ee"
+    },
+    {
+      "path": "docs/theory_notes.md",
+      "sha256": "0bfd4250e17245e2ef019d8f10c61a81d76968e892b01a61cfad128abb98f86f"
+    },
+    {
+      "path": "docs/validation/b0_reversible_conversion.md",
+      "sha256": "c0fe6fda927747f61700fa6147574883b26aed4eb92acaaba0a0f765956cde82"
+    },
+    {
+      "path": "docs/validation/benchmark_v0.md",
+      "sha256": "9044b1f07ca180cf27de9cf4dcfbace8225154ccba7f75bff0bbdfdb6fd5ea83"
+    },
+    {
+      "path": "docs/validation/qc_v0.json",
+      "sha256": "b3f39f2627e7ed32f929d315e531038d7e71b39408920ff7b9131ec42fec743e"
+    },
+    {
+      "path": "environment_lock.md",
+      "sha256": "cd69648821665da0a665cc8aea00cb9ac48435831b0639275e4883e70749ca09"
+    },
+    {
+      "path": "matlab/README.md",
+      "sha256": "c1704e14c50e8743b353c7ab41070e265b304e904c00b2c639847f871bfa0da6"
+    },
+    {
+      "path": "matlab/codegen/generate_pure_literature_reference.m",
+      "sha256": "6da20f77ee6b0f667b86ebd0130cc82bd482bf63157db9a45509592b82c8ed4a"
+    },
+    {
+      "path": "matlab/generated/pure_literature_reference_params.m",
+      "sha256": "41d12a621652da91c8d1d420cb686689a5681db1593b87fbf10b5331c20c6982"
+    },
+    {
+      "path": "matlab/generated/rhs_pure_literature_reference.m",
+      "sha256": "79ddb8c755ccb5ed1ece2d08b1b1be00d35669ef857edc9e7206094eb77fa358"
+    },
+    {
+      "path": "matlab/src/fixtures/analytic_birth_death.m",
+      "sha256": "6828e8e2a7fc383eaae8cfbf40a3b5da448acca64af920ec1854743aa75e1fa2"
+    },
+    {
+      "path": "matlab/src/fixtures/analytic_reversible_conversion.m",
+      "sha256": "bca8cecfe410d3e92bb1f983c90d90e20b2e6aa4c3eef6ef69611fa8f844c700"
+    },
+    {
+      "path": "matlab/src/fixtures/appendix_a_H.m",
+      "sha256": "b6b4190a65bee9dad3f21fd1f83df7fb02c1be9321afe2827b4717fbb52a70c1"
+    },
+    {
+      "path": "matlab/src/fixtures/appendix_a_approximations.m",
+      "sha256": "1f1d4665bb72b28eb14cef45492671d0be2f2bb30126b0b403572cd86db17cb2"
+    },
+    {
+      "path": "matlab/src/fixtures/appendix_a_fixed_point.m",
+      "sha256": "4ef7f306203b1f75323d2589e65538ca09fc1c91abc3864e86ef226b5ef15374"
+    },
+    {
+      "path": "matlab/src/fixtures/appendix_a_jacobian.m",
+      "sha256": "9ce5b94a8a988995856cf35fefacbeb2fef7061eef4c79ea80c0caab423ac564"
+    },
+    {
+      "path": "matlab/src/fixtures/appendix_a_params.m",
+      "sha256": "db9aa7f61877b41bb957e4edc2445aeb55617300fa2d918292f3eda492d7570b"
+    },
+    {
+      "path": "matlab/src/fixtures/appendix_a_psi.m",
+      "sha256": "1094c13a6a954d9a10ef11febf6ea9efb7e13ff3c75da872464a3fda6b11d725"
+    },
+    {
+      "path": "matlab/src/fixtures/birth_death_exact_distribution.m",
+      "sha256": "e765e9fe7c5514e89d081eea1627a5bc376dc21fefda379abf738b658514e154"
+    },
+    {
+      "path": "matlab/src/fixtures/birth_death_params.m",
+      "sha256": "5dde118476a5aa5e930f8f9c3fbf2d0efc4f0ab63cd9bec06ccc8099e29e204b"
+    },
+    {
+      "path": "matlab/src/fixtures/birth_death_propensities.m",
+      "sha256": "9c5a42c2f1e718bdb4bb471cd228fdaeeb4c9fc3146f418445cb86df0d92feed"
+    },
+    {
+      "path": "matlab/src/fixtures/compare_enzyme_qssa.m",
+      "sha256": "b02f88d06694bb9198954734209cbe78c0ecc033bd33ed3ecb801a7a83a3e5e6"
+    },
+    {
+      "path": "matlab/src/fixtures/enzyme_qssa_algebraic_complex.m",
+      "sha256": "95d8a8f311eb94f87aee9b420a1daa2dbd4540163a6f61887cd5a24b992dc505"
+    },
+    {
+      "path": "matlab/src/fixtures/enzyme_qssa_params.m",
+      "sha256": "3e482f1afec7cdbcfffb9187e9beac84544852933de9c2b5887f865db08260f9"
+    },
+    {
+      "path": "matlab/src/fixtures/reversible_conversion_params.m",
+      "sha256": "ac76b18e7f8a85fbb3dd81579b678bab4369d471a5c080a7f7d82061665602ec"
+    },
+    {
+      "path": "matlab/src/fixtures/rhs_appendix_a.m",
+      "sha256": "369bd66ef864cd59e0471b239abf4efab60ffd7f46bdc1589d63b376791b1c1e"
+    },
+    {
+      "path": "matlab/src/fixtures/rhs_birth_death_mean.m",
+      "sha256": "03ab0196c7f3dde47945f0b6070b43443b0bc022afa845527dda1608a9c12b5e"
+    },
+    {
+      "path": "matlab/src/fixtures/rhs_enzyme_qssa_full.m",
+      "sha256": "d851cb02b91f212a12605dd4dc6936ba2f96118db64f63fa4cbffb92c1aef3cf"
+    },
+    {
+      "path": "matlab/src/fixtures/rhs_reversible_conversion.m",
+      "sha256": "ec53e1cbe61b09749131bf48e7d61717ef3209efdfb494549fea915ecf8b6b43"
+    },
+    {
+      "path": "matlab/src/fixtures/simulate_appendix_a.m",
+      "sha256": "3be5c7b01332892e65ae10d2b87a2bfa0f54ff2aa8cef6b0bd21f3a01b016507"
+    },
+    {
+      "path": "matlab/src/fixtures/simulate_birth_death_mean.m",
+      "sha256": "e342d11fd8b2b93de174e531985dd012d66524e089ea1fa3930413fdb70a7169"
+    },
+    {
+      "path": "matlab/src/fixtures/simulate_enzyme_qssa_full.m",
+      "sha256": "202b37adda5d7e703971b661c28d336d665b89f01487854f0e46b83fa598b535"
+    },
+    {
+      "path": "matlab/src/fixtures/simulate_enzyme_qssa_reduced.m",
+      "sha256": "f5d2cd6e99e7b9867e31819a38e76644a8f2b5120f745a3a0e4c0f8b6c2f0785"
+    },
+    {
+      "path": "matlab/src/fixtures/simulate_reversible_conversion.m",
+      "sha256": "1dbd2a8858caa707d6c598b62b2851eff0bc3d055ab3068cb4344d420d695c4d"
+    },
+    {
+      "path": "matlab/src/provenance/pure_git_state.m",
+      "sha256": "b3561994ac1f2a00b3e87e49f0e77055af0a3cd971f6e7efb90cb40d4476c7bc"
+    },
+    {
+      "path": "matlab/src/provenance/pure_run_provenance.m",
+      "sha256": "7f8b93af1689273e3aacdc4b5e7dcfaf0bf1181cb7340cf2e58f8dba14bbf245"
+    },
+    {
+      "path": "matlab/src/provenance/pure_sha256_file.m",
+      "sha256": "4e5a21a7b073e1907ab8af8502e814b395f0666140fce19e2544fb156d4c5c9d"
+    },
+    {
+      "path": "matlab/src/provenance/pure_sha256_string.m",
+      "sha256": "42d00eb2a43ccec2611d7789c9247387cb81fe64916737ffe8e5fe3f08fcd0db"
+    },
+    {
+      "path": "matlab/src/simulate/run_fig4_benchmark.m",
+      "sha256": "7d3fd3f47436e6f8abfa3f0b771f34192929cb9e5735027dda960b1a5c886240"
+    },
+    {
+      "path": "matlab/src/simulate/simulate_pure_literature_reference.m",
+      "sha256": "2788263f212d49eab5cf5204ae4e2b525b22f68065a323f191d17f16e97b40ad"
+    },
+    {
+      "path": "matlab/tests/fixtures/rhs_pure_literature_reference_baseline_snapshot.m",
+      "sha256": "c4c7cabe093b5937317677be7f916fa031d4170f8b098593afed71a10737c636"
+    },
+    {
+      "path": "matlab/tests/test_codegen_and_provenance.m",
+      "sha256": "f95186c7c26122822cad53a8ef52ba8cf6f11bdd429d27d8d4962b4f4d61e28e"
+    },
+    {
+      "path": "matlab/tests/test_fixture_appendix_a.m",
+      "sha256": "e17121225d3b0d754956951804c6bdea25a1b48c74e8fc43a87e0f32f5416cf7"
+    },
+    {
+      "path": "matlab/tests/test_fixture_birth_death.m",
+      "sha256": "59199823c240ff836b1b5708c6f618a827e0fa47493ec0f26777faddb2b9ca04"
+    },
+    {
+      "path": "matlab/tests/test_fixture_enzyme_qssa.m",
+      "sha256": "bf9d04986b2debb2677ea5ecc12cc9614def2efbcb5ddd20023857f560cf5d67"
+    },
+    {
+      "path": "matlab/tests/test_fixture_reversible_conversion.m",
+      "sha256": "9880f40c96f944f5440d685e5cfd3a0475f9ae792766956267f7122c316ff20f"
+    },
+    {
+      "path": "matlab/tests/test_pure_literature_reference.m",
+      "sha256": "324f145526c5039fa224c602851d836939ca342908424b55909ab3b76b70d9fc"
+    },
+    {
+      "path": "matlab/tests/test_release_preflight.m",
+      "sha256": "2c6ec75d6ba9d05651f1d5e1fb0d4699c06c297648b2c5d2352ec3d5433ebb45"
+    },
+    {
+      "path": "matlab/tools/check_environment.m",
+      "sha256": "93d3823e234a4289206cfc132378ed4eac61a8b67341ff7e469c66f5b11628ab"
+    },
+    {
+      "path": "matlab/tools/digitization/digitize_fig4.m",
+      "sha256": "f222ea5c2dc9622e9297c68e3561d4000174f09d063fdfc171834b070f5380f3"
+    },
+    {
+      "path": "models/README.md",
+      "sha256": "6dca86ed6984c30ff6d5f5135ea48927e8e5d135f7d21aee11712e028f6aeb27"
+    },
+    {
+      "path": "models/fixtures/README.md",
+      "sha256": "e248e4a2e1f8b819208140e86156daa8b55458f0b608753c1986cffc51815561"
+    },
+    {
+      "path": "models/fixtures/appendix_a/README.md",
+      "sha256": "38f24ac79e461596c913e1170c9233144a858409221cd4441b13322a0e20ed1a"
+    },
+    {
+      "path": "models/fixtures/appendix_a/model_definition.json",
+      "sha256": "2c779dc6ac6d1a8cc0ca77fd6c6552efd123bd775823d8e8d9b9629a4e1bb164"
+    },
+    {
+      "path": "models/fixtures/appendix_a/parameters.json",
+      "sha256": "111592690ac6d8036d1d2f4c1ae73945d283e4488344da6b3a67b5aa1daf2288"
+    },
+    {
+      "path": "models/fixtures/birth_death/README.md",
+      "sha256": "1bafb7c591215b497dd24e1c21e7015510fb42aaf9d2be097812e88d228dd21f"
+    },
+    {
+      "path": "models/fixtures/birth_death/model_definition.json",
+      "sha256": "159284f70fdea91ff5d1c72f104018e73a7188f3bbb1581bed9b43adbaf75596"
+    },
+    {
+      "path": "models/fixtures/birth_death/parameters.json",
+      "sha256": "9871467f67b7c61b8899364275a80ee2ef38d465c99a7fb7516f0db8754d6c18"
+    },
+    {
+      "path": "models/fixtures/enzyme_qssa/README.md",
+      "sha256": "ec9555c1f848ff2911b9856ab5e9154c5cd08b805640399a8cd7a1f81d2b23be"
+    },
+    {
+      "path": "models/fixtures/enzyme_qssa/model_definition.json",
+      "sha256": "92ddfadb3bd0b09e5cd8f4aabe4d73d404d7897640fc7a62d9471ac6f5d96269"
+    },
+    {
+      "path": "models/fixtures/enzyme_qssa/parameters.json",
+      "sha256": "656c62a7f33a8532437fea5ae090d4ee0a06e98445666d602293127e6a942ad7"
+    },
+    {
+      "path": "models/fixtures/reversible_conversion/README.md",
+      "sha256": "5ad1c4567c0bbecbfeee3c5bab059f1f90124f9761a63354b59a415583e0e08c"
+    },
+    {
+      "path": "models/fixtures/reversible_conversion/model_definition.json",
+      "sha256": "87a5cb84ec40fc9580f5fb609029f3c19c503e93b4597bc80cb93d9350bb5610"
+    },
+    {
+      "path": "models/fixtures/reversible_conversion/parameters.json",
+      "sha256": "86a55492750858f604b0f9d618d7963d97a6d947bf36e2e2c94b8960ddf9b8fa"
+    },
+    {
+      "path": "models/literature_reference/README.md",
+      "sha256": "17040e799695e129a51d9bff38cf1d0ae2719c160c2a6032e6c3cb87def3ab40"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/README.md",
+      "sha256": "e3932be3db0c691e04f0c418a020e9e878edcd15ffc5fbb17ae1203378850c23"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/derive_dimensionless.m",
+      "sha256": "1c29bb423105dfd223a6ff9920a625d4e037e061b80803b8d7e901f115c4adfb"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/derive_dimensionless.py",
+      "sha256": "d43cc19048722fda2255c47d1df799934a6dcc15ca0974772087d29c636d073f"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/dimensionless_result.txt",
+      "sha256": "4e617f6bd5d1ec12cae03dbc4a5149ff0cfbf67fa0dcd49cf2b9c131b45a3ba9"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/dimensionless_result_matlab.txt",
+      "sha256": "db98db7947f3fd9269514d4d514aaedcb7597f93e2191eda23247e71585ce358"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/verify_wolfram_v2.wl",
+      "sha256": "9f0a9ed1c89c25f644d5787b374826e7d52d8d176e269fc6918389ff2facd461"
+    },
+    {
+      "path": "models/literature_reference/model_definition.json",
+      "sha256": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14"
+    },
+    {
+      "path": "models/literature_reference/model_manifest.json",
+      "sha256": "fd5bfee5406fe3eadf087eb1b81b360bd49c0f95044c2a2801cf985f268de9e4"
+    },
+    {
+      "path": "models/literature_reference/parameters.json",
+      "sha256": "5f6473b38a7d2bfdb021aa29c36c818483056bf28ef45f9d6a442530b687699c"
+    },
+    {
+      "path": "models/literature_reference/reactions.csv",
+      "sha256": "07426002ce5482c5cd2b2e10966c74a8eff2f487a687c09859ecead4919fff34"
+    },
+    {
+      "path": "models/literature_reference/species.csv",
+      "sha256": "eb78a23cd77a1a5c2d40b2069e6a519e22babc42f46a7eff4c5c5251dd8bcda1"
+    },
+    {
+      "path": "models/pure_resource_core/README.md",
+      "sha256": "f2b45b50b24aa7e1e00986ce0ffba3b5851e2279adcc1ddf7c37c5e274e8202c"
+    },
+    {
+      "path": "references/R01_Mavelli2015/A_Simple_Protein_Synthesis_Model_PURE.md",
+      "sha256": "33bc72c3bbada5c4c2213cfe938385d21affbaee2dc0dfa16ef58fbd34c9c613"
+    },
+    {
+      "path": "references/R01_Mavelli2015/A_Simple_Protein_Synthesis_Model_PURE.pdf",
+      "sha256": "7082156ccedda9b9d5e4302b6ec7dd76a8f33cdd8974efa252663639c93238a3"
+    },
+    {
+      "path": "references/R01_Mavelli2015/A_Simple_Protein_Synthesis_Model_PURE_normalized.pdf",
+      "sha256": "838d1f5df209ceb9bccdd64b5e5e075cd80e4eb0f982760eecd4cc5a6b4bb7d0"
+    },
+    {
+      "path": "references/R01_Mavelli2015/README.md",
+      "sha256": "bf9e4ff3ad1f7e0100cb76215e7ebe7694be00e5a3b00a201f9cef7c86f78ee7"
+    },
+    {
+      "path": "references/README.md",
+      "sha256": "02fdb5e2dfa08f77ee2cfe7b4db119f2fc132c3efd0ac9c2db3e3a28a455addf"
+    },
+    {
+      "path": "results/README.md",
+      "sha256": "fd9b4faacf66c242d109d4247011c427c03ce045070f7a190d5c774bcffab463"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/DNA_0p34nM/qc.json",
+      "sha256": "757a20b241b382a9ac121e6954574f0f0c12342424e35041295ab795552efff4"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/DNA_0p34nM/rates.csv",
+      "sha256": "53c0d9039d1d0916526a6311fecf4f602c0e8ed839827179329d5e77f17c724c"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/DNA_0p34nM/trajectory.csv",
+      "sha256": "0b196e1d9d4cc3ac2f454847346a733e9230ff26c11c1abefd771ecd95100338"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/DNA_1p7nM/qc.json",
+      "sha256": "8e0c1ce00a4fb876d9b0f500822d121f980ada4d9e88fa36d2d8afed2b79c858"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/DNA_1p7nM/rates.csv",
+      "sha256": "997eeec15a12f13eb6231b51a4b78492bd22b0a9d3245aeb364e12c902a3e669"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/DNA_1p7nM/trajectory.csv",
+      "sha256": "0e8d60bd584c7e7c5928f3867f31760c7653ab484491e2e00d1aa1977a76b6bb"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/DNA_6p8nM/qc.json",
+      "sha256": "10880c1780869e44d4b7bf3317f69b70886640a0eeef12a9ffa874ff13d6c90b"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/DNA_6p8nM/rates.csv",
+      "sha256": "87b56da29bbe1f10663f39690d4ef672c59595af7d7e8bbfdd5b08916a15ff25"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/DNA_6p8nM/trajectory.csv",
+      "sha256": "cedbf55a426c479ac9913095b76e71c896e8e6cb0ea9d2b8e519ff4ba49ad511"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/README.md",
+      "sha256": "442a87d75e311d00c72318b29a72eabe97bb8c98636a711cb93496df5ff90412"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/audit/hardening_20260918/DNA_0p34nM/qc.json",
+      "sha256": "5b7ec18068d045cdbd72df102eeb46cf277d91a5a2ff7cdad1bcda4bb2e23b8e"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/audit/hardening_20260918/DNA_1p7nM/qc.json",
+      "sha256": "ba77ccc0420f4666855774198bf48f69a601e9a9e28d01f2a370d04ab283678d"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/audit/hardening_20260918/DNA_6p8nM/qc.json",
+      "sha256": "f648f016f68b4d2b1f5219bc56c8dcc765f93abe98e20058228e6b596cf6ad22"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/audit/hardening_20260918/benchmark_summary.json",
+      "sha256": "c02d4948e37206478ca825617f630933bb9c58b123870410ca4ce0ea154fe1b4"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/audit/hardening_20260918/manifest.json",
+      "sha256": "9cd9c9db19559f2851d19abd0c0e589bb2f57d8ce6198a7512279bd7a39cb638"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/audit/hardening_20260918/redundancy_evidence.json",
+      "sha256": "e36f4a6afab36038be45cc7ef2a4174d6904a3a0f2902b12be318d5d4929aad5"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/audit/human_d4_20260920/README.md",
+      "sha256": "1434764a4e86ecf23c36fba3898be8f17c2073fe56ab6c0d8e7552395be19845"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/benchmark_summary.json",
+      "sha256": "30dce2fd0a57acc7ebe7d697ca06a3baca88f76957d0fb49147f0cb4883c0122"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/fig4_digitized_comparison.csv",
+      "sha256": "a81052c0a199f010e18430b0945bacf0d10be0adfc236b104bea7df47888dc9b"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/fig4_reproduction.png",
+      "sha256": "8d3f3806461aa65d257179a954d8ca6c2bd22589d3f5d386c385d9ee908f0c6b"
+    },
+    {
+      "path": "results/baselines/b1_mavelli2015/observables_mRNA_protein.png",
+      "sha256": "a1704f1301bf7a0fc1fa63100d87017936cd5065801cc1efb6910e5b14087515"
+    },
+    {
+      "path": "results/environment/toolbox_check.json",
+      "sha256": "0b06766977312608b643b183aec8dfdfed3899acbf91fba30191a61bc84fcd73"
+    },
+    {
+      "path": "results/releases/README.md",
+      "sha256": "282e46b73aba345410f84587f685eda23d00c13ee8ca521630c347056f269b44"
+    },
+    {
+      "path": "results/runs/README.md",
+      "sha256": "f0e0655862f1e2dc1fae618a98269398e3ac0f47853cb72edd67222f38e82cce"
+    },
+    {
+      "path": "schemas/README.md",
+      "sha256": "83bfd97d2be3238d56d120252c8a0141a61a3fc1e320f2d3481664fb2985e3b8"
+    },
+    {
+      "path": "scripts/release_preflight.m",
+      "sha256": "e14b4b7fb738b3a24f15de9a51815eef712846ea9bf43c4dd9bfd33de6118c95"
+    },
+    {
+      "path": "scripts/reproduce_b1.m",
+      "sha256": "dba191e1ff9e59e4183b839ac976f3f741bc1c39ba9b85dc767cdab778b4cef0"
+    },
+    {
+      "path": "scripts/run_all_tests.m",
+      "sha256": "0d0859642bbdd2b2858adfdc37cf906d0edbde7384edbe251b1f1827f36fa22f"
+    },
+    {
+      "path": "scripts/run_fixture_appendix_a.m",
+      "sha256": "2f9448a1820d069585288f6208e6682bc36391fd4b1280a1d25c2aa5439d9853"
+    },
+    {
+      "path": "scripts/run_fixture_birth_death.m",
+      "sha256": "022d6dc20eaacb6181930762de7612ad1d18812a4a71e7420721da873509027b"
+    },
+    {
+      "path": "scripts/run_fixture_enzyme_qssa.m",
+      "sha256": "c55df837b39d8f71e69b56d1b45e0857a0c0a89527b02a8501d438e638ac05ee"
+    },
+    {
+      "path": "scripts/run_fixture_reversible_conversion.m",
+      "sha256": "7fd99dec447b764c112d12d825f03139246924915da1fb0eeb101d4ece73b86e"
+    },
+    {
+      "path": "tasklist.md",
+      "sha256": "341e7c707bbfec4f7a7b71d62aeec1c3ea9c449928bba0ee7e153e507cc3b125"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+91bb364 docs: verify D6 rank and left-nullspace basis
+cb20346 docs: verify D6 rank and left-nullspace basis
+b6f23c6 docs: verify D6 rank and left-nullspace basis
+5288126 docs: verify D6 rank and left-nullspace basis
+dff8282 docs: explain D6 stoichiometric matrix construction

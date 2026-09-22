@@ -1,0 +1,68 @@
+[警告: 名称不存在或不是目录: D:\BaiduSyncdisk\FACHill\slanCM] 
+MATLAB 25.2.0.3177638 (R2025b) Update 5
+HEAD 91bb36488ad159a8becffc2addfadea99a8adbc4
+Preregistered criteria SHA256 db92abcc13edf18523e930e75468d203396cf782d0053f05480a97e72ac16d97
+正在运行 test_exact_conservation_reduction
+EXACT_REDUCTION_INITIAL [1500,0,0,300,1.9,0,0,20000,0,2.2,0,0]
+..EXACT_REDUCTION_STRUCTURE {"shape":[12,6],"rank_S":6,"rank_L":6,"max_abs_LS":2.7755575615628914E-17}
+.EXACT_REDUCTION_DERIVATIVE max_abs=4.163336342344337e-17 points=51
+.EXACT_REDUCTION_CASE {"DNA_uM":0.00034,"output_points":1441,"state_names":["NTP","NXP","nt","A","T","AT","a","CP","C","TLcat","D_nt","D_TLcat"],"rate_names":["V_TX","V_nt_deg","V_RS","V_TL","V_TL_deg","V_EN"],"states":{"scale":[1500,3.7216882155236024,86.6491128580872,300,1.9,1.8997287644488603,34.630899761332223,20000,191.25771227381261,2.2,58.6222601042682,2.0489195253155605],"raw_max_abs_per_quantity":[1.9136018636345398E-7,7.656708045367111E-7,5.8897953181258345E-10,3.0157593755575363E-8,1.7248961980964594E-9,1.7248948935844055E-9,6.0319477057646509E-7,1.8136088328901678E-6,1.8136183257411176E-6,7.0498618054415374E-10,3.1225372186700906E-7,7.04983849075802E-10],"normalized_per_quantity":[1.2757345757563597E-10,2.0573211945670448E-7,6.7972944255898684E-12,1.0052531251858454E-10,9.0784010426129451E-10,9.0796903529795383E-10,1.7417819771751163E-8,9.0680441644508392E-11,9.4825892466216738E-9,3.2044826388370621E-10,5.32653843969203E-9,3.4407590945633905E-10],"max_raw_abs":1.8136183257411176E-6,"max_normalized":2.0573211945670448E-7},"rates":{"scale":[0.010094581140662778,0.006862609738360506,0.70072275342437707,0.003562536800227748,0.0004092,0.67422995219444715],"raw_max_abs_per_quantity":[6.5284583294911158E-14,4.6647147949885337E-14,3.9751613702121436E-9,4.0663080541625263E-12,1.3112743584096226E-13,1.2717503794501539E-7],"normalized_per_quantity":[6.4672899633183567E-12,6.79728991277733E-12,5.672944614379713E-9,1.1414080140596928E-9,3.204482791812372E-10,1.8862264651858459E-7],"max_raw_abs":1.2717503794501539E-7,"max_normalized":1.8862264651858459E-7},"mRNA":{"scale":0.12135730092169075,"raw_max_abs_per_quantity":8.2489917674344326E-13,"normalized_per_quantity":6.7972768879865984E-12,"max_raw_abs":8.2489917674344326E-13,"max_normalized":6.7972768879865984E-12},"protein":{"scale":0.14550798219047154,"raw_max_abs_per_quantity":2.534431803313808E-9,"normalized_per_quantity":1.7417819731677736E-8,"max_raw_abs":2.534431803313808E-9,"max_normalized":1.7417819731677736E-8},"trajectory_pass":true}
+.EXACT_REDUCTION_CASE {"DNA_uM":0.0017,"output_points":1441,"state_names":["NTP","NXP","nt","A","T","AT","a","CP","C","TLcat","D_nt","D_TLcat"],"rate_names":["V_TX","V_nt_deg","V_RS","V_TL","V_TL_deg","V_EN"],"states":{"scale":[1500,3.7222053883104067,344.4871494078144,300,1.9,1.8991056909197115,93.1067448817866,20000,366.643538632025,2.2,233.2844370305597,2.0489195253312382],"raw_max_abs_per_quantity":[1.9219373825762887E-7,7.6902392898148264E-7,1.4703118722536601E-9,1.72350837601698E-7,1.7251503836579474E-9,1.7251486905678348E-9,3.4471037224648171E-6,1.0345229384256527E-5,1.0345147018142598E-5,6.03212590988278E-10,3.2529557839749978E-7,6.032156996127469E-10],"normalized_per_quantity":[1.2812915883841925E-10,2.066043779842466E-7,4.2681182005807135E-12,5.7450279200566E-10,9.0797388613576185E-10,9.08400569181786E-10,3.7023136474607162E-8,5.1726146921282635E-10,2.821581707601102E-8,2.7418754135830813E-10,1.3944161151002406E-9,2.9440673103802268E-10],"max_raw_abs":1.0345229384256527E-5,"max_normalized":2.066043779842466E-7},"rates":{"scale":[0.040227659172491964,0.0272833822330989,0.70072275342437707,0.010407647685020623,0.0004092,0.67431566790258513],"raw_max_abs_per_quantity":[2.6135343889066576E-13,1.1644851749537111E-13,3.9317917636949584E-9,8.1996978651410757E-12,1.1219753695990847E-13,1.2773087754158752E-7],"normalized_per_quantity":[6.4968592323508E-12,4.2681115010037616E-12,5.61105193813188E-9,7.8785313581882922E-10,2.7418752922753782E-10,1.89422971497735E-7],"max_raw_abs":1.2773087754158752E-7,"max_normalized":1.89422971497735E-7},"mRNA":{"scale":0.48247499917060838,"raw_max_abs_per_quantity":2.0592416660747404E-12,"normalized_per_quantity":4.26807952663796E-12,"max_raw_abs":2.0592416660747404E-12,"max_normalized":4.26807952663796E-12},"protein":{"scale":0.3912048104276748,"raw_max_abs_per_quantity":1.448362907385814E-8,"normalized_per_quantity":3.7023136443604254E-8,"max_raw_abs":1.448362907385814E-8,"max_normalized":3.7023136443604254E-8},"trajectory_pass":true}
+.EXACT_REDUCTION_CASE {"DNA_uM":0.0068,"output_points":1441,"state_names":["NTP","NXP","nt","A","T","AT","a","CP","C","TLcat","D_nt","D_TLcat"],"rate_names":["V_TX","V_nt_deg","V_RS","V_TL","V_TL_deg","V_EN"],"states":{"scale":[1500,3.7230739254826082,778.75889297881156,300,1.9,1.8988286792652571,140.11372576225591,20000,507.64169411508493,2.2,528.42319528126632,2.0489195253228538],"raw_max_abs_per_quantity":[1.9424123820499517E-7,7.7716733803967486E-7,2.9200464268797077E-9,2.0335096451162826E-7,1.7917781702792013E-9,1.7917820560597875E-9,4.0671401961844822E-6,1.2205244274809957E-5,1.22052121582783E-5,5.0644682891842763E-10,3.2870319482958266E-7,5.0644421989431976E-10],"normalized_per_quantity":[1.2949415880333012E-10,2.0874346134261451E-7,3.7496155141295528E-12,6.7783654837209423E-10,9.4304114225221118E-10,9.4362491762717068E-10,2.9027421646652806E-8,6.1026221374049785E-10,2.4042966327961464E-8,2.3020310405383072E-10,6.2204535638262859E-10,2.4717623783419116E-10],"max_raw_abs":1.2205244274809957E-5,"max_normalized":2.0874346134261451E-7},"rates":{"scale":[0.091364514052778387,0.061677704323921875,0.70072275342437707,0.016919388452529435,0.0004092,0.67445961383457875],"raw_max_abs_per_quantity":[6.0008942259770492E-13,2.3127333381722792E-13,3.9000681260892289E-9,9.3928762337491811E-12,9.41991032702913E-14,1.2908157964730549E-7],"normalized_per_quantity":[6.5680798373321647E-12,3.7497072297408433E-12,5.5657792001614077E-9,5.5515459439344892E-10,2.3020308717079982E-10,1.9138518748872732E-7],"max_raw_abs":1.2908157964730549E-7,"max_normalized":1.9138518748872732E-7},"mRNA":{"scale":1.090698729662201,"raw_max_abs_per_quantity":4.0897285558116891E-12,"normalized_per_quantity":3.7496408903660442E-12,"max_raw_abs":4.0897285558116891E-12,"max_normalized":3.7496408903660442E-12},"protein":{"scale":0.58871313345485676,"raw_max_abs_per_quantity":1.7088824355582233E-8,"normalized_per_quantity":2.9027421649822297E-8,"max_raw_abs":1.7088824355582233E-8,"max_normalized":2.9027421649822297E-8},"trajectory_pass":true}
+.EXACT_REDUCTION_PHYSICALITY {"DNA_uM":0.00034,"full_min_per_state":[1463.6780767828377,0,0,293.89938836692016,0.00027123555114052177,0,0,19808.742287726178,0,0.15108047468443944,0,0],"reduced_min_per_state":[1463.6780768559261,0,0,293.89938833676257,0.00027123582776433786,0,0,19808.742285912569,0,0.15108047514266468,0,0],"reduced_negative_count_per_state":[0,0,0,0,0,0,0,0,0,0,0,0],"roundoff_allowance_uM":2.3283064365386963E-10,"max_abs_invariant_residual":9.0949470177292824E-13}
+EXACT_REDUCTION_PHYSICALITY {"DNA_uM":0.0017,"full_min_per_state":[1355.5482139425035,0,0,290.97671966679621,0.00089430908028688557,0,0,19633.356461368057,0,0.15108047466876434,0,0],"reduced_min_per_state":[1355.5482140137774,0,0,290.97671949444538,0.00089430908256660224,0,0,19633.356451022828,0,0.15108047505598121,0,0],"reduced_negative_count_per_state":[0,0,0,0,0,0,0,0,0,0,0,0],"roundoff_allowance_uM":2.3283064365386963E-10,"max_abs_invariant_residual":9.0949470177292824E-13}
+EXACT_REDUCTION_PHYSICALITY {"DNA_uM":0.0068,"full_min_per_state":[1173.1930773315132,0,0,288.62700774957722,0.0011713207347400188,0,0,19492.358305884947,0,0.15108047467714386,0,0],"reduced_min_per_state":[1173.1930773974582,0,0,288.62700754622625,0.00117132073741133,0,0,19492.358293679703,0,0.15108047502171615,0,0],"reduced_negative_count_per_state":[0,0,0,0,0,0,0,0,0,0,0,0],"roundoff_allowance_uM":2.3283064365386963E-10,"max_abs_invariant_residual":9.0949470177292824E-13}
+.
+已完成 test_exact_conservation_reduction
+__________
+
+正在运行 test_pure_literature_reference
+.........
+已完成 test_pure_literature_reference
+__________
+
+正在运行 test_codegen_and_provenance
+.generated C:\Users\sean\AppData\Local\Temp\tpf29920b6_6701_421f_b17b_86f1decf6d82.m (consistency check skipped)
+....
+已完成 test_codegen_and_provenance
+__________
+
+                                                Name                                                Passed    Failed    Incomplete    Duration      Details   
+    ____________________________________________________________________________________________    ______    ______    __________    ________    ____________
+
+    {'test_exact_conservation_reduction/test_initial_reconstruction'                           }    true      false       false         1.1242    {1×1 struct}
+    {'test_exact_conservation_reduction/test_constants_follow_initial_state_and_multiplicities'}    true      false       false       0.046564    {1×1 struct}
+    {'test_exact_conservation_reduction/test_structural_regression'                            }    true      false       false       0.094952    {1×1 struct}
+    {'test_exact_conservation_reduction/test_derivative_consistency'                           }    true      false       false       0.019789    {1×1 struct}
+    {'test_exact_conservation_reduction/test_trajectory_DNA_low'                               }    true      false       false       0.051428    {1×1 struct}
+    {'test_exact_conservation_reduction/test_trajectory_DNA_middle'                            }    true      false       false       0.012316    {1×1 struct}
+    {'test_exact_conservation_reduction/test_trajectory_DNA_high'                              }    true      false       false       0.011203    {1×1 struct}
+    {'test_exact_conservation_reduction/test_physicality_and_six_invariants'                   }    true      false       false       0.037868    {1×1 struct}
+
+SUITE test_exact_conservation_reduction passed=8 failed=0 incomplete=0
+                                           Name                                            Passed    Failed    Incomplete    Duration      Details   
+    ___________________________________________________________________________________    ______    ______    __________    ________    ____________
+
+    {'test_pure_literature_reference/test_parameter_lock_tables_1_and_2'              }    true      false       false       0.037157    {1×1 struct}
+    {'test_pure_literature_reference/test_rate_law_spot_values'                       }    true      false       false       0.097124    {1×1 struct}
+    {'test_pure_literature_reference/test_initial_rate_sanity'                        }    true      false       false       0.051055    {1×1 struct}
+    {'test_pure_literature_reference/test_balance_derivative_identities_random_states'}    true      false       false       0.012421    {1×1 struct}
+    {'test_pure_literature_reference/test_finite_difference_short_step'               }    true      false       false       0.062043    {1×1 struct}
+    {'test_pure_literature_reference/test_observable_mapping'                         }    true      false       false       0.036291    {1×1 struct}
+    {'test_pure_literature_reference/test_ktl_rna_derived_value'                      }    true      false       false       0.015668    {1×1 struct}
+    {'test_pure_literature_reference/test_short_run_mass_balance_and_nonnegativity'   }    true      false       false       0.042916    {1×1 struct}
+    {'test_pure_literature_reference/test_repeatability_deterministic'                }    true      false       false        0.02272    {1×1 struct}
+
+SUITE test_pure_literature_reference passed=9 failed=0 incomplete=0
+                                      Name                                      Passed    Failed    Incomplete    Duration      Details   
+    ________________________________________________________________________    ______    ______    __________    ________    ____________
+
+    {'test_codegen_and_provenance/test_sha256_known_vector'                }    true      false       false       0.052286    {1×1 struct}
+    {'test_codegen_and_provenance/test_generator_output_in_sync'           }    true      false       false       0.040275    {1×1 struct}
+    {'test_codegen_and_provenance/test_generated_matches_baseline_snapshot'}    true      false       false       0.034576    {1×1 struct}
+    {'test_codegen_and_provenance/test_stoichiometry_matches_code'         }    true      false       false       0.013943    {1×1 struct}
+    {'test_codegen_and_provenance/test_git_state_live'                     }    true      false       false        0.27403    {1×1 struct}
+
+SUITE test_codegen_and_provenance passed=5 failed=0 incomplete=0
+EXACT_REDUCTION_TEST_SUMMARY {"matlab_version":"25.2.0.3177638 (R2025b) Update 5","allPassed":true,"suites":[{"name":"test_exact_conservation_reduction","passed":8,"failed":0,"incomplete":0,"duration_s":1.3983255000000003},{"name":"test_pure_literature_reference","passed":9,"failed":0,"incomplete":0,"duration_s":0.37739500000000009},{"name":"test_codegen_and_provenance","passed":5,"failed":0,"incomplete":0,"duration_s":0.41511320000000007}]}
+allPassed = 1

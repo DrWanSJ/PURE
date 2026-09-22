@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "registered_before_first_validation_run": true,
+  "scope": "D6 exact 12-state to 6-state conservation reduction only",
+  "DNA_uM": [0.00034, 0.0017, 0.0068],
+  "solver": "ode15s",
+  "Tfinal_s": 14400,
+  "OutputDt_s": 10,
+  "RelTol": 1e-10,
+  "AbsTol": 1e-12,
+  "scale": "max(max(abs(reference(:,j))), 1e-12)",
+  "normalized_error": "max(abs(reduced(:,j)-reference(:,j))) / scale_j",
+  "max_normalized_state_error": 1e-6,
+  "max_normalized_rate_error": 1e-6,
+  "max_normalized_mRNA_error": 1e-6,
+  "max_normalized_protein_error": 1e-6,
+  "derivative_absolute_tolerance": 1e-12,
+  "structural_absolute_tolerance": 1e-14,
+  "physicality_roundoff_allowance": "64*eps(max([1; abs(initial_full_state); abs(invariant_constants)])) uM; all minima and negative counts reported; no repair",
+  "prohibited": ["parameter fitting", "threshold relaxation", "clipping", "canonical source modification"],
+  "D6_complete": false
+}

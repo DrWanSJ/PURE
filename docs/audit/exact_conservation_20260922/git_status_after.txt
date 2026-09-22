@@ -1,0 +1,37 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/audit/exact_conservation_20260922/README.md
+	docs/audit/exact_conservation_20260922/acceptance_criteria.json
+	docs/audit/exact_conservation_20260922/artifact_manifest.json
+	docs/audit/exact_conservation_20260922/finalize_evidence.py
+	docs/audit/exact_conservation_20260922/git_log_before.txt
+	docs/audit/exact_conservation_20260922/git_status_after.txt
+	docs/audit/exact_conservation_20260922/git_status_before.txt
+	docs/audit/exact_conservation_20260922/integrity_after.json
+	docs/audit/exact_conservation_20260922/matlab_checkcode_exitcode.txt
+	docs/audit/exact_conservation_20260922/matlab_checkcode_stderr.txt
+	docs/audit/exact_conservation_20260922/matlab_checkcode_stdout.txt
+	docs/audit/exact_conservation_20260922/matlab_checkcode_stdout.utf8.txt
+	docs/audit/exact_conservation_20260922/matlab_exitcode.txt
+	docs/audit/exact_conservation_20260922/matlab_stderr.txt
+	docs/audit/exact_conservation_20260922/matlab_stdout.txt
+	docs/audit/exact_conservation_20260922/matlab_stdout.utf8.txt
+	docs/audit/exact_conservation_20260922/preregistration.json
+	docs/audit/exact_conservation_20260922/source_inventory_before.json
+	docs/audit/exact_conservation_20260922/validation_results.json
+	docs/project/GRAPH_REPORT.md
+	docs/project/graph.html
+	docs/project/graph.json
+	docs/theory/conservation_report.md
+	matlab/src/theory/pure_exact_conservation_constants.m
+	matlab/src/theory/reconstruct_pure_exact_reduced_state.m
+	matlab/src/theory/rhs_pure_exact_reduced.m
+	matlab/src/theory/simulate_pure_exact_reduced.m
+	matlab/tests/test_exact_conservation_reduction.m
+	scripts/build_project_graph.py
+	scripts/run_exact_conservation_validation.m
+
+nothing added to commit but untracked files present (use "git add" to track)

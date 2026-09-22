@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-09-22T23:46:09.4741031+08:00",
+  "criteria_sha256": "db92abcc13edf18523e930e75468d203396cf782d0053f05480a97e72ac16d97",
+  "implementation": [
+    {
+      "path": "C:\\Users\\sean\\Desktop\\PURE\\matlab\\src\\theory\\pure_exact_conservation_constants.m",
+      "sha256": "4f1f611674998bd7bc4c07ac7d1d88fbf6b18d97e3162e3a5e1916b24103c21d"
+    },
+    {
+      "path": "C:\\Users\\sean\\Desktop\\PURE\\matlab\\src\\theory\\reconstruct_pure_exact_reduced_state.m",
+      "sha256": "5e4e3ae882dfcc2039cbf2e7aca4b6fa97dff4aea4843b286ab9e49ed8b4dc57"
+    },
+    {
+      "path": "C:\\Users\\sean\\Desktop\\PURE\\matlab\\src\\theory\\rhs_pure_exact_reduced.m",
+      "sha256": "2bb0e336982ac9bd058e99fe09d81b84604ce7e02bb9627526043cce11b3809f"
+    },
+    {
+      "path": "C:\\Users\\sean\\Desktop\\PURE\\matlab\\src\\theory\\simulate_pure_exact_reduced.m",
+      "sha256": "aca812c965aeb95acd6747db17135f9440b8a000855da7010256bea5673a848f"
+    },
+    {
+      "path": "C:\\Users\\sean\\Desktop\\PURE\\matlab\\tests\\test_exact_conservation_reduction.m",
+      "sha256": "9fbcad5fa1fccc7e0b07c2dde33e65964dbe091b719fde74f4f3988a3bab81ea"
+    },
+    {
+      "path": "C:\\Users\\sean\\Desktop\\PURE\\scripts\\run_exact_conservation_validation.m",
+      "sha256": "037fe51c87153769caa0678677a52d0aea85f9040cd691950500c637a588c5fa"
+    }
+  ]
+}
