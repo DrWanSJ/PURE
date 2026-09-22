@@ -112,8 +112,7 @@ satisfy the simulation-blind independent protocol. In the same D4 session the us
 `git_commit = unavailable_git_not_found` and `git_dirty = unknown`, so it is not
 commit-bound and is not committed under `results/runs/`.
 
-The blind human protocol (`docs/audit/manual_fig4_audit_protocol.md`) remains the sanctioned
-independent raster check and is **`pending_human_audit`**.
+The blind human protocol (`docs/audit/manual_fig4_audit_protocol.md`) remains available as the sanctioned stronger independent raster check. On 2026-09-22 the human reviewer explicitly decided that it is **not required for the B1 literature-reproduction scope**. It was therefore not performed, and no independent raster/experimental-validation claim is made.
 
 ### 6. Is the observable mapping correct?
 
@@ -177,8 +176,14 @@ yield at 6.8 nM; energy split within 2 pp; φ milestones within 2 %). The Fig. 4
 digitization match is recorded separately as **`non_independent_assignment`**. A 48-point
 human visual review was completed on 2026-09-20 and is recorded as
 `fig4_human_visual_review = completed_nonblind`; it supports the D4 review but does not
-replace the blind independent protocol. Therefore
-`fig4_independent_human_audit = pending_human_audit`; `experimental_data_validation = false`.
+replace a blind independent protocol. The 2026-09-22 H07 decision records that such a blind audit is not required for B1 literature reproduction; `experimental_data_validation = false` remains unchanged.
+
+## Human B1 audit status (2026-09-22)
+
+- H01-H06 in `docs/audit/human_b1_audit.md`: **Y**.
+- User-run B1 MATLAB test suites: **PASS** (`allPassed = 1`).
+- H07: strict blind Fig. 4 audit **not required** for the literature-reproduction scope.
+- Final B1 status: **`human_audited = Y`** for source-to-repository literature reproduction; this is not independent experimental validation.
 
 ## Test suite result (final code state)
 
