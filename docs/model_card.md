@@ -103,6 +103,50 @@ The paper uses average concentrations for pooled molecular classes:
 
 NTP, A, T, and AT therefore require multiplicity factors when constructing mass balances and state equations.
 
+## 8.1 Stoichiometric representation used for D6
+
+For later conservation analysis, distinguish two matrices.
+
+The pre-divisor matrix records one-reaction-event equivalents directly from the coarse-grained reaction equations. The actual ODE state variables NTP, A, T, and AT are average concentrations over 4, 20, 46, and 46 molecular classes, respectively.
+
+Define
+
+$$
+D=
+\operatorname{diag}
+(4,1,1,20,46,46,1,1,1,1,1,1).
+$$
+
+Then the 12-state effective stoichiometric matrix used by the ODE representation is
+
+$$
+\boxed{
+S_{eff}=D^{-1}S_{prediv},
+}
+$$
+
+with state order
+
+$$
+NTP, NXP, nt, A, T, AT, a, CP, C, TLcat, D_{nt}, D_{TLcat},
+$$
+
+and rate-column order
+
+$$
+V_{TX}, V_{nt,deg}, V_{RS}, V_{TL}, V_{TL,deg}, V_{EN}.
+$$
+
+Thus
+
+$$
+\dot{\mathbf x}=S_{eff}\mathbf V.
+$$
+
+The divisor step is required because, for example, one RS event consumes one amino-acid equivalent but changes the average amino-acid state by only \(-1/20\), and one tRNA equivalent but changes the average T state by only \(-1/46\).
+
+PPi hydrolysis is not a column of this matrix because PPi/Pi are not B1 dynamic states and the process is not integrated as a seventh B1 kinetic rate.
+
 ## 9. Reactions and rate laws
 
 ### R_TX — transcription
