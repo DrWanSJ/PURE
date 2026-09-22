@@ -1,6 +1,6 @@
 # audit_status.md — B1 benchmark audit hardening
 
-Recorded: 2026-09-18. Last updated: 2026-09-20 (human D4 review).
+Recorded: 2026-09-18. Last updated: 2026-09-22 (human B1 source audit completed).
 
 ## Baseline freeze
 
@@ -11,7 +11,7 @@ Recorded: 2026-09-18. Last updated: 2026-09-20 (human D4 review).
 | Tag pushed? | **No** (deferred to the user). Command: `git push origin ai-b1-baseline` |
 | Audit branch | `audit/b1-hardening` (work happens here; `main` untouched, no merge) |
 | Repository history | The baseline has **exactly one root commit** (`ee3dedc`); the whole B1 baseline was produced in a single AI working session. There is no per-step history behind the baseline artifacts. |
-| Human audit of the baseline | **Partial human review completed 2026-09-20.** The user manually inspected the Fig. 4 calculated continuous curves at 48 points and reran the benchmark locally. The Fig. 4 reading was **not blind** because simulation output had already been viewed, so it does not satisfy the independent blind-audit protocol. The original model/tests/automated digitization remain AI-generated unless separately checked. |
+| Human audit of the baseline | **Completed for B1 literature-reproduction scope on 2026-09-22.** H01-H06 in `docs/audit/human_b1_audit.md` were confirmed `Y`, and both B1 MATLAB test suites passed. H07 records the explicit decision that a strict blind Fig. 4 audit is **not required** for B1 literature reproduction. The earlier 48-point Fig. 4 review remains non-blind and is not promoted to independent experimental validation. |
 
 ## Provenance honesty statement
 
@@ -25,6 +25,14 @@ Recorded: 2026-09-18. Last updated: 2026-09-20 (human D4 review).
   a git commit read live from `git rev-parse HEAD`, an actual dirty-tree check, and
   SHA-256 hashes of the model definition, parameter file, and run inputs.
 - The hardening pass itself does not rebuild provenance that never existed.
+
+## Human B1 source audit (2026-09-22)
+
+- `docs/audit/human_b1_audit.md`: H01-H06 = **Y**.
+- Both B1 MATLAB test suites passed in the user's local run (`allPassed = 1`).
+- Final B1 audit decision: **`human_audited = Y`** for literature-reproduction scope.
+- H07 decision: strict simulation-blind Fig. 4 auditing is **not required** for B1 reproduction.
+- This decision does not create an independent experimental-validation claim; `experimental_data_validation` remains false.
 
 ## Human D4 review (2026-09-20)
 
@@ -42,9 +50,7 @@ Recorded: 2026-09-18. Last updated: 2026-09-20 (human D4 review).
 - The local rerun was **not commit-bound** because Git metadata was unavailable
   (`git_commit = unavailable_git_not_found`, `git_dirty = unknown`). Per repository policy, ordinary
   `results/runs/` outputs are not committed.
-- The manual readings support the same curve ordering, shape, and magnitude as the reproduced trajectories,
-  but `fig4_independent_human_audit` remains `pending_human_audit` until a genuinely simulation-blind
-  reading with declared uncertainty is performed.
+- The manual readings support the same curve ordering, shape, and magnitude as the reproduced trajectories. A strict simulation-blind reading was not performed. On 2026-09-22 the human reviewer explicitly decided that this stronger evidence stream is not required for B1 literature reproduction; it would only be needed for a stronger independent Fig. 4 raster-validation claim.
 
 ## Validation status layers (see `docs/project/evidence_levels.json`)
 
@@ -58,12 +64,12 @@ Recorded: 2026-09-18. Last updated: 2026-09-20 (human D4 review).
 | `fig4_simulation_assisted_digitization_match` | true, but **`non_independent_assignment`** — the digitized "calculated" cluster was selected by nearest-to-simulation tracking, so the comparison is NOT an independent check and must not be used as reproduction acceptance evidence by itself |
 | `fig4_human_visual_review` | **`completed_nonblind`** — 48 manual readings recorded in `data/manual_audit/fig4_human_digitization_sean.csv`; useful as D4 human review, but not independent because the auditor had previously seen the simulation |
 | `d4_manual_benchmark_rerun` | **`passed_all_qc`** — local run `d4_human_check`; Git provenance unavailable in the local downloaded directory, so the run is not commit-bound |
-| `fig4_independent_human_audit` | **`pending_human_audit`** (blind protocol: `docs/audit/manual_fig4_audit_protocol.md`; template: `data/manual_audit/fig4_human_digitization_template.csv`) |
+| `b1_human_source_audit` | **completed** — H01-H06 = Y; B1 marked `human_audited` for literature-reproduction scope |
+| `fig4_independent_human_audit` | **not performed; not required for B1 reproduction** — the machine-readable evidence field remains `pending_human_audit` only to guard against falsely claiming independent raster validation; blind protocol remains available if that stronger claim is later desired |
 | `experimental_data_validation` | **false** — no machine-readable Stögbauer 2012 data exist in the repo; the experimental dotted curves were not digitized |
 | B2 predictive validation | not started (out of B1 scope) |
 
-`independent_fig4_validation_status = "pending_human_audit"` until the blind human CSV is
-filled and reviewed.
+The independent Fig. 4 raster-validation stream is intentionally **not completed** for B1. The 2026-09-22 H07 decision records that it is not required for the current literature-reproduction claim; no pass is claimed for that stronger evidence layer.
 
 ## CI status
 
@@ -85,8 +91,10 @@ start these tasks.
 
 ## Items requiring human review (summary)
 
-1. Scientific review of the model transcription against the paper (AI audit is not human audit).
-2. Strict blind Fig. 4 human digitization remains pending if independent raster evidence is required; the 2026-09-20 D4 review is recorded but was non-blind.
-3. Licensing decision for the tracked publisher PDFs (`docs/project/licensing_review.md`).
-4. Mutation tests M1–M5 by a human on a scratch branch (`docs/audit/mutation_test_protocol.md`).
-5. CI enablement decision (license/runner).
+The B1 source-to-repository scientific audit is complete for the current literature-reproduction scope, and the blind Fig. 4 decision has been made. Remaining human/governance items are:
+
+1. Licensing decision for the tracked publisher PDFs (`docs/project/licensing_review.md`).
+2. Mutation tests M1–M5 by a human on a scratch branch if independent software-hardening evidence is desired (`docs/audit/mutation_test_protocol.md`).
+3. CI enablement decision (license/runner).
+
+A strict blind Fig. 4 audit is optional future evidence, not an unfinished B1 reproduction requirement.
