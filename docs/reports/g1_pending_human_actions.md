@@ -10,7 +10,7 @@ This file separates work that still requires explicit human judgment from work t
 
 | Priority | Human action | Why human review is needed | Current evidence | Blocks entering G2? |
 | --- | --- | --- | --- | :---: |
-| High | Complete `docs/audit/human_b1_audit.md` line by line | Repository tests and AI-assisted/source audits do not replace an independent scientific reading | automated/equation-level checks pass; checklist not completed | no |
+| High | Complete the compact human-only checks in `docs/audit/human_b1_audit.md` | Human review is reserved for source semantics, inferred assumptions, evidence wording and the blind-audit decision; implementation consistency is machine-checked | automated/equation-level checks pass; compact human checklist remains | no |
 | High | Review the B1 QC definitions in `benchmark_v0.md` / `qc_v0.json` | The machine results pass, but the user should understand what each metric proves and does not prove | nonnegativity, conservation, repeatability and solver convergence pass | no |
 | Medium | Decide whether a strict **blind** Fig. 4 human audit is required | The existing 48-point review was non-blind and therefore is not independent evidence | non-blind human review complete | no |
 | Medium | Review licensing/distribution decision for tracked publisher PDFs | This is a project/repository governance decision, not a numerical task | `docs/project/licensing_review.md` exists | no |
@@ -18,7 +18,7 @@ This file separates work that still requires explicit human judgment from work t
 
 ### Notes
 
-- Do **not** redo nonnegativity or conservation merely because the user has not personally inspected them yet. Machine QC already reports them as passed. The human task is to understand/audit the definitions and evidence chain.
+- Do **not** redo parameter, rate-law, ODE, stoichiometry, observable-mapping, nonnegativity or conservation checks by manual code inspection when the B1 MATLAB test suites pass. Human review is limited to source semantics, inferred assumptions, evidence wording and the blind Fig. 4 decision.
 - Do **not** describe the current Fig. 4 review as independent blind validation.
 - Do **not** treat absence of machine-readable experimental data as a reason to invalidate the B1 literature reproduction; it limits the experimental/B2 claim.
 
