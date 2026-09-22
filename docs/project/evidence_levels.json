@@ -33,10 +33,18 @@
     "d4_timing_provenance": "unbound_git_metadata_unavailable",
     "d4_source_archive_sha256": "b6477ac3498c5b64b0cf6e2e219fdb2858f6e3c40890a51b3921b5c7ded1a490",
     "provenance_status_hardcoding_bug": "fixed_2026-09-20",
-    "provenance_status_hardcoding_bug_note": "The pre-fix benchmark runner hard-coded provenance_status=provenance_bound even when no Git work tree was available. The d4_timing_check run is interpreted as unbound; future outputs derive the label from live Git state."
+    "provenance_status_hardcoding_bug_note": "The pre-fix benchmark runner hard-coded provenance_status=provenance_bound even when no Git work tree was available. The d4_timing_check run is interpreted as unbound; future outputs derive the label from live Git state.",
+    "b1_human_source_audit": "completed",
+    "b1_human_source_audit_date": "2026-09-22",
+    "b1_human_source_audit_evidence": "docs/audit/human_b1_audit.md",
+    "b1_human_source_audit_result": "H01-H06 = Y; MATLAB test suites passed; H07 decision = strict blind Fig.4 audit not required for B1 literature reproduction",
+    "fig4_independent_human_audit_required_for_b1_reproduction": false,
+    "fig4_independent_human_audit_scope_decision": "not_required_for_b1_reproduction",
+    "fig4_independent_human_audit_decision_date": "2026-09-22",
+    "fig4_independent_human_audit_note": "The strict simulation-blind Fig.4 audit was not performed. Human reviewer explicitly decided on 2026-09-22 that this stronger evidence stream is not required for B1 literature reproduction. The existing pending_human_audit value therefore denotes an optional future independent-raster claim, not an open B1 reproduction requirement."
   },
   "guard": {
-    "policy": "test_release_preflight.m asserts the pending/false values above; silently flipping them in this file must fail the preflight guard",
+    "policy": "test_release_preflight.m keeps independent Fig.4 / experimental / B2 evidence claims guarded. The 2026-09-22 human decision that blind Fig.4 auditing is not required for B1 reproduction is recorded separately and does not convert that evidence stream into a pass.",
     "locked_values": {
       "fig4_independent_human_audit": "pending_human_audit",
       "experimental_data_validation": false,
@@ -44,6 +52,6 @@
       "b2_predictive_validation": false
     }
   },
-  "last_updated": "2026-09-20",
-  "last_updated_by": "human D4 timing/QC evidence from user-supplied run archive"
+  "last_updated": "2026-09-22",
+  "last_updated_by": "human B1 source-audit result and scope decision reported by user"
 }
