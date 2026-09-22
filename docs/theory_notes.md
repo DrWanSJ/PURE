@@ -1,30 +1,48 @@
-# 系统反应方程式
+# PURE Literature Reference 理论笔记
 
-$$\text{NTP} \xrightarrow{\text{TXcat},\text{DNA}} \text{nt} + \text{PP}_i $$
+> 范围：Mavelli et al. (2015) 的 `PURE_literature_reference`，以及仓库为守恒审计添加的无反馈 accounting integrators。本文只整理既有 B1 方程、守恒与无量纲化，不引入新的机制。
 
-$$\text{PP}_i \xrightarrow{\text{PPase}} 2\text{P}_i $$
+## 1. 反应网络
 
-$$\text{nt} \rightarrow \text{D}_\text{nt} $$
+$$
+\text{NTP} \xrightarrow{\text{TXcat},\text{DNA}} \text{nt} + \text{PP}_i
+$$
 
-$$\text{A} + \text{T} + \text{NTP} \xrightarrow{\text{RScat}} \text{AT} + \text{NXP} $$
+$$
+\text{PP}_i \xrightarrow{\text{PPase}} 2\text{P}_i
+$$
 
-$$\text{AT} + 2 \text{NTP} \xrightarrow{\text{TLcat, nt}} \text{a} + \text{T} + 2 \text{NXP} $$
+$$
+\text{nt} \rightarrow \text{D}_\text{nt}
+$$
 
-$$\text{TLcat} \rightarrow \text{D}_\text{TLcat} $$
+$$
+\text{A} + \text{T} + \text{NTP} \xrightarrow{\text{RScat}} \text{AT} + \text{NXP}
+$$
 
-$$\text{CP} + \text{NXP} \xrightarrow{\text{ENcat}} \text{C} + \text{NTP} $$
+$$
+\text{AT} + 2 \text{NTP} \xrightarrow{\text{TLcat, nt}} \text{a} + \text{T} + 2 \text{NXP}
+$$
 
-注意，这里 reaction (1) 的 NTP 与 (4), (5), (7) 的 NTP 需要区别对待。
+$$
+\text{TLcat} \rightarrow \text{D}_\text{TLcat}
+$$
 
-TX：NTP 是聚合底物；
+$$
+\text{CP} + \text{NXP} \xrightarrow{\text{ENcat}} \text{C} + \text{NTP}
+$$
 
-RS：ATP 被消耗，粗粒化进入 NXP pool，实际主要对应 ATP $\to$ AMP；
+注意：同一个 coarse-grained `NTP` pool 在不同模块中的物理角色不同，不能把各模块的 NTP 消耗解释成同一种微观化学步骤。
 
-TL：GTP 被消耗，粗粒化进入 NXP pool，实际主要对应 GTP $\to$ GDP；
+- **TX**：NTP 是聚合底物。
 
-EN：利用 CP，把 lumped NXP pool 重新转化为 lumped NTP pool。
+- **RS**：ATP 被消耗，粗粒化进入 NXP pool，实际主要对应 ATP $\to$ AMP。
 
-## 速率参数
+- **TL**：GTP 被消耗，粗粒化进入 NXP pool，实际主要对应 GTP $\to$ GDP。
+
+- **EN**：利用 CP，把 lumped NXP pool 重新转化为 lumped NTP pool。
+
+## 2. 速率律
 
 $$
 \begin{align}
@@ -37,7 +55,7 @@ V_{TL,deg} &=k_{TL,deg}[TLcat]
 \end{align}
 $$
 
-## ODEs
+## 3. 有量纲 ODE
 
 以下 `D_nt` 和 `D_TLcat` 是仓库添加的无反馈 accounting integrators，用于显式闭合守恒账本；它们不是原文中额外的独立物理动力学状态，也不进入任何 rate law。
 
@@ -56,19 +74,19 @@ $$
 \end{align}
 $$
 
-## 物质守恒
+## 4. 物质守恒
 
 $$
 \begin{align}
-B_{NTP}&=4[NTP]+[nt]+[NXP]+D_{nt}=constant \\
-B_{AA}&=20[A]+[a]+46[AT]=constant \\
-B_{tRNA}&=46[T]+46[AT]=constant \\
-B_{CP}&=[CP]+[C]=constant \\
-B_{TLcat}&=[TLcat]+D_{TLcat}=constant
+B_{NTP}&=4[NTP]+[nt]+[NXP]+D_{nt}=\mathrm{const} \\
+B_{AA}&=20[A]+[a]+46[AT]=\mathrm{const} \\
+B_{tRNA}&=46[T]+46[AT]=\mathrm{const} \\
+B_{CP}&=[CP]+[C]=\mathrm{const} \\
+B_{TLcat}&=[TLcat]+D_{TLcat}=\mathrm{const}
 \end{align}
 $$
 
-## 无量纲化
+## 5. 无量纲化
 
 $$
 \begin{aligned}
@@ -98,7 +116,7 @@ t^* = \frac{1}{k_{\text{nt,deg}}},
 $$
 
 
-### nt 方程的无量纲化
+### 5.1 `nt` 方程示例
 
 由
 
@@ -212,7 +230,7 @@ $$
 
 ---
 
-## 完整 12 状态无量纲模型（审计定稿）
+## 6. 完整 12 状态无量纲模型（审计定稿）
 
 本节是在上面的 \(nt\) 单方程手推基础上，对全部 12 个状态统一无量纲化后的结果。这里保留前面的手推记号作为推导记录；完整系统统一使用 \(\mu\)、\(\kappa\)、\(\rho_A,\rho_T,\rho_C\) 与 \(\theta_{DNA}\)。
 
@@ -224,7 +242,7 @@ $$
 V_* = k_{nt,deg}n_{NTP}c_{NTP,0}.
 $$
 
-### 无量纲速率参数
+### 6.1 无量纲速率参数
 
 $$
 \begin{aligned}
@@ -272,7 +290,7 @@ $$
 \mu_{TX}\theta_{DNA}.
 $$
 
-### 无量纲饱和常数
+### 6.2 无量纲饱和常数
 
 $$
 \begin{aligned}
@@ -326,7 +344,7 @@ $$
 
 这里 \(2.3\) 只对应 T / AT multiplicity bookkeeping，不意味着 \(\rho_A=\rho_T\)。
 
-### 尺度耦合比
+### 6.3 尺度耦合比
 
 $$
 \rho_A
@@ -347,7 +365,7 @@ $$
 
 \(\rho_A,\rho_T,\rho_C\) 只反映不同 coarse-grained pool reference scales 之间的换算关系。特别地，\(\rho_A\) 与 \(\rho_T\) 是独立参数，不要求相等。
 
-### 无量纲反应速率
+### 6.4 无量纲反应速率
 
 $$
 \widetilde V_{TX}
@@ -384,19 +402,19 @@ $$
 
 这些 \(\widetilde V\) 均以 \(V_*\) 归一。
 
-### 最终无量纲 ODE：显式 \(dy_i/d\tau=f_i(\mathbf y)\) 形式
+### 6.5 最终无量纲 ODE：显式 $dy_i/d\tau=f_i(\mathbf y)$
 
 记
 
-$
+$$
 \mathbf y=(y_1,y_2,\ldots,y_{12})^T,
 \qquad
 \tau=k_{nt,deg}t.
-$
+$$
 
 将上面的 \(\widetilde V_{TX},\widetilde V_{RS},\widetilde V_{TL},\widetilde V_{EN}\) 全部代回，可得
 
-$
+$$
 \boxed{
 \begin{aligned}
 \frac{dy_1}{d\tau}
@@ -419,9 +437,9 @@ $
 \frac{y_2}{\kappa_{EN,NXP}+y_2}.
 \end{aligned}
 }
-$
+$$
 
-$
+$$
 \boxed{
 \begin{aligned}
 \frac{dy_2}{d\tau}
@@ -441,9 +459,9 @@ $
 \frac{y_2}{\kappa_{EN,NXP}+y_2}.
 \end{aligned}
 }
-$
+$$
 
-$
+$$
 \boxed{
 \frac{dy_3}{d\tau}
 =
@@ -451,9 +469,9 @@ $
 \frac{y_1}{\kappa_{TX,NTP}+y_1}
 -y_3
 }
-$
+$$
 
-$
+$$
 \boxed{
 \frac{dy_4}{d\tau}
 =
@@ -462,9 +480,9 @@ $
 \frac{y_5}{\kappa_{RS,T}+y_5}
 \frac{y_1}{\kappa_{RS,NTP}+y_1}
 }
-$
+$$
 
-$
+$$
 \boxed{
 \begin{aligned}
 \frac{dy_5}{d\tau}
@@ -484,9 +502,9 @@ $
 \Bigg].
 \end{aligned}
 }
-$
+$$
 
-$
+$$
 \boxed{
 \begin{aligned}
 \frac{dy_6}{d\tau}
@@ -506,9 +524,9 @@ $
 \Bigg].
 \end{aligned}
 }
-$
+$$
 
-$
+$$
 \boxed{
 \frac{dy_7}{d\tau}
 =
@@ -517,9 +535,9 @@ $
 \frac{y_6}{\kappa_{TL,AT}+y_6}
 \frac{y_1}{\kappa_{TL,NTP}+y_1}
 }
-$
+$$
 
-$
+$$
 \boxed{
 \frac{dy_8}{d\tau}
 =
@@ -527,9 +545,9 @@ $
 \frac{y_8}{\kappa_{EN,CP}+y_8}
 \frac{y_2}{\kappa_{EN,NXP}+y_2}
 }
-$
+$$
 
-$
+$$
 \boxed{
 \frac{dy_9}{d\tau}
 =
@@ -537,47 +555,47 @@ $
 \frac{y_8}{\kappa_{EN,CP}+y_8}
 \frac{y_2}{\kappa_{EN,NXP}+y_2}
 }
-$
+$$
 
-$
+$$
 \boxed{
 \frac{dy_{10}}{d\tau}
 =
 -\mu_{TL,deg}y_{10}
 }
-$
+$$
 
-$
+$$
 \boxed{
 \frac{dy_{11}}{d\tau}
 =
 y_3
 }
-$
+$$
 
-$
+$$
 \boxed{
 \frac{dy_{12}}{d\tau}
 =
 \mu_{TL,deg}y_{10}
 }
-$
+$$
 
 因此可以统一写成
 
-$
+$$
 \boxed{
 \frac{d\mathbf y}{d\tau}
 =
 \mathbf f(\mathbf y;\boldsymbol\pi)
 }
-$
+$$
 
 其中 \(\boldsymbol\pi\) 表示全部无量纲参数组合。该显式形式与前面的 compact \(\widetilde V\) 写法完全等价，但更适合后续直接计算 Jacobian、rank、局部线性化与独立坐标降维。
 
 这里 NTP / NXP 方程的不对称是原模型定义导致的：\([NTP]\) 是 \(n_{NTP}=4\) 种 NTP 的平均浓度，而 \([NXP]\)、\([nt]\)、\(D_{nt}\) 使用 overall pool concentration。
 
-### 无量纲守恒量
+### 6.6 无量纲守恒量
 
 由有量纲守恒律直接得到
 
@@ -628,12 +646,12 @@ $$
 注意 AA 守恒是
 
 $$
-n_A[A]+[a]+n_T[AT]=constant,
+n_A[A]+[a]+n_T[AT]=\mathrm{const},
 $$
 
-而不是 \([A]+[AT]=constant\)。因此 A 方程除以 \(n_A\)，T / AT 方程除以 \(n_T\) 是正确的 multiplicity bookkeeping。
+而不是 \([A]+[AT]=\mathrm{const}\)。因此 A 方程除以 \(n_A\)，T / AT 方程除以 \(n_T\) 是正确的 multiplicity bookkeeping。
 
-### 验证状态
+## 7. 验证状态
 
 当前完整无量纲模型已经完成独立审计：
 
@@ -648,7 +666,7 @@ $$
 
 审计证据冻结在：
 
-\`docs/audit/dimensionless_20260921/REPORT.md\`
+`docs/audit/dimensionless_20260921/REPORT.md`
 
 因此，当前这套无量纲方程可以作为后续 conservation reduction、timescale analysis、QSSA / fast-slow analysis 的 validated baseline。
 
