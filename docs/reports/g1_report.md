@@ -151,6 +151,7 @@ Base MATLAB remains sufficient for the B1 benchmark itself; the additional toolb
 | Benchmark registry / source lock | complete | identity, source files, parameters, units, conditions | documented |
 | Species/reaction ledgers and model card | complete | explicit model semantics and bookkeeping | documented |
 | Table 1 / Table 2 transcription | checked against source | repository values match literature source | documented / audited |
+| Human B1 source-to-repo audit | **complete (H01-H06 = Y)** | model semantics, parameter transcription, inferred assumptions, omitted mechanisms, Fig. 4 source wording and paper-text anchors | independent human source review |
 | Equation-level repository tests | pass | internal equation/rate-law consistency | numerical/software |
 | B0 fixtures | pass locally | math/software procedures; **not** PURE validation | numerical/software |
 | Fig. 4 three-condition execution | complete | literature calculated-curve reproduction | numerically supported |
@@ -161,13 +162,14 @@ Base MATLAB remains sufficient for the B1 benchmark itself; the additional toolb
 | First full nondimensional model | complete and audited | dimensional/dimensionless equation equivalence and invariants | derived + numerically supported |
 | Independent experimental/B2 validation | not established | no claim permitted | not available |
 
+The human audit record is `docs/audit/human_b1_audit.md`: H01-H06 are `Y`, both MATLAB test suites passed, and H07 records that a strict blind Fig. 4 audit is not required for the B1 literature-reproduction claim. This does **not** upgrade the evidence to independent experimental validation.
+
 The nondimensional audit is recorded in [dimensionless audit report](../audit/dimensionless_20260921/REPORT.md). Exact stoichiometric rank, left-nullspace basis and independent-coordinate reduction remain G2 work.
 
 ## 6. What G1 does not claim
 
 G1 does **not** claim that:
 
-- the project has completed an independent human scientific audit of every B1 equation and assumption;
 - the Fig. 4 dotted experimental curves have been independently validated;
 - machine-readable Stögbauer 2012 experimental data are present in the repository;
 - B0 fixture success proves the PURE RHS is scientifically correct;
@@ -179,13 +181,12 @@ G1 does **not** claim that:
 
 ## 7. Missing data and open questions
 
-The main open evidence items are:
+The main open evidence / later-stage items are:
 
-1. **Independent human B1 scientific audit.** The dedicated line-by-line human checklist is not complete.
-2. **Independent experimental data.** Machine-readable Stögbauer 2012 RNA/protein trajectories are absent from the repository; current Fig. 4 reproduction targets the literature's calculated curves.
-3. **Project-core definition.** The exact `PURE_resource_core` state set and equations must be decided from later structural and data evidence, not assumed at G1.
-4. **G2 structural analysis.** Stoichiometric rank, left nullspace and independent coordinates are not yet computed as the formal D6 reduction package.
-5. **Trajectory-level inverse transform.** The nondimensional equations have strong symbolic/numerical equivalence evidence, but the D6 dimensional-vs-back-transformed trajectory comparison remains a separate deliverable.
+1. **Independent experimental data.** Machine-readable Stögbauer 2012 RNA/protein trajectories are absent from the repository; current Fig. 4 reproduction targets the literature's calculated curves. A strict blind raster audit was explicitly judged unnecessary for the B1 reproduction scope.
+2. **Project-core definition.** The exact `PURE_resource_core` state set and equations must be decided from later structural and data evidence, not assumed at G1.
+3. **G2 structural analysis.** Stoichiometric rank, left nullspace and independent coordinates are not yet computed as the formal D6 reduction package.
+4. **Trajectory-level inverse transform.** The nondimensional equations have strong symbolic/numerical equivalence evidence, but the D6 dimensional-vs-back-transformed trajectory comparison remains a separate deliverable.
 
 Human-owned and later-stage actions are tracked separately in [g1_pending_human_actions.md](g1_pending_human_actions.md).
 
