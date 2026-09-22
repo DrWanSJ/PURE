@@ -78,7 +78,7 @@ $$
 
 以下五条是当前 B1 模型中具有直接物理含义的 material / moiety balances。它们对应论文 Eqs. (15)–(19)；仓库用无反馈的 \(D_{nt}\) 与 \(D_{TLcat}\) 显式闭合两个降解账本。
 
-$
+$$
 \begin{align}
 B_{NTP}&=4[NTP]+[nt]+[NXP]+D_{nt}=\mathrm{const}
 &&\text{（nucleotide-residue / base bookkeeping）} \\
@@ -91,7 +91,7 @@ B_{CP}&=[CP]+[C]=\mathrm{const}
 B_{TLcat}&=[TLcat]+D_{TLcat}=\mathrm{const}
 &&\text{（TLcat bookkeeping）}
 \end{align}
-$
+$$
 
 这里的“守恒”是在当前 coarse-grained 模型分辨率下成立的组分账本，不应扩大解释为完整元素守恒、电荷守恒或热力学能量守恒。
 
@@ -99,23 +99,23 @@ $
 
 论文另外定义
 
-$
+$$
 \chi_e
 =
 n_{NTP}[NTP]+[CP]
 =
 4[NTP]+[CP].
-$
+$$
 
 \(\chi_e\) 表示当前模型中“还没有被表达过程消耗掉的 energy-rich phosphate resource”的浓度账本。它的单位仍是浓度，不是 J，也不是 Gibbs free energy。
 
 由有量纲 ODE 直接得到
 
-$
+$$
 -\frac{d\chi_e}{dt}
 =
 V_{TX}+2V_{TL}+V_{RS}.
-$
+$$
 
 其中 EN 不出现在右端，因为 EN 只把高能磷酸资源从 CP 转移回 NTP；在 \(4[NTP]+[CP]\) 这个账本中属于内部转移。
 
@@ -837,9 +837,9 @@ $$
 
 注意 AA 守恒是
 
-$
+$$
 n_A[A]+[a]+n_T[AT]=\mathrm{const},
-$
+$$
 
 而不是 \([A]+[AT]=\mathrm{const}\)。因此 A 方程除以 \(n_A\)，T / AT 方程除以 \(n_T\) 是正确的 multiplicity bookkeeping。
 
@@ -927,15 +927,15 @@ $$
 
 4.2 节的高能资源总账
 
-$
+$$
 4[NTP]+[CP]+[nt]+D_{nt}+[NXP]+[C]=\mathrm{const}
-$
+$$
 
 只是 \(B_{NTP}+B_{CP}\)，所以不增加独立维数。4.3 / 6.6 中记录的
 
-$
+$$
 I_6=[NXP]+[C]-3[a]-46[AT]
-$
+$$
 
 则是从已冻结 ODE 解析得到、且相对于前五条 published balances 线性独立的第六条结构关系；它不属于此前“5/5”审计的检查范围。
 
