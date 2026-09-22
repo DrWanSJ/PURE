@@ -38,7 +38,11 @@ This file separates work that still requires explicit human judgment from work t
 | D7–D10 | Dominant-balance / sensitivity tests | determine which combinations actually organize behavior in the tested domain |
 | later | `PURE_resource_core` freeze | choose/modify the project core only after structural and data evidence justify the decision |
 
-The full 12-state nondimensional equations and five invariants are already audited; that evidence should be reused rather than repeated. Formal conservation reduction remains a distinct D6 task.
+The full 12-state nondimensional equations and the five published material/accounting balances are already audited; that evidence should be reused rather than repeated. A further physically readable energy-cost accounting invariant has now been derived analytically,
+
+`4*NTP + CP + nt + D_nt + 3*a + 46*AT = constant`,
+
+but it is not a sixth material-species conservation law. D6 must still compute the formal rank and complete left nullspace, verify this invariant in the machine-derived basis, and construct independent coordinates.
 
 ## D. Optional repository-hardening decisions
 
