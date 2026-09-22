@@ -284,7 +284,39 @@ $$
 B_{TLcat}=[TLcat]+D_{TLcat}=constant.
 $$
 
-These are model-resolution balances. They are not a complete elemental, charge, or thermodynamic balance of the real PURE mixture.
+These are the five published model-resolution balance relations. They are not a complete elemental, charge, or thermodynamic balance of the real PURE mixture.
+
+A separate **derived stoichiometric accounting invariant** is useful for the later D6 left-nullspace analysis. The paper defines the remaining high-energy-resource ledger
+
+$
+\chi_e=4[NTP]+[CP],
+$
+
+with
+
+$
+-\frac{d\chi_e}{dt}=V_{TX}+2V_{TL}+V_{RS}.
+$
+
+The complementary accumulated expression-cost ledger can be written as
+
+$
+C_{expr}=[nt]+D_{nt}+3[a]+46[AT],
+$
+
+so that
+
+$
+\boxed{
+B_E^{acct}
+=
+4[NTP]+[CP]+[nt]+D_{nt}+3[a]+46[AT]
+=
+constant.
+}
+$
+
+Interpretation: **remaining high-energy resource + incurred synthesis-cost bookkeeping = constant**. This is not a sixth material species balance and not a thermodynamic free-energy conservation law; it is a stoichiometric/accounting invariant of the coarse-grained B1 equations. The formal rank/left-nullspace basis selection remains D6 work.
 
 ## 13. Main coarse-graining assumptions
 
