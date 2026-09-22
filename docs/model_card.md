@@ -286,38 +286,61 @@ $$
 
 These are the five published model-resolution balance relations. They are not a complete elemental, charge, or thermodynamic balance of the real PURE mixture.
 
-A separate **derived stoichiometric accounting invariant** is useful for the later D6 left-nullspace analysis. The paper defines the remaining high-energy-resource ledger
+The paper also defines the remaining high-energy-resource ledger
 
-$
+$$
 \chi_e=4[NTP]+[CP],
-$
+$$
 
 with
 
-$
+$$
 -\frac{d\chi_e}{dt}=V_{TX}+2V_{TL}+V_{RS}.
-$
+$$
 
-The complementary accumulated expression-cost ledger can be written as
+A direct cumulative-spend interpretation is
 
-$
-C_{expr}=[nt]+D_{nt}+3[a]+46[AT],
-$
+$$
+[nt]+D_{nt}
+$$
 
-so that
+for TX cost and
 
-$
+$$
+[NXP]+[C]
+$$
+
+for RS/TL exhausted-nucleotide cost. Therefore
+
+$$
 \boxed{
-B_E^{acct}
-=
-4[NTP]+[CP]+[nt]+D_{nt}+3[a]+46[AT]
+4[NTP]+[CP]+[nt]+D_{nt}+[NXP]+[C]
 =
 constant.
 }
-$
+$$
 
-Interpretation: **remaining high-energy resource + incurred synthesis-cost bookkeeping = constant**. This is not a sixth material species balance and not a thermodynamic free-energy conservation law; it is a stoichiometric/accounting invariant of the coarse-grained B1 equations. The formal rank/left-nullspace basis selection remains D6 work.
+This is **not an additional independent invariant**: it is exactly \(B_{NTP}+B_{CP}\). It is useful only as the readable statement
 
+> remaining high-energy resource + TX spent resource + RS/TL spent resource = constant.
+
+The B1 ODEs also imply a separate, linearly independent structural relation
+
+$$
+\boxed{
+I_6=[NXP]+[C]-3[a]-46[AT]=constant.
+}
+$$
+
+For the standard B1 initial condition, all four terms start at zero, so
+
+$$
+\boxed{
+[NXP]+[C]=3[a]+46[AT].
+}
+$$
+
+Interpretation: the left side records cumulative RS/TL exhausted-nucleotide equivalents (with EN transferring NXP into C), while the right side records the corresponding cost stored in charged tRNA and polymerized amino-acid residues. This is an **RS/TL energy-cost coupling / exhausted-nucleotide accounting invariant**, not a sixth material species and not a thermodynamic free-energy conservation law. Formal D6 must still compute rank and the complete left nullspace to establish whether these six readable relations form a complete basis.
 ## 13. Main coarse-graining assumptions
 
 1. ATP, GTP, CTP, and UTP are pooled into one average NTP state.
