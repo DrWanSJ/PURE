@@ -30,12 +30,13 @@ The benchmark is intended to test faithful model transcription, numerical integr
 | Equation-level automated tests | passed |
 | Numerical solver QC | passed |
 | Paper text-anchor comparison | passed |
+| Human B1 source-to-repo audit | completed 2026-09-22 (H01-H06 = Y; `human_audited = Y`) |
 | Fig. 4 simulation-assisted raster comparison | available, non-independent |
-| Independent human Fig. 4 audit | pending |
+| Independent blind human Fig. 4 audit | not performed; explicitly not required for B1 literature reproduction |
 | Machine-readable Stögbauer 2012 experimental data | unavailable in repository |
 | Experimental/B2 predictive validation | not established |
 
-Passing repository tests does not replace independent scientific review. This remains a literature reconstruction.
+Repository tests and the completed human source-to-repo audit support the B1 literature reconstruction. This remains a literature reconstruction, not independent experimental validation.
 
 ## 4. Boundary conditions and units
 
