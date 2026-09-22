@@ -30,8 +30,8 @@ This file separates work that still requires explicit human judgment from work t
 
 | Stage | Item | Required result |
 | --- | --- | --- |
-| D6 | Stoichiometric rank | compute `rank(S)` for the chosen model representation |
-| D6 | Left nullspace | compute and chemically interpret conservation relations |
+| D6 | Stoichiometric rank | **completed 2026-09-22:** `rank(S_eff) = 6` for the 12-state augmented B1 representation |
+| D6 | Left nullspace | **completed 2026-09-22:** six readable relations verified as a complete basis; `rank(L)=6`, `L*S_eff≈0` |
 | D6 | Independent coordinates | identify an exact reduced coordinate set or equivalent representation |
 | D6 | Dimensional ↔ dimensionless trajectory check | integrate both forms, back-transform, and compare trajectories |
 | D7–D10 | Control groups | evaluate the dimensionless groups numerically and identify useful candidate control combinations |
@@ -45,7 +45,7 @@ Two different energy-bookkeeping statements must now be kept separate:
 - `4*NTP + CP + nt + D_nt + NXP + C = constant` is the readable “remaining high-energy resource + spent resource” total, but it is only `B_NTP + B_CP` and is **not independent**.
 - `I6 = NXP + C - 3*a - 46*AT = constant` is analytically conserved and linearly independent of the five published balances; under the standard zero initial condition it becomes `NXP + C = 3*a + 46*AT`.
 
-D6 must still compute the formal rank and complete left nullspace, confirm whether these six readable relations form a complete basis, and construct independent coordinates.
+MATLAB has now confirmed the formal rank and complete left nullspace for this representation: `rank(S_eff)=6`, `rank(L)=6`, and `L*S_eff≈0` with maximum floating-point residual about `2.78e-17`. The six readable relations therefore form a complete left-nullspace basis. D6 still needs independent coordinates, exact full/reduced trajectory equivalence, and dimensional ↔ dimensionless trajectory back-transform verification.
 
 ## D. Optional repository-hardening decisions
 
