@@ -38,11 +38,14 @@ This file separates work that still requires explicit human judgment from work t
 | D7–D10 | Dominant-balance / sensitivity tests | determine which combinations actually organize behavior in the tested domain |
 | later | `PURE_resource_core` freeze | choose/modify the project core only after structural and data evidence justify the decision |
 
-The full 12-state nondimensional equations and the five published material/accounting balances are already audited; that evidence should be reused rather than repeated. A further physically readable energy-cost accounting invariant has now been derived analytically,
+The full 12-state nondimensional equations and the five published material/accounting balances are already audited; that evidence should be reused rather than repeated.
 
-`4*NTP + CP + nt + D_nt + 3*a + 46*AT = constant`,
+Two different energy-bookkeeping statements must now be kept separate:
 
-but it is not a sixth material-species conservation law. D6 must still compute the formal rank and complete left nullspace, verify this invariant in the machine-derived basis, and construct independent coordinates.
+- `4*NTP + CP + nt + D_nt + NXP + C = constant` is the readable “remaining high-energy resource + spent resource” total, but it is only `B_NTP + B_CP` and is **not independent**.
+- `I6 = NXP + C - 3*a - 46*AT = constant` is analytically conserved and linearly independent of the five published balances; under the standard zero initial condition it becomes `NXP + C = 3*a + 46*AT`.
+
+D6 must still compute the formal rank and complete left nullspace, confirm whether these six readable relations form a complete basis, and construct independent coordinates.
 
 ## D. Optional repository-hardening decisions
 
