@@ -119,87 +119,165 @@ $
 
 其中 EN 不出现在右端，因为 EN 只把高能磷酸资源从 CP 转移回 NTP；在 \(4[NTP]+[CP]\) 这个账本中属于内部转移。
 
-### 4.2 由 \(\chi_e\) 导出的 energy-cost accounting invariant
+### 4.2 高能资源总账：剩余资源 + 已消耗资源
 
-定义“已经发生的表达合成成本账本”
+把论文定义的剩余高能资源写成
 
-$
-C_{expr}
+$$
+\chi_e=4[NTP]+[CP].
+$$
+
+TX 已经消耗的高能资源，在当前 coarse-grained 账本中由
+
+$$
+[nt]+D_{nt}
+$$
+
+记录，因为
+
+$$
+\frac{d}{dt}\left([nt]+D_{nt}\right)=V_{TX}.
+$$
+
+RS / TL 已经消耗的高能资源，更直接地由 exhausted-nucleotide / regeneration-product 账本
+
+$$
+[NXP]+[C]
+$$
+
+记录。虽然 EN 会把 NXP 再生为 NTP，但同时生成 C，因此
+
+$$
+\frac{d}{dt}\left([NXP]+[C]\right)
 =
-[nt]+D_{nt}+3[a]+n_T[AT].
-$
+V_{RS}+2V_{TL}.
+$$
 
-在本模型中，
+于是
 
-$
-\frac{d}{dt}\bigl([nt]+D_{nt}\bigr)=V_{TX},
-$
-
-$
-\frac{d}{dt}\bigl(3[a]\bigr)=3V_{TL},
-$
-
-$
-\frac{d}{dt}\bigl(n_T[AT]\bigr)=V_{RS}-V_{TL}.
-$
-
-因此
-
-$
-\frac{dC_{expr}}{dt}
+$$
+\frac{d}{dt}
+\left(
+[nt]+D_{nt}+[NXP]+[C]
+\right)
 =
-V_{TX}+2V_{TL}+V_{RS}
+V_{TX}+V_{RS}+2V_{TL}
 =
 -\frac{d\chi_e}{dt}.
-$
+$$
 
-于是得到一个严格的 stoichiometric accounting invariant：
+因此有
 
-$
+$$
 \boxed{
-B_E^{acct}
-=
-\chi_e+C_{expr}
-=
-4[NTP]+[CP]+[nt]+D_{nt}+3[a]+46[AT]
+4[NTP]+[CP]+[nt]+D_{nt}+[NXP]+[C]
 =
 \mathrm{const}
 }
-$
+$$
 
 其最直观的解释是
 
-$
+$$
 \boxed{
-\text{还没花掉的高能资源}
+\text{剩余高能资源}
 +
-\text{已经发生的合成成本账本}
+\text{TX 已经消耗的资源}
++
+\text{RS/TL 已经消耗的资源}
 =
 \text{常数}
 }
-$
+$$
 
-各项系数的账本意义是：
+但这条总账**不是新的独立守恒关系**，因为它正好等于已有两条账本之和：
 
-- \([nt]+D_{nt}\)：每生成 1 个 nucleotide residue 记 1 个 NTP-equivalent；RNA 后续降解不会把已经支付的成本“退回”；
-- \(46[AT]\)：仍停留在 charged tRNA pool 中的 aminoacylation 成本，每个 charged tRNA 记 1 个 NTP-equivalent；
-- \(3[a]\)：每个已经聚合进蛋白的 amino-acid residue，总账本成本为 1（aminoacylation）+ 2（translation）= 3 个 NTP-equivalent。
-
-对当前 reference 初值 \(nt=D_{nt}=a=AT=0\)，有
-
-$
-C_{expr}(t)
+$$
+B_{NTP}+B_{CP}
 =
-\int_0^t
+4[NTP]+[nt]+[NXP]+D_{nt}+[CP]+[C].
+$$
+
+所以它主要用于解释论文的 energy bookkeeping，而不是增加 left-nullspace 的独立维数。
+
+### 4.3 第六个线性独立结构关系：RS/TL energy-cost coupling
+
+由当前 ODE，
+
+$$
+\frac{d}{dt}\left([NXP]+[C]\right)
+=
+V_{RS}+2V_{TL}.
+$$
+
+另一方面，
+
+$$
+\frac{d}{dt}\left(3[a]+n_T[AT]\right)
+=
+3V_{TL}+V_{RS}-V_{TL}
+=
+V_{RS}+2V_{TL}.
+$$
+
+因此
+
+$$
+\boxed{
+\frac{d}{dt}
 \left(
-V_{TX}+2V_{TL}+V_{RS}
-\right)dt.
-$
+[NXP]+[C]-3[a]-n_T[AT]
+\right)
+=
+0
+}
+$$
 
-因此 \(B_E^{acct}\) 可以看成“剩余高能资源 + 已累计表达成本”的总账本。
+即在当前 reference multiplicity \(n_T=46\) 下，
 
-**重要边界：** \(B_E^{acct}\) 不是第六种新的“物质种类守恒”，也不是完整热力学能量守恒。它是由当前 coarse-grained stoichiometry 与论文 \(\chi_e\) 定义导出的 energy-cost / stoichiometric accounting invariant。正式 D6 做 left-nullspace 时，应优先选这种具有物理可解释性的 basis；left-nullspace basis 本身并不唯一，软件直接返回的某个线性组合可以非常难读。
+$$
+\boxed{
+I_6
+=
+[NXP]+[C]-3[a]-46[AT]
+=
+\mathrm{const}.
+}
+$$
 
+这条关系与前面的五条 published material / moiety balances 线性独立：例如前五条中只有 \(B_{NTP}\) 含有 \([NXP]\)，但 \(B_{NTP}\) 同时必然带有 \(4[NTP]\)；因此不能用前五条的线性组合得到一个 NTP 系数为 0、NXP 系数为 1 的 \(I_6\)。
+
+对当前标准初值
+
+$$
+[NXP]_0=[C]_0=[a]_0=[AT]_0=0,
+$$
+
+所以
+
+$$
+I_6=0,
+$$
+
+并可写成更直观的形式
+
+$$
+\boxed{
+[NXP]+[C]
+=
+3[a]+46[AT].
+}
+$$
+
+物理解释：
+
+- 左侧 \([NXP]+[C]\)：RS / TL 历史上累计产生的 exhausted-nucleotide equivalents；EN 只在 NXP 与 C 之间搬运这笔历史账，因此不会改变其和；
+- 右侧 \(46[AT]\)：仍停留在 charged-tRNA pool 中的 aminoacylation 成本，每个 charged tRNA 对应 1 个 NTP-equivalent；
+- 右侧 \(3[a]\)：每个已经进入蛋白的 amino-acid residue 对应 1 个 aminoacylation NTP-equivalent + 2 个 translation NTP-equivalents。
+
+因此，\(I_6\) 最适合解释为 **RS/TL energy-cost coupling invariant** 或 **exhausted-nucleotide accounting invariant**。它仍然不是完整热力学能量守恒。
+
+正式 D6 仍需从 stoichiometric matrix 机器计算 rank 与完整 left nullspace，确认这六条线性独立关系是否构成完整 basis；当前这里先记录解析上已经验证的第六条结构关系。
 ## 5. 无量纲化
 
 $$
@@ -765,36 +843,69 @@ $
 
 而不是 \([A]+[AT]=\mathrm{const}\)。因此 A 方程除以 \(n_A\)，T / AT 方程除以 \(n_T\) 是正确的 multiplicity bookkeeping。
 
-除上述五条 material / moiety balances 外，4.2 节的 energy-cost accounting invariant 在当前无量纲变量下可写成
+除上述五条 material / moiety balances 外，4.3 节的第六个线性独立结构关系在当前无量纲变量下写成
 
-$
+$$
 \boxed{
-I_E^{acct}
+I_6
 =
-y_1
-+\frac{y_8}{\rho_C}
-+y_3+y_{11}
-+\frac{3y_7}{\rho_A}
-+\frac{y_6}{\rho_T}
+y_2
++
+\frac{y_9}{\rho_C}
+-
+\frac{3y_7}{\rho_A}
+-
+\frac{y_6}{\rho_T}
 =
-\mathrm{const}
+\mathrm{const}.
 }
-$
+$$
 
 这是对
 
-$
-4[NTP]+[CP]+[nt]+D_{nt}+3[a]+n_T[AT]
-$
+$$
+[NXP]+[C]-3[a]-n_T[AT]
+$$
 
 除以统一尺度 \(n_{NTP}c_{NTP,0}\) 后得到的表达式。把完整无量纲 ODE 代入可直接得到
 
-$
-\frac{dI_E^{acct}}{d\tau}=0.
-$
+$$
+\frac{dI_6}{d\tau}=0.
+$$
 
-同样地，这一不变量是 energy-cost / stoichiometric bookkeeping，不应改称“第六条物质守恒”或“热力学能量守恒”。
+对当前标准零初值，
 
+$$
+I_6=0,
+$$
+
+所以
+
+$$
+y_2+\frac{y_9}{\rho_C}
+=
+\frac{3y_7}{\rho_A}
++
+\frac{y_6}{\rho_T}.
+$$
+
+另外，4.2 节的高能资源总账无量纲化后为
+
+$$
+y_1+y_2+y_3+y_{11}
++
+\frac{y_8+y_9}{\rho_C}
+=
+\mathrm{const},
+$$
+
+它只是
+
+$$
+I_{NTP}+\frac{I_{CP}}{\rho_C},
+$$
+
+因此不是额外独立 invariant。
 ## 7. 验证状态
 
 当前完整无量纲模型已经完成独立审计：
@@ -814,6 +925,18 @@ $
 
 因此，当前这套无量纲方程可以作为后续 conservation reduction、timescale analysis、QSSA / fast-slow analysis 的 validated baseline。
 
-4.2 / 6.6 中记录的 \(B_E^{acct}\) / \(I_E^{acct}\) 是在这次讨论中从已冻结 ODE 与论文 \(\chi_e\) 定义解析导出的额外 stoichiometric accounting invariant；它不属于此前“5/5”审计所指的五条论文 balance relations。
+4.2 节的高能资源总账
 
-尚未完成的是下一步 D6：从 stoichiometric structure 系统计算 rank、完整 left nullspace 与 independent coordinates，并机器核对包括 \(I_E^{acct}\) 在内的可解释 basis，据此做精确守恒降维。不要把“五条论文账本已验证”或“又找到一个 accounting invariant”等同于“D6 守恒降维已经完成”。
+$
+4[NTP]+[CP]+[nt]+D_{nt}+[NXP]+[C]=\mathrm{const}
+$
+
+只是 \(B_{NTP}+B_{CP}\)，所以不增加独立维数。4.3 / 6.6 中记录的
+
+$
+I_6=[NXP]+[C]-3[a]-46[AT]
+$
+
+则是从已冻结 ODE 解析得到、且相对于前五条 published balances 线性独立的第六条结构关系；它不属于此前“5/5”审计的检查范围。
+
+尚未完成的是下一步 D6：从 stoichiometric structure 系统计算 rank、完整 left nullspace 与 independent coordinates，并机器确认这六条关系是否构成完整 basis，据此做精确守恒降维。不要把“五条论文账本已验证”或“解析得到第六条 invariant”直接等同于“D6 守恒降维已经完成”。
