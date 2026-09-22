@@ -1,6 +1,6 @@
-# D6 exact conservation reduction: 12 states to 6 coordinates
+# D6 conservation reduction and dimensional/dimensionless validation
 
-Validated on 2026-09-22 with MATLAB R2025b Update 5, starting at Git commit `91bb364`. **This subtask passes; D6 is not yet complete.** No parameters were fitted, no states were clipped, and no canonical B1 scientific source or baseline was changed.
+The exact 12-to-6 conservation reduction was validated on 2026-09-22 with MATLAB R2025b Update 5, starting at Git commit `91bb364`. The dimensional/dimensionless trajectory back-transform was validated on 2026-09-23 from `0b6fd01287fad6ee323ce4f9ed27e9605701ff6a`. **D6 complete.** No parameters were fitted, no states were clipped, and no canonical B1 scientific source, baseline or audited dimensionless definition was changed.
 
 ## Representation and structural result
 
@@ -147,16 +147,93 @@ addpath('scripts');
 summary = run_exact_conservation_validation();
 ```
 
-The runner executes the three required `runtests` calls and displays their real results. [Implementation and evidence map](../project/GRAPH_REPORT.md) provides derived navigation based on the existing flow contract, with source fingerprints and confidence labels; it is not a new scientific authority. The older theory notes retain the structural milestone's historical next-step wording; this report records completion of the exact-reduction subtask.
+The runner executes the three required `runtests` calls and displays their real results. This section preserves the exact-reduction evidence from 2026-09-22; the subsequent dimensional/dimensionless validation and its four-suite regression are recorded below.
 
-## Validity and remaining D6 work
+## Validity of the exact reduction
 
 No scientific inconsistency was found in the checked canonical structure, reconstruction identities or deterministic trajectory comparisons. This establishes an exact reduced representation of the current frozen B1 deterministic model with numerical implementation agreement on the tested conditions. It does **not** establish independent predictive validity for real experimental systems, extend model mechanisms, or demonstrate a speedup.
 
-**D6 尚未全部完成。** The remaining items are:
+## Dimensional/dimensionless trajectory validation (2026-09-23)
 
-- dimensional ↔ dimensionless trajectory integration;
-- inverse/back-transform trajectory comparison;
-- the final `nondim_map.json`.
+**PASS; D6 complete.** The new simulator integrates the existing audited compact 12-state equations directly in $\tau$, independently of the dimensional reference. The canonical RHS is called only after integration to cross-check dimensional rates. The state order remains `[NTP,NXP,nt,A,T,AT,a,CP,C,TLcat,D_nt,D_TLcat]`.
 
-No commit or push was performed.
+The runtime scales and all groups are computed from `pure_literature_reference_params` and its initial state:
+
+$$
+s_x=[c_{NTP,0},n_{NTP}c_{NTP,0},n_{NTP}c_{NTP,0},c_{A,0},c_{T,0},c_{T,0},n_Ac_{A,0},c_{CP,0},c_{CP,0},c_{TLcat,0},n_{NTP}c_{NTP,0},c_{TLcat,0}]^T.
+$$
+
+$$
+y=x\oslash s_x,\qquad x=s_x\odot y,\qquad
+\tau=k_{nt,deg}t,\qquad t=\tau/k_{nt,deg},\qquad
+\widetilde V=V/V_*,\qquad V=V_*\widetilde V,
+$$
+
+$$
+V_*=k_{nt,deg}n_{NTP}c_{NTP,0}.
+$$
+
+The automatically mapped initial state is `[1,0,0,1,1,0,0,1,0,1,0,0]`. State/time/rate roundtrips passed on the canonical state and deterministic synthetic positive fixtures; measured maximum raw roundtrip errors were zero. The parameter checks cover all 20 runtime quantities (the audited groups plus `fTA` and the TLcat/nucleotide scale ratio), including independent pool ratios and synthetic in-memory multiplicities. Scientific parameters were not changed.
+
+Both systems use `ode15s`, `RelTol=1e-10`, `AbsTol=1e-12`, 0–14400 s and 10 s physical output spacing: 1,441 points per DNA condition. The dimensionless endpoint is $\tau=1.14048$. Maximum time roundtrip error is $1.8189894035458565\times10^{-12}$ s. The [fixed acceptance criteria](../audit/nondim_trajectory_20260923/acceptance_criteria.json) and [timestamp/hash preregistration](../audit/nondim_trajectory_20260923/preregistration.json) precede the first trajectory run. The normalization is the same reference-trajectory maximum with a $10^{-12}$ floor used above, and all four trajectory thresholds remain $10^{-6}$.
+
+Maximum normalized errors over every output point and quantity in each category:
+
+| DNA (uM) | States | Rates | mRNA | Protein |
+| --- | ---: | ---: | ---: | ---: |
+| 0.00034 | 7.637046621e-09 | 7.169911960e-09 | 3.898811970e-12 | 3.617618922e-09 |
+| 0.0017 | 7.635974295e-09 | 7.168981293e-09 | 2.826440631e-12 | 1.903857669e-09 |
+| 0.0068 | 7.634174568e-09 | 7.167419490e-09 | 2.564091919e-12 | 1.245381820e-09 |
+
+Maximum raw absolute errors over the same full trajectories:
+
+| DNA (uM) | States (uM) | Rates (uM/s) | mRNA (uM) | Protein (uM) |
+| --- | ---: | ---: | ---: | ---: |
+| 0.00034 | 3.799295030e-07 | 4.834169398e-09 | 4.731492975e-13 | 5.263924296e-10 |
+| 0.0017 | 5.357505870e-07 | 4.834156409e-09 | 1.363686941e-12 | 7.447982786e-10 |
+| 0.0068 | 5.274305295e-07 | 4.834134981e-09 | 2.796651799e-12 | 7.331726337e-10 |
+
+The pointwise chain-rule comparison uses 51 feasible states sampled from the canonical reference across all three DNA conditions. Its maximum absolute RHS residual is $2.8421709430404007\times10^{-14}$, below the preregistered $10^{-12}$ threshold.
+
+All six common-scale rates are independently back-transformed and compared against canonical rates evaluated on the restored states, as well as against the dimensional reference trajectory. In particular,
+
+$$
+\widetilde V_{TL,deg}=\mu_{TL,deg}\frac{c_{TLcat,0}}{n_{NTP}c_{NTP,0}}y_{10},\qquad
+V_{TL,deg}=k_{TL,deg}TLcat.
+$$
+
+The maximum same-state rate back-transform discrepancy is below $4\times10^{-16}$ uM/s. Observable definitions remain $mRNA=nt/(3p.L)$ and $protein=a/p.L$.
+
+### Solver diagnosis and unchanged acceptance criteria
+
+The first run passed all trajectory comparisons but failed the extra $I_6$ regression: drift reached $4.3267576188554813\times10^{-8}$ uM, exceeding the registered $10^{-8}$ criterion for this zero-initial invariant. Supplying the analytic derivative of the unchanged compact RHS to `ode15s` reduced that drift below $1.1\times10^{-12}$ uM. The default finite-difference Jacobian and analytic-Jacobian runs used identical equations, scales, parameters, grids and numeric tolerances; there was no projection, clipping, refit or threshold relaxation. The [solver revision](../audit/nondim_trajectory_20260923/implementation_revision.json) was recorded before its rerun, and the failed native logs are retained.
+
+Every analytic Jacobian entry was checked against complex-step differentiation at 51 points: maximum scaled residual $2.217878763897636\times10^{-15}$. The sampled $I_6$ derivative was at most $9.00399754755199\times10^{-18}$ uM/s. The initial compact RHS and mapping builder remained byte-identical throughout the solver fix.
+
+### Back-transformed invariants and physicality
+
+| Invariant | Maximum absolute residual across all three trajectories (uM) |
+| --- | ---: |
+| B_NTP | 1.728039933e-11 |
+| B_AA | 1.091393642e-11 |
+| B_tRNA | 1.563194019e-13 |
+| B_CP | 7.275957614e-11 |
+| B_TLcat | 3.996802889e-15 |
+| I6 | 1.051603249e-12 |
+
+All 12 back-transformed states, all rates and both observables were finite. The minimum state value was zero, with zero negative samples in every state and every DNA condition; the reference trajectories also had zero negative samples. The registered physicality allowance was $2.3283064365386963\times10^{-10}$ uM and was not needed. The maximum scaled six-invariant residual was $1.0516032489249483\times10^{-12}$, below $10^{-8}$. These checks apply to the output grid.
+
+### Final evidence and completion boundary
+
+| MATLAB suite | Passed | Failed | Incomplete |
+| --- | ---: | ---: | ---: |
+| `test_dimensionless_trajectory_equivalence` | 12 | 0 | 0 |
+| `test_exact_conservation_reduction` | 8 | 0 | 0 |
+| `test_pure_literature_reference` | 9 | 0 | 0 |
+| `test_codegen_and_provenance` | 5 | 0 | 0 |
+
+`allPassed = 1`; native MATLAB exit code 0, empty stderr. All six new MATLAB files have zero analyzer messages. The unchanged MATLAB symbolic audit passed 12/12 equations and both sets of five published balances. Its generated text differed only in CRLF/LF serialization; complete normalized text equality was verified and the original bytes restored. The startup warning about the pre-existing missing `slanCM` directory remains in the native log.
+
+The [mapping certificate](nondim_map.json) includes state/time/rate mappings, scale/group definitions, observables, clearly labeled loaded reference values, source SHA-256 fingerprints and validation status. It is derived metadata, not a parameter source. [Structured results](../audit/nondim_trajectory_20260923/validation_results.json), [native TestResult output (UTF-8 copy)](../audit/nondim_trajectory_20260923/matlab_stdout.utf8.txt), [source integrity](../audit/nondim_trajectory_20260923/integrity_after.json) and [audit/reproduction notes](../audit/nondim_trajectory_20260923/README.md) provide the evidence chain.
+
+D6 now has completed rank, complete left nullspace, independent coordinates, exact conservation reduction, full/reduced validation, dimensional/dimensionless back-transform validation and `nondim_map.json`. This establishes mathematical/numerical equivalence of representations of the current frozen B1 deterministic model only. It does not establish independent experimental validation, biological completeness, new biological predictions or a frozen `PURE_resource_core`.

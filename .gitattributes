@@ -3,3 +3,18 @@
 # any fresh checkout reproduces those hashes exactly, regardless of
 # core.autocrlf on the cloning machine.
 *.json text eol=lf
+
+# D6 trajectory certificates hash the original bytes, including native logs
+# and timestamped preregistrations. Do not normalize this frozen evidence.
+docs/audit/nondim_trajectory_20260923/** -text
+docs/theory/nondim_map.json -text
+
+# Keep the tested D6 implementation and updated theory text byte-stable.
+matlab/src/theory/pure_nondim_map.m text eol=lf
+matlab/src/theory/rhs_pure_literature_dimensionless.m text eol=lf
+matlab/src/theory/jacobian_pure_literature_dimensionless.m text eol=lf
+matlab/src/theory/simulate_pure_literature_dimensionless.m text eol=lf
+matlab/tests/test_dimensionless_trajectory_equivalence.m text eol=lf
+scripts/run_nondim_trajectory_validation.m text eol=lf
+docs/theory/conservation_report.md text eol=lf
+docs/theory_notes.md text eol=lf

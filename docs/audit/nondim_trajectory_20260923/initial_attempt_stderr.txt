@@ -1,0 +1,8 @@
+{错误使用 assert
+Do not refit, clip or relax acceptance criteria.
+
+出错 run_nondim_trajectory_validation (第 40 行)
+assert(allPassed,'pure_nondim:validationFailed','Do not refit, clip or relax acceptance criteria.');
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

@@ -1,0 +1,11 @@
+{错误使用 assert
+Frozen symbolic output changed; stop and inspect.
+
+出错 run_nondim_trajectory_validation>symbolic_regression (第 71 行)
+assert(strcmp(before,pure_sha256_file(generated)), ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_nondim_trajectory_validation (第 45 行)
+symbolic_regression(root);
+^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

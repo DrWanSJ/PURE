@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "registered_at_utc": "2026-09-22T16:32:00.627858+00:00",
+  "original_preregistration_sha256": "f1e69d58f8f233bfd65dcb1fc0260f4794b777264fb442726234a179b2589a16",
+  "previous_revision_sha256": "89b776ee03dce0564c8bde84930edce2b03781de57304320c4f665dced1028e9",
+  "criteria_sha256": "f8c67a0a16e5f1917620a70aabfcb049e2cc2fb2465d463afae66776a06ac8bb",
+  "reason": "Analyzer stopped the revised runner before trajectory execution because sprintf(newline) has a style diagnostic. Use newline directly. No runtime, test, solver or acceptance changes.",
+  "implementation": [
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/finalize_evidence.py",
+      "sha256": "50d74acb762598b9f9795be1bd377a133633c07c4847a47849d2f2238ae92b22"
+    },
+    {
+      "path": "matlab/src/theory/jacobian_pure_literature_dimensionless.m",
+      "sha256": "bd2f6f8c606a37cb68ad25d8016bda48a41d0e616ece2b475e5a3e890b5b2b15"
+    },
+    {
+      "path": "matlab/src/theory/pure_nondim_map.m",
+      "sha256": "decd91e777eadfcf6ebdb70f9fc54b3396edcfb01dc5b1f110216e5dbe0ff244"
+    },
+    {
+      "path": "matlab/src/theory/rhs_pure_literature_dimensionless.m",
+      "sha256": "1929a5df14e4d57383d885a949ff9d3a7f4bbe8bf7fd7fa31146ca2aadae71fa"
+    },
+    {
+      "path": "matlab/src/theory/simulate_pure_literature_dimensionless.m",
+      "sha256": "6620c9ed1c6a792d19030535d3702a8d9d80c875af9c252dab043c52c39dbef7"
+    },
+    {
+      "path": "matlab/tests/test_dimensionless_trajectory_equivalence.m",
+      "sha256": "35acc21cbdb2967f0dd6baa6c36a836998e224a8a15e0c5faaf8f3797e12734a"
+    },
+    {
+      "path": "scripts/run_nondim_trajectory_validation.m",
+      "sha256": "fd77ad671f435d490f2d0b41e3c7b64dcb6ba9a249a91e82cc6ca2790a58fc05"
+    }
+  ],
+  "initial_attempt_evidence": [
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/initial_attempt_exitcode.txt",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/initial_attempt_stderr.txt",
+      "sha256": "3a1052604e96e86c651a6063f7e03831224117ed51d6034c98e803baf0816faf"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/initial_attempt_stdout.txt",
+      "sha256": "233eb1c025db055c98ffb54dd52a82f4dd383c141a458d70a1dcf5ee38f7e879"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/runner_preflight_exitcode.txt",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/runner_preflight_stderr.txt",
+      "sha256": "6a119f52a4d4c2469116fb0864fb84bc6b8f60e9917fe3c82b33b0492252fcd8"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/runner_preflight_stdout.txt",
+      "sha256": "c1e20fe2c12bac955838f28865e6dea8ce956a2af8d69702a747a75d5b613b26"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/solver_attempt_exitcode.txt",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/solver_attempt_stderr.txt",
+      "sha256": "41d745567a18a773dc3e4ca57ee087dbff10055c65c8232bf5c41de39ae807bd"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/solver_attempt_stdout.txt",
+      "sha256": "2f2998e9e5d10ed45fe6f15c1be058803cbd7e3e363fb59e246866c217639ecc"
+    }
+  ],
+  "solver_revision": "ode15s Jacobian option now calls jacobian_pure_literature_dimensionless; no state projection or reconstruction is applied.",
+  "supplemental_jacobian_check": {
+    "method": "complex-step differentiation of the unchanged compact RHS, all 12 columns at 51 points",
+    "max_scaled_residual": 1e-12,
+    "scale": "max(1,abs(complex_step_derivative)) per entry",
+    "I6_derivative_absolute_tolerance_uM_per_s": 1e-12
+  },
+  "original_implementation": [
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/finalize_evidence.py",
+      "sha256": "a05dc430aefe4e8f11f64c54c0d59342852c8bfd27e136a37a16aa69f98666bd"
+    },
+    {
+      "path": "matlab/src/theory/pure_nondim_map.m",
+      "sha256": "decd91e777eadfcf6ebdb70f9fc54b3396edcfb01dc5b1f110216e5dbe0ff244"
+    },
+    {
+      "path": "matlab/src/theory/rhs_pure_literature_dimensionless.m",
+      "sha256": "1929a5df14e4d57383d885a949ff9d3a7f4bbe8bf7fd7fa31146ca2aadae71fa"
+    },
+    {
+      "path": "matlab/src/theory/simulate_pure_literature_dimensionless.m",
+      "sha256": "a131c157cac229c29184752e76d8649549a5d3d21ad0023a538181c6fc20667f"
+    },
+    {
+      "path": "matlab/tests/test_dimensionless_trajectory_equivalence.m",
+      "sha256": "6a52f5b1fa1decc5483fcad8e78fe5a3235d7d2a33ee82eec8b30ef668376aa8"
+    },
+    {
+      "path": "scripts/run_nondim_trajectory_validation.m",
+      "sha256": "fe74c13eb22358a178f4bc28e593ba3d74b6baec426588bb7fa5d4338713953e"
+    }
+  ]
+}

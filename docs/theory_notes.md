@@ -76,7 +76,7 @@ $$
 
 ## 3.1 从反应账本到化学计量矩阵
 
-D6 后续要用到 stoichiometric matrix（化学计量矩阵）。它没有引入新的生物机制，只是把上面的 6 个动力学过程统一整理成“每个反应会让每个状态增加或减少多少”的账本。
+D6 使用 stoichiometric matrix（化学计量矩阵）。它没有引入新的生物机制，只是把上面的 6 个动力学过程统一整理成“每个反应会让每个状态增加或减少多少”的账本。
 
 状态顺序固定为
 
@@ -112,9 +112,9 @@ V_{EN}
 \end{bmatrix}.
 $$
 
-这里每个 \(V\) 表示对应过程当前进行得有多快。例如 \(V_{RS}\) 是氨酰化速率，\(V_{TL}\) 是翻译速率。
+这里每个 $V$ 表示对应过程当前进行得有多快。例如 $V_{RS}$ 是氨酰化速率，$V_{TL}$ 是翻译速率。
 
-### 3.1.1 \(S_{prediv}\)：先写“每次反应真正增减几个 equivalent”
+### 3.1.1 $S_{prediv}$：先写“每次反应真正增减几个 equivalent”
 
 先忽略 NTP、A、T、AT 是平均浓度这一点，只按反应式本身记录一次反应事件的净变化：
 
@@ -309,11 +309,11 @@ $$
 PP_i\rightarrow2P_i
 $$
 
-不进入这个 \(12\times6\) 矩阵，因为 PPi 和 Pi 都不是当前动态状态，而且该过程没有作为第七个动力学速率被积分。它只保留为化学背景。
+不进入这个 $12\times6$ 矩阵，因为 PPi 和 Pi 都不是当前动态状态，而且该过程没有作为第七个动力学速率被积分。它只保留为化学背景。
 
 ## 4. 五条物质 / 组分账本守恒
 
-以下五条是当前 B1 模型中具有直接物理含义的 material / moiety balances。它们对应论文 Eqs. (15)–(19)；仓库用无反馈的 \(D_{nt}\) 与 \(D_{TLcat}\) 显式闭合两个降解账本。
+以下五条是当前 B1 模型中具有直接物理含义的 material / moiety balances。它们对应论文 Eqs. (15)–(19)；仓库用无反馈的 $D_{nt}$ 与 $D_{TLcat}$ 显式闭合两个降解账本。
 
 $$
 \begin{align}
@@ -332,7 +332,7 @@ $$
 
 这里的“守恒”是在当前 coarse-grained 模型分辨率下成立的组分账本，不应扩大解释为完整元素守恒、电荷守恒或热力学能量守恒。
 
-### 4.1 论文的高能资源账本 \(\chi_e\)
+### 4.1 论文的高能资源账本 $\chi_e$
 
 论文另外定义
 
@@ -344,7 +344,7 @@ n_{NTP}[NTP]+[CP]
 4[NTP]+[CP].
 $$
 
-\(\chi_e\) 表示当前模型中“还没有被表达过程消耗掉的 energy-rich phosphate resource”的浓度账本。它的单位仍是浓度，不是 J，也不是 Gibbs free energy。
+$\chi_e$ 表示当前模型中“还没有被表达过程消耗掉的 energy-rich phosphate resource”的浓度账本。它的单位仍是浓度，不是 J，也不是 Gibbs free energy。
 
 由有量纲 ODE 直接得到
 
@@ -354,7 +354,7 @@ $$
 V_{TX}+2V_{TL}+V_{RS}.
 $$
 
-其中 EN 不出现在右端，因为 EN 只把高能磷酸资源从 CP 转移回 NTP；在 \(4[NTP]+[CP]\) 这个账本中属于内部转移。
+其中 EN 不出现在右端，因为 EN 只把高能磷酸资源从 CP 转移回 NTP；在 $4[NTP]+[CP]$ 这个账本中属于内部转移。
 
 ### 4.2 高能资源总账：剩余资源 + 已消耗资源
 
@@ -470,7 +470,7 @@ $$
 }
 $$
 
-即在当前 reference multiplicity \(n_T=46\) 下，
+即在当前 reference multiplicity $n_T=46$ 下，
 
 $$
 \boxed{
@@ -482,7 +482,7 @@ I_6
 }
 $$
 
-这条关系与前面的五条 published material / moiety balances 线性独立：例如前五条中只有 \(B_{NTP}\) 含有 \([NXP]\)，但 \(B_{NTP}\) 同时必然带有 \(4[NTP]\)；因此不能用前五条的线性组合得到一个 NTP 系数为 0、NXP 系数为 1 的 \(I_6\)。
+这条关系与前面的五条 published material / moiety balances 线性独立：例如前五条中只有 $B_{NTP}$ 含有 $[NXP]$，但 $B_{NTP}$ 同时必然带有 $4[NTP]$；因此不能用前五条的线性组合得到一个 NTP 系数为 0、NXP 系数为 1 的 $I_6$。
 
 对当前标准初值
 
@@ -508,27 +508,26 @@ $$
 
 物理解释：
 
-- 左侧 \([NXP]+[C]\)：RS / TL 历史上累计产生的 exhausted-nucleotide equivalents；EN 只在 NXP 与 C 之间搬运这笔历史账，因此不会改变其和；
-- 右侧 \(46[AT]\)：仍停留在 charged-tRNA pool 中的 aminoacylation 成本，每个 charged tRNA 对应 1 个 NTP-equivalent；
-- 右侧 \(3[a]\)：每个已经进入蛋白的 amino-acid residue 对应 1 个 aminoacylation NTP-equivalent + 2 个 translation NTP-equivalents。
+- 左侧 $[NXP]+[C]$：RS / TL 历史上累计产生的 exhausted-nucleotide equivalents；EN 只在 NXP 与 C 之间搬运这笔历史账，因此不会改变其和；
+- 右侧 $46[AT]$：仍停留在 charged-tRNA pool 中的 aminoacylation 成本，每个 charged tRNA 对应 1 个 NTP-equivalent；
+- 右侧 $3[a]$：每个已经进入蛋白的 amino-acid residue 对应 1 个 aminoacylation NTP-equivalent + 2 个 translation NTP-equivalents。
 
-因此，\(I_6\) 最适合解释为 **RS/TL energy-cost coupling invariant** 或 **exhausted-nucleotide accounting invariant**。它仍然不是完整热力学能量守恒。
+因此，$I_6$ 最适合解释为 **RS/TL energy-cost coupling invariant** 或 **exhausted-nucleotide accounting invariant**。它仍然不是完整热力学能量守恒。
 
 ### 4.4 D6 MATLAB 结构验证：rank 与完整 left-nullspace basis
 
-2026-09-22 使用上节人工核对后的 \(S_{eff}\) 在 MATLAB 中计算：
+2026-09-22 使用上节人工核对后的 $S_{eff}$ 在 MATLAB 中计算：
 
-$
+$$
 \boxed{
 \operatorname{rank}(S_{eff})=6.
 }
-$
-
-这里 \(S_{eff}\) 有 12 行、6 列。其 6 列分别对应 TX、nt degradation、RS、TL、TLcat degradation、EN 六个反应方向。rank = 6 表示这六个反应方向彼此线性独立，没有一个反应的状态变化模式可以由其余反应方向线性组合得到。
+$$
+这里 $S_{eff}$ 有 12 行、6 列。其 6 列分别对应 TX、nt degradation、RS、TL、TLcat degradation、EN 六个反应方向。rank = 6 表示这六个反应方向彼此线性独立，没有一个反应的状态变化模式可以由其余反应方向线性组合得到。
 
 根据 rank-nullity relation，
 
-$
+$$
 \dim\ker(S_{eff}^{T})
 =
 12-\operatorname{rank}(S_{eff})
@@ -536,13 +535,12 @@ $
 12-6
 =
 6.
-$
-
+$$
 物理上，这表示 12 个状态虽然都可以随时间变化，但它们被 6 条彼此独立的结构约束限制，因此系统只允许沿 6 个独立的 stoichiometric directions 运动。
 
-把前面五条 published material / moiety balances 与第六条 \(I_6\) 写成行向量，得到
+把前面五条 published material / moiety balances 与第六条 $I_6$ 写成行向量，得到
 
-$
+$$
 L=
 \begin{bmatrix}
 4&1&1&0&0&0&0&0&0&0&1&0\\
@@ -552,56 +550,50 @@ L=
 0&0&0&0&0&0&0&0&0&1&0&1\\
 0&1&0&0&0&-46&-3&0&1&0&0&0
 \end{bmatrix}.
-$
-
+$$
 六行依次对应
 
-$
+$$
 B_{NTP},quad
 B_{AA},quad
 B_{tRNA},quad
 B_{CP},quad
 B_{TLcat},quad
 I_6.
-$
-
+$$
 MATLAB 验证得到
 
-$
+$$
 L S_{eff}\approx 0,
-$
-
+$$
 其中浮点计算的最大残差约为
 
-$
+$$
 2.78\times10^{-17},
-$
-
+$$
 属于机器舍入误差；同时
 
-$
+$$
 \boxed{
 \operatorname{rank}(L)=6.
 }
-$
-
+$$
 因此：
 
-1. 每一行都满足 \(l_i S_{eff}=0\)，即六条关系对所有 6 个反应方向都保持不变；
-2. \(L\) 的 6 行彼此线性独立；
+1. 每一行都满足 $l_i S_{eff}=0$，即六条关系对所有 6 个反应方向都保持不变；
+2. $L$ 的 6 行彼此线性独立；
 3. left nullspace 的维数本身也是 6。
 
 所以可以得到 D6 的正式结构结论：
 
-$
+$$
 \boxed{
 \text{这六条可读关系构成 }\ker(S_{eff}^{T})\text{ 的完整 basis。}
 }
-$
-
+$$
 也就是说，当前 12-state augmented B1 representation 的完整独立结构约束已经找全，不再存在第七条与它们线性独立的守恒 / accounting relation。
 
-这一步完成的是 **rank + complete left-nullspace basis**。D6 还没有全部完成；下一步仍需选择 6 个有物理意义的 independent coordinates，并验证 full 12-state 与 exact reduced representation 的轨迹一致性。
+这一步完成了 **rank + complete left-nullspace basis**。随后已选定 $z=[NTP,nt,A,AT,CP,TLcat]^T$，于 2026-09-22 完成 exact conservation reduction 与三组 DNA 下的 full 12-state / reduced 6-state 全轨迹验证；2026-09-23 又完成 dimensional/dimensionless 全轨迹逆变换验证，见 [D6 conservation report](theory/conservation_report.md)。
 
 ## 5. 无量纲化
 
@@ -749,7 +741,7 @@ $$
 
 ## 6. 完整 12 状态无量纲模型（审计定稿）
 
-本节是在上面的 \(nt\) 单方程手推基础上，对全部 12 个状态统一无量纲化后的结果。这里保留前面的手推记号作为推导记录；完整系统统一使用 \(\mu\)、\(\kappa\)、\(\rho_A,\rho_T,\rho_C\) 与 \(\theta_{DNA}\)。
+本节是在上面的 $nt$ 单方程手推基础上，对全部 12 个状态统一无量纲化后的结果。这里保留前面的手推记号作为推导记录；完整系统统一使用 $\mu$、$\kappa$、$\rho_A,\rho_T,\rho_C$ 与 $\theta_{DNA}$。
 
 统一时间尺度与反应速率尺度为
 
@@ -789,7 +781,7 @@ $$
 \end{aligned}
 $$
 
-其中 \(\mu_{TX},\mu_{RS},\mu_{TL},\mu_{EN}\) 都表示对应模块的 catalytic-capacity scale 相对于统一 nucleotide degradation-rate scale 的比值；\(\mu_{TL,deg}\) 是 TLcat degradation 与 nt degradation 的时间尺度比。
+其中 $\mu_{TX},\mu_{RS},\mu_{TL},\mu_{EN}$ 都表示对应模块的 catalytic-capacity scale 相对于统一 nucleotide degradation-rate scale 的比值；$\mu_{TL,deg}$ 是 TLcat degradation 与 nt degradation 的时间尺度比。
 
 DNA 在本 reference model 中是固定输入，定义
 
@@ -859,7 +851,7 @@ $$
 2.3.
 $$
 
-这里 \(2.3\) 只对应 T / AT multiplicity bookkeeping，不意味着 \(\rho_A=\rho_T\)。
+这里 $2.3$ 只对应 T / AT multiplicity bookkeeping，不意味着 $\rho_A=\rho_T$。
 
 ### 6.3 尺度耦合比
 
@@ -880,7 +872,7 @@ $$
 {c_{CP,0}}.
 $$
 
-\(\rho_A,\rho_T,\rho_C\) 只反映不同 coarse-grained pool reference scales 之间的换算关系。特别地，\(\rho_A\) 与 \(\rho_T\) 是独立参数，不要求相等。
+$\rho_A,\rho_T,\rho_C$ 只反映不同 coarse-grained pool reference scales 之间的换算关系。特别地，$\rho_A$ 与 $\rho_T$ 是独立参数，不要求相等。
 
 ### 6.4 无量纲反应速率
 
@@ -917,7 +909,7 @@ $$
 \frac{y_2}{\kappa_{EN,NXP}+y_2}.
 $$
 
-这些 \(\widetilde V\) 均以 \(V_*\) 归一。
+这些 $\widetilde V$ 均以 $V_*$ 归一。
 
 ### 6.5 最终无量纲 ODE：显式 $dy_i/d\tau=f_i(\mathbf y)$
 
@@ -929,7 +921,7 @@ $$
 \tau=k_{nt,deg}t.
 $$
 
-将上面的 \(\widetilde V_{TX},\widetilde V_{RS},\widetilde V_{TL},\widetilde V_{EN}\) 全部代回，可得
+将上面的 $\widetilde V_{TX},\widetilde V_{RS},\widetilde V_{TL},\widetilde V_{EN}$ 全部代回，可得
 
 $$
 \boxed{
@@ -1108,9 +1100,9 @@ $$
 }
 $$
 
-其中 \(\boldsymbol\pi\) 表示全部无量纲参数组合。该显式形式与前面的 compact \(\widetilde V\) 写法完全等价，但更适合后续直接计算 Jacobian、rank、局部线性化与独立坐标降维。
+其中 $\boldsymbol\pi$ 表示全部无量纲参数组合。该显式形式与前面的 compact $\widetilde V$ 写法完全等价，但更适合后续直接计算 Jacobian、rank、局部线性化与独立坐标降维。
 
-这里 NTP / NXP 方程的不对称是原模型定义导致的：\([NTP]\) 是 \(n_{NTP}=4\) 种 NTP 的平均浓度，而 \([NXP]\)、\([nt]\)、\(D_{nt}\) 使用 overall pool concentration。
+这里 NTP / NXP 方程的不对称是原模型定义导致的：$[NTP]$ 是 $n_{NTP}=4$ 种 NTP 的平均浓度，而 $[NXP]$、$[nt]$、$D_{nt}$ 使用 overall pool concentration。
 
 ### 6.6 无量纲守恒量
 
@@ -1166,7 +1158,7 @@ $$
 n_A[A]+[a]+n_T[AT]=\mathrm{const},
 $$
 
-而不是 \([A]+[AT]=\mathrm{const}\)。因此 A 方程除以 \(n_A\)，T / AT 方程除以 \(n_T\) 是正确的 multiplicity bookkeeping。
+而不是 $[A]+[AT]=\mathrm{const}$。因此 A 方程除以 $n_A$，T / AT 方程除以 $n_T$ 是正确的 multiplicity bookkeeping。
 
 除上述五条 material / moiety balances 外，4.3 节的第六个线性独立结构关系在当前无量纲变量下写成
 
@@ -1192,7 +1184,7 @@ $$
 [NXP]+[C]-3[a]-n_T[AT]
 $$
 
-除以统一尺度 \(n_{NTP}c_{NTP,0}\) 后得到的表达式。把完整无量纲 ODE 代入可直接得到
+除以统一尺度 $n_{NTP}c_{NTP,0}$ 后得到的表达式。把完整无量纲 ODE 代入可直接得到
 
 $$
 \frac{dI_6}{d\tau}=0.
@@ -1238,11 +1230,11 @@ $$
 - Wolfram kernel：12/12 ODE 的 direct-vs-compact symbolic equivalence 均严格化简为 0；
 - 论文 Eqs. (15)–(19) 对应的五条 dimensional material/accounting balances：5/5 通过；
 - 对应的五条 dimensionless balances：5/5 通过；
-- Wolfram 数值独立检查：5 trials × 12 equations，global max absolute residual \(8.88\times10^{-16}\)；
+- Wolfram 数值独立检查：5 trials × 12 equations，global max absolute residual $8.88\times10^{-16}$；
 - Python / SymPy 与 MATLAB 路径均实际运行通过；
-- MATLAB 与真实 generated RHS 的 5 × 12 比较最大残差约 \(1.78\times10^{-15}\)；
-- accounting integrators \(D_{nt},D_{TLcat}\) 已显式检查为 no-feedback states；
-- 故障注入可识别错误 TL stoichiometry、错误 accounting mapping 与错误 \(\rho_T\)。
+- MATLAB 与真实 generated RHS 的 5 × 12 比较最大残差约 $1.78\times10^{-15}$；
+- accounting integrators $D_{nt},D_{TLcat}$ 已显式检查为 no-feedback states；
+- 故障注入可识别错误 TL stoichiometry、错误 accounting mapping 与错误 $\rho_T$。
 
 审计证据冻结在：
 
@@ -1256,7 +1248,7 @@ $$
 4[NTP]+[CP]+[nt]+D_{nt}+[NXP]+[C]=\mathrm{const}
 $$
 
-只是 \(B_{NTP}+B_{CP}\)，所以不增加独立维数。4.3 / 6.6 中记录的
+只是 $B_{NTP}+B_{CP}$，所以不增加独立维数。4.3 / 6.6 中记录的
 
 $$
 I_6=[NXP]+[C]-3[a]-46[AT]
@@ -1264,6 +1256,18 @@ $$
 
 则是从已冻结 ODE 解析得到、且相对于前五条 published balances 线性独立的第六条结构关系；它不属于此前“5/5”审计的检查范围。
 
-D6 的 rank 与完整 left-nullspace basis 已于 2026-09-22 用 MATLAB 验证：\(\operatorname{rank}(S_{eff})=6\)、\(\operatorname{rank}(L)=6\)、\(LS_{eff}\approx0\)（最大浮点残差约 \(2.78\times10^{-17}\)）。因此上述六条关系已经确认构成完整 left-nullspace basis。
+D6 的 rank 与完整 left-nullspace basis 已于 2026-09-22 用 MATLAB 验证：$\operatorname{rank}(S_{eff})=6$、$\operatorname{rank}(L)=6$、$LS_{eff}\approx0$（最大浮点残差约 $2.78\times10^{-17}$）。因此上述六条关系已经确认构成完整 left-nullspace basis。
 
-尚未完成的是 D6 的后半部分：选择有物理意义的 6 个 independent coordinates，构造 exact reduced representation，并完成 full/reduced trajectory 与 dimensional/dimensionless back-transform trajectory 的数值一致性验证。
+**D6 complete（2026-09-23）**：
+
+- rank complete；
+- complete left nullspace complete；
+- independent coordinates complete：$z=[NTP,nt,A,AT,CP,TLcat]^T$；
+- exact conservation reduction complete；
+- full/reduced trajectory validation complete；
+- dimensional/dimensionless trajectory back-transform complete；
+- [nondim_map.json](theory/nondim_map.json) complete。
+
+本次直接复用已审计的 compact equations 和 scaling。两个 12-state 系统分别以 $t$ 与 $\tau=k_{nt,deg}t$ 为积分变量，在三组 Fig.4 DNA、0–14400 s、每 10 s 输出的完整网格上比较全部 12 个状态、6 个速率、mRNA 与 protein，预注册的归一化误差阈值均为 $10^{-6}$。四个 MATLAB suites 共 34 个测试全部通过；已有 12/12 符号等价和两层各 5 条守恒回归通过。数值结果、首轮失败与解析 Jacobian 修复、原始文件字节校验见 [trajectory audit](audit/nondim_trajectory_20260923/README.md)。
+
+该完成状态仅表示当前 frozen B1 deterministic model 各表示的数学和数值等价；不建立 independent experimental validation，不扩展模型机制，也不冻结 `PURE_resource_core`。

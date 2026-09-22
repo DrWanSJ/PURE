@@ -2,6 +2,7 @@
 
 **Gate:** G1 — Week 1  
 **Date:** 2026-09-22  
+**D6 status synchronized:** 2026-09-23
 **Status:** **PASS WITH OPEN ITEMS**
 
 This report closes the Week 1 gate defined in `tasklist.md`: freeze the primary benchmark, state definitions, units, model boundary, baseline equations, and the first analysis/interface contracts. It does **not** claim independent experimental validation or freeze the final project model.
@@ -122,7 +123,7 @@ The reference model boundary is:
 - no continuous feed/dilution;
 - no infinite external material reservoir.
 
-Conservation relations imply algebraic dependence between subsets of the 12 explicit states. G1 intentionally keeps the full representation for auditability; exact independent-coordinate reduction is deferred to G2.
+Conservation relations imply algebraic dependence between subsets of the 12 explicit states. G1 keeps the full canonical reference for auditability; the exact six-coordinate representation was subsequently completed in G2/D6 and verified against it.
 
 ## 4. Frozen units and environment
 
@@ -160,11 +161,12 @@ Base MATLAB remains sufficient for the B1 benchmark itself; the additional toolb
 | Conservation QC | pass | max scaled mass-balance residual about `5.82e-15` | numerically supported |
 | Solver convergence / repeatability QC | pass | numerical robustness of baseline workflow | numerically supported |
 | First full nondimensional model | complete and audited | dimensional/dimensionless equation equivalence and invariants | derived + numerically supported |
+| D6 exact reduction and trajectory back-transform | **complete 2026-09-23** | 12/6-state equivalence, independently integrated compact dimensionless 12-state equivalence and mapping certificate | mathematical/numerical |
 | Independent experimental/B2 validation | not established | no claim permitted | not available |
 
 The human audit record is `docs/audit/human_b1_audit.md`: H01-H06 are `Y`, both MATLAB test suites passed, and H07 records that a strict blind Fig. 4 audit is not required for the B1 literature-reproduction claim. This does **not** upgrade the evidence to independent experimental validation.
 
-The nondimensional audit is recorded in [dimensionless audit report](../audit/dimensionless_20260921/REPORT.md). The D6 stoichiometric rank and complete left-nullspace basis were subsequently verified on 2026-09-22 (`rank(S_eff)=6`, `rank(L)=6`, `L*S_eff≈0`); independent-coordinate reduction and trajectory-level equivalence remain G2 work.
+The nondimensional audit is recorded in [dimensionless audit report](../audit/dimensionless_20260921/REPORT.md). D6 is now complete: the verified rank and complete left-nullspace basis (`rank(S_eff)=6`, `rank(L)=6`, `L*S_eff≈0`), independent coordinates, exact reduction, full/reduced trajectory comparison, dimensional/dimensionless back-transform and [mapping certificate](../theory/nondim_map.json) are documented in the [conservation report](../theory/conservation_report.md). The final four MATLAB suites pass 34/34 tests; canonical scientific sources and existing audited scaling are unchanged.
 
 ## 6. What G1 does not claim
 
@@ -177,7 +179,7 @@ G1 does **not** claim that:
 - the reference model is the final or uniquely correct `PURE_resource_core`;
 - real PURE stopping is experimentally proven to be caused by nt or TLcat degradation;
 - the effective deterministic rate laws are validated stochastic propensity functions;
-- G2 conservation reduction, control analysis, or model reduction is already complete.
+- G2 control analysis, QSSA/fast-slow approximation, or broader model reduction is complete.
 
 ## 7. Missing data and open questions
 
@@ -185,8 +187,8 @@ The main open evidence / later-stage items are:
 
 1. **Independent experimental data.** Machine-readable Stögbauer 2012 RNA/protein trajectories are absent from the repository; current Fig. 4 reproduction targets the literature's calculated curves. A strict blind raster audit was explicitly judged unnecessary for the B1 reproduction scope.
 2. **Project-core definition.** The exact `PURE_resource_core` state set and equations must be decided from later structural and data evidence, not assumed at G1.
-3. **G2 structural analysis.** The five published material/accounting balances and the sixth relation `I6 = NXP + C - 3*a - 46*AT = constant` have now been assembled into a readable basis. MATLAB verification on 2026-09-22 gave `rank(S_eff)=6`, `rank(L)=6`, and `L*S_eff≈0` (maximum residual about `2.78e-17`), so the six relations form the complete left-nullspace basis for the 12-state augmented B1 representation. Independent-coordinate construction remains D6 work.
-4. **Trajectory-level inverse transform.** The nondimensional equations have strong symbolic/numerical equivalence evidence, but the D6 dimensional-vs-back-transformed trajectory comparison remains a separate deliverable.
+3. **D6 structural follow-up (complete).** The five published balances and `I6 = NXP + C - 3*a - 46*AT = constant` form the verified complete left-nullspace basis. Independent coordinates `[NTP,nt,A,AT,CP,TLcat]`, exact reconstruction and all three full/reduced trajectory comparisons are complete. Later control and approximation analyses remain open.
+4. **Trajectory-level inverse transform (complete).** On 2026-09-23, independently integrated dimensional/compact dimensionless trajectories passed the preregistered criteria for all 12 states, 6 rates, mRNA and protein in all three DNA conditions, with the final mapping certificate generated. See [native validation evidence](../audit/nondim_trajectory_20260923/README.md).
 
 Human-owned and later-stage actions are tracked separately in [g1_pending_human_actions.md](g1_pending_human_actions.md).
 
@@ -202,13 +204,13 @@ Evidence level: **derived + numerically supported literature reproduction**, not
 
 The simulator has 10 canonical physical ODE states plus two no-feedback accounting states (`D_nt`, `D_TLcat`). DNA, TXcat, RScat and ENcat are fixed inputs rather than dynamic states. The batch model has no continuous feed and no infinite external material reservoir.
 
-Conservation relations create algebraic dependencies, but the G1 implementation retains the full explicit representation; exact coordinate elimination is deferred to G2.
+Conservation relations create algebraic dependencies. The canonical reference retains the full explicit representation; the equivalent six-coordinate implementation and its trajectory verification are complete in D6.
 
 ### Q3. What data are missing?
 
 The most important missing external evidence is machine-readable experimental RNA/protein data suitable for independent comparison. Its absence prevents a B2-style experimental validation claim, but it does not prevent completion of the B1 literature reconstruction or G2 structural analysis.
 
-A second missing evidence layer is a fully completed independent human scientific audit of the B1 transcription.
+The human B1 source-to-repository audit is complete (H01-H06 = `Y`, as recorded in section 5); it does not supply the missing independent experimental trajectories.
 
 ### Q4. Why keep this coarse-grained backbone instead of adding more detail now?
 
@@ -224,9 +226,8 @@ The primary B1 benchmark, equations, parameters, units, model boundary, executio
 
 The following items must remain visible as explicit open work rather than being silently treated as complete:
 
-- independent human B1 scientific audit;
-- dimensional ↔ nondimensional trajectory back-transform verification;
-- formal conservation reduction beyond the now-verified rank/left-nullspace result: independent coordinates and exact reduced-trajectory verification;
+- independent experimental data and B2 validation;
+- later control, sensitivity and QSSA/fast-slow analyses;
 - evidence-based definition and later freeze of `PURE_resource_core`.
 
-These are carried forward without reclassifying the completed B1 literature reconstruction as independent experimental validation.
+The human B1 source audit and all D6 structural/mapping deliverables are complete. The remaining items are carried forward without reclassifying the completed B1 literature reconstruction as independent experimental validation; the G1 gate decision is unchanged.

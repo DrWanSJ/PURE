@@ -1,0 +1,8 @@
+{错误使用 assert
+Resolve new MATLAB analyzer messages before validation.
+
+出错 run_nondim_trajectory_validation (第 25 行)
+        assert(isempty(messages),'Resolve new MATLAB analyzer messages before validation.');
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

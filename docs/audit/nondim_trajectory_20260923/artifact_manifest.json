@@ -1,0 +1,146 @@
+{
+  "recorded_at_utc": "2026-09-22T16:40:22.262494+00:00",
+  "source_commit": "0b6fd01287fad6ee323ce4f9ed27e9605701ff6a",
+  "files": [
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/README.md",
+      "sha256": "2e87352e6de9c24f9cf6d569cd14294cd8ddfff5a340249d71ba992291bc6ea6"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/acceptance_criteria.json",
+      "sha256": "f8c67a0a16e5f1917620a70aabfcb049e2cc2fb2465d463afae66776a06ac8bb"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/finalize_evidence.py",
+      "sha256": "dbe70c5629b60e455cc85493bfb9932fda89ce54992734e7570fdc65b443d940"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/implementation_revision.json",
+      "sha256": "3219f33ddd187b9fa0ddcc3c07c333b0f5e575350069b47db7e3f650990a55f8"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/implementation_revision_2.json",
+      "sha256": "89b776ee03dce0564c8bde84930edce2b03781de57304320c4f665dced1028e9"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/implementation_revision_3.json",
+      "sha256": "6966519636819d22ca4173e0bb1f711d4d50604c40006da1f2ad5b2f3b9110e4"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/implementation_revision_4.json",
+      "sha256": "a85418a5d8aa037698c7e33e4f6d78571beb83a26952c77345809a152e3076d4"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/initial_attempt_exitcode.txt",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/initial_attempt_stderr.txt",
+      "sha256": "3a1052604e96e86c651a6063f7e03831224117ed51d6034c98e803baf0816faf"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/initial_attempt_stdout.txt",
+      "sha256": "233eb1c025db055c98ffb54dd52a82f4dd383c141a458d70a1dcf5ee38f7e879"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/integrity_after.json",
+      "sha256": "7a23231144d26eaa9f837eba64656ef6eb1bb0fea2be9539e6659c635a4b6475"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/integrity_before.json",
+      "sha256": "d89300572ea66ccb2ec9b615bad0e343cb04a328484c47730bb37c4754312ee7"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/matlab_exitcode.txt",
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/matlab_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/matlab_stdout.txt",
+      "sha256": "0f617b9ea78c8bb07bae9becce3bb31e12369f8c621be33dcfe9a93276249651"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/matlab_stdout.utf8.txt",
+      "sha256": "ea30bb6e07a75a5d45203893656b649cbf73f94f587eb5609daaae194b98df32"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/preregistration.json",
+      "sha256": "f1e69d58f8f233bfd65dcb1fc0260f4794b777264fb442726234a179b2589a16"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/runner_preflight_exitcode.txt",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/runner_preflight_stderr.txt",
+      "sha256": "6a119f52a4d4c2469116fb0864fb84bc6b8f60e9917fe3c82b33b0492252fcd8"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/runner_preflight_stdout.txt",
+      "sha256": "c1e20fe2c12bac955838f28865e6dea8ce956a2af8d69702a747a75d5b613b26"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/solver_attempt_exitcode.txt",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/solver_attempt_stderr.txt",
+      "sha256": "41d745567a18a773dc3e4ca57ee087dbff10055c65c8232bf5c41de39ae807bd"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/solver_attempt_stdout.txt",
+      "sha256": "2f2998e9e5d10ed45fe6f15c1be058803cbd7e3e363fb59e246866c217639ecc"
+    },
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/validation_results.json",
+      "sha256": "d3e16d6e147b4799e18dc531ddcad1dcdd948754e5ffc27ce566b310649a44bb"
+    },
+    {
+      "path": "docs/reports/g1_pending_human_actions.md",
+      "sha256": "237ac428896d5a5f46aaf5d19d5e528cc89cd4b7eb618781aed3c51c6f9374d8"
+    },
+    {
+      "path": "docs/reports/g1_report.md",
+      "sha256": "1b0da63d6efe6db62211039f01db841aa0c09894f929d25afe727ab43e8d6b9d"
+    },
+    {
+      "path": "docs/theory/conservation_report.md",
+      "sha256": "98de22a8f3f8b191a88998ae9e62d89681f6c0ca66e914be4d68dab86abbca6f"
+    },
+    {
+      "path": "docs/theory/nondim_map.json",
+      "sha256": "53fd393f4f7ee3cafef7a20b421137b35443e27d87b9318bc8d5737992324ddd"
+    },
+    {
+      "path": "docs/theory_notes.md",
+      "sha256": "2a8f2225afca522acf285bc3bd417f077618498ef10b2ce09d965a795291244b"
+    },
+    {
+      "path": "matlab/src/theory/jacobian_pure_literature_dimensionless.m",
+      "sha256": "bd2f6f8c606a37cb68ad25d8016bda48a41d0e616ece2b475e5a3e890b5b2b15"
+    },
+    {
+      "path": "matlab/src/theory/pure_nondim_map.m",
+      "sha256": "decd91e777eadfcf6ebdb70f9fc54b3396edcfb01dc5b1f110216e5dbe0ff244"
+    },
+    {
+      "path": "matlab/src/theory/rhs_pure_literature_dimensionless.m",
+      "sha256": "1929a5df14e4d57383d885a949ff9d3a7f4bbe8bf7fd7fa31146ca2aadae71fa"
+    },
+    {
+      "path": "matlab/src/theory/simulate_pure_literature_dimensionless.m",
+      "sha256": "6620c9ed1c6a792d19030535d3702a8d9d80c875af9c252dab043c52c39dbef7"
+    },
+    {
+      "path": "matlab/tests/test_dimensionless_trajectory_equivalence.m",
+      "sha256": "35acc21cbdb2967f0dd6baa6c36a836998e224a8a15e0c5faaf8f3797e12734a"
+    },
+    {
+      "path": "scripts/run_nondim_trajectory_validation.m",
+      "sha256": "b9a5c650e115233f8bd1fc75018f63e8bcafadff7ebec11986059a56c747fa16"
+    }
+  ]
+}

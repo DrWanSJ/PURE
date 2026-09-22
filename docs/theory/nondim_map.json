@@ -1,0 +1,477 @@
+{
+  "schema_version": "1.0",
+  "model_id": "PURE_literature_reference",
+  "source_model": "models/literature_reference/model_definition.json",
+  "authority": "Derived mapping certificate; canonical model and parameter files remain scientific authority. Numeric snapshots are loaded reference values only.",
+  "state_order": [
+    "NTP",
+    "NXP",
+    "nt",
+    "A",
+    "T",
+    "AT",
+    "a",
+    "CP",
+    "C",
+    "TLcat",
+    "D_nt",
+    "D_TLcat"
+  ],
+  "dimensionless_state_order": [
+    "y1",
+    "y2",
+    "y3",
+    "y4",
+    "y5",
+    "y6",
+    "y7",
+    "y8",
+    "y9",
+    "y10",
+    "y11",
+    "y12"
+  ],
+  "scale_definitions": {
+    "c_NTP0": "p.y0(1)",
+    "c_A0": "p.y0(4)",
+    "c_T0": "p.y0(5)",
+    "c_CP0": "p.y0(8)",
+    "c_TLcat0": "p.y0(10)"
+  },
+  "time": {
+    "dimensional": "t",
+    "unit": "s",
+    "dimensionless": "tau",
+    "forward": "tau = k_nt_deg * t",
+    "inverse": "t = tau / k_nt_deg",
+    "scale_source": "p.k_nt_deg",
+    "solver_independent_variable": "tau"
+  },
+  "states": [
+    {
+      "state": "NTP",
+      "dimensionless": "y1",
+      "dimensional_unit": "uM",
+      "scale_expression": "c_NTP0",
+      "forward": "y1 = NTP/(c_NTP0)",
+      "inverse": "NTP = (c_NTP0)*y1"
+    },
+    {
+      "state": "NXP",
+      "dimensionless": "y2",
+      "dimensional_unit": "uM",
+      "scale_expression": "n_NTP*c_NTP0",
+      "forward": "y2 = NXP/(n_NTP*c_NTP0)",
+      "inverse": "NXP = (n_NTP*c_NTP0)*y2"
+    },
+    {
+      "state": "nt",
+      "dimensionless": "y3",
+      "dimensional_unit": "uM",
+      "scale_expression": "n_NTP*c_NTP0",
+      "forward": "y3 = nt/(n_NTP*c_NTP0)",
+      "inverse": "nt = (n_NTP*c_NTP0)*y3"
+    },
+    {
+      "state": "A",
+      "dimensionless": "y4",
+      "dimensional_unit": "uM",
+      "scale_expression": "c_A0",
+      "forward": "y4 = A/(c_A0)",
+      "inverse": "A = (c_A0)*y4"
+    },
+    {
+      "state": "T",
+      "dimensionless": "y5",
+      "dimensional_unit": "uM",
+      "scale_expression": "c_T0",
+      "forward": "y5 = T/(c_T0)",
+      "inverse": "T = (c_T0)*y5"
+    },
+    {
+      "state": "AT",
+      "dimensionless": "y6",
+      "dimensional_unit": "uM",
+      "scale_expression": "c_T0",
+      "forward": "y6 = AT/(c_T0)",
+      "inverse": "AT = (c_T0)*y6"
+    },
+    {
+      "state": "a",
+      "dimensionless": "y7",
+      "dimensional_unit": "uM",
+      "scale_expression": "n_A*c_A0",
+      "forward": "y7 = a/(n_A*c_A0)",
+      "inverse": "a = (n_A*c_A0)*y7"
+    },
+    {
+      "state": "CP",
+      "dimensionless": "y8",
+      "dimensional_unit": "uM",
+      "scale_expression": "c_CP0",
+      "forward": "y8 = CP/(c_CP0)",
+      "inverse": "CP = (c_CP0)*y8"
+    },
+    {
+      "state": "C",
+      "dimensionless": "y9",
+      "dimensional_unit": "uM",
+      "scale_expression": "c_CP0",
+      "forward": "y9 = C/(c_CP0)",
+      "inverse": "C = (c_CP0)*y9"
+    },
+    {
+      "state": "TLcat",
+      "dimensionless": "y10",
+      "dimensional_unit": "uM",
+      "scale_expression": "c_TLcat0",
+      "forward": "y10 = TLcat/(c_TLcat0)",
+      "inverse": "TLcat = (c_TLcat0)*y10"
+    },
+    {
+      "state": "D_nt",
+      "dimensionless": "y11",
+      "dimensional_unit": "uM",
+      "scale_expression": "n_NTP*c_NTP0",
+      "forward": "y11 = D_nt/(n_NTP*c_NTP0)",
+      "inverse": "D_nt = (n_NTP*c_NTP0)*y11"
+    },
+    {
+      "state": "D_TLcat",
+      "dimensionless": "y12",
+      "dimensional_unit": "uM",
+      "scale_expression": "c_TLcat0",
+      "forward": "y12 = D_TLcat/(c_TLcat0)",
+      "inverse": "D_TLcat = (c_TLcat0)*y12"
+    }
+  ],
+  "rate_scale": {
+    "symbol": "Vstar",
+    "unit": "uM/s",
+    "expression": "k_nt_deg*n_NTP*c_NTP0",
+    "forward": "Vtilde = V/Vstar",
+    "inverse": "V = Vstar*Vtilde",
+    "rate_order": [
+      "V_TX",
+      "V_nt_deg",
+      "V_RS",
+      "V_TL",
+      "V_TL_deg",
+      "V_EN"
+    ],
+    "compact_main_rate_indices": [
+      1,
+      3,
+      4,
+      6
+    ],
+    "nt_decay": "Vtilde_nt_deg = y3",
+    "TLcat_decay": "Vtilde_TL_deg = mu_TLdeg*c_TLcat0/(n_NTP*c_NTP0)*y10",
+    "dimensional_TLcat_decay": "V_TL_deg = p.k_TL_deg*TLcat"
+  },
+  "dimensionless_group_definitions": {
+    "fTA": "n_T/n_A",
+    "mu_TX": "k_TX*TXcat/Vstar",
+    "mu_RS": "k_RS*RScat/Vstar",
+    "mu_TL": "k_TL*c_TLcat0/Vstar",
+    "mu_EN": "k_EN*ENcat/Vstar",
+    "mu_TLdeg": "k_TL_deg/k_nt_deg",
+    "theta_DNA": "DNA/(K_TX_DNA+DNA)",
+    "kappa_TX_NTP": "K_TX_NTP/c_NTP0",
+    "kappa_RS_A": "K_RS_A/c_A0",
+    "kappa_RS_T": "K_RS_T/(fTA*c_T0)",
+    "kappa_RS_NTP": "K_RS_NTP/c_NTP0",
+    "kappa_TL_nt": "K_TL_nt/(n_NTP*c_NTP0)",
+    "kappa_TL_AT": "K_TL_AT/(fTA*c_T0)",
+    "kappa_TL_NTP": "K_TL_NTP/c_NTP0",
+    "kappa_EN_CP": "K_EN_CP/c_CP0",
+    "kappa_EN_NXP": "K_EN_NXP/(n_NTP*c_NTP0)",
+    "rho_A": "n_NTP*c_NTP0/(n_A*c_A0)",
+    "rho_T": "n_NTP*c_NTP0/(n_T*c_T0)",
+    "rho_C": "n_NTP*c_NTP0/c_CP0",
+    "TLcat_to_nucleotide_scale": "c_TLcat0/(n_NTP*c_NTP0)"
+  },
+  "parameter_aliases": {
+    "C_TXcat": "p.TXcat",
+    "C_RScat": "p.RScat",
+    "C_ENcat": "p.ENcat",
+    "k_ntdeg": "p.k_nt_deg",
+    "k_TLdeg": "p.k_TL_deg"
+  },
+  "observable_mappings": {
+    "mRNA": "nt/(3*p.L) = n_NTP*c_NTP0*y3/(3*p.L)",
+    "protein": "a/p.L = n_A*c_A0*y7/p.L",
+    "unit": "uM"
+  },
+  "source_files": [
+    "models/literature_reference/model_definition.json",
+    "models/literature_reference/parameters.json",
+    "models/literature_reference/species.csv",
+    "models/literature_reference/reactions.csv",
+    "matlab/generated/pure_literature_reference_params.m",
+    "matlab/generated/rhs_pure_literature_reference.m",
+    "matlab/src/simulate/simulate_pure_literature_reference.m",
+    "models/literature_reference/dimensionless/derive_dimensionless.m",
+    "models/literature_reference/dimensionless/dimensionless_result.txt",
+    "models/literature_reference/dimensionless/README.md",
+    "docs/audit/dimensionless_20260921/REPORT.md",
+    "docs/theory_notes.md"
+  ],
+  "validation": {
+    "status": "PASS",
+    "scope": "Mathematical/numerical equivalence of the frozen B1 deterministic representations only.",
+    "D6_complete": true,
+    "source_commit": "0b6fd01287fad6ee323ce4f9ed27e9605701ff6a",
+    "validated_at_utc": "2026-09-22T16:39:44.134Z",
+    "criteria_sha256": "f8c67a0a16e5f1917620a70aabfcb049e2cc2fb2465d463afae66776a06ac8bb",
+    "evidence": "docs/audit/nondim_trajectory_20260923/validation_results.json",
+    "evidence_sha256": "d3e16d6e147b4799e18dc531ddcad1dcdd948754e5ffc27ce566b310649a44bb",
+    "canonical_B1_and_baselines_byte_unchanged": true,
+    "audited_dimensionless_definitions_byte_unchanged": true,
+    "allPassed": true
+  },
+  "loaded_reference_values_by_DNA": [
+    {
+      "DNA_uM": 0.00034,
+      "value_role": "loaded_reference_values",
+      "state_scales_uM": [
+        1500,
+        6000,
+        6000,
+        300,
+        1.9,
+        1.9,
+        6000,
+        20000,
+        20000,
+        2.2,
+        6000,
+        2.2
+      ],
+      "k_nt_deg_per_s": 7.92e-05,
+      "Vstar_uM_per_s": 0.4752,
+      "groups": {
+        "fTA": 2.3,
+        "mu_TX": 0.3514309764309764,
+        "mu_RS": 2.087542087542088,
+        "mu_TL": 0.39351851851851855,
+        "mu_EN": 16.835016835016834,
+        "mu_TLdeg": 2.348484848484848,
+        "theta_DNA": 0.06367041198501873,
+        "kappa_TX_NTP": 0.05333333333333334,
+        "kappa_RS_A": 0.07666666666666666,
+        "kappa_RS_T": 0.16018306636155608,
+        "kappa_RS_NTP": 0.13333333333333333,
+        "kappa_TL_nt": 0.03766666666666667,
+        "kappa_TL_AT": 2.2883295194508015,
+        "kappa_TL_NTP": 0.006666666666666667,
+        "kappa_EN_CP": 0.01,
+        "kappa_EN_NXP": 0.006666666666666667,
+        "rho_A": 1,
+        "rho_T": 68.64988558352404,
+        "rho_C": 0.3,
+        "TLcat_to_nucleotide_scale": 0.00036666666666666667
+      },
+      "initial_dimensionless_state": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "DNA_uM": 0.0017,
+      "value_role": "loaded_reference_values",
+      "state_scales_uM": [
+        1500,
+        6000,
+        6000,
+        300,
+        1.9,
+        1.9,
+        6000,
+        20000,
+        20000,
+        2.2,
+        6000,
+        2.2
+      ],
+      "k_nt_deg_per_s": 7.92e-05,
+      "Vstar_uM_per_s": 0.4752,
+      "groups": {
+        "fTA": 2.3,
+        "mu_TX": 0.3514309764309764,
+        "mu_RS": 2.087542087542088,
+        "mu_TL": 0.39351851851851855,
+        "mu_EN": 16.835016835016834,
+        "mu_TLdeg": 2.348484848484848,
+        "theta_DNA": 0.25373134328358204,
+        "kappa_TX_NTP": 0.05333333333333334,
+        "kappa_RS_A": 0.07666666666666666,
+        "kappa_RS_T": 0.16018306636155608,
+        "kappa_RS_NTP": 0.13333333333333333,
+        "kappa_TL_nt": 0.03766666666666667,
+        "kappa_TL_AT": 2.2883295194508015,
+        "kappa_TL_NTP": 0.006666666666666667,
+        "kappa_EN_CP": 0.01,
+        "kappa_EN_NXP": 0.006666666666666667,
+        "rho_A": 1,
+        "rho_T": 68.64988558352404,
+        "rho_C": 0.3,
+        "TLcat_to_nucleotide_scale": 0.00036666666666666667
+      },
+      "initial_dimensionless_state": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "DNA_uM": 0.0068,
+      "value_role": "loaded_reference_values",
+      "state_scales_uM": [
+        1500,
+        6000,
+        6000,
+        300,
+        1.9,
+        1.9,
+        6000,
+        20000,
+        20000,
+        2.2,
+        6000,
+        2.2
+      ],
+      "k_nt_deg_per_s": 7.92e-05,
+      "Vstar_uM_per_s": 0.4752,
+      "groups": {
+        "fTA": 2.3,
+        "mu_TX": 0.3514309764309764,
+        "mu_RS": 2.087542087542088,
+        "mu_TL": 0.39351851851851855,
+        "mu_EN": 16.835016835016834,
+        "mu_TLdeg": 2.348484848484848,
+        "theta_DNA": 0.576271186440678,
+        "kappa_TX_NTP": 0.05333333333333334,
+        "kappa_RS_A": 0.07666666666666666,
+        "kappa_RS_T": 0.16018306636155608,
+        "kappa_RS_NTP": 0.13333333333333333,
+        "kappa_TL_nt": 0.03766666666666667,
+        "kappa_TL_AT": 2.2883295194508015,
+        "kappa_TL_NTP": 0.006666666666666667,
+        "kappa_EN_CP": 0.01,
+        "kappa_EN_NXP": 0.006666666666666667,
+        "rho_A": 1,
+        "rho_T": 68.64988558352404,
+        "rho_C": 0.3,
+        "TLcat_to_nucleotide_scale": 0.00036666666666666667
+      },
+      "initial_dimensionless_state": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "source_fingerprints_sha256": [
+    {
+      "path": "docs/audit/dimensionless_20260921/REPORT.md",
+      "sha256": "a25828688696a63d6f1978bbf9c307d37a2dfd23862b39d604737ada659ee7d3"
+    },
+    {
+      "path": "docs/theory_notes.md",
+      "sha256": "2a8f2225afca522acf285bc3bd417f077618498ef10b2ce09d965a795291244b"
+    },
+    {
+      "path": "matlab/generated/pure_literature_reference_params.m",
+      "sha256": "41d12a621652da91c8d1d420cb686689a5681db1593b87fbf10b5331c20c6982"
+    },
+    {
+      "path": "matlab/generated/rhs_pure_literature_reference.m",
+      "sha256": "79ddb8c755ccb5ed1ece2d08b1b1be00d35669ef857edc9e7206094eb77fa358"
+    },
+    {
+      "path": "matlab/src/simulate/simulate_pure_literature_reference.m",
+      "sha256": "2788263f212d49eab5cf5204ae4e2b525b22f68065a323f191d17f16e97b40ad"
+    },
+    {
+      "path": "matlab/src/theory/jacobian_pure_literature_dimensionless.m",
+      "sha256": "bd2f6f8c606a37cb68ad25d8016bda48a41d0e616ece2b475e5a3e890b5b2b15"
+    },
+    {
+      "path": "matlab/src/theory/pure_nondim_map.m",
+      "sha256": "decd91e777eadfcf6ebdb70f9fc54b3396edcfb01dc5b1f110216e5dbe0ff244"
+    },
+    {
+      "path": "matlab/src/theory/rhs_pure_literature_dimensionless.m",
+      "sha256": "1929a5df14e4d57383d885a949ff9d3a7f4bbe8bf7fd7fa31146ca2aadae71fa"
+    },
+    {
+      "path": "matlab/src/theory/simulate_pure_literature_dimensionless.m",
+      "sha256": "6620c9ed1c6a792d19030535d3702a8d9d80c875af9c252dab043c52c39dbef7"
+    },
+    {
+      "path": "matlab/tests/test_dimensionless_trajectory_equivalence.m",
+      "sha256": "35acc21cbdb2967f0dd6baa6c36a836998e224a8a15e0c5faaf8f3797e12734a"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/README.md",
+      "sha256": "e3932be3db0c691e04f0c418a020e9e878edcd15ffc5fbb17ae1203378850c23"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/derive_dimensionless.m",
+      "sha256": "1c29bb423105dfd223a6ff9920a625d4e037e061b80803b8d7e901f115c4adfb"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/dimensionless_result.txt",
+      "sha256": "4e617f6bd5d1ec12cae03dbc4a5149ff0cfbf67fa0dcd49cf2b9c131b45a3ba9"
+    },
+    {
+      "path": "models/literature_reference/model_definition.json",
+      "sha256": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14"
+    },
+    {
+      "path": "models/literature_reference/parameters.json",
+      "sha256": "5f6473b38a7d2bfdb021aa29c36c818483056bf28ef45f9d6a442530b687699c"
+    },
+    {
+      "path": "models/literature_reference/reactions.csv",
+      "sha256": "07426002ce5482c5cd2b2e10966c74a8eff2f487a687c09859ecead4919fff34"
+    },
+    {
+      "path": "models/literature_reference/species.csv",
+      "sha256": "eb78a23cd77a1a5c2d40b2069e6a519e22babc42f46a7eff4c5c5251dd8bcda1"
+    },
+    {
+      "path": "scripts/run_nondim_trajectory_validation.m",
+      "sha256": "b9a5c650e115233f8bd1fc75018f63e8bcafadff7ebec11986059a56c747fa16"
+    }
+  ]
+}

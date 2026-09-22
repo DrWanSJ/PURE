@@ -2,7 +2,7 @@
 
 **Related gate:** G1 — Week 1  
 **Status:** tracking list; not all items are G1 blockers  
-**Last updated:** 2026-09-22
+**Last updated:** 2026-09-23
 
 This file separates work that still requires explicit human judgment from work that is already machine-checked, and separates G1 open evidence from tasks that properly belong to G2 or later.
 
@@ -32,8 +32,10 @@ This file separates work that still requires explicit human judgment from work t
 | --- | --- | --- |
 | D6 | Stoichiometric rank | **completed 2026-09-22:** `rank(S_eff) = 6` for the 12-state augmented B1 representation |
 | D6 | Left nullspace | **completed 2026-09-22:** six readable relations verified as a complete basis; `rank(L)=6`, `L*S_eff≈0` |
-| D6 | Independent coordinates | identify an exact reduced coordinate set or equivalent representation |
-| D6 | Dimensional ↔ dimensionless trajectory check | integrate both forms, back-transform, and compare trajectories |
+| D6 | Independent coordinates | **completed 2026-09-22:** `[NTP,nt,A,AT,CP,TLcat]` |
+| D6 | Exact conservation reduction | **completed 2026-09-22:** exact 12-to-6 reconstruction and all three full/reduced trajectory comparisons; regression remains PASS |
+| D6 | Dimensional ↔ dimensionless trajectory check | **completed 2026-09-23:** all 12 states, 6 rates and both observables pass on all 1,441 output points for each DNA condition; six invariants and physicality pass |
+| D6 | Mapping certificate | **completed 2026-09-23:** [nondim_map.json](../theory/nondim_map.json), with definitions, loaded reference values, source hashes and validation evidence |
 | D7–D10 | Control groups | evaluate the dimensionless groups numerically and identify useful candidate control combinations |
 | D7–D10 | Dominant-balance / sensitivity tests | determine which combinations actually organize behavior in the tested domain |
 | later | `PURE_resource_core` freeze | choose/modify the project core only after structural and data evidence justify the decision |
@@ -45,7 +47,7 @@ Two different energy-bookkeeping statements must now be kept separate:
 - `4*NTP + CP + nt + D_nt + NXP + C = constant` is the readable “remaining high-energy resource + spent resource” total, but it is only `B_NTP + B_CP` and is **not independent**.
 - `I6 = NXP + C - 3*a - 46*AT = constant` is analytically conserved and linearly independent of the five published balances; under the standard zero initial condition it becomes `NXP + C = 3*a + 46*AT`.
 
-MATLAB has now confirmed the formal rank and complete left nullspace for this representation: `rank(S_eff)=6`, `rank(L)=6`, and `L*S_eff≈0` with maximum floating-point residual about `2.78e-17`. The six readable relations therefore form a complete left-nullspace basis. D6 still needs independent coordinates, exact full/reduced trajectory equivalence, and dimensional ↔ dimensionless trajectory back-transform verification.
+MATLAB has confirmed the formal rank and complete left nullspace for this representation: `rank(S_eff)=6`, `rank(L)=6`, and `L*S_eff≈0` with maximum floating-point residual about `2.78e-17`. The six readable relations form a complete left-nullspace basis. **D6 complete:** independent coordinates, exact full/reduced equivalence, dimensional/dimensionless back-transform verification and the mapping certificate are complete. The four regression suites pass 34/34 tests. See [conservation report](../theory/conservation_report.md) and [trajectory audit](../audit/nondim_trajectory_20260923/README.md). This status does not upgrade the B1 evidence to independent experimental validation or complete the later control/QSSA work.
 
 ## D. Optional repository-hardening decisions
 

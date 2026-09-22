@@ -1,0 +1,17 @@
+[警告: 名称不存在或不是目录: D:\BaiduSyncdisk\FACHill\slanCM] 
+NONDIM_RUN_STARTED 2026-09-22T16:30:54.414Z
+MATLAB 25.2.0.3177638 (R2025b) Update 5
+HEAD 0b6fd01287fad6ee323ce4f9ed27e9605701ff6a
+Preregistered criteria SHA256 f8c67a0a16e5f1917620a70aabfcb049e2cc2fb2465d463afae66776a06ac8bb
+CHECKCODE matlab/src/theory/jacobian_pure_literature_dimensionless.m messages=0
+CHECKCODE matlab/src/theory/pure_nondim_map.m messages=0
+CHECKCODE matlab/src/theory/rhs_pure_literature_dimensionless.m messages=0
+CHECKCODE matlab/src/theory/simulate_pure_literature_dimensionless.m messages=0
+CHECKCODE matlab/tests/test_dimensionless_trajectory_equivalence.m messages=0
+CHECKCODE scripts/run_nondim_trajectory_validation.m messages=1
+         id: 'SPRINTFN'
+    message: '为了增强可读性，请考虑使用 'newline' 函数来代替 'sprintf('\n')'。'
+        fix: 1
+       line: 75
+     column: [47 59]
+

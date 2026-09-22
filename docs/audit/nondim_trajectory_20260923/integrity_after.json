@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-09-22T16:40:22.215016+00:00",
+  "source_commit": "0b6fd01287fad6ee323ce4f9ed27e9605701ff6a",
+  "original_tracked_files_checked": 291,
+  "changed_original_files": [
+    "docs/reports/g1_pending_human_actions.md",
+    "docs/reports/g1_report.md",
+    "docs/theory/conservation_report.md",
+    "docs/theory_notes.md"
+  ],
+  "missing_original_files": [],
+  "unexpected_original_changes": [],
+  "unchanged_original_files_count": 287,
+  "canonical_B1_and_baselines_byte_unchanged": true,
+  "audited_dimensionless_definitions_byte_unchanged": true,
+  "original_preregistration_and_criteria_unchanged": true,
+  "registered_revised_implementation_matches_tested_source": true,
+  "initial_compact_RHS_and_mapping_builder_unchanged": true
+}

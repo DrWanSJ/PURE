@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "registered_at_utc": "2026-09-22T16:25:45.904732+00:00",
+  "registered_before_first_trajectory_validation": true,
+  "source_commit": "0b6fd01287fad6ee323ce4f9ed27e9605701ff6a",
+  "remote_main": "0b6fd01287fad6ee323ce4f9ed27e9605701ff6a",
+  "criteria_sha256": "f8c67a0a16e5f1917620a70aabfcb049e2cc2fb2465d463afae66776a06ac8bb",
+  "integrity_before_sha256": "d89300572ea66ccb2ec9b615bad0e343cb04a328484c47730bb37c4754312ee7",
+  "implementation": [
+    {
+      "path": "docs/audit/nondim_trajectory_20260923/finalize_evidence.py",
+      "sha256": "a05dc430aefe4e8f11f64c54c0d59342852c8bfd27e136a37a16aa69f98666bd"
+    },
+    {
+      "path": "matlab/src/theory/pure_nondim_map.m",
+      "sha256": "decd91e777eadfcf6ebdb70f9fc54b3396edcfb01dc5b1f110216e5dbe0ff244"
+    },
+    {
+      "path": "matlab/src/theory/rhs_pure_literature_dimensionless.m",
+      "sha256": "1929a5df14e4d57383d885a949ff9d3a7f4bbe8bf7fd7fa31146ca2aadae71fa"
+    },
+    {
+      "path": "matlab/src/theory/simulate_pure_literature_dimensionless.m",
+      "sha256": "a131c157cac229c29184752e76d8649549a5d3d21ad0023a538181c6fc20667f"
+    },
+    {
+      "path": "matlab/tests/test_dimensionless_trajectory_equivalence.m",
+      "sha256": "6a52f5b1fa1decc5483fcad8e78fe5a3235d7d2a33ee82eec8b30ef668376aa8"
+    },
+    {
+      "path": "scripts/run_nondim_trajectory_validation.m",
+      "sha256": "fe74c13eb22358a178f4bc28e593ba3d74b6baec426588bb7fa5d4338713953e"
+    }
+  ],
+  "allowed_original_document_changes_after_success": [
+    "docs/reports/g1_pending_human_actions.md",
+    "docs/reports/g1_report.md",
+    "docs/theory/conservation_report.md",
+    "docs/theory_notes.md"
+  ]
+}

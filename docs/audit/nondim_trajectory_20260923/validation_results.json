@@ -1,0 +1,1095 @@
+{
+  "schema_version": "1.0",
+  "scope": "Frozen B1 deterministic mathematical/numerical equivalence only",
+  "source_commit": "0b6fd01287fad6ee323ce4f9ed27e9605701ff6a",
+  "run_started_at_utc": "2026-09-22T16:39:44.134Z",
+  "criteria_sha256": "f8c67a0a16e5f1917620a70aabfcb049e2cc2fb2465d463afae66776a06ac8bb",
+  "stdout_sha256": "0f617b9ea78c8bb07bae9becce3bb31e12369f8c621be33dcfe9a93276249651",
+  "native_stdout_encoding": "gb18030",
+  "summary": {
+    "matlab_version": "25.2.0.3177638 (R2025b) Update 5",
+    "allPassed": true,
+    "suites": [
+      {
+        "name": "test_dimensionless_trajectory_equivalence",
+        "passed": 12,
+        "failed": 0,
+        "incomplete": 0,
+        "duration_s": 1.1077179000000001
+      },
+      {
+        "name": "test_exact_conservation_reduction",
+        "passed": 8,
+        "failed": 0,
+        "incomplete": 0,
+        "duration_s": 0.3172798
+      },
+      {
+        "name": "test_pure_literature_reference",
+        "passed": 9,
+        "failed": 0,
+        "incomplete": 0,
+        "duration_s": 0.27295499999999995
+      },
+      {
+        "name": "test_codegen_and_provenance",
+        "passed": 5,
+        "failed": 0,
+        "incomplete": 0,
+        "duration_s": 0.3942243
+      }
+    ]
+  },
+  "roundtrip": {
+    "state_max_abs_uM": 0,
+    "time_max_abs_s": 0,
+    "rate_max_abs_uM_per_s": 0
+  },
+  "initial_dimensionless_state": [
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+  ],
+  "parameters": {
+    "groups_checked": 20,
+    "canonical_and_synthetic": true,
+    "source": "loaded p plus in-memory algebra stress fixture"
+  },
+  "pointwise_rhs": {
+    "max_absolute_residual": 2.842170943040401e-14,
+    "feasible_trajectory_points": 51,
+    "rate_max_abs_per_quantity": [
+      2.7755575615628914e-17,
+      6.938893903907228e-18,
+      1.1102230246251565e-16,
+      6.938893903907228e-18,
+      5.421010862427522e-20,
+      1.3877787807814457e-17
+    ]
+  },
+  "cases": [
+    {
+      "DNA_uM": 0.00034,
+      "output_points": 1441,
+      "tau_final": 1.14048,
+      "max_time_roundtrip_error_s": 1.8189894035458565e-12,
+      "state_names": [
+        "NTP",
+        "NXP",
+        "nt",
+        "A",
+        "T",
+        "AT",
+        "a",
+        "CP",
+        "C",
+        "TLcat",
+        "D_nt",
+        "D_TLcat"
+      ],
+      "rate_names": [
+        "V_TX",
+        "V_nt_deg",
+        "V_RS",
+        "V_TL",
+        "V_TL_deg",
+        "V_EN"
+      ],
+      "states": {
+        "scale": [
+          1500,
+          3.7216882155236024,
+          86.6491128580872,
+          300,
+          1.9,
+          1.8997287644488603,
+          34.63089976133222,
+          20000,
+          191.25771227381261,
+          2.2,
+          58.6222601042682,
+          2.0489195253155605
+        ],
+        "raw_max_abs_per_quantity": [
+          7.105882104951888e-09,
+          2.842270641068012e-08,
+          3.3782043828978203e-10,
+          6.263576324272435e-09,
+          4.985428181392138e-10,
+          4.98541208315828e-10,
+          1.2528140302947577e-07,
+          3.798995749093592e-07,
+          3.7992950296938943e-07,
+          2.457289094426329e-10,
+          3.3740121807568357e-10,
+          2.457256620402859e-10
+        ],
+        "normalized_per_quantity": [
+          4.737254736634592e-12,
+          7.63704662097315e-09,
+          3.898717795796248e-12,
+          2.0878587747574785e-11,
+          2.6239095691537566e-10,
+          2.6242757263322394e-10,
+          3.6176190596514924e-09,
+          1.8994978745467962e-11,
+          1.986479386648034e-09,
+          1.1169495883756041e-10,
+          5.7555136474705435e-12,
+          1.199293866861076e-10
+        ],
+        "max_raw_abs": 3.7992950296938943e-07,
+        "max_normalized": 7.63704662097315e-09
+      },
+      "rates": {
+        "scale": [
+          0.010094581140662778,
+          0.006862609738360506,
+          0.7007227534243771,
+          0.003562536800227748,
+          0.0004092,
+          0.6742299521944471
+        ],
+        "raw_max_abs_per_quantity": [
+          2.4234086959395995e-15,
+          2.6755507531728284e-14,
+          3.679309634740946e-10,
+          1.6474100729413355e-12,
+          4.570557934945388e-14,
+          4.834169398115762e-09
+        ],
+        "normalized_per_quantity": [
+          2.400702577125935e-13,
+          3.89873656696093e-12,
+          5.250735211266437e-10,
+          4.6242612085747963e-10,
+          1.1169496419710136e-10,
+          7.169911960128394e-09
+        ],
+        "max_raw_abs": 4.834169398115762e-09,
+        "max_normalized": 7.169911960128394e-09
+      },
+      "compact_backtransformed_rates": {
+        "scale": [
+          0.010094581140662778,
+          0.006862609738360506,
+          0.7007227534243771,
+          0.003562536800227748,
+          0.0004092,
+          0.6742299521944471
+        ],
+        "raw_max_abs_per_quantity": [
+          2.4251434194155763e-15,
+          2.6755507531728284e-14,
+          3.679309634740946e-10,
+          1.6474100729413355e-12,
+          4.57055725731903e-14,
+          4.834169287093459e-09
+        ],
+        "normalized_per_quantity": [
+          2.4024210471167196e-13,
+          3.89873656696093e-12,
+          5.250735211266437e-10,
+          4.6242612085747963e-10,
+          1.1169494763731744e-10,
+          7.1699117954630565e-09
+        ],
+        "max_raw_abs": 4.834169287093459e-09,
+        "max_normalized": 7.1699117954630565e-09
+      },
+      "mRNA": {
+        "scale": 0.12135730092169075,
+        "raw_max_abs_per_quantity": 4.731492975196261e-13,
+        "normalized_per_quantity": 3.898811970323393e-12,
+        "max_raw_abs": 4.731492975196261e-13,
+        "max_normalized": 3.898811970323393e-12
+      },
+      "protein": {
+        "scale": 0.14550798219047154,
+        "raw_max_abs_per_quantity": 5.263924296450284e-10,
+        "normalized_per_quantity": 3.6176189217989085e-09,
+        "max_raw_abs": 5.263924296450284e-10,
+        "max_normalized": 3.6176189217989085e-09
+      },
+      "trajectory_pass": true
+    },
+    {
+      "DNA_uM": 0.0017,
+      "output_points": 1441,
+      "tau_final": 1.14048,
+      "max_time_roundtrip_error_s": 1.8189894035458565e-12,
+      "state_names": [
+        "NTP",
+        "NXP",
+        "nt",
+        "A",
+        "T",
+        "AT",
+        "a",
+        "CP",
+        "C",
+        "TLcat",
+        "D_nt",
+        "D_TLcat"
+      ],
+      "rate_names": [
+        "V_TX",
+        "V_nt_deg",
+        "V_RS",
+        "V_TL",
+        "V_TL_deg",
+        "V_EN"
+      ],
+      "states": {
+        "scale": [
+          1500,
+          3.7222053883104067,
+          344.4871494078144,
+          300,
+          1.9,
+          1.8991056909197115,
+          93.1067448817866,
+          20000,
+          366.643538632025,
+          2.2,
+          233.2844370305597,
+          2.0489195253312382
+        ],
+        "raw_max_abs_per_quantity": [
+          7.106336852302775e-09,
+          2.8422664666294395e-08,
+          9.736709216667805e-10,
+          8.861661626724526e-09,
+          4.996753566466339e-10,
+          4.996743019347605e-10,
+          1.772619953044341e-07,
+          5.357505870051682e-07,
+          5.35739218321396e-07,
+          1.594220033762639e-10,
+          9.727330052555772e-10,
+          1.5942314135486413e-10
+        ],
+        "normalized_per_quantity": [
+          4.737557901535183e-12,
+          7.635974295119723e-09,
+          2.8264361191427757e-12,
+          2.953887208908175e-11,
+          2.6298702981401784e-10,
+          2.63110317832166e-10,
+          1.903857722976951e-09,
+          2.678752935025841e-11,
+          1.4611991263238401e-09,
+          7.246454698921085e-11,
+          4.169729526912897e-12,
+          7.780839578318285e-11
+        ],
+        "max_raw_abs": 5.357505870051682e-07,
+        "max_normalized": 7.635974295119723e-09
+      },
+      "rates": {
+        "scale": [
+          0.040227659172491964,
+          0.0272833822330989,
+          0.7007227534243771,
+          0.010407647685020623,
+          0.0004092,
+          0.6743156679025851
+        ],
+        "raw_max_abs_per_quantity": [
+          9.665879208142769e-15,
+          7.711539740107298e-14,
+          3.676833837396032e-10,
+          2.448885712269533e-12,
+          2.9652488960345974e-14,
+          4.834156408506374e-09
+        ],
+        "normalized_per_quantity": [
+          2.402794347713969e-13,
+          2.826460324538512e-12,
+          5.247202005968315e-10,
+          2.352967535396237e-10,
+          7.246453802626093e-11,
+          7.1689812926084036e-09
+        ],
+        "max_raw_abs": 4.834156408506374e-09,
+        "max_normalized": 7.1689812926084036e-09
+      },
+      "compact_backtransformed_rates": {
+        "scale": [
+          0.040227659172491964,
+          0.0272833822330989,
+          0.7007227534243771,
+          0.010407647685020623,
+          0.0004092,
+          0.6743156679025851
+        ],
+        "raw_max_abs_per_quantity": [
+          9.665879208142769e-15,
+          7.711539740107298e-14,
+          3.6768332822845196e-10,
+          2.448884844907795e-12,
+          2.9652488960345974e-14,
+          4.834156519528676e-09
+        ],
+        "normalized_per_quantity": [
+          2.402794347713969e-13,
+          2.826460324538512e-12,
+          5.247201213769817e-10,
+          2.352966702007402e-10,
+          7.246453802626093e-11,
+          7.168981457252809e-09
+        ],
+        "max_raw_abs": 4.834156519528676e-09,
+        "max_normalized": 7.168981457252809e-09
+      },
+      "mRNA": {
+        "scale": 0.4824749991706084,
+        "raw_max_abs_per_quantity": 1.3636869411470798e-12,
+        "normalized_per_quantity": 2.826440631102764e-12,
+        "max_raw_abs": 1.3636869411470798e-12,
+        "max_normalized": 2.826440631102764e-12
+      },
+      "protein": {
+        "scale": 0.3912048104276748,
+        "raw_max_abs_per_quantity": 7.447982786068508e-10,
+        "normalized_per_quantity": 1.903857669318071e-09,
+        "max_raw_abs": 7.447982786068508e-10,
+        "max_normalized": 1.903857669318071e-09
+      },
+      "trajectory_pass": true
+    },
+    {
+      "DNA_uM": 0.0068,
+      "output_points": 1441,
+      "tau_final": 1.14048,
+      "max_time_roundtrip_error_s": 1.8189894035458565e-12,
+      "state_names": [
+        "NTP",
+        "NXP",
+        "nt",
+        "A",
+        "T",
+        "AT",
+        "a",
+        "CP",
+        "C",
+        "TLcat",
+        "D_nt",
+        "D_TLcat"
+      ],
+      "rate_names": [
+        "V_TX",
+        "V_nt_deg",
+        "V_RS",
+        "V_TL",
+        "V_TL_deg",
+        "V_EN"
+      ],
+      "states": {
+        "scale": [
+          1500,
+          3.723073925482608,
+          778.7588929788116,
+          300,
+          1.9,
+          1.8988286792652571,
+          140.1137257622559,
+          20000,
+          507.64169411508493,
+          2.2,
+          528.4231952812663,
+          2.048919525322854
+        ],
+        "raw_max_abs_per_quantity": [
+          7.105654731276445e-09,
+          2.8422596276556078e-08,
+          1.996795617742464e-09,
+          8.7218836597458e-09,
+          5.014539894432346e-10,
+          5.014573201123085e-10,
+          1.744950850479654e-07,
+          5.274305294733495e-07,
+          5.274114869280311e-07,
+          1.4416862148536325e-10,
+          1.9817889551632106e-09,
+          1.4416290383678643e-10
+        ],
+        "normalized_per_quantity": [
+          4.737103154184297e-12,
+          7.63417456796047e-09,
+          2.5640742413926987e-12,
+          2.9072945532485997e-11,
+          2.6392315233854457e-10,
+          2.6408771132862024e-10,
+          1.2453818075186121e-09,
+          2.6371526473667472e-11,
+          1.0389443834935754e-09,
+          6.553119158425602e-11,
+          3.750382218003043e-12,
+          7.03604519626364e-11
+        ],
+        "max_raw_abs": 5.274305294733495e-07,
+        "max_normalized": 7.63417456796047e-09
+      },
+      "rates": {
+        "scale": [
+          0.09136451405277839,
+          0.061677704323921875,
+          0.7007227534243771,
+          0.016919388452529435,
+          0.0004092,
+          0.6744596138345788
+        ],
+        "raw_max_abs_per_quantity": [
+          2.195466031196247e-14,
+          1.5815126985785355e-13,
+          3.672279147437507e-10,
+          2.843872706770334e-12,
+          2.6815362267913062e-14,
+          4.8341349812019985e-09
+        ],
+        "normalized_per_quantity": [
+          2.402974561795399e-13,
+          2.564156231030702e-12,
+          5.240702017297665e-10,
+          1.6808365826869926e-10,
+          6.553118833800845e-11,
+          7.167419489682954e-09
+        ],
+        "max_raw_abs": 4.8341349812019985e-09,
+        "max_normalized": 7.167419489682954e-09
+      },
+      "compact_backtransformed_rates": {
+        "scale": [
+          0.09136451405277839,
+          0.061677704323921875,
+          0.7007227534243771,
+          0.016919388452529435,
+          0.0004092,
+          0.6744596138345788
+        ],
+        "raw_max_abs_per_quantity": [
+          2.1940782524154656e-14,
+          1.5815126985785355e-13,
+          3.6722780372144825e-10,
+          2.843871839408596e-12,
+          2.6815355491649484e-14,
+          4.834134870179696e-09
+        ],
+        "normalized_per_quantity": [
+          2.401455614537627e-13,
+          2.564156231030702e-12,
+          5.24070043290067e-10,
+          1.6808360700433233e-10,
+          6.553117177822454e-11,
+          7.167419325073687e-09
+        ],
+        "max_raw_abs": 4.834134870179696e-09,
+        "max_normalized": 7.167419325073687e-09
+      },
+      "mRNA": {
+        "scale": 1.090698729662201,
+        "raw_max_abs_per_quantity": 2.7966517990307693e-12,
+        "normalized_per_quantity": 2.564091919220367e-12,
+        "max_raw_abs": 2.7966517990307693e-12,
+        "max_normalized": 2.564091919220367e-12
+      },
+      "protein": {
+        "scale": 0.5887131334548568,
+        "raw_max_abs_per_quantity": 7.331726337156397e-10,
+        "normalized_per_quantity": 1.2453818201965767e-09,
+        "max_raw_abs": 7.331726337156397e-10,
+        "max_normalized": 1.2453818201965767e-09
+      },
+      "trajectory_pass": true
+    }
+  ],
+  "rate_backtransform": [
+    {
+      "DNA_uM": 0.00034,
+      "raw_max_abs_per_rate": [
+        3.469446951953614e-18,
+        8.673617379884035e-19,
+        2.220446049250313e-16,
+        3.0357660829594124e-18,
+        1.0842021724855044e-19,
+        2.220446049250313e-16
+      ],
+      "comparison_scale": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "scaled_residual_per_rate": [
+        3.469446951953614e-18,
+        8.673617379884035e-19,
+        2.220446049250313e-16,
+        3.0357660829594124e-18,
+        1.0842021724855044e-19,
+        2.220446049250313e-16
+      ],
+      "max_scaled_residual": 2.220446049250313e-16
+    },
+    {
+      "DNA_uM": 0.0017,
+      "raw_max_abs_per_rate": [
+        1.3877787807814457e-17,
+        3.469446951953614e-18,
+        2.220446049250313e-16,
+        8.673617379884035e-18,
+        1.6263032587282567e-19,
+        2.220446049250313e-16
+      ],
+      "comparison_scale": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "scaled_residual_per_rate": [
+        1.3877787807814457e-17,
+        3.469446951953614e-18,
+        2.220446049250313e-16,
+        8.673617379884035e-18,
+        1.6263032587282567e-19,
+        2.220446049250313e-16
+      ],
+      "max_scaled_residual": 2.220446049250313e-16
+    },
+    {
+      "DNA_uM": 0.0068,
+      "raw_max_abs_per_rate": [
+        2.7755575615628914e-17,
+        6.938893903907228e-18,
+        2.220446049250313e-16,
+        1.734723475976807e-17,
+        1.6263032587282567e-19,
+        2.220446049250313e-16
+      ],
+      "comparison_scale": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "scaled_residual_per_rate": [
+        2.7755575615628914e-17,
+        6.938893903907228e-18,
+        2.220446049250313e-16,
+        1.734723475976807e-17,
+        1.6263032587282567e-19,
+        2.220446049250313e-16
+      ],
+      "max_scaled_residual": 2.220446049250313e-16
+    }
+  ],
+  "physicality": [
+    {
+      "DNA_uM": 0.00034,
+      "all_finite": true,
+      "state_names": [
+        "NTP",
+        "NXP",
+        "nt",
+        "A",
+        "T",
+        "AT",
+        "a",
+        "CP",
+        "C",
+        "TLcat",
+        "D_nt",
+        "D_TLcat"
+      ],
+      "backtransform_min_per_state": [
+        1463.6780767828243,
+        0,
+        0,
+        293.8993883606566,
+        0.0002712355600706956,
+        0,
+        0,
+        19808.74228734628,
+        0,
+        0.15108047490571447,
+        0,
+        0
+      ],
+      "backtransform_negative_count_per_state": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reference_min_per_state": [
+        1463.6780767828377,
+        0,
+        0,
+        293.89938836692016,
+        0.00027123555114052177,
+        0,
+        0,
+        19808.742287726178,
+        0,
+        0.15108047468443944,
+        0,
+        0
+      ],
+      "reference_negative_count_per_state": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "roundoff_allowance_uM": 2.3283064365386963e-10,
+      "invariant_names": [
+        "B_NTP",
+        "B_AA",
+        "B_tRNA",
+        "B_CP",
+        "B_TLcat",
+        "I6"
+      ],
+      "invariant_reference": [
+        6000,
+        6000,
+        87.39999999999999,
+        20000,
+        2.2,
+        0
+      ],
+      "invariant_scale": [
+        6000,
+        6000,
+        87.39999999999999,
+        20000,
+        2.2,
+        1
+      ],
+      "invariant_raw_max_abs_per_quantity": [
+        4.547473508864641e-12,
+        6.366462912410498e-12,
+        1.4210854715202004e-13,
+        2.9103830456733704e-11,
+        2.220446049250313e-15,
+        3.552713678800501e-13
+      ],
+      "invariant_scaled_residual_per_quantity": [
+        7.579122514774402e-16,
+        1.0610771520684164e-15,
+        1.6259559170711676e-15,
+        1.4551915228366853e-15,
+        1.0092936587501422e-15,
+        3.552713678800501e-13
+      ],
+      "max_abs_invariant_residual": 2.9103830456733704e-11,
+      "max_scaled_invariant_residual": 3.552713678800501e-13
+    },
+    {
+      "DNA_uM": 0.0017,
+      "all_finite": true,
+      "state_names": [
+        "NTP",
+        "NXP",
+        "nt",
+        "A",
+        "T",
+        "AT",
+        "a",
+        "CP",
+        "C",
+        "TLcat",
+        "D_nt",
+        "D_TLcat"
+      ],
+      "backtransform_min_per_state": [
+        1355.5482139424932,
+        0,
+        0,
+        290.97671965793455,
+        0.0008943090812068827,
+        0,
+        0,
+        19633.356460832307,
+        0,
+        0.1510804748251082,
+        0,
+        0
+      ],
+      "backtransform_negative_count_per_state": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reference_min_per_state": [
+        1355.5482139425035,
+        0,
+        0,
+        290.9767196667962,
+        0.0008943090802868856,
+        0,
+        0,
+        19633.356461368057,
+        0,
+        0.15108047466876434,
+        0,
+        0
+      ],
+      "reference_negative_count_per_state": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "roundoff_allowance_uM": 2.3283064365386963e-10,
+      "invariant_names": [
+        "B_NTP",
+        "B_AA",
+        "B_tRNA",
+        "B_CP",
+        "B_TLcat",
+        "I6"
+      ],
+      "invariant_reference": [
+        6000,
+        6000,
+        87.39999999999999,
+        20000,
+        2.2,
+        0
+      ],
+      "invariant_scale": [
+        6000,
+        6000,
+        87.39999999999999,
+        20000,
+        2.2,
+        1
+      ],
+      "invariant_raw_max_abs_per_quantity": [
+        9.094947017729282e-12,
+        6.366462912410498e-12,
+        1.5631940186722204e-13,
+        7.275957614183426e-11,
+        2.6645352591003757e-15,
+        4.121147867408581e-13
+      ],
+      "invariant_scaled_residual_per_quantity": [
+        1.5158245029548805e-15,
+        1.0610771520684164e-15,
+        1.7885515087782844e-15,
+        3.637978807091713e-15,
+        1.2111523905001707e-15,
+        4.121147867408581e-13
+      ],
+      "max_abs_invariant_residual": 7.275957614183426e-11,
+      "max_scaled_invariant_residual": 4.121147867408581e-13
+    },
+    {
+      "DNA_uM": 0.0068,
+      "all_finite": true,
+      "state_names": [
+        "NTP",
+        "NXP",
+        "nt",
+        "A",
+        "T",
+        "AT",
+        "a",
+        "CP",
+        "C",
+        "TLcat",
+        "D_nt",
+        "D_TLcat"
+      ],
+      "backtransform_min_per_state": [
+        1173.1930773315114,
+        0,
+        0,
+        288.62700774085533,
+        0.0011713207358267832,
+        0,
+        0,
+        19492.358305357517,
+        0,
+        0.15108047481631315,
+        0,
+        0
+      ],
+      "backtransform_negative_count_per_state": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reference_min_per_state": [
+        1173.1930773315132,
+        0,
+        0,
+        288.6270077495772,
+        0.0011713207347400188,
+        0,
+        0,
+        19492.358305884947,
+        0,
+        0.15108047467714386,
+        0,
+        0
+      ],
+      "reference_negative_count_per_state": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "roundoff_allowance_uM": 2.3283064365386963e-10,
+      "invariant_names": [
+        "B_NTP",
+        "B_AA",
+        "B_tRNA",
+        "B_CP",
+        "B_TLcat",
+        "I6"
+      ],
+      "invariant_reference": [
+        6000,
+        6000,
+        87.39999999999999,
+        20000,
+        2.2,
+        0
+      ],
+      "invariant_scale": [
+        6000,
+        6000,
+        87.39999999999999,
+        20000,
+        2.2,
+        1
+      ],
+      "invariant_raw_max_abs_per_quantity": [
+        1.7280399333685637e-11,
+        1.0913936421275139e-11,
+        5.684341886080802e-14,
+        2.1827872842550278e-11,
+        3.9968028886505635e-15,
+        1.0516032489249483e-12
+      ],
+      "invariant_scaled_residual_per_quantity": [
+        2.8800665556142727e-15,
+        1.8189894035458565e-15,
+        6.503823668284671e-16,
+        1.0913936421275138e-15,
+        1.816728585750256e-15,
+        1.0516032489249483e-12
+      ],
+      "max_abs_invariant_residual": 2.1827872842550278e-11,
+      "max_scaled_invariant_residual": 1.0516032489249483e-12
+    }
+  ],
+  "symbolic_regression": {
+    "passed": true,
+    "equations": 12,
+    "dimensional_balances": 5,
+    "dimensionless_balances": 5,
+    "generated_text_byte_unchanged": true
+  },
+  "symbolic_generated_output": {
+    "original_sha256": "db98db7947f3fd9269514d4d514aaedcb7597f93e2191eda23247e71585ce358",
+    "regenerated_sha256": "f470db4c39cf612d256fcfffc511c76674f1dbc960136d017fdd0ba859e7b562",
+    "normalized_text_identical": true,
+    "original_bytes_preserved_or_restored": true
+  },
+  "jacobian": {
+    "points": 51,
+    "max_scaled_complex_step_residual": 2.217878763897636e-15,
+    "max_abs_I6_derivative_uM_per_s": 9.00399754755199e-18
+  },
+  "implementation_revision": {
+    "schema_version": "1.0",
+    "registered_at_utc": "2026-09-22T16:39:33.242521+00:00",
+    "original_preregistration_sha256": "f1e69d58f8f233bfd65dcb1fc0260f4794b777264fb442726234a179b2589a16",
+    "previous_revision_sha256": "6966519636819d22ca4173e0bb1f711d4d50604c40006da1f2ad5b2f3b9110e4",
+    "criteria_sha256": "f8c67a0a16e5f1917620a70aabfcb049e2cc2fb2465d463afae66776a06ac8bb",
+    "reason": "Final evidence QA found Windows write_text added extra CR characters to the UTF-8 viewing copy. Write encoded bytes directly, preserving every newline. Native logs were unaffected. Runner binds the new utility hash; all scientific runtime, tests, solver options and acceptance criteria are unchanged.",
+    "implementation": [
+      {
+        "path": "docs/audit/nondim_trajectory_20260923/finalize_evidence.py",
+        "sha256": "dbe70c5629b60e455cc85493bfb9932fda89ce54992734e7570fdc65b443d940"
+      },
+      {
+        "path": "matlab/src/theory/jacobian_pure_literature_dimensionless.m",
+        "sha256": "bd2f6f8c606a37cb68ad25d8016bda48a41d0e616ece2b475e5a3e890b5b2b15"
+      },
+      {
+        "path": "matlab/src/theory/pure_nondim_map.m",
+        "sha256": "decd91e777eadfcf6ebdb70f9fc54b3396edcfb01dc5b1f110216e5dbe0ff244"
+      },
+      {
+        "path": "matlab/src/theory/rhs_pure_literature_dimensionless.m",
+        "sha256": "1929a5df14e4d57383d885a949ff9d3a7f4bbe8bf7fd7fa31146ca2aadae71fa"
+      },
+      {
+        "path": "matlab/src/theory/simulate_pure_literature_dimensionless.m",
+        "sha256": "6620c9ed1c6a792d19030535d3702a8d9d80c875af9c252dab043c52c39dbef7"
+      },
+      {
+        "path": "matlab/tests/test_dimensionless_trajectory_equivalence.m",
+        "sha256": "35acc21cbdb2967f0dd6baa6c36a836998e224a8a15e0c5faaf8f3797e12734a"
+      },
+      {
+        "path": "scripts/run_nondim_trajectory_validation.m",
+        "sha256": "b9a5c650e115233f8bd1fc75018f63e8bcafadff7ebec11986059a56c747fa16"
+      }
+    ],
+    "initial_attempt_evidence": [
+      {
+        "path": "docs/audit/nondim_trajectory_20260923/initial_attempt_exitcode.txt",
+        "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+      },
+      {
+        "path": "docs/audit/nondim_trajectory_20260923/initial_attempt_stderr.txt",
+        "sha256": "3a1052604e96e86c651a6063f7e03831224117ed51d6034c98e803baf0816faf"
+      },
+      {
+        "path": "docs/audit/nondim_trajectory_20260923/initial_attempt_stdout.txt",
+        "sha256": "233eb1c025db055c98ffb54dd52a82f4dd383c141a458d70a1dcf5ee38f7e879"
+      },
+      {
+        "path": "docs/audit/nondim_trajectory_20260923/runner_preflight_exitcode.txt",
+        "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+      },
+      {
+        "path": "docs/audit/nondim_trajectory_20260923/runner_preflight_stderr.txt",
+        "sha256": "6a119f52a4d4c2469116fb0864fb84bc6b8f60e9917fe3c82b33b0492252fcd8"
+      },
+      {
+        "path": "docs/audit/nondim_trajectory_20260923/runner_preflight_stdout.txt",
+        "sha256": "c1e20fe2c12bac955838f28865e6dea8ce956a2af8d69702a747a75d5b613b26"
+      },
+      {
+        "path": "docs/audit/nondim_trajectory_20260923/solver_attempt_exitcode.txt",
+        "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+      },
+      {
+        "path": "docs/audit/nondim_trajectory_20260923/solver_attempt_stderr.txt",
+        "sha256": "41d745567a18a773dc3e4ca57ee087dbff10055c65c8232bf5c41de39ae807bd"
+      },
+      {
+        "path": "docs/audit/nondim_trajectory_20260923/solver_attempt_stdout.txt",
+        "sha256": "2f2998e9e5d10ed45fe6f15c1be058803cbd7e3e363fb59e246866c217639ecc"
+      }
+    ],
+    "solver_revision": "ode15s Jacobian option now calls jacobian_pure_literature_dimensionless; no state projection or reconstruction is applied.",
+    "supplemental_jacobian_check": {
+      "method": "complex-step differentiation of the unchanged compact RHS, all 12 columns at 51 points",
+      "max_scaled_residual": 1e-12,
+      "scale": "max(1,abs(complex_step_derivative)) per entry",
+      "I6_derivative_absolute_tolerance_uM_per_s": 1e-12
+    },
+    "original_implementation": [
+      {
+        "path": "docs/audit/nondim_trajectory_20260923/finalize_evidence.py",
+        "sha256": "a05dc430aefe4e8f11f64c54c0d59342852c8bfd27e136a37a16aa69f98666bd"
+      },
+      {
+        "path": "matlab/src/theory/pure_nondim_map.m",
+        "sha256": "decd91e777eadfcf6ebdb70f9fc54b3396edcfb01dc5b1f110216e5dbe0ff244"
+      },
+      {
+        "path": "matlab/src/theory/rhs_pure_literature_dimensionless.m",
+        "sha256": "1929a5df14e4d57383d885a949ff9d3a7f4bbe8bf7fd7fa31146ca2aadae71fa"
+      },
+      {
+        "path": "matlab/src/theory/simulate_pure_literature_dimensionless.m",
+        "sha256": "a131c157cac229c29184752e76d8649549a5d3d21ad0023a538181c6fc20667f"
+      },
+      {
+        "path": "matlab/tests/test_dimensionless_trajectory_equivalence.m",
+        "sha256": "6a52f5b1fa1decc5483fcad8e78fe5a3235d7d2a33ee82eec8b30ef668376aa8"
+      },
+      {
+        "path": "scripts/run_nondim_trajectory_validation.m",
+        "sha256": "fe74c13eb22358a178f4bc28e593ba3d74b6baec426588bb7fa5d4338713953e"
+      }
+    ]
+  },
+  "initial_attempt": {
+    "allPassed": false,
+    "failure": "I6 invariant drift with finite-difference solver Jacobian",
+    "evidence": "initial_attempt_stdout.txt",
+    "max_I6_drift_uM": 4.326757618855481e-08
+  },
+  "solver_attempt": {
+    "allPassed": true,
+    "native_exitcode": 1,
+    "failure": "Post-test symbolic output differed only by CRLF to LF line endings",
+    "evidence": "solver_attempt_stdout.txt"
+  },
+  "D6_complete": true
+}
