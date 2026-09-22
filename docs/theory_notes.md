@@ -74,6 +74,243 @@ $$
 \end{align}
 $$
 
+## 3.1 从反应账本到化学计量矩阵
+
+D6 后续要用到 stoichiometric matrix（化学计量矩阵）。它没有引入新的生物机制，只是把上面的 6 个动力学过程统一整理成“每个反应会让每个状态增加或减少多少”的账本。
+
+状态顺序固定为
+
+$$
+\mathbf x=
+\begin{bmatrix}
+NTP\\
+NXP\\
+nt\\
+A\\
+T\\
+AT\\
+a\\
+CP\\
+C\\
+TLcat\\
+D_{nt}\\
+D_{TLcat}
+\end{bmatrix}.
+$$
+
+反应速率顺序固定为
+
+$$
+\mathbf V=
+\begin{bmatrix}
+V_{TX}\\
+V_{nt,deg}\\
+V_{RS}\\
+V_{TL}\\
+V_{TL,deg}\\
+V_{EN}
+\end{bmatrix}.
+$$
+
+这里每个 \(V\) 表示对应过程当前进行得有多快。例如 \(V_{RS}\) 是氨酰化速率，\(V_{TL}\) 是翻译速率。
+
+### 3.1.1 \(S_{prediv}\)：先写“每次反应真正增减几个 equivalent”
+
+先忽略 NTP、A、T、AT 是平均浓度这一点，只按反应式本身记录一次反应事件的净变化：
+
+$$
+S_{prediv}
+=
+\begin{bmatrix}
+-1&0&-1&-2&0& 1\\
+ 0&0& 1& 2&0&-1\\
+ 1&-1&0&0&0&0\\
+ 0&0&-1&0&0&0\\
+ 0&0&-1&1&0&0\\
+ 0&0& 1&-1&0&0\\
+ 0&0&0&1&0&0\\
+ 0&0&0&0&0&-1\\
+ 0&0&0&0&0& 1\\
+ 0&0&0&0&-1&0\\
+ 0&1&0&0&0&0\\
+ 0&0&0&0&1&0
+\end{bmatrix}.
+$$
+
+矩阵的 12 行依次对应
+
+$$
+NTP, NXP, nt, A, T, AT, a, CP, C, TLcat, D_{nt}, D_{TLcat},
+$$
+
+6 列依次对应
+
+$$
+TX, nt\ degradation, RS, TL, TLcat\ degradation, EN.
+$$
+
+例如第一行
+
+$$
+[-1, 0, -1, -2, 0, +1]
+$$
+
+表示：
+
+- TX 每发生一次，消耗 1 个 NTP equivalent；
+- RS 每发生一次，消耗 1 个 NTP equivalent；
+- TL 每发生一次，消耗 2 个 NTP equivalents；
+- EN 每发生一次，生成 1 个 NTP equivalent。
+
+同理，RS 这一列体现
+
+$$
+A+T+NTP\rightarrow AT+NXP,
+$$
+
+所以在 NTP、NXP、A、T、AT 上分别是
+
+$$
+-1, +1, -1, -1, +1.
+$$
+
+这就是 pre-divisor 的含义：**还没有把平均浓度定义中的 4、20、46 除进去。**
+
+### 3.1.2 为什么 NTP、A、T、AT 还要除以 4、20、46
+
+论文里的这些状态不是总 pool，而是平均浓度：
+
+$$
+4[NTP]
+$$
+
+代表四种 NTP 的总 pool，
+
+$$
+20[A]
+$$
+
+代表 20 种 amino acid 的总 pool，
+
+$$
+46[T],qquad 46[AT]
+$$
+
+分别代表 46 种 uncharged / charged tRNA 的总 pool。
+
+因此如果一次 RS 反应真正消耗 1 个 amino-acid equivalent，那么
+
+$$
+\frac{d(20A)}{dt}=-V_{RS},
+$$
+
+所以
+
+$$
+\frac{dA}{dt}=-\frac{V_{RS}}{20}.
+$$
+
+同样地，
+
+$$
+\frac{dT}{dt}=-\frac{V_{RS}}{46},
+\qquad
+\frac{dAT}{dt}=+\frac{V_{RS}}{46},
+$$
+
+而 NTP 的变化需要除以 4。
+
+把这些 divisor 写成
+
+$$
+D=
+\operatorname{diag}
+(4,1,1,20,46,46,1,1,1,1,1,1),
+$$
+
+那么
+
+$$
+D^{-1}
+=
+\operatorname{diag}
+\left(
+\frac14,1,1,\frac1{20},\frac1{46},\frac1{46},1,1,1,1,1,1
+\right).
+$$
+
+因此真正对应论文 ODE 状态定义的矩阵是
+
+$$
+\boxed{
+S_{eff}=D^{-1}S_{prediv}.
+}
+$$
+
+显式写为
+
+$$
+S_{eff}
+=
+\begin{bmatrix}
+-\frac14&0&-\frac14&-\frac12&0& \frac14\\
+0&0&1&2&0&-1\\
+1&-1&0&0&0&0\\
+0&0&-\frac1{20}&0&0&0\\
+0&0&-\frac1{46}&\frac1{46}&0&0\\
+0&0&\frac1{46}&-\frac1{46}&0&0\\
+0&0&0&1&0&0\\
+0&0&0&0&0&-1\\
+0&0&0&0&0&1\\
+0&0&0&0&-1&0\\
+0&1&0&0&0&0\\
+0&0&0&0&1&0
+\end{bmatrix}.
+$$
+
+于是完整 12 状态 ODE 可以统一写成
+
+$$
+\boxed{
+\dot{\mathbf x}
+=
+S_{eff}\mathbf V.
+}
+$$
+
+这句话的物理含义就是：
+
+> 每个状态现在变化多快 = 每个生物反应现在有多快 × 该反应对这个状态造成的净增加或减少。
+
+例如 NTP 这一行直接给出
+
+$$
+\frac{d[NTP]}{dt}
+=
+-\frac14V_{TX}
+-\frac14V_{RS}
+-\frac12V_{TL}
++\frac14V_{EN},
+$$
+
+也就是
+
+$$
+\frac{d[NTP]}{dt}
+=
+\frac{-V_{TX}-V_{RS}-2V_{TL}+V_{EN}}{4}.
+$$
+
+这与论文 ODE 完全一致。
+
+PPi hydrolysis
+
+$$
+PP_i\rightarrow2P_i
+$$
+
+不进入这个 \(12\times6\) 矩阵，因为 PPi 和 Pi 都不是当前动态状态，而且该过程没有作为第七个动力学速率被积分。它只保留为化学背景。
+
 ## 4. 五条物质 / 组分账本守恒
 
 以下五条是当前 B1 模型中具有直接物理含义的 material / moiety balances。它们对应论文 Eqs. (15)–(19)；仓库用无反馈的 \(D_{nt}\) 与 \(D_{TLcat}\) 显式闭合两个降解账本。
