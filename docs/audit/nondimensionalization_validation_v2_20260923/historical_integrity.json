@@ -1,0 +1,129 @@
+{
+  "checked_at_utc": "2026-09-23T03:02:28.083087+00:00",
+  "source_commit": "b65d5e2a17716ce72dc1b26c41caed6bc4d6ef34",
+  "historical_v1_files": [
+    {
+      "path": "docs/audit/nondimensionalization_validation_20260923/acceptance_criteria.json",
+      "sha256": "443338546a05668967a95c4952ab1f32341280989ab23ed41f53f08d9edf7ced"
+    },
+    {
+      "path": "docs/audit/nondimensionalization_validation_20260923/failed_attempt.json",
+      "sha256": "25ecfbb1a2c3c089c3878791e24d284a8f8b96075c4657aa86bcac3d34926ce5"
+    },
+    {
+      "path": "docs/audit/nondimensionalization_validation_20260923/implementation_revision.json",
+      "sha256": "681126e5a6c7b313485feb8acb7a57413643907872f070356846dc310281fb8a"
+    },
+    {
+      "path": "docs/audit/nondimensionalization_validation_20260923/preregistration.json",
+      "sha256": "ce317f95dbfbfb33515e65bf83f685bf53aa3790bbebe1788594286288dc11ff"
+    },
+    {
+      "path": "docs/audit/nondimensionalization_validation_20260923/README.md",
+      "sha256": "59df966bab2813c0b47a14706f0a43e81ff3f08e2b31aa3514b96d1ba2c1fd8d"
+    },
+    {
+      "path": "docs/audit/nondimensionalization_validation_20260923/regression_results.json",
+      "sha256": "b81c101703090c3e621149210203dc777eaba78ed60bf8d88e76e94c1959d9ab"
+    },
+    {
+      "path": "docs/audit/nondimensionalization_validation_20260923/validation_results.json",
+      "sha256": "d849160abecaf5b17059f7c3256a6d9637004c685b06c5ad9a73f853c817d2f2"
+    }
+  ],
+  "historical_v1_byte_identical": true,
+  "historical_v1_sources_archive_matches_registered_hashes": true,
+  "protected_scientific_sources_checked": [
+    {
+      "path": "matlab/generated/pure_literature_reference_params.m",
+      "sha256": "41d12a621652da91c8d1d420cb686689a5681db1593b87fbf10b5331c20c6982"
+    },
+    {
+      "path": "matlab/generated/rhs_pure_literature_reference.m",
+      "sha256": "79ddb8c755ccb5ed1ece2d08b1b1be00d35669ef857edc9e7206094eb77fa358"
+    },
+    {
+      "path": "matlab/src/simulate/run_fig4_benchmark.m",
+      "sha256": "7d3fd3f47436e6f8abfa3f0b771f34192929cb9e5735027dda960b1a5c886240"
+    },
+    {
+      "path": "matlab/src/simulate/simulate_pure_literature_reference.m",
+      "sha256": "2788263f212d49eab5cf5204ae4e2b525b22f68065a323f191d17f16e97b40ad"
+    },
+    {
+      "path": "matlab/src/theory/pure_exact_conservation_constants.m",
+      "sha256": "4f1f611674998bd7bc4c07ac7d1d88fbf6b18d97e3162e3a5e1916b24103c21d"
+    },
+    {
+      "path": "matlab/src/theory/pure_nondim_map.m",
+      "sha256": "decd91e777eadfcf6ebdb70f9fc54b3396edcfb01dc5b1f110216e5dbe0ff244"
+    },
+    {
+      "path": "matlab/src/theory/reconstruct_pure_exact_reduced_state.m",
+      "sha256": "5e4e3ae882dfcc2039cbf2e7aca4b6fa97dff4aea4843b286ab9e49ed8b4dc57"
+    },
+    {
+      "path": "matlab/tests/fixtures/rhs_pure_literature_reference_baseline_snapshot.m",
+      "sha256": "c4c7cabe093b5937317677be7f916fa031d4170f8b098593afed71a10737c636"
+    },
+    {
+      "path": "models/literature_reference/README.md",
+      "sha256": "17040e799695e129a51d9bff38cf1d0ae2719c160c2a6032e6c3cb87def3ab40"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/derive_dimensionless.m",
+      "sha256": "1c29bb423105dfd223a6ff9920a625d4e037e061b80803b8d7e901f115c4adfb"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/derive_dimensionless.py",
+      "sha256": "d43cc19048722fda2255c47d1df799934a6dcc15ca0974772087d29c636d073f"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/dimensionless_result.txt",
+      "sha256": "4e617f6bd5d1ec12cae03dbc4a5149ff0cfbf67fa0dcd49cf2b9c131b45a3ba9"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/dimensionless_result_matlab.txt",
+      "sha256": "db98db7947f3fd9269514d4d514aaedcb7597f93e2191eda23247e71585ce358"
+    },
+    {
+      "path": "models/literature_reference/dimensionless/verify_wolfram_v2.wl",
+      "sha256": "9f0a9ed1c89c25f644d5787b374826e7d52d8d176e269fc6918389ff2facd461"
+    },
+    {
+      "path": "models/literature_reference/model_definition.json",
+      "sha256": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14"
+    },
+    {
+      "path": "models/literature_reference/model_manifest.json",
+      "sha256": "fd5bfee5406fe3eadf087eb1b81b360bd49c0f95044c2a2801cf985f268de9e4"
+    },
+    {
+      "path": "models/literature_reference/parameters.json",
+      "sha256": "5f6473b38a7d2bfdb021aa29c36c818483056bf28ef45f9d6a442530b687699c"
+    },
+    {
+      "path": "models/literature_reference/reactions.csv",
+      "sha256": "07426002ce5482c5cd2b2e10966c74a8eff2f487a687c09859ecead4919fff34"
+    },
+    {
+      "path": "models/literature_reference/species.csv",
+      "sha256": "eb78a23cd77a1a5c2d40b2069e6a519e22babc42f46a7eff4c5c5251dd8bcda1"
+    }
+  ],
+  "canonical_scientific_sources_byte_identical": true,
+  "documentation_only_exclusion": [
+    "models/literature_reference/dimensionless/README.md"
+  ],
+  "production_reconstruction_retained": "Invariant form; no improvement from centered diagnostic",
+  "v1_criteria_sha256": "443338546a05668967a95c4952ab1f32341280989ab23ed41f53f08d9edf7ced",
+  "v2_criteria_sha256": "b0dce1c692e66fb0998fb02d048e5008e4d52668bb175c3f5c25c3b580cc81e2",
+  "v2_preregistration_sha256": "b5fa47231d34d46f4b524d8a7f3bdd83ea38ea8ab23c402824c30ab560cb0f91",
+  "preregistration_precedes_run": true,
+  "tested_implementation_unchanged": true,
+  "final_map_sha256": "260f339b5a9ea420912669629fae7d6195e3cb29d4cc3e1b53a65b823191a5e3",
+  "v2_results_sha256": "705b43aea5ea6f3553dafde60a5fb10742e67a0c7118c00d60b93a132bea571e",
+  "regression_results_sha256": "3e7615a2e63a3132615739514ae570c8071984c16bddee71c37bd7c644c88902",
+  "exact_audit_manifest_entries_verified": 25,
+  "current_document_local_links_valid": true
+}

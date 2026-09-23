@@ -1,0 +1,9 @@
+function I = pure_dimensionless_invariants(y, m)
+%PURE_DIMENSIONLESS_INVARIANTS Six audited invariants, one 12-state column.
+% Evaluate at m.initial_dimensionless once to fix the reconstruction leaf.
+g = m.groups;
+I = [y(1)+y(2)+y(3)+y(11); ...
+    (y(4)+y(7))/g.rho_A+y(6)/g.rho_T; ...
+    y(5)+y(6); y(8)+y(9); y(10)+y(12); ...
+    y(2)+y(9)/g.rho_C-3*y(7)/g.rho_A-y(6)/g.rho_T];
+end

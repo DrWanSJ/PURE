@@ -1,0 +1,466 @@
+{
+  "schema_version": "2.0",
+  "model": "PURE_literature_reference",
+  "validation_version": "v2",
+  "validation_criteria": "docs/audit/nondimensionalization_validation_v2_20260923/acceptance_criteria.json",
+  "historical_v1_status": "FAIL",
+  "historical_v1_reason": "Composite derivative/reconstruction floating-point gate",
+  "historical_v1_evidence": "docs/audit/nondimensionalization_validation_20260923/validation_results.json",
+  "scientific_source": {
+    "model": "models/literature_reference/model_definition.json",
+    "parameters": "models/literature_reference/parameters.json",
+    "loader": "matlab/generated/pure_literature_reference_params.m",
+    "computation": "matlab/src/theory/pure_nondim_map.m",
+    "authority": "Derived certificate only; canonical sources retain scientific authority."
+  },
+  "generated_from_commit": "b65d5e2a17716ce72dc1b26c41caed6bc4d6ef34",
+  "time": {
+    "dimensional_variable": "t",
+    "dimensionless_variable": "tau",
+    "dimensional_unit": "s",
+    "scale_s": 12626.262626262625,
+    "k_nt_deg_per_s": 7.92E-5,
+    "rate_constant_source": "p.k_nt_deg",
+    "forward_relation": "tau=k_nt_deg*t",
+    "inverse_relation": "t=tau/k_nt_deg"
+  },
+  "reduced_coordinates": {
+    "dimensional_order": [
+      "NTP",
+      "nt",
+      "A",
+      "AT",
+      "CP",
+      "TLcat"
+    ],
+    "full_state_indices_1_based": [
+      1,
+      3,
+      4,
+      6,
+      8,
+      10
+    ],
+    "dimensionless_order": [
+      "y1",
+      "y3",
+      "y4",
+      "y6",
+      "y8",
+      "y10"
+    ],
+    "scales_uM": [
+      1500,
+      6000,
+      300,
+      1.9,
+      20000,
+      2.2
+    ]
+  },
+  "full_state_order": [
+    "NTP",
+    "NXP",
+    "nt",
+    "A",
+    "T",
+    "AT",
+    "a",
+    "CP",
+    "C",
+    "TLcat",
+    "D_nt",
+    "D_TLcat"
+  ],
+  "state_scales": {
+    "unit": "uM",
+    "values": [
+      1500,
+      6000,
+      6000,
+      300,
+      1.9,
+      1.9,
+      6000,
+      20000,
+      20000,
+      2.2,
+      6000,
+      2.2
+    ],
+    "definitions": [
+      {
+        "state": "NTP",
+        "dimensionless": "y1",
+        "dimensional_unit": "uM",
+        "scale_expression": "c_NTP0",
+        "forward": "y1 = NTP/(c_NTP0)",
+        "inverse": "NTP = (c_NTP0)*y1"
+      },
+      {
+        "state": "NXP",
+        "dimensionless": "y2",
+        "dimensional_unit": "uM",
+        "scale_expression": "n_NTP*c_NTP0",
+        "forward": "y2 = NXP/(n_NTP*c_NTP0)",
+        "inverse": "NXP = (n_NTP*c_NTP0)*y2"
+      },
+      {
+        "state": "nt",
+        "dimensionless": "y3",
+        "dimensional_unit": "uM",
+        "scale_expression": "n_NTP*c_NTP0",
+        "forward": "y3 = nt/(n_NTP*c_NTP0)",
+        "inverse": "nt = (n_NTP*c_NTP0)*y3"
+      },
+      {
+        "state": "A",
+        "dimensionless": "y4",
+        "dimensional_unit": "uM",
+        "scale_expression": "c_A0",
+        "forward": "y4 = A/(c_A0)",
+        "inverse": "A = (c_A0)*y4"
+      },
+      {
+        "state": "T",
+        "dimensionless": "y5",
+        "dimensional_unit": "uM",
+        "scale_expression": "c_T0",
+        "forward": "y5 = T/(c_T0)",
+        "inverse": "T = (c_T0)*y5"
+      },
+      {
+        "state": "AT",
+        "dimensionless": "y6",
+        "dimensional_unit": "uM",
+        "scale_expression": "c_T0",
+        "forward": "y6 = AT/(c_T0)",
+        "inverse": "AT = (c_T0)*y6"
+      },
+      {
+        "state": "a",
+        "dimensionless": "y7",
+        "dimensional_unit": "uM",
+        "scale_expression": "n_A*c_A0",
+        "forward": "y7 = a/(n_A*c_A0)",
+        "inverse": "a = (n_A*c_A0)*y7"
+      },
+      {
+        "state": "CP",
+        "dimensionless": "y8",
+        "dimensional_unit": "uM",
+        "scale_expression": "c_CP0",
+        "forward": "y8 = CP/(c_CP0)",
+        "inverse": "CP = (c_CP0)*y8"
+      },
+      {
+        "state": "C",
+        "dimensionless": "y9",
+        "dimensional_unit": "uM",
+        "scale_expression": "c_CP0",
+        "forward": "y9 = C/(c_CP0)",
+        "inverse": "C = (c_CP0)*y9"
+      },
+      {
+        "state": "TLcat",
+        "dimensionless": "y10",
+        "dimensional_unit": "uM",
+        "scale_expression": "c_TLcat0",
+        "forward": "y10 = TLcat/(c_TLcat0)",
+        "inverse": "TLcat = (c_TLcat0)*y10"
+      },
+      {
+        "state": "D_nt",
+        "dimensionless": "y11",
+        "dimensional_unit": "uM",
+        "scale_expression": "n_NTP*c_NTP0",
+        "forward": "y11 = D_nt/(n_NTP*c_NTP0)",
+        "inverse": "D_nt = (n_NTP*c_NTP0)*y11"
+      },
+      {
+        "state": "D_TLcat",
+        "dimensionless": "y12",
+        "dimensional_unit": "uM",
+        "scale_expression": "c_TLcat0",
+        "forward": "y12 = D_TLcat/(c_TLcat0)",
+        "inverse": "D_TLcat = (c_TLcat0)*y12"
+      }
+    ]
+  },
+  "rate": {
+    "symbol": "Vstar",
+    "unit": "uM/s",
+    "expression": "k_nt_deg*n_NTP*c_NTP0",
+    "forward": "Vtilde = V/Vstar",
+    "inverse": "V = Vstar*Vtilde",
+    "rate_order": [
+      "V_TX",
+      "V_nt_deg",
+      "V_RS",
+      "V_TL",
+      "V_TL_deg",
+      "V_EN"
+    ],
+    "compact_main_rate_indices": [
+      1,
+      3,
+      4,
+      6
+    ],
+    "nt_decay": "Vtilde_nt_deg = y3",
+    "TLcat_decay": "Vtilde_TL_deg = mu_TLdeg*c_TLcat0/(n_NTP*c_NTP0)*y10",
+    "dimensional_TLcat_decay": "V_TL_deg = p.k_TL_deg*TLcat",
+    "V_star_uM_per_s": 0.4752
+  },
+  "dimensionless_parameters": {
+    "constant": {
+      "fTA": 2.3,
+      "mu_TX": 0.35143097643097643,
+      "mu_RS": 2.0875420875420878,
+      "mu_TL": 0.39351851851851855,
+      "mu_EN": 16.835016835016834,
+      "mu_TLdeg": 2.3484848484848482,
+      "kappa_TX_NTP": 0.053333333333333337,
+      "kappa_RS_A": 0.076666666666666661,
+      "kappa_RS_T": 0.16018306636155608,
+      "kappa_RS_NTP": 0.13333333333333333,
+      "kappa_TL_nt": 0.037666666666666668,
+      "kappa_TL_AT": 2.2883295194508015,
+      "kappa_TL_NTP": 0.0066666666666666671,
+      "kappa_EN_CP": 0.01,
+      "kappa_EN_NXP": 0.0066666666666666671,
+      "rho_A": 1,
+      "rho_T": 68.649885583524039,
+      "rho_C": 0.3,
+      "TLcat_to_nucleotide_scale": 0.00036666666666666667
+    },
+    "definitions": {
+      "fTA": "n_T/n_A",
+      "mu_TX": "k_TX*TXcat/Vstar",
+      "mu_RS": "k_RS*RScat/Vstar",
+      "mu_TL": "k_TL*c_TLcat0/Vstar",
+      "mu_EN": "k_EN*ENcat/Vstar",
+      "mu_TLdeg": "k_TL_deg/k_nt_deg",
+      "theta_DNA": "DNA/(K_TX_DNA+DNA)",
+      "kappa_TX_NTP": "K_TX_NTP/c_NTP0",
+      "kappa_RS_A": "K_RS_A/c_A0",
+      "kappa_RS_T": "K_RS_T/(fTA*c_T0)",
+      "kappa_RS_NTP": "K_RS_NTP/c_NTP0",
+      "kappa_TL_nt": "K_TL_nt/(n_NTP*c_NTP0)",
+      "kappa_TL_AT": "K_TL_AT/(fTA*c_T0)",
+      "kappa_TL_NTP": "K_TL_NTP/c_NTP0",
+      "kappa_EN_CP": "K_EN_CP/c_CP0",
+      "kappa_EN_NXP": "K_EN_NXP/(n_NTP*c_NTP0)",
+      "rho_A": "n_NTP*c_NTP0/(n_A*c_A0)",
+      "rho_T": "n_NTP*c_NTP0/(n_T*c_T0)",
+      "rho_C": "n_NTP*c_NTP0/c_CP0",
+      "TLcat_to_nucleotide_scale": "c_TLcat0/(n_NTP*c_NTP0)"
+    },
+    "input_dependent": [
+      {
+        "DNA_uM": 0.00034,
+        "theta_DNA": 0.063670411985018729
+      },
+      {
+        "DNA_uM": 0.0017,
+        "theta_DNA": 0.25373134328358204
+      },
+      {
+        "DNA_uM": 0.0068,
+        "theta_DNA": 0.576271186440678
+      }
+    ]
+  },
+  "validation_conditions": {
+    "schema_version": "2.0",
+    "scope": "Separate same-full-state RHS identity, conditioning-aware reconstruction, and independent reduced dimensionless trajectory equivalence",
+    "DNA_uM": [
+      0.00034,
+      0.0017,
+      0.0068
+    ],
+    "Tfinal_s": 14400,
+    "OutputDt_s": 10,
+    "output_points": 1441,
+    "solver": "ode15s",
+    "RelTol": 1E-10,
+    "AbsTol_dimensional_uM": 1E-12,
+    "AbsTol_dimensionless": "AbsTol_dimensional_uM ./ state_scales([1,3,4,6,8,10])",
+    "solver_note": "Equivalent physical absolute tolerances; solver local error controls are distinct from trajectory acceptance.",
+    "derivative_samples_per_DNA": 17,
+    "trajectory_max_normalized": 1E-6,
+    "trajectory_scale": "max(max(abs(reference(:,j))),1e-12)",
+    "trajectory_categories": [
+      "12 states",
+      "6 physical rates",
+      "mRNA",
+      "protein"
+    ],
+    "reference": "canonical full 12-state dimensional B1; dimensional reduced comparison also reported",
+    "invariant_max_scaled": 1E-8,
+    "invariant_scale": "max(abs(initial_dimensionless_invariant),1)",
+    "roundtrip_max_relative_to_max_one": 1E-14,
+    "output_time_max_relative_to_max_one": 1E-14,
+    "reconstruction_max_relative_to_max_one": 1E-12,
+    "rate_same_state_max_scaled": 1E-12,
+    "physicality_roundoff_allowance": "64*eps(max([1;abs(initial_full_state);abs(dimensional_invariant_constants)])) uM",
+    "prohibited": [
+      "threshold relaxation",
+      "fitting",
+      "clipping",
+      "projection",
+      "canonical model changes",
+      "new scaling",
+      "D7",
+      "D10"
+    ],
+    "validation_version": "v2",
+    "same_state_rhs_abs": 1E-12,
+    "reconstruction_condition_scaled": 1.4210854715202004E-14,
+    "reconstruction_condition_scaled_definition": "64*eps(double)",
+    "legacy_composite_derivative": "diagnostic_only",
+    "reconstruction_dependent_indices": [
+      2,
+      5,
+      7,
+      9,
+      11,
+      12
+    ],
+    "reconstruction_denominator": "max(Sj,1) for each dependent dimensionless coordinate at all 51 fixed samples",
+    "absolute_term_sums": {
+      "S2": "abs(y2_0)+abs((y8-y8_0)/rho_C)+abs(3*(y4-y4_0)/rho_A)+abs(2*(y6-y6_0)/rho_T)",
+      "S5": "abs(y5_0)+abs(y6-y6_0)",
+      "S7": "abs(y7_0)+abs(y4-y4_0)+abs((rho_A/rho_T)*(y6-y6_0))",
+      "S9": "abs(y9_0)+abs(y8-y8_0)",
+      "S11": "abs(y11_0)+abs(y1-y1_0)+abs(y2-y2_0)+abs(y3-y3_0)",
+      "S12": "abs(y12_0)+abs(y10-y10_0)"
+    },
+    "roundoff_bound_rationale": "Each affine expression uses a small number of basic floating operations; two independent evaluation paths each incur first-order rounding. Normalization by absolute-term sums with a unit floor accounts for cancellation. 64*eps is a conservative operation-count envelope specified before the v2 run, not fitted to the observed NXP discrepancy. It is a validation allowance for these tested transformations, not a universal proof for arbitrarily ill-scaled parameter sets.",
+    "historical_v1_status": "FAIL",
+    "historical_v1_criteria_sha256": "443338546a05668967a95c4952ab1f32341280989ab23ed41f53f08d9edf7ced",
+    "symbolic_centered_equivalence": "All six dependent coordinate symbolic residuals and dimensional NXP residual must be exactly zero; diagnostic form need not be adopted."
+  },
+  "invariants": {
+    "order": [
+      "I_NTP",
+      "I_AA",
+      "I_tRNA",
+      "I_CP",
+      "I_TLcat",
+      "I6"
+    ],
+    "initial_values": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "definitions": [
+      "y1+y2+y3+y11",
+      "(y4+y7)/rho_A+y6/rho_T",
+      "y5+y6",
+      "y8+y9",
+      "y10+y12",
+      "y2+y9/rho_C-3*y7/rho_A-y6/rho_T"
+    ]
+  },
+  "initial_dimensionless_state": [
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+  ],
+  "forward_transform": {
+    "full": "y=x./state_scales",
+    "reduced": "q=z./reduced_scales",
+    "time": "tau=k_nt_deg*t"
+  },
+  "inverse_transform": {
+    "full": "x=state_scales.*y",
+    "reduced": "z=reduced_scales.*q",
+    "time": "t=tau/k_nt_deg",
+    "reconstruction_order": [
+      "y5",
+      "y7",
+      "y9",
+      "y2",
+      "y12",
+      "y11"
+    ],
+    "reconstruction": [
+      "I_tRNA-y6",
+      "rho_A*I_AA-y4-(rho_A/rho_T)*y6",
+      "I_CP-y8",
+      "I6-y9/rho_C+3*y7/rho_A+y6/rho_T",
+      "I_TLcat-y10",
+      "I_NTP-y1-y2-y3"
+    ]
+  },
+  "observable_mappings": {
+    "mRNA": "nt/(3*p.L) = n_NTP*c_NTP0*y3/(3*p.L)",
+    "protein": "a/p.L = n_A*c_A0*y7/p.L",
+    "unit": "uM"
+  },
+  "validation_evidence": "docs/audit/nondimensionalization_validation_v2_20260923/validation_results.json",
+  "source_fingerprints": [
+    {
+      "path": "models/literature_reference/model_definition.json",
+      "sha256": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14"
+    },
+    {
+      "path": "models/literature_reference/parameters.json",
+      "sha256": "5f6473b38a7d2bfdb021aa29c36c818483056bf28ef45f9d6a442530b687699c"
+    },
+    {
+      "path": "matlab/generated/pure_literature_reference_params.m",
+      "sha256": "41d12a621652da91c8d1d420cb686689a5681db1593b87fbf10b5331c20c6982"
+    },
+    {
+      "path": "matlab/src/theory/pure_nondim_map.m",
+      "sha256": "decd91e777eadfcf6ebdb70f9fc54b3396edcfb01dc5b1f110216e5dbe0ff244"
+    },
+    {
+      "path": "matlab/generated/rhs_pure_literature_reference.m",
+      "sha256": "79ddb8c755ccb5ed1ece2d08b1b1be00d35669ef857edc9e7206094eb77fa358"
+    },
+    {
+      "path": "matlab/src/theory/pure_dimensionless_invariants.m",
+      "sha256": "bf3529f2577a1ca722f181239ccf5a82d956f3fba6e93d9b9be352c3947a9b33"
+    },
+    {
+      "path": "matlab/src/theory/reconstruct_pure_exact_reduced_nondim_state.m",
+      "sha256": "e1a81b59c5bf49b3d245e7f6de5a30a5ab295d185f065881a259d7b449ccce27"
+    },
+    {
+      "path": "matlab/src/theory/rhs_pure_exact_reduced_nondim.m",
+      "sha256": "f948423e26eaa4c35e8caf5ff74243bcec9bd8e45a1c9f8a43d0edbdbb1e7abd"
+    },
+    {
+      "path": "matlab/src/theory/simulate_pure_exact_reduced_nondim.m",
+      "sha256": "2ce5db4765e008b5574fbf26d9cba45f2af7fc864c03a75b605921ce655b5ef3"
+    },
+    {
+      "path": "scripts/export_pure_nondim_map.m",
+      "sha256": "64b243b26867fe0caf8797265bfce44a88fc6ae3f96edd94eb762eada37312b2"
+    },
+    {
+      "path": "docs/audit/nondimensionalization_validation_v2_20260923/acceptance_criteria.json",
+      "sha256": "b0dce1c692e66fb0998fb02d048e5008e4d52668bb175c3f5c25c3b580cc81e2"
+    },
+    {
+      "path": "docs/audit/nondimensionalization_validation_20260923/validation_results.json",
+      "sha256": "d849160abecaf5b17059f7c3256a6d9637004c685b06c5ad9a73f853c817d2f2"
+    }
+  ]
+}

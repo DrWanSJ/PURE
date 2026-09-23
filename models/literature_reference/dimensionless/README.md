@@ -177,3 +177,11 @@ AUDIT ALL PASS: True; process exit code: 0
 | `dimensionless_result_matlab.txt` | MATLAB 实际生成的 CAS 表达式 | 由 `.m` 写出，避免覆盖 compact reference |
 
 > 核验范围是当前仓库 literature-reference 方程的代数无量纲化；不据此扩大为生物学有效性或任意模型版本的证明。完整 stdout、退出状态和源文件哈希均保存在上述审计目录。
+
+## 10. Independent reduced integration and final mapping (2026-09-23)
+
+**D6 = COMPLETE under validation v2.** The 2026-09-21 derivation and symbolic audit above are unchanged historical evidence. Independent numerical integration is a separate layer: the exact six-state reduced system now integrates `q=[y1,y3,y4,y6,y8,y10]` in tau, back-transforms to physical units, and compares every state, rate and observable against canonical full B1 and dimensional reduced trajectories for all three DNA conditions.
+
+The generated [nondim_map.json](nondim_map.json) inherits the existing scaling and runtime canonical loader, preserves DNA-dependent theta separately, and states `validation_version=v2` with links to criteria/results. It is derived metadata, not a parameter authority. See the [formal report](../../../docs/theory/nondimensionalization_report.md) and [v2 audit](../../../docs/audit/nondimensionalization_validation_v2_20260923/README.md).
+
+Historical v1 remains FAIL (`1.8843676619084704e-12` composite derivative residual against `1e-12`). After exact reproduction and symbolic/numerical centered-reconstruction diagnostics, separately preregistered v2 passes same-state RHS identity, conditioning-scaled reconstruction and unchanged independent trajectory/invariant/physicality gates. The centered form gave no practical improvement and was not adopted. Five required suites pass 52/52 and the full repository passes 89/89, with zero failed/incomplete tests. Canonical model/scaling/parameters are unchanged; no experimental predictive validity, D7 or D10 is claimed.

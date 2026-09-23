@@ -21,3 +21,18 @@ docs/theory_notes.md text eol=lf
 
 # Preserve the committed exact-conservation evidence bytes on checkout.
 docs/audit/exact_conservation_20260922/** -text
+
+# Reduced D6 numerical evidence and fingerprinted MATLAB sources.
+docs/audit/nondimensionalization_validation_20260923/** text eol=lf
+matlab/src/theory/pure_dimensionless_invariants.m text eol=lf
+matlab/src/theory/reconstruct_pure_exact_reduced_nondim_state.m text eol=lf
+matlab/src/theory/rhs_pure_exact_reduced_nondim.m text eol=lf
+matlab/src/theory/simulate_pure_exact_reduced_nondim.m text eol=lf
+matlab/tests/test_nondimensionalization_validation.m text eol=lf
+scripts/export_pure_nondim_map.m text eol=lf
+scripts/run_nondimensionalization_validation.m text eol=lf
+
+# V2 keeps historical v1 bytes and preregistered source fingerprints stable.
+docs/audit/nondimensionalization_validation_v2_20260923/** text eol=lf
+docs/audit/nondimensionalization_validation_v2_20260923/*.zip -text
+scripts/diagnose_nondim_reconstruction.m text eol=lf

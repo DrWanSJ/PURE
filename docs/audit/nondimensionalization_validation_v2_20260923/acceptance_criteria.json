@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "scope": "Separate same-full-state RHS identity, conditioning-aware reconstruction, and independent reduced dimensionless trajectory equivalence",
+  "DNA_uM": [
+    0.00034,
+    0.0017,
+    0.0068
+  ],
+  "Tfinal_s": 14400,
+  "OutputDt_s": 10,
+  "output_points": 1441,
+  "solver": "ode15s",
+  "RelTol": 1e-10,
+  "AbsTol_dimensional_uM": 1e-12,
+  "AbsTol_dimensionless": "AbsTol_dimensional_uM ./ state_scales([1,3,4,6,8,10])",
+  "solver_note": "Equivalent physical absolute tolerances; solver local error controls are distinct from trajectory acceptance.",
+  "derivative_samples_per_DNA": 17,
+  "trajectory_max_normalized": 1e-06,
+  "trajectory_scale": "max(max(abs(reference(:,j))),1e-12)",
+  "trajectory_categories": [
+    "12 states",
+    "6 physical rates",
+    "mRNA",
+    "protein"
+  ],
+  "reference": "canonical full 12-state dimensional B1; dimensional reduced comparison also reported",
+  "invariant_max_scaled": 1e-08,
+  "invariant_scale": "max(abs(initial_dimensionless_invariant),1)",
+  "roundtrip_max_relative_to_max_one": 1e-14,
+  "output_time_max_relative_to_max_one": 1e-14,
+  "reconstruction_max_relative_to_max_one": 1e-12,
+  "rate_same_state_max_scaled": 1e-12,
+  "physicality_roundoff_allowance": "64*eps(max([1;abs(initial_full_state);abs(dimensional_invariant_constants)])) uM",
+  "prohibited": [
+    "threshold relaxation",
+    "fitting",
+    "clipping",
+    "projection",
+    "canonical model changes",
+    "new scaling",
+    "D7",
+    "D10"
+  ],
+  "validation_version": "v2",
+  "same_state_rhs_abs": 1e-12,
+  "reconstruction_condition_scaled": 1.4210854715202004e-14,
+  "reconstruction_condition_scaled_definition": "64*eps(double)",
+  "legacy_composite_derivative": "diagnostic_only",
+  "reconstruction_dependent_indices": [
+    2,
+    5,
+    7,
+    9,
+    11,
+    12
+  ],
+  "reconstruction_denominator": "max(Sj,1) for each dependent dimensionless coordinate at all 51 fixed samples",
+  "absolute_term_sums": {
+    "S2": "abs(y2_0)+abs((y8-y8_0)/rho_C)+abs(3*(y4-y4_0)/rho_A)+abs(2*(y6-y6_0)/rho_T)",
+    "S5": "abs(y5_0)+abs(y6-y6_0)",
+    "S7": "abs(y7_0)+abs(y4-y4_0)+abs((rho_A/rho_T)*(y6-y6_0))",
+    "S9": "abs(y9_0)+abs(y8-y8_0)",
+    "S11": "abs(y11_0)+abs(y1-y1_0)+abs(y2-y2_0)+abs(y3-y3_0)",
+    "S12": "abs(y12_0)+abs(y10-y10_0)"
+  },
+  "roundoff_bound_rationale": "Each affine expression uses a small number of basic floating operations; two independent evaluation paths each incur first-order rounding. Normalization by absolute-term sums with a unit floor accounts for cancellation. 64*eps is a conservative operation-count envelope specified before the v2 run, not fitted to the observed NXP discrepancy. It is a validation allowance for these tested transformations, not a universal proof for arbitrarily ill-scaled parameter sets.",
+  "historical_v1_status": "FAIL",
+  "historical_v1_criteria_sha256": "443338546a05668967a95c4952ab1f32341280989ab23ed41f53f08d9edf7ced",
+  "symbolic_centered_equivalence": "All six dependent coordinate symbolic residuals and dimensional NXP residual must be exactly zero; diagnostic form need not be adopted."
+}

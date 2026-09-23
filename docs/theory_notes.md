@@ -1268,6 +1268,16 @@ D6 的 rank 与完整 left-nullspace basis 已于 2026-09-22 用 MATLAB 验证�
 - dimensional/dimensionless trajectory back-transform complete；
 - [nondim_map.json](theory/nondim_map.json) complete。
 
-本次直接复用已审计的 compact equations 和 scaling。两个 12-state 系统分别以 $t$ 与 $\tau=k_{nt,deg}t$ 为积分变量，在三组 Fig.4 DNA、0–14400 s、每 10 s 输出的完整网格上比较全部 12 个状态、6 个速率、mRNA 与 protein，预注册的归一化误差阈值均为 $10^{-6}$。四个 MATLAB suites 共 34 个测试全部通过；已有 12/12 符号等价和两层各 5 条守恒回归通过。数值结果、首轮失败与解析 Jacobian 修复、原始文件字节校验见 [trajectory audit](audit/nondim_trajectory_20260923/README.md)。
+较早的 2026-09-23 full-state audit 直接复用已审计的 compact equations 和 scaling。两个 12-state 系统分别以 $t$ 与 $\tau=k_{nt,deg}t$ 为积分变量，在三组 Fig.4 DNA、0–14400 s、每 10 s 输出的完整网格上比较全部 12 个状态、6 个速率、mRNA 与 protein，预注册的归一化误差阈值均为 $10^{-6}$。四个 MATLAB suites 共 34 个测试全部通过；已有 12/12 符号等价和两层各 5 条守恒回归通过。数值结果、首轮失败与解析 Jacobian 修复、原始文件字节校验见 [trajectory audit](audit/nondim_trajectory_20260923/README.md)。
 
 该完成状态仅表示当前 frozen B1 deterministic model 各表示的数学和数值等价；不建立 independent experimental validation，不扩展模型机制，也不冻结 `PURE_resource_core`。
+
+### 6.8 Exact reduced dimensionless integration：v2 completion
+
+**D6 = COMPLETE（v2）**。在 2026-09-21 algebraic/symbolic scaling 与 2026-09-22 exact conservation reduction 的基础上，现已独立积分六维 `q=[y1,y3,y4,y6,y8,y10]`，完成 inverse/back-transform 和三 DNA、每组 1441 点的 12-state / 6-rate / mRNA / protein 全轨迹比较。
+
+原 v1 composite derivative gate 仍保留 **FAIL**：`1.8843676619084704e-12 > 1e-12`。六条 increment-centered reconstruction 已由 MATLAB symbolic 验证与原式严格等价，但未改善该 gate，因此保留原 production invariant form。新的、运行前注册的 v2 分别验证 same-full-state RHS identity（最大 `4.263256414560601e-14`）、conditioning-scaled reconstruction（最大 `7.551180140159472e-16`，阈值 `64*eps(double)`）和独立 trajectory equivalence（原阈值 `1e-6` 不变）；全部通过。
+
+五个指定 suites 共 52/52 通过；全仓 89/89 通过，0 failed / 0 incomplete。六个 invariants、roundtrip、physicality 和 runtime map consistency 均通过；无 clipping。原 v1 criteria 和失败记录逐字节保留；canonical scientific sources 未修改。
+
+完整证据见 [nondimensionalization report](theory/nondimensionalization_report.md)、[v2 audit](audit/nondimensionalization_validation_v2_20260923/README.md) 和 [当前 nondim_map.json](../models/literature_reference/dimensionless/nondim_map.json)。以上补齐 D6 的 rank、left nullspace、六条 invariants、independent coordinates、exact 12→6 reduction、full/reduced validation、独立 reduced nondimensional integration 和逆变换验证；不构成实验有效性证明，不进入 D7/D10。
