@@ -93,8 +93,8 @@
     },
     {
       "path": "docs/theory/conservation_report.md",
-      "sha256": "01e18e1c269dec7d120532657d3cbdd0cd1302107c34d61030c609edfa0becc3",
-      "bytes": 18227
+      "sha256": "4da1b5aa8c76cb56a9056baccf8089161df3efcb65bbd235b783e88a90364de4",
+      "bytes": 19507
     },
     {
       "path": "matlab/src/theory/pure_exact_conservation_constants.m",
