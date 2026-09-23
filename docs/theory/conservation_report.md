@@ -38,6 +38,24 @@ $$
 
 Since the left nullspace has dimension $12-6=6$, these six independent rows form its complete basis. These are invariants of this coarse-grained model, not claims of complete elemental, charge or thermodynamic energy conservation. Their constants are evaluated from `p.y0`, `p.n_NTP`, `p.n_A`, `p.n_T` and the canonical zero initial accounting pools.
 
+### Structural zero modes of the full Jacobian
+
+For the 12-state augmented representation, the vector field has the form
+
+$
+f(x)=S_{eff}v(x),\qquad J_{full}=S_{eff}\frac{\partial v}{\partial x}.
+$
+
+Because $LS_{eff}=0$,
+
+$
+LJ_{full}=LS_{eff}\frac{\partial v}{\partial x}=0.
+$
+
+Thus $\operatorname{rank}(J_{full})\le \operatorname{rank}(S_{eff})=6$. In the unreduced 12-state coordinates, at least six zero modes are therefore structural consequences of the conserved/accounting directions and of representing six-dimensional stoichiometric motion with twelve state coordinates. They do **not**, by themselves, imply a bifurcation, critical slowing, or a physical neutral mode.
+
+Stability and slow-mode conclusions for a fixed compatibility class must instead be based on the Jacobian restricted to the stoichiometric tangent space, equivalently the exact six-state reduced Jacobian used here. A zero eigenvalue that persists in that reduced Jacobian would require a separate dynamical interpretation; it must not be attributed automatically to conservation.
+
 ## Chosen coordinates and reconstruction
 
 The coordinates are fixed as requested, with MATLAB indices `[1 3 4 6 8 10]`:
@@ -234,7 +252,7 @@ All 12 back-transformed states, all rates and both observables were finite. The 
 
 `allPassed = 1`; native MATLAB exit code 0, empty stderr. All six new MATLAB files have zero analyzer messages. The unchanged MATLAB symbolic audit passed 12/12 equations and both sets of five published balances. Its generated text differed only in CRLF/LF serialization; complete normalized text equality was verified and the original bytes restored. The startup warning about the pre-existing missing `slanCM` directory remains in the native log.
 
-The [mapping certificate](nondim_map.json) includes state/time/rate mappings, scale/group definitions, observables, clearly labeled loaded reference values, source SHA-256 fingerprints and validation status. It is derived metadata, not a parameter source. [Structured results](../audit/nondim_trajectory_20260923/validation_results.json), [native TestResult output (UTF-8 copy)](../audit/nondim_trajectory_20260923/matlab_stdout.utf8.txt), [source integrity](../audit/nondim_trajectory_20260923/integrity_after.json) and [audit/reproduction notes](../audit/nondim_trajectory_20260923/README.md) provide the evidence chain.
+The historical full-12-state [mapping certificate](nondim_map.json) includes state/time/rate mappings, scale/group definitions, observables, clearly labeled loaded reference values, source SHA-256 fingerprints and validation status for that earlier full-state audit. It remains historical evidence, not a parameter source. The current reduced D6 v2 mapping certificate is `models/literature_reference/dimensionless/nondim_map.json`, linked again in the final v2 section below. [Structured results](../audit/nondim_trajectory_20260923/validation_results.json), [native TestResult output (UTF-8 copy)](../audit/nondim_trajectory_20260923/matlab_stdout.utf8.txt), [source integrity](../audit/nondim_trajectory_20260923/integrity_after.json) and [audit/reproduction notes](../audit/nondim_trajectory_20260923/README.md) provide the evidence chain.
 
 D6 now has completed rank, complete left nullspace, independent coordinates, exact conservation reduction, full/reduced validation, dimensional/dimensionless back-transform validation and `nondim_map.json`. This establishes mathematical/numerical equivalence of representations of the current frozen B1 deterministic model only. It does not establish independent experimental validation, biological completeness, new biological predictions or a frozen `PURE_resource_core`.
 
