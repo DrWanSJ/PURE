@@ -18,3 +18,6 @@ matlab/tests/test_dimensionless_trajectory_equivalence.m text eol=lf
 scripts/run_nondim_trajectory_validation.m text eol=lf
 docs/theory/conservation_report.md text eol=lf
 docs/theory_notes.md text eol=lf
+
+# Preserve the committed exact-conservation evidence bytes on checkout.
+docs/audit/exact_conservation_20260922/** -text

@@ -1,10 +1,10 @@
 # Exact conservation reduction: evidence inventory
 
-This audit records the D6 exact-reduction subtask on source commit `91bb36488ad159a8becffc2addfadea99a8adbc4`. The initial worktree was clean. All 265 original tracked files remain byte-identical. Nothing was staged, committed or pushed.
+This audit records the D6 exact-reduction subtask on source commit `91bb36488ad159a8becffc2addfadea99a8adbc4`. The initial worktree was clean. The recorded run verified that all 265 original tracked files were byte-identical at that time. The recorded validation run was performed before the resulting artifacts were subsequently committed.
 
 The first and only trajectory-validation run passed all three required suites: 8/8 exact-reduction tests, 9/9 literature-reference tests, 5/5 codegen/provenance tests. No acceptance threshold or tested MATLAB implementation was changed after that run. A subsequent static-analysis run reported zero `checkcode` messages. Both processes emitted the existing missing-`slanCM` startup-path warning, retained verbatim in stdout.
 
-## Added implementation and navigation files
+## Committed implementation and report files
 
 | File | Why it exists |
 | --- | --- |
@@ -15,10 +15,6 @@ The first and only trajectory-validation run passed all three required suites: 8
 | `matlab/tests/test_exact_conservation_reduction.m` | Initial reconstruction, general constants, structural regression, derivative identity, three full trajectories, physicality and invariants. |
 | `scripts/run_exact_conservation_validation.m` | Run exactly the three requested suites and print actual TestResult summaries. |
 | `docs/theory/conservation_report.md` | Formal D6 deliverable with equations, measured errors, validity limits and remaining work. |
-| `scripts/build_project_graph.py` | Derive the scoped project map from the existing flow contract and D6 evidence; verify source freshness. |
-| `docs/project/graph.json` | Machine-readable nodes and relationships, each with provenance and confidence. |
-| `docs/project/graph.html` | Offline, searchable browsing of the same map and its source links. |
-| `docs/project/GRAPH_REPORT.md` | Concise orientation, graph scope, authority limits and rebuild instructions. |
 
 ## Added audit files in this directory
 
@@ -37,9 +33,9 @@ The first and only trajectory-validation run passed all three required suites: 8
 | `integrity_after.json` | Final original-file integrity check and confirmation that criteria/tested MATLAB files did not change. |
 | `finalize_evidence.py` | Re-extract results and refuse failed, incomplete or changed-source evidence. |
 | `git_status_after.txt` | Final complete Git status listing all new files; no original tracked changes. |
-| `artifact_manifest.json` | Paths, SHA-256 and sizes of all additions, excluding this manifest itself. |
+| `artifact_manifest.json` | Current committed audit artifact paths, SHA-256 and sizes, excluding this manifest itself. |
 
-No existing file was modified. The graph consumes and extends `docs/interfaces/flow_contract.json`; scientific sources and the existing contract retain authority.
+No existing file was modified during the recorded run. Project-graph artifacts were generated in the local working session but were not included in the committed exact-conservation deliverable and are not part of this audit's authoritative artifact set.
 
 ## Reproduction
 
@@ -51,6 +47,8 @@ The existing native capture used:
 matlab.exe -wait -batch "addpath('scripts'); run_exact_conservation_validation;"
 ```
 
-For this recorded audit, `python docs/audit/exact_conservation_20260922/finalize_evidence.py` verifies and extracts the saved evidence. Its preregistration binds the tested implementation paths on this machine. Run `python scripts/build_project_graph.py` to rebuild derived navigation, then `python scripts/build_project_graph.py --check` to verify fingerprints.
+For this recorded audit, `python docs/audit/exact_conservation_20260922/finalize_evidence.py` verifies and extracts the saved evidence. Its preregistration binds the tested implementation paths on this machine. This historical extractor checks the original source snapshot; it is not a current-worktree regeneration command.
 
-D6 remains incomplete: dimensional/dimensionless integration, inverse/back-transform comparison and final `nondim_map.json` are still pending. None of these tests establishes independent experimental prediction validity.
+At the time of this recorded exact-reduction run, D6 remained incomplete: dimensional/dimensionless integration, inverse/back-transform comparison and final `nondim_map.json` are still pending. None of these tests establishes independent experimental prediction validity.
+
+The current manifest hashes committed Git file bytes. The audit directory preserves those bytes on checkout; historical captured text is unchanged. Earlier local CRLF hashes in frozen provenance records describe the original local run and are retained as historical evidence.

@@ -1,10 +1,10 @@
 {
-  "scope": "All additions from the initially clean worktree; excludes this manifest",
+  "scope": "Committed artifacts for the exact-conservation reduction audit; excludes this manifest itself",
   "files": [
     {
       "path": "docs/audit/exact_conservation_20260922/README.md",
-      "sha256": "554035300b3c2446eacc746d174933107f860b722bc810ef370418d0afc52a0b",
-      "bytes": 5250
+      "sha256": "0e51e9ca491aa810a9d0aee4996ab8f467b0806f7fec609cfb31fa7c01dfdae0",
+      "bytes": 5283
     },
     {
       "path": "docs/audit/exact_conservation_20260922/acceptance_criteria.json",
@@ -18,28 +18,28 @@
     },
     {
       "path": "docs/audit/exact_conservation_20260922/git_log_before.txt",
-      "sha256": "f66065847f066f27f900bd36510e9b7ffd57ff62f566a0e9470ea635eaff91e8",
-      "bytes": 281
+      "sha256": "bf366bc788e1c0e3ac0797b3cc72110884d41977b39723dc5f45de2a11beffcb",
+      "bytes": 276
     },
     {
       "path": "docs/audit/exact_conservation_20260922/git_status_after.txt",
-      "sha256": "15602788d784a3141895915677892b44ebee5709fd1db50a5f168ea2b257598d",
-      "bytes": 1902
+      "sha256": "c40f3e78ebc80a09f1c9b84bbec1413fa2cc41b19fbc0099ab97ef46a9949b0f",
+      "bytes": 1865
     },
     {
       "path": "docs/audit/exact_conservation_20260922/git_status_before.txt",
-      "sha256": "8859f8e4f67de878b66adbef710f3857d652a42c5b7ab3e6e5d687ca498965d8",
-      "bytes": 104
+      "sha256": "09be446dbc2620ee4a90fc59fa9005e726ac3b4c0e8f2939a9aaccc11575dad4",
+      "bytes": 100
     },
     {
       "path": "docs/audit/exact_conservation_20260922/integrity_after.json",
-      "sha256": "df0b5a15ee58b4aec0b0c5f893071499d13143936b085e05535e63947b7cd46e",
-      "bytes": 352
+      "sha256": "0dfd1ade37ba4f70d577795f32d204cad40e2503b567bc544bfc1548c1e4040f",
+      "bytes": 343
     },
     {
       "path": "docs/audit/exact_conservation_20260922/matlab_checkcode_exitcode.txt",
-      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
-      "bytes": 3
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
     },
     {
       "path": "docs/audit/exact_conservation_20260922/matlab_checkcode_stderr.txt",
@@ -48,18 +48,18 @@
     },
     {
       "path": "docs/audit/exact_conservation_20260922/matlab_checkcode_stdout.txt",
-      "sha256": "5b701a4f755048234bccb118a169b2dac90ce8de24ce99ece1bab1e21c9dc98e",
-      "bytes": 373
+      "sha256": "78436d03cf30f5bd55b7be877139aebde3ab2e39b61203dda5be2029fa32a08b",
+      "bytes": 365
     },
     {
       "path": "docs/audit/exact_conservation_20260922/matlab_checkcode_stdout.utf8.txt",
-      "sha256": "e347d2ba8a7adb46c70d0120545036eb3438c0ff5db3ee0ff4f29d6aa9bb125d",
-      "bytes": 385
+      "sha256": "d6bff270d790c5644a82669a5cfb0f4455bb750ea7d92b6c92f0eebb607eea4a",
+      "bytes": 377
     },
     {
       "path": "docs/audit/exact_conservation_20260922/matlab_exitcode.txt",
-      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
-      "bytes": 3
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
     },
     {
       "path": "docs/audit/exact_conservation_20260922/matlab_stderr.txt",
@@ -68,48 +68,33 @@
     },
     {
       "path": "docs/audit/exact_conservation_20260922/matlab_stdout.txt",
-      "sha256": "ac933c5474c09bfd792117de2eacfc25a887b2cc18e304a8d4f2f85fcb613e86",
-      "bytes": 13370
+      "sha256": "1befeddca4f9a2fb6b6579ace105e049d8f42b8124b563fe6d41752c87e1ff69",
+      "bytes": 13302
     },
     {
       "path": "docs/audit/exact_conservation_20260922/matlab_stdout.utf8.txt",
-      "sha256": "fe4063635bf3ef5855f41c248ed522b3c333f468a8aeaf8a5303e17e7de38764",
-      "bytes": 13403
+      "sha256": "cc2f2ad2230c46ddbb8f90524c00ca616d28c4cdd32d4c047993d12c343173d8",
+      "bytes": 13335
     },
     {
       "path": "docs/audit/exact_conservation_20260922/preregistration.json",
-      "sha256": "bcb9e2cd089bc8b271c90a0f1b2042ff06231280b6cdc8ac1297f77b62171c9e",
-      "bytes": 1382
+      "sha256": "56bc2f1bd827976386e11faae1b186d760b7c86fc201ac7563ece5133d7adfd6",
+      "bytes": 1352
     },
     {
       "path": "docs/audit/exact_conservation_20260922/source_inventory_before.json",
-      "sha256": "12af70ade4350819ed2706d699aa643f207874e671b110e04129fde7aa29a498",
-      "bytes": 44093
+      "sha256": "38a67570ec9d4e95bbc9c24615f85243b0779d2f69c0161ce9083bae00244a69",
+      "bytes": 43027
     },
     {
       "path": "docs/audit/exact_conservation_20260922/validation_results.json",
-      "sha256": "aa53c8c3d0391bbb22a7eb22e9fb8a953a7b5bd15b6a0701ab050c7ecfbf9dd8",
-      "bytes": 13890
-    },
-    {
-      "path": "docs/project/GRAPH_REPORT.md",
-      "sha256": "5da4536a685ccd2e6e051d17fe086d64426d365229e511a8635e862a1cd8d446",
-      "bytes": 1827
-    },
-    {
-      "path": "docs/project/graph.html",
-      "sha256": "b19ae3c9ba835456fcea02a828123ff6c6f5fc8475418868dc433ebc016ce42c",
-      "bytes": 49822
-    },
-    {
-      "path": "docs/project/graph.json",
-      "sha256": "2dd724d359f74574e6517957b31042cd0ef7c53a97ba130822aeedbc06ac80ad",
-      "bytes": 60278
+      "sha256": "9a8dc30b6d4337de2b7fe5330b9ab4a7654534898126f70063ed2c6349d45883",
+      "bytes": 13342
     },
     {
       "path": "docs/theory/conservation_report.md",
-      "sha256": "b2b897e622ef96ada96aa921900f271288f9aae99e42581711afb72d68525934",
-      "bytes": 9577
+      "sha256": "98de22a8f3f8b191a88998ae9e62d89681f6c0ca66e914be4d68dab86abbca6f",
+      "bytes": 16591
     },
     {
       "path": "matlab/src/theory/pure_exact_conservation_constants.m",
@@ -135,11 +120,6 @@
       "path": "matlab/tests/test_exact_conservation_reduction.m",
       "sha256": "9fbcad5fa1fccc7e0b07c2dde33e65964dbe091b719fde74f4f3988a3bab81ea",
       "bytes": 7995
-    },
-    {
-      "path": "scripts/build_project_graph.py",
-      "sha256": "551f7c75e2e959431e77e127c8a29b73115b032e7217c788be81142bb88ab4a9",
-      "bytes": 17863
     },
     {
       "path": "scripts/run_exact_conservation_validation.m",
