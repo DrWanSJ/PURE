@@ -1286,3 +1286,176 @@ D6 的 rank 与完整 left-nullspace basis 已于 2026-09-22 用 MATLAB 验证�
 五个指定 suites 共 52/52 通过；全仓 89/89 通过，0 failed / 0 incomplete。六个 invariants、roundtrip、physicality 和 runtime map consistency 均通过；无 clipping。原 v1 criteria 和失败记录逐字节保留；canonical scientific sources 未修改。
 
 完整证据见 [nondimensionalization report](theory/nondimensionalization_report.md)、[v2 audit](audit/nondimensionalization_validation_v2_20260923/README.md) 和 [当前 nondim_map.json](../models/literature_reference/dimensionless/nondim_map.json)。以上补齐 D6 的 rank、left nullspace、六条 invariants、independent coordinates、exact 12→6 reduction、full/reduced validation、独立 reduced nondimensional integration 和逆变换验证；不构成实验有效性证明，不进入 D7/D10。
+
+
+## 8. D7：RS minimal explicit mechanistic model 与 QSSA 起点
+
+D7 选择主干中的 aminoacylation (RS) 模块作为真实快模块，而不是只在教材 enzyme fixture 上验证。Mavelli 主干使用 coarse-grained 反应
+
+\[
+A+T+NTP \xrightarrow{RScat} AT+NXP,
+\]
+
+并用 apparent Michaelis-Menten factors 描述 \(A\)、\(T\)、NTP 对 \(V_{RS}\) 的饱和依赖。这里不把该 apparent law 当作某个唯一 microscopic mechanism 的严格推导结果，而是构造一个最小显式中间态模型用于 fast-slow/QSSA 分析。
+
+令
+
+\[
+E=RScat,\qquad M=RScat\cdot A\!-\!AMP,
+\]
+
+并采用
+
+\[
+E+A+ATP
+\underset{k_{-1}}{\overset{k_1}{\rightleftarrows}}
+M,
+\qquad
+M+T\xrightarrow{k_2}E+AT+AMP.
+\]
+
+这是一个 deliberately lumped mechanistic surrogate：PPi 不作为动态状态，\(k_{-1}\) 解释为吸收 PPi 影响后的 apparent pseudo-first-order reverse rate constant；真实 PURE 中 20 aaRS / 46 tRNA 的异质性也尚未展开。该扩展用于研究一个显式 fast intermediate 的可消去条件，不声称是完整 aaRS microscopic mechanism。
+
+在这个 two-state enzyme representation 中，
+
+\[
+E_T=E+M,
+\]
+
+所以
+
+\[
+\dot M
+=
+k_1[A](E_T-M)[ATP]
+-k_{-1}M
+-k_2M[T].
+\]
+
+定义
+
+\[
+\alpha=k_1[A][ATP],\qquad
+\beta=k_{-1},\qquad
+\gamma=k_2[T],
+\]
+
+则
+
+\[
+\dot M=\alpha E_T-(\alpha+\beta+\gamma)M.
+\]
+
+QSSA 条件是
+
+\[
+\dot M\approx0,
+\]
+
+而不是 \(M\approx0\)。代数慢流形为
+
+\[
+\boxed{
+M_{\mathrm{QSS}}
+=
+h(A,ATP,T)
+=
+\frac{k_1E_T[A][ATP]}
+{k_{-1}+k_2[T]+k_1[A][ATP]}
+}
+\]
+
+以及
+
+\[
+\boxed{
+V_{RS}^{\mathrm{QSS}}
+=
+k_2M_{\mathrm{QSS}}[T]
+=
+\frac{k_1k_2E_T[A][T][ATP]}
+{k_{-1}+k_2[T]+k_1[A][ATP]}.
+}
+\]
+
+该 \(V_{RS}^{QSS}\) 与 Mavelli 的三因子 apparent Michaelis-Menten 乘积型 rate law 不是代数恒等式；后续只能通过已声明参数化与数值域比较其近似关系，不能预先宣称两者严格等价。
+
+对固定 \(A,ATP,T\)，瞬时 QSS 点为
+
+\[
+M^*=\frac{\alpha E_T}{\alpha+\beta+\gamma}.
+\]
+
+令 \(M=M^*+\delta M\)，则
+
+\[
+\frac{d\delta M}{dt}
+=
+-(\alpha+\beta+\gamma)\delta M,
+\]
+
+所以 fast relaxation time 为
+
+\[
+\boxed{
+\tau_M
+=
+\frac{1}
+{k_1[A][ATP]+k_{-1}+k_2[T]}.
+}
+\]
+
+\(\tau_M\) 表示 \(M\) 偏离当前 QSS target 后重新靠近该 target 的时间尺度。真实 PURE 中 \(A,ATP,T\) 仍由主干持续改变，因此
+
+\[
+M^*(t)=h(A(t),ATP(t),T(t))
+\]
+
+本身是缓慢移动的 target。QSSA 的物理要求不是“\(M\) 停止变化”，而是 \(M\) 的快松弛速度足以持续跟随这个缓慢移动的 QSS manifold。
+
+后续小参数应比较
+
+\[
+\epsilon(t)
+=
+\frac{\tau_M(t)}
+{\tau_{\mathrm{slow}}(t)},
+\]
+
+其中 \(\tau_{\mathrm{slow}}\) 来自决定 \(M^*\) 的慢变量或 slow-manifold motion 的实际主干时间尺度，而不是直接比较量纲不同的 \(k_1,k_{-1},k_2\)。QSSA 只要求整体 fast-intermediate relaxation 快于主干 slow evolution；更强的 rapid-equilibrium 假设才额外要求第一步结合/解离远快于 downstream drain。
+
+用于完整链式 Jacobian 的显式导数为
+
+\[
+D=k_{-1}+k_2T+k_1A\,ATP,
+\]
+
+\[
+\frac{\partial h}{\partial A}
+=
+\frac{E_Tk_1ATP(k_{-1}+k_2T)}{D^2},
+\]
+
+\[
+\frac{\partial h}{\partial ATP}
+=
+\frac{E_Tk_1A(k_{-1}+k_2T)}{D^2},
+\]
+
+\[
+\frac{\partial h}{\partial T}
+=
+-\frac{E_Tk_1A\,ATP\,k_2}{D^2}.
+\]
+
+因此 main-chain reduced Jacobian 必须按
+
+\[
+J_{\mathrm{slow}}
+=
+F_s-F_MG_M^{-1}G_s
+\]
+
+或等价的 \(F_s+F_M\,dh/ds\) 计算，不能从 full Jacobian 中机械删去 \(M\) 的行列。
+
+当前状态：**D7 analytical draft started, not complete**。尚未完成 microscopic parameter sourcing/labeling、与 Mavelli multiplicity convention 的精确接口、main-backbone full extension、完整链式 Jacobian 装配以及 full-vs-QSSA numerical validation。正式草稿见 [reduction certificate](theory/reduction_certificate.md)。
