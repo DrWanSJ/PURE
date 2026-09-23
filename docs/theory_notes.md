@@ -1258,6 +1258,8 @@ $$
 
 D6 的 rank 与完整 left-nullspace basis 已于 2026-09-22 用 MATLAB 验证：$\operatorname{rank}(S_{eff})=6$、$\operatorname{rank}(L)=6$、$LS_{eff}\approx0$（最大浮点残差约 $2.78\times10^{-17}$）。因此上述六条关系已经确认构成完整 left-nullspace basis。
 
+对当前 12-state augmented representation，$f(x)=S_{eff}v(x)$，因此 $J_{full}=S_{eff}\,\partial v/\partial x$；由 $LS_{eff}=0$ 可得 $LJ_{full}=0$。所以未消去守恒/账本冗余时，full Jacobian 至少存在与这些约束方向对应的结构性零模态。它们来自用 12 个坐标表示 rank-6 stoichiometric motion，本身不等价于 bifurcation、critical slowing 或物理中性模态。固定 compatibility class 上的稳定性与慢模态应在 exact six-state reduced coordinates（或等价的 stoichiometric tangent space）中判断；若 reduced Jacobian 仍出现零特征值，才需要另行做动力学解释。
+
 **D6 complete（2026-09-23）**：
 
 - rank complete；
@@ -1266,7 +1268,10 @@ D6 的 rank 与完整 left-nullspace basis 已于 2026-09-22 用 MATLAB 验证�
 - exact conservation reduction complete；
 - full/reduced trajectory validation complete；
 - dimensional/dimensionless trajectory back-transform complete；
-- [nondim_map.json](theory/nondim_map.json) complete。
+- historical full-12-state mapping certificate：[docs/theory/nondim_map.json](theory/nondim_map.json)；
+- current reduced D6 v2 mapping certificate：[models/literature_reference/dimensionless/nondim_map.json](../models/literature_reference/dimensionless/nondim_map.json)。
+
+其中前者记录较早的 full-12-state dimensional/dimensionless trajectory audit（schema 1.0），作为历史证据保留；后者是当前 reduced D6 v2 的 machine-readable mapping certificate（schema 2.0），包含 reduced coordinates、v2 validation criteria/results 以及 historical v1 FAIL provenance。两者验证范围不同，不是两份相互竞争的参数或模型权威；canonical scientific sources 仍是 model/parameter definitions 与 runtime loader。
 
 较早的 2026-09-23 full-state audit 直接复用已审计的 compact equations 和 scaling。两个 12-state 系统分别以 $t$ 与 $\tau=k_{nt,deg}t$ 为积分变量，在三组 Fig.4 DNA、0–14400 s、每 10 s 输出的完整网格上比较全部 12 个状态、6 个速率、mRNA 与 protein，预注册的归一化误差阈值均为 $10^{-6}$。四个 MATLAB suites 共 34 个测试全部通过；已有 12/12 符号等价和两层各 5 条守恒回归通过。数值结果、首轮失败与解析 Jacobian 修复、原始文件字节校验见 [trajectory audit](audit/nondim_trajectory_20260923/README.md)。
 
