@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "registered_date": "2026-09-24",
+  "input_commit": "c2bb0ae63ba106d4f51bf2182dfd28dfe187e743",
+  "model": "RS minimal explicit mechanistic surrogate embedded in frozen Mavelli backbone",
+  "source_type": "synthetic_reduction_only",
+  "evidence_level": "derived + synthetic numerical validation; NOT experimentally supported",
+  "criteria_file": "acceptance_criteria.json",
+  "registration_order": "This file and criteria must be committed on main before any D7 validation execution.",
+  "scope": "one fixed parameter construction; 3 DNA trajectories; analytic off-manifold frozen-slow fixture; chain-rule derivative correctness",
+  "physical_state_order": ["NTP", "NXP", "nt", "A", "T", "AT", "a", "CP", "C", "TLcat", "M"],
+  "qssa_state_order": ["NTP", "NXP", "nt", "A", "T", "AT", "a", "CP", "C", "TLcat"],
+  "mapping": {"ATP_RS": "canonical NTP, bookkeeping only", "AMP": "NXP", "T_eff": "(p.n_T/p.n_A)*T", "E_T": "p.RScat", "PPi": "no state; absorbed in apparent pseudo-first-order kminus1"},
+  "construction": {"D_ref": "V_RS_ref/(E_T*phi_alpha*phi_gamma)", "k1": "phi_alpha*D_ref/(A0*NTP0)", "kminus1": "phi_beta*D_ref", "k2": "phi_gamma*D_ref/T_eff0", "reference": "canonical RHS rates(3) evaluated at p.y0; DNA has no effect on RS reference rate"},
+  "prohibited": ["canonical scientific edits", "parameter fitting", "threshold relaxation", "clipping or projection", "D8 scans", "D9 eigenvalue interpretation", "historical audit-byte edits", "new branch", "PR"],
+  "deliverables": ["runtime and analytic Jacobians", "machine-readable parameter provenance", "tests and native TestResult counts", "all raw trajectories", "timescale diagnostics", "source fingerprints and derived evidence map", "certificate and theory notes", "audit README and logs"],
+  "formal_runs_before_registration": 0
+}
