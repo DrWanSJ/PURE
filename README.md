@@ -15,59 +15,85 @@ audit and interfaces** — files are not to be piled into the repository root.
 
 ## 2. Current scientific status
 
-> **`PURE_literature_reference` (B1) is frozen and regression-guarded;
-> the scientific human audit is pending. Four B0 known-answer fixtures are
-> implemented as verification problems.**
+> **The primary benchmark has pivoted to Matsuura et al. 2017 (PNAS).**
+> `PNAS2017_full_reference` is now the detailed, SBML-canonical reference
+> (acquired, hashed, inventoried, ledger-built, reduction-mapped). The previous
+> coarse benchmark `PURE_literature_reference` (B1, Mavelli 2015) is **frozen
+> legacy** through the prior D7 RS-QSSA work — it is not wrong, it is simply no
+> longer detailed enough for the revised scientific question.
 
-Evidence levels for B1 remain in `docs/project/evidence_levels.json`.
-The new B0 fixtures do not change B1 evidence and are not PURE experimental
-validation.
+### Project status
+
+- **OLD / FROZEN — `Mavelli2015_coarse_reference`.** Coarse-grained comparator,
+  completed through the previous D7 RS-QSSA work. Frozen regression-guarded
+  (tag `b1-reference-v1` and the pre-PNAS archival tag
+  `archive-mavelli2015-d7-20260924`). No longer the active main benchmark; a
+  historical coarse endpoint against which an independently derived reduction
+  may later be compared.
+- **ACTIVE — `PNAS2017_full_reference`.** Acquisition ✅ · checksum freeze ✅ ·
+  SBML inventory/audit ✅ · chemical/resource ledger ✅ · 968-reaction reduction
+  **map** (no reduction performed) ✅. Pending: libSBML/RoadRunner validation
+  (tooling unavailable — see `MISSING_SOURCES.md`), SI-dataset parsing, and the
+  human reduction decisions.
+- **FUTURE — `PURE_reduced_core`.** Derived only from approved reduction
+  decisions (structural proposal in `docs/reduction/candidate_core_v0.md`);
+  transcription extension; GUV transport; flow visualization; MCP service.
+
+Evidence levels and gates live in `docs/project/evidence_levels.json` and
+`tasklist.md`. **No reduction has been finalised by the AI; every candidate
+transformation is marked `HUMAN_REVIEW_REQUIRED`.**
 
 What this is **not**:
 
-- **not human-verified** — the B1 scientific audit is still pending;
-- **not experimentally validated** — machine-readable Stögbauer 2012 data
-  are still absent;
-- **not a completed project working model** — `PURE_resource_core`,
-  nondimensionalization, project-model reduction/stability analysis,
-  frontend, generic SSA integration and MCP remain scheduled work;
-- **not evidence that generic SSA/QSSA/stability tooling is already complete** —
-  the fixtures provide known-answer test problems that those tools must later
-  pass.
+- **not a validated reduced model** — `PURE_reduced_core` does not exist yet;
+- **not experimentally validated** — this is a literature reference network;
+- **not a completed SBML-standard reproduction** — libRoadRunner/Tellurium could
+  not be installed, so the reference was corroborated with the authors' own
+  MATLAB integrator (see `docs/pnas2017/reference_reproduction.md`);
+- **not charge/ionic-strength complete** — the SBML carries no formula/charge,
+  so ionic strength is deliberately **not** computed (see the ledger).
 
 ## 3. Model identities
 
 | identity | what it is | status |
 | --- | --- | --- |
-| `PURE_literature_reference` | frozen literal B1 reproduction of Mavelli, Marangoni, Stano (2015) | implemented, frozen |
-| `PURE_resource_core` | the project's own working model (D6–D15 mechanisms) | not yet implemented |
+| `PNAS2017_full_reference` | **NEW primary benchmark** — literal imported Matsuura 2017 detailed translation network (SBML-canonical, no scientific modification, benchmark + provenance only) | acquired, hashed, audited, ledgered, reduction-mapped |
+| `PURE_reduced_core` | **the project's future model** — derived from explicit reduction decisions, NOT ad-hoc deletion; ~few-tens of reactions, SBML | proposal only, not created |
+| `Mavelli2015_coarse_reference` | **frozen historical coarse comparator** (was B1 / `PURE_literature_reference`) — no longer primary | frozen through prior D7 RS-QSSA work |
 | `reversible_conversion` | B0 closed reversible conversion | implemented |
 | `birth_death` | B0 birth–death exact mean / Poisson / propensity reference | implemented; generic SSA hookup remains D16 |
 | `enzyme_qssa` | B0 full enzyme + standard QSSA + total QSSA + failure regime | implemented |
 | `appendix_a` | B0 dimensionless fixed-point/Jacobian/stability reference | implemented |
 
+> The PNAS benchmark is **mRNA-directed translation**. It does **not** contain a
+> DNA → RNA transcription module; transcription and membrane (GUV) transport are
+> future project modules and must **not** be injected into
+> `PNAS2017_full_reference`.
+
 ## 4. Repository layout
 
 ```
-references/            source papers
+references/
+  R01_Mavelli2015/          frozen coarse legacy source (paper)
+  PNAS2017_Matsuura/        NEW primary benchmark: raw/ + provenance/ (immutable)
 models/
-  literature_reference/  frozen B1 model
-  pure_resource_core/    future project working model
-  fixtures/              B0 known-answer models and frozen synthetic parameters
+  pnas2017_full_reference/  canonical detailed reference SBML: original/ normalized/ audit/
+  pure_reduced_core/        future project model (proposal only today)
+  literature_reference/     frozen B1 (Mavelli) coarse model — legacy
+  fixtures/                 B0 known-answer models and frozen synthetic parameters
 configs/               run conditions
 schemas/               planned machine-readable schemas
-data/                  raw/processed/audit data and provenance
+data/                  raw/processed/audit data and provenance (data/provenance.csv)
 matlab/
-  src/
-    simulate/             B1 simulation code
-    fixtures/             commented B0 fixture implementations
-    provenance/           provenance helpers
-  codegen/               model-definition -> code generation
-  generated/             generated B1 scientific code
-  tests/                 B0 + B1 automated tests
-scripts/                user entry points
-results/                baselines, ordinary runs, release evidence
-docs/                   project, validation and audit documentation
+  src/  codegen/  generated/  tests/  tools/    (B0/B1 stack, legacy)
+scripts/                user entry points + PNAS audit/ledger/reduction generators
+results/
+  baselines/  releases/   pnas2017_reference/  runs/
+docs/
+  pnas2017/                SBML audit, chemical ledger, reference reproduction
+  reduction/               reduction map, decisions CSV, human review, candidate core
+  visualization/           visualization plan + data contract
+  project/  validation/  audit/  theory/   (existing)
 frontend/ service/ mcp/ reserved for later stages
 ```
 
@@ -79,6 +105,21 @@ matlab -batch "addpath('scripts'); reproduce_b1"
 
 B1 ordinary simulation outputs go to `results/runs/<run_id>/`. Frozen
 regression data remain under `results/baselines/b1_mavelli2015/`.
+
+## 5b. Regenerate the PNAS 2017 reference audit / ledger / reduction map
+
+These read only the immutable SBML + authors' CSVs and never edit the model:
+
+```bash
+python scripts/parse_pnas2017_sbml.py        # species/reactions/parameters/modules + summary
+python scripts/build_pnas2017_ledger.py      # species_properties + reaction_balance_audit
+python scripts/build_pnas2017_reduction_map.py  # reduction_decisions.csv (candidates only)
+```
+
+The Phase-4 integrity run is driven from MATLAB SimBiology/the authors' model;
+see `docs/pnas2017/reference_reproduction.md`. Outputs land in
+`models/pnas2017_full_reference/audit/`, `docs/reduction/` and
+`results/pnas2017_reference/`.
 
 ## 6. Run tests
 
