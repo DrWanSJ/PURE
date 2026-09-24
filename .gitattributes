@@ -4,6 +4,12 @@
 # core.autocrlf on the cloning machine.
 *.json text eol=lf
 
+# Immutable imported benchmark sources: hash-pinned (SHA-256 over raw bytes in
+# data/provenance.csv + references/PNAS2017_Matsuura/provenance). Never normalise
+# line endings, so a fresh checkout reproduces the recorded hashes exactly.
+references/PNAS2017_Matsuura/raw/** -text
+models/pnas2017_full_reference/original/** -text
+
 # D6 trajectory certificates hash the original bytes, including native logs
 # and timestamped preregistrations. Do not normalize this frozen evidence.
 docs/audit/nondim_trajectory_20260923/** -text
