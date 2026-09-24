@@ -38,14 +38,15 @@ fprintf('\n--- 1. unit tests (B0 fixtures + B1 checks) ---\n');
 r = runtests(fullfile(root, 'matlab', 'tests'));
 summary.unit_tests_passed = sum([r.Passed]);
 summary.unit_tests_failed = sum([r.Failed]);
+summary.unit_tests_incomplete = sum([r.Incomplete]);
 
 for i = 1:numel(r)
     fprintf('%-70s passed=%d failed=%d (%.2f s)\n', ...
         r(i).Name, r(i).Passed, r(i).Failed, r(i).Duration);
 end
 
-fprintf('unit tests: %d passed, %d failed\n', ...
-    summary.unit_tests_passed, summary.unit_tests_failed);
+fprintf('unit tests: %d passed, %d failed, %d incomplete\n', ...
+    summary.unit_tests_passed, summary.unit_tests_failed, summary.unit_tests_incomplete);
 
 fprintf('\n--- 2. B1 benchmark smoke test ---\n');
 try

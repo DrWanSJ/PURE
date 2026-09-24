@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "model_id": "PURE_RS_QSSA_synthetic_fast_ref",
+  "source_type": "synthetic_reduction_only",
+  "evidence_level": "derived + synthetic numerical validation; NOT experimentally supported",
+  "input_commit": "c2bb0ae63ba106d4f51bf2182dfd28dfe187e743",
+  "construction": {
+    "method": "local_reference_state_matching_fixed_rate_fractions",
+    "phi_alpha": 0.05,
+    "phi_beta": 0.9,
+    "phi_gamma": 0.05,
+    "D_ref": "V_RS_ref/(E_T*phi_alpha*phi_gamma)",
+    "alpha_ref": "phi_alpha*D_ref",
+    "beta_ref": "phi_beta*D_ref",
+    "gamma_ref": "phi_gamma*D_ref",
+    "k1": "alpha_ref/(A0*NTP0)",
+    "kminus1": "beta_ref",
+    "k2": "gamma_ref/T_eff0",
+    "interpretation": "Synthetic local matching only; no fit and no all-state-domain Eq.8 identity"
+  },
+  "reference_state": {
+    "state_order": [
+      "NTP",
+      "NXP",
+      "nt",
+      "A",
+      "T",
+      "AT",
+      "a",
+      "CP",
+      "C",
+      "TLcat"
+    ],
+    "y0": [
+      1500,
+      0,
+      0,
+      300,
+      1.9,
+      0,
+      0,
+      20000,
+      0,
+      2.2
+    ],
+    "DNA_uM": 0.00034,
+    "fTA": 2.3,
+    "T_eff0": 4.3699999999999992,
+    "E_T": 0.16,
+    "V_RS_ref": 0.70072275342437707,
+    "M_qss0": 0.008,
+    "D_ref": 1751.8068835609427,
+    "alpha_ref": 87.590344178047133,
+    "beta_ref": 1576.6261952048485,
+    "gamma_ref": 87.590344178047133,
+    "tau_M_ref": 0.00057083917718560079
+  },
+  "parameters": {
+    "k1": {
+      "value": 0.00019464520928454918,
+      "unit": "uM^-2 s^-1",
+      "source_type": "synthetic_reduction_only"
+    },
+    "kminus1": {
+      "value": 1576.6261952048485,
+      "unit": "s^-1",
+      "source_type": "synthetic_reduction_only"
+    },
+    "k2": {
+      "value": 20.043557020148089,
+      "unit": "uM^-1 s^-1",
+      "source_type": "synthetic_reduction_only"
+    }
+  },
+  "mapping": {
+    "ATP_RS": "canonical NTP bookkeeping, not ATP-specific chemistry",
+    "T_eff": "(p.n_T/p.n_A)*T",
+    "E_T": "p.RScat",
+    "PPi": "No state; effect lumped into kminus1"
+  },
+  "source_review": {
+    "exact_surrogate_microconstants_found": false,
+    "primary_source": "Mavelli et al. 2015 DOI 10.1007/s11538-015-0082-8; normalized PDF pages 7-8 and 13",
+    "finding": "Eq.8 and Table2 give apparent k_RS and Michaelis constants, not k1/kminus1/k2 of this two-step surrogate",
+    "excluded": "Unrelated aaRS numbers and generic enzyme fixtures cannot supply exact surrogate provenance",
+    "extracted_text_note": "Existing provenance ledger text hash is stale; verified PDF and current text fingerprints below; historical bytes unchanged"
+  },
+  "source_fingerprints": [
+    {
+      "path": "models/literature_reference/parameters.json",
+      "sha256": "5f6473b38a7d2bfdb021aa29c36c818483056bf28ef45f9d6a442530b687699c"
+    },
+    {
+      "path": "models/literature_reference/model_definition.json",
+      "sha256": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14"
+    },
+    {
+      "path": "models/literature_reference/model_manifest.json",
+      "sha256": "fd5bfee5406fe3eadf087eb1b81b360bd49c0f95044c2a2801cf985f268de9e4"
+    },
+    {
+      "path": "matlab/generated/rhs_pure_literature_reference.m",
+      "sha256": "79ddb8c755ccb5ed1ece2d08b1b1be00d35669ef857edc9e7206094eb77fa358"
+    },
+    {
+      "path": "matlab/generated/pure_literature_reference_params.m",
+      "sha256": "41d12a621652da91c8d1d420cb686689a5681db1593b87fbf10b5331c20c6982"
+    },
+    {
+      "path": "references/R01_Mavelli2015/A_Simple_Protein_Synthesis_Model_PURE_normalized.pdf",
+      "sha256": "838d1f5df209ceb9bccdd64b5e5e075cd80e4eb0f982760eecd4cc5a6b4bb7d0"
+    },
+    {
+      "path": "references/R01_Mavelli2015/A_Simple_Protein_Synthesis_Model_PURE.md",
+      "sha256": "33bc72c3bbada5c4c2213cfe938385d21affbaee2dc0dfa16ef58fbd34c9c613"
+    }
+  ]
+}

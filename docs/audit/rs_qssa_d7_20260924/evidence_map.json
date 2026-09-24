@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "role": "derived navigation; not source authority",
+  "input_commit": "c2bb0ae63ba106d4f51bf2182dfd28dfe187e743",
+  "claim_freshness": "verify each source fingerprint; no claim upgrades from graph links",
+  "nodes": [
+    {
+      "id": "canonical",
+      "classification": "EXTRACTED",
+      "claim": "Frozen canonical backbone and primary source",
+      "source": "models/literature_reference/model_definition.json",
+      "sha256": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14",
+      "confidence": "verified within declared source/synthetic scope"
+    },
+    {
+      "id": "criteria",
+      "classification": "EXTRACTED",
+      "claim": "Acceptance criteria frozen before execution",
+      "source": "docs/audit/rs_qssa_d7_20260924/acceptance_criteria.json",
+      "sha256": "61e5970fe51e18eddb72ab3f339d2bc0e81f8f578fa28c6465090d31cca9164d",
+      "confidence": "verified within declared source/synthetic scope"
+    },
+    {
+      "id": "parameters",
+      "classification": "INFERRED",
+      "claim": "Synthetic local construction, not sourced microscopic constants",
+      "source": "models/reductions/rs_qssa/parameters.json",
+      "sha256": "36c71e0fb809c14c6f8239ebc9829876928b2ec17d23a6de00d1b978d4713741",
+      "confidence": "verified within declared source/synthetic scope"
+    },
+    {
+      "id": "full",
+      "classification": "INFERRED",
+      "claim": "Declared explicit surrogate coupling",
+      "source": "matlab/src/theory/rhs_pure_rs_explicit.m",
+      "sha256": "5caf5f0ceb954af05b18bb68b91f5575f458ee5c9544d1d17130aba3f6d6d271",
+      "confidence": "verified within declared source/synthetic scope"
+    },
+    {
+      "id": "manifold",
+      "classification": "INFERRED",
+      "claim": "Algebraic solution G(s,h)=0",
+      "source": "matlab/src/theory/rs_qssa_manifold.m",
+      "sha256": "65033de60582362bf1d081b7aee87636349d4582543f1c73ad85cfbb9419b279",
+      "confidence": "verified within declared source/synthetic scope"
+    },
+    {
+      "id": "qssa",
+      "classification": "INFERRED",
+      "claim": "Restriction F(s,h(s))",
+      "source": "matlab/src/theory/rhs_pure_rs_qssa.m",
+      "sha256": "cc913b5ba71dd484df049397a71011f78fd28d85067f644a3f4218bb3d5070a9",
+      "confidence": "verified within declared source/synthetic scope"
+    },
+    {
+      "id": "jacobian",
+      "classification": "INFERRED",
+      "claim": "Analytic Fs+FM*dh",
+      "source": "matlab/src/theory/jacobian_pure_rs_qssa_chain.m",
+      "sha256": "bfc54b857f36b9d96bda4e3b0b58365c4ea3decb317ff2c1565c01d5457b1e40",
+      "confidence": "verified within declared source/synthetic scope"
+    },
+    {
+      "id": "tests",
+      "classification": "EXTRACTED",
+      "claim": "MATLAB executable acceptance checks",
+      "source": "matlab/tests/test_rs_qssa_reduction.m",
+      "sha256": "ee70f79f0784b49d07821bf3d61a5bbe28711da4fbaf558c7edc5e5f66d3b748",
+      "confidence": "verified within declared source/synthetic scope"
+    },
+    {
+      "id": "results",
+      "classification": "EXTRACTED",
+      "claim": "Native MATLAB run_002 results",
+      "source": "docs/audit/rs_qssa_d7_20260924/run_002/validation_results.json",
+      "sha256": "2a01a3c2c286d6729ab6d2690171c3b374f0746892ea09295a3373fd0cb7fdf7",
+      "confidence": "verified within declared source/synthetic scope"
+    },
+    {
+      "id": "biology",
+      "classification": "AMBIGUOUS",
+      "claim": "Experimental adequacy unresolved; no supporting experiment",
+      "source": "docs/theory/reduction_certificate.md",
+      "sha256": "b76044b8a27261e9382297fa28d76645c510536ecd950e71304f9e8e379c4626",
+      "confidence": "unresolved"
+    }
+  ],
+  "edges": [
+    {
+      "from": "canonical",
+      "to": "parameters",
+      "relation": "supplies_reference_flux"
+    },
+    {
+      "from": "parameters",
+      "to": "full",
+      "relation": "parameterizes"
+    },
+    {
+      "from": "full",
+      "to": "manifold",
+      "relation": "reduced_by_G_zero"
+    },
+    {
+      "from": "manifold",
+      "to": "qssa",
+      "relation": "substitutes_into_F"
+    },
+    {
+      "from": "manifold",
+      "to": "jacobian",
+      "relation": "supplies_chain_derivative"
+    },
+    {
+      "from": "criteria",
+      "to": "tests",
+      "relation": "gates"
+    },
+    {
+      "from": "qssa",
+      "to": "tests",
+      "relation": "tested_against_full"
+    },
+    {
+      "from": "jacobian",
+      "to": "tests",
+      "relation": "checked_with_complex_step"
+    },
+    {
+      "from": "tests",
+      "to": "results",
+      "relation": "produces"
+    },
+    {
+      "from": "results",
+      "to": "biology",
+      "relation": "does_not_establish"
+    }
+  ]
+}

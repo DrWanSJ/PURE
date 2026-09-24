@@ -1,0 +1,58 @@
+[
+  {
+    "path": "models/literature_reference/parameters.json",
+    "tested_raw_sha256": "5f6473b38a7d2bfdb021aa29c36c818483056bf28ef45f9d6a442530b687699c",
+    "git_blob_sha256": "5f6473b38a7d2bfdb021aa29c36c818483056bf28ef45f9d6a442530b687699c",
+    "git_blob_bytes": 6344,
+    "normalized_text_identical": true,
+    "difference": "none"
+  },
+  {
+    "path": "models/literature_reference/model_definition.json",
+    "tested_raw_sha256": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14",
+    "git_blob_sha256": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14",
+    "git_blob_bytes": 7261,
+    "normalized_text_identical": true,
+    "difference": "none"
+  },
+  {
+    "path": "models/literature_reference/model_manifest.json",
+    "tested_raw_sha256": "fd5bfee5406fe3eadf087eb1b81b360bd49c0f95044c2a2801cf985f268de9e4",
+    "git_blob_sha256": "fd5bfee5406fe3eadf087eb1b81b360bd49c0f95044c2a2801cf985f268de9e4",
+    "git_blob_bytes": 9907,
+    "normalized_text_identical": true,
+    "difference": "none"
+  },
+  {
+    "path": "matlab/generated/rhs_pure_literature_reference.m",
+    "tested_raw_sha256": "79ddb8c755ccb5ed1ece2d08b1b1be00d35669ef857edc9e7206094eb77fa358",
+    "git_blob_sha256": "7fd72e822bec4b80c73a607a71a2b20872adaad580d09c267d159f2f4bde637c",
+    "git_blob_bytes": 4292,
+    "normalized_text_identical": true,
+    "difference": "checkout line endings only; original bytes preserved"
+  },
+  {
+    "path": "matlab/generated/pure_literature_reference_params.m",
+    "tested_raw_sha256": "41d12a621652da91c8d1d420cb686689a5681db1593b87fbf10b5331c20c6982",
+    "git_blob_sha256": "80e43a12539089419ca87395eb5a286819cc5cdab133573fbccb62c5c4e79d9f",
+    "git_blob_bytes": 3291,
+    "normalized_text_identical": true,
+    "difference": "checkout line endings only; original bytes preserved"
+  },
+  {
+    "path": "references/R01_Mavelli2015/A_Simple_Protein_Synthesis_Model_PURE_normalized.pdf",
+    "tested_raw_sha256": "838d1f5df209ceb9bccdd64b5e5e075cd80e4eb0f982760eecd4cc5a6b4bb7d0",
+    "git_blob_sha256": "838d1f5df209ceb9bccdd64b5e5e075cd80e4eb0f982760eecd4cc5a6b4bb7d0",
+    "git_blob_bytes": 1318933,
+    "normalized_text_identical": true,
+    "difference": "none"
+  },
+  {
+    "path": "references/R01_Mavelli2015/A_Simple_Protein_Synthesis_Model_PURE.md",
+    "tested_raw_sha256": "33bc72c3bbada5c4c2213cfe938385d21affbaee2dc0dfa16ef58fbd34c9c613",
+    "git_blob_sha256": "b47bb4e08885f573fabe49068924a0d459d1ff912bc438f4c22b081ffd937af8",
+    "git_blob_bytes": 75141,
+    "normalized_text_identical": true,
+    "difference": "checkout line endings only; original bytes preserved"
+  }
+]

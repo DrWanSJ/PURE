@@ -1,0 +1,59 @@
+{
+  "unit_tests_passed": 102,
+  "unit_tests_failed": 0,
+  "unit_tests_incomplete": 0,
+  "smoke_test": "passed",
+  "preflight": {
+    "mode": "development",
+    "checks": [
+      {
+        "name": "git_in_repo",
+        "passed": true,
+        "detail": "in_repo=1"
+      },
+      {
+        "name": "head_resolvable",
+        "passed": true,
+        "detail": "HEAD = cec84861ab829bf451d6902283e5f078a6e89401"
+      },
+      {
+        "name": "git_dirty_determined",
+        "passed": true,
+        "detail": "git_dirty=true (recorded; new-run manifests must carry it; dirty does not block development)"
+      },
+      {
+        "name": "hashes_computable",
+        "passed": true,
+        "detail": "definition=21329848a008 parameters=5f6473b38a7d"
+      },
+      {
+        "name": "generated_in_sync",
+        "passed": true,
+        "detail": "checked-in generated RHS == regenerated output"
+      },
+      {
+        "name": "legacy_provenance_labels",
+        "passed": true,
+        "detail": "legacy files carry legacy_unbound_to_execution_commit and never claim provenance_bound"
+      },
+      {
+        "name": "manifests_wellformed",
+        "passed": true,
+        "detail": "no provenance-bound runs yet (results/runs/b1_*)"
+      },
+      {
+        "name": "evidence_guards",
+        "passed": true,
+        "detail": "pending/false evidence levels are intact; flipping them requires editing this check too"
+      },
+      {
+        "name": "tests_evidence_log",
+        "passed": true,
+        "detail": "8 test log file(s) under logs/ or docs/audit/logs/ (AI-written tests, not human review)"
+      }
+    ],
+    "release_ready": false,
+    "development_checks_passed": true,
+    "checked_at": "2026-09-24 16:34:26"
+  }
+}

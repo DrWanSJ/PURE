@@ -1,0 +1,46 @@
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .gitattributes
+	modified:   docs/audit/rs_qssa_d7_20260924/README.md
+	modified:   docs/theory/reduction_certificate.md
+	modified:   docs/theory_notes.md
+	modified:   scripts/run_all_tests.m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/audit/rs_qssa_d7_20260924/artifact_manifest.json
+	docs/audit/rs_qssa_d7_20260924/evidence_map.json
+	docs/audit/rs_qssa_d7_20260924/final_regression_results.json
+	docs/audit/rs_qssa_d7_20260924/final_regression_stdout.txt
+	docs/audit/rs_qssa_d7_20260924/implementation_revision_1.json
+	docs/audit/rs_qssa_d7_20260924/independent_csv_check.json
+	docs/audit/rs_qssa_d7_20260924/matlab_stdout.txt
+	docs/audit/rs_qssa_d7_20260924/process_stdout_001.txt
+	docs/audit/rs_qssa_d7_20260924/process_stdout_002.txt
+	docs/audit/rs_qssa_d7_20260924/run_001/
+	docs/audit/rs_qssa_d7_20260924/run_002/
+	docs/audit/rs_qssa_d7_20260924/validation_results.json
+	matlab/src/theory/jacobian_pure_rs_explicit.m
+	matlab/src/theory/jacobian_pure_rs_qssa_chain.m
+	matlab/src/theory/rhs_pure_rs_explicit.m
+	matlab/src/theory/rhs_pure_rs_qssa.m
+	matlab/src/theory/rs_explicit_jacobian_blocks.m
+	matlab/src/theory/rs_nonrs_rate_derivatives.m
+	matlab/src/theory/rs_qssa_manifold.m
+	matlab/src/theory/rs_reduction_parameters.m
+	matlab/src/theory/rs_timescale_diagnostics.m
+	matlab/src/theory/simulate_pure_rs_explicit.m
+	matlab/src/theory/simulate_pure_rs_model.m
+	matlab/src/theory/simulate_pure_rs_qssa.m
+	matlab/tests/test_rs_qssa_reduction.m
+	models/reductions/
+	scripts/build_rs_qssa_audit.py
+	scripts/export_rs_qssa_parameters.m
+	scripts/run_rs_qssa_validation.m
+
+no changes added to commit (use "git add" and/or "git commit -a")

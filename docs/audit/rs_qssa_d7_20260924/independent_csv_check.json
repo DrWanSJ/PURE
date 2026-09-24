@@ -1,0 +1,39 @@
+{
+  "method": "Python standard-library CSV parsing, independent per-quantity peak normalization",
+  "cases": [
+    {
+      "DNA_uM": 0.00034,
+      "output_points": 1441,
+      "independently_recomputed_normalized_errors": {
+        "states": 1.4666840170778687e-07,
+        "RS_flux": 1.3005501895959682e-07,
+        "mRNA": 1.4354060472684371e-09,
+        "protein": 2.263315163744288e-09
+      },
+      "max_epsilon_state": 4.5766590389016e-06
+    },
+    {
+      "DNA_uM": 0.0017,
+      "output_points": 1441,
+      "independently_recomputed_normalized_errors": {
+        "states": 1.4387215391186062e-07,
+        "RS_flux": 1.2760055178125514e-07,
+        "mRNA": 2.300384504900523e-09,
+        "protein": 1.0395984423323516e-09
+      },
+      "max_epsilon_state": 4.5766590389016e-06
+    },
+    {
+      "DNA_uM": 0.0068,
+      "output_points": 1441,
+      "independently_recomputed_normalized_errors": {
+        "states": 2.631278499620748e-07,
+        "RS_flux": 1.2343513690864436e-07,
+        "mRNA": 1.0103605576345476e-08,
+        "protein": 2.1371021663503157e-09
+      },
+      "max_epsilon_state": 4.5766590389016e-06
+    }
+  ],
+  "passed": true
+}

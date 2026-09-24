@@ -1,0 +1,16 @@
+{
+  "revision": 1,
+  "previous_run": "run_001",
+  "failure_category": "implementation_bug_in_audit_reporting",
+  "failure": "After all 13 D7 native tests passed, test_records attempted indexed assignment into a fieldless empty struct and MATLAB rejected dissimilar structures. Repository suite was not reached.",
+  "evidence": ["process_stdout_001.txt", "run_001/matlab_stdout.txt", "run_001/dna_1_trajectories.mat", "run_001/dna_2_trajectories.mat", "run_001/dna_3_trajectories.mat"],
+  "observed_native_counts": {"Passed": 13, "Failed": 0, "Incomplete": 0},
+  "formal_run_overall_status": "INCOMPLETE_REPORTING_ERROR",
+  "fix": "Preallocate typed native-TestResult metadata struct array before indexed assignment; remove unnecessary analyzer suppression markers and verify source fingerprints in provenance test.",
+  "scientific_equations_changed": false,
+  "microparameters_changed": false,
+  "thresholds_changed": false,
+  "solver_settings_changed": false,
+  "criteria_sha256": "61e5970fe51e18eddb72ab3f339d2bc0e81f8f578fa28c6465090d31cca9164d",
+  "next_run": "run_002"
+}

@@ -36,3 +36,19 @@ scripts/run_nondimensionalization_validation.m text eol=lf
 docs/audit/nondimensionalization_validation_v2_20260923/** text eol=lf
 docs/audit/nondimensionalization_validation_v2_20260923/*.zip -text
 scripts/diagnose_nondim_reconstruction.m text eol=lf
+
+# D7 new evidence is immutable per run; source fingerprints use LF bytes.
+docs/audit/rs_qssa_d7_20260924/** -text
+# Native logs/CSV retain MATLAB whitespace and CRLF; review the files directly.
+# Treat generated evidence as opaque in Git diffs instead of rewriting its bytes.
+docs/audit/rs_qssa_d7_20260924/**/*.txt -diff
+docs/audit/rs_qssa_d7_20260924/**/*.csv -diff
+models/reductions/rs_qssa/** text eol=lf
+matlab/src/theory/*rs*.m text eol=lf
+matlab/tests/test_rs_qssa_reduction.m text eol=lf
+scripts/run_rs_qssa_validation.m text eol=lf
+scripts/export_rs_qssa_parameters.m text eol=lf
+scripts/run_all_tests.m text eol=lf
+docs/theory/reduction_certificate.md text eol=lf
+scripts/build_rs_qssa_audit.py text eol=lf
+.gitattributes text eol=lf

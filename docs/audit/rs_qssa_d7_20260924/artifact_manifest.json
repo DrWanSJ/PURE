@@ -1,0 +1,348 @@
+{
+  "schema_version": "1.0",
+  "input_commit": "c2bb0ae63ba106d4f51bf2182dfd28dfe187e743",
+  "preregistration_commit": "cec84861ab829bf451d6902283e5f078a6e89401",
+  "status": "D7 = COMPLETE for analytical derivation + synthetic main-backbone numerical validation. This does not establish experimental/microscopic validity of the one-intermediate aaRS surrogate.",
+  "self_excluded": true,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 2754,
+      "sha256": "9260dba1c96409dc53fd1e712e340421dca2116f8eaa75c1e9b2983ff1685190"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/acceptance_criteria.json",
+      "bytes": 2922,
+      "sha256": "61e5970fe51e18eddb72ab3f339d2bc0e81f8f578fa28c6465090d31cca9164d"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/evidence_map.json",
+      "bytes": 4686,
+      "sha256": "d6cfc4e1e68f49dcfad1789888a0e437745c1eac0a924a180ea66989932605ba"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/final_regression_results.json",
+      "bytes": 1735,
+      "sha256": "3eb0e6b159d9d0605c722132e9f8ed14eba7684911ca6692cb2bcbeb5086a429"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/final_regression_stdout.txt",
+      "bytes": 94787,
+      "sha256": "b8a6320083eb263c406a72e0fd23063a21ce9cada852edeffa41766aa1ab50c0"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/git_status_after.txt",
+      "bytes": 2023,
+      "sha256": "b239e53c582783a3b2e0fe6c73dbe83efb6b226d08a400b4e114e4bd555cf3a4"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/git_status_before.txt",
+      "bytes": 255,
+      "sha256": "823f67d5a0a2fb9cd29797176f3e2bda695f15e24844c7b002da5d7d645c8f69"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/implementation_revision_1.json",
+      "bytes": 1076,
+      "sha256": "8ffd9047c27d94b5fbdb58aa3eee65cc5f52bc6b384779119842c71b35bdc8d4"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/independent_csv_check.json",
+      "bytes": 1161,
+      "sha256": "e08eb41f6b8ff06912b51e8175b142faadb95b1241e44c4c06bf64b25d2a5d15"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/matlab_stdout.txt",
+      "bytes": 113639,
+      "sha256": "60c0a83b9baf3739c4aed2eca6a6a11879d9963dd93b85969ca0d9e370192f86"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/preregistration.json",
+      "bytes": 1830,
+      "sha256": "2c700b89a240ebeceb7b88475bf6df5aff829e4d981e66235c244d525defb156"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/process_stdout_001.txt",
+      "bytes": 19346,
+      "sha256": "c267ee48a13ede93a1565b40d1b361be1b363e51cb3009fefb6dcdfb92e77306"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/process_stdout_002.txt",
+      "bytes": 113716,
+      "sha256": "a120f7fe5e5178c6753da5fa6d2b809e307dff000efe1fc29c4c3aa6af4b0415"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/README.md",
+      "bytes": 5431,
+      "sha256": "b3ac585ca3c499a34b4deaab98c47444fac6626f2d228b5a8f141c785d4e62f0"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_001/dna_1_full_explicit.csv",
+      "bytes": 807242,
+      "sha256": "e77c44ba8ac794da364416bd7a79000d9add8eaf02b7ba2138516b66f3ab7b10"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_001/dna_1_qssa.csv",
+      "bytes": 778620,
+      "sha256": "3eaf216b508ef1a7a52165bcef04a6960499515af915eb9af0f7b5a3c9ea6f00"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_001/dna_1_trajectories.mat",
+      "bytes": 1111876,
+      "sha256": "3543c811fd5d968c1b4a39caa27604c200ee2eb1b52cf74a986f2cea34ac2189"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_001/dna_2_full_explicit.csv",
+      "bytes": 801360,
+      "sha256": "48939dc488e4b3aa68c0274394219282445a94ccce6e17ab3497092d32e0588f"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_001/dna_2_qssa.csv",
+      "bytes": 772624,
+      "sha256": "0440117ab6dd5127be40da5733daad710eaa912ef37a3f6d0a360f28aa2055aa"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_001/dna_2_trajectories.mat",
+      "bytes": 1118844,
+      "sha256": "2b7c853c2f936734a34b2ca57a167e939aa9a3f070170617ddfed2f446cbeeee"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_001/dna_3_full_explicit.csv",
+      "bytes": 798986,
+      "sha256": "606cd9946d5584ee8fb162cfabb5593046e866adcd494750d5619480bcc113b2"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_001/dna_3_qssa.csv",
+      "bytes": 770378,
+      "sha256": "20631f3e8bb98ab01e6cde43dfb1d37e0aeb2e38bb94daa3a7e497dd824b7e6c"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_001/dna_3_trajectories.mat",
+      "bytes": 1125244,
+      "sha256": "e44886aa3266f90aadc20bc7e997a52f36d75485dd05e27edb9244d8749c5a03"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_001/matlab_stdout.txt",
+      "bytes": 18927,
+      "sha256": "81bcc2aecc39fb1b03e9cbc2f481ad597387e3952b33c261d4208dbbfd3ee3ee"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_002/dna_1_full_explicit.csv",
+      "bytes": 807242,
+      "sha256": "e77c44ba8ac794da364416bd7a79000d9add8eaf02b7ba2138516b66f3ab7b10"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_002/dna_1_qssa.csv",
+      "bytes": 778620,
+      "sha256": "3eaf216b508ef1a7a52165bcef04a6960499515af915eb9af0f7b5a3c9ea6f00"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_002/dna_1_trajectories.mat",
+      "bytes": 1111876,
+      "sha256": "adb2a5f87c8b954b6d33056e6531a878dcdbb7e9fcdefef4506262c90e12122d"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_002/dna_2_full_explicit.csv",
+      "bytes": 801360,
+      "sha256": "48939dc488e4b3aa68c0274394219282445a94ccce6e17ab3497092d32e0588f"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_002/dna_2_qssa.csv",
+      "bytes": 772624,
+      "sha256": "0440117ab6dd5127be40da5733daad710eaa912ef37a3f6d0a360f28aa2055aa"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_002/dna_2_trajectories.mat",
+      "bytes": 1118844,
+      "sha256": "bfdfcb8105c6140ddc1997ab26045df66da99fbb951409db1e2cd4507b72d51b"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_002/dna_3_full_explicit.csv",
+      "bytes": 798986,
+      "sha256": "606cd9946d5584ee8fb162cfabb5593046e866adcd494750d5619480bcc113b2"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_002/dna_3_qssa.csv",
+      "bytes": 770378,
+      "sha256": "20631f3e8bb98ab01e6cde43dfb1d37e0aeb2e38bb94daa3a7e497dd824b7e6c"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_002/dna_3_trajectories.mat",
+      "bytes": 1125244,
+      "sha256": "855d04d8bc47825b823eafde14b031254e46639bd7c38822ccf5b306fcbca5ef"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_002/matlab_stdout.txt",
+      "bytes": 113639,
+      "sha256": "60c0a83b9baf3739c4aed2eca6a6a11879d9963dd93b85969ca0d9e370192f86"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_002/native_TestResults.mat",
+      "bytes": 71568,
+      "sha256": "3c86c8462731b200beddd354ecfcdb034991f5d7dd03804f67692e6db2696673"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/run_002/validation_results.json",
+      "bytes": 34656,
+      "sha256": "2a01a3c2c286d6729ab6d2690171c3b374f0746892ea09295a3373fd0cb7fdf7"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/source_byte_bindings.json",
+      "bytes": 2642,
+      "sha256": "11bbd0cd794d982d1dec04efb288b3aea59b32f52bc68eb0f6064b582b9f9479"
+    },
+    {
+      "path": "docs/audit/rs_qssa_d7_20260924/validation_results.json",
+      "bytes": 34656,
+      "sha256": "2a01a3c2c286d6729ab6d2690171c3b374f0746892ea09295a3373fd0cb7fdf7"
+    },
+    {
+      "path": "docs/theory/reduction_certificate.md",
+      "bytes": 20855,
+      "sha256": "b76044b8a27261e9382297fa28d76645c510536ecd950e71304f9e8e379c4626"
+    },
+    {
+      "path": "docs/theory_notes.md",
+      "bytes": 36067,
+      "sha256": "ec25567a966303ad3045c88df162c6576c4f42dd8cdc7f239dc8f5dd632eed90"
+    },
+    {
+      "path": "matlab/generated/pure_literature_reference_params.m",
+      "bytes": 3373,
+      "sha256": "41d12a621652da91c8d1d420cb686689a5681db1593b87fbf10b5331c20c6982",
+      "git_blob_sha256": "80e43a12539089419ca87395eb5a286819cc5cdab133573fbccb62c5c4e79d9f",
+      "git_blob_bytes": 3291
+    },
+    {
+      "path": "matlab/generated/rhs_pure_literature_reference.m",
+      "bytes": 4367,
+      "sha256": "79ddb8c755ccb5ed1ece2d08b1b1be00d35669ef857edc9e7206094eb77fa358",
+      "git_blob_sha256": "7fd72e822bec4b80c73a607a71a2b20872adaad580d09c267d159f2f4bde637c",
+      "git_blob_bytes": 4292
+    },
+    {
+      "path": "matlab/src/theory/jacobian_pure_rs_explicit.m",
+      "bytes": 307,
+      "sha256": "162f2ac250f3f1b927c19cf388ea1d4fb16e81d67498a8d227a6a35978a3fbd2"
+    },
+    {
+      "path": "matlab/src/theory/jacobian_pure_rs_qssa_chain.m",
+      "bytes": 619,
+      "sha256": "bfc54b857f36b9d96bda4e3b0b58365c4ea3decb317ff2c1565c01d5457b1e40"
+    },
+    {
+      "path": "matlab/src/theory/rhs_pure_rs_explicit.m",
+      "bytes": 1241,
+      "sha256": "5caf5f0ceb954af05b18bb68b91f5575f458ee5c9544d1d17130aba3f6d6d271"
+    },
+    {
+      "path": "matlab/src/theory/rhs_pure_rs_qssa.m",
+      "bytes": 539,
+      "sha256": "cc913b5ba71dd484df049397a71011f78fd28d85067f644a3f4218bb3d5070a9"
+    },
+    {
+      "path": "matlab/src/theory/rs_explicit_jacobian_blocks.m",
+      "bytes": 1223,
+      "sha256": "6a43e5c8836c444f0ca4833ace171fe9830d65fe1c8ba873b86ad6ae493f2e15"
+    },
+    {
+      "path": "matlab/src/theory/rs_nonrs_rate_derivatives.m",
+      "bytes": 1157,
+      "sha256": "ee92d2ae73f3d29df01b295ceed81759ff85e7a4483541894af68d994a979797"
+    },
+    {
+      "path": "matlab/src/theory/rs_qssa_manifold.m",
+      "bytes": 828,
+      "sha256": "65033de60582362bf1d081b7aee87636349d4582543f1c73ad85cfbb9419b279"
+    },
+    {
+      "path": "matlab/src/theory/rs_reduction_parameters.m",
+      "bytes": 1727,
+      "sha256": "5fbc9678afe998277eff51ea671b85f530c6aa1a870ba991fd9ea4225ae58cf0"
+    },
+    {
+      "path": "matlab/src/theory/rs_timescale_diagnostics.m",
+      "bytes": 865,
+      "sha256": "6a46702c19d0fb724bc7912026277cb7422f04304c4caf8034cfa94dc0529541"
+    },
+    {
+      "path": "matlab/src/theory/simulate_pure_rs_explicit.m",
+      "bytes": 203,
+      "sha256": "189ea678bb055ba8022356973296927094da5da0c176e02df180c9dab12eedb9"
+    },
+    {
+      "path": "matlab/src/theory/simulate_pure_rs_model.m",
+      "bytes": 3045,
+      "sha256": "8cfe76dd2ddc49cd85f9517b884c09fb05f5609b0027909a85e22c95bfac639f"
+    },
+    {
+      "path": "matlab/src/theory/simulate_pure_rs_qssa.m",
+      "bytes": 184,
+      "sha256": "bfa8ffa3ee8e089aeaeb0e87c384a7d8d10865d673179950572f99c7455a5f66"
+    },
+    {
+      "path": "matlab/tests/test_rs_qssa_reduction.m",
+      "bytes": 22753,
+      "sha256": "ee70f79f0784b49d07821bf3d61a5bbe28711da4fbaf558c7edc5e5f66d3b748"
+    },
+    {
+      "path": "models/literature_reference/model_definition.json",
+      "bytes": 7261,
+      "sha256": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14",
+      "git_blob_sha256": "21329848a0089e45426eff6d221eed4d902646e65b83fe65137032aa3c2fdf14",
+      "git_blob_bytes": 7261
+    },
+    {
+      "path": "models/literature_reference/model_manifest.json",
+      "bytes": 9907,
+      "sha256": "fd5bfee5406fe3eadf087eb1b81b360bd49c0f95044c2a2801cf985f268de9e4",
+      "git_blob_sha256": "fd5bfee5406fe3eadf087eb1b81b360bd49c0f95044c2a2801cf985f268de9e4",
+      "git_blob_bytes": 9907
+    },
+    {
+      "path": "models/literature_reference/parameters.json",
+      "bytes": 6344,
+      "sha256": "5f6473b38a7d2bfdb021aa29c36c818483056bf28ef45f9d6a442530b687699c",
+      "git_blob_sha256": "5f6473b38a7d2bfdb021aa29c36c818483056bf28ef45f9d6a442530b687699c",
+      "git_blob_bytes": 6344
+    },
+    {
+      "path": "models/reductions/rs_qssa/parameters.json",
+      "bytes": 3811,
+      "sha256": "36c71e0fb809c14c6f8239ebc9829876928b2ec17d23a6de00d1b978d4713741"
+    },
+    {
+      "path": "references/R01_Mavelli2015/A_Simple_Protein_Synthesis_Model_PURE.md",
+      "bytes": 75545,
+      "sha256": "33bc72c3bbada5c4c2213cfe938385d21affbaee2dc0dfa16ef58fbd34c9c613",
+      "git_blob_sha256": "b47bb4e08885f573fabe49068924a0d459d1ff912bc438f4c22b081ffd937af8",
+      "git_blob_bytes": 75141
+    },
+    {
+      "path": "references/R01_Mavelli2015/A_Simple_Protein_Synthesis_Model_PURE_normalized.pdf",
+      "bytes": 1318933,
+      "sha256": "838d1f5df209ceb9bccdd64b5e5e075cd80e4eb0f982760eecd4cc5a6b4bb7d0",
+      "git_blob_sha256": "838d1f5df209ceb9bccdd64b5e5e075cd80e4eb0f982760eecd4cc5a6b4bb7d0",
+      "git_blob_bytes": 1318933
+    },
+    {
+      "path": "scripts/build_rs_qssa_audit.py",
+      "bytes": 16801,
+      "sha256": "1f0809a7c6ceaf659cfc32341acdbbbbc5bed06aafb8c627bc9465edfe28e52b"
+    },
+    {
+      "path": "scripts/export_rs_qssa_parameters.m",
+      "bytes": 3297,
+      "sha256": "7e88282dff239303292c800644bfeccf0177f18b84bf54635ebb0fbf35133d80"
+    },
+    {
+      "path": "scripts/run_all_tests.m",
+      "bytes": 2998,
+      "sha256": "e7021ec4b2365eaa5aea38e20e83de59a5ce22b7eb4a219c7c6d33bba70af126"
+    },
+    {
+      "path": "scripts/run_rs_qssa_validation.m",
+      "bytes": 5020,
+      "sha256": "ea6e40c68ccb9a89a9f433aee7d8a069fe5f158dabce4b34402866882088b9db"
+    }
+  ]
+}
