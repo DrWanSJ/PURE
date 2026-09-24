@@ -25,3 +25,7 @@ Thumbs.db
 
 # Future frontend/service build artifacts
 node_modules/
+
+# Local reference drop folder — its files are copied (unchanged, hashed) into
+# references/PNAS2017_Matsuura/raw/; the drop itself is not versioned.
+ref-PNAS/
