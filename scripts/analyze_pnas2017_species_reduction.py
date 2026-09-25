@@ -1178,7 +1178,9 @@ def main():
         ("species", [OrderedDict((k, v) for k, v in r.items() if not k.startswith("_"))
                      for r in rows_sorted]),
     ])
-    with open(args.json_out, "w", encoding="utf-8") as fh:
+    # .gitattributes pins *.json to eol=lf so a fresh checkout reproduces the
+    # recorded bytes on every platform; write LF explicitly to match.
+    with open(args.json_out, "w", encoding="utf-8", newline="\n") as fh:
         json.dump(payload, fh, indent=2, ensure_ascii=False)
         fh.write("\n")
 
