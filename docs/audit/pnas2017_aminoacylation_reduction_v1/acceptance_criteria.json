@@ -1,0 +1,100 @@
+{
+  "schema": "pnas2017_aminoacylation_reduction_acceptance/v1",
+  "status": "FROZEN_PROSPECTIVELY_BEFORE_FIRST_FORMAL_FULL_VS_REDUCED_COMPARISON",
+  "authorization_source": "本轮用户提供的执行 prompt (2026-09-25 execution prompt, section VII)",
+  "notes": [
+    "Prospective local registration: content-hash binding recorded in preregistration.json before any formal full-vs-reduced error comparison. This is not a git-history proof; no commit was made this round.",
+    "v0 approximate-tier thresholds (T_C/T_D/T_E/T_F) were null; v1 fills them with the engineering conventions declared in the execution prompt. The v0 files remain hash-frozen and unmodified.",
+    "No threshold may be relaxed after results are seen; any change requires a new, separately recorded, human-approved revision."
+  ],
+  "reference_solver": {
+    "engine": "MATLAB R2025b ode15s, author fMGG_synthesis.m RHS reused verbatim",
+    "reltol": 1e-10,
+    "abstol": 1e-14,
+    "grid": "logspace(-4, 3, 200) (identical to the verified tight reference run)",
+    "tight_reference_evidence": "runner reference mode reproduces results/pnas2017_reference/2026-09-25_aa_v1_reference_tight pointwise to <= 5.6e-10 trajectory-scaled (scratch-verified 2026-09-25)",
+    "tolerance_convergence": "any acceptance quantity whose observed deviation between RelTol 1e-8 and 1e-10 exceeds 10% of its tier budget => NUMERICALLY_UNRESOLVED, not PASS/FAIL"
+  },
+  "error_formulas": {
+    "E_inf": "max_t |y_red(t) - y_full(t)| / max(S_y, floor_y)",
+    "S_y": "max_t |y_full(t)| computed from the full (tight) reference ONLY",
+    "floors": {
+      "concentration_uM": 1e-6,
+      "flux_uM_per_s": 1e-9,
+      "dimensionless": 1e-12
+    },
+    "flux_scale_rule": "instantaneous-flux errors are normalized by a declared production (or consumption) SCALE max_t(max(v_forward, v_reverse)), never by the near-zero net flux itself",
+    "cumulative_extent": "xi_j(t) = integral_0^t v_j(tau) dtau of the GROSS directed author reaction rate v_j (never |v_net|); integrated as augmented DAE states inside the solver (no trapezoid on sparse samples as sole evidence)",
+    "conservation_residual": "abs(total(t) - total(0)) / max(abs(total(0)), floor_dimensionless)"
+  },
+  "tiers": {
+    "T_A_exact_algebra_or_rewrite": {
+      "applies_to": ["A1 pair-merge RHS identity", "exact stoichiometric identities", "conserved-moiety table derivations"],
+      "threshold": 1e-9,
+      "states": "arbitrary feasible states, not only the reference trajectory"
+    },
+    "T_B_independent_rhs_cross_check": {
+      "applies_to": ["Python SBML-derived RHS vs author MATLAB full vector", "generated pnas2017_aa_v1_rates vs SBML rate laws"],
+      "threshold": 1e-12
+    },
+    "T_C_approximate_state_trajectories": {
+      "applies_to": ["A3a reduced vs full per-species trajectories (all 47 aminoacylation-relevant dynamic species incl. kept free MetAMP/GlyAMP)"],
+      "threshold": 0.01
+    },
+    "T_D_approximate_instantaneous_fluxes": {
+      "applies_to": ["activation / transfer / charging process fluxes v(t)"],
+      "threshold": 0.05
+    },
+    "T_E_approximate_cumulative_resource_extents": {
+      "applies_to": ["cumulative conversions: charging events, ATP->AMP+PPi consumption, AMP release, tRNA charging, fMGG output extent"],
+      "threshold": 0.01
+    },
+    "T_F_timescale_separation_screen": {
+      "applies_to": ["epsilon = tau_fast/tau_slow over attracting modes only, structural/neutral modes excluded and listed"],
+      "threshold": 0.01,
+      "semantics": "screen only; passing T_F never certifies QSSA without the attracting-manifold and moving-manifold evidence declared in the derivation"
+    },
+    "T_G_conservation_balance_residual": {
+      "applies_to": ["enzyme family totals, tRNA families, adenine/phosphate moiety ledgers in every formal run"],
+      "threshold": 1e-8
+    },
+    "T_H_A1_trajectory_identity": {
+      "applies_to": ["full network vs A1 pair-merged representation, same physics", "(A1 was recorded as RHS-validated only in v0; the trajectory test becomes formal in v1)"],
+      "threshold": 1e-6
+    }
+  },
+  "numeric_uncertainty_budget": "solver/representation uncertainty must be <= 10% of the tier budget for the comparison to be decidable; otherwise the verdict for that quantity is NUMERICALLY_UNRESOLVED",
+  "initial_layer_rules": {
+    "pre_declared": true,
+    "capture": "the dfinit consistent-initialization adjustment of every eliminated complex is recorded per run (initial_layer_jump); it is the numerical signature of the initial layer and is NEVER suppressed or projected away",
+    "window": "layer window = [t0, t0 + 5*tau_fast_local] using the derivation's tau_fast at the initial slow state",
+    "scoring": "T_C/T_D are reported over the full window AND over the post-layer window; a reduction that fails only inside the layer window is status APPROXIMATELY_VALIDATED_OUTSIDE_LAYER at most, with the layer as declared failure domain"
+  },
+  "initial_conditions_rule": "both models start from identical physical inventories (same author initial values, same x0_scale per stress condition); no re-fit of the reduced initial layer",
+  "observable_set_H_qualifier": {
+    "states": ["Met", "Gly", "ATP", "AMP", "PPi", "tRNAfMetCAU", "tRNAGlyGCC", "MettRNAfMetCAU", "GlytRNAGlyGCC", "MetAMP", "GlyAMP", "MetRS", "GlyRS", "all enzyme-bound complexes (directly or via reconstruction)", "fMettRNAfMetCAU", "fMGG output"],
+    "coupled_ledgers": ["ADP", "GTP", "GDP", "Pi/PO4", "CP", "Cr"],
+    "cumulative": ["T_E extent list"],
+    "particle_number_proxy": "sum of all free+bound particle concentrations computed from declared species counts (no overlapping moiety double-count)",
+    "ionic_strength": "NOT ASSESSABLE FROM CURRENT SOURCE DATA (never computed)"
+  },
+  "stress_conditions_one_at_a_time": [
+    {"id": "S0", "name": "reference", "x0_scale": {}},
+    {"id": "S1", "name": "ATP_low", "x0_scale": {"ATP": 0.1}},
+    {"id": "S2", "name": "tRNA_low", "x0_scale": {"tRNAfMetCAU": 0.1, "tRNAGlyGCC": 0.1}},
+    {"id": "S3", "name": "enzyme_high", "x0_scale": {"MetRS": 10.0, "GlyRS": 10.0}},
+    {"id": "S4", "name": "enzyme_low", "x0_scale": {"MetRS": 0.1, "GlyRS": 0.1}},
+    {"id": "S5", "name": "CP_low_energy_dynamic", "x0_scale": {"CP": 0.1}}
+  ],
+  "negative_software_test": {
+    "separate_from": "biochemical failure domain",
+    "procedure": "copy fMGG_synthesis.m to a temp dir, corrupt one protected stoichiometric coefficient (change one react state index in one aminoacylation adenylation monomial), run the validator against the corrupted copy, and require it to REJECT",
+    "evidence_file": "docs/audit/pnas2017_aminoacylation_reduction_v1/negative_test_result.json"
+  },
+  "prohibitions": [
+    "no clipping of negative concentrations", "no silent projection onto conservation manifolds",
+    "no parameter edits", "no time-axis shifts", "no hiding of initial layers",
+    "no deletion of failing conditions", "no post-hoc threshold relaxation",
+    "no forcing 1:1 ATP/AMP/PPi-vs-charging identities", "no PASS for untested items"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "schema": "pnas2017_aminoacylation_v1_candidate_partition_revision/v1",
+  "revision_id": "v1r1",
+  "created": "2026-09-26",
+  "parent_partition_file": "docs/audit/pnas2017_aminoacylation_reduction_v1/candidate_partition.json",
+  "parent_partition_sha256": "521559bb4e703449135518ddc7b1aa772dd89de4180b379cc70ce10b20447b2f",
+  "revision_reason": "The frozen parent partition's descriptive 'outside_pool.free_enzyme_reconstruction' note (line ~74) states that free MetRS/GlyRS remain DYNAMIC states and describes '241 total states; 21 algebraic, 220 dynamic'. That note describes a numerical realization (formulation 2: integrate the free enzyme) that was MEASURED 2026-09-25 to violate the FROZEN acceptance tier T_G (enzyme-moiety conservation, threshold 1e-8): the T_G residual reaches ~0.99 (99% pool leak) by t = 1000 s, because the QSSA pins the eliminated rows dC_i/dt = 0 so enzyme sequestered in eliminated complexes has no restoring flux into the free pool. The note is also internally contradicted by the parent partition's own verification_result, whose closure/branch computation reconstructs free = ePool - sum(kept) - sum(eliminated), and by authorization A2 'exact free-enzyme reconstruction'. The validated non-formal smoke implementation therefore uses formulation 1: free MetRS/GlyRS reconstructed exactly from the conserved enzyme moiety at every RHS evaluation and output time, giving 218 dynamic integrated species. This revision records that realization as the ACTIVE one by VERSIONING: the parent partition file is preserved byte-for-byte as historical registration evidence and is NOT edited.",
+  "revision_class": "IMPLEMENTATION / COORDINATE REALIZATION REVISION (not a new scientific preregistration)",
+  "scientific_partition_changed": false,
+  "QSSA_closure_changed": false,
+  "acceptance_thresholds_changed": false,
+  "stress_domain_changed": false,
+  "numerical_realization_changed": true,
+  "supersedes_numerical_realization_only": true,
+  "scope_statement": "This revision changes the state-coordinate realization and the exact enzyme-moiety reconstruction only. The registered QSSA hypothesis is unchanged: the same 21 enzyme-complex states are eliminated (made algebraic via 0 = dC_i/dt rows taken verbatim from the author RHS), the same 7 enzyme-bound complexes stay dynamic, the same free MetAMP/GlyAMP stay dynamic by mandate, the same closure equations, the same attracting branch, the same acceptance thresholds (T_A..T_H, QSSA scaled residual 1e-10), the same stress conditions S0..S5, and the same cumulative-extent definitions apply. The revision changes only HOW the free enzyme value is obtained (reconstructed from a conserved author-RHS moiety instead of integrated as an independent ODE state) and consequently the count of independently integrated dynamic species (220 -> 218).",
+  "eliminated_states": [
+    "GlyRS_AMP_GlytRNAGlyGCC",
+    "GlyRS_ATP",
+    "GlyRS_ATP_tRNAGlyGCC",
+    "GlyRS_Gly",
+    "GlyRS_GlyAMP_PPi",
+    "GlyRS_Gly_ATP",
+    "GlyRS_Gly_ATP_tRNAGlyGCC",
+    "GlyRS_Gly_tRNAGlyGCC",
+    "GlyRS_tRNAGlyGCC",
+    "MetRS_AMP",
+    "MetRS_AMP_MettRNAfMetCAU",
+    "MetRS_ATP",
+    "MetRS_ATP_tRNAfMetCAU",
+    "MetRS_Met",
+    "MetRS_MetAMP_PPi",
+    "MetRS_MetAMP_PPi_tRNAfMetCAU",
+    "MetRS_MetAMP_tRNAfMetCAU",
+    "MetRS_Met_ATP",
+    "MetRS_Met_ATP_tRNAfMetCAU",
+    "MetRS_Met_tRNAfMetCAU",
+    "MetRS_tRNAfMetCAU"
+  ],
+  "eliminated_count": 21,
+  "kept_dynamic_states": [
+    "GlyRS_AMP",
+    "GlyRS_GlyAMP",
+    "GlyRS_GlyAMP_PPi_tRNAGlyGCC",
+    "GlyRS_GlyAMP_tRNAGlyGCC",
+    "GlyRS_GlytRNAGlyGCC",
+    "MetRS_MetAMP",
+    "MetRS_MettRNAfMetCAU",
+    "MetAMP",
+    "GlyAMP"
+  ],
+  "kept_dynamic_enzyme_bound_complexes": [
+    "GlyRS_AMP",
+    "GlyRS_GlyAMP",
+    "GlyRS_GlyAMP_PPi_tRNAGlyGCC",
+    "GlyRS_GlyAMP_tRNAGlyGCC",
+    "GlyRS_GlytRNAGlyGCC",
+    "MetRS_MetAMP",
+    "MetRS_MettRNAfMetCAU"
+  ],
+  "kept_dynamic_by_mandate": [
+    "MetAMP",
+    "GlyAMP"
+  ],
+  "reconstructed_states": [
+    "MetRS",
+    "GlyRS"
+  ],
+  "free_MetRS_reconstruction_equation": "MetRS(t) = ePool_MetRS - sum(kept MetRS complexes) - sum(eliminated MetRS complexes), where ePool_MetRS = x0(MetRS) + sum of x0 over all non-degraded MetRS_* species, evaluated from the (per-stress-condition scaled) author initial values; enforced identically at every RHS evaluation and every output time",
+  "free_GlyRS_reconstruction_equation": "GlyRS(t) = ePool_GlyRS - sum(kept GlyRS complexes) - sum(eliminated GlyRS complexes), where ePool_GlyRS = x0(GlyRS) + sum of x0 over all non-degraded GlyRS_* species, evaluated from the (per-stress-condition scaled) author initial values; enforced identically at every RHS evaluation and every output time",
+  "reconstruction_implementation": "scripts/run_pnas2017_aa_v1_formal.m initBlockCache/solveBlock/blockResid and consistentStart; identical to the reconstruction used by the parent partition's own verification_result closure and to authorization A2",
+  "state_accounting": {
+    "species_total": 241,
+    "eliminated_algebraic": 21,
+    "free_enzymes_reconstructed": 2,
+    "dynamic_species_integrated": 218,
+    "cumulative_extent_states": 12,
+    "total_integrated_states_reduced": 230,
+    "reference_mode_integrated_states": 253
+  },
+  "dynamic_state_count": 218,
+  "superseded_note_in_parent": {
+    "location": "parent 'outside_pool.free_enzyme_reconstruction' and 'outside_pool.all_other_species' (the 'free enzymes remain dynamic ... 241 total states; 21 algebraic, 220 dynamic' statement)",
+    "status": "SUPERSEDED by this revision as a descriptive-numerical-realization statement only; every other field of the parent partition (decision rule, defect metric, eliminated/kept lists, verification_result, formal_acceptance_owner) remains ACTIVE unchanged",
+    "why_superseded": "violates frozen T_G when realized as written (measured T_G residual ~0.99); contradicts the parent's own verification methodology and authorization A2; full measurement evidence in implementation_revision_v1.json revision_2 and dae_singular_mass_failure_v1.md"
+  },
+  "unchanged_parent_fields_by_reference": [
+    "decision_rule (A3a selective enzyme-bound-state QSSA, screen threshold T_F = 0.01)",
+    "MetRS.eliminated / MetRS.kept_dynamic evidence (defects, violation windows)",
+    "GlyRS.eliminated / GlyRS.kept_dynamic evidence",
+    "eliminated_complexes (21) and kept_dynamic (7 complexes + MetAMP + GlyAMP)",
+    "verification_result (partition closure/spectrum/relaxation/branch evidence, PASS 2026-09-25)",
+    "formal_acceptance_owner (Stage 3 full-network coupled comparison)"
+  ],
+  "acceptance_binding": {
+    "acceptance_criteria_file": "docs/audit/pnas2017_aminoacylation_reduction_v1/acceptance_criteria.json",
+    "acceptance_criteria_sha256": "6e549a29f4c05abe36f6d3120b1d1fee56aaa46f5d9662587845204bafbb89c1",
+    "cumdefs_file": "docs/audit/pnas2017_aminoacylation_reduction_v1/cumdefs.json",
+    "cumdefs_sha256": "b2c5353a47b7f7ffeef132f98fc39b2be61a9a338434ffa73e9f07723060a554",
+    "implementation_revision_file": "docs/audit/pnas2017_aminoacylation_reduction_v1/implementation_revision_v1.json",
+    "implementation_revision_sha256": "38d0b00d1f5d08c32103f442662f31fae362942c38279794a8d8bb2f38b4f665",
+    "runner_file": "scripts/run_pnas2017_aa_v1_formal.m",
+    "runner_sha256": "eb4ba2c49d41d8014cc6063473de796709f76ef3e175391ac9ea25c639016085",
+    "runner_sha256_v1_round_pre_instrumentation": "a0395e4d0c506c20cbb99a3352fbc48a390fb0e99f6e5bb34e032390a3de94ae",
+    "runner_v1r1_change_note": "2026-09-26: statistics instrumentation only (per-call Newton iteration counts, line-search rejections, Jacobian refreshes, plateau accepts); the convergence/acceptance decision path is byte-identical to the v1-round runner. Identity verified: the instrumented runner's non-formal RED-S0 smoke reproduces every recorded pre-instrumentation smoke statistic exactly (22210 block-solves, 58306 Newton iters, max|G| 1.606e-08 uM/s, scaled 9.998667e-13, min reconstructed C 0.0, ode15s 4561 successful / 89 failed steps / 11105 function evaluations, consistent-start residuals, initial-layer jump MetRS 0.44 -> 0.00354689). Evidence: results/pnas2017_reference/2026-09-26_aa_v1r1_smoke/"
+  },
+  "pre_formal_smoke_evidence": {
+    "date": "2026-09-25",
+    "run": "non-formal RED-S0 smoke of the revised implementation",
+    "results": "exit 0; all algebraic block solves converge; max scaled |G| = 9.998667e-13 << registered 1e-10; no concentration clipping (min reconstructed eliminated complex = 0.0); T_G MetRS 2.523e-16, GlyRS 3.172e-16 (both PASS <= 1e-8); 22210 block-solves, 58306 Newton iterations; runtime 7.7 s",
+    "independent_validator_at_revision": "15 PASS, 0 FAIL, 1 SKIP (R13 SKIP only because formal full-vs-reduced runs had not yet been executed)"
+  },
+  "formal_runs_before_this_revision": [],
+  "statement": "The revision changes state-coordinate realization and exact enzyme-moiety reconstruction, not the registered QSSA hypothesis."
+}

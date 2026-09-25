@@ -1,0 +1,43 @@
+{
+  "schema": "pnas2017_aa_v1_run_manifest/v1r1",
+  "run_id": "FULL-S0",
+  "active_partition_revision": "v1r1",
+  "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S0.json",
+  "config_sha256": "c06bb8070eadf7f1d628cb75297c1fe0ed65580cfcc75fab9af050893f053a4f",
+  "source_sha256": {
+    "sbml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "author_parameters_csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+    "author_initial_values_csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+    "author_model_m": "5357b16387970d693f730102256c8d4ee30b91a318ad7482fc13e798834889f4"
+  },
+  "runner_sha256": "eb4ba2c49d41d8014cc6063473de796709f76ef3e175391ac9ea25c639016085",
+  "runner_file": "scripts/run_pnas2017_aa_v1_formal.m",
+  "matlab_version": "MATLAB 25.2.0.3177638 (R2025b) Update 5",
+  "solver": "ode15s",
+  "reltol": 1e-10,
+  "abstol": 1e-14,
+  "output_grid": [
+    0.0001,
+    1000.0,
+    200
+  ],
+  "output_points_recorded": 200,
+  "x0_scale": {},
+  "mode": "reference",
+  "wall_time_s": 6.7849253,
+  "outcome": "success",
+  "error": null,
+  "solver_stats": {
+    "steps_successful": 4361,
+    "steps_failed": 55,
+    "rhs_evaluations": 11721
+  },
+  "initial_layer_adjustment": {
+    "max_species": null,
+    "max_from": null,
+    "max_to": null,
+    "max_abs": null
+  },
+  "consistent_start": {},
+  "trajectory_sha256": "7af236250e42673793fec81d09286cfff2e6889bf466c18f3c68dc215a262de2"
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "pnas2017_aa_v1_negative_test/v1",
+  "kind": "software negative control (separate from the biochemical failure domain)",
+  "procedure": "scripts/validate_pnas2017_aminoacylation_reduction_v1.py --corrupt-selftest: mutate ONE protected coefficient in an in-memory copy of the author react block (react(1): k-scaled to 2.0*param*state) and re-run the independent monomial verification",
+  "expected": "validator must REJECT the corrupted extraction",
+  "observed": "rejected: [(1, \"not monomial: 'param(1) * 2.0 * state(4)'\")]",
+  "verdict": "REJECTED_AS_REQUIRED",
+  "validator_sha256": "a70e9b1e944809de5ff39d521c47d93cebf0d3b9ce690eb26201f64b79fbeed2",
+  "stdout_sha256": "21885f9efe48c61fc123ddb3ee551ed82105673e085e618ac572e527d76cde1a",
+  "note": "re-run at final acceptance 2026-09-25 with the final v1r1 validator; the in-process corruption probe is re-verified at every validator run (RNEG_corruption_probe_rejects)",
+  "history": [
+    {
+      "date": "2026-09-25",
+      "validator_sha256": "bbad06f9199489c20bbfa0de54f61a2666499d2d0b813352ad405dc803d55787",
+      "stdout_sha256": "21885f9efe48c61fc123ddb3ee551ed82105673e085e618ac572e527d76cde1a",
+      "verdict": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "date": "2026-09-25",
+      "validator_sha256": "97a02eef4229d9d1e9f93a282826aece0639e798b57329d7e2d661495daea360",
+      "stdout_sha256": "21885f9efe48c61fc123ddb3ee551ed82105673e085e618ac572e527d76cde1a",
+      "verdict": "REJECTED_AS_REQUIRED"
+    }
+  ]
+}

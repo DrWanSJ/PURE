@@ -1,0 +1,15 @@
+[警告: 在为表创建变量名称之前，对文件中的列标题进行了修改，以使其成为有效的 MATLAB 标识符。原始列标题保存在 VariableDescriptions 属性中。
+将 'VariableNamingRule' 设置为 'preserve' 以使用原始列标题作为表变量名称。] 
+consistent-start MetRS: n=12, max|g| = 3.008e-13 uM/s (1.823e-16 of production scale 1.650e+03), iters = 3
+consistent-start GlyRS: n=9, max|g| = 1.068e-13 uM/s (8.141e-17 of production scale 1.312e+03), iters = 5
+largest initial-condition adjustment: MetRS: 0.044 -> 0.000354689 (0.0436)
+4469 个成功步骤
+135 次失败尝试
+17347 次函数计算
+40 个偏导数
+703 次 LU 分解
+7949 个线性系统解
+algebraic rootfind: 34694 block-solves, 89302 Newton iters (median 2, max 5 per call), 0 line-search rejections, 0 Jacobian refreshes, 0 plateau accepts, max|G| = 1.603e-09 uM/s (scaled 9.993e-13), min reconstructed C = 0.000e+00
+done reduced -> C:/Users/sean/Desktop/GUV-PURE/results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/RED-S4.csv (200 pts, 21 eliminated, 12 cumulative)
+
+RUNSTATS {"run_id":"RED-S4","outcome":"success","config_sha256":"9047fd5c5c785ef88384fa1ccad88863ccab26edcc2137433f54ca91d94dfbb6","matlab_version":"MATLAB 25.2.0.3177638 (R2025b) Update 5","solver":"ode15s","wall_time_s":15.9801402,"active_partition_revision":"v1r1","solver_steps_successful":4469,"solver_steps_failed":135,"solver_rhs_evaluations":17347,"initial_layer_max_species":"MetRS","initial_layer_max_from":0.044,"initial_layer_max_to":0.000354689,"initial_layer_max_abs":0.0436,"consistent_start_metrs":{"n_algebraic":12,"max_residual":3.008E-13,"scaled_residual":1.823E-16,"production_scale":1650,"newton_iters":3},"consistent_start_glyrs":{"n_algebraic":9,"max_residual":1.068E-13,"scaled_residual":8.141E-17,"production_scale":1312,"newton_iters":5},"algebraic":{"block_solves":34694,"newton_iters_total":89302,"newton_iters_median":2,"newton_iters_max":5,"line_search_rejections":0,"jacobian_refreshes":0,"plateau_accepts":0,"max_abs_residual":1.603E-9,"max_scaled_residual":9.993E-13,"min_reconstructed_concentration":0},"root_failures":0,"trajectory":"C:/Users/sean/Desktop/GUV-PURE/results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/RED-S4.csv","output_points":200,"n_eliminated":21,"n_cumulative":12,"trajectory_sha256":"d32243092b1ca3eba09de927b2271bc353f06a40528bc6e0c4f5bdf11204e1c2"}

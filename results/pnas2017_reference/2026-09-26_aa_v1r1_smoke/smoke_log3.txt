@@ -1,0 +1,12 @@
+t0 = tic;
+try
+    out = run_pnas2017_aa_v1_formal('C:\Users\sean\Desktop\GUV-PURE\results\pnas2017_reference\2026-09-26_aa_v1r1_smoke\RED-S0_smoke_config.json');
+    fprintf('SMOKE3 RESULT: OK wall=%.2f s\n', toc(t0));
+    fprintf('SMOKE3 STATS: calls=%d iters=%d max_res=%.6e scaled=%.6e minC=%.6e\n', ...
+        out.algebraic_stats.calls, out.algebraic_stats.iters, ...
+        out.algebraic_stats.max_res, out.algebraic_stats.max_res_scaled, out.algebraic_stats.min_C);
+    fprintf('SMOKE3 SOLVER: nsteps=%d nfailed=%d nfevals=%d\n', ...
+        out.solver_stats.nsteps, out.solver_stats.nfailed, out.solver_stats.nfevals);
+catch ME
+    fprintf('SMOKE3 RESULT: FAILED: %s\n', ME.message);
+end

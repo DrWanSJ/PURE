@@ -1,0 +1,11 @@
+[警告: 在为表创建变量名称之前，对文件中的列标题进行了修改，以使其成为有效的 MATLAB 标识符。原始列标题保存在 VariableDescriptions 属性中。
+将 'VariableNamingRule' 设置为 'preserve' 以使用原始列标题作为表变量名称。] 
+4186 个成功步骤
+62 次失败尝试
+12135 次函数计算
+16 个偏导数
+577 次 LU 分解
+7930 个线性系统解
+done reference -> C:/Users/sean/Desktop/GUV-PURE/results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S4.csv (200 pts, 0 eliminated, 12 cumulative)
+
+RUNSTATS {"run_id":"FULL-S4","outcome":"success","config_sha256":"93ac619adfbd2b3e670849da5777afb878e220a15d3cca2b55b0df225197d3ea","matlab_version":"MATLAB 25.2.0.3177638 (R2025b) Update 5","solver":"ode15s","wall_time_s":1.3730743,"active_partition_revision":"v1r1","solver_steps_successful":4186,"solver_steps_failed":62,"solver_rhs_evaluations":12135,"root_failures":0,"trajectory":"C:/Users/sean/Desktop/GUV-PURE/results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S4.csv","output_points":200,"n_eliminated":0,"n_cumulative":12,"trajectory_sha256":"669384f29c27b87e88c682331be59e34e44f05bcfdf3b5c843119e095f66a693"}

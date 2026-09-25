@@ -1,0 +1,73 @@
+{
+  "schema": "pnas2017_aa_v1_run_manifest/v1r1",
+  "run_id": "RED-S5",
+  "active_partition_revision": "v1r1",
+  "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-S5.json",
+  "config_sha256": "6920c034eeef16624f18803da81c21dd62520ea4fffea1619522b10a0a8ec372",
+  "source_sha256": {
+    "sbml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "author_parameters_csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+    "author_initial_values_csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+    "author_model_m": "5357b16387970d693f730102256c8d4ee30b91a318ad7482fc13e798834889f4"
+  },
+  "runner_sha256": "eb4ba2c49d41d8014cc6063473de796709f76ef3e175391ac9ea25c639016085",
+  "runner_file": "scripts/run_pnas2017_aa_v1_formal.m",
+  "matlab_version": "MATLAB 25.2.0.3177638 (R2025b) Update 5",
+  "solver": "ode15s",
+  "reltol": 1e-10,
+  "abstol": 1e-14,
+  "output_grid": [
+    0.0001,
+    1000.0,
+    200
+  ],
+  "output_points_recorded": 200,
+  "x0_scale": {
+    "CP": 0.1
+  },
+  "mode": "reduced",
+  "wall_time_s": 12.6670171,
+  "outcome": "success",
+  "error": null,
+  "solver_stats": {
+    "steps_successful": 4998,
+    "steps_failed": 111,
+    "rhs_evaluations": 13428
+  },
+  "initial_layer_adjustment": {
+    "max_species": "MetRS",
+    "max_from": 0.44,
+    "max_to": 0.00354689,
+    "max_abs": 0.436
+  },
+  "consistent_start": {
+    "metrs": {
+      "n_algebraic": 12,
+      "max_residual": 8.553e-13,
+      "scaled_residual": 1.045e-16,
+      "production_scale": 8183,
+      "newton_iters": 2
+    },
+    "glyrs": {
+      "n_algebraic": 9,
+      "max_residual": 6.041e-09,
+      "scaled_residual": 4.853e-13,
+      "production_scale": 12450,
+      "newton_iters": 2
+    }
+  },
+  "trajectory_sha256": "b4ba6dbdf4ff034fa9b26e9cabb331e43d09ac50721296dc02b1ef4244b0eed1",
+  "algebraic_root_statistics": {
+    "block_solve_count": 26856,
+    "newton_iterations_total": 70304,
+    "newton_iterations_median": 2,
+    "newton_iterations_max": 7,
+    "line_search_rejections": 1,
+    "jacobian_refreshes": 1,
+    "plateau_accepts": 0,
+    "max_abs_algebraic_residual": 1.554e-08,
+    "max_scaled_algebraic_residual": 9.979e-13,
+    "min_reconstructed_concentration": 0,
+    "root_failures": 0
+  }
+}
