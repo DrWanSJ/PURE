@@ -1,0 +1,143 @@
+{
+  "schema": "pnas2017_aa_v1_preregistration_revision/v1",
+  "revision_id": "v1r2",
+  "generated_at_utc": "2026-09-25T21:41:43+00:00",
+  "record_class": "IMPLEMENTATION / INITIALIZATION-MAP REVISION -- NOT a new scientific preregistration",
+  "binding_statement": "Local SHA-256 hash-binding revision record created BEFORE any formal v1r2 full-vs-reduced comparison. The v1r1 failure evidence chain (candidate_partition_v1r1.json, preregistration_revision_v1r1.json, formal runs, comparison, formal_failure_classification_v1r1.md) remains historical, frozen and byte-for-byte unchanged.",
+  "authorization_source": "user execution instruction of 2026-09-26 (Phase 1: 'The next task is to construct, verify, and formally validate a MOIETY-CONSISTENT INITIALIZATION MAP')",
+  "parent_preregistration": {
+    "file": "docs/audit/pnas2017_aminoacylation_reduction_v1/preregistration_revision_v1r1.json",
+    "sha256": "e5d18510f1213745128aa812da6b33bd2d0325c4e12ca20b58da394e8b096316",
+    "status": "HISTORICAL AND IMMUTABLE",
+    "formal_runs_completed_before_this_revision": 13
+  },
+  "hash_chain": {
+    "implementation_revision_v1r2_sha256": "00a042a6f443a641994972d3a6dabd583dd0dde9560e0d00f52988312e512236",
+    "binit_v1r2_sha256": "472e18100347ed236f67a6a5fadb2607aac9fd029f94bdf26f985681d97a02f6",
+    "binit_matrix_csv_sha256": "8f1a818b43d5bd9240410d2a907003a656164d8d98d5514a679a7cd3a1f6c72d",
+    "candidate_partition_v1r1_sha256": "fea11a075e2c6c3b8e248ab63f187853141b1618e89b1c021470cbef4c2838f5",
+    "acceptance_criteria_sha256": "6e549a29f4c05abe36f6d3120b1d1fee56aaa46f5d9662587845204bafbb89c1",
+    "cumdefs_sha256": "b2c5353a47b7f7ffeef132f98fc39b2be61a9a338434ffa73e9f07723060a554",
+    "runner_v1r2_sha256": "ef23d94ee24b752a0d7f820c5a5011c0f590e4d7c5aa051b656766cd04952a7d",
+    "runner_v1r1_instrumented_sha256": "eb4ba2c49d41d8014cc6063473de796709f76ef3e175391ac9ea25c639016085",
+    "runner_v1r2_change_note": "adds the config-selected v1r2 initializer (consistentStartV1r2: joint 21-dim closure+inventory Newton with the frozen debit matrix), the init_extents_offset seeding, the x0_override test hook, and the projected-initial-state artifact dump; the v1r1 code path (initializer absent -> v1r1) is byte-identical in its decision logic",
+    "fastlayer_driver_v1r2_sha256": "6a7758f64402224aaf687058abdda5b3ae5d4086f57d70ccd9a18a712621d3d9",
+    "initializer_test_suite_v1r2_sha256": "16cdea4a3c8c3a1e0265afa11b9d76caa549c1de23ce1e3814cd7a6f3c52b010",
+    "initializer_validator_v1r2_sha256": "b27d5d964efdeb9503459b97768814fe24442deaaf1dcde557767b6a0c0c918b",
+    "p1p2_comparison_sha256": "2d079c559f79ad44ebfa53af784317a7f60e4c2286c3a432067d5724d02bafa8",
+    "source_sbml_fMGG_synthesis_xml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "author_parameters_sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+    "author_initial_values_sha256": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+    "author_reactions_sha256": "845aef2d0b9a46d8e1a2d2eb3b5acb3501bcf69b72229ad02a97b73a9363a929",
+    "author_model_m_sha256": "5357b16387970d693f730102256c8d4ee30b91a318ad7482fc13e798834889f4",
+    "initializer_tests_v1r2_sha256": "51c27b9df4c46bd768e00f196af39b21245213bea5580b424d94cd65270a1da8"
+  },
+  "what_changed_in_this_revision": {
+    "changed": [
+      "RED initial-state protocol: consistentStartV1r2 (moiety-consistent joint projection with the frozen B_init debit matrix; free AMP held at its author value 0, the registered additional condition)",
+      "RED cumulative counters seeded with the registered P2 fast-layer extents at the 5*tau_fast layer-window exit, per stress condition",
+      "FULL runs reused byte-for-byte from v1r1 (identical configs, verified)"
+    ],
+    "unchanged": [
+      "21-state eliminated set",
+      "closure equations (author RHS rows)",
+      "7 kept-dynamic complexes + free MetAMP/GlyAMP mandate",
+      "enzyme-moiety reconstruction (v1r1)",
+      "acceptance thresholds T_A..T_H and the QSSA scaled residual 1e-10",
+      "stress conditions S0..S5",
+      "cumulative-extent definitions",
+      "solver tolerances RelTol 1e-10 / AbsTol 1e-14, output grid",
+      "source SBML, author .m, author CSVs"
+    ]
+  },
+  "formal_runs_before_v1r2_registration": [],
+  "registered_formal_case_count": 13,
+  "registered_formal_cases": [
+    "FULL-S0",
+    "FULL-S1",
+    "FULL-S2",
+    "FULL-S3",
+    "FULL-S4",
+    "FULL-S5",
+    "RED-v1r2-NEG1",
+    "RED-v1r2-S0",
+    "RED-v1r2-S1",
+    "RED-v1r2-S2",
+    "RED-v1r2-S3",
+    "RED-v1r2-S4",
+    "RED-v1r2-S5"
+  ],
+  "run_registry_binding": {
+    "run_registry_file": "docs/audit/pnas2017_aminoacylation_reduction_v1/run_registry_v1r2.json",
+    "run_registry_sha256": "7118eee41a608fe241d648742fc8872ce43f5fbb1254bf047ad9839991dcfef7"
+  },
+  "git_context_informational": {
+    "branch": "research/pnas2017-full-network-reduction",
+    "head_before_freeze": "11c4d704aee09d1d227ba7f1a674ffea5fa0cd9f"
+  },
+  "prohibitions_ack": [
+    "no edit of the v1r1 evidence chain",
+    "no relaxation of any acceptance threshold",
+    "no change to the 21-state eliminated set",
+    "no change to stress conditions S0-S5",
+    "no clipping / projection / refit",
+    "raw PNAS sources untouched"
+  ],
+  "frozen_artifacts_sha256": {
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/acceptance_criteria.json": "6e549a29f4c05abe36f6d3120b1d1fee56aaa46f5d9662587845204bafbb89c1",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/binit_v1r2.json": "472e18100347ed236f67a6a5fadb2607aac9fd029f94bdf26f985681d97a02f6",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/binit_v1r2_matrix.csv": "8f1a818b43d5bd9240410d2a907003a656164d8d98d5514a679a7cd3a1f6c72d",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/candidate_partition.json": "521559bb4e703449135518ddc7b1aa772dd89de4180b379cc70ce10b20447b2f",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/candidate_partition_v1r1.json": "fea11a075e2c6c3b8e248ab63f187853141b1618e89b1c021470cbef4c2838f5",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/cumdefs.json": "b2c5353a47b7f7ffeef132f98fc39b2be61a9a338434ffa73e9f07723060a554",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/formal_failure_classification_v1r1.md": "d8c2a19de5bd4e81d19c8553a1059244840dfa41c215775f8305c9b418cf270e",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/implementation_revision_v1r2.json": "00a042a6f443a641994972d3a6dabd583dd0dde9560e0d00f52988312e512236",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/preregistration_revision_v1r1.json": "e5d18510f1213745128aa812da6b33bd2d0325c4e12ca20b58da394e8b096316",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/run_registry.json": "6fb6667e5c801ed409d46f16f427925141325194668390d431a35d942c80fdcd",
+    "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/FULL-S0.json": "c06bb8070eadf7f1d628cb75297c1fe0ed65580cfcc75fab9af050893f053a4f",
+    "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/FULL-S1.json": "9b7de9f1d9fa1a260785f94d53be5cd4cbbf5c5d327289c3a084aacfee47442b",
+    "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/FULL-S2.json": "465c3662bc8eacb4600ec17c0ccf7e8722b9a05b18c1b2e765a58169804bf82d",
+    "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/FULL-S3.json": "4ebd26661e59212024b1d1f61a50cb66bc28d3fb4eb8dfe4de83aa7b5adef302",
+    "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/FULL-S4.json": "93ac619adfbd2b3e670849da5777afb878e220a15d3cca2b55b0df225197d3ea",
+    "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/FULL-S5.json": "9fe690e6d1166bbbd3d23bf2e08d7802b8340fd907c114d5e2678670cecc8a12",
+    "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-NEG1.json": "1b80b8057f593353d214239bb1c5a236d260b4fe99c32848491cc1f4e2f885d3",
+    "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-S0.json": "d0cc57b5aa4011b8be0c2397f1e09d74e2a2696a26a983a7cfedbd2a039fc262",
+    "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-S1.json": "3c8b8ff77a7d0fdb1da1254b85693a2edc80f241e00a5de536562e3c27aead39",
+    "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-S2.json": "062ff65fb0fa7dbc8880e1b0bfea0ed29e144777badb822f3c5e1e2fd7a36fe5",
+    "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-S3.json": "8b1aaaf17a0dc9f2cea99443ffb8b7763338f654d8dd8f191b8d77e2bdc63b6d",
+    "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-S4.json": "b100b5ad5c8e706906a032c900d6cb2bb01ec94b565b90db899547f973dee753",
+    "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-S5.json": "8a634165ba10148e110d7b631c149f73944fa620e3e5dc64ecdf89f726cca76d",
+    "scratch/v1r2/fastlayer-S0.csv": "2be90f504c3b384ab3e7f93d02272902d8843bd7014a4348df20c900adf0be0e",
+    "scratch/v1r2/fastlayer-S0_summary.json": "2433145210c9b342f0db8c464487c8153d6e822a563add0875c167d2fccd4e18",
+    "scratch/v1r2/fastlayer-S1.csv": "7a6c0cec55c3280f3026ffff0ddd2efe46edb8a981713b99e9df431c090f3ee5",
+    "scratch/v1r2/fastlayer-S1_summary.json": "c69fa1bf3f70a82a799a59263b5a00379e71a9abe61d4b56d12313fb6ef7b89a",
+    "scratch/v1r2/fastlayer-S2.csv": "461a442730068ea1a4446e8f3c1c72e056530b78f8f79c37e1ae7641c1b9b201",
+    "scratch/v1r2/fastlayer-S2_summary.json": "cdd14e42cbcd0da521d5cb8e4badb9ccf4bdd77cb4d985d3d92b071a010d6da5",
+    "scratch/v1r2/fastlayer-S3.csv": "40da72784b140cb213c2435d691bfcb81d365a9fb34c355a816a6b3c52595f33",
+    "scratch/v1r2/fastlayer-S3_summary.json": "6e73a7705f4f329cb0dcebf864968b5c4e478d4ba8a4a434a75d11e7f4f6cd79",
+    "scratch/v1r2/fastlayer-S4.csv": "100aa296265c8feef1646d41e7eb3413680dec8265be7eb9c3974a0e0a1682b5",
+    "scratch/v1r2/fastlayer-S4_summary.json": "d1a062d486a556001224d26f97d30db3bac402d69da8a1e7233fea630f81ba59",
+    "scratch/v1r2/fastlayer-S5.csv": "f6e83e65bba7da2ce802de8a7c007f2338627a513532c1e36abd14e2920c1dce",
+    "scratch/v1r2/fastlayer-S5_summary.json": "2433145210c9b342f0db8c464487c8153d6e822a563add0875c167d2fccd4e18",
+    "scripts/build_pnas2017_aa_v1r2_binit.py": "f909cd7ecb5f966c7d70d9450731f142045f154da085a3c9ca6f75c807fa9b61",
+    "scripts/compare_pnas2017_aa_v1r2_p1p2.py": "2d079c559f79ad44ebfa53af784317a7f60e4c2286c3a432067d5724d02bafa8",
+    "scripts/run_pnas2017_aa_v1_formal.m": "ef23d94ee24b752a0d7f820c5a5011c0f590e4d7c5aa051b656766cd04952a7d",
+    "scripts/run_pnas2017_aa_v1r2_fastlayer.m": "6a7758f64402224aaf687058abdda5b3ae5d4086f57d70ccd9a18a712621d3d9",
+    "scripts/test_pnas2017_aa_v1r2_initializer.m": "16cdea4a3c8c3a1e0265afa11b9d76caa549c1de23ce1e3814cd7a6f3c52b010",
+    "scripts/validate_pnas2017_aa_v1r2_initializer.py": "b27d5d964efdeb9503459b97768814fe24442deaaf1dcde557767b6a0c0c918b"
+  },
+  "post_freeze_pre_run_tool_amendments": [
+    {
+      "file": "scripts/freeze_pnas2017_aa_v1r2_registration.py",
+      "reason": "post-freeze, pre-run execution fix: the freeze initially created configs/ but not trajectories/ and logs/ under the v1r2 formal directory; the first driver invocation therefore aborted all 7 RED runs at their first file write ('RUN ERROR: cannot open ... trajectories/RED-v1r2-*.csv.initial_state.json') BEFORE any numerics were evaluated.  The 7 infrastructure-error logs were purged (no scientific outcome was recorded or lost; the NEG1 'failed' record was the same cannot-open error, not the expected closure rejection), the directories were created, the freeze script was hardened to create them, and the driver was re-invoked.  No config hash changed: the regenerated RED configs are byte-identical to the frozen ones and the full 13-case registry binding is unchanged.",
+      "evidence": "scratch/v1r2/formal_drives_log.txt (first invocation, all 7 'RUN ERROR: cannot open'), purged-log hashes recorded in the final report"
+    },
+    {
+      "file": "docs/audit/pnas2017_aminoacylation_reduction_v1/initializer_tests_v1r2.json",
+      "sha256_superseded": "51c27b9df4c46bd768e00f196af39b21245213bea5580b424d94cd65270a1da8",
+      "sha256_active": "51c27b9df4c46bd768e00f196af39b21245213bea5580b424d94cd65270a1da8",
+      "reason": "post-cycle re-binding: the I1-I4 checks were re-pointed from the non-formal smoke artifacts (scratch/, never versioned per the scratch policy) to the byte-identical FORMAL projected-initial-state artifacts (tracked), and the P1/P2 + fast-layer evidence was promoted byte-identically into docs/audit/.../{p1p2_cross_validation_v1r2,fastlayer_v1r2}/ so no tracked pipeline depends on scratch/. The initializer suite verdicts are unchanged (ALL_PASS); this is a provenance re-binding, not a scientific change."
+    }
+  ],
+  "amendment_note": "amended 2026-09-26 after the formal cycle: one execution infrastructure fix made between the freeze and the formal execution is re-bound here with its reason; the scientific registration (partition, criteria, configs, thresholds, offsets) is untouched and formal_runs_before_v1r2_registration remains [] (the revision predates the formal runs)"
+}

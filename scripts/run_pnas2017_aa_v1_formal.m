@@ -40,6 +40,29 @@ function out = run_pnas2017_aa_v1_formal(config_path)
 % ICs IS the initial-layer jump: recorded in the output struct and
 % printed, never suppressed.
 %
+% v1r2 initializer (config field "initializer" = "v1r2"; default "v1r1"
+% reproduces the historical consistentStart exactly): the MOIETY-CONSISTENT
+% initialization map. The 21 eliminated complexes are solved JOINTLY
+% (single 21-dim Newton: the free-pool debits couple the two enzyme pools
+% through free ATP and free PPi) together with the B_init inventory rows:
+% every eliminated complex's substrate content is DEBITED from the free
+% pool it is defensibly sourced from (free tRNAfMetCAU/tRNAGlyGCC/Met/Gly/
+% ATP) and the free PPi pool is CREDITED by the PPi content already
+% released from the bare-adenylate eliminated complexes. The debit
+% coefficients are read from the config field init_debits (frozen, derived
+% mechanically in binit_v1r2.json). Free AMP is NOT adjustable (kept
+% dynamic state, author initial value 0; the registered additional
+% condition delta_AMP = 0). Both models then start from identical
+% physical inventories (acceptance initial_conditions_rule) with the
+% closure satisfied to the registered tolerance.
+%
+% Cumulative-extent offsets: config field init_extents_offset (array of NC
+% values, from the registered P2 fast-layer diagnostic per stress
+% condition) seeds the augmented extent states so the reduced cumulative
+% counters include the reaction extents the omitted initial layer already
+% performed (acceptance initial_layer_rules / Phase 6). Absent or empty =
+% zero seeds (historical behaviour).
+%
 % Cumulative reaction extents are augmented dynamic states
 %   dxi_j/dt = sign * v_j(x),   v = pnas2017_aa_v1_rates(x, param)
 % where the rate expressions are a VERBATIM line-by-line extract of the
@@ -83,6 +106,18 @@ if isfield(cfg, 'x0_scale') && ~isempty(cfg.x0_scale)
         j = find(strcmp(names, fnames{k}), 1);
         assert(~isempty(j), 'unknown species %s in x0_scale', fnames{k});
         x0(j) = x0(j) * cfg.x0_scale.(fnames{k});
+    end
+end
+
+% x0_override (initializer test suite only: I5 idempotency / I6 determinism /
+% I8 perturbation smoothness run the production initializer on explicit
+% initial values; the formal runs never use this field)
+if isfield(cfg, 'x0_override') && ~isempty(cfg.x0_override)
+    fnames = fieldnames(cfg.x0_override);
+    for k = 1:numel(fnames)
+        j = find(strcmp(names, fnames{k}), 1);
+        assert(~isempty(j), 'unknown species %s in x0_override', fnames{k});
+        x0(j) = cfg.x0_override.(fnames{k});
     end
 end
 
@@ -149,23 +184,123 @@ end
 
 stat_text = '';
 want_stats = isfield(cfg, 'stats') && cfg.stats;
+init_kind = 'none';   % reference mode integrates every species directly
 
 if strcmp(cfg.mode, 'reduced')
-    % Consistent initial condition: solve the algebraic rows
-    % 0 = dx_i/dt(x) for the eliminated complexes with the free enzyme
-    % reconstructed from pool conservation, via the registered damped
-    % projected Newton (identical computation dfinit would perform for a
-    % non-degenerate FD Jacobian; R2025b daeic12 itself collapses to an
-    % all-zero algebraic Jacobian for the author's zero-valued complex
-    % ICs - see certificate docs). The displacement from the author ICs is
-    % the initial-layer jump: recorded and printed, never suppressed.
+    % Consistent initial condition. Two registered initializers:
+    %   "v1r1" (default): solve the algebraic rows 0 = dx_i/dt(x) for the
+    %        eliminated complexes with every non-eliminated state frozen at
+    %        its author value, free enzyme reconstructed from pool
+    %        conservation (historical behaviour; the recorded v1r1 defect
+    %        is that the eliminated complexes' substrate content is NOT
+    %        debited from the free pools).
+    %   "v1r2": the moiety-consistent initialization map -- the same
+    %        closure rows solved JOINTLY for all 21 complexes with the
+    %        B_init inventory rows enforced through the config-frozen
+    %        debit matrix (init_debits): the complexes' substrate content
+    %        is debited from its source free pools (and the free PPi pool
+    %        credited for already-released PPi) so that both models start
+    %        from identical physical inventories.
+    init_kind = 'v1r1';
+    if isfield(cfg, 'initializer') && ~isempty(cfg.initializer)
+        init_kind = cfg.initializer;
+    end
+    debits = [];
+    if strcmp(init_kind, 'v1r2')
+        assert(isfield(cfg, 'init_debits') && ~isempty(cfg.init_debits), ...
+            'v1r2 initializer requires the frozen init_debits matrix');
+        debits = cfg.init_debits;
+    end
     yaug0 = [x0(:); zeros(NC, 1)];
-    [ycons, ic_jump] = consistentStart(yaug0, tgrid(1), params, ...
-        NS, NC, A, used_rows, elim, names);
+    switch init_kind
+        case 'v1r1'
+            [ycons, ic_jump] = consistentStart(yaug0, tgrid(1), params, ...
+                NS, NC, A, used_rows, elim, names);
+        case 'v1r2'
+            [ycons, ic_jump, ~, ic_info] = consistentStartV1r2(yaug0, ...
+                tgrid(1), params, NS, NC, A, used_rows, elim, names, debits);
+        otherwise
+            error('unknown initializer %s', init_kind);
+    end
     xcons = ycons(1:NS);
     [maxjump, jmax] = max(abs(xcons - x0(:)));
     fprintf('largest initial-condition adjustment: %s: %.6g -> %.6g (%.3g)\n', ...
         names{jmax}, x0(jmax), xcons(jmax), maxjump);
+
+    % cumulative-extent seeds: the registered P2 fast-layer offsets (v1r2)
+    xi0 = zeros(NC, 1);
+    if isfield(cfg, 'init_extents_offset') && ~isempty(cfg.init_extents_offset)
+        xi0 = cfg.init_extents_offset(:);
+        assert(numel(xi0) == NC, 'init_extents_offset length mismatch');
+        fprintf('cumulative-extent offsets seeded (P2 fast layer): %s\n', ...
+            strjoin(cellfun(@(k, v) sprintf('%s=%.6g', k, v), ...
+            reshape({cfg.cumdefs.id}, [], 1), num2cell(xi0(:)), ...
+            'UniformOutput', false), ', '));
+    end
+
+    % dump the projected initial state (initializer evidence artifact:
+    % P1/P2 cross-validation, validator R26, manifests)
+    ist = struct('initializer', init_kind, 'time', tgrid(1), ...
+        'state_names', {names}, 'state', xcons, ...
+        'extent_ids', {{}}, 'extent_seeds', []);
+    if NC > 0
+        ist.extent_ids = {cfg.cumdefs.id};
+        ist.extent_seeds = xi0';
+    end
+    if strcmp(init_kind, 'v1r2')
+        ist.closure_residual_abs = ic_info.res;
+        ist.closure_residual_scaled = ic_info.res / max(ic_info.gscale, 1e-300);
+        ist.production_scale = ic_info.gscale;
+        ist.debits_applied = ic_info.debits_applied;
+        ist.debit_pools = ic_info.debit_pools;
+        ist.newton_iterations = ic_info.iters;
+    end
+    if NC > 0
+        ist.extent_ids = {cfg.cumdefs.id};
+        ist.extent_seeds = xi0';
+    end
+    fid = fopen([cfg.outfile '.initial_state.json'], 'w');
+    assert(fid ~= -1, 'cannot open %s.initial_state.json', cfg.outfile);
+    fprintf(fid, '{\n  "initializer": "%s",\n  "time": %.17g,\n', ...
+        ist.initializer, ist.time);
+    fprintf(fid, '  "state_names": [%s],\n', ...
+        strjoin(cellfun(@(c) sprintf('"%s"', c), names, ...
+        'UniformOutput', false), ', '));
+    fprintf(fid, '  "state": [%s],\n', ...
+        strjoin(cellfun(@(c) sprintf('%.17g', c), num2cell(xcons), ...
+        'UniformOutput', false), ', '));
+    if NC > 0
+        fprintf(fid, '  "extent_ids": [%s],\n', ...
+            strjoin(cellfun(@(c) sprintf('"%s"', c), ist.extent_ids, ...
+            'UniformOutput', false), ', '));
+        fprintf(fid, '  "extent_seeds": [%s],\n', ...
+            strjoin(cellfun(@(c) sprintf('%.17g', c), num2cell(xi0), ...
+            'UniformOutput', false), ', '));
+    else
+        fprintf(fid, '  "extent_ids": [],\n  "extent_seeds": [],\n');
+    end
+    if strcmp(init_kind, 'v1r2')
+        fprintf(fid, ['  "closure_residual_abs": %.17g,\n' ...
+                      '  "closure_residual_scaled": %.17g,\n' ...
+                      '  "production_scale": %.17g,\n' ...
+                      '  "newton_iterations": %d,\n'], ...
+            ist.closure_residual_abs, ist.closure_residual_scaled, ...
+            ist.production_scale, ist.newton_iterations);
+        fprintf(fid, '  "debit_pools": [%s],\n', ...
+            strjoin(cellfun(@(c) sprintf('"%s"', c), ist.debit_pools, ...
+            'UniformOutput', false), ', '));
+        fprintf(fid, '  "debits_applied": [%s]\n', ...
+            strjoin(cellfun(@(c) sprintf('%.17g', c), ...
+            num2cell(ist.debits_applied(:)'), 'UniformOutput', false), ', '));
+    else
+        fprintf(fid, '  "closure_residual_abs": null,\n');
+        fprintf(fid, '  "closure_residual_scaled": null,\n');
+        fprintf(fid, '  "production_scale": null,\n');
+        fprintf(fid, '  "newton_iterations": null,\n');
+        fprintf(fid, '  "debit_pools": [],\n  "debits_applied": []\n');
+    end
+    fprintf(fid, '}\n');
+    fclose(fid);
 
     % per-pool rootfind cache, seeded at the consistent branch. The cache
     % is passed BY VALUE into the RHS and never written back, so every
@@ -181,7 +316,7 @@ if strcmp(cfg.mode, 'reduced')
     statsH('s') = newBlockStats();
     odefun = @(t, y) residual_red(t, y, params, NS, NC, A, used_rows, dyn, ...
         cache0, statsH);
-    z0 = [xcons(dyn); ycons(NS+1:end)];
+    z0 = [xcons(dyn); xi0];
     if want_stats
         diary([cfg.outfile '.stats.raw.txt']);
     end
@@ -278,6 +413,7 @@ end
 out = struct('mode', cfg.mode, 'outfile', cfg.outfile, ...
     'n_points', numel(tv), 'n_states', NS, 'n_cum', NC, ...
     'n_eliminated', numel(elim), ...
+    'initializer', init_kind, ...
     't_end', tv(end), ...
     'initial_layer_jump', x_start - x0, ...
     'ic_newton_jump', ic_jump, ...
@@ -677,4 +813,252 @@ function g = algRows(t0, xbase, E, jf, freeCap, params, C)
     xt(jf) = freeCap - sum(C(:));
     dx = fMGG_synthesis(t0, xt, params);
     g = dx(E);
+end
+
+function [y, jump, slp, info] = consistentStartV1r2(y, t0, params, NS, NC, ...
+    A, used_rows, elim, names, debits)
+%CONSISTENTSTARTV1R2  Moiety-consistent initialization map (v1r2, P1).
+%
+%JOINT damped projected Newton on the 21 algebraic rows with the B_init
+%inventory rows enforced through the frozen debit matrix.  Unknowns: the
+%21 eliminated complexes of BOTH pools in one vector (the free-pool debits
+%couple the pools through free ATP and free PPi, so the pools can no
+%longer be solved sequentially).  For every trial C the reduced state is
+%assembled as
+%   eliminated complexes      = C
+%   free MetRS / GlyRS        = ePool - sum(kept) - sum(eliminated)
+%   debited free pools        = author value + W*C   (W = frozen debit
+%                               matrix; negative entries debit the free
+%                               pool for substrate sequestered into the
+%                               complexes, the free-PPi entry credits the
+%                               pool for PPi already released from the
+%                               bare-adenylate complexes)
+%   every other state         = author value
+%and the residual rows are 0 = dC_i/dt of the AUTHOR RHS.  Solving the
+%closure jointly with the debits makes B*x_RED(t0) = B*x_FULL(t0) hold for
+%every declared inventory row by construction (the rows whose only movable
+%entries are the complexes and the debited pools), while free AMP stays at
+%its author value 0 (registered additional condition delta_AMP = 0; free
+%AMP is a kept dynamic state of the reduced formulation).
+%
+%The Newton discipline is the registered one (multi-start, central FD
+%columns with step 1e-7*(|C_j|+1e-10), damped feasibility line search,
+%scaled-residual acceptance 1e-10 * production scale, start-agreement
+%assertion), extended by the debit-feasibility requirement that no debited
+%free pool goes negative.
+    yorig = y;
+    x_author = y(1:NS);
+    iselim = false(NS, 1);
+    iselim(elim) = true;
+    pools = {'MetRS', 'GlyRS'};
+    nP = numel(pools);
+    E = cell(nP, 1); K = cell(nP, 1); jf = zeros(nP, 1);
+    ePool = zeros(nP, 1); nq = zeros(nP, 1);
+    for p = 1:nP
+        enz = pools{p};
+        jf(p) = find(strcmp(names, enz), 1);
+        assert(~isempty(jf(p)), 'consistentStartV1r2: enzyme %s not a state', enz);
+        idx = find(startsWith(names, [enz '_']) & ~endsWith(names, '_degraded'));
+        E{p} = idx(iselim(idx));
+        K{p} = idx(~iselim(idx));
+        nq(p) = numel(E{p});
+        assert(nq(p) > 0 && ~isempty(K{p}), ...
+            'consistentStartV1r2: pool %s partition degenerate', enz);
+        ePool(p) = sum(x_author(idx)) + x_author(jf(p));
+    end
+    NQ = sum(nq);
+    % joint unknown ordering: [MetRS eliminated; GlyRS eliminated]
+    Eall = [E{1}(:); E{2}(:)];
+    nq1 = nq(1);
+    posMap = containers.Map(cellstr(names(Eall)), 1:NQ);
+
+    % frozen debit matrix: rows = debited free pools, cols = joint unknowns
+    dnames = fieldnames(debits);
+    ND = numel(dnames);
+    didx = zeros(ND, 1);
+    W = zeros(ND, NQ);
+    for d = 1:ND
+        nm = dnames{d};
+        didx(d) = find(strcmp(names, nm), 1);
+        assert(~isempty(didx(d)), 'debit pool %s is not a state', nm);
+        entries = debits.(nm);
+        enames = fieldnames(entries);
+        for k = 1:numel(enames)
+            key = enames{k};
+            assert(isKey(posMap, key), ...
+                'debit references %s which is not an eliminated state', key);
+            W(d, posMap(key)) = W(d, posMap(key)) + entries.(key);
+        end
+        % no pessimistic pre-check here: the debits are capacity-bounded by
+        % the eliminated complexes' own feasibility (sum(C) <= eK), and the
+        % line search enforces x(didx) >= -1e-15 on every trial; an
+        % infeasible debit structure surfaces as "no start converged
+        % feasibly" and terminates the run fail-closed.
+    end
+    jfrs = jf;
+    freeCaps = zeros(nP, 1);
+    for p = 1:nP
+        freeCaps(p) = ePool(p) - sum(x_author(K{p}));  % free+eliminated capacity
+    end
+    % the debit is taken relative to the INPUT state's own bound content:
+    %   delta_pool = W * (C - C_in)
+    % For the formal runs C_in = 0 (author complexes) and the debit is the
+    % sequestered content.  For an already-projected input (I5 idempotency,
+    % C_in = C*) the debit vanishes and the projection is the identity, as
+    % the inventory rows demand (B x_out = B x_in holds for the input too).
+    Cin = x_author(Eall);
+    jointRows = @(C) v1r2JointRows(x_author, Eall, jfrs, freeCaps, ...
+        didx, W, nq1, Cin, params, t0, C);
+    assemble = @(C) v1r2Assemble(x_author, Eall, jfrs, freeCaps, ...
+        didx, W, nq1, Cin, C);
+
+    eK = freeCaps;
+
+    % multi-start: the registered verification starts (all-zero, uniform
+    % half-capacity, uniform 5%)
+    half = zeros(NQ, 1); five = zeros(NQ, 1);
+    half(1:nq1) = 0.5 * eK(1) / nq1;
+    five(1:nq1) = 0.05 * eK(1) / nq1;
+    half(nq1+1:NQ) = 0.5 * eK(2) / (NQ - nq1);
+    five(nq1+1:NQ) = 0.05 * eK(2) / (NQ - nq1);
+    starts = {zeros(NQ, 1), half, five};
+
+    sols = struct('C', {}, 'res', {}, 'gscale', {}, 'feas', {}, ...
+        'conv', {}, 'iters', {});
+    for s = 1:numel(starts)
+        C = starts{s}(:);
+        g = jointRows(C);
+        gscale = max(abs(g));
+        tol = 1e-10 * max(gscale, 1e-30);
+        converged = false;
+        iters = 0;
+        if isfinite(gscale)
+            for it = 1:300
+                iters = it;
+                J = zeros(NQ);
+                for j = 1:NQ
+                    h = 1e-7 * (abs(C(j)) + 1e-10);
+                    Cp = C; Cm = C;
+                    Cp(j) = Cp(j) + h;  Cm(j) = Cm(j) - h;
+                    J(:, j) = (jointRows(Cp) - jointRows(Cm)) / (2 * h);
+                end
+                if rcond(J) < 1e-14
+                    break
+                end
+                d = -J \ g;
+                alpha = 1.0;
+                accepted = false;
+                while alpha > 1e-12
+                    trial = max(C + alpha * d, 0);
+                    % projected per-pool capacity feasibility
+                    ss1 = sum(trial(1:nq1));
+                    if ss1 > eK(1) * (1 + 1e-9)
+                        trial(1:nq1) = trial(1:nq1) * (eK(1) * (1 + 1e-9) / ss1);
+                    end
+                    ss2 = sum(trial(nq1+1:NQ));
+                    if ss2 > eK(2) * (1 + 1e-9)
+                        trial(nq1+1:NQ) = trial(nq1+1:NQ) * (eK(2) * (1 + 1e-9) / ss2);
+                    end
+                    [~, feas] = assemble(trial);
+                    if ~feas
+                        alpha = alpha * 0.5;
+                        continue
+                    end
+                    gt = jointRows(trial);
+                    if max(abs(gt)) < max(abs(g))
+                        accepted = true;
+                        break
+                    end
+                    alpha = alpha * 0.5;
+                end
+                if ~accepted
+                    break
+                end
+                C = trial;
+                g = gt;
+                if max(abs(g)) <= tol
+                    converged = true;
+                    break
+                end
+            end
+        end
+        res = max(abs(g));
+        feas = all(C >= -1e-15);
+        feas = feas && sum(C(1:nq1)) <= eK(1) * (1 + 1e-9);
+        feas = feas && sum(C(nq1+1:NQ)) <= eK(2) * (1 + 1e-9);
+        [~, dfeas] = assemble(C);
+        feas = feas && dfeas;
+        sols(end+1) = struct('C', {C}, 'res', res, 'gscale', gscale, ...
+            'feas', feas, 'conv', converged, 'iters', iters); %#ok<AGROW>
+    end
+
+    ok = sols([sols.feas] & [sols.conv]);
+    assert(~isempty(ok), ...
+        ['consistentStartV1r2: no start converged feasibly (residuals %s ' ...
+         'uM/s). Refusing to proceed.'], ...
+        strjoin(cellfun(@(v) sprintf('%.2e', v), num2cell([sols.res]), ...
+            'UniformOutput', false), ', '));
+    if numel(ok) >= 2
+        spread = 0;
+        for a = 1:numel(ok)
+            for b = a+1:numel(ok)
+                spread = max(spread, max(abs(ok(a).C - ok(b).C)));
+            end
+        end
+        assert(spread <= 1e-6 * max(ePool), ...
+            ['consistentStartV1r2: starts disagree (spread %.2e uM). ' ...
+             'Refusing to proceed.'], spread);
+    end
+    if sols(1).feas && sols(1).conv
+        cs = sols(1);
+    else
+        [~, k] = min([ok.res]);
+        cs = ok(k);
+    end
+    C = cs.C;
+    x = assemble(C);
+    for p = 1:nP
+        if p == 1
+            occ = sum(C(1:nq1));
+        else
+            occ = sum(C(nq1+1:NQ));
+        end
+        fprintf(['consistent-start-v1r2 %s: n=%d, pool occupancy = %.6g ' ...
+                 'of ePool %.6g\n'], pools{p}, nq(p), occ, ePool(p));
+    end
+    fprintf(['consistent-start-v1r2 joint: max|g| = %.3e uM/s (%.3e of ' ...
+             'production scale %.3e), iters = %d, debited pools: %s\n'], ...
+        cs.res, cs.res / max(cs.gscale, 1e-300), cs.gscale, cs.iters, ...
+        strjoin(cellfun(@(d, nm) sprintf('%s=%.6g', nm, ...
+        x(didx(d)) - x_author(didx(d))), num2cell((1:ND)'), dnames, ...
+        'UniformOutput', false), ', '));
+
+    y = [x; yorig(NS+1:end)];
+    jump = y - yorig;
+    slp = residual_full(t0, y, params, NS, NC, A, used_rows);
+    info = struct('status', 'ok', 'res', cs.res, 'C', {C}, ...
+        'gscale', cs.gscale, 'iters', cs.iters, ...
+        'debits_applied', {x(didx) - x_author(didx)}, 'debit_pools', {dnames});
+end
+
+function [x, feas] = v1r2Assemble(x_author, Eall, jfrs, freeCaps, didx, W, ...
+    nq1, Cin, C)
+% reduced state at trial complexes C with the frozen debit matrix applied
+% relative to the input's own bound content C_in; feas = no debited free
+% pool below the numerical floor
+    x = x_author;
+    x(Eall) = C;
+    x(jfrs(1)) = freeCaps(1) - sum(C(1:nq1));
+    x(jfrs(2)) = freeCaps(2) - sum(C(nq1+1:end));
+    x(didx) = x_author(didx) + W * (C - Cin);
+    feas = all(x(didx) >= -1e-15);
+end
+
+function g = v1r2JointRows(x_author, Eall, jfrs, freeCaps, didx, W, nq1, ...
+    Cin, params, t0, C)
+% closure rows (AUTHOR RHS dC_i/dt) at the v1r2 assembled trial state
+    [x, ~] = v1r2Assemble(x_author, Eall, jfrs, freeCaps, didx, W, nq1, ...
+        Cin, C);
+    dx = fMGG_synthesis(t0, x, params);
+    g = dx(Eall);
 end
