@@ -145,20 +145,33 @@ excluded to obtain a pass.
 
 Not applicable (no experimental data in this cycle).
 
-## Repair path flagged (NOT executed in this cycle)
+## Repair path: attempted and refuted (post-cycle v1r3 investigation)
 
-Reconstructing the free carriers of the exact ledgers (free
-tRNAfMetCAU/tRNAGlyGCC from the tRNA family totals, free PPi from the
-phosphate ledger) — the same realization pattern as the registered v1r1
-enzyme reconstruction — would make the failing T_G ledgers exact by
-construction and return the drained tokens to the free pools.  The
-execution instruction allows at most ONE further automatic
-implementation revision (v1r3) for this defect class; the decision is
-recorded in the final report's HUMAN REVIEW section.  Independently of
-any repair, the eliminated complexes' full-window T_C error is ~1.0 by
-construction (the QSSA layer jump at the first output point), so under
-the frozen scoring no QSSA realization of this partition can exceed
-APPROXIMATELY_VALIDATED_OUTSIDE_LAYER.
+The one authorized automatic implementation revision (v1r3) was spent on
+the natural repair: reconstructing the free carriers of the exact
+ledgers (free tRNAfMetCAU/tRNAGlyGCC from the tRNA family totals, free
+PPi from the phosphate ledger) at every evaluation — the same
+realization pattern as the registered v1r1 enzyme reconstruction.  The
+repair REFUTES ITSELF at the smoke level: the reconstruction's implied
+carrier derivative differs from the author row by the sliding-rate
+term, which is NOT small in the t ~ 1-3 s sequestration era; the
+reconstructed free tRNAGlyGCC first rises +0.21 uM above FULL, then
+crashes below it, and the closure loses feasibility at t = 2.501 s (a
+complex's quasi-steady value is driven through the feasibility floor;
+the run terminates fail-closed).  Full record:
+`v1r3_investigation/implementation_investigation_v1r3.md`.  No formal
+v1r3 runs were executed; the v1r2 formal evidence is unaffected (the
+extended runner reproduces the committed v1r2 trajectories
+byte-for-byte).
+
+Independently of any repair, the eliminated complexes' full-window T_C
+error is ~1.0 by construction (the QSSA layer jump at the first output
+point), so under the frozen scoring no QSSA realization of this
+partition can exceed APPROXIMATELY_VALIDATED_OUTSIDE_LAYER.  Any repair
+that would change the T_G outcome must change the reduction
+scientifically (re-selecting the eliminated set so no eliminated
+complex carries tRNA/nucleotide tokens, or a tQSSA-style
+ledger-conserving formulation) and requires HUMAN REVIEW.
 
 ## Evidence
 

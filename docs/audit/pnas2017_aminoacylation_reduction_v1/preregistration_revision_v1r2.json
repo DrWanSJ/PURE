@@ -137,6 +137,13 @@
       "sha256_superseded": "51c27b9df4c46bd768e00f196af39b21245213bea5580b424d94cd65270a1da8",
       "sha256_active": "51c27b9df4c46bd768e00f196af39b21245213bea5580b424d94cd65270a1da8",
       "reason": "post-cycle re-binding: the I1-I4 checks were re-pointed from the non-formal smoke artifacts (scratch/, never versioned per the scratch policy) to the byte-identical FORMAL projected-initial-state artifacts (tracked), and the P1/P2 + fast-layer evidence was promoted byte-identically into docs/audit/.../{p1p2_cross_validation_v1r2,fastlayer_v1r2}/ so no tracked pipeline depends on scratch/. The initializer suite verdicts are unchanged (ALL_PASS); this is a provenance re-binding, not a scientific change."
+    },
+    {
+      "file": "scripts/run_pnas2017_aa_v1_formal.m",
+      "sha256_superseded": "ef23d94ee24b752a0d7f820c5a5011c0f590e4d7c5aa051b656766cd04952a7d",
+      "sha256_active": "2f1607211bd2ac43b52d037d98b9a0a9e9417b2610b36d0da63c7d701d83c235",
+      "reason": "post-cycle extension for the v1r3 INVESTIGATION (never registered for formal execution): adds the config-gated ledger-reconstruction realization (reconstructed_ledgers + ledger_definitions) and the seed ledger-consistency assertion. The path is INERT for every registered configuration: the v1r2 S0 formal config re-run under the extended runner reproduces the committed formal trajectory BYTE-FOR-BYTE (regression check recorded in the v1r3 investigation). The v1r2 formal evidence above was produced by the superseded runner whose behavior on all registered paths is identical.",
+      "evidence": "docs/audit/pnas2017_aminoacylation_reduction_v1/v1r3_investigation/"
     }
   ],
   "amendment_note": "amended 2026-09-26 after the formal cycle: one execution infrastructure fix made between the freeze and the formal execution is re-bound here with its reason; the scientific registration (partition, criteria, configs, thresholds, offsets) is untouched and formal_runs_before_v1r2_registration remains [] (the revision predates the formal runs)"

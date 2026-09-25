@@ -63,6 +63,23 @@ function out = run_pnas2017_aa_v1_formal(config_path)
 % performed (acceptance initial_layer_rules / Phase 6). Absent or empty =
 % zero seeds (historical behaviour).
 %
+% v1r3 realization (config field "reconstructed_ledgers"; requires
+% initializer "v1r3"): the substrate-ledger analog of the registered
+% v1r1 enzyme-moiety reconstruction.  The free carriers of EXACT conserved
+% ledgers (free tRNAfMetCAU and tRNAGlyGCC from their family totals, free
+% PPi from the weighted phosphate ledger) are no longer integrated states:
+% each is reconstructed at every RHS evaluation and output time as
+%   x_carrier = (total - sum_{j != carrier} w_j x_j) / w_carrier,
+% with the totals and weights taken from the frozen ledger_definitions
+% config block (derived mechanically from the scope conservation groups).
+% This makes the T_G ledgers exact by construction AND returns the token
+% content the algebraic complexes drain (the sliding leak measured in the
+% v1r2 cycle) to the free pools, so it re-enters the product flow.  The
+% v1r2 initializer's tRNA/PPi debit rows drop out (automatic through the
+% reconstruction); the Met/Gly/ATP debits remain.  The 21-state
+% eliminated set, the closure rows, the acceptance thresholds, the stress
+% domain and the author sources are untouched.
+%
 % Cumulative reaction extents are augmented dynamic states
 %   dxi_j/dt = sign * v_j(x),   v = pnas2017_aa_v1_rates(x, param)
 % where the rate expressions are a VERBATIM line-by-line extract of the
@@ -136,6 +153,18 @@ else
     assert(strcmp(cfg.mode, 'reference'), 'unknown mode %s', cfg.mode);
 end
 
+% initializer selection (needed before the v1r3 reconstruction block)
+init_kind = 'v1r1';
+if isfield(cfg, 'initializer') && ~isempty(cfg.initializer)
+    init_kind = cfg.initializer;
+end
+debits = [];
+if strcmp(init_kind, 'v1r2') || strcmp(init_kind, 'v1r3')
+    assert(isfield(cfg, 'init_debits') && ~isempty(cfg.init_debits), ...
+        '%s initializer requires the frozen init_debits matrix', init_kind);
+    debits = cfg.init_debits;
+end
+
 NC = 0;
 if isfield(cfg, 'cumdefs'), NC = numel(cfg.cumdefs); end
 % map each cumulative definition onto react-vector rows: A(k, react_index)
@@ -170,8 +199,57 @@ for p = 1:numel(poolEnz)
     assert(~isempty(jf), 'enzyme %s is not a state', poolEnz{p});
     freeIdx(p) = jf;
 end
+
+% v1r3 ledger-reconstruction block: the free carriers of exact conserved
+% ledgers leave the integrated state vector and are reconstructed at every
+% evaluation (same pattern as the free enzyme).  The ledger definitions
+% (species + weights + the carrier's own weight) come from the frozen
+% config block; the totals are computed from the (scaled) author ICs, i.e.
+% they are the FULL model's own t0 inventories.
+reconNames = {};
+reconIdx = [];
+ledSpec = struct('carrier', {}, 'idx', {}, 'members', {}, 'weights', {}, ...
+    'wself', {}, 'total', {});
+if isfield(cfg, 'reconstructed_ledgers') && ~isempty(cfg.reconstructed_ledgers)
+    assert(strcmp(cfg.mode, 'reduced'), ...
+        'reconstructed_ledgers apply to reduced mode only');
+    assert(strcmp(init_kind, 'v1r3'), ...
+        'reconstructed_ledgers require the v1r3 initializer');
+    reconNames = cfg.reconstructed_ledgers;
+    assert(isfield(cfg, 'ledger_definitions') ...
+        && numel(cfg.ledger_definitions) == numel(reconNames), ...
+        'v1r3 requires ledger_definitions matching reconstructed_ledgers');
+    for k = 1:numel(reconNames)
+        j = find(strcmp(names, reconNames{k}), 1);
+        assert(~isempty(j), 'reconstructed carrier %s is not a state', ...
+            reconNames{k});
+        ld = cfg.ledger_definitions(k);
+        assert(strcmp(ld.carrier, reconNames{k}), ...
+            'ledger_definitions(%d) carrier mismatch', k);
+        wself = 0; members = []; weights = [];
+        fnames = fieldnames(ld.row);
+        for m = 1:numel(fnames)
+            jm = find(strcmp(names, fnames{m}), 1);
+            assert(~isempty(jm), 'ledger member %s is not a state', fnames{m});
+            members(end+1) = jm; %#ok<AGROW>
+            weights(end+1) = ld.row.(fnames{m}); %#ok<AGROW>
+            if jm == j, wself = ld.row.(fnames{m}); end
+        end
+        assert(wself > 0, 'carrier %s absent from its own ledger', reconNames{k});
+        total = sum(weights(:) .* x0(members(:)));  % FULL t0 inventory (scaled)
+        ledSpec(k) = struct('carrier', reconNames{k}, 'idx', j, ...
+            'members', {members}, 'weights', {weights}, 'wself', wself, ...
+            'total', total);
+        reconIdx(k) = j; %#ok<AGROW>
+    end
+    fprintf('v1r3 ledger reconstruction: %s (totals %s)\n', ...
+        strjoin(reconNames, ', '), ...
+        strjoin(cellfun(@(v) sprintf('%.10g', v), num2cell([ledSpec.total]), ...
+        'UniformOutput', false), ', '));
+end
+
 if strcmp(cfg.mode, 'reduced')
-    dyn = setdiff((1:NS)', union(elim(:), freeIdx));
+    dyn = setdiff((1:NS)', union(union(elim(:), freeIdx), reconIdx));
 else
     dyn = (1:NS)';   % reference mode integrates every species (residual_full)
 end
@@ -206,9 +284,9 @@ if strcmp(cfg.mode, 'reduced')
         init_kind = cfg.initializer;
     end
     debits = [];
-    if strcmp(init_kind, 'v1r2')
+    if strcmp(init_kind, 'v1r2') || strcmp(init_kind, 'v1r3')
         assert(isfield(cfg, 'init_debits') && ~isempty(cfg.init_debits), ...
-            'v1r2 initializer requires the frozen init_debits matrix');
+            '%s initializer requires the frozen init_debits matrix', init_kind);
         debits = cfg.init_debits;
     end
     yaug0 = [x0(:); zeros(NC, 1)];
@@ -218,7 +296,17 @@ if strcmp(cfg.mode, 'reduced')
                 NS, NC, A, used_rows, elim, names);
         case 'v1r2'
             [ycons, ic_jump, ~, ic_info] = consistentStartV1r2(yaug0, ...
-                tgrid(1), params, NS, NC, A, used_rows, elim, names, debits);
+                tgrid(1), params, NS, NC, A, used_rows, elim, names, debits, []);
+        case 'v1r3'
+            % the v1r2 joint solve IS the v1r3 initializer: its B_init debit
+            % rows make the projected state satisfy the ledger constraints
+            % exactly (the reconstruction correction at the seed is zero), so
+            % ledSpec stays empty here; the reconstruction acts only along
+            % the trajectory (residual_red), warm-started on the physical
+            % branch.
+            [ycons, ic_jump, ~, ic_info] = consistentStartV1r2(yaug0, ...
+                tgrid(1), params, NS, NC, A, used_rows, elim, names, ...
+                debits, []);
         otherwise
             error('unknown initializer %s', init_kind);
     end
@@ -226,6 +314,21 @@ if strcmp(cfg.mode, 'reduced')
     [maxjump, jmax] = max(abs(xcons - x0(:)));
     fprintf('largest initial-condition adjustment: %s: %.6g -> %.6g (%.3g)\n', ...
         names{jmax}, x0(jmax), xcons(jmax), maxjump);
+    if ~isempty(ledSpec)
+        % v1r3: the projected seed must already satisfy the ledger
+        % constraints (the B_init debit rows are the t0 reconstruction);
+        % assert the residual correction is at machine level before
+        % integrating.
+        seedcorr = 0;
+        for k = 1:numel(ledSpec)
+            s = ledSpec(k);
+            seedcorr = max(seedcorr, abs((s.total - ...
+                sum(s.weights(:) .* xcons(s.members(:)))) / s.wself));
+        end
+        fprintf('v1r3 seed ledger-consistency correction: %.3e uM\n', seedcorr);
+        assert(seedcorr <= 1e-9, ...
+            'v1r3 seed violates the ledger constraints (correction %.3e)', seedcorr);
+    end
 
     % cumulative-extent seeds: the registered P2 fast-layer offsets (v1r2)
     xi0 = zeros(NC, 1);
@@ -247,7 +350,7 @@ if strcmp(cfg.mode, 'reduced')
         ist.extent_ids = {cfg.cumdefs.id};
         ist.extent_seeds = xi0';
     end
-    if strcmp(init_kind, 'v1r2')
+    if strcmp(init_kind, 'v1r2') || strcmp(init_kind, 'v1r3')
         ist.closure_residual_abs = ic_info.res;
         ist.closure_residual_scaled = ic_info.res / max(ic_info.gscale, 1e-300);
         ist.production_scale = ic_info.gscale;
@@ -311,11 +414,11 @@ if strcmp(cfg.mode, 'reduced')
     % evaluations and 1.05e5 rejected steps vs 1.7e5 / 1.9e3 here, ~15x
     % slower.) Only the statistics accumulate, via a handle Map that does
     % not feed back into r.
-    cache0 = initBlockCache(xcons, elim, names, x0, tgrid(1), params);
+    cache0 = initBlockCache(xcons, elim, names, x0, tgrid(1), params, ledSpec);
     statsH = containers.Map('KeyType', 'char', 'ValueType', 'any');
     statsH('s') = newBlockStats();
     odefun = @(t, y) residual_red(t, y, params, NS, NC, A, used_rows, dyn, ...
-        cache0, statsH);
+        cache0, statsH, ledSpec);
     z0 = [xcons(dyn); xi0];
     if want_stats
         diary([cfg.outfile '.stats.raw.txt']);
@@ -347,6 +450,9 @@ if strcmp(cfg.mode, 'reduced')
             x(cache{p}.E) = cache{p}.C;
             x(cache{p}.jf) = cache{p}.ePool - sum(x(cache{p}.K)) ...
                 - sum(cache{p}.C);
+        end
+        if ~isempty(ledSpec)
+            x = applyLedgerRecon(x, ledSpec);
         end
         yv_full(1:NS, i) = x;
         yv_full(NS+1:end, i) = yv(Ndyn+1:end, i);
@@ -434,7 +540,8 @@ function r = residual_full(t, y, params, NS, NC, A, used_rows)
     end
 end
 
-function r = residual_red(t, y, params, NS, NC, A, used_rows, dyn, cache0, statsH)
+function r = residual_red(t, y, params, NS, NC, A, used_rows, dyn, cache0, ...
+    statsH, ledSpec)
 % reduced-mode RHS: track the eliminated complexes on the closure
 % manifold, then return author-RHS derivatives of the dynamic species
 % plus the cumulative-extent rows. No clipping: an infeasible or
@@ -449,7 +556,7 @@ function r = residual_red(t, y, params, NS, NC, A, used_rows, dyn, cache0, stats
     cache = cache0;
     st = statsH('s');
     for p = 1:numel(cache)
-        [cache{p}, res, nit, info] = solveBlock(cache{p}, t, x, params);
+        [cache{p}, res, nit, info] = solveBlock(cache{p}, t, x, params, ledSpec);
         st.calls = st.calls + 1;
         st.iters = st.iters + nit;
         st.iters_all(end+1) = nit; %#ok<AGROW> % per-call Newton counts
@@ -468,6 +575,9 @@ function r = residual_red(t, y, params, NS, NC, A, used_rows, dyn, cache0, stats
         x(cache{p}.E) = cache{p}.C;
         x(cache{p}.jf) = cache{p}.ePool - sum(x(cache{p}.K)) ...
             - sum(cache{p}.C);   % moiety reconstruction (A2 / T_G)
+    end
+    if ~isempty(ledSpec)
+        x = applyLedgerRecon(x, ledSpec);   % v1r3: tRNA/PPi ledger carriers
     end
     statsH('s') = st;   %#ok<NASGU> % handle accumulation; does not affect r
     dx = fMGG_synthesis(t, x, params);
@@ -504,7 +614,7 @@ function s = parseSolverStats(txt)
     end
 end
 
-function cache = initBlockCache(xcons, elim, names, x0, t0, params)
+function cache = initBlockCache(xcons, elim, names, x0, t0, params, ledSpec)
 % split the eliminated species into their enzyme pools (name prefix,
 % exactly the convention of the registered partition) and seed each
 % rootfind cache at the consistent-start branch values. Each cache also
@@ -543,14 +653,15 @@ function cache = initBlockCache(xcons, elim, names, x0, t0, params)
         c.C = xcons(E(:));
         c.J = [];
         c.hasJ = false;
-        g0 = blockResid(c, t0, x0(:), params, zeros(numel(E), 1));
+        if nargin < 7, ledSpec = []; end
+        g0 = blockResid(c, t0, x0(:), params, zeros(numel(E), 1), ledSpec);
         c.refscale = max(abs(g0));
         if ~(c.refscale > 0), c.refscale = 1; end
         cache{end+1} = c; %#ok<AGROW>
     end
 end
 
-function [c, res, nit, info] = solveBlock(c, t, x, params)
+function [c, res, nit, info] = solveBlock(c, t, x, params, ledSpec)
 %SOLVEBLOCK  damped Newton on 0 = dx_i/dt (AUTHOR RHS rows) for one
 %enzyme pool's eliminated block, warm-started from the fixed seed and with
 %a cached one-sided FD Jacobian that is refreshed on slow convergence.
@@ -568,8 +679,9 @@ function [c, res, nit, info] = solveBlock(c, t, x, params)
 %per-call statistics instrumentation only: it records which of the
 %pre-existing decision branches fired and does not feed back into the
 %iteration in any way.
+    if nargin < 5, ledSpec = []; end
     C = c.C;
-    g = blockResid(c, t, x, params, C);
+    g = blockResid(c, t, x, params, C, ledSpec);
     res = max(abs(g));
     % c.refscale is the FIXED block production scale (seeded in
     % initBlockCache); the scaled residual res/refscale is the registered
@@ -591,7 +703,7 @@ function [c, res, nit, info] = solveBlock(c, t, x, params)
                 h = 1e-7 * (abs(C(j)) + 1e-10);
                 Cp = C;
                 Cp(j) = Cp(j) + h;
-                J(:, j) = (blockResid(c, t, x, params, Cp) - g) / h;
+                J(:, j) = (blockResid(c, t, x, params, Cp, ledSpec) - g) / h;
             end
             c.J = J;
             c.hasJ = true;
@@ -601,7 +713,7 @@ function [c, res, nit, info] = solveBlock(c, t, x, params)
         accepted = false;
         while alpha >= 1e-8
             Cn = C + alpha * d;
-            gn = blockResid(c, t, x, params, Cn);
+            gn = blockResid(c, t, x, params, Cn, ledSpec);
             rn = max(abs(gn));
             if rn < res && all(Cn >= -1e-14)
                 accepted = true;
@@ -648,14 +760,21 @@ function [c, res, nit, info] = solveBlock(c, t, x, params)
     info = [nit, ls_rej, jref, plateau];
 end
 
-function g = blockResid(c, t, x, params, C)
+function g = blockResid(c, t, x, params, C, ledSpec)
 % eliminated-block rows of the AUTHOR RHS at trial complexes C, with the
 % free enzyme reconstructed from the conserved moiety (A2 / T_G), matching
 % the registered partition-verification closure and consistentStart. The
-% kept complexes x(c.K) are dynamic states already present in x.
+% kept complexes x(c.K) are dynamic states already present in x.  With the
+% v1r3 ledger reconstruction (ledSpec non-empty) the exact-ledger carrier
+% corrections are applied BEFORE the residual evaluation so the closure is
+% enforced on the reconstructed state (the carriers are functions of the
+% complexes).
     xt = x;
     xt(c.E) = C(:);
     xt(c.jf) = c.ePool - sum(xt(c.K)) - sum(C(:));
+    if nargin >= 6 && ~isempty(ledSpec)
+        xt = applyLedgerRecon(xt, ledSpec);
+    end
     dx = fMGG_synthesis(t, xt, params);
     g = dx(c.E);
 end
@@ -816,7 +935,7 @@ function g = algRows(t0, xbase, E, jf, freeCap, params, C)
 end
 
 function [y, jump, slp, info] = consistentStartV1r2(y, t0, params, NS, NC, ...
-    A, used_rows, elim, names, debits)
+    A, used_rows, elim, names, debits, ledSpec)
 %CONSISTENTSTARTV1R2  Moiety-consistent initialization map (v1r2, P1).
 %
 %JOINT damped projected Newton on the 21 algebraic rows with the B_init
@@ -834,7 +953,7 @@ function [y, jump, slp, info] = consistentStartV1r2(y, t0, params, NS, NC, ...
 %                               pool for PPi already released from the
 %                               bare-adenylate complexes)
 %   every other state         = author value
-%and the residual rows are 0 = dC_i/dt of the AUTHOR RHS.  Solving the
+%and (v1r3, ledSpec non-empty) the exact-ledger carrier corrections.  Solving the
 %closure jointly with the debits makes B*x_RED(t0) = B*x_FULL(t0) hold for
 %every declared inventory row by construction (the rows whose only movable
 %entries are the complexes and the debited pools), while free AMP stays at
@@ -907,10 +1026,13 @@ function [y, jump, slp, info] = consistentStartV1r2(y, t0, params, NS, NC, ...
     % C_in = C*) the debit vanishes and the projection is the identity, as
     % the inventory rows demand (B x_out = B x_in holds for the input too).
     Cin = x_author(Eall);
+    if nargin < 11
+        ledSpec = [];
+    end
     jointRows = @(C) v1r2JointRows(x_author, Eall, jfrs, freeCaps, ...
-        didx, W, nq1, Cin, params, t0, C);
+        didx, W, nq1, Cin, ledSpec, params, t0, C);
     assemble = @(C) v1r2Assemble(x_author, Eall, jfrs, freeCaps, ...
-        didx, W, nq1, Cin, C);
+        didx, W, nq1, Cin, ledSpec, C);
 
     eK = freeCaps;
 
@@ -1041,24 +1163,42 @@ function [y, jump, slp, info] = consistentStartV1r2(y, t0, params, NS, NC, ...
         'debits_applied', {x(didx) - x_author(didx)}, 'debit_pools', {dnames});
 end
 
+function x = applyLedgerRecon(x, ledSpec)
+% v1r3 ledger reconstruction: each free carrier is corrected so that its
+% ledger row evaluates exactly to the (scaled) author t0 total,
+%   x_carrier <- x_carrier + (total - sum_members w_j x_j) / w_self,
+% a numerically favourable correction form (the members list includes the
+% carrier itself).  Same realization class as the v1r1 enzyme-moiety
+% reconstruction (exact by construction at every evaluation).
+    for k = 1:numel(ledSpec)
+        s = ledSpec(k);
+        x(s.idx) = x(s.idx) + (s.total - ...
+            sum(s.weights(:) .* x(s.members(:)))) / s.wself;
+    end
+end
+
 function [x, feas] = v1r2Assemble(x_author, Eall, jfrs, freeCaps, didx, W, ...
-    nq1, Cin, C)
+    nq1, Cin, ledSpec, C)
 % reduced state at trial complexes C with the frozen debit matrix applied
-% relative to the input's own bound content C_in; feas = no debited free
-% pool below the numerical floor
+% relative to the input's own bound content C_in and, for v1r3, the
+% exact-ledger carrier corrections; feas = no debited free pool below the
+% numerical floor
     x = x_author;
     x(Eall) = C;
     x(jfrs(1)) = freeCaps(1) - sum(C(1:nq1));
     x(jfrs(2)) = freeCaps(2) - sum(C(nq1+1:end));
     x(didx) = x_author(didx) + W * (C - Cin);
+    if ~isempty(ledSpec)
+        x = applyLedgerRecon(x, ledSpec);
+    end
     feas = all(x(didx) >= -1e-15);
 end
 
 function g = v1r2JointRows(x_author, Eall, jfrs, freeCaps, didx, W, nq1, ...
-    Cin, params, t0, C)
-% closure rows (AUTHOR RHS dC_i/dt) at the v1r2 assembled trial state
+    Cin, ledSpec, params, t0, C)
+% closure rows (AUTHOR RHS dC_i/dt) at the v1r2/v1r3 assembled trial state
     [x, ~] = v1r2Assemble(x_author, Eall, jfrs, freeCaps, didx, W, nq1, ...
-        Cin, C);
+        Cin, ledSpec, C);
     dx = fMGG_synthesis(t0, x, params);
     g = dx(Eall);
 end
