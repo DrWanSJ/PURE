@@ -12,6 +12,14 @@ Legend for boxes: `[ ] KEEP` · `[ ] LUMP` · `[ ] QSSA` · `[ ] CHEMOSTAT` ·
 Per-reaction evidence (ids, free-carrier nets, particle deltas) is in
 `reduction_decisions.csv`; grep `subsystem_files` or `reverse_partner_id`.
 
+Per-species evidence (which moiety a state carries, which pool it is a candidate
+member of, and the three remaining species-level resolution decisions) is in
+`species_reduction_map.md` and
+`models/pnas2017_full_reference/audit/species_reduction_map.csv`. Decision groups **D1 formylation**, **D2
+peptidyl-tRNA** and **D3 free RS70S** there feed sections 2, 4 and 3 below.
+Deleting a species is only ever justified against that map's `n_*` moiety
+columns — a reaction-level `LUMP_CANDIDATE` is not a species-deletion licence.
+
 ---
 
 ## 1. Aminoacylation (tRNA charging) — `Aminoacylation_A_*`, `Aminoacylation_B_*`

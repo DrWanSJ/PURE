@@ -40,7 +40,7 @@ PNAS 参考网审计与人工降维决策完成后再定。
 | D1 | 源冻结 + PNAS 采集 | `references/PNAS2017_Matsuura/{raw,provenance}`、`data/provenance.csv`、归档 tag/bundle、`MISSING_SOURCES.md` | ✅ 本轮完成 |
 | D2 | SBML 审计 + 标准求解器导入 | `docs/pnas2017/sbml_audit.md`、`audit/*`、SimBiology 导入状态；libSBML/RoadRunner **受阻**（无网络，见 MISSING_SOURCES） | ⚠ 部分 |
 | D3 | 化学/资源账本 | `docs/pnas2017/chemical_ledger.md`、`audit/species_properties.csv`、`audit/reaction_balance_audit.csv` | ✅ |
-| D4 | 反应族分解 + 降维审阅 | `docs/reduction/{reduction_map.md,reduction_decisions.csv,human_reduction_review.md}`（**不做降维**，仅候选+人工复核） | ✅ |
+| D4 | 反应族分解 + 降维审阅 | `docs/reduction/{reduction_map.md,reduction_decisions.csv,species_reduction_map.md,human_reduction_review.md}`、`models/pnas2017_full_reference/audit/species_reduction_map.{csv,json}`（**不做降维**，仅候选+人工复核；反应层与物种/辅基层两张图互补） | ✅ |
 | D5 | 候选核心 + 可视化架构 + G1 报告 | `docs/reduction/candidate_core_v0.md`、`docs/visualization/visualization_plan.md` | ✅ 结构提案 |
 
 **(e) 参考复现（并入 D2/D5，非本周主目标）：** 以作者自带 MATLAB 积分器完成完整性

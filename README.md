@@ -32,9 +32,9 @@ audit and interfaces** — files are not to be piled into the repository root.
   may later be compared.
 - **ACTIVE — `PNAS2017_full_reference`.** Acquisition ✅ · checksum freeze ✅ ·
   SBML inventory/audit ✅ · chemical/resource ledger ✅ · 968-reaction reduction
-  **map** (no reduction performed) ✅. Pending: libSBML/RoadRunner validation
-  (tooling unavailable — see `MISSING_SOURCES.md`), SI-dataset parsing, and the
-  human reduction decisions.
+  **map** + 241-species / moiety-level pooling **map** (no reduction performed)
+  ✅. Pending: libSBML/RoadRunner validation (tooling unavailable — see
+  `MISSING_SOURCES.md`), SI-dataset parsing, and the human reduction decisions.
 - **FUTURE — `PURE_reduced_core`.** Derived only from approved reduction
   decisions (structural proposal in `docs/reduction/candidate_core_v0.md`);
   transcription extension; GUV transport; flow visualization; MCP service.

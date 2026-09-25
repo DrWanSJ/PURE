@@ -5,6 +5,15 @@
 > *could* take **after** the Phase-7 human decisions. It is derived from the
 > reduction map, not from ad-hoc deletion. Every item below is contingent on the
 > researcher's checkboxes in `human_reduction_review.md`.
+>
+> Both reduction layers feed this proposal, and neither is a licence to delete
+> state: the reaction-level map `reduction_map.md` (968 reactions) and the
+> species / moiety-level map `species_reduction_map.md` (241 species, with its
+> `n_*` moiety columns and the three-layer `*_active_pool` / `*_degraded_pool` /
+> `*_family_total` bookkeeping). The aggregate pools listed below are the
+> candidates that map names — and `RS30S` / `RS50S` stay **separate** there, so
+> any single-total machinery collapse here is a reporting choice, not a
+> conservation law.
 
 ## Engineering target vs. ledger reality
 
