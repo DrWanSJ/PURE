@@ -1,0 +1,116 @@
+{
+  "schema": "pnas2017_aa_a3b_anti_sliding_validation/v1",
+  "red_csv": "scratch/a3bc/runs/probe_r12b.csv",
+  "full_csv": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S0.csv",
+  "ledgers": {
+    "MetRS_moiety_total": {
+      "ledger": "MetRS_moiety_total",
+      "class": "EXACT",
+      "t0_red": 0.44,
+      "t0_full": 0.44,
+      "max_abs_mismatch": 3.6701908666456404e-09,
+      "max_rel_mismatch": 8.341342878740089e-09,
+      "sliding_identity_coherence": 9.21783965818783e-11,
+      "eliminated_content_scale": 0.7590551225757125,
+      "sliding_identity_present": false,
+      "ok": true
+    },
+    "GlyRS_moiety_total": {
+      "ledger": "GlyRS_moiety_total",
+      "class": "EXACT",
+      "t0_red": 0.35,
+      "t0_full": 0.35,
+      "max_abs_mismatch": 7.866666318209967e-09,
+      "max_rel_mismatch": 2.247618948057907e-08,
+      "sliding_identity_coherence": 1.975746532005294e-10,
+      "eliminated_content_scale": 0.7590551225757125,
+      "sliding_identity_present": false,
+      "ok": false
+    },
+    "tRNAfMetCAU_family_total": {
+      "ledger": "tRNAfMetCAU_family_total",
+      "class": "EXACT",
+      "t0_red": 3.54767184,
+      "t0_full": 3.54767184,
+      "max_abs_mismatch": 4.071797209583017e-10,
+      "max_rel_mismatch": 1.1477378385659796e-10,
+      "sliding_identity_coherence": 1.022649098162467e-11,
+      "eliminated_content_scale": 0.7590551225757125,
+      "sliding_identity_present": false,
+      "ok": true
+    },
+    "tRNAGlyGCC_family_total": {
+      "ledger": "tRNAGlyGCC_family_total",
+      "class": "EXACT",
+      "t0_red": 3.54767184,
+      "t0_full": 3.54767184,
+      "max_abs_mismatch": 2.3904299614327192e-09,
+      "max_rel_mismatch": 6.73802445446228e-10,
+      "sliding_identity_coherence": 6.003665994284755e-11,
+      "eliminated_content_scale": 0.7590551225757125,
+      "sliding_identity_present": false,
+      "ok": true
+    },
+    "adenine_ledger_total": {
+      "ledger": "adenine_ledger_total",
+      "class": "INTERFACE_BALANCE",
+      "t0_red": 3750.0,
+      "t0_full": 3750.0,
+      "max_abs_mismatch": 0.0043051280807890665,
+      "max_rel_mismatch": 1.1480341548770836e-06,
+      "sliding_identity_coherence": 0.00010812511337576449,
+      "eliminated_content_scale": 0.7590551225757125,
+      "sliding_identity_present": false,
+      "ok": false
+    },
+    "guanine_ledger_total": {
+      "ledger": "guanine_ledger_total",
+      "class": "EXACT",
+      "t0_red": 2500.0,
+      "t0_full": 2500.0,
+      "max_abs_mismatch": 8.548792282628192e-08,
+      "max_rel_mismatch": 3.419516913051014e-11,
+      "sliding_identity_coherence": 2.1470653542452008e-09,
+      "eliminated_content_scale": 0.7590551225757125,
+      "sliding_identity_present": false,
+      "ok": true
+    },
+    "phosphate_ledger_total": {
+      "ledger": "phosphate_ledger_total",
+      "class": "EXACT",
+      "t0_red": 68750.32,
+      "t0_full": 68750.32,
+      "max_abs_mismatch": 4.989451318808812e-06,
+      "max_rel_mismatch": 7.257349956783921e-11,
+      "sliding_identity_coherence": 1.2531218105598866e-07,
+      "eliminated_content_scale": 0.7590551225757125,
+      "sliding_identity_present": false,
+      "ok": true
+    },
+    "Met_material_total": {
+      "ledger": "Met_material_total",
+      "class": "INTERFACE_BALANCE",
+      "t0_red": 300.0,
+      "t0_full": 300.0,
+      "max_abs_mismatch": 0.014830024189407938,
+      "max_rel_mismatch": 4.94334139646931e-05,
+      "sliding_identity_coherence": 0.0003724623325378895,
+      "eliminated_content_scale": 0.7590551225757125,
+      "sliding_identity_present": false,
+      "ok": false
+    },
+    "Gly_material_total": {
+      "ledger": "Gly_material_total",
+      "class": "INTERFACE_BALANCE",
+      "t0_red": 300.0,
+      "t0_full": 300.0,
+      "max_abs_mismatch": 0.08200299615507256,
+      "max_rel_mismatch": 0.0002733433205169078,
+      "sliding_identity_coherence": 0.002059539946322453,
+      "eliminated_content_scale": 0.7590551225757125,
+      "sliding_identity_present": false,
+      "ok": false
+    }
+  },
+  "all_ok": false
+}

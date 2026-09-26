@@ -33,8 +33,10 @@ audit and interfaces** — files are not to be piled into the repository root.
 - **ACTIVE — `PNAS2017_full_reference`.** Acquisition ✅ · checksum freeze ✅ ·
   SBML inventory/audit ✅ · chemical/resource ledger ✅ · 968-reaction reduction
   **map** + 241-species / moiety-level pooling **map** (no reduction performed)
-  ✅. Pending: libSBML/RoadRunner validation (tooling unavailable — see
-  `MISSING_SOURCES.md`), SI-dataset parsing, and the human reduction decisions.
+  ✅. Aminoacylation reduction: formally investigated through four candidate
+  realizations (see below). Pending: libSBML/RoadRunner validation (tooling
+  unavailable — see `MISSING_SOURCES.md`), SI-dataset parsing, and the human
+  reduction decisions.
 - **FUTURE — `PURE_reduced_core`.** Derived only from approved reduction
   decisions (structural proposal in `docs/reduction/candidate_core_v0.md`);
   transcription extension; GUV transport; flow visualization; MCP service.
@@ -42,6 +44,36 @@ audit and interfaces** — files are not to be piled into the repository root.
 Evidence levels and gates live in `docs/project/evidence_levels.json` and
 `tasklist.md`. **No reduction has been finalised by the AI; every candidate
 transformation is marked `HUMAN_REVIEW_REQUIRED`.**
+
+### Aminoacylation reduction status (as of 2026-09-26)
+
+The aminoacylation selective-QSSA candidate has been **formally tested and
+failed reference-domain validation** because of a protected-ledger
+sliding leak; naive ledger reconstruction was refuted at the smoke gate.
+The follow-up cycle investigated the total-coordinate (tQSSA-style) and
+conservative restricted-QSSA candidates:
+
+- **A3a** — `FAILED_VALIDATION_ON_REFERENCE_DOMAIN` (permanent negative
+  result; `docs/reduction/aminoacylation_A3a_final_status.md`).
+- **A3b-21** — total-coordinate transform proven exact (rank(T) = 241,
+  pre-QSSA B1–B10 all pass; the sliding leak is absent by construction),
+  but the 21-state closed-loop QSSA **failed the smoke gate** (closure
+  feasibility loss at t = 2.498 s in the GlyAMP-sequestration transient).
+- **A3b-r12** — restricted 9-state fast set: transform exact, closure
+  tracks FULL to 3–5 significant digits, exact-ledger conservation
+  demonstrated to 1e-14 post-layer — but the full-window smoke is
+  **blocked** because the audited Met/Gly material (and adenine) ledger
+  rows cut fast binding equilibria; the required token-closed ledger
+  rows are underdetermined by the audited evidence and need human
+  sign-off (`docs/audit/pnas2017_aminoacylation_A3b_r12/`).
+- **A3c** — the conservative rule **admits no elimination** (0/21 states
+  eligible); refused by its own selection rule
+  (`docs/audit/pnas2017_aminoacylation_A3c/`).
+
+Per the stop rules, the aminoacylation reduction is **paused for human
+review** before any new ledger mechanism is invented — see
+`docs/reduction/aminoacylation_A3bc_final_decision.md`. No formal
+reduced runs were registered in the last cycle; nothing is validated.
 
 What this is **not**:
 

@@ -1,0 +1,15 @@
+[警告: 名称不存在或不是目录: D:\BaiduSyncdisk\FACHill\slanCM] 
+[警告: 在为表创建变量名称之前，对文件中的列标题进行了修改，以使其成为有效的 MATLAB 标识符。原始列标题保存在 VariableDescriptions 属性中。
+将 'VariableNamingRule' 设置为 'preserve' 以使用原始列标题作为表变量名称。] 
+pre-QSSA B1-B10: 11/11 PASS
+  B1_rank_T                              PASS  rank=241
+  B2_cond_T                              PASS  cond=3.8955e+02
+  B3_author_IC_roundtrip                 PASS  worst carrier abs err 0.000e+00, worst carrier rel err 0.000e+00
+  B4_random_roundtrip                    PASS  200 random feasible states pass to cancellation precision
+  B5_author_trajectory_roundtrip         PASS  200 trajectory points pass to cancellation precision (worst abs 5.680e-11)
+  B6_transformed_rhs_identity            PASS  worst_abs=2.794e-09 worst_rel_to_cancellation_scale=5.666e-09
+  B7_q_row_identity                      PASS  worst_abs=5.821e-11 rel=7.102e-17 (gscale 8.196e+05)
+  B8_ledger_representation               PASS  worst_rel=0.000e+00
+  B8b_guanine_identity_representable     PASS  0 guanine members on eliminated/carrier roles
+  B9_interface_flux_coverage             PASS  dotS nonzero sets match the classified interface reactions
+  B10_species_partition                  PASS  identity=226 carrier=6 eliminated=9
