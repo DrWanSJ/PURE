@@ -1,0 +1,128 @@
+{
+  "schema": "pnas2017_aminoacylation_reduction_preregistration/v0",
+  "protocol": "docs/reduction/reduction_validation_protocol_v0.md",
+  "record_schema": "schemas/reduction_validation_protocol_v0.json",
+  "registered_order": "preregistration frozen BEFORE any approximate reduced-model result was computed; exact-class (A1) results are mathematical identities and were computed only to confirm the freeze, not to choose thresholds",
+  "formal_runs_before_registration": 0,
+  "post_hoc_threshold_relaxation": "FORBIDDEN",
+
+  "frozen_source": {
+    "repository": "https://github.com/DrWanSJ/PURE",
+    "branch": "research/pnas2017-full-network-reduction",
+    "source_head": "8710b85cac27dbe7a1a2805a8e7f79d87e3d51e6",
+    "source_model": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+    "source_model_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "source_sha_authority": "data/provenance.csv row Matsuura_2017_combined_SBML",
+    "canonical_sbml_modified": false,
+    "author_csv_modified": false
+  },
+
+  "frozen_artifacts_sha256": {
+    "aminoacylation_reactions.csv": "b0340557cd0a8f45c187d4485964b1bf8f8d783df089f62cffae1f5fe3a0d3b2",
+    "aminoacylation_species.csv": "cbb1d949dbd08388e5bcd32b0b3f3f2f215297dd8613f0d5f24c9cabc50396b0",
+    "aminoacylation_inventory.json": "0f67938aa719d07dc1dbb83054d70e458118edec9c8ce450be4ccd75a6ab647b",
+    "aminoacylation_pathway_balance.csv": "079a85e2be61b2d3ac5f9121bd12076402bcf988c071fd2fa59a22d8bc208f2f",
+    "aminoacylation_reversible_pairs.csv": "6015dac67dcef8c252968b64b8a4af1dc5c0edd0fde34bad944df38ff9461dc1",
+    "aminoacylation_reversible_pair_validation.csv": "614d3502f9e2152c4f781fb18077698721a82481a4597b7fd78851101a26eabc",
+    "aminoacylation_fast_states.csv": "9709c8e387aae05110fcebf873ab257b7113b88d0c704b4aa3444d45841f9995",
+    "aminoacylation_enzyme_pool_conservation.csv": "f75d986cd4f70e9cf797539da62f4f5d300357cd1b330fd9cef8e7db1fdd631e",
+    "aminoacylation_timescale.csv": "28121226557eb8efe96d148e856cba4c9ae6536c17ba294aab5e79dfa9a4fd75"
+  },
+
+  "scope": {
+    "module": "Aminoacylation (MetRS + GlyRS)",
+    "n_reactions": 138,
+    "n_species": 47,
+    "excluded": "FMet_tRNASynthesis (formylation) kept separate — unresolved scientific review decision",
+    "interface_reactions_to_other_modules": ["re0000000006", "re0000000031", "re0000000070", "re0000000258"]
+  },
+
+  "candidates": {
+    "A1_exact_reversible_rewrite": {
+      "reduction_class": "EXACT_REPRESENTATION_CHANGE",
+      "exactness": "exact",
+      "mapping": "52 forward/reverse pairs -> 52 reversible laws; see aminoacylation_reversible_pairs.csv (frozen hash above)",
+      "reduced_equation_form": "for each pair, single reaction with v_net = v_f - v_r, both SBML mass-action laws retained verbatim",
+      "states_eliminated": 0,
+      "parameters": "unchanged k1 author_export_value; NO refit",
+      "acceptance_tier": "T_A (1e-9 relative, at 200 reference + 200 arbitrary positive states, seed 20260925)",
+      "human_decision_required": false,
+      "run_this_task": true,
+      "expected_status": "EXACT_VALIDATED (representation scope only)"
+    },
+    "A2_enzyme_pool_reporting": {
+      "reduction_class": "FUNCTIONAL_POOLING",
+      "exactness": "representational (reporting) / exact only as family total",
+      "pool_definitions": {"MetRS_total": "free MetRS + all MetRS_* complexes", "GlyRS_total": "free GlyRS + all GlyRS_* complexes"},
+      "conservation_test_tier": "T_B (max |L.S| over declared reaction set, threshold 1e-12)",
+      "reconstruction_map": "NOT provided (microstate occupancy unrecoverable from pool total)",
+      "states_eliminated": 0,
+      "human_decision_required": true,
+      "run_this_task": "reporting variable + conservation test only; bound-state ELIMINATION not run",
+      "expected_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    "A3_fast_state_QSSA": {
+      "reduction_class": "QSSA",
+      "exactness": "approximate",
+      "fast_states_source": "aminoacylation_fast_states.csv (30 subsystem-wide; 15 per synthetase)",
+      "slow_states": ["Met","Gly","ATP","AMP","PPi","MetRS","GlyRS","tRNAfMetCAU","tRNAGlyGCC","MettRNAfMetCAU","GlytRNAGlyGCC"],
+      "reduced_equation_form": "NOT DERIVED — no unique attracting algebraic manifold q = h(s) obtained",
+      "algebraic_manifold": null,
+      "moving_manifold_residual": null,
+      "timescale_diagnostic": "epsilon_stiff observed 3.2e-10..1.5e-4 with lambda_stiff~5.15e4 s^-1; REPORT-ONLY, structural near-zero modes excluded",
+      "acceptance_tiers_pending": ["T_C","T_D","T_E","T_F"],
+      "human_decision_required": true,
+      "run_this_task": false,
+      "expected_status": "BLOCKED -> HUMAN_REVIEW_REQUIRED"
+    },
+    "A4_one_step_effective_charging": {
+      "reduction_class": "FUNCTIONAL_POOLING",
+      "secondary_class": "CONSERVING_DEGRADATION_LUMP (tRNA/aa-tRNA sinks)",
+      "exactness": "approximate (kinetics); stoichiometry exact",
+      "net_reaction": {"Gly": "Gly + ATP + tRNAGlyGCC -> GlytRNAGlyGCC + AMP + PPi", "Met": "Met + ATP + tRNAfMetCAU -> MettRNAfMetCAU + AMP + PPi"},
+      "net_derivation": "sum of SBML cycle vectors with 8 enzyme intermediates cancelled each (aminoacylation_pathway_balance.csv)",
+      "effective_rate_law": "NOT DERIVED — no justified closed-form charging law; a Michaelis-type lump requires the A3 manifold or a non-saturated assumption",
+      "accounting_required": ["ATP -1 per event", "AMP +1 per event", "PPi +1 per event", "1 charging event", "particle-number delta 0"],
+      "acceptance_tiers_pending": ["T_C","T_D","T_E"],
+      "human_decision_required": true,
+      "run_this_task": false,
+      "expected_status": "PROPOSED -> HUMAN_REVIEW_REQUIRED"
+    }
+  },
+
+  "common_setup": {
+    "initial_conditions": "author export values from models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv (ATP 3750, Gly/Met 300, GlyRS 0.35, MetRS 0.44 uM, ...); SBML initialConcentration=1 is a placeholder",
+    "parameter_mapping": "k1 per reaction = author_export_value from fMGG_synthesis_parameters.csv; NO refit; 54 aminoacylation reactions have k1=0 at reference",
+    "solver_for_any_future_trajectory_run": "MATLAB ode15s, RelTol 1e-10, AbsTol 1e-12, analytic Jacobian, NonNegative, fixed output grid",
+    "reference_time_window": "t in [1e-4, 1e3] s (the frozen author reference grid, 200 log-spaced points)",
+    "no_clipping_or_projection": true,
+    "ionic_strength": "NOT ASSESSABLE FROM CURRENT SOURCE DATA"
+  },
+
+  "observables_and_accounting": {
+    "primary_observables": ["free amino acid", "ATP", "AMP", "PPi", "free tRNA", "aminoacyl-tRNA", "MetRS_total", "GlyRS_total", "selected enzyme-bound occupancy", "charging flux"],
+    "accounting_variables": ["ATP", "AMP", "PPi", "cumulative ATP consumption", "cumulative AMP production", "cumulative PPi production", "cumulative charging events", "particle-number proxy"],
+    "explicitly_not_primary": "protein/product output is NOT an aminoacylation acceptance metric"
+  },
+
+  "declared_failure_tests_for_future_run": [
+    "reduced ATP reservoir (test chemostat/ATP-constant guard)",
+    "reduced total tRNA",
+    "increased amino acid (saturation regime)",
+    "reduced synthetase concentration (occupancy no longer negligible)",
+    "altered energy-regeneration context if run in the whole network",
+    "perturbations must be documented; no arbitrary extreme values"
+  ],
+
+  "error_formulas": {
+    "E_inf": "max_t |y_red - y_full| / max(y_scale, 1e-12); y_scale declared = max_t |y_full| (1 for zero-initial)",
+    "flux": "report both v(t) and xi(t)=int_0^t v(tau) dtau",
+    "conservation": "report absolute residual and scaled residual"
+  },
+
+  "preregistration_commit_or_hash": "UNCOMMITTED; canonical content hash of acceptance_criteria.json = 8c3143d60121d895d0e299ffd5097b0e002ff468551e752bc3adc0a7f2cb104f",
+  "human_decision_required": true,
+  "approximate_acceptance_run_executed": false,
+  "status": "HUMAN_REVIEW_REQUIRED",
+  "stop_reason": "T_C/T_D/T_E/T_F thresholds and the A3/A4 closed-form reduced equations require human scientific judgment; per protocol the approximate acceptance run is stopped here and not executed."
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "pnas2017_aminoacylation_acceptance_criteria/v0",
+  "protocol": "docs/reduction/reduction_validation_protocol_v0.md",
+  "schema_ref": "schemas/reduction_validation_protocol_v0.json",
+  "source_head_at_freeze": "8710b85cac27dbe7a1a2805a8e7f79d87e3d51e6",
+  "source_model": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+  "source_model_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "source_model_sha256_authority": "data/provenance.csv row Matsuura_2017_combined_SBML",
+  "frozen_before_reduced_results": true,
+  "post_hoc_threshold_relaxation": "FORBIDDEN; any change is a new human-approved revision",
+  "tiers": {
+    "T_A_exact_algebra_or_rewrite": {
+      "applies_to": ["A1"],
+      "metric": "max over species and states of |rhs_reduced - rhs_full| / max(|rhs_full|, 1e-12)",
+      "threshold": 1e-9,
+      "state_set": "200 author-reference trajectory points + 200 arbitrary positive log-uniform states (seed 20260925)",
+      "status": "FROZEN (no human judgment required: this is a mathematical identity)"
+    },
+    "T_B_conservation": {
+      "applies_to": ["A2_active_pool", "A2_family_total"],
+      "metric": "max |L.S| over the declared reaction set",
+      "threshold": 1e-12,
+      "status": "FROZEN (exact linear identity)"
+    },
+    "T_C_approximate_state_trajectory": {
+      "applies_to": ["A3", "A4"],
+      "metric": "E_inf(y) = max_t |y_red - y_full| / max(y_scale, 1e-12), y_scale = max_t|y_full|",
+      "threshold": null,
+      "status": "HUMAN_REVIEW_REQUIRED — a scientifically justified value depends on the purpose assigned to each aminoacylation microstate; not invented here"
+    },
+    "T_D_approximate_instantaneous_flux": {
+      "applies_to": ["A3", "A4"],
+      "threshold": null,
+      "status": "HUMAN_REVIEW_REQUIRED"
+    },
+    "T_E_approximate_cumulative_resource_extent": {
+      "applies_to": ["A4"],
+      "metric": "relative error of xi_j(T)=int_0^T v_j dt for ATP/AMP/PPi and total charging events",
+      "threshold": null,
+      "binding_constraint": true,
+      "status": "HUMAN_REVIEW_REQUIRED — resource-ledger tolerance is the project's central contract and must be set by the researcher"
+    },
+    "T_F_timescale_separation": {
+      "applies_to": ["A3"],
+      "metric": "epsilon_stiff = (1/lambda_stiff_fast) / tau_slow, structural near-zero modes excluded",
+      "observed": {"epsilon_stiff_min": 3.17e-10, "epsilon_stiff_max": 1.53e-4, "lambda_stiff_s^-1": "5.15e4 (stable)"},
+      "gate": null,
+      "additional_required": ["unique attracting algebraic manifold q=h(s)", "moving-manifold residual G-(dh/ds)F", "branch uniqueness", "initial-layer behaviour"],
+      "status": "HUMAN_REVIEW_REQUIRED — a large eigenvalue gap was observed but NO manifold was derived; gap alone does not certify QSSA"
+    }
+  },
+  "forbidden_claims_checked_not_assumed": [
+    "bound complexes are fast (NOT assumed; only an eigenvalue gap is reported)",
+    "aminoacylation is at steady state (NOT assumed)",
+    "ATP is constant (NOT assumed; ATP is tracked as a dynamic slow pool)",
+    "enzyme occupancy is negligible (NOT assumed; GlyAMP reaches ~24 uM on reference)",
+    "all MetRS/GlyRS complexes can be collapsed (NOT assumed)",
+    "the one-step charging reaction is validated (NOT assumed)",
+    "a good aa-tRNA curve proves the energy ledger (NOT assumed)",
+    "similar protein output means the reduction is valid (NOT assumed)",
+    "a reversible pair is at equilibrium (NOT assumed)",
+    "DROP_CANDIDATE means the reaction may be removed (NOT assumed)"
+  ],
+  "approximate_acceptance_run": "NOT EXECUTED — blocked pending human thresholds for T_C/T_D/T_E/T_F"
+}
