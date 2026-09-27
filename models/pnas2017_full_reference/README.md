@@ -3,7 +3,10 @@
 The unchanged author-site combined SBML is
 [`original/fMGG_synthesis.xml`](original/fMGG_synthesis.xml). It is byte-identical
 to the captured file under `references/PNAS2017_Matsuura/raw/`. Source URLs,
-checksums and missing publisher supplements are recorded there.
+checksums and publisher capture notes are recorded there. The `original/`
+subsystem XML and simulation files are byte-identical to members of the two
+author-site ZIP captures and support historical runner inspection; the combined
+SBML remains canonical.
 
 `normalized/` contains a **derived execution compatibility copy**. It replaces
 literal constant `stoichiometryMath` elements with equal numeric stoichiometry

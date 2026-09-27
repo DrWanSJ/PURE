@@ -65,6 +65,8 @@ docs/reduction/reduction_decisions.csv -text -diff
 docs/reduction/reduction_map.md text eol=lf
 docs/reduction/human_reduction_review.md text eol=lf
 results/pnas2017_reference/** -text -diff
+results/pnas2017_reference/README.md text eol=lf diff
+results/pnas2017_reference/historical_archive_manifest.json text eol=lf diff
 
 # Historical PNAS reduction records include native logs and hash-bound inputs.
 # Preserve their committed bytes, including original line endings and spacing.

@@ -1,5 +1,13 @@
 # G1-PNAS evidence report — 2026-09-27
 
+**Historical gate snapshot:** This report records the pre-integration run and
+its `BLOCKED` outcome. The publisher PDF and S01–S29 were subsequently
+preserved in the integration branch under the researcher's R1 decision, with
+hashes in `references/PNAS2017_Matsuura/provenance/publisher_capture.json`.
+Statements below that they were missing describe the original gate time. G1
+has not been rerun, and S28 comparison, chemical-unit and human-review gaps
+remain open. Source capture alone does not turn this report into a PASS.
+
 **Gate status: BLOCKED.** The author-site combined SBML, subsystem archive and
 simulation archive are frozen and audited, but the publisher article PDF,
 Supporting Information and Datasets S01–S29 (especially S27 and S28) have not
