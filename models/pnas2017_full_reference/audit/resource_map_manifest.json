@@ -1,0 +1,30 @@
+{
+  "generated_by": "scripts/build_pnas2017_resource_map.py",
+  "doi": "10.1073/pnas.1615351114",
+  "status": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY",
+  "input_sha256": {
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52"
+  },
+  "output_sha256": {
+    "models/pnas2017_full_reference/audit/species_properties.csv": "fcb2ade0d390ec8b08ba3a613a96dfe4ff801b3324f362360534fd504f7ad9d8",
+    "models/pnas2017_full_reference/audit/reaction_balance_audit.csv": "89c7c5710b4ee46cc2da44442ba49fcc8c3c546289ad4521b11fc50a82eb3962",
+    "docs/reduction/reduction_decisions.csv": "70fd3f98de5056a1a63c29db58d310ec5986d4c52b6bfcbae9634b38e2e8d7f8"
+  },
+  "counts": {
+    "species": 241,
+    "reactions": 968,
+    "positive_reference_initial_components": 27,
+    "module_mapping_status": {
+      "EXTRACTED_EXACT_STOICHIOMETRY": 884,
+      "AMBIGUOUS_MULTIPLE_SUBSYSTEMS": 84
+    },
+    "candidate_labels": {
+      "LUMP_CANDIDATE": 378,
+      "DROP_CANDIDATE": 388,
+      "KEEP": 202
+    }
+  },
+  "freshness_rule": "Regenerate if any input SHA-256 differs. Do not hand-edit derived CSVs."
+}

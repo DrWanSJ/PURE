@@ -58,5 +58,10 @@ references/PNAS2017_Matsuura/raw/** -text
 models/pnas2017_full_reference/original/** -text
 models/pnas2017_full_reference/normalized/** -text -diff
 models/pnas2017_full_reference/audit/*.csv -text
+models/pnas2017_full_reference/audit/species_properties.csv -text -diff
+models/pnas2017_full_reference/audit/reaction_balance_audit.csv -text -diff
 docs/reduction/*.csv -text
+docs/reduction/reduction_decisions.csv -text -diff
+docs/reduction/reduction_map.md text eol=lf
+docs/reduction/human_reduction_review.md text eol=lf
 results/pnas2017_reference/** -text -diff

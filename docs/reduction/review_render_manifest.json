@@ -1,0 +1,22 @@
+{
+  "status": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY",
+  "generated_by": "scripts/render_pnas2017_review.py",
+  "inputs_sha256": {
+    "models/pnas2017_full_reference/audit/modules.csv": "8bb60695e5bf9c795a5f92b0e6194eb47739b49c2437f6abe00a896e19569ff6",
+    "docs/reduction/reduction_decisions.csv": "70fd3f98de5056a1a63c29db58d310ec5986d4c52b6bfcbae9634b38e2e8d7f8",
+    "models/pnas2017_full_reference/audit/species_properties.csv": "fcb2ade0d390ec8b08ba3a613a96dfe4ff801b3324f362360534fd504f7ad9d8",
+    "models/pnas2017_full_reference/audit/reaction_balance_audit.csv": "89c7c5710b4ee46cc2da44442ba49fcc8c3c546289ad4521b11fc50a82eb3962"
+  },
+  "outputs_sha256": {
+    "docs/reduction/reduction_map.md": "eb26b8dd90545671891a15995afcd1aa14d42ba156f744cf70569ee16e0e1f07",
+    "docs/reduction/human_reduction_review.md": "ef9f617cf9121200c52c14f00f17c86d96e48793377464b89414a631e75c1de7"
+  },
+  "counts": {
+    "original_subsystems": 26,
+    "combined_reactions": 968,
+    "single_subsystem": 884,
+    "shared_subsystems": 84,
+    "process_review_cards": 16
+  },
+  "freshness_rule": "Regenerate when an input SHA changes; this report cannot replace frozen SBML source evidence."
+}
