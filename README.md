@@ -11,7 +11,7 @@ part of the imported PNAS reference model.
 
 | Identity | Role | Status |
 | --- | --- | --- |
-| `PNAS2017_full_reference` | Literal, provenance-bound SBML import of the Matsuura et al. translation network; benchmark and inventory only | **Source capture complete; audit and interpretation ongoing**; no scientific modification permitted |
+| `PNAS2017_full_reference` | Literal, provenance-bound SBML import of the Matsuura et al. translation network; benchmark and inventory only | **Paper PDF and S01–S29 captured; audit and interpretation ongoing**; no scientific modification permitted |
 | `PURE_reduced_core` | Future interpretable project model derived from explicit, human-reviewed reduction decisions | **Proposal only**; no validated model yet |
 | `Mavelli2015_coarse_reference` | Mavelli, Marangoni and Stano (2015) coarse-grained comparator, DOI: [10.1007/s11538-015-0082-8](https://doi.org/10.1007/s11538-015-0082-8) | **Frozen legacy benchmark**, completed through the previous D7 RS-QSSA work |
 

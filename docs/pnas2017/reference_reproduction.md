@@ -31,7 +31,7 @@ The [paper](https://doi.org/10.1073/pnas.1615351114) reports 0.15 amino acids/s/
 
 ## What remains unresolved
 
-- The publisher S27 and S28 attachments are now frozen; S27's attachment format and S28's observable mapping/numeric trajectory still require interpretation and comparison. See the [source record](../../references/PNAS2017_Matsuura/README.md) and [open decisions](../reduction/open_scientific_decisions.md).
+- The publisher S27 and S28 attachments are now frozen. S27 is an XLSX workbook; how it relates to the paper's combined-SBML wording remains unresolved. S28 observable mapping and numerical comparison remain open. See the [source record](../../references/PNAS2017_Matsuura/README.md) and [open decisions](../reduction/open_scientific_decisions.md).
 - Absolute chemical units are not established by the SBML declarations. The author's CSV has no explicit units; the paper context supports a concentration interpretation but does not repair the SBML unit metadata.
 - The paper's MATLAB `NonNegative` option and CVODE/SimBiology numerical constraint behavior have not been proven equivalent. No parameter was refit and no reaction was removed.
 - This check does not validate chemical formulas, charge, Mg binding, ionic strength, an osmotic pressure calculation or any proposed `PURE_reduced_core` structure.
