@@ -1,0 +1,129 @@
+{
+  "status": "ENGINE_COMPARISON_DIAGNOSTIC_NO_PREREGISTERED_PASS_THRESHOLD",
+  "comparison_method": "Linear interpolation of SimBiology ode15s output onto the 200 RoadRunner CVODE output times; direct final-time comparison at 1000 s.",
+  "same_effective_execution_sbml": true,
+  "source_files_sha256": {
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/trajectory.csv": "5e2ed9c36afb14b69c8b7cf5da95faf45b51f7977c09dd2bfdad1a2d2604a0d4",
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/simbiology_trajectory.csv": "313fcfc5b28b80c4cb19ad874a3e957142ef12fdbe149c31cdf5f15f1d59057a",
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/simbiology_names.json": "932e707738f4794dbd2de65a721bdba7c5d61964aa63c77224148f75c6120b10",
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/run_manifest.json": "cfffe872a342812d1c23262e8d5400b87ee0024e86850d53ab1e0a38d079445b",
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/simbiology_run.json": "82f6444a7a8adf06d4ffc5bf2f9578f3302ac6b8dabe34cad59ae49ead128cc2"
+  },
+  "species_count": 241,
+  "road_runner_points": 200,
+  "simbiology_points": 435,
+  "largest_absolute_difference_any_species_any_sample": 29.71642810028746,
+  "largest_absolute_final_difference_any_species": 0.21353991011710605,
+  "resources": {
+    "Pept0003": {
+      "roadrunner_final": 5.164478733656283,
+      "simbiology_final": 5.16458265401858,
+      "absolute_final_difference": 0.00010392036229678325,
+      "maximum_interpolated_trajectory_absolute_difference": 0.00015242845662455373
+    },
+    "ATP": {
+      "roadrunner_final": 3672.51004591268,
+      "simbiology_final": 3672.45312241896,
+      "absolute_final_difference": 0.05692349372020544,
+      "maximum_interpolated_trajectory_absolute_difference": 7.804978661461064
+    },
+    "ADP": {
+      "roadrunner_final": 9.642069081631952,
+      "simbiology_final": 9.64977545651676,
+      "absolute_final_difference": 0.007706374884808298,
+      "maximum_interpolated_trajectory_absolute_difference": 0.019273888944681516
+    },
+    "AMP": {
+      "roadrunner_final": 0.01166321832961868,
+      "simbiology_final": 0.0116787973334006,
+      "absolute_final_difference": 1.5579003781919162e-05,
+      "maximum_interpolated_trajectory_absolute_difference": 0.0019998964029329658
+    },
+    "GTP": {
+      "roadrunner_final": 2401.5295845054634,
+      "simbiology_final": 2401.53653226495,
+      "absolute_final_difference": 0.006947759486592986,
+      "maximum_interpolated_trajectory_absolute_difference": 16.04595225776393
+    },
+    "GDP": {
+      "roadrunner_final": 7.925632429024121,
+      "simbiology_final": 7.91536347859,
+      "absolute_final_difference": 0.010268950434121571,
+      "maximum_interpolated_trajectory_absolute_difference": 0.010268950434121571
+    },
+    "PO4": {
+      "roadrunner_final": 8375.157296635292,
+      "simbiology_final": 8375.37083654541,
+      "absolute_final_difference": 0.21353991011710605,
+      "maximum_interpolated_trajectory_absolute_difference": 0.5661914745310241
+    },
+    "PPi": {
+      "roadrunner_final": 4.806127747756875,
+      "simbiology_final": 4.80632776172653,
+      "absolute_final_difference": 0.00020001396965518836,
+      "maximum_interpolated_trajectory_absolute_difference": 0.00597840584603504
+    },
+    "CP": {
+      "roadrunner_final": 41721.00149711278,
+      "simbiology_final": 41720.9138253613,
+      "absolute_final_difference": 0.08767175148386741,
+      "maximum_interpolated_trajectory_absolute_difference": 28.265307467299863
+    },
+    "Cr": {
+      "roadrunner_final": 8250.618621273174,
+      "simbiology_final": 8250.72767514846,
+      "absolute_final_difference": 0.1090538752869179,
+      "maximum_interpolated_trajectory_absolute_difference": 0.5523713420047898
+    },
+    "Gly": {
+      "roadrunner_final": 262.15575983975856,
+      "simbiology_final": 262.10826396557,
+      "absolute_final_difference": 0.04749587418854162,
+      "maximum_interpolated_trajectory_absolute_difference": 0.06494579354875896
+    },
+    "Met": {
+      "roadrunner_final": 261.0335132673067,
+      "simbiology_final": 261.02558745691,
+      "absolute_final_difference": 0.007925810396727684,
+      "maximum_interpolated_trajectory_absolute_difference": 0.060244551254868384
+    },
+    "tRNAGlyGCC": {
+      "roadrunner_final": 0.00048297358183731567,
+      "simbiology_final": 0.000482038480528093,
+      "absolute_final_difference": 9.351013092226521e-07,
+      "maximum_interpolated_trajectory_absolute_difference": 0.04323596094031412
+    },
+    "tRNAfMetCAU": {
+      "roadrunner_final": 0.002927869981273798,
+      "simbiology_final": 0.00292727190143468,
+      "absolute_final_difference": 5.980798391180472e-07,
+      "maximum_interpolated_trajectory_absolute_difference": 0.007670051681368584
+    },
+    "GlytRNAGlyGCC": {
+      "roadrunner_final": 0.00016087125998143244,
+      "simbiology_final": 0.000160880738802253,
+      "absolute_final_difference": 9.478820820564343e-09,
+      "maximum_interpolated_trajectory_absolute_difference": 0.0002501661110816643
+    },
+    "MettRNAfMetCAU": {
+      "roadrunner_final": 3.4416022579713446e-05,
+      "simbiology_final": 3.44176451564022e-05,
+      "absolute_final_difference": 1.6225766887519879e-09,
+      "maximum_interpolated_trajectory_absolute_difference": 1.9390770874708023e-06
+    },
+    "fMettRNAfMetCAU": {
+      "roadrunner_final": 0.8764572926501915,
+      "simbiology_final": 0.876462305610296,
+      "absolute_final_difference": 5.012960104577857e-06,
+      "maximum_interpolated_trajectory_absolute_difference": 0.0002848771330222766
+    }
+  },
+  "limitations": [
+    "SBML source lacks sufficient unit declarations; both engines made dimensional assumptions.",
+    "The effective model is a stoichiometry-compatible derived copy plus author CSV initial/parameter overlay; the untouched source SBML has all-one placeholders.",
+    "Linear interpolation adds its own error; solver tolerances and nonnegativity handling differ.",
+    "Publisher Dataset S28 is unavailable, so no pointwise comparison against its trajectory was possible.",
+    "This is a numerical integrity comparison, not experimental validation or reduction acceptance."
+  ]
+}

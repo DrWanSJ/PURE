@@ -1,0 +1,17 @@
+{
+  "engine": "MATLAB SimBiology",
+  "solver": "ode15s",
+  "input": "effective_author_conditions.xml",
+  "input_status": "derived_compatibility_copy_with_author_csv_overlay",
+  "imported_species": 241,
+  "imported_reactions": 968,
+  "normalized_po4_coefficient": 2,
+  "initial_conditions_and_parameters": "provided_in_effective_sbml_from_author_csv",
+  "end_time_seconds": 1000,
+  "time_points": 435,
+  "product_sbml_id": "Pept0003",
+  "product_final": 5.1645826540185835,
+  "minimum_species_concentration": -3.7119096342269193E-12,
+  "dimensional_analysis_warning_count": 968,
+  "scientific_status": "integrity_cross_check_not_experimental_validation"
+}

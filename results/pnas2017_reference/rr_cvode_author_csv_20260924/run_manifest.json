@@ -1,0 +1,60 @@
+{
+  "author_csv_overlay": {
+    "ignored_author_csv_sentinel": {
+      "Name": "default",
+      "Value": 1
+    },
+    "mapping": "Initial CSV No./Name equals original SBML species order/ID; parameter CSV reaction_id_k1 equals original reaction order and local kinetic-law k1.",
+    "nonzero_k1_count": 483,
+    "positive_initial_species_count": 27,
+    "reaction_local_k1_count": 968,
+    "species_count": 241
+  },
+  "author_zip_members_sha256": {
+    "Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+    "Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+    "Simulate_fMGG_synthesis/fMGG_synthesis_Sample.m": "9db2acfd7c5961f2bc52766df75bca619af496f999ad92b9b29a77f4c7fa6fc0"
+  },
+  "benchmark": "PNAS2017_full_reference",
+  "dataset_s28_comparison": "unavailable_original_publisher_dataset_not_acquired",
+  "effective_author_conditions_sbml": {
+    "path": "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml",
+    "sha256": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+    "status": "derived_numeric_execution_input_not_canonical_source"
+  },
+  "execution_status": "completed",
+  "normalization_manifest": "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.provenance.json",
+  "normalized_sbml_sha256": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+  "observed_product_sbml_id": "Pept0003",
+  "scientific_status": "reference_integrity_diagnostic_not_experimental_validation",
+  "solver": {
+    "absolute_tolerance": 1e-09,
+    "author_solver": "MATLAB ode15s with NonNegative; CVODE does not assert identical nonnegative handling",
+    "maximum_num_steps": 20000,
+    "name": "libRoadRunner CVODE",
+    "relative_tolerance": 0.001,
+    "roadrunner_version": "2.10.0",
+    "stiff": true
+  },
+  "source_sha256": {
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+  },
+  "time_grid": {
+    "definition": "logspace(-4, 3, 200) from author fMGG_synthesis_Sample.m",
+    "end_seconds": 1000.0,
+    "points": 200,
+    "start_seconds": 0.0001
+  },
+  "trajectory": {
+    "minimum_species_concentration": -2.5155074350561843e-19,
+    "path": "results/pnas2017_reference/rr_cvode_author_csv_20260924/trajectory.csv",
+    "product_final": 5.164478733656283,
+    "product_initial": 0.0,
+    "product_maximum": 5.164478733656283,
+    "rows": 200,
+    "sha256": "5e2ed9c36afb14b69c8b7cf5da95faf45b51f7977c09dd2bfdad1a2d2604a0d4",
+    "species_columns": 241
+  }
+}

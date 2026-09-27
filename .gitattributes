@@ -56,7 +56,7 @@ scripts/build_rs_qssa_audit.py text eol=lf
 # Preserve third-party PNAS source bytes and hash-bound SBML execution inputs.
 references/PNAS2017_Matsuura/raw/** -text
 models/pnas2017_full_reference/original/** -text
-models/pnas2017_full_reference/normalized/** -text
+models/pnas2017_full_reference/normalized/** -text -diff
 models/pnas2017_full_reference/audit/*.csv -text
 docs/reduction/*.csv -text
-results/pnas2017_reference/** -text
+results/pnas2017_reference/** -text -diff

@@ -1,0 +1,21 @@
+{
+  "canonical_source_path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+  "canonical_source_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "converted_literal_count": 3854,
+  "generator_path": "scripts/run_pnas2017_reference.py",
+  "libsbml_version": "5.21.2",
+  "nonunit_literals": [
+    {
+      "reaction_id": "re0000000414",
+      "role": "product",
+      "source_math_literal": 2.0,
+      "species_id": "PO4"
+    }
+  ],
+  "normalized_path": "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml",
+  "normalized_sha256": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+  "source_species_reference_count": 3854,
+  "status": "derived_compatibility_copy_not_scientific_authority",
+  "stoichiometric_inventory_equal_after_roundtrip": true,
+  "transformation": "Every literal stoichiometryMath constant replaced by the identical numeric stoichiometry attribute; no reaction or species deleted."
+}
