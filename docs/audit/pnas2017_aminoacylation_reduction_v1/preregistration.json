@@ -1,0 +1,180 @@
+{
+  "schema": "pnas2017_aa_v1_preregistration/v1",
+  "generated_at_utc": "2026-09-25T16:02:22+00:00",
+  "binding_statement": "Prospective registration by local SHA-256 hash binding, created BEFORE the first formal full-vs-reduced comparison. This is explicitly NOT a git-signed or timestamped proof: no commit or push is authorized this round. Any post-hoc change to a hashed file invalidates this registration and must be re-frozen with user sign-off.",
+  "authorization_source": "user execution prompt of 2026-09-25 (sections VI-IX): A0/A1/A2/A3a authorized, A4 not authorized; formylation stays dynamic-coupled",
+  "git_context_informational": {
+    "branch": "research/pnas2017-full-network-reduction",
+    "head_before_freeze": "8710b85cac27dbe7a1a2805a8e7f79d87e3d51e6"
+  },
+  "thresholds_active": {
+    "T_A_exact_algebra_or_rewrite": {
+      "applies_to": [
+        "A1 pair-merge RHS identity",
+        "exact stoichiometric identities",
+        "conserved-moiety table derivations"
+      ],
+      "threshold": 1e-09,
+      "states": "arbitrary feasible states, not only the reference trajectory"
+    },
+    "T_B_independent_rhs_cross_check": {
+      "applies_to": [
+        "Python SBML-derived RHS vs author MATLAB full vector",
+        "generated pnas2017_aa_v1_rates vs SBML rate laws"
+      ],
+      "threshold": 1e-12
+    },
+    "T_C_approximate_state_trajectories": {
+      "applies_to": [
+        "A3a reduced vs full per-species trajectories (all 47 aminoacylation-relevant dynamic species incl. kept free MetAMP/GlyAMP)"
+      ],
+      "threshold": 0.01
+    },
+    "T_D_approximate_instantaneous_fluxes": {
+      "applies_to": [
+        "activation / transfer / charging process fluxes v(t)"
+      ],
+      "threshold": 0.05
+    },
+    "T_E_approximate_cumulative_resource_extents": {
+      "applies_to": [
+        "cumulative conversions: charging events, ATP->AMP+PPi consumption, AMP release, tRNA charging, fMGG output extent"
+      ],
+      "threshold": 0.01
+    },
+    "T_F_timescale_separation_screen": {
+      "applies_to": [
+        "epsilon = tau_fast/tau_slow over attracting modes only, structural/neutral modes excluded and listed"
+      ],
+      "threshold": 0.01,
+      "semantics": "screen only; passing T_F never certifies QSSA without the attracting-manifold and moving-manifold evidence declared in the derivation"
+    },
+    "T_G_conservation_balance_residual": {
+      "applies_to": [
+        "enzyme family totals, tRNA families, adenine/phosphate moiety ledgers in every formal run"
+      ],
+      "threshold": 1e-08
+    },
+    "T_H_A1_trajectory_identity": {
+      "applies_to": [
+        "full network vs A1 pair-merged representation, same physics",
+        "(A1 was recorded as RHS-validated only in v0; the trajectory test becomes formal in v1)"
+      ],
+      "threshold": 1e-06
+    }
+  },
+  "partition": {
+    "file": "docs/audit/pnas2017_aminoacylation_reduction_v1/candidate_partition.json",
+    "eliminated_count": 21,
+    "kept_dynamic_complexes": [
+      "GlyRS_AMP",
+      "GlyRS_GlyAMP",
+      "GlyRS_GlyAMP_PPi_tRNAGlyGCC",
+      "GlyRS_GlyAMP_tRNAGlyGCC",
+      "GlyRS_GlytRNAGlyGCC",
+      "MetRS_MetAMP",
+      "MetRS_MettRNAfMetCAU"
+    ],
+    "initial_layer_tau_fast_s": {
+      "MetRS": 0.006105,
+      "GlyRS": 0.009825,
+      "scoring_window": "post-layer t >= t0 + 5*tau_fast per acceptance_criteria"
+    }
+  },
+  "key_hashes": {
+    "acceptance_criteria.json": "6e549a29f4c05abe36f6d3120b1d1fee56aaa46f5d9662587845204bafbb89c1",
+    "candidate_partition.json": "521559bb4e703449135518ddc7b1aa772dd89de4180b379cc70ce10b20447b2f",
+    "cumdefs.json": "b2c5353a47b7f7ffeef132f98fc39b2be61a9a338434ffa73e9f07723060a554",
+    "negative_test_result.json": "cb150073239a52652eebae093b04556d6d712644188b1ccacb4cd31c47656b81",
+    "qssa_derivation.json": "f1749d8f9f200cc06df1c64ad03faf60c77c034bd6f034585a04f2f32ab5ec22",
+    "partition_verification.json": "3ef92b5eafd4719fb159e6836467528b4abc6466cbfb0a5062dd738c6f6ee4ee",
+    "run_pnas2017_aa_v1_formal.m": "a0395e4d0c506c20cbb99a3352fbc48a390fb0e99f6e5bb34e032390a3de94ae",
+    "compare_pnas2017_aa_v1_reduced.py": "1e30d400520c3f474efa58fbf5f9d24be05c1134c67939eb1a0963040a33c513",
+    "validator": "bbad06f9199489c20bbfa0de54f61a2666499d2d0b813352ad405dc803d55787",
+    "freeze_script_sha256": "5d3c9192c0912b850ca09f56e79f66dcedb7ba08f534c740a6b93481c0a91530",
+    "input_hashes_snapshot": "e72140e6799f63b2fbae621957a0e4f642159afd14c7a1a68f8eebcc366f307a",
+    "run_registry_snapshot": "0a026f2bb215f7f76eb5ef83359eecd360ea930d3cc75ed66a63de572a7c80e4"
+  },
+  "input_hashes_entry_count": 63,
+  "frozen_artifacts_sha256": {
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/acceptance_criteria.json": "6e549a29f4c05abe36f6d3120b1d1fee56aaa46f5d9662587845204bafbb89c1",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/candidate_partition.json": "521559bb4e703449135518ddc7b1aa772dd89de4180b379cc70ce10b20447b2f",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/cumdefs.json": "b2c5353a47b7f7ffeef132f98fc39b2be61a9a338434ffa73e9f07723060a554",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/dae_singular_mass_failure_v1.md": "cd73c1772f7fb493f4c08df8c76df19b79aec9fad3e49303e9367e8ad8827957",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/implementation_revision_v1.json": "38d0b00d1f5d08c32103f442662f31fae362942c38279794a8d8bb2f38b4f665",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/negative_test_result.json": "cb150073239a52652eebae093b04556d6d712644188b1ccacb4cd31c47656b81",
+    "docs/reduction/aminoacylation_review_response_v1.md": "a1e66df390ad8eecb12dc69e3a945239219b12f61cc01643f0be2e907228184b",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_glyamp_audit.json": "7248cf5268b35732ecda0c8e90ae5b73940e004804586ce910f7e910e11f3fed",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_ledger.csv": "866b955f792f270991cf434da45e9a8cf99247fdd1db8ddf9dc6f17d56bea402",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_ledger_tests.json": "1e9342c5ef045cb6a69e28858efd8e24c9f33e09d557bf121855fdcd58cb39bf",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_ownership.csv": "5e15f4bfe88484bf15444056c2558ca5f003fa150074df6f179ea295b4612f56",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_partition_closure.csv": "6addcb5ad89f229460b591943e9255259b240a6c9ec9e4350215ea9a14df904a",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_partition_relaxation.csv": "617ce78e2d0542f878b333fd526dd72c322eb97d6e3c2a58ae47183454093142",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_partition_spectrum.csv": "470d72a0d3486ebe0a05bf2a025b9a63c5037f59dd05f77dc388d4f5f04bcfce",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_partition_verification.json": "3ef92b5eafd4719fb159e6836467528b4abc6466cbfb0a5062dd738c6f6ee4ee",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_path_audit.csv": "a2d28418a1a89edd4f355d353e09cf3ac365d7840eefc513e29f6f8a86451ddd",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_closure.csv": "f76dcbdf35f9cea459fc02cc644e16483f87c173ce9c6cb259779352408c1de8",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_defect.csv": "066c42b3970e4484dc90b1dc59c14e58ee341869378293551a12e3ef9f544167",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_derivation.json": "f1749d8f9f200cc06df1c64ad03faf60c77c034bd6f034585a04f2f32ab5ec22",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_relaxation.csv": "51a5c4a8fd10d34bd259d9e16006fe91f875ab93b9abd5fa30989ad1c720eb21",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_spectrum.csv": "11b2ea53e3011a0d2f90d6a3dc6f90bc06d1bd8262832ce3357caae14fc2386b",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_structure.csv": "9afd97fe99996766545684f88edb0e26449d4e4757395fc619a42c6c5c8f9201",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_rates_manifest.json": "282fa987ebce983936134826361d7f7cae1e09268f6e3c33c346f95ea88db3bd",
+    "models/pnas2017_full_reference/audit/aminoacylation_v1_reference_chain.json": "c77fd33db5a2fd575835ed3e913129241c7fafc174d7b8bb88d68f2b3018836c",
+    "models/pnas2017_full_reference/audit/parameters.csv": "e867d756c1fb6efa5fa6005331fd77268686d307e7211a0d821a4e2d7ac3c546",
+    "models/pnas2017_full_reference/audit/reactions.csv": "b126937e15aca437e65f7b4f2d684ba60a1977c922df73a1b8e6cd5f13f1c191",
+    "models/pnas2017_full_reference/audit/species.csv": "23f2a7b87e1037b93a62881e69ba71e5a173bba07f31b8257006e298c53ab299",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv": "845aef2d0b9a46d8e1a2d2eb3b5acb3501bcf69b72229ad02a97b73a9363a929",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis.m": "5357b16387970d693f730102256c8d4ee30b91a318ad7482fc13e798834889f4",
+    "results/pnas2017_reference/2026-09-24_authors_model_v0/authors_model_trajectory.csv": "bbd18c3512045d542400a7509527e8154884a4f86e3a260673bb4c805f055801",
+    "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S0.json": "457db262a4050652c8339969210eac8c3ad52442c9b46b9e9e196c154856a3f5",
+    "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S1.json": "9dc662e1f26872ce99ebe001c2cc281b2d109c323dbff6c5c3c62333eb40391d",
+    "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S2.json": "c3848e5a6c246b24b046f5653fc4612b8c607b3ff7003ab29c39285f06f95e40",
+    "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S3.json": "e44ec050b0a042e9dc04e3f4a82559ac1f088062ac8cc20cd747bbc25639f451",
+    "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S4.json": "1514cdeaca02d6a4c061dfaaed9065ba6af2791a7b7a498e7359f46a176765db",
+    "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S5.json": "6a3117d873a8ab74ddfb79c72a5ad0204699287a77aa339326615fc48542a66f",
+    "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-S0.json": "e15ce4d8c93f414bf4a9a78b253297a24b2c126dd369cc2b619547ee6dca512b",
+    "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-S1.json": "405e3b807ef74b99953ecab6c7f881e2d0fc08175dece1cf1e9dfa7f33c63488",
+    "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-S2.json": "169ee9093385c485383554b4d46ad6bbb2388c52f25e8e0be2d83a2d2d4b7ff5",
+    "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-S3.json": "12dc0162c550a0deb93016b175001679e6b99ee10f3785dd168a8a11aeae9956",
+    "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-S4.json": "ce6d97c115bc9e07fb8af32248fb47f52f40adb00ebbf9d6137a57f0320cb04b",
+    "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-S5.json": "2de05fab8a46e5c7a8419992f372c3750256da22395439de0138a658edbaf0bd",
+    "results/pnas2017_reference/2026-09-25_aa_v1_reference_tight/authors_model_trajectory_tight.csv": "1477cfe9d96ffd1704d4885f02591e098fc7720c72382c85a25978ad4951095d",
+    "results/pnas2017_reference/2026-09-25_aa_v1_reference_tight/rhs_check_matlab_dx.csv": "155b1422ce7124e63a7a3e470fa3725b94dff92769c67b941afb37d80d93a814",
+    "results/pnas2017_reference/2026-09-25_aa_v1_reference_tight/rhs_check_states.csv": "b53ecc560cc454d453894cd09ea9af2688514e0ac961b24c65a2b41b4a2ece0d",
+    "results/pnas2017_reference/2026-09-25_aa_v1_reference_tight/tolerance_convergence.csv": "03353227b54080b53c3feba84af659ab1f7ff072937a5066e3a7c7100b7e0dfc",
+    "results/pnas2017_reference/2026-09-25_aa_v1_runner_selfcheck/refcheck_config.json": "00446ed716ab22da982d0a8d1ce8f264ca81531ee35f6472a704d061fcedc8ab",
+    "results/pnas2017_reference/2026-09-25_aa_v1_runner_selfcheck/refcheck_convergence_config.json": "c0dbbe65cfb60cedfd5f822e93c3e06a3a162b34abaaa7ca8598db8b24461755",
+    "results/pnas2017_reference/2026-09-25_aa_v1_runner_selfcheck/refcheck_convergence_run.csv": "b9eecf2871ceadf053d6445ee76d13e730e72648a31de0387e15e4abca4d6914",
+    "results/pnas2017_reference/2026-09-25_aa_v1_runner_selfcheck/refcheck_summary.json": "4c350e2fca200fec31fb20dc54a3516b5e8a723ef4fa71b6de253a553ac888ae",
+    "results/pnas2017_reference/2026-09-25_aa_v1_runner_selfcheck/refcheck_trajectory_with_extents.csv": "7af236250e42673793fec81d09286cfff2e6889bf466c18f3c68dc215a262de2",
+    "scripts/analyze_pnas2017_aminoacylation_reduction_v1.py": "cb3f03ae5e5e8fb3fab36e116505b0f1de91b75f0d27d45b33990bc4d1359709",
+    "scripts/analyze_pnas2017_aminoacylation_reduction_v1_partition.py": "46b4a41b29faa75ca299943624369484fae1283b3ee0af3c93fe1bf9fa435eae",
+    "scripts/analyze_pnas2017_aminoacylation_reduction_v1_qssa.py": "30b3c233f47d633a154477433b3c36a841bb7469607e2d4d45b074d39f6863a7",
+    "scripts/compare_pnas2017_aa_v1_reduced.py": "1e30d400520c3f474efa58fbf5f9d24be05c1134c67939eb1a0963040a33c513",
+    "scripts/generate_pnas2017_aa_v1_rates.py": "9a715a1ad5338fc7bf51bf6afeb41425b0380f31eaa7299f39770e7967633f8f",
+    "scripts/pnas2017_aa_v1_author_params.m": "9bc724bd081c74376c73695d4319ae04f3a9a7a32bcbaa03f15c9cfdffaa10c1",
+    "scripts/pnas2017_aa_v1_rates.m": "4b290c8da845d361b75bbf5aca1a0832a2956df71d34b8c46262159f6137369c",
+    "scripts/run_pnas2017_aa_v1_formal.m": "a0395e4d0c506c20cbb99a3352fbc48a390fb0e99f6e5bb34e032390a3de94ae",
+    "scripts/validate_pnas2017_aminoacylation_reduction_v1.py": "bbad06f9199489c20bbfa0de54f61a2666499d2d0b813352ad405dc803d55787"
+  },
+  "formal_runs_before_registration": [],
+  "formal_runs_registered": [
+    "FULL-S0",
+    "FULL-S1",
+    "FULL-S2",
+    "FULL-S3",
+    "FULL-S4",
+    "FULL-S5",
+    "RED-NEG1",
+    "RED-S0",
+    "RED-S1",
+    "RED-S2",
+    "RED-S3",
+    "RED-S4",
+    "RED-S5"
+  ]
+}

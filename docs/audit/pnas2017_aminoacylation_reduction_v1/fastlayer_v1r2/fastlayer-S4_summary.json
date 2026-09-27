@@ -1,0 +1,18 @@
+{
+  "exit_criterion_met": null,
+  "t_layer": 0.049124999999999995,
+  "exit_criterion": 1e-10,
+  "scaled_G_at_exit": 5.6135430548892881e-05,
+  "abs_G_at_exit": 0.092623460405673264,
+  "max_scaled_G_over_layer": 1,
+  "first_time_under": "1e-04:0.0274682, 1e-06:NaN, 1e-08:NaN, 1e-10:NaN",
+  "complex_drift_rate_at_exit": 70.54253845477696,
+  "branch_check_rel_diff": 0.019456254342988193,
+  "branch_check_max_abs": 0.00048267933120344289,
+  "closure_resolve_residual": 4.7947756875998948e-14,
+  "min_subsystem_conc": 0,
+  "extent_ids": ["Gly_release_re182", "Met_release_re224", "Gly_AMP_release_re145", "Met_AMP_release_re170", "Gly_adenylation_re140", "Met_adenylation_re165", "aa_ATP_consumption_total", "aa_PPi_production_total", "aa_AMP_production_total", "aa_ATP_net_consumption", "aa_PPi_net_production", "aa_AMP_net_production"],
+  "extents_at_exit": [0.00050145958988168603, 1.6545733966461364e-05, 0.00048418109584482056, 1.6133546167744907e-05, 0.0029825560756631181, 0.015004266308577633, 8.1768041992892471, 0.048769546485813255, 0.011740306738769491, 0.077614441177212085, 0.048769546485813275, 0.011740306738769494],
+  "horizon": 0.049125000000000002,
+  "n_output_points": 800
+}

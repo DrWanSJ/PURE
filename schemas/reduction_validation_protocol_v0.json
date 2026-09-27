@@ -1,0 +1,206 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/DrWanSJ/PURE/schemas/reduction_validation_protocol_v0.json",
+  "title": "PNAS 2017 reduction validation record (v0)",
+  "description": "One record per candidate reduction. Freezes the classification, mapping, assumptions, observables, accounting, error metrics, pre-registration, and status defined in docs/reduction/reduction_validation_protocol_v0.md. Field names are fixed; values may be null only where the protocol marks them optional for the chosen reduction_class.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "reduction_id",
+    "reduction_class",
+    "source_model",
+    "source_sha256",
+    "source_reaction_ids",
+    "source_species_ids",
+    "reduced_states",
+    "eliminated_states",
+    "reconstructed_states",
+    "observables",
+    "accounting_variables",
+    "assumptions",
+    "mathematical_identity_or_approximation",
+    "validity_domain",
+    "failure_domain",
+    "initialization_rule",
+    "solver_settings",
+    "metrics",
+    "thresholds",
+    "preregistration_commit_or_hash",
+    "human_decision_required",
+    "status"
+  ],
+  "properties": {
+    "reduction_id": {
+      "type": "string",
+      "description": "Stable identifier, e.g. AA-A1-GLY-REVERSIBLE-REWRITE."
+    },
+    "reduction_class": {
+      "type": "string",
+      "enum": [
+        "EXACT_REPRESENTATION_CHANGE",
+        "EXACT_CONSERVATION_REDUCTION",
+        "FUNCTIONAL_POOLING",
+        "QSSA",
+        "FAST_EQUILIBRIUM",
+        "CHEMOSTAT",
+        "CONSERVING_DEGRADATION_LUMP",
+        "OBSERVABLE_DEPENDENT"
+      ],
+      "description": "Primary class from protocol section 1. Classes A/B are exact; C-G are representational or approximate. Every record also carries an observable set (class H) via the observables/accounting_variables fields."
+    },
+    "exactness": {
+      "type": "string",
+      "enum": ["exact", "representational", "approximate"],
+      "description": "Derived from reduction_class but recorded explicitly so a reader cannot misclassify."
+    },
+    "source_model": {
+      "type": "string",
+      "description": "Path or id of the immutable model this reduction is derived from, e.g. models/pnas2017_full_reference/original/fMGG_synthesis.xml."
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA-256 over raw source-model bytes; must match data/provenance.csv."
+    },
+    "source_reaction_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Source reaction ids consumed/rewritten by the reduction."
+    },
+    "source_species_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "reduced_states": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "State coordinates retained in the reduced representation."
+    },
+    "eliminated_states": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "States removed from the explicit state vector (may be reconstructed)."
+    },
+    "reconstructed_states": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "States recovered from the reduced state via an explicit reconstruction/algebraic map. Empty if elimination is irreversible."
+    },
+    "reconstruction_map": {
+      "type": ["string", "object", "null"],
+      "description": "Explicit x = R(y, c) map or invariant basis (required non-null for classes B, C, D, E)."
+    },
+    "net_stoichiometry": {
+      "type": ["object", "null"],
+      "description": "For pathway lumping (G/A4): the derived net species->coefficient map, e.g. {\"ATP\":-1,\"AMP\":1,\"PPi\":1,...}."
+    },
+    "cancelled_intermediates": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Intermediates that cancel to zero net stoichiometry in a derived pathway."
+    },
+    "observables": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Class H. The reduction is valid ONLY relative to these."
+    },
+    "unrecoverable_observables": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Microstate observables destroyed by the reduction (required for C, D, G)."
+    },
+    "accounting_variables": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Ledger quantities that must be preserved (e.g. ATP, AMP, PPi, free tRNA, aminoacyl-tRNA, particle-number proxy)."
+    },
+    "assumptions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Every analytic assumption, stated. Empty array asserts exactness."
+    },
+    "mathematical_identity_or_approximation": {
+      "type": "string",
+      "description": "The precise identity or approximation claimed, in symbols/prose."
+    },
+    "validity_domain": {
+      "type": "object",
+      "description": "Declared domain of validity (state ranges, parameter regime, time window).",
+      "additionalProperties": true
+    },
+    "failure_domain": {
+      "type": ["object", "array", "string", "null"],
+      "description": "Where the reduction is known/expected to break (at least one negative or stress test is required for an approximate certificate)."
+    },
+    "initialization_rule": {
+      "type": "string",
+      "description": "How reduced/invariant initial conditions are derived from the full model (no clipping/projection)."
+    },
+    "solver_settings": {
+      "type": "object",
+      "description": "Solver, tolerances, time window, output grid, seed. Recorded for reproducibility.",
+      "additionalProperties": true
+    },
+    "metrics": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Error metrics computed (e.g. E_inf, integrated_abs, endpoint_rel, peak_time, flux, cumulative_extent)."
+    },
+    "thresholds": {
+      "type": "object",
+      "description": "Per-tier acceptance thresholds frozen before any reduced result is seen.",
+      "additionalProperties": true
+    },
+    "timescale_evidence": {
+      "type": ["object", "null"],
+      "description": "For D/E: fast & slow state lists, tau_fast, tau_slow, epsilon (structural modes excluded), moving-manifold residual. Report-only unless a manifold exists."
+    },
+    "preregistration_commit_or_hash": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9a-f]{6,64}$",
+      "description": "Commit or content hash the thresholds/equations were frozen at. Null only before PREREGISTERED."
+    },
+    "human_decision_required": {
+      "type": "boolean",
+      "description": "True if any scientific judgment the protocol reserves for a human is unresolved."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PROPOSED",
+        "PREREGISTERED",
+        "EXACT_VALIDATED",
+        "APPROXIMATELY_VALIDATED",
+        "FAILED",
+        "BLOCKED",
+        "HUMAN_REVIEW_REQUIRED"
+      ]
+    },
+    "status_scope_note": {
+      "type": "string",
+      "description": "Mandatory scope sentence; 'validated' may never appear without its class/domain scope."
+    },
+    "forbidden_claim_audit": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Which of the protocol section-5 forbidden claims were explicitly checked and NOT assumed."
+    },
+    "generated_utc": { "type": "string" },
+    "notes": { "type": ["string", "null"] }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "reduction_class": { "enum": ["EXACT_REPRESENTATION_CHANGE", "EXACT_CONSERVATION_REDUCTION"] } } },
+      "then": { "properties": { "assumptions": { "maxItems": 0 }, "exactness": { "const": "exact" } } }
+    },
+    {
+      "if": { "properties": { "status": { "enum": ["PREREGISTERED", "EXACT_VALIDATED", "APPROXIMATELY_VALIDATED"] } } },
+      "then": { "required": ["preregistration_commit_or_hash"] }
+    },
+    {
+      "if": { "properties": { "status": { "enum": ["APPROXIMATELY_VALIDATED"] } } },
+      "then": { "required": ["failure_domain", "unrecoverable_observables"], "properties": { "human_decision_required": { "const": false } } }
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "schema": "pnas2017_aa_v1_run_registry/v1r2",
+  "binding": "local SHA-256 config binding; executor is run_pnas2017_aa_v1_formal.m with the unmodified author model directory; RED runs use the v1r2 initializer",
+  "active_partition": {
+    "file": "docs/audit/pnas2017_aminoacylation_reduction_v1/candidate_partition_v1r1.json",
+    "sha256": "fea11a075e2c6c3b8e248ab63f187853141b1618e89b1c021470cbef4c2838f5",
+    "revision_id": "v1r1",
+    "initialization_revision": "v1r2"
+  },
+  "runner": {
+    "file": "scripts/run_pnas2017_aa_v1_formal.m",
+    "sha256": "ef23d94ee24b752a0d7f820c5a5011c0f590e4d7c5aa051b656766cd04952a7d"
+  },
+  "binit": {
+    "file": "docs/audit/pnas2017_aminoacylation_reduction_v1/binit_v1r2.json",
+    "sha256": "472e18100347ed236f67a6a5fadb2607aac9fd029f94bdf26f985681d97a02f6"
+  },
+  "full_run_reuse": {
+    "policy": "FULL-S0..S5 reference trajectories are reused byte-for-byte from the v1r1 formal cycle because the v1r2 revision changes no FULL-side input: the configs are byte-identical copies (sha256 equality asserted at freeze), the model/source/solver settings are identical, and validator check R30 verifies the equivalence against the v1r1 registry",
+    "v1_formal_registry_sha256": "6fb6667e5c801ed409d46f16f427925141325194668390d431a35d942c80fdcd",
+    "reused_runs": {
+      "S0": {
+        "config_sha256": "c06bb8070eadf7f1d628cb75297c1fe0ed65580cfcc75fab9af050893f053a4f",
+        "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S0.csv",
+        "trajectory_sha256": "7af236250e42673793fec81d09286cfff2e6889bf466c18f3c68dc215a262de2"
+      },
+      "S1": {
+        "config_sha256": "9b7de9f1d9fa1a260785f94d53be5cd4cbbf5c5d327289c3a084aacfee47442b",
+        "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S1.csv",
+        "trajectory_sha256": "21662802deeea6e899c232a58d0b4cae72419f253ca24fe826238bdc0efc4ca0"
+      },
+      "S2": {
+        "config_sha256": "465c3662bc8eacb4600ec17c0ccf7e8722b9a05b18c1b2e765a58169804bf82d",
+        "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S2.csv",
+        "trajectory_sha256": "38bf43f3b3564b5ca6cf53d85775aabff5f5c467b7e55f499e60c1be68f62e84"
+      },
+      "S3": {
+        "config_sha256": "4ebd26661e59212024b1d1f61a50cb66bc28d3fb4eb8dfe4de83aa7b5adef302",
+        "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S3.csv",
+        "trajectory_sha256": "8cd8af522b8f4a53ae7fe151f87503e10a4c78f06dcdc107c69ab04819434fe2"
+      },
+      "S4": {
+        "config_sha256": "93ac619adfbd2b3e670849da5777afb878e220a15d3cca2b55b0df225197d3ea",
+        "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S4.csv",
+        "trajectory_sha256": "669384f29c27b87e88c682331be59e34e44f05bcfdf3b5c843119e095f66a693"
+      },
+      "S5": {
+        "config_sha256": "9fe690e6d1166bbbd3d23bf2e08d7802b8340fd907c114d5e2678670cecc8a12",
+        "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S5.csv",
+        "trajectory_sha256": "dc4772beb24838fcf419a911e1ec3a973b1157360dcc90799135cbc9bb34d481"
+      }
+    }
+  },
+  "p2_fast_layer_diagnostics": {
+    "S0": {
+      "t_layer": 0.049124999999999995,
+      "exit_criterion": 1e-10,
+      "scaled_G_at_exit": 5.308403661577726e-05,
+      "branch_check_rel_diff": 0.01899172539819107,
+      "extents_at_exit": [
+        0.005173694529321559,
+        0.00016052173062528163,
+        0.004991481359087955,
+        0.0001565132262878023,
+        0.03215862225004753,
+        0.1549818062248368,
+        81.77091794085119,
+        0.48894835555859134,
+        0.11506947505818824,
+        0.7767281772083313,
+        0.4889483555585909,
+        0.11506947505818822
+      ],
+      "csv_sha256": "2be90f504c3b384ab3e7f93d02272902d8843bd7014a4348df20c900adf0be0e",
+      "summary_sha256": "2433145210c9b342f0db8c464487c8153d6e822a563add0875c167d2fccd4e18"
+    },
+    "S1": {
+      "t_layer": 0.049124999999999995,
+      "exit_criterion": 1e-10,
+      "scaled_G_at_exit": 0.0002498201537318607,
+      "branch_check_rel_diff": 0.01675033028520796,
+      "extents_at_exit": [
+        0.0027837223027470112,
+        0.0001390202393374148,
+        0.0026882582585602793,
+        0.0001351451670210394,
+        0.01738001159585467,
+        0.1303398321239434,
+        46.73704323885156,
+        0.4394377838588099,
+        0.09321389537880329,
+        0.6071258405027333,
+        0.43943778385880994,
+        0.09321389537880329
+      ],
+      "csv_sha256": "7a6c0cec55c3280f3026ffff0ddd2efe46edb8a981713b99e9df431c090f3ee5",
+      "summary_sha256": "c69fa1bf3f70a82a799a59263b5a00379e71a9abe61d4b56d12313fb6ef7b89a"
+    },
+    "S2": {
+      "t_layer": 0.049124999999999995,
+      "exit_criterion": 1e-10,
+      "scaled_G_at_exit": 9.478576536967375e-05,
+      "branch_check_rel_diff": 0.049187582959530025,
+      "extents_at_exit": [
+        0.0077056392645903264,
+        2.6700454082557662e-05,
+        0.0074142203981572355,
+        2.5934558039075906e-05,
+        0.1781627383669297,
+        0.37450208107272337,
+        75.50005394489563,
+        0.566099745133136,
+        0.04511512818604062,
+        0.793353433241473,
+        0.5660997451331361,
+        0.045115128186040604
+      ],
+      "csv_sha256": "461a442730068ea1a4446e8f3c1c72e056530b78f8f79c37e1ae7641c1b9b201",
+      "summary_sha256": "cdd14e42cbcd0da521d5cb8e4badb9ccf4bdd77cb4d985d3d92b071a010d6da5"
+    },
+    "S3": {
+      "t_layer": 0.049124999999999995,
+      "exit_criterion": 1e-10,
+      "scaled_G_at_exit": 7.152800395294153e-05,
+      "branch_check_rel_diff": 0.022683276774774913,
+      "extents_at_exit": [
+        0.07730326528501229,
+        0.0011361479465840502,
+        0.0736156090719419,
+        0.0011078914232002849,
+        0.884694119906777,
+        2.073834512957984,
+        792.2555102946517,
+        5.267525836215835,
+        0.9679846989541586,
+        7.884927889716666,
+        5.2675258362158335,
+        0.9679846989541586
+      ],
+      "csv_sha256": "40da72784b140cb213c2435d691bfcb81d365a9fb34c355a816a6b3c52595f33",
+      "summary_sha256": "6e73a7705f4f329cb0dcebf864968b5c4e478d4ba8a4a434a75d11e7f4f6cd79"
+    },
+    "S4": {
+      "t_layer": 0.049124999999999995,
+      "exit_criterion": 1e-10,
+      "scaled_G_at_exit": 5.613543054889288e-05,
+      "branch_check_rel_diff": 0.019456254342988193,
+      "extents_at_exit": [
+        0.000501459589881686,
+        1.6545733966461364e-05,
+        0.00048418109584482056,
+        1.6133546167744907e-05,
+        0.002982556075663118,
+        0.015004266308577633,
+        8.176804199289247,
+        0.048769546485813255,
+        0.01174030673876949,
+        0.07761444117721208,
+        0.048769546485813275,
+        0.011740306738769494
+      ],
+      "csv_sha256": "100aa296265c8feef1646d41e7eb3413680dec8265be7eb9c3974a0e0a1682b5",
+      "summary_sha256": "d1a062d486a556001224d26f97d30db3bac402d69da8a1e7233fea630f81ba59"
+    },
+    "S5": {
+      "t_layer": 0.049124999999999995,
+      "exit_criterion": 1e-10,
+      "scaled_G_at_exit": 5.308403661577726e-05,
+      "branch_check_rel_diff": 0.01899172539819107,
+      "extents_at_exit": [
+        0.005173694529321559,
+        0.00016052173062528163,
+        0.004991481359087955,
+        0.0001565132262878023,
+        0.03215862225004753,
+        0.1549818062248368,
+        81.77091794085119,
+        0.48894835555859134,
+        0.11506947505818824,
+        0.7767281772083313,
+        0.4889483555585909,
+        0.11506947505818822
+      ],
+      "csv_sha256": "f6e83e65bba7da2ce802de8a7c007f2338627a513532c1e36abd14e2920c1dce",
+      "summary_sha256": "2433145210c9b342f0db8c464487c8153d6e822a563add0875c167d2fccd4e18"
+    }
+  },
+  "runs": {
+    "FULL-S0": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S0.json",
+      "config_sha256": "c06bb8070eadf7f1d628cb75297c1fe0ed65580cfcc75fab9af050893f053a4f",
+      "status": "reused_from_v1r1_byte_identical_config",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S0.csv"
+    },
+    "FULL-S1": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S1.json",
+      "config_sha256": "9b7de9f1d9fa1a260785f94d53be5cd4cbbf5c5d327289c3a084aacfee47442b",
+      "status": "reused_from_v1r1_byte_identical_config",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S1.csv"
+    },
+    "FULL-S2": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S2.json",
+      "config_sha256": "465c3662bc8eacb4600ec17c0ccf7e8722b9a05b18c1b2e765a58169804bf82d",
+      "status": "reused_from_v1r1_byte_identical_config",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S2.csv"
+    },
+    "FULL-S3": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S3.json",
+      "config_sha256": "4ebd26661e59212024b1d1f61a50cb66bc28d3fb4eb8dfe4de83aa7b5adef302",
+      "status": "reused_from_v1r1_byte_identical_config",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S3.csv"
+    },
+    "FULL-S4": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S4.json",
+      "config_sha256": "93ac619adfbd2b3e670849da5777afb878e220a15d3cca2b55b0df225197d3ea",
+      "status": "reused_from_v1r1_byte_identical_config",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S4.csv"
+    },
+    "FULL-S5": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S5.json",
+      "config_sha256": "9fe690e6d1166bbbd3d23bf2e08d7802b8340fd907c114d5e2678670cecc8a12",
+      "status": "reused_from_v1r1_byte_identical_config",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S5.csv"
+    },
+    "RED-v1r2-NEG1": {
+      "config": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-NEG1.json",
+      "config_sha256": "1b80b8057f593353d214239bb1c5a236d260b4fe99c32848491cc1f4e2f885d3",
+      "status": "planned",
+      "trajectory": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/trajectories/RED-v1r2-NEG1.csv",
+      "expected_verdict": "FAIL (pipeline negative control)"
+    },
+    "RED-v1r2-S0": {
+      "config": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-S0.json",
+      "config_sha256": "d0cc57b5aa4011b8be0c2397f1e09d74e2a2696a26a983a7cfedbd2a039fc262",
+      "status": "planned",
+      "trajectory": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/trajectories/RED-v1r2-S0.csv"
+    },
+    "RED-v1r2-S1": {
+      "config": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-S1.json",
+      "config_sha256": "3c8b8ff77a7d0fdb1da1254b85693a2edc80f241e00a5de536562e3c27aead39",
+      "status": "planned",
+      "trajectory": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/trajectories/RED-v1r2-S1.csv"
+    },
+    "RED-v1r2-S2": {
+      "config": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-S2.json",
+      "config_sha256": "062ff65fb0fa7dbc8880e1b0bfea0ed29e144777badb822f3c5e1e2fd7a36fe5",
+      "status": "planned",
+      "trajectory": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/trajectories/RED-v1r2-S2.csv"
+    },
+    "RED-v1r2-S3": {
+      "config": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-S3.json",
+      "config_sha256": "8b1aaaf17a0dc9f2cea99443ffb8b7763338f654d8dd8f191b8d77e2bdc63b6d",
+      "status": "planned",
+      "trajectory": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/trajectories/RED-v1r2-S3.csv"
+    },
+    "RED-v1r2-S4": {
+      "config": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-S4.json",
+      "config_sha256": "b100b5ad5c8e706906a032c900d6cb2bb01ec94b565b90db899547f973dee753",
+      "status": "planned",
+      "trajectory": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/trajectories/RED-v1r2-S4.csv"
+    },
+    "RED-v1r2-S5": {
+      "config": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-S5.json",
+      "config_sha256": "8a634165ba10148e110d7b631c149f73944fa620e3e5dc64ecdf89f726cca76d",
+      "status": "planned",
+      "trajectory": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/trajectories/RED-v1r2-S5.csv"
+    }
+  }
+}

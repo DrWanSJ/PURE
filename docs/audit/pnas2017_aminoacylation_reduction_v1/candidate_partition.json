@@ -1,0 +1,101 @@
+{
+  "schema": "pnas2017_aminoacylation_v1_candidate_partition/v1",
+  "decided": "2026-09-25",
+  "decision_rule": {
+    "summary": "Selective enzyme-bound-state QSSA (A3a). A complex is ELIMINATED (made algebraic via 0 = dC_i/dt of the author RHS) iff its instantaneous closure defect along the full reference trajectory, normalized by its own production scale and evaluated at post-layer times only, stays at or below the registered screen threshold T_F = 0.01. Otherwise it is KEPT dynamic. Partial elimination is an authorized outcome.",
+    "defect_metric": "|dC_i/dt| at the reference state divided by sum of production-side fluxes into complex i (author rate laws, audit/reactions.csv rate_law with k1 from audit/parameters.csv); never normalized by net flux",
+    "post_layer_window": "t >= 5 * tau_fast(enzyme), tau_fast = max over derivation samples of tau_from_slowest_attracting_s in aminoacylation_v1_qssa_relaxation.csv",
+    "tau_fast_s": { "MetRS": 0.5908, "GlyRS": 0.04231 },
+    "screen_threshold_T_F": 0.01,
+    "evidence_source": [
+      "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_defect.csv",
+      "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_relaxation.csv",
+      "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_closure.csv",
+      "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_spectrum.csv",
+      "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_structure.csv"
+    ]
+  },
+  "MetRS": {
+    "eliminated": [
+      "MetRS_AMP",
+      "MetRS_AMP_MettRNAfMetCAU",
+      "MetRS_ATP",
+      "MetRS_ATP_tRNAfMetCAU",
+      "MetRS_Met",
+      "MetRS_MetAMP_PPi",
+      "MetRS_MetAMP_PPi_tRNAfMetCAU",
+      "MetRS_MetAMP_tRNAfMetCAU",
+      "MetRS_Met_ATP",
+      "MetRS_Met_ATP_tRNAfMetCAU",
+      "MetRS_Met_tRNAfMetCAU",
+      "MetRS_tRNAfMetCAU"
+    ],
+    "kept_dynamic": {
+      "MetRS_MetAMP": { "max_post_layer_rel_defect": 0.124, "violation_window_s": [5.17, 11.6], "max_occupancy_frac_pool": 0.947 },
+      "MetRS_MettRNAfMetCAU": { "max_post_layer_rel_defect": 1.90, "violation_window_s": [2.12, 24.1], "note": "formylation-coupled product complex; drains with MettRNAfMetCAU over t~4-12 s; O(1) defect is a genuine slow-mode signature, not numerical" }
+    }
+  },
+  "GlyRS": {
+    "eliminated": [
+      "GlyRS_AMP_GlytRNAGlyGCC",
+      "GlyRS_ATP",
+      "GlyRS_ATP_tRNAGlyGCC",
+      "GlyRS_Gly",
+      "GlyRS_GlyAMP_PPi",
+      "GlyRS_Gly_ATP",
+      "GlyRS_Gly_ATP_tRNAGlyGCC",
+      "GlyRS_Gly_tRNAGlyGCC",
+      "GlyRS_tRNAGlyGCC"
+    ],
+    "kept_dynamic": {
+      "GlyRS_AMP": { "max_post_layer_rel_defect": 0.0114, "violation_window_s": [2.93, 3.18] },
+      "GlyRS_GlyAMP": { "max_post_layer_rel_defect": 0.205, "violation_window_s": [2.3, 3.45], "max_occupancy_frac_pool": 0.951 },
+      "GlyRS_GlyAMP_PPi_tRNAGlyGCC": { "max_post_layer_rel_defect": 0.0184, "violation_window_s": [2.71, 3.18] },
+      "GlyRS_GlyAMP_tRNAGlyGCC": { "max_post_layer_rel_defect": 0.102, "violation_window_s": [2.71, 3.45] },
+      "GlyRS_GlytRNAGlyGCC": { "max_post_layer_rel_defect": 0.033, "violation_window_s": [2.71, 3.45] }
+    }
+  },
+  "eliminated_complexes": [
+    "GlyRS_AMP_GlytRNAGlyGCC", "GlyRS_ATP", "GlyRS_ATP_tRNAGlyGCC", "GlyRS_Gly",
+    "GlyRS_GlyAMP_PPi", "GlyRS_Gly_ATP", "GlyRS_Gly_ATP_tRNAGlyGCC",
+    "GlyRS_Gly_tRNAGlyGCC", "GlyRS_tRNAGlyGCC",
+    "MetRS_AMP", "MetRS_AMP_MettRNAfMetCAU", "MetRS_ATP", "MetRS_ATP_tRNAfMetCAU",
+    "MetRS_Met", "MetRS_MetAMP_PPi", "MetRS_MetAMP_PPi_tRNAfMetCAU",
+    "MetRS_MetAMP_tRNAfMetCAU", "MetRS_Met_ATP", "MetRS_Met_ATP_tRNAfMetCAU",
+    "MetRS_Met_tRNAfMetCAU", "MetRS_tRNAfMetCAU"
+  ],
+  "kept_dynamic": [
+    "GlyRS_AMP", "GlyRS_GlyAMP", "GlyRS_GlyAMP_PPi_tRNAGlyGCC",
+    "GlyRS_GlyAMP_tRNAGlyGCC", "GlyRS_GlytRNAGlyGCC",
+    "MetRS_MetAMP", "MetRS_MettRNAfMetCAU",
+    "MetAMP", "GlyAMP"
+  ],
+  "outside_pool": {
+    "free_enzyme_reconstruction": "MetRS and GlyRS (free forms) remain DYNAMIC states in the author RHS; no explicit pool-total substitution is made (A2 reporting variables are derived downstream, the DAE never reparameterizes the author model)",
+    "kept_by_mandate": ["MetAMP", "GlyAMP"],
+    "all_other_species": "unchanged dynamic states (241 total states; 21 algebraic, 220 dynamic)",
+    "formylation_subsystem": "untouched; MettRNAfMetCAU and all FMet_tRNASynthesis species remain dynamic and couple the networks"
+  },
+  "verification_required_before_freeze": "aminoacylation_v1_partition_* artifacts: algebraic well-posedness (nonsingular eliminated-block Jacobian), branch uniqueness under multi-start, attractivity, frozen-slow relaxation, and branch-vs-reference occupancy distance for the 21-eliminated subsystem",
+  "verification_result": {
+    "status": "PASS",
+    "date": "2026-09-25",
+    "artifacts": [
+      "models/pnas2017_full_reference/audit/aminoacylation_v1_partition_closure.csv",
+      "models/pnas2017_full_reference/audit/aminoacylation_v1_partition_spectrum.csv",
+      "models/pnas2017_full_reference/audit/aminoacylation_v1_partition_relaxation.csv",
+      "models/pnas2017_full_reference/audit/aminoacylation_v1_partition_verification.json"
+    ],
+    "evidence": {
+      "well_posed_all_samples": true,
+      "start_agreement": "<=3.5e-14 relative to pool wherever >=2 starts converged",
+      "max_scaled_algebraic_residual": "<=1e-10 by construction of convergence test; final residuals <=1e-13 observed",
+      "spectrum": "all 12/12 (MetRS) and 9/9 (GlyRS) eliminated-block modes attracting at every sample; the non-attracting mode of the FULL 14-dim block at t=1e-4 disappears once the slow kept complexes are removed from the algebraic block - direct confirmation that the kept states carry the slow directions",
+      "restricted_block_tau_fast_s": { "MetRS": 0.006105, "GlyRS": 0.009825 },
+      "relaxation": "30/30 perturbations reach the branch; worst 1%-time 0.032 s; deepest negative excursion -1.2e-24 (round-off level, recorded not clipped)",
+      "post_layer_branch_reference_match": "max per-complex |C_branch - C_ref|/e_pool <= 1.12e-3 at all post-layer samples (threshold 0.01); t=1e-4 and MetRS t=5.7e-3 fall inside the registered [t0, t0+5*tau_fast] initial-layer window and are scored by the layer rules instead"
+    },
+    "scoring_window_update": "formal-run layer windows use the RESTRICTED-block tau_fast above (5*tau <= 0.049 s), superseding the conservative full-block values used for the screen"
+  },
+  "formal_acceptance_owner": "Stage 3 full-network coupled comparison against acceptance_criteria.json tiers; this partition only scopes the candidate"
+}

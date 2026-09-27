@@ -1,0 +1,338 @@
+{
+  "schema": "pnas2017_aa_v1r2_binit/v1",
+  "created": "2026-09-26",
+  "derivation": "mechanical: per-species moiety contents solved in exact rational arithmetic from the 138-reaction aminoacylation ledger deltas with free-species anchors; verified against all 138 subsystem deltas and, where classified global, against the full 968-reaction author stoichiometry",
+  "moiety_solve_dof_after_anchors": {
+    "methionyl": 0,
+    "glycyl": 0,
+    "adenosine": 0,
+    "phosphorus": 0,
+    "trna_fmet": 0,
+    "trna_gly": 0,
+    "enzyme_metrs": 0,
+    "enzyme_glyrs": 0
+  },
+  "rows": {
+    "MetRS_total": {
+      "semantic_name": "MetRS_total",
+      "moiety": [
+        "scope",
+        "MetRS_moiety_total"
+      ],
+      "nonzero_species_count": 15,
+      "class": "EXACT_FAST_SUBSYSTEM_INVARIANT_AND_GLOBAL",
+      "global_violations": 0,
+      "global_violating_reactions": [],
+      "in_fast_subsystem_left_nullspace": false,
+      "row_times_S_fast_is_zero": false
+    },
+    "GlyRS_total": {
+      "semantic_name": "GlyRS_total",
+      "moiety": [
+        "scope",
+        "GlyRS_moiety_total"
+      ],
+      "nonzero_species_count": 15,
+      "class": "EXACT_FAST_SUBSYSTEM_INVARIANT_AND_GLOBAL",
+      "global_violations": 0,
+      "global_violating_reactions": [],
+      "in_fast_subsystem_left_nullspace": false,
+      "row_times_S_fast_is_zero": false
+    },
+    "tRNAfMetCAU_total": {
+      "semantic_name": "tRNAfMetCAU_total",
+      "moiety": [
+        "scope",
+        "tRNAfMetCAU_family_total"
+      ],
+      "nonzero_species_count": 44,
+      "class": "EXACT_FAST_SUBSYSTEM_INVARIANT_AND_GLOBAL",
+      "global_violations": 0,
+      "global_violating_reactions": [],
+      "in_fast_subsystem_left_nullspace": true,
+      "row_times_S_fast_is_zero": true
+    },
+    "tRNAGlyGCC_total": {
+      "semantic_name": "tRNAGlyGCC_total",
+      "moiety": [
+        "scope",
+        "tRNAGlyGCC_family_total"
+      ],
+      "nonzero_species_count": 58,
+      "class": "EXACT_FAST_SUBSYSTEM_INVARIANT_AND_GLOBAL",
+      "global_violations": 0,
+      "global_violating_reactions": [],
+      "in_fast_subsystem_left_nullspace": true,
+      "row_times_S_fast_is_zero": true
+    },
+    "Met_total": {
+      "semantic_name": "Met_total",
+      "moiety": [
+        "solved",
+        "methionyl"
+      ],
+      "nonzero_species_count": 13,
+      "class": "RESOURCE_ACCOUNTING_ONLY",
+      "global_violations": 6,
+      "global_violating_reactions": [
+        "re0000000288",
+        "re0000000289",
+        "re0000000420",
+        "re0000000421",
+        "re0000000422",
+        "re0000000423"
+      ],
+      "in_fast_subsystem_left_nullspace": false,
+      "row_times_S_fast_is_zero": false
+    },
+    "Gly_total": {
+      "semantic_name": "Gly_total",
+      "moiety": [
+        "solved",
+        "glycyl"
+      ],
+      "nonzero_species_count": 13,
+      "class": "RESOURCE_ACCOUNTING_ONLY",
+      "global_violations": 2,
+      "global_violating_reactions": [
+        "re0000000275",
+        "re0000000276"
+      ],
+      "in_fast_subsystem_left_nullspace": false,
+      "row_times_S_fast_is_zero": false
+    },
+    "adenine_moiety_total": {
+      "semantic_name": "adenine_moiety_total",
+      "moiety": [
+        "solved",
+        "adenosine"
+      ],
+      "nonzero_species_count": 24,
+      "class": "RESOURCE_ACCOUNTING_ONLY",
+      "global_violations": 16,
+      "global_violating_reactions": [
+        "re0000000340",
+        "re0000000341",
+        "re0000000344",
+        "re0000000345",
+        "re0000000355",
+        "re0000000356",
+        "re0000000359",
+        "re0000000360",
+        "re0000000380",
+        "re0000000381",
+        "re0000000382",
+        "re0000000383"
+      ],
+      "in_fast_subsystem_left_nullspace": true,
+      "row_times_S_fast_is_zero": true
+    },
+    "declared_phosphate_equivalent_total": {
+      "semantic_name": "declared_phosphate_equivalent_total",
+      "moiety": [
+        "solved",
+        "phosphorus"
+      ],
+      "nonzero_species_count": 25,
+      "class": "RESOURCE_ACCOUNTING_ONLY",
+      "global_violations": 18,
+      "global_violating_reactions": [
+        "re0000000340",
+        "re0000000341",
+        "re0000000344",
+        "re0000000345",
+        "re0000000355",
+        "re0000000356",
+        "re0000000359",
+        "re0000000360",
+        "re0000000380",
+        "re0000000381",
+        "re0000000382",
+        "re0000000383"
+      ],
+      "in_fast_subsystem_left_nullspace": true,
+      "row_times_S_fast_is_zero": true
+    },
+    "guanine_check_total": {
+      "semantic_name": "guanine_check_total",
+      "moiety": "guanine-scope-check",
+      "nonzero_species_count": 77,
+      "class": "RESOURCE_ACCOUNTING_ONLY",
+      "note": "verification-only row: no movable species carries guanine",
+      "global_violations": 0
+    }
+  },
+  "movable_columns": [
+    "GlyRS_AMP_GlytRNAGlyGCC",
+    "GlyRS_ATP",
+    "GlyRS_ATP_tRNAGlyGCC",
+    "GlyRS_Gly",
+    "GlyRS_GlyAMP_PPi",
+    "GlyRS_Gly_ATP",
+    "GlyRS_Gly_ATP_tRNAGlyGCC",
+    "GlyRS_Gly_tRNAGlyGCC",
+    "GlyRS_tRNAGlyGCC",
+    "MetRS_AMP",
+    "MetRS_AMP_MettRNAfMetCAU",
+    "MetRS_ATP",
+    "MetRS_ATP_tRNAfMetCAU",
+    "MetRS_Met",
+    "MetRS_MetAMP_PPi",
+    "MetRS_MetAMP_PPi_tRNAfMetCAU",
+    "MetRS_MetAMP_tRNAfMetCAU",
+    "MetRS_Met_ATP",
+    "MetRS_Met_ATP_tRNAfMetCAU",
+    "MetRS_Met_tRNAfMetCAU",
+    "MetRS_tRNAfMetCAU",
+    "tRNAfMetCAU",
+    "tRNAGlyGCC",
+    "Met",
+    "Gly",
+    "ATP",
+    "PPi"
+  ],
+  "movable_free_pools": [
+    "tRNAfMetCAU",
+    "tRNAGlyGCC",
+    "Met",
+    "Gly",
+    "ATP",
+    "PPi"
+  ],
+  "additional_condition": "delta_AMP = 0: free AMP is a kept dynamic state of the registered reduced formulation with author initial value 0; the adenine/phosphate token rows then determine delta_ATP = -(adenosine content of the eliminated complexes) and delta_PPi = (PPi content released from the eliminated complexes, i.e. the bare-adenylate complexes). The residual token-null direction (ATP +t, AMP -t, PPi -t) is excluded: t < 0 would debit free AMP below its author value 0 (infeasible), t > 0 would move a kept dynamic state off its registered initial condition.",
+  "debit_matrix": {
+    "tRNAfMetCAU_total": {
+      "free_pool": "tRNAfMetCAU",
+      "coefficients": {
+        "MetRS_AMP_MettRNAfMetCAU": "-1",
+        "MetRS_ATP_tRNAfMetCAU": "-1",
+        "MetRS_MetAMP_PPi_tRNAfMetCAU": "-1",
+        "MetRS_MetAMP_tRNAfMetCAU": "-1",
+        "MetRS_Met_ATP_tRNAfMetCAU": "-1",
+        "MetRS_Met_tRNAfMetCAU": "-1",
+        "MetRS_tRNAfMetCAU": "-1"
+      }
+    },
+    "tRNAGlyGCC_total": {
+      "free_pool": "tRNAGlyGCC",
+      "coefficients": {
+        "GlyRS_AMP_GlytRNAGlyGCC": "-1",
+        "GlyRS_ATP_tRNAGlyGCC": "-1",
+        "GlyRS_Gly_ATP_tRNAGlyGCC": "-1",
+        "GlyRS_Gly_tRNAGlyGCC": "-1",
+        "GlyRS_tRNAGlyGCC": "-1"
+      }
+    },
+    "Met_total": {
+      "free_pool": "Met",
+      "coefficients": {
+        "MetRS_AMP_MettRNAfMetCAU": "-1",
+        "MetRS_Met": "-1",
+        "MetRS_MetAMP_PPi": "-1",
+        "MetRS_MetAMP_PPi_tRNAfMetCAU": "-1",
+        "MetRS_MetAMP_tRNAfMetCAU": "-1",
+        "MetRS_Met_ATP": "-1",
+        "MetRS_Met_ATP_tRNAfMetCAU": "-1",
+        "MetRS_Met_tRNAfMetCAU": "-1"
+      }
+    },
+    "Gly_total": {
+      "free_pool": "Gly",
+      "coefficients": {
+        "GlyRS_AMP_GlytRNAGlyGCC": "-1",
+        "GlyRS_Gly": "-1",
+        "GlyRS_GlyAMP_PPi": "-1",
+        "GlyRS_Gly_ATP": "-1",
+        "GlyRS_Gly_ATP_tRNAGlyGCC": "-1",
+        "GlyRS_Gly_tRNAGlyGCC": "-1"
+      }
+    },
+    "adenine_moiety_total": {
+      "free_pool": "ATP",
+      "coefficients": {
+        "GlyRS_AMP_GlytRNAGlyGCC": "-1",
+        "GlyRS_ATP": "-1",
+        "GlyRS_ATP_tRNAGlyGCC": "-1",
+        "GlyRS_GlyAMP_PPi": "-1",
+        "GlyRS_Gly_ATP": "-1",
+        "GlyRS_Gly_ATP_tRNAGlyGCC": "-1",
+        "MetRS_AMP": "-1",
+        "MetRS_AMP_MettRNAfMetCAU": "-1",
+        "MetRS_ATP": "-1",
+        "MetRS_ATP_tRNAfMetCAU": "-1",
+        "MetRS_MetAMP_PPi": "-1",
+        "MetRS_MetAMP_PPi_tRNAfMetCAU": "-1",
+        "MetRS_MetAMP_tRNAfMetCAU": "-1",
+        "MetRS_Met_ATP": "-1",
+        "MetRS_Met_ATP_tRNAfMetCAU": "-1"
+      }
+    },
+    "declared_phosphate_equivalent_total": {
+      "free_pool": "PPi",
+      "coefficients": {
+        "GlyRS_AMP_GlytRNAGlyGCC": "1",
+        "MetRS_AMP": "1",
+        "MetRS_AMP_MettRNAfMetCAU": "1",
+        "MetRS_MetAMP_tRNAfMetCAU": "1"
+      }
+    }
+  },
+  "phase_2c_regression_v1r1_phantom": {
+    "MetRS_total": {
+      "b_x_v1r1_t0": 0.43999999999999995,
+      "b_x_author_t0": 0.44,
+      "excess": -5.551115123125783e-17,
+      "relative_excess": -1.261617073437678e-16
+    },
+    "GlyRS_total": {
+      "b_x_v1r1_t0": 0.35,
+      "b_x_author_t0": 0.35,
+      "excess": 0.0,
+      "relative_excess": 0.0
+    },
+    "tRNAfMetCAU_total": {
+      "b_x_v1r1_t0": 3.78252037346295,
+      "b_x_author_t0": 3.54767184,
+      "excess": 0.23484853346294976,
+      "relative_excess": 0.06619793037648876
+    },
+    "tRNAGlyGCC_total": {
+      "b_x_v1r1_t0": 3.872633940086631,
+      "b_x_author_t0": 3.54767184,
+      "excess": 0.3249621000866312,
+      "relative_excess": 0.09159869197107903
+    },
+    "Met_total": {
+      "b_x_v1r1_t0": 300.3672898510101,
+      "b_x_author_t0": 300.0,
+      "excess": 0.3672898510101277,
+      "relative_excess": 0.0012242995033670922
+    },
+    "Gly_total": {
+      "b_x_v1r1_t0": 300.3335634179337,
+      "b_x_author_t0": 300.0,
+      "excess": 0.3335634179337035,
+      "relative_excess": 0.0011118780597790116
+    },
+    "adenine_moiety_total": {
+      "b_x_v1r1_t0": 3750.7308506982695,
+      "b_x_author_t0": 3750.0,
+      "excess": 0.730850698269478,
+      "relative_excess": 0.00019489351953852748
+    },
+    "declared_phosphate_equivalent_total": {
+      "b_x_v1r1_t0": 11251.99016536969,
+      "b_x_author_t0": 11250.0,
+      "excess": 1.9901653696906578,
+      "relative_excess": 0.00017690358841694737
+    },
+    "guanine_check_total": {
+      "b_x_v1r1_t0": 2500.0,
+      "b_x_author_t0": 2500.0,
+      "excess": 0.0,
+      "relative_excess": 0.0
+    }
+  },
+  "regression_verdict": "V1R1_PHANTOM_REPRODUCED",
+  "matrix_csv": "docs/audit/pnas2017_aminoacylation_reduction_v1/binit_v1r2_matrix.csv"
+}

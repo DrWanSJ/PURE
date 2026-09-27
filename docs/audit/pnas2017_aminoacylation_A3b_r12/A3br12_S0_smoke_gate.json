@@ -1,0 +1,25 @@
+{
+  "schema": "pnas2017_aa_a3b_r12_smoke_gate/v1",
+  "candidate": "A3b-r12 (restricted 9-state fast set, total-coordinate realization)",
+  "date": "2026-09-26",
+  "run": "A3b-r12-S0-smoke",
+  "condition": "reference (S0), unmodified author initial values",
+  "pre_qssa_B1_B10": "11/11 PASS",
+  "t0_inventory_max_absdiff": 1.455e-11,
+  "t0_closure_scaled_residual": 6.278e-13,
+  "outcome": "BLOCKED_NUMERICAL_COORDINATE_DEFECT",
+  "integrated_window": "[1e-4, 10] s completed and validated (~19 s wall); the full window to t=1000 s does not complete at the registered tolerances (solver step collapse for t >~ 10 s)",
+  "anti_sliding_validation": "exact ledgers hold to 1e-10..1e-8 full-window and 1e-14 post-layer; the A3a sliding identity is ABSENT (coherence <= 1e-9 on every protected row)",
+  "closure_accuracy": "9 algebraic occupancies track FULL to 3-5 significant digits at every diagnostic checkpoint through the GlyAMP-sequestration transient",
+  "cause": "the audited binit Met/Gly material and scope adenine coordinate rows cut fast EFTu-/MK-binding equilibria (bound carriers outside the row scopes); the rows carry fast dynamics (0.34/0.92/0.039 uM/s) against 3e-8 error-test tolerances -> ode15s step collapse",
+  "remedy_requires_human_review": "token-closed methionyl/glycyl/adenosyl ledger rows (analogs of the registered tRNA-family rows); their derivation is underdetermined by the audited moiety evidence (27-dim left nullspace; binit anchors pin only the 47 subsystem species) -> a coordinate choice requiring human sign-off per the stop rules",
+  "evidence": [
+    "docs/audit/pnas2017_aminoacylation_A3b_r12/r12_investigation.md",
+    "docs/audit/pnas2017_aminoacylation_A3b_r12/A3br12_preqssa_verification.log",
+    "docs/audit/pnas2017_aminoacylation_A3b_r12/A3br12_antisliding_validation.json",
+    "docs/audit/pnas2017_aminoacylation_A3b_r12/A3br12_closure_diagnosis.log",
+    "docs/audit/pnas2017_aminoacylation_A3b_r12/A3br12_S0_smoke_runner_log.txt",
+    "docs/audit/pnas2017_aminoacylation_A3b_r12/A3br12_evidence_trajectory_S0_to10s.csv"
+  ],
+  "no_formal_runs": true
+}

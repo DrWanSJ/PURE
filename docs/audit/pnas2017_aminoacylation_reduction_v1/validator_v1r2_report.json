@@ -1,0 +1,74 @@
+{
+  "schema": "pnas2017_aa_v1r2_validator/v1",
+  "created": "2026-09-26",
+  "pass": 13,
+  "fail": 0,
+  "skip": 0,
+  "checks": [
+    {
+      "check": "R22_v1r2_parent_revision_and_hash_chain_intact",
+      "status": "PASS",
+      "detail": "implrev/binit/partition/parent hashes + runs_before=[]"
+    },
+    {
+      "check": "R23_21state_partition_identical_to_v1r1",
+      "status": "PASS",
+      "detail": "registry configs + both partition records"
+    },
+    {
+      "check": "R24_acceptance_criteria_identical",
+      "status": "PASS",
+      "detail": "sha 6e549a29... (frozen v1r1 value)"
+    },
+    {
+      "check": "R25_binit_reconstructs_v1r1_phantom",
+      "status": "PASS",
+      "detail": "tRNA/phosphate excess present, enzyme exact (recomputed)"
+    },
+    {
+      "check": "R26_v1r2_projected_initial_inventories_match_author",
+      "status": "PASS",
+      "detail": "worst relative 6.06e-16 over 9 rows x 6 conditions; closure <= 1e-10"
+    },
+    {
+      "check": "R27_p1p2_branch_consistency",
+      "status": "PASS",
+      "detail": "no material flips; inventories agree <= 1e-8 on all 6 conditions"
+    },
+    {
+      "check": "R28_initializer_idempotency_determinism_smoothness",
+      "status": "PASS",
+      "detail": "I5 4.44e-16, I6 byte-identical, I8 lipschitz 1.45"
+    },
+    {
+      "check": "R29_cumulative_initial_layer_offsets_valid",
+      "status": "PASS",
+      "detail": "S0 net 0.777 of gross 81.8; S1 net 0.607 of gross 46.7; S2 net 0.793 of gross 75.5; S3 net 7.88 of gross 792; S4 net 0.0776 of gross 8.18; S5 net 0.777 of gross 81.8"
+    },
+    {
+      "check": "R30_v1r2_13run_completeness_and_full_reuse",
+      "status": "PASS",
+      "detail": "7 RED runs succeeded once; 6 FULL configs byte-identical to v1r1"
+    },
+    {
+      "check": "R31_formal_comparison_complete",
+      "status": "PASS",
+      "detail": "6 pairs + metrics files"
+    },
+    {
+      "check": "R32_negative_control_rejected",
+      "status": "PASS",
+      "detail": "{\"run_id\": \"RED-NEG1\", \"compared_against\": \"FULL-S0\", \"expected_verdict\": \"FAIL (pipeline negative control)\", \"observed_"
+    },
+    {
+      "check": "R33_raw_source_hashes_unchanged",
+      "status": "PASS",
+      "detail": "5 raw PNAS sources"
+    },
+    {
+      "check": "R34_no_historical_v1r1_artifact_mutated",
+      "status": "PASS",
+      "detail": "78 frozen artifacts re-hashed (v1r1 registry records excluded by design)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "schema": "pnas2017_aa_v1_run_registry/v1r1",
+  "binding": "local SHA-256 config binding; executor is run_pnas2017_aa_v1_formal.m with the unmodified author model directory",
+  "active_partition": {
+    "file": "docs/audit/pnas2017_aminoacylation_reduction_v1/candidate_partition_v1r1.json",
+    "sha256": "fea11a075e2c6c3b8e248ab63f187853141b1618e89b1c021470cbef4c2838f5",
+    "revision_id": "v1r1",
+    "historical_partition_file": "docs/audit/pnas2017_aminoacylation_reduction_v1/candidate_partition.json",
+    "historical_partition_sha256": "521559bb4e703449135518ddc7b1aa772dd89de4180b379cc70ce10b20447b2f",
+    "supersedes_numerical_realization_only": true
+  },
+  "runner": {
+    "file": "scripts/run_pnas2017_aa_v1_formal.m",
+    "sha256": "eb4ba2c49d41d8014cc6063473de796709f76ef3e175391ac9ea25c639016085"
+  },
+  "revision_record": {
+    "file": "docs/audit/pnas2017_aminoacylation_reduction_v1/preregistration_revision_v1r1.json",
+    "class": "IMPLEMENTATION / COORDINATE REALIZATION REVISION"
+  },
+  "runs": {
+    "FULL-S0": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S0.json",
+      "config_sha256": "c06bb8070eadf7f1d628cb75297c1fe0ed65580cfcc75fab9af050893f053a4f",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S0.csv",
+      "status": "planned"
+    },
+    "FULL-S1": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S1.json",
+      "config_sha256": "9b7de9f1d9fa1a260785f94d53be5cd4cbbf5c5d327289c3a084aacfee47442b",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S1.csv",
+      "status": "planned"
+    },
+    "FULL-S2": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S2.json",
+      "config_sha256": "465c3662bc8eacb4600ec17c0ccf7e8722b9a05b18c1b2e765a58169804bf82d",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S2.csv",
+      "status": "planned"
+    },
+    "FULL-S3": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S3.json",
+      "config_sha256": "4ebd26661e59212024b1d1f61a50cb66bc28d3fb4eb8dfe4de83aa7b5adef302",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S3.csv",
+      "status": "planned"
+    },
+    "FULL-S4": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S4.json",
+      "config_sha256": "93ac619adfbd2b3e670849da5777afb878e220a15d3cca2b55b0df225197d3ea",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S4.csv",
+      "status": "planned"
+    },
+    "FULL-S5": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/FULL-S5.json",
+      "config_sha256": "9fe690e6d1166bbbd3d23bf2e08d7802b8340fd907c114d5e2678670cecc8a12",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/FULL-S5.csv",
+      "status": "planned"
+    },
+    "RED-S0": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-S0.json",
+      "config_sha256": "ff3ac3023c8a9e68ea3adedfb77f42bc1b6c4affa90e936b6500b085186670a6",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/RED-S0.csv",
+      "status": "planned"
+    },
+    "RED-S1": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-S1.json",
+      "config_sha256": "cbb9eb0f984569e3fb31379f53418fe2ded4069830a7ad02d952948dd9ef9fa7",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/RED-S1.csv",
+      "status": "planned"
+    },
+    "RED-S2": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-S2.json",
+      "config_sha256": "d12388a7e97709131872be9e200f7512ea705738398fb282ece3795f599f878f",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/RED-S2.csv",
+      "status": "planned"
+    },
+    "RED-S3": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-S3.json",
+      "config_sha256": "84542aa3f1ca20de6bce203f302d0ec4659b4ab2eac2c3d753b0dc506f9dbe6f",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/RED-S3.csv",
+      "status": "planned"
+    },
+    "RED-S4": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-S4.json",
+      "config_sha256": "9047fd5c5c785ef88384fa1ccad88863ccab26edcc2137433f54ca91d94dfbb6",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/RED-S4.csv",
+      "status": "planned"
+    },
+    "RED-S5": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-S5.json",
+      "config_sha256": "6920c034eeef16624f18803da81c21dd62520ea4fffea1619522b10a0a8ec372",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/RED-S5.csv",
+      "status": "planned"
+    },
+    "RED-NEG1": {
+      "config": "results/pnas2017_reference/2026-09-25_aa_v1_formal/configs/RED-NEG1.json",
+      "config_sha256": "9219d37acecd1ae0fb12e60472349146669d1abba21d9cb745819197ab68d4f6",
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_formal/trajectories/RED-NEG1.csv",
+      "status": "planned",
+      "expected_verdict": "FAIL (pipeline negative control)"
+    }
+  },
+  "prerequisite_completed_runs": {
+    "TIGHT-REF": "results/pnas2017_reference/2026-09-25_aa_v1_reference_tight/(author MATLAB runner, RelTol 1e-10/AbsTol 1e-14)",
+    "REFCHECK": "results/pnas2017_reference/2026-09-25_aa_v1_runner_selfcheck/(formal runner in reference mode; max pointwise deviation vs TIGHT-REF 4.975e-10, extent convergence max rel dev 3.07e-10)"
+  },
+  "comparisons": {
+    "CMP-S0..S5": "scripts/compare_pnas2017_aa_v1_reduced.py RED-Sx.csv vs FULL-Sx.csv under acceptance_criteria.json tiers"
+  },
+  "negative_controls": {
+    "NEG-CODE": "docs/audit/.../negative_test_result.json (extraction corruption rejected before any science ran)",
+    "NEG-PARTITION": "post-freeze pipeline check: RED run additionally eliminating MetRS_MettRNAfMetCAU (kept by evidence) must produce a FAIL verdict under the registered criteria; planned as RED-NEG1"
+  },
+  "prohibitions_ack": [
+    "no commit / no push this round",
+    "no author-model / SBML / parameter / initial-value modification",
+    "no negative-clipping, projection, axis change, threshold relaxation",
+    "unknown or untested items are never reported as PASS"
+  ]
+}
