@@ -1,4 +1,6 @@
-# PNAS 2017 sources not yet acquired
+# PNAS 2017 source acquisition attempt (historical, 2026-09-24)
+
+**Current status:** The researcher subsequently accepted the paper PDF and S01–S29 XLSX files from research commit `025fd340300a56f069c2136ea8bb0ff542b046d4` for migration. See [README.md](README.md) and [source_manifest.csv](provenance/source_manifest.csv). The unavailable-file statements below describe this earlier access attempt only; they are not the current repository inventory. A separate complete Supporting Information text/PDF remains unestablished.
 
 **Checked:** 2026-09-24. **Article DOI:** [10.1073/pnas.1615351114](https://doi.org/10.1073/pnas.1615351114). This is an acquisition status record, not a claim that the publisher files do not exist. No missing file has been recreated or substituted with an author-site CSV.
 
