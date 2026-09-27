@@ -1,128 +1,101 @@
 # PURE — Cell-Free Expression Modeling Workbench
 
-CRN modeling workbench for the PURE transcription–translation system
-(synthetic-cell platform project).
+This repository studies PURE cell-free expression with explicit model,
+source, simulation, audit and decision boundaries. The active detailed
+benchmark is the **mRNA-directed translation** network of Matsuura et al.
+(PNAS 2017, DOI: [10.1073/pnas.1615351114](https://doi.org/10.1073/pnas.1615351114)).
+Transcription and GUV transport are future project extensions; they are not
+part of the imported PNAS reference model.
 
-## 1. Project purpose
+## Scientific status and model identities
 
-Build a reproducible modeling stack for cell-free expression: a frozen
-literature benchmark, then a project working model, verification fixtures,
-deterministic and stochastic solvers, analysis (conservation,
-nondimensionalization, reduction, stability) and, later, a flow frontend,
-service and MCP interface. This repository is organized around clear
-boundaries between **model, data, run conditions, code, results, theory,
-audit and interfaces** — files are not to be piled into the repository root.
-
-## 2. Current scientific status
-
-> **`PURE_literature_reference` (B1) is frozen and regression-guarded;
-> the scientific human audit is pending. Four B0 known-answer fixtures are
-> implemented as verification problems.**
-
-Evidence levels for B1 remain in `docs/project/evidence_levels.json`.
-The new B0 fixtures do not change B1 evidence and are not PURE experimental
-validation.
-
-What this is **not**:
-
-- **not human-verified** — the B1 scientific audit is still pending;
-- **not experimentally validated** — machine-readable Stögbauer 2012 data
-  are still absent;
-- **not a completed project working model** — `PURE_resource_core`,
-  nondimensionalization, project-model reduction/stability analysis,
-  frontend, generic SSA integration and MCP remain scheduled work;
-- **not evidence that generic SSA/QSSA/stability tooling is already complete** —
-  the fixtures provide known-answer test problems that those tools must later
-  pass.
-
-## 3. Model identities
-
-| identity | what it is | status |
+| Identity | Role | Status |
 | --- | --- | --- |
-| `PURE_literature_reference` | frozen literal B1 reproduction of Mavelli, Marangoni, Stano (2015) | implemented, frozen |
-| `PURE_resource_core` | the project's own working model (D6–D15 mechanisms) | not yet implemented |
-| `reversible_conversion` | B0 closed reversible conversion | implemented |
-| `birth_death` | B0 birth–death exact mean / Poisson / propensity reference | implemented; generic SSA hookup remains D16 |
-| `enzyme_qssa` | B0 full enzyme + standard QSSA + total QSSA + failure regime | implemented |
-| `appendix_a` | B0 dimensionless fixed-point/Jacobian/stability reference | implemented |
+| `PNAS2017_full_reference` | Literal, provenance-bound SBML import of the Matsuura et al. translation network; benchmark and inventory only | **Active acquisition and audit**; no scientific modification permitted |
+| `PURE_reduced_core` | Future interpretable project model derived from explicit, human-reviewed reduction decisions | **Proposal only**; no validated model yet |
+| `Mavelli2015_coarse_reference` | Mavelli, Marangoni and Stano (2015) coarse-grained comparator, DOI: [10.1007/s11538-015-0082-8](https://doi.org/10.1007/s11538-015-0082-8) | **Frozen legacy benchmark**, completed through the previous D7 RS-QSSA work |
 
-## 4. Repository layout
+The Mavelli benchmark remains valid for its coarse-grained question. It is no
+longer the primary benchmark because the revised question requires the
+detailed translation reaction network and explicit small-molecule/resource
+accounting. The existing Mavelli code and evidence remain in their current
+paths. Historical results retain their original scope and acceptance status;
+they are not evidence that the new PNAS model or a future reduced core has been
+validated. The legacy B1 human source-to-repository audit was completed for
+literature reproduction, not independent experimental validation.
 
-```
-references/            source papers
+The active sequence is: freeze and inventory the original PNAS sources;
+validate and execute the unchanged SBML where possible; classify reaction
+families and chemical flows; prepare candidate transformations with their
+information loss; obtain **human scientific decisions**; then construct and
+validate a reduced model. Similar protein output alone is not a deletion
+criterion. The proposed reduced core must retain the information needed for
+ATP/GTP, AMP/ADP/GDP, Pi/PPi, creatine phosphate/creatine, amino acids,
+tRNA charging, translation-machine occupancy and an explicitly qualified
+osmotic-particle proxy. Quantitative ionic-strength accounting requires
+defined charges, protonation and Mg-binding conventions.
+
+## Repository layout
+
+```text
+references/                         source files and provenance
+  R01_Mavelli2015/                  legacy literature source
+  PNAS2017_Matsuura/                active source acquisition (as available)
 models/
-  literature_reference/  frozen B1 model
-  pure_resource_core/    future project working model
-  fixtures/              B0 known-answer models and frozen synthetic parameters
-configs/               run conditions
-schemas/               planned machine-readable schemas
-data/                  raw/processed/audit data and provenance
-matlab/
-  src/
-    simulate/             B1 simulation code
-    fixtures/             commented B0 fixture implementations
-    provenance/           provenance helpers
-  codegen/               model-definition -> code generation
-  generated/             generated B1 scientific code
-  tests/                 B0 + B1 automated tests
-scripts/                user entry points
-results/                baselines, ordinary runs, release evidence
-docs/                   project, validation and audit documentation
-frontend/ service/ mcp/ reserved for later stages
+  literature_reference/             frozen Mavelli B1 implementation
+  pnas2017_full_reference/          immutable import, normalization and audit (as available)
+  pure_reduced_core/                future human-reviewed model
+  pure_resource_core/               earlier project-model planning material
+  fixtures/                         B0 known-answer models
+configs/                            run conditions
+data/                               raw, processed and audit data
+matlab/                             legacy simulation, generated code and tests
+results/                            baselines, ordinary runs and release evidence
+docs/                               scientific, validation and audit records
 ```
 
-## 5. Reproduce B1
+The PNAS SBML is the scientific source of truth for the detailed benchmark.
+Normalized inventories and solver outputs are derived artifacts. A handwritten
+MATLAB or Python ODE must not replace the imported reference definition.
+Source files are preserved byte-for-byte with URLs, access dates, sizes and
+SHA-256 hashes. Missing sources and unsupported solver imports are recorded
+as missing or blocked rather than reconstructed from descriptions.
+
+## Legacy Mavelli reproduction
+
+The existing B1 workflow remains available for historical comparison:
 
 ```bash
 matlab -batch "addpath('scripts'); reproduce_b1"
 ```
 
-B1 ordinary simulation outputs go to `results/runs/<run_id>/`. Frozen
-regression data remain under `results/baselines/b1_mavelli2015/`.
-
-## 6. Run tests
-
-```bash
-matlab -batch "addpath('scripts'); run_all_tests"
-```
-
-This runs the full MATLAB test suite under `matlab/tests` (B0 fixtures +
-B1 checks), the B1 benchmark smoke test, and development-mode release
-preflight. Logs are written under `logs/`.
-
-Individual B0 fixture tests can also be run directly, for example:
-
-```matlab
-runtests('matlab/tests/test_fixture_birth_death.m')
-runtests('matlab/tests/test_fixture_enzyme_qssa.m')
-runtests('matlab/tests/test_fixture_appendix_a.m')
-```
-
-## 7. Data / provenance rules
-
-- `data/raw/` is immutable.
-- `data/processed/` must be reproducible from registered raw inputs and tools.
-- Every dataset must have provenance and licensing status.
-- B0 synthetic parameters must not be copied into PURE experimental parameter
-  stores.
-
-## 8. Results policy
-
-- `results/baselines/` — frozen regression baselines.
-- `results/runs/<run_id>/` — ordinary unversioned simulation outputs.
-- `results/releases/` — release evidence only.
-
-## 9. Generated-code policy
-
-The B1 single-source chain is:
+Ordinary B1 outputs go to `results/runs/<run_id>/`; frozen regression data
+remain under `results/baselines/b1_mavelli2015/`. Its generated-code chain is
 
 `models/literature_reference/model_definition.json` →
 `matlab/codegen/generate_pure_literature_reference.m` →
 `matlab/generated/rhs_pure_literature_reference.m`.
 
-Do not edit generated B1 files by hand.
+Do not edit generated B1 code by hand or reinterpret it as the PNAS model.
 
-## 10. Branch policy
+## Existing tests and evidence
 
-The only long-lived branch is `main`. Tags mark frozen states. Release
-preflight in release mode requires a clean tree.
+```bash
+matlab -batch "addpath('scripts'); run_all_tests"
+```
+
+This is the existing MATLAB suite for B0 fixtures and the Mavelli B1
+workflow. Passing it does not validate the new PNAS reference or future
+project reduction. Reports must distinguish executed tests, failed or pending
+checks, source review, solver integrity and experimental validation.
+
+`data/raw/` and new reference-source directories are immutable inputs.
+Processed data must be reproducible from registered sources and tools, with
+licensing status recorded. B0 synthetic parameters do not become PURE
+experimental inputs. Release preflight requires a clean tree; the only
+long-lived branch is `main`, and tags mark frozen states.
+
+The current execution order and **G1-PNAS** gate are in [tasklist.md](tasklist.md).
+Future phases include a human-approved `PURE_reduced_core`, transcription
+extension, GUV transport, flow visualization and MCP access to audited
+computations.

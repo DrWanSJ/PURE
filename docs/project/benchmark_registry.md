@@ -1,5 +1,10 @@
 # Benchmark registry — B1: `PURE_literature_reference`
 
+> Historical Mavelli 2015 coarse benchmark record, frozen through the prior
+> D7 RS-QSSA work. The active primary benchmark is now Matsuura et al. PNAS
+> 2017 (`PNAS2017_full_reference`); see `references/PNAS2017_Matsuura/` and
+> `docs/pnas2017/`. Statements below retain their original B1 scope.
+
 Registered: 2026-09-18. Benchmark task: literal reproduction of the
 deterministic coarse-grained PURE model of
 

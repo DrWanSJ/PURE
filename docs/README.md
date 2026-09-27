@@ -16,6 +16,11 @@ Documentation by semantics, not by date.
 - `theory_notes.md` — current theory derivation notes, including the audited
   12-state nondimensional model.
 
+Current PNAS work adds `pnas2017/` for source/SBML/chemical audits,
+`reduction/` for process-oriented **unapproved** decisions and candidate
+structure, and `visualization/` for a data-contract plan. The older B1
+register, model card and theory records retain their historical Mavelli scope.
+
 Planned (create only when content exists): `models/`, `theory/`
 (conservation, reduction, stability, flow thermodynamics). Never create
 time-based folders (`week1/`, `D6/`, `final2/`, ...).
