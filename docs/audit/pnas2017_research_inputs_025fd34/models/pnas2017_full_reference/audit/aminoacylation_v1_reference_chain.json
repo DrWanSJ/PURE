@@ -1,0 +1,48 @@
+{
+  "schema": "pnas2017_aminoacylation_v1_reference_chain/v1",
+  "reference_run": {
+    "engine": "author MATLAB fMGG_synthesis.m (R2025b), CSV params + CSV initials",
+    "grid": "logspace(-4,3,200) s, author convention retained",
+    "solver": "ode15s RelTol 1e-10 AbsTol 1e-14 NonNegative(all states)",
+    "files": {
+      "trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_reference_tight/authors_model_trajectory_tight.csv",
+      "convergence": "results/pnas2017_reference/2026-09-25_aa_v1_reference_tight/tolerance_convergence.csv"
+    },
+    "hashes": {
+      "results/pnas2017_reference/2026-09-25_aa_v1_reference_tight/authors_model_trajectory_tight.csv": "1477cfe9d96ffd1704d4885f02591e098fc7720c72382c85a25978ad4951095d",
+      "results/pnas2017_reference/2026-09-25_aa_v1_reference_tight/tolerance_convergence.csv": "03353227b54080b53c3feba84af659ab1f7ff072937a5066e3a7c7100b7e0dfc"
+    }
+  },
+  "tolerance_convergence_max_rel_dev_vs_tight": {
+    "0.001": 0.00245467,
+    "1e-05": 7.491763e-05,
+    "1e-08": 1.496205e-07
+  },
+  "author_saved_trajectory_status": "exploration-grade; worst deviation vs tight over 43 aa quantities = 2.455e-03 (exceeds the 10% numerical-error budget for 1e-2 acceptance) -> NOT used as formal reference",
+  "rhs_cross_check_python_sbml_derived_vs_author_matlab": {
+    "states": [
+      0.0001
+    ],
+    "n_states": 6,
+    "worst_scaled_abs_error": 0.0,
+    "per_state": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "note": "Python RHS built from SBML-parsed audit/reactions.csv rate laws + author k1 exports; exact match at machine level"
+  },
+  "key_values_tight": {
+    "GlyAMP_final_uM": 23.72683052,
+    "MetAMP_final_uM": 29.81524396,
+    "ATP_final_uM": 3672.455572,
+    "Gly_final_uM": 262.1084584,
+    "Met_final_uM": 261.0256808,
+    "free_MetRS_final_uM": 1.464752843e-05,
+    "free_GlyRS_final_uM": 2.062173971e-05
+  },
+  "sbml_cross_engine_status": "audit-CSV(=SBML-parsed) vs author MATLAB closed at RHS level; full SBML-package re-simulation via libsbml/roadrunner NOT available in this environment (pip network blocked) -> remains open"
+}

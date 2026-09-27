@@ -1,0 +1,272 @@
+{
+  "source_ref": "origin/research/pnas2017-full-network-reduction",
+  "source_commit": "025fd340300a56f069c2136ea8bb0ff542b046d4",
+  "files": [
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_analysis_summary.json",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_analysis_summary.json",
+      "bytes": 2283,
+      "sha256": "4f51450de34190d2a5c78572cca15920980d3791a86e827202654d1da63f3e1a",
+      "git_blob": "6f86b12af703f95e8c6cd09c779eacf0082b0f32"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_enzyme_pool_conservation.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_enzyme_pool_conservation.csv",
+      "bytes": 688,
+      "sha256": "ad30e4d6435da0fa304e2c1c0e1f8496032c82761a0c57ae5f54f75cf9199109",
+      "git_blob": "b47666d97c2d4062d8bf4f391ceb617930b294a0"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_fast_states.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_fast_states.csv",
+      "bytes": 2049,
+      "sha256": "516801bb231e4f7bcafd9a9807742b3acc4295f49198878cfe3761fe2d0701bf",
+      "git_blob": "372fe982cca9052a58c0a00db0297a34c7e8c871"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_inventory.json",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_inventory.json",
+      "bytes": 6167,
+      "sha256": "0f67938aa719d07dc1dbb83054d70e458118edec9c8ce450be4ccd75a6ab647b",
+      "git_blob": "263646de1ff6b92579276ca9fa6ff9dff85d6ac9"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_pathway_balance.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_pathway_balance.csv",
+      "bytes": 1144,
+      "sha256": "f2dfd4b32a4d398ad9158db6f17263f7705b974fa3bad87e799ea231a3a7021a",
+      "git_blob": "204155f24717fa5c2aeff77b4ded35776ed7dd2e"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_reactions.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_reactions.csv",
+      "bytes": 29409,
+      "sha256": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+      "git_blob": "aedd8d4b7074db657f23185de06b2a6ab6af8862"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_reversible_pair_validation.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_reversible_pair_validation.csv",
+      "bytes": 3804,
+      "sha256": "37ce692f81ab6e4440cf3ff0414a8820a2d4b901cb906fa3c6cb9351e5328f59",
+      "git_blob": "5d46beac24519bf0cad5c408628ae5f7fdbbbddf"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_reversible_pairs.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_reversible_pairs.csv",
+      "bytes": 10057,
+      "sha256": "06f4ccf7e540d7d83357fb751d73ca32d82a8699a2b706a2e8c064e59362912b",
+      "git_blob": "9e42e01f09c3ce816ce8ee6f5468b4f8debd4743"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_species.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_species.csv",
+      "bytes": 2707,
+      "sha256": "72e0f26adb1b5942bcd33b5e02130d8011206a7c5966890a51173067f3956a1d",
+      "git_blob": "b73ef0f4d951abe1b8832d0817dbec579f5b805b"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_timescale.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_timescale.csv",
+      "bytes": 8674,
+      "sha256": "637e5c904d138598f172184748c778ca18fe550ed395aa86c1e1f48c079e9488",
+      "git_blob": "b93d7f3e7cd79ee00f58a9952bade73c0a2e0e00"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_comparison_scope.json",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_comparison_scope.json",
+      "bytes": 25763,
+      "sha256": "8dd100d9984d8d152a2e114de3e419c1126613ff7d4aa5abad373f03ebfcf78e",
+      "git_blob": "d7be46122a15b706b1f6fd7e9615738fef9eabf9"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_glyamp_audit.json",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_glyamp_audit.json",
+      "bytes": 17219,
+      "sha256": "7248cf5268b35732ecda0c8e90ae5b73940e004804586ce910f7e910e11f3fed",
+      "git_blob": "a709d4d487921c44a587e46b9a33bb2c14a0dea3"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_ledger.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_ledger.csv",
+      "bytes": 27539,
+      "sha256": "dc4bbe14806da4dae8c63f6d388a15a75ea42dad72958565e97799135357253e",
+      "git_blob": "cf1cba36d1e5ed5128a3342f6e850b054dc6186b"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_ledger_tests.json",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_ledger_tests.json",
+      "bytes": 5820,
+      "sha256": "1e9342c5ef045cb6a69e28858efd8e24c9f33e09d557bf121855fdcd58cb39bf",
+      "git_blob": "b394005fd70089b07150189e23ba7a4d0ddccdb7"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_ownership.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_ownership.csv",
+      "bytes": 23632,
+      "sha256": "e2b4997813b220a5ad488ef0afa004b14b1f454d2bdd7f351aa8e6c60feba82b",
+      "git_blob": "4438482cd194ff06c898f18bb940cb9d2aefbae5"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_partition_closure.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_partition_closure.csv",
+      "bytes": 1443,
+      "sha256": "f9716e3ad4fe7ee4fd13a5e8d5e8b23fab59358cb97b69413fe66990e86a287a",
+      "git_blob": "85483348b16dbc100b8b875a882ea428db873363"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_partition_relaxation.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_partition_relaxation.csv",
+      "bytes": 2120,
+      "sha256": "08d304a840619e92cd938c2e45df141bbe394a21ae53d8b353ffebd397df51af",
+      "git_blob": "f48f1659e03d97b6876290151fccd053571703e0"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_partition_spectrum.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_partition_spectrum.csv",
+      "bytes": 5823,
+      "sha256": "dc809c0e29f8beba8f835892872a899f21053499fae9649d4bc2eabadea827d4",
+      "git_blob": "fdf87f97261409663f14723f8f876c201c3789f4"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_partition_verification.json",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_partition_verification.json",
+      "bytes": 13828,
+      "sha256": "3ef92b5eafd4719fb159e6836467528b4abc6466cbfb0a5062dd738c6f6ee4ee",
+      "git_blob": "bbc910839d1ab56ac1c8b672e3c722ed0e6cbdc7"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_path_audit.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_path_audit.csv",
+      "bytes": 17474,
+      "sha256": "b9c769cb8dc3d9a4b9815a7fc04123e8043a63cf221e88dddc95c4d1cccdc7d3",
+      "git_blob": "3f6a2f7d6f8d0a690dc2d2fbd39b0fa5cad4ce2a"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_closure.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_closure.csv",
+      "bytes": 1071,
+      "sha256": "0e45424732e31ffbf5d3cb5c2fd8a08834bb97cac7becbf04c93a689b996f580",
+      "git_blob": "97261b02ffaeed971bb081636b49bd7d0c2fa563"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_defect.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_defect.csv",
+      "bytes": 529166,
+      "sha256": "ff1e5b56ec8b18cb67ba9dcae86aad81d91e2d8209f8a9aaf4d6f1f8cf545ebe",
+      "git_blob": "72eebfa345da3e7244808a4d56cee9128562e1e3"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_derivation.json",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_derivation.json",
+      "bytes": 23831,
+      "sha256": "f1749d8f9f200cc06df1c64ad03faf60c77c034bd6f034585a04f2f32ab5ec22",
+      "git_blob": "3f85fa104465e64b0e0ad4e3cd29d0c531736f05"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_relaxation.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_relaxation.csv",
+      "bytes": 3293,
+      "sha256": "284c452eb8110ccc8af106442f621c2837ce77221afe78582aa8d3305dbb19a1",
+      "git_blob": "2d7b2831e789e7bb0587a4c3bad390a6dbe1b3b3"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_spectrum.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_spectrum.csv",
+      "bytes": 11017,
+      "sha256": "34f1a29dfaff19fd60165161cbfa690b5c43994e093d2da1fd1743975edaf068",
+      "git_blob": "604890016b520588f748cfc24aca3e3e6c0bb04c"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_structure.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_qssa_structure.csv",
+      "bytes": 2045,
+      "sha256": "95e4a2f8b3d9bb4702e321b91d92105dbc3493b402180810abc185b5a48b097d",
+      "git_blob": "940a82bc5c525a66158972b6f2f6d9984468da5f"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_rates_manifest.json",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_rates_manifest.json",
+      "bytes": 34730,
+      "sha256": "282fa987ebce983936134826361d7f7cae1e09268f6e3c33c346f95ea88db3bd",
+      "git_blob": "2f21097ac9857f0ecfa5b13ca1a7cd53c0d54812"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/aminoacylation_v1_reference_chain.json",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/aminoacylation_v1_reference_chain.json",
+      "bytes": 2142,
+      "sha256": "c77fd33db5a2fd575835ed3e913129241c7fafc174d7b8bb88d68f2b3018836c",
+      "git_blob": "d6cd6ba69687d8eed55b98a93f4c0cbadc699411"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/inventory_summary.json",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/inventory_summary.json",
+      "bytes": 919,
+      "sha256": "56085429a1d9e5a1a9fdccb287ca17be04d935f353695bff8d173af150e19da3",
+      "git_blob": "92057214d575ab0222c27f67060c41d7af38e82a"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/modules.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/modules.csv",
+      "bytes": 984,
+      "sha256": "2c76422bef4289c233939c62a0ba3f1d247b4bff18805d39ad50515905cce206",
+      "git_blob": "70ae186cfc36b23390377ea242dc799b224d527d"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/parameters.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/parameters.csv",
+      "bytes": 42901,
+      "sha256": "60525d341641c469a46199d7e411e4b2bf5fa628ee0cc75094cfd4787cb1ad35",
+      "git_blob": "232f0a1df9a1fc80d0f1ac3b7fd9a8d5d27e5c84"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "bytes": 91060,
+      "sha256": "74dbdeaec10e8e4613f3e200f402891af8f9d58f6625d38440be2e28a06bbe5b",
+      "git_blob": "da3d8db59cc51698d7d6744f5129f7ae67feba6d"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/reactions.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/reactions.csv",
+      "bytes": 160282,
+      "sha256": "d1701d1cbff750567e3e02ba1e686934300460923ec487d247e172ae69ccd51e",
+      "git_blob": "d2ac68cfa0e3f6bab7d36a8205af129ba44d5752"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/species.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/species.csv",
+      "bytes": 17132,
+      "sha256": "63bcab351b85a9f75384ca416ae13fa1df8c64400fb5497228689c3a4e30a763",
+      "git_blob": "6c0c80ce07f46b15c066a1fe166da81ef7de70c4"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/species_properties.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/species_properties.csv",
+      "bytes": 78245,
+      "sha256": "47a3cabeb6b4df16be04241a3a6c175b354dc0d0974f73247c53b18aceee0cf5",
+      "git_blob": "7f4e0f079af0f41d13cef0209aa6e8e942490bcb"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/species_reduction_map.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/species_reduction_map.csv",
+      "bytes": 88487,
+      "sha256": "ecf444b81fca0b468cf279853e7804362dab5a3f2ce1fe6eeb134c6e2f5f881e",
+      "git_blob": "f18b67db52cfd0d740b05ab372bbae20258c08b0"
+    },
+    {
+      "source_path": "models/pnas2017_full_reference/audit/species_reduction_map.json",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/models/pnas2017_full_reference/audit/species_reduction_map.json",
+      "bytes": 364412,
+      "sha256": "d77ce4e7a443b5ed48692a03168bd350bf7af7436bd5591d6a3f46bf68148b46",
+      "git_blob": "e11a99a0ce8c03a84cc5f7337230f8d928a57118"
+    }
+  ],
+  "historical_runner": {
+    "source_revision": "11c4d704a:scripts/run_pnas2017_aa_v1_formal.m",
+    "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/scripts/run_pnas2017_aa_v1_formal_11c4d704a.m",
+    "bytes": 29230,
+    "sha256": "eb4ba2c49d41d8014cc6063473de796709f76ef3e175391ac9ea25c639016085",
+    "git_blob": "a558062413ccf198052fa448241dfa4dd2394cdd"
+  }
+}

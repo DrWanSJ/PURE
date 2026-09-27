@@ -1,0 +1,28 @@
+{
+  "source_file": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+  "sbml_level": "2",
+  "sbml_version": "4",
+  "model_id": "fMGG_synthesis",
+  "compartment_count": 1,
+  "species_count": 241,
+  "reaction_count": 968,
+  "reaction_local_parameter_count": 968,
+  "global_parameter_count": 0,
+  "rule_count": 0,
+  "event_count": 0,
+  "unit_definition_count": 0,
+  "subsystem_file_count": 26,
+  "reversible_fast_attribute_counts": {
+    "false|false": 968
+  },
+  "reactions_mapped_to_a_subsystem": 967,
+  "reactions_not_mapped_to_any_subsystem": 1,
+  "subsystem_reactions_unmatched_to_combined": 1,
+  "sbml_parameter_values_are_placeholders": 959,
+  "kinetic_family_candidates": {
+    "unimolecular_mass_action": 702,
+    "bimolecular_mass_action": 266
+  },
+  "libsbml_validation": "NOT_RUN: libsbml not installed in environment",
+  "roadrunner_import": "NOT_RUN: libroadrunner not installed in environment"
+}
