@@ -15,6 +15,12 @@ part of the imported PNAS reference model.
 | `PURE_reduced_core` | Future interpretable project model derived from explicit, human-reviewed reduction decisions | **Proposal only**; no validated model yet |
 | `Mavelli2015_coarse_reference` | Mavelli, Marangoni and Stano (2015) coarse-grained comparator, DOI: [10.1007/s11538-015-0082-8](https://doi.org/10.1007/s11538-015-0082-8) | **Frozen legacy benchmark**, completed through the previous D7 RS-QSSA work |
 
+As of 2026-09-27, the [G1-PNAS evidence report](docs/pnas2017/g1_pnas_report.md)
+is **BLOCKED**: the official author-site SBML and simulator files are frozen,
+but the publisher article/SI and Datasets S01–S29 are still unavailable here.
+The structural and two-engine numerical checks do not close the missing-source,
+chemical-unit or human-review gaps.
+
 The Mavelli benchmark remains valid for its coarse-grained question. It is no
 longer the primary benchmark because the revised question requires the
 detailed translation reaction network and explicit small-molecule/resource
