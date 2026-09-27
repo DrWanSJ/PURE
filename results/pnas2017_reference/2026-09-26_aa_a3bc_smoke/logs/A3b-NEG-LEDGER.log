@@ -1,0 +1,46 @@
+[警告: 名称不存在或不是目录: D:\BaiduSyncdisk\FACHill\slanCM] 
+[警告: 在为表创建变量名称之前，对文件中的列标题进行了修改，以使其成为有效的 MATLAB 标识符。原始列标题保存在 VariableDescriptions 属性中。
+将 'VariableNamingRule' 设置为 'preserve' 以使用原始列标题作为表变量名称。] 
+NEG-LEDGER control active: free tRNAfMetCAU integrated, tRNAfMetCAU_total coordinate dropped (Ny = 220)
+cumulative-extent offsets seeded (P2 fast layer): Gly_release_re182=0.00517369, Met_release_re224=0.000160522, Gly_AMP_release_re145=0.00499148, Met_AMP_release_re170=0.000156513, Gly_adenylation_re140=0.0321586, Met_adenylation_re165=0.154982, aa_ATP_consumption_total=81.7709, aa_PPi_production_total=0.488948, aa_AMP_production_total=0.115069, aa_ATP_net_consumption=0.776728, aa_PPi_net_production=0.488948, aa_AMP_net_production=0.115069
+largest initial-condition adjustment: ATP: 3750 -> 3749.27 (0.731)
+a3b consistent start: max|G| = 7.116e-07 uM/s (4.313e-11 of production scale 1.650e+04), iters = 10, starts_ok = 2
+a3b t0: min reconstructed concentration = 0.000e+00; inventory max abs diff = 4.547e-13
+2226 个成功步骤
+38 次失败尝试
+8975 次函数计算
+24 个偏导数
+349 次 LU 分解
+3132 个线性系统解
+output 1/30 at t=0.0001 (wall 0.0 s)
+output 2/30 at t=0.0001374 (wall 0.0 s)
+output 3/30 at t=0.0001887 (wall 0.0 s)
+output 4/30 at t=0.0002593 (wall 0.0 s)
+output 5/30 at t=0.0003562 (wall 0.0 s)
+output 6/30 at t=0.0004894 (wall 0.0 s)
+output 7/30 at t=0.0006723 (wall 0.0 s)
+output 8/30 at t=0.0009237 (wall 0.0 s)
+output 9/30 at t=0.001269 (wall 0.0 s)
+output 10/30 at t=0.001743 (wall 0.0 s)
+output 11/30 at t=0.002395 (wall 0.0 s)
+output 12/30 at t=0.00329 (wall 0.0 s)
+output 13/30 at t=0.00452 (wall 0.0 s)
+output 14/30 at t=0.00621 (wall 0.0 s)
+output 15/30 at t=0.008532 (wall 0.0 s)
+output 16/30 at t=0.01172 (wall 0.0 s)
+output 17/30 at t=0.0161 (wall 0.0 s)
+output 18/30 at t=0.02212 (wall 0.0 s)
+output 19/30 at t=0.03039 (wall 0.0 s)
+output 20/30 at t=0.04175 (wall 0.0 s)
+output 21/30 at t=0.05736 (wall 0.0 s)
+output 22/30 at t=0.0788 (wall 0.0 s)
+output 23/30 at t=0.1083 (wall 0.0 s)
+output 24/30 at t=0.1487 (wall 0.0 s)
+output 25/30 at t=0.2043 (wall 0.0 s)
+output 26/30 at t=0.2807 (wall 0.0 s)
+output 27/30 at t=0.3857 (wall 0.0 s)
+output 28/30 at t=0.5298 (wall 0.0 s)
+output 29/30 at t=0.7279 (wall 0.0 s)
+output 30/30 at t=1 (wall 0.0 s)
+a3b algebraic rootfind: 8975 solves, 49108 Newton iters (median 6, max 8), 26 line-search rejections, 20 Jacobian refreshes, 0 plateau accepts, max|G| = 1.646e-08 uM/s (scaled 9.976e-13), min q = -2.296e-41
+done a3b_reduced -> C:/Users/sean/Desktop/GUV-PURE/results/pnas2017_reference/2026-09-26_aa_a3bc_smoke/trajectories/A3b-NEG-LEDGER.csv (30 pts, 21 eliminated, 12 cumulative)

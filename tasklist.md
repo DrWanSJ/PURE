@@ -1,4 +1,6 @@
 # PURE 详细翻译网络审计、人工审核降维与物质—能量流工作台
+
+**2026-09-27 迁移状态补注：** PNAS 论文 PDF 与 S01–S29 已按研究者 R1 决定从研究分支保存，来源字节和哈希见 `references/PNAS2017_Matsuura/provenance/publisher_capture.json`。下文 v2 计划中“尚需取得”这些文件的句子保留为当时任务，不再代表当前缺口。S28 数值对照、化学单位和人工降维审核仍未完成；G1 须重新验收，不能从文件已保存推断通过。A3a 与 A3b-21 为失败证据，A3b-r12 被阻断且未验证，A3c 仅在既定规则下 0/21；`PURE_reduced_core` 仍未批准。历史证据与未决科学问题分别见 `docs/reduction/pnas2017_historical_evidence.md` 和 `docs/reduction/open_scientific_decisions.md`。
 ## v2：以 Matsuura 等 PNAS 2017 为主基准的分阶段执行计划
 **执行对象：** 1 名已熟悉相关反应动力学、计算或前端工作的博士生；不是 MD 方向学生的追加任务。  
 **周期：** 首周 D1—D5 与 G1-PNAS 为当前排期；旧版四周约 20 个主动工作日的后续顺序暂停，待来源审计和人工审核后重新制定。

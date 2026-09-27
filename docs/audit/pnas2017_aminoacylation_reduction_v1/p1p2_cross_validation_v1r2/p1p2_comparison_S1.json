@@ -1,0 +1,346 @@
+{
+ "condition": "S1",
+ "p2_layer_exit_time_s": 0.049124999999999995,
+ "entries": {
+  "GlyRS_AMP_GlytRNAGlyGCC": {
+   "p1": 0,
+   "p2": 0.00027001623772285614,
+   "abs_diff": 0.00027001623772285614,
+   "scaled_diff": 1.0,
+   "class": "eliminated_complex"
+  },
+  "GlyRS_ATP": {
+   "p1": 0.0004898930031330981,
+   "p2": 0.00045148147689619744,
+   "abs_diff": 3.841152623690065e-05,
+   "scaled_diff": 0.07840799111487758,
+   "class": "eliminated_complex"
+  },
+  "GlyRS_ATP_tRNAGlyGCC": {
+   "p1": 0.0055704667250299055,
+   "p2": 0.005250588559489151,
+   "abs_diff": 0.0003198781655407547,
+   "scaled_diff": 0.057423943330177134,
+   "class": "eliminated_complex"
+  },
+  "GlyRS_Gly": {
+   "p1": 0.013804216189673445,
+   "p2": 0.012992657310944455,
+   "abs_diff": 0.0008115588787289893,
+   "scaled_diff": 0.05879065262221076,
+   "class": "eliminated_complex"
+  },
+  "GlyRS_GlyAMP_PPi": {
+   "p1": 0.00015137176570512135,
+   "p2": 0.00016135687279718116,
+   "abs_diff": 9.98510709205981e-06,
+   "scaled_diff": 0.061882130701743775,
+   "class": "eliminated_complex"
+  },
+  "GlyRS_Gly_ATP": {
+   "p1": 0.011406725289706494,
+   "p2": 0.01074566514045749,
+   "abs_diff": 0.0006610601492490036,
+   "scaled_diff": 0.05795354341053069,
+   "class": "eliminated_complex"
+  },
+  "GlyRS_Gly_ATP_tRNAGlyGCC": {
+   "p1": 0.13814310239418692,
+   "p2": 0.13031415757652837,
+   "abs_diff": 0.007828944817658556,
+   "scaled_diff": 0.056672716060183106,
+   "class": "eliminated_complex"
+  },
+  "GlyRS_Gly_tRNAGlyGCC": {
+   "p1": 0.16614965177404073,
+   "p2": 0.1567898867372035,
+   "abs_diff": 0.00935976503683722,
+   "scaled_diff": 0.056333341279380236,
+   "class": "eliminated_complex"
+  },
+  "GlyRS_tRNAGlyGCC": {
+   "p1": 0.013119424813174135,
+   "p2": 0.012373888385421998,
+   "abs_diff": 0.0007455364277521373,
+   "scaled_diff": 0.05682691416497863,
+   "class": "eliminated_complex"
+  },
+  "MetRS_AMP": {
+   "p1": 1.7326791711420687e-06,
+   "p2": 3.874309531568335e-06,
+   "abs_diff": 2.141630360426266e-06,
+   "scaled_diff": 0.5527772995358288,
+   "class": "eliminated_complex"
+  },
+  "MetRS_AMP_MettRNAfMetCAU": {
+   "p1": 0.0010282962440012278,
+   "p2": 0.002296100329358047,
+   "abs_diff": 0.0012678040853568192,
+   "scaled_diff": 0.5521553519010544,
+   "class": "eliminated_complex"
+  },
+  "MetRS_ATP": {
+   "p1": 0.026701502382363424,
+   "p2": 0.001955589914097988,
+   "abs_diff": 0.024745912468265435,
+   "scaled_diff": 0.92676105313873,
+   "class": "eliminated_complex"
+  },
+  "MetRS_ATP_tRNAfMetCAU": {
+   "p1": 0.016956080221882594,
+   "p2": 0.0017068676226524393,
+   "abs_diff": 0.015249212599230155,
+   "scaled_diff": 0.899335954989783,
+   "class": "eliminated_complex"
+  },
+  "MetRS_Met": {
+   "p1": 0.06429067311140858,
+   "p2": 0.005422359504178791,
+   "abs_diff": 0.05886831360722979,
+   "scaled_diff": 0.9156586913504164,
+   "class": "eliminated_complex"
+  },
+  "MetRS_MetAMP_PPi": {
+   "p1": 0.005724616655477195,
+   "p2": 0.0005395046354557281,
+   "abs_diff": 0.0051851120200214675,
+   "scaled_diff": 0.9057570719710043,
+   "class": "eliminated_complex"
+  },
+  "MetRS_MetAMP_PPi_tRNAfMetCAU": {
+   "p1": 0.012307717863015837,
+   "p2": 0.0013191383022216545,
+   "abs_diff": 0.010988579560794182,
+   "scaled_diff": 0.8928202354893421,
+   "class": "eliminated_complex"
+  },
+  "MetRS_MetAMP_tRNAfMetCAU": {
+   "p1": 0.07518459293228978,
+   "p2": 0.16759518864410364,
+   "abs_diff": 0.09241059571181386,
+   "scaled_diff": 0.5513916984099834,
+   "class": "eliminated_complex"
+  },
+  "MetRS_Met_ATP": {
+   "p1": 0.0947874224880667,
+   "p2": 0.008048815598212758,
+   "abs_diff": 0.08673860688985394,
+   "scaled_diff": 0.9150856159294123,
+   "class": "eliminated_complex"
+  },
+  "MetRS_Met_ATP_tRNAfMetCAU": {
+   "p1": 0.06601890833765305,
+   "p2": 0.00679126062705636,
+   "abs_diff": 0.05922764771059669,
+   "scaled_diff": 0.8971315824805445,
+   "class": "eliminated_complex"
+  },
+  "MetRS_Met_tRNAfMetCAU": {
+   "p1": 0.045421924375954534,
+   "p2": 0.004673048055707022,
+   "abs_diff": 0.04074887632024751,
+   "scaled_diff": 0.897119108890489,
+   "class": "eliminated_complex"
+  },
+  "MetRS_tRNAfMetCAU": {
+   "p1": 0.011426818755498724,
+   "p2": 0.0011463648470505087,
+   "abs_diff": 0.010280453908448216,
+   "scaled_diff": 0.8996776905646758,
+   "class": "eliminated_complex"
+  },
+  "Met": {
+   "p1": 299.63523584799213,
+   "p2": 299.56304986524026,
+   "abs_diff": 0.0721859827518756,
+   "scaled_diff": 0.00024091286376111068,
+   "class": "slow_state"
+  },
+  "Gly": {
+   "p1": 299.6703449325867,
+   "p2": 299.65931087021926,
+   "abs_diff": 0.011034062367457409,
+   "scaled_diff": 3.6820668291150436e-05,
+   "class": "slow_state"
+  },
+  "ATP": {
+   "p1": 374.54552757101834,
+   "p2": 374.3928741594971,
+   "abs_diff": 0.15265341152121437,
+   "scaled_diff": 0.0004075697085777361,
+   "class": "slow_state"
+  },
+  "AMP": {
+   "p1": 0,
+   "p2": 0.09321389537880329,
+   "abs_diff": 0.09321389537880329,
+   "scaled_diff": 1.0,
+   "class": "slow_state"
+  },
+  "PPi": {
+   "p1": 0.07621462185546216,
+   "p2": 0.4394377838588099,
+   "abs_diff": 0.3632231620033477,
+   "scaled_diff": 0.8265633392144774,
+   "class": "slow_state"
+  },
+  "MetAMP": {
+   "p1": 0,
+   "p2": 0.0003828836180270335,
+   "abs_diff": 0.0003828836180270335,
+   "scaled_diff": 1.0,
+   "class": "slow_state"
+  },
+  "GlyAMP": {
+   "p1": 0,
+   "p2": 3.5045353463382835e-06,
+   "abs_diff": 3.5045353463382835e-06,
+   "scaled_diff": 1.0,
+   "class": "slow_state"
+  },
+  "tRNAfMetCAU": {
+   "p1": 3.3193275012697043,
+   "p2": 3.2795002590155837,
+   "abs_diff": 0.0398272422541206,
+   "scaled_diff": 0.011998587737692632,
+   "class": "slow_state"
+  },
+  "tRNAGlyGCC": {
+   "p1": 3.2246891942935685,
+   "p2": 3.2148639884819263,
+   "abs_diff": 0.009825205811642146,
+   "scaled_diff": 0.0030468690840124673,
+   "class": "slow_state"
+  },
+  "MettRNAfMetCAU": {
+   "p1": 0,
+   "p2": 0.002706900503731187,
+   "abs_diff": 0.002706900503731187,
+   "scaled_diff": 1.0,
+   "class": "slow_state"
+  },
+  "GlytRNAGlyGCC": {
+   "p1": 0,
+   "p2": 0.009926196926863537,
+   "abs_diff": 0.009926196926863537,
+   "scaled_diff": 1.0,
+   "class": "slow_state"
+  },
+  "MetRS": {
+   "p1": 0.020149713953217185,
+   "p2": 0.0013269526678550746,
+   "abs_diff": 0.01882276128536211,
+   "scaled_diff": 0.9341453347210813,
+   "class": "slow_state"
+  },
+  "GlyRS": {
+   "p1": 0.0011651480453501728,
+   "p2": 0.0010704634155780013,
+   "abs_diff": 9.468462977217152e-05,
+   "scaled_diff": 0.08126403348487365,
+   "class": "slow_state"
+  },
+  "MetRS_MetAMP": {
+   "p1": 0,
+   "p2": 0.15723822288151448,
+   "abs_diff": 0.15723822288151448,
+   "scaled_diff": 1.0,
+   "class": "slow_state"
+  },
+  "MetRS_MettRNAfMetCAU": {
+   "p1": 0,
+   "p2": 0.07993671205140584,
+   "abs_diff": 0.07993671205140584,
+   "scaled_diff": 1.0,
+   "class": "slow_state"
+  },
+  "GlyRS_AMP": {
+   "p1": 0,
+   "p2": 9.414984027662021e-05,
+   "abs_diff": 9.414984027662021e-05,
+   "scaled_diff": 1.0,
+   "class": "slow_state"
+  },
+  "GlyRS_GlyAMP": {
+   "p1": 0,
+   "p2": 0.0016025713404406205,
+   "abs_diff": 0.0016025713404406205,
+   "scaled_diff": 1.0,
+   "class": "slow_state"
+  },
+  "GlyRS_GlyAMP_PPi_tRNAGlyGCC": {
+   "p1": 0,
+   "p2": 0.00040363029304493064,
+   "abs_diff": 0.00040363029304493064,
+   "scaled_diff": 1.0,
+   "class": "slow_state"
+  },
+  "GlyRS_GlyAMP_tRNAGlyGCC": {
+   "p1": 0,
+   "p2": 0.016737376743685237,
+   "abs_diff": 0.016737376743685237,
+   "scaled_diff": 1.0,
+   "class": "slow_state"
+  },
+  "GlyRS_GlytRNAGlyGCC": {
+   "p1": 0,
+   "p2": 0.0007421100466107831,
+   "abs_diff": 0.0007421100466107831,
+   "scaled_diff": 1.0,
+   "class": "slow_state"
+  }
+ },
+ "worst_species_abs": {
+  "name": "GlyRS_AMP_GlytRNAGlyGCC",
+  "abs": 0.00027001623772285614,
+  "scaled": 1.0
+ },
+ "binit_inventories": {
+  "MetRS_total": {
+   "p1": 0.44,
+   "p2": 0.43999999999040196,
+   "abs_diff": 9.598044581338172e-12
+  },
+  "GlyRS_total": {
+   "p1": 0.35,
+   "p2": 0.3499999999770974,
+   "abs_diff": 2.290256873038743e-11
+  },
+  "tRNAfMetCAU_total": {
+   "p1": 3.54767184,
+   "p2": 3.5476718399988703,
+   "abs_diff": 1.1297629498585593e-12
+  },
+  "tRNAGlyGCC_total": {
+   "p1": 3.54767184,
+   "p2": 3.5476718399884963,
+   "abs_diff": 1.1503686891956022e-11
+  },
+  "Met_total": {
+   "p1": 300.0,
+   "p2": 299.9999999999912,
+   "abs_diff": 8.810729923425242e-12
+  },
+  "Gly_total": {
+   "p1": 300.0,
+   "p2": 299.99999999998084,
+   "abs_diff": 1.91562321560923e-11
+  },
+  "adenine_moiety_total": {
+   "p1": 374.99999999999994,
+   "p2": 374.9999999999748,
+   "abs_diff": 2.5124791136477143e-11
+  },
+  "declared_phosphate_equivalent_total": {
+   "p1": 1125.0000000000007,
+   "p2": 1124.9999999999245,
+   "abs_diff": 7.617018127348274e-11
+  },
+  "guanine_check_total": {
+   "p1": 2500.0,
+   "p2": 2500.0,
+   "abs_diff": 0.0
+  }
+ },
+ "branch_sign_flip": []
+}

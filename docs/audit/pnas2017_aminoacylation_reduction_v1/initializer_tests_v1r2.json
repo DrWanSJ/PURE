@@ -1,0 +1,496 @@
+{
+ "schema": "pnas2017_aa_v1r2_initializer_tests/v1",
+ "created": "2026-09-26",
+ "conditions": {
+  "S0": {
+   "I1_max_scaled_G": 2.658190571157276e-16,
+   "I1_pass": true,
+   "I2_rows": {
+    "MetRS_total": {
+     "projected": 0.44,
+     "author": 0.44,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "GlyRS_total": {
+     "projected": 0.35,
+     "author": 0.35,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "tRNAfMetCAU_total": {
+     "projected": 3.5476718399999996,
+     "author": 3.54767184,
+     "abs_diff": -4.440892098500626e-16,
+     "rel_diff": 1.2517764603900416e-16
+    },
+    "tRNAGlyGCC_total": {
+     "projected": 3.5476718400000005,
+     "author": 3.54767184,
+     "abs_diff": 4.440892098500626e-16,
+     "rel_diff": 1.2517764603900416e-16
+    },
+    "Met_total": {
+     "projected": 300.00000000000006,
+     "author": 300.0,
+     "abs_diff": 5.684341886080802e-14,
+     "rel_diff": 1.8947806286936006e-16
+    },
+    "Gly_total": {
+     "projected": 299.99999999999994,
+     "author": 300.0,
+     "abs_diff": -5.684341886080802e-14,
+     "rel_diff": 1.8947806286936006e-16
+    },
+    "adenine_moiety_total": {
+     "projected": 3750.0,
+     "author": 3750.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "declared_phosphate_equivalent_total": {
+     "projected": 11250.000000000004,
+     "author": 11250.0,
+     "abs_diff": 3.637978807091713e-12,
+     "rel_diff": 3.2337589396370783e-16
+    },
+    "guanine_check_total": {
+     "projected": 2500.0,
+     "author": 2500.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    }
+   },
+   "I2_worst_rel_diff": 3.2337589396370783e-16,
+   "I2_pass": true,
+   "I3_min_concentration": 0,
+   "I3_pass": true,
+   "I4_pools": {
+    "MetRS_total": {
+     "ePool_from_author": 0.44,
+     "free_kept_elim_from_projected": 0.44,
+     "abs_diff": 0.0
+    },
+    "GlyRS_total": {
+     "ePool_from_author": 0.35,
+     "free_kept_elim_from_projected": 0.35,
+     "abs_diff": 0.0
+    }
+   },
+   "I4_pass": true
+  },
+  "S1": {
+   "I1_max_scaled_G": 5.88785534560239e-16,
+   "I1_pass": true,
+   "I2_rows": {
+    "MetRS_total": {
+     "projected": 0.44,
+     "author": 0.44,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "GlyRS_total": {
+     "projected": 0.35,
+     "author": 0.35,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "tRNAfMetCAU_total": {
+     "projected": 3.54767184,
+     "author": 3.54767184,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "tRNAGlyGCC_total": {
+     "projected": 3.54767184,
+     "author": 3.54767184,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "Met_total": {
+     "projected": 300.0,
+     "author": 300.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "Gly_total": {
+     "projected": 300.0,
+     "author": 300.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "adenine_moiety_total": {
+     "projected": 374.99999999999994,
+     "author": 375.0,
+     "abs_diff": -5.684341886080802e-14,
+     "rel_diff": 1.5158245029548803e-16
+    },
+    "declared_phosphate_equivalent_total": {
+     "projected": 1125.0000000000007,
+     "author": 1125.0,
+     "abs_diff": 6.821210263296962e-13,
+     "rel_diff": 6.063298011819521e-16
+    },
+    "guanine_check_total": {
+     "projected": 2500.0,
+     "author": 2500.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    }
+   },
+   "I2_worst_rel_diff": 6.063298011819521e-16,
+   "I2_pass": true,
+   "I3_min_concentration": 0,
+   "I3_pass": true,
+   "I4_pools": {
+    "MetRS_total": {
+     "ePool_from_author": 0.44,
+     "free_kept_elim_from_projected": 0.44,
+     "abs_diff": 0.0
+    },
+    "GlyRS_total": {
+     "ePool_from_author": 0.35,
+     "free_kept_elim_from_projected": 0.35,
+     "abs_diff": 0.0
+    }
+   },
+   "I4_pass": true
+  },
+  "S2": {
+   "I1_max_scaled_G": 1.248734147231833e-12,
+   "I1_pass": true,
+   "I2_rows": {
+    "MetRS_total": {
+     "projected": 0.43999999999999995,
+     "author": 0.44,
+     "abs_diff": -5.551115123125783e-17,
+     "rel_diff": 5.551115123125783e-17
+    },
+    "GlyRS_total": {
+     "projected": 0.35,
+     "author": 0.35,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "tRNAfMetCAU_total": {
+     "projected": 0.35476718400000007,
+     "author": 0.354767184,
+     "abs_diff": 5.551115123125783e-17,
+     "rel_diff": 5.551115123125783e-17
+    },
+    "tRNAGlyGCC_total": {
+     "projected": 0.354767184,
+     "author": 0.354767184,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "Met_total": {
+     "projected": 300.0,
+     "author": 300.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "Gly_total": {
+     "projected": 300.00000000000006,
+     "author": 300.0,
+     "abs_diff": 5.684341886080802e-14,
+     "rel_diff": 1.8947806286936006e-16
+    },
+    "adenine_moiety_total": {
+     "projected": 3750.000000000001,
+     "author": 3750.0,
+     "abs_diff": 9.094947017729282e-13,
+     "rel_diff": 2.4253192047278088e-16
+    },
+    "declared_phosphate_equivalent_total": {
+     "projected": 11249.999999999998,
+     "author": 11250.0,
+     "abs_diff": -1.8189894035458565e-12,
+     "rel_diff": 1.6168794698185392e-16
+    },
+    "guanine_check_total": {
+     "projected": 2500.0,
+     "author": 2500.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    }
+   },
+   "I2_worst_rel_diff": 2.4253192047278088e-16,
+   "I2_pass": true,
+   "I3_min_concentration": 0,
+   "I3_pass": true,
+   "I4_pools": {
+    "MetRS_total": {
+     "ePool_from_author": 0.44,
+     "free_kept_elim_from_projected": 0.44,
+     "abs_diff": 0.0
+    },
+    "GlyRS_total": {
+     "ePool_from_author": 0.35,
+     "free_kept_elim_from_projected": 0.35,
+     "abs_diff": 0.0
+    }
+   },
+   "I4_pass": true
+  },
+  "S3": {
+   "I1_max_scaled_G": 1.380161609339497e-11,
+   "I1_pass": true,
+   "I2_rows": {
+    "MetRS_total": {
+     "projected": 4.4,
+     "author": 4.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "GlyRS_total": {
+     "projected": 3.5,
+     "author": 3.5,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "tRNAfMetCAU_total": {
+     "projected": 3.5476718399999996,
+     "author": 3.54767184,
+     "abs_diff": -4.440892098500626e-16,
+     "rel_diff": 1.2517764603900416e-16
+    },
+    "tRNAGlyGCC_total": {
+     "projected": 3.5476718400000005,
+     "author": 3.54767184,
+     "abs_diff": 4.440892098500626e-16,
+     "rel_diff": 1.2517764603900416e-16
+    },
+    "Met_total": {
+     "projected": 300.0,
+     "author": 300.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "Gly_total": {
+     "projected": 300.00000000000006,
+     "author": 300.0,
+     "abs_diff": 5.684341886080802e-14,
+     "rel_diff": 1.8947806286936006e-16
+    },
+    "adenine_moiety_total": {
+     "projected": 3750.0000000000005,
+     "author": 3750.0,
+     "abs_diff": 4.547473508864641e-13,
+     "rel_diff": 1.2126596023639044e-16
+    },
+    "declared_phosphate_equivalent_total": {
+     "projected": 11249.999999999996,
+     "author": 11250.0,
+     "abs_diff": -3.637978807091713e-12,
+     "rel_diff": 3.2337589396370783e-16
+    },
+    "guanine_check_total": {
+     "projected": 2500.0,
+     "author": 2500.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    }
+   },
+   "I2_worst_rel_diff": 3.2337589396370783e-16,
+   "I2_pass": true,
+   "I3_min_concentration": 0,
+   "I3_pass": true,
+   "I4_pools": {
+    "MetRS_total": {
+     "ePool_from_author": 4.4,
+     "free_kept_elim_from_projected": 4.4,
+     "abs_diff": 0.0
+    },
+    "GlyRS_total": {
+     "ePool_from_author": 3.5,
+     "free_kept_elim_from_projected": 3.5,
+     "abs_diff": 0.0
+    }
+   },
+   "I4_pass": true
+  },
+  "S4": {
+   "I1_max_scaled_G": 1.2911880319141785e-13,
+   "I1_pass": true,
+   "I2_rows": {
+    "MetRS_total": {
+     "projected": 0.044000000000000004,
+     "author": 0.044000000000000004,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "GlyRS_total": {
+     "projected": 0.034999999999999996,
+     "author": 0.034999999999999996,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "tRNAfMetCAU_total": {
+     "projected": 3.54767184,
+     "author": 3.54767184,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "tRNAGlyGCC_total": {
+     "projected": 3.5476718399999996,
+     "author": 3.54767184,
+     "abs_diff": -4.440892098500626e-16,
+     "rel_diff": 1.2517764603900416e-16
+    },
+    "Met_total": {
+     "projected": 300.0,
+     "author": 300.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "Gly_total": {
+     "projected": 300.0,
+     "author": 300.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "adenine_moiety_total": {
+     "projected": 3750.0000000000005,
+     "author": 3750.0,
+     "abs_diff": 4.547473508864641e-13,
+     "rel_diff": 1.2126596023639044e-16
+    },
+    "declared_phosphate_equivalent_total": {
+     "projected": 11250.000000000002,
+     "author": 11250.0,
+     "abs_diff": 1.8189894035458565e-12,
+     "rel_diff": 1.6168794698185392e-16
+    },
+    "guanine_check_total": {
+     "projected": 2500.0,
+     "author": 2500.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    }
+   },
+   "I2_worst_rel_diff": 1.6168794698185392e-16,
+   "I2_pass": true,
+   "I3_min_concentration": 0,
+   "I3_pass": true,
+   "I4_pools": {
+    "MetRS_total": {
+     "ePool_from_author": 0.044000000000000004,
+     "free_kept_elim_from_projected": 0.044000000000000004,
+     "abs_diff": 0.0
+    },
+    "GlyRS_total": {
+     "ePool_from_author": 0.034999999999999996,
+     "free_kept_elim_from_projected": 0.034999999999999996,
+     "abs_diff": 0.0
+    }
+   },
+   "I4_pass": true
+  },
+  "S5": {
+   "I1_max_scaled_G": 2.658190571157276e-16,
+   "I1_pass": true,
+   "I2_rows": {
+    "MetRS_total": {
+     "projected": 0.44,
+     "author": 0.44,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "GlyRS_total": {
+     "projected": 0.35,
+     "author": 0.35,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "tRNAfMetCAU_total": {
+     "projected": 3.5476718399999996,
+     "author": 3.54767184,
+     "abs_diff": -4.440892098500626e-16,
+     "rel_diff": 1.2517764603900416e-16
+    },
+    "tRNAGlyGCC_total": {
+     "projected": 3.5476718400000005,
+     "author": 3.54767184,
+     "abs_diff": 4.440892098500626e-16,
+     "rel_diff": 1.2517764603900416e-16
+    },
+    "Met_total": {
+     "projected": 300.00000000000006,
+     "author": 300.0,
+     "abs_diff": 5.684341886080802e-14,
+     "rel_diff": 1.8947806286936006e-16
+    },
+    "Gly_total": {
+     "projected": 299.99999999999994,
+     "author": 300.0,
+     "abs_diff": -5.684341886080802e-14,
+     "rel_diff": 1.8947806286936006e-16
+    },
+    "adenine_moiety_total": {
+     "projected": 3750.0,
+     "author": 3750.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    "declared_phosphate_equivalent_total": {
+     "projected": 11250.000000000004,
+     "author": 11250.0,
+     "abs_diff": 3.637978807091713e-12,
+     "rel_diff": 3.2337589396370783e-16
+    },
+    "guanine_check_total": {
+     "projected": 2500.0,
+     "author": 2500.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    }
+   },
+   "I2_worst_rel_diff": 3.2337589396370783e-16,
+   "I2_pass": true,
+   "I3_min_concentration": 0,
+   "I3_pass": true,
+   "I4_pools": {
+    "MetRS_total": {
+     "ePool_from_author": 0.44,
+     "free_kept_elim_from_projected": 0.44,
+     "abs_diff": 0.0
+    },
+    "GlyRS_total": {
+     "ePool_from_author": 0.35,
+     "free_kept_elim_from_projected": 0.35,
+     "abs_diff": 0.0
+    }
+   },
+   "I4_pass": true
+  }
+ },
+ "I5_idempotency": {
+  "max_abs_diff": 4.440892098500626e-16,
+  "pass": true
+ },
+ "I6_determinism": {
+  "trajectories_byte_identical": true,
+  "initial_states_byte_identical": true,
+  "pass": true
+ },
+ "I7_multi_start": {
+  "mechanism": "production consistentStartV1r2 solves from three deterministic feasible starts (all-zero, uniform half-capacity, uniform 5%) and asserts start agreement to 1e-6*ePool, refusing to proceed otherwise; every smoke and formal run carries the evidence in its log",
+  "evidence": "all 6 smoke runs and the joint solve logs",
+  "pass": true
+ },
+ "I8_smoothness": {
+  "fraction": 0.01,
+  "worst_lipschitz_ratio": 1.4534670756872468,
+  "worst_case": "tRNAfMetCAU-1",
+  "branch_jumps": [
+   []
+  ],
+  "pass": true
+ },
+ "I9_no_future_information": {
+  "mechanism": "consistentStartV1r2 consumes only the scaled author initial state, the author parameters, the frozen debit matrix from the config, and the author RHS; the P2 fast-layer offsets are produced by the registered initialization-only diagnostic, which likewise reads no trajectory artifact",
+  "pass": true
+ },
+ "overall": "ALL_PASS"
+}

@@ -1,0 +1,11 @@
+enzyme,time_s,e_pool_uM,n_eliminated,n_starts,n_converged_feasible,max_scaled_residual,pairwise_start_spread_norm,worst_cond_Jelim,max_branch_vs_reference_dist,worst_complex,block_well_posed,initial_layer_window,ref_match_outside_layer
+MetRS,1.0000e-04,4.4000000000e-01,12,3,1,2.037e-15,nan,1.076e+03,3.175e-01,MetRS_Met_ATP,true,true,not_scored_in_layer
+MetRS,5.7384e-03,4.3999999998e-01,12,3,2,1.668e-14,5.362e-16,1.094e+03,1.476e-01,MetRS_MetAMP_tRNAfMetCAU,true,true,not_scored_in_layer
+MetRS,3.2930e-01,4.3999999994e-01,12,3,2,1.690e-13,1.626e-16,1.130e+03,1.066e-03,MetRS_MetAMP_tRNAfMetCAU,true,false,true
+MetRS,1.8897e+01,4.3999999997e-01,12,3,3,3.968e-12,1.218e-15,2.032e+03,9.562e-08,MetRS_MetAMP_tRNAfMetCAU,true,false,true
+MetRS,1.0000e+03,4.4000000002e-01,12,3,3,5.101e-12,4.810e-16,1.964e+03,3.249e-11,MetRS_ATP,true,false,true
+GlyRS,1.0000e-04,3.5000000000e-01,9,3,1,9.666e-16,nan,3.957e+02,7.909e-01,GlyRS_Gly_ATP_tRNAGlyGCC,true,true,not_scored_in_layer
+GlyRS,5.7384e-03,3.5000000000e-01,9,3,2,7.172e-15,3.013e-15,2.421e+02,1.123e-03,GlyRS_Gly_ATP_tRNAGlyGCC,true,true,not_scored_in_layer
+GlyRS,3.2930e-01,3.4999999997e-01,9,3,2,3.872e-15,3.469e-16,2.500e+02,4.382e-05,GlyRS_Gly_ATP_tRNAGlyGCC,true,false,true
+GlyRS,1.8897e+01,3.4999999997e-01,9,3,3,2.188e-11,1.746e-14,2.706e+03,1.667e-08,GlyRS_ATP,true,false,true
+GlyRS,1.0000e+03,3.5000000003e-01,9,3,3,1.880e-11,1.853e-14,2.607e+03,1.138e-10,GlyRS_Gly_ATP,true,false,true

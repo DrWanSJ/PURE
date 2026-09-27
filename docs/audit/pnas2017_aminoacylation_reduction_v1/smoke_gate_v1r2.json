@@ -1,0 +1,209 @@
+{
+ "schema": "pnas2017_aa_v1r2_smoke_gate/v1",
+ "created": "2026-09-26",
+ "smoke_run": "scratch/v1r2/RED-S0-v1r2-smoke.csv (non-formal RED-S0, v1r2 initializer)",
+ "items": {
+  "1_P1_convergence": {
+   "closure_residual_abs": 4.164890654578812e-12,
+   "closure_residual_scaled": 2.658190571157276e-16,
+   "newton_iterations": 4,
+   "pass": true
+  },
+  "2_P2_convergence": {
+   "t_layer_s": 0.049124999999999995,
+   "branch_check_rel_diff": 0.01899172539819107,
+   "scaled_G_at_exit": 5.308403661577726e-05,
+   "note": "P2 exits at the registered 5*tau_fast layer-window end; the natural layer approaches the manifold to the QSSA defect level (the algebraic 1e-10 root criterion is an algebraic-solve criterion, not a trajectory criterion)"
+  },
+  "3_P1_vs_P2_difference": {
+   "inventories_max_abs_diff": 4.18367562815547e-11,
+   "worst_species_abs": {
+    "name": "GlyRS_AMP_GlytRNAGlyGCC",
+    "abs": 0.0005099843829272996,
+    "scaled": 1.0
+   },
+   "branch_flips": [],
+   "pass": true
+  },
+  "4_initial_inventory_residuals": {
+   "worst_relative": 3.2337589396370783e-16,
+   "pass": true
+  },
+  "5_max_scaled_G_along_trajectory": 9.993e-13,
+  "6_min_projected_concentration": 0.0,
+  "7_block_solve_count": 21254,
+  "8_newton_iterations_median_max": [
+   2,
+   7
+  ],
+  "9_root_failures": 0,
+  "10_solver_stats": {
+   "steps_successful": 4343,
+   "steps_failed": 73,
+   "rhs_evaluations": 10627
+  },
+  "11_initial_layer_cumulative_offsets": {
+   "Gly_release_re182": 0.005173694529321559,
+   "Met_release_re224": 0.00016052173062528163,
+   "Gly_AMP_release_re145": 0.004991481359087955,
+   "Met_AMP_release_re170": 0.0001565132262878023,
+   "Gly_adenylation_re140": 0.03215862225004753,
+   "Met_adenylation_re165": 0.1549818062248368,
+   "aa_ATP_consumption_total": 81.77091794085119,
+   "aa_PPi_production_total": 0.48894835555859134,
+   "aa_AMP_production_total": 0.11506947505818824,
+   "aa_ATP_net_consumption": 0.7767281772083313,
+   "aa_PPi_net_production": 0.4889483555585909,
+   "aa_AMP_net_production": 0.11506947505818822
+  },
+  "12_TG_enzyme_pool_residual": {
+   "MetRS": 1.6653345369377348e-16,
+   "GlyRS": 1.6653345369377348e-16,
+   "threshold": 1e-08,
+   "pass": true
+  },
+  "13_tRNA_inventory_residual": {
+   "tRNAfMetCAU_family": {
+    "t0": 3.54767184,
+    "max_drift_vs_t0": 0.227410131186236,
+    "relative": 0.06410123073453039
+   },
+   "tRNAGlyGCC_family": {
+    "t0": 3.54767184,
+    "max_drift_vs_t0": 0.3226391376136801,
+    "relative": 0.09094390692395048
+   },
+   "threshold": 1e-08,
+   "pass": false,
+   "mechanism": "intrinsic QSSA sliding-leak: the eliminated complexes' token content slides along the manifold as the slow pools drain; along the RED flow l_s*f_s = -l_q*f_q = 0 (closure), so the family ledger total = T_author - q0 + q_content(t) and drifts by the drained complex content"
+  },
+  "14_amino_acid_inventory_residual": {
+   "Met_total": null,
+   "Gly_total": null,
+   "tier": "not a declared T_G ledger (RESOURCE_ACCOUNTING_ONLY row)"
+  },
+  "15_adenine_resource_inventory_residual": {
+   "adenine_ledger": {
+    "t0": 3750.0,
+    "max_drift_vs_t0": 0.7288381463090445,
+    "relative": 0.00019435683901574522
+   },
+   "tier": "NUMERICALLY_UNRESOLVED (FULL reference residual 3.1e-6 > 1e-8)"
+  },
+  "16_phosphate_equivalent_residual": {
+   "phosphate_ledger": {
+    "t0": 68750.32000000002,
+    "max_drift_vs_t0": 1.9899275952629978,
+    "relative": 2.894426666323876e-05
+   },
+   "threshold": 1e-08,
+   "pass": false,
+   "mechanism": "same sliding-leak channel as item 13"
+  }
+ },
+ "phase_9_regression": {
+  "regression_rows": {
+   "MetRS_total": {
+    "author_t0": 0.44,
+    "v1r1_t0_excess": -5.551115123125783e-17,
+    "v1r1_t0_excess_relative": -1.261617073437678e-16,
+    "v1r2_t0_excess": 0.0,
+    "v1r2_t0_excess_relative": 0.0
+   },
+   "GlyRS_total": {
+    "author_t0": 0.35,
+    "v1r1_t0_excess": 0.0,
+    "v1r1_t0_excess_relative": 0.0,
+    "v1r2_t0_excess": 0.0,
+    "v1r2_t0_excess_relative": 0.0
+   },
+   "tRNAfMetCAU_total": {
+    "author_t0": 3.54767184,
+    "v1r1_t0_excess": 0.23484853346294976,
+    "v1r1_t0_excess_relative": 0.06619793037648876,
+    "v1r2_t0_excess": -4.440892098500626e-16,
+    "v1r2_t0_excess_relative": -1.2517764603900416e-16
+   },
+   "tRNAGlyGCC_total": {
+    "author_t0": 3.54767184,
+    "v1r1_t0_excess": 0.3249621000866312,
+    "v1r1_t0_excess_relative": 0.09159869197107903,
+    "v1r2_t0_excess": 4.440892098500626e-16,
+    "v1r2_t0_excess_relative": 1.2517764603900416e-16
+   },
+   "Met_total": {
+    "author_t0": 300.0,
+    "v1r1_t0_excess": 0.3672898510101277,
+    "v1r1_t0_excess_relative": 0.0012242995033670922,
+    "v1r2_t0_excess": 5.684341886080802e-14,
+    "v1r2_t0_excess_relative": 1.8947806286936006e-16
+   },
+   "Gly_total": {
+    "author_t0": 300.0,
+    "v1r1_t0_excess": 0.3335634179337035,
+    "v1r1_t0_excess_relative": 0.0011118780597790116,
+    "v1r2_t0_excess": -5.684341886080802e-14,
+    "v1r2_t0_excess_relative": -1.8947806286936006e-16
+   },
+   "adenine_moiety_total": {
+    "author_t0": 3750.0,
+    "v1r1_t0_excess": 0.730850698269478,
+    "v1r1_t0_excess_relative": 0.00019489351953852748,
+    "v1r2_t0_excess": 0.0,
+    "v1r2_t0_excess_relative": 0.0
+   },
+   "declared_phosphate_equivalent_total": {
+    "author_t0": 11250.0,
+    "v1r1_t0_excess": 1.9901653696906578,
+    "v1r1_t0_excess_relative": 0.00017690358841694737,
+    "v1r2_t0_excess": 3.637978807091713e-12,
+    "v1r2_t0_excess_relative": 3.2337589396370783e-16
+   },
+   "guanine_check_total": {
+    "author_t0": 2500.0,
+    "v1r1_t0_excess": 0.0,
+    "v1r1_t0_excess_relative": 0.0,
+    "v1r2_t0_excess": 0.0,
+    "v1r2_t0_excess_relative": 0.0
+   }
+  },
+  "phantom_gone_in_v1r2": true,
+  "identical_between_v1r1_and_v1r2": {
+   "eliminated_21_states": [
+    "GlyRS_AMP_GlytRNAGlyGCC",
+    "GlyRS_ATP",
+    "GlyRS_ATP_tRNAGlyGCC",
+    "GlyRS_Gly",
+    "GlyRS_GlyAMP_PPi",
+    "GlyRS_Gly_ATP",
+    "GlyRS_Gly_ATP_tRNAGlyGCC",
+    "GlyRS_Gly_tRNAGlyGCC",
+    "GlyRS_tRNAGlyGCC",
+    "MetRS_AMP",
+    "MetRS_AMP_MettRNAfMetCAU",
+    "MetRS_ATP",
+    "MetRS_ATP_tRNAfMetCAU",
+    "MetRS_Met",
+    "MetRS_MetAMP_PPi",
+    "MetRS_MetAMP_PPi_tRNAfMetCAU",
+    "MetRS_MetAMP_tRNAfMetCAU",
+    "MetRS_Met_ATP",
+    "MetRS_Met_ATP_tRNAfMetCAU",
+    "MetRS_Met_tRNAfMetCAU",
+    "MetRS_tRNAfMetCAU"
+   ],
+   "closure_equations": "author RHS rows 0 = dC_i/dt (unchanged)",
+   "acceptance_thresholds": "docs/audit/.../acceptance_criteria.json (sha 6e549a29...)",
+   "stress_domain": "S0..S5 (unchanged)",
+   "source_model": "fMGG_synthesis.m/xml + author CSVs (hashes unchanged)",
+   "solver": "ode15s RelTol 1e-10 AbsTol 1e-14, grid logspace(-4,3,200)",
+   "v1r1_smoke_runner_sha256": "eb4ba2c49d41d8014cc6063473de796709f76ef3e175391ac9ea25c639016085",
+   "v1r2_smoke_runner_change": "v1r2 initializer only; v1r1 path preserved"
+  }
+ },
+ "gate_verdict": {
+  "initial_inventory_errors_within_threshold": true,
+  "v1r1_initial_excess_signature_reproduced_by_v1r2": false,
+  "decision": "PROCEED TO FORMAL RUNS (initial inventories exact; the trajectory-era ledger drift is an acceptance outcome scored in Phase 11, not an initial-inventory error)"
+ }
+}

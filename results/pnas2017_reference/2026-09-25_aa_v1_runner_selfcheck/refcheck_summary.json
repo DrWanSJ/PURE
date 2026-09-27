@@ -1,0 +1,50 @@
+{
+  "schema": "pnas2017_aa_v1_runner_selfcheck/v1",
+  "purpose": [
+    "verify run_pnas2017_aa_v1_formal reference mode == tight reference (author RHS verbatim)",
+    "verify generated pnas2017_aa_v1_rates extraction end-to-end",
+    "verify cumulative-extent augmentation does not perturb the species solution",
+    "tolerance/grid convergence evidence for the T-E numeric budget"
+  ],
+  "runs": {
+    "primary": {
+      "config": "refcheck_config.json",
+      "grid": "logspace(1e-4,1e3,200)",
+      "reltol": 1e-10,
+      "abstol": 1e-14,
+      "file": "refcheck_trajectory_with_extents.csv",
+      "sha256": "7af236250e42673793fec81d09286cfff2e6889bf466c18f3c68dc215a262de2"
+    },
+    "convergence": {
+      "config": "refcheck_convergence_config.json",
+      "grid": "logspace(1e-4,1e3,400)",
+      "reltol": 1e-08,
+      "abstol": 1e-14,
+      "file": "refcheck_convergence_run.csv",
+      "sha256": "b9eecf2871ceadf053d6445ee76d13e730e72648a31de0387e15e4abca4d6914"
+    }
+  },
+  "species_vs_tight_pointwise_max_traj_scaled_dev": 4.974501859009301e-10,
+  "extent_reldev_1e_10_vs_1e_8_max": 3.07e-10,
+  "reference_extents_final_uM_or_signed_uM": {
+    "xi_Gly_release_re182": 3.6046497413554954,
+    "xi_Met_release_re224": 0.014672614819954868,
+    "xi_Gly_AMP_release_re145": 3.603367330662861,
+    "xi_Met_AMP_release_re170": 0.014672539279798055,
+    "xi_Gly_adenylation_re140": 38.59830218255683,
+    "xi_Met_adenylation_re165": 42.633819296002905,
+    "xi_aa_ATP_consumption_total": 11587.047045924353,
+    "xi_aa_PPi_production_total": 76.8637055287048,
+    "xi_aa_AMP_production_total": 22.53729550099499,
+    "xi_aa_ATP_net_consumption": 76.8659525581419,
+    "xi_aa_PPi_net_production": 76.86370552870481,
+    "xi_aa_AMP_net_production": 22.53729550099499
+  },
+  "scientific_note": "gross aa ATP turnover 11587 uM vs net consumption 76.87 uM vs completed charging events 3.619 uM (Gly 3.605 + Met 0.0147): futile binding/adenylation cycling dominates; ATP->AMP+PPi stoichiometry CANNOT be inferred from charging counts. net PPi 76.864 ~= net ATP 76.866; net AMP 22.537; the remainder of adenosine sits in free MetAMP/GlyAMP (29.82/23.73 uM) and enzyme-bound states.",
+  "inputs_verified": {
+    "pnas2017_aa_v1_rates.m": "4b290c8da845d361b75bbf5aca1a0832a2956df71d34b8c46262159f6137369c",
+    "rates_manifest": "282fa987ebce983936134826361d7f7cae1e09268f6e3c33c346f95ea88db3bd",
+    "author_m": "5357b16387970d693f730102256c8d4ee30b91a318ad7482fc13e798834889f4"
+  },
+  "role": "registration input (frozen by hash BEFORE the first formal full-vs-reduced comparison)"
+}

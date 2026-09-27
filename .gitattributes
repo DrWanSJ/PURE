@@ -55,7 +55,7 @@ scripts/build_rs_qssa_audit.py text eol=lf
 
 # Preserve third-party PNAS source bytes and hash-bound SBML execution inputs.
 references/PNAS2017_Matsuura/raw/** -text
-models/pnas2017_full_reference/original/** -text
+models/pnas2017_full_reference/original/** -text -diff
 models/pnas2017_full_reference/normalized/** -text -diff
 models/pnas2017_full_reference/audit/*.csv -text
 models/pnas2017_full_reference/audit/species_properties.csv -text -diff
@@ -65,3 +65,10 @@ docs/reduction/reduction_decisions.csv -text -diff
 docs/reduction/reduction_map.md text eol=lf
 docs/reduction/human_reduction_review.md text eol=lf
 results/pnas2017_reference/** -text -diff
+results/pnas2017_reference/README.md text eol=lf diff
+results/pnas2017_reference/historical_archive_manifest.json text eol=lf diff
+
+# Historical PNAS reduction records include native logs and hash-bound inputs.
+# Preserve their committed bytes, including original line endings and spacing.
+docs/audit/pnas2017_aminoacylation_*/** -text -diff
+docs/audit/pnas2017_research_inputs_025fd34/** -text -diff

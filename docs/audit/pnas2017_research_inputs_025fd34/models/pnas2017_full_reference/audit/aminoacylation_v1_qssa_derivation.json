@@ -1,0 +1,662 @@
+{
+  "schema": "pnas2017_aminoacylation_v1_qssa_derivation/v1",
+  "candidate": "A3a: selective enzyme-bound-complex QSSA; free MetAMP/GlyAMP retained dynamic; free enzyme reconstructed from the proved active-pool total (exact, not a state elimination)",
+  "reference_trajectory": "results/pnas2017_reference/2026-09-25_aa_v1_reference_tight/authors_model_trajectory_tight.csv",
+  "per_enzyme": {
+    "MetRS": {
+      "n_complexes": 14,
+      "n_pool_states": 15,
+      "n_reactions_touching_pool_all": 63,
+      "n_reactions_touching_pool_active": 42,
+      "rank_active_enzyme_state_S": 14,
+      "n_invariants_active_subnetwork": 1,
+      "invariants_active_subnetwork": "[{\"MetRS\": 0.25819889, \"MetRS_AMP\": 0.25819889, \"MetRS_AMP_MettRNAfMetCAU\": 0.25819889, \"MetRS_ATP\": 0.25819889, \"MetRS_ATP_tRNAfMetCAU\": 0.25819889, \"MetRS_Met\": 0.25819889, \"MetRS_MetAMP\": 0.25819889, \"MetRS_MetAMP_PPi\": 0.25819889, \"MetRS_MetAMP_PPi_tRNAfMetCAU\": 0.25819889, \"MetRS_MetAMP_tRNAfMetCAU\": 0.25819889, \"MetRS_Met_ATP\": 0.25819889, \"MetRS_Met_ATP_tRNAfMetCAU\": 0.25819889, \"MetRS_Met_tRNAfMetCAU\": 0.25819889, \"MetRS_MettRNAfMetCAU\": 0.25819889, \"MetRS_tRNAfMetCAU\": 0.25819889}]",
+      "ones_vector_is_invariant": "true",
+      "n_connected_components_active": 1,
+      "components": "[[\"MetRS\", \"MetRS_AMP\", \"MetRS_AMP_MettRNAfMetCAU\", \"MetRS_ATP\", \"MetRS_ATP_tRNAfMetCAU\", \"MetRS_Met\", \"MetRS_MetAMP\", \"MetRS_MetAMP_PPi\", \"MetRS_MetAMP_PPi_tRNAfMetCAU\", \"MetRS_MetAMP_tRNAfMetCAU\", \"MetRS_Met_ATP\", \"MetRS_Met_ATP_tRNAfMetCAU\", \"MetRS_Met_tRNAfMetCAU\", \"MetRS_MettRNAfMetCAU\", \"MetRS_tRNAfMetCAU\"]]"
+    },
+    "GlyRS": {
+      "n_complexes": 14,
+      "n_pool_states": 15,
+      "n_reactions_touching_pool_all": 63,
+      "n_reactions_touching_pool_active": 42,
+      "rank_active_enzyme_state_S": 14,
+      "n_invariants_active_subnetwork": 1,
+      "invariants_active_subnetwork": "[{\"GlyRS\": 0.25819889, \"GlyRS_AMP\": 0.25819889, \"GlyRS_AMP_GlytRNAGlyGCC\": 0.25819889, \"GlyRS_ATP\": 0.25819889, \"GlyRS_ATP_tRNAGlyGCC\": 0.25819889, \"GlyRS_Gly\": 0.25819889, \"GlyRS_GlyAMP\": 0.25819889, \"GlyRS_GlyAMP_PPi\": 0.25819889, \"GlyRS_GlyAMP_PPi_tRNAGlyGCC\": 0.25819889, \"GlyRS_GlyAMP_tRNAGlyGCC\": 0.25819889, \"GlyRS_Gly_ATP\": 0.25819889, \"GlyRS_Gly_ATP_tRNAGlyGCC\": 0.25819889, \"GlyRS_Gly_tRNAGlyGCC\": 0.25819889, \"GlyRS_GlytRNAGlyGCC\": 0.25819889, \"GlyRS_tRNAGlyGCC\": 0.25819889}]",
+      "ones_vector_is_invariant": "true",
+      "n_connected_components_active": 1,
+      "components": "[[\"GlyRS\", \"GlyRS_AMP\", \"GlyRS_AMP_GlytRNAGlyGCC\", \"GlyRS_ATP\", \"GlyRS_ATP_tRNAGlyGCC\", \"GlyRS_Gly\", \"GlyRS_GlyAMP\", \"GlyRS_GlyAMP_PPi\", \"GlyRS_GlyAMP_PPi_tRNAGlyGCC\", \"GlyRS_GlyAMP_tRNAGlyGCC\", \"GlyRS_Gly_ATP\", \"GlyRS_Gly_ATP_tRNAGlyGCC\", \"GlyRS_Gly_tRNAGlyGCC\", \"GlyRS_GlytRNAGlyGCC\", \"GlyRS_tRNAGlyGCC\"]]"
+    }
+  },
+  "closure": [
+    {
+      "enzyme": "MetRS",
+      "time_s": "1.0000e-04",
+      "e_pool_uM": "4.4000000000e-01",
+      "n_starts": 3,
+      "n_converged_feasible": 1,
+      "max_scaled_residual": "3.180e-13",
+      "pairwise_start_spread_norm": "nan",
+      "worst_cond_Jq": "2.924e+04",
+      "distance_to_reference_shape_norm": "7.964e-01",
+      "free_enzyme_at_branch_uM": "8.599329e-05"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "5.7384e-03",
+      "e_pool_uM": "4.3999999998e-01",
+      "n_starts": 3,
+      "n_converged_feasible": 2,
+      "max_scaled_residual": "3.892e-11",
+      "pairwise_start_spread_norm": "8.062e-14",
+      "worst_cond_Jq": "2.979e+04",
+      "distance_to_reference_shape_norm": "7.898e-01",
+      "free_enzyme_at_branch_uM": "8.814931e-05"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "3.2930e-01",
+      "e_pool_uM": "4.3999999994e-01",
+      "n_starts": 3,
+      "n_converged_feasible": 2,
+      "max_scaled_residual": "5.685e-13",
+      "pairwise_start_spread_norm": "7.570e-16",
+      "worst_cond_Jq": "3.090e+04",
+      "distance_to_reference_shape_norm": "4.858e-02",
+      "free_enzyme_at_branch_uM": "9.143018e-05"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "1.8897e+01",
+      "e_pool_uM": "4.3999999997e-01",
+      "n_starts": 3,
+      "n_converged_feasible": 2,
+      "max_scaled_residual": "1.811e-11",
+      "pairwise_start_spread_norm": "4.920e-15",
+      "worst_cond_Jq": "1.695e+05",
+      "distance_to_reference_shape_norm": "8.352e-05",
+      "free_enzyme_at_branch_uM": "1.242949e-05"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "1.0000e+03",
+      "e_pool_uM": "4.4000000002e-01",
+      "n_starts": 3,
+      "n_converged_feasible": 2,
+      "max_scaled_residual": "1.126e-11",
+      "pairwise_start_spread_norm": "2.902e-15",
+      "worst_cond_Jq": "1.660e+05",
+      "distance_to_reference_shape_norm": "1.063e-08",
+      "free_enzyme_at_branch_uM": "1.464753e-05"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "1.0000e-04",
+      "e_pool_uM": "3.5000000000e-01",
+      "n_starts": 3,
+      "n_converged_feasible": 1,
+      "max_scaled_residual": "4.248e-16",
+      "pairwise_start_spread_norm": "nan",
+      "worst_cond_Jq": "1.572e+04",
+      "distance_to_reference_shape_norm": "6.741e-01",
+      "free_enzyme_at_branch_uM": "2.580953e-04"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "5.7384e-03",
+      "e_pool_uM": "3.5000000000e-01",
+      "n_starts": 3,
+      "n_converged_feasible": 2,
+      "max_scaled_residual": "8.602e-14",
+      "pairwise_start_spread_norm": "8.128e-15",
+      "worst_cond_Jq": "1.557e+04",
+      "distance_to_reference_shape_norm": "1.140e-01",
+      "free_enzyme_at_branch_uM": "2.800903e-04"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "3.2930e-01",
+      "e_pool_uM": "3.4999999997e-01",
+      "n_starts": 3,
+      "n_converged_feasible": 2,
+      "max_scaled_residual": "5.082e-15",
+      "pairwise_start_spread_norm": "2.300e-15",
+      "worst_cond_Jq": "1.544e+04",
+      "distance_to_reference_shape_norm": "1.003e-03",
+      "free_enzyme_at_branch_uM": "3.025632e-04"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "1.8897e+01",
+      "e_pool_uM": "3.4999999997e-01",
+      "n_starts": 3,
+      "n_converged_feasible": 2,
+      "max_scaled_residual": "2.481e-13",
+      "pairwise_start_spread_norm": "3.172e-16",
+      "worst_cond_Jq": "1.457e+04",
+      "distance_to_reference_shape_norm": "1.717e-06",
+      "free_enzyme_at_branch_uM": "1.539570e-05"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "1.0000e+03",
+      "e_pool_uM": "3.5000000003e-01",
+      "n_starts": 3,
+      "n_converged_feasible": 2,
+      "max_scaled_residual": "8.842e-11",
+      "pairwise_start_spread_norm": "8.152e-14",
+      "worst_cond_Jq": "1.378e+04",
+      "distance_to_reference_shape_norm": "4.985e-09",
+      "free_enzyme_at_branch_uM": "2.062173e-05"
+    }
+  ],
+  "relaxation": [
+    {
+      "enzyme": "MetRS",
+      "time_s": "1.0000e-04",
+      "perturbation": "x10_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "2.041e-12",
+      "t_to_1pct_s": "5.200e-01",
+      "slowest_attracting_lambda": "-9.141e+00",
+      "fastest_attracting_lambda": "-4.218e+04",
+      "tau_from_slowest_attracting_s": "1.094e-01",
+      "flags": "min_C_8.75e-13"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "1.0000e-04",
+      "perturbation": "x0.1_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "2.041e-12",
+      "t_to_1pct_s": "5.200e-01",
+      "slowest_attracting_lambda": "-9.141e+00",
+      "fastest_attracting_lambda": "-4.218e+04",
+      "tau_from_slowest_attracting_s": "1.094e-01",
+      "flags": "min_C_8.75e-13"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "1.0000e-04",
+      "perturbation": "uniform_0.5E_pool",
+      "success": "true",
+      "rel_dist_at_t_end": "8.569e-12",
+      "t_to_1pct_s": "5.181e-01",
+      "slowest_attracting_lambda": "-9.141e+00",
+      "fastest_attracting_lambda": "-4.218e+04",
+      "tau_from_slowest_attracting_s": "1.094e-01",
+      "flags": "min_C_9.95e-07"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "5.7384e-03",
+      "perturbation": "x10_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "9.354e-12",
+      "t_to_1pct_s": "5.262e-01",
+      "slowest_attracting_lambda": "-8.940e+00",
+      "fastest_attracting_lambda": "-4.209e+04",
+      "tau_from_slowest_attracting_s": "1.119e-01",
+      "flags": "min_C_7.04e-07"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "5.7384e-03",
+      "perturbation": "x0.1_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "6.122e-12",
+      "t_to_1pct_s": "5.302e-01",
+      "slowest_attracting_lambda": "-8.940e+00",
+      "fastest_attracting_lambda": "-4.209e+04",
+      "tau_from_slowest_attracting_s": "1.119e-01",
+      "flags": "min_C_7.08e-08"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "5.7384e-03",
+      "perturbation": "uniform_0.5E_pool",
+      "success": "true",
+      "rel_dist_at_t_end": "8.225e-12",
+      "t_to_1pct_s": "5.240e-01",
+      "slowest_attracting_lambda": "-8.940e+00",
+      "fastest_attracting_lambda": "-4.209e+04",
+      "tau_from_slowest_attracting_s": "1.119e-01",
+      "flags": "min_C_9.90e-07"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "3.2930e-01",
+      "perturbation": "x10_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "2.577e-12",
+      "t_to_1pct_s": "5.488e-01",
+      "slowest_attracting_lambda": "-8.598e+00",
+      "fastest_attracting_lambda": "-4.206e+04",
+      "tau_from_slowest_attracting_s": "1.163e-01",
+      "flags": "min_C_9.80e-07"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "3.2930e-01",
+      "perturbation": "x0.1_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "6.975e-12",
+      "t_to_1pct_s": "5.605e-01",
+      "slowest_attracting_lambda": "-8.598e+00",
+      "fastest_attracting_lambda": "-4.206e+04",
+      "tau_from_slowest_attracting_s": "1.163e-01",
+      "flags": "min_C_1.23e-07"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "3.2930e-01",
+      "perturbation": "uniform_0.5E_pool",
+      "success": "true",
+      "rel_dist_at_t_end": "7.604e-12",
+      "t_to_1pct_s": "5.526e-01",
+      "slowest_attracting_lambda": "-8.598e+00",
+      "fastest_attracting_lambda": "-4.206e+04",
+      "tau_from_slowest_attracting_s": "1.163e-01",
+      "flags": "min_C_9.80e-07"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "1.8897e+01",
+      "perturbation": "x10_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "1.058e-11",
+      "t_to_1pct_s": "1.351e-01",
+      "slowest_attracting_lambda": "-1.693e+00",
+      "fastest_attracting_lambda": "-4.188e+04",
+      "tau_from_slowest_attracting_s": "5.908e-01",
+      "flags": "min_C_3.30e-09"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "1.8897e+01",
+      "perturbation": "x0.1_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "2.040e-10",
+      "t_to_1pct_s": "1.111e-01",
+      "slowest_attracting_lambda": "-1.693e+00",
+      "fastest_attracting_lambda": "-4.188e+04",
+      "tau_from_slowest_attracting_s": "5.908e-01",
+      "flags": "min_C_3.34e-10"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "1.8897e+01",
+      "perturbation": "uniform_0.5E_pool",
+      "success": "true",
+      "rel_dist_at_t_end": "3.681e-09",
+      "t_to_1pct_s": "1.295e+00",
+      "slowest_attracting_lambda": "-1.693e+00",
+      "fastest_attracting_lambda": "-4.188e+04",
+      "tau_from_slowest_attracting_s": "5.908e-01",
+      "flags": "min_C_3.34e-09"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "1.0000e+03",
+      "perturbation": "x10_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "1.532e-11",
+      "t_to_1pct_s": "1.106e-01",
+      "slowest_attracting_lambda": "-1.698e+00",
+      "fastest_attracting_lambda": "-4.103e+04",
+      "tau_from_slowest_attracting_s": "5.890e-01",
+      "flags": "min_C_6.77e-09"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "1.0000e+03",
+      "perturbation": "x0.1_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "3.239e-10",
+      "t_to_1pct_s": "1.109e-01",
+      "slowest_attracting_lambda": "-1.698e+00",
+      "fastest_attracting_lambda": "-4.103e+04",
+      "tau_from_slowest_attracting_s": "5.890e-01",
+      "flags": "min_C_6.84e-10"
+    },
+    {
+      "enzyme": "MetRS",
+      "time_s": "1.0000e+03",
+      "perturbation": "uniform_0.5E_pool",
+      "success": "true",
+      "rel_dist_at_t_end": "3.387e-09",
+      "t_to_1pct_s": "1.256e+00",
+      "slowest_attracting_lambda": "-1.698e+00",
+      "fastest_attracting_lambda": "-4.103e+04",
+      "tau_from_slowest_attracting_s": "5.890e-01",
+      "flags": "min_C_6.84e-09"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "1.0000e-04",
+      "perturbation": "x10_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "1.192e-12",
+      "t_to_1pct_s": "1.257e-01",
+      "slowest_attracting_lambda": "-2.381e+01",
+      "fastest_attracting_lambda": "-5.303e+04",
+      "tau_from_slowest_attracting_s": "4.200e-02",
+      "flags": "min_C_9.72e-13"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "1.0000e-04",
+      "perturbation": "x0.1_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "1.192e-12",
+      "t_to_1pct_s": "1.257e-01",
+      "slowest_attracting_lambda": "-2.381e+01",
+      "fastest_attracting_lambda": "-5.303e+04",
+      "tau_from_slowest_attracting_s": "4.200e-02",
+      "flags": "min_C_9.72e-13"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "1.0000e-04",
+      "perturbation": "uniform_0.5E_pool",
+      "success": "true",
+      "rel_dist_at_t_end": "2.107e-14",
+      "t_to_1pct_s": "1.095e-02",
+      "slowest_attracting_lambda": "-2.381e+01",
+      "fastest_attracting_lambda": "-5.303e+04",
+      "tau_from_slowest_attracting_s": "4.200e-02",
+      "flags": "min_C_2.53e-04"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "5.7384e-03",
+      "perturbation": "x10_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "1.909e-14",
+      "t_to_1pct_s": "1.951e-01",
+      "slowest_attracting_lambda": "-2.379e+01",
+      "fastest_attracting_lambda": "-5.282e+04",
+      "tau_from_slowest_attracting_s": "4.203e-02",
+      "flags": "min_C_2.25e-05"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "5.7384e-03",
+      "perturbation": "x0.1_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "4.058e-14",
+      "t_to_1pct_s": "1.320e-01",
+      "slowest_attracting_lambda": "-2.379e+01",
+      "fastest_attracting_lambda": "-5.282e+04",
+      "tau_from_slowest_attracting_s": "4.203e-02",
+      "flags": "min_C_2.27e-06"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "5.7384e-03",
+      "perturbation": "uniform_0.5E_pool",
+      "success": "true",
+      "rel_dist_at_t_end": "1.622e-14",
+      "t_to_1pct_s": "7.895e-03",
+      "slowest_attracting_lambda": "-2.379e+01",
+      "fastest_attracting_lambda": "-5.282e+04",
+      "tau_from_slowest_attracting_s": "4.203e-02",
+      "flags": "min_C_2.63e-04"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "3.2930e-01",
+      "perturbation": "x10_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "6.364e-15",
+      "t_to_1pct_s": "1.630e-01",
+      "slowest_attracting_lambda": "-2.377e+01",
+      "fastest_attracting_lambda": "-5.270e+04",
+      "tau_from_slowest_attracting_s": "4.207e-02",
+      "flags": "min_C_2.67e-04"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "3.2930e-01",
+      "perturbation": "x0.1_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "1.521e-14",
+      "t_to_1pct_s": "1.299e-01",
+      "slowest_attracting_lambda": "-2.377e+01",
+      "fastest_attracting_lambda": "-5.270e+04",
+      "tau_from_slowest_attracting_s": "4.207e-02",
+      "flags": "min_C_2.70e-05"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "3.2930e-01",
+      "perturbation": "uniform_0.5E_pool",
+      "success": "true",
+      "rel_dist_at_t_end": "1.937e-13",
+      "t_to_1pct_s": "6.473e-03",
+      "slowest_attracting_lambda": "-2.377e+01",
+      "fastest_attracting_lambda": "-5.270e+04",
+      "tau_from_slowest_attracting_s": "4.207e-02",
+      "flags": "min_C_2.66e-04"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "1.8897e+01",
+      "perturbation": "x10_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "1.998e-14",
+      "t_to_1pct_s": "1.977e-01",
+      "slowest_attracting_lambda": "-2.364e+01",
+      "fastest_attracting_lambda": "-5.152e+04",
+      "tau_from_slowest_attracting_s": "4.231e-02",
+      "flags": "min_C_3.27e-09"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "1.8897e+01",
+      "perturbation": "x0.1_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "1.427e-15",
+      "t_to_1pct_s": "1.981e-01",
+      "slowest_attracting_lambda": "-2.364e+01",
+      "fastest_attracting_lambda": "-5.152e+04",
+      "tau_from_slowest_attracting_s": "4.231e-02",
+      "flags": "min_C_3.30e-10"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "1.8897e+01",
+      "perturbation": "uniform_0.5E_pool",
+      "success": "true",
+      "rel_dist_at_t_end": "4.485e-16",
+      "t_to_1pct_s": "1.958e-01",
+      "slowest_attracting_lambda": "-2.364e+01",
+      "fastest_attracting_lambda": "-5.152e+04",
+      "tau_from_slowest_attracting_s": "4.231e-02",
+      "flags": "min_C_3.31e-09"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "1.0000e+03",
+      "perturbation": "x10_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "1.673e-16",
+      "t_to_1pct_s": "1.962e-01",
+      "slowest_attracting_lambda": "-2.401e+01",
+      "fastest_attracting_lambda": "-5.025e+04",
+      "tau_from_slowest_attracting_s": "4.165e-02",
+      "flags": "min_C_9.19e-09"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "1.0000e+03",
+      "perturbation": "x0.1_ref_shape",
+      "success": "true",
+      "rel_dist_at_t_end": "6.344e-16",
+      "t_to_1pct_s": "1.935e-01",
+      "slowest_attracting_lambda": "-2.401e+01",
+      "fastest_attracting_lambda": "-5.025e+04",
+      "tau_from_slowest_attracting_s": "4.165e-02",
+      "flags": "min_C_9.28e-10"
+    },
+    {
+      "enzyme": "GlyRS",
+      "time_s": "1.0000e+03",
+      "perturbation": "uniform_0.5E_pool",
+      "success": "true",
+      "rel_dist_at_t_end": "7.930e-16",
+      "t_to_1pct_s": "1.930e-01",
+      "slowest_attracting_lambda": "-2.401e+01",
+      "fastest_attracting_lambda": "-5.025e+04",
+      "tau_from_slowest_attracting_s": "4.165e-02",
+      "flags": "min_C_9.28e-09"
+    }
+  ],
+  "per_complex_defect_summary": {
+    "MetRS": {
+      "MetRS_AMP": {
+        "max_rel_defect_vs_own_production": "9.988e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "9.497e-06"
+      },
+      "MetRS_AMP_MettRNAfMetCAU": {
+        "max_rel_defect_vs_own_production": "9.986e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "5.639e-03"
+      },
+      "MetRS_ATP": {
+        "max_rel_defect_vs_own_production": "1.000e+00",
+        "at_time_s": "1.0000e-04",
+        "max_occupancy_frac_pool": "7.869e-01"
+      },
+      "MetRS_ATP_tRNAfMetCAU": {
+        "max_rel_defect_vs_own_production": "9.812e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "5.254e-02"
+      },
+      "MetRS_Met": {
+        "max_rel_defect_vs_own_production": "1.000e+00",
+        "at_time_s": "1.0000e-04",
+        "max_occupancy_frac_pool": "3.606e-02"
+      },
+      "MetRS_MetAMP": {
+        "max_rel_defect_vs_own_production": "9.996e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "9.941e-01"
+      },
+      "MetRS_MetAMP_PPi": {
+        "max_rel_defect_vs_own_production": "9.961e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "2.407e-02"
+      },
+      "MetRS_MetAMP_PPi_tRNAfMetCAU": {
+        "max_rel_defect_vs_own_production": "9.975e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "3.802e-02"
+      },
+      "MetRS_MetAMP_tRNAfMetCAU": {
+        "max_rel_defect_vs_own_production": "9.997e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "4.122e-01"
+      },
+      "MetRS_Met_ATP": {
+        "max_rel_defect_vs_own_production": "9.860e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "5.391e-01"
+      },
+      "MetRS_Met_ATP_tRNAfMetCAU": {
+        "max_rel_defect_vs_own_production": "9.906e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "2.045e-01"
+      },
+      "MetRS_Met_tRNAfMetCAU": {
+        "max_rel_defect_vs_own_production": "8.401e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "1.373e-02"
+      },
+      "MetRS_MettRNAfMetCAU": {
+        "max_rel_defect_vs_own_production": "1.895e+00",
+        "at_time_s": "9.8850e+00",
+        "max_occupancy_frac_pool": "7.779e-01"
+      },
+      "MetRS_tRNAfMetCAU": {
+        "max_rel_defect_vs_own_production": "1.000e+00",
+        "at_time_s": "1.0000e-04",
+        "max_occupancy_frac_pool": "3.511e-03"
+      }
+    },
+    "GlyRS": {
+      "GlyRS_AMP": {
+        "max_rel_defect_vs_own_production": "9.988e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "1.295e-03"
+      },
+      "GlyRS_AMP_GlytRNAGlyGCC": {
+        "max_rel_defect_vs_own_production": "9.981e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "3.675e-03"
+      },
+      "GlyRS_ATP": {
+        "max_rel_defect_vs_own_production": "1.000e+00",
+        "at_time_s": "1.0000e-04",
+        "max_occupancy_frac_pool": "6.153e-01"
+      },
+      "GlyRS_ATP_tRNAGlyGCC": {
+        "max_rel_defect_vs_own_production": "9.592e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "2.134e-01"
+      },
+      "GlyRS_Gly": {
+        "max_rel_defect_vs_own_production": "1.000e+00",
+        "at_time_s": "1.0000e-04",
+        "max_occupancy_frac_pool": "5.627e-02"
+      },
+      "GlyRS_GlyAMP": {
+        "max_rel_defect_vs_own_production": "9.973e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "9.968e-01"
+      },
+      "GlyRS_GlyAMP_PPi": {
+        "max_rel_defect_vs_own_production": "9.932e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "5.156e-03"
+      },
+      "GlyRS_GlyAMP_PPi_tRNAGlyGCC": {
+        "max_rel_defect_vs_own_production": "9.976e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "2.730e-03"
+      },
+      "GlyRS_GlyAMP_tRNAGlyGCC": {
+        "max_rel_defect_vs_own_production": "9.998e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "2.260e-01"
+      },
+      "GlyRS_Gly_ATP": {
+        "max_rel_defect_vs_own_production": "9.726e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "2.095e-01"
+      },
+      "GlyRS_Gly_ATP_tRNAGlyGCC": {
+        "max_rel_defect_vs_own_production": "9.861e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "7.688e-01"
+      },
+      "GlyRS_Gly_tRNAGlyGCC": {
+        "max_rel_defect_vs_own_production": "8.383e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "9.258e-02"
+      },
+      "GlyRS_GlytRNAGlyGCC": {
+        "max_rel_defect_vs_own_production": "9.996e-01",
+        "at_time_s": "1.0844e-04",
+        "max_occupancy_frac_pool": "1.042e-02"
+      },
+      "GlyRS_tRNAGlyGCC": {
+        "max_rel_defect_vs_own_production": "1.000e+00",
+        "at_time_s": "1.0000e-04",
+        "max_occupancy_frac_pool": "4.513e-02"
+      }
+    }
+  },
+  "note_near_zero_modes": "near-zero eigenvalues are only classified structural after the explicit invariant/component analysis above supports it; otherwise they are reported as unresolved slow modes of the candidate fast block"
+}

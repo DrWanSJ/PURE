@@ -1,0 +1,517 @@
+{
+  "mode": "reduced",
+  "initializer": "v1r2",
+  "init_debits": {
+    "tRNAfMetCAU": {
+      "MetRS_AMP_MettRNAfMetCAU": -1.0,
+      "MetRS_ATP_tRNAfMetCAU": -1.0,
+      "MetRS_MetAMP_PPi_tRNAfMetCAU": -1.0,
+      "MetRS_MetAMP_tRNAfMetCAU": -1.0,
+      "MetRS_Met_ATP_tRNAfMetCAU": -1.0,
+      "MetRS_Met_tRNAfMetCAU": -1.0,
+      "MetRS_tRNAfMetCAU": -1.0
+    },
+    "tRNAGlyGCC": {
+      "GlyRS_AMP_GlytRNAGlyGCC": -1.0,
+      "GlyRS_ATP_tRNAGlyGCC": -1.0,
+      "GlyRS_Gly_ATP_tRNAGlyGCC": -1.0,
+      "GlyRS_Gly_tRNAGlyGCC": -1.0,
+      "GlyRS_tRNAGlyGCC": -1.0
+    },
+    "Met": {
+      "MetRS_AMP_MettRNAfMetCAU": -1.0,
+      "MetRS_Met": -1.0,
+      "MetRS_MetAMP_PPi": -1.0,
+      "MetRS_MetAMP_PPi_tRNAfMetCAU": -1.0,
+      "MetRS_MetAMP_tRNAfMetCAU": -1.0,
+      "MetRS_Met_ATP": -1.0,
+      "MetRS_Met_ATP_tRNAfMetCAU": -1.0,
+      "MetRS_Met_tRNAfMetCAU": -1.0
+    },
+    "Gly": {
+      "GlyRS_AMP_GlytRNAGlyGCC": -1.0,
+      "GlyRS_Gly": -1.0,
+      "GlyRS_GlyAMP_PPi": -1.0,
+      "GlyRS_Gly_ATP": -1.0,
+      "GlyRS_Gly_ATP_tRNAGlyGCC": -1.0,
+      "GlyRS_Gly_tRNAGlyGCC": -1.0
+    },
+    "ATP": {
+      "GlyRS_AMP_GlytRNAGlyGCC": -1.0,
+      "GlyRS_ATP": -1.0,
+      "GlyRS_ATP_tRNAGlyGCC": -1.0,
+      "GlyRS_GlyAMP_PPi": -1.0,
+      "GlyRS_Gly_ATP": -1.0,
+      "GlyRS_Gly_ATP_tRNAGlyGCC": -1.0,
+      "MetRS_AMP": -1.0,
+      "MetRS_AMP_MettRNAfMetCAU": -1.0,
+      "MetRS_ATP": -1.0,
+      "MetRS_ATP_tRNAfMetCAU": -1.0,
+      "MetRS_MetAMP_PPi": -1.0,
+      "MetRS_MetAMP_PPi_tRNAfMetCAU": -1.0,
+      "MetRS_MetAMP_tRNAfMetCAU": -1.0,
+      "MetRS_Met_ATP": -1.0,
+      "MetRS_Met_ATP_tRNAfMetCAU": -1.0
+    },
+    "PPi": {
+      "GlyRS_AMP_GlytRNAGlyGCC": 1.0,
+      "MetRS_AMP": 1.0,
+      "MetRS_AMP_MettRNAfMetCAU": 1.0,
+      "MetRS_MetAMP_tRNAfMetCAU": 1.0
+    }
+  },
+  "init_extents_offset": [
+    0.0027837223027470112,
+    0.0001390202393374148,
+    0.0026882582585602793,
+    0.0001351451670210394,
+    0.01738001159585467,
+    0.1303398321239434,
+    46.73704323885156,
+    0.4394377838588099,
+    0.09321389537880329,
+    0.6071258405027333,
+    0.43943778385880994,
+    0.09321389537880329
+  ],
+  "reltol": 1e-10,
+  "abstol": 1e-14,
+  "grid": [
+    0.0001,
+    1000.0,
+    200
+  ],
+  "x0_scale": {
+    "ATP": 0.1
+  },
+  "outfile": "C:/Users/sean/Desktop/GUV-PURE/results/pnas2017_reference/2026-09-26_aa_v1r2_formal/trajectories/RED-v1r2-S1.csv",
+  "stats": true,
+  "cumdefs": [
+    {
+      "id": "Gly_release_re182",
+      "reactions": [
+        {
+          "rid": "re0000000182",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "Met_release_re224",
+      "reactions": [
+        {
+          "rid": "re0000000224",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "Gly_AMP_release_re145",
+      "reactions": [
+        {
+          "rid": "re0000000145",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "Met_AMP_release_re170",
+      "reactions": [
+        {
+          "rid": "re0000000170",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "Gly_adenylation_re140",
+      "reactions": [
+        {
+          "rid": "re0000000140",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "Met_adenylation_re165",
+      "reactions": [
+        {
+          "rid": "re0000000165",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "aa_ATP_consumption_total",
+      "reactions": [
+        {
+          "rid": "re0000000132",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000136",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000157",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000161",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000191",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000195",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000233",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000237",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "aa_PPi_production_total",
+      "reactions": [
+        {
+          "rid": "re0000000127",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000142",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000152",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000167",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000189",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000215",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000231",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000257",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "aa_AMP_production_total",
+      "reactions": [
+        {
+          "rid": "re0000000143",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000144",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000145",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000168",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000169",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000170",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000180",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000186",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000222",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000228",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "aa_ATP_net_consumption",
+      "reactions": [
+        {
+          "rid": "re0000000129",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000132",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000133",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000136",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000137",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000138",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000154",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000157",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000158",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000161",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000162",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000163",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000191",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000192",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000195",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000196",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000212",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000214",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000233",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000234",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000237",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000238",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000254",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000256",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "aa_PPi_net_production",
+      "reactions": [
+        {
+          "rid": "re0000000127",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000142",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000150",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000152",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000167",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000175",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000189",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000215",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000217",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000231",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000257",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000260",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "aa_AMP_net_production",
+      "reactions": [
+        {
+          "rid": "re0000000143",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000144",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000145",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000146",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000149",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000168",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000169",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000170",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000171",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000174",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000180",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000181",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000186",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000222",
+          "sign": 1
+        },
+        {
+          "rid": "re0000000223",
+          "sign": -1
+        },
+        {
+          "rid": "re0000000228",
+          "sign": 1
+        }
+      ]
+    }
+  ],
+  "condition_description": "ATP x0.1",
+  "active_partition": "docs/audit/pnas2017_aminoacylation_reduction_v1/candidate_partition_v1r1.json",
+  "active_partition_revision": "v1r1",
+  "initialization_revision": "v1r2",
+  "binit_artifact": "docs/audit/pnas2017_aminoacylation_reduction_v1/binit_v1r2.json",
+  "binit_sha256": "472e18100347ed236f67a6a5fadb2607aac9fd029f94bdf26f985681d97a02f6",
+  "p2_layer_summary_sha256": "c69fa1bf3f70a82a799a59263b5a00379e71a9abe61d4b56d12313fb6ef7b89a",
+  "eliminated": [
+    "GlyRS_AMP_GlytRNAGlyGCC",
+    "GlyRS_ATP",
+    "GlyRS_ATP_tRNAGlyGCC",
+    "GlyRS_Gly",
+    "GlyRS_GlyAMP_PPi",
+    "GlyRS_Gly_ATP",
+    "GlyRS_Gly_ATP_tRNAGlyGCC",
+    "GlyRS_Gly_tRNAGlyGCC",
+    "GlyRS_tRNAGlyGCC",
+    "MetRS_AMP",
+    "MetRS_AMP_MettRNAfMetCAU",
+    "MetRS_ATP",
+    "MetRS_ATP_tRNAfMetCAU",
+    "MetRS_Met",
+    "MetRS_MetAMP_PPi",
+    "MetRS_MetAMP_PPi_tRNAfMetCAU",
+    "MetRS_MetAMP_tRNAfMetCAU",
+    "MetRS_Met_ATP",
+    "MetRS_Met_ATP_tRNAfMetCAU",
+    "MetRS_Met_tRNAfMetCAU",
+    "MetRS_tRNAfMetCAU"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "pnas2017_aa_a3b_smoke_gate/v1",
+  "candidate": "A3b-21 (initial total-coordinate attempt, 21-state fast set)",
+  "date": "2026-09-26",
+  "run": "A3b-S0-smoke",
+  "config": "results/pnas2017_reference/2026-09-26_aa_a3bc_smoke/configs/A3b-S0-smoke.json",
+  "config_sha256": "a17354fab8e9c6fc4e0b7ea080d000ad35f0fc3286c17386d15ea5e2b3103d1c",
+  "condition": "reference (S0), unmodified author initial values",
+  "pre_qssa_B1_B10": "11/11 PASS (verify_pnas2017_aa_a3bc_preqssa)",
+  "t0_inventory_max_absdiff": 5.684e-14,
+  "t0_closure_scaled_residual": 4.313e-11,
+  "t0_ic_adjustment": "ATP 3750 -> 3749.27 (0.731; the eliminated complexes' adenosyl content, matching the registered v1r2 debit exactly and requiring NO debit matrix)",
+  "outcome": "FAILED_SMOKE_CLOSURE_FEASIBILITY",
+  "failure_time_s": 2.498,
+  "failure_residual": "max|G| = 9.298e+03 uM/s (scaled 5.635e-01 > registered 1e-10); min q = 5.25e-13 (a complex quasi-steady value driven through the feasibility floor; runner terminated fail-closed, no clipping)",
+  "mechanism": "the total-coordinate realization keeps every protected ledger exact (the sliding-leak is absent by construction), but the closed-loop 21-state QSSA is dynamically unstable in the GlyAMP-accumulation era: the reconstructed free tRNAGlyGCC crashes 2.0 -> 0.17 uM across t ~ 2.4-3.0 s while the closure under-predicts the PPi-bearing MetRS complexes (MetRS_MetAMP_PPi 2.7e-4 vs FULL 5.3e-2) and drives MetRS_AMP through the feasibility floor. This reproduces the refuted v1r3 signature (closure loss at t = 2.501 s) almost exactly: the failure is intrinsic to the 21-state fast set under exact substrate ledgers, NOT to the coordinate bookkeeping.",
+  "relation_to_v1r3": "A3b-21 with the 21-state set is mathematically the ledger-exact realization of the same closed-loop DAE the v1r3 investigation refuted; the smoke gate confirms the refutation transfers to the exact-coordinate form.",
+  "consequence": "STOP A3b-21 before formal runs (Phase 12). Per Phase 6 the fast-state set may be changed on explicit evidence as a NEW candidate: A3b-r12 returns the 12 tRNA-bearing complexes to the dynamic state vector and keeps only the 9 tRNA-free binding/adenylation complexes algebraic (artifacts in docs/audit/pnas2017_aminoacylation_A3b_r12/); its pre-QSSA checks pass 11/11 and its S0 smoke is recorded separately.",
+  "evidence": [
+    "docs/audit/pnas2017_aminoacylation_A3b/A3b21_S0_smoke_runner_log.txt",
+    "docs/audit/pnas2017_aminoacylation_A3b/A3b21_S0_smoke_closure_diagnosis.log"
+  ],
+  "ledger_classification_note": "the five exact rows never moved during the healthy part of the run: the anti-sliding-leak criterion holds structurally; the failure is a DYNAMIC closure failure, not a conservation failure"
+}

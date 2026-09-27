@@ -1,0 +1,40 @@
+{
+  "schema": "pnas2017_aa_a3b_reconstruction/v1",
+  "order": [
+    "eliminated(q)",
+    "MetRS",
+    "GlyRS",
+    "ATP",
+    "PPi",
+    "Met",
+    "Gly"
+  ],
+  "carriers": {
+    "MetRS": {
+      "total_row": "MetRS_total",
+      "family_ledger": "MetRS_total"
+    },
+    "GlyRS": {
+      "total_row": "GlyRS_total",
+      "family_ledger": "GlyRS_total"
+    },
+    "ATP": {
+      "total_row": "adenine_ledger_total",
+      "family_ledger": "adenine_ledger_total"
+    },
+    "PPi": {
+      "total_row": "phosphate_ledger_total",
+      "family_ledger": "phosphate_ledger_total",
+      "carrier_weight": 2
+    },
+    "Met": {
+      "total_row": "Met_material_total",
+      "family_ledger": "Met_material_total"
+    },
+    "Gly": {
+      "total_row": "Gly_material_total",
+      "family_ledger": "Gly_material_total"
+    }
+  },
+  "rule": "carrier = total(y) - sum_{members != carrier} w_j x_j (PPi: (total - sum w_j x_j)/w_carrier); members read x from q (eliminated), y (identity rows), or previously reconstructed carriers"
+}

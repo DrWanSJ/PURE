@@ -1,0 +1,295 @@
+{
+  "schema": "pnas2017_aa_a3c_eligibility/v1",
+  "selection_rule": "a fast state is eligible only if, after accounting for the exactly reconstructed enzyme totals, its algebraic motion creates no unresolved contribution to any protected ledger row",
+  "protected_rows_examined": [
+    "tRNAfMetCAU_total",
+    "tRNAGlyGCC_total",
+    "phosphate_ledger_total",
+    "adenine_ledger_total",
+    "Met_material_total",
+    "Gly_material_total"
+  ],
+  "states": [
+    {
+      "state": "GlyRS_AMP_GlytRNAGlyGCC",
+      "protected_content": {
+        "tRNAGlyGCC_total": 1,
+        "phosphate_ledger_total": 1,
+        "adenine_ledger_total": 1,
+        "Gly_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "tRNAGlyGCC_total",
+        "phosphate_ledger_total",
+        "adenine_ledger_total",
+        "Gly_material_total"
+      ]
+    },
+    {
+      "state": "GlyRS_ATP",
+      "protected_content": {
+        "phosphate_ledger_total": 3,
+        "adenine_ledger_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "phosphate_ledger_total",
+        "adenine_ledger_total"
+      ]
+    },
+    {
+      "state": "GlyRS_ATP_tRNAGlyGCC",
+      "protected_content": {
+        "tRNAGlyGCC_total": 1,
+        "phosphate_ledger_total": 3,
+        "adenine_ledger_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "tRNAGlyGCC_total",
+        "phosphate_ledger_total",
+        "adenine_ledger_total"
+      ]
+    },
+    {
+      "state": "GlyRS_Gly",
+      "protected_content": {
+        "Gly_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "Gly_material_total"
+      ]
+    },
+    {
+      "state": "GlyRS_GlyAMP_PPi",
+      "protected_content": {
+        "phosphate_ledger_total": 3,
+        "adenine_ledger_total": 1,
+        "Gly_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "phosphate_ledger_total",
+        "adenine_ledger_total",
+        "Gly_material_total"
+      ]
+    },
+    {
+      "state": "GlyRS_Gly_ATP",
+      "protected_content": {
+        "phosphate_ledger_total": 3,
+        "adenine_ledger_total": 1,
+        "Gly_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "phosphate_ledger_total",
+        "adenine_ledger_total",
+        "Gly_material_total"
+      ]
+    },
+    {
+      "state": "GlyRS_Gly_ATP_tRNAGlyGCC",
+      "protected_content": {
+        "tRNAGlyGCC_total": 1,
+        "phosphate_ledger_total": 3,
+        "adenine_ledger_total": 1,
+        "Gly_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "tRNAGlyGCC_total",
+        "phosphate_ledger_total",
+        "adenine_ledger_total",
+        "Gly_material_total"
+      ]
+    },
+    {
+      "state": "GlyRS_Gly_tRNAGlyGCC",
+      "protected_content": {
+        "tRNAGlyGCC_total": 1,
+        "Gly_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "tRNAGlyGCC_total",
+        "Gly_material_total"
+      ]
+    },
+    {
+      "state": "GlyRS_tRNAGlyGCC",
+      "protected_content": {
+        "tRNAGlyGCC_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "tRNAGlyGCC_total"
+      ]
+    },
+    {
+      "state": "MetRS_AMP",
+      "protected_content": {
+        "phosphate_ledger_total": 1,
+        "adenine_ledger_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "phosphate_ledger_total",
+        "adenine_ledger_total"
+      ]
+    },
+    {
+      "state": "MetRS_AMP_MettRNAfMetCAU",
+      "protected_content": {
+        "tRNAfMetCAU_total": 1,
+        "phosphate_ledger_total": 1,
+        "adenine_ledger_total": 1,
+        "Met_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "tRNAfMetCAU_total",
+        "phosphate_ledger_total",
+        "adenine_ledger_total",
+        "Met_material_total"
+      ]
+    },
+    {
+      "state": "MetRS_ATP",
+      "protected_content": {
+        "phosphate_ledger_total": 3,
+        "adenine_ledger_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "phosphate_ledger_total",
+        "adenine_ledger_total"
+      ]
+    },
+    {
+      "state": "MetRS_ATP_tRNAfMetCAU",
+      "protected_content": {
+        "tRNAfMetCAU_total": 1,
+        "phosphate_ledger_total": 3,
+        "adenine_ledger_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "tRNAfMetCAU_total",
+        "phosphate_ledger_total",
+        "adenine_ledger_total"
+      ]
+    },
+    {
+      "state": "MetRS_Met",
+      "protected_content": {
+        "Met_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "Met_material_total"
+      ]
+    },
+    {
+      "state": "MetRS_MetAMP_PPi",
+      "protected_content": {
+        "phosphate_ledger_total": 3,
+        "adenine_ledger_total": 1,
+        "Met_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "phosphate_ledger_total",
+        "adenine_ledger_total",
+        "Met_material_total"
+      ]
+    },
+    {
+      "state": "MetRS_MetAMP_PPi_tRNAfMetCAU",
+      "protected_content": {
+        "tRNAfMetCAU_total": 1,
+        "phosphate_ledger_total": 3,
+        "adenine_ledger_total": 1,
+        "Met_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "tRNAfMetCAU_total",
+        "phosphate_ledger_total",
+        "adenine_ledger_total",
+        "Met_material_total"
+      ]
+    },
+    {
+      "state": "MetRS_MetAMP_tRNAfMetCAU",
+      "protected_content": {
+        "tRNAfMetCAU_total": 1,
+        "phosphate_ledger_total": 1,
+        "adenine_ledger_total": 1,
+        "Met_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "tRNAfMetCAU_total",
+        "phosphate_ledger_total",
+        "adenine_ledger_total",
+        "Met_material_total"
+      ]
+    },
+    {
+      "state": "MetRS_Met_ATP",
+      "protected_content": {
+        "phosphate_ledger_total": 3,
+        "adenine_ledger_total": 1,
+        "Met_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "phosphate_ledger_total",
+        "adenine_ledger_total",
+        "Met_material_total"
+      ]
+    },
+    {
+      "state": "MetRS_Met_ATP_tRNAfMetCAU",
+      "protected_content": {
+        "tRNAfMetCAU_total": 1,
+        "phosphate_ledger_total": 3,
+        "adenine_ledger_total": 1,
+        "Met_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "tRNAfMetCAU_total",
+        "phosphate_ledger_total",
+        "adenine_ledger_total",
+        "Met_material_total"
+      ]
+    },
+    {
+      "state": "MetRS_Met_tRNAfMetCAU",
+      "protected_content": {
+        "tRNAfMetCAU_total": 1,
+        "Met_material_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "tRNAfMetCAU_total",
+        "Met_material_total"
+      ]
+    },
+    {
+      "state": "MetRS_tRNAfMetCAU",
+      "protected_content": {
+        "tRNAfMetCAU_total": 1
+      },
+      "classification": "KEEP_EXPLICIT_PROTECTED_LEDGER",
+      "blocking_rows": [
+        "tRNAfMetCAU_total"
+      ]
+    }
+  ],
+  "n_eligible": 0
+}

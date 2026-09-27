@@ -1,0 +1,21 @@
+[警告: 名称不存在或不是目录: D:\BaiduSyncdisk\FACHill\slanCM] 
+[警告: 在为表创建变量名称之前，对文件中的列标题进行了修改，以使其成为有效的 MATLAB 标识符。原始列标题保存在 VariableDescriptions 属性中。
+将 'VariableNamingRule' 设置为 'preserve' 以使用原始列标题作为表变量名称。] 
+cumulative-extent offsets seeded (P2 fast layer): Gly_release_re182=0.00517369, Met_release_re224=0.000160522, Gly_AMP_release_re145=0.00499148, Met_AMP_release_re170=0.000156513, Gly_adenylation_re140=0.0321586, Met_adenylation_re165=0.154982, aa_ATP_consumption_total=81.7709, aa_PPi_production_total=0.488948, aa_AMP_production_total=0.115069, aa_ATP_net_consumption=0.776728, aa_PPi_net_production=0.488948, aa_AMP_net_production=0.115069
+largest initial-condition adjustment: ATP: 3750 -> 3749.27 (0.731)
+a3b consistent start: max|G| = 7.116e-07 uM/s (4.313e-11 of production scale 1.650e+04), iters = 10, starts_ok = 2
+a3b t0: min reconstructed concentration = 0.000e+00; inventory max abs diff = 5.684e-14
+{错误使用 run_pnas2017_aa_a3b_formal>a3b_rhs (第 352 行)
+a3b closure-lost at t=2.498e+00: max|G| = 9.298e+03 (scaled 5.635e-01 > registered 1e-10)
+
+出错 run_pnas2017_aa_a3b_formal>@(t,y)a3b_rhs(t,y,C,params,NC,used_rows,A,seed,statsH,gscale) (第 227 行)
+odefun = @(t, y) a3b_rhs(t, y, C, params, NC, used_rows, A, seed, ...
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 ode15s (第 555 行)
+                rhs = hinvGak*ode(tnew,ynew,odeArgs{:}) -  Mtnew*(psi+difkp1);
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_pnas2017_aa_a3b_formal (第 239 行)
+[tv, yv] = ode15s(odefun, tgrid, z0, opt);
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

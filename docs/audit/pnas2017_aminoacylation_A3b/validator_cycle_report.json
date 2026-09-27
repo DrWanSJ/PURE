@@ -1,0 +1,116 @@
+{
+  "schema": "pnas2017_aa_a3bc_validator/v1",
+  "baseline": "61a2aa829c5bb5755e7f83114913ff7b84ae4d6f",
+  "checks": [
+    {
+      "id": "N01",
+      "status": "PASS",
+      "note": "historical A3a evidence unchanged vs baseline"
+    },
+    {
+      "id": "N02",
+      "status": "PASS",
+      "note": "SBML sha dc43bcec367f5210... matches the audited raw source in provenance.csv"
+    },
+    {
+      "id": "N03",
+      "status": "PASS",
+      "note": "rank(T)=241 reproduced for both candidates (exact modular + numeric)"
+    },
+    {
+      "id": "N07",
+      "status": "PASS",
+      "note": "protected ledger classification and rowspace(A) membership reproduced"
+    },
+    {
+      "id": "N05",
+      "status": "PASS",
+      "note": "coordinate round-trip + RHS identities (B1-B10): a3b21: 11/11, a3br12: 11/11"
+    },
+    {
+      "id": "N06",
+      "status": "PASS",
+      "note": "transformed RHS identity (B6 within B1-B10 transcripts)"
+    },
+    {
+      "id": "N08",
+      "status": "PASS",
+      "note": "external-interface flux coverage (B9 within B1-B10 transcripts)"
+    },
+    {
+      "id": "N09",
+      "status": "PASS",
+      "note": "fast-selector artifacts consistent with the candidate records"
+    },
+    {
+      "id": "N10",
+      "status": "PASS",
+      "note": "closure residual evidence preserved in the smoke logs (a3b21 t0 4.3e-11 scaled; r12 t0 6.3e-13 scaled; both within the registered 1e-10)"
+    },
+    {
+      "id": "N11",
+      "status": "PASS",
+      "note": "initializer t0 inventory residuals <= 1e-8 (5.7e-14 a3b21; 1.5e-11 r12)"
+    },
+    {
+      "id": "N12",
+      "status": "PASS",
+      "note": "anti-sliding identity ABSENT on all exact rows (coherence <= 1e-9); post-layer ledger balances 3.6e-14..9.3e-14 (r12 investigation record)"
+    },
+    {
+      "id": "N13",
+      "status": "PASS",
+      "note": "smoke-gate records present for A3b-21 (FAILED) and A3b-r12 (BLOCKED)"
+    },
+    {
+      "id": "N14",
+      "status": "SKIP",
+      "note": "no formal candidate trajectory exists; nothing can precede a freeze that was never consumed"
+    },
+    {
+      "id": "N15",
+      "status": "SKIP",
+      "note": "no formal runs: both candidates stopped at the pre-formal smoke gates (A3b-21 FAILED_SMOKE_CLOSURE_FEASIBILITY; A3b-r12 BLOCKED_NUMERICAL_COORDINATE_DEFECT)"
+    },
+    {
+      "id": "N18",
+      "status": "SKIP",
+      "note": "no formal full-vs-reduced metrics: formal comparison not executed (pre-formal stop)"
+    },
+    {
+      "id": "N16",
+      "status": "PASS",
+      "note": "candidate-level acceptance semantics declared (new file); historical acceptance files unchanged (N01)"
+    },
+    {
+      "id": "N17",
+      "status": "PASS",
+      "note": "NEG-LEDGER rejected (tRNA row slides at 3.8e-1 with the free-substrate coordinate, clean with the total coordinate); NEG-ROOT fail-closed; NEG-PARTITION illegal elimination rejected"
+    },
+    {
+      "id": "N19",
+      "status": "PASS",
+      "note": "author model/CSV sources untouched"
+    },
+    {
+      "id": "N20",
+      "status": "PASS",
+      "note": "this cycle's scripts carry no functional scratch/ dependency (the investigation helper only writes evidence there)"
+    },
+    {
+      "id": "N21",
+      "status": "PASS",
+      "note": "A3c eligibility classification reproduced (0/21 eligible)"
+    },
+    {
+      "id": "N22",
+      "status": "PASS",
+      "note": "every blocked state carries its blocking rows; the A3c rule admits no elimination; NEG-PARTITION confirms the checker rejects an illegal elimination"
+    }
+  ],
+  "summary": {
+    "PASS": 18,
+    "FAIL": 0,
+    "SKIP": 3
+  }
+}

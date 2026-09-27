@@ -1,0 +1,282 @@
+{
+  "schema": "pnas2017_publisher_capture/v1",
+  "doi": "10.1073/pnas.1615351114",
+  "source_branch_commit": "025fd340300a56f069c2136ea8bb0ff542b046d4",
+  "source_manifest": "references/PNAS2017_Matsuura/provenance/source_manifest.csv",
+  "researcher_decision": "R1: accepted as official PNAS supplementary source set for migration",
+  "article_url": "https://www.pnas.org/doi/10.1073/pnas.1615351114",
+  "supplement_listing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5338406/",
+  "publisher_byte_comparison": "not independently repeated during integration; researcher acceptance is the source-status decision",
+  "files": [
+    {
+      "path": "references/PNAS2017_Matsuura/raw/matsuura-et-al-2017-reaction-dynamics-analysis-of-a-reconstituted-escherichia-coli-protein-translation-system-by.pdf",
+      "bytes": 1816513,
+      "sha256": "e340ba829f87121e723059aebecc56c342c37c2cc4687692d1447f16b38f2a4e",
+      "research_git_blob_sha1": "230ab1025871744db3944487eb461e514fb9c500",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd01.xlsx",
+      "bytes": 77205,
+      "sha256": "ac253974baf41ebf654becca44b4489dbc895d1957b58ee12f6b9c7b4ceeb53e",
+      "research_git_blob_sha1": "d2e16134ac7eb94830da4d22ae49e6666ce6d0c8",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd02.xlsx",
+      "bytes": 971305,
+      "sha256": "b2fadff2b3c078b01bfc4be6f52a5cd5baed4653bb67690debd2ccb99b558f98",
+      "research_git_blob_sha1": "7e760f5f868d77ebbd065a5dbb45c0de211ad12b",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd03.xlsx",
+      "bytes": 707197,
+      "sha256": "2f88fcd733d9db54b309d4a60882553c02b401edb1b007791ba7b9f00e400a3c",
+      "research_git_blob_sha1": "67802a5c5832521a62ad984bfb1f44b83a908155",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd04.xlsx",
+      "bytes": 561080,
+      "sha256": "c1c527b311e659065e8ca7f9cbe1b0eb566e950957669706d11620461c2ab39e",
+      "research_git_blob_sha1": "19812932b06a42dc0d4ba1afb2548de928276c6e",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd05.xlsx",
+      "bytes": 156590,
+      "sha256": "12cb0bf9e39a2073adc04fdfa48b87502bb428e678d7cbdf618232abd5bc2575",
+      "research_git_blob_sha1": "d1becfd61c5524937b6870837a2d690383a38cf4",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd06.xlsx",
+      "bytes": 156691,
+      "sha256": "52120a80f2c5cc0ea60457a2323f4ddd9544ca4abc2c015ee6c323627788ae26",
+      "research_git_blob_sha1": "5d45e12a9673bd85a055e99376b514e3c4a61814",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd07.xlsx",
+      "bytes": 220353,
+      "sha256": "1384be1989405f75357d1901cedc798e2c5fd1ef21ceb14988a2371f5d237946",
+      "research_git_blob_sha1": "062c16b485c3537327d5c7d519e5e42f526883c1",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd08.xlsx",
+      "bytes": 456730,
+      "sha256": "314de60062a4c826fa9f53154be3f40b9f21f0dc722573a0949fb482f778b34b",
+      "research_git_blob_sha1": "22d3e034b9ce08c2afc9fc0b7b7cbd88432882bc",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd09.xlsx",
+      "bytes": 464502,
+      "sha256": "85c3eefd010aca9f424ab8d79366cef2bd520a1957f27f783daa45a529f4495a",
+      "research_git_blob_sha1": "761cd4b1162572acf997f974569a527ce297e355",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd10.xlsx",
+      "bytes": 80497,
+      "sha256": "47516d9bfdaebcdf973f6d9b92aeaacd733dd46bb804eae9488c2fb9d34870b6",
+      "research_git_blob_sha1": "85412a0519fa70a76f19c2f2cfe8cad5868a8a69",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd11.xlsx",
+      "bytes": 83618,
+      "sha256": "e5034bf00ac67dba291d54fe30784cb869f974afcde1957d143d6b204f016954",
+      "research_git_blob_sha1": "a2ad8634cb0c15edbe2228e571c804be9a1dc56d",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "bytes": 182255,
+      "sha256": "87051f1a25498750d16bcaccd9f4c3b8849c2b6a76efa119373b041de1ee54ed",
+      "research_git_blob_sha1": "d09c15394d3c17577bcb45030d193fce8ca87a4a",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "bytes": 183062,
+      "sha256": "f2c6c7c20859cf1fa5cfa78415d4923422e4b2577cc0aa04a110ffe1cb83be56",
+      "research_git_blob_sha1": "646d40fc5e86667513ed97cdda7ce1db1c0e9bab",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "bytes": 465392,
+      "sha256": "db1207bdabcc43f950fa86dcba4c93e82d7c0fae7af857ca6d5362a67e57c046",
+      "research_git_blob_sha1": "cbff412751a4bad822d2dbd69d53f5a3c901ac95",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "bytes": 466650,
+      "sha256": "3e292593b51b7c90b77a6c092c90592cf35311e39375e18a9934ebb839202845",
+      "research_git_blob_sha1": "a29c8024de58dfe1bfaac984f6db449bdbf69903",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "bytes": 545662,
+      "sha256": "4f683eb04f06112b219aba97b246dd2009c3eaccf24e83bd7d51dae9b7c0f695",
+      "research_git_blob_sha1": "8c0195a09c6862a76686bff1429fde436cf686cb",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd17.xlsx",
+      "bytes": 135269,
+      "sha256": "cb36d279c3a6d16647d9cc89135b051628cc259b3b2ff677b8ca6d39084cb174",
+      "research_git_blob_sha1": "9bf0b1df9216aaade84fb089bc24b0d18b48fb2c",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd18.xlsx",
+      "bytes": 135900,
+      "sha256": "99da064d8c7ac83559418d44df983b7520f5603f94f703ed12f4d957c227f5ce",
+      "research_git_blob_sha1": "22fa006a0964b76fdd8cd205edd08642b4ea49d7",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd19.xlsx",
+      "bytes": 277027,
+      "sha256": "9016df1526033b7ae82b0c25a3d0d62a4c931e1548ca0bb127637b2754381ab2",
+      "research_git_blob_sha1": "e0f7f7cb81cb0a9d643d7b987f899c4f28a5e56b",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd20.xlsx",
+      "bytes": 277130,
+      "sha256": "87a5320e64c8301322e76b2a5f32966fd9a8a93eb59b6e1039b95f364bba44cd",
+      "research_git_blob_sha1": "dbef9a9af6f1a7d0e15b4434e1effb254a119587",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd21.xlsx",
+      "bytes": 152733,
+      "sha256": "fcfdda052ef1f1853ff35b83df3aa0ceb1ccfe91c2ef84ae2d2774a9ef77de96",
+      "research_git_blob_sha1": "deb8cb8f3ef1983ae3df82b738aa877efeae2084",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd22.xlsx",
+      "bytes": 120234,
+      "sha256": "3ef78079f08e075ac49ebe4bcb067cff369ebc9c280a029aa9ce1a5a5ee17d62",
+      "research_git_blob_sha1": "0cf178f6e9e02d7b916524fb95dde641a2bd6b7c",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd23.xlsx",
+      "bytes": 129924,
+      "sha256": "75fba1fceccca7fe752acd8096fe41ee2ecacc93e07c9e01234f19c7da846ac6",
+      "research_git_blob_sha1": "93e9d220daaa463aba1167371dc655ead5c470f8",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd24.xlsx",
+      "bytes": 129219,
+      "sha256": "fb054f216b3e786658278cf92f7005038d7dad5bdb2318a07720080cb6e60f51",
+      "research_git_blob_sha1": "e56d75dd54177e9a6221b7a74c408babfcaaf430",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd25.xlsx",
+      "bytes": 70378,
+      "sha256": "7c5d9b1ed8ef7d8325968dbb0aefd02dd897d61a889c48c8f782ac68078f1991",
+      "research_git_blob_sha1": "0dd1501916e31d6d152709f3be36a2413ca76094",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd26.xlsx",
+      "bytes": 59574,
+      "sha256": "4e2555a85c563d378aedd425c6001bac2712b4a2b4d0099ddff529cdceb71677",
+      "research_git_blob_sha1": "fef627585c91ce8b9206afc4a22e4664632ef2a2",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd27.xlsx",
+      "bytes": 120116,
+      "sha256": "d52052e6ce24ddcd1894e95b3f759f1a047600e6ffccff28cc2dcd2b8d94b227",
+      "research_git_blob_sha1": "271ab57294586d1519f15adc9f15365036a51aa9",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd28.xlsx",
+      "bytes": 2317660,
+      "sha256": "8297f2348f5ebdfc3c14083577f2c5f276f35a7ee8ab30f8a37fd8431ef565ec",
+      "research_git_blob_sha1": "04f2521689111fbde0e66395ef1766d3978e1606",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd29.xlsx",
+      "bytes": 301758,
+      "sha256": "6d8a913d9823a4e387ea8c6fc94ee34641e3b7a4d47b0e00a479207bb813dbd7",
+      "research_git_blob_sha1": "cd5e2b21163c1d85531b3bfa67c17d4f18ec477b",
+      "access_date_recorded": "2026-09-24",
+      "claimed_origin": "PNAS publisher paper or supplementary source; researcher accepted",
+      "individual_download_url_recorded": false
+    }
+  ]
+}

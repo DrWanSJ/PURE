@@ -1,0 +1,451 @@
+{
+  "schema": "pnas2017_aa_a3b_ledger_rowspace/v1",
+  "n_states": 241,
+  "n_fast_q": 21,
+  "n_slow_rows_A": 220,
+  "rank_T_mod_p1": 241,
+  "rank_T_mod_p2": 241,
+  "rank_T_numeric": 241,
+  "cond_T_numeric": 404.95838776055456,
+  "protected_ledgers": {
+    "MetRS_total": {
+      "class": "EXACT_ACTIVE_NETWORK_INVARIANT",
+      "nonzero_species": 15,
+      "violations_all": 15,
+      "violations_active": 0,
+      "violating_reactions_active": [],
+      "t0_value_uM": 0.44,
+      "source": "scope:MetRS_moiety_total",
+      "in_rowspace_A": true,
+      "numeric_ls_residual": 2.1093497352305378e-15,
+      "classification": "EXACT_ACTIVE_NETWORK_INVARIANT"
+    },
+    "GlyRS_total": {
+      "class": "EXACT_ACTIVE_NETWORK_INVARIANT",
+      "nonzero_species": 15,
+      "violations_all": 15,
+      "violations_active": 0,
+      "violating_reactions_active": [],
+      "t0_value_uM": 0.35,
+      "source": "scope:GlyRS_moiety_total",
+      "in_rowspace_A": true,
+      "numeric_ls_residual": 1.3322676295501878e-15,
+      "classification": "EXACT_ACTIVE_NETWORK_INVARIANT"
+    },
+    "tRNAfMetCAU_total": {
+      "class": "EXACT_GLOBAL_INVARIANT",
+      "nonzero_species": 44,
+      "violations_all": 0,
+      "violations_active": 0,
+      "violating_reactions_active": [],
+      "t0_value_uM": 3.54767184,
+      "source": "scope:tRNAfMetCAU_family_total",
+      "in_rowspace_A": true,
+      "numeric_ls_residual": 1.6964859464863629e-15,
+      "classification": "EXACT_GLOBAL_INVARIANT"
+    },
+    "tRNAGlyGCC_total": {
+      "class": "EXACT_GLOBAL_INVARIANT",
+      "nonzero_species": 58,
+      "violations_all": 0,
+      "violations_active": 0,
+      "violating_reactions_active": [],
+      "t0_value_uM": 3.54767184,
+      "source": "scope:tRNAGlyGCC_family_total",
+      "in_rowspace_A": true,
+      "numeric_ls_residual": 2.6645352591003757e-15,
+      "classification": "EXACT_GLOBAL_INVARIANT"
+    },
+    "adenine_ledger_total": {
+      "class": "INTERFACE_BALANCE",
+      "nonzero_species": 39,
+      "violations_all": 8,
+      "violations_active": 8,
+      "violating_reactions_active": [
+        "re0000000384",
+        "re0000000385",
+        "re0000000386",
+        "re0000000387",
+        "re0000000390",
+        "re0000000391",
+        "re0000000392",
+        "re0000000393"
+      ],
+      "t0_value_uM": 3750.0,
+      "source": "scope:adenine_ledger_total",
+      "in_rowspace_A": true,
+      "numeric_ls_residual": 3.558447334390559e-15,
+      "classification": "INTERFACE_BALANCE"
+    },
+    "phosphate_ledger_total": {
+      "class": "EXACT_ACTIVE_NETWORK_INVARIANT",
+      "nonzero_species": 123,
+      "violations_all": 6,
+      "violations_active": 0,
+      "violating_reactions_active": [],
+      "t0_value_uM": 68750.32,
+      "source": "scope:phosphate_ledger_total",
+      "in_rowspace_A": true,
+      "numeric_ls_residual": 1.8711226459412576e-14,
+      "classification": "EXACT_ACTIVE_NETWORK_INVARIANT"
+    },
+    "guanine_ledger_total": {
+      "class": "EXACT_ACTIVE_NETWORK_INVARIANT",
+      "nonzero_species": 77,
+      "violations_all": 4,
+      "violations_active": 0,
+      "violating_reactions_active": [],
+      "t0_value_uM": 2500.0,
+      "source": "scope:guanine_ledger_total",
+      "in_rowspace_A": true,
+      "numeric_ls_residual": 5.773159728050814e-15,
+      "classification": "EXACT_ACTIVE_NETWORK_INVARIANT"
+    },
+    "Met_material_total": {
+      "class": "RESOURCE_ACCOUNTING_ONLY",
+      "nonzero_species": 13,
+      "violations_all": 10,
+      "violations_active": 6,
+      "violating_reactions_active": [
+        "re0000000288",
+        "re0000000289",
+        "re0000000420",
+        "re0000000421",
+        "re0000000422",
+        "re0000000423"
+      ],
+      "t0_value_uM": 300.0,
+      "source": "binit:Met_total",
+      "in_rowspace_A": true,
+      "numeric_ls_residual": 1.1900055905828779e-15,
+      "classification": "RESOURCE_ACCOUNTING_ONLY"
+    },
+    "Gly_material_total": {
+      "class": "RESOURCE_ACCOUNTING_ONLY",
+      "nonzero_species": 13,
+      "violations_all": 34,
+      "violations_active": 2,
+      "violating_reactions_active": [
+        "re0000000275",
+        "re0000000276"
+      ],
+      "t0_value_uM": 300.0,
+      "source": "binit:Gly_total",
+      "in_rowspace_A": true,
+      "numeric_ls_residual": 1.2212453270876722e-15,
+      "classification": "RESOURCE_ACCOUNTING_ONLY"
+    }
+  },
+  "a3b_total_rows": [
+    {
+      "ledger": "MetRS_total",
+      "replaces_free_carrier": "MetRS"
+    },
+    {
+      "ledger": "GlyRS_total",
+      "replaces_free_carrier": "GlyRS"
+    },
+    {
+      "ledger": "tRNAfMetCAU_total",
+      "replaces_free_carrier": "tRNAfMetCAU"
+    },
+    {
+      "ledger": "tRNAGlyGCC_total",
+      "replaces_free_carrier": "tRNAGlyGCC"
+    },
+    {
+      "ledger": "adenine_ledger_total",
+      "replaces_free_carrier": "ATP"
+    },
+    {
+      "ledger": "phosphate_ledger_total",
+      "replaces_free_carrier": "PPi"
+    },
+    {
+      "ledger": "Met_material_total",
+      "replaces_free_carrier": "Met"
+    },
+    {
+      "ledger": "Gly_material_total",
+      "replaces_free_carrier": "Gly"
+    }
+  ],
+  "interface_report": {
+    "MetRS_total": {},
+    "GlyRS_total": {},
+    "tRNAfMetCAU_total": {},
+    "tRNAGlyGCC_total": {},
+    "adenine_ledger_total": {
+      "EnergyRegeneration_C": [
+        "re0000000384",
+        "re0000000385",
+        "re0000000386",
+        "re0000000387",
+        "re0000000390",
+        "re0000000391",
+        "re0000000392",
+        "re0000000393"
+      ]
+    },
+    "phosphate_ledger_total": {},
+    "Met_material_total": {
+      "Elongation_A_Met": [
+        "re0000000288",
+        "re0000000289"
+      ],
+      "FMet_tRNASynthesis": [
+        "re0000000420",
+        "re0000000421",
+        "re0000000422",
+        "re0000000423"
+      ]
+    },
+    "Gly_material_total": {
+      "Elongation_A_Gly": [
+        "re0000000275",
+        "re0000000276"
+      ]
+    }
+  },
+  "closure_structure": {
+    "max_degree_in_q": 2,
+    "affine_in_q": false,
+    "n_offending_reactions": 29,
+    "offending_reactions": [
+      {
+        "reaction": "re0000000126",
+        "reactants": [
+          "GlyRS",
+          "Gly"
+        ],
+        "subsystem": "Aminoacylation_A_Gly"
+      },
+      {
+        "reaction": "re0000000132",
+        "reactants": [
+          "GlyRS",
+          "ATP"
+        ],
+        "subsystem": "Aminoacylation_A_Gly"
+      },
+      {
+        "reaction": "re0000000134",
+        "reactants": [
+          "GlyRS_ATP",
+          "Gly"
+        ],
+        "subsystem": "Aminoacylation_A_Gly"
+      },
+      {
+        "reaction": "re0000000136",
+        "reactants": [
+          "GlyRS_Gly",
+          "ATP"
+        ],
+        "subsystem": "Aminoacylation_A_Gly"
+      },
+      {
+        "reaction": "re0000000151",
+        "reactants": [
+          "MetRS",
+          "Met"
+        ],
+        "subsystem": "Aminoacylation_A_Met"
+      },
+      {
+        "reaction": "re0000000157",
+        "reactants": [
+          "MetRS",
+          "ATP"
+        ],
+        "subsystem": "Aminoacylation_A_Met"
+      },
+      {
+        "reaction": "re0000000159",
+        "reactants": [
+          "MetRS_ATP",
+          "Met"
+        ],
+        "subsystem": "Aminoacylation_A_Met"
+      },
+      {
+        "reaction": "re0000000161",
+        "reactants": [
+          "MetRS_Met",
+          "ATP"
+        ],
+        "subsystem": "Aminoacylation_A_Met"
+      },
+      {
+        "reaction": "re0000000188",
+        "reactants": [
+          "GlyRS_tRNAGlyGCC",
+          "Gly"
+        ],
+        "subsystem": "Aminoacylation_B_GlyGCC"
+      },
+      {
+        "reaction": "re0000000191",
+        "reactants": [
+          "GlyRS_tRNAGlyGCC",
+          "ATP"
+        ],
+        "subsystem": "Aminoacylation_B_GlyGCC"
+      },
+      {
+        "reaction": "re0000000193",
+        "reactants": [
+          "GlyRS_ATP_tRNAGlyGCC",
+          "Gly"
+        ],
+        "subsystem": "Aminoacylation_B_GlyGCC"
+      },
+      {
+        "reaction": "re0000000195",
+        "reactants": [
+          "GlyRS_Gly_tRNAGlyGCC",
+          "ATP"
+        ],
+        "subsystem": "Aminoacylation_B_GlyGCC"
+      },
+      {
+        "reaction": "re0000000199",
+        "reactants": [
+          "GlyRS",
+          "tRNAGlyGCC"
+        ],
+        "subsystem": "Aminoacylation_B_GlyGCC"
+      },
+      {
+        "reaction": "re0000000200",
+        "reactants": [
+          "GlyRS_Gly",
+          "tRNAGlyGCC"
+        ],
+        "subsystem": "Aminoacylation_B_GlyGCC"
+      },
+      {
+        "reaction": "re0000000203",
+        "reactants": [
+          "GlyRS_ATP",
+          "tRNAGlyGCC"
+        ],
+        "subsystem": "Aminoacylation_B_GlyGCC"
+      },
+      {
+        "reaction": "re0000000205",
+        "reactants": [
+          "GlyRS_Gly_ATP",
+          "tRNAGlyGCC"
+        ],
+        "subsystem": "Aminoacylation_B_GlyGCC"
+      },
+      {
+        "reaction": "re0000000207",
+        "reactants": [
+          "GlyRS_GlyAMP_PPi",
+          "tRNAGlyGCC"
+        ],
+        "subsystem": "Aminoacylation_B_GlyGCC"
+      },
+      {
+        "reaction": "re0000000216",
+        "reactants": [
+          "tRNAGlyGCC",
+          "Gly"
+        ],
+        "subsystem": "Aminoacylation_B_GlyGCC"
+      },
+      {
+        "reaction": "re0000000230",
+        "reactants": [
+          "MetRS_tRNAfMetCAU",
+          "Met"
+        ],
+        "subsystem": "Aminoacylation_B_fMetCAU"
+      },
+      {
+        "reaction": "re0000000233",
+        "reactants": [
+          "MetRS_tRNAfMetCAU",
+          "ATP"
+        ],
+        "subsystem": "Aminoacylation_B_fMetCAU"
+      },
+      {
+        "reaction": "re0000000235",
+        "reactants": [
+          "MetRS_ATP_tRNAfMetCAU",
+          "Met"
+        ],
+        "subsystem": "Aminoacylation_B_fMetCAU"
+      },
+      {
+        "reaction": "re0000000237",
+        "reactants": [
+          "MetRS_Met_tRNAfMetCAU",
+          "ATP"
+        ],
+        "subsystem": "Aminoacylation_B_fMetCAU"
+      },
+      {
+        "reaction": "re0000000241",
+        "reactants": [
+          "MetRS",
+          "tRNAfMetCAU"
+        ],
+        "subsystem": "Aminoacylation_B_fMetCAU"
+      },
+      {
+        "reaction": "re0000000242",
+        "reactants": [
+          "MetRS_Met",
+          "tRNAfMetCAU"
+        ],
+        "subsystem": "Aminoacylation_B_fMetCAU"
+      },
+      {
+        "reaction": "re0000000245",
+        "reactants": [
+          "MetRS_ATP",
+          "tRNAfMetCAU"
+        ],
+        "subsystem": "Aminoacylation_B_fMetCAU"
+      },
+      {
+        "reaction": "re0000000247",
+        "reactants": [
+          "MetRS_Met_ATP",
+          "tRNAfMetCAU"
+        ],
+        "subsystem": "Aminoacylation_B_fMetCAU"
+      },
+      {
+        "reaction": "re0000000249",
+        "reactants": [
+          "MetRS_MetAMP_PPi",
+          "tRNAfMetCAU"
+        ],
+        "subsystem": "Aminoacylation_B_fMetCAU"
+      },
+      {
+        "reaction": "re0000000259",
+        "reactants": [
+          "tRNAfMetCAU",
+          "Met"
+        ],
+        "subsystem": "Aminoacylation_B_fMetCAU"
+      },
+      {
+        "reaction": "re0000000260",
+        "reactants": [
+          "MetRS_MetAMP_tRNAfMetCAU",
+          "PPi"
+        ],
+        "subsystem": "Aminoacylation_B_fMetCAU"
+      }
+    ],
+    "max_degree_in_q_a3a_coordinates": 1,
+    "consequence": "nonlinear constrained root solve required (registered Newton discipline)"
+  }
+}

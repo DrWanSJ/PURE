@@ -1,6 +1,6 @@
 # fMGG reference integrity check (2026-09-24)
 
-**Status:** author-input simulation completed in two SBML engines on an explicitly derived compatibility input. This is an integrity and numerical cross-check, not a reduction test or experimental validation. The original publisher Dataset S28 and a complete article/SI capture remain unavailable, so pointwise comparison to the author trajectory cannot be claimed.
+**Status:** author-input simulation completed in two SBML engines on an explicitly derived compatibility input. This is an integrity and numerical cross-check, not a reduction test or experimental validation. The publisher PDF and Dataset S28 are now preserved as source files, but this run has not been compared pointwise against S28. S28's future gate role remains `OPEN_SCIENTIFIC_DECISION`.
 
 ## Inputs and compatibility boundary
 
@@ -31,7 +31,7 @@ The [paper](https://doi.org/10.1073/pnas.1615351114) reports 0.15 amino acids/s/
 
 ## What remains unresolved
 
-- Publisher Dataset S27's actual attachment content/format and S28's numeric trajectory are not frozen; [missing-source record](../../references/PNAS2017_Matsuura/MISSING_SOURCES.md).
+- The publisher S27 and S28 attachments are now frozen. S27 is an XLSX workbook; how it relates to the paper's combined-SBML wording remains unresolved. S28 observable mapping and numerical comparison remain open. See the [source record](../../references/PNAS2017_Matsuura/README.md) and [open decisions](../reduction/open_scientific_decisions.md).
 - Absolute chemical units are not established by the SBML declarations. The author's CSV has no explicit units; the paper context supports a concentration interpretation but does not repair the SBML unit metadata.
 - The paper's MATLAB `NonNegative` option and CVODE/SimBiology numerical constraint behavior have not been proven equivalent. No parameter was refit and no reaction was removed.
 - This check does not validate chemical formulas, charge, Mg binding, ionic strength, an osmotic pressure calculation or any proposed `PURE_reduced_core` structure.

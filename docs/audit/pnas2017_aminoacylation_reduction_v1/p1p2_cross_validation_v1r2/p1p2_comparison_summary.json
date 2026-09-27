@@ -1,0 +1,56 @@
+{
+ "S0": {
+  "worst": {
+   "name": "GlyRS_AMP_GlytRNAGlyGCC",
+   "abs": 0.0005099843829272996,
+   "scaled": 1.0
+  },
+  "branch_sign_flip": [],
+  "inventories_max_abs_diff": 4.18367562815547e-11
+ },
+ "S1": {
+  "worst": {
+   "name": "GlyRS_AMP_GlytRNAGlyGCC",
+   "abs": 0.00027001623772285614,
+   "scaled": 1.0
+  },
+  "branch_sign_flip": [],
+  "inventories_max_abs_diff": 7.617018127348274e-11
+ },
+ "S2": {
+  "worst": {
+   "name": "GlyRS_AMP_GlytRNAGlyGCC",
+   "abs": 0.0008087133783907091,
+   "scaled": 1.0
+  },
+  "branch_sign_flip": [],
+  "inventories_max_abs_diff": 2.0190782379359007e-10
+ },
+ "S3": {
+  "worst": {
+   "name": "MetRS_MetAMP",
+   "abs": 2.3352658815711327,
+   "scaled": 1.0
+  },
+  "branch_sign_flip": [],
+  "inventories_max_abs_diff": 3.019522409886122e-10
+ },
+ "S4": {
+  "worst": {
+   "name": "GlyRS_AMP_GlytRNAGlyGCC",
+   "abs": 4.938937004883528e-05,
+   "scaled": 1.0
+  },
+  "branch_sign_flip": [],
+  "inventories_max_abs_diff": 6.139089236967266e-12
+ },
+ "S5": {
+  "worst": {
+   "name": "GlyRS_AMP_GlytRNAGlyGCC",
+   "abs": 0.0005099843829272996,
+   "scaled": 1.0
+  },
+  "branch_sign_flip": [],
+  "inventories_max_abs_diff": 4.18367562815547e-11
+ }
+}

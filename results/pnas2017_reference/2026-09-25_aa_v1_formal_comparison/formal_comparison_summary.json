@@ -1,0 +1,959 @@
+{
+  "schema": "pnas2017_aa_v1_formal_comparison/v1r1",
+  "generated_by": "scripts/build_pnas2017_aa_v1_formal_comparison.py",
+  "compare_instrument": "scripts/compare_pnas2017_aa_v1_reduced.py",
+  "scope": "models/pnas2017_full_reference/audit/aminoacylation_v1_comparison_scope.json",
+  "scope_sha256": "8dd100d9984d8d152a2e114de3e419c1126613ff7d4aa5abad373f03ebfcf78e",
+  "active_partition_revision": "v1r1",
+  "active_partition_sha256": "fea11a075e2c6c3b8e248ab63f187853141b1618e89b1c021470cbef4c2838f5",
+  "historical_partition_sha256": "521559bb4e703449135518ddc7b1aa772dd89de4180b379cc70ce10b20447b2f",
+  "runner_sha256": "eb4ba2c49d41d8014cc6063473de796709f76ef3e175391ac9ea25c639016085",
+  "source_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "author_parameters_sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+  "author_initial_values_sha256": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+  "acceptance_criteria_sha256": "6e549a29f4c05abe36f6d3120b1d1fee56aaa46f5d9662587845204bafbb89c1",
+  "solver": {
+    "engine": "MATLAB R2025b ode15s",
+    "reltol": 1e-10,
+    "abstol": 1e-14,
+    "grid": [
+      0.0001,
+      1000.0,
+      200
+    ]
+  },
+  "tau_fast_for_layer_window_s": 0.009825,
+  "numerical_budget": {
+    "T_C": {
+      "budget": 0.01,
+      "ten_pct": 0.001,
+      "reference_dev_1e8_vs_1e10": 1.496205e-07,
+      "decidable_at_registered_tolerances": true
+    },
+    "T_D": {
+      "budget": 0.05,
+      "ten_pct": 0.005000000000000001,
+      "reference_dev_1e8_vs_1e10": 1.496205e-07,
+      "decidable_at_registered_tolerances": true
+    },
+    "T_E": {
+      "budget": 0.01,
+      "ten_pct": 0.001,
+      "reference_dev_1e8_vs_1e10": 1.496205e-07,
+      "decidable_at_registered_tolerances": true
+    },
+    "T_H": {
+      "budget": 1e-06,
+      "ten_pct": 1e-07,
+      "reference_dev_1e8_vs_1e10": 1.496205e-07,
+      "decidable_at_registered_tolerances": false
+    },
+    "note": "registered reference-chain evidence: worst RelTol 1e-8 vs 1e-10 deviation 1.496205e-07 over the 43 aminoacylation quantities; runner reference-mode reproduction of the tight reference 4.975e-10 trajectory-scaled (refcheck)"
+  },
+  "pairs": {
+    "S0": {
+      "condition": "S0",
+      "description": "reference condition, unmodified author initial values",
+      "full_config_sha256": "c06bb8070eadf7f1d628cb75297c1fe0ed65580cfcc75fab9af050893f053a4f",
+      "red_config_sha256": "ff3ac3023c8a9e68ea3adedfb77f42bc1b6c4affa90e936b6500b085186670a6",
+      "metrics_file": "results/pnas2017_reference/2026-09-25_aa_v1_formal_comparison/metrics-S0.json",
+      "verdicts": {
+        "states": {
+          "budget": 0.01,
+          "worst": 1.0286823344803941,
+          "status": "FAIL"
+        },
+        "extents": {
+          "budget": 0.01,
+          "worst": 0.01672102685710241,
+          "status": "FAIL"
+        },
+        "fluxes": {
+          "budget": 0.05,
+          "worst": 0.9769493286173047,
+          "status": "FAIL"
+        },
+        "conservation_summary": "adenine_ledger_total=NUMERICALLY_UNRESOLVED; phosphate_ledger_total=FAIL; tRNAGlyGCC_family_total=FAIL; tRNAfMetCAU_family_total=FAIL",
+        "pair_status": "FAIL"
+      },
+      "conservation": {
+        "MetRS_moiety_total": {
+          "full_residual": 3.3412161926094086e-13,
+          "reduced_residual": 1.6653345369377348e-16,
+          "cross_model_E_inf": 3.3412161926094086e-13,
+          "status": "PASS"
+        },
+        "GlyRS_moiety_total": {
+          "full_residual": 2.880806704297356e-12,
+          "reduced_residual": 1.1102230246251565e-16,
+          "cross_model_E_inf": 2.880806704297356e-12,
+          "status": "PASS"
+        },
+        "tRNAfMetCAU_family_total": {
+          "full_residual": 5.595440777943486e-14,
+          "reduced_residual": 0.06614888088328104,
+          "cross_model_E_inf": 0.06619793037648888,
+          "status": "FAIL"
+        },
+        "tRNAGlyGCC_family_total": {
+          "full_residual": 9.439646287801304e-13,
+          "reduced_residual": 0.09159862019035181,
+          "cross_model_E_inf": 0.09159869197107916,
+          "status": "FAIL"
+        },
+        "adenine_ledger_total": {
+          "full_residual": 3.1082486509452187e-06,
+          "reduced_residual": 0.0001944138901891468,
+          "cross_model_E_inf": 0.00019489351953852748,
+          "status": "NUMERICALLY_UNRESOLVED"
+        },
+        "guanine_ledger_total": {
+          "full_residual": 7.73070496506989e-14,
+          "reduced_residual": 3.583409124985337e-14,
+          "cross_model_E_inf": 1.0659277904778719e-13,
+          "status": "PASS"
+        },
+        "phosphate_ledger_total": {
+          "full_residual": 8.466529452294534e-14,
+          "reduced_residual": 2.8861550687005504e-05,
+          "cross_model_E_inf": 2.8947725184429273e-05,
+          "status": "FAIL"
+        },
+        "aa_subsystem_particle_count": {
+          "full_residual": 0.023667904164010885,
+          "reduced_residual": 0.02366613067245526,
+          "cross_model_E_inf": 0.0004055574777038206,
+          "status": "PROXY_NOT_TIERED"
+        }
+      },
+      "initial_layer": {
+        "red_consistent_start": {
+          "metrs": {
+            "n_algebraic": 12,
+            "max_residual": 8.553e-13,
+            "scaled_residual": 1.045e-16,
+            "production_scale": 8183,
+            "newton_iters": 2
+          },
+          "glyrs": {
+            "n_algebraic": 9,
+            "max_residual": 6.041e-09,
+            "scaled_residual": 4.853e-13,
+            "production_scale": 12450,
+            "newton_iters": 2
+          }
+        },
+        "red_max_adjustment": {
+          "max_species": "MetRS",
+          "max_from": 0.44,
+          "max_to": 0.00354689,
+          "max_abs": 0.436
+        },
+        "layer_window_s": [
+          0.0001,
+          0.049225000000000005
+        ],
+        "enzyme_pool_t0_agreement": {
+          "MetRS_moiety_total": {
+            "full_t0": 0.44,
+            "reduced_t0": 0.43999999999999995,
+            "abs_diff": 5.551115123125783e-17
+          },
+          "GlyRS_moiety_total": {
+            "full_t0": 0.35,
+            "reduced_t0": 0.35,
+            "abs_diff": 0.0
+          }
+        },
+        "worst_post_layer_state": {
+          "state": "GlyRS_GlyAMP_tRNAGlyGCC",
+          "E_inf": 0.33555776637104606
+        }
+      },
+      "red_algebraic_stats": {
+        "block_solve_count": 22210,
+        "newton_iterations_total": 58306,
+        "newton_iterations_median": 2,
+        "newton_iterations_max": 5,
+        "line_search_rejections": 0,
+        "jacobian_refreshes": 0,
+        "plateau_accepts": 0,
+        "max_abs_algebraic_residual": 1.606e-08,
+        "max_scaled_algebraic_residual": 9.999e-13,
+        "min_reconstructed_concentration": 0,
+        "root_failures": 0
+      },
+      "numerics": {
+        "full": {
+          "steps_successful": 4361,
+          "steps_failed": 55,
+          "rhs_evaluations": 11721
+        },
+        "red": {
+          "steps_successful": 4561,
+          "steps_failed": 89,
+          "rhs_evaluations": 11105
+        }
+      }
+    },
+    "S1": {
+      "condition": "S1",
+      "description": "ATP x0.1",
+      "full_config_sha256": "9b7de9f1d9fa1a260785f94d53be5cd4cbbf5c5d327289c3a084aacfee47442b",
+      "red_config_sha256": "cbb9eb0f984569e3fb31379f53418fe2ded4069830a7ad02d952948dd9ef9fa7",
+      "metrics_file": "results/pnas2017_reference/2026-09-25_aa_v1_formal_comparison/metrics-S1.json",
+      "verdicts": {
+        "states": {
+          "budget": 0.01,
+          "worst": 1.0425506651714758,
+          "status": "FAIL"
+        },
+        "extents": {
+          "budget": 0.01,
+          "worst": 0.025328698193896316,
+          "status": "FAIL"
+        },
+        "fluxes": {
+          "budget": 0.05,
+          "worst": 1.0237831042206773,
+          "status": "FAIL"
+        },
+        "conservation_summary": "adenine_ledger_total=NUMERICALLY_UNRESOLVED; phosphate_ledger_total=FAIL; tRNAGlyGCC_family_total=FAIL; tRNAfMetCAU_family_total=FAIL",
+        "pair_status": "FAIL"
+      },
+      "conservation": {
+        "MetRS_moiety_total": {
+          "full_residual": 1.801891968966629e-12,
+          "reduced_residual": 1.1102230246251565e-16,
+          "cross_model_E_inf": 1.801891968966629e-12,
+          "status": "PASS"
+        },
+        "GlyRS_moiety_total": {
+          "full_residual": 7.077671781985373e-13,
+          "reduced_residual": 1.6653345369377348e-16,
+          "cross_model_E_inf": 7.077671781985373e-13,
+          "status": "PASS"
+        },
+        "tRNAfMetCAU_family_total": {
+          "full_residual": 5.6580296009629885e-14,
+          "reduced_residual": 0.06637118935008779,
+          "cross_model_E_inf": 0.06642058998570691,
+          "status": "FAIL"
+        },
+        "tRNAGlyGCC_family_total": {
+          "full_residual": 1.0377226856633446e-13,
+          "reduced_residual": 0.09168650011652738,
+          "cross_model_E_inf": 0.09168680174375685,
+          "status": "FAIL"
+        },
+        "adenine_ledger_total": {
+          "full_residual": 2.2641796649471264e-05,
+          "reduced_residual": 0.001221498415253033,
+          "cross_model_E_inf": 0.0012152721983561606,
+          "status": "NUMERICALLY_UNRESOLVED"
+        },
+        "guanine_ledger_total": {
+          "full_residual": 3.6197889130562546e-14,
+          "reduced_residual": 3.874447429552674e-14,
+          "cross_model_E_inf": 5.984475137665868e-14,
+          "status": "PASS"
+        },
+        "phosphate_ledger_total": {
+          "full_residual": 2.4077237909346757e-14,
+          "reduced_residual": 2.054380207955368e-05,
+          "cross_model_E_inf": 2.063594883841638e-05,
+          "status": "FAIL"
+        },
+        "aa_subsystem_particle_count": {
+          "full_residual": 0.08815174343094871,
+          "reduced_residual": 0.08814087871871391,
+          "cross_model_E_inf": 0.0015424536428687808,
+          "status": "PROXY_NOT_TIERED"
+        }
+      },
+      "initial_layer": {
+        "red_consistent_start": {
+          "metrs": {
+            "n_algebraic": 12,
+            "max_residual": 3.642e-13,
+            "scaled_residual": 4.807e-16,
+            "production_scale": 757.6,
+            "newton_iters": 2
+          },
+          "glyrs": {
+            "n_algebraic": 9,
+            "max_residual": 1.027e-09,
+            "scaled_residual": 5.153e-13,
+            "production_scale": 1993,
+            "newton_iters": 2
+          }
+        },
+        "red_max_adjustment": {
+          "max_species": "MetRS",
+          "max_from": 0.44,
+          "max_to": 0.0196108,
+          "max_abs": 0.42
+        },
+        "layer_window_s": [
+          0.0001,
+          0.049225000000000005
+        ],
+        "enzyme_pool_t0_agreement": {
+          "MetRS_moiety_total": {
+            "full_t0": 0.44,
+            "reduced_t0": 0.44,
+            "abs_diff": 0.0
+          },
+          "GlyRS_moiety_total": {
+            "full_t0": 0.35,
+            "reduced_t0": 0.35000000000000003,
+            "abs_diff": 5.551115123125783e-17
+          }
+        },
+        "worst_post_layer_state": {
+          "state": "GlyRS_GlyAMP_tRNAGlyGCC",
+          "E_inf": 0.6518217765426271
+        }
+      },
+      "red_algebraic_stats": {
+        "block_solve_count": 21526,
+        "newton_iterations_total": 56956,
+        "newton_iterations_median": 2,
+        "newton_iterations_max": 5,
+        "line_search_rejections": 0,
+        "jacobian_refreshes": 0,
+        "plateau_accepts": 0,
+        "max_abs_algebraic_residual": 2.099e-09,
+        "max_scaled_algebraic_residual": 9.996e-13,
+        "min_reconstructed_concentration": 0,
+        "root_failures": 0
+      },
+      "numerics": {
+        "full": {
+          "steps_successful": 4322,
+          "steps_failed": 56,
+          "rhs_evaluations": 11440
+        },
+        "red": {
+          "steps_successful": 4295,
+          "steps_failed": 55,
+          "rhs_evaluations": 10763
+        }
+      }
+    },
+    "S2": {
+      "condition": "S2",
+      "description": "both tRNAs x0.1",
+      "full_config_sha256": "465c3662bc8eacb4600ec17c0ccf7e8722b9a05b18c1b2e765a58169804bf82d",
+      "red_config_sha256": "d12388a7e97709131872be9e200f7512ea705738398fb282ece3795f599f878f",
+      "metrics_file": "results/pnas2017_reference/2026-09-25_aa_v1_formal_comparison/metrics-S2.json",
+      "verdicts": {
+        "states": {
+          "budget": 0.01,
+          "worst": 1.527841945651251,
+          "status": "FAIL"
+        },
+        "extents": {
+          "budget": 0.01,
+          "worst": 0.010989443719779855,
+          "status": "FAIL"
+        },
+        "fluxes": {
+          "budget": 0.05,
+          "worst": 1.3076140217418315,
+          "status": "FAIL"
+        },
+        "conservation_summary": "adenine_ledger_total=NUMERICALLY_UNRESOLVED; phosphate_ledger_total=FAIL; tRNAGlyGCC_family_total=FAIL; tRNAfMetCAU_family_total=FAIL",
+        "pair_status": "FAIL"
+      },
+      "conservation": {
+        "MetRS_moiety_total": {
+          "full_residual": 3.024802630591239e-13,
+          "reduced_residual": 2.220446049250313e-16,
+          "cross_model_E_inf": 3.0253577421035516e-13,
+          "status": "PASS"
+        },
+        "GlyRS_moiety_total": {
+          "full_residual": 1.112276937220713e-12,
+          "reduced_residual": 1.1102230246251565e-16,
+          "cross_model_E_inf": 1.1122214260694818e-12,
+          "status": "PASS"
+        },
+        "tRNAfMetCAU_family_total": {
+          "full_residual": 1.2934098236883074e-14,
+          "reduced_residual": 0.04518022579202624,
+          "cross_model_E_inf": 0.04519552053797832,
+          "status": "FAIL"
+        },
+        "tRNAGlyGCC_family_total": {
+          "full_residual": 8.755218772193984e-13,
+          "reduced_residual": 0.19682816887332333,
+          "cross_model_E_inf": 0.19682817040309902,
+          "status": "FAIL"
+        },
+        "adenine_ledger_total": {
+          "full_residual": 1.6977009547796722e-06,
+          "reduced_residual": 0.0001931134345447693,
+          "cross_model_E_inf": 0.00019348242134862328,
+          "status": "NUMERICALLY_UNRESOLVED"
+        },
+        "guanine_ledger_total": {
+          "full_residual": 3.601599019020796e-14,
+          "reduced_residual": 4.092726157978177e-14,
+          "cross_model_E_inf": 2.7284841053187846e-14,
+          "status": "PASS"
+        },
+        "phosphate_ledger_total": {
+          "full_residual": 7.831539743372445e-15,
+          "reduced_residual": 3.101719425434186e-05,
+          "cross_model_E_inf": 3.109391795503337e-05,
+          "status": "FAIL"
+        },
+        "aa_subsystem_particle_count": {
+          "full_residual": 0.019182052273101376,
+          "reduced_residual": 0.019181613267201653,
+          "cross_model_E_inf": 0.0003247479806336906,
+          "status": "PROXY_NOT_TIERED"
+        }
+      },
+      "initial_layer": {
+        "red_consistent_start": {
+          "metrs": {
+            "n_algebraic": 12,
+            "max_residual": 3.569e-12,
+            "scaled_residual": 2.278e-16,
+            "production_scale": 15670,
+            "newton_iters": 2
+          },
+          "glyrs": {
+            "n_algebraic": 9,
+            "max_residual": 6.175e-09,
+            "scaled_residual": 4.96e-13,
+            "production_scale": 12450,
+            "newton_iters": 2
+          }
+        },
+        "red_max_adjustment": {
+          "max_species": "MetRS",
+          "max_from": 0.44,
+          "max_to": 0.00547995,
+          "max_abs": 0.435
+        },
+        "layer_window_s": [
+          0.0001,
+          0.049225000000000005
+        ],
+        "enzyme_pool_t0_agreement": {
+          "MetRS_moiety_total": {
+            "full_t0": 0.44,
+            "reduced_t0": 0.44000000000000006,
+            "abs_diff": 5.551115123125783e-17
+          },
+          "GlyRS_moiety_total": {
+            "full_t0": 0.35,
+            "reduced_t0": 0.35,
+            "abs_diff": 0.0
+          }
+        },
+        "worst_post_layer_state": {
+          "state": "tRNAGlyGCC",
+          "E_inf": 0.22238405950900753
+        }
+      },
+      "red_algebraic_stats": {
+        "block_solve_count": 17770,
+        "newton_iterations_total": 44288,
+        "newton_iterations_median": 2,
+        "newton_iterations_max": 7,
+        "line_search_rejections": 1277,
+        "jacobian_refreshes": 1277,
+        "plateau_accepts": 0,
+        "max_abs_algebraic_residual": 1.637e-08,
+        "max_scaled_algebraic_residual": 1e-12,
+        "min_reconstructed_concentration": 0,
+        "root_failures": 0
+      },
+      "numerics": {
+        "full": {
+          "steps_successful": 3745,
+          "steps_failed": 35,
+          "rhs_evaluations": 9346
+        },
+        "red": {
+          "steps_successful": 3642,
+          "steps_failed": 42,
+          "rhs_evaluations": 8885
+        }
+      }
+    },
+    "S3": {
+      "condition": "S3",
+      "description": "both enzymes x10",
+      "full_config_sha256": "4ebd26661e59212024b1d1f61a50cb66bc28d3fb4eb8dfe4de83aa7b5adef302",
+      "red_config_sha256": "84542aa3f1ca20de6bce203f302d0ec4659b4ab2eac2c3d753b0dc506f9dbe6f",
+      "metrics_file": "results/pnas2017_reference/2026-09-25_aa_v1_formal_comparison/metrics-S3.json",
+      "verdicts": {
+        "states": {
+          "budget": 0.01,
+          "worst": 1.2597140833830918,
+          "status": "FAIL"
+        },
+        "extents": {
+          "budget": 0.01,
+          "worst": 0.05034983082845272,
+          "status": "FAIL"
+        },
+        "fluxes": {
+          "budget": 0.05,
+          "worst": 1.248543115360067,
+          "status": "FAIL"
+        },
+        "conservation_summary": "adenine_ledger_total=NUMERICALLY_UNRESOLVED; phosphate_ledger_total=FAIL; tRNAGlyGCC_family_total=FAIL; tRNAfMetCAU_family_total=FAIL",
+        "pair_status": "FAIL"
+      },
+      "conservation": {
+        "MetRS_moiety_total": {
+          "full_residual": 7.406196867908543e-13,
+          "reduced_residual": 6.055761952500853e-16,
+          "cross_model_E_inf": 7.404178280591043e-13,
+          "status": "PASS"
+        },
+        "GlyRS_moiety_total": {
+          "full_residual": 1.0780836540951506e-11,
+          "reduced_residual": 3.806478941571965e-16,
+          "cross_model_E_inf": 1.078070965832012e-11,
+          "status": "PASS"
+        },
+        "tRNAfMetCAU_family_total": {
+          "full_residual": 9.388323452925313e-14,
+          "reduced_residual": 0.6619781139312668,
+          "cross_model_E_inf": 0.6619793037648889,
+          "status": "FAIL"
+        },
+        "tRNAGlyGCC_family_total": {
+          "full_residual": 1.0273204232775032e-11,
+          "reduced_residual": 0.9159869182442912,
+          "cross_model_E_inf": 0.9159869197112126,
+          "status": "FAIL"
+        },
+        "adenine_ledger_total": {
+          "full_residual": 2.4978539680402415e-05,
+          "reduced_residual": 0.0019456367599982817,
+          "cross_model_E_inf": 0.0019489351953857598,
+          "status": "NUMERICALLY_UNRESOLVED"
+        },
+        "guanine_ledger_total": {
+          "full_residual": 2.6557245291769505e-14,
+          "reduced_residual": 3.183231456205249e-14,
+          "cross_model_E_inf": 9.64064383879304e-15,
+          "status": "PASS"
+        },
+        "phosphate_ledger_total": {
+          "full_residual": 3.217281191871923e-14,
+          "reduced_residual": 0.0002889101507966822,
+          "cross_model_E_inf": 0.00028947725184196444,
+          "status": "FAIL"
+        },
+        "aa_subsystem_particle_count": {
+          "full_residual": 0.11171497814948278,
+          "reduced_residual": 0.11170753200669402,
+          "cross_model_E_inf": 0.0038407497091577825,
+          "status": "PROXY_NOT_TIERED"
+        }
+      },
+      "initial_layer": {
+        "red_consistent_start": {
+          "metrs": {
+            "n_algebraic": 12,
+            "max_residual": 5.843e-11,
+            "scaled_residual": 3.729e-16,
+            "production_scale": 156700,
+            "newton_iters": 2
+          },
+          "glyrs": {
+            "n_algebraic": 9,
+            "max_residual": 7.617e-11,
+            "scaled_residual": 1.197e-15,
+            "production_scale": 63650,
+            "newton_iters": 2
+          }
+        },
+        "red_max_adjustment": {
+          "max_species": "MetRS",
+          "max_from": 4.4,
+          "max_to": 0.0354689,
+          "max_abs": 4.36
+        },
+        "layer_window_s": [
+          0.0001,
+          0.049225000000000005
+        ],
+        "enzyme_pool_t0_agreement": {
+          "MetRS_moiety_total": {
+            "full_t0": 4.4,
+            "reduced_t0": 4.4,
+            "abs_diff": 0.0
+          },
+          "GlyRS_moiety_total": {
+            "full_t0": 3.5,
+            "reduced_t0": 3.4999999999999996,
+            "abs_diff": 4.440892098500626e-16
+          }
+        },
+        "worst_post_layer_state": {
+          "state": "GlyRS_GlyAMP_PPi",
+          "E_inf": 0.7920865251809865
+        }
+      },
+      "red_algebraic_stats": {
+        "block_solve_count": 137244,
+        "newton_iterations_total": 305375,
+        "newton_iterations_median": 2,
+        "newton_iterations_max": 10,
+        "line_search_rejections": 8960,
+        "jacobian_refreshes": 8960,
+        "plateau_accepts": 0,
+        "max_abs_algebraic_residual": 1.559e-07,
+        "max_scaled_algebraic_residual": 9.999e-13,
+        "min_reconstructed_concentration": 0,
+        "root_failures": 0
+      },
+      "numerics": {
+        "full": {
+          "steps_successful": 4261,
+          "steps_failed": 45,
+          "rhs_evaluations": 10669
+        },
+        "red": {
+          "steps_successful": 6858,
+          "steps_failed": 563,
+          "rhs_evaluations": 68622
+        }
+      }
+    },
+    "S4": {
+      "condition": "S4",
+      "description": "both enzymes x0.1",
+      "full_config_sha256": "93ac619adfbd2b3e670849da5777afb878e220a15d3cca2b55b0df225197d3ea",
+      "red_config_sha256": "9047fd5c5c785ef88384fa1ccad88863ccab26edcc2137433f54ca91d94dfbb6",
+      "metrics_file": "results/pnas2017_reference/2026-09-25_aa_v1_formal_comparison/metrics-S4.json",
+      "verdicts": {
+        "states": {
+          "budget": 0.01,
+          "worst": 1.0211528066586464,
+          "status": "FAIL"
+        },
+        "extents": {
+          "budget": 0.01,
+          "worst": 0.0033523104030684443,
+          "status": "PASS"
+        },
+        "fluxes": {
+          "budget": 0.05,
+          "worst": 0.9532014443636246,
+          "status": "FAIL"
+        },
+        "conservation_summary": "adenine_ledger_total=NUMERICALLY_UNRESOLVED; phosphate_ledger_total=FAIL; tRNAGlyGCC_family_total=FAIL; tRNAfMetCAU_family_total=FAIL",
+        "pair_status": "FAIL"
+      },
+      "conservation": {
+        "MetRS_moiety_total": {
+          "full_residual": 3.357730760100708e-14,
+          "reduced_residual": 1.3877787807814457e-17,
+          "cross_model_E_inf": 3.3584246494910985e-14,
+          "status": "PASS"
+        },
+        "GlyRS_moiety_total": {
+          "full_residual": 1.184677356214081e-13,
+          "reduced_residual": 2.0816681711721685e-17,
+          "cross_model_E_inf": 1.184677356214081e-13,
+          "status": "PASS"
+        },
+        "tRNAfMetCAU_family_total": {
+          "full_residual": 2.904121388104897e-14,
+          "reduced_residual": 0.006513822560266868,
+          "cross_model_E_inf": 0.0066197930376489505,
+          "status": "FAIL"
+        },
+        "tRNAGlyGCC_family_total": {
+          "full_residual": 3.342243149241411e-14,
+          "reduced_residual": 0.009158111941473968,
+          "cross_model_E_inf": 0.009159869197112121,
+          "status": "FAIL"
+        },
+        "adenine_ledger_total": {
+          "full_residual": 3.370587416914835e-07,
+          "reduced_residual": 1.9414354083831616e-05,
+          "cross_model_E_inf": 1.9489351953961888e-05,
+          "status": "NUMERICALLY_UNRESOLVED"
+        },
+        "guanine_ledger_total": {
+          "full_residual": 3.92901711165905e-14,
+          "reduced_residual": 5.220499588176608e-14,
+          "cross_model_E_inf": 2.2737367544323207e-14,
+          "status": "PASS"
+        },
+        "phosphate_ledger_total": {
+          "full_residual": 2.2859629521195245e-14,
+          "reduced_residual": 2.859135985529975e-06,
+          "cross_model_E_inf": 2.894772518358262e-06,
+          "status": "FAIL"
+        },
+        "aa_subsystem_particle_count": {
+          "full_residual": 0.012216659856092243,
+          "reduced_residual": 0.012216203716189278,
+          "cross_model_E_inf": 4.07002334012927e-05,
+          "status": "PROXY_NOT_TIERED"
+        }
+      },
+      "initial_layer": {
+        "red_consistent_start": {
+          "metrs": {
+            "n_algebraic": 12,
+            "max_residual": 3.008e-13,
+            "scaled_residual": 1.823e-16,
+            "production_scale": 1650,
+            "newton_iters": 3
+          },
+          "glyrs": {
+            "n_algebraic": 9,
+            "max_residual": 1.068e-13,
+            "scaled_residual": 8.141e-17,
+            "production_scale": 1312,
+            "newton_iters": 5
+          }
+        },
+        "red_max_adjustment": {
+          "max_species": "MetRS",
+          "max_from": 0.044,
+          "max_to": 0.000354689,
+          "max_abs": 0.0436
+        },
+        "layer_window_s": [
+          0.0001,
+          0.049225000000000005
+        ],
+        "enzyme_pool_t0_agreement": {
+          "MetRS_moiety_total": {
+            "full_t0": 0.044000000000000004,
+            "reduced_t0": 0.044000000000000004,
+            "abs_diff": 0.0
+          },
+          "GlyRS_moiety_total": {
+            "full_t0": 0.034999999999999996,
+            "reduced_t0": 0.03499999999999999,
+            "abs_diff": 6.938893903907228e-18
+          }
+        },
+        "worst_post_layer_state": {
+          "state": "MetRS_AMP_MettRNAfMetCAU",
+          "E_inf": 0.08219075469104511
+        }
+      },
+      "red_algebraic_stats": {
+        "block_solve_count": 34694,
+        "newton_iterations_total": 89302,
+        "newton_iterations_median": 2,
+        "newton_iterations_max": 5,
+        "line_search_rejections": 0,
+        "jacobian_refreshes": 0,
+        "plateau_accepts": 0,
+        "max_abs_algebraic_residual": 1.603e-09,
+        "max_scaled_algebraic_residual": 9.993e-13,
+        "min_reconstructed_concentration": 0,
+        "root_failures": 0
+      },
+      "numerics": {
+        "full": {
+          "steps_successful": 4186,
+          "steps_failed": 62,
+          "rhs_evaluations": 12135
+        },
+        "red": {
+          "steps_successful": 4469,
+          "steps_failed": 135,
+          "rhs_evaluations": 17347
+        }
+      }
+    },
+    "S5": {
+      "condition": "S5",
+      "description": "CP x0.1, energy system dynamic",
+      "full_config_sha256": "9fe690e6d1166bbbd3d23bf2e08d7802b8340fd907c114d5e2678670cecc8a12",
+      "red_config_sha256": "6920c034eeef16624f18803da81c21dd62520ea4fffea1619522b10a0a8ec372",
+      "metrics_file": "results/pnas2017_reference/2026-09-25_aa_v1_formal_comparison/metrics-S5.json",
+      "verdicts": {
+        "states": {
+          "budget": 0.01,
+          "worst": 1.0289075205335598,
+          "status": "FAIL"
+        },
+        "extents": {
+          "budget": 0.01,
+          "worst": 0.017231614143553377,
+          "status": "FAIL"
+        },
+        "fluxes": {
+          "budget": 0.05,
+          "worst": 0.9770289312246965,
+          "status": "FAIL"
+        },
+        "conservation_summary": "adenine_ledger_total=NUMERICALLY_UNRESOLVED; phosphate_ledger_total=FAIL; tRNAGlyGCC_family_total=FAIL; tRNAfMetCAU_family_total=FAIL",
+        "pair_status": "FAIL"
+      },
+      "conservation": {
+        "MetRS_moiety_total": {
+          "full_residual": 8.039680032823071e-13,
+          "reduced_residual": 1.6653345369377348e-16,
+          "cross_model_E_inf": 8.038569809798446e-13,
+          "status": "PASS"
+        },
+        "GlyRS_moiety_total": {
+          "full_residual": 3.78658215893779e-12,
+          "reduced_residual": 1.1102230246251565e-16,
+          "cross_model_E_inf": 3.7866376700890214e-12,
+          "status": "PASS"
+        },
+        "tRNAfMetCAU_family_total": {
+          "full_residual": 2.6036950376112865e-14,
+          "reduced_residual": 0.06614888067075944,
+          "cross_model_E_inf": 0.06619793037648888,
+          "status": "FAIL"
+        },
+        "tRNAGlyGCC_family_total": {
+          "full_residual": 5.11100328777254e-13,
+          "reduced_residual": 0.09159862014926726,
+          "cross_model_E_inf": 0.09159869197107916,
+          "status": "FAIL"
+        },
+        "adenine_ledger_total": {
+          "full_residual": 0.0010691144443965943,
+          "reduced_residual": 0.0012634347769874391,
+          "cross_model_E_inf": 0.00019489351953852748,
+          "status": "NUMERICALLY_UNRESOLVED"
+        },
+        "guanine_ledger_total": {
+          "full_residual": 1.4551915228366852e-14,
+          "reduced_residual": 3.383320290595293e-14,
+          "cross_model_E_inf": 2.6011548470705748e-14,
+          "status": "PASS"
+        },
+        "phosphate_ledger_total": {
+          "full_residual": 2.1444638766670926e-14,
+          "reduced_residual": 8.354586433087078e-05,
+          "cross_model_E_inf": 8.379530758688808e-05,
+          "status": "FAIL"
+        },
+        "aa_subsystem_particle_count": {
+          "full_residual": 0.38436589075269806,
+          "reduced_residual": 0.3843645718276183,
+          "cross_model_E_inf": 0.00040533342912871527,
+          "status": "PROXY_NOT_TIERED"
+        }
+      },
+      "initial_layer": {
+        "red_consistent_start": {
+          "metrs": {
+            "n_algebraic": 12,
+            "max_residual": 8.553e-13,
+            "scaled_residual": 1.045e-16,
+            "production_scale": 8183,
+            "newton_iters": 2
+          },
+          "glyrs": {
+            "n_algebraic": 9,
+            "max_residual": 6.041e-09,
+            "scaled_residual": 4.853e-13,
+            "production_scale": 12450,
+            "newton_iters": 2
+          }
+        },
+        "red_max_adjustment": {
+          "max_species": "MetRS",
+          "max_from": 0.44,
+          "max_to": 0.00354689,
+          "max_abs": 0.436
+        },
+        "layer_window_s": [
+          0.0001,
+          0.049225000000000005
+        ],
+        "enzyme_pool_t0_agreement": {
+          "MetRS_moiety_total": {
+            "full_t0": 0.44,
+            "reduced_t0": 0.43999999999999995,
+            "abs_diff": 5.551115123125783e-17
+          },
+          "GlyRS_moiety_total": {
+            "full_t0": 0.35,
+            "reduced_t0": 0.35,
+            "abs_diff": 0.0
+          }
+        },
+        "worst_post_layer_state": {
+          "state": "GlyRS_GlyAMP_tRNAGlyGCC",
+          "E_inf": 0.3355502549363636
+        }
+      },
+      "red_algebraic_stats": {
+        "block_solve_count": 26856,
+        "newton_iterations_total": 70304,
+        "newton_iterations_median": 2,
+        "newton_iterations_max": 7,
+        "line_search_rejections": 1,
+        "jacobian_refreshes": 1,
+        "plateau_accepts": 0,
+        "max_abs_algebraic_residual": 1.554e-08,
+        "max_scaled_algebraic_residual": 9.979e-13,
+        "min_reconstructed_concentration": 0,
+        "root_failures": 0
+      },
+      "numerics": {
+        "full": {
+          "steps_successful": 4811,
+          "steps_failed": 96,
+          "rhs_evaluations": 14654
+        },
+        "red": {
+          "steps_successful": 4998,
+          "steps_failed": 111,
+          "rhs_evaluations": 13428
+        }
+      }
+    }
+  },
+  "negative_control": {
+    "run_id": "RED-NEG1",
+    "compared_against": "FULL-S0",
+    "expected_verdict": "FAIL (pipeline negative control)",
+    "observed_verdict": "FAIL",
+    "rejected_as_registered": true,
+    "negative_software_test_criterion": "PASS",
+    "kind": "SOFTWARE/VALIDATOR negative control (not a biochemical failure regime)",
+    "detail": {
+      "comparison_states_worst_E_inf": 1.0286823344803941,
+      "verdicts": {
+        "states": {
+          "budget": 0.01,
+          "worst": 1.0286823344803941,
+          "status": "FAIL"
+        },
+        "extents": {
+          "budget": 0.01,
+          "worst": 0.030465022092281063,
+          "status": "FAIL"
+        },
+        "fluxes": {
+          "budget": 0.05,
+          "worst": 0.8851332060472488,
+          "status": "FAIL"
+        }
+      },
+      "metrics_file": "results/pnas2017_reference/2026-09-25_aa_v1_formal_comparison/metrics-NEG1.json",
+      "run_outcome": "success",
+      "run_error": null,
+      "run_failure_class": null
+    }
+  },
+  "scoped_classification": "FAILED_VALIDATION_ON_REFERENCE_DOMAIN [categories: conservation:phosphate_ledger_total,conservation:tRNAGlyGCC_family_total,conservation:tRNAfMetCAU_family_total,conservation_numerically_unresolved:adenine_ledger_total,cumulative_resource,instantaneous_flux,state_trajectory]"
+}

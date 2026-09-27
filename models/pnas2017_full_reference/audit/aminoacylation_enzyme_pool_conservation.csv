@@ -1,0 +1,3 @@
+enzyme_pool,definition,active_pool_max_LoverS_reference_active,active_pool_conserved_at_reference,family_total_max_LoverS_all_reactions,family_total_conserved,note
+MetRS_total,free MetRS + all MetRS_* complexes (active),0.000e+00,true,0.000e+00,true,active pool is broken only by _degraded sinks whose k1=0 at the author reference; active+degraded family_total is the unconditional conservation candidate (protocol class C/B)
+GlyRS_total,free GlyRS + all GlyRS_* complexes (active),0.000e+00,true,0.000e+00,true,active pool is broken only by _degraded sinks whose k1=0 at the author reference; active+degraded family_total is the unconditional conservation candidate (protocol class C/B)

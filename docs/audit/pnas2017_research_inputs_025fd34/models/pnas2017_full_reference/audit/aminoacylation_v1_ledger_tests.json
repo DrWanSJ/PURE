@@ -1,0 +1,116 @@
+{
+  "schema": "pnas2017_aminoacylation_v1_ledger_tests/v1",
+  "source_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "known_answer_tests": [
+    {
+      "test": "T1_binding_E_ATP",
+      "reaction_id": "re0000000132",
+      "sides": "{'GlyRS': 1.0, 'ATP': 1.0} -> {'GlyRS_ATP': 1.0}",
+      "all_fields_ok": "true",
+      "detail": "{\"ATP_free_delta\": {\"expected\": -1.0, \"got\": -1.0, \"ok\": true}, \"ATP_carrier_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"moiety_adenosine_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"moiety_enzyme_glyrs_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}}"
+    },
+    {
+      "test": "T2_chemical_adenylation",
+      "reaction_id": "re0000000140",
+      "sides": "{'GlyRS_Gly_ATP': 1.0} -> {'GlyRS_GlyAMP_PPi': 1.0}",
+      "all_fields_ok": "true",
+      "detail": "{\"ATP_free_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"ATP_carrier_delta\": {\"expected\": -1.0, \"got\": -1.0, \"ok\": true}, \"PPi_carrier_delta\": {\"expected\": 1.0, \"got\": 1.0, \"ok\": true}, \"PPi_free_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"moiety_adenosine_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"moiety_phosphorus_total_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"moiety_glycyl_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"moiety_enzyme_glyrs_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}}"
+    },
+    {
+      "test": "T3_PPi_release",
+      "reaction_id": "re0000000127",
+      "sides": "{'GlyRS_GlyAMP_PPi': 1.0} -> {'GlyRS_GlyAMP': 1.0, 'PPi': 1.0}",
+      "all_fields_ok": "true",
+      "detail": "{\"PPi_free_delta\": {\"expected\": 1.0, \"got\": 1.0, \"ok\": true}, \"PPi_carrier_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"moiety_adenosine_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"moiety_pyrophosphate_P_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}}"
+    },
+    {
+      "test": "T4_transfer",
+      "reaction_id": "re0000000178",
+      "sides": "{'GlyRS_GlyAMP_tRNAGlyGCC': 1.0} -> {'GlyRS_AMP_GlytRNAGlyGCC': 1.0}",
+      "all_fields_ok": "true",
+      "detail": "{\"moiety_glycyl_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"moiety_adenosine_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"moiety_trna_gly_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"moiety_pyrophosphate_P_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"GlyAMP_carrier_delta\": {\"expected\": -1.0, \"got\": -1.0, \"ok\": true}, \"AMP_carrier_delta\": {\"expected\": 1.0, \"got\": 1.0, \"ok\": true}, \"GlytRNAGlyGCC_carrier_delta\": {\"expected\": 1.0, \"got\": 1.0, \"ok\": true}}"
+    },
+    {
+      "test": "T5_AMP_release",
+      "reaction_id": "re0000000145",
+      "sides": "{'GlyRS_AMP': 1.0} -> {'GlyRS': 1.0, 'AMP': 1.0}",
+      "all_fields_ok": "true",
+      "detail": "{\"AMP_free_delta\": {\"expected\": 1.0, \"got\": 1.0, \"ok\": true}, \"AMP_carrier_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"moiety_adenosine_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}, \"moiety_enzyme_glyrs_delta\": {\"expected\": 0.0, \"got\": 0.0, \"ok\": true}}"
+    }
+  ],
+  "all_known_answer_tests_pass": true,
+  "moiety_invariants_derived": {
+    "adenosine": {
+      "reactions_breaking_over_all_aa": [],
+      "reactions_breaking_over_reference_active": [],
+      "exact_conservation_over_all_aa": "true"
+    },
+    "pyrophosphate_P": {
+      "reactions_breaking_over_all_aa": [
+        "re0000000140",
+        "re0000000141",
+        "re0000000165",
+        "re0000000166",
+        "re0000000197",
+        "re0000000198",
+        "re0000000239",
+        "re0000000240"
+      ],
+      "reactions_breaking_over_reference_active": [
+        "re0000000140",
+        "re0000000141",
+        "re0000000165",
+        "re0000000166",
+        "re0000000197",
+        "re0000000239"
+      ],
+      "exact_conservation_over_all_aa": "false"
+    },
+    "phosphorus_total": {
+      "reactions_breaking_over_all_aa": [],
+      "reactions_breaking_over_reference_active": [],
+      "exact_conservation_over_all_aa": "true"
+    },
+    "glycyl": {
+      "reactions_breaking_over_all_aa": [
+        "re0000000031"
+      ],
+      "reactions_breaking_over_reference_active": [],
+      "exact_conservation_over_all_aa": "false"
+    },
+    "methionyl": {
+      "reactions_breaking_over_all_aa": [
+        "re0000000258"
+      ],
+      "reactions_breaking_over_reference_active": [],
+      "exact_conservation_over_all_aa": "false"
+    },
+    "trna_gly": {
+      "reactions_breaking_over_all_aa": [
+        "re0000000031",
+        "re0000000070"
+      ],
+      "reactions_breaking_over_reference_active": [],
+      "exact_conservation_over_all_aa": "false"
+    },
+    "trna_fmet": {
+      "reactions_breaking_over_all_aa": [
+        "re0000000006",
+        "re0000000258"
+      ],
+      "reactions_breaking_over_reference_active": [],
+      "exact_conservation_over_all_aa": "false"
+    },
+    "enzyme_metrs": {
+      "reactions_breaking_over_all_aa": [],
+      "reactions_breaking_over_reference_active": [],
+      "exact_conservation_over_all_aa": "true"
+    },
+    "enzyme_glyrs": {
+      "reactions_breaking_over_all_aa": [],
+      "reactions_breaking_over_reference_active": [],
+      "exact_conservation_over_all_aa": "true"
+    }
+  },
+  "semantics_note": "free_species_delta = net stoich coefficient of the FREE species; carrier_state_delta = net change of that chemical form summed over free + all bound complexes carrying it (binding never counts as consumption); moiety_delta = net change of the declared conserved group inventory. Cumulative/gross accounting downstream MUST use original directed fluxes, never |v_net| of merged pairs."
+}

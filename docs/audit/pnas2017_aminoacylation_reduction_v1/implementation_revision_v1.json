@@ -1,0 +1,73 @@
+{
+  "schema": "pnas2017_aminoacylation_reduction_implementation_revision/v1",
+  "date": "2026-09-25",
+  "status": "NUMERICAL_REALIZATION_REVISED_SCIENCE_UNCHANGED__PRE_FORMAL_RUN__AWAITING_USER_REVIEW",
+  "authorization_source": "user this-session execution instruction (2026-09-25): 'Proceed with the mathematically equivalent reduced formulation: G(s,q)=0, q=h(s), ds/dt=F(s,h(s)); integrate only the independent dynamic states s. At every RHS evaluation: (1) solve the registered algebraic closure G(s,q)=0; (2) enforce registered enzyme/moiety constraints; (3) require the same feasible attracting branch used in the closure audit; (4) evaluate F(s,q); (5) reconstruct q for saved outputs and validation. Use a deterministic, bounded Newton/implicit solve. Do not clip concentrations. Do not silently project invalid roots. A root failure must terminate that run as a failure.' plus the 5 pre-formal-run prep steps (preserve preregistration + failed DAE diagnostics; create this revision record; hash the revised runner; rerun the validator; only then run the 13 registered runs) and 'First perform ONE non-formal RED-S0 smoke run ... If that smoke run succeeds, STOP and report before launching all 13 formal runs.'",
+  "relates_to": [
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/dae_singular_mass_failure_v1.md",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/acceptance_criteria.json",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/candidate_partition.json",
+    "scripts/run_pnas2017_aa_v1_formal.m"
+  ],
+  "scope_statement": "This record changes ONLY the numerical realization of the registered algebraic constraints. The scientific content is unchanged: the author RHS (fMGG_synthesis.m, unmodified), the eliminated set (21 complexes), the kept-dynamic set (7 enzyme-bound complexes + free MetAMP + free GlyAMP), the closure equations (0 = dC_i/dt rows taken verbatim from the author RHS), the cumulative-extent definitions, the registered thresholds (T_A..T_H and the QSSA scaled-residual acceptance 1e-10), the stress conditions S0..S5, and acceptance_criteria.json are all FROZEN and UNTOUCHED. No threshold was relaxed; no failing condition was deleted; no negative concentration was clipped; no invalid root was silently projected; a non-converging root above the registered acceptance still terminates the run as a failure.",
+
+  "revision_1_dae_to_eliminated_ode": {
+    "what_changed": "Retired the singular-mass-matrix DAE harness ('MassSingular','yes') in favour of the mathematically equivalent algebraically eliminated ODE: dynamic states s, algebraic states q = h(s) solved from the registered closure G(s,q)=0 at every RHS evaluation, ds/dt = F(s,h(s)) with F the author RHS restricted to the dynamic rows.",
+    "why": "The singular-mass DAE is numerically unattainable at the registered tolerances (RelTol 1e-10 / AbsTol 1e-14) in MATLAB R2025b. Full evidence and the step-size-independence measurement are preserved in dae_singular_mass_failure_v1.md.",
+    "evidence_error_floor_is_step_size_independent": "see dae_singular_mass_failure_v1.md: with 'MassSingular','yes' the ode15s corrector reaches a step-size-independent error-test plateau of 1.67*RelTol on the algebraic rows with small Jacobian diagonals (GlyRS_ATP, GlyRS_Gly). Cause: the author RHS sums terms up to ~3e6 uM/s, so each eliminated row carries ~1e-9 uM/s of double-precision cancellation noise, and the implied root jitter noise/|J_ii| exceeds RelTol*|C_i| ~ 1e-13. Halving the step does not reduce the plateau (it is a floating-point/error-control floor, not a truncation-error floor). R2025b ode15s exposes no algebraic-state option ('MStates' does not exist).",
+    "diagnosis_classification": "NUMERICAL_IMPLEMENTATION_LIMITATION, not a scientific QSSA failure. The eliminated formulation removes the jittered algebraic roots from the solver error vector without changing the mathematics: the closure G(s,q)=0 and the dynamic rows F(s,q) are identical to the DAE's.",
+    "mathematical_equivalence": "index-1 DAE  M y' = f(y) with singular M selecting algebraic rows 0 = g(y_alg) is equivalent to q = h(s) (the implicit-function solution of g) and s' = F(s, h(s)); the eliminated ODE integrates exactly this."
+  },
+
+  "revision_2_free_enzyme_moiety_reconstruction": {
+    "what_changed": "The two FREE enzymes (MetRS, GlyRS) are no longer integrated as independent dynamic states. Each is reconstructed at every RHS evaluation and every output time from its conserved enzyme moiety: free = ePool - sum(kept complexes) - sum(eliminated complexes), where ePool = free + all non-degraded complexes evaluated from the (scaled) author initial values. This is the identical reconstruction already used by consistentStart, by algRows, and by the registered partition-verification closure.",
+    "dynamic_state_count": {
+      "species_total": 241,
+      "eliminated_algebraic": 21,
+      "free_enzymes_reconstructed": 2,
+      "dynamic_species_integrated": 218,
+      "cumulative_extent_states": 12,
+      "total_integrated_states_reduced": 230,
+      "reference_mode_integrated_states": 253
+    },
+    "why": "acceptance_criteria.json tier T_G (FROZEN, threshold 1e-8) requires every enzyme-family total to be conserved in EVERY formal run, and authorization A2 is 'exact free-enzyme reconstruction'. Integrating the free enzyme instead (keeping it dynamic) was measured 2026-09-25 to leak ~99% of each pool by t = 1000 s (T_G residual ~0.99): because the QSSA pins the eliminated rows dC_i/dt = 0, enzyme sequestered in the eliminated complexes never returns to the free pool as substrates drain, so the free-enzyme ODE has no restoring flux. Reconstructing free from the conserved moiety makes pool conservation exact by construction (free + kept + eliminated == ePool identically).",
+    "measured_evidence": {
+      "formulation_2_integrate_free_REJECTED": "T_G residual ~0.99 (pool leaked to ~3.975e-3 of 0.44 / 0.35 by t=1000); non-formal RED-S0 smoke 2026-09-25",
+      "formulation_1_reconstruct_free_ACCEPTED": "non-formal RED-S0 smoke 2026-09-25: T_G residual MetRS 2.523e-16, GlyRS 3.172e-16 (both PASS <= 1e-8); RED pool spread over the whole run MetRS 2.220e-16, GlyRS 1.665e-16; pool totals at the initial output equal FULL exactly (MetRS 0.44 diff 0.0, GlyRS 0.35 diff 0.0); for reference the FULL tight run holds the pools to 2.236e-10 / 2.512e-10"
+    },
+    "CONTRADICTION_WITH_candidate_partition_line_74_FLAGGED_FOR_USER_VETO": {
+      "the_contradiction": "candidate_partition.json 'outside_pool.free_enzyme_reconstruction' (line ~74) states: 'MetRS and GlyRS (free forms) remain DYNAMIC states in the author RHS; no explicit pool-total substitution is made ... the DAE never reparameterizes the author model', and 'all_other_species': '241 total states; 21 algebraic, 220 dynamic'. That description is formulation 2 (integrate the free enzyme; 220 dynamic). It is inconsistent with (a) the FROZEN acceptance_criteria.json T_G, which formulation 2 violates at ~0.99; (b) authorization A2 'exact free-enzyme reconstruction'; (c) the partition's OWN verification_result, whose closure/branch computation reconstructs free = ePool - sum(kept) - sum(eliminated); and (d) consistentStart / algRows, which already reconstruct free this way.",
+      "resolution_adopted": "Formulation 1 (reconstruct free from the conserved moiety; 218 dynamic species) is authoritative. The frozen T_G tier and A2 outrank the descriptive 'outside_pool' note, and the note is internally contradicted by the same file's verification methodology. The user's this-session steps (2) 'enforce registered enzyme/moiety constraints' and (3) 'require the same feasible attracting branch used in the closure audit' independently mandate the reconstruction.",
+      "what_is_UNCHANGED_by_this_resolution": "the eliminated set (21), the kept set, the closure rows (author RHS dC_i/dt), the attracting branch selected, all thresholds, all stress conditions, and acceptance_criteria.json. Only how the free enzyme value is OBTAINED changed (reconstructed from a conserved author-RHS moiety instead of integrated) - i.e. only the numerical realization of the registered moiety constraint, exactly the class of change the user authorized.",
+      "candidate_partition_json_NOT_modified": "candidate_partition.json was left byte-for-byte unchanged (it is a frozen, hash-bound science artefact). This revision record, not an edit to the partition file, documents the supersession of its line-74 descriptive note. The user may veto this resolution; if so, formulation 2 cannot satisfy frozen T_G and the conflict must be escalated rather than silently resolved.",
+      "user_review_requested": true
+    }
+  },
+
+  "revision_3_newton_convergence_scale": {
+    "what_changed": "solveBlock's convergence scale c.refscale is now seeded with the block's physical PRODUCTION scale (max|dC_i/dt| of the author RHS at the author initial values, eliminated complexes zero, free enzyme = full pool), independently re-measured as MetRS 1.650e4 uM/s and GlyRS 1.3125e4 uM/s. Previously refscale was initialised to 1 and only grown by max(refscale, res), so at an already-converged root the target tol = 1e-12*refscale collapsed to 1e-12 ABSOLUTE.",
+    "why": "At the first grid point t = 1e-4, during ode15s's numerical-Jacobian evaluation, the GlyRS warm-start residual was 1.166e-12 uM/s = 9.4e-17 of the 1.245e4 uM/s production scale (below machine epsilon): the closure was satisfied to round-off, but 1.166e-12 marginally exceeded the buggy 1e-12-absolute target, the feasibility line search could find no step that further reduced a round-off residual, and solveBlock spuriously raised 'root failure ... no feasible improving step'. The run terminated at t = 1e-4 (non-formal RED-S0 smoke, 2026-09-25).",
+    "fix": "Anchor the scaled residual to the fixed physical production scale, matching the registered QSSA quantity. The Newton convergence target is 1e-12 of the production scale; the registered QSSA acceptance is a scaled residual <= 1e-10 of it (candidate_partition.json verification_result: 'max_scaled_algebraic_residual <= 1e-10 by construction of convergence test; final residuals <= 1e-13 observed'). On a line-search plateau the root is accepted iff res <= 1e-10*refscale (within registered acceptance) and otherwise still raises an error terminating the run. The two 'closure-lost' guards (RHS and output reconstruction) were likewise changed from an arbitrary absolute 1e-6 to the registered scaled acceptance 1e-10*refscale; for GlyRS the old 1e-6 was actually STRICTER than the registered 1.245e-6 and could have spuriously rejected a valid root.",
+    "this_is_not_threshold_relaxation": "The registered acceptance (scaled <= 1e-10) is unchanged and is now applied consistently. The internal Newton target (scaled 1e-12) remains 100x STRICTER than the registered acceptance. refscale is fixed at the production scale and is never inflated by a transient residual, so the guard cannot drift looser than registered.",
+    "post_fix_smoke_evidence": "non-formal RED-S0 smoke 2026-09-25 after the fix: exit 0, no root failure; 22210 block-solves, 58306 Newton iterations; max|G| = 1.606e-08 uM/s, max scaled |G| = 9.998667e-13 (<< 1e-10); min reconstructed C over the 21 eliminated complexes = 0.0 (no clipping); runtime 7.7 s; ode15s 4561 successful steps, 89 failed attempts, 11105 function evaluations."
+  },
+
+  "prohibitions_respected": [
+    "no clipping of negative concentrations (min reconstructed eliminated complex = 0.0; the only negative anywhere is -2.31e-31 in a DYNAMIC ribosomal species elRS70SAGGU0002_fMet_EFTu_GDP at t=6.08 s, i.e. double-precision round-off on an essentially-zero state, recorded as-is and not clipped; the FULL reference reaches 0.0 on the same species class)",
+    "no silent projection onto conservation manifolds (the moiety reconstruction is the registered constraint enforced explicitly and reported, not a hidden projection of an invalid root)",
+    "no parameter / SBML / author-initial-value edits",
+    "no time-axis change; the initial-layer jump is recorded and printed (largest: MetRS free 0.44 -> 0.00354689 at the consistent start), never suppressed",
+    "no threshold relaxation; no deletion of failing conditions",
+    "a root that fails to reach the registered acceptance still terminates the run as a failure",
+    "no commit / no push this round"
+  ],
+
+  "runner_binding": {
+    "file": "scripts/run_pnas2017_aa_v1_formal.m",
+    "hash_binding": "the SHA-256 of the revised runner is re-bound into input_hashes.json and preregistration.json (key_hashes.run_pnas2017_aa_v1_formal.m and frozen_artifacts_sha256) by scripts/freeze_pnas2017_aa_v1_registration.py, run after this record was written",
+    "checkcode": "MATLAB checkcode (mlint) on the revised runner: 'No issues found by checkcode'",
+    "preregistration_refreeze_note": "preregistration.json is regenerated by the freeze script to bind the revised runner hash and this revision record; its thresholds_active come verbatim from the unchanged acceptance_criteria.json, its partition from the unchanged candidate_partition.json, and formal_runs_before_registration remains [] (the trajectories directory is empty - no formal full-vs-reduced run has completed). This is the user-mandated step (3) 'hash the revised runner', not a relaxation."
+  },
+
+  "next_step_gate": "Per the user instruction, after this record + freeze + validator rerun, STOP and report the smoke results and revision status. Do NOT launch the 13 registered formal runs until the user reviews this record (in particular the flagged candidate_partition.json line-74 contradiction) and gives the go-ahead."
+}

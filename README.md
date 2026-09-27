@@ -11,15 +11,19 @@ part of the imported PNAS reference model.
 
 | Identity | Role | Status |
 | --- | --- | --- |
-| `PNAS2017_full_reference` | Literal, provenance-bound SBML import of the Matsuura et al. translation network; benchmark and inventory only | **Active acquisition and audit**; no scientific modification permitted |
+| `PNAS2017_full_reference` | Literal, provenance-bound SBML import of the Matsuura et al. translation network; benchmark and inventory only | **Paper PDF and S01–S29 captured; audit and interpretation ongoing**; no scientific modification permitted |
 | `PURE_reduced_core` | Future interpretable project model derived from explicit, human-reviewed reduction decisions | **Proposal only**; no validated model yet |
 | `Mavelli2015_coarse_reference` | Mavelli, Marangoni and Stano (2015) coarse-grained comparator, DOI: [10.1007/s11538-015-0082-8](https://doi.org/10.1007/s11538-015-0082-8) | **Frozen legacy benchmark**, completed through the previous D7 RS-QSSA work |
 
-As of 2026-09-27, the [G1-PNAS evidence report](docs/pnas2017/g1_pnas_report.md)
-is **BLOCKED**: the official author-site SBML and simulator files are frozen,
-but the publisher article/SI and Datasets S01–S29 are still unavailable here.
-The structural and two-engine numerical checks do not close the missing-source,
-chemical-unit or human-review gaps.
+The publisher PDF and S01–S29 files are now preserved with hashes alongside
+the author-site files; see the [source capture](references/PNAS2017_Matsuura/README.md).
+The [G1-PNAS evidence report](docs/pnas2017/g1_pnas_report.md) records the
+pre-integration gate, when those publisher files were missing. Its source
+blocker is historical, while chemical-unit, dataset-comparison and human-review
+work remains open; G1 has not been rerun. The migrated
+[reduction evidence](docs/reduction/pnas2017_historical_evidence.md) retains
+its failed and blocked outcomes. [Open scientific decisions](docs/reduction/open_scientific_decisions.md)
+do not constitute model approval.
 
 The Mavelli benchmark remains valid for its coarse-grained question. It is no
 longer the primary benchmark because the revised question requires the
@@ -46,10 +50,10 @@ defined charges, protonation and Mg-binding conventions.
 ```text
 references/                         source files and provenance
   R01_Mavelli2015/                  legacy literature source
-  PNAS2017_Matsuura/                active source acquisition (as available)
+  PNAS2017_Matsuura/                captured publisher and author sources
 models/
   literature_reference/             frozen Mavelli B1 implementation
-  pnas2017_full_reference/          immutable import, normalization and audit (as available)
+  pnas2017_full_reference/          immutable import, normalization and audit
   pure_reduced_core/                future human-reviewed model
   pure_resource_core/               earlier project-model planning material
   fixtures/                         B0 known-answer models
@@ -63,9 +67,9 @@ docs/                               scientific, validation and audit records
 The PNAS SBML is the scientific source of truth for the detailed benchmark.
 Normalized inventories and solver outputs are derived artifacts. A handwritten
 MATLAB or Python ODE must not replace the imported reference definition.
-Source files are preserved byte-for-byte with URLs, access dates, sizes and
-SHA-256 hashes. Missing sources and unsupported solver imports are recorded
-as missing or blocked rather than reconstructed from descriptions.
+Source files are preserved byte-for-byte with URLs, access notes, sizes and
+SHA-256 hashes. Unsupported solver imports and unresolved scientific checks
+remain recorded rather than reconstructed from descriptions.
 
 ## Legacy Mavelli reproduction
 
