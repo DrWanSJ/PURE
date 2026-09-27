@@ -1,0 +1,53 @@
+{
+  "benchmark": "PNAS2017_full_reference",
+  "doi": "10.1073/pnas.1615351114",
+  "access_date": "2026-09-24",
+  "source_files": [
+    {
+      "path": "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml",
+      "original_filename": "fMGG_synthesis.xml",
+      "source_page": "https://sites.google.com/view/puresimulator",
+      "download_url": "https://drive.usercontent.google.com/download?id=17hCxjOpbypq-ri2gOEL-ByTDQNlIit-2&export=download&confirm=t",
+      "doi": "10.1073/pnas.1615351114",
+      "access_date": "2026-09-24",
+      "format_inspected": "xml",
+      "bytes": 1732620,
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "license_status": "No explicit reuse license found on the authors' download page; redistribution rights unresolved."
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+      "original_filename": "SBML_files.zip",
+      "source_page": "https://sites.google.com/view/puresimulator",
+      "download_url": "https://drive.usercontent.google.com/download?id=1IQ2cBPcF4uBM4lc1Mn7u3ae8XQLNsJij&export=download",
+      "doi": "10.1073/pnas.1615351114",
+      "access_date": "2026-09-24",
+      "format_inspected": "zip",
+      "bytes": 250427,
+      "sha256": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+      "license_status": "No explicit reuse license found on the authors' download page; redistribution rights unresolved."
+    },
+    {
+      "path": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "original_filename": "Simulate_fMGG_synthesis.zip",
+      "source_page": "https://sites.google.com/view/puresimulator",
+      "download_url": "https://drive.usercontent.google.com/download?id=1qnRPhyw2p_8tAy4kNY7Vd1SkEcb6x5xy&export=download",
+      "doi": "10.1073/pnas.1615351114",
+      "access_date": "2026-09-24",
+      "format_inspected": "zip",
+      "bytes": 46143,
+      "sha256": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+      "license_status": "No explicit reuse license found on the authors' download page; redistribution rights unresolved."
+    }
+  ],
+  "model_copies": [
+    {
+      "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "bytes": 1732620,
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "source_path": "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml",
+      "transformation": "byte-identical copy"
+    }
+  ],
+  "note": "The combined XML was format-inspected as SBML. ZIP contents have not been silently promoted to the canonical model. Publisher Dataset S27 remains unavailable; its listed .xlsx filename does not establish the actual file contents or format."
+}

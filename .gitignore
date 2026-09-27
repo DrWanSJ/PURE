@@ -25,3 +25,6 @@ Thumbs.db
 
 # Future frontend/service build artifacts
 node_modules/
+
+# Generated Python bytecode from SBML audit scripts.
+__pycache__/
