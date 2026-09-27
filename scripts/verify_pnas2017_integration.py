@@ -112,6 +112,20 @@ def main() -> int:
     record("historical_run_archive", not wrong and len(archive["files"]) == 179,
            f"{len(archive['files'])} run files; mismatches={wrong}")
 
+    prefixes = (
+        "docs/audit/pnas2017_aminoacylation_reduction_v1/",
+        "docs/audit/pnas2017_aminoacylation_A3b/",
+        "docs/audit/pnas2017_aminoacylation_A3b_r12/",
+        "docs/audit/pnas2017_aminoacylation_A3c/",
+    )
+    historical_paths = [path for prefix in prefixes for path in subprocess.check_output(
+        ["git", "ls-tree", "-r", "--name-only", RESEARCH, prefix],
+        cwd=ROOT, text=True).splitlines()]
+    changed = [path for path in historical_paths if
+               git_blob(f"HEAD:{path}") != git_blob(f"{RESEARCH}:{path}")]
+    record("historical_candidate_records", not changed and len(historical_paths) == 65,
+           f"{len(historical_paths)} original Git blobs; changed={changed}")
+
     a3a = data("docs/reduction/aminoacylation_A3a_final_status.md")
     a3b = json.loads(data("docs/audit/pnas2017_aminoacylation_A3b/A3b21_S0_smoke_gate.json"))
     r12 = json.loads(data("docs/audit/pnas2017_aminoacylation_A3b_r12/A3br12_S0_smoke_gate.json"))

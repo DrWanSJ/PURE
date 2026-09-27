@@ -3,7 +3,7 @@
   "authority": "Evidence-integrity check only; no reduction acceptance",
   "main_base": "0a72448ff20db8e58593a9910b8944c121750778",
   "research_source": "025fd340300a56f069c2136ea8bb0ff542b046d4",
-  "pass": 10,
+  "pass": 11,
   "fail": 0,
   "checks": [
     {
@@ -40,6 +40,11 @@
       "check": "historical_run_archive",
       "status": "PASS",
       "detail": "179 run files; mismatches=[]"
+    },
+    {
+      "check": "historical_candidate_records",
+      "status": "PASS",
+      "detail": "65 original Git blobs; changed=[]"
     },
     {
       "check": "historical_status_and_open_decisions",

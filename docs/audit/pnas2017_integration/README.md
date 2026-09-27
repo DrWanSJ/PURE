@@ -26,7 +26,7 @@ scientific authority.
 | Check and command | Result | Scope |
 | --- | --- | --- |
 | `python scripts/verify_pnas2017_artifacts.py` | PASS | Main source/provenance, 241/968/26 inventory, 968 pending decisions and 16 review cards |
-| `python scripts/verify_pnas2017_integration.py` | PASS, 10/0 | 30 publisher sources, 38 historical inputs, 179 run files, original/main identity, statuses and graph freshness |
+| `python scripts/verify_pnas2017_integration.py` | PASS, 11/0 | 30 publisher sources, 38 historical inputs, 65 candidate records, 179 run files, original/main identity, statuses and graph freshness |
 | `python scripts/audit_pnas2017_sbml.py --output-dir <temp> --report <temp> --simbiology skip` | PASS for libSBML inventory | Four regenerated CSVs were byte-identical to main; RoadRunner unavailable in temporary Python environment, SimBiology deliberately skipped |
 | `python scripts/pnas2017_research_schema_adapter.py --output-dir <temp>` and P2/P3 analyzers/validators with `PNAS2017_RESEARCH_AUDIT_DIR=<temp>` | PASS | 241/968/968 adapter; 241 species-map rows and ten aminoacylation tables equal historical data; P2 PASS and P3 30/0 |
 | `python scripts/validate_pnas2017_aa_v1r2.py` in an isolated historical workspace | PASS, 13/0/0 | All 75 A3a input hashes restored with documented line endings and earlier runner; evidence integrity only |
