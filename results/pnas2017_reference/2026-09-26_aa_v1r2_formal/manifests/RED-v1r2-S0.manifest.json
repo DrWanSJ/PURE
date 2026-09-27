@@ -1,0 +1,64 @@
+{
+  "schema": "pnas2017_aa_v1_run_manifest/v1r1",
+  "run_id": "RED-v1r2-S0",
+  "active_partition_revision": "v1r1",
+  "config": "results/pnas2017_reference/2026-09-26_aa_v1r2_formal/configs/RED-v1r2-S0.json",
+  "config_sha256": "d0cc57b5aa4011b8be0c2397f1e09d74e2a2696a26a983a7cfedbd2a039fc262",
+  "source_sha256": {
+    "sbml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "author_parameters_csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+    "author_initial_values_csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+    "author_model_m": "5357b16387970d693f730102256c8d4ee30b91a318ad7482fc13e798834889f4"
+  },
+  "runner_sha256": "eb4ba2c49d41d8014cc6063473de796709f76ef3e175391ac9ea25c639016085",
+  "runner_file": "scripts/run_pnas2017_aa_v1_formal.m",
+  "matlab_version": "MATLAB 25.2.0.3177638 (R2025b) Update 5",
+  "solver": "ode15s",
+  "reltol": 1e-10,
+  "abstol": 1e-14,
+  "output_grid": [
+    0.0001,
+    1000.0,
+    200
+  ],
+  "output_points_recorded": 200,
+  "x0_scale": {},
+  "mode": "reduced",
+  "wall_time_s": 3.995224,
+  "outcome": "success",
+  "error": null,
+  "solver_stats": {
+    "steps_successful": 4343,
+    "steps_failed": 73,
+    "rhs_evaluations": 10627
+  },
+  "initial_layer_adjustment": {
+    "max_species": "ATP",
+    "max_from": 3750,
+    "max_to": 3749.27,
+    "max_abs": 0.731
+  },
+  "consistent_start": {
+    "v1r2_joint": {
+      "max_residual": 4.165e-12,
+      "scaled_residual": 2.658e-16,
+      "production_scale": 15670,
+      "newton_iters": 4,
+      "debited_pools": "tRNAfMetCAU=-0.227576, tRNAGlyGCC=-0.322639, Met=-0.366711, Gly=-0.333506, ATP=-0.730632, PPi=0.098047\nlargest initial-condition adjustment: ATP: 3750 -> 3749.27 (0.731)\ncumulative-extent offsets seeded (P2 fast layer): Gly_release_re182=0.00517369, Met_release_re224=0.000160522, Gly_AMP_release_re145=0.00499148, Met_AMP_release_re170=0.000156513, Gly_adenylation_re140=0.0321586, Met_adenylation_re165=0.154982, aa_ATP_consumption_total=81.7709, aa_PPi_production_total=0.488948, aa_AMP_production_total=0.115069, aa_ATP_net_consumption=0.776728, aa_PPi_net_production=0.488948, aa_AMP_net_production=0.115069\n4343 \u4e2a\u6210\u529f\u6b65\u9aa4\n73 \u6b21\u5931\u8d25\u5c1d\u8bd5\n10627 \u6b21\u51fd\u6570\u8ba1\u7b97\n13 \u4e2a\u504f\u5bfc\u6570\n575 \u6b21 LU \u5206\u89e3\n7483 \u4e2a\u7ebf\u6027\u7cfb\u7edf\u89e3\nalgebraic rootfind: 21254 block-solves, 55174 Newton iters (median 2, max 7 per call), 27 line-search rejections, 27 Jacobian refreshes, 0 plateau accepts, max|G| = 1.638e-08 uM/s (scaled 9.993e-13), min reconstructed C = 0.000e+00\ndone reduced -> C:/Users/sean/Desktop/GUV-PURE/results/pnas2017_reference/2026-09-26_aa_v1r2_formal/trajectories/RED-v1r2-S0.csv (200 pts, 21 eliminated, 12 cumulative)"
+    }
+  },
+  "trajectory_sha256": "3d30945729bc1e94a45235fb6c01a384510bc30428b1412ba5d654c9731cf2d2",
+  "algebraic_root_statistics": {
+    "block_solve_count": 21254,
+    "newton_iterations_total": 55174,
+    "newton_iterations_median": 2,
+    "newton_iterations_max": 7,
+    "line_search_rejections": 27,
+    "jacobian_refreshes": 27,
+    "plateau_accepts": 0,
+    "max_abs_algebraic_residual": 1.638e-08,
+    "max_scaled_algebraic_residual": 9.993e-13,
+    "min_reconstructed_concentration": 0,
+    "root_failures": 0
+  }
+}
