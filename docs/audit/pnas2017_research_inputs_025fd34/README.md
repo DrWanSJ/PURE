@@ -3,7 +3,8 @@
 **Status:** `HISTORICAL_INPUT_SNAPSHOT`; this directory is not the current
 libSBML audit. It contains exact Git blob bytes for all 37 files in
 `models/pnas2017_full_reference/audit/` at research commit
-`025fd340300a56f069c2136ea8bb0ff542b046d4`. The
+`025fd340300a56f069c2136ea8bb0ff542b046d4`, plus the matching historical
+`data/provenance.csv` consumed by the branch validators. The
 [`snapshot_manifest.json`](snapshot_manifest.json) binds each file to its
 source path, byte count, SHA-256 and Git blob. Current audit tables in
 `models/pnas2017_full_reference/audit/` remain authoritative and were not
@@ -18,8 +19,12 @@ fresh checkout a failed scientific validation. The earlier runner is preserved
 as [`scripts/run_pnas2017_aa_v1_formal_11c4d704a.m`](scripts/run_pnas2017_aa_v1_formal_11c4d704a.m)
 from commit `11c4d704a`. The later research runner remains in `scripts/` and
 must not be substituted for a run whose input hash names the earlier version.
+The v1r1 frozen-artifact check also binds
+`scripts/freeze_pnas2017_aa_v1_registration.py` to its LF Git-blob bytes; a
+Windows CRLF checkout must be normalized in the isolated historical workspace
+before that check is run.
 
-For a historical rerun, use an isolated disposable workspace with these 37
+For a historical rerun, use an isolated disposable workspace with these 38
 files overlaid at their listed source paths and the matching historical runner.
 Do not overlay this snapshot into the integration branch's current audit
 directory. A new run against current main inputs needs a new run ID and new

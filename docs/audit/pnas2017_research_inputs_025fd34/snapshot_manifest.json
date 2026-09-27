@@ -260,6 +260,13 @@
       "bytes": 364412,
       "sha256": "d77ce4e7a443b5ed48692a03168bd350bf7af7436bd5591d6a3f46bf68148b46",
       "git_blob": "e11a99a0ce8c03a84cc5f7337230f8d928a57118"
+    },
+    {
+      "source_path": "data/provenance.csv",
+      "archive_path": "docs/audit/pnas2017_research_inputs_025fd34/data/provenance.csv",
+      "bytes": 5616,
+      "sha256": "287c6b46798fe468b7e864314e9615f5948a853ef2797f1d149d914047c07534",
+      "git_blob": "ba507b1bb191b8068872c2c15b4fedb8b5440846"
     }
   ],
   "historical_runner": {

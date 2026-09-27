@@ -1,0 +1,134 @@
+{
+  "schema": "pnas2017_integration_evidence_graph/v1",
+  "role": "Derived navigation only; source files, current main audit, and original validation records remain authoritative",
+  "main_base": "0a72448ff20db8e58593a9910b8944c121750778",
+  "research_source": "025fd340300a56f069c2136ea8bb0ff542b046d4",
+  "nodes": [
+    {
+      "id": "canonical_sbml",
+      "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "kind": "SOURCE FACT",
+      "provenance_class": "EXTRACTED",
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "freshness_check": "verify_pnas2017_integration.py:canonical_author_identity"
+    },
+    {
+      "id": "publisher_capture",
+      "path": "references/PNAS2017_Matsuura/provenance/publisher_capture.json",
+      "kind": "SOURCE FACT",
+      "provenance_class": "EXTRACTED",
+      "status": "R1_RESEARCHER_ACCEPTED",
+      "freshness_check": "verify_pnas2017_integration.py:P1_source_bytes"
+    },
+    {
+      "id": "main_audit",
+      "path": "models/pnas2017_full_reference/audit/species.csv",
+      "kind": "CURRENT MAIN AUTHORITY",
+      "provenance_class": "EXTRACTED",
+      "status": "241_SPECIES_968_REACTIONS_26_SUBSYSTEMS",
+      "freshness_check": "verify_pnas2017_artifacts.py and verify_pnas2017_integration.py:main_authority_unchanged"
+    },
+    {
+      "id": "schema_adapter",
+      "path": "scripts/pnas2017_research_schema_adapter.py",
+      "kind": "GENERATED EVIDENCE",
+      "provenance_class": "INFERRED",
+      "status": "STRUCTURAL_COMPATIBILITY_ONLY",
+      "freshness_check": "rerun adapter and P2/P3 validators in a temporary output directory"
+    },
+    {
+      "id": "species_map",
+      "path": "docs/reduction/species_reduction_map.md",
+      "kind": "PROPOSAL",
+      "provenance_class": "INFERRED",
+      "status": "HISTORICAL_REDUCTION_ANALYSIS",
+      "freshness_check": "validate_pnas2017_species_reduction.py"
+    },
+    {
+      "id": "aminoacylation_inventory",
+      "path": "docs/reduction/aminoacylation_full_subsystem.md",
+      "kind": "GENERATED EVIDENCE",
+      "provenance_class": "EXTRACTED",
+      "status": "138_REACTIONS_47_SPECIES_52_PAIRS",
+      "freshness_check": "validate_pnas2017_aminoacylation_reduction.py"
+    },
+    {
+      "id": "historical_inputs",
+      "path": "docs/audit/pnas2017_research_inputs_025fd34/snapshot_manifest.json",
+      "kind": "GENERATED EVIDENCE",
+      "provenance_class": "EXTRACTED",
+      "status": "HISTORICAL_INPUT_SNAPSHOT",
+      "freshness_check": "verify_pnas2017_integration.py:historical_input_snapshot"
+    },
+    {
+      "id": "a3a",
+      "path": "docs/reduction/aminoacylation_A3a_final_status.md",
+      "kind": "FAILED CANDIDATE",
+      "provenance_class": "EXTRACTED",
+      "status": "FAILED_VALIDATION_ON_REFERENCE_DOMAIN",
+      "freshness_check": "historical v1r2 validator and verify_pnas2017_integration.py"
+    },
+    {
+      "id": "a3b21",
+      "path": "docs/audit/pnas2017_aminoacylation_A3b/A3b21_S0_smoke_gate.json",
+      "kind": "FAILED CANDIDATE",
+      "provenance_class": "EXTRACTED",
+      "status": "FAILED_SMOKE_CLOSURE_FEASIBILITY",
+      "freshness_check": "historical A3b/A3c validator and verify_pnas2017_integration.py"
+    },
+    {
+      "id": "a3br12",
+      "path": "docs/audit/pnas2017_aminoacylation_A3b_r12/A3br12_S0_smoke_gate.json",
+      "kind": "BLOCKED CANDIDATE",
+      "provenance_class": "EXTRACTED",
+      "status": "BLOCKED_NUMERICAL_COORDINATE_DEFECT_NOT_VALIDATED",
+      "freshness_check": "historical A3b/A3c validator and verify_pnas2017_integration.py"
+    },
+    {
+      "id": "a3c",
+      "path": "docs/audit/pnas2017_aminoacylation_A3c/a3c_eligibility.json",
+      "kind": "HISTORICAL SCIENTIFIC RESULT",
+      "provenance_class": "EXTRACTED",
+      "status": "ZERO_OF_21_UNDER_REGISTERED_RULE",
+      "freshness_check": "historical A3b/A3c validator and verify_pnas2017_integration.py"
+    },
+    {
+      "id": "historical_runs",
+      "path": "results/pnas2017_reference/historical_archive_manifest.json",
+      "kind": "GENERATED EVIDENCE",
+      "provenance_class": "EXTRACTED",
+      "status": "ORIGINAL_RUN_RECORDS",
+      "freshness_check": "verify_pnas2017_integration.py:historical_run_archive"
+    },
+    {
+      "id": "open_decisions",
+      "path": "docs/reduction/open_scientific_decisions.md",
+      "kind": "OPEN SCIENTIFIC DECISION",
+      "provenance_class": "AMBIGUOUS",
+      "status": "OPEN_01_THROUGH_08",
+      "freshness_check": "verify_pnas2017_integration.py:historical_status_and_open_decisions"
+    },
+    {
+      "id": "reduced_core",
+      "path": "models/pure_reduced_core/README.md",
+      "kind": "PROPOSAL",
+      "provenance_class": "AMBIGUOUS",
+      "status": "NOT_YET_APPROVED",
+      "freshness_check": "verify_pnas2017_integration.py:no_reduced_core_promoted"
+    }
+  ],
+  "edges": [
+    ["canonical_sbml", "main_audit", "audited_into"],
+    ["main_audit", "schema_adapter", "adapted_for_historical_analysis"],
+    ["schema_adapter", "species_map", "generates_candidate_labels"],
+    ["schema_adapter", "aminoacylation_inventory", "generates_structural_inventory"],
+    ["historical_inputs", "a3a", "binds_historical_rerun"],
+    ["historical_inputs", "a3b21", "binds_historical_rerun"],
+    ["historical_inputs", "a3br12", "binds_historical_rerun"],
+    ["historical_inputs", "a3c", "binds_historical_rule"],
+    ["historical_runs", "a3a", "records_failure"],
+    ["historical_runs", "a3b21", "records_smoke_failure"],
+    ["historical_runs", "a3br12", "records_blocked_smoke"],
+    ["open_decisions", "reduced_core", "requires_researcher_decision"]
+  ]
+}

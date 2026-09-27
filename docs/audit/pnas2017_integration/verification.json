@@ -1,0 +1,60 @@
+{
+  "schema": "pnas2017_integration_verification/v1",
+  "authority": "Evidence-integrity check only; no reduction acceptance",
+  "main_base": "0a72448ff20db8e58593a9910b8944c121750778",
+  "research_source": "025fd340300a56f069c2136ea8bb0ff542b046d4",
+  "pass": 10,
+  "fail": 0,
+  "checks": [
+    {
+      "check": "P1_expected_source_set",
+      "status": "PASS",
+      "detail": "30 captured files; 29 supplements"
+    },
+    {
+      "check": "P1_source_bytes",
+      "status": "PASS",
+      "detail": "30 SHA-256, sizes and research blobs checked; mismatches=[]"
+    },
+    {
+      "check": "main_authority_unchanged",
+      "status": "PASS",
+      "detail": "11 canonical, normalized and generated files compared with main; changed=[]"
+    },
+    {
+      "check": "canonical_author_identity",
+      "status": "PASS",
+      "detail": "canonical SHA-256=dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+    },
+    {
+      "check": "historical_input_snapshot",
+      "status": "PASS",
+      "detail": "38 research inputs; mismatches=[]"
+    },
+    {
+      "check": "historical_runner_revision",
+      "status": "PASS",
+      "detail": "source=11c4d704a:scripts/run_pnas2017_aa_v1_formal.m"
+    },
+    {
+      "check": "historical_run_archive",
+      "status": "PASS",
+      "detail": "179 run files; mismatches=[]"
+    },
+    {
+      "check": "historical_status_and_open_decisions",
+      "status": "PASS",
+      "detail": "A3a failed; A3b-21 failed; A3b-r12 blocked; A3c 0/21; OPEN-01..08"
+    },
+    {
+      "check": "no_reduced_core_promoted",
+      "status": "PASS",
+      "detail": "reduced XML files=0"
+    },
+    {
+      "check": "evidence_graph_freshness",
+      "status": "PASS",
+      "detail": "14 nodes, 12 edges; source fingerprint verified"
+    }
+  ]
+}
