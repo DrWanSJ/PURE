@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "status": "GRAPH_AWARE_PROVISIONAL_NO_UNRESOLVED_ROWS",
+  "method": "anchor_to_graph_propagation",
+  "reaction_nodes": 968,
+  "species_nodes": 241,
+  "bipartite_incidence_edges": 3854,
+  "active_non_degradation_reactions": 580,
+  "degradation_rows": 388,
+  "bridge_species_for_propagation": 170,
+  "active_reaction_families": 35,
+  "exact_reverse_directed_rows": 580,
+  "exact_reverse_channels": 290,
+  "hop_limit_reaction_to_reaction": 3,
+  "anchors_total": 846,
+  "active_anchors": 458,
+  "anchor_counts_by_stage": {
+    "DEG_sink": 388,
+    "ELONG_aa_tRNA_delivery": 24,
+    "ELONG_energy_coupling": 48,
+    "ELONG_peptide_formation": 4,
+    "ELONG_tRNA_release": 4,
+    "ELONG_translocation": 8,
+    "EN_binding": 54,
+    "EN_byproduct_processing": 2,
+    "EN_energy_transfer": 18,
+    "INIT_70S_formation": 12,
+    "INIT_assembly": 24,
+    "INIT_energy_commitment": 14,
+    "INIT_factor_release": 26,
+    "INIT_tRNA_recruitment": 42,
+    "RECYCLE_component_release": 24,
+    "RECYCLE_disassembly": 14,
+    "RS_activation": 4,
+    "RS_binding": 48,
+    "RS_charging": 20,
+    "RS_to_INIT_formylation": 22,
+    "TERM_energy_coupling": 34,
+    "TERM_factor_binding": 8,
+    "TERM_peptide_release": 4
+  },
+  "topology_status_counts": {
+    "ANCHOR": 846,
+    "PROPAGATED": 42,
+    "FAMILY_PROPAGATED": 4,
+    "SHARED_JUNCTION": 76
+  },
+  "shared_context_counts": {
+    "RS_binding;RS_charging": 4,
+    "ELONG_energy_coupling;RECYCLE_component_release": 2,
+    "INIT_70S_formation;INIT_assembly;INIT_tRNA_recruitment": 16,
+    "INIT_assembly;INIT_tRNA_recruitment": 54
+  },
+  "human_review_required_count": 0,
+  "cross_module_shared_junctions": [
+    "re0000000308",
+    "re0000000327"
+  ],
+  "cross_module_shared_context": "ELONG_energy_coupling;RECYCLE_component_release",
+  "note": "Graph annotation only. No QSSA, fast-equilibrium, lumpability, deletion, or kinetic-accuracy conclusion follows from these labels."
+}

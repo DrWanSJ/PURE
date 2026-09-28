@@ -1,97 +1,41 @@
 #!/usr/bin/env python3
-"""Verify the generated PNAS2017 reaction-level annotation v0."""
+"""Verify graph-aware PNAS2017 reaction-level annotation v1."""
 from __future__ import annotations
-
-import csv
-import json
+import csv,json
 from collections import Counter
 from pathlib import Path
-
-ROOT = Path(__file__).resolve().parents[1]
-ANNOTATION = ROOT / "docs/reduction/reaction_level_annotation_v0.csv"
-CONTRACT = ROOT / "docs/reduction/reaction_level_contract_v0.json"
-BALANCE = ROOT / "models/pnas2017_full_reference/audit/reaction_balance_audit.csv"
-
-EXPECTED_STAGE_COUNTS = {
-    "DEG_sink": 388,
-    "ELONG_aa_tRNA_delivery": 24,
-    "ELONG_energy_coupling": 50,
-    "ELONG_peptide_formation": 4,
-    "ELONG_tRNA_release": 4,
-    "ELONG_translocation": 8,
-    "EN_binding": 54,
-    "EN_byproduct_processing": 2,
-    "EN_energy_transfer": 18,
-    "INIT_70S_formation": 12,
-    "INIT_assembly": 112,
-    "INIT_energy_commitment": 14,
-    "INIT_factor_release": 26,
-    "INIT_tRNA_recruitment": 42,
-    "RECYCLE_component_release": 24,
-    "RECYCLE_disassembly": 14,
-    "RS_activation": 36,
-    "RS_binding": 48,
-    "RS_charging": 20,
-    "RS_to_INIT_formylation": 22,
-    "TERM_energy_coupling": 34,
-    "TERM_factor_binding": 8,
-    "TERM_peptide_release": 4
-}
-EXPECTED_CONFIDENCE = {"high": 776, "medium": 190, "low": 2}
-EXPECTED_TYPES = {
-    "HETERODIMER_ASSOCIATION": 266,
-    "DISSOCIATION": 266,
-    "STATE_TRANSITION": 436,
-}
-
-def read_csv(path: Path) -> list[dict[str, str]]:
-    with path.open(newline="", encoding="utf-8") as fh:
-        return list(csv.DictReader(fh))
-
-def main() -> None:
-    rows = read_csv(ANNOTATION)
-    balance = read_csv(BALANCE)
-    contract = json.loads(CONTRACT.read_text(encoding="utf-8"))
-    assert len(rows) == 968
-    assert len({r["reaction_id"] for r in rows}) == 968
-    assert {r["reaction_id"] for r in rows} == {r["sbml_reaction_id"] for r in balance}
-    allowed = {x["id"] for x in contract["level_c_functional_stages"]}
-    assert {r["level_c_functional_stage"] for r in rows} <= allowed
-    assert dict(sorted(Counter(r["level_c_functional_stage"] for r in rows).items())) == dict(sorted(EXPECTED_STAGE_COUNTS.items()))
-    assert dict(Counter(r["annotation_confidence"] for r in rows)) == EXPECTED_CONFIDENCE
-    assert dict(Counter(r["mechanistic_reaction_type"] for r in rows)) == EXPECTED_TYPES
-    by_id = {r["reaction_id"]: r for r in rows}
-    paired = [r for r in rows if r["reversibility_class"] == "EXACT_REVERSE_PAIR"]
-    irreversible = [r for r in rows if r["reversibility_class"] == "IRREVERSIBLE"]
-    assert len(paired) == 580
-    assert len(irreversible) == 388
-    assert all(r["level_c_functional_stage"] == "DEG_sink" for r in irreversible)
-    pair_keys = set()
-    for row in paired:
-        partner = row["reverse_partner_id"]
-        assert partner in by_id
-        other = by_id[partner]
-        assert other["reverse_partner_id"] == row["reaction_id"]
-        assert other["level_c_functional_stage"] == row["level_c_functional_stage"]
-        assert row["exact_reversible_merge"] == "true"
-        pair_keys.add(tuple(sorted((row["reaction_id"], partner))))
-    assert len(pair_keys) == 290
-    low = [r for r in rows if r["annotation_confidence"] == "low"]
-    assert {r["reaction_id"] for r in low} == {"re0000000308", "re0000000327"}
-    for row in rows:
-        json.loads(row["reactants_json"])
-        json.loads(row["products_json"])
-        json.loads(row["resource_ledger_effect_json"])
-        json.loads(row["functional_pool_effect_json"])
-        json.loads(row["conservation_family_effect_json"])
-        assert row["human_review_status"].startswith("PENDING_HUMAN_REVIEW") or row["human_review_status"].startswith("PRIORITY_HUMAN_REVIEW")
-    print("PASS: 968 unique reaction annotations")
-    print("PASS: all primary Level-C labels are in the controlled vocabulary")
-    print("PASS: stage/confidence/mechanistic-type fingerprints match v0")
-    print("PASS: 580 directed rows form 290 symmetric exact reverse channels")
-    print("PASS: 388 irreversible rows are DEG_sink coverage rows")
-    print("PASS: only EFG-GDP/50S shared pair is low-confidence priority review")
-    print("NOTE: structural/annotation verification only; no QSSA, lumping, or kinetic accuracy is validated")
-
-if __name__ == "__main__":
-    main()
+ROOT=Path(__file__).resolve().parents[1]
+ANN=ROOT/"docs/reduction/reaction_level_annotation_v1.csv"; FAM=ROOT/"docs/reduction/reaction_family_summary_v1.csv"; MAN=ROOT/"docs/reduction/reaction_graph_manifest_v1.json"; BAL=ROOT/"models/pnas2017_full_reference/audit/reaction_balance_audit.csv"
+ES={"ANCHOR":846,"PROPAGATED":42,"FAMILY_PROPAGATED":4,"SHARED_JUNCTION":76}
+EJ={"RS_binding;RS_charging":4,"ELONG_energy_coupling;RECYCLE_component_release":2,"INIT_70S_formation;INIT_assembly;INIT_tRNA_recruitment":16,"INIT_assembly;INIT_tRNA_recruitment":54}
+ET={"HETERODIMER_ASSOCIATION":266,"DISSOCIATION":266,"STATE_TRANSITION":436}
+def read(p):
+    with p.open(newline="",encoding="utf-8") as f:return list(csv.DictReader(f))
+def main():
+    rows,fams,bal=read(ANN),read(FAM),read(BAL); man=json.loads(MAN.read_text(encoding="utf-8"))
+    assert len(rows)==968 and len({r["reaction_id"] for r in rows})==968 and {r["reaction_id"] for r in rows}=={r["sbml_reaction_id"] for r in bal}
+    assert len(fams)==36
+    assert dict(Counter(r["topology_status"] for r in rows))==ES
+    assert dict(Counter(r["level_c_functional_contexts"] for r in rows if r["topology_status"]=="SHARED_JUNCTION"))==EJ
+    assert dict(Counter(r["mechanistic_reaction_type"] for r in rows))==ET
+    assert sum(r["is_functional_anchor"]=="true" for r in rows)==846
+    assert not any(r["topology_status"]=="UNRESOLVED" or r["human_review_status"]=="HUMAN_REVIEW_REQUIRED_UNRESOLVED" for r in rows)
+    by={r["reaction_id"]:r for r in rows}; pairs=set()
+    for r in rows:
+        for k in ("reactants_json","products_json","resource_ledger_effect_json","functional_pool_effect_json","conservation_family_effect_json"):json.loads(r[k])
+        if r["topology_status"]=="SHARED_JUNCTION": assert r["level_c_primary_stage"]==""
+        else: assert r["level_c_primary_stage"]
+        if r["reversibility_class"]=="EXACT_REVERSE_PAIR":
+            p=by[r["reverse_partner_id"]]; assert p["reverse_partner_id"]==r["reaction_id"]; assert p["reaction_family_id"]==r["reaction_family_id"]; assert p["topology_status"]==r["topology_status"]; assert p["level_c_primary_stage"]==r["level_c_primary_stage"]; assert p["level_c_functional_contexts"]==r["level_c_functional_contexts"]; pairs.add(tuple(sorted((r["reaction_id"],r["reverse_partner_id"]))))
+    assert len(pairs)==290
+    for rid in ("re0000000308","re0000000327"):
+        r=by[rid]; assert r["reaction_family_id"]=="RFAM_014" and r["topology_status"]=="SHARED_JUNCTION" and r["level_c_functional_contexts"]=="ELONG_energy_coupling;RECYCLE_component_release"
+    assert man["bipartite_incidence_edges"]==3854 and man["bridge_species_for_propagation"]==170 and man["active_reaction_families"]==35 and man["anchors_total"]==846 and man["human_review_required_count"]==0
+    assert man["topology_status_counts"]==ES and man["shared_context_counts"]==EJ
+    print("PASS: graph-aware v1 = 968 unique rows")
+    print("PASS: 35 active families + RFAM_DEG; 290 reverse channels")
+    print("PASS: 846 anchors / 42 propagated / 4 family-propagated / 76 shared junctions")
+    print("PASS: EFG/50S pair = shared ELONG_energy_coupling + RECYCLE_component_release")
+    print("PASS: unresolved=0; human review reserved for future graph-unresolved rows")
+    print("NOTE: graph annotation only; no QSSA/lumping/kinetic validity is tested")
+if __name__=="__main__": main()
