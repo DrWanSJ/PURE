@@ -29,7 +29,43 @@ products, parameter topology and intermediate identities are checked.
 `RS_activation` anchors. `GlyRS_AMP ⇄ GlyRS + AMP` and the Met counterpart are
 `RS_charging`. The tRNA encounter with enzyme-bound aminoacyl-AMP/PPi is a
 true `RS_activation;RS_charging` boundary. These explicit rules take priority
-over the inherited v1 graph label. Thirty-two rows change functional context.
+over the inherited v1 graph label. The earlier v2 RS audit corrected 32
+reaction contexts; this initiation update corrects another 90.
+
+## Human-approved Initiation classification rules
+
+For `RFAM_025` and `RFAM_026`, the reaction-local pathway state takes priority
+over graph proximity, family context, CellDesigner reaction type and source
+subsystem label. Apply the following rules in order, in both directions of an
+exact reverse pair:
+
+1. Explicit `RS30S_xxx + RS50S ⇄ RS70S_xxx` joining/splitting is
+   `INIT_70S_formation`. `re0000000461/0462` and `0485/0486` are examples.
+2. IF2-bound `GTP ⇄ GDP_PO4` conversion or `IF2_GDP_PO4 ⇄ IF2_GDP + PO4`
+   is `INIT_energy_commitment`. The latter includes source
+   association/dissociation representations `0721/0722` and `0745/0746`.
+3. A change in **ribosome-bound** `fMettRNAfMetCAU` occupancy is
+   `INIT_tRNA_recruitment`. Cargo-bound `IF2_GTP_fMettRNAfMetCAU` counts only
+   when the initiator tRNA enters or leaves a ribosome complex. The initiator
+   tRNA remaining bound on both sides is not recruitment.
+4. IF1, IF3 or IF2_GDP release/rebinding on a formed 70S initiation complex
+   carrying initiator tRNA, mRNA or an IF2 GDP state is
+   `INIT_factor_release`. This includes `0539/0540`, `0719/0720` and
+   `0723–0726`. The `elRS70S...` elongation-entry representation of the
+   complex remains ribosome bound when evaluating tRNA occupancy.
+5. Otherwise, initiation-factor or mRNA assembly/disassembly on the complex
+   is `INIT_assembly`. Bare/preinitiation 70S + IF3 in `0457/0458`, 30S +
+   IF3 in `0459/0460`, and IF2_GTP + 30S complex in `0463/0464` are assembly,
+   even if adjacent graph basins have other labels.
+
+The source equations in both families were checked one by one against this
+precedence. All 198 rows have one direct stage, with 99 exact reverse pairs
+retaining identical contexts. Their former 70 graph-derived shared junctions
+are not reaction-local two-stage events and are removed from the v2 status.
+The 22 cross-family intermediate links remain as provenance, but a link does
+not reopen an already human-approved local functional stage. No other family
+context, status or queue flag changed in this update; a verifier fingerprint
+guards that boundary.
 
 ## Graph and cross-family context
 
@@ -88,9 +124,9 @@ transformation. Where a family has several stages, the representative row
 flags family-level review, not every member as uncertain.
 
 The full 968 rows were checked against source IDs, equations and official
-parameter values. The hard rules cover the approved RS cases, explicit
-degradation and nucleotide/enzyme state conversions, and selected named
-pathway state transitions. Other v1 labels remain provisional graph-supported
+parameter values. The hard rules cover the approved RS and initiation cases,
+explicit degradation and nucleotide/enzyme state conversions, and selected
+named pathway state transitions. Other v1 labels remain provisional graph-supported
 assignments or are sent to functional review when hard-anchor support fails.
 The presence of a candidate context does **not** mean every functional
 assignment has been independently confirmed; the review

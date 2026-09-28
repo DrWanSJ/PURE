@@ -23,8 +23,8 @@ RFAM_021,2,RS_to_INIT_formylation,0,2,0,FMet_tRNASynthesis,
 RFAM_022,4,INIT_energy_commitment;INIT_tRNA_recruitment,0,0,3,Initiation_A,
 RFAM_023,2,INIT_energy_commitment,0,0,0,Initiation_A,
 RFAM_024,2,INIT_70S_formation,0,0,2,Initiation_B1,
-RFAM_025,118,INIT_70S_formation;INIT_assembly;INIT_energy_commitment;INIT_factor_release;INIT_tRNA_recruitment,4,0,108,Initiation_B1;Initiation_B1;Initiation_C;Initiation_C,CFL_003;CFL_004;CFL_005;CFL_006;CFL_007;CFL_008;CFL_009;CFL_010;CFL_011;CFL_012;CFL_013;CFL_014;CFL_015
-RFAM_026,80,INIT_assembly;INIT_tRNA_recruitment,0,0,80,Initiation_B2,CFL_003;CFL_004;CFL_005;CFL_006;CFL_007;CFL_008;CFL_009;CFL_010;CFL_011;CFL_012;CFL_013;CFL_014;CFL_015
+RFAM_025,118,INIT_70S_formation;INIT_assembly;INIT_energy_commitment;INIT_factor_release;INIT_tRNA_recruitment,118,0,0,Initiation_B1;Initiation_B1;Initiation_C;Initiation_C,CFL_003;CFL_004;CFL_005;CFL_006;CFL_007;CFL_008;CFL_009;CFL_010;CFL_011;CFL_012;CFL_013;CFL_014;CFL_015
+RFAM_026,80,INIT_assembly;INIT_tRNA_recruitment,80,0,0,Initiation_B2,CFL_003;CFL_004;CFL_005;CFL_006;CFL_007;CFL_008;CFL_009;CFL_010;CFL_011;CFL_012;CFL_013;CFL_014;CFL_015
 RFAM_027,2,EN_energy_transfer,0,2,0,SmallMolecules,
 RFAM_028,2,EN_energy_transfer,0,2,0,SmallMolecules,
 RFAM_029,2,EN_energy_transfer,0,2,0,SmallMolecules,

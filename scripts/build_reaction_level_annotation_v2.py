@@ -64,9 +64,62 @@ for group, stage in ((GLY_BIND | MET_BIND, "RS_binding"),
     APPROVED.update({rid: stage for rid in group})
 
 
+INITIATION_FAMILIES = {"RFAM_025", "RFAM_026"}
+
+
+def initiation_chemistry(row):
+    """Human-approved reaction-local initiation rules, in strict priority order."""
+    src, dst = (set(json.loads(row[k])) for k in ("reactants_json", "products_json"))
+
+    def ribosome(side, subunit):
+        return any(name.startswith(subunit) for name in side)
+
+    # Joining and its exact reverse are the only 70S-formation events here.
+    if (("RS50S" in src and ribosome(src, "RS30S") and ribosome(dst, "RS70S")) or
+            ("RS50S" in dst and ribosome(dst, "RS30S") and ribosome(src, "RS70S"))):
+        return "INIT_70S_formation", "APPROVED_EXPLICIT_30S_50S_70S_CONVERSION"
+
+    def has(side, token):
+        return any(token in name for name in side)
+
+    # A bound IF2 nucleotide-state change or PO4 release/rebinding is chemical
+    # energy commitment; mere IF2_GTP binding to a ribosome is not.
+    gtp_gdp_po4 = ((has(src, "IF2_GTP") and has(dst, "IF2_GDP_PO4")) or
+                    (has(dst, "IF2_GTP") and has(src, "IF2_GDP_PO4")))
+    po4_release = ((has(src, "IF2_GDP_PO4") and "PO4" in dst and has(dst, "IF2_GDP")) or
+                   (has(dst, "IF2_GDP_PO4") and "PO4" in src and has(src, "IF2_GDP")))
+    if gtp_gdp_po4 or po4_release:
+        return "INIT_energy_commitment", "APPROVED_IF2_NUCLEOTIDE_OR_PO4_CHEMISTRY"
+
+    # Cargo-bound IF2 counts only when fMet-tRNA occupancy of a ribosome
+    # changes across the reaction, including the exact reverse channel.
+    def bound_initiator(side):
+        return any("fMettRNAfMetCAU" in name and (name.startswith("RS30S") or name.startswith("RS70S") or name.startswith("elRS70S")) for name in side)
+
+    if bound_initiator(src) != bound_initiator(dst):
+        return "INIT_tRNA_recruitment", "APPROVED_RIBOSOME_BOUND_INITIATOR_TRNA_CHANGE"
+
+    # Pre/post-joining state matters: IF1/IF3/IF2_GDP occupancy on an already
+    # formed 70S initiation complex is factor release/rebinding. Bare 70S+IF3
+    # and 70S+IF1 assembly remain INIT_assembly.
+    post_joining_70s = any((name.startswith("RS70S") or name.startswith("elRS70S")) and
+                           any(token in name for token in ("fMettRNAfMetCAU", "_mRNA", "IF2_GDP"))
+                           for name in src | dst)
+    free_factor = any(name in {"IF1", "IF3", "IF2_GDP"} for name in src | dst)
+    if post_joining_70s and free_factor:
+        return "INIT_factor_release", "APPROVED_POST_JOINING_70S_FACTOR_OCCUPANCY"
+
+    free_assembly_component = any(name in {"IF1", "IF3", "IF2_GTP", "mRNA"} for name in src | dst)
+    if free_assembly_component and any(ribosome(side, "RS30S") or ribosome(side, "RS70S") for side in (src, dst)):
+        return "INIT_assembly", "APPROVED_INITIATION_FACTOR_OR_MRNA_ASSEMBLY"
+    return "", ""
+
+
 def chemistry(row):
     """Only structurally explicit events receive hard anchors."""
     rid = row["reaction_id"]
+    if row["reaction_family_id"] in INITIATION_FAMILIES:
+        return initiation_chemistry(row)
     if rid in APPROVED:
         stage = APPROVED[rid]
         return stage, "APPROVED_RS_CHEMISTRY" if ";" not in stage else "APPROVED_RS_STAGE_BOUNDARY"
@@ -194,6 +247,15 @@ def main():
         for distance in range(1, 4):
             frontier = {neighbor for rid in frontier for neighbor in adjacent[rid]} - seen
             for rid in frontier:
+                # The current review authorizes only RFAM_025/026 changes.
+                # Keep the four pre-existing IF2 chemistry anchors as the
+                # outside-family initiation support; newly approved anchors
+                # must not silently reclassify RFAM_022/023/024 or any other
+                # family in this pass.
+                if (anchor_row["reaction_family_id"] in INITIATION_FAMILIES and
+                        anchor not in ids([715, 716, 717, 718]) and
+                        current[rid]["reaction_family_id"] not in INITIATION_FAMILIES):
+                    continue
                 support[rid].append((distance, anchor, anchor_row["level_c_functional_contexts"]))
             seen |= frontier
     for row in output:
@@ -296,9 +358,10 @@ def main():
             reasons.append("V1_GRAPH_LABEL_OVERRIDDEN_BY_DIRECT_CHEMISTRY_AUTO_RESOLVED")
         if row["functional_annotation_status"] == "SHARED_JUNCTION":
             reasons.append("MULTI_STAGE_BOUNDARY_REVIEW")
-        if row["cross_family_link_ids"]:
+        approved_init = row["reaction_family_id"] in INITIATION_FAMILIES and row["direct_chemistry_rule"].startswith("APPROVED_")
+        if row["cross_family_link_ids"] and not approved_init:
             reasons.append("SPECIFIC_INTERMEDIATE_CROSS_SUBSYSTEM_REVIEW")
-        if row["reaction_id"] == family_representative.get(row["reaction_family_id"]):
+        if row["reaction_id"] == family_representative.get(row["reaction_family_id"]) and not approved_init:
             reasons.append("FAMILY_SPANS_FUNCTIONAL_STAGES_REVIEW")
         if row["reference_activity"] == "DISABLED_EXACT":
             reasons.append("DOUBLE_ZERO_AUTO_RESOLVED_SPECIAL_CASE")
@@ -361,7 +424,22 @@ def main():
                     gly_met_symmetry=dict(sorted(Counter(x[2] for x in symmetry).items())),
                     reduction_scientific_review=dict(pending=968, total=968),
                     scientific_boundary="No QSSA, fast equilibrium, lumping, deletion, reduced-core kinetics or kinetic equivalence approval.")
-    (DIR / "reaction_annotation_manifest_v2.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    manifest["human_approved_initiation_rules"] = [
+        "INIT_assembly", "INIT_tRNA_recruitment", "INIT_70S_formation",
+        "INIT_energy_commitment", "INIT_factor_release"]
+    manifest["reviewed_initiation_families"] = {
+        family: {
+            "rows": sum(r["reaction_family_id"] == family for r in output),
+            "stage_counts": dict(sorted(Counter(r["level_c_functional_contexts"] for r in output
+                                                if r["reaction_family_id"] == family).items())),
+            "status_counts": dict(sorted(Counter(r["functional_annotation_status"] for r in output
+                                                 if r["reaction_family_id"] == family).items())),
+            "human_functional_review_queue": sum(r["reaction_family_id"] == family for r in queue),
+        }
+        for family in sorted(INITIATION_FAMILIES)
+    }
+    with (DIR / "reaction_annotation_manifest_v2.json").open("w", encoding="utf-8", newline="\n") as stream:
+        stream.write(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
     print(json.dumps(manifest, indent=2))
 
 

@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DIR = ROOT / "docs/reduction"
+PRE_REVIEW_NON_INITIATION_SHA256 = "dd461a565dc7820cce6faf1e03ff5ba2f17a62f2e6481cb937ddfcdfb0ba2e5e"
 
 
 def read(path):
@@ -101,6 +102,70 @@ def main():
     for rid in full([145,146,170,171]):
         assert by[rid]["reference_activity"] == "FORWARD_ONLY"
 
+    # Human-approved initiation rules are checked independently of the
+    # builder's graph routine and CellDesigner association/dissociation type.
+    initiation_fixtures = {
+        "INIT_assembly": [457,458,459,460,463,464,469,470,489,490,501,502,505,506],
+        "INIT_tRNA_recruitment": [465,466,467,468],
+        "INIT_70S_formation": [461,462,485,486],
+        "INIT_energy_commitment": [715,716,717,718,721,722,745,746],
+        "INIT_factor_release": [539,540,719,720,723,724,725,726,747,748,749,750,751,752,763,764,765,766],
+    }
+    for stage, numbers in initiation_fixtures.items():
+        for rid in full(numbers):
+            assert by[rid]["level_c_functional_contexts"] == stage, (rid, stage)
+            assert by[rid]["functional_annotation_status"] == "DIRECT_CHEMISTRY", rid
+            assert by[rid]["direct_chemistry_rule"].startswith("APPROVED_"), rid
+    initiation = [r for r in v2 if r["reaction_family_id"] in {"RFAM_025", "RFAM_026"}]
+    assert len(initiation) == 198
+    assert all(r["functional_annotation_status"] == "DIRECT_CHEMISTRY" and r["is_functional_anchor"] == "true" for r in initiation)
+    assert not any(r["reaction_id"] in queue_ids for r in initiation)
+    expected_init = {
+        "RFAM_025": {"INIT_assembly": 52, "INIT_tRNA_recruitment": 20, "INIT_70S_formation": 10,
+                     "INIT_energy_commitment": 8, "INIT_factor_release": 28},
+        "RFAM_026": {"INIT_assembly": 60, "INIT_tRNA_recruitment": 20},
+    }
+    for family, counts in expected_init.items():
+        actual = Counter(r["level_c_functional_contexts"] for r in initiation if r["reaction_family_id"] == family)
+        assert dict(actual) == counts, (family, actual)
+    for row in initiation:
+        left = set(json.loads(row["reactants_json"]))
+        right = set(json.loads(row["products_json"]))
+        stage = row["level_c_functional_contexts"]
+        join = (("RS50S" in left and any(s.startswith("RS30S") for s in left) and any(s.startswith("RS70S") for s in right)) or
+                ("RS50S" in right and any(s.startswith("RS30S") for s in right) and any(s.startswith("RS70S") for s in left)))
+        def bound_tRNA(side):
+            return any("fMettRNAfMetCAU" in s and s.startswith(("RS30S", "RS70S", "elRS70S")) for s in side)
+        tRNA_change = bound_tRNA(left) != bound_tRNA(right)
+        def any_name(side, text):
+            return any(text in s for s in side)
+        energy = ((any_name(left, "IF2_GTP") and any_name(right, "IF2_GDP_PO4")) or
+                  (any_name(right, "IF2_GTP") and any_name(left, "IF2_GDP_PO4")) or
+                  (any_name(left, "IF2_GDP_PO4") and "PO4" in right and any_name(right, "IF2_GDP")) or
+                  (any_name(right, "IF2_GDP_PO4") and "PO4" in left and any_name(left, "IF2_GDP")))
+        if stage == "INIT_70S_formation":
+            assert join, row["reaction_id"]
+        elif stage == "INIT_energy_commitment":
+            assert not join and energy, row["reaction_id"]
+        elif stage == "INIT_tRNA_recruitment":
+            assert not join and not energy and tRNA_change, row["reaction_id"]
+        elif stage == "INIT_factor_release":
+            assert not join and not energy and not tRNA_change
+            assert any(s in {"IF1", "IF3", "IF2_GDP"} for s in left | right), row["reaction_id"]
+            assert any(s.startswith(("RS70S", "elRS70S")) and
+                       any(token in s for token in ("fMettRNAfMetCAU", "_mRNA", "IF2_GDP"))
+                       for s in left | right), row["reaction_id"]
+        else:
+            assert stage == "INIT_assembly" and not join and not energy and not tRNA_change, row["reaction_id"]
+
+    non_target_fields = ("reaction_id", "functional_annotation_status", "level_c_functional_contexts",
+                         "is_functional_anchor", "graph_support_status", "supporting_anchor_ids",
+                         "human_functional_review_required")
+    non_target_records = [{key: r[key] for key in non_target_fields} for r in v2
+                          if r["reaction_family_id"] not in {"RFAM_025", "RFAM_026"}]
+    non_target_digest = hashlib.sha256(json.dumps(non_target_records, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+    assert non_target_digest == PRE_REVIEW_NON_INITIATION_SHA256
+
     link_keys = {(r["specific_intermediate"], r["source_family"], r["target_family"]) for r in links}
     assert ("GlyRS_AMP", "RFAM_010", "RFAM_006") in link_keys
     assert ("MetRS_AMP", "RFAM_012", "RFAM_008") in link_keys
@@ -146,6 +211,7 @@ def main():
     print("PASS: 968 unique source-identical reactions; 290 symmetric exact reverse channels")
     print("PASS: hard chemistry priority; double-zero edges never functional anchors")
     print("PASS: RFAM_005-010 approved regressions; RFAM_011/012 Gly/Met source and parameter-topology symmetry (52/52)")
+    print("PASS: RFAM_025/026 reviewed initiation rules, reverse symmetry, and unchanged non-target family fingerprint")
     print(f"PASS: {len(links)} specific-intermediate cross-family links; {len(queue)} flagged functional-review rows")
     print("PASS: reduction scientific review remains 968/968 PENDING; v0/v1 retained")
     print("STATUS COUNTS:", json.dumps(manifest["functional_annotation_status_counts"], sort_keys=True))

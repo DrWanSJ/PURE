@@ -6,25 +6,25 @@
   "source_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
   "reaction_count": 968,
   "artifact_sha256": {
-    "reaction_level_annotation_v2.csv": "cc1c63b222c7fabddc681d9178dc33a6c96650a229e8add09a12172d822ad88f",
-    "reaction_family_summary_v2.csv": "ea459867711d6c3f167706ec41eacf1e9fa055cee4697388b2f0765ff10e297e",
+    "reaction_level_annotation_v2.csv": "b0b7a0e931579afe55c8e220dca3a35468bdf1ac8e8d15efb54cd8c4c1ca1edf",
+    "reaction_family_summary_v2.csv": "c589f580eded7d42c85b8f91148b44e963fce835b5eab49dabbe4f566e9fb78f",
     "reaction_cross_family_links_v2.csv": "7d3551b04a1c7f2a229fec6f2e3656db45da7836c34925f6cb690f85d4b28a50",
-    "human_functional_review_queue_v2.csv": "563575d4e529d4f384187429f705af914c62fb1f518fc40dddb53fe05def0fe0"
+    "human_functional_review_queue_v2.csv": "bfad01bcaeada5997b69883e3affc29d9fc6dbd09f2354691e3873bd74d9f4a8"
   },
   "functional_annotation_status_counts": {
-    "DIRECT_CHEMISTRY": 130,
-    "GRAPH_PROPAGATED": 82,
-    "HUMAN_REVIEW_REQUIRED": 260,
+    "DIRECT_CHEMISTRY": 324,
+    "GRAPH_PROPAGATED": 76,
+    "HUMAN_REVIEW_REQUIRED": 142,
     "REFERENCE_DISABLED": 420,
-    "SHARED_JUNCTION": 76
+    "SHARED_JUNCTION": 6
   },
   "reference_activity_counts": {
     "ACTIVE_OR_PARAMETERIZED": 418,
     "DISABLED_EXACT": 420,
     "FORWARD_ONLY": 130
   },
-  "functional_annotation_unresolved": 260,
-  "human_functional_review_queue": 365,
+  "functional_annotation_unresolved": 142,
+  "human_functional_review_queue": 177,
   "cross_family_mechanistic_links": 22,
   "gly_met_symmetry": {
     "MATCH": 52
@@ -33,5 +33,39 @@
     "pending": 968,
     "total": 968
   },
-  "scientific_boundary": "No QSSA, fast equilibrium, lumping, deletion, reduced-core kinetics or kinetic equivalence approval."
+  "scientific_boundary": "No QSSA, fast equilibrium, lumping, deletion, reduced-core kinetics or kinetic equivalence approval.",
+  "human_approved_initiation_rules": [
+    "INIT_assembly",
+    "INIT_tRNA_recruitment",
+    "INIT_70S_formation",
+    "INIT_energy_commitment",
+    "INIT_factor_release"
+  ],
+  "reviewed_initiation_families": {
+    "RFAM_025": {
+      "rows": 118,
+      "stage_counts": {
+        "INIT_70S_formation": 10,
+        "INIT_assembly": 52,
+        "INIT_energy_commitment": 8,
+        "INIT_factor_release": 28,
+        "INIT_tRNA_recruitment": 20
+      },
+      "status_counts": {
+        "DIRECT_CHEMISTRY": 118
+      },
+      "human_functional_review_queue": 0
+    },
+    "RFAM_026": {
+      "rows": 80,
+      "stage_counts": {
+        "INIT_assembly": 60,
+        "INIT_tRNA_recruitment": 20
+      },
+      "status_counts": {
+        "DIRECT_CHEMISTRY": 80
+      },
+      "human_functional_review_queue": 0
+    }
+  }
 }
