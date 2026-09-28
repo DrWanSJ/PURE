@@ -1,0 +1,186 @@
+{
+  "schema_version": "2.0",
+  "status": "FUNCTIONAL_ANNOTATION_REVIEW_COMPLETE",
+  "source_v1_sha256": "805aaa2b9afa356486d83f6e12fb11b0def004ec4429e42ed0a4631085ec4562",
+  "reduction_decisions_sha256": "70fd3f98de5056a1a63c29db58d310ec5986d4c52b6bfcbae9634b38e2e8d7f8",
+  "source_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "reaction_count": 968,
+  "artifact_sha256": {
+    "reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "reaction_family_summary_v2.csv": "228ce72fe99b54fc8be69ccca8f94e9892d1f8f53b370c0891c144447477e695",
+    "reaction_cross_family_links_v2.csv": "7d3551b04a1c7f2a229fec6f2e3656db45da7836c34925f6cb690f85d4b28a50",
+    "human_functional_review_queue_v2.csv": "7833cee3bd229ed9f5979224dd3368acf09a5db63435ecd70a603daa47a42bc2"
+  },
+  "functional_annotation_status_counts": {
+    "DIRECT_CHEMISTRY": 492,
+    "GRAPH_PROPAGATED": 50,
+    "HUMAN_REVIEW_REQUIRED": 0,
+    "REFERENCE_DISABLED": 420,
+    "SHARED_JUNCTION": 6
+  },
+  "reference_activity_counts": {
+    "ACTIVE_OR_PARAMETERIZED": 418,
+    "DISABLED_EXACT": 420,
+    "FORWARD_ONLY": 130
+  },
+  "functional_annotation_unresolved": 0,
+  "human_functional_review_queue": 0,
+  "functional_annotation_review_complete": true,
+  "cross_family_mechanistic_links": 22,
+  "gly_met_symmetry": {
+    "MATCH": 52
+  },
+  "reduction_scientific_review": {
+    "pending": 968,
+    "total": 968
+  },
+  "scientific_boundary": "No QSSA, fast equilibrium, lumping, deletion, reduced-core kinetics or kinetic equivalence approval.",
+  "human_approved_initiation_rules": [
+    "INIT_assembly",
+    "INIT_tRNA_recruitment",
+    "INIT_70S_formation",
+    "INIT_energy_commitment",
+    "INIT_factor_release"
+  ],
+  "reviewed_initiation_families": {
+    "RFAM_025": {
+      "rows": 118,
+      "stage_counts": {
+        "INIT_70S_formation": 10,
+        "INIT_assembly": 52,
+        "INIT_energy_commitment": 8,
+        "INIT_factor_release": 28,
+        "INIT_tRNA_recruitment": 20
+      },
+      "status_counts": {
+        "DIRECT_CHEMISTRY": 118
+      },
+      "human_functional_review_queue": 0
+    },
+    "RFAM_026": {
+      "rows": 80,
+      "stage_counts": {
+        "INIT_assembly": 60,
+        "INIT_tRNA_recruitment": 20
+      },
+      "status_counts": {
+        "DIRECT_CHEMISTRY": 80
+      },
+      "human_functional_review_queue": 0
+    }
+  },
+  "newly_reviewed_functional_families": {
+    "RFAM_013": {
+      "rows": 18,
+      "stage_counts": {
+        "ELONG_aa_tRNA_delivery": 4,
+        "ELONG_energy_coupling": 14
+      },
+      "human_functional_review_queue": 0
+    },
+    "RFAM_015": {
+      "rows": 18,
+      "stage_counts": {
+        "EN_binding": 16,
+        "EN_energy_transfer": 2
+      },
+      "human_functional_review_queue": 0
+    },
+    "RFAM_016": {
+      "rows": 18,
+      "stage_counts": {
+        "EN_binding": 16,
+        "EN_energy_transfer": 2
+      },
+      "human_functional_review_queue": 0
+    },
+    "RFAM_017": {
+      "rows": 18,
+      "stage_counts": {
+        "EN_binding": 16,
+        "EN_energy_transfer": 2
+      },
+      "human_functional_review_queue": 0
+    },
+    "RFAM_018": {
+      "rows": 8,
+      "stage_counts": {
+        "EN_binding": 6,
+        "EN_byproduct_processing": 2
+      },
+      "human_functional_review_queue": 0
+    },
+    "RFAM_022": {
+      "rows": 4,
+      "stage_counts": {
+        "INIT_energy_commitment": 2,
+        "INIT_tRNA_recruitment": 2
+      },
+      "human_functional_review_queue": 0
+    },
+    "RFAM_024": {
+      "rows": 2,
+      "stage_counts": {
+        "INIT_70S_formation": 2
+      },
+      "human_functional_review_queue": 0
+    },
+    "RFAM_033": {
+      "rows": 6,
+      "stage_counts": {
+        "TERM_factor_binding": 4,
+        "TERM_peptide_release": 2
+      },
+      "human_functional_review_queue": 0
+    },
+    "RFAM_034": {
+      "rows": 6,
+      "stage_counts": {
+        "TERM_factor_binding": 4,
+        "TERM_peptide_release": 2
+      },
+      "human_functional_review_queue": 0
+    }
+  },
+  "final_reviewed_functional_families": {
+    "RFAM_002": {
+      "rows": 24,
+      "stage_counts": {
+        "ELONG_aa_tRNA_delivery": 10,
+        "ELONG_energy_coupling": 8,
+        "ELONG_peptide_formation": 2,
+        "ELONG_translocation": 4
+      },
+      "status_counts": {
+        "DIRECT_CHEMISTRY": 20,
+        "REFERENCE_DISABLED": 4
+      }
+    },
+    "RFAM_004": {
+      "rows": 24,
+      "stage_counts": {
+        "ELONG_aa_tRNA_delivery": 10,
+        "ELONG_energy_coupling": 8,
+        "ELONG_peptide_formation": 2,
+        "ELONG_translocation": 4
+      },
+      "status_counts": {
+        "DIRECT_CHEMISTRY": 20,
+        "REFERENCE_DISABLED": 4
+      }
+    },
+    "RFAM_014": {
+      "rows": 58,
+      "stage_counts": {
+        "ELONG_energy_coupling": 18,
+        "ELONG_energy_coupling;RECYCLE_component_release": 2,
+        "RECYCLE_component_release": 24,
+        "RECYCLE_disassembly": 14
+      },
+      "status_counts": {
+        "DIRECT_CHEMISTRY": 56,
+        "SHARED_JUNCTION": 2
+      }
+    }
+  }
+}
