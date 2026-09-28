@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1",
+  "status": "PROVISIONAL_MACHINE_ASSISTED_PENDING_HUMAN_REVIEW",
+  "source_commit": "8841b7abb807c35ad8109ebd295100f149bbed3b",
+  "rows": 968,
+  "exact_reverse_directed_rows": 580,
+  "exact_reverse_channels": 290,
+  "degradation_rows": 388,
+  "confidence_counts": {
+    "high": 776,
+    "medium": 190,
+    "low": 2
+  },
+  "mechanistic_type_counts": {
+    "DISSOCIATION": 266,
+    "HETERODIMER_ASSOCIATION": 266,
+    "STATE_TRANSITION": 436
+  },
+  "level_c_directed_counts": {
+    "ELONG_tRNA_release": 4,
+    "DEG_sink": 388,
+    "ELONG_aa_tRNA_delivery": 24,
+    "ELONG_energy_coupling": 50,
+    "ELONG_peptide_formation": 4,
+    "ELONG_translocation": 8,
+    "RS_binding": 48,
+    "RS_activation": 36,
+    "RS_charging": 20,
+    "EN_binding": 54,
+    "EN_energy_transfer": 18,
+    "EN_byproduct_processing": 2,
+    "RS_to_INIT_formylation": 22,
+    "INIT_energy_commitment": 14,
+    "INIT_tRNA_recruitment": 42,
+    "INIT_70S_formation": 12,
+    "INIT_assembly": 112,
+    "INIT_factor_release": 26,
+    "TERM_factor_binding": 8,
+    "TERM_peptide_release": 4,
+    "TERM_energy_coupling": 34,
+    "RECYCLE_disassembly": 14,
+    "RECYCLE_component_release": 24
+  },
+  "low_confidence_reaction_ids": [
+    "re0000000308",
+    "re0000000327"
+  ],
+  "note": "Level-C annotation is a review layer. Exact reverse pairing is structural; no QSSA/lumping/kinetic validity is implied."
+}
