@@ -67,9 +67,10 @@ for group, stage in ((GLY_BIND | MET_BIND, "RS_binding"),
 INITIATION_FAMILIES = {"RFAM_025", "RFAM_026"}
 NEWLY_REVIEWED_FAMILIES = {"RFAM_013", "RFAM_015", "RFAM_016", "RFAM_017",
                            "RFAM_018", "RFAM_022", "RFAM_024", "RFAM_033", "RFAM_034"}
+FINAL_REVIEWED_FAMILIES = {"RFAM_002", "RFAM_004", "RFAM_014"}
 
-# Human-reviewed reaction-local events. ID and family are both checked, and
-# the verifier checks the source equations independently of this map.
+# Human-reviewed reaction-local events. ID and family are both checked; the
+# verifier checks source identity and representative mechanistic equations.
 REVIEWED_EVENTS = {}
 def reviewed(family, numbers, stage, rule):
     for rid in ids(numbers):
@@ -93,7 +94,29 @@ reviewed("RFAM_033", [796, 797, 799, 800], "TERM_factor_binding", "APPROVED_RF1_
 reviewed("RFAM_033", [798, 810], "TERM_peptide_release", "APPROVED_RF1_PEPTIDE_RELEASE")
 reviewed("RFAM_034", [811, 812, 814, 815], "TERM_factor_binding", "APPROVED_RF2_FACTOR_BINDING")
 reviewed("RFAM_034", [813, 823], "TERM_peptide_release", "APPROVED_RF2_PEPTIDE_RELEASE")
-assert len(REVIEWED_EVENTS) == 98
+
+# Final human mechanistic audit: two elongation cycles and the shared EF-G
+# elongation/recycling machinery. The disabled side paths retain these labels.
+for family, delivery, energy, peptide, translocation in (
+        ("RFAM_002", [13, 17, 21, 26, 27, 28, 61, 63, 64, 65],
+         [14, 15, 16, 19, 20, 22, 23, 60], [18, 62], [24, 25, 66, 67]),
+        ("RFAM_004", [74, 78, 82, 87, 88, 89, 119, 121, 122, 123],
+         [75, 76, 77, 80, 81, 83, 84, 118], [79, 120], [85, 86, 124, 125])):
+    reviewed(family, delivery, "ELONG_aa_tRNA_delivery", "APPROVED_EFTU_AATRNA_DELIVERY")
+    reviewed(family, energy, "ELONG_energy_coupling", "APPROVED_ELONG_NUCLEOTIDE_ENERGY_CYCLE")
+    reviewed(family, peptide, "ELONG_peptide_formation", "APPROVED_PEPTIDE_EXTENSION")
+    reviewed(family, translocation, "ELONG_translocation", "APPROVED_RIBOSOME_POSITIONAL_TRANSLOCATION")
+reviewed("RFAM_014", [292, 293, 294, 295], "ELONG_energy_coupling", "APPROVED_EFG_FREE_NUCLEOTIDE_CYCLE")
+reviewed("RFAM_014", [298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 309, 325, 326, 328],
+         "ELONG_energy_coupling", "APPROVED_ELONG_EFG_RIBOSOME_ENERGY_CYCLE")
+reviewed("RFAM_014", [895, 896, 900, 901, 902, 904, 905, 906, 907, 908, 909, 956],
+         "RECYCLE_disassembly", "APPROVED_RECYCLE_RRF_EFG_DISASSEMBLY")
+reviewed("RFAM_014", [910, 957], "RECYCLE_disassembly", "APPROVED_RECYCLE_70S_SPLITTING")
+reviewed("RFAM_014", list(range(911, 924)) + list(range(958, 969)),
+         "RECYCLE_component_release", "APPROVED_RECYCLE_COMPONENT_RELEASE")
+reviewed("RFAM_014", [308, 327], "ELONG_energy_coupling;RECYCLE_component_release",
+         "APPROVED_EFG_50S_SHARED_JUNCTION")
+assert len(REVIEWED_EVENTS) == 204
 
 
 def initiation_chemistry(row):
@@ -280,17 +303,19 @@ def main():
         for distance in range(1, 4):
             frontier = {neighbor for rid in frontier for neighbor in adjacent[rid]} - seen
             for rid in frontier:
-                # The current review authorizes only RFAM_025/026 changes.
+                # Earlier initiation anchors and newly reviewed family
+                # anchors must not silently reclassify outside families.
                 # Keep the four pre-existing IF2 chemistry anchors as the
-                # outside-family initiation support; newly approved anchors
-                # must not silently reclassify RFAM_022/023/024 or any other
-                # family in this pass.
+                # outside-family initiation support.
                 if (anchor_row["reaction_family_id"] in INITIATION_FAMILIES and
                         anchor not in ids([715, 716, 717, 718]) and
                         current[rid]["reaction_family_id"] not in INITIATION_FAMILIES):
                     continue
                 if (anchor_row["reaction_family_id"] in NEWLY_REVIEWED_FAMILIES and
                         current[rid]["reaction_family_id"] not in NEWLY_REVIEWED_FAMILIES):
+                    continue
+                if (anchor_row["reaction_family_id"] in FINAL_REVIEWED_FAMILIES and
+                        current[rid]["reaction_family_id"] not in FINAL_REVIEWED_FAMILIES):
                     continue
                 support[rid].append((distance, anchor, anchor_row["level_c_functional_contexts"]))
             seen |= frontier
@@ -386,23 +411,14 @@ def main():
     for row in output:
         family_contexts[row["reaction_family_id"]].update(row["level_c_functional_contexts"].split(";"))
     queue = []
-    family_representative = {family: min(r["reaction_id"] for r in output if r["reaction_family_id"] == family)
-                             for family in family_contexts if len(family_contexts[family]) > 1 and family != "RFAM_DEG"}
     for row in output:
+        # Live review means a new human functional decision is still needed.
+        # Approved junctions, cross-family links, multi-stage families, and
+        # disabled reference channels remain auditable in their own columns.
+        if row["functional_annotation_status"] != "HUMAN_REVIEW_REQUIRED":
+            continue
         reasons = []
-        if row["annotation_changed_from_v1"] == "true":
-            reasons.append("V1_GRAPH_LABEL_OVERRIDDEN_BY_DIRECT_CHEMISTRY_AUTO_RESOLVED")
-        if row["functional_annotation_status"] == "SHARED_JUNCTION":
-            reasons.append("MULTI_STAGE_BOUNDARY_REVIEW")
-        approved_init = (row["reaction_family_id"] in INITIATION_FAMILIES | NEWLY_REVIEWED_FAMILIES
-                         and row["direct_chemistry_rule"].startswith("APPROVED_"))
-        if row["cross_family_link_ids"] and not approved_init:
-            reasons.append("SPECIFIC_INTERMEDIATE_CROSS_SUBSYSTEM_REVIEW")
-        if row["reaction_id"] == family_representative.get(row["reaction_family_id"]) and not approved_init:
-            reasons.append("FAMILY_SPANS_FUNCTIONAL_STAGES_REVIEW")
-        if row["reference_activity"] == "DISABLED_EXACT":
-            reasons.append("DOUBLE_ZERO_AUTO_RESOLVED_SPECIAL_CASE")
-        if row["graph_support_status"] == "NO_HARD_ANCHOR_WITHIN_3" and row["reference_activity"] != "DISABLED_EXACT":
+        if row["graph_support_status"] == "NO_HARD_ANCHOR_WITHIN_3":
             reasons.append("NO_HARD_CHEMISTRY_ANCHOR_REVIEW")
         if row["graph_support_status"] == "CONFLICTING_HARD_ANCHOR_CONTEXT":
             reasons.append("HARD_ANCHOR_GRAPH_CONTEXT_CONFLICT_REVIEW")
@@ -410,25 +426,17 @@ def main():
             reasons.append("MULTIPLE_EQUIDISTANT_CONTEXTS_REVIEW")
         if not row["level_c_functional_contexts"]:
             reasons.append("UNEXPLAINED_REACTION_REVIEW")
-        partner = current.get(row["reverse_partner_id"])
-        if partner and (partner["level_c_functional_contexts"] != row["level_c_functional_contexts"] or partner["reference_activity"] != row["reference_activity"]):
-            reasons.append("REVERSE_PAIR_INCONSISTENCY_REVIEW")
-        for g, m, result in symmetry:
-            if result == "EXCEPTION" and row is g or result == "EXCEPTION" and row is m:
-                reasons.append("GLY_MET_STRUCTURAL_SYMMETRY_EXCEPTION_REVIEW")
-        # Fully decided chemistry corrections and double-zero topology remain
-        # visible in the table, while the queue is reserved for live questions.
-        live = [reason for reason in reasons if reason.endswith("_REVIEW")]
-        if live:
-            row["human_functional_review_required"] = "true"
-            row["human_functional_review_reason"] = ";".join(sorted(set(live)))
-            queue.append(dict(reaction_id=row["reaction_id"], reaction_family_id=row["reaction_family_id"],
-                              reaction_equation=equation(row), candidate_contexts=row["level_c_functional_contexts"],
-                              reason_for_review=row["human_functional_review_reason"],
-                              graph_evidence="supporting_anchor_ids=" + row["supporting_anchor_ids"] + ";cross_family_link_ids=" + row["cross_family_link_ids"],
-                              chemistry_evidence=row["direct_chemistry_rule"] or "NO_HARD_CHEMISTRY_RULE",
-                              source_subsystems=row["level_b_subsystem_candidates"], parameter_status=row["reference_activity"],
-                              recommended_question_for_human="Confirm functional contexts and family boundary from source chemistry; do not decide reduction."))
+        if not reasons:
+            reasons.append("UNEXPLAINED_FUNCTIONAL_STATUS_REVIEW")
+        row["human_functional_review_required"] = "true"
+        row["human_functional_review_reason"] = ";".join(sorted(set(reasons)))
+        queue.append(dict(reaction_id=row["reaction_id"], reaction_family_id=row["reaction_family_id"],
+                          reaction_equation=equation(row), candidate_contexts=row["level_c_functional_contexts"],
+                          reason_for_review=row["human_functional_review_reason"],
+                          graph_evidence="supporting_anchor_ids=" + row["supporting_anchor_ids"] + ";cross_family_link_ids=" + row["cross_family_link_ids"],
+                          chemistry_evidence=row["direct_chemistry_rule"] or "NO_HARD_CHEMISTRY_RULE",
+                          source_subsystems=row["level_b_subsystem_candidates"], parameter_status=row["reference_activity"],
+                          recommended_question_for_human="Confirm functional context from source chemistry; do not decide reduction."))
     family_rows = []
     for family in sorted(family_contexts):
         group = [r for r in output if r["reaction_family_id"] == family]
@@ -449,15 +457,21 @@ def main():
     write(DIR / "human_functional_review_queue_v2.csv", queue, ["reaction_id", "reaction_family_id", "reaction_equation", "candidate_contexts", "reason_for_review", "graph_evidence", "chemistry_evidence", "source_subsystems", "parameter_status", "recommended_question_for_human"])
     artifacts = ["reaction_level_annotation_v2.csv", "reaction_family_summary_v2.csv",
                  "reaction_cross_family_links_v2.csv", "human_functional_review_queue_v2.csv"]
-    manifest = dict(schema_version="2.0", status="CHEMISTRY_FIRST_PROVISIONAL_FUNCTIONAL_NAVIGATION",
+    unresolved = sum(r["functional_annotation_status"] == "HUMAN_REVIEW_REQUIRED" for r in output)
+    review_complete = unresolved == 0 and len(queue) == 0
+    manifest = dict(schema_version="2.0", status="FUNCTIONAL_ANNOTATION_REVIEW_COMPLETE" if review_complete else "CHEMISTRY_FIRST_PROVISIONAL_FUNCTIONAL_NAVIGATION",
                     source_v1_sha256=hashlib.sha256(V1.read_bytes()).hexdigest(),
                     reduction_decisions_sha256=hashlib.sha256(DECISIONS.read_bytes()).hexdigest(),
                     source_sbml_sha256=old[0]["source_sbml_sha256"], reaction_count=len(output),
                     artifact_sha256={name: hashlib.sha256((DIR / name).read_bytes()).hexdigest() for name in artifacts},
-                    functional_annotation_status_counts=dict(sorted(Counter(r["functional_annotation_status"] for r in output).items())),
+                    functional_annotation_status_counts={status: sum(r["functional_annotation_status"] == status for r in output)
+                                                         for status in ("DIRECT_CHEMISTRY", "GRAPH_PROPAGATED",
+                                                                        "HUMAN_REVIEW_REQUIRED", "REFERENCE_DISABLED",
+                                                                        "SHARED_JUNCTION")},
                     reference_activity_counts=dict(sorted(Counter(r["reference_activity"] for r in output).items())),
-                    functional_annotation_unresolved=sum(r["functional_annotation_status"] == "HUMAN_REVIEW_REQUIRED" for r in output),
-                    human_functional_review_queue=len(queue), cross_family_mechanistic_links=len(links),
+                    functional_annotation_unresolved=unresolved,
+                    human_functional_review_queue=len(queue), functional_annotation_review_complete=review_complete,
+                    cross_family_mechanistic_links=len(links),
                     gly_met_symmetry=dict(sorted(Counter(x[2] for x in symmetry).items())),
                     reduction_scientific_review=dict(pending=968, total=968),
                     scientific_boundary="No QSSA, fast equilibrium, lumping, deletion, reduced-core kinetics or kinetic equivalence approval.")
@@ -483,6 +497,16 @@ def main():
             "human_functional_review_queue": sum(r["reaction_family_id"] == family for r in queue),
         }
         for family in sorted(NEWLY_REVIEWED_FAMILIES)
+    }
+    manifest["final_reviewed_functional_families"] = {
+        family: {
+            "rows": sum(r["reaction_family_id"] == family for r in output),
+            "stage_counts": dict(sorted(Counter(r["level_c_functional_contexts"] for r in output
+                                                if r["reaction_family_id"] == family).items())),
+            "status_counts": dict(sorted(Counter(r["functional_annotation_status"] for r in output
+                                                 if r["reaction_family_id"] == family).items())),
+        }
+        for family in sorted(FINAL_REVIEWED_FAMILIES)
     }
     with (DIR / "reaction_annotation_manifest_v2.json").open("w", encoding="utf-8", newline="\n") as stream:
         stream.write(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")

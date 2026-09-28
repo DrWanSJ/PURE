@@ -1,6 +1,6 @@
 # Reaction functional annotation v2: chemistry first
 
-**Scope:** provisional functional annotation and navigation for the unchanged
+**Scope:** completed functional-stage annotation review and navigation for the unchanged
 PNAS2017 968-reaction source network. This table answers which functional
 stage a source reaction depicts. It does not decide whether a reaction or
 state may be removed or approximated.
@@ -68,9 +68,39 @@ each exact reverse pair. They are functional annotation decisions only.
 Approved local rules take priority over graph conflicts, equal-distance
 anchors, family span flags and cross-family mechanistic links. Such links
 remain recorded, while the resolved rows leave the live human functional
-queue. `RFAM_002/004/014` remain for human mechanistic audit, and
-`RFAM_035` retains its previous scientific labels. The non-target
-functional fingerprint is checked by the verifier.
+queue. `RFAM_035` retains its previous scientific labels. The non-target
+scientific fingerprint is checked by the verifier.
+
+## Final human-approved elongation and recycling rules
+
+The final mechanistic audit fixes every source reaction in `RFAM_002`,
+`RFAM_004` and `RFAM_014` by explicit reaction ID, family and stage. These
+rules have priority over graph proximity and source CellDesigner form.
+
+* `RFAM_002` and `RFAM_004` each have 10 `ELONG_aa_tRNA_delivery`, 8
+  `ELONG_energy_coupling`, 2 `ELONG_peptide_formation`, and 4
+  `ELONG_translocation` reactions. EF-Tu-GTP-aa-tRNA docking,
+  accommodation-associated EF-Tu release and the corresponding source side
+  paths are delivery. EF-Tu/EF-G nucleotide conversion and phosphate handling
+  without ribosome positional change are energy coupling. The fMet-to-Pept0002
+  and Pept0002-to-Pept0003 reactions are peptide extension. A codon or
+  positional shift is translocation even when phosphate or EFG_GDP is also
+  released. The two cycles have matching functional and reference-activity
+  patterns; this makes no kinetic-equivalence claim.
+* The four double-zero delivery paths in each elongation family retain their
+  approved `ELONG_aa_tRNA_delivery` context and `REFERENCE_DISABLED` status.
+  They are never propagation anchors.
+* `RFAM_014` has 18 `ELONG_energy_coupling` rows covering free EF-G GDP/GTP
+  loading/reset, elongation-side ribosome recruitment, bound GTP conversion,
+  phosphate handling and EF-G release. Its 14 `RECYCLE_disassembly` rows cover
+  posttermination RRF/EF-G assembly, energy chemistry and explicit 70S
+  splitting (`0910/0957`). Its 24 `RECYCLE_component_release` rows are
+  post-split mRNA, tRNA, RRF and EFG_GDP release/rebinding and cleanup.
+* `0308/0327`, `RS50S_EFG_GDP ⇄ EFG_GDP + RS50S`, remain the true
+  `ELONG_energy_coupling;RECYCLE_component_release` `SHARED_JUNCTION`.
+  This state can occur in both elongation-side and posttermination histories;
+  neither stage is discarded. Together with `0207/0208` and `0249/0250`,
+  these are six human-approved junction rows.
 
 ## Human-approved Initiation classification rules
 
@@ -104,9 +134,9 @@ precedence. All 198 rows have one direct stage, with 99 exact reverse pairs
 retaining identical contexts. Their former 70 graph-derived shared junctions
 are not reaction-local two-stage events and are removed from the v2 status.
 The 22 cross-family intermediate links remain as provenance, but a link does
-not reopen an already human-approved local functional stage. No other family
-context, status or queue flag changed in this update; a verifier fingerprint
-guards that boundary.
+not reopen an already human-approved local functional stage. The final audit
+guards all non-target scientific labels, statuses and source fields with a
+baseline fingerprint; live queue bookkeeping changes separately.
 
 ## Graph and cross-family context
 
@@ -136,8 +166,8 @@ parameter fact, not a permanent deletion decision.
 
 ## Status and audit semantics
 
-`DIRECT_CHEMISTRY` means an explicit approved chemical rule or narrowly
-identified event controls the label. `GRAPH_PROPAGATED` means the provisional
+`DIRECT_CHEMISTRY` includes an explicit human-approved reaction-local
+mechanistic rule; a covalent transformation is not required. `GRAPH_PROPAGATED` means the provisional
 v1 context has a matching v2 hard anchor within one to three reaction hops.
 The generator recomputes these paths using non-disabled reactions and hard
 anchors only; it never reuses v1 supporting-anchor IDs. A v1 context without
@@ -152,26 +182,21 @@ The v1 source/audit, resource-ledger and conservation columns are carried
 forward unchanged. Its `topology_status`, `anchor_source` and `human_review_status`
 columns are historical v1 fields; v2 authority is in the new columns.
 
-`functional_annotation_unresolved` counts rows whose inherited v1 candidate
-context has no matching v2 hard-anchor support and therefore needs a new
-functional decision. `human_functional_review_queue` counts flagged v2 exception rows:
-shared stage boundaries, specific-intermediate source-subsystem crossings,
-and a representative row for each family with several stages. A resolved
-chemistry correction or exact double-zero parameter state remains traceable
-in the v2 table without automatically sending it for another human decision.
-The queue is deliberately independent of reduction review. A queue row asks
-about its functional context or family boundary; it cannot approve a
-transformation. Where a family has several stages, the representative row
-flags family-level review, not every member as uncertain.
+`functional_annotation_unresolved` counts rows still requiring a new human
+functional decision. `human_functional_review_queue_v2.csv` is the **live**
+queue for exactly those rows. Approved direct rules, shared junctions,
+cross-family links, families spanning several stages, resolved graph conflicts
+and disabled reference channels do not enter the live queue merely because
+they have audit interest. Their evidence remains in the reaction table, link
+table and manifest. The live queue is independent of reduction review and is
+empty after this completed functional audit.
 
 The full 968 rows were checked against source IDs, equations and official
-parameter values. The hard rules cover the approved RS and initiation cases,
-explicit degradation and nucleotide/enzyme state conversions, and selected
-named pathway state transitions. Other v1 labels remain provisional graph-supported
-assignments or are sent to functional review when hard-anchor support fails.
-The presence of a candidate context does **not** mean every functional
-assignment has been independently confirmed; the review
-queue and stage provenance must be considered together.
+parameter values. The hard rules cover approved RS, elongation, initiation,
+enzyme and termination cases, plus explicit degradation and other identified
+events. Fifty rows retain `GRAPH_PROPAGATED` status and their graph provenance;
+the completed review means no row currently requires another human functional
+decision. It does not convert graph evidence into direct chemistry evidence.
 
 ## Reproduction
 

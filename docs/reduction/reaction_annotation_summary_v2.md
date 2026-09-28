@@ -1,44 +1,45 @@
 # PNAS2017 968-row functional annotation v2
 
-The chemistry-first layer retains the v0/v1 provenance and source network.
-This pass adds human-approved functional rules for EF-Tu, CK/NDK/MK, PPiase,
-RF1/RF2, IF2 preparation and bare ribosomal subunit joining. See
-`reaction_annotation_method_v2.md` for the reaction-local rules and
-`reaction_annotation_manifest_v2.json` for hashes and status counts.
+**Functional annotation review: COMPLETE.**
+
+`functional_annotation_unresolved = 0`; live human functional review queue =
+**0**. This completes functional-stage annotation of the unchanged source
+network. The v0/v1 tables, source provenance and evidence distinctions remain
+available; 50 rows retain `GRAPH_PROPAGATED` provenance.
+
+**Reduction scientific review: 968 / 968 `PENDING`.** No QSSA,
+fast-equilibrium, lumping, deletion, or reduced-core kinetic decision is
+approved. Functional annotation completion does not complete reduction.
 
 | v2 status | Rows |
 | --- | ---: |
-| `DIRECT_CHEMISTRY` | 414 |
-| `GRAPH_PROPAGATED` | 74 |
-| `SHARED_JUNCTION` | 6 |
+| `DIRECT_CHEMISTRY` | 492 |
+| `GRAPH_PROPAGATED` | 50 |
+| `HUMAN_REVIEW_REQUIRED` | 0 |
 | `REFERENCE_DISABLED` | 420 |
-| `HUMAN_REVIEW_REQUIRED` | 54 |
+| `SHARED_JUNCTION` | 6 |
 | **Total** | **968** |
 
-The 54 unresolved rows belong only to `RFAM_002` (12), `RFAM_004` (12) and
-`RFAM_014` (30). They remain for a later human mechanistic audit. The live
-functional review queue has 88 rows; it also records other unresolved
-family-boundary and cross-family questions. There are 22 specific-intermediate
-cross-family links. `SHARED_JUNCTION` remains 6.
+The final human mechanistic audit approved all 24 rows in each elongation
+cycle and all 58 EF-G/recycling rows:
 
-| Reviewed family | Human-approved functional distribution | Unresolved | Queue |
-| --- | --- | ---: | ---: |
-| `RFAM_013` | 14 `ELONG_energy_coupling`; 4 `ELONG_aa_tRNA_delivery` | 0 | 0 |
-| `RFAM_015` | 16 `EN_binding`; 2 `EN_energy_transfer` | 0 | 0 |
-| `RFAM_016` | 16 `EN_binding`; 2 `EN_energy_transfer` | 0 | 0 |
-| `RFAM_017` | 16 `EN_binding`; 2 `EN_energy_transfer` | 0 | 0 |
-| `RFAM_018` | 6 `EN_binding`; 2 `EN_byproduct_processing` | 0 | 0 |
-| `RFAM_022` | 2 `INIT_energy_commitment`; 2 `INIT_tRNA_recruitment` | 0 | 0 |
-| `RFAM_024` | 2 `INIT_70S_formation` | 0 | 0 |
-| `RFAM_033` | 4 `TERM_factor_binding`; 2 `TERM_peptide_release` | 0 | 0 |
-| `RFAM_034` | 4 `TERM_factor_binding`; 2 `TERM_peptide_release` | 0 | 0 |
+| Family | Functional distribution |
+| --- | --- |
+| `RFAM_002` | 10 `ELONG_aa_tRNA_delivery`; 8 `ELONG_energy_coupling`; 2 `ELONG_peptide_formation`; 4 `ELONG_translocation` |
+| `RFAM_004` | 10 `ELONG_aa_tRNA_delivery`; 8 `ELONG_energy_coupling`; 2 `ELONG_peptide_formation`; 4 `ELONG_translocation` |
+| `RFAM_014` | 18 `ELONG_energy_coupling`; 2 `ELONG_energy_coupling;RECYCLE_component_release`; 14 `RECYCLE_disassembly`; 24 `RECYCLE_component_release` |
 
-These 98 rows are now direct human-approved annotations. Previously 88 of
-them had `HUMAN_REVIEW_REQUIRED` status; resolving those 88 yields the
-observed `142 → 54` unresolved change. The verifier preserves the non-target
-functional fingerprint, including `RFAM_035` labels and the earlier
-`RFAM_005–012` and `RFAM_025/026` rules.
+Each elongation family retains four double-zero side-path rows as
+`REFERENCE_DISABLED`, with approved delivery context but no propagation
+anchor. `RFAM_014` retains the real EF-G/50S junction `0308/0327`.
+The other approved junctions are `0207/0208` and `0249/0250`; all six remain
+`SHARED_JUNCTION` with no live review flag. All 22 cross-family mechanistic
+links remain available as provenance.
 
-**Reduction scientific review remains 968 / 968 `PENDING`.** These functional
-stages do not approve QSSA, fast equilibrium, reaction lumping, reaction
-deletion, chemostatting, kinetic equivalence or a reduced-core model.
+The newly approved rules moved 54 rows out of `HUMAN_REVIEW_REQUIRED`; another
+24 graph-supported rows became direct approved annotations. The verifier
+checks the two elongation cycles' structural/functional pattern without
+asserting rate equality or kinetic equivalence. It also checks the previously
+approved RFAM_005–013, RFAM_015–018, RFAM_022, RFAM_024–026 and RFAM_033–035
+scientific labels against the prior baseline. The method and SHA-256 manifest
+record the complete rule set and source identity.
