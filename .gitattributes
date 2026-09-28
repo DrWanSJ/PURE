@@ -64,6 +64,11 @@ docs/reduction/*.csv -text
 docs/reduction/reduction_decisions.csv -text -diff
 docs/reduction/reduction_map.md text eol=lf
 docs/reduction/human_reduction_review.md text eol=lf
+
+# Exact reduction audit v0 hashes generated text bytes across fresh checkouts.
+docs/reduction/reduction_audit_v0_*.md text eol=lf
+scripts/build_reduction_audit_v0.py text eol=lf
+scripts/verify_reduction_audit_v0.py text eol=lf
 results/pnas2017_reference/** -text -diff
 results/pnas2017_reference/README.md text eol=lf diff
 results/pnas2017_reference/historical_archive_manifest.json text eol=lf diff
