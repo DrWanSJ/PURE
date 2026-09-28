@@ -7,7 +7,7 @@ state may be removed or approximated.
 
 ## Evidence order
 
-1. Explicit reactant/product chemical event and the approved RS pathway rules.
+1. Explicit reactant/product chemical event and the human-approved local rules.
 2. Identity of a specific mechanistic intermediate.
 3. Local reaction–species graph context, limited to the v1 one-to-three-hop
    interpretation where no hard chemistry rule applies.
@@ -30,7 +30,47 @@ products, parameter topology and intermediate identities are checked.
 `RS_charging`. The tRNA encounter with enzyme-bound aminoacyl-AMP/PPi is a
 true `RS_activation;RS_charging` boundary. These explicit rules take priority
 over the inherited v1 graph label. The earlier v2 RS audit corrected 32
-reaction contexts; this initiation update corrects another 90.
+reaction contexts; the earlier initiation update corrected another 90.
+
+## Additional human-approved functional rules
+
+The following rules classify the reaction-local event in both directions of
+each exact reverse pair. They are functional annotation decisions only.
+
+* `RFAM_013`: EF-Tu/EF-Ts GDP/GTP binding, release and exchange-state
+  assembly (`0261–0274`) is `ELONG_energy_coupling` (14 rows). Formation or
+  dissociation of the EF-Tu-GTP-aa-tRNA carrier (`0275/0276`, `0288/0289`)
+  is `ELONG_aa_tRNA_delivery` (4 rows). The former block does not imply GTP
+  hydrolysis at every step.
+* `RFAM_015–017`: CK, NDK and MK substrate/product binding or release is
+  `EN_binding` (16 rows per family), including product-side release.
+  Only enzyme-bound chemical conversions `0338/0339`, `0363/0364` and
+  `0388/0389` are `EN_energy_transfer` (2 per family). A zero reverse
+  parameter for `0364` changes reference activity, not its stage.
+* `RFAM_018`: PPiase binding and product release (`0405/0406`, `0409–0412`)
+  is `EN_binding` (6); bound PPi to two bound phosphate groups (`0407/0408`)
+  is `EN_byproduct_processing` (2).
+* `RFAM_033/034`: RF1 and RF2 binding/release on pre/posttermination
+  ribosomes is `TERM_factor_binding` (4 each). Peptidyl-tRNA to free peptide
+  and posttermination ribosome (`0798/0810`, `0813/0823`) is
+  `TERM_peptide_release` (2 each). Both source equations were inspected;
+  CellDesigner association/dissociation types do not set these stages.
+* `RFAM_022`: IF2 GTP loading (`0445/0446`) is
+  `INIT_energy_commitment` (2), meaning preparation of a GTP-loaded IF2
+  state without claiming hydrolysis. IF2-GTP-fMet-tRNA cargo formation
+  (`0449/0450`) is `INIT_tRNA_recruitment` (2). This extends recruitment
+  to the pre-ribosome cargo; IF2-GTP binding to a ribosome without a tRNA
+  cargo change remains `INIT_assembly`.
+* `RFAM_024`: bare `RS30S + RS50S ⇄ RS70S` (`0455/0456`) is
+  `INIT_70S_formation` (2), under the same explicit joining rule used for
+  occupied subunits.
+
+Approved local rules take priority over graph conflicts, equal-distance
+anchors, family span flags and cross-family mechanistic links. Such links
+remain recorded, while the resolved rows leave the live human functional
+queue. `RFAM_002/004/014` remain for human mechanistic audit, and
+`RFAM_035` retains its previous scientific labels. The non-target
+functional fingerprint is checked by the verifier.
 
 ## Human-approved Initiation classification rules
 
@@ -45,9 +85,10 @@ exact reverse pair:
    is `INIT_energy_commitment`. The latter includes source
    association/dissociation representations `0721/0722` and `0745/0746`.
 3. A change in **ribosome-bound** `fMettRNAfMetCAU` occupancy is
-   `INIT_tRNA_recruitment`. Cargo-bound `IF2_GTP_fMettRNAfMetCAU` counts only
-   when the initiator tRNA enters or leaves a ribosome complex. The initiator
-   tRNA remaining bound on both sides is not recruitment.
+   `INIT_tRNA_recruitment` within `RFAM_025/026`. The initiator tRNA
+   remaining bound on both sides is not recruitment. The separately approved
+   `RFAM_022` pre-ribosome IF2-GTP-fMet-tRNA cargo rule above extends the
+   stage definition without changing these family-specific cases.
 4. IF1, IF3 or IF2_GDP release/rebinding on a formed 70S initiation complex
    carrying initiator tRNA, mRNA or an IF2 GDP state is
    `INIT_factor_release`. This includes `0539/0540`, `0719/0720` and

@@ -1,49 +1,44 @@
 # PNAS2017 968-row functional annotation v2
 
-The chemistry-first v2 layer retains the graph-aware v1 topology, corrects
-32 RS reaction contexts and 90 initiation reaction contexts from explicit
-biochemical events, and records specific
-intermediates connecting families across source subsystems. See
-`reaction_annotation_method_v2.md` for priorities, limitations and status
-definitions; `reaction_annotation_manifest_v2.json` is the machine-readable
-count and freshness record.
+The chemistry-first layer retains the v0/v1 provenance and source network.
+This pass adds human-approved functional rules for EF-Tu, CK/NDK/MK, PPiase,
+RF1/RF2, IF2 preparation and bare ribosomal subunit joining. See
+`reaction_annotation_method_v2.md` for the reaction-local rules and
+`reaction_annotation_manifest_v2.json` for hashes and status counts.
 
-| v2 primary status | Rows |
+| v2 status | Rows |
 | --- | ---: |
-| `DIRECT_CHEMISTRY` | 324 |
-| `GRAPH_PROPAGATED` | 76 |
+| `DIRECT_CHEMISTRY` | 414 |
+| `GRAPH_PROPAGATED` | 74 |
 | `SHARED_JUNCTION` | 6 |
 | `REFERENCE_DISABLED` | 420 |
-| `HUMAN_REVIEW_REQUIRED` | 142 |
+| `HUMAN_REVIEW_REQUIRED` | 54 |
 | **Total** | **968** |
 
-There are **22 cross-family specific-intermediate links** and **177 flagged
-functional-review rows**. The reviewed initiation families have no remaining
-functional queue rows; the remaining queue concerns other families, including
-`RFAM_014` (32). `functional_annotation_unresolved = 142` counts
-rows whose inherited candidate context lacks matching hard-anchor support.
-Candidate contexts are preserved for review, not silently promoted.
+The 54 unresolved rows belong only to `RFAM_002` (12), `RFAM_004` (12) and
+`RFAM_014` (30). They remain for a later human mechanistic audit. The live
+functional review queue has 88 rows; it also records other unresolved
+family-boundary and cross-family questions. There are 22 specific-intermediate
+cross-family links. `SHARED_JUNCTION` remains 6.
 
-| Reviewed family | Earlier queue | Current queue | Earlier unresolved | Current unresolved | Earlier shared | Current shared |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| `RFAM_025` | 108 | 0 | 80 | 0 | 28 | 0 |
-| `RFAM_026` | 80 | 0 | 38 | 0 | 42 | 0 |
+| Reviewed family | Human-approved functional distribution | Unresolved | Queue |
+| --- | --- | ---: | ---: |
+| `RFAM_013` | 14 `ELONG_energy_coupling`; 4 `ELONG_aa_tRNA_delivery` | 0 | 0 |
+| `RFAM_015` | 16 `EN_binding`; 2 `EN_energy_transfer` | 0 | 0 |
+| `RFAM_016` | 16 `EN_binding`; 2 `EN_energy_transfer` | 0 | 0 |
+| `RFAM_017` | 16 `EN_binding`; 2 `EN_energy_transfer` | 0 | 0 |
+| `RFAM_018` | 6 `EN_binding`; 2 `EN_byproduct_processing` | 0 | 0 |
+| `RFAM_022` | 2 `INIT_energy_commitment`; 2 `INIT_tRNA_recruitment` | 0 | 0 |
+| `RFAM_024` | 2 `INIT_70S_formation` | 0 | 0 |
+| `RFAM_033` | 4 `TERM_factor_binding`; 2 `TERM_peptide_release` | 0 | 0 |
+| `RFAM_034` | 4 `TERM_factor_binding`; 2 `TERM_peptide_release` | 0 | 0 |
 
-`RFAM_025` now has 52 assembly, 20 initiator-tRNA recruitment, 10 explicit
-70S formation, 8 IF2 energy commitment and 28 factor release rows.
-`RFAM_026` has 60 assembly and 20 initiator-tRNA recruitment rows. All 198
-are direct, human-approved initiation classifications. The initiation shared
-junction count falls **70 → 0** and initiation unresolved falls **118 → 0**.
-The verifier also confirms that no other family's functional label, status or
-queue flag changed from the prior v2 commit.
+These 98 rows are now direct human-approved annotations. Previously 88 of
+them had `HUMAN_REVIEW_REQUIRED` status; resolving those 88 yields the
+observed `142 → 54` unresolved change. The verifier preserves the non-target
+functional fingerprint, including `RFAM_035` labels and the earlier
+`RFAM_005–012` and `RFAM_025/026` rules.
 
-The approved RFAM_005–010 chemistry cases pass regression checks. The
-RFAM_011/012 Met charging network was matched against Gly source chemistry,
-intermediate identity and parameter topology: **52/52 structural counterparts
-match** in functional context and activity class. Numeric rate magnitudes
-differ in some counterparts and were not treated as equal or as kinetic
-equivalence.
-
-**Reduction scientific review: 968 / 968 `PENDING`.** This is a functional
-annotation/navigation layer. It does **not** approve QSSA, fast equilibrium,
-reaction lumping, reaction deletion or reduced-core kinetics.
+**Reduction scientific review remains 968 / 968 `PENDING`.** These functional
+stages do not approve QSSA, fast equilibrium, reaction lumping, reaction
+deletion, chemostatting, kinetic equivalence or a reduced-core model.

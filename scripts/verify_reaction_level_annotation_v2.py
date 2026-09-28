@@ -10,7 +10,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DIR = ROOT / "docs/reduction"
-PRE_REVIEW_NON_INITIATION_SHA256 = "dd461a565dc7820cce6faf1e03ff5ba2f17a62f2e6481cb937ddfcdfb0ba2e5e"
+REVIEWED_FAMILIES = {"RFAM_013", "RFAM_015", "RFAM_016", "RFAM_017", "RFAM_018",
+                     "RFAM_022", "RFAM_024", "RFAM_033", "RFAM_034"}
+NON_TARGET_SHA256 = "682ba14bbdc5e4699f09aa3605fbf7b130a2bc6fbe2ff0923cead88eeea0ed46"
 
 
 def read(path):
@@ -102,6 +104,71 @@ def main():
     for rid in full([145,146,170,171]):
         assert by[rid]["reference_activity"] == "FORWARD_ONLY"
 
+    approved = {
+        "RFAM_013": {"ELONG_energy_coupling": list(range(261, 275)),
+                     "ELONG_aa_tRNA_delivery": [275, 276, 288, 289]},
+        "RFAM_015": {"EN_binding": list(range(330, 338)) + list(range(340, 348)),
+                     "EN_energy_transfer": [338, 339]},
+        "RFAM_016": {"EN_binding": list(range(355, 363)) + list(range(365, 369)) + list(range(375, 379)),
+                     "EN_energy_transfer": [363, 364]},
+        "RFAM_017": {"EN_binding": list(range(380, 388)) + list(range(390, 398)),
+                     "EN_energy_transfer": [388, 389]},
+        "RFAM_018": {"EN_binding": [405, 406, 409, 410, 411, 412],
+                     "EN_byproduct_processing": [407, 408]},
+        "RFAM_022": {"INIT_energy_commitment": [445, 446], "INIT_tRNA_recruitment": [449, 450]},
+        "RFAM_024": {"INIT_70S_formation": [455, 456]},
+        "RFAM_033": {"TERM_factor_binding": [796, 797, 799, 800], "TERM_peptide_release": [798, 810]},
+        "RFAM_034": {"TERM_factor_binding": [811, 812, 814, 815], "TERM_peptide_release": [813, 823]},
+    }
+    assert set(approved) == REVIEWED_FAMILIES
+    for family, stages in approved.items():
+        expected_ids = set()
+        for stage, numbers in stages.items():
+            for rid in full(numbers):
+                expected_ids.add(rid)
+                row = by[rid]
+                assert row["reaction_family_id"] == family and row["level_c_functional_contexts"] == stage, rid
+                assert row["functional_annotation_status"] == "DIRECT_CHEMISTRY", rid
+                assert row["direct_chemistry_rule"].startswith("APPROVED_"), rid
+                assert rid not in queue_ids and row["human_functional_review_required"] == "false", rid
+        assert {r["reaction_id"] for r in v2 if r["reaction_family_id"] == family} == expected_ids, family
+        summary = manifest["newly_reviewed_functional_families"][family]
+        assert summary["rows"] == len(expected_ids) and summary["human_functional_review_queue"] == 0
+        assert summary["stage_counts"] == {stage: len(numbers) for stage, numbers in stages.items()}
+    assert sum(len(numbers) for stages in approved.values() for numbers in stages.values()) == 98
+    assert {family: sum(r["functional_annotation_status"] == "HUMAN_REVIEW_REQUIRED" for r in v2 if r["reaction_family_id"] == family)
+            for family in ("RFAM_002", "RFAM_004", "RFAM_014")} == {"RFAM_002": 12, "RFAM_004": 12, "RFAM_014": 30}
+    assert {r["reaction_family_id"] for r in v2 if r["functional_annotation_status"] == "HUMAN_REVIEW_REQUIRED"} == {"RFAM_002", "RFAM_004", "RFAM_014"}
+    assert len(queue) == 88
+
+    # Check the local chemical events behind the labels, including RF2's
+    # source equations independently of the RF1 family name.
+    equations = {
+        338: ({"CK_CP_ADP"}, {"CK_Cr_ATP"}),
+        363: ({"NDK_GDP_ATP"}, {"NDK_GTP_ADP"}),
+        388: ({"MK_ATP_AMP"}, {"MK_ADP_ADP"}),
+        407: ({"PPiase_PPi"}, {"PPiase_PO4_PO4"}),
+        445: ({"GTP", "IF2"}, {"IF2_GTP"}),
+        449: ({"IF2_GTP", "fMettRNAfMetCAU"}, {"IF2_GTP_fMettRNAfMetCAU"}),
+        455: ({"RS70S"}, {"RS30S", "RS50S"}),
+        796: ({"RF1", "elRS70SAUAA0004_Pept0003tRNAGlyGCC"},
+              {"elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1"}),
+        798: ({"elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1"},
+              {"Pept0003", "termRS70SUAA0004_tRNAGlyGCC_RF1"}),
+        799: ({"termRS70SUAA0004_tRNAGlyGCC_RF1"},
+              {"RF1", "termRS70SUAA0004_tRNAGlyGCC"}),
+        811: ({"RF2", "elRS70SAUAA0004_Pept0003tRNAGlyGCC"},
+              {"elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2"}),
+        813: ({"elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2"},
+              {"Pept0003", "termRS70SUAA0004_tRNAGlyGCC_RF2"}),
+        814: ({"termRS70SUAA0004_tRNAGlyGCC_RF2"},
+              {"RF2", "termRS70SUAA0004_tRNAGlyGCC"}),
+    }
+    for number, (reactants, products) in equations.items():
+        row = by[next(iter(full([number])))]
+        assert set(json.loads(row["reactants_json"])) == reactants, number
+        assert set(json.loads(row["products_json"])) == products, number
+
     # Human-approved initiation rules are checked independently of the
     # builder's graph routine and CellDesigner association/dissociation type.
     initiation_fixtures = {
@@ -162,9 +229,9 @@ def main():
                          "is_functional_anchor", "graph_support_status", "supporting_anchor_ids",
                          "human_functional_review_required")
     non_target_records = [{key: r[key] for key in non_target_fields} for r in v2
-                          if r["reaction_family_id"] not in {"RFAM_025", "RFAM_026"}]
+                          if r["reaction_family_id"] not in REVIEWED_FAMILIES]
     non_target_digest = hashlib.sha256(json.dumps(non_target_records, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-    assert non_target_digest == PRE_REVIEW_NON_INITIATION_SHA256
+    assert non_target_digest == NON_TARGET_SHA256
 
     link_keys = {(r["specific_intermediate"], r["source_family"], r["target_family"]) for r in links}
     assert ("GlyRS_AMP", "RFAM_010", "RFAM_006") in link_keys
@@ -206,12 +273,14 @@ def main():
     assert manifest["functional_annotation_status_counts"] == dict(sorted(Counter(r["functional_annotation_status"] for r in v2).items()))
     assert manifest["human_functional_review_queue"] == len(queue)
     assert manifest["functional_annotation_unresolved"] == sum(r["functional_annotation_status"] == "HUMAN_REVIEW_REQUIRED" for r in v2)
+    assert manifest["functional_annotation_status_counts"] == {"DIRECT_CHEMISTRY": 414, "GRAPH_PROPAGATED": 74, "HUMAN_REVIEW_REQUIRED": 54, "REFERENCE_DISABLED": 420, "SHARED_JUNCTION": 6}
     assert manifest["reduction_scientific_review"] == {"pending": 968, "total": 968}
     assert not any(key in row for row in v2 for key in ("qssa_approved", "fast_equilibrium_approved", "lumping_approved", "deletion_approved"))
     print("PASS: 968 unique source-identical reactions; 290 symmetric exact reverse channels")
     print("PASS: hard chemistry priority; double-zero edges never functional anchors")
     print("PASS: RFAM_005-010 approved regressions; RFAM_011/012 Gly/Met source and parameter-topology symmetry (52/52)")
-    print("PASS: RFAM_025/026 reviewed initiation rules, reverse symmetry, and unchanged non-target family fingerprint")
+    print("PASS: RFAM_025/026 reviewed initiation rules and reverse symmetry")
+    print("PASS: nine newly reviewed families = 98 direct rules, zero queue; non-target fingerprint unchanged")
     print(f"PASS: {len(links)} specific-intermediate cross-family links; {len(queue)} flagged functional-review rows")
     print("PASS: reduction scientific review remains 968/968 PENDING; v0/v1 retained")
     print("STATUS COUNTS:", json.dumps(manifest["functional_annotation_status_counts"], sort_keys=True))

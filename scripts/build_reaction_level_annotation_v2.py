@@ -65,6 +65,35 @@ for group, stage in ((GLY_BIND | MET_BIND, "RS_binding"),
 
 
 INITIATION_FAMILIES = {"RFAM_025", "RFAM_026"}
+NEWLY_REVIEWED_FAMILIES = {"RFAM_013", "RFAM_015", "RFAM_016", "RFAM_017",
+                           "RFAM_018", "RFAM_022", "RFAM_024", "RFAM_033", "RFAM_034"}
+
+# Human-reviewed reaction-local events. ID and family are both checked, and
+# the verifier checks the source equations independently of this map.
+REVIEWED_EVENTS = {}
+def reviewed(family, numbers, stage, rule):
+    for rid in ids(numbers):
+        assert rid not in REVIEWED_EVENTS
+        REVIEWED_EVENTS[rid] = (family, stage, rule)
+
+reviewed("RFAM_013", range(261, 275), "ELONG_energy_coupling", "APPROVED_EFTU_NUCLEOTIDE_CYCLE")
+reviewed("RFAM_013", [275, 276, 288, 289], "ELONG_aa_tRNA_delivery", "APPROVED_EFTU_AATRNA_TERNARY_FORMATION")
+for family, binding, conversion, rule in (
+        ("RFAM_015", list(range(330, 338)) + list(range(340, 348)), [338, 339], "APPROVED_CK_TRANSFER"),
+        ("RFAM_016", list(range(355, 363)) + list(range(365, 369)) + list(range(375, 379)), [363, 364], "APPROVED_NDK_TRANSFER"),
+        ("RFAM_017", list(range(380, 388)) + list(range(390, 398)), [388, 389], "APPROVED_MK_TRANSFER")):
+    reviewed(family, binding, "EN_binding", "APPROVED_ENZYME_LIGAND_BINDING")
+    reviewed(family, conversion, "EN_energy_transfer", rule)
+reviewed("RFAM_018", [405, 406, 409, 410, 411, 412], "EN_binding", "APPROVED_ENZYME_LIGAND_BINDING")
+reviewed("RFAM_018", [407, 408], "EN_byproduct_processing", "APPROVED_PPIASE_CONVERSION")
+reviewed("RFAM_022", [445, 446], "INIT_energy_commitment", "APPROVED_IF2_GTP_LOADING")
+reviewed("RFAM_022", [449, 450], "INIT_tRNA_recruitment", "APPROVED_IF2_FMET_TRNA_CARGO")
+reviewed("RFAM_024", [455, 456], "INIT_70S_formation", "APPROVED_BARE_70S_FORMATION")
+reviewed("RFAM_033", [796, 797, 799, 800], "TERM_factor_binding", "APPROVED_RF1_FACTOR_BINDING")
+reviewed("RFAM_033", [798, 810], "TERM_peptide_release", "APPROVED_RF1_PEPTIDE_RELEASE")
+reviewed("RFAM_034", [811, 812, 814, 815], "TERM_factor_binding", "APPROVED_RF2_FACTOR_BINDING")
+reviewed("RFAM_034", [813, 823], "TERM_peptide_release", "APPROVED_RF2_PEPTIDE_RELEASE")
+assert len(REVIEWED_EVENTS) == 98
 
 
 def initiation_chemistry(row):
@@ -118,6 +147,10 @@ def initiation_chemistry(row):
 def chemistry(row):
     """Only structurally explicit events receive hard anchors."""
     rid = row["reaction_id"]
+    if rid in REVIEWED_EVENTS:
+        family, stage, rule = REVIEWED_EVENTS[rid]
+        assert row["reaction_family_id"] == family, rid
+        return stage, rule
     if row["reaction_family_id"] in INITIATION_FAMILIES:
         return initiation_chemistry(row)
     if rid in APPROVED:
@@ -256,6 +289,9 @@ def main():
                         anchor not in ids([715, 716, 717, 718]) and
                         current[rid]["reaction_family_id"] not in INITIATION_FAMILIES):
                     continue
+                if (anchor_row["reaction_family_id"] in NEWLY_REVIEWED_FAMILIES and
+                        current[rid]["reaction_family_id"] not in NEWLY_REVIEWED_FAMILIES):
+                    continue
                 support[rid].append((distance, anchor, anchor_row["level_c_functional_contexts"]))
             seen |= frontier
     for row in output:
@@ -358,7 +394,8 @@ def main():
             reasons.append("V1_GRAPH_LABEL_OVERRIDDEN_BY_DIRECT_CHEMISTRY_AUTO_RESOLVED")
         if row["functional_annotation_status"] == "SHARED_JUNCTION":
             reasons.append("MULTI_STAGE_BOUNDARY_REVIEW")
-        approved_init = row["reaction_family_id"] in INITIATION_FAMILIES and row["direct_chemistry_rule"].startswith("APPROVED_")
+        approved_init = (row["reaction_family_id"] in INITIATION_FAMILIES | NEWLY_REVIEWED_FAMILIES
+                         and row["direct_chemistry_rule"].startswith("APPROVED_"))
         if row["cross_family_link_ids"] and not approved_init:
             reasons.append("SPECIFIC_INTERMEDIATE_CROSS_SUBSYSTEM_REVIEW")
         if row["reaction_id"] == family_representative.get(row["reaction_family_id"]) and not approved_init:
@@ -437,6 +474,15 @@ def main():
             "human_functional_review_queue": sum(r["reaction_family_id"] == family for r in queue),
         }
         for family in sorted(INITIATION_FAMILIES)
+    }
+    manifest["newly_reviewed_functional_families"] = {
+        family: {
+            "rows": sum(r["reaction_family_id"] == family for r in output),
+            "stage_counts": dict(sorted(Counter(r["level_c_functional_contexts"] for r in output
+                                                if r["reaction_family_id"] == family).items())),
+            "human_functional_review_queue": sum(r["reaction_family_id"] == family for r in queue),
+        }
+        for family in sorted(NEWLY_REVIEWED_FAMILIES)
     }
     with (DIR / "reaction_annotation_manifest_v2.json").open("w", encoding="utf-8", newline="\n") as stream:
         stream.write(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
