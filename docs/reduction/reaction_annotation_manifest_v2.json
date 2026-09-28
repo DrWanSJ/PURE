@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "status": "CHEMISTRY_FIRST_PROVISIONAL_FUNCTIONAL_NAVIGATION",
+  "source_v1_sha256": "805aaa2b9afa356486d83f6e12fb11b0def004ec4429e42ed0a4631085ec4562",
+  "reduction_decisions_sha256": "70fd3f98de5056a1a63c29db58d310ec5986d4c52b6bfcbae9634b38e2e8d7f8",
+  "source_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "reaction_count": 968,
+  "artifact_sha256": {
+    "reaction_level_annotation_v2.csv": "cc1c63b222c7fabddc681d9178dc33a6c96650a229e8add09a12172d822ad88f",
+    "reaction_family_summary_v2.csv": "ea459867711d6c3f167706ec41eacf1e9fa055cee4697388b2f0765ff10e297e",
+    "reaction_cross_family_links_v2.csv": "7d3551b04a1c7f2a229fec6f2e3656db45da7836c34925f6cb690f85d4b28a50",
+    "human_functional_review_queue_v2.csv": "563575d4e529d4f384187429f705af914c62fb1f518fc40dddb53fe05def0fe0"
+  },
+  "functional_annotation_status_counts": {
+    "DIRECT_CHEMISTRY": 130,
+    "GRAPH_PROPAGATED": 82,
+    "HUMAN_REVIEW_REQUIRED": 260,
+    "REFERENCE_DISABLED": 420,
+    "SHARED_JUNCTION": 76
+  },
+  "reference_activity_counts": {
+    "ACTIVE_OR_PARAMETERIZED": 418,
+    "DISABLED_EXACT": 420,
+    "FORWARD_ONLY": 130
+  },
+  "functional_annotation_unresolved": 260,
+  "human_functional_review_queue": 365,
+  "cross_family_mechanistic_links": 22,
+  "gly_met_symmetry": {
+    "MATCH": 52
+  },
+  "reduction_scientific_review": {
+    "pending": 968,
+    "total": 968
+  },
+  "scientific_boundary": "No QSSA, fast equilibrium, lumping, deletion, reduced-core kinetics or kinetic equivalence approval."
+}

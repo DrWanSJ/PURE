@@ -36,6 +36,9 @@ def main():
     print("PASS: 35 active families + RFAM_DEG; 290 reverse channels")
     print("PASS: 846 anchors / 42 propagated / 4 family-propagated / 76 shared junctions")
     print("PASS: EFG/50S pair = shared ELONG_energy_coupling + RECYCLE_component_release")
-    print("PASS: unresolved=0; human review reserved for future graph-unresolved rows")
+    print("PASS: historical v1 graph-unresolved=0; v2 functional review and reduction review are separate")
     print("NOTE: graph annotation only; no QSSA/lumping/kinetic validity is tested")
-if __name__=="__main__": main()
+if __name__=="__main__":
+    main()
+    from verify_reaction_level_annotation_v2 import main as verify_v2
+    verify_v2()

@@ -1,0 +1,155 @@
+#!/usr/bin/env python3
+"""Independent contracts for the chemistry-first annotation navigation layer."""
+from __future__ import annotations
+
+import csv
+import hashlib
+import json
+from collections import Counter, defaultdict
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+DIR = ROOT / "docs/reduction"
+
+
+def read(path):
+    with path.open(encoding="utf-8", newline="") as stream:
+        return list(csv.DictReader(stream))
+
+
+def full(numbers):
+    return {f"re{n:010d}" for n in numbers}
+
+
+def main():
+    v1path = DIR / "reaction_level_annotation_v1.csv"
+    v1 = read(v1path)
+    v2 = read(DIR / "reaction_level_annotation_v2.csv")
+    audit = read(ROOT / "models/pnas2017_full_reference/audit/reaction_balance_audit.csv")
+    decisions = read(DIR / "reduction_decisions.csv")
+    queue = read(DIR / "human_functional_review_queue_v2.csv")
+    links = read(DIR / "reaction_cross_family_links_v2.csv")
+    families = read(DIR / "reaction_family_summary_v2.csv")
+    manifest = json.loads((DIR / "reaction_annotation_manifest_v2.json").read_text(encoding="utf-8"))
+    assert (DIR / "reaction_level_annotation_v0.csv").exists()
+    assert (DIR / "reaction_graph_manifest_v1.json").exists()
+    assert manifest["source_v1_sha256"] == hashlib.sha256(v1path.read_bytes()).hexdigest()
+    assert manifest["reduction_decisions_sha256"] == hashlib.sha256((DIR / "reduction_decisions.csv").read_bytes()).hexdigest()
+    for name, digest in manifest["artifact_sha256"].items():
+        assert hashlib.sha256((DIR / name).read_bytes()).hexdigest() == digest, name
+    by = {r["reaction_id"]: r for r in v2}
+    a_by = {r["sbml_reaction_id"]: r for r in audit}
+    assert len(v1) == len(v2) == len(by) == len(audit) == len(a_by) == 968
+    assert set(by) == set(a_by)
+    assert len(decisions) == 968 and {r["sbml_reaction_id"] for r in decisions} == set(by)
+    assert all(r["decision_status"] == "PENDING" for r in decisions)
+    assert all(r["source_sbml_sha256"] == manifest["source_sbml_sha256"] for r in v2)
+    controlled = set()
+    for row in v1:
+        controlled.update(row["level_c_functional_contexts"].split(";"))
+    pairs = set()
+    queue_ids = {q["reaction_id"] for q in queue}
+    for rid, row in by.items():
+        source = a_by[rid]
+        for field in ("reactants_json", "products_json", "official_parameter_id", "official_parameter_value", "level_a_module_candidates", "level_b_subsystem_candidates"):
+            assert row[field] == source[field], (rid, field)
+        assert row["functional_annotation_status"] in {"DIRECT_CHEMISTRY", "GRAPH_PROPAGATED", "SHARED_JUNCTION", "REFERENCE_DISABLED", "HUMAN_REVIEW_REQUIRED"}
+        assert set(row["level_c_functional_contexts"].split(";")) <= controlled
+        if row["direct_chemistry_rule"] and row["functional_annotation_status"] != "REFERENCE_DISABLED":
+            assert row["level_c_functional_contexts"] != "", rid
+            assert row["functional_annotation_status"] != "GRAPH_PROPAGATED", rid
+        if row["reference_activity"] == "DISABLED_EXACT":
+            assert row["is_functional_anchor"] == "false" and float(row["official_parameter_value"]) == 0
+            assert not row["anchor_basis"]
+        if row["is_functional_anchor"] == "true":
+            assert row["direct_chemistry_rule"] and row["reference_activity"] != "DISABLED_EXACT"
+        for anchor_id in filter(None, row["supporting_anchor_ids"].split(";")):
+            assert by[anchor_id]["is_functional_anchor"] == "true"
+            assert by[anchor_id]["reference_activity"] != "DISABLED_EXACT"
+        if row["functional_annotation_status"] == "GRAPH_PROPAGATED":
+            assert row["graph_support_status"] == "MATCHING_HARD_ANCHOR_CONTEXT"
+            assert row["supporting_anchor_ids"] and 1 <= int(row["graph_distance_to_anchor"]) <= 3
+        if row["functional_annotation_status"] == "HUMAN_REVIEW_REQUIRED":
+            assert rid in queue_ids
+        if row["reversibility_class"] == "EXACT_REVERSE_PAIR":
+            partner = by[row["reverse_partner_id"]]
+            assert partner["reverse_partner_id"] == rid
+            assert all(row[k] == partner[k] for k in ("reaction_family_id", "level_c_functional_contexts", "functional_annotation_status", "reference_activity"))
+            assert row["functional_annotation_status"] == "SHARED_JUNCTION" == partner["functional_annotation_status"] or (row["functional_annotation_status"] != "SHARED_JUNCTION" and partner["functional_annotation_status"] != "SHARED_JUNCTION")
+            pairs.add(tuple(sorted((rid, partner["reaction_id"]))))
+        assert row["human_functional_review_required"] == str(rid in queue_ids).lower()
+    assert len(pairs) == 290
+
+    # Approved independent regression fixtures for all explicitly named Gly
+    # chemistry and its Met mirror. Reverse pairs must have identical contexts.
+    fixtures = {
+        "RS_binding": [126,131,132,133,134,135,136,137,188,190,191,192,193,194,195,196,199,201,200,202,203,204,205,206,
+                       151,156,157,158,159,160,161,162,230,232,233,234,235,236,237,238,241,243,242,244,245,246,247,248],
+        "RS_activation": [140,141,127,150,147,148,143,149,197,198,189,217,
+                          165,166,152,175,172,173,168,174,239,240,231,260],
+        "RS_charging": [145,146,176,216,209,210,178,179,180,181,182,183,184,185,
+                        170,171,218,259,251,252,220,221,222,223,224,225,226,227],
+        "RS_activation;RS_charging": [207,208,249,250],
+    }
+    for stage, numbers in fixtures.items():
+        for rid in full(numbers):
+            assert by[rid]["level_c_functional_contexts"] == stage, (rid, stage)
+            assert by[rid]["direct_chemistry_rule"], rid
+    for rid in full([143,149,168,174,176,216,218,259]):
+        assert by[rid]["reference_activity"] == "DISABLED_EXACT"
+        assert by[rid]["is_functional_anchor"] == "false"
+    for rid in full([145,146,170,171]):
+        assert by[rid]["reference_activity"] == "FORWARD_ONLY"
+
+    link_keys = {(r["specific_intermediate"], r["source_family"], r["target_family"]) for r in links}
+    assert ("GlyRS_AMP", "RFAM_010", "RFAM_006") in link_keys
+    assert ("MetRS_AMP", "RFAM_012", "RFAM_008") in link_keys
+    assert all(r["inference_scope"] == "MECHANISTIC_CONNECTIVITY_ONLY" for r in links)
+    assert len({r["reaction_id"] for r in queue}) == len(queue)
+    assert all(r["reason_for_review"] and r["reaction_id"] in by for r in queue)
+    assert all("AUTO_RESOLVED" not in reason for r in queue for reason in r["reason_for_review"].split(";"))
+    assert len(families) == 36
+
+    # Compare actual source stoichiometry, functional stage and parameter
+    # topology across the Gly/Met structures, including RFAM_011/012.
+    def normalized_side(row, key):
+        result = []
+        for name, value in json.loads(row[key]).items():
+            name = (name.replace("GlytRNAGlyGCC", "AAtRNAX").replace("MettRNAfMetCAU", "AAtRNAX")
+                        .replace("tRNAGlyGCC", "tRNAX").replace("tRNAfMetCAU", "tRNAX")
+                        .replace("GlyRS", "AARS").replace("MetRS", "AARS")
+                        .replace("GlyAMP", "AAAMP").replace("MetAMP", "AAAMP")
+                        .replace("Gly", "AA").replace("Met", "AA"))
+            result.append((name, value))
+        return tuple(sorted(result))
+    gly_fams = {"RFAM_005", "RFAM_006", "RFAM_009", "RFAM_010"}
+    met_fams = {"RFAM_007", "RFAM_008", "RFAM_011", "RFAM_012"}
+    met_signatures = defaultdict(list)
+    for row in v2:
+        if row["reaction_family_id"] in met_fams:
+            met_signatures[(normalized_side(row, "reactants_json"), normalized_side(row, "products_json"))].append(row)
+    symmetry_count = 0
+    for row in v2:
+        if row["reaction_family_id"] in gly_fams:
+            matches = met_signatures[(normalized_side(row, "reactants_json"), normalized_side(row, "products_json"))]
+            assert len(matches) == 1, row["reaction_id"]
+            mirror = matches[0]
+            assert row["level_c_functional_contexts"] == mirror["level_c_functional_contexts"]
+            assert row["reference_activity"] == mirror["reference_activity"]
+            symmetry_count += 1
+    assert symmetry_count == 52
+    assert manifest["functional_annotation_status_counts"] == dict(sorted(Counter(r["functional_annotation_status"] for r in v2).items()))
+    assert manifest["human_functional_review_queue"] == len(queue)
+    assert manifest["functional_annotation_unresolved"] == sum(r["functional_annotation_status"] == "HUMAN_REVIEW_REQUIRED" for r in v2)
+    assert manifest["reduction_scientific_review"] == {"pending": 968, "total": 968}
+    assert not any(key in row for row in v2 for key in ("qssa_approved", "fast_equilibrium_approved", "lumping_approved", "deletion_approved"))
+    print("PASS: 968 unique source-identical reactions; 290 symmetric exact reverse channels")
+    print("PASS: hard chemistry priority; double-zero edges never functional anchors")
+    print("PASS: RFAM_005-010 approved regressions; RFAM_011/012 Gly/Met source and parameter-topology symmetry (52/52)")
+    print(f"PASS: {len(links)} specific-intermediate cross-family links; {len(queue)} flagged functional-review rows")
+    print("PASS: reduction scientific review remains 968/968 PENDING; v0/v1 retained")
+    print("STATUS COUNTS:", json.dumps(manifest["functional_annotation_status_counts"], sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()
