@@ -1,0 +1,228 @@
+{
+  "schema_version": "0.1",
+  "status": "HUMAN_APPROVED_VOCABULARY_V0_WITH_SOURCE_COMPLETENESS_ADDITIONS",
+  "source_model": {
+    "identity": "PNAS2017_full_reference",
+    "combined_reactions": 968,
+    "source_subsystems": 26,
+    "canonical_audit_reactions": "models/pnas2017_full_reference/audit/reactions.csv"
+  },
+  "mapping_status": "VOCABULARY_ONLY_NO_968_ROW_ASSIGNMENT",
+  "interpretation": [
+    "Level A = broad PURE functional module.",
+    "Level B = original PNAS/CellDesigner source subsystem provenance.",
+    "Level C = project functional stage used to explain what a reaction does in the PURE workflow.",
+    "mechanistic_reaction_type is orthogonal to Level C and retains the original CellDesigner graph type.",
+    "A Level-C label is not evidence for QSSA, fast equilibrium, lumpability, or deletion."
+  ],
+  "source_checks": {
+    "combined_reactions": 968,
+    "original_subsystems": 26,
+    "sbml_reversible_true": 0,
+    "exact_reverse_stoichiometry_pairs": 290,
+    "reaction_ids_in_exact_reverse_pairs": 580,
+    "ambiguous_reverse_signature_groups": 0,
+    "mechanistic_reaction_type_counts": {
+      "DISSOCIATION": 266,
+      "HETERODIMER_ASSOCIATION": 266,
+      "STATE_TRANSITION": 436
+    },
+    "degradation_related_reactions": 388,
+    "fMet_tRNASynthesis_reactions": 29
+  },
+  "reaction_row_required_fields": [
+    "reaction_id",
+    "level_a_module",
+    "level_b_subsystem",
+    "level_c_functional_stage",
+    "mechanistic_reaction_type",
+    "reactants",
+    "products",
+    "stoichiometry",
+    "reversibility_class",
+    "reverse_partner_id",
+    "reverse_pair_basis",
+    "exact_reversible_merge",
+    "protected_species_touched",
+    "protected_pool_touched",
+    "resource_ledger_effect",
+    "occupancy_effect",
+    "candidate_reduction_type",
+    "human_review_status"
+  ],
+  "reversibility_classes": [
+    "IRREVERSIBLE",
+    "EXACT_REVERSE_PAIR",
+    "POSSIBLE_REVERSE_PAIR",
+    "UNKNOWN"
+  ],
+  "reversibility_rule": "EXACT_REVERSE_PAIR means reactant/product stoichiometric signatures are exact reverses. Two directed rates may be represented as one reversible channel only if v_forward, v_reverse, v_net=v_forward-v_reverse, both original reaction IDs, and original kinetic laws remain recoverable. This is an exact representation rewrite, not a fast-equilibrium claim.",
+  "mechanistic_reaction_types": [
+    "HETERODIMER_ASSOCIATION",
+    "DISSOCIATION",
+    "STATE_TRANSITION"
+  ],
+  "level_c_functional_stages": [
+    {
+      "id": "RS_binding",
+      "level_a_module": "aminoacylation",
+      "display_group": "RS",
+      "coverage_role": "active_process",
+      "meaning": "aaRS 与 amino acid / ATP / tRNA 的结合与解离；用于描述 synthetase occupancy，不代表 QSSA 已成立。"
+    },
+    {
+      "id": "RS_activation",
+      "level_a_module": "aminoacylation",
+      "display_group": "RS",
+      "coverage_role": "active_process",
+      "meaning": "ATP 驱动 amino-acid activation，宏观上保留 AA + ATP -> aminoacyl-AMP + PPi 的资源转换。"
+    },
+    {
+      "id": "RS_charging",
+      "level_a_module": "aminoacylation",
+      "display_group": "RS",
+      "coverage_role": "active_process",
+      "meaning": "activated amino acid 转移到 tRNA，形成 aa-tRNA 并释放 AMP、回收 synthetase。"
+    },
+    {
+      "id": "RS_to_INIT_formylation",
+      "level_a_module": "aminoacylation",
+      "display_group": "RS/INIT bridge",
+      "coverage_role": "active_process",
+      "meaning": "MTF 催化 initiator Met-tRNA -> fMet-tRNA 的桥接步骤；它不是 aaRS charging，但当前 PNAS provenance 将 FMet_tRNASynthesis 放在 aminoacylation 侧，因此单独保留。"
+    },
+    {
+      "id": "INIT_assembly",
+      "level_a_module": "initiation",
+      "display_group": "INIT",
+      "coverage_role": "active_process",
+      "meaning": "30S、mRNA 与 IF1/IF2/IF3 等形成 pre-initiation assembly。"
+    },
+    {
+      "id": "INIT_tRNA_recruitment",
+      "level_a_module": "initiation",
+      "display_group": "INIT",
+      "coverage_role": "active_process",
+      "meaning": "initiator fMet-tRNA 被招募到 initiation complex。"
+    },
+    {
+      "id": "INIT_energy_commitment",
+      "level_a_module": "initiation",
+      "display_group": "INIT",
+      "coverage_role": "active_process",
+      "meaning": "IF2 等相关 GTP/GDP/Pi 转换，使 initiation 向 productive 方向推进。"
+    },
+    {
+      "id": "INIT_70S_formation",
+      "level_a_module": "initiation",
+      "display_group": "INIT",
+      "coverage_role": "active_process",
+      "meaning": "50S 加入并形成 70S initiation complex。"
+    },
+    {
+      "id": "INIT_factor_release",
+      "level_a_module": "initiation",
+      "display_group": "INIT",
+      "coverage_role": "active_process",
+      "meaning": "initiation factors 释放，形成 elongation-ready ribosome。"
+    },
+    {
+      "id": "ELONG_aa_tRNA_delivery",
+      "level_a_module": "elongation",
+      "display_group": "ELONG",
+      "coverage_role": "active_process",
+      "meaning": "EF-Tu/EF-Ts 与 charged tRNA 形成并递送 ternary complex 到 translating ribosome。"
+    },
+    {
+      "id": "ELONG_energy_coupling",
+      "level_a_module": "elongation",
+      "display_group": "ELONG",
+      "coverage_role": "active_process",
+      "meaning": "elongation 中 EF-Tu / EF-G 相关 GTP -> GDP + Pi 的能量耦合步骤。"
+    },
+    {
+      "id": "ELONG_peptide_formation",
+      "level_a_module": "elongation",
+      "display_group": "ELONG",
+      "coverage_role": "active_process",
+      "meaning": "真正导致 peptide length 增长的 productive chemistry。"
+    },
+    {
+      "id": "ELONG_translocation",
+      "level_a_module": "elongation",
+      "display_group": "ELONG",
+      "coverage_role": "active_process",
+      "meaning": "peptide formation 后 ribosome/tRNA complex 沿 mRNA 推进一个 codon/stage。"
+    },
+    {
+      "id": "ELONG_tRNA_release",
+      "level_a_module": "elongation",
+      "display_group": "ELONG",
+      "coverage_role": "active_process",
+      "meaning": "deacylated tRNA 从 ribosome-bound state 返回 free tRNA pool。"
+    },
+    {
+      "id": "TERM_factor_binding",
+      "level_a_module": "termination / ribosome recycling",
+      "display_group": "TERM",
+      "coverage_role": "active_process",
+      "meaning": "RF1/RF2 等识别并结合 stop-codon complex。"
+    },
+    {
+      "id": "TERM_peptide_release",
+      "level_a_module": "termination / ribosome recycling",
+      "display_group": "TERM",
+      "coverage_role": "active_process",
+      "meaning": "peptidyl-tRNA hydrolysis / completed peptide release。"
+    },
+    {
+      "id": "TERM_energy_coupling",
+      "level_a_module": "termination / ribosome recycling",
+      "display_group": "TERM",
+      "coverage_role": "active_process",
+      "meaning": "RF3 等 termination turnover 中的 GTP/GDP/Pi 能量耦合。"
+    },
+    {
+      "id": "RECYCLE_disassembly",
+      "level_a_module": "termination / ribosome recycling",
+      "display_group": "RECYCLE",
+      "coverage_role": "active_process",
+      "meaning": "RRF/EF-G 等促进 post-termination ribosome 拆解，恢复 30S/50S pools。"
+    },
+    {
+      "id": "RECYCLE_component_release",
+      "level_a_module": "termination / ribosome recycling",
+      "display_group": "RECYCLE",
+      "coverage_role": "active_process",
+      "meaning": "mRNA、tRNA、translation factors 等从 post-termination complex 返回 free pools。"
+    },
+    {
+      "id": "EN_binding",
+      "level_a_module": "energy regeneration",
+      "display_group": "EN",
+      "coverage_role": "active_process",
+      "meaning": "CK/NDK/MK/PPiase 等与 nucleotide、CP、Cr、PPi/Pi 的结合/解离与 enzyme occupancy。"
+    },
+    {
+      "id": "EN_energy_transfer",
+      "level_a_module": "energy regeneration",
+      "display_group": "EN",
+      "coverage_role": "active_process",
+      "meaning": "CP + ADP <-> Cr + ATP；ATP + GDP <-> ADP + GTP；ATP + AMP <-> 2 ADP 等 carrier conversion。"
+    },
+    {
+      "id": "EN_byproduct_processing",
+      "level_a_module": "energy regeneration",
+      "display_group": "EN",
+      "coverage_role": "active_process",
+      "meaning": "例如 PPi -> 2 Pi；不直接生成 ATP/GTP，但必须保留 phosphate 与 particle accounting。"
+    },
+    {
+      "id": "DEG_sink",
+      "level_a_module": "cross_cutting",
+      "display_group": "coverage-only",
+      "coverage_role": "coverage_only",
+      "meaning": "所有进入 *_degraded terminal sinks 的 degradation/inactivation reaction。它不是 Mavelli 功能主链，但为了覆盖原 968 reactions 必须单独标记；Class-C species 仍需 cumulative accounting。"
+    }
+  ]
+}
