@@ -7,7 +7,7 @@ This is a structural and tool-compatibility audit of the **unaltered source file
 - Combined source: `models/pnas2017_full_reference/original/fMGG_synthesis.xml`; SHA-256 `dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df`.
 - Subsystem archive: `references/PNAS2017_Matsuura/raw/SBML_files.zip`; SHA-256 `24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03`.
 - Parser: python-libsbml 5.21.2.
-- Regenerate: `C:\Users\sean\Desktop\PURE_sbml_env_20260924\Scripts\python.exe scripts/audit_pnas2017_sbml.py` (use `--simbiology skip` where MATLAB is unavailable).
+- Regenerate with CPython 3.12 and python-libsbml 5.21.2: `python scripts/audit_pnas2017_sbml.py` (use `--simbiology skip` where MATLAB is unavailable).
 - Output: `models/pnas2017_full_reference/audit/{species,reactions,parameters,modules}.csv` and this report. Original SBML IDs remain in every inventory row.
 
 ## SBML inventory

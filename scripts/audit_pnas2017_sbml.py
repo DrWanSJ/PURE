@@ -295,7 +295,7 @@ def markdown_report(
         f"- Combined source: `{relative(source_path)}`; SHA-256 `{source_hash}`.",
         f"- Subsystem archive: `{relative(zip_path)}`; SHA-256 `{zip_hash}`.",
         f"- Parser: python-libsbml {libsbml.getLibSBMLDottedVersion()}.",
-        "- Regenerate: `C:\\Users\\sean\\Desktop\\PURE_sbml_env_20260924\\Scripts\\python.exe scripts/audit_pnas2017_sbml.py` "
+        "- Regenerate: with CPython 3.12 and python-libsbml 5.21.2, run `python scripts/audit_pnas2017_sbml.py` "
         "(use `--simbiology skip` where MATLAB is unavailable).",
         "- Output: `models/pnas2017_full_reference/audit/{species,reactions,parameters,modules}.csv` "
         "and this report. Original SBML IDs remain in every inventory row.",
