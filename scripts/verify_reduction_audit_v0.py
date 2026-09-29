@@ -42,6 +42,28 @@ def rows(path):
         return list(csv.DictReader(stream))
 
 
+def check_candidate_coverage(laws, candidates):
+    """Prove one distinct candidate for every (law, supported species) pair."""
+    law_ids = [law["conservation_id"] for law in laws]
+    if len(law_ids) != len(set(law_ids)):
+        raise AssertionError("duplicate conservation_id")
+    candidate_ids = [row["candidate_id"] for row in candidates]
+    if len(candidate_ids) != len(set(candidate_ids)):
+        raise AssertionError("duplicate candidate_id")
+    expected = {
+        (law["conservation_id"], species)
+        for law in laws
+        for species, coefficient in json.loads(law["species_coefficients_json"]).items()
+        if fraction(coefficient) != 0
+    }
+    actual = [(row["conservation_id"], row["eliminated_species"]) for row in candidates]
+    if len(actual) != len(set(actual)):
+        raise AssertionError("duplicate (conservation_id, eliminated_species) candidate")
+    missing, extra = expected - set(actual), set(actual) - expected
+    if missing or extra:
+        raise AssertionError(f"candidate coverage mismatch: missing={sorted(missing)}; extra={sorted(extra)}")
+
+
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -170,6 +192,35 @@ def reverse_pairs(reactions, stoich):
     return pairs
 
 
+def check_reverse_pair_semantics(reactions, stoich, pairs):
+    """Reject mutated pair identities even when the pair count is unchanged."""
+    by_id = {reaction["id"]: (reaction, col) for reaction, col in zip(reactions, stoich)}
+    if len(by_id) != len(reactions):
+        raise AssertionError("duplicate source reaction ID")
+    endpoints = [rid for pair in pairs for rid in pair]
+    if len(endpoints) != len(set(endpoints)):
+        raise AssertionError("reaction reused in reverse channels")
+    if not set(endpoints) <= set(by_id):
+        raise AssertionError("reverse channel references missing source reaction")
+    for first, second in pairs:
+        forward, s_forward = by_id[first]
+        reverse, s_reverse = by_id[second]
+        if forward["reactants"] != reverse["products"] or forward["products"] != reverse["reactants"]:
+            raise AssertionError(f"reactant/product swap mismatch: {first}/{second}")
+        if s_forward != {i: -value for i, value in s_reverse.items()}:
+            raise AssertionError(f"stoichiometric sign mismatch: {first}/{second}")
+        for reaction in (forward, reverse):
+            if reaction["factors"].count("k1") != 1 or "k" not in reaction:
+                raise AssertionError(f"source kinetic law/parameter unavailable: {reaction['id']}")
+
+
+def directed_channel_ledger(forward_flux, reverse_flux):
+    """Keep the two gross directions; net flux is only the RHS representation."""
+    return {"forward": forward_flux, "reverse": reverse_flux,
+            "net": forward_flux - reverse_flux,
+            "gross": forward_flux + reverse_flux}
+
+
 def exact_rank(vectors):
     # Independent fraction elimination with highest-index pivots.
     pivots = {}
@@ -272,6 +323,7 @@ def verify_invariants():
     id_index = {r["id"]: i for i, r in enumerate(reactions)}
     assert {r["sbml_reaction_id"] for r in decisions} == set(by_id)
     pairs = reverse_pairs(reactions, stoich)
+    check_reverse_pair_semantics(reactions, stoich, pairs)
     reverse = rows(OUT / "exact_reverse_channels_v0.csv")
     assert {(r["forward_reaction_id"], r["reverse_reaction_id"]) for r in reverse} == set(pairs)
     assert len(reverse) == manifest["exact_reverse_channels"] == 290
@@ -373,6 +425,7 @@ def verify_invariants():
     classes = dict(re.findall(r"^\|\s*\d+\s*\|\s*`([^`]+)`\s*\|.*?\|\s*\*\*(I|II-A|II-B|III|C)\*\*\s*\|", detail, re.M))
     assert len(classes) == 241
     candidates = rows(OUT / "conservation_elimination_candidates_v0.csv")
+    check_candidate_coverage(laws, candidates)
     assert len(candidates) == sum(int(r["support_size"]) for r in laws)
     for row in candidates:
         law, vector = vectors[row["conservation_id"]]
