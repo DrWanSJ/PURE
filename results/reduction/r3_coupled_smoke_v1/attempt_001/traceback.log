@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "C:\Users\sean\Desktop\GUV\scripts\diagnose_r3_coupled_smoke_v1.py", line 92, in main
+    reduced = solve_ivp(reduced_rhs, (0.0, 1.0), z0, method="BDF", jac=reduced_jac,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\Anaconda\Lib\site-packages\scipy\integrate\_ivp\ivp.py", line 655, in solve_ivp
+    message = solver.step()
+              ^^^^^^^^^^^^^
+  File "D:\Code\Anaconda\Lib\site-packages\scipy\integrate\_ivp\base.py", line 197, in step
+    success, message = self._step_impl()
+                       ^^^^^^^^^^^^^^^^^
+  File "D:\Code\Anaconda\Lib\site-packages\scipy\integrate\_ivp\bdf.py", line 366, in _step_impl
+    converged, n_iter, y_new, d = solve_bdf_system(
+                                  ^^^^^^^^^^^^^^^^^
+  File "D:\Code\Anaconda\Lib\site-packages\scipy\integrate\_ivp\bdf.py", line 43, in solve_bdf_system
+    f = fun(t_new, y)
+        ^^^^^^^^^^^^^
+  File "D:\Code\Anaconda\Lib\site-packages\scipy\integrate\_ivp\base.py", line 154, in fun
+    return self.fun_single(t, y)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\Anaconda\Lib\site-packages\scipy\integrate\_ivp\base.py", line 23, in fun_wrapped
+    return np.asarray(fun(t, y), dtype=dtype)
+                      ^^^^^^^^^
+  File "C:\Users\sean\Desktop\GUV\scripts\diagnose_r3_coupled_smoke_v1.py", line 74, in reduced_rhs
+    q = closure(z)
+        ^^^^^^^^^^
+  File "C:\Users\sean\Desktop\GUV\scripts\diagnose_r3_coupled_smoke_v1.py", line 68, in closure
+    raise RuntimeError(f"Invalid closure: residual={solved['residual_max']}; "
+RuntimeError: Invalid closure: residual=6.300931998381998e-13; min_q=3.3492279211947925e-19; min_carrier=0.00033071915678462016; message=The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.

@@ -101,5 +101,7 @@ scripts/r3_candidate_runtime_v1.py text eol=lf
 scripts/screen_r3_closure_grid_v1.py text eol=lf
 scripts/test_r3_candidate_runtime_v1.py text eol=lf
 docs/reduction/r3_initial_closure_screen_v1.md text eol=lf
+scripts/diagnose_r3_coupled_smoke_v1.py text eol=lf
+docs/reduction/r3_coupled_smoke_v1.md text eol=lf
 # Keep raw acceptance and negative-run evidence byte-exact.
 results/reduction/** -text -diff

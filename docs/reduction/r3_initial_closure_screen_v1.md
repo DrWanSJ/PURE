@@ -14,9 +14,13 @@ retained coordinates make 193 slow coordinates `z`. The runtime evaluates
 the 968 canonical directed rates. Its fast residual is the 21 author-source
 stoichiometric RHS rows, `G(z,q)=S_q v(x(z,q))`; its analytic `G_q` includes
 the carrier reconstruction. The slow carrier derivative is exactly
-`F_carrier-C F_q`. No directed reaction, gross extent, or free GlyAMP/MetAMP
-is removed. Four semantic tests pass, including a directional finite
-difference Jacobian check and a wrong-sign carrier-Jacobian mutant.
+`F_carrier-C F_q`. The analytic slow Jacobian uses
+`dq/dz=-G_q^{-1}G_z` through the full R1 and carrier reconstruction.
+A directional finite difference through solved closure agrees to better
+than `1e-6` relative; deleting the fast derivative term fails the same
+test by more than `1e-2` relative. No directed reaction, gross extent,
+or free GlyAMP/MetAMP is removed. Five semantic tests pass, including
+a wrong-sign carrier-Jacobian mutant.
 
 The first screen attempt remains in `attempt_001`: SciPy HYBR reported
 success at the adverse initial condition with raw fast residual
@@ -24,10 +28,12 @@ success at the adverse initial condition with raw fast residual
 analytic-Jacobian Newton correction reduced it to
 `2.2737367544323206e-12` without changing any source or gate. The runtime
 now applies at most three fixed, residual-decreasing Newton corrections
-after HYBR. Attempts 002 and 003 retain that refinement; attempt 003 pins
-runtime/screen script, method, chart and grid hashes.
+after HYBR. Attempts 002-005 retain that refinement; attempts 003-005
+pin runtime/screen script, method, chart and grid hashes. Attempt 005 binds
+the chain-rule slow Jacobian and residual-plus-Jacobian convergence rule;
+it is the current initial-root screen evidence.
 
-In attempt 003, two feasible starts per case converged to the same local
+In attempt 005, two feasible starts per case converged to the same local
 root in all ten cases. All roots were nonnegative to the declared numerical
 root tolerance; all 21 fast modes had negative real parts at `t=0`.
 Maximum initial fast-row residual was `2.1714186004828662e-11`, and
@@ -38,5 +44,5 @@ initial-point results, not a trajectory-wide `epsilon` screen or evidence
 of QSSA accuracy. The adverse condition remains in the grid and may fail
 the full coupled comparison.
 
-Evidence: `results/reduction/r3_closure_grid_screen_v1/attempt_003/screen.csv`
+Evidence: `results/reduction/r3_closure_grid_screen_v1/attempt_005/screen.csv`
 and `result.json`, with prior attempts preserved beside them.

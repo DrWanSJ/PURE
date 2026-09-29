@@ -14,6 +14,7 @@ import numpy as np
 from scipy.optimize import root
 
 from runtime_reconstruction_rhs import SourceCoordinateRuntime
+from validate_source_coordinates_full_v1 import rate_jacobian, source_matrix
 from verify_reduction_audit_v0 import OUT
 
 
@@ -43,6 +44,21 @@ class R3CandidateRuntime:
         self.Sq = np.array([[float(self.source.stoich[j].get(i, 0)) for j in self.fast_reactions]
                             for i in self.q_index])
         assert self.Sq.shape == (21, 103)
+        self.S = source_matrix(self.source)
+        self.Xz = np.zeros((len(self.source.species), len(self.slow_index)))
+        for position, i in enumerate(self.slow_index):
+            self.Xz[i, position] = 1.0
+        for e, i in enumerate(self.source.e_index):
+            for retained_i, coefficient in self.source.B[e].items():
+                position = self.slow_position.get(retained_i)
+                if position is not None:
+                    self.Xz[i, position] = float(coefficient)
+        self.T = np.zeros((len(self.slow_index), len(self.source.species)))
+        for position, i in enumerate(self.slow_index):
+            self.T[position, i] = 1.0
+        for row, i in enumerate(self.carrier_index):
+            self.T[self.slow_position[i], self.q_index] -= self.C[row]
+        assert np.max(np.abs(self.T @ self.D)) == 0.0
         self._last_root = None
 
     def initial_slow(self, full_initial):
@@ -131,7 +147,16 @@ class R3CandidateRuntime:
         min_q = float(np.min(q))
         min_carrier = float(np.min(state[self.carrier_index]))
         physical = min_q >= -1e-12 and min_carrier >= -1e-12
-        valid = result.success and residual_max <= 1e-10 and physical
+        try:
+            correction = np.linalg.solve(jacobian, -residual)
+            correction_max = float(np.max(np.abs(correction)))
+            condition_number = float(np.linalg.cond(jacobian))
+        except np.linalg.LinAlgError:
+            correction_max = float("inf")
+            condition_number = float("inf")
+        local_convergence = (residual_max <= 1e-10 and correction_max <= 1e-10
+                             and condition_number < 1e12)
+        valid = local_convergence and physical
         if valid:
             self._last_root = q.copy()
         return {"q": q, "state": state, "residual": residual,
@@ -139,6 +164,9 @@ class R3CandidateRuntime:
                 "min_carrier": min_carrier, "physical": physical,
                 "solver_success": bool(result.success), "nfev": int(result.nfev),
                 "njev": int(result.njev), "valid_local_root": bool(valid),
+                "local_convergence_by_residual_and_jacobian": bool(local_convergence),
+                "Gq_condition_number": condition_number,
+                "newton_correction_max_abs": correction_max,
                 "hybr_initial_residual_max": root_initial_residual_max,
                 "newton_refinement_steps": refinement_steps,
                 "message": str(result.message)}
@@ -154,3 +182,17 @@ class R3CandidateRuntime:
         for row, i in enumerate(self.carrier_index):
             slow_derivative[self.slow_position[i]] -= adjustment[row]
         return slow_derivative, np.asarray(rates), state
+
+    def slow_jacobian(self, z, q, full_initial):
+        """Apply dh/dz=-G_q^-1 G_z, including R1 and carrier reconstruction."""
+        state = self.reconstruct(z, q, full_initial)
+        full_jacobian = self.S @ rate_jacobian(self.source, state)
+        fast_jacobian = full_jacobian[self.q_index, :]
+        Gq = np.asarray(fast_jacobian @ self.D)
+        Gz = np.asarray(fast_jacobian @ self.Xz)
+        implicit = -np.linalg.solve(Gq, Gz)
+        lifted = self.Xz + self.D @ implicit
+        reduced = np.asarray(self.T @ (full_jacobian @ lifted))
+        assert reduced.shape == (193, 193)
+        return reduced, {"Gq_condition_number": float(np.linalg.cond(Gq)),
+                         "implicit_derivative_max_abs": float(np.max(np.abs(implicit)))}

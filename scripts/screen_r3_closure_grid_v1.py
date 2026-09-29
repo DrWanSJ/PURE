@@ -15,7 +15,7 @@ import scipy
 from r3_candidate_runtime_v1 import R3CandidateRuntime
 from verify_reduction_audit_v0 import OUT, ROOT, fraction, rows
 
-RUN = ROOT / "results/reduction/r3_closure_grid_screen_v1/attempt_003"
+RUN = ROOT / "results/reduction/r3_closure_grid_screen_v1/attempt_005"
 GRID = OUT / "r3_validation_grid_v1.csv"
 METHOD = OUT / "r3_aminoacylation_qssa_method.md"
 CHART = OUT / "r3_carrier_chart_v1.json"
