@@ -1,0 +1,45 @@
+Integrating full 241-state source with 968 direct extents
+Full success=True, nfev=3210, njev=1: The solver successfully reached the end of the integration interval.
+Integrating 214 source-general coordinates with 968 direct extents
+Reduced success=True, nfev=3210, njev=1: The solver successfully reached the end of the integration interval.
+{
+  "pass": true,
+  "maxima": {
+    "species": 1.0621015178458038e-10,
+    "rates": 1.0621010915201623e-07,
+    "direct_extents": 1.0670930805645185e-10,
+    "class_I": 9.991847268771682e-12,
+    "class_C": 1.416740502167595e-11,
+    "resources": 9.991847268771682e-12,
+    "full_balance_absolute": 1.8671286738936033e-10,
+    "reduced_balance_absolute": 1.2652989767047984e-10,
+    "full_law_absolute": 1.8917489796876907e-10,
+    "reduced_law_absolute": 1.3642420526593924e-12
+  },
+  "physical_domain": {
+    "full": {
+      "minimum": 0.0,
+      "negative_count": 0,
+      "numerical_negative_count": 0,
+      "domain_failure_count": 0
+    },
+    "reduced": {
+      "minimum": -6.887483589813082e-12,
+      "negative_count": 3389,
+      "numerical_negative_count": 3389,
+      "domain_failure_count": 0
+    },
+    "retained": {
+      "minimum": -3.0621245534196342e-12,
+      "negative_count": 1013,
+      "numerical_negative_count": 1013,
+      "domain_failure_count": 0
+    },
+    "reconstructed": {
+      "minimum": -6.887483589813082e-12,
+      "negative_count": 2376,
+      "numerical_negative_count": 2376,
+      "domain_failure_count": 0
+    }
+  }
+}

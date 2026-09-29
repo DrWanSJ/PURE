@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "stage": "PREFLIGHT",
+  "created_utc": "2026-09-29T02:04:42.918291+00:00",
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "branch": "research/reduction-audit-v0",
+  "source_commit": "2d74ce12af0e1522d3478551fb9ef400eadab159",
+  "origin_main_local": "3b0e0f9c482129fa40c2c442388866e2dc3a1e00",
+  "python_executable": "C:\\Python311\\python.exe",
+  "python_version": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "environment": {
+    "PYTHONHASHSEED": null,
+    "PYTHONPATH": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null
+  },
+  "package_versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.14.0",
+    "sympy": "1.13.1",
+    "libroadrunner": null,
+    "roadrunner": null,
+    "lxml": null
+  },
+  "source_sha256": {
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "docs/reduction/species_information_contract_detailed.md": "24340aa5ca1e1fa262124407cd4ed02093066cb09ace89195475a7aa38630210"
+  },
+  "source_hashes_match_audit_v0": true,
+  "commands": [
+    {
+      "label": "audit_before_build",
+      "argv": [
+        "C:\\Python311\\python.exe",
+        "scripts/verify_reduction_audit_v0.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "git_safe_directory_environment": {
+        "GIT_CONFIG_COUNT": "1",
+        "GIT_CONFIG_KEY_0": "safe.directory",
+        "GIT_CONFIG_VALUE_0": "C:/Users/sean/Desktop/GUV"
+      },
+      "started_utc": "2026-09-29T02:04:43.068855+00:00",
+      "ended_utc": "2026-09-29T02:04:47.082801+00:00",
+      "exit_code": 0,
+      "stdout_path": "audit_before_build.stdout.log",
+      "stderr_path": "audit_before_build.stderr.log"
+    },
+    {
+      "label": "audit_builder",
+      "argv": [
+        "C:\\Python311\\python.exe",
+        "scripts/build_reduction_audit_v0.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "git_safe_directory_environment": {
+        "GIT_CONFIG_COUNT": "1",
+        "GIT_CONFIG_KEY_0": "safe.directory",
+        "GIT_CONFIG_VALUE_0": "C:/Users/sean/Desktop/GUV"
+      },
+      "started_utc": "2026-09-29T02:04:47.082801+00:00",
+      "ended_utc": "2026-09-29T02:04:48.598720+00:00",
+      "exit_code": 0,
+      "stdout_path": "audit_builder.stdout.log",
+      "stderr_path": "audit_builder.stderr.log"
+    },
+    {
+      "label": "audit_after_build",
+      "argv": [
+        "C:\\Python311\\python.exe",
+        "scripts/verify_reduction_audit_v0.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "git_safe_directory_environment": {
+        "GIT_CONFIG_COUNT": "1",
+        "GIT_CONFIG_KEY_0": "safe.directory",
+        "GIT_CONFIG_VALUE_0": "C:/Users/sean/Desktop/GUV"
+      },
+      "started_utc": "2026-09-29T02:04:48.598720+00:00",
+      "ended_utc": "2026-09-29T02:04:52.533605+00:00",
+      "exit_code": 0,
+      "stdout_path": "audit_after_build.stdout.log",
+      "stderr_path": "audit_after_build.stderr.log"
+    },
+    {
+      "label": "pnas_integration",
+      "argv": [
+        "C:\\Python311\\python.exe",
+        "scripts/verify_pnas2017_integration.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "git_safe_directory_environment": {
+        "GIT_CONFIG_COUNT": "1",
+        "GIT_CONFIG_KEY_0": "safe.directory",
+        "GIT_CONFIG_VALUE_0": "C:/Users/sean/Desktop/GUV"
+      },
+      "started_utc": "2026-09-29T02:04:52.533605+00:00",
+      "ended_utc": "2026-09-29T02:05:22.201731+00:00",
+      "exit_code": 0,
+      "stdout_path": "pnas_integration.stdout.log",
+      "stderr_path": "pnas_integration.stderr.log"
+    },
+    {
+      "label": "species_contract",
+      "argv": [
+        "C:\\Python311\\python.exe",
+        "scripts/verify_species_information_contract.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "git_safe_directory_environment": {
+        "GIT_CONFIG_COUNT": "1",
+        "GIT_CONFIG_KEY_0": "safe.directory",
+        "GIT_CONFIG_VALUE_0": "C:/Users/sean/Desktop/GUV"
+      },
+      "started_utc": "2026-09-29T02:05:22.201731+00:00",
+      "ended_utc": "2026-09-29T02:05:22.284914+00:00",
+      "exit_code": 0,
+      "stdout_path": "species_contract.stdout.log",
+      "stderr_path": "species_contract.stderr.log"
+    },
+    {
+      "label": "functional_annotation",
+      "argv": [
+        "C:\\Python311\\python.exe",
+        "scripts/verify_reaction_level_annotation_v2.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "git_safe_directory_environment": {
+        "GIT_CONFIG_COUNT": "1",
+        "GIT_CONFIG_KEY_0": "safe.directory",
+        "GIT_CONFIG_VALUE_0": "C:/Users/sean/Desktop/GUV"
+      },
+      "started_utc": "2026-09-29T02:05:22.285627+00:00",
+      "ended_utc": "2026-09-29T02:05:22.507378+00:00",
+      "exit_code": 0,
+      "stdout_path": "functional_annotation.stdout.log",
+      "stderr_path": "functional_annotation.stderr.log"
+    },
+    {
+      "label": "pnas_artifacts",
+      "argv": [
+        "C:\\Python311\\python.exe",
+        "scripts/verify_pnas2017_artifacts.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "git_safe_directory_environment": {
+        "GIT_CONFIG_COUNT": "1",
+        "GIT_CONFIG_KEY_0": "safe.directory",
+        "GIT_CONFIG_VALUE_0": "C:/Users/sean/Desktop/GUV"
+      },
+      "started_utc": "2026-09-29T02:05:22.507378+00:00",
+      "ended_utc": "2026-09-29T02:05:22.822689+00:00",
+      "exit_code": 0,
+      "stdout_path": "pnas_artifacts.stdout.log",
+      "stderr_path": "pnas_artifacts.stderr.log"
+    },
+    {
+      "label": "diff_check",
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/sean/Desktop/GUV",
+        "diff",
+        "--check"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "git_safe_directory_environment": {
+        "GIT_CONFIG_COUNT": "1",
+        "GIT_CONFIG_KEY_0": "safe.directory",
+        "GIT_CONFIG_VALUE_0": "C:/Users/sean/Desktop/GUV"
+      },
+      "started_utc": "2026-09-29T02:05:22.822689+00:00",
+      "ended_utc": "2026-09-29T02:05:22.940232+00:00",
+      "exit_code": 0,
+      "stdout_path": "diff_check.stdout.log",
+      "stderr_path": "diff_check.stderr.log"
+    }
+  ],
+  "all_commands_passed": true
+}

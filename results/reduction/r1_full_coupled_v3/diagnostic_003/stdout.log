@@ -1,0 +1,42 @@
+Integrating full and reduced blocks on shared adaptive steps
+{
+  "pass": true,
+  "maxima": {
+    "species": 1.159965457020462e-10,
+    "rates": 1.1599649951676838e-07,
+    "direct_extents": 1.5225509741867427e-10,
+    "class_I": 2.337759096005497e-12,
+    "class_C": 3.402152940304908e-12,
+    "resources": 2.337759096005497e-12,
+    "full_balance_absolute": 1.6367707189601788e-10,
+    "reduced_balance_absolute": 1.6213874687309726e-10,
+    "full_law_absolute": 1.6007106751203537e-10,
+    "reduced_law_absolute": 1.3642420526593924e-12
+  },
+  "physical_domain": {
+    "full": {
+      "minimum": 0.0,
+      "negative_count": 0,
+      "numerical_negative_count": 0,
+      "domain_failure_count": 0
+    },
+    "reduced": {
+      "minimum": -2.9424507837518523e-12,
+      "negative_count": 3152,
+      "numerical_negative_count": 3152,
+      "domain_failure_count": 0
+    },
+    "retained": {
+      "minimum": -7.637533250782745e-14,
+      "negative_count": 226,
+      "numerical_negative_count": 226,
+      "domain_failure_count": 0
+    },
+    "reconstructed": {
+      "minimum": -2.9424507837518523e-12,
+      "negative_count": 2926,
+      "numerical_negative_count": 2926,
+      "domain_failure_count": 0
+    }
+  }
+}

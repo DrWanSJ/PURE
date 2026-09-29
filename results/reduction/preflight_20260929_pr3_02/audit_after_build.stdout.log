@@ -1,0 +1,7 @@
+PASS: 968 canonical reactions / 241 species; SBML, author parameters, normalized kinetic logic and functional bytes pinned
+PASS: 290 independent exact reverse channels; directed gross fluxes retained; scaled RHS <= 1e-12
+PASS: exact rational source rank 214 / nullity 27; frozen active rank 177 / 37 additional invariants
+PASS: 897 one-at-a-time exact reconstruction alternatives; Class-I initial reconstruction exact
+PASS: 485 MathML-proved frozen-zero directed fluxes; 483 active directions retained
+PASS: 18 grouped low-confidence scientific review items; reduction decisions 968/968 PENDING
+NOTE: R3+ approximation and final reduced model are not approved
