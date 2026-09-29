@@ -1,0 +1,334 @@
+{
+  "author_active_directions": 483,
+  "author_initial_csv_sha256": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+  "author_parameter_csv_sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+  "canonical_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "conservation_laws_sha256": "f7cc968ddae86bae6bf482eb92a7b4b410f8e0b63ef3af40f513ecf738560146",
+  "domain_decision": "DOMAIN_DECISION_REQUIRED",
+  "frozen_reference_only_laws": 37,
+  "frozen_zero_directions": 485,
+  "ledger_rule": "Retain every canonical directed reaction and recover each gross directed extent; never replace gross ledgers with absolute net extent.",
+  "reactivation_by_pair_pattern": {
+    "BIDIRECTIONAL_ZERO": 32,
+    "ONLY_REVERSE_ZERO": 65,
+    "UNPAIRED_ZERO": 388
+  },
+  "reactivation_csv_sha256": "2192bfa5b7988ebf3cdfa6b35d5b1a37e4312028cfe1f40a0de948557a46b1c8",
+  "reactivations_invalidating_frozen_law_by_pair_pattern": {
+    "BIDIRECTIONAL_ZERO": 8,
+    "ONLY_REVERSE_ZERO": 0,
+    "UNPAIRED_ZERO": 388
+  },
+  "schema_version": "1.0",
+  "scope_rule": "Frozen-only laws may optimize the author-condition execution view; they cannot delete states in the generic variable-condition model.",
+  "singleton_initial_perturbations": [
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_028",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "fMet"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_029",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "RS50S_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_030",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "RS30S_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_031",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "fMettRNAfMetCAU_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_032",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "tRNAfMetCAU_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_033",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "fMet_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_034",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "mRNA_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_035",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "Pept0002tRNAGlyGCC"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_036",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "EFTu_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_037",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "EFG_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_038",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "GlytRNAGlyGCC_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_039",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "Pept0002tRNAGlyGCC_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_040",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "Pept0002"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_041",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "tRNAGlyGCC_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_042",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "Pept0002_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_043",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "Pept0003tRNAGlyGCC"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_044",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "Pept0003tRNAGlyGCC_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_045",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "GlyRS_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_046",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "MetRS_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_047",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "MettRNAfMetCAU_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_048",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "EFTs_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_049",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "CK_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_050",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "NDK_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_051",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "MK_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_052",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "PPiase_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_053",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "MTF_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_054",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "IF2_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_055",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "IF1_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_056",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "IF3_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_057",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "GMP"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_058",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "RF1_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_059",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "RF2_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_060",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "RF3_degraded"
+    },
+    {
+      "author_constant": "0",
+      "coefficient": "1",
+      "law_id": "CONS_061",
+      "perturbed_constant": "7/13",
+      "perturbed_initial": "7/13",
+      "reconstructed_species": "7/13",
+      "species": "RRF_degraded"
+    }
+  ],
+  "source_general_laws": 27,
+  "status": "CONDITION_SPECIFIC_EXACT_VIEW"
+}

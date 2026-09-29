@@ -1,6 +1,6 @@
 # R1 exact-coordinate acceptance record (v4r3)
 
-Status: **R1 scientific and implementation gates PASS; Git publication pending.**
+Status: **R1 scientific and implementation gates PASS; published on the research branch.**
 This record covers exact representation and the frozen author-condition
 numerical check. It is not approval of R2, QSSA, a mechanistically reduced
 PURE model, or any of the 968 pending reaction-reduction decisions.

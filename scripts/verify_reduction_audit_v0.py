@@ -80,7 +80,7 @@ def fraction(value):
 def parse(path):
     model = ET.parse(path).getroot().find(S + "model")
     assert model is not None
-    for forbidden in ("listOfRules", "listOfEvents", "listOfInitialAssignments", "listOfFunctionDefinitions"):
+    for forbidden in ("listOfRules", "listOfEvents", "listOfInitialAssignments", "listOfFunctionDefinitions", "listOfConstraints"):
         node = model.find(S + forbidden)
         assert node is None or len(node) == 0
     species = [node.attrib["id"] for node in model.find(S + "listOfSpecies").findall(S + "species")]
