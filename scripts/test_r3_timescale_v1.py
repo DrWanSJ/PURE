@@ -14,7 +14,7 @@ from verify_reduction_audit_v0 import ROOT
 
 
 RUN_ROOT = ROOT / "results/reduction/r3_aminoacylation_qssa/run_001"
-CONDITIONS = ("R3_BASE", "R3_GLYRS_LOW", "R3_METRS_LOW")
+CONDITIONS = ("R3_BASE", "R3_GLYRS_LOW", "R3_METRS_LOW", "R3_GLYRS_HIGH")
 
 
 class TimescaleTests(unittest.TestCase):
