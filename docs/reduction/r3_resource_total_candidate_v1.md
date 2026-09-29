@@ -49,3 +49,17 @@ showed PPi `0.31747` and MettRNAfMetCAU `0.09996` over its nearby saved
 The dynamic coordinates remove much of the PPi mismatch but do not establish
 R3 validity. Timescale, all ten full 0–1000 s grid cases, directed extents,
 process scores, and a terminal status remain outstanding.
+
+## Closure implementation diagnostic
+
+`r3_resource_total_runtime_v2.py` applies a physical, residual-checked
+warm-start Newton solve and falls back to the unchanged HYBR implementation
+when it cannot satisfy the same root predicate. It changes no coordinate,
+kinetic law, solver tolerance, or acceptance gate. On 21 saved v1 trajectory
+states, its roots matched HYBR to within `5.29e-14` uM; a negative ATP
+coordinate triggered fallback and was rejected. The repeated 0–0.1 s run in
+`attempt_002` solved with 6954 closure calls, all using the Newton path;
+the largest residual was `9.857e-11`. Reduced RHS calls fell from 6980 to
+6758. Saved reduced trajectories differ from attempt 001 by at most
+`2.11e-9` uM, and post-0.05 s Met charged-tRNA E_inf remains `0.08561`.
+The diagnostic still fails the state gate.
