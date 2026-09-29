@@ -77,3 +77,14 @@ results/pnas2017_reference/historical_archive_manifest.json text eol=lf diff
 # Preserve their committed bytes, including original line endings and spacing.
 docs/audit/pnas2017_aminoacylation_*/** -text -diff
 docs/audit/pnas2017_research_inputs_025fd34/** -text -diff
+
+# R1 exact-coordinate methods and implementation are hash-bound run inputs.
+docs/reduction/source_coordinate_*.md text eol=lf
+docs/reduction/r1_acceptance_v4r3.md text eol=lf
+scripts/*source_coordinate*.py text eol=lf
+scripts/runtime_reconstruction_rhs.py text eol=lf
+scripts/test_reduction_*.py text eol=lf
+scripts/run_reduction_*.py text eol=lf
+scripts/validate_r1_roadrunner_tight.py text eol=lf
+# Keep raw acceptance and negative-run evidence byte-exact.
+results/reduction/** -text -diff
