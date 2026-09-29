@@ -1,0 +1,11 @@
+condition_id,description,initial_scale_json,role
+R3_BASE,Author initial condition,{},baseline
+R3_GLYRS_LOW,GlyRS initial family total one tenth,"{""GlyRS"":0.1}",enzyme_substrate_ratio_low
+R3_GLYRS_HIGH,GlyRS initial family total tenfold,"{""GlyRS"":10}",enzyme_substrate_ratio_high
+R3_METRS_LOW,MetRS initial family total one tenth,"{""MetRS"":0.1}",enzyme_substrate_ratio_low
+R3_METRS_HIGH,MetRS initial family total tenfold,"{""MetRS"":10}",enzyme_substrate_ratio_high
+R3_GLY_LOW,Gly availability one tenth,"{""Gly"":0.1}",substrate_challenge
+R3_MET_LOW,Met availability one tenth,"{""Met"":0.1}",substrate_challenge
+R3_TRNA_LOW,Both charging tRNA inputs one tenth,"{""tRNAGlyGCC"":0.1,""tRNAfMetCAU"":0.1}",substrate_challenge
+R3_ATP_LOW,ATP availability one tenth,"{""ATP"":0.1}",energy_challenge
+R3_ADVERSE,High synthetase with severely limited ATP and charging tRNA,"{""GlyRS"":20,""MetRS"":20,""ATP"":0.02,""tRNAGlyGCC"":0.02,""tRNAfMetCAU"":0.02}",anticipated_failure_domain
