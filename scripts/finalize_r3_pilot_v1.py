@@ -46,12 +46,16 @@ def read_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def check(condition: str, directory: Path, expected_inputs: dict) -> dict:
+def check(condition: str, directory: Path, expected_inputs: dict,
+          registered_row: dict) -> dict:
     result_path = directory / "result.json"
     manifest = read_json(directory / "manifest.json")
     result = read_json(result_path)
     assert result["condition_id"] == condition == manifest["condition_id"]
     assert result["run_kind"] == "REGISTERED_R3_GRID_CONDITION"
+    assert result["condition_role"] == registered_row["role"]
+    assert json.loads(result["initial_scale_json"]) == json.loads(
+        registered_row["initial_scale_json"])
     assert result["status"] == manifest["result_status"]
     assert manifest["result_sha256"] == sha(result_path)
     assert result["inputs_sha256"] == manifest["inputs_sha256"] == expected_inputs
@@ -66,6 +70,8 @@ def check(condition: str, directory: Path, expected_inputs: dict) -> dict:
     assert solver["state"] == "BDF" and solver["extent"] == "segmented DOP853 ODE states"
     screen_path = directory / "timescale.json"
     screen = read_json(screen_path) if screen_path.exists() else None
+    if (directory / "full_state.npz").exists():
+        assert screen is not None, (condition, "missing full-trajectory timescale screen")
     if screen is not None:
         assert screen["status"] == "COUPLED_FULL_TRAJECTORY_TIMESCALE_SCREEN_NOT_QSSA_VALIDATION"
         assert screen["sample_count"] == 201
@@ -123,7 +129,8 @@ def main() -> int:
     if missing:
         parser.error("Unfinalized conditions: " + ", ".join(missing))
     inputs = {key: sha(ROOT / path) for key, path in INPUTS.items()}
-    rows = [check(name, run / name, inputs) for name in EXPECTED]
+    rows = [check(name, run / name, inputs, registered_row)
+            for name, registered_row in zip(EXPECTED, grid)]
     passed = [row["condition_id"] for row in rows if row["condition_pass"] == "true"]
     failed = [row["condition_id"] for row in rows if row["condition_pass"] == "false"]
     verdict = (
