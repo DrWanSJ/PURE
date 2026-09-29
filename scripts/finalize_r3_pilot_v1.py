@@ -159,6 +159,7 @@ def main() -> int:
         "command": [sys.executable, *sys.argv],
         "cwd": str(ROOT),
         "script_sha256": sha(Path(__file__)),
+        "execution_environment_sha256": sha(ROOT / "docs/reduction/r3_grid_execution_environment_v1.md"),
         "condition_manifests_sha256": {row["condition_id"]: row["manifest_sha256"] for row in rows},
         "outputs_sha256": {path.name: sha(path) for path in targets[:2]},
         "pilot_status": verdict,
