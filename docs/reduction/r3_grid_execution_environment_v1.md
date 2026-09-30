@@ -39,3 +39,10 @@ These six restarts set `OPENBLAS_NUM_THREADS=1`, `OMP_NUM_THREADS=1`, and
 the selected attempt directory for every condition and checks that attempt's
 input and output hashes. This restart does not change a scientific gate or
 reinterpret a failed screen.
+
+All six restarted full-source `full_state.npz` files were byte identical to
+their preserved first-attempt files (SHA-256 checked condition by condition).
+The original full-trajectory timescale CSV and JSON were copied into each
+restart directory after that hash check. Their recorded command still points
+to the first attempt; the state hash proves that the same sampled trajectory
+was screened. No screen was recomputed or reclassified.
