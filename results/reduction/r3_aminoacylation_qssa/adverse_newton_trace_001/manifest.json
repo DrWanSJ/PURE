@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "status": "HASH_BOUND_NEWTON_TRACE_NOT_GRID_ACCEPTANCE",
+  "command": [
+    "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+    "scripts/diagnose_r3_adverse_newton_trace_v1.py",
+    "--out",
+    "results/reduction/r3_aminoacylation_qssa/adverse_newton_trace_001",
+    "--accepted-steps",
+    "200",
+    "--max-rhs-calls",
+    "5000"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "python_version": "3.11.4",
+  "numpy_version": "2.2.6",
+  "scipy_version": "1.13.1",
+  "inputs_sha256": {
+    "snapshot": "d44a1345f28e8c6e1ff4ee561169839fdd0f2ceea73a7bccd6d18a368bc839d7",
+    "grid": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+    "canonical_sbml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "runtime_v2": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+    "script": "510c52e242168e2150152603a5d5c2b8ef5124ab2e49cac6297ac8b3ceba45fd"
+  },
+  "result_sha256": "e078057c972c5310c548cffbd5b6eead6d48c661e55f91b124fd1b9dcc33b1aa",
+  "exit_code": 0
+}

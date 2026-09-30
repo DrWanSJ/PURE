@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "status": "FIXED_SEED_DIAGNOSTIC_NOT_REGISTERED_GRID_RESULT",
+  "start_t": 359.0589556421065,
+  "last_t": 359.0596009999911,
+  "stop_reason": "ACCEPTED_STEP_BUDGET",
+  "rtol": 1e-10,
+  "atol": 1e-14,
+  "accepted_steps": 200,
+  "rhs_calls": 1302,
+  "jacobian_calls": 110,
+  "lu_factorizations": 449,
+  "wall_s": 8.791819400001259,
+  "seed_sha256": "b783d3225783b7b5429bd290401afa1df2207a13a39cc8e5042915d192367715"
+}

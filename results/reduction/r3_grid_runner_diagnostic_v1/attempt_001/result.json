@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "status": "GRID_CONDITION_EVALUATED",
+  "run_kind": "EXPLORATORY_DIAGNOSTIC",
+  "condition_id": "R3_BASE",
+  "condition_role": "baseline",
+  "initial_scale_json": "{}",
+  "command": [
+    "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+    "scripts/run_r3_coupled_grid_v1.py",
+    "--condition",
+    "R3_BASE",
+    "--out",
+    "results/reduction/r3_grid_runner_diagnostic_v1/attempt_001",
+    "--diagnostic-end",
+    "0.1"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "python_executable": "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+  "python_version": "3.11.4",
+  "numpy_version": "2.2.6",
+  "scipy_version": "1.13.1",
+  "solver": {
+    "state": "BDF",
+    "extent": "segmented DOP853 ODE states",
+    "rtol": 1e-10,
+    "atol": 1e-14,
+    "start": 0.0,
+    "end": 0.1,
+    "report_points": 201
+  },
+  "inputs_sha256": {
+    "canonical_sbml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "grid": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+    "method": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+    "protocol": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+    "reaction_map": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+    "aminoacylation_reactions": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+    "runtime_v1": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+    "runtime_v2": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+    "runner": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+  },
+  "full_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 3184,
+    "njev": 2,
+    "nlu": 227
+  },
+  "reduced_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 6758,
+    "njev": 196,
+    "nlu": 852
+  },
+  "full_extent_solver": {
+    "segments": 200,
+    "nfev": 5200,
+    "max_segment_abs": 96.28429698984007
+  },
+  "reduced_extent_solver": {
+    "segments": 200,
+    "nfev": 9196,
+    "max_segment_abs": 96.26915301426848
+  },
+  "maxima": {
+    "all_species_E_inf": 1.0212378538710576,
+    "class_I_E_inf": 0.9990549676024952,
+    "aminoacylation_rate_E_inf": 2.5492955006565934,
+    "aminoacylation_extent_E_inf": 0.5523600859518321,
+    "all_directed_rate_E_inf": 2.5492955006565934,
+    "all_directed_extent_E_inf": 0.5523600859518321,
+    "full_material_balance_abs": 1.8636862170184898e-07,
+    "reduced_slow_balance_abs": 2.4234670142897485e-07,
+    "source_general_inventory_drift_abs": 9.094947017729282e-13,
+    "minimum_full_concentration": 0.0,
+    "minimum_reduced_concentration": -1.727387237243075e-12
+  },
+  "limits": {
+    "closure": 1e-10,
+    "balance": 1e-08,
+    "state": 0.01,
+    "process_rate": 0.05,
+    "cumulative_resource_extent": 0.01
+  },
+  "condition_pass": false,
+  "closure_counters": {
+    "calls": 16351,
+    "max_residual": 9.939071787812281e-11,
+    "min_q": -5.436891964665924e-24,
+    "min_carrier": 0.00015663742037116957,
+    "min_resource": 0.0,
+    "max_Gq_condition_number": 1081.05922206905,
+    "fallbacks": 0
+  },
+  "outputs_sha256": {
+    "directed_extent_errors.csv": "10c2870632ef121966662c63551415a0bd278b493f8af01e64d8cff1e55b141f",
+    "directed_ledgers.npz": "432704d9d4e42e35019849fb4d924191b8465403c1ec3e9d658b07534583db43",
+    "directed_rate_errors.csv": "5b53b04a62087f8cd6d35a97f39a17dd8159e6c75573a7df5e9407c7ef4c91d2",
+    "full_state.npz": "89a387860272c714bf8d1b6e449ca689b75f86ff06849a3129866424db115d72",
+    "species_errors.csv": "a5a0ed8e2a8631871a683090ecd543bb3ac89d8fcb599535b1098f207d4cf5d7",
+    "state_trajectories.npz": "1fd8b1353f398d0ea7f83b13979a2bc44c22bd1627e7b07bfe1ef442d0595f11"
+  }
+}

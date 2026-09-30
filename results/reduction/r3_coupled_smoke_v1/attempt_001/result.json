@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "status": "EXPLORATORY_COUPLED_SMOKE_NOT_R3_VALIDATION",
+  "canonical_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "method_sha256": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+  "grid_sha256": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+  "runtime_sha256": "89da6f2bb6ec318883eef6673fa8e3b3474412bdd3ead15a6e658dd2c782f404",
+  "carrier_chart_sha256": "0c35c9478c81551cc5ff88ab9ce35b86c7d8c4c039fe74522140d65560909438",
+  "python_executable": "D:\\Code\\Anaconda\\python.exe",
+  "python_version": "3.12.4",
+  "numpy_version": "1.26.4",
+  "scipy_version": "1.13.1",
+  "command": [
+    "D:\\Code\\Anaconda\\python.exe",
+    "scripts/diagnose_r3_coupled_smoke_v1.py"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "condition_id": "R3_BASE",
+  "time_start": 0.0,
+  "time_end": 1.0,
+  "report_points": 41,
+  "rtol": 1e-10,
+  "atol": 1e-14,
+  "full_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 3829,
+    "njev": 3,
+    "nlu": 267
+  },
+  "failure": "Invalid closure: residual=6.300931998381998e-13; min_q=3.3492279211947925e-19; min_carrier=0.00033071915678462016; message=The iteration is not making good progress, as measured by the \n  improvement from the last ten iterations.",
+  "closure_counters": {
+    "closure_calls": 24,
+    "closure_nfev": 161,
+    "jacobian_calls": 1,
+    "max_fast_residual": 2.248867758680717e-12,
+    "minimum_q": 4.691704763973456e-32,
+    "minimum_carrier": 0.0003307191516748187,
+    "max_Gq_condition_number": 1076.5939904955524
+  }
+}

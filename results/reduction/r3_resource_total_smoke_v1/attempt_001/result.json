@@ -1,0 +1,56 @@
+{
+  "status": "EXPLORATORY_RESOURCE_TOTAL_SMOKE_SOLVED_NOT_R3_VALIDATION",
+  "command": [
+    "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+    "scripts/diagnose_r3_resource_total_smoke_v1.py"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "python_version": "3.11.4",
+  "numpy_version": "2.2.6",
+  "scipy_version": "1.13.1",
+  "condition_id": "R3_BASE",
+  "time_start": 0.0,
+  "time_end": 0.1,
+  "report_points": 21,
+  "rtol": 1e-10,
+  "atol": 1e-14,
+  "canonical_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "method_sha256": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+  "grid_sha256": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+  "runtime_sha256": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+  "accounting_matrix_sha256": "133e7f5b53f0ce9d5987a00a3333d305670424b699779702e6706342f6c9f7ba",
+  "full_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 3184,
+    "njev": 2,
+    "nlu": 227
+  },
+  "reduced_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 6980,
+    "njev": 227,
+    "nlu": 912
+  },
+  "diagnostics": {
+    "max_all_species_E_inf": 1.0212403501209864,
+    "t0_max_abs_initial_layer_jump": 0.7306322677168282,
+    "min_reduced_state": -2.1655364171895882e-12,
+    "selected_post_0p05_E_inf": {
+      "ATP": 1.97706652834313e-06,
+      "AMP": 0.02915086610029545,
+      "PPi": 0.04622407372270939,
+      "PO4": 0.04678947837742563,
+      "GlytRNAGlyGCC": 0.0004465049433674423,
+      "MettRNAfMetCAU": 0.08561112613108998,
+      "GlyAMP": 0.013272425695020447,
+      "MetAMP": 0.030098744433331368
+    }
+  },
+  "closure_counters": {
+    "closure": 7207,
+    "max_residual": 4.069988790433854e-11,
+    "min_resource": 0.0
+  }
+}

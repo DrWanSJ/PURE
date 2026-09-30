@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "status": "HASH_VERIFIED_R3_REJECTION_WITH_INCOMPLETE_CONDITION",
+  "evaluated_condition_count": 9,
+  "incomplete_condition_count": 1,
+  "command": [
+    "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+    "scripts/finalize_r3_pilot_v1.py",
+    "--run-dir",
+    "results/reduction/r3_aminoacylation_qssa/run_001",
+    "--attempt-map",
+    "results/reduction/r3_aminoacylation_qssa/run_001/attempt_map.json"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "script_sha256": "af98693bb0cf8b751a959a0afc4d1aa2c1ed6338a3e34d036e3975fb5028a8e4",
+  "execution_environment_sha256": "f83a50dc1a114c5ccfe669ce1c917ea4cc1fc2f753bc1878a12b0b9b67c595f1",
+  "attempt_map_sha256": "08d0726f68b33633f4221f74e6f27e82c4a8ac793ba2a16b3c95aac76f750d4e",
+  "condition_manifests_sha256": {
+    "R3_BASE": "797516d0b4d0f5696e433232072afe3a08010e479d5ab1164e35e374e5e5e64a",
+    "R3_GLYRS_LOW": "110b204bdf2becc5079b63d131ed2d20f5bdfc3723e57b54a1622b7862d9573d",
+    "R3_GLYRS_HIGH": "027b74b3857f28e9be589169a8d363415f04c042c969966216f9aaba056b1fcd",
+    "R3_METRS_LOW": "1e0352947d20c28464387d670b3f0371ab09a5094a0d1d2ed39eac0eab1f0a2b",
+    "R3_METRS_HIGH": "05fde20ae3b33929654e51cceb8b1cfac0bcffc22a6952aaabb2510f0e5aff02",
+    "R3_GLY_LOW": "295e10feb9903e9501d04d9003c78f70c00707d90b30ebbb6e267f8f8e91f1f9",
+    "R3_MET_LOW": "def95a1b2200f2535b1a30ecdf852fe6e57498e8cdb3df516a14d8a064e6396f",
+    "R3_TRNA_LOW": "60428a2a52f0c19896fb3081323e1b4798f14d2c9115ed13543672443adc96bb",
+    "R3_ATP_LOW": "9a6bc282b315ac3021f5a7ef19ebf7ec98de8f1a890e6f7a798d4af2b4274dcf",
+    "R3_ADVERSE": "10bd18b4eb07c38a5e46bc53f19b328bc7c834389a5bfb0024793c7c0c9106be"
+  },
+  "outputs_sha256": {
+    "validation_grid.csv": "f2dbdf4f67cee49bf5e820760c3af79479bd92eb9c6e99a97ecff8b1a0499721",
+    "summary.json": "008296474c91bca70370f19ad07981f4ed899f2270f23b7154059077ee574c39"
+  },
+  "pilot_status": "R3_PILOT_REJECTED_BY_FULL_COUPLED_VALIDATION"
+}

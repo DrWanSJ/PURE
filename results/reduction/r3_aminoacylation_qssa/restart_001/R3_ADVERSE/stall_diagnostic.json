@@ -1,0 +1,58 @@
+{
+  "status": "LIVE_REDUCED_BDF_PROGRESS_DIAGNOSTIC_NOT_ACCEPTANCE",
+  "condition_id": "R3_ADVERSE",
+  "process_id": 32656,
+  "command": [
+    "C:\\Python311\\python.exe",
+    "scripts/run_r3_coupled_grid_v1.py",
+    "--condition",
+    "R3_ADVERSE",
+    "--out",
+    "results/reduction/r3_aminoacylation_qssa/restart_001/R3_ADVERSE"
+  ],
+  "python_executable": "C:\\Python311\\python.exe",
+  "script_sha256": "44c896ac9726a40fa70d72941a15b2f99c0e17811a82ca64acdd05c0b71ae601",
+  "full_state_sha256": "01b6fb21844029533b80475980cda51f937d889dca037fb231df6bc381dc6c26",
+  "samples": [
+    {
+      "time_utc": "2026-09-30T05:33:14.225800+00:00",
+      "process_cpu_seconds": 16498.46875,
+      "bdf_time_s": 362.23623800556123,
+      "bdf_step_s": 2.039922321728227e-06,
+      "bdf_order": 1,
+      "closure_stack_line": 25
+    },
+    {
+      "time_utc": "2026-09-30T05:33:16.353077+00:00",
+      "process_cpu_seconds": 16500.53125,
+      "bdf_time_s": 362.23652892453384,
+      "bdf_step_s": 5.008128312056215e-05,
+      "bdf_order": 1,
+      "closure_stack_line": 25
+    },
+    {
+      "time_utc": "2026-09-30T05:33:18.500144+00:00",
+      "process_cpu_seconds": 16502.640625,
+      "bdf_time_s": 362.2368632179014,
+      "bdf_step_s": 1.8456313455317286e-06,
+      "bdf_order": 1,
+      "closure_stack_line": 25
+    },
+    {
+      "time_utc": "2026-09-30T05:33:20.629435+00:00",
+      "process_cpu_seconds": 16504.75,
+      "bdf_time_s": 362.23715067732564,
+      "bdf_step_s": 4.035405822833127e-06,
+      "bdf_order": 1,
+      "closure_stack_line": 25
+    },
+    {
+      "time_utc": "2026-09-30T05:33:22.765201+00:00",
+      "process_cpu_seconds": 16506.875,
+      "bdf_time_s": 362.2374228687863,
+      "bdf_step_s": 5.122490165376803e-05,
+      "bdf_order": 1,
+      "closure_stack_line": 25
+    }
+  ]
+}

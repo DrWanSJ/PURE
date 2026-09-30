@@ -1,0 +1,310 @@
+{
+  "schema_version": "1.0",
+  "status": "EXPLORATORY_CLOSURE_DIAGNOSTIC_ONLY",
+  "source_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "saved_full_trajectory_sha256": "5b93df17bf3dd8f528f3aaae009f192b72db3426221df8f95aac192f63f1b1ec",
+  "candidate_partition_sha256": "521559bb4e703449135518ddc7b1aa772dd89de4180b379cc70ce10b20447b2f",
+  "source_coordinate_certificate_sha256": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+  "method_sha256": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+  "python_executable": "D:\\Code\\Anaconda\\python.exe",
+  "python_version": "3.12.4",
+  "numpy_version": "1.26.4",
+  "scipy_version": "1.13.1",
+  "command": [
+    "D:\\Code\\Anaconda\\python.exe",
+    "scripts/diagnose_r3_candidate_closure_v1.py"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "q_count": 21,
+  "source_reaction_count_in_fast_rows": 103,
+  "samples": [
+    {
+      "time": 0.0,
+      "sample_index": 0,
+      "coordinate": "fixed_free_standard",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 62,
+      "max_abs_fast_rhs": 9.367795428261161e-11,
+      "min_complex": 0.0,
+      "min_free_enzyme": 0.35,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": 404.00788086526535,
+        "MetRS": 54.14309826755649
+      },
+      "same_initial_enzyme_pools": false,
+      "reference_complex_max_abs_difference": 319.7990671824082
+    },
+    {
+      "time": 0.0,
+      "sample_index": 0,
+      "coordinate": "enzyme_total",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 59,
+      "max_abs_fast_rhs": 8.029132914089132e-13,
+      "min_complex": 4.635528788629509e-31,
+      "min_free_enzyme": 0.00030294945590741973,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": 0.0,
+        "MetRS": 0.0
+      },
+      "same_initial_enzyme_pools": true,
+      "reference_complex_max_abs_difference": 0.2768084382931528
+    },
+    {
+      "time": 0.0001,
+      "sample_index": 1,
+      "coordinate": "fixed_free_standard",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 26,
+      "max_abs_fast_rhs": 5.502442945726216e-11,
+      "min_complex": 2.398719868596816e-09,
+      "min_free_enzyme": 0.029813534327204582,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": 50.945894623322474,
+        "MetRS": 3.248409439423333
+      },
+      "same_initial_enzyme_pools": false,
+      "reference_complex_max_abs_difference": 40.51732031645068
+    },
+    {
+      "time": 0.0001,
+      "sample_index": 1,
+      "coordinate": "enzyme_total",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 26,
+      "max_abs_fast_rhs": 3.1186164761720647e-12,
+      "min_complex": 2.398719868596816e-09,
+      "min_free_enzyme": 0.00030682567581657993,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": -3.469446951953614e-17,
+        "MetRS": 1.3877787807814457e-17
+      },
+      "same_initial_enzyme_pools": true,
+      "reference_complex_max_abs_difference": 0.2988977393311997
+    },
+    {
+      "time": 0.005291978735958442,
+      "sample_index": 50,
+      "coordinate": "fixed_free_standard",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 25,
+      "max_abs_fast_rhs": 9.947598300641403e-14,
+      "min_complex": 2.4977624375373374e-06,
+      "min_free_enzyme": 0.00023899201472061152,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": -0.0899599895892656,
+        "MetRS": -0.06124327966810701
+      },
+      "same_initial_enzyme_pools": false,
+      "reference_complex_max_abs_difference": 0.07068244909633334
+    },
+    {
+      "time": 0.005291978735958442,
+      "sample_index": 50,
+      "coordinate": "enzyme_total",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 81,
+      "max_abs_fast_rhs": 9.938716516444401e-13,
+      "min_complex": 2.8096249656424385e-06,
+      "min_free_enzyme": 0.0003241238895724252,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": 1.3579632210380943e-17,
+        "MetRS": -7.15573433840433e-18
+      },
+      "same_initial_enzyme_pools": true,
+      "reference_complex_max_abs_difference": 0.06829803111153471
+    },
+    {
+      "time": 0.30367711180354573,
+      "sample_index": 100,
+      "coordinate": "fixed_free_standard",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 82,
+      "max_abs_fast_rhs": 4.3520742565306136e-14,
+      "min_complex": 1.2749828889081619e-06,
+      "min_free_enzyme": 8.383001572234026e-05,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": -0.0009600604774333777,
+        "MetRS": -0.0007194461787601292
+      },
+      "same_initial_enzyme_pools": false,
+      "reference_complex_max_abs_difference": 0.0007638183202732518
+    },
+    {
+      "time": 0.30367711180354573,
+      "sample_index": 100,
+      "coordinate": "enzyme_total",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 55,
+      "max_abs_fast_rhs": 4.0478731477833207e-13,
+      "min_complex": 1.2784838898071007e-06,
+      "min_free_enzyme": 8.992638661300956e-05,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": -5.204170427930421e-17,
+        "MetRS": -7.420008617947671e-18
+      },
+      "same_initial_enzyme_pools": true,
+      "reference_complex_max_abs_difference": 0.0005857939219752889
+    },
+    {
+      "time": 7.752597488629465,
+      "sample_index": 140,
+      "coordinate": "fixed_free_standard",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 25,
+      "max_abs_fast_rhs": 1.6382972452613775e-16,
+      "min_complex": 2.5726091778914276e-09,
+      "min_free_enzyme": 1.3828250250441362e-05,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": 1.7839126353619425e-07,
+        "MetRS": -4.471174752846344e-05
+      },
+      "same_initial_enzyme_pools": false,
+      "reference_complex_max_abs_difference": 3.500549407197545e-05
+    },
+    {
+      "time": 7.752597488629465,
+      "sample_index": 140,
+      "coordinate": "enzyme_total",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 25,
+      "max_abs_fast_rhs": 2.9303599477503717e-14,
+      "min_complex": 2.5722096664363774e-09,
+      "min_free_enzyme": 1.3826102802361228e-05,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": -3.1642512203266617e-19,
+        "MetRS": 7.983285527871781e-19
+      },
+      "same_initial_enzyme_pools": true,
+      "reference_complex_max_abs_difference": 3.472797047518114e-05
+    },
+    {
+      "time": 39.17101490809261,
+      "sample_index": 160,
+      "coordinate": "fixed_free_standard",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 25,
+      "max_abs_fast_rhs": 1.436703403814854e-16,
+      "min_complex": 4.479920493445379e-09,
+      "min_free_enzyme": 1.2785489749384651e-05,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": 4.8233662479296424e-08,
+        "MetRS": 1.362959827413841e-08
+      },
+      "same_initial_enzyme_pools": false,
+      "reference_complex_max_abs_difference": 4.1638293401310283e-08
+    },
+    {
+      "time": 39.17101490809261,
+      "sample_index": 160,
+      "coordinate": "enzyme_total",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 27,
+      "max_abs_fast_rhs": 3.3875134549657057e-15,
+      "min_complex": 4.47985510691335e-09,
+      "min_free_enzyme": 1.2785303139190149e-05,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": -6.154223757394526e-20,
+        "MetRS": 1.1264462863685876e-19
+      },
+      "same_initial_enzyme_pools": true,
+      "reference_complex_max_abs_difference": 1.1218580872216985e-08
+    },
+    {
+      "time": 197.91668678535575,
+      "sample_index": 180,
+      "coordinate": "fixed_free_standard",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 24,
+      "max_abs_fast_rhs": 8.084014685959262e-16,
+      "min_complex": 6.027009446098894e-09,
+      "min_free_enzyme": 1.3419996939618228e-05,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": 8.8001767463887e-10,
+        "MetRS": 5.645860865106604e-10
+      },
+      "same_initial_enzyme_pools": false,
+      "reference_complex_max_abs_difference": 7.546555960431106e-10
+    },
+    {
+      "time": 197.91668678535575,
+      "sample_index": 180,
+      "coordinate": "enzyme_total",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 24,
+      "max_abs_fast_rhs": 4.328812698919937e-15,
+      "min_complex": 6.02700591211699e-09,
+      "min_free_enzyme": 1.3419989070703135e-05,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": 2.9359617789712143e-19,
+        "MetRS": -2.9048928751637226e-20
+      },
+      "same_initial_enzyme_pools": true,
+      "reference_complex_max_abs_difference": 5.050810591706971e-10
+    },
+    {
+      "time": 1000.0,
+      "sample_index": 200,
+      "coordinate": "fixed_free_standard",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 24,
+      "max_abs_fast_rhs": 8.663046408702302e-16,
+      "min_complex": 6.838538985892671e-09,
+      "min_free_enzyme": 1.4647528585451394e-05,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": -6.562694740773318e-10,
+        "MetRS": -6.558511580316035e-11
+      },
+      "same_initial_enzyme_pools": false,
+      "reference_complex_max_abs_difference": 5.69037134252881e-10
+    },
+    {
+      "time": 1000.0,
+      "sample_index": 200,
+      "coordinate": "enzyme_total",
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "nfev": 24,
+      "max_abs_fast_rhs": 8.166153164920406e-15,
+      "min_complex": 6.8385394514155265e-09,
+      "min_free_enzyme": 1.4647529582558806e-05,
+      "physical_branch": true,
+      "enzyme_pool_shifts": {
+        "GlyRS": 3.1163533269567786e-19,
+        "MetRS": 4.3317794318176953e-20
+      },
+      "same_initial_enzyme_pools": true,
+      "reference_complex_max_abs_difference": 3.9790973033887456e-11
+    }
+  ]
+}
