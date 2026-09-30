@@ -15,7 +15,9 @@ from verify_reduction_audit_v0 import ROOT
 
 RUN_ROOT = ROOT / "results/reduction/r3_aminoacylation_qssa/run_001"
 CONDITIONS = ("R3_BASE", "R3_GLYRS_LOW", "R3_METRS_LOW", "R3_GLYRS_HIGH",
-              "R3_METRS_HIGH", "R3_GLY_LOW", "R3_MET_LOW")
+              "R3_METRS_HIGH", "R3_GLY_LOW", "R3_MET_LOW", "R3_TRNA_LOW",
+              "R3_ATP_LOW", "R3_ADVERSE")
+ATTRACTING_CONFIRMED = set(CONDITIONS[:7])
 
 
 class TimescaleTests(unittest.TestCase):
@@ -27,8 +29,11 @@ class TimescaleTests(unittest.TestCase):
                 self.assertEqual(summary["status"],
                                  "COUPLED_FULL_TRAJECTORY_TIMESCALE_SCREEN_NOT_QSSA_VALIDATION")
                 self.assertEqual(summary["sample_count"], 201)
-                self.assertEqual(summary["nonattracting_samples"], 0)
-                self.assertGreater(summary["epsilon_screen_fail_samples"], 0)
+                self.assertGreaterEqual(summary["nonattracting_samples"], 0)
+                self.assertLessEqual(summary["nonattracting_samples"], 201)
+                if condition in ATTRACTING_CONFIRMED:
+                    self.assertEqual(summary["nonattracting_samples"], 0)
+                    self.assertGreater(summary["epsilon_screen_fail_samples"], 0)
                 self.assertEqual(hashlib.sha256((run / "timescale.csv").read_bytes()).hexdigest(),
                                  summary["timescale_csv_sha256"])
                 self.assertEqual(hashlib.sha256((run / "full_state.npz").read_bytes()).hexdigest(),
