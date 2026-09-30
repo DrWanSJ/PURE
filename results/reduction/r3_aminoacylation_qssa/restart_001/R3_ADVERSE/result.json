@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "status": "GRID_CONDITION_INCOMPLETE",
+  "run_kind": "REGISTERED_R3_GRID_CONDITION",
+  "condition_id": "R3_ADVERSE",
+  "condition_role": "anticipated_failure_domain",
+  "initial_scale_json": "{\"GlyRS\":20,\"MetRS\":20,\"ATP\":0.02,\"tRNAGlyGCC\":0.02,\"tRNAfMetCAU\":0.02}",
+  "command": [
+    "C:\\Python311\\python.exe",
+    "scripts/run_r3_coupled_grid_v1.py",
+    "--condition",
+    "R3_ADVERSE",
+    "--out",
+    "results/reduction/r3_aminoacylation_qssa/restart_001/R3_ADVERSE"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "python_executable": "C:\\Python311\\python.exe",
+  "python_version": "3.11.4",
+  "numpy_version": "2.2.6",
+  "scipy_version": "1.13.1",
+  "solver": {
+    "state": "BDF",
+    "extent": "segmented DOP853 ODE states",
+    "rtol": 1e-10,
+    "atol": 1e-14,
+    "start": 0.0,
+    "end": 1000.0,
+    "report_points": 201
+  },
+  "inputs_sha256": {
+    "canonical_sbml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "grid": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+    "method": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+    "protocol": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+    "reaction_map": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+    "aminoacylation_reactions": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+    "runtime_v1": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+    "runtime_v2": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+    "runner": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+  },
+  "outputs_sha256": {
+    "full_state.npz": "01b6fb21844029533b80475980cda51f937d889dca037fb231df6bc381dc6c26",
+    "timescale.csv": "7255b89662bcdd826270132af9cf548da14882d5ca5de77fd82c3ab1e99a79dd",
+    "timescale.json": "3af3e752cf3fcdff40e620de7d458a97fc02ea01722069dfd4a0c8a575936aa8",
+    "stall_diagnostic.json": "92b6e5dd404d0c1aada51ffb1c7dcf98578053ffcb1ebf7a5e7850d9114f1620"
+  },
+  "closure_counters": {},
+  "condition_pass": false,
+  "failure": "Reduced BDF solve did not complete the registered 0-1000 s window; externally stopped after documented near-zero progress at about 362 s. No reduced trajectory, directed extents, or coupled error scores are claimed for this condition.",
+  "termination": {
+    "kind": "EXTERNAL_STOP_AFTER_DOCUMENTED_NUMERICAL_STALL",
+    "os_exit_code": null,
+    "os_exit_code_note": "The external process exit code was not captured; it is not represented as runner exit 1.",
+    "last_observed_bdf_time_s": 362.2374228687863,
+    "last_observed_bdf_step_s": 5.122490165376803e-05,
+    "last_observed_process_cpu_seconds": 16506.875,
+    "progress_diagnostic_sha256": "92b6e5dd404d0c1aada51ffb1c7dcf98578053ffcb1ebf7a5e7850d9114f1620"
+  }
+}
