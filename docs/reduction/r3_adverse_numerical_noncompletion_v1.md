@@ -102,6 +102,31 @@ The new snapshot demonstrates severe progress loss **on the actual reduced
 trajectory** near 359 s while local closure remains physical. It does not
 identify a unique solver cause or complete the missing 0–1000 s comparison.
 
+The hash-bound `adverse_snapshot_diagnostic_001` experiment starts at that
+accepted reduced snapshot, and is explicitly not a registered grid result.
+It uses the unchanged `rtol=1e-10`, `atol=1e-14`, a 0.1 s local target, and
+5,000 RHS-call budgets. Its `result.json` and `manifest.json` bind the snapshot,
+grid, canonical SBML, v2 runtime, diagnostic code, and package versions.
+
+| Local trial from reduced t=359.058955642 s | Last model time at 5,001 RHS calls | Wall time |
+| --- | ---: | ---: |
+| v2 BDF | 359.061306209 s | 25.50 s |
+| v2 LSODA | 359.118990403 s | 31.22 s |
+| 50-digit Decimal reconstruction/rate accumulation with BDF | 359.061226005 s | 47.55 s |
+
+All three exhausted the call budget before the local target. Decimal differs
+from the float v2 RHS by at most `3.80052e-12` uM/s and from its directed
+rates by at most `3.63798e-12` uM/s at this snapshot, but did not improve BDF
+progress. It is a diagnostic implementation, not a replacement kinetic law.
+The reduced Jacobian's eigenvalue real parts span about `-101424.22` to
+`8.92e-7` 1/s. Along the normalized local RHS direction, the analytic versus
+centered-difference Jacobian-vector error grows from `2.84e-7` at a `1e-2`
+coordinate perturbation to `6.06e-4` at `1e-5`; all sampled roots remain
+physical. Large gross directed contributions cancel in several species rows:
+gross-absolute/net-absolute ratios are about `163207` for CP, `28789` for
+ATP, and `6.67e6` for GlyRS. These observations show local numerical
+sensitivity but do not isolate a cause or justify changing tolerances.
+
 `scripts/r3_resource_total_runtime_v3.py` preserves the failed extra-polish
 experiment. It is not used by the registered condition results or pilot
 manifest; v1/v2 source and all nine completed condition hashes remain
