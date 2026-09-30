@@ -1,6 +1,8 @@
 # Human reduction review — PNAS 2017 translation chemistry
 
-**All boxes are intentionally empty.** This document organizes the 968 combined-SBML reactions by biochemical process and original source subsystem. A reaction may appear in several process cards because the 26 source diagrams reuse chemistry; the combined model still has 968 unique reaction IDs. Every suggested transformation below is `HUMAN_REVIEW_REQUIRED`. The source SBML, author simulator CSVs, and row-level [`reduction_decisions.csv`](reduction_decisions.csv) are the evidence trail. No choice here is finalized or validated.
+**Species-level information retention has already been human reviewed.** The authoritative 241-species classification is [`species_information_contract_summary.md`](species_information_contract_summary.md) / [`species_information_contract_detailed.md`](species_information_contract_detailed.md): 42 Class-I protected outputs, 57 Class-II-A catalytic intermediates, 91 Class-II-B functional-occupancy microstates, 22 Class-III elongation microstates and 29 Class-C degradation sinks. See also the dated [human audit synchronization record](human_audit_sync_20260930.md).
+
+**The boxes in this document are intentionally empty only for reaction/process transformation choices.** This document organizes the 968 combined-SBML reactions by biochemical process and original source subsystem. A reaction may appear in several process cards because the 26 source diagrams reuse chemistry; the combined model still has 968 unique reaction IDs. Every proposed `KEEP / LUMP / QSSA / CHEMOSTAT / DROP` transformation below remains `HUMAN_REVIEW_REQUIRED` unless separately certified. The source SBML, author simulator CSVs, and row-level [`reduction_decisions.csv`](reduction_decisions.csv) are the evidence trail. Do **not** interpret empty process-level boxes as meaning that species/observable retention has not been audited.
 
 For particle change, the numbers below count stoichiometric changes in the *represented species* per individual event; they are an ideal proxy, not osmotic pressure. Free ATP/GTP/Pi/PPi deltas do not include carrier moieties bound in complexes. Ionic consequences remain unknown because formula/charge/protonation/Mg metadata are absent.
 
@@ -11,6 +13,8 @@ For particle change, the numbers below count stoichiometric changes in the *repr
 **Original implementation.** 50 unique combined reactions map to `Aminoacylation_A_Gly.xml`, `Aminoacylation_A_Met.xml`. Exact combined IDs are below; original module-local IDs are in the decision CSV.
 
 **Intermediates.** 12 candidate complex states participate across these module files. Their source IDs are listed below; classification from IDs is provisional.
+
+**Prior human-approved information-retention decision.** These 12 GlyRS/MetRS activation complexes are Class II-A under the approved species information contract: their individual trajectories are not protected outputs. They may be represented algebraically, by a validated QSSA/effective rate, or by another reduced representation, provided GlyRS/MetRS occupancy and bound resource moieties remain reconstructable. The protected free/resource information for this process includes `Gly`, `Met`, `ATP`, `AMP`, `PPi`, `GlyRS`, and `MetRS`. This prior decision does **not** approve a particular kinetic reduction; the process-level transformation choice below therefore remains open.
 
 **Explicit free resources.** Event-level changes occur for: `ATP`, `AMP`, `PPi`, `Gly`, `Met`. Bound resource moieties, amino-acid incorporation and tRNA recycling must be checked against the full reactant/product JSON, not inferred from this free-species summary.
 
