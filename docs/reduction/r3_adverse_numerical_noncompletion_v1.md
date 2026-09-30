@@ -29,11 +29,13 @@ At nearby saved **full-source** states, the same physical total-coordinate
 closure succeeded: at 348.910 s its residual was `9.24e-14`, fast Jacobian
 condition number `310.99`, and all reconstructed resources were nonnegative;
 at 378.346 s those values were `6.39e-14` and `311.24`. This does not prove
-that the unrecorded reduced state had the same closure. At the 348.910 s
-full-source state, different feasible warm starts that all satisfied the
-unchanged `1e-10` closure gate differed in q by up to `6.97e-13` uM and in
-the slow RHS by up to `1.86e-9` uM/s. This is a plausible source of the
-registered BDF's sensitivity, not a proven unique cause.
+that the unrecorded reduced state had the same closure. An earlier interactive
+probe reported `6.97e-13` uM q and `1.86e-9` uM/s slow-RHS spreads across
+feasible roots near this state, but its exact seeds/state were not retained.
+The hash-bound four-seed test below at the saved 348.910121 s source state
+instead measured `2.64e-16` uM and `1.65e-14` uM/s. Thus root-seed jitter is
+not established as the cause of the registered BDF slowdown; the earlier
+larger observation is preserved as unreplicated diagnostic evidence.
 
 Exploratory local integrations starting at the 348.910 s full-source state
 used the same source-derived closure. These are **not** alternate registered
@@ -47,6 +49,30 @@ condition results and do not replace the 0–1000 s grid:
 | v3 extra-Newton-polish BDF, fixed tolerances | 10,001 calls; last t `348.915251` s | Extra root polish did not repair progress |
 | diagonally scaled BDF, equivalent physical `atol=1e-14` | 10,001 calls; last t `348.913863` s | Coordinate scaling did not repair progress |
 | Radau, fixed tolerances | 10,001 calls; last t `348.912538` s | Alternate stiff solver diagnostic also stalled |
+
+A separate bounded local diagnostic is reproducible with
+`scripts/diagnose_r3_adverse_local_solver_v1.py` and retained under
+`results/reduction/r3_aminoacylation_qssa/local_solver_diagnostic_001/`.
+It initializes from the saved **full-source**, not the registered reduced,
+state at `348.9101213406774` s, and targets only `349.0101213406774` s.
+All six trials use `rtol=1e-10`, `atol=1e-14`, with a 5,000 RHS-call budget;
+the raw JSON records Python/NumPy/SciPy versions and input/script hashes.
+
+| Local strategy | Result | Interpretation |
+| --- | --- | --- |
+| v2 BDF with implicit Jacobian | budget at `348.912413`, 5,001 RHS calls | Reproduces slow progress |
+| Fixed initial physical-root seed BDF | budget at `348.912394`, 5,001 RHS calls | Seed determinism alone did not help |
+| Algebraically on-manifold RHS BDF | budget at `348.912319`, 5,001 RHS calls | Omitting residual-proportional terms did not help |
+| SciPy finite-difference Jacobian BDF | budget at `348.910324`, 5,001 RHS calls | Removing analytic Jacobian did not help |
+| `math.fsum` fast residual BDF | budget at `348.912526`, 5,001 RHS calls | Stable residual sum did not help |
+| LSODA with implicit Jacobian | reached `349.010121`, 3,387 RHS calls | Only this short local window completed; no full-grid claim |
+
+The four physical v2 and v3 roots from source-state, 0.9x, 1.1x, and zero
+seeds had maximum q spread `2.63678e-16` uM, slow-RHS spread
+`1.64868e-14` uM/s, and residuals `7.11e-15` to `1.44e-12`. The local
+LSODA result does not establish that the registered reduced trajectory can
+reach 1000 s, nor that a solver change would satisfy the pre-registered BDF
+method. No local diagnostic is substituted for the adverse grid row.
 
 `scripts/r3_resource_total_runtime_v3.py` preserves the failed extra-polish
 experiment. It is not used by the registered condition results or pilot
