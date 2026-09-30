@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "status": "GRID_CONDITION_EVALUATED",
+  "run_kind": "REGISTERED_R3_GRID_CONDITION",
+  "condition_id": "R3_ATP_LOW",
+  "condition_role": "energy_challenge",
+  "initial_scale_json": "{\"ATP\":0.1}",
+  "command": [
+    "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+    "scripts/run_r3_coupled_grid_v1.py",
+    "--condition",
+    "R3_ATP_LOW",
+    "--out",
+    "results/reduction/r3_aminoacylation_qssa/restart_001/R3_ATP_LOW"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "python_executable": "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+  "python_version": "3.11.4",
+  "numpy_version": "2.2.6",
+  "scipy_version": "1.13.1",
+  "solver": {
+    "state": "BDF",
+    "extent": "segmented DOP853 ODE states",
+    "rtol": 1e-10,
+    "atol": 1e-14,
+    "start": 0.0,
+    "end": 1000.0,
+    "report_points": 201
+  },
+  "inputs_sha256": {
+    "canonical_sbml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "grid": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+    "method": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+    "protocol": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+    "reaction_map": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+    "aminoacylation_reactions": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+    "runtime_v1": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+    "runtime_v2": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+    "runner": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+  },
+  "full_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 8800,
+    "njev": 49,
+    "nlu": 571
+  },
+  "reduced_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 368062,
+    "njev": 24448,
+    "nlu": 105905
+  },
+  "full_extent_solver": {
+    "segments": 200,
+    "nfev": 11872,
+    "max_segment_abs": 1964474.7737127943
+  },
+  "reduced_extent_solver": {
+    "segments": 200,
+    "nfev": 38704,
+    "max_segment_abs": 1964474.7771476428
+  },
+  "maxima": {
+    "all_species_E_inf": 1.019668604111463,
+    "class_I_E_inf": 0.9966710055847141,
+    "aminoacylation_rate_E_inf": 1.0197911636650714,
+    "aminoacylation_extent_E_inf": 0.06537709547162378,
+    "all_directed_rate_E_inf": 1.0197911636650714,
+    "all_directed_extent_E_inf": 0.06537709547162378,
+    "full_material_balance_abs": 6.29139321972616e-07,
+    "reduced_slow_balance_abs": 1.1932452252949588e-05,
+    "source_general_inventory_drift_abs": 1.3642420526593924e-12,
+    "minimum_full_concentration": 0.0,
+    "minimum_reduced_concentration": -3.2464235358952097e-12
+  },
+  "limits": {
+    "closure": 1e-10,
+    "balance": 1e-08,
+    "state": 0.01,
+    "process_rate": 0.05,
+    "cumulative_resource_extent": 0.01
+  },
+  "condition_pass": false,
+  "closure_counters": {
+    "calls": 431415,
+    "max_residual": 9.99875737761613e-11,
+    "min_q": -1.631021945696972e-25,
+    "min_carrier": 3.7813250312046026e-05,
+    "min_resource": 0.0,
+    "max_Gq_condition_number": 432.6923286609774,
+    "fallbacks": 1
+  },
+  "outputs_sha256": {
+    "directed_extent_errors.csv": "9f5ff7cf54c3e09d3f1d3520ab2601961b0b3976b1814e7ca14d0012cc2cb989",
+    "directed_ledgers.npz": "aff2920d33ce7925d756e724a44bd3a1a82b1c120917808c5aaba408a2ce6697",
+    "directed_rate_errors.csv": "d486b5a2a5dbd5a596ca1e3174c4c6aef071de20299ae3e9bef93a5360b73cc7",
+    "full_state.npz": "104c9423394eeae7cf1923b94659020b71868df1c02f61a310fdca8ca1e9f776",
+    "species_errors.csv": "17473504bc7d944cf307d8078690243ae48a4ccabe56239c14324e9352af546f",
+    "state_trajectories.npz": "6db0c6ba318fb63d459d8132c2f2f301ce0cf6055359fe05a690be674f45432d",
+    "timescale.csv": "1b5418c40108df821bc610a6bc1f0e3645d12af58b50c23d1bc1d3487b58d5d6",
+    "timescale.json": "dc0a891b9e2d0f8249b40bdba8719d145a869159c240e12ec4947070feb0a161"
+  }
+}
