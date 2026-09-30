@@ -144,6 +144,15 @@ yet identify whether the cause is closure warm-start behavior, Jacobian
 accuracy, stiffness, or another numerical issue; the registered t=0 run
 remains incomplete.
 
+A separate deterministic-seed probe starts every closure solve from the same
+saved physical `q` and retains the v2 root predicate, analytic Jacobian, and
+fixed tolerances. For 200 accepted BDF steps it used 1,302 RHS calls and
+reached only t `359.059601000` s (versus 1,337 calls and `359.059632129` s
+in the instrumented warm-start probe). Thus callback-order dependence of the
+warm seed alone does not repair this local slowdown. The probes are separate
+local restarts and their small progress difference is not a coupled error
+score or a replacement for the incomplete adverse row.
+
 `scripts/r3_resource_total_runtime_v3.py` preserves the failed extra-polish
 experiment. It is not used by the registered condition results or pilot
 manifest; v1/v2 source and all nine completed condition hashes remain
