@@ -74,6 +74,34 @@ LSODA result does not establish that the registered reduced trajectory can
 reach 1000 s, nor that a solver change would satisfy the pre-registered BDF
 method. No local diagnostic is substituted for the adverse grid row.
 
+## Checkpointed reduced-state probe
+
+`scripts/probe_r3_adverse_bdf_state_v1.py` starts again from the registered
+adverse initial state with SciPy BDF, the unchanged physical closure,
+`rtol=1e-10`, and `atol=1e-14`. It saves accepted reduced states through a
+separate runtime so snapshot inspection does not alter the warm root used by
+the integrator. The bounded `adverse_bdf_stepper_001` attempt ran for 122.06
+wall seconds and stopped at its specified wall-time budget, with no exception.
+This is a diagnostic stepper, not a scored grid run.
+
+It reached model time `359.05633056357715` s in 3,664 BDF steps / 14,437
+RHS evaluations. At that checkpoint it had fallen to order 1 and an
+absolute step of `1.11954e-6` s. After 4,492 steps / 19,846 RHS evaluations,
+it had advanced only to `359.0589556421065` s; the last step was
+`1.78624e-6` s. The separately probed physical root at that accepted
+reduced state was valid, with residual `1.20792e-13`, minimum selected fast
+concentration `1.99602e-10` uM, and minimum reconstructed ATP/AMP/PPi
+resource `0.0354073` uM. The `state_0006.npz` snapshot retains the actual
+193-coordinate reduced state, 21 fast concentrations, and 241 reconstructed
+species for subsequent numerical diagnosis. The `adverse_bdf_stepper_smoke_001`
+15-second run separately verified the checkpoint and budget path, ending at
+model time `0.00393764` s. Both outputs retain command, package versions,
+source/script hashes, per-snapshot hashes, and explicit diagnostic status.
+
+The new snapshot demonstrates severe progress loss **on the actual reduced
+trajectory** near 359 s while local closure remains physical. It does not
+identify a unique solver cause or complete the missing 0–1000 s comparison.
+
 `scripts/r3_resource_total_runtime_v3.py` preserves the failed extra-polish
 experiment. It is not used by the registered condition results or pilot
 manifest; v1/v2 source and all nine completed condition hashes remain
