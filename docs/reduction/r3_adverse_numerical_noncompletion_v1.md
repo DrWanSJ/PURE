@@ -144,6 +144,16 @@ yet identify whether the cause is closure warm-start behavior, Jacobian
 accuracy, stiffness, or another numerical issue; the registered t=0 run
 remains incomplete.
 
+The separately retained `adverse_newton_trace_001` records the same bounded
+200-step reduced-snapshot restart with per-trial scaled corrections and
+SciPy 1.13.1 Newton break reasons. Its 564 trial solves include 200 converged,
+235 predicted nonconvergence, and 129 noncontracting-correction outcomes;
+the latter two total the 364 Newton retry events above. The script,
+snapshot, grid, canonical SBML, runtime, and result match the SHA-256 values
+in its manifest. This trace resolves the **immediate inner-solver break
+condition**, not the underlying source of numerical sensitivity or the
+missing registered adverse comparison.
+
 A separate deterministic-seed probe starts every closure solve from the same
 saved physical `q` and retains the v2 root predicate, analytic Jacobian, and
 fixed tolerances. For 200 accepted BDF steps it used 1,302 RHS calls and

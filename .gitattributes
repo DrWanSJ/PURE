@@ -105,3 +105,4 @@ scripts/diagnose_r3_coupled_smoke_v1.py text eol=lf
 docs/reduction/r3_coupled_smoke_v1.md text eol=lf
 # Keep raw acceptance and negative-run evidence byte-exact.
 results/reduction/** -text -diff
+scripts/diagnose_r3_adverse_newton_trace_v1.py text eol=lf
