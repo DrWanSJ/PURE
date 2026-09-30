@@ -5,6 +5,8 @@
 **Source blob:** `f18b67db52cfd0d740b05ab372bbae20258c08b0`  
 **Scope:** 241 SBML species only. Derived observables such as `AT`, `P_complete`, `a_polymerized`, `R_init`, `R_elong`, `R_term`, and `R_recycle` are not additional source species.
 
+**Audit reaffirmation (2026-09-30):** this species-level classification remains the human-approved information contract. The researcher reaffirmed the Figure 2D-motivated distinction between protected kinetic outputs and microscopic states that may be represented only through aggregate/reconstructed information. The normative rule is this explicit class table, not figure line style alone. See [`human_audit_sync_20260930.md`](human_audit_sync_20260930.md). Reaction-level `KEEP/LUMP/QSSA/CHEMOSTAT/DROP` choices remain a separate review layer.
+
 > Important: “Class I” means the trajectory is a protected output. It does **not** mean every Class-I quantity must remain an independent ODE coordinate after exact conservation reduction.  
 > “Class II-A” is an information-retention decision; it does **not** by itself prove QSSA/time-scale validity.
 
