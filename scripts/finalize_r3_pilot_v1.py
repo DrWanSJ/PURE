@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Seal the complete preregistered R3 grid and derive its pilot verdict."""
+"""Aggregate preregistered R3 evidence and expose any noncompletion."""
 from __future__ import annotations
 
 import argparse
@@ -77,7 +77,23 @@ def check(condition: str, directory: Path, expected_inputs: dict,
     assert manifest["result_sha256"] == sha(result_path)
     assert result["inputs_sha256"] == manifest["inputs_sha256"] == expected_inputs
     assert result["outputs_sha256"] == manifest["outputs_sha256"]
-    assert manifest["exit_code"] == (0 if result["status"] == "GRID_CONDITION_EVALUATED" else 1)
+    if result["status"] == "GRID_CONDITION_EVALUATED":
+        assert manifest["exit_code"] == 0
+    elif manifest["exit_code"] is None:
+        assert result["status"] == "GRID_CONDITION_INCOMPLETE"
+        assert manifest["termination"] == result["termination"]
+        assert result["termination"]["kind"] == "EXTERNAL_STOP_AFTER_DOCUMENTED_NUMERICAL_STALL"
+        assert result["termination"]["os_exit_code"] is None
+        assert "stall_diagnostic.json" in result["outputs_sha256"]
+        diagnostic = read_json(directory / "stall_diagnostic.json")
+        assert diagnostic["condition_id"] == condition
+        assert diagnostic["full_state_sha256"] == sha(directory / "full_state.npz")
+        assert diagnostic["script_sha256"] == sha(ROOT / "scripts/probe_r3_running_bdf_v1.py")
+        assert manifest["sealer_sha256"] == sha(ROOT / "scripts/seal_r3_stalled_attempt_v1.py")
+        assert diagnostic["samples"][-1]["bdf_time_s"] < 1000
+    else:
+        assert result["status"] == "GRID_CONDITION_INCOMPLETE"
+        assert manifest["exit_code"] == 1
     for name, digest in result["outputs_sha256"].items():
         assert sha(directory / name) == digest, (condition, name)
     solver = result["solver"]
@@ -157,6 +173,11 @@ def main() -> int:
         row["evidence_directory"] = mapping[row["condition_id"]]
     passed = [row["condition_id"] for row in rows if row["condition_pass"] == "true"]
     failed = [row["condition_id"] for row in rows if row["condition_pass"] == "false"]
+    incomplete = [row["condition_id"] for row in rows
+                  if row["result_status"] == "GRID_CONDITION_INCOMPLETE"]
+    evaluated_failed = [row["condition_id"] for row in rows
+                        if row["result_status"] == "GRID_CONDITION_EVALUATED"
+                        and row["condition_pass"] == "false"]
     verdict = (
         "R3_PILOT_ACCEPTED_IN_VALIDATED_DOMAIN" if len(passed) == len(EXPECTED) else
         "R3_PILOT_PARTIAL_DOMAIN_ONLY" if passed else
@@ -172,7 +193,11 @@ def main() -> int:
         "pilot_status": verdict,
         "validated_conditions": passed,
         "failed_or_incomplete_conditions": failed,
+        "evaluated_failed_conditions": evaluated_failed,
+        "incomplete_conditions": incomplete,
         "condition_count": len(rows),
+        "validation_grid_complete": not incomplete,
+        "durable_r3_stage_complete": not incomplete,
         "source_and_protocol_sha256": inputs,
         "condition_attempts": mapping,
         "meaning": "Selective 21-complex GlyRS/MetRS approximation pilot only; not final PURE reduction or R4 approval",
@@ -180,7 +205,10 @@ def main() -> int:
     targets[1].write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8", newline="\n")
     manifest = {
         "schema_version": "1.0",
-        "status": "HASH_VERIFIED_COMPLETE_R3_PILOT",
+        "status": ("HASH_VERIFIED_COMPLETE_R3_PILOT_GRID" if not incomplete else
+                   "HASH_VERIFIED_R3_REJECTION_WITH_INCOMPLETE_CONDITION"),
+        "evaluated_condition_count": len(rows) - len(incomplete),
+        "incomplete_condition_count": len(incomplete),
         "command": [sys.executable, *sys.argv],
         "cwd": str(ROOT),
         "script_sha256": sha(Path(__file__)),

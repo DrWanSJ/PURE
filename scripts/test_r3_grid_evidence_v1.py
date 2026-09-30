@@ -9,21 +9,16 @@ import unittest
 
 import numpy as np
 
+from finalize_r3_pilot_v1 import EXPECTED, INPUTS, resolve_attempts
 from verify_reduction_audit_v0 import ROOT
 
 
 RUN = ROOT / "results/reduction/r3_aminoacylation_qssa/run_001"
-CONDITIONS = ("R3_BASE", "R3_GLYRS_LOW", "R3_GLYRS_HIGH", "R3_METRS_LOW")
-INPUTS = {
-    "canonical_sbml": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
-    "grid": "docs/reduction/r3_validation_grid_v1.csv",
-    "method": "docs/reduction/r3_aminoacylation_qssa_method.md",
-    "protocol": "docs/reduction/r3_coupled_validation_protocol_v1.md",
-    "reaction_map": "docs/reduction/r3_source_reaction_candidate_map_v1.csv",
-    "aminoacylation_reactions": "models/pnas2017_full_reference/audit/aminoacylation_reactions.csv",
-    "runtime_v1": "scripts/r3_resource_total_runtime_v1.py",
-    "runtime_v2": "scripts/r3_resource_total_runtime_v2.py",
-    "runner": "scripts/run_r3_coupled_grid_v1.py",
+ATTEMPTS = resolve_attempts(RUN, json.loads((RUN / "attempt_map.json").read_text(encoding="utf-8")))
+PROTECTED = {
+    "Gly", "Met", "ATP", "ADP", "AMP", "PPi", "PO4",
+    "tRNAGlyGCC", "tRNAfMetCAU", "GlytRNAGlyGCC",
+    "MettRNAfMetCAU", "fMettRNAfMetCAU",
 }
 
 
@@ -37,16 +32,40 @@ def max_error(path):
 
 
 class CoupledGridEvidenceTests(unittest.TestCase):
+    def test_terminal_summary_separates_evaluated_failures_from_noncompletion(self):
+        summary = json.loads((RUN / "summary.json").read_text(encoding="utf-8"))
+        manifest = json.loads((RUN / "pilot_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(summary["pilot_status"],
+                         "R3_PILOT_REJECTED_BY_FULL_COUPLED_VALIDATION")
+        self.assertEqual(summary["validated_conditions"], [])
+        self.assertEqual(len(summary["evaluated_failed_conditions"]), 9)
+        self.assertEqual(summary["incomplete_conditions"], ["R3_ADVERSE"])
+        self.assertFalse(summary["validation_grid_complete"])
+        self.assertFalse(summary["durable_r3_stage_complete"])
+        self.assertEqual(manifest["status"],
+                         "HASH_VERIFIED_R3_REJECTION_WITH_INCOMPLETE_CONDITION")
+        self.assertEqual(manifest["evaluated_condition_count"], 9)
+        self.assertEqual(manifest["incomplete_condition_count"], 1)
+        for name, digest in manifest["outputs_sha256"].items():
+            self.assertEqual(sha(RUN / name), digest)
+
     def test_source_and_raw_evidence_are_hash_bound(self):
-        for condition in CONDITIONS:
+        for condition in EXPECTED:
             with self.subTest(condition=condition):
-                run = RUN / condition
+                run = ATTEMPTS[condition]
                 result = json.loads((run / "result.json").read_text(encoding="utf-8"))
                 manifest = json.loads((run / "manifest.json").read_text(encoding="utf-8"))
                 self.assertEqual(result["condition_id"], condition)
-                self.assertEqual(result["status"], "GRID_CONDITION_EVALUATED")
                 self.assertEqual(result["run_kind"], "REGISTERED_R3_GRID_CONDITION")
-                self.assertEqual(manifest["exit_code"], 0)
+                if condition == "R3_ADVERSE":
+                    self.assertEqual(result["status"], "GRID_CONDITION_INCOMPLETE")
+                    self.assertIsNone(manifest["exit_code"])
+                    self.assertEqual(result["termination"]["kind"],
+                                     "EXTERNAL_STOP_AFTER_DOCUMENTED_NUMERICAL_STALL")
+                    self.assertFalse(result["condition_pass"])
+                else:
+                    self.assertEqual(result["status"], "GRID_CONDITION_EVALUATED")
+                    self.assertEqual(manifest["exit_code"], 0)
                 self.assertEqual(manifest["result_sha256"], sha(run / "result.json"))
                 self.assertEqual(manifest["inputs_sha256"], result["inputs_sha256"])
                 self.assertEqual(manifest["outputs_sha256"], result["outputs_sha256"])
@@ -56,10 +75,17 @@ class CoupledGridEvidenceTests(unittest.TestCase):
                     self.assertEqual(digest, sha(run / name))
 
     def test_errors_and_dimensions_are_backed_by_raw_arrays(self):
-        for condition in CONDITIONS:
+        for condition in EXPECTED:
             with self.subTest(condition=condition):
-                run = RUN / condition
+                run = ATTEMPTS[condition]
                 result = json.loads((run / "result.json").read_text(encoding="utf-8"))
+                if condition == "R3_ADVERSE":
+                    with np.load(run / "full_state.npz") as full:
+                        self.assertEqual(full["state"].shape, (201, 241))
+                        self.assertAlmostEqual(float(full["times"][-1]), 1000.)
+                    self.assertFalse((run / "state_trajectories.npz").exists())
+                    self.assertFalse((run / "directed_ledgers.npz").exists())
+                    continue
                 with np.load(run / "state_trajectories.npz") as states, np.load(
                     run / "directed_ledgers.npz"
                 ) as ledgers:
@@ -77,10 +103,22 @@ class CoupledGridEvidenceTests(unittest.TestCase):
                     ("all_directed_extent_E_inf", "directed_extent_errors.csv"),
                 ):
                     self.assertAlmostEqual(result["maxima"][label], max_error(run / name))
+                with (run / "species_errors.csv").open(encoding="utf-8", newline="") as stream:
+                    species = list(csv.DictReader(stream))
+                self.assertEqual(len(species), 241)
+                self.assertEqual(len({row["id"] for row in species}), 241)
+                self.assertTrue(PROTECTED.issubset({row["id"] for row in species}))
+                for name in ("directed_rate_errors.csv", "directed_extent_errors.csv"):
+                    with (run / name).open(encoding="utf-8", newline="") as stream:
+                        reactions = list(csv.DictReader(stream))
+                    self.assertEqual(len(reactions), 968)
+                    self.assertEqual(len({row["id"] for row in reactions}), 968)
+                    self.assertEqual(sum(row["fast_touch"] == "True" for row in reactions), 103)
                 self.assertLessEqual(result["closure_counters"]["max_residual"], 1e-10)
-                self.assertFalse(result["condition_pass"])
-                self.assertGreater(result["maxima"]["all_species_E_inf"], 0.01)
-                self.assertGreater(result["maxima"]["aminoacylation_extent_E_inf"], 0.01)
+                self.assertEqual(result["limits"], {
+                    "closure": 1e-10, "balance": 1e-8, "state": 0.01,
+                    "process_rate": 0.05, "cumulative_resource_extent": 0.01,
+                })
 
 
 if __name__ == "__main__":
