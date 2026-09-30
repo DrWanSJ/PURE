@@ -5,7 +5,7 @@ from __future__ import annotations
 import csv
 import unittest
 
-from finalize_r3_pilot_v1 import GRID, INPUTS, ROOT, check, sha
+from finalize_r3_pilot_v1 import EXPECTED, GRID, INPUTS, ROOT, check, resolve_attempts, sha
 
 
 RUN = ROOT / "results/reduction/r3_aminoacylation_qssa/run_001"
@@ -35,6 +35,23 @@ class PilotFinalizerTests(unittest.TestCase):
         row["initial_scale_json"] = '{"GlyRS":10}'
         with self.assertRaises(AssertionError):
             check("R3_GLYRS_LOW", RUN / "R3_GLYRS_LOW", self.inputs, row)
+
+    def test_attempt_map_requires_exact_condition_and_local_path(self):
+        mapping = {name: f"run_001/{name}" for name in EXPECTED}
+        attempts = resolve_attempts(RUN, mapping)
+        self.assertEqual(attempts["R3_BASE"], (RUN / "R3_BASE").resolve())
+        missing = mapping.copy()
+        del missing["R3_ADVERSE"]
+        with self.assertRaises(AssertionError):
+            resolve_attempts(RUN, missing)
+        traversal = mapping.copy()
+        traversal["R3_ADVERSE"] = "../outside/R3_ADVERSE"
+        with self.assertRaises(AssertionError):
+            resolve_attempts(RUN, traversal)
+        substituted = mapping.copy()
+        substituted["R3_ADVERSE"] = "run_001/R3_BASE"
+        with self.assertRaises(AssertionError):
+            resolve_attempts(RUN, substituted)
 
 
 if __name__ == "__main__":

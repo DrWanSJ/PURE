@@ -22,3 +22,20 @@ variables unset. Every condition keeps its original raw output and gate
 verdict; solver differences across thread settings are evaluated against the
 same registered limits. A screen or condition failure is retained as a
 failure, not tuned away by the launch setting.
+
+## Interrupted attempts and restart
+
+The six original `run_001` processes for `R3_METRS_HIGH`, `R3_GLY_LOW`,
+`R3_MET_LOW`, `R3_TRNA_LOW`, `R3_ATP_LOW`, and `R3_ADVERSE` ended with no
+`result.json` or condition manifest after saving their complete full-source
+trajectories. Their trajectory and timescale files are retained as partial
+attempt evidence. They are not scored as completed QSSA comparisons.
+
+The coupled runner refuses to overwrite an existing directory. The same
+registered condition IDs, source, solver protocol, tolerances, and fixed
+limits are therefore executed again in fresh `restart_001` directories.
+These six restarts set `OPENBLAS_NUM_THREADS=1`, `OMP_NUM_THREADS=1`, and
+`MKL_NUM_THREADS=1` before Python starts. The final pilot manifest identifies
+the selected attempt directory for every condition and checks that attempt's
+input and output hashes. This restart does not change a scientific gate or
+reinterpret a failed screen.

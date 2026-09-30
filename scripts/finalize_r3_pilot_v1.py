@@ -46,12 +46,29 @@ def read_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def resolve_attempts(run: Path, mapping: dict[str, str]) -> dict[str, Path]:
+    """Bind every registered condition to one immutable attempt under the run parent."""
+    assert set(mapping) == set(EXPECTED), "Attempt map must cover the exact grid"
+    parent = run.parent.resolve()
+    attempts = {}
+    for condition in EXPECTED:
+        relative = Path(mapping[condition])
+        assert not relative.is_absolute() and ".." not in relative.parts
+        assert relative.name == condition, (condition, relative)
+        directory = (parent / relative).resolve()
+        assert directory.is_relative_to(parent), (condition, directory)
+        attempts[condition] = directory
+    assert len(set(attempts.values())) == len(EXPECTED)
+    return attempts
+
+
 def check(condition: str, directory: Path, expected_inputs: dict,
           registered_row: dict) -> dict:
     result_path = directory / "result.json"
     manifest = read_json(directory / "manifest.json")
     result = read_json(result_path)
     assert result["condition_id"] == condition == manifest["condition_id"]
+    assert Path(result["command"][-1]).resolve() == directory.resolve()
     assert result["run_kind"] == "REGISTERED_R3_GRID_CONDITION"
     assert result["condition_role"] == registered_row["role"]
     assert json.loads(result["initial_scale_json"]) == json.loads(
@@ -116,6 +133,8 @@ def check(condition: str, directory: Path, expected_inputs: dict,
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run-dir", type=Path, required=True)
+    parser.add_argument("--attempt-map", type=Path,
+                        help="JSON mapping every condition to a relative attempt directory")
     args = parser.parse_args()
     run = args.run_dir.resolve()
     targets = [run / name for name in ("validation_grid.csv", "summary.json", "pilot_manifest.json")]
@@ -125,12 +144,17 @@ def main() -> int:
         grid = list(csv.DictReader(stream))
     if tuple(row["condition_id"] for row in grid) != EXPECTED:
         parser.error("Registered grid IDs/order differ from the fixed ten-case protocol")
-    missing = [name for name in EXPECTED if not (run / name / "manifest.json").exists()]
+    mapping = (read_json(args.attempt_map) if args.attempt_map else
+               {name: f"{run.name}/{name}" for name in EXPECTED})
+    attempts = resolve_attempts(run, mapping)
+    missing = [name for name in EXPECTED if not (attempts[name] / "manifest.json").exists()]
     if missing:
         parser.error("Unfinalized conditions: " + ", ".join(missing))
     inputs = {key: sha(ROOT / path) for key, path in INPUTS.items()}
-    rows = [check(name, run / name, inputs, registered_row)
+    rows = [check(name, attempts[name], inputs, registered_row)
             for name, registered_row in zip(EXPECTED, grid)]
+    for row in rows:
+        row["evidence_directory"] = mapping[row["condition_id"]]
     passed = [row["condition_id"] for row in rows if row["condition_pass"] == "true"]
     failed = [row["condition_id"] for row in rows if row["condition_pass"] == "false"]
     verdict = (
@@ -150,6 +174,7 @@ def main() -> int:
         "failed_or_incomplete_conditions": failed,
         "condition_count": len(rows),
         "source_and_protocol_sha256": inputs,
+        "condition_attempts": mapping,
         "meaning": "Selective 21-complex GlyRS/MetRS approximation pilot only; not final PURE reduction or R4 approval",
     }
     targets[1].write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8", newline="\n")
@@ -160,6 +185,7 @@ def main() -> int:
         "cwd": str(ROOT),
         "script_sha256": sha(Path(__file__)),
         "execution_environment_sha256": sha(ROOT / "docs/reduction/r3_grid_execution_environment_v1.md"),
+        "attempt_map_sha256": sha(args.attempt_map) if args.attempt_map else None,
         "condition_manifests_sha256": {row["condition_id"]: row["manifest_sha256"] for row in rows},
         "outputs_sha256": {path.name: sha(path) for path in targets[:2]},
         "pilot_status": verdict,
