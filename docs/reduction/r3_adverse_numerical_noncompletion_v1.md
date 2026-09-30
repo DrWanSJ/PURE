@@ -127,6 +127,23 @@ gross-absolute/net-absolute ratios are about `163207` for CP, `28789` for
 ATP, and `6.67e6` for GlyRS. These observations show local numerical
 sensitivity but do not isolate a cause or justify changing tolerances.
 
+An instrumented SciPy 1.13.1 BDF run from the same reduced snapshot is retained
+as `adverse_bdf_error_diagnostic_001`. It observes trial solves through
+SciPy's BDF callback without changing the stepper, source RHS, Jacobian, or
+tolerances. Over 200 accepted steps (t `359.058955642` to `359.059632129` s)
+it made 1,337 RHS calls and 564 internal trial solves. Of these, 364 did not
+meet the implicit Newton convergence test; **zero** converged trials were
+rejected by the tolerance-weighted local error estimate. Accepted step sizes
+ranged from `1.26e-7` to `1.14e-5` s, and 185/200 started at BDF order 1.
+The dominant weighted error coordinate was `NDK_GDP_ATP` for 191 accepted
+trials and `CK_Cr_ATP` for nine, but even the largest accepted RMS error was
+only `0.0215`, below the rejection threshold of one. Thus repeated implicit
+Newton nonconvergence, rather than local error-estimate rejection, directly
+causes the observed step reductions in this **local restart**. This does not
+yet identify whether the cause is closure warm-start behavior, Jacobian
+accuracy, stiffness, or another numerical issue; the registered t=0 run
+remains incomplete.
+
 `scripts/r3_resource_total_runtime_v3.py` preserves the failed extra-polish
 experiment. It is not used by the registered condition results or pilot
 manifest; v1/v2 source and all nine completed condition hashes remain
