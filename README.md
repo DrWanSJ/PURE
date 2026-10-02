@@ -11,19 +11,24 @@ part of the imported PNAS reference model.
 
 | Identity | Role | Status |
 | --- | --- | --- |
-| `PNAS2017_full_reference` | Literal, provenance-bound SBML import of the Matsuura et al. translation network; benchmark and inventory only | **Paper PDF and S01–S29 captured; audit and interpretation ongoing**; no scientific modification permitted |
+| `PNAS2017_full_reference` | Literal, provenance-bound SBML import of the Matsuura et al. translation network; benchmark and inventory only | **G1-PNAS PASS/CLOSED (2026-10-02)**; paper PDF and S01–S29 captured; scientific interpretation remains open; no source-model modification permitted |
 | `PURE_reduced_core` | Future interpretable project model derived from explicit, human-reviewed reduction decisions | **Proposal only**; no validated model yet |
 | `Mavelli2015_coarse_reference` | Mavelli, Marangoni and Stano (2015) coarse-grained comparator, DOI: [10.1007/s11538-015-0082-8](https://doi.org/10.1007/s11538-015-0082-8) | **Frozen legacy benchmark**, completed through the previous D7 RS-QSSA work |
 
 The publisher PDF and S01–S29 files are now preserved with hashes alongside
 the author-site files; see the [source capture](references/PNAS2017_Matsuura/README.md).
-The [G1-PNAS evidence report](docs/pnas2017/g1_pnas_report.md) records the
-pre-integration gate, when those publisher files were missing. Its source
-blocker is historical, while chemical-unit, dataset-comparison and human-review
-work remains open; G1 has not been rerun. The migrated
-[reduction evidence](docs/reduction/pnas2017_historical_evidence.md) retains
-its failed and blocked outcomes. [Open scientific decisions](docs/reduction/open_scientific_decisions.md)
-do not constitute model approval.
+The [G1-PNAS rerun report](docs/pnas2017/g1_pnas_report.md) records
+**PASS/CLOSED on 2026-10-02**: detailed-reference curation and reduction-review
+preparation are complete. The [historical BLOCKED report](docs/pnas2017/g1_pnas_report_20260927_blocked.md)
+preserves the 2026-09-27 pre-integration result. The [241-species information contract](docs/reduction/species_information_contract_summary.md)
+is human approved; all 968 reaction/process kinetic decisions remain pending,
+and `PURE_reduced_core` remains unvalidated. S28 comparison, S27 interpretation,
+absolute chemical units, formulas/charge/protonation/Mg, quantitative ionic
+strength and validated osmotic pressure remain separate open scientific work.
+The migrated [reduction evidence](docs/reduction/pnas2017_historical_evidence.md)
+retains its failed and blocked outcomes; [open decisions](docs/reduction/open_scientific_decisions.md)
+and the [aminoacylation QSSA reference](docs/reduction/aminoacylation_qssa_quick_reference.md)
+do not constitute kinetic or model approval.
 
 The Mavelli benchmark remains valid for its coarse-grained question. It is no
 longer the primary benchmark because the revised question requires the

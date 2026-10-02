@@ -1,0 +1,844 @@
+{
+  "schema": "g1_pnas_gate/v1",
+  "gate": "G1-PNAS",
+  "date": "2026-10-02",
+  "repository_head": "678fcb709324142454fd7a80cb6185c64b900510",
+  "branch": "main",
+  "origin_main": "678fcb709324142454fd7a80cb6185c64b900510",
+  "expected_head_matches": true,
+  "tasklist_gate": "13.2",
+  "criteria_total": 10,
+  "criteria_pass": 10,
+  "criteria_blocked": 0,
+  "criteria_fail": 0,
+  "overall_status": "PASS",
+  "overall_status_basis": "All exact ten tasklist criteria pass; all six required current verifiers pass after the exact approved provenance synchronization.",
+  "closure_status": "CLOSED",
+  "formal_closed": true,
+  "draft_only": false,
+  "source_model": "PNAS2017_full_reference",
+  "canonical_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "reduced_model_status": "NOT_VALIDATED",
+  "reaction_level_reduction_status": "PENDING_HUMAN_REVIEW",
+  "species_information_contract": {
+    "status": "HUMAN_APPROVED_V1",
+    "I": 42,
+    "II_A": 57,
+    "II_B": 91,
+    "III": 22,
+    "C": 29,
+    "total": 241
+  },
+  "functional_annotation": {
+    "total": 968,
+    "unresolved": 0,
+    "DIRECT_CHEMISTRY": 492,
+    "GRAPH_PROPAGATED": 50,
+    "HUMAN_REVIEW_REQUIRED": 0,
+    "REFERENCE_DISABLED": 420,
+    "SHARED_JUNCTION": 6
+  },
+  "inventories": {
+    "species": 241,
+    "reactions": 968,
+    "local_parameters": 968,
+    "modules": 26,
+    "subsystem_entries": 1098,
+    "unique_combined_signatures": 968,
+    "positive_author_initial_components": 27
+  },
+  "criteria": [
+    {
+      "number": 1,
+      "criterion": "权威来源文件以校验和冻结；缺失文件明确标为缺失。",
+      "evidence": [
+        "references/PNAS2017_Matsuura/provenance/sources.json",
+        "references/PNAS2017_Matsuura/provenance/publisher_capture.json",
+        "references/PNAS2017_Matsuura/MISSING_SOURCES.md"
+      ],
+      "verification_performed_now": "33 frozen acquired source files match registered byte size and SHA-256; 31 extracted original archive members match; PDF signature and all 29 XLSX workbooks checked.",
+      "status": "PASS",
+      "residual_limitation": "A separate full Supporting Information document is not established and remains explicitly mapped; S27 format/source relation remains open."
+    },
+    {
+      "number": 2,
+      "criterion": "参考网络可用标准 SBML 工具读取，并保存验证消息。",
+      "evidence": [
+        "docs/pnas2017/sbml_audit.md",
+        "docs/pnas2017/g1_pnas_evidence_20261002.zip"
+      ],
+      "verification_performed_now": "Existing SBML audit executed outside repo with libSBML 5.21.2: parse messages 0; consistency warnings 2904. Fresh complete messages retained for companion verification record.",
+      "status": "PASS",
+      "residual_limitation": "968 rate-unit and 1936 undeclared-unit/literal warnings remain; execution does not certify chemical units.",
+      "evidence_archive_members": [
+        "source/libsbml_messages_fresh.json",
+        "source/sbml_audit_fresh.md"
+      ]
+    },
+    {
+      "number": 3,
+      "criterion": "自动生成物种、反应、参数及模块库存，保留原始标识。",
+      "evidence": [
+        "models/pnas2017_full_reference/audit/species.csv",
+        "models/pnas2017_full_reference/audit/reactions.csv",
+        "models/pnas2017_full_reference/audit/parameters.csv",
+        "models/pnas2017_full_reference/audit/modules.csv"
+      ],
+      "verification_performed_now": "Regenerated all four inventories outside repo; each is byte-identical to current-main inventory, preserving original IDs.",
+      "status": "PASS",
+      "residual_limitation": "Inventories describe the detailed reference; no new reduced model or chemical composition was created."
+    },
+    {
+      "number": 4,
+      "criterion": "241 组分、27 初始组分、968 反应、26 子系统等发表计数得到解释，或逐项记录差异。",
+      "evidence": [
+        "models/pnas2017_full_reference/audit/species.csv",
+        "models/pnas2017_full_reference/audit/reactions.csv",
+        "models/pnas2017_full_reference/audit/parameters.csv",
+        "models/pnas2017_full_reference/audit/modules.csv",
+        "results/pnas2017_reference/rr_cvode_author_csv_20260924/run_manifest.json",
+        "docs/pnas2017/reference_reproduction.md",
+        "models/pnas2017_full_reference/audit/resource_map_manifest.json",
+        "docs/pnas2017/g1_pnas_verification_20261002.json"
+      ],
+      "verification_performed_now": "Confirmed 241 species, 968 combined reactions/local parameters, 26 subsystem XMLs, 1098 subsystem entries, 968 exact unique signatures, 0 unmatched, and 27 positive author-CSV initials.",
+      "status": "PASS",
+      "residual_limitation": "Raw all-one initial/parameter placeholders are distinguished from author execution values; shared source diagrams are not additional events."
+    },
+    {
+      "number": 5,
+      "criterion": "资源/小分子账本可供逐反应核查。",
+      "evidence": [
+        "docs/pnas2017/chemical_ledger.md",
+        "models/pnas2017_full_reference/audit/species_properties.csv",
+        "models/pnas2017_full_reference/audit/reaction_balance_audit.csv"
+      ],
+      "verification_performed_now": "241/968 exact-once original IDs; all 968 particle and 18 free-resource event deltas recomputed against existing source inventory and agree; manifest hashes verified.",
+      "status": "PASS",
+      "residual_limitation": "Free-resource deltas and represented-particle proxy do not certify bound moieties, elemental balance or osmotic pressure."
+    },
+    {
+      "number": 6,
+      "criterion": "全部实际获得的参考反应映射到模块和家族；若实际网络与 968 不同，不能假装覆盖 968。",
+      "evidence": [
+        "docs/reduction/reduction_map.md",
+        "docs/reduction/reaction_level_annotation_v2.csv",
+        "docs/reduction/reaction_family_summary_v2.csv",
+        "docs/reduction/reaction_annotation_manifest_v2.json"
+      ],
+      "verification_performed_now": "Existing v1/v2 and reaction-contract verifiers exit 0; v0/v1/v2 cover all 968 IDs exactly once; v2 categories 492/50/0/420/6, unresolved 0, 35 active families plus DEG.",
+      "status": "PASS",
+      "residual_limitation": "Functional annotation is complete; 50 graph-propagated rows retain that evidence status; no kinetic-equivalence conclusion."
+    },
+    {
+      "number": 7,
+      "criterion": "AI 未静默最终确定任何降维决策；研究者审核项均保留。",
+      "evidence": [
+        "docs/reduction/reduction_decisions.csv",
+        "docs/reduction/human_reduction_review.md",
+        "docs/reduction/species_information_contract_summary.md",
+        "docs/reduction/species_information_contract_detailed.md",
+        "docs/reduction/human_audit_sync_20260930.md"
+      ],
+      "verification_performed_now": "Species verifier exit 0; approved summary/detailed/source sets independently agree at 42/57/91/22/29; all 968 kinetic decisions PENDING; 96 process boxes empty, zero selected.",
+      "status": "PASS",
+      "residual_limitation": "Information retention is human approved; KEEP/LUMP/QSSA/CHEMOSTAT/DROP/effective kinetics remain separate pending choices."
+    },
+    {
+      "number": 8,
+      "criterion": "候选减化核心的状态、反应、资源与不可恢复量已形成结构文档，无验证宣称。",
+      "evidence": [
+        "docs/reduction/candidate_core_v0.md"
+      ],
+      "verification_performed_now": "Read complete candidate proposal and source mapping: STRUCTURAL_PROPOSAL_ONLY / HUMAN_REVIEW_REQUIRED; states, resource obligations and irreversible information loss are documented.",
+      "status": "PASS",
+      "residual_limitation": "About 42–70 channels is an engineering estimate; PURE_reduced_core remains NOT_VALIDATED and unconstructed as a formal accepted model."
+    },
+    {
+      "number": 9,
+      "criterion": "渗透颗粒代理与离子强度所需物种、浓度、电荷/质子化/Mg 结合信息及缺口均被映射；资料不全不发布定量离子强度。",
+      "evidence": [
+        "docs/pnas2017/chemical_ledger.md",
+        "models/pnas2017_full_reference/audit/species_properties.csv",
+        "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+        "docs/visualization/visualization_plan.md"
+      ],
+      "verification_performed_now": "All 241 formula/charge/protonation cells are blank and unresolved; units explicitly inferred; all 968 ionic statuses unavailable due to absent charge/protonation/Mg metadata; 29 terminal sinks have zero source consumption and cumulative accounting obligations.",
+      "status": "PASS",
+      "residual_limitation": "No quantitative full-system ionic strength or validated osmotic pressure is published; authoritative formulas, charges, Mg binding and absolute units remain open."
+    },
+    {
+      "number": 10,
+      "criterion": "可视化数据契约草案通过原始 SBML species/reaction ID 连接视图与来源。",
+      "evidence": [
+        "docs/visualization/visualization_plan.md",
+        "models/pnas2017_full_reference/audit/species.csv",
+        "models/pnas2017_full_reference/audit/reactions.csv",
+        "docs/reduction/reduction_decisions.csv"
+      ],
+      "verification_performed_now": "Inspected original species/reaction ID, source SHA, module-local IDs, trajectory/flux/reduction mapping and freshness requirements; 241/968 source-key table coverage verified.",
+      "status": "PASS",
+      "residual_limitation": "This is a data-contract draft and derived navigation graph; scientific grouping differs from display grouping, and no finished UI is claimed."
+    }
+  ],
+  "checks": [
+    {
+      "command": "python scripts/verify_pnas2017_artifacts.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PROVENANCE_AND_COVERAGE_VERIFIED_NOT_SCIENTIFIC_VALIDATION\",\n  \"sources\": 3,\n  \"species\": 241,\n  \"reactions\": 968,\n  \"modules\": 26,\n  \"pending_decisions\": 968,\n  \"review_cards\": 16\n}\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_pnas2017_artifacts.log"
+    },
+    {
+      "command": "python scripts/verify_pnas2017_integration.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "{\"pass\": 11, \"fail\": 0}\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_pnas2017_integration.log"
+    },
+    {
+      "command": "python scripts/verify_reaction_level_annotation.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "PASS: graph-aware v1 = 968 unique rows\nPASS: 35 active families + RFAM_DEG; 290 reverse channels\nPASS: 846 anchors / 42 propagated / 4 family-propagated / 76 shared junctions\nPASS: EFG/50S pair = shared ELONG_energy_coupling + RECYCLE_component_release\nPASS: historical v1 graph-unresolved=0; v2 functional review and reduction review are separate\nNOTE: graph annotation only; no QSSA/lumping/kinetic validity is tested\nPASS: 968 unique source-identical reactions; 290 symmetric exact reverse channels\nPASS: hard chemistry priority; double-zero edges never functional anchors\nPASS: RFAM_005-010 approved regressions; RFAM_011/012 Gly/Met source and parameter-topology symmetry (52/52)\nPASS: RFAM_025/026 reviewed initiation rules and reverse symmetry\nPASS: nine prior reviewed families = 98 direct rules; RFAM_002/004/014 final reviewed patterns and source equations\nPASS: six approved shared junctions; non-target scientific fingerprint unchanged\nPASS: 22 specific-intermediate cross-family links; 0 live functional-review rows\nPASS: reduction scientific review remains 968/968 PENDING; v0/v1 retained\nSTATUS COUNTS: {\"DIRECT_CHEMISTRY\": 492, \"GRAPH_PROPAGATED\": 50, \"HUMAN_REVIEW_REQUIRED\": 0, \"REFERENCE_DISABLED\": 420, \"SHARED_JUNCTION\": 6}\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_reaction_level_annotation.log"
+    },
+    {
+      "command": "python scripts/verify_reaction_level_annotation_v2.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "PASS: 968 unique source-identical reactions; 290 symmetric exact reverse channels\nPASS: hard chemistry priority; double-zero edges never functional anchors\nPASS: RFAM_005-010 approved regressions; RFAM_011/012 Gly/Met source and parameter-topology symmetry (52/52)\nPASS: RFAM_025/026 reviewed initiation rules and reverse symmetry\nPASS: nine prior reviewed families = 98 direct rules; RFAM_002/004/014 final reviewed patterns and source equations\nPASS: six approved shared junctions; non-target scientific fingerprint unchanged\nPASS: 22 specific-intermediate cross-family links; 0 live functional-review rows\nPASS: reduction scientific review remains 968/968 PENDING; v0/v1 retained\nSTATUS COUNTS: {\"DIRECT_CHEMISTRY\": 492, \"GRAPH_PROPAGATED\": 50, \"HUMAN_REVIEW_REQUIRED\": 0, \"REFERENCE_DISABLED\": 420, \"SHARED_JUNCTION\": 6}\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_reaction_level_annotation_v2.log"
+    },
+    {
+      "command": "python scripts/verify_reaction_level_contract.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "PASS: 968 unique source reactions; 26 source subsystems\nPASS: CellDesigner reaction types = association 266, dissociation 266, state transition 436\nPASS: source SBML reversible=true count = 0\nPASS: 290 exact reverse-stoichiometry pairs cover 580 directed reactions; no ambiguous signature groups\nPASS: 388 degradation-related reactions require explicit DEG_sink coverage\nPASS: 29 FMet_tRNASynthesis reactions require the RS-to-INIT formylation bridge\nPASS: Level-C vocabulary = 22 active stages + 1 coverage-only stage; elongation keeps 5 active stages\nPASS: summary/detailed Markdown contain every controlled Level-C label\nNOTE: vocabulary/source-structure verification only; no 968-row functional assignment or kinetic reduction is validated\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_reaction_level_contract.log"
+    },
+    {
+      "command": "python scripts/verify_species_information_contract.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "PASS: 241 unique source species\nPASS: class counts I=42, II-A=57, II-B=91, III=22, C=29\nPASS: source species set equals detailed Markdown table\nPASS: degraded/enzyme-intermediate source rules\nPASS: resource Class-I contract\nPASS: Pept0002, RS50S_tRNAGlyGCC and UAA pretermination decisions\nNOTE: structural verification only; QSSA/kinetic validity is not tested\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_species_information_contract.log"
+    }
+  ],
+  "historical_report": {
+    "path": "docs/pnas2017/g1_pnas_report_20260927_blocked.md",
+    "status": "BLOCKED_HISTORICAL_20260927",
+    "original_payload_bytes": 6270,
+    "original_payload_sha256": "c7bd1b36e6f67a9c8093b30c117064319d85cafc4167de2a8e432dd64f60f0ae",
+    "note": "Existing historical archive with clear preface preserves exact old report payload including original 65-hex typo; later source acquisition does not alter historical result."
+  },
+  "verification_record": {
+    "path": "docs/pnas2017/g1_pnas_verification_20261002.json",
+    "scope": "Current formal closure, with prior diagnostics preserved as historical evidence"
+  },
+  "fresh_reference_execution": {
+    "prepare_only": {
+      "exit_code": 0,
+      "scope": "exact main runner freshly normalized source and applied author CSV inputs outside repo; no trajectory",
+      "legacy_metadata_caveat": "Generated runner metadata still says S28 missing from a legacy template; current frozen S28 is present, size/hash verified and seven sheets opened. No actual current S28 acquisition gap is inferred and runner remains unchanged."
+    },
+    "SimBiology": {
+      "status": "FRESH_EXECUTION",
+      "MATLAB_version": "25.2.0.3177638 R2025b Update 5",
+      "time_points": 435,
+      "end_time_seconds": 1000,
+      "Pept0003_final": 5.1645826540185835,
+      "rate_dimension_warnings": 968,
+      "toolbox_version": "NOT_RETURNED_BY_VER_PROBE"
+    },
+    "RoadRunner": {
+      "status": "PRESERVED_EVIDENCE_HASH_VERIFIED_NOT_RERUN",
+      "historical_version": "2.10.0",
+      "Pept0003_final": 5.164478733656283,
+      "fresh_unavailability": "libSBML and RoadRunner exist in separate incompatible Python environments; optional disposable pip target attempt failed TLS."
+    },
+    "comparison": {
+      "status": "FRESH_COMPARE_PRESERVED_RR_VS_FRESH_SIMBIO",
+      "exit_code": 0,
+      "endpoint_absolute_difference": 0.00010392036229678325,
+      "preregistered_acceptance_threshold": null
+    }
+  },
+  "open_items": [
+    {
+      "id": "S28_POINTWISE_COMPARISON",
+      "status": "OPEN",
+      "detail": "S28 XLSX preserved and seven sheets opened; observable mapping and pointwise trajectory comparison not run."
+    },
+    {
+      "id": "S27_SOURCE_RELATION",
+      "status": "OPEN",
+      "detail": "S27 is XLSX; relation to paper combined-SBML wording remains unresolved."
+    },
+    {
+      "id": "FULL_SUPPORTING_INFORMATION_DOCUMENT",
+      "status": "NOT_ESTABLISHED",
+      "detail": "A separate full SI document has not been established; current acquisition/status map remains explicit."
+    },
+    {
+      "id": "AUTHORITATIVE_ABSOLUTE_UNITS",
+      "status": "OPEN",
+      "detail": "SBML chemical units unresolved; author CSV concentration scale inferred from paper examples."
+    },
+    {
+      "id": "COMPLEX_FORMULAS_AND_BOUND_MOIETIES",
+      "status": "OPEN",
+      "detail": "Authoritative formulas and complete composition vectors absent."
+    },
+    {
+      "id": "CHARGE_PROTONATION_MG_CONVENTIONS",
+      "status": "OPEN",
+      "detail": "Formal charge, protonation and Mg-binding conventions remain unavailable."
+    },
+    {
+      "id": "QUANTITATIVE_IONIC_STRENGTH",
+      "status": "DISABLED",
+      "detail": "Whole-system numerical ionic-strength claim unsupported."
+    },
+    {
+      "id": "VALIDATED_OSMOTIC_PRESSURE",
+      "status": "OPEN",
+      "detail": "Represented-particle proxy is not a pressure validation."
+    },
+    {
+      "id": "REACTION_PROCESS_KINETIC_CHOICES",
+      "status": "PENDING_HUMAN_REVIEW",
+      "detail": "All 968 decisions and 96 process boxes remain pending."
+    },
+    {
+      "id": "FUTURE_REDUCTION_VALIDITY_DOMAIN",
+      "status": "OPEN",
+      "detail": "Each approved future transformation needs derived assumptions, reconstruction, validity domain and validation."
+    },
+    {
+      "id": "PURE_REDUCED_CORE",
+      "status": "NOT_VALIDATED",
+      "detail": "Construction and validation remain future scientific work."
+    }
+  ],
+  "formal_gate_decision": "PASS / CLOSED",
+  "verification_status": "PASS",
+  "evidence_path_validation": {
+    "all_criterion_evidence_paths_verified": true,
+    "planned_save_artifact_sources_verified": true,
+    "archive_member_paths_verified": true,
+    "S28_size_sha256_verified": true
+  },
+  "scope_preservation": {
+    "canonical_model_and_raw_source_changes": false,
+    "scientific_criteria_changes": false,
+    "research_PR_3_4_touched": false,
+    "README_tasklist_status_changes": true,
+    "verifier_or_provenance_repairs_applied": true,
+    "kinetic_reduction_started": false
+  },
+  "diagnostic_only": false,
+  "starting_main_head": "678fcb709324142454fd7a80cb6185c64b900510",
+  "closure_meaning": "G1-PNAS closes the detailed-reference curation and reduction-review preparation stage. It authorizes entry into human-reviewed kinetic reduction. It does not validate PURE_reduced_core.",
+  "closure_date": "2026-10-02",
+  "closure_basis": {
+    "evidence_main_head": "678fcb709324142454fd7a80cb6185c64b900510",
+    "approved_provenance_patch_sha256": "b338b6d580f5f17c394e14f0168e41bfadf81e1a3dccb34760120428218bea5a",
+    "validation": "Current main evidence with exact approved documentation-provenance patch applied; no scientific changes",
+    "provenance_sync_commit": "4e63d9ef6ec1c623c485bd4553362c27114a6203"
+  },
+  "required_verifier_results": [
+    {
+      "command": "python scripts/verify_pnas2017_artifacts.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PROVENANCE_AND_COVERAGE_VERIFIED_NOT_SCIENTIFIC_VALIDATION\",\n  \"sources\": 3,\n  \"species\": 241,\n  \"reactions\": 968,\n  \"modules\": 26,\n  \"pending_decisions\": 968,\n  \"review_cards\": 16\n}\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_pnas2017_artifacts.log"
+    },
+    {
+      "command": "python scripts/verify_pnas2017_integration.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "{\"pass\": 11, \"fail\": 0}\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_pnas2017_integration.log"
+    },
+    {
+      "command": "python scripts/verify_reaction_level_annotation.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "PASS: graph-aware v1 = 968 unique rows\nPASS: 35 active families + RFAM_DEG; 290 reverse channels\nPASS: 846 anchors / 42 propagated / 4 family-propagated / 76 shared junctions\nPASS: EFG/50S pair = shared ELONG_energy_coupling + RECYCLE_component_release\nPASS: historical v1 graph-unresolved=0; v2 functional review and reduction review are separate\nNOTE: graph annotation only; no QSSA/lumping/kinetic validity is tested\nPASS: 968 unique source-identical reactions; 290 symmetric exact reverse channels\nPASS: hard chemistry priority; double-zero edges never functional anchors\nPASS: RFAM_005-010 approved regressions; RFAM_011/012 Gly/Met source and parameter-topology symmetry (52/52)\nPASS: RFAM_025/026 reviewed initiation rules and reverse symmetry\nPASS: nine prior reviewed families = 98 direct rules; RFAM_002/004/014 final reviewed patterns and source equations\nPASS: six approved shared junctions; non-target scientific fingerprint unchanged\nPASS: 22 specific-intermediate cross-family links; 0 live functional-review rows\nPASS: reduction scientific review remains 968/968 PENDING; v0/v1 retained\nSTATUS COUNTS: {\"DIRECT_CHEMISTRY\": 492, \"GRAPH_PROPAGATED\": 50, \"HUMAN_REVIEW_REQUIRED\": 0, \"REFERENCE_DISABLED\": 420, \"SHARED_JUNCTION\": 6}\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_reaction_level_annotation.log"
+    },
+    {
+      "command": "python scripts/verify_reaction_level_annotation_v2.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "PASS: 968 unique source-identical reactions; 290 symmetric exact reverse channels\nPASS: hard chemistry priority; double-zero edges never functional anchors\nPASS: RFAM_005-010 approved regressions; RFAM_011/012 Gly/Met source and parameter-topology symmetry (52/52)\nPASS: RFAM_025/026 reviewed initiation rules and reverse symmetry\nPASS: nine prior reviewed families = 98 direct rules; RFAM_002/004/014 final reviewed patterns and source equations\nPASS: six approved shared junctions; non-target scientific fingerprint unchanged\nPASS: 22 specific-intermediate cross-family links; 0 live functional-review rows\nPASS: reduction scientific review remains 968/968 PENDING; v0/v1 retained\nSTATUS COUNTS: {\"DIRECT_CHEMISTRY\": 492, \"GRAPH_PROPAGATED\": 50, \"HUMAN_REVIEW_REQUIRED\": 0, \"REFERENCE_DISABLED\": 420, \"SHARED_JUNCTION\": 6}\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_reaction_level_annotation_v2.log"
+    },
+    {
+      "command": "python scripts/verify_reaction_level_contract.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "PASS: 968 unique source reactions; 26 source subsystems\nPASS: CellDesigner reaction types = association 266, dissociation 266, state transition 436\nPASS: source SBML reversible=true count = 0\nPASS: 290 exact reverse-stoichiometry pairs cover 580 directed reactions; no ambiguous signature groups\nPASS: 388 degradation-related reactions require explicit DEG_sink coverage\nPASS: 29 FMet_tRNASynthesis reactions require the RS-to-INIT formylation bridge\nPASS: Level-C vocabulary = 22 active stages + 1 coverage-only stage; elongation keeps 5 active stages\nPASS: summary/detailed Markdown contain every controlled Level-C label\nNOTE: vocabulary/source-structure verification only; no 968-row functional assignment or kinetic reduction is validated\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_reaction_level_contract.log"
+    },
+    {
+      "command": "python scripts/verify_species_information_contract.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "PASS: 241 unique source species\nPASS: class counts I=42, II-A=57, II-B=91, III=22, C=29\nPASS: source species set equals detailed Markdown table\nPASS: degraded/enzyme-intermediate source rules\nPASS: resource Class-I contract\nPASS: Pept0002, RS50S_tRNAGlyGCC and UAA pretermination decisions\nNOTE: structural verification only; QSSA/kinetic validity is not tested\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_species_information_contract.log"
+    }
+  ],
+  "integration_verification": {
+    "schema": "pnas2017_integration_verification/v1",
+    "authority": "Evidence-integrity check only; no reduction acceptance",
+    "main_base": "0a72448ff20db8e58593a9910b8944c121750778",
+    "research_source": "025fd340300a56f069c2136ea8bb0ff542b046d4",
+    "pass": 11,
+    "fail": 0,
+    "checks": [
+      {
+        "check": "P1_expected_source_set",
+        "status": "PASS",
+        "detail": "30 captured files; 29 supplements"
+      },
+      {
+        "check": "P1_source_bytes",
+        "status": "PASS",
+        "detail": "30 SHA-256, sizes and research blobs checked; mismatches=[]"
+      },
+      {
+        "check": "main_authority_unchanged",
+        "status": "PASS",
+        "detail": "10 canonical/normalized/generated files unchanged vs main 0a72448ff20db8e58593a9910b8944c121750778; review matches exact approved documentation sync d5874dec053e6ff210e3d1843bb7735ebe3ba84a; changed=[]"
+      },
+      {
+        "check": "canonical_author_identity",
+        "status": "PASS",
+        "detail": "canonical SHA-256=dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+      },
+      {
+        "check": "historical_input_snapshot",
+        "status": "PASS",
+        "detail": "38 research inputs; mismatches=[]"
+      },
+      {
+        "check": "historical_runner_revision",
+        "status": "PASS",
+        "detail": "source=11c4d704a:scripts/run_pnas2017_aa_v1_formal.m"
+      },
+      {
+        "check": "historical_run_archive",
+        "status": "PASS",
+        "detail": "179 run files; mismatches=[]"
+      },
+      {
+        "check": "historical_candidate_records",
+        "status": "PASS",
+        "detail": "65 original Git blobs; changed=[]"
+      },
+      {
+        "check": "historical_status_and_open_decisions",
+        "status": "PASS",
+        "detail": "A3a failed; A3b-21 failed; A3b-r12 blocked; A3c 0/21; OPEN-01..08"
+      },
+      {
+        "check": "no_reduced_core_promoted",
+        "status": "PASS",
+        "detail": "reduced XML files=0"
+      },
+      {
+        "check": "evidence_graph_freshness",
+        "status": "PASS",
+        "detail": "14 nodes, 12 edges; source fingerprint verified"
+      }
+    ]
+  },
+  "diagnostic_history": {
+    "phase": "2026-10-02 diagnostic before renewed authorization",
+    "formal_closed": false,
+    "verification_status": "FAIL",
+    "prior_user_instruction": "只保存诊断，不修复或推送",
+    "prior_official_failures": {
+      "artifact_verifier_exit": 1,
+      "integration_verifier_exit": 1,
+      "integration_pass": 10,
+      "integration_fail": 1,
+      "cause": "Current committed human_reduction_review.md reflects human sync at d5874dec053e6ff210e3d1843bb7735ebe3ba84a; stale original render output hash and pinned authority assertion were not updated.",
+      "current_review_sha256": "b32dcbfa155be5d77411691889e67da7a6a89c7d87ba1406171e74db6c95c2d8",
+      "old_review_sha256": "ef9f617cf9121200c52c14f00f17c86d96e48793377464b89414a631e75c1de7",
+      "failures_preserved": true,
+      "repair_authorized": false,
+      "final_results": "Original required verifier failures remain; user declined provenance repair and push.",
+      "repair_applied": false,
+      "user_declined_repair": true
+    },
+    "preserved_original_records": "docs/pnas2017/g1_pnas_closure_evidence_20261002.zip / prior_diagnostic/",
+    "original_rerun_archive": {
+      "path": "docs/pnas2017/g1_pnas_evidence_20261002.zip",
+      "sha256": "768f8f84c9caac632061f7ecba215d8a1433e0feb6aa287d4f2775fe0660cf88",
+      "bytes": 930453,
+      "members": [
+        {
+          "path": "contracts/contracts_audit_result.md",
+          "sha256": "b270370c918526ca55d1af35aa2f8f5d9deb2ff9f312b5b352964397bb9f493a",
+          "bytes": 6557
+        },
+        {
+          "path": "contracts/independent_contracts_check.exitcode.txt",
+          "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "bytes": 3
+        },
+        {
+          "path": "contracts/independent_contracts_check.first_attempt.log",
+          "sha256": "e705f6f3251471b242aca84b585efdee2156d00bfaf65d913a6cedb99801688c",
+          "bytes": 340
+        },
+        {
+          "path": "contracts/independent_contracts_check.log",
+          "sha256": "84289d54a50ee4ddb327a616bd72c511e39a93af156a756a05ea7005840dbadc",
+          "bytes": 5747
+        },
+        {
+          "path": "contracts/independent_contracts_check.py",
+          "sha256": "5c9cccd7339da8f93bbcc2b31bc9935d5640bafcaa083694d5b6af7b66c06feb",
+          "bytes": 9960
+        },
+        {
+          "path": "contracts/independent_contracts_evidence.json",
+          "sha256": "84289d54a50ee4ddb327a616bd72c511e39a93af156a756a05ea7005840dbadc",
+          "bytes": 5747
+        },
+        {
+          "path": "contracts/verify_reaction_level_annotation.py.exitcode.txt",
+          "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "bytes": 3
+        },
+        {
+          "path": "contracts/verify_reaction_level_annotation.py.log",
+          "sha256": "1d04ba51cd0c7eec5864724f13915c4fdc80d5a7a83789ca9878f0c681658543",
+          "bytes": 1260
+        },
+        {
+          "path": "contracts/verify_reaction_level_annotation_v2.py.exitcode.txt",
+          "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "bytes": 3
+        },
+        {
+          "path": "contracts/verify_reaction_level_annotation_v2.py.log",
+          "sha256": "f701df2ed8a08dcd315ebf8ae5fc769a72ecd1d7166fb3e1d0f7a04522d30a85",
+          "bytes": 834
+        },
+        {
+          "path": "contracts/verify_reaction_level_contract.py.exitcode.txt",
+          "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "bytes": 3
+        },
+        {
+          "path": "contracts/verify_reaction_level_contract.py.log",
+          "sha256": "771570ff7ba139e9ebbe2a9ac77fbcf87a43964f932a7ebd7b372a44de17c99b",
+          "bytes": 753
+        },
+        {
+          "path": "contracts/verify_species_information_contract.py.exitcode.txt",
+          "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "bytes": 3
+        },
+        {
+          "path": "contracts/verify_species_information_contract.py.log",
+          "sha256": "fdc1c9a450f4c5bdb6bb3214a35d66d524d466d31200741abfbf6131e744be75",
+          "bytes": 369
+        },
+        {
+          "path": "execution/input_identity.json",
+          "sha256": "b595259afdf33bbebde86e25e4deed7bc6e4b01bc19c1a44b18ead667833592b",
+          "bytes": 1741
+        },
+        {
+          "path": "execution/matlab_20261002.log",
+          "sha256": "d18bd25de1b5c9ba63608852f251af117a8b24145dfbd44bd9bd91cf330f8e9f",
+          "bytes": 195
+        },
+        {
+          "path": "execution/reference_preparation_identity.json",
+          "sha256": "09806fa49cded7ef5283596b1300bf377713ff350bb3de58699650b0b4557f23",
+          "bytes": 1046
+        },
+        {
+          "path": "fresh_prepare_only/effective_author_conditions.xml",
+          "sha256": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+          "bytes": 939923
+        },
+        {
+          "path": "fresh_prepare_only/run_manifest.json",
+          "sha256": "6418f7e5d99abdade60311a03e7ff9c653e2c8b11ad383aae42827a74709c4c7",
+          "bytes": 2556
+        },
+        {
+          "path": "fresh_simbiology/engine_comparison.json",
+          "sha256": "fe8c0e008451cd6ec26d135306dbc3a28a391cb6c1ea6056635572c522c4c5b2",
+          "bytes": 6505
+        },
+        {
+          "path": "fresh_simbiology/simbiology_names.json",
+          "sha256": "932e707738f4794dbd2de65a721bdba7c5d61964aa63c77224148f75c6120b10",
+          "bytes": 5207
+        },
+        {
+          "path": "fresh_simbiology/simbiology_run.json",
+          "sha256": "82f6444a7a8adf06d4ffc5bf2f9578f3302ac6b8dabe34cad59ae49ead128cc2",
+          "bytes": 655
+        },
+        {
+          "path": "fresh_simbiology/simbiology_trajectory.csv",
+          "sha256": "313fcfc5b28b80c4cb19ad874a3e957142ef12fdbe149c31cdf5f15f1d59057a",
+          "bytes": 1789190
+        },
+        {
+          "path": "fresh_simbiology/simbiology_warnings.txt",
+          "sha256": "e4f6e1fc94e07ebd5bd357175fb0b42358c6e28162bb0ee7fdc95a99bbd46f1c",
+          "bytes": 935940
+        },
+        {
+          "path": "historical/g1_pnas_report_20260927_original.md",
+          "sha256": "c7bd1b36e6f67a9c8093b30c117064319d85cafc4167de2a8e432dd64f60f0ae",
+          "bytes": 6270
+        },
+        {
+          "path": "proposed_repair/provenance_sync_proposal.md",
+          "sha256": "b44ffb36d6f6d528259c461fbe8aa1df32bf53bf6d92b85cbb129c28d36894be",
+          "bytes": 3380
+        },
+        {
+          "path": "proposed_repair/provenance_sync_proposal.patch",
+          "sha256": "b338b6d580f5f17c394e14f0168e41bfadf81e1a3dccb34760120428218bea5a",
+          "bytes": 8051
+        },
+        {
+          "path": "proposed_repair/provenance_sync_proposal_checks.json",
+          "sha256": "8d5bf0261b6573277e6e1fecefb9eba0e1653e25a0f22d3e2ca3708455d02fb2",
+          "bytes": 1363
+        },
+        {
+          "path": "source/artifacts_verifier_failure.txt",
+          "sha256": "335c5e0f8c3fdab1a9a92619f2853b9938c4ec12ddfc29a8cd83f89be0ebc098",
+          "bytes": 749
+        },
+        {
+          "path": "source/integration_verification.json",
+          "sha256": "46a26a20893be2a1589427214007095df5e5f3938bddda17632e2e6907d9a5c4",
+          "bytes": 1961
+        },
+        {
+          "path": "source/libsbml_messages_fresh.json",
+          "sha256": "123ac4a89c9b6390deb20287bee5392e6bbd2422e270fe85300d648ab129917a",
+          "bytes": 1689439
+        },
+        {
+          "path": "source/publisher_format_diagnostics.py",
+          "sha256": "e2218b432d655f3ebe38e4787cab4fea5a7b3d55d8467fc2910c72f397271a8e",
+          "bytes": 1001
+        },
+        {
+          "path": "source/publisher_format_evidence.json",
+          "sha256": "c06a5e0d12058d321844fc2ab10572c3d68b0b1be4b965750c424df3b0a8cbbc",
+          "bytes": 13683
+        },
+        {
+          "path": "source/regenerated_audit/modules.csv",
+          "sha256": "8bb60695e5bf9c795a5f92b0e6194eb47739b49c2437f6abe00a896e19569ff6",
+          "bytes": 4949
+        },
+        {
+          "path": "source/regenerated_audit/parameters.csv",
+          "sha256": "7de13ade5f23441f57d40cc4fbc6366aafccb9e8859d86f9e921d38787b9d79c",
+          "bytes": 114324
+        },
+        {
+          "path": "source/regenerated_audit/reactions.csv",
+          "sha256": "626539570e2ddcce45b49b1c53ce8d263c84f6fcd1eb9a40f292fbe2ddf637e4",
+          "bytes": 795721
+        },
+        {
+          "path": "source/regenerated_audit/species.csv",
+          "sha256": "0de6f96e9b7fde61c267bfb2b9c770ee38fbf14c5021b70fcd7fd97ae3bc6686",
+          "bytes": 33266
+        },
+        {
+          "path": "source/sbml_audit_fresh.md",
+          "sha256": "1dee4bc720007c0c725a1b978d1aac23b61a8e91603e6242ca492cdbcd5b5da3",
+          "bytes": 7597
+        },
+        {
+          "path": "source/source_diagnostics.py",
+          "sha256": "aeea1f424db39434d07d1843ab78fcd6bf076d54333c2a206d9e5763876f19e7",
+          "bytes": 9221
+        },
+        {
+          "path": "source/source_evidence.json",
+          "sha256": "87081dab7ecb49ab4a3c7b16d08455df45730ca0cbe0c3a8b5538d442c7436c6",
+          "bytes": 28874
+        },
+        {
+          "path": "source/verification_commands.json",
+          "sha256": "1f332856c7e08ce0ee35c998a30e5539cffeaaa2a95045c7e27c1a9490f95960",
+          "bytes": 3161
+        }
+      ]
+    }
+  },
+  "closure_evidence_archive": {
+    "path": "docs/pnas2017/g1_pnas_closure_evidence_20261002.zip",
+    "sha256": "f45e8de3904ba5b016cd1ab75f86f2aa3d8b19752bf1cda48671d6c4de3a5200",
+    "bytes": 50585,
+    "members": [
+      {
+        "path": "applied_repair_checks.json",
+        "sha256": "14817b16db6dcd09d0ef916a131210d5c75973c200cea80e8e3665e5178ff7a9",
+        "bytes": 1753
+      },
+      {
+        "path": "integration_current.json",
+        "sha256": "b0c19c684f21247fc62b4ac361193a2c902b0ed9a6fb8fd76ba6b10addc79eaa",
+        "bytes": 2045
+      },
+      {
+        "path": "prior_diagnostic/g1_pnas_gate_20261002.json",
+        "sha256": "9b2034b7259fdd0cbd089346d13e526314710d5ee5be6a8bcbd41c4ef8b1421d",
+        "bytes": 45877
+      },
+      {
+        "path": "prior_diagnostic/g1_pnas_report.md",
+        "sha256": "1ec26677ec45d18987a96367def406666ae5cee669a2c174473d5d10dadb356e",
+        "bytes": 23199
+      },
+      {
+        "path": "prior_diagnostic/g1_pnas_verification_20261002.json",
+        "sha256": "202aaba36f24c1146092a9dfab3d962fce10864d11160ef11e329ee8b65b058b",
+        "bytes": 86137
+      },
+      {
+        "path": "required_checks.json",
+        "sha256": "8f10dda44e19ec804bfaee6665cd5ec109b0610564d8a5758e39228b3a6ebd30",
+        "bytes": 5431
+      },
+      {
+        "path": "required_verifier_logs/verify_pnas2017_artifacts.log",
+        "sha256": "08d45b06125aa950b2ed0b61c0223c43c16b41a188d45af78066dfea6183e169",
+        "bytes": 198
+      },
+      {
+        "path": "required_verifier_logs/verify_pnas2017_integration.log",
+        "sha256": "d059fcdd57a4c07bb108a05b0198ec2828026a7582d7d7aae4742d4aa8133508",
+        "bytes": 24
+      },
+      {
+        "path": "required_verifier_logs/verify_reaction_level_annotation.log",
+        "sha256": "0e676b39d8cb26efa1e6c5cfd9a4bf5382fdc2695d8aeb82d19b6c40c1b223c1",
+        "bytes": 1245
+      },
+      {
+        "path": "required_verifier_logs/verify_reaction_level_annotation_v2.log",
+        "sha256": "64cc232d820eec79326b152d07baaa7e0a93ef918f6efd6a700f967552b9273d",
+        "bytes": 825
+      },
+      {
+        "path": "required_verifier_logs/verify_reaction_level_contract.log",
+        "sha256": "7ce8ea34ca1468d43db400a8be3df7de883b7e63387004fa35d144d1686e97c7",
+        "bytes": 744
+      },
+      {
+        "path": "required_verifier_logs/verify_species_information_contract.log",
+        "sha256": "afeefcfd961149c14824a0727960b267f803dde71fa8135a1812b2488cd054dc",
+        "bytes": 362
+      }
+    ]
+  },
+  "repository_status_document_changes": [
+    "README.md",
+    "tasklist.md"
+  ],
+  "next_active_scientific_task": "Human review of process/reaction-level reduction choices in docs/reduction/human_reduction_review.md; not started by this task",
+  "publication": {
+    "record_phase": "CLOSURE_EVIDENCE_RECORDED_BEFORE_PUBLICATION",
+    "results_location": "Actual commit SHAs and push outcome are recorded in Git history and the final task response; this closure evidence record is not a push receipt.",
+    "provenance_sync_commit": "4e63d9ef6ec1c623c485bd4553362c27114a6203"
+  },
+  "final_consistency_checks": {
+    "status": "PASS",
+    "starting_main_head": "678fcb709324142454fd7a80cb6185c64b900510",
+    "criteria_unchanged": 10,
+    "required_verifier_exits": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "integration": {
+      "pass": 11,
+      "fail": 0
+    },
+    "patch_sha256": "b338b6d580f5f17c394e14f0168e41bfadf81e1a3dccb34760120428218bea5a",
+    "all_six_mutation_checks": "REJECTED",
+    "protected_paths_unchanged": [
+      "models",
+      "references",
+      "results",
+      "docs/reduction/reduction_decisions.csv",
+      "docs/reduction/human_reduction_review.md",
+      "docs/reduction/species_information_contract_summary.md",
+      "docs/reduction/species_information_contract_detailed.md",
+      "docs/reduction/human_audit_sync_20260930.md",
+      "docs/reduction/review_render_manifest.json",
+      "docs/audit/pnas2017_integration"
+    ],
+    "scientific_threshold_changes": false,
+    "kinetic_decisions_pending": 968,
+    "review_boxes": {
+      "empty": 96,
+      "selected": 0
+    },
+    "PR_3_4_branch_refs_unchanged": {
+      "aminoacylation-qssa-pilot-v0": "24335fe798e757acb2ca3582916658bfcf5c16f5",
+      "reduction-audit-v0": "b678a7c951967ecdab1c89e549011bf050307ff9"
+    },
+    "reduced_model_status": "NOT_VALIDATED",
+    "archives_verified": {
+      "docs/pnas2017/g1_pnas_evidence_20261002.zip": 41,
+      "docs/pnas2017/g1_pnas_closure_evidence_20261002.zip": 12
+    },
+    "historical_blocked_payload_byte_identical": true,
+    "quick_reference_questions": 6,
+    "quick_reference_link_targets_exist": true,
+    "allowed_changed_paths": [
+      "README.md",
+      "docs/pnas2017/g1_pnas_closure_evidence_20261002.zip",
+      "docs/pnas2017/g1_pnas_evidence_20261002.zip",
+      "docs/pnas2017/g1_pnas_gate_20261002.json",
+      "docs/pnas2017/g1_pnas_report.md",
+      "docs/pnas2017/g1_pnas_report_20260927_blocked.md",
+      "docs/pnas2017/g1_pnas_verification_20261002.json",
+      "docs/reduction/aminoacylation_qssa_quick_reference.md",
+      "docs/reduction/review_sync_manifest_20260930.json",
+      "scripts/verify_pnas2017_artifacts.py",
+      "scripts/verify_pnas2017_integration.py",
+      "tasklist.md"
+    ]
+  }
+}

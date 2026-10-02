@@ -1,0 +1,2625 @@
+{
+  "schema": "g1_pnas_rerun_verification/v1",
+  "date": "2026-10-02",
+  "repository_head": "678fcb709324142454fd7a80cb6185c64b900510",
+  "scope": "Current main evidence only; curation and review preparation, not kinetic or experimental validation",
+  "source_and_sbml": {
+    "repository_head": "678fcb709324142454fd7a80cb6185c64b900510",
+    "source_manifest": {
+      "count": 33,
+      "all_match": true,
+      "files": [
+        {
+          "path": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "bytes": 250427,
+          "sha256": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+          "expected_bytes": 250427,
+          "expected_sha256": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+          "bytes": 46143,
+          "sha256": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+          "expected_bytes": 46143,
+          "expected_sha256": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml",
+          "bytes": 1732620,
+          "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+          "expected_bytes": 1732620,
+          "expected_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/matsuura-et-al-2017-reaction-dynamics-analysis-of-a-reconstituted-escherichia-coli-protein-translation-system-by.pdf",
+          "bytes": 1816513,
+          "sha256": "e340ba829f87121e723059aebecc56c342c37c2cc4687692d1447f16b38f2a4e",
+          "expected_bytes": 1816513,
+          "expected_sha256": "e340ba829f87121e723059aebecc56c342c37c2cc4687692d1447f16b38f2a4e",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd01.xlsx",
+          "bytes": 77205,
+          "sha256": "ac253974baf41ebf654becca44b4489dbc895d1957b58ee12f6b9c7b4ceeb53e",
+          "expected_bytes": 77205,
+          "expected_sha256": "ac253974baf41ebf654becca44b4489dbc895d1957b58ee12f6b9c7b4ceeb53e",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd02.xlsx",
+          "bytes": 971305,
+          "sha256": "b2fadff2b3c078b01bfc4be6f52a5cd5baed4653bb67690debd2ccb99b558f98",
+          "expected_bytes": 971305,
+          "expected_sha256": "b2fadff2b3c078b01bfc4be6f52a5cd5baed4653bb67690debd2ccb99b558f98",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd03.xlsx",
+          "bytes": 707197,
+          "sha256": "2f88fcd733d9db54b309d4a60882553c02b401edb1b007791ba7b9f00e400a3c",
+          "expected_bytes": 707197,
+          "expected_sha256": "2f88fcd733d9db54b309d4a60882553c02b401edb1b007791ba7b9f00e400a3c",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd04.xlsx",
+          "bytes": 561080,
+          "sha256": "c1c527b311e659065e8ca7f9cbe1b0eb566e950957669706d11620461c2ab39e",
+          "expected_bytes": 561080,
+          "expected_sha256": "c1c527b311e659065e8ca7f9cbe1b0eb566e950957669706d11620461c2ab39e",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd05.xlsx",
+          "bytes": 156590,
+          "sha256": "12cb0bf9e39a2073adc04fdfa48b87502bb428e678d7cbdf618232abd5bc2575",
+          "expected_bytes": 156590,
+          "expected_sha256": "12cb0bf9e39a2073adc04fdfa48b87502bb428e678d7cbdf618232abd5bc2575",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd06.xlsx",
+          "bytes": 156691,
+          "sha256": "52120a80f2c5cc0ea60457a2323f4ddd9544ca4abc2c015ee6c323627788ae26",
+          "expected_bytes": 156691,
+          "expected_sha256": "52120a80f2c5cc0ea60457a2323f4ddd9544ca4abc2c015ee6c323627788ae26",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd07.xlsx",
+          "bytes": 220353,
+          "sha256": "1384be1989405f75357d1901cedc798e2c5fd1ef21ceb14988a2371f5d237946",
+          "expected_bytes": 220353,
+          "expected_sha256": "1384be1989405f75357d1901cedc798e2c5fd1ef21ceb14988a2371f5d237946",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd08.xlsx",
+          "bytes": 456730,
+          "sha256": "314de60062a4c826fa9f53154be3f40b9f21f0dc722573a0949fb482f778b34b",
+          "expected_bytes": 456730,
+          "expected_sha256": "314de60062a4c826fa9f53154be3f40b9f21f0dc722573a0949fb482f778b34b",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd09.xlsx",
+          "bytes": 464502,
+          "sha256": "85c3eefd010aca9f424ab8d79366cef2bd520a1957f27f783daa45a529f4495a",
+          "expected_bytes": 464502,
+          "expected_sha256": "85c3eefd010aca9f424ab8d79366cef2bd520a1957f27f783daa45a529f4495a",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd10.xlsx",
+          "bytes": 80497,
+          "sha256": "47516d9bfdaebcdf973f6d9b92aeaacd733dd46bb804eae9488c2fb9d34870b6",
+          "expected_bytes": 80497,
+          "expected_sha256": "47516d9bfdaebcdf973f6d9b92aeaacd733dd46bb804eae9488c2fb9d34870b6",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd11.xlsx",
+          "bytes": 83618,
+          "sha256": "e5034bf00ac67dba291d54fe30784cb869f974afcde1957d143d6b204f016954",
+          "expected_bytes": 83618,
+          "expected_sha256": "e5034bf00ac67dba291d54fe30784cb869f974afcde1957d143d6b204f016954",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+          "bytes": 182255,
+          "sha256": "87051f1a25498750d16bcaccd9f4c3b8849c2b6a76efa119373b041de1ee54ed",
+          "expected_bytes": 182255,
+          "expected_sha256": "87051f1a25498750d16bcaccd9f4c3b8849c2b6a76efa119373b041de1ee54ed",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+          "bytes": 183062,
+          "sha256": "f2c6c7c20859cf1fa5cfa78415d4923422e4b2577cc0aa04a110ffe1cb83be56",
+          "expected_bytes": 183062,
+          "expected_sha256": "f2c6c7c20859cf1fa5cfa78415d4923422e4b2577cc0aa04a110ffe1cb83be56",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+          "bytes": 465392,
+          "sha256": "db1207bdabcc43f950fa86dcba4c93e82d7c0fae7af857ca6d5362a67e57c046",
+          "expected_bytes": 465392,
+          "expected_sha256": "db1207bdabcc43f950fa86dcba4c93e82d7c0fae7af857ca6d5362a67e57c046",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+          "bytes": 466650,
+          "sha256": "3e292593b51b7c90b77a6c092c90592cf35311e39375e18a9934ebb839202845",
+          "expected_bytes": 466650,
+          "expected_sha256": "3e292593b51b7c90b77a6c092c90592cf35311e39375e18a9934ebb839202845",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+          "bytes": 545662,
+          "sha256": "4f683eb04f06112b219aba97b246dd2009c3eaccf24e83bd7d51dae9b7c0f695",
+          "expected_bytes": 545662,
+          "expected_sha256": "4f683eb04f06112b219aba97b246dd2009c3eaccf24e83bd7d51dae9b7c0f695",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd17.xlsx",
+          "bytes": 135269,
+          "sha256": "cb36d279c3a6d16647d9cc89135b051628cc259b3b2ff677b8ca6d39084cb174",
+          "expected_bytes": 135269,
+          "expected_sha256": "cb36d279c3a6d16647d9cc89135b051628cc259b3b2ff677b8ca6d39084cb174",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd18.xlsx",
+          "bytes": 135900,
+          "sha256": "99da064d8c7ac83559418d44df983b7520f5603f94f703ed12f4d957c227f5ce",
+          "expected_bytes": 135900,
+          "expected_sha256": "99da064d8c7ac83559418d44df983b7520f5603f94f703ed12f4d957c227f5ce",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd19.xlsx",
+          "bytes": 277027,
+          "sha256": "9016df1526033b7ae82b0c25a3d0d62a4c931e1548ca0bb127637b2754381ab2",
+          "expected_bytes": 277027,
+          "expected_sha256": "9016df1526033b7ae82b0c25a3d0d62a4c931e1548ca0bb127637b2754381ab2",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd20.xlsx",
+          "bytes": 277130,
+          "sha256": "87a5320e64c8301322e76b2a5f32966fd9a8a93eb59b6e1039b95f364bba44cd",
+          "expected_bytes": 277130,
+          "expected_sha256": "87a5320e64c8301322e76b2a5f32966fd9a8a93eb59b6e1039b95f364bba44cd",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd21.xlsx",
+          "bytes": 152733,
+          "sha256": "fcfdda052ef1f1853ff35b83df3aa0ceb1ccfe91c2ef84ae2d2774a9ef77de96",
+          "expected_bytes": 152733,
+          "expected_sha256": "fcfdda052ef1f1853ff35b83df3aa0ceb1ccfe91c2ef84ae2d2774a9ef77de96",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd22.xlsx",
+          "bytes": 120234,
+          "sha256": "3ef78079f08e075ac49ebe4bcb067cff369ebc9c280a029aa9ce1a5a5ee17d62",
+          "expected_bytes": 120234,
+          "expected_sha256": "3ef78079f08e075ac49ebe4bcb067cff369ebc9c280a029aa9ce1a5a5ee17d62",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd23.xlsx",
+          "bytes": 129924,
+          "sha256": "75fba1fceccca7fe752acd8096fe41ee2ecacc93e07c9e01234f19c7da846ac6",
+          "expected_bytes": 129924,
+          "expected_sha256": "75fba1fceccca7fe752acd8096fe41ee2ecacc93e07c9e01234f19c7da846ac6",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd24.xlsx",
+          "bytes": 129219,
+          "sha256": "fb054f216b3e786658278cf92f7005038d7dad5bdb2318a07720080cb6e60f51",
+          "expected_bytes": 129219,
+          "expected_sha256": "fb054f216b3e786658278cf92f7005038d7dad5bdb2318a07720080cb6e60f51",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd25.xlsx",
+          "bytes": 70378,
+          "sha256": "7c5d9b1ed8ef7d8325968dbb0aefd02dd897d61a889c48c8f782ac68078f1991",
+          "expected_bytes": 70378,
+          "expected_sha256": "7c5d9b1ed8ef7d8325968dbb0aefd02dd897d61a889c48c8f782ac68078f1991",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd26.xlsx",
+          "bytes": 59574,
+          "sha256": "4e2555a85c563d378aedd425c6001bac2712b4a2b4d0099ddff529cdceb71677",
+          "expected_bytes": 59574,
+          "expected_sha256": "4e2555a85c563d378aedd425c6001bac2712b4a2b4d0099ddff529cdceb71677",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd27.xlsx",
+          "bytes": 120116,
+          "sha256": "d52052e6ce24ddcd1894e95b3f759f1a047600e6ffccff28cc2dcd2b8d94b227",
+          "expected_bytes": 120116,
+          "expected_sha256": "d52052e6ce24ddcd1894e95b3f759f1a047600e6ffccff28cc2dcd2b8d94b227",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd28.xlsx",
+          "bytes": 2317660,
+          "sha256": "8297f2348f5ebdfc3c14083577f2c5f276f35a7ee8ab30f8a37fd8431ef565ec",
+          "expected_bytes": 2317660,
+          "expected_sha256": "8297f2348f5ebdfc3c14083577f2c5f276f35a7ee8ab30f8a37fd8431ef565ec",
+          "match": true
+        },
+        {
+          "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd29.xlsx",
+          "bytes": 301758,
+          "sha256": "6d8a913d9823a4e387ea8c6fc94ee34641e3b7a4d47b0e00a479207bb813dbd7",
+          "expected_bytes": 301758,
+          "expected_sha256": "6d8a913d9823a4e387ea8c6fc94ee34641e3b7a4d47b0e00a479207bb813dbd7",
+          "match": true
+        }
+      ]
+    },
+    "extracted_original_archive_members": {
+      "count": 31,
+      "all_match": true,
+      "files": [
+        {
+          "archive": "SBML_files.zip",
+          "member": "Aminoacylation_A_Gly.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Gly.xml",
+          "bytes": 126618,
+          "sha256": "16a7a4ee463a130dab146ed5de90636b9242e6815f0b85a6264fed725d3d454d",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Aminoacylation_A_Met.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Met.xml",
+          "bytes": 126618,
+          "sha256": "440d2cbe33964e20f6dd5c3b40c8c84ff89e91c34f86de653ea1c48131b747a6",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Aminoacylation_B_fMetCAU.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_fMetCAU.xml",
+          "bytes": 254522,
+          "sha256": "81e265aec3a630779829d2f734f88a76666004a95b9343835a016455bb57e227",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Aminoacylation_B_GlyGCC.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_GlyGCC.xml",
+          "bytes": 254230,
+          "sha256": "314e1c203367957f0d0c6c05dfcb58f496b68845face66bc5682919d030cd75a",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Elongation_A_Gly.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Elongation_A_Gly.xml",
+          "bytes": 149117,
+          "sha256": "01bd54f888be77fea1b5c78cddca9e066f6adfa81febffa14da3eb85affc68a5",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Elongation_A_Met.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Elongation_A_Met.xml",
+          "bytes": 149161,
+          "sha256": "eb7b300b00e0850a8e3e8c2571f3569565dd49290bda9e2cd143ef65e1b948f3",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Elongation_B.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Elongation_B.xml",
+          "bytes": 258134,
+          "sha256": "0351f98dd5bed6f59bc8fb8e2e54794d1ccdffa59927e98b3b360bec791c80ae",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Elongation_Ca1_fMetCAU.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_fMetCAU.xml",
+          "bytes": 70901,
+          "sha256": "a7cbf1ac160720e5c90ea072c53bcd45391f6ad414988123ee0aed3e9d10c420",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Elongation_Ca1_GlyGCC.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_GlyGCC.xml",
+          "bytes": 71140,
+          "sha256": "01fbdc9aba47a58224aaf2590cec372618045faae134aefd0003af2ee6a4630e",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Elongation_Ca2_pept0002.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml",
+          "bytes": 486843,
+          "sha256": "fa183c0a44c8a053e7d5d6f92ece79252f1d867fcc6fd0f56a92f430de02c197",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Elongation_Ca2_pept0003.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml",
+          "bytes": 487711,
+          "sha256": "7df7ff8869563d50eaf2e49cd7eafc7462421555569560b4efaa3bbd407dda7a",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "EnergyRegeneration_A.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_A.xml",
+          "bytes": 121832,
+          "sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "EnergyRegeneration_B.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_B.xml",
+          "bytes": 122121,
+          "sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "EnergyRegeneration_C.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_C.xml",
+          "bytes": 118275,
+          "sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "EnergyRegeneration_D.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_D.xml",
+          "bytes": 59952,
+          "sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "FMet_tRNASynthesis.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/FMet_tRNASynthesis.xml",
+          "bytes": 140942,
+          "sha256": "10633f79d44350c6ab555cb80b85b5068e048b6f52916ca454c066c547db3491",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Initiation_A.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Initiation_A.xml",
+          "bytes": 60386,
+          "sha256": "15d151724760ad3f98e2742e48b7c9daaf43f3b37cd4eccd5bd38b96f3bdf320",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Initiation_B1.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Initiation_B1.xml",
+          "bytes": 1104734,
+          "sha256": "b89b1eac8dbbd4dd0f96a356056b8ae1a999f13f0b398a9516ed1fc50ff4894f",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Initiation_B2.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Initiation_B2.xml",
+          "bytes": 701956,
+          "sha256": "fa7b8687b052360e78b7e725cbb0ec93602f7e50da47a6c64d112544a32e96ff",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Initiation_C.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Initiation_C.xml",
+          "bytes": 720056,
+          "sha256": "8c983174446b5e2a70922870e150474ac93ffdbf95b658e9864e5e20c95a9fde",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "SmallMolecules.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/SmallMolecules.xml",
+          "bytes": 44270,
+          "sha256": "731b0c71057fdc3129c6072a2a3e107e9b908415cd5e227b3ffa7cad09ddbdb2",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Termination_A_RF1.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF1.xml",
+          "bytes": 170774,
+          "sha256": "bf78f1693fefae5ce2380622922aa5c9285611e22a642f56c5630836bbf25915",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Termination_A_RF2.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF2.xml",
+          "bytes": 170774,
+          "sha256": "42ac014731f0058f717759e1a90f449d3d563b6c61b91e4ccccf3e766400b656",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Termination_B_RF1.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Termination_B_RF1.xml",
+          "bytes": 439147,
+          "sha256": "3db57e09f5a5ce70ce763dd75f23d03f6ab5591f9476f80e49aef7a054f5cc67",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Termination_B_RF2.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Termination_B_RF2.xml",
+          "bytes": 439147,
+          "sha256": "3ab9d98e640df2248c673b993b88cbbf61147d4762dd8416cd10f665708042c4",
+          "match": true
+        },
+        {
+          "archive": "SBML_files.zip",
+          "member": "Termination_C.xml",
+          "path": "models/pnas2017_full_reference/original/subsystems/Termination_C.xml",
+          "bytes": 626167,
+          "sha256": "369766462c969ced933af9fbd7dd1fe960c5be5b8996a9d00be0ac528af63b63",
+          "match": true
+        },
+        {
+          "archive": "Simulate_fMGG_synthesis.zip",
+          "member": "Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+          "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+          "bytes": 6394,
+          "sha256": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+          "match": true
+        },
+        {
+          "archive": "Simulate_fMGG_synthesis.zip",
+          "member": "Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+          "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+          "bytes": 19566,
+          "sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+          "match": true
+        },
+        {
+          "archive": "Simulate_fMGG_synthesis.zip",
+          "member": "Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv",
+          "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv",
+          "bytes": 141624,
+          "sha256": "845aef2d0b9a46d8e1a2d2eb3b5acb3501bcf69b72229ad02a97b73a9363a929",
+          "match": true
+        },
+        {
+          "archive": "Simulate_fMGG_synthesis.zip",
+          "member": "Simulate_fMGG_synthesis/fMGG_synthesis.m",
+          "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis.m",
+          "bytes": 203486,
+          "sha256": "5357b16387970d693f730102256c8d4ee30b91a318ad7482fc13e798834889f4",
+          "match": true
+        },
+        {
+          "archive": "Simulate_fMGG_synthesis.zip",
+          "member": "Simulate_fMGG_synthesis/fMGG_synthesis_Sample.m",
+          "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis_Sample.m",
+          "bytes": 1120,
+          "sha256": "9db2acfd7c5961f2bc52766df75bca619af496f999ad92b9b29a77f4c7fa6fc0",
+          "match": true
+        }
+      ]
+    },
+    "regenerated_inventory_comparison": [
+      {
+        "path": "models/pnas2017_full_reference/audit/species.csv",
+        "rows": 241,
+        "bytes": 33266,
+        "sha256": "0de6f96e9b7fde61c267bfb2b9c770ee38fbf14c5021b70fcd7fd97ae3bc6686",
+        "fresh_sha256": "0de6f96e9b7fde61c267bfb2b9c770ee38fbf14c5021b70fcd7fd97ae3bc6686",
+        "byte_identical": true
+      },
+      {
+        "path": "models/pnas2017_full_reference/audit/reactions.csv",
+        "rows": 968,
+        "bytes": 795721,
+        "sha256": "626539570e2ddcce45b49b1c53ce8d263c84f6fcd1eb9a40f292fbe2ddf637e4",
+        "fresh_sha256": "626539570e2ddcce45b49b1c53ce8d263c84f6fcd1eb9a40f292fbe2ddf637e4",
+        "byte_identical": true
+      },
+      {
+        "path": "models/pnas2017_full_reference/audit/parameters.csv",
+        "rows": 968,
+        "bytes": 114324,
+        "sha256": "7de13ade5f23441f57d40cc4fbc6366aafccb9e8859d86f9e921d38787b9d79c",
+        "fresh_sha256": "7de13ade5f23441f57d40cc4fbc6366aafccb9e8859d86f9e921d38787b9d79c",
+        "byte_identical": true
+      },
+      {
+        "path": "models/pnas2017_full_reference/audit/modules.csv",
+        "rows": 26,
+        "bytes": 4949,
+        "sha256": "8bb60695e5bf9c795a5f92b0e6194eb47739b49c2437f6abe00a896e19569ff6",
+        "fresh_sha256": "8bb60695e5bf9c795a5f92b0e6194eb47739b49c2437f6abe00a896e19569ff6",
+        "byte_identical": true
+      }
+    ],
+    "author_initial_conditions": {
+      "total_rows": 241,
+      "positive_count": 27,
+      "positive_original_names": [
+        "tRNAfMetCAU",
+        "mRNA",
+        "EFTu",
+        "GTP",
+        "EFG",
+        "tRNAGlyGCC",
+        "ATP",
+        "Gly",
+        "GlyRS",
+        "Met",
+        "MetRS",
+        "EFTs",
+        "RS70S",
+        "CK",
+        "CP",
+        "NDK",
+        "MK",
+        "PPiase",
+        "FD",
+        "MTF",
+        "IF2",
+        "IF1",
+        "IF3",
+        "RF1",
+        "RF2",
+        "RF3",
+        "RRF"
+      ]
+    },
+    "libsbml": {
+      "version": "5.21.2",
+      "parse_messages": 0,
+      "consistency_count": 2904,
+      "groups": [
+        {
+          "severity": "Warning",
+          "category": "SBML unit consistency",
+          "rule_id": 10541,
+          "count": 968,
+          "example_line": 277,
+          "example_message": "The units of the 'math' formula in a <kineticLaw> definition are expected to be the equivalent of _substance per time_. Reference: L2V4 Section 4.13.5 Expected units are mole (exponent = 1, multiplier = 1, scale = 0), second (exponent = -1, multiplier = 1, scale = 0) but the units returned by the <math> expression in the <kineticLaw> (from the <reaction> with id 're0000000001') are mole (exponent = 2, multiplier = 1, scale = 0), litre (exponent = -1, multiplier = 1, scale = 0)."
+        },
+        {
+          "severity": "Warning",
+          "category": "SBML unit consistency",
+          "rule_id": 99505,
+          "count": 1936,
+          "example_line": 254,
+          "example_message": "In situations where a mathematical expression contains literal numbers or parameters whose units have not been declared, it is not possible to verify accurately the consistency of the units in the expression. The units of the <reaction> <speciesReference> <stoichiometryMath> expression '1' cannot be fully checked. Unit consistency reported as either no errors or further unit errors related to this object may not be accurate."
+        }
+      ],
+      "message_path": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\source\\libsbml_messages_fresh.json",
+      "message_sha256": "123ac4a89c9b6390deb20287bee5392e6bbd2422e270fe85300d648ab129917a"
+    },
+    "source_model": {
+      "model_id": "fMGG_synthesis",
+      "level": 2,
+      "version": 4,
+      "species": 241,
+      "reactions": 968,
+      "local_parameters": 968,
+      "global_parameters": 0,
+      "unit_definitions": 0,
+      "positive_initial_species": 241,
+      "all_local_values_one": true
+    },
+    "normalized_equivalence": {
+      "species_original_ids_identical": true,
+      "reaction_original_ids_identical": true,
+      "every_reaction_signature_identical": true,
+      "source_math_reference_count": 3854,
+      "normalized_math_reference_count": 0
+    },
+    "stoichiometry_re0000000414_PO4": {
+      "source": [
+        {
+          "species_id": "PPiase_degraded",
+          "stoichiometry": "1",
+          "encoding": "stoichiometryMath",
+          "stoichiometry_math": "1"
+        },
+        {
+          "species_id": "PO4",
+          "stoichiometry": "2",
+          "encoding": "stoichiometryMath",
+          "stoichiometry_math": "2"
+        }
+      ],
+      "normalized": [
+        {
+          "species_id": "PPiase_degraded",
+          "stoichiometry": "1",
+          "encoding": "attribute",
+          "stoichiometry_math": ""
+        },
+        {
+          "species_id": "PO4",
+          "stoichiometry": "2",
+          "encoding": "attribute",
+          "stoichiometry_math": ""
+        }
+      ]
+    },
+    "artifact_post_failure_diagnostics": [
+      {
+        "check": "review_input_registered_hashes",
+        "status": "PASS"
+      },
+      {
+        "check": "review_output_registered_hashes_OFFICIAL_FAILURE_RETAINED",
+        "status": "FAIL",
+        "error": "ValueError('review output: docs/reduction/human_reduction_review.md: b32dcbfa155be5d77411691889e67da7a6a89c7d87ba1406171e74db6c95c2d8 != ef9f617cf9121200c52c14f00f17c86d96e48793377464b89414a631e75c1de7')"
+      },
+      {
+        "check": "review_cards_and_choices",
+        "status": "PASS",
+        "review_cards": 16,
+        "checked_boxes": 0
+      },
+      {
+        "check": "preserved_run_sources",
+        "status": "PASS"
+      },
+      {
+        "check": "preserved_effective_author_conditions",
+        "status": "PASS"
+      },
+      {
+        "check": "preserved_trajectory",
+        "status": "PASS"
+      },
+      {
+        "check": "preserved_comparison_inputs",
+        "status": "PASS"
+      },
+      {
+        "check": "comparison_diagnostic_status",
+        "status": "PASS"
+      }
+    ],
+    "review_manifest_diagnosis": {
+      "official_verifier_exit": 1,
+      "manifest_expected_sha256": "ef9f617cf9121200c52c14f00f17c86d96e48793377464b89414a631e75c1de7",
+      "worktree_sha256": "b32dcbfa155be5d77411691889e67da7a6a89c7d87ba1406171e74db6c95c2d8",
+      "head_blob_sha256": "b32dcbfa155be5d77411691889e67da7a6a89c7d87ba1406171e74db6c95c2d8",
+      "pre_sync_sha256": "ef9f617cf9121200c52c14f00f17c86d96e48793377464b89414a631e75c1de7",
+      "worktree_equals_head_blob": true,
+      "worktree_crlf": 0,
+      "head_blob_crlf": 0,
+      "semantic_change_commit": "d5874dec053e6ff210e3d1843bb7735ebe3ba84a",
+      "current_bytes": 64895,
+      "pre_sync_bytes": 63431
+    },
+    "snapshot_role": "Preserved fresh 2026-10-02 rerun evidence before authorized provenance repair; embedded initial failure diagnostics are historical, not current verifier status."
+  },
+  "publisher_formats": {
+    "openpyxl": "3.1.2",
+    "workbooks_opened": 29,
+    "workbooks": [
+      {
+        "filename": "pnas.1615351114.sd01.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 9,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 11,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd02.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 37,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 157,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd03.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 39,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 111,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd04.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 31,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 81,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd05.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 15,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 30,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd06.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 15,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 30,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd07.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 19,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 41,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd08.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 35,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 62,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd09.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 35,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 62,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd10.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 15,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 13,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd11.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 15,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 13,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd12.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 18,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 23,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd13.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 18,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 23,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd14.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 26,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 52,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd15.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 26,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 52,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd16.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 32,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 87,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd17.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 14,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 26,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd18.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 14,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 26,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd19.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 26,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 45,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd20.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 26,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 45,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd21.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 16,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 30,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd22.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Reactions",
+            "rows": 26,
+            "columns": 10
+          },
+          {
+            "name": "Species",
+            "rows": 13,
+            "columns": 14
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd23.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 5
+          },
+          {
+            "name": "Species",
+            "rows": 13,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 26,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd24.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 12,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 26,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd25.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 8,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 13,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd26.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Model",
+            "rows": 1,
+            "columns": 1
+          },
+          {
+            "name": "Species",
+            "rows": 9,
+            "columns": 14
+          },
+          {
+            "name": "Reactions",
+            "rows": 13,
+            "columns": 10
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd27.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "initial concentrations",
+            "rows": 254,
+            "columns": 5
+          },
+          {
+            "name": "reactions and parameters",
+            "rows": 980,
+            "columns": 11
+          },
+          {
+            "name": "references for parameters",
+            "rows": 29,
+            "columns": 3
+          },
+          {
+            "name": "simulation for validation",
+            "rows": 254,
+            "columns": 32
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd28.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "Fig. 2B",
+            "rows": 203,
+            "columns": 242
+          },
+          {
+            "name": "Fig. 3A",
+            "rows": 199,
+            "columns": 243
+          },
+          {
+            "name": "Fig. 5A",
+            "rows": 203,
+            "columns": 44
+          },
+          {
+            "name": "Fig. S1B",
+            "rows": 203,
+            "columns": 242
+          },
+          {
+            "name": "Fig. S4",
+            "rows": 202,
+            "columns": 242
+          },
+          {
+            "name": "Fig.S7A",
+            "rows": 485,
+            "columns": 7
+          },
+          {
+            "name": "Fig. S8",
+            "rows": 202,
+            "columns": 117
+          }
+        ]
+      },
+      {
+        "filename": "pnas.1615351114.sd29.xlsx",
+        "signature": "504b0304",
+        "sheets": [
+          {
+            "name": "1",
+            "rows": 20,
+            "columns": 20
+          },
+          {
+            "name": "2",
+            "rows": 22,
+            "columns": 22
+          },
+          {
+            "name": "3",
+            "rows": 33,
+            "columns": 33
+          },
+          {
+            "name": "4",
+            "rows": 46,
+            "columns": 46
+          },
+          {
+            "name": "5",
+            "rows": 44,
+            "columns": 44
+          },
+          {
+            "name": "6",
+            "rows": 53,
+            "columns": 53
+          },
+          {
+            "name": "7",
+            "rows": 48,
+            "columns": 48
+          },
+          {
+            "name": "8",
+            "rows": 58,
+            "columns": 58
+          },
+          {
+            "name": "9",
+            "rows": 73,
+            "columns": 73
+          },
+          {
+            "name": "10",
+            "rows": 69,
+            "columns": 69
+          },
+          {
+            "name": "11",
+            "rows": 39,
+            "columns": 39
+          },
+          {
+            "name": "12",
+            "rows": 40,
+            "columns": 40
+          },
+          {
+            "name": "13",
+            "rows": 55,
+            "columns": 55
+          },
+          {
+            "name": "14",
+            "rows": 39,
+            "columns": 39
+          },
+          {
+            "name": "15",
+            "rows": 37,
+            "columns": 37
+          },
+          {
+            "name": "16",
+            "rows": 117,
+            "columns": 117
+          },
+          {
+            "name": "17",
+            "rows": 150,
+            "columns": 150
+          },
+          {
+            "name": "18",
+            "rows": 170,
+            "columns": 170
+          }
+        ]
+      }
+    ],
+    "article_pdf_signature": "%PDF-1.4"
+  },
+  "annotation_species_and_ledger": {
+    "repository_head": "678fcb709324142454fd7a80cb6185c64b900510",
+    "method": "Independent CSV/JSON/Markdown cross-check against existing repository inventories; no second SBML parser; no generator runs",
+    "annotation": {
+      "v0": {
+        "rows": 968,
+        "unique_source_ids": 968,
+        "confidence_counts": {
+          "high": 776,
+          "low": 2,
+          "medium": 190
+        },
+        "directed_stage_counts": {
+          "DEG_sink": 388,
+          "ELONG_aa_tRNA_delivery": 24,
+          "ELONG_energy_coupling": 50,
+          "ELONG_peptide_formation": 4,
+          "ELONG_tRNA_release": 4,
+          "ELONG_translocation": 8,
+          "EN_binding": 54,
+          "EN_byproduct_processing": 2,
+          "EN_energy_transfer": 18,
+          "INIT_70S_formation": 12,
+          "INIT_assembly": 112,
+          "INIT_energy_commitment": 14,
+          "INIT_factor_release": 26,
+          "INIT_tRNA_recruitment": 42,
+          "RECYCLE_component_release": 24,
+          "RECYCLE_disassembly": 14,
+          "RS_activation": 36,
+          "RS_binding": 48,
+          "RS_charging": 20,
+          "RS_to_INIT_formylation": 22,
+          "TERM_energy_coupling": 34,
+          "TERM_factor_binding": 8,
+          "TERM_peptide_release": 4
+        }
+      },
+      "v1": {
+        "rows": 968,
+        "unique_source_ids": 968
+      },
+      "v2": {
+        "rows": 968,
+        "unique_source_ids": 968,
+        "status_counts": {
+          "DIRECT_CHEMISTRY": 492,
+          "GRAPH_PROPAGATED": 50,
+          "REFERENCE_DISABLED": 420,
+          "SHARED_JUNCTION": 6
+        },
+        "functional_annotation_unresolved": 0,
+        "live_review_rows": 0,
+        "families": 36
+      }
+    },
+    "species_contract": {
+      "status": "HUMAN_APPROVED_V1 documented in summary/detailed/sync",
+      "class_counts": {
+        "C": 29,
+        "I": 42,
+        "II-A": 57,
+        "II-B": 91,
+        "III": 22
+      },
+      "summary_and_detail_and_source_exact_match": true,
+      "machine_source_map_rows": 241,
+      "machine_source_map_scope": "v3 candidate navigation; final I/II-A/II-B/III/C classes reside in approved Markdown contract and existing structural verifier"
+    },
+    "resource_ledger": {
+      "species_properties_rows": 241,
+      "reaction_balance_rows": 968,
+      "resources_distinct_and_Class_I": [
+        "ATP",
+        "ADP",
+        "AMP",
+        "GTP",
+        "GDP",
+        "GMP",
+        "PO4",
+        "PPi",
+        "CP",
+        "Cr",
+        "Gly",
+        "Met",
+        "fMet",
+        "tRNAGlyGCC",
+        "tRNAfMetCAU",
+        "GlytRNAGlyGCC",
+        "MettRNAfMetCAU",
+        "fMettRNAfMetCAU",
+        "RS30S",
+        "RS50S",
+        "RS70S",
+        "IF1",
+        "IF2",
+        "IF3",
+        "EFG",
+        "EFTs",
+        "EFTu",
+        "RF1",
+        "RF2",
+        "RF3",
+        "RRF",
+        "GlyRS",
+        "MetRS",
+        "CK",
+        "MK",
+        "NDK",
+        "PPiase",
+        "mRNA",
+        "Pept0003"
+      ],
+      "peptidyl_tRNA_II_B": [
+        "Pept0002tRNAGlyGCC",
+        "Pept0003tRNAGlyGCC"
+      ],
+      "terminal_sink_count": 29,
+      "sink_consumption_reactions": 0,
+      "formula_net_charge_protonation_blank_rows": 241,
+      "Mg_binding": "No invented value; absent metadata explicitly disables all 968 ionic_strength_status fields",
+      "unit_status_counts": {
+        "uM inferred from paper concentration examples; CSV omits unit metadata": 241
+      },
+      "positive_reference_initial_components": 27,
+      "elemental_balance_status_counts": {
+        "UNRESOLVED_FORMULAS_ABSENT": 968
+      },
+      "moiety_balance_status_counts": {
+        "UNRESOLVED_BOUND_MOIETIES_NOT_ANNOTATED": 968
+      },
+      "ionic_strength_status_counts": {
+        "UNAVAILABLE_CHARGE_PROTONATION_MG_BINDING_ABSENT": 968
+      },
+      "all_event_free_resource_and_particle_deltas_recomputed": true,
+      "free_resource_delta_columns": [
+        "net_free_ATP",
+        "net_free_ADP",
+        "net_free_AMP",
+        "net_free_GTP",
+        "net_free_GDP",
+        "net_free_GMP",
+        "net_free_PO4",
+        "net_free_PPi",
+        "net_free_CP",
+        "net_free_Cr",
+        "net_free_Gly",
+        "net_free_Met",
+        "net_free_fMet",
+        "net_free_tRNAGlyGCC",
+        "net_free_tRNAfMetCAU",
+        "net_free_GlytRNAGlyGCC",
+        "net_free_MettRNAfMetCAU",
+        "net_free_fMettRNAfMetCAU"
+      ]
+    },
+    "reduction_review": {
+      "decision_status_counts": {
+        "PENDING": 968
+      },
+      "candidate_labels": {
+        "DROP_CANDIDATE": 388,
+        "KEEP": 202,
+        "LUMP_CANDIDATE": 378
+      },
+      "checked_process_boxes": 0,
+      "unchecked_process_boxes": 96,
+      "unchecked_choices": {
+        "CHEMOSTAT": 16,
+        "DROP": 16,
+        "KEEP": 16,
+        "LUMP": 16,
+        "NEED MORE INFORMATION": 16,
+        "QSSA": 16
+      }
+    },
+    "resource_manifest_verified_sha256": {
+      "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+      "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+      "models/pnas2017_full_reference/audit/species_properties.csv": "fcb2ade0d390ec8b08ba3a613a96dfe4ff801b3324f362360534fd504f7ad9d8",
+      "models/pnas2017_full_reference/audit/reaction_balance_audit.csv": "89c7c5710b4ee46cc2da44442ba49fcc8c3c546289ad4521b11fc50a82eb3962",
+      "docs/reduction/reduction_decisions.csv": "70fd3f98de5056a1a63c29db58d310ec5986d4c52b6bfcbae9634b38e2e8d7f8"
+    },
+    "overall": "PASS",
+    "scientific_boundary": "Information retention and annotation/ledger consistency only; no QSSA/lumping/kinetic equivalence or reduced-model validation"
+  },
+  "fresh_reference_preparation": {
+    "command": "& 'C:\\Users\\sean\\AppData\\Local\\Temp\\pure-pnas-validation-venv-20260927\\Scripts\\python.exe' scripts/run_pnas2017_reference.py --run-id rr_author_csv_g1_20261002_prepared --prepare-only",
+    "exit_code": 0,
+    "cwd": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\execution",
+    "manifest": {
+      "author_csv_overlay": {
+        "ignored_author_csv_sentinel": {
+          "Name": "default",
+          "Value": 1
+        },
+        "mapping": "Initial CSV No./Name equals original SBML species order/ID; parameter CSV reaction_id_k1 equals original reaction order and local kinetic-law k1.",
+        "nonzero_k1_count": 483,
+        "positive_initial_species_count": 27,
+        "reaction_local_k1_count": 968,
+        "species_count": 241
+      },
+      "author_zip_members_sha256": {
+        "Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+        "Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+        "Simulate_fMGG_synthesis/fMGG_synthesis_Sample.m": "9db2acfd7c5961f2bc52766df75bca619af496f999ad92b9b29a77f4c7fa6fc0"
+      },
+      "benchmark": "PNAS2017_full_reference",
+      "dataset_s28_comparison": "unavailable_original_publisher_dataset_not_acquired",
+      "effective_author_conditions_sbml": {
+        "path": "results/pnas2017_reference/rr_author_csv_g1_20261002_prepared/effective_author_conditions.xml",
+        "sha256": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+        "status": "derived_numeric_execution_input_not_canonical_source"
+      },
+      "execution_status": "prepared_only",
+      "normalization_manifest": "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.provenance.json",
+      "normalized_sbml_sha256": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+      "observed_product_sbml_id": "Pept0003",
+      "scientific_status": "reference_integrity_diagnostic_not_experimental_validation",
+      "solver": {
+        "absolute_tolerance": 1e-09,
+        "author_solver": "MATLAB ode15s with NonNegative; CVODE does not assert identical nonnegative handling",
+        "name": "libRoadRunner CVODE",
+        "relative_tolerance": 0.001,
+        "stiff": true
+      },
+      "source_sha256": {
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+        "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+      },
+      "time_grid": {
+        "definition": "logspace(-4, 3, 200) from author fMGG_synthesis_Sample.m",
+        "end_seconds": 1000.0,
+        "points": 200,
+        "start_seconds": 0.0001
+      }
+    },
+    "trajectory_rerun": false
+  },
+  "fresh_simbiology": {
+    "command": "matlab -batch \"addpath('scripts'); run_pnas2017_simbiology; fprintf('MATLAB_VERSION=%s\\n', version); disp(ver('SimBiology'));\" -logfile 'C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\execution\\matlab_20261002.log'",
+    "exit_code": 0,
+    "cwd": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\execution",
+    "runtime_version": "25.2.0.3177638 (R2025b) Update 5",
+    "record": {
+      "engine": "MATLAB SimBiology",
+      "solver": "ode15s",
+      "input": "effective_author_conditions.xml",
+      "input_status": "derived_compatibility_copy_with_author_csv_overlay",
+      "imported_species": 241,
+      "imported_reactions": 968,
+      "normalized_po4_coefficient": 2,
+      "initial_conditions_and_parameters": "provided_in_effective_sbml_from_author_csv",
+      "end_time_seconds": 1000,
+      "time_points": 435,
+      "product_sbml_id": "Pept0003",
+      "product_final": 5.1645826540185835,
+      "minimum_species_concentration": -3.711909634226919e-12,
+      "dimensional_analysis_warning_count": 968,
+      "scientific_status": "integrity_cross_check_not_experimental_validation"
+    },
+    "input_sha256": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+    "output_sha256": {
+      "simbiology_trajectory.csv": "313fcfc5b28b80c4cb19ad874a3e957142ef12fdbe149c31cdf5f15f1d59057a",
+      "simbiology_names.json": "932e707738f4794dbd2de65a721bdba7c5d61964aa63c77224148f75c6120b10",
+      "simbiology_run.json": "82f6444a7a8adf06d4ffc5bf2f9578f3302ac6b8dabe34cad59ae49ead128cc2",
+      "simbiology_warnings.txt": "e4f6e1fc94e07ebd5bd357175fb0b42358c6e28162bb0ee7fdc95a99bbd46f1c"
+    }
+  },
+  "fresh_comparison": {
+    "command": "python scripts/compare_pnas2017_engines.py",
+    "exit_code": 0,
+    "cwd": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\execution",
+    "roadrunner_trajectory": "Preserved main output, hash checked; not newly executed",
+    "simbiology_trajectory": "Freshly executed 2026-10-02 in isolated sandbox",
+    "record": {
+      "status": "ENGINE_COMPARISON_DIAGNOSTIC_NO_PREREGISTERED_PASS_THRESHOLD",
+      "comparison_method": "Linear interpolation of SimBiology ode15s output onto the 200 RoadRunner CVODE output times; direct final-time comparison at 1000 s.",
+      "same_effective_execution_sbml": true,
+      "source_files_sha256": {
+        "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+        "results/pnas2017_reference/rr_cvode_author_csv_20260924/trajectory.csv": "5e2ed9c36afb14b69c8b7cf5da95faf45b51f7977c09dd2bfdad1a2d2604a0d4",
+        "results/pnas2017_reference/rr_cvode_author_csv_20260924/simbiology_trajectory.csv": "313fcfc5b28b80c4cb19ad874a3e957142ef12fdbe149c31cdf5f15f1d59057a",
+        "results/pnas2017_reference/rr_cvode_author_csv_20260924/simbiology_names.json": "932e707738f4794dbd2de65a721bdba7c5d61964aa63c77224148f75c6120b10",
+        "results/pnas2017_reference/rr_cvode_author_csv_20260924/run_manifest.json": "cfffe872a342812d1c23262e8d5400b87ee0024e86850d53ab1e0a38d079445b",
+        "results/pnas2017_reference/rr_cvode_author_csv_20260924/simbiology_run.json": "82f6444a7a8adf06d4ffc5bf2f9578f3302ac6b8dabe34cad59ae49ead128cc2"
+      },
+      "species_count": 241,
+      "road_runner_points": 200,
+      "simbiology_points": 435,
+      "largest_absolute_difference_any_species_any_sample": 29.71642810028746,
+      "largest_absolute_final_difference_any_species": 0.21353991011710605,
+      "resources": {
+        "Pept0003": {
+          "roadrunner_final": 5.164478733656283,
+          "simbiology_final": 5.16458265401858,
+          "absolute_final_difference": 0.00010392036229678325,
+          "maximum_interpolated_trajectory_absolute_difference": 0.00015242845662455373
+        },
+        "ATP": {
+          "roadrunner_final": 3672.51004591268,
+          "simbiology_final": 3672.45312241896,
+          "absolute_final_difference": 0.05692349372020544,
+          "maximum_interpolated_trajectory_absolute_difference": 7.804978661461064
+        },
+        "ADP": {
+          "roadrunner_final": 9.642069081631952,
+          "simbiology_final": 9.64977545651676,
+          "absolute_final_difference": 0.007706374884808298,
+          "maximum_interpolated_trajectory_absolute_difference": 0.019273888944681516
+        },
+        "AMP": {
+          "roadrunner_final": 0.01166321832961868,
+          "simbiology_final": 0.0116787973334006,
+          "absolute_final_difference": 1.5579003781919162e-05,
+          "maximum_interpolated_trajectory_absolute_difference": 0.0019998964029329658
+        },
+        "GTP": {
+          "roadrunner_final": 2401.5295845054634,
+          "simbiology_final": 2401.53653226495,
+          "absolute_final_difference": 0.006947759486592986,
+          "maximum_interpolated_trajectory_absolute_difference": 16.04595225776393
+        },
+        "GDP": {
+          "roadrunner_final": 7.925632429024121,
+          "simbiology_final": 7.91536347859,
+          "absolute_final_difference": 0.010268950434121571,
+          "maximum_interpolated_trajectory_absolute_difference": 0.010268950434121571
+        },
+        "PO4": {
+          "roadrunner_final": 8375.157296635292,
+          "simbiology_final": 8375.37083654541,
+          "absolute_final_difference": 0.21353991011710605,
+          "maximum_interpolated_trajectory_absolute_difference": 0.5661914745310241
+        },
+        "PPi": {
+          "roadrunner_final": 4.806127747756875,
+          "simbiology_final": 4.80632776172653,
+          "absolute_final_difference": 0.00020001396965518836,
+          "maximum_interpolated_trajectory_absolute_difference": 0.00597840584603504
+        },
+        "CP": {
+          "roadrunner_final": 41721.00149711278,
+          "simbiology_final": 41720.9138253613,
+          "absolute_final_difference": 0.08767175148386741,
+          "maximum_interpolated_trajectory_absolute_difference": 28.265307467299863
+        },
+        "Cr": {
+          "roadrunner_final": 8250.618621273174,
+          "simbiology_final": 8250.72767514846,
+          "absolute_final_difference": 0.1090538752869179,
+          "maximum_interpolated_trajectory_absolute_difference": 0.5523713420047898
+        },
+        "Gly": {
+          "roadrunner_final": 262.15575983975856,
+          "simbiology_final": 262.10826396557,
+          "absolute_final_difference": 0.04749587418854162,
+          "maximum_interpolated_trajectory_absolute_difference": 0.06494579354875896
+        },
+        "Met": {
+          "roadrunner_final": 261.0335132673067,
+          "simbiology_final": 261.02558745691,
+          "absolute_final_difference": 0.007925810396727684,
+          "maximum_interpolated_trajectory_absolute_difference": 0.060244551254868384
+        },
+        "tRNAGlyGCC": {
+          "roadrunner_final": 0.00048297358183731567,
+          "simbiology_final": 0.000482038480528093,
+          "absolute_final_difference": 9.351013092226521e-07,
+          "maximum_interpolated_trajectory_absolute_difference": 0.04323596094031412
+        },
+        "tRNAfMetCAU": {
+          "roadrunner_final": 0.002927869981273798,
+          "simbiology_final": 0.00292727190143468,
+          "absolute_final_difference": 5.980798391180472e-07,
+          "maximum_interpolated_trajectory_absolute_difference": 0.007670051681368584
+        },
+        "GlytRNAGlyGCC": {
+          "roadrunner_final": 0.00016087125998143244,
+          "simbiology_final": 0.000160880738802253,
+          "absolute_final_difference": 9.478820820564343e-09,
+          "maximum_interpolated_trajectory_absolute_difference": 0.0002501661110816643
+        },
+        "MettRNAfMetCAU": {
+          "roadrunner_final": 3.4416022579713446e-05,
+          "simbiology_final": 3.44176451564022e-05,
+          "absolute_final_difference": 1.6225766887519879e-09,
+          "maximum_interpolated_trajectory_absolute_difference": 1.9390770874708023e-06
+        },
+        "fMettRNAfMetCAU": {
+          "roadrunner_final": 0.8764572926501915,
+          "simbiology_final": 0.876462305610296,
+          "absolute_final_difference": 5.012960104577857e-06,
+          "maximum_interpolated_trajectory_absolute_difference": 0.0002848771330222766
+        }
+      },
+      "limitations": [
+        "SBML source lacks sufficient unit declarations; both engines made dimensional assumptions.",
+        "The effective model is a stoichiometry-compatible derived copy plus author CSV initial/parameter overlay; the untouched source SBML has all-one placeholders.",
+        "Linear interpolation adds its own error; solver tolerances and nonnegativity handling differ.",
+        "Publisher Dataset S28 is unavailable, so no pointwise comparison against its trajectory was possible.",
+        "This is a numerical integrity comparison, not experimental validation or reduction acceptance."
+      ]
+    }
+  },
+  "legacy_generator_metadata_caveat": "Unmodified registered reference/comparison scripts retain acquisition-era S28-unavailable template strings. These archived generated strings do not describe current source capture. S28 is present; pointwise observable mapping/comparison remains NOT_RUN.",
+  "optional_runtime_dependency_attempt": {
+    "command": "& 'C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe' -m pip install --target 'C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\runtime-libs' --no-deps python-libsbml==5.21.2",
+    "exit_code": 1,
+    "result": "TLS EOF while accessing PyPI; package not installed; no trust/TLS bypass; does not change the ten gate requirements"
+  },
+  "evidence_archive": {
+    "path": "docs/pnas2017/g1_pnas_evidence_20261002.zip",
+    "sha256": "768f8f84c9caac632061f7ecba215d8a1433e0feb6aa287d4f2775fe0660cf88",
+    "bytes": 930453,
+    "members": [
+      {
+        "path": "contracts/contracts_audit_result.md",
+        "sha256": "b270370c918526ca55d1af35aa2f8f5d9deb2ff9f312b5b352964397bb9f493a",
+        "bytes": 6557
+      },
+      {
+        "path": "contracts/independent_contracts_check.exitcode.txt",
+        "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+        "bytes": 3
+      },
+      {
+        "path": "contracts/independent_contracts_check.first_attempt.log",
+        "sha256": "e705f6f3251471b242aca84b585efdee2156d00bfaf65d913a6cedb99801688c",
+        "bytes": 340
+      },
+      {
+        "path": "contracts/independent_contracts_check.log",
+        "sha256": "84289d54a50ee4ddb327a616bd72c511e39a93af156a756a05ea7005840dbadc",
+        "bytes": 5747
+      },
+      {
+        "path": "contracts/independent_contracts_check.py",
+        "sha256": "5c9cccd7339da8f93bbcc2b31bc9935d5640bafcaa083694d5b6af7b66c06feb",
+        "bytes": 9960
+      },
+      {
+        "path": "contracts/independent_contracts_evidence.json",
+        "sha256": "84289d54a50ee4ddb327a616bd72c511e39a93af156a756a05ea7005840dbadc",
+        "bytes": 5747
+      },
+      {
+        "path": "contracts/verify_reaction_level_annotation.py.exitcode.txt",
+        "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+        "bytes": 3
+      },
+      {
+        "path": "contracts/verify_reaction_level_annotation.py.log",
+        "sha256": "1d04ba51cd0c7eec5864724f13915c4fdc80d5a7a83789ca9878f0c681658543",
+        "bytes": 1260
+      },
+      {
+        "path": "contracts/verify_reaction_level_annotation_v2.py.exitcode.txt",
+        "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+        "bytes": 3
+      },
+      {
+        "path": "contracts/verify_reaction_level_annotation_v2.py.log",
+        "sha256": "f701df2ed8a08dcd315ebf8ae5fc769a72ecd1d7166fb3e1d0f7a04522d30a85",
+        "bytes": 834
+      },
+      {
+        "path": "contracts/verify_reaction_level_contract.py.exitcode.txt",
+        "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+        "bytes": 3
+      },
+      {
+        "path": "contracts/verify_reaction_level_contract.py.log",
+        "sha256": "771570ff7ba139e9ebbe2a9ac77fbcf87a43964f932a7ebd7b372a44de17c99b",
+        "bytes": 753
+      },
+      {
+        "path": "contracts/verify_species_information_contract.py.exitcode.txt",
+        "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+        "bytes": 3
+      },
+      {
+        "path": "contracts/verify_species_information_contract.py.log",
+        "sha256": "fdc1c9a450f4c5bdb6bb3214a35d66d524d466d31200741abfbf6131e744be75",
+        "bytes": 369
+      },
+      {
+        "path": "execution/input_identity.json",
+        "sha256": "b595259afdf33bbebde86e25e4deed7bc6e4b01bc19c1a44b18ead667833592b",
+        "bytes": 1741
+      },
+      {
+        "path": "execution/matlab_20261002.log",
+        "sha256": "d18bd25de1b5c9ba63608852f251af117a8b24145dfbd44bd9bd91cf330f8e9f",
+        "bytes": 195
+      },
+      {
+        "path": "execution/reference_preparation_identity.json",
+        "sha256": "09806fa49cded7ef5283596b1300bf377713ff350bb3de58699650b0b4557f23",
+        "bytes": 1046
+      },
+      {
+        "path": "fresh_prepare_only/effective_author_conditions.xml",
+        "sha256": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+        "bytes": 939923
+      },
+      {
+        "path": "fresh_prepare_only/run_manifest.json",
+        "sha256": "6418f7e5d99abdade60311a03e7ff9c653e2c8b11ad383aae42827a74709c4c7",
+        "bytes": 2556
+      },
+      {
+        "path": "fresh_simbiology/engine_comparison.json",
+        "sha256": "fe8c0e008451cd6ec26d135306dbc3a28a391cb6c1ea6056635572c522c4c5b2",
+        "bytes": 6505
+      },
+      {
+        "path": "fresh_simbiology/simbiology_names.json",
+        "sha256": "932e707738f4794dbd2de65a721bdba7c5d61964aa63c77224148f75c6120b10",
+        "bytes": 5207
+      },
+      {
+        "path": "fresh_simbiology/simbiology_run.json",
+        "sha256": "82f6444a7a8adf06d4ffc5bf2f9578f3302ac6b8dabe34cad59ae49ead128cc2",
+        "bytes": 655
+      },
+      {
+        "path": "fresh_simbiology/simbiology_trajectory.csv",
+        "sha256": "313fcfc5b28b80c4cb19ad874a3e957142ef12fdbe149c31cdf5f15f1d59057a",
+        "bytes": 1789190
+      },
+      {
+        "path": "fresh_simbiology/simbiology_warnings.txt",
+        "sha256": "e4f6e1fc94e07ebd5bd357175fb0b42358c6e28162bb0ee7fdc95a99bbd46f1c",
+        "bytes": 935940
+      },
+      {
+        "path": "historical/g1_pnas_report_20260927_original.md",
+        "sha256": "c7bd1b36e6f67a9c8093b30c117064319d85cafc4167de2a8e432dd64f60f0ae",
+        "bytes": 6270
+      },
+      {
+        "path": "proposed_repair/provenance_sync_proposal.md",
+        "sha256": "b44ffb36d6f6d528259c461fbe8aa1df32bf53bf6d92b85cbb129c28d36894be",
+        "bytes": 3380
+      },
+      {
+        "path": "proposed_repair/provenance_sync_proposal.patch",
+        "sha256": "b338b6d580f5f17c394e14f0168e41bfadf81e1a3dccb34760120428218bea5a",
+        "bytes": 8051
+      },
+      {
+        "path": "proposed_repair/provenance_sync_proposal_checks.json",
+        "sha256": "8d5bf0261b6573277e6e1fecefb9eba0e1653e25a0f22d3e2ca3708455d02fb2",
+        "bytes": 1363
+      },
+      {
+        "path": "source/artifacts_verifier_failure.txt",
+        "sha256": "335c5e0f8c3fdab1a9a92619f2853b9938c4ec12ddfc29a8cd83f89be0ebc098",
+        "bytes": 749
+      },
+      {
+        "path": "source/integration_verification.json",
+        "sha256": "46a26a20893be2a1589427214007095df5e5f3938bddda17632e2e6907d9a5c4",
+        "bytes": 1961
+      },
+      {
+        "path": "source/libsbml_messages_fresh.json",
+        "sha256": "123ac4a89c9b6390deb20287bee5392e6bbd2422e270fe85300d648ab129917a",
+        "bytes": 1689439
+      },
+      {
+        "path": "source/publisher_format_diagnostics.py",
+        "sha256": "e2218b432d655f3ebe38e4787cab4fea5a7b3d55d8467fc2910c72f397271a8e",
+        "bytes": 1001
+      },
+      {
+        "path": "source/publisher_format_evidence.json",
+        "sha256": "c06a5e0d12058d321844fc2ab10572c3d68b0b1be4b965750c424df3b0a8cbbc",
+        "bytes": 13683
+      },
+      {
+        "path": "source/regenerated_audit/modules.csv",
+        "sha256": "8bb60695e5bf9c795a5f92b0e6194eb47739b49c2437f6abe00a896e19569ff6",
+        "bytes": 4949
+      },
+      {
+        "path": "source/regenerated_audit/parameters.csv",
+        "sha256": "7de13ade5f23441f57d40cc4fbc6366aafccb9e8859d86f9e921d38787b9d79c",
+        "bytes": 114324
+      },
+      {
+        "path": "source/regenerated_audit/reactions.csv",
+        "sha256": "626539570e2ddcce45b49b1c53ce8d263c84f6fcd1eb9a40f292fbe2ddf637e4",
+        "bytes": 795721
+      },
+      {
+        "path": "source/regenerated_audit/species.csv",
+        "sha256": "0de6f96e9b7fde61c267bfb2b9c770ee38fbf14c5021b70fcd7fd97ae3bc6686",
+        "bytes": 33266
+      },
+      {
+        "path": "source/sbml_audit_fresh.md",
+        "sha256": "1dee4bc720007c0c725a1b978d1aac23b61a8e91603e6242ca492cdbcd5b5da3",
+        "bytes": 7597
+      },
+      {
+        "path": "source/source_diagnostics.py",
+        "sha256": "aeea1f424db39434d07d1843ab78fcd6bf076d54333c2a206d9e5763876f19e7",
+        "bytes": 9221
+      },
+      {
+        "path": "source/source_evidence.json",
+        "sha256": "87081dab7ecb49ab4a3c7b16d08455df45730ca0cbe0c3a8b5538d442c7436c6",
+        "bytes": 28874
+      },
+      {
+        "path": "source/verification_commands.json",
+        "sha256": "1f332856c7e08ce0ee35c998a30e5539cffeaaa2a95045c7e27c1a9490f95960",
+        "bytes": 3161
+      }
+    ]
+  },
+  "historical_report": {
+    "path": "docs/pnas2017/g1_pnas_report_20260927_blocked.md",
+    "preserved_original_blob_sha256": "c7bd1b36e6f67a9c8093b30c117064319d85cafc4167de2a8e432dd64f60f0ae",
+    "preserved_original_blob_bytes": 6270,
+    "original_body_preserved_byte_identically": true
+  },
+  "scientific_boundary": {
+    "reduced_model_status": "NOT_VALIDATED",
+    "reaction_level_reduction_status": "PENDING_HUMAN_REVIEW",
+    "pending_decisions": 968,
+    "species_information_contract": "HUMAN_APPROVED_V1",
+    "research_prs": "UNTOUCHED"
+  },
+  "starting_main_head": "678fcb709324142454fd7a80cb6185c64b900510",
+  "formal_gate_status": "PASS / CLOSED",
+  "formal_closed": true,
+  "closure_date": "2026-10-02",
+  "closure_meaning": "G1-PNAS closes the detailed-reference curation and reduction-review preparation stage. It authorizes entry into human-reviewed kinetic reduction. It does not validate PURE_reduced_core.",
+  "verification_status": "PASS",
+  "required_verifier_results": [
+    {
+      "command": "python scripts/verify_pnas2017_artifacts.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PROVENANCE_AND_COVERAGE_VERIFIED_NOT_SCIENTIFIC_VALIDATION\",\n  \"sources\": 3,\n  \"species\": 241,\n  \"reactions\": 968,\n  \"modules\": 26,\n  \"pending_decisions\": 968,\n  \"review_cards\": 16\n}\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_pnas2017_artifacts.log"
+    },
+    {
+      "command": "python scripts/verify_pnas2017_integration.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "{\"pass\": 11, \"fail\": 0}\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_pnas2017_integration.log"
+    },
+    {
+      "command": "python scripts/verify_reaction_level_annotation.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "PASS: graph-aware v1 = 968 unique rows\nPASS: 35 active families + RFAM_DEG; 290 reverse channels\nPASS: 846 anchors / 42 propagated / 4 family-propagated / 76 shared junctions\nPASS: EFG/50S pair = shared ELONG_energy_coupling + RECYCLE_component_release\nPASS: historical v1 graph-unresolved=0; v2 functional review and reduction review are separate\nNOTE: graph annotation only; no QSSA/lumping/kinetic validity is tested\nPASS: 968 unique source-identical reactions; 290 symmetric exact reverse channels\nPASS: hard chemistry priority; double-zero edges never functional anchors\nPASS: RFAM_005-010 approved regressions; RFAM_011/012 Gly/Met source and parameter-topology symmetry (52/52)\nPASS: RFAM_025/026 reviewed initiation rules and reverse symmetry\nPASS: nine prior reviewed families = 98 direct rules; RFAM_002/004/014 final reviewed patterns and source equations\nPASS: six approved shared junctions; non-target scientific fingerprint unchanged\nPASS: 22 specific-intermediate cross-family links; 0 live functional-review rows\nPASS: reduction scientific review remains 968/968 PENDING; v0/v1 retained\nSTATUS COUNTS: {\"DIRECT_CHEMISTRY\": 492, \"GRAPH_PROPAGATED\": 50, \"HUMAN_REVIEW_REQUIRED\": 0, \"REFERENCE_DISABLED\": 420, \"SHARED_JUNCTION\": 6}\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_reaction_level_annotation.log"
+    },
+    {
+      "command": "python scripts/verify_reaction_level_annotation_v2.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "PASS: 968 unique source-identical reactions; 290 symmetric exact reverse channels\nPASS: hard chemistry priority; double-zero edges never functional anchors\nPASS: RFAM_005-010 approved regressions; RFAM_011/012 Gly/Met source and parameter-topology symmetry (52/52)\nPASS: RFAM_025/026 reviewed initiation rules and reverse symmetry\nPASS: nine prior reviewed families = 98 direct rules; RFAM_002/004/014 final reviewed patterns and source equations\nPASS: six approved shared junctions; non-target scientific fingerprint unchanged\nPASS: 22 specific-intermediate cross-family links; 0 live functional-review rows\nPASS: reduction scientific review remains 968/968 PENDING; v0/v1 retained\nSTATUS COUNTS: {\"DIRECT_CHEMISTRY\": 492, \"GRAPH_PROPAGATED\": 50, \"HUMAN_REVIEW_REQUIRED\": 0, \"REFERENCE_DISABLED\": 420, \"SHARED_JUNCTION\": 6}\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_reaction_level_annotation_v2.log"
+    },
+    {
+      "command": "python scripts/verify_reaction_level_contract.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "PASS: 968 unique source reactions; 26 source subsystems\nPASS: CellDesigner reaction types = association 266, dissociation 266, state transition 436\nPASS: source SBML reversible=true count = 0\nPASS: 290 exact reverse-stoichiometry pairs cover 580 directed reactions; no ambiguous signature groups\nPASS: 388 degradation-related reactions require explicit DEG_sink coverage\nPASS: 29 FMet_tRNASynthesis reactions require the RS-to-INIT formylation bridge\nPASS: Level-C vocabulary = 22 active stages + 1 coverage-only stage; elongation keeps 5 active stages\nPASS: summary/detailed Markdown contain every controlled Level-C label\nNOTE: vocabulary/source-structure verification only; no 968-row functional assignment or kinetic reduction is validated\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_reaction_level_contract.log"
+    },
+    {
+      "command": "python scripts/verify_species_information_contract.py",
+      "working_directory": "C:\\Users\\sean\\.codex\\worktrees\\g1-pnas-closure\\GUV",
+      "exit_code": 0,
+      "stdout": "PASS: 241 unique source species\nPASS: class counts I=42, II-A=57, II-B=91, III=22, C=29\nPASS: source species set equals detailed Markdown table\nPASS: degraded/enzyme-intermediate source rules\nPASS: resource Class-I contract\nPASS: Pept0002, RS50S_tRNAGlyGCC and UAA pretermination decisions\nNOTE: structural verification only; QSSA/kinetic validity is not tested\n",
+      "stderr": "",
+      "log": "C:\\Users\\sean\\.codex\\tmp\\g1-pnas-20261002\\closure\\verify_species_information_contract.log"
+    }
+  ],
+  "integration_current": {
+    "schema": "pnas2017_integration_verification/v1",
+    "authority": "Evidence-integrity check only; no reduction acceptance",
+    "main_base": "0a72448ff20db8e58593a9910b8944c121750778",
+    "research_source": "025fd340300a56f069c2136ea8bb0ff542b046d4",
+    "pass": 11,
+    "fail": 0,
+    "checks": [
+      {
+        "check": "P1_expected_source_set",
+        "status": "PASS",
+        "detail": "30 captured files; 29 supplements"
+      },
+      {
+        "check": "P1_source_bytes",
+        "status": "PASS",
+        "detail": "30 SHA-256, sizes and research blobs checked; mismatches=[]"
+      },
+      {
+        "check": "main_authority_unchanged",
+        "status": "PASS",
+        "detail": "10 canonical/normalized/generated files unchanged vs main 0a72448ff20db8e58593a9910b8944c121750778; review matches exact approved documentation sync d5874dec053e6ff210e3d1843bb7735ebe3ba84a; changed=[]"
+      },
+      {
+        "check": "canonical_author_identity",
+        "status": "PASS",
+        "detail": "canonical SHA-256=dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+      },
+      {
+        "check": "historical_input_snapshot",
+        "status": "PASS",
+        "detail": "38 research inputs; mismatches=[]"
+      },
+      {
+        "check": "historical_runner_revision",
+        "status": "PASS",
+        "detail": "source=11c4d704a:scripts/run_pnas2017_aa_v1_formal.m"
+      },
+      {
+        "check": "historical_run_archive",
+        "status": "PASS",
+        "detail": "179 run files; mismatches=[]"
+      },
+      {
+        "check": "historical_candidate_records",
+        "status": "PASS",
+        "detail": "65 original Git blobs; changed=[]"
+      },
+      {
+        "check": "historical_status_and_open_decisions",
+        "status": "PASS",
+        "detail": "A3a failed; A3b-21 failed; A3b-r12 blocked; A3c 0/21; OPEN-01..08"
+      },
+      {
+        "check": "no_reduced_core_promoted",
+        "status": "PASS",
+        "detail": "reduced XML files=0"
+      },
+      {
+        "check": "evidence_graph_freshness",
+        "status": "PASS",
+        "detail": "14 nodes, 12 edges; source fingerprint verified"
+      }
+    ]
+  },
+  "provenance_sync": {
+    "patch_sha256": "b338b6d580f5f17c394e14f0168e41bfadf81e1a3dccb34760120428218bea5a",
+    "authorization": "Explicit renewed user request for exactly the previously audited repair",
+    "applied": true,
+    "changed_paths": [
+      "scripts/verify_pnas2017_artifacts.py",
+      "scripts/verify_pnas2017_integration.py",
+      "docs/reduction/review_sync_manifest_20260930.json"
+    ],
+    "checks": {
+      "mode": "APPLIED_EXACT_PATCH_IDENTITY_AND_EXISTING_MUTATION_CHECKS",
+      "patch_sha256": "b338b6d580f5f17c394e14f0168e41bfadf81e1a3dccb34760120428218bea5a",
+      "exact_three_files_match_audited_proposal": true,
+      "existing_mutation_checks": [
+        {
+          "name": "unapproved_review_change",
+          "status": "REJECTED",
+          "reason": "Review document differs from exact approved transition"
+        },
+        {
+          "name": "unapproved_sync_commit",
+          "status": "REJECTED",
+          "reason": "Unknown review synchronization authority"
+        },
+        {
+          "name": "rewrite_historical_render_manifest",
+          "status": "REJECTED",
+          "reason": "Historical renderer manifest was altered"
+        },
+        {
+          "name": "alter_approved_information_contract",
+          "status": "REJECTED",
+          "reason": "Approved information-contract evidence changed: docs/reduction/species_information_contract_summary.md"
+        },
+        {
+          "name": "alter_canonical_sbml",
+          "status": "REJECTED",
+          "reason": "Frozen source size/hash mismatch: models/pnas2017_full_reference/original/fMGG_synthesis.xml"
+        },
+        {
+          "name": "alter_pending_reduction_decisions",
+          "status": "REJECTED",
+          "reason": "resource output: docs/reduction/reduction_decisions.csv: 78e967192aea7b89932d80f131969cba8318276d0271a9437754fa6d5e9860ae != 70fd3f98de5056a1a63c29db58d310ec5986d4c52b6bfcbae9634b38e2e8d7f8"
+        }
+      ],
+      "applied_patch_reverse_check_exit": 0,
+      "earlier_helper_attempt": {
+        "exit_code": 1,
+        "diagnosis": "Pre-application helper was invoked after patch application; six mutation checks passed, then git apply --check correctly refused to apply an already applied patch. No official verifier failed. The state-appropriate reverse check passes."
+      }
+    },
+    "commit": "4e63d9ef6ec1c623c485bd4553362c27114a6203"
+  },
+  "diagnostic_history": {
+    "phase": "2026-10-02 diagnostic before renewed authorization",
+    "formal_closed": false,
+    "verification_status": "FAIL",
+    "prior_user_instruction": "只保存诊断，不修复或推送",
+    "prior_official_failures": {
+      "artifact_verifier_exit": 1,
+      "integration_verifier_exit": 1,
+      "integration_pass": 10,
+      "integration_fail": 1,
+      "cause": "Current committed human_reduction_review.md reflects human sync at d5874dec053e6ff210e3d1843bb7735ebe3ba84a; stale original render output hash and pinned authority assertion were not updated.",
+      "current_review_sha256": "b32dcbfa155be5d77411691889e67da7a6a89c7d87ba1406171e74db6c95c2d8",
+      "old_review_sha256": "ef9f617cf9121200c52c14f00f17c86d96e48793377464b89414a631e75c1de7",
+      "failures_preserved": true,
+      "repair_authorized": false,
+      "final_results": "Original required verifier failures remain; user declined provenance repair and push.",
+      "repair_applied": false,
+      "user_declined_repair": true
+    },
+    "preserved_original_records": "docs/pnas2017/g1_pnas_closure_evidence_20261002.zip / prior_diagnostic/",
+    "original_rerun_archive": {
+      "path": "docs/pnas2017/g1_pnas_evidence_20261002.zip",
+      "sha256": "768f8f84c9caac632061f7ecba215d8a1433e0feb6aa287d4f2775fe0660cf88",
+      "bytes": 930453,
+      "members": [
+        {
+          "path": "contracts/contracts_audit_result.md",
+          "sha256": "b270370c918526ca55d1af35aa2f8f5d9deb2ff9f312b5b352964397bb9f493a",
+          "bytes": 6557
+        },
+        {
+          "path": "contracts/independent_contracts_check.exitcode.txt",
+          "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "bytes": 3
+        },
+        {
+          "path": "contracts/independent_contracts_check.first_attempt.log",
+          "sha256": "e705f6f3251471b242aca84b585efdee2156d00bfaf65d913a6cedb99801688c",
+          "bytes": 340
+        },
+        {
+          "path": "contracts/independent_contracts_check.log",
+          "sha256": "84289d54a50ee4ddb327a616bd72c511e39a93af156a756a05ea7005840dbadc",
+          "bytes": 5747
+        },
+        {
+          "path": "contracts/independent_contracts_check.py",
+          "sha256": "5c9cccd7339da8f93bbcc2b31bc9935d5640bafcaa083694d5b6af7b66c06feb",
+          "bytes": 9960
+        },
+        {
+          "path": "contracts/independent_contracts_evidence.json",
+          "sha256": "84289d54a50ee4ddb327a616bd72c511e39a93af156a756a05ea7005840dbadc",
+          "bytes": 5747
+        },
+        {
+          "path": "contracts/verify_reaction_level_annotation.py.exitcode.txt",
+          "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "bytes": 3
+        },
+        {
+          "path": "contracts/verify_reaction_level_annotation.py.log",
+          "sha256": "1d04ba51cd0c7eec5864724f13915c4fdc80d5a7a83789ca9878f0c681658543",
+          "bytes": 1260
+        },
+        {
+          "path": "contracts/verify_reaction_level_annotation_v2.py.exitcode.txt",
+          "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "bytes": 3
+        },
+        {
+          "path": "contracts/verify_reaction_level_annotation_v2.py.log",
+          "sha256": "f701df2ed8a08dcd315ebf8ae5fc769a72ecd1d7166fb3e1d0f7a04522d30a85",
+          "bytes": 834
+        },
+        {
+          "path": "contracts/verify_reaction_level_contract.py.exitcode.txt",
+          "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "bytes": 3
+        },
+        {
+          "path": "contracts/verify_reaction_level_contract.py.log",
+          "sha256": "771570ff7ba139e9ebbe2a9ac77fbcf87a43964f932a7ebd7b372a44de17c99b",
+          "bytes": 753
+        },
+        {
+          "path": "contracts/verify_species_information_contract.py.exitcode.txt",
+          "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "bytes": 3
+        },
+        {
+          "path": "contracts/verify_species_information_contract.py.log",
+          "sha256": "fdc1c9a450f4c5bdb6bb3214a35d66d524d466d31200741abfbf6131e744be75",
+          "bytes": 369
+        },
+        {
+          "path": "execution/input_identity.json",
+          "sha256": "b595259afdf33bbebde86e25e4deed7bc6e4b01bc19c1a44b18ead667833592b",
+          "bytes": 1741
+        },
+        {
+          "path": "execution/matlab_20261002.log",
+          "sha256": "d18bd25de1b5c9ba63608852f251af117a8b24145dfbd44bd9bd91cf330f8e9f",
+          "bytes": 195
+        },
+        {
+          "path": "execution/reference_preparation_identity.json",
+          "sha256": "09806fa49cded7ef5283596b1300bf377713ff350bb3de58699650b0b4557f23",
+          "bytes": 1046
+        },
+        {
+          "path": "fresh_prepare_only/effective_author_conditions.xml",
+          "sha256": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+          "bytes": 939923
+        },
+        {
+          "path": "fresh_prepare_only/run_manifest.json",
+          "sha256": "6418f7e5d99abdade60311a03e7ff9c653e2c8b11ad383aae42827a74709c4c7",
+          "bytes": 2556
+        },
+        {
+          "path": "fresh_simbiology/engine_comparison.json",
+          "sha256": "fe8c0e008451cd6ec26d135306dbc3a28a391cb6c1ea6056635572c522c4c5b2",
+          "bytes": 6505
+        },
+        {
+          "path": "fresh_simbiology/simbiology_names.json",
+          "sha256": "932e707738f4794dbd2de65a721bdba7c5d61964aa63c77224148f75c6120b10",
+          "bytes": 5207
+        },
+        {
+          "path": "fresh_simbiology/simbiology_run.json",
+          "sha256": "82f6444a7a8adf06d4ffc5bf2f9578f3302ac6b8dabe34cad59ae49ead128cc2",
+          "bytes": 655
+        },
+        {
+          "path": "fresh_simbiology/simbiology_trajectory.csv",
+          "sha256": "313fcfc5b28b80c4cb19ad874a3e957142ef12fdbe149c31cdf5f15f1d59057a",
+          "bytes": 1789190
+        },
+        {
+          "path": "fresh_simbiology/simbiology_warnings.txt",
+          "sha256": "e4f6e1fc94e07ebd5bd357175fb0b42358c6e28162bb0ee7fdc95a99bbd46f1c",
+          "bytes": 935940
+        },
+        {
+          "path": "historical/g1_pnas_report_20260927_original.md",
+          "sha256": "c7bd1b36e6f67a9c8093b30c117064319d85cafc4167de2a8e432dd64f60f0ae",
+          "bytes": 6270
+        },
+        {
+          "path": "proposed_repair/provenance_sync_proposal.md",
+          "sha256": "b44ffb36d6f6d528259c461fbe8aa1df32bf53bf6d92b85cbb129c28d36894be",
+          "bytes": 3380
+        },
+        {
+          "path": "proposed_repair/provenance_sync_proposal.patch",
+          "sha256": "b338b6d580f5f17c394e14f0168e41bfadf81e1a3dccb34760120428218bea5a",
+          "bytes": 8051
+        },
+        {
+          "path": "proposed_repair/provenance_sync_proposal_checks.json",
+          "sha256": "8d5bf0261b6573277e6e1fecefb9eba0e1653e25a0f22d3e2ca3708455d02fb2",
+          "bytes": 1363
+        },
+        {
+          "path": "source/artifacts_verifier_failure.txt",
+          "sha256": "335c5e0f8c3fdab1a9a92619f2853b9938c4ec12ddfc29a8cd83f89be0ebc098",
+          "bytes": 749
+        },
+        {
+          "path": "source/integration_verification.json",
+          "sha256": "46a26a20893be2a1589427214007095df5e5f3938bddda17632e2e6907d9a5c4",
+          "bytes": 1961
+        },
+        {
+          "path": "source/libsbml_messages_fresh.json",
+          "sha256": "123ac4a89c9b6390deb20287bee5392e6bbd2422e270fe85300d648ab129917a",
+          "bytes": 1689439
+        },
+        {
+          "path": "source/publisher_format_diagnostics.py",
+          "sha256": "e2218b432d655f3ebe38e4787cab4fea5a7b3d55d8467fc2910c72f397271a8e",
+          "bytes": 1001
+        },
+        {
+          "path": "source/publisher_format_evidence.json",
+          "sha256": "c06a5e0d12058d321844fc2ab10572c3d68b0b1be4b965750c424df3b0a8cbbc",
+          "bytes": 13683
+        },
+        {
+          "path": "source/regenerated_audit/modules.csv",
+          "sha256": "8bb60695e5bf9c795a5f92b0e6194eb47739b49c2437f6abe00a896e19569ff6",
+          "bytes": 4949
+        },
+        {
+          "path": "source/regenerated_audit/parameters.csv",
+          "sha256": "7de13ade5f23441f57d40cc4fbc6366aafccb9e8859d86f9e921d38787b9d79c",
+          "bytes": 114324
+        },
+        {
+          "path": "source/regenerated_audit/reactions.csv",
+          "sha256": "626539570e2ddcce45b49b1c53ce8d263c84f6fcd1eb9a40f292fbe2ddf637e4",
+          "bytes": 795721
+        },
+        {
+          "path": "source/regenerated_audit/species.csv",
+          "sha256": "0de6f96e9b7fde61c267bfb2b9c770ee38fbf14c5021b70fcd7fd97ae3bc6686",
+          "bytes": 33266
+        },
+        {
+          "path": "source/sbml_audit_fresh.md",
+          "sha256": "1dee4bc720007c0c725a1b978d1aac23b61a8e91603e6242ca492cdbcd5b5da3",
+          "bytes": 7597
+        },
+        {
+          "path": "source/source_diagnostics.py",
+          "sha256": "aeea1f424db39434d07d1843ab78fcd6bf076d54333c2a206d9e5763876f19e7",
+          "bytes": 9221
+        },
+        {
+          "path": "source/source_evidence.json",
+          "sha256": "87081dab7ecb49ab4a3c7b16d08455df45730ca0cbe0c3a8b5538d442c7436c6",
+          "bytes": 28874
+        },
+        {
+          "path": "source/verification_commands.json",
+          "sha256": "1f332856c7e08ce0ee35c998a30e5539cffeaaa2a95045c7e27c1a9490f95960",
+          "bytes": 3161
+        }
+      ]
+    }
+  },
+  "closure_evidence_archive": {
+    "path": "docs/pnas2017/g1_pnas_closure_evidence_20261002.zip",
+    "sha256": "f45e8de3904ba5b016cd1ab75f86f2aa3d8b19752bf1cda48671d6c4de3a5200",
+    "bytes": 50585,
+    "members": [
+      {
+        "path": "applied_repair_checks.json",
+        "sha256": "14817b16db6dcd09d0ef916a131210d5c75973c200cea80e8e3665e5178ff7a9",
+        "bytes": 1753
+      },
+      {
+        "path": "integration_current.json",
+        "sha256": "b0c19c684f21247fc62b4ac361193a2c902b0ed9a6fb8fd76ba6b10addc79eaa",
+        "bytes": 2045
+      },
+      {
+        "path": "prior_diagnostic/g1_pnas_gate_20261002.json",
+        "sha256": "9b2034b7259fdd0cbd089346d13e526314710d5ee5be6a8bcbd41c4ef8b1421d",
+        "bytes": 45877
+      },
+      {
+        "path": "prior_diagnostic/g1_pnas_report.md",
+        "sha256": "1ec26677ec45d18987a96367def406666ae5cee669a2c174473d5d10dadb356e",
+        "bytes": 23199
+      },
+      {
+        "path": "prior_diagnostic/g1_pnas_verification_20261002.json",
+        "sha256": "202aaba36f24c1146092a9dfab3d962fce10864d11160ef11e329ee8b65b058b",
+        "bytes": 86137
+      },
+      {
+        "path": "required_checks.json",
+        "sha256": "8f10dda44e19ec804bfaee6665cd5ec109b0610564d8a5758e39228b3a6ebd30",
+        "bytes": 5431
+      },
+      {
+        "path": "required_verifier_logs/verify_pnas2017_artifacts.log",
+        "sha256": "08d45b06125aa950b2ed0b61c0223c43c16b41a188d45af78066dfea6183e169",
+        "bytes": 198
+      },
+      {
+        "path": "required_verifier_logs/verify_pnas2017_integration.log",
+        "sha256": "d059fcdd57a4c07bb108a05b0198ec2828026a7582d7d7aae4742d4aa8133508",
+        "bytes": 24
+      },
+      {
+        "path": "required_verifier_logs/verify_reaction_level_annotation.log",
+        "sha256": "0e676b39d8cb26efa1e6c5cfd9a4bf5382fdc2695d8aeb82d19b6c40c1b223c1",
+        "bytes": 1245
+      },
+      {
+        "path": "required_verifier_logs/verify_reaction_level_annotation_v2.log",
+        "sha256": "64cc232d820eec79326b152d07baaa7e0a93ef918f6efd6a700f967552b9273d",
+        "bytes": 825
+      },
+      {
+        "path": "required_verifier_logs/verify_reaction_level_contract.log",
+        "sha256": "7ce8ea34ca1468d43db400a8be3df7de883b7e63387004fa35d144d1686e97c7",
+        "bytes": 744
+      },
+      {
+        "path": "required_verifier_logs/verify_species_information_contract.log",
+        "sha256": "afeefcfd961149c14824a0727960b267f803dde71fa8135a1812b2488cd054dc",
+        "bytes": 362
+      }
+    ]
+  },
+  "status_document_updates": {
+    "README.md": "Current G1 closure plus unchanged scientific boundaries",
+    "tasklist.md": "Dated current closure note; original ten gate criteria unchanged"
+  },
+  "publication": {
+    "record_phase": "CLOSURE_EVIDENCE_RECORDED_BEFORE_PUBLICATION",
+    "results_location": "Actual commit SHAs and push outcome are recorded in Git history and the final task response; this closure evidence record is not a push receipt.",
+    "provenance_sync_commit": "4e63d9ef6ec1c623c485bd4553362c27114a6203"
+  },
+  "final_consistency_checks": {
+    "status": "PASS",
+    "starting_main_head": "678fcb709324142454fd7a80cb6185c64b900510",
+    "criteria_unchanged": 10,
+    "required_verifier_exits": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "integration": {
+      "pass": 11,
+      "fail": 0
+    },
+    "patch_sha256": "b338b6d580f5f17c394e14f0168e41bfadf81e1a3dccb34760120428218bea5a",
+    "all_six_mutation_checks": "REJECTED",
+    "protected_paths_unchanged": [
+      "models",
+      "references",
+      "results",
+      "docs/reduction/reduction_decisions.csv",
+      "docs/reduction/human_reduction_review.md",
+      "docs/reduction/species_information_contract_summary.md",
+      "docs/reduction/species_information_contract_detailed.md",
+      "docs/reduction/human_audit_sync_20260930.md",
+      "docs/reduction/review_render_manifest.json",
+      "docs/audit/pnas2017_integration"
+    ],
+    "scientific_threshold_changes": false,
+    "kinetic_decisions_pending": 968,
+    "review_boxes": {
+      "empty": 96,
+      "selected": 0
+    },
+    "PR_3_4_branch_refs_unchanged": {
+      "aminoacylation-qssa-pilot-v0": "24335fe798e757acb2ca3582916658bfcf5c16f5",
+      "reduction-audit-v0": "b678a7c951967ecdab1c89e549011bf050307ff9"
+    },
+    "reduced_model_status": "NOT_VALIDATED",
+    "archives_verified": {
+      "docs/pnas2017/g1_pnas_evidence_20261002.zip": 41,
+      "docs/pnas2017/g1_pnas_closure_evidence_20261002.zip": 12
+    },
+    "historical_blocked_payload_byte_identical": true,
+    "quick_reference_questions": 6,
+    "quick_reference_link_targets_exist": true,
+    "allowed_changed_paths": [
+      "README.md",
+      "docs/pnas2017/g1_pnas_closure_evidence_20261002.zip",
+      "docs/pnas2017/g1_pnas_evidence_20261002.zip",
+      "docs/pnas2017/g1_pnas_gate_20261002.json",
+      "docs/pnas2017/g1_pnas_report.md",
+      "docs/pnas2017/g1_pnas_report_20260927_blocked.md",
+      "docs/pnas2017/g1_pnas_verification_20261002.json",
+      "docs/reduction/aminoacylation_qssa_quick_reference.md",
+      "docs/reduction/review_sync_manifest_20260930.json",
+      "scripts/verify_pnas2017_artifacts.py",
+      "scripts/verify_pnas2017_integration.py",
+      "tasklist.md"
+    ]
+  }
+}
