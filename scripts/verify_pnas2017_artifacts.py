@@ -9,6 +9,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
@@ -43,6 +44,72 @@ def rows(path: str) -> list[dict[str, str]]:
 def exact_ids(actual: list[str], expected: list[str], label: str) -> None:
     if len(actual) != len(set(actual)) or set(actual) != set(expected):
         raise ValueError(f"{label}: duplicate, missing or extra original SBML IDs")
+
+
+REVIEW_PATH = "docs/reduction/human_reduction_review.md"
+REVIEW_BASELINE_COMMIT = "0a72448ff20db8e58593a9910b8944c121750778"
+REVIEW_SYNC_COMMIT = "d5874dec053e6ff210e3d1843bb7735ebe3ba84a"
+REVIEW_CONTRACT_COMMIT = "678fcb709324142454fd7a80cb6185c64b900510"
+
+
+def verify_review_sync() -> str:
+    """Verify one exact, committed human-approved documentation transition.
+
+    The historical renderer manifest is preserved, rather than rehashed to
+    accept current bytes. No source or kinetic-reduction predicate changes.
+    """
+    record = json.loads(file("docs/reduction/review_sync_manifest_20260930.json").read_text(encoding="utf-8"))
+    if (record["schema"] != "pnas2017_review_sync/v1"
+            or record["status"] != "EXACT_HUMAN_APPROVED_DOCUMENTATION_SYNC_NOT_KINETIC_APPROVAL"
+            or record["baseline_commit"] != REVIEW_BASELINE_COMMIT
+            or record["approved_sync_commit"] != REVIEW_SYNC_COMMIT
+            or record["information_contract_commit"] != REVIEW_CONTRACT_COMMIT):
+        raise ValueError("Unknown review synchronization authority")
+
+    def at(commit: str, path: str) -> bytes:
+        file(path)  # Retain the repository path-boundary check.
+        return subprocess.check_output(["git", "show", f"{commit}:{path}"], cwd=ROOT)
+
+    def digest(content: bytes) -> str:
+        return hashlib.sha256(content).hexdigest()
+
+    for commit in (REVIEW_SYNC_COMMIT, REVIEW_CONTRACT_COMMIT):
+        subprocess.run(["git", "merge-base", "--is-ancestor", commit, "HEAD"], cwd=ROOT, check=True)
+    paths = subprocess.check_output(
+        ["git", "diff-tree", "--no-commit-id", "--name-only", "-r", REVIEW_SYNC_COMMIT],
+        cwd=ROOT, text=True).splitlines()
+    if paths != [REVIEW_PATH]:
+        raise ValueError("Approved review-sync commit changes other artifacts")
+    preserved = record["preserved_render_manifest"]
+    if preserved["path"] != "docs/reduction/review_render_manifest.json":
+        raise ValueError("Review-sync baseline manifest path changed")
+    old_manifest = at(REVIEW_BASELINE_COMMIT, preserved["path"])
+    if (file(preserved["path"]).read_bytes() != old_manifest
+            or digest(old_manifest) != preserved["sha256"]):
+        raise ValueError("Historical renderer manifest was altered")
+    transition = record["document_transition"]
+    before, after = at(REVIEW_BASELINE_COMMIT, REVIEW_PATH), at(REVIEW_SYNC_COMMIT, REVIEW_PATH)
+    rendered = json.loads(old_manifest)["outputs_sha256"][REVIEW_PATH]
+    if (transition["path"] != REVIEW_PATH
+            or transition["rendered_sha256"] != rendered
+            or digest(before) != rendered
+            or transition["approved_sha256"] != digest(after)
+            or file(REVIEW_PATH).read_bytes() != after):
+        raise ValueError("Review document differs from exact approved transition")
+    expected_basis = {
+        "docs/reduction/species_information_contract_summary.md",
+        "docs/reduction/species_information_contract_detailed.md",
+        "docs/reduction/human_audit_sync_20260930.md",
+    }
+    if (set(record["information_contract_basis"]) != expected_basis
+            or record["information_contract_basis_line_endings"] != "CRLF_TO_LF_FOR_MARKDOWN_ONLY"):
+        raise ValueError("Review-sync information-contract basis is incomplete")
+    for path, expected in record["information_contract_basis"].items():
+        approved = at(REVIEW_CONTRACT_COMMIT, path)
+        current = file(path).read_bytes().replace(b"\r\n", b"\n")
+        if digest(approved) != expected or current != approved:
+            raise ValueError(f"Approved information-contract evidence changed: {path}")
+    return digest(after)
 
 
 def main() -> None:
@@ -94,7 +161,9 @@ def main() -> None:
 
     review = json.loads(file("docs/reduction/review_render_manifest.json").read_text(encoding="utf-8"))
     registered_hashes(review["inputs_sha256"], "review input")
-    registered_hashes(review["outputs_sha256"], "review output")
+    registered_hashes({path: digest for path, digest in review["outputs_sha256"].items()
+                       if path != REVIEW_PATH}, "review output")
+    verify_review_sync()
     if review["counts"]["combined_reactions"] != 968 or review["counts"]["process_review_cards"] != 16:
         raise ValueError("Researcher review coverage incomplete")
     text = file("docs/reduction/human_reduction_review.md").read_text(encoding="utf-8")

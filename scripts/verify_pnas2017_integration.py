@@ -13,6 +13,8 @@ import re
 import subprocess
 import sys
 
+from verify_pnas2017_artifacts import REVIEW_PATH, REVIEW_SYNC_COMMIT, verify_review_sync
+
 
 ROOT = Path(__file__).resolve().parents[1]
 MAIN = "0a72448ff20db8e58593a9910b8944c121750778"
@@ -76,9 +78,12 @@ def main() -> int:
         "docs/reduction/reduction_decisions.csv",
         "docs/reduction/human_reduction_review.md",
     ]
-    changed = [p for p in frozen if data(p) != git_object(f"{MAIN}:{p}")]
+    verify_review_sync()
+    changed = [p for p in frozen if data(p) != git_object(
+        f"{REVIEW_SYNC_COMMIT if p == REVIEW_PATH else MAIN}:{p}")]
     record("main_authority_unchanged", not changed,
-           f"{len(frozen)} canonical, normalized and generated files compared with main; changed={changed}")
+           f"{len(frozen) - 1} canonical/normalized/generated files unchanged vs main {MAIN}; "
+           f"review matches exact approved documentation sync {REVIEW_SYNC_COMMIT}; changed={changed}")
     canonical = data(frozen[0])
     author = data("references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml")
     record("canonical_author_identity", canonical == author,

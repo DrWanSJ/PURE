@@ -1,0 +1,24 @@
+{
+  "schema": "pnas2017_review_sync/v1",
+  "status": "EXACT_HUMAN_APPROVED_DOCUMENTATION_SYNC_NOT_KINETIC_APPROVAL",
+  "date": "2026-09-30",
+  "baseline_commit": "0a72448ff20db8e58593a9910b8944c121750778",
+  "approved_sync_commit": "d5874dec053e6ff210e3d1843bb7735ebe3ba84a",
+  "information_contract_commit": "678fcb709324142454fd7a80cb6185c64b900510",
+  "preserved_render_manifest": {
+    "path": "docs/reduction/review_render_manifest.json",
+    "sha256": "19ef9b642609ad12d77a4059509b1ddb426fe1e9c81c74997f6319007f37f84e"
+  },
+  "document_transition": {
+    "path": "docs/reduction/human_reduction_review.md",
+    "rendered_sha256": "ef9f617cf9121200c52c14f00f17c86d96e48793377464b89414a631e75c1de7",
+    "approved_sha256": "b32dcbfa155be5d77411691889e67da7a6a89c7d87ba1406171e74db6c95c2d8"
+  },
+  "information_contract_basis": {
+    "docs/reduction/species_information_contract_summary.md": "42dcc61424d19d461817424cc647f65a56e9e65ba42a662acd6e17c5c7a4a163",
+    "docs/reduction/species_information_contract_detailed.md": "ab5c6dbdc7bfc21b2901cb5c921746ad9ac4ce464453662431860b0d2364d24a",
+    "docs/reduction/human_audit_sync_20260930.md": "1bb6e73cceebea2bec58e05bc244f26c9d39d944b4d9304ed81af7036f50f174"
+  },
+  "scope": "Only the committed human-reviewed documentation transition is accepted. Original renderer evidence, source model, inventories, 968 pending reduction decisions and empty process choices remain unchanged.",
+  "information_contract_basis_line_endings": "CRLF_TO_LF_FOR_MARKDOWN_ONLY"
+}
