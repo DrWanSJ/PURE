@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "status": "R1_FULL_COUPLED_DECISIVE",
+  "canonical_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "method_file": "source_coordinate_method_v4r3.md",
+  "method_sha256": "3a7e5e857e3ba06985885f63c1ae07def3d54041f8dd1d9237089b2d30e4ce96",
+  "coordinate_certificate_file": "source_coordinate_certificate_v4.json",
+  "coordinate_certificate_sha256": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+  "scipy_version": "1.14.0",
+  "solver": {
+    "name": "SciPy BDF",
+    "rtol": 2.5e-13,
+    "atol": 2.5e-15,
+    "start": 0.0,
+    "end": 1000.0,
+    "rhs_evaluation": "stable_direct",
+    "direct_extent_rtol": 2.5e-13,
+    "extent_state_scale": 1.0,
+    "extent_state_definition": "first_pair_state=forward_gross-reverse_gross; second_pair_state=reverse_gross; unpaired_state=gross",
+    "reverse_pair_net_extent_basis": true,
+    "reverse_pair_basis_count": 290,
+    "split_direct_extent_ode": false,
+    "split_extent_solver": null,
+    "split_extent_rtol": null,
+    "split_extent_atol": null,
+    "joint_adaptive_steps": false,
+    "grid_points": 201,
+    "direct_integrated_extent_states": 968
+  },
+  "full_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 12889,
+    "njev": 14,
+    "nlu": 984
+  },
+  "reduced_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 73572,
+    "njev": 1616,
+    "nlu": 8051
+  },
+  "net_basis_balance_diagnostic": {
+    "full_absolute": 3.984368390774762e-10,
+    "reduced_absolute": 2.9593039130304533e-10
+  },
+  "maxima": {
+    "species": 1.0736584954429418e-09,
+    "rates": 1.0159783414565027e-07,
+    "direct_extents": 4.880130290985107e-07,
+    "class_I": 1.0736584954429418e-09,
+    "class_C": 2.5814292564392475e-12,
+    "resources": 1.0736584954429418e-09,
+    "full_balance_absolute": 1.753925005232304e-09,
+    "reduced_balance_absolute": 1.7837074040016887e-09,
+    "full_law_absolute": 3.92901711165905e-10,
+    "reduced_law_absolute": 1.3642420526593924e-12
+  },
+  "physical_domain": {
+    "full": {
+      "minimum": 0.0,
+      "negative_count": 0,
+      "numerical_negative_count": 0,
+      "domain_failure_count": 0
+    },
+    "reduced": {
+      "minimum": -3.0854948264406182e-12,
+      "negative_count": 3061,
+      "numerical_negative_count": 3061,
+      "domain_failure_count": 0
+    },
+    "retained": {
+      "minimum": -7.239386266068572e-13,
+      "negative_count": 214,
+      "numerical_negative_count": 214,
+      "domain_failure_count": 0
+    },
+    "reconstructed": {
+      "minimum": -3.0854948264406182e-12,
+      "negative_count": 2847,
+      "numerical_negative_count": 2847,
+      "domain_failure_count": 0
+    }
+  },
+  "error_tables": [
+    "species_errors.csv",
+    "rate_errors.csv",
+    "direct_extent_errors.csv"
+  ],
+  "trajectory_arrays": "trajectories.npz",
+  "thresholds": {
+    "species_E_inf": 1e-06,
+    "rates_E_inf": 1e-06,
+    "direct_extents_E_inf": 1e-06,
+    "material_balance_absolute": 1e-08,
+    "negative_domain_failure_floor": -1e-11
+  },
+  "pass": true
+}

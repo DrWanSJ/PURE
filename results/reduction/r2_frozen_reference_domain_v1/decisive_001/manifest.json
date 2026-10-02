@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "stage": "R2",
+  "run_id": "decisive_001",
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "git_head_before_r2_commit": "5e10a7e93339a6cd94fa282293bb405186ff951e",
+  "python_executable": "D:\\Code\\Anaconda\\python.exe",
+  "python_version": "3.12.4",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "environment": {
+    "PYTHONHASHSEED": null,
+    "VIRTUAL_ENV": null
+  },
+  "package_versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sympy": "1.13.1",
+    "python-libsbml": null,
+    "roadrunner": null
+  },
+  "input_sha256": {
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "docs/reduction/conservation_laws_v0.csv": "f7cc968ddae86bae6bf482eb92a7b4b410f8e0b63ef3af40f513ecf738560146",
+    "docs/reduction/r2_frozen_reference_domain_v1.md": "9658f8558a5c90abedeb317da6d3db42ff16ecf33957d389fd3a495951d1c46d",
+    "scripts/verify_reduction_audit_v0.py": "e07a9473e3fae2e4c0e7e9f8aeaa80c63bc53934bc63eac23d828a3a8b95f8cc",
+    "scripts/build_frozen_reference_domain_v1.py": "800cd2baf7aa56de0f5a96592dd0059adf2b0d5c33c257df34244172f48b6d73",
+    "scripts/test_frozen_reference_domain_v1.py": "17c8b2555b40f0732b668fe2a8f9601895653e2d84573ac0236d08be7972cbe1"
+  },
+  "output_sha256": {
+    "docs/reduction/frozen_reference_reactivation_v1.csv": "2192bfa5b7988ebf3cdfa6b35d5b1a37e4312028cfe1f40a0de948557a46b1c8",
+    "docs/reduction/frozen_reference_domain_certificate_v1.json": "da28177670ea45e61129cf7163cb0473c778853dafb7873e99062ab51676f3a9"
+  },
+  "commands": [
+    {
+      "label": "audit",
+      "command": [
+        "D:\\Code\\Anaconda\\python.exe",
+        "scripts/verify_reduction_audit_v0.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "exit_code": 0,
+      "stdout": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/audit.stdout.log",
+      "stdout_sha256": "8fc004e62b225ffb65b42f5395af44a20693ea278bfec82d0c5adf8218b67eb9",
+      "stderr": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/audit.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "domain_build",
+      "command": [
+        "D:\\Code\\Anaconda\\python.exe",
+        "scripts/build_frozen_reference_domain_v1.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "exit_code": 0,
+      "stdout": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/domain_build.stdout.log",
+      "stdout_sha256": "1edc0f3ca0922a12b8e86e8e50c7d0dbbad19fcae9547d0118fc67ed34364a9c",
+      "stderr": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/domain_build.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "domain_mutants",
+      "command": [
+        "D:\\Code\\Anaconda\\python.exe",
+        "scripts/test_frozen_reference_domain_v1.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "exit_code": 0,
+      "stdout": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/domain_mutants.stdout.log",
+      "stdout_sha256": "655496a18d1b93ac4e0f2d0b0fd86285dffc46734790f6d82c105917a122ffbc",
+      "stderr": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/domain_mutants.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "reverse_mutants",
+      "command": [
+        "D:\\Code\\Anaconda\\python.exe",
+        "scripts/test_reduction_reverse_channels.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "exit_code": 0,
+      "stdout": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/reverse_mutants.stdout.log",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/reverse_mutants.stderr.log",
+      "stderr_sha256": "b5ca79188649869bb9f126db7f8fe9c8bce2d6325d4784e63d3a6bade308be03"
+    },
+    {
+      "label": "candidate_mutants",
+      "command": [
+        "D:\\Code\\Anaconda\\python.exe",
+        "scripts/test_reduction_candidate_coverage.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "exit_code": 0,
+      "stdout": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/candidate_mutants.stdout.log",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/candidate_mutants.stderr.log",
+      "stderr_sha256": "a3d9100da4abf5b354d3ad1aac835e6e524578fffa31391e6546e6d35e443be9"
+    },
+    {
+      "label": "chart_mutants",
+      "command": [
+        "D:\\Code\\Anaconda\\python.exe",
+        "scripts/test_source_coordinate_certificate_v1.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "exit_code": 0,
+      "stdout": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/chart_mutants.stdout.log",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/chart_mutants.stderr.log",
+      "stderr_sha256": "51156bfc5b6920815cd538b4f1c59607753b8d1c062c07872880ed1f6be702dc"
+    },
+    {
+      "label": "chart_certificate",
+      "command": [
+        "D:\\Code\\Anaconda\\python.exe",
+        "scripts/verify_source_coordinate_certificate_v1.py"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "exit_code": 0,
+      "stdout": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/chart_certificate.stdout.log",
+      "stdout_sha256": "9c4eb8fd6ec150eb2bbfa9ba329237ed579781aa0e2355b9409489ccd061f8d5",
+      "stderr": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/chart_certificate.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "pointwise",
+      "command": [
+        "D:\\Code\\Anaconda\\python.exe",
+        "scripts/verify_source_coordinate_pointwise_v1.py",
+        "--chart",
+        "v4",
+        "--out",
+        "C:\\Users\\sean\\Desktop\\GUV\\results\\reduction\\r2_frozen_reference_domain_v1\\decisive_001\\pointwise_result.json"
+      ],
+      "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+      "exit_code": 0,
+      "stdout": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/pointwise.stdout.log",
+      "stdout_sha256": "460590480b07817bcb759e0f9be73f6a616fb4ffac6fba87b5c5628665ed57b5",
+      "stderr": "results/reduction/r2_frozen_reference_domain_v1/decisive_001/pointwise.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "pass": true
+}

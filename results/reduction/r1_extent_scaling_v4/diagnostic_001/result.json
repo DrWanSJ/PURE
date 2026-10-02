@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "status": "R1_FULL_COUPLED_DIAGNOSTIC",
+  "canonical_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "method_file": "source_coordinate_method_v4.md",
+  "method_sha256": "e6c3a4559adf482f5f2a0de67d0102135d6a7d174f82315cbd04a6c4ea3bf986",
+  "coordinate_certificate_file": "source_coordinate_certificate_v4.json",
+  "coordinate_certificate_sha256": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+  "scipy_version": "1.14.0",
+  "solver": {
+    "name": "SciPy BDF",
+    "rtol": 5e-13,
+    "atol": 5e-15,
+    "start": 0.0,
+    "end": 1000.0,
+    "rhs_evaluation": "stable_direct",
+    "direct_extent_rtol": 5e-13,
+    "extent_state_scale": 1000.0,
+    "extent_state_definition": "zeta=directed_gross_extent/extent_state_scale",
+    "split_direct_extent_ode": false,
+    "split_extent_solver": null,
+    "split_extent_rtol": null,
+    "split_extent_atol": null,
+    "joint_adaptive_steps": false,
+    "grid_points": 201,
+    "direct_integrated_extent_states": 968
+  },
+  "full_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 11539,
+    "njev": 16,
+    "nlu": 872
+  },
+  "reduced_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 32599,
+    "njev": 682,
+    "nlu": 3381
+  },
+  "maxima": {
+    "species": 2.3510438040830195e-09,
+    "rates": 1.0211090284428792e-07,
+    "direct_extents": 1.0617077350616455e-06,
+    "class_I": 2.3510438040830195e-09,
+    "class_C": 2.3214018061477093e-12,
+    "resources": 2.3510438040830195e-09,
+    "full_balance_absolute": 3.383320290595293e-08,
+    "reduced_balance_absolute": 1.884274858365842e-08,
+    "full_law_absolute": 1.673470251262188e-10,
+    "reduced_law_absolute": 1.3642420526593924e-12
+  },
+  "physical_domain": {
+    "full": {
+      "minimum": 0.0,
+      "negative_count": 0,
+      "numerical_negative_count": 0,
+      "domain_failure_count": 0
+    },
+    "reduced": {
+      "minimum": -3.773336536726717e-12,
+      "negative_count": 2228,
+      "numerical_negative_count": 2228,
+      "domain_failure_count": 0
+    },
+    "retained": {
+      "minimum": -6.452087016175698e-13,
+      "negative_count": 182,
+      "numerical_negative_count": 182,
+      "domain_failure_count": 0
+    },
+    "reconstructed": {
+      "minimum": -3.773336536726717e-12,
+      "negative_count": 2046,
+      "numerical_negative_count": 2046,
+      "domain_failure_count": 0
+    }
+  },
+  "error_tables": [
+    "species_errors.csv",
+    "rate_errors.csv",
+    "direct_extent_errors.csv"
+  ],
+  "trajectory_arrays": "trajectories.npz",
+  "thresholds": {
+    "species_E_inf": 1e-06,
+    "rates_E_inf": 1e-06,
+    "direct_extents_E_inf": 1e-06,
+    "material_balance_absolute": 1e-08,
+    "negative_domain_failure_floor": -1e-11
+  },
+  "pass": false
+}

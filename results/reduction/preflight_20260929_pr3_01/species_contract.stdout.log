@@ -1,0 +1,7 @@
+PASS: 241 unique source species
+PASS: class counts I=42, II-A=57, II-B=91, III=22, C=29
+PASS: source species set equals detailed Markdown table
+PASS: degraded/enzyme-intermediate source rules
+PASS: resource Class-I contract
+PASS: Pept0002, RS50S_tRNAGlyGCC and UAA pretermination decisions
+NOTE: structural verification only; QSSA/kinetic validity is not tested

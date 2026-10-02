@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "status": "R1_FULL_COUPLED_DECISIVE",
+  "canonical_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "method_sha256": "ae6edf1df37d97bd9710481c1db1dc05350aa23ecf743192fb87bbb6f06c7f05",
+  "coordinate_certificate_sha256": "ae3bd6d7306018de46eea62fbe1c036aed3d77e8de17374acb197017d59f8f8f",
+  "scipy_version": "1.14.0",
+  "solver": {
+    "name": "SciPy BDF",
+    "rtol": 1e-10,
+    "atol": 1e-12,
+    "start": 0.0,
+    "end": 1000.0,
+    "grid_points": 201,
+    "direct_integrated_extent_states": 968
+  },
+  "full_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 6464,
+    "njev": 52,
+    "nlu": 438
+  },
+  "reduced_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 6256,
+    "njev": 65,
+    "nlu": 449
+  },
+  "maxima": {
+    "species": 4.2656665755202994e-08,
+    "rates": 3.0380329008039553e-07,
+    "direct_extents": 5.549192428588867e-05,
+    "class_I": 4.2656665755202994e-08,
+    "class_C": 9.897843655792826e-11,
+    "resources": 4.2656665755202994e-08,
+    "full_balance_absolute": 1.3977114576846361e-08,
+    "reduced_balance_absolute": 1.2645614333450794e-08,
+    "full_law_absolute": 1.4551915228366852e-10,
+    "reduced_law_absolute": 1.8189894035458565e-12
+  },
+  "physical_domain": {
+    "full": {
+      "minimum": 0.0,
+      "negative_count": 0,
+      "numerical_negative_count": 0,
+      "domain_failure_count": 0
+    },
+    "reduced": {
+      "minimum": -1.9008433715939077e-11,
+      "negative_count": 2849,
+      "numerical_negative_count": 2846,
+      "domain_failure_count": 3
+    },
+    "retained": {
+      "minimum": -2.7275360738114983e-13,
+      "negative_count": 245,
+      "numerical_negative_count": 245,
+      "domain_failure_count": 0
+    },
+    "reconstructed": {
+      "minimum": -1.9008433715939077e-11,
+      "negative_count": 2604,
+      "numerical_negative_count": 2601,
+      "domain_failure_count": 3
+    }
+  },
+  "error_tables": [
+    "species_errors.csv",
+    "rate_errors.csv",
+    "direct_extent_errors.csv"
+  ],
+  "trajectory_arrays": "trajectories.npz",
+  "thresholds": {
+    "species_E_inf": 1e-06,
+    "rates_E_inf": 1e-06,
+    "direct_extents_E_inf": 1e-06,
+    "material_balance_absolute": 1e-08,
+    "negative_domain_failure_floor": -1e-11
+  },
+  "pass": false
+}

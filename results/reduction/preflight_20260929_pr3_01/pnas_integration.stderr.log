@@ -1,0 +1,24 @@
+fatal: detected dubious ownership in repository at 'C:/Users/sean/Desktop/GUV'
+'C:/Users/sean/Desktop/GUV' is owned by:
+	'S-1-5-21-2165030947-915133814-3367443791-1001'
+but the current user is:
+	'S-1-5-21-2165030947-915133814-3367443791-1004'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory C:/Users/sean/Desktop/GUV
+Traceback (most recent call last):
+  File "C:\Users\sean\Desktop\GUV\scripts\verify_pnas2017_integration.py", line 171, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\Users\sean\Desktop\GUV\scripts\verify_pnas2017_integration.py", line 61, in main
+    or git_blob(f"{RESEARCH}:{item['path']}") != item["research_git_blob_sha1"]
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sean\Desktop\GUV\scripts\verify_pnas2017_integration.py", line 39, in git_blob
+    return subprocess.check_output(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', 'rev-parse', '025fd340300a56f069c2136ea8bb0ff542b046d4:references/PNAS2017_Matsuura/raw/matsuura-et-al-2017-reaction-dynamics-analysis-of-a-reconstituted-escherichia-coli-protein-translation-system-by.pdf']' returned non-zero exit status 128.

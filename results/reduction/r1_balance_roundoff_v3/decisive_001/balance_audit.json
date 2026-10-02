@@ -1,0 +1,23 @@
+{
+  "status": "R1_BALANCE_STORED_FLOAT_DIAGNOSTIC",
+  "trajectory": "results\\reduction\\r1_full_coupled_v3\\decisive_001\\trajectories.npz",
+  "chart": "v3",
+  "full": {
+    "time_index": 200,
+    "time_seconds": 1000.0,
+    "species_index": 113,
+    "species_id": "CK_CP",
+    "max_abs_fsum_residual": 1.5702340760981315e-08,
+    "exact_stored_float_residual_decimal": "1.5702340760981314815580844879150390625E-8",
+    "stoichiometric_terms": 5
+  },
+  "reduced": {
+    "time_index": 197,
+    "time_seconds": 784.2822061337682,
+    "species_index": 120,
+    "species_id": "CP",
+    "max_abs_fsum_residual": 1.0411895345896482e-08,
+    "exact_stored_float_residual_decimal": "1.04118953458964824676513671875E-8",
+    "stoichiometric_terms": 6
+  }
+}
