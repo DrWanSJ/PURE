@@ -1,0 +1,138 @@
+{
+  "schema": "pnas2017_reduction_evidence_verification/v0",
+  "status": "PASS",
+  "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e",
+  "preregistration_sha256": "b20d782edcef9a7a70bf3848acd2dbd8c240303e3507cc927f0041c56bc4969b",
+  "reaction_coverage": 968,
+  "species_coverage": 241,
+  "reverse_pairs": 290,
+  "processes": 16,
+  "kinetic_decisions_pending": 968,
+  "unselected_process_boxes": 96,
+  "reduced_model_status": "NOT_VALIDATED",
+  "eol_only_checkout_differences": [
+    "docs/reduction/aminoacylation_qssa_quick_reference.md"
+  ],
+  "negative_controls": [
+    {
+      "name": "missing_reaction",
+      "expected_rejection": "ROW_COUNT",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": false
+    },
+    {
+      "name": "duplicate_reaction",
+      "expected_rejection": "DUPLICATE_ID",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": false
+    },
+    {
+      "name": "altered_declared_source_sha",
+      "expected_rejection": "DECLARED_SBML_HASH",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": true
+    },
+    {
+      "name": "wrong_reverse_partner",
+      "expected_rejection": "REVERSE_PARTNER",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": false
+    },
+    {
+      "name": "zero_zero_pair_false_equilibrium",
+      "expected_rejection": "ZERO_EQUILIBRIUM",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": false
+    },
+    {
+      "name": "zero_flux_false_qss",
+      "expected_rejection": "ZERO_QSS",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": false
+    },
+    {
+      "name": "fabricated_pool",
+      "expected_rejection": "FABRICATED_POOL",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": false
+    },
+    {
+      "name": "real_pool_fabricated_nonmember",
+      "expected_rejection": "FABRICATED_POOL",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": false
+    },
+    {
+      "name": "altered_species_classification",
+      "expected_rejection": "SPECIES_CLASS",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": false
+    },
+    {
+      "name": "altered_scientific_decision",
+      "expected_rejection": "HUMAN_DECISION",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": false
+    },
+    {
+      "name": "preselected_process_checkbox",
+      "expected_rejection": "PRESELECTED_BOX",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": false
+    },
+    {
+      "name": "canonical_source_mutation",
+      "expected_rejection": "SOURCE_HASH",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": true
+    },
+    {
+      "name": "author_parameter_mutation",
+      "expected_rejection": "SOURCE_HASH",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": true
+    },
+    {
+      "name": "author_initial_value_mutation",
+      "expected_rejection": "SOURCE_HASH",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": true
+    },
+    {
+      "name": "disabled_direction_false_evidence",
+      "expected_rejection": "DISABLED_EQUILIBRIUM",
+      "result": "REJECTED_AS_EXPECTED",
+      "hash_checks_used": false
+    }
+  ],
+  "hash_checks_separate_from_semantic_controls": true,
+  "numerical_check": "all 201 samples: independent canonical-stoichiometry and author-CSV mass action; all QSS, pair and concentration/turnover/extent summaries",
+  "skipped_checks": [],
+  "independent_numerical_crosschecks": {
+    "effective_mathml_vs_author_mass_action_max_scaled_error": 0.0,
+    "analytic_vs_central_difference_jacobian_max_scaled_error": 6.908051069385427e-08,
+    "jacobian_sample_indices": [
+      0,
+      1,
+      50,
+      100,
+      150,
+      200
+    ],
+    "finite_difference_state_columns": 241
+  },
+  "pool_verification": {
+    "pools_checked": 82,
+    "state_pool_memberships_checked": 914,
+    "pool_samples_checked": 16482,
+    "reference_conserved_pools": 58,
+    "quantified_pools": 38
+  },
+  "process_timescale_verification": {
+    "process_sample_rows_checked": 3200,
+    "eigenvalue_rows_checked": 38600,
+    "independently_resolved_blocks": 75,
+    "independent_eigenvalue_max_scaled_error": 0.0,
+    "independent_eigenvalue_scaled_tolerance": 1e-07
+  }
+}
