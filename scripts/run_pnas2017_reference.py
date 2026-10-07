@@ -21,6 +21,8 @@ import traceback
 import zipfile
 from pathlib import Path
 
+from pnas2017_s28_status import dataset_s28_status
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_XML = ROOT / "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml"
@@ -247,6 +249,11 @@ def save_json(path: Path, data: dict) -> None:
 def run(run_id: str, prepare_only: bool) -> dict:
     import libsbml
 
+    result_dir = ROOT / "results/pnas2017_reference" / run_id
+    if result_dir.exists():
+        raise FileExistsError("Use a new run ID; preserved reference evidence cannot be overwritten")
+    s28_status = dataset_s28_status(ROOT)
+
     source_data, file_hashes = check_source_bytes()
     source_doc, source_model = read_sbml(source_data)
     normalized_data, normalization = normalize_stoichiometry(source_doc, source_model)
@@ -321,7 +328,7 @@ def run(run_id: str, prepare_only: bool) -> dict:
             "author_solver": "MATLAB ode15s with NonNegative; CVODE does not assert identical nonnegative handling",
         },
         "observed_product_sbml_id": PRODUCT_ID,
-        "dataset_s28_comparison": "unavailable_original_publisher_dataset_not_acquired",
+        **s28_status,
     }
     report_path = result_dir / "run_manifest.json"
     save_json(report_path, summary)

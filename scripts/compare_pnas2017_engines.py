@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import csv
+import argparse
 import hashlib
 import json
 from pathlib import Path
 
 import numpy as np
+
+from pnas2017_s28_status import dataset_s28_status
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,7 +22,10 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def main() -> None:
+def main(output: Path | None = None) -> None:
+    output = output or RUN / "engine_comparison_current.json"
+    if output.exists():
+        raise FileExistsError("Choose a new comparison output; preserved evidence cannot be overwritten")
     rr_path = RUN / "trajectory.csv"
     sb_path = RUN / "simbiology_trajectory.csv"
     name_path = RUN / "simbiology_names.json"
@@ -63,17 +69,20 @@ def main() -> None:
         "largest_absolute_difference_any_species_any_sample": float(np.max(absolute)),
         "largest_absolute_final_difference_any_species": float(np.max(final_difference)),
         "resources": by_resource,
+        **dataset_s28_status(ROOT),
         "limitations": [
             "SBML source lacks sufficient unit declarations; both engines made dimensional assumptions.",
             "The effective model is a stoichiometry-compatible derived copy plus author CSV initial/parameter overlay; the untouched source SBML has all-one placeholders.",
             "Linear interpolation adds its own error; solver tolerances and nonnegativity handling differ.",
-            "Publisher Dataset S28 is unavailable, so no pointwise comparison against its trajectory was possible.",
+            "Dataset S28 acquisition and readability are reported separately; its pointwise trajectory comparison has not been run.",
             "This is a numerical integrity comparison, not experimental validation or reduction acceptance.",
         ],
     }
-    (RUN / "engine_comparison.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"product_final_difference": by_resource["Pept0003"]["absolute_final_difference"], "largest_absolute_final_difference_any_species": report["largest_absolute_final_difference_any_species"]}, indent=2))
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path)
+    main(parser.parse_args().output)
