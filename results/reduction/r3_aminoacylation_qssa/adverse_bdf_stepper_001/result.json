@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "status": "DIAGNOSTIC_ONLY_NOT_REGISTERED_GRID_RESULT",
+  "stop_reason": "WALL_TIME_BUDGET",
+  "failure": null,
+  "last_t": 359.0589556421065,
+  "steps": 4492,
+  "nfev": 19846,
+  "njev": 1382,
+  "nlu": 4607,
+  "wall_elapsed_s": 122.05821299999661,
+  "process_cpu_s": 86.21875,
+  "snapshot_sha256": {
+    "state_0000.npz": "e3796308a5682bf081e4ddc028e69c4a7aab509d339d4d51ec64e2789ffe6f90",
+    "state_0001.npz": "2286d08c46eb6415be01409f6793e8621f836cf9eed0c47ed6f338de681af40d",
+    "state_0002.npz": "4056372ad92ab51e52c7f82cead1a635e6e79c4aef308ac50095d249d985789b",
+    "state_0003.npz": "b0a2f0989eb39fef7a58843301531a2ba19e5640325d74e741ad683ab84ed2ff",
+    "state_0004.npz": "6e106f4f832635ab47ebbc7133ab6df80fbceb8ace98fc7905906c8a6ab59770",
+    "state_0005.npz": "a6291e92b3aa707d238f3e76c877ff1d68bdb4654259d6dd18b58b14e71d1689",
+    "state_0006.npz": "d44a1345f28e8c6e1ff4ee561169839fdd0f2ceea73a7bccd6d18a368bc839d7"
+  },
+  "inputs_sha256": {
+    "canonical_sbml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "grid": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+    "method": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+    "protocol": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+    "runtime_v1": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+    "runtime_v2": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+    "script": "0defb208fdd3c75a83e3f23588b5d90939dbbeb62d78895f7364bd7bb2c8df25"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "status": "EXPLORATORY_INITIAL_ROOT_SCREEN_NOT_R3_VALIDATION",
+  "source_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "grid_sha256": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+  "method_sha256": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+  "carrier_chart_sha256": "0c35c9478c81551cc5ff88ab9ce35b86c7d8c4c039fe74522140d65560909438",
+  "screen_csv_sha256": "146f9e8f977fe925415943f0e0e7871bbbc5253b00713888ece2381e23128a23",
+  "python_executable": "D:\\Code\\Anaconda\\python.exe",
+  "python_version": "3.12.4",
+  "numpy_version": "1.26.4",
+  "scipy_version": "1.13.1",
+  "command": [
+    "D:\\Code\\Anaconda\\python.exe",
+    "scripts/screen_r3_closure_grid_v1.py"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "condition_count": 10,
+  "physical_multistart_conditions": 10,
+  "warning": "Only initial roots and local fast Jacobian were screened. No coupled reduced trajectories or slow timescales were measured."
+}

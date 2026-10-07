@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "status": "HASH_BOUND_LOCAL_DIAGNOSTIC_NOT_GRID_ACCEPTANCE",
+  "command": [
+    "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+    "scripts/diagnose_r3_adverse_local_solver_v1.py",
+    "--out",
+    "results/reduction/r3_aminoacylation_qssa/local_solver_diagnostic_001"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "python_version": "3.11.4",
+  "numpy_version": "2.2.6",
+  "scipy_version": "1.13.1",
+  "script_sha256": "d1afe14832e2c977fea3ff12ada306546ce7699daa99aaddb51a4a4556ceb831",
+  "full_source_state_sha256": "01b6fb21844029533b80475980cda51f937d889dca037fb231df6bc381dc6c26",
+  "runtime_v2_sha256": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+  "runtime_v3_sha256": "caab71bb37c810fea960c02e7672f51235caae7ae1f9ca233b79fc9978cd6e2e",
+  "result_sha256": "f2bd67f2090865e9cf31b3fb6ca9efd3565e32d046b4aabbf7ed0b55efdd5778",
+  "exit_code": 0
+}

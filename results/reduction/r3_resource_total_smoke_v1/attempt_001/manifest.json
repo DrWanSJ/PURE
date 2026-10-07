@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "status": "EXPLORATORY_DIAGNOSTIC_NOT_R3_VALIDATION",
+  "command": [
+    ".venv-roadrunner311/Scripts/python.exe",
+    "scripts/diagnose_r3_resource_total_smoke_v1.py"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "exit_code": 0,
+  "files_sha256": {
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "docs/reduction/r3_aminoacylation_qssa_method.md": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+    "docs/reduction/r3_validation_grid_v1.csv": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+    "docs/audit/pnas2017_aminoacylation_reduction_v1/binit_v1r2_matrix.csv": "133e7f5b53f0ce9d5987a00a3333d305670424b699779702e6706342f6c9f7ba",
+    "scripts/r3_candidate_runtime_v1.py": "bd1036cdbfac379b749cec2647b35be40be42676d651492e656c38713044bbc9",
+    "scripts/r3_resource_total_runtime_v1.py": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+    "scripts/diagnose_r3_resource_total_smoke_v1.py": "ff8c6b013ad90272220fb5aa0c9f33173eccbc6c534facc11fbab341d16b1c98",
+    "scripts/test_r3_resource_total_runtime_v1.py": "a2129457ad7f9440ae7de1b722d9c8d90ed54b13c8519ee453488002fe973151",
+    "results/reduction/r3_resource_total_smoke_v1/attempt_001/result.json": "42fe50eeba2ce2ead02d8c62c865c5d2c963901fe80f3d4ed741b3fdbe0434ea",
+    "results/reduction/r3_resource_total_smoke_v1/attempt_001/trajectories.npz": "0d93cda3ae3f4b9180d2a652fedcd38f6d128112207fec3551795a6ab8d27fb0"
+  }
+}

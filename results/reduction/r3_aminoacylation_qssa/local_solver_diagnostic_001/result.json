@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "status": "LOCAL_DIAGNOSTIC_NOT_REGISTERED_FULL_COUPLED_VALIDATION",
+  "meaning": "Saved full-source state is a local probe, not the reduced trajectory state",
+  "source_state_index": 187,
+  "source_state_time_s": 348.9101213406774,
+  "root_seed_spread": {
+    "v2": {
+      "physical_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "fast_residual_max": [
+        7.105427357601002e-15,
+        1.4352963262354024e-12,
+        1.3571366253017914e-12,
+        9.237055564881302e-14
+      ],
+      "q_spread_max_abs": 2.636779683484747e-16,
+      "slow_rhs_spread_max_abs": 1.6486811915683575e-14
+    },
+    "v3": {
+      "physical_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "fast_residual_max": [
+        7.105427357601002e-15,
+        1.4352963262354024e-12,
+        1.3571366253017914e-12,
+        9.237055564881302e-14
+      ],
+      "q_spread_max_abs": 2.636779683484747e-16,
+      "slow_rhs_spread_max_abs": 1.6486811915683575e-14
+    }
+  },
+  "trials": [
+    {
+      "strategy": "v2_analytic",
+      "method": "BDF",
+      "jacobian": "analytic_implicit",
+      "start_t": 348.9101213406774,
+      "target_t": 349.0101213406774,
+      "rtol": 1e-10,
+      "atol": 1e-14,
+      "rhs_call_budget": 5000,
+      "success": false,
+      "error": "RHS call budget",
+      "last_t": 348.9124131563863,
+      "nfev": 5001,
+      "wall_s": 25.45737860000372
+    },
+    {
+      "strategy": "fixed_seed",
+      "method": "BDF",
+      "jacobian": "analytic_implicit",
+      "start_t": 348.9101213406774,
+      "target_t": 349.0101213406774,
+      "rtol": 1e-10,
+      "atol": 1e-14,
+      "rhs_call_budget": 5000,
+      "success": false,
+      "error": "RHS call budget",
+      "last_t": 348.9123941675175,
+      "nfev": 5001,
+      "wall_s": 31.727449900005013
+    },
+    {
+      "strategy": "on_manifold_rhs",
+      "method": "BDF",
+      "jacobian": "analytic_implicit",
+      "start_t": 348.9101213406774,
+      "target_t": 349.0101213406774,
+      "rtol": 1e-10,
+      "atol": 1e-14,
+      "rhs_call_budget": 5000,
+      "success": false,
+      "error": "RHS call budget",
+      "last_t": 348.9123191370918,
+      "nfev": 5001,
+      "wall_s": 23.901152700003877
+    },
+    {
+      "strategy": "finite_difference_jacobian",
+      "method": "BDF",
+      "jacobian": "scipy_finite_difference",
+      "start_t": 348.9101213406774,
+      "target_t": 349.0101213406774,
+      "rtol": 1e-10,
+      "atol": 1e-14,
+      "rhs_call_budget": 5000,
+      "success": false,
+      "error": "RHS call budget",
+      "last_t": 348.91032440214906,
+      "nfev": 5001,
+      "wall_s": 18.845627700000477
+    },
+    {
+      "strategy": "stable_fast_residual",
+      "method": "BDF",
+      "jacobian": "analytic_implicit",
+      "start_t": 348.9101213406774,
+      "target_t": 349.0101213406774,
+      "rtol": 1e-10,
+      "atol": 1e-14,
+      "rhs_call_budget": 5000,
+      "success": false,
+      "error": "RHS call budget",
+      "last_t": 348.9125259154801,
+      "nfev": 5001,
+      "wall_s": 26.612284000002546
+    },
+    {
+      "strategy": "lsoda_analytic",
+      "method": "LSODA",
+      "jacobian": "analytic_implicit",
+      "start_t": 348.9101213406774,
+      "target_t": 349.0101213406774,
+      "rtol": 1e-10,
+      "atol": 1e-14,
+      "rhs_call_budget": 5000,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "last_t": 349.0101213406774,
+      "nfev": 3387,
+      "njev": 819,
+      "wall_s": 20.76501080000162
+    }
+  ]
+}

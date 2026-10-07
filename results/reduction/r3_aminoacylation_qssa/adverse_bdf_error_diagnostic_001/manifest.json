@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "status": "HASH_BOUND_BDF_ERROR_DIAGNOSTIC_NOT_GRID_ACCEPTANCE",
+  "command": [
+    "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+    "scripts/diagnose_r3_adverse_bdf_error_v1.py",
+    "--out",
+    "results/reduction/r3_aminoacylation_qssa/adverse_bdf_error_diagnostic_001",
+    "--accepted-steps",
+    "200",
+    "--max-rhs-calls",
+    "5000"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "python_version": "3.11.4",
+  "numpy_version": "2.2.6",
+  "scipy_version": "1.13.1",
+  "inputs_sha256": {
+    "snapshot": "d44a1345f28e8c6e1ff4ee561169839fdd0f2ceea73a7bccd6d18a368bc839d7",
+    "grid": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+    "canonical_sbml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "runtime_v2": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+    "script": "5a8831148c4ee751efb914a2715d9db5e2ac1913f2b4b8456a4fe45feef7809a"
+  },
+  "result_sha256": "4f111ef6fc1db495705d85456b6fae2840b667b1c59612765ba840485eff4e49",
+  "exit_code": 0
+}
