@@ -1,0 +1,4 @@
+{
+  "sha256": "601e9910d452a080edcb3d2d94f6c9d2bffb393690ac00a74d1d132e0f3f4ffc",
+  "reason": "Preserve before atomic per-condition execution admission for shared queues. All numerical methods/settings/gates unchanged."
+}

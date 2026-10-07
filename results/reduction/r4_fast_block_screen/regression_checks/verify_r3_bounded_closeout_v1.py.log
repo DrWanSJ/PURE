@@ -1,0 +1,11 @@
+{
+  "closeout_status": "HASH_VERIFIED_BOUNDED_R3_CLOSEOUT",
+  "original_full_grid_protocol": "INCOMPLETE",
+  "candidate_on_completed_conditions": "REJECTED",
+  "completed_full_coupled_comparisons": 9,
+  "incomplete_conditions": [
+    "R3_ADVERSE"
+  ],
+  "original_terminal_acceptance_claim": false,
+  "bounded_adverse_trace_hash_verified": true
+}

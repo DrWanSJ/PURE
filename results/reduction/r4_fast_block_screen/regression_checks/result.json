@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "verify_pnas2017_artifacts.py",
+      "exit_code": 0,
+      "log_sha256": "08d45b06125aa950b2ed0b61c0223c43c16b41a188d45af78066dfea6183e169"
+    },
+    {
+      "check": "verify_source_coordinate_certificate_v1.py",
+      "exit_code": 0,
+      "log_sha256": "ddfd37110e77dfc26ecc67a357d32d1a1a0a6c99f81a6e5eb165384a5ca71328"
+    },
+    {
+      "check": "verify_r3_bounded_closeout_v1.py",
+      "exit_code": 0,
+      "log_sha256": "c542d105af2b932e01cadccd6e48665de9860cc515a2b8be870f49aaa589a1bf"
+    }
+  ],
+  "scope": "Historical engineering/provenance regression only, not scientific candidate approval"
+}

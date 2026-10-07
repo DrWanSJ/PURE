@@ -1,0 +1,7 @@
+{
+  "process_id": 20344,
+  "family": "GlyRS",
+  "condition": "R3_METRS_HIGH",
+  "queue_owner": "239ef3d8-e21e-48ab-acbd-bf05573009bb",
+  "source_runner_sha256": "fa739f64dd18c3887b4316adca6c32540a2d6bce73697e0c83d449372aadfd56"
+}

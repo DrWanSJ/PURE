@@ -1,0 +1,4 @@
+{
+  "sha256": "8532b10e6dc9a578096f6fa45747b7369d22eeed5c54a2a51516dc8c41f19897",
+  "reason": "Preserve before correcting a reporting dictionary alias rate -> process_rate; budget0.05 and all scientific quantities remain unchanged."
+}

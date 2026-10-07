@@ -1,0 +1,4985 @@
+{
+  "status": "PASS",
+  "scope": "ENGINEERING_AND_PROVENANCE_VERIFICATION_NOT_SCIENTIFIC_PROMOTION",
+  "checks": [
+    {
+      "check": "all_preexisting_tracked_source_and_evidence_hashes_unchanged",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "preregistration_hashes_unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "preregistered_nine_conditions_no_adverse",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_solver_and_gates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "all968_reduction_decisions_pending",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "source_reuse_all9_verified",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_BASE:source_reuse:full_state.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_BASE:source_reuse:directed_ledgers.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_BASE:source_reuse:result.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_GLYRS_LOW:source_reuse:full_state.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_GLYRS_LOW:source_reuse:directed_ledgers.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_GLYRS_LOW:source_reuse:result.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_GLYRS_HIGH:source_reuse:full_state.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_GLYRS_HIGH:source_reuse:directed_ledgers.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_GLYRS_HIGH:source_reuse:result.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_METRS_LOW:source_reuse:full_state.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_METRS_LOW:source_reuse:directed_ledgers.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_METRS_LOW:source_reuse:result.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_METRS_HIGH:source_reuse:full_state.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_METRS_HIGH:source_reuse:directed_ledgers.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_METRS_HIGH:source_reuse:result.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_GLY_LOW:source_reuse:full_state.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_GLY_LOW:source_reuse:directed_ledgers.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_GLY_LOW:source_reuse:result.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_MET_LOW:source_reuse:full_state.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_MET_LOW:source_reuse:directed_ledgers.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_MET_LOW:source_reuse:result.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_TRNA_LOW:source_reuse:full_state.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_TRNA_LOW:source_reuse:directed_ledgers.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_TRNA_LOW:source_reuse:result.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_ATP_LOW:source_reuse:full_state.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_ATP_LOW:source_reuse:directed_ledgers.npz",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "R3_ATP_LOW:source_reuse:result.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "independent_baseline_recompute",
+      "pass": true,
+      "detail": 4.494094632652385e-14
+    },
+    {
+      "check": "27_generic_plus37_frozen_crosscheck_laws",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRS:membership",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRS:dimension_map",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRS:all64_inventory_map_identities",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRS:other_family_retained_dynamic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "GlyRSR3_BASE:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_BASE:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_LOW:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:final_stdout_log_prefix:execution.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLYRS_HIGH:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:final_stdout_log_prefix:execution.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_LOW:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:final_stdout_log_prefix:execution_c31e4528-5aa4-403c-b36e-5abc1400310e.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_METRS_HIGH:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:final_stdout_log_prefix:execution_994efe1a-9216-4ad4-9045-7450b5e1ba53.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_GLY_LOW:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:final_stdout_log_prefix:execution_c31e4528-5aa4-403c-b36e-5abc1400310e.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_MET_LOW:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:final_stdout_log_prefix:execution.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_TRNA_LOW:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:final_stdout_log_prefix:execution_994efe1a-9216-4ad4-9045-7450b5e1ba53.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "GlyRSR3_ATP_LOW:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRS:membership",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRS:dimension_map",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRS:all64_inventory_map_identities",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRS:other_family_retained_dynamic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "MetRSR3_BASE:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_BASE:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_LOW:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:final_stdout_log_prefix:execution.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLYRS_HIGH:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:final_stdout_log_prefix:execution.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_LOW:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:final_stdout_log_prefix:execution_a6b9acef-9c58-4900-9aec-94d33c57c359.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_METRS_HIGH:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:final_stdout_log_prefix:execution_edf3a9b2-49e8-4272-99cd-f03e38ea3c55.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_GLY_LOW:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:final_stdout_log_prefix:execution.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "MetRSR3_MET_LOW:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_MET_LOW:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:final_stdout_log_prefix:execution_a6b9acef-9c58-4900-9aec-94d33c57c359.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_TRNA_LOW:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:reconstruction_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:all201_geometry_rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:geometry_independent_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:independent_Gq_FD_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:geometry_independent_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:independent_Gq_FD_50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:geometry_independent_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:independent_Gq_FD_100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:geometry_independent_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:independent_Gq_FD_200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:fresh_reduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:prereg_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:runtime_hash_bound",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:final_stdout_log_prefix:execution_edf3a9b2-49e8-4272-99cd-f03e38ea3c55.log",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:run_outputs_hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:native_record_preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:all_registered_stages_terminal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:968_directed_gross_channels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:canonical_reaction_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:canonical_new_rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:independent_extent_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:independent_state_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:all241_species_score_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:all968_independent_instantaneous_scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:no_initial_inventory_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:no_projection_into_full_rhs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:uncertainty_precedes_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:independent_four_tier_uncertainty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "MetRSR3_ATP_LOW:uncertainty_budget_classification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "fresh_run_uuids_distinct",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "all18_conditions_64law_crosscheck_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "at_least7_CSV_backed_figures",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4_all_registered_samples_retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:0:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:0:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:1:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:1:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:10:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:10:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:20:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:20:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:30:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:30:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:40:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:40:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:50:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:50:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:50:qualified_aggregate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:60:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:60:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:70:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:70:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:80:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:80:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:90:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:90:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:100:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:100:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:110:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:110:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:120:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:120:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:130:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:130:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:140:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:140:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:150:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:150:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:160:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:160:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:170:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:170:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:180:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:180:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:190:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:190:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:200:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_BASE:200:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:0:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:0:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:1:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:1:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:10:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:10:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:20:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:20:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:30:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:30:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:40:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:40:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:50:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:50:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:50:qualified_aggregate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:60:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:60:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:70:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:70:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:80:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:80:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:90:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:90:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:100:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:100:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:110:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:110:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:120:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:120:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:130:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:130:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:140:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:140:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:150:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:150:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:160:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:160:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:170:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:170:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:180:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:180:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:190:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:190:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:200:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:200:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_LOW:200:qualified_aggregate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:0:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:0:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:1:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:1:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:10:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:10:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:20:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:20:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:30:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:30:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:40:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:40:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:50:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:50:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:60:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:60:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:70:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:70:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:80:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:80:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:90:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:90:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:100:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:100:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:110:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:110:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:120:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:120:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:130:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:130:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:140:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:140:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:150:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:150:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:160:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:160:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:170:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:170:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:180:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:180:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:190:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:190:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:200:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:200:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLYRS_HIGH:200:qualified_aggregate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:0:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:0:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:1:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:1:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:10:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:10:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:20:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:20:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:30:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:30:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:40:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:40:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:50:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:50:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:50:qualified_aggregate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:60:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:60:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:70:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:70:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:80:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:80:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:90:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:90:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:100:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:100:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:110:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:110:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:120:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:120:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:130:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:130:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:140:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:140:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:150:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:150:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:160:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:160:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:170:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:170:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:180:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:180:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:190:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:190:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:200:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_LOW:200:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:0:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:0:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:1:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:1:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:10:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:10:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:20:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:20:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:30:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:30:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:40:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:40:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:50:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:50:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:50:qualified_aggregate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:60:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:60:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:70:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:70:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:80:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:80:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:90:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:90:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:100:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:100:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:110:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:110:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:120:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:120:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:130:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:130:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:140:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:140:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:150:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:150:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:160:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:160:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:170:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:170:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:180:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:180:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:190:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:190:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:200:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:200:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_METRS_HIGH:200:qualified_aggregate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:0:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:0:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:1:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:1:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:10:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:10:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:20:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:20:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:30:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:30:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:40:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:40:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:50:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:50:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:60:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:60:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:70:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:70:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:80:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:80:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:90:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:90:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:100:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:100:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:110:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:110:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:120:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:120:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:130:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:130:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:140:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:140:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:150:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:150:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:160:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:160:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:170:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:170:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:180:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:180:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:190:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:190:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:200:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_GLY_LOW:200:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:0:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:0:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:1:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:1:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:10:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:10:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:20:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:20:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:30:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:30:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:40:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:40:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:50:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:50:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:50:qualified_aggregate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:60:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:60:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:70:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:70:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:80:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:80:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:90:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:90:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:100:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:100:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:110:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:110:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:120:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:120:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:130:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:130:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:140:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:140:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:150:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:150:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:160:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:160:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:170:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:170:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:180:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:180:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:190:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:190:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:200:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:200:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_MET_LOW:200:qualified_aggregate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:0:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:0:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:1:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:1:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:10:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:10:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:20:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:20:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:30:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:30:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:40:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:40:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:50:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:50:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:60:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:60:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:70:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:70:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:80:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:80:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:90:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:90:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:100:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:100:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:110:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:110:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:120:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:120:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:130:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:130:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:140:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:140:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:150:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:150:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:160:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:160:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:170:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:170:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:180:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:180:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:190:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:190:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:200:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_TRNA_LOW:200:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:0:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:0:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:1:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:1:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:10:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:10:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:20:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:20:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:30:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:30:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:40:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:40:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:50:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:50:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:50:qualified_aggregate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:60:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:60:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:70:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:70:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:80:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:80:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:90:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:90:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:100:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:100:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:100:qualified_aggregate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:110:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:110:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:120:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:120:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:130:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:130:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:140:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:140:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:150:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:150:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:160:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:160:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:170:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:170:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:180:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:180:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:190:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:190:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:200:quality_label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:200:four_modes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4:R3_ATP_LOW:200:qualified_aggregate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4_canonical_reaction_coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "m4_all_equations_match_canonical_source",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "final_output_manifest_hashes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "final_output_manifest_complete",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "analyze_r4_manifold_geometry_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "finalize_r4_fast_block_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "r4_attach_canonical_annotations_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "r4_csp_gap_descriptors_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "r4_fast_block_common_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "r4_frozen_law_crosscheck_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "r4_geometry_figures_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "r4_glyrs_only_runtime_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "r4_implicit_derivative_crosscheck_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "r4_metrs_only_runtime_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "r4_registered_queue_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "r4_regression_checks_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "r4_review_recovery_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "r4_shared_queue_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "run_r4_family_grid_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "run_r4_mixed_csp_modes_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "verify_r4_fast_block_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "verify_r4_source_reuse_v1.py:no_clipping_or_optimization_fit",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "failed_checks": [],
+  "protected_file_count": 1644,
+  "historical_R3_unchanged": true,
+  "scientific_promotion": "NOT_APPROVED"
+}

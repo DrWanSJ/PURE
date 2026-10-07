@@ -1,0 +1,8 @@
+{
+  "status": "ENGINEERING_NONCOMPLETION_UNSCORED",
+  "reason": "Implementation roundoff in full affine evaluation approaches atol1e-14; corrected by algebraically identical stable retained-state reconstruction before any score. Bound and thresholds unchanged. Explicitly stopped only these two owned processes; checkpoints retained.",
+  "runtime_sha256": "0bb58d2bf5963dd84ff68da4ca1b4561181f9ddcb20a92f2f455495e888cc37e",
+  "runner_sha256": "55f80d6f42410680dd40c61f644a1f1c9ff40c5be1babf3f180fc5518f5c3e96",
+  "observed_reconstruction_max_disagreement_uM": 2.6256774532384952e-14,
+  "no_scientific_result": true
+}

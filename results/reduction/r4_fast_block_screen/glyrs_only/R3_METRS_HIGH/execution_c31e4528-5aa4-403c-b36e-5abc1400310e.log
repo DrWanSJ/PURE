@@ -1,0 +1,4 @@
+GlyRS R3_METRS_HIGH primary reduced start
+D:\Code\Anaconda\Lib\site-packages\scipy\integrate\_ivp\bdf.py:416: RuntimeWarning: invalid value encountered in subtract
+  D[order + 2] = d - D[order + 1]
+GlyRS R3_METRS_HIGH COMPLETED {'state': 1.0214182163512362, 'post_state': 0.01262601823711919, 'rate': 1.0214182163512364, 'extent': 0.05175143308029257, 'all968_rate': 1.0214182163512364, 'all968_extent': 0.05175143308029257, 'full_balance_abs': 6.628852133871987e-07, 'reduced_slow_balance_abs': 4.160900061833672e-06, 'source_law_drift_abs': 8.704148513061227e-14, 'closure': 9.999742700550485e-11, 'minimum_concentration': -3.960843692095038e-12}

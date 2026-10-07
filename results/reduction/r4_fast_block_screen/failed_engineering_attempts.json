@@ -1,0 +1,5 @@
+{
+  "bootstrap_repeat": "Repeated preflight correctly refused after preregistered files existed; no overwrite.",
+  "verifier_attempt_001": "GBK decoding failed reading UTF-8 source; corrected explicit UTF-8. No checks falsely certified.",
+  "coupled_attempt_001": "Two R3_BASE partial solver attempts preserved under candidate condition attempt_001_affine_roundoff."
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "state_scaled_max_difference": 4.494094632652385e-14,
+  "max_absolute_uM": 2.255546860396862e-10,
+  "solver": {
+    "success": true,
+    "nfev": 8840,
+    "njev": 50,
+    "nlu": 573,
+    "accepted_steps": 3107,
+    "elapsed_s": 13.406000000002678,
+    "rtol": 1e-10,
+    "atol": 1e-14,
+    "end": 1000.0
+  },
+  "extent_solver": {
+    "segments": 200,
+    "nfev": 11332,
+    "elapsed_s": 4.35899999999674,
+    "rtol": 1e-10,
+    "atol": 1e-14,
+    "definition": "all968_original_directed_gross_rates"
+  },
+  "historical_full_sha256": "797125c7245bf236f9ad7c015872977af9445be9d1775b2e4005b2d75e5a94d4",
+  "fresh_primary_sha256": "8c33334d176c9bf84ed58885d6f442cf74457c136b9082483b0fc27bb4292682",
+  "no_reduced_trajectory_reused": true
+}

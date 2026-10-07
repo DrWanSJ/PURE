@@ -1,0 +1,16 @@
+{
+  "condition": "R3_GLYRS_HIGH",
+  "physical_roots": 201,
+  "attracting_points": 201,
+  "closure_max": 4.933636832404886e-11,
+  "velocity_max": 46.02485792212291,
+  "defect_max": 46.02485792212351,
+  "Gq_condition_max": 2587.1562746953427,
+  "tau_fast_max_s": 0.009600977058278014,
+  "gap_ratio_min": 0.0009957470555097376,
+  "multistart_valid": 18,
+  "multistart_total": 18,
+  "multistart_agreement_max": 5.292294380510043e-14,
+  "relaxations_complete": 6,
+  "relaxation_distance_ratio_max": 5.8920326397057994e-05
+}

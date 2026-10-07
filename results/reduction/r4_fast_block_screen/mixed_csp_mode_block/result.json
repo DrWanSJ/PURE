@@ -1,0 +1,187 @@
+{
+  "candidate": "R4_MIXED_CSP_MODE_BLOCK",
+  "execution_status": "COMPLETED",
+  "scientific_status": "NUMERICALLY_UNRESOLVED",
+  "mapping_status": "CHEMICAL_BLOCK_MAPPING_REQUIRES_HUMAN_REVIEW",
+  "promotion_status": "HUMAN_REVIEW_REQUIRED",
+  "numerical_status": "NUMERICALLY_UNRESOLVED",
+  "sample_count": 198,
+  "expected_samples": 198,
+  "unstable_rows": 0,
+  "large_update_rows": 0,
+  "independent_unresolved_rows": 12,
+  "included_samples": 186,
+  "max_temporal_angle_deg": 89.99999914622636,
+  "max_condition_angle_deg": 90.0,
+  "max_reference_angle_deg": 90.0,
+  "min_gap": 1.000000014583127,
+  "max_update": 0.015960355082139804,
+  "dominant_species": [
+    {
+      "species": "CK",
+      "mean_participation_valid_only": 0.2499853733727346,
+      "module": "CK",
+      "canonical_equation": NaN,
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "species": "CK_ADP",
+      "mean_participation_valid_only": 0.247502534223395,
+      "module": "CK",
+      "canonical_equation": NaN,
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "species": "MK_AMP",
+      "mean_participation_valid_only": 0.2208837105605223,
+      "module": "MK",
+      "canonical_equation": NaN,
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "species": "MK",
+      "mean_participation_valid_only": 0.2208797175078288,
+      "module": "MK",
+      "canonical_equation": NaN,
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "species": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3",
+      "mean_participation_valid_only": 0.0255333545244378,
+      "module": "RF3",
+      "canonical_equation": NaN,
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "species": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3",
+      "mean_participation_valid_only": 0.0255333545014319,
+      "module": "RF3",
+      "canonical_equation": NaN,
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "species": "MK_ATP_AMP",
+      "mean_participation_valid_only": 0.0035776084227444,
+      "module": "MK",
+      "canonical_equation": NaN,
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "species": "MK_ATP",
+      "mean_participation_valid_only": 0.003541896623934,
+      "module": "MK",
+      "canonical_equation": NaN,
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "species": "CK_CP_ADP",
+      "mean_participation_valid_only": 0.0024972129496982,
+      "module": "CK",
+      "canonical_equation": NaN,
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "species": "ATP",
+      "mean_participation_valid_only": 3.677451899967781e-05,
+      "module": "OTHER",
+      "canonical_equation": NaN,
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    }
+  ],
+  "dominant_reactions": [
+    {
+      "reaction_id": "re0000000336",
+      "mean_participation_valid_only": 0.1953060822571652,
+      "module": "CK",
+      "canonical_equation": "CK_ADP + CP -> CK_CP_ADP",
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "reaction_id": "re0000000337",
+      "mean_participation_valid_only": 0.1953008977324512,
+      "module": "CK",
+      "canonical_equation": "CK_CP_ADP -> CP + CK_ADP",
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "reaction_id": "re0000000380",
+      "mean_participation_valid_only": 0.1306967090899947,
+      "module": "MK",
+      "canonical_equation": "MK + ATP -> MK_ATP",
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "reaction_id": "re0000000332",
+      "mean_participation_valid_only": 0.1237689568072426,
+      "module": "CK",
+      "canonical_equation": "CK + CP -> CK_CP",
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "reaction_id": "re0000000381",
+      "mean_participation_valid_only": 0.1096097688782957,
+      "module": "MK",
+      "canonical_equation": "MK_ATP -> ATP + MK",
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "reaction_id": "re0000000333",
+      "mean_participation_valid_only": 0.0962586247436385,
+      "module": "CK",
+      "canonical_equation": "CK_CP -> CK + CP",
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "reaction_id": "re0000000384",
+      "mean_participation_valid_only": 0.0541236097024342,
+      "module": "MK",
+      "canonical_equation": "MK_AMP + ATP -> MK_ATP_AMP",
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "reaction_id": "re0000000385",
+      "mean_participation_valid_only": 0.0539413125784635,
+      "module": "MK",
+      "canonical_equation": "MK_ATP_AMP -> ATP + MK_AMP",
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "reaction_id": "re0000000884",
+      "mean_participation_valid_only": 0.0051550329929628,
+      "module": "RF3",
+      "canonical_equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3 + GTP -> termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP",
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "reaction_id": "re0000000345",
+      "mean_participation_valid_only": 0.005047356031361,
+      "module": "CK",
+      "canonical_equation": "CK + ATP -> CK_ATP",
+      "number_included_samples": 186,
+      "scientific_status": "HUMAN_REVIEW_REQUIRED"
+    }
+  ],
+  "global_fixed_chemical_block_justified": false,
+  "no_deleted_species": true,
+  "no_effective_rate_or_fitted_parameter": true,
+  "external_diagnostic_optional_not_required_for_canonical_recompute": true
+}

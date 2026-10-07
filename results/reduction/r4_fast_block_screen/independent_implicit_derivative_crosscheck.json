@@ -1,0 +1,7 @@
+{
+  "probes": 162,
+  "all_roots_physical": true,
+  "worst_relative_error": 1.2742801639801205e-08,
+  "median_relative_error": 4.055249312866288e-11,
+  "role": "Independent root-FD corroboration of canonical Dh formula; no added scientific threshold"
+}

@@ -1,0 +1,5 @@
+r4_* text eol=lf
+run_r4_* text eol=lf
+analyze_r4_* text eol=lf
+verify_r4_* text eol=lf
+finalize_r4_* text eol=lf

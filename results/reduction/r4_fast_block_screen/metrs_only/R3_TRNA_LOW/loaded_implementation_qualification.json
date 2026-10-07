@@ -1,0 +1,8 @@
+{
+  "native_result_sha256": "c6b1177e3a6cdd814ee1af67931a5b6c27dcadffd0262967e82c5cbc6b5740a1",
+  "native_declared_runner_sha256": "fa739f64dd18c3887b4316adca6c32540a2d6bce73697e0c83d449372aadfd56",
+  "actual_loaded_runner_sha256": "fa739f64dd18c3887b4316adca6c32540a2d6bce73697e0c83d449372aadfd56",
+  "metadata_discrepancy": false,
+  "scientific_methods_equivalence_verified": true,
+  "reason": "Initial worker loaded preserved initial code; LOW metadata may read later on-disk code. Source equations/settings/scoring identical; raw native result is never rewritten."
+}

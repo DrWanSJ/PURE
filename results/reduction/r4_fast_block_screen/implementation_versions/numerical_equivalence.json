@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "versions": [
+    {
+      "path": "results/reduction/r4_fast_block_screen/implementation_versions/run_r4_family_grid_v1_initial.py",
+      "sha256": "55f80d6f42410680dd40c61f644a1f1c9ff40c5be1babf3f180fc5518f5c3e96",
+      "scientific_numerical_methods_ast_sha256": "351e47fdba4b3129dd4de36a6127ffd4a677ef1569751f79ca23d4c5054d89c6"
+    },
+    {
+      "path": "results/reduction/r4_fast_block_screen/implementation_versions/run_r4_family_grid_v1_queue.py",
+      "sha256": "dfa39fe166cbf0e80fea4ffa408c1fc42bea58bb4f9ee17663c5518e1841254d",
+      "scientific_numerical_methods_ast_sha256": "351e47fdba4b3129dd4de36a6127ffd4a677ef1569751f79ca23d4c5054d89c6"
+    },
+    {
+      "path": "results/reduction/r4_fast_block_screen/implementation_versions/run_r4_family_grid_v1_persistence.py",
+      "sha256": "8532b10e6dc9a578096f6fa45747b7369d22eeed5c54a2a51516dc8c41f19897",
+      "scientific_numerical_methods_ast_sha256": "351e47fdba4b3129dd4de36a6127ffd4a677ef1569751f79ca23d4c5054d89c6"
+    },
+    {
+      "path": "results/reduction/r4_fast_block_screen/implementation_versions/run_r4_family_grid_v1_classifier.py",
+      "sha256": "601e9910d452a080edcb3d2d94f6c9d2bffb393690ac00a74d1d132e0f3f4ffc",
+      "scientific_numerical_methods_ast_sha256": "351e47fdba4b3129dd4de36a6127ffd4a677ef1569751f79ca23d4c5054d89c6"
+    },
+    {
+      "path": "scripts/run_r4_family_grid_v1.py",
+      "sha256": "fa739f64dd18c3887b4316adca6c32540a2d6bce73697e0c83d449372aadfd56",
+      "scientific_numerical_methods_ast_sha256": "351e47fdba4b3129dd4de36a6127ffd4a677ef1569751f79ca23d4c5054d89c6"
+    }
+  ],
+  "differences": "Queue admission, metadata and primary output persistence only; numerical functions and integration/scoring call expressions identical.",
+  "actual_initial_worker_version": "run_r4_family_grid_v1_initial.py"
+}

@@ -1,0 +1,259 @@
+{
+  "status": "PASS",
+  "conditions": [
+    {
+      "condition": "R3_BASE",
+      "reuse_valid": true,
+      "issues": [],
+      "full_state_sha256": "797125c7245bf236f9ad7c015872977af9445be9d1775b2e4005b2d75e5a94d4",
+      "directed_ledgers_sha256": "96715f3f10840cf6d84efc0ffa60ddf83097868565bd53ec8f075e122f753218",
+      "result_sha256": "b5467f4d982288f541eae6abd5da48323e8320890a668720549e36737a7d1664",
+      "initial_state_sha256": "b09a73df2c61b820a3ecf00e532686c2ba3d63846736051f25951c4877c677e6",
+      "source_dependencies_sha256": {
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "docs/reduction/r3_validation_grid_v1.csv": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+        "docs/reduction/r3_aminoacylation_qssa_method.md": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+        "docs/reduction/r3_coupled_validation_protocol_v1.md": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+        "docs/reduction/r3_source_reaction_candidate_map_v1.csv": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+        "models/pnas2017_full_reference/audit/aminoacylation_reactions.csv": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+        "scripts/r3_resource_total_runtime_v1.py": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+        "scripts/r3_resource_total_runtime_v2.py": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+        "scripts/run_r3_coupled_grid_v1.py": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+      },
+      "transitive_source_dependencies_sha256": {
+        "scripts/runtime_reconstruction_rhs.py": "5ee818d0e21b962468590323d37dd48b19ffcf2ca912eba4f6da236d2f4be156",
+        "scripts/validate_source_coordinates_full_v1.py": "2b26f4fe1318b61cc98383bd3e1a121ecdc8e3c6699216b13fd44e4ad1775341",
+        "scripts/r3_candidate_runtime_v1.py": "bd1036cdbfac379b749cec2647b35be40be42676d651492e656c38713044bbc9",
+        "docs/reduction/source_coordinate_certificate_v4.json": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec"
+      }
+    },
+    {
+      "condition": "R3_GLYRS_LOW",
+      "reuse_valid": true,
+      "issues": [],
+      "full_state_sha256": "a05a3ad582a125771271518ab1cc13127717c18888a26a97b6776a3a46486284",
+      "directed_ledgers_sha256": "4b7c0442d968874fcbbeb3e0b4562cca5927cadb48fa5ffef02775e72189cbc0",
+      "result_sha256": "d88dbd97063acfde57d47831145ede3127eddc79b32588c4f22c293b1226c014",
+      "initial_state_sha256": "c11d8dbca951da4570faf3560083c8795ee69952853585f143eec20c2fde9855",
+      "source_dependencies_sha256": {
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "docs/reduction/r3_validation_grid_v1.csv": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+        "docs/reduction/r3_aminoacylation_qssa_method.md": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+        "docs/reduction/r3_coupled_validation_protocol_v1.md": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+        "docs/reduction/r3_source_reaction_candidate_map_v1.csv": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+        "models/pnas2017_full_reference/audit/aminoacylation_reactions.csv": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+        "scripts/r3_resource_total_runtime_v1.py": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+        "scripts/r3_resource_total_runtime_v2.py": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+        "scripts/run_r3_coupled_grid_v1.py": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+      },
+      "transitive_source_dependencies_sha256": {
+        "scripts/runtime_reconstruction_rhs.py": "5ee818d0e21b962468590323d37dd48b19ffcf2ca912eba4f6da236d2f4be156",
+        "scripts/validate_source_coordinates_full_v1.py": "2b26f4fe1318b61cc98383bd3e1a121ecdc8e3c6699216b13fd44e4ad1775341",
+        "scripts/r3_candidate_runtime_v1.py": "bd1036cdbfac379b749cec2647b35be40be42676d651492e656c38713044bbc9",
+        "docs/reduction/source_coordinate_certificate_v4.json": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec"
+      }
+    },
+    {
+      "condition": "R3_GLYRS_HIGH",
+      "reuse_valid": true,
+      "issues": [],
+      "full_state_sha256": "fb7f984e6c67ac0d3165fb38775abaa6bafe671c79ab421be2013d62cc80ae35",
+      "directed_ledgers_sha256": "687a3e8899964f95a438cf08abada530ae2aa4097268cbb2c8c63fdfbf909b5b",
+      "result_sha256": "dd58abfeec6595d42335a06b0099ac57a9797e671b6722e661a51dcfd6aa3260",
+      "initial_state_sha256": "d9b45a301e4029478cdcedec33cb0ba10023054e268bc57a1f15ccb7eaefd453",
+      "source_dependencies_sha256": {
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "docs/reduction/r3_validation_grid_v1.csv": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+        "docs/reduction/r3_aminoacylation_qssa_method.md": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+        "docs/reduction/r3_coupled_validation_protocol_v1.md": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+        "docs/reduction/r3_source_reaction_candidate_map_v1.csv": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+        "models/pnas2017_full_reference/audit/aminoacylation_reactions.csv": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+        "scripts/r3_resource_total_runtime_v1.py": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+        "scripts/r3_resource_total_runtime_v2.py": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+        "scripts/run_r3_coupled_grid_v1.py": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+      },
+      "transitive_source_dependencies_sha256": {
+        "scripts/runtime_reconstruction_rhs.py": "5ee818d0e21b962468590323d37dd48b19ffcf2ca912eba4f6da236d2f4be156",
+        "scripts/validate_source_coordinates_full_v1.py": "2b26f4fe1318b61cc98383bd3e1a121ecdc8e3c6699216b13fd44e4ad1775341",
+        "scripts/r3_candidate_runtime_v1.py": "bd1036cdbfac379b749cec2647b35be40be42676d651492e656c38713044bbc9",
+        "docs/reduction/source_coordinate_certificate_v4.json": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec"
+      }
+    },
+    {
+      "condition": "R3_METRS_LOW",
+      "reuse_valid": true,
+      "issues": [],
+      "full_state_sha256": "c045b0dd6a857cf111b2c1136efda4920f93134e5c7852d79eccfb53a788006a",
+      "directed_ledgers_sha256": "4cf2a5d6d3014a3629c215bc58ed48aa3dc94ce31b4d52a486a1bc8467e511d9",
+      "result_sha256": "992e9d1aafc0d8c5c4e8d66b117e149580ca7dd6024c932d04653155fdeda064",
+      "initial_state_sha256": "b97c8df41e7ec1cb6f17c5ffc0d36c2c981c5edf280cc4e3e9c0e264ae71709e",
+      "source_dependencies_sha256": {
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "docs/reduction/r3_validation_grid_v1.csv": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+        "docs/reduction/r3_aminoacylation_qssa_method.md": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+        "docs/reduction/r3_coupled_validation_protocol_v1.md": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+        "docs/reduction/r3_source_reaction_candidate_map_v1.csv": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+        "models/pnas2017_full_reference/audit/aminoacylation_reactions.csv": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+        "scripts/r3_resource_total_runtime_v1.py": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+        "scripts/r3_resource_total_runtime_v2.py": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+        "scripts/run_r3_coupled_grid_v1.py": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+      },
+      "transitive_source_dependencies_sha256": {
+        "scripts/runtime_reconstruction_rhs.py": "5ee818d0e21b962468590323d37dd48b19ffcf2ca912eba4f6da236d2f4be156",
+        "scripts/validate_source_coordinates_full_v1.py": "2b26f4fe1318b61cc98383bd3e1a121ecdc8e3c6699216b13fd44e4ad1775341",
+        "scripts/r3_candidate_runtime_v1.py": "bd1036cdbfac379b749cec2647b35be40be42676d651492e656c38713044bbc9",
+        "docs/reduction/source_coordinate_certificate_v4.json": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec"
+      }
+    },
+    {
+      "condition": "R3_METRS_HIGH",
+      "reuse_valid": true,
+      "issues": [],
+      "full_state_sha256": "71512360a2745ee7ed67c100febf12ec20e371eaa6bcdb60ba510343b917da05",
+      "directed_ledgers_sha256": "c56c22be3d9e247321d2ad2b392fc07652ad62a346fa3613d73f4cbac6a82aaa",
+      "result_sha256": "206ecf80f67c54bd51a3218c9a194701eee5242c37d48c94f823fb7588856dc4",
+      "initial_state_sha256": "29261df069bb7b30d8480da5ee1e4073b9ec27fac0a1d3dc4f2ed5c7c036a969",
+      "source_dependencies_sha256": {
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "docs/reduction/r3_validation_grid_v1.csv": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+        "docs/reduction/r3_aminoacylation_qssa_method.md": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+        "docs/reduction/r3_coupled_validation_protocol_v1.md": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+        "docs/reduction/r3_source_reaction_candidate_map_v1.csv": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+        "models/pnas2017_full_reference/audit/aminoacylation_reactions.csv": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+        "scripts/r3_resource_total_runtime_v1.py": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+        "scripts/r3_resource_total_runtime_v2.py": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+        "scripts/run_r3_coupled_grid_v1.py": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+      },
+      "transitive_source_dependencies_sha256": {
+        "scripts/runtime_reconstruction_rhs.py": "5ee818d0e21b962468590323d37dd48b19ffcf2ca912eba4f6da236d2f4be156",
+        "scripts/validate_source_coordinates_full_v1.py": "2b26f4fe1318b61cc98383bd3e1a121ecdc8e3c6699216b13fd44e4ad1775341",
+        "scripts/r3_candidate_runtime_v1.py": "bd1036cdbfac379b749cec2647b35be40be42676d651492e656c38713044bbc9",
+        "docs/reduction/source_coordinate_certificate_v4.json": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec"
+      }
+    },
+    {
+      "condition": "R3_GLY_LOW",
+      "reuse_valid": true,
+      "issues": [],
+      "full_state_sha256": "dead57f696837f330e14ef3523f863de74b8e6e8393040345e188fa16e7d9dc9",
+      "directed_ledgers_sha256": "748ab73e9e4f4e1c51a06e0d84d740c78560961b64a575ccdd6cdb8a56ed9e28",
+      "result_sha256": "93e7618a404fdad34670db048a13de5c4a05e017e72ad12331320f1d9bb437a6",
+      "initial_state_sha256": "cfa0d008995b288b282024ff855d1dd67ff2e190b59ba1d9a5bc0ff1bc0611c3",
+      "source_dependencies_sha256": {
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "docs/reduction/r3_validation_grid_v1.csv": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+        "docs/reduction/r3_aminoacylation_qssa_method.md": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+        "docs/reduction/r3_coupled_validation_protocol_v1.md": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+        "docs/reduction/r3_source_reaction_candidate_map_v1.csv": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+        "models/pnas2017_full_reference/audit/aminoacylation_reactions.csv": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+        "scripts/r3_resource_total_runtime_v1.py": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+        "scripts/r3_resource_total_runtime_v2.py": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+        "scripts/run_r3_coupled_grid_v1.py": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+      },
+      "transitive_source_dependencies_sha256": {
+        "scripts/runtime_reconstruction_rhs.py": "5ee818d0e21b962468590323d37dd48b19ffcf2ca912eba4f6da236d2f4be156",
+        "scripts/validate_source_coordinates_full_v1.py": "2b26f4fe1318b61cc98383bd3e1a121ecdc8e3c6699216b13fd44e4ad1775341",
+        "scripts/r3_candidate_runtime_v1.py": "bd1036cdbfac379b749cec2647b35be40be42676d651492e656c38713044bbc9",
+        "docs/reduction/source_coordinate_certificate_v4.json": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec"
+      }
+    },
+    {
+      "condition": "R3_MET_LOW",
+      "reuse_valid": true,
+      "issues": [],
+      "full_state_sha256": "86bbc0ce3ff0b619549c5435c760b8abe3424cbb5b9ec02bf340bce91168cfec",
+      "directed_ledgers_sha256": "0cda9786fd2d270aa120676f127d9982bd454fdcc39141ed246579bcc13d97ac",
+      "result_sha256": "93ad5f0c119066bd8083e28a3de9463d613bc0913707da9eef41e804d10d4ca1",
+      "initial_state_sha256": "744cbbc07bc7456cdd88a01a3f1aa6d83dcae6dc08675622a6745ea7d19e65d9",
+      "source_dependencies_sha256": {
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "docs/reduction/r3_validation_grid_v1.csv": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+        "docs/reduction/r3_aminoacylation_qssa_method.md": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+        "docs/reduction/r3_coupled_validation_protocol_v1.md": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+        "docs/reduction/r3_source_reaction_candidate_map_v1.csv": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+        "models/pnas2017_full_reference/audit/aminoacylation_reactions.csv": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+        "scripts/r3_resource_total_runtime_v1.py": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+        "scripts/r3_resource_total_runtime_v2.py": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+        "scripts/run_r3_coupled_grid_v1.py": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+      },
+      "transitive_source_dependencies_sha256": {
+        "scripts/runtime_reconstruction_rhs.py": "5ee818d0e21b962468590323d37dd48b19ffcf2ca912eba4f6da236d2f4be156",
+        "scripts/validate_source_coordinates_full_v1.py": "2b26f4fe1318b61cc98383bd3e1a121ecdc8e3c6699216b13fd44e4ad1775341",
+        "scripts/r3_candidate_runtime_v1.py": "bd1036cdbfac379b749cec2647b35be40be42676d651492e656c38713044bbc9",
+        "docs/reduction/source_coordinate_certificate_v4.json": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec"
+      }
+    },
+    {
+      "condition": "R3_TRNA_LOW",
+      "reuse_valid": true,
+      "issues": [],
+      "full_state_sha256": "320a44a09225f81bf8084d4a4cc722d13ebd59dca31f914b83652b0f891bdf32",
+      "directed_ledgers_sha256": "e6d666a36793abe5a477219c2c934a47c2a9b4d3bb1a002df355aa1f538c2879",
+      "result_sha256": "b5d5d70960524e79d14ed3fbea6d50d0d87c31bd96444a0ee87f12c7a8795cac",
+      "initial_state_sha256": "7b8d1696d8f74d1a43394a6a6295dec8913075aa65ae2a05e8aa1b95631a2036",
+      "source_dependencies_sha256": {
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "docs/reduction/r3_validation_grid_v1.csv": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+        "docs/reduction/r3_aminoacylation_qssa_method.md": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+        "docs/reduction/r3_coupled_validation_protocol_v1.md": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+        "docs/reduction/r3_source_reaction_candidate_map_v1.csv": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+        "models/pnas2017_full_reference/audit/aminoacylation_reactions.csv": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+        "scripts/r3_resource_total_runtime_v1.py": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+        "scripts/r3_resource_total_runtime_v2.py": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+        "scripts/run_r3_coupled_grid_v1.py": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+      },
+      "transitive_source_dependencies_sha256": {
+        "scripts/runtime_reconstruction_rhs.py": "5ee818d0e21b962468590323d37dd48b19ffcf2ca912eba4f6da236d2f4be156",
+        "scripts/validate_source_coordinates_full_v1.py": "2b26f4fe1318b61cc98383bd3e1a121ecdc8e3c6699216b13fd44e4ad1775341",
+        "scripts/r3_candidate_runtime_v1.py": "bd1036cdbfac379b749cec2647b35be40be42676d651492e656c38713044bbc9",
+        "docs/reduction/source_coordinate_certificate_v4.json": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec"
+      }
+    },
+    {
+      "condition": "R3_ATP_LOW",
+      "reuse_valid": true,
+      "issues": [],
+      "full_state_sha256": "104c9423394eeae7cf1923b94659020b71868df1c02f61a310fdca8ca1e9f776",
+      "directed_ledgers_sha256": "aff2920d33ce7925d756e724a44bd3a1a82b1c120917808c5aaba408a2ce6697",
+      "result_sha256": "6e9deee8558c4e33ec17a399e824bf2726f40ced22ddbb34d8e91686f7382e30",
+      "initial_state_sha256": "413ec6ac144cede5fcef56cb2fd2385ced125aaabf7491d720a4979f174bdd47",
+      "source_dependencies_sha256": {
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "docs/reduction/r3_validation_grid_v1.csv": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+        "docs/reduction/r3_aminoacylation_qssa_method.md": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+        "docs/reduction/r3_coupled_validation_protocol_v1.md": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+        "docs/reduction/r3_source_reaction_candidate_map_v1.csv": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+        "models/pnas2017_full_reference/audit/aminoacylation_reactions.csv": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+        "scripts/r3_resource_total_runtime_v1.py": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+        "scripts/r3_resource_total_runtime_v2.py": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+        "scripts/run_r3_coupled_grid_v1.py": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+      },
+      "transitive_source_dependencies_sha256": {
+        "scripts/runtime_reconstruction_rhs.py": "5ee818d0e21b962468590323d37dd48b19ffcf2ca912eba4f6da236d2f4be156",
+        "scripts/validate_source_coordinates_full_v1.py": "2b26f4fe1318b61cc98383bd3e1a121ecdc8e3c6699216b13fd44e4ad1775341",
+        "scripts/r3_candidate_runtime_v1.py": "bd1036cdbfac379b749cec2647b35be40be42676d651492e656c38713044bbc9",
+        "docs/reduction/source_coordinate_certificate_v4.json": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec"
+      }
+    }
+  ],
+  "historical_reduced_reused": false,
+  "parameters_initial_transitive_binding": "Frozen source hashes plus exact saved physical x0 and recomputed author rates; original full RHS implementation hash is identical."
+}

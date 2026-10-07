@@ -1,0 +1,126 @@
+{
+  "status": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY",
+  "nodes": [
+    {
+      "id": "parent_main",
+      "kind": "source_commit",
+      "sha": "0b6f9ad649a7e283e440e0294a021123551f6858",
+      "evidence_status": "EXTRACTED",
+      "authority": "CANONICAL_SOURCE"
+    },
+    {
+      "id": "authorization",
+      "kind": "human_scope",
+      "evidence_status": "EXTRACTED",
+      "path": "docs/reduction/r4_fast_block_human_authorization_20261007.md",
+      "sha256": "23c32a4f8265a401095595637f71119e99171084b1d314405441bbf5fd3e9847"
+    },
+    {
+      "id": "preregistration",
+      "kind": "frozen_protocol",
+      "evidence_status": "EXTRACTED",
+      "path": "docs/reduction/r4_fast_block_candidates_v1.json",
+      "sha256": "bf335cbab38c1ce5984aa22d1f7dc511a7b0f3ac9ee73e547bd480333f116d31"
+    },
+    {
+      "id": "R4_GLYRS_ONLY",
+      "kind": "tested_candidate",
+      "evidence_status": "EXTRACTED",
+      "scientific_status": "UNRESOLVED_ON_REGISTERED_DOMAIN",
+      "promotion": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "id": "R4_METRS_ONLY",
+      "kind": "tested_candidate",
+      "evidence_status": "EXTRACTED",
+      "scientific_status": "UNRESOLVED_ON_REGISTERED_DOMAIN",
+      "promotion": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "id": "source_reuse_verification.json",
+      "kind": "derived_evidence",
+      "path": "results/reduction/r4_fast_block_screen/source_reuse_verification.json",
+      "sha256": "2e28173385bbbb183f6ec1458ac72c6c66ba1ab4c9366917fb61f87c22a696e7",
+      "evidence_status": "EXTRACTED",
+      "freshness": "VERIFY_AGAINST_MANIFEST"
+    },
+    {
+      "id": "screen_summary.json",
+      "kind": "derived_evidence",
+      "path": "results/reduction/r4_fast_block_screen/screen_summary.json",
+      "sha256": "112ad5cd2bdf53450605a5c09b04569962880f44bd3bc0f5a6d9b2f7ec6a7bda",
+      "evidence_status": "EXTRACTED",
+      "freshness": "VERIFY_AGAINST_MANIFEST"
+    },
+    {
+      "id": "fast_block_comparison.csv",
+      "kind": "derived_evidence",
+      "path": "results/reduction/r4_fast_block_screen/fast_block_comparison.csv",
+      "sha256": "2e6afbfe5cc85a321ebea01fb89fd793d5806ca7e6ee7c21487fe4ad8f4604d8",
+      "evidence_status": "EXTRACTED",
+      "freshness": "VERIFY_AGAINST_MANIFEST"
+    },
+    {
+      "id": "mixed_csp_mode_block/result.json",
+      "kind": "derived_evidence",
+      "path": "results/reduction/r4_fast_block_screen/mixed_csp_mode_block/result.json",
+      "sha256": "053ae736aa1106f108054a58b89ad094bcf723f482cfc044564041ba1e8cea07",
+      "evidence_status": "EXTRACTED",
+      "freshness": "VERIFY_AGAINST_MANIFEST"
+    },
+    {
+      "id": "causal_interpretation",
+      "kind": "inference",
+      "evidence_status": "AMBIGUOUS",
+      "status": "UNDETERMINED_NUMERICAL_UNCERTAINTY_OR_NONCOMPLETION"
+    }
+  ],
+  "edges": [
+    {
+      "from": "authorization",
+      "to": "R4_GLYRS_ONLY",
+      "relation": "authorizes_testing_only"
+    },
+    {
+      "from": "preregistration",
+      "to": "R4_GLYRS_ONLY",
+      "relation": "defines_domain_and_gates"
+    },
+    {
+      "from": "authorization",
+      "to": "R4_METRS_ONLY",
+      "relation": "authorizes_testing_only"
+    },
+    {
+      "from": "preregistration",
+      "to": "R4_METRS_ONLY",
+      "relation": "defines_domain_and_gates"
+    },
+    {
+      "from": "parent_main",
+      "to": "source_reuse_verification.json",
+      "relation": "derived_from"
+    },
+    {
+      "from": "parent_main",
+      "to": "screen_summary.json",
+      "relation": "derived_from"
+    },
+    {
+      "from": "parent_main",
+      "to": "fast_block_comparison.csv",
+      "relation": "derived_from"
+    },
+    {
+      "from": "parent_main",
+      "to": "mixed_csp_mode_block/result.json",
+      "relation": "derived_from"
+    },
+    {
+      "from": "fast_block_comparison.csv",
+      "to": "causal_interpretation",
+      "relation": "limits_inference"
+    }
+  ],
+  "freshness_rule": "Recompute SHA-256 against final manifest before use."
+}

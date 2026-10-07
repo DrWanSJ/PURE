@@ -1,0 +1,15 @@
+{
+  "meaning": "The original gap_conditioning value was cond(T_fast), now explicitly preserved as fast_schur_block_condition_number. Added eigenseparation and a clearly labeled diagnostic ratio. No guard, matrix, participation, exclusion or scientific status changed.",
+  "source_basis_npz_sha256": {
+    "R3_ATP_LOW_m4_bases.npz": "3ef9335893ad40a4c30d1ad54301ecc6638bd4dcdc17999c8d9b27ff67445542",
+    "R3_BASE_m4_bases.npz": "2c7f1cdbecc0e84e968db036c08c9892e392b42f32d1a39ba9b039c2b4884c10",
+    "R3_GLYRS_HIGH_m4_bases.npz": "7b16d0b62746d1b8454713d69eb18eefbb456bf2a8abb8fae3a8c536dbd99f59",
+    "R3_GLYRS_LOW_m4_bases.npz": "ba7d404484e635c6adb01dc01f7ce742d96dac5c582ac74267550b94c189ecda",
+    "R3_GLY_LOW_m4_bases.npz": "73b6718807657eb15f89938b21ac80129558e87581fddd1b4fdcf93253ff20c8",
+    "R3_METRS_HIGH_m4_bases.npz": "d42e09b55eb4ae629c8a85e772ef1345870c118acee9c082b98bfb53ea50c3a5",
+    "R3_METRS_LOW_m4_bases.npz": "6e5911aaeaeb04616042d1fa1dc74f775cec8b129bc023f2ac366dca4e98197b",
+    "R3_MET_LOW_m4_bases.npz": "3a87729844f2da11b0d7835927cbc5ef28ffc4a33b5f852d090d229bec507118",
+    "R3_TRNA_LOW_m4_bases.npz": "1968cfedbb62cb209fe8ed072c735969b6fb630f01e968065cece4206575f427"
+  },
+  "scientific_threshold_added": false
+}

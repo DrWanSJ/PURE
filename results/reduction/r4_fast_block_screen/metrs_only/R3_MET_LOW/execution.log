@@ -1,0 +1,2 @@
+MetRS R3_MET_LOW primary reduced start
+MetRS R3_MET_LOW COMPLETED {'state': 1.0124633711752424, 'post_state': 0.14107676655217458, 'rate': 1.012649050885596, 'extent': 0.0467898905129403, 'all968_rate': 1.012649050885596, 'all968_extent': 0.0467898905129403, 'full_balance_abs': 6.031550583429635e-07, 'reduced_slow_balance_abs': 1.8272594388690777e-06, 'source_law_drift_abs': 7.416289804496046e-14, 'closure': 9.998504801878028e-11, 'minimum_concentration': -2.521893590382464e-12}

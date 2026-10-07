@@ -1,0 +1,2 @@
+MetRS R3_GLYRS_HIGH primary reduced start
+MetRS R3_GLYRS_HIGH NUMERICAL_NONCOMPLETION {'state': 0.9917587390961335, 'post_state': 0.08643640630933776, 'rate': 0.9922873991530253, 'extent': 0.07683164793252158, 'all968_rate': 0.9922873991530253, 'all968_extent': 0.07683164793252158, 'full_balance_abs': 6.475420377682894e-07, 'reduced_slow_balance_abs': 2.058637619484216e-06, 'source_law_drift_abs': 8.08242361927114e-14, 'closure': 9.995848419819264e-11, 'minimum_concentration': -4.255135557825463e-12}

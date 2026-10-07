@@ -1,0 +1,6 @@
+{
+  "gross_channels": 968,
+  "fresh_vs_historical_scaled_max_difference": 5.666507940033816e-12,
+  "fresh_extent_sha256": "450d30372d403571ff013831c5d6cd74e4fc576ea62125a03f18e5e9a11d626d",
+  "historical_full_ledger_sha256": "96715f3f10840cf6d84efc0ffa60ddf83097868565bd53ec8f075e122f753218"
+}

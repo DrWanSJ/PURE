@@ -1,0 +1,2 @@
+GlyRS R3_TRNA_LOW primary reduced start
+GlyRS R3_TRNA_LOW COMPLETED {'state': 1.1586750594902335, 'post_state': 0.037171057854316084, 'rate': 1.1591225327773362, 'extent': 0.3022534723845912, 'all968_rate': 1.1591225327773362, 'all968_extent': 0.3022534723845912, 'full_balance_abs': 6.555128493346274e-07, 'reduced_slow_balance_abs': 2.8508720788522623e-06, 'source_law_drift_abs': 8.881784197001252e-14, 'closure': 9.993666311158833e-11, 'minimum_concentration': -2.709901792895742e-12}

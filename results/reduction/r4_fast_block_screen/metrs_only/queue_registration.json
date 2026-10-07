@@ -1,0 +1,18 @@
+{
+  "queue_owner": "a47746ba-4f76-4ed7-8a8f-0421b9d28511",
+  "conditions": [
+    "R3_GLYRS_HIGH",
+    "R3_METRS_LOW",
+    "R3_METRS_HIGH",
+    "R3_GLY_LOW",
+    "R3_MET_LOW",
+    "R3_TRNA_LOW",
+    "R3_ATP_LOW"
+  ],
+  "existing_worker_conditions": [
+    "R3_BASE",
+    "R3_GLYRS_LOW"
+  ],
+  "scientific_protocol_unchanged": true,
+  "purpose": "Bounded independent process parallelism; no duplicate candidate-condition solves or deleted conditions."
+}

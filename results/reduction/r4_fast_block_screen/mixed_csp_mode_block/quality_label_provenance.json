@@ -1,0 +1,6 @@
+{
+  "change": "Explicitly distinguish unsampled independent validation from passed validation; numerical values and frozen guards unchanged.",
+  "generator_sha256": "8597105df30f8fe3ac828d02b5dcfc2062a7580294f1aab770c301b6ff6e4957",
+  "source_geometry_rows": 198,
+  "raw_excluded_records_retained": true
+}

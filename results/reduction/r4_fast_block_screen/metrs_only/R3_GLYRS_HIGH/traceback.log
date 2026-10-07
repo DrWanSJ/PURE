@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\sean\AppData\Local\Temp\PURE-R4-fast-block-20261007\scripts\run_r4_family_grid_v1.py", line 127, in run
+    sf=np.load(OUT/'source_uncertainty'/condition/'probe_state.npz')['state'];sl=np.load(OUT/'source_uncertainty'/condition/'probe_ledgers.npz');sfr=sl['rates'];sfe=sl['extent']
+                                   ^^^^^^^^^^^^^^^
+KeyError: 'rate'

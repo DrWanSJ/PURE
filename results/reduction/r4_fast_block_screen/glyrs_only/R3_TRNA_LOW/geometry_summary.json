@@ -1,0 +1,16 @@
+{
+  "condition": "R3_TRNA_LOW",
+  "physical_roots": 201,
+  "attracting_points": 201,
+  "closure_max": 9.307221660037612e-11,
+  "velocity_max": 4.737900889334023,
+  "defect_max": 4.737900889333952,
+  "Gq_condition_max": 2694.7399371180263,
+  "tau_fast_max_s": 0.009794045862045924,
+  "gap_ratio_min": 0.0009625281520913707,
+  "multistart_valid": 18,
+  "multistart_total": 18,
+  "multistart_agreement_max": 7.216449660063518e-16,
+  "relaxations_complete": 6,
+  "relaxation_distance_ratio_max": 3.849971877098416e-05
+}

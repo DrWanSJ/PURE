@@ -1,0 +1,940 @@
+{
+  "parent_main_sha": "0b6f9ad649a7e283e440e0294a021123551f6858",
+  "frozen_hashes_unchanged": "CHECK_INDEPENDENT_VERIFIER",
+  "family_candidates": [
+    {
+      "candidate": "GlyRS",
+      "conditions_primary_compared": 9,
+      "conditions_all_stages_complete": 9,
+      "conditions_numerically_resolved": 0,
+      "conditions_passing_all_registered_gates": 0,
+      "raw_gate_failure_counts_not_global_scientific_verdict": {
+        "state": 9,
+        "rate": 9,
+        "extent": 8,
+        "balance": 9
+      },
+      "scientific_status": "UNRESOLVED_ON_REGISTERED_DOMAIN",
+      "numerical_status": "NUMERICALLY_UNRESOLVED_OR_NONCOMPLETED",
+      "execution_status": "COMPLETED_BOUNDED_SCREEN",
+      "promotion_status": "HUMAN_REVIEW_REQUIRED",
+      "maxima": {
+        "state": 1.1586750594902335,
+        "post_state": 0.037171057854316084,
+        "rate": 1.1591225327773362,
+        "extent": 0.5024107458633741,
+        "all968_rate": 1.1591225327773362,
+        "all968_extent": 0.5024107458633741,
+        "closure": 9.999742700550485e-11,
+        "full_balance_abs": 7.430298865074292e-07,
+        "reduced_slow_balance_abs": 4.89637589629055e-06
+      },
+      "geometry_maxima": {
+        "closure_max": 9.307221660037612e-11,
+        "defect_max": 46.02485792212351,
+        "velocity_max": 46.02485792212291,
+        "Gq_condition_max": 3598.768153614296,
+        "tau_fast_max_s": 0.011618110645732977
+      },
+      "conditions_passed": [],
+      "conditions": [
+        {
+          "condition": "R3_BASE",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": "'rate'",
+          "maxima": {
+            "state": 1.0213127747952877,
+            "post_state": 0.012641999999015963,
+            "rate": 1.0213127747952877,
+            "extent": 0.05179634545889689,
+            "all968_rate": 1.0213127747952877,
+            "all968_extent": 0.05179634545889689,
+            "full_balance_abs": 7.430298865074292e-07,
+            "reduced_slow_balance_abs": 2.444458004902117e-06,
+            "source_law_drift_abs": 8.526512829121202e-14,
+            "closure": 9.99687554958939e-11,
+            "minimum_concentration": -6.340735077955845e-12
+          },
+          "uncertainty": {
+            "state": 5.544765626684846e-06,
+            "rate": 1.2225926190293241e-07,
+            "extent": 1.6161032193202162e-08,
+            "balance": 2.307093564013485e-05,
+            "gross_float64_representation_bound_abs": 1.2077654776281527e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_GLYRS_LOW",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": "'rate'",
+          "maxima": {
+            "state": 1.0205263255873898,
+            "post_state": 0.0031797067542448806,
+            "rate": 1.02052632558739,
+            "extent": 0.004953491705070196,
+            "all968_rate": 1.02052632558739,
+            "all968_extent": 0.004953491705070196,
+            "full_balance_abs": 6.657483027083799e-07,
+            "reduced_slow_balance_abs": 1.4221350284060463e-06,
+            "source_law_drift_abs": 7.815970093361102e-14,
+            "closure": 9.993363775384623e-11,
+            "minimum_concentration": -3.5292737876031796e-12
+          },
+          "uncertainty": {
+            "state": 2.979885328335829e-06,
+            "rate": 1.022690741365504e-07,
+            "extent": 9.43960885627148e-09,
+            "balance": 2.1981259124004282e-05,
+            "gross_float64_representation_bound_abs": 1.2074604525493869e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": true,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_GLYRS_HIGH",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": "'rate'",
+          "maxima": {
+            "state": 1.032808568219896,
+            "post_state": 0.026673261747774783,
+            "rate": 1.032808568219896,
+            "extent": 0.5024107458633741,
+            "all968_rate": 1.032808568219896,
+            "all968_extent": 0.5024107458633741,
+            "full_balance_abs": 6.475420377682894e-07,
+            "reduced_slow_balance_abs": 3.3315745551210085e-06,
+            "source_law_drift_abs": 1.0302869668521453e-13,
+            "closure": 9.99644811372491e-11,
+            "minimum_concentration": -2.2134264574751643e-12
+          },
+          "uncertainty": {
+            "state": 2.2165417954240064e-06,
+            "rate": 5.748156605490175e-08,
+            "extent": 1.1418238356966731e-08,
+            "balance": 2.706899215265679e-05,
+            "gross_float64_representation_bound_abs": 1.21041429742018e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_METRS_LOW",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": null,
+          "maxima": {
+            "state": 1.0213022269701937,
+            "post_state": 0.012645146268121415,
+            "rate": 1.0213022269701937,
+            "extent": 0.05180708296543039,
+            "all968_rate": 1.0213022269701937,
+            "all968_extent": 0.05180708296543039,
+            "full_balance_abs": 5.686888471245766e-07,
+            "reduced_slow_balance_abs": 4.89637589629055e-06,
+            "source_law_drift_abs": 9.769962616701378e-14,
+            "closure": 9.997644379033943e-11,
+            "minimum_concentration": -5.393315091696436e-12
+          },
+          "uncertainty": {
+            "state": 6.557915941580589e-06,
+            "rate": 1.6089556669964887e-07,
+            "extent": 2.314295518018252e-08,
+            "balance": 2.265734807860298e-05,
+            "gross_float64_representation_bound_abs": 1.2073560113257578e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_METRS_HIGH",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": null,
+          "maxima": {
+            "state": 1.0214182163512362,
+            "post_state": 0.01262601823711919,
+            "rate": 1.0214182163512364,
+            "extent": 0.05175143308029257,
+            "all968_rate": 1.0214182163512364,
+            "all968_extent": 0.05175143308029257,
+            "full_balance_abs": 6.628852133871987e-07,
+            "reduced_slow_balance_abs": 4.160900061833672e-06,
+            "source_law_drift_abs": 8.704148513061227e-14,
+            "closure": 9.999742700550485e-11,
+            "minimum_concentration": -3.960843692095038e-12
+          },
+          "uncertainty": {
+            "state": 1.9593702827697766e-06,
+            "rate": 5.551585124069531e-08,
+            "extent": 2.711024006069406e-08,
+            "balance": 2.273046867795614e-05,
+            "gross_float64_representation_bound_abs": 1.2110917695803857e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_GLY_LOW",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": null,
+          "maxima": {
+            "state": 1.045497777908795,
+            "post_state": 0.03366298187824907,
+            "rate": 1.047702993633868,
+            "extent": 0.013388239384445461,
+            "all968_rate": 1.047702993633868,
+            "all968_extent": 0.013388239384445461,
+            "full_balance_abs": 6.68764187139459e-07,
+            "reduced_slow_balance_abs": 1.9080962374573573e-06,
+            "source_law_drift_abs": 7.638334409421077e-14,
+            "closure": 9.99964555603583e-11,
+            "minimum_concentration": -3.122489462882484e-12
+          },
+          "uncertainty": {
+            "state": 2.270793411920301e-06,
+            "rate": 7.976876000764587e-08,
+            "extent": 1.015891480645237e-08,
+            "balance": 2.451263935654424e-05,
+            "gross_float64_representation_bound_abs": 1.2076785872603122e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_MET_LOW",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": null,
+          "maxima": {
+            "state": 1.021312608479169,
+            "post_state": 0.012642108888179857,
+            "rate": 1.021312608479169,
+            "extent": 0.05179676105431924,
+            "all968_rate": 1.021312608479169,
+            "all968_extent": 0.05179676105431924,
+            "full_balance_abs": 6.031550583429635e-07,
+            "reduced_slow_balance_abs": 3.5945043137530774e-06,
+            "source_law_drift_abs": 8.348877145181177e-14,
+            "closure": 9.998593619719998e-11,
+            "minimum_concentration": -4.161421802869997e-12
+          },
+          "uncertainty": {
+            "state": 4.783452746000084e-06,
+            "rate": 9.182557949903253e-08,
+            "extent": 1.207489442709636e-08,
+            "balance": 2.3837603293941356e-05,
+            "gross_float64_representation_bound_abs": 1.207678486747773e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_TRNA_LOW",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": null,
+          "maxima": {
+            "state": 1.1586750594902335,
+            "post_state": 0.037171057854316084,
+            "rate": 1.1591225327773362,
+            "extent": 0.3022534723845912,
+            "all968_rate": 1.1591225327773362,
+            "all968_extent": 0.3022534723845912,
+            "full_balance_abs": 6.555128493346274e-07,
+            "reduced_slow_balance_abs": 2.8508720788522623e-06,
+            "source_law_drift_abs": 8.881784197001252e-14,
+            "closure": 9.993666311158833e-11,
+            "minimum_concentration": -2.709901792895742e-12
+          },
+          "uncertainty": {
+            "state": 2.5404066791882773e-06,
+            "rate": 1.0317734439774321e-07,
+            "extent": 1.571289088499501e-08,
+            "balance": 2.5028171876328997e-05,
+            "gross_float64_representation_bound_abs": 1.20753344426815e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_ATP_LOW",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": null,
+          "maxima": {
+            "state": 1.0201189063288414,
+            "post_state": 0.013790636639060317,
+            "rate": 1.0202414690865564,
+            "extent": 0.013020182777228289,
+            "all968_rate": 1.0202414690865564,
+            "all968_extent": 0.013020182777228289,
+            "full_balance_abs": 6.29139321972616e-07,
+            "reduced_slow_balance_abs": 1.230127303131212e-06,
+            "source_law_drift_abs": 1.0036416142611415e-13,
+            "closure": 9.999245875746965e-11,
+            "minimum_concentration": -3.881477092879804e-12
+          },
+          "uncertainty": {
+            "state": 2.303894678957104e-06,
+            "rate": 4.618758506118119e-08,
+            "extent": 1.217341030662804e-08,
+            "balance": 2.1599436877295375e-05,
+            "gross_float64_representation_bound_abs": 1.2984274865345201e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        }
+      ],
+      "resolved_tier_failure_counts": {
+        "state": 9,
+        "rate": 9,
+        "extent": 8,
+        "balance": 0
+      },
+      "lag_median_diagnostics": {
+        "full_window": {
+          "correlation": -0.5486434942604346,
+          "relative_l2_error": 1.0058581759287717,
+          "magnitude_ratio": 0.0103850003255198,
+          "sign_agreement": 0.7611940298507462
+        },
+        "post_0p05": {
+          "correlation": 0.9997604565997752,
+          "relative_l2_error": 0.0526187151660744,
+          "magnitude_ratio": 1.039819665321033,
+          "sign_agreement": 1.0
+        },
+        "t_ge_1": {
+          "correlation": 0.999920754194966,
+          "relative_l2_error": 0.0548491019934506,
+          "magnitude_ratio": 1.0480161548415694,
+          "sign_agreement": 1.0
+        }
+      }
+    },
+    {
+      "candidate": "MetRS",
+      "conditions_primary_compared": 9,
+      "conditions_all_stages_complete": 9,
+      "conditions_numerically_resolved": 0,
+      "conditions_passing_all_registered_gates": 0,
+      "raw_gate_failure_counts_not_global_scientific_verdict": {
+        "state": 9,
+        "rate": 9,
+        "extent": 8,
+        "balance": 9
+      },
+      "scientific_status": "UNRESOLVED_ON_REGISTERED_DOMAIN",
+      "numerical_status": "NUMERICALLY_UNRESOLVED_OR_NONCOMPLETED",
+      "execution_status": "COMPLETED_BOUNDED_SCREEN",
+      "promotion_status": "HUMAN_REVIEW_REQUIRED",
+      "maxima": {
+        "state": 1.1887801100618516,
+        "post_state": 0.14107676655217458,
+        "rate": 1.1895097249691846,
+        "extent": 0.3931545373179211,
+        "all968_rate": 1.1895097249691846,
+        "all968_extent": 0.3931545373179211,
+        "closure": 9.999627167966985e-11,
+        "full_balance_abs": 7.430298865074292e-07,
+        "reduced_slow_balance_abs": 5.486685040523298e-06
+      },
+      "geometry_maxima": {
+        "closure_max": 9.771383702172898e-11,
+        "defect_max": 163.28611023875698,
+        "velocity_max": 163.28611023876073,
+        "Gq_condition_max": 2139.2803162866153,
+        "tau_fast_max_s": 0.006551439793878753
+      },
+      "conditions_passed": [],
+      "conditions": [
+        {
+          "condition": "R3_BASE",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": "'rate'",
+          "maxima": {
+            "state": 0.9917587390961335,
+            "post_state": 0.0864351313900743,
+            "rate": 0.9922873991530253,
+            "extent": 0.07692433470654784,
+            "all968_rate": 0.9922873991530253,
+            "all968_extent": 0.07692433470654784,
+            "full_balance_abs": 7.430298865074292e-07,
+            "reduced_slow_balance_abs": 3.4140500408952335e-06,
+            "source_law_drift_abs": 7.505107646466058e-14,
+            "closure": 9.998511740771931e-11,
+            "minimum_concentration": -7.295143452296683e-12
+          },
+          "uncertainty": {
+            "state": 7.56826715350825e-06,
+            "rate": 1.4858288284627763e-07,
+            "extent": 1.4652842779346228e-08,
+            "balance": 2.4563369152019732e-05,
+            "gross_float64_representation_bound_abs": 1.2077654776281527e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_GLYRS_LOW",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": "'rate'",
+          "maxima": {
+            "state": 0.9917587390961335,
+            "post_state": 0.08643500771961166,
+            "rate": 0.9922873991530253,
+            "extent": 0.07695494523796008,
+            "all968_rate": 0.9922873991530253,
+            "all968_extent": 0.07695494523796008,
+            "full_balance_abs": 6.657483027083799e-07,
+            "reduced_slow_balance_abs": 5.486685040523298e-06,
+            "source_law_drift_abs": 7.815970093361102e-14,
+            "closure": 9.999627167966985e-11,
+            "minimum_concentration": -9.934583264445041e-12
+          },
+          "uncertainty": {
+            "state": 9.235926076521599e-06,
+            "rate": 2.4910283973918564e-07,
+            "extent": 8.897720398185313e-09,
+            "balance": 2.1378440578700975e-05,
+            "gross_float64_representation_bound_abs": 1.2074604525493869e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_GLYRS_HIGH",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": "'rate'",
+          "maxima": {
+            "state": 0.9917587390961335,
+            "post_state": 0.08643640630933776,
+            "rate": 0.9922873991530253,
+            "extent": 0.07683164793252158,
+            "all968_rate": 0.9922873991530253,
+            "all968_extent": 0.07683164793252158,
+            "full_balance_abs": 6.475420377682894e-07,
+            "reduced_slow_balance_abs": 2.058637619484216e-06,
+            "source_law_drift_abs": 8.08242361927114e-14,
+            "closure": 9.995848419819264e-11,
+            "minimum_concentration": -4.255135557825463e-12
+          },
+          "uncertainty": {
+            "state": 3.7510980039373415e-06,
+            "rate": 1.4045693734727798e-07,
+            "extent": 1.4061211869099322e-08,
+            "balance": 2.706899215265679e-05,
+            "gross_float64_representation_bound_abs": 1.21041429742018e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_METRS_LOW",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": null,
+          "maxima": {
+            "state": 0.9919209213967464,
+            "post_state": 0.08328266223725814,
+            "rate": 0.9919742380932857,
+            "extent": 0.00756335797180513,
+            "all968_rate": 0.9919742380932857,
+            "all968_extent": 0.00756335797180513,
+            "full_balance_abs": 5.686888471245766e-07,
+            "reduced_slow_balance_abs": 2.6484258341952227e-06,
+            "source_law_drift_abs": 7.105427357601002e-14,
+            "closure": 9.922452096078338e-11,
+            "minimum_concentration": -3.648838904125376e-12
+          },
+          "uncertainty": {
+            "state": 4.643198770381824e-06,
+            "rate": 1.4920158681476003e-07,
+            "extent": 1.2819120047845545e-08,
+            "balance": 2.265734807860298e-05,
+            "gross_float64_representation_bound_abs": 1.2073560113257578e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": true,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_METRS_HIGH",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": null,
+          "maxima": {
+            "state": 0.9902410541188451,
+            "post_state": 0.07804838121665769,
+            "rate": 0.9948173670082961,
+            "extent": 0.3931545373179211,
+            "all968_rate": 0.9948173670082961,
+            "all968_extent": 0.3931545373179211,
+            "full_balance_abs": 6.628852133871987e-07,
+            "reduced_slow_balance_abs": 4.9823138397186995e-06,
+            "source_law_drift_abs": 8.260059303211165e-14,
+            "closure": 9.994751304798905e-11,
+            "minimum_concentration": -5.403916577030568e-12
+          },
+          "uncertainty": {
+            "state": 5.630809770517828e-06,
+            "rate": 2.6647013531268406e-07,
+            "extent": 3.8136071868685694e-08,
+            "balance": 2.489151847839821e-05,
+            "gross_float64_representation_bound_abs": 1.2110917695803857e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_GLY_LOW",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": null,
+          "maxima": {
+            "state": 0.9917587390961337,
+            "post_state": 0.08643512361317351,
+            "rate": 0.9922873991530253,
+            "extent": 0.07692958482571154,
+            "all968_rate": 0.9922873991530253,
+            "all968_extent": 0.07692958482571154,
+            "full_balance_abs": 6.68764187139459e-07,
+            "reduced_slow_balance_abs": 3.9482365536969155e-06,
+            "source_law_drift_abs": 8.260059303211165e-14,
+            "closure": 9.999442853597662e-11,
+            "minimum_concentration": -3.913978850667389e-12
+          },
+          "uncertainty": {
+            "state": 3.623001689993229e-06,
+            "rate": 1.2897142043834488e-07,
+            "extent": 1.0335089262892042e-08,
+            "balance": 2.451263935654424e-05,
+            "gross_float64_representation_bound_abs": 1.2076785872603122e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_MET_LOW",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": null,
+          "maxima": {
+            "state": 1.0124633711752424,
+            "post_state": 0.14107676655217458,
+            "rate": 1.012649050885596,
+            "extent": 0.0467898905129403,
+            "all968_rate": 1.012649050885596,
+            "all968_extent": 0.0467898905129403,
+            "full_balance_abs": 6.031550583429635e-07,
+            "reduced_slow_balance_abs": 1.8272594388690777e-06,
+            "source_law_drift_abs": 7.416289804496046e-14,
+            "closure": 9.998504801878028e-11,
+            "minimum_concentration": -2.521893590382464e-12
+          },
+          "uncertainty": {
+            "state": 3.1283370114287243e-06,
+            "rate": 9.531460763089842e-08,
+            "extent": 1.2963876467540179e-08,
+            "balance": 2.0484550987021066e-05,
+            "gross_float64_representation_bound_abs": 1.207678486747773e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_TRNA_LOW",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": null,
+          "maxima": {
+            "state": 1.1887801100618516,
+            "post_state": 0.03002534549230431,
+            "rate": 1.1895097249691846,
+            "extent": 0.10563403769130196,
+            "all968_rate": 1.1895097249691846,
+            "all968_extent": 0.10563403769130196,
+            "full_balance_abs": 6.555128493346274e-07,
+            "reduced_slow_balance_abs": 2.507702447474003e-06,
+            "source_law_drift_abs": 7.638334409421077e-14,
+            "closure": 9.999566452645325e-11,
+            "minimum_concentration": -6.792178207154163e-12
+          },
+          "uncertainty": {
+            "state": 5.7424277874492506e-06,
+            "rate": 3.7324000485071043e-07,
+            "extent": 2.882630277096772e-08,
+            "balance": 2.5028171876328997e-05,
+            "gross_float64_representation_bound_abs": 1.20753344426815e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        },
+        {
+          "condition": "R3_ATP_LOW",
+          "status": "COMPLETED",
+          "scientific_status": "NUMERICALLY_UNRESOLVED",
+          "numerical_status": "NUMERICALLY_UNRESOLVED",
+          "failure": null,
+          "maxima": {
+            "state": 1.0104869365926437,
+            "post_state": 0.09682162422524153,
+            "rate": 1.014665835700434,
+            "extent": 0.06537737494576269,
+            "all968_rate": 1.014665835700434,
+            "all968_extent": 0.06537737494576269,
+            "full_balance_abs": 6.29139321972616e-07,
+            "reduced_slow_balance_abs": 1.755062839947641e-06,
+            "source_law_drift_abs": 8.08242361927114e-14,
+            "closure": 9.165435077562734e-11,
+            "minimum_concentration": -1.1405098917578907e-12
+          },
+          "uncertainty": {
+            "state": 1.798704692898501e-06,
+            "rate": 1.8879658581558285e-07,
+            "extent": 1.4405407319338134e-08,
+            "balance": 2.2742477995052468e-05,
+            "gross_float64_representation_bound_abs": 1.2984274865345201e-08
+          },
+          "raw_gate_pass": {
+            "state": false,
+            "rate": false,
+            "extent": false,
+            "balance": false,
+            "closure_engineering": true
+          }
+        }
+      ],
+      "resolved_tier_failure_counts": {
+        "state": 9,
+        "rate": 9,
+        "extent": 8,
+        "balance": 0
+      },
+      "lag_median_diagnostics": {
+        "full_window": {
+          "correlation": -0.5119997580277601,
+          "relative_l2_error": 1.1085402462497989,
+          "magnitude_ratio": 0.3861512264947356,
+          "sign_agreement": 0.7960199004975125
+        },
+        "post_0p05": {
+          "correlation": 0.9974401211301961,
+          "relative_l2_error": 0.412561302582957,
+          "magnitude_ratio": 1.2159319285416519,
+          "sign_agreement": 1.0
+        },
+        "t_ge_1": {
+          "correlation": 0.9993332805398107,
+          "relative_l2_error": 0.25847287483697623,
+          "magnitude_ratio": 1.0920815956234653,
+          "sign_agreement": 1.0
+        }
+      }
+    }
+  ],
+  "mixed_mode": {
+    "candidate": "R4_MIXED_CSP_MODE_BLOCK",
+    "execution_status": "COMPLETED",
+    "scientific_status": "NUMERICALLY_UNRESOLVED",
+    "mapping_status": "CHEMICAL_BLOCK_MAPPING_REQUIRES_HUMAN_REVIEW",
+    "promotion_status": "HUMAN_REVIEW_REQUIRED",
+    "numerical_status": "NUMERICALLY_UNRESOLVED",
+    "sample_count": 198,
+    "expected_samples": 198,
+    "unstable_rows": 0,
+    "large_update_rows": 0,
+    "independent_unresolved_rows": 12,
+    "included_samples": 186,
+    "max_temporal_angle_deg": 89.99999914622636,
+    "max_condition_angle_deg": 90.0,
+    "max_reference_angle_deg": 90.0,
+    "min_gap": 1.000000014583127,
+    "max_update": 0.015960355082139804,
+    "dominant_species": [
+      {
+        "species": "CK",
+        "mean_participation_valid_only": 0.2499853733727346,
+        "module": "CK",
+        "canonical_equation": null,
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "species": "CK_ADP",
+        "mean_participation_valid_only": 0.247502534223395,
+        "module": "CK",
+        "canonical_equation": null,
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "species": "MK_AMP",
+        "mean_participation_valid_only": 0.2208837105605223,
+        "module": "MK",
+        "canonical_equation": null,
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "species": "MK",
+        "mean_participation_valid_only": 0.2208797175078288,
+        "module": "MK",
+        "canonical_equation": null,
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "species": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3",
+        "mean_participation_valid_only": 0.0255333545244378,
+        "module": "RF3",
+        "canonical_equation": null,
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "species": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3",
+        "mean_participation_valid_only": 0.0255333545014319,
+        "module": "RF3",
+        "canonical_equation": null,
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "species": "MK_ATP_AMP",
+        "mean_participation_valid_only": 0.0035776084227444,
+        "module": "MK",
+        "canonical_equation": null,
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "species": "MK_ATP",
+        "mean_participation_valid_only": 0.003541896623934,
+        "module": "MK",
+        "canonical_equation": null,
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "species": "CK_CP_ADP",
+        "mean_participation_valid_only": 0.0024972129496982,
+        "module": "CK",
+        "canonical_equation": null,
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "species": "ATP",
+        "mean_participation_valid_only": 3.677451899967781e-05,
+        "module": "OTHER",
+        "canonical_equation": null,
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      }
+    ],
+    "dominant_reactions": [
+      {
+        "reaction_id": "re0000000336",
+        "mean_participation_valid_only": 0.1953060822571652,
+        "module": "CK",
+        "canonical_equation": "CK_ADP + CP -> CK_CP_ADP",
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "reaction_id": "re0000000337",
+        "mean_participation_valid_only": 0.1953008977324512,
+        "module": "CK",
+        "canonical_equation": "CK_CP_ADP -> CP + CK_ADP",
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "reaction_id": "re0000000380",
+        "mean_participation_valid_only": 0.1306967090899947,
+        "module": "MK",
+        "canonical_equation": "MK + ATP -> MK_ATP",
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "reaction_id": "re0000000332",
+        "mean_participation_valid_only": 0.1237689568072426,
+        "module": "CK",
+        "canonical_equation": "CK + CP -> CK_CP",
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "reaction_id": "re0000000381",
+        "mean_participation_valid_only": 0.1096097688782957,
+        "module": "MK",
+        "canonical_equation": "MK_ATP -> ATP + MK",
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "reaction_id": "re0000000333",
+        "mean_participation_valid_only": 0.0962586247436385,
+        "module": "CK",
+        "canonical_equation": "CK_CP -> CK + CP",
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "reaction_id": "re0000000384",
+        "mean_participation_valid_only": 0.0541236097024342,
+        "module": "MK",
+        "canonical_equation": "MK_AMP + ATP -> MK_ATP_AMP",
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "reaction_id": "re0000000385",
+        "mean_participation_valid_only": 0.0539413125784635,
+        "module": "MK",
+        "canonical_equation": "MK_ATP_AMP -> ATP + MK_AMP",
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "reaction_id": "re0000000884",
+        "mean_participation_valid_only": 0.0051550329929628,
+        "module": "RF3",
+        "canonical_equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3 + GTP -> termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP",
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      },
+      {
+        "reaction_id": "re0000000345",
+        "mean_participation_valid_only": 0.005047356031361,
+        "module": "CK",
+        "canonical_equation": "CK + ATP -> CK_ATP",
+        "number_included_samples": 186,
+        "scientific_status": "HUMAN_REVIEW_REQUIRED"
+      }
+    ],
+    "global_fixed_chemical_block_justified": false,
+    "no_deleted_species": true,
+    "no_effective_rate_or_fitted_parameter": true,
+    "external_diagnostic_optional_not_required_for_canonical_recompute": true
+  },
+  "causal_family_outcome": "UNDETERMINED_NUMERICAL_UNCERTAINTY_OR_NONCOMPLETION",
+  "historical_R3_status": "SPECIFIC_21_STATE_QSSA_REJECTED_ON_9_COMPLETED_CONDITIONS",
+  "R3_ADVERSE": "UNSCORED_NUMERICAL_NONCOMPLETION_NOT_PART_OF_R4_PRIMARY_SCREEN",
+  "promotion": "HUMAN_REVIEW_REQUIRED",
+  "reduction_decisions": "968_PENDING",
+  "PURE_reduced_core": "NOT_VALIDATED",
+  "higher_order_old21": "NOT_EXECUTED"
+}

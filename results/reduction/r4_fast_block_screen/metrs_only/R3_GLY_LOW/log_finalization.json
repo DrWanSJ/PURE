@@ -1,0 +1,16 @@
+{
+  "execution.log": {
+    "registered_prefix_sha256": "2d4788c94d3bbec2fe125af883ad521acecec8005a33bf99f4bd5274be337ad0",
+    "registered_prefix_bytes": 630,
+    "final_log_sha256": "2d4788c94d3bbec2fe125af883ad521acecec8005a33bf99f4bd5274be337ad0",
+    "final_log_bytes": 630,
+    "reason": "Final stdout/dispatch output after native snapshot; original recorded prefix verified where present. Native result preserved."
+  },
+  "execution_edf3a9b2-49e8-4272-99cd-f03e38ea3c55.log": {
+    "registered_prefix_sha256": "a46b58b02f4669a82903c433ff417dfce3dadde0dc4d2e9f4a549c61174bf5fc",
+    "registered_prefix_bytes": 40,
+    "final_log_sha256": "86bc7a67e8d7f341937567619c4141af9ae84c714d7e7d38bce662b335f922ca",
+    "final_log_bytes": 489,
+    "reason": "Final stdout/dispatch output after native snapshot; original recorded prefix verified where present. Native result preserved."
+  }
+}

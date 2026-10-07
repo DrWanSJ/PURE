@@ -1,0 +1,9 @@
+{
+  "status": "PROVENANCE_AND_COVERAGE_VERIFIED_NOT_SCIENTIFIC_VALIDATION",
+  "sources": 3,
+  "species": 241,
+  "reactions": 968,
+  "modules": 26,
+  "pending_decisions": 968,
+  "review_cards": 16
+}

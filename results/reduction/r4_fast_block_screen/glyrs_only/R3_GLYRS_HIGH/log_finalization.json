@@ -1,0 +1,9 @@
+{
+  "execution.log": {
+    "registered_prefix_sha256": "0aee6611b465516e4b398902a363f46a45c6c68ce3c35de45a95517038a8c3a5",
+    "registered_prefix_bytes": 43,
+    "final_log_sha256": "4a869921ee2c73ee3900f82c21cda868317cbe5793c8cf62fade9ee1121650fb",
+    "final_log_bytes": 507,
+    "reason": "Final stdout/dispatch output after native snapshot; original recorded prefix verified where present. Native result preserved."
+  }
+}

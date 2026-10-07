@@ -1,0 +1,5 @@
+{
+  "source_relative_path": "docs/reduction/reaction_level_annotation_v2.csv",
+  "source_sha256": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+  "role": "Frozen reaction-local navigation annotation. CSP participation and source equations independently recomputed. No reaction decision or chemical mapping approval."
+}

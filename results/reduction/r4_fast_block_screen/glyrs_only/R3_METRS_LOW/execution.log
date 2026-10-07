@@ -1,0 +1,2 @@
+GlyRS R3_METRS_LOW primary reduced start
+GlyRS R3_METRS_LOW COMPLETED {'state': 1.0213022269701937, 'post_state': 0.012645146268121415, 'rate': 1.0213022269701937, 'extent': 0.05180708296543039, 'all968_rate': 1.0213022269701937, 'all968_extent': 0.05180708296543039, 'full_balance_abs': 5.686888471245766e-07, 'reduced_slow_balance_abs': 4.89637589629055e-06, 'source_law_drift_abs': 9.769962616701378e-14, 'closure': 9.997644379033943e-11, 'minimum_concentration': -5.393315091696436e-12}

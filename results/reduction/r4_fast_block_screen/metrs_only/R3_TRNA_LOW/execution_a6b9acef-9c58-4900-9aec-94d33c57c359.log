@@ -1,0 +1,2 @@
+MetRS R3_TRNA_LOW primary reduced start
+MetRS R3_TRNA_LOW COMPLETED {'state': 1.1887801100618516, 'post_state': 0.03002534549230431, 'rate': 1.1895097249691846, 'extent': 0.10563403769130196, 'all968_rate': 1.1895097249691846, 'all968_extent': 0.10563403769130196, 'full_balance_abs': 6.555128493346274e-07, 'reduced_slow_balance_abs': 2.507702447474003e-06, 'source_law_drift_abs': 7.638334409421077e-14, 'closure': 9.999566452645325e-11, 'minimum_concentration': -6.792178207154163e-12}

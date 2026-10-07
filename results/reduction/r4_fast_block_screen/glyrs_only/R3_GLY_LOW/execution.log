@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\sean\AppData\Local\Temp\PURE-R4-fast-block-20261007\scripts\run_r4_family_grid_v1.py", line 150, in <module>
+    if a.condition is None or c['condition_id']==a.condition:run(a.family,c['condition_id'])
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sean\AppData\Local\Temp\PURE-R4-fast-block-20261007\scripts\run_r4_family_grid_v1.py", line 66, in run
+    raise RuntimeError('Refusing to overwrite existing run or another queue claim')
+RuntimeError: Refusing to overwrite existing run or another queue claim

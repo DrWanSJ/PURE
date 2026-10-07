@@ -1,0 +1,10 @@
+{
+  "laws": 64,
+  "source_general": 27,
+  "additional_frozen_only": 37,
+  "coordinate_D_all_laws_max_abs": 0.0,
+  "generic_parent_dimension": 214,
+  "frozen_execution_dimension_not_used_as_parent": 177,
+  "record_count": 1152,
+  "role": "Additional laws are cross-check only; no numerical gate changed. Zero-inventory normalized errors retain explicit roundoff qualification."
+}

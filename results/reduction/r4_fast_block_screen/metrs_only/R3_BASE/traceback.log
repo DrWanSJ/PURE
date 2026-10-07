@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\sean\AppData\Local\Temp\PURE-R4-fast-block-20261007\scripts\run_r4_family_grid_v1.py", line 121, in run
+    px=np.array([checked(t,zv)['state'] for t,zv in zip(TIMES,pz)]);pv=np.array([rate_vector(s,x) for x in px]);pe,pestat=extents(probe,rates,p/'uncertainty_reduced');result['uncertainty_extent_solver']=pestat
+                                   ^^^^^^^^^^^^^^^
+KeyError: 'rate'

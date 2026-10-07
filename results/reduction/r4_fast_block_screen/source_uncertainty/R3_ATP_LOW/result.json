@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "solver": {
+    "success": true,
+    "nfev": 4232,
+    "njev": 48,
+    "nlu": 314,
+    "accepted_steps": 1571,
+    "elapsed_s": 6.625,
+    "rtol": 1e-08,
+    "atol": 1e-14,
+    "end": 1000.0
+  },
+  "extent_solver": {
+    "segments": 200,
+    "nfev": 11692,
+    "elapsed_s": 4.5310000000026776,
+    "rtol": 1e-10,
+    "atol": 1e-14,
+    "definition": "all968_original_directed_gross_rates"
+  }
+}

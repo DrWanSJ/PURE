@@ -1,0 +1,16 @@
+{
+  "condition": "R3_METRS_LOW",
+  "physical_roots": 201,
+  "attracting_points": 201,
+  "closure_max": 1.9289791985954707e-11,
+  "velocity_max": 1.6977759099035241,
+  "defect_max": 1.6977759099035294,
+  "Gq_condition_max": 1978.006342803138,
+  "tau_fast_max_s": 0.005971583891046362,
+  "gap_ratio_min": 0.0015878556924383027,
+  "multistart_valid": 18,
+  "multistart_total": 18,
+  "multistart_agreement_max": 5.73976630113826e-16,
+  "relaxations_complete": 6,
+  "relaxation_distance_ratio_max": 0.00022318053112267992
+}
