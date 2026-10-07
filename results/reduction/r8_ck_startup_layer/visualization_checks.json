@@ -1,0 +1,84 @@
+{
+  "status": "PASS_ENGINEERING_ONLY",
+  "browser": {
+    "status": "PASS",
+    "inlineJavaScriptSyntax": "PASS",
+    "combinationsTested": 96,
+    "pageErrors": [],
+    "decision": "CK_STARTUP_LAYER_ATTRIBUTION_NOT_SUPPORTED",
+    "promotion": false,
+    "modelStatus": "NOT_VALIDATED",
+    "conditions": [
+      "R3_BASE",
+      "R3_ATP_LOW",
+      "R3_TRNA_LOW"
+    ],
+    "assertions": 27,
+    "allAssertionsPass": true,
+    "sources": 20,
+    "sourceCommit": "829ce48b044329fd9bc789acef58872b8cd9037e"
+  },
+  "independent_R8_final_read_only_check": {
+    "schema": "R8_INDEPENDENT_VERIFICATION_V1",
+    "status": "PASS_ENGINEERING_AND_EVIDENCE_ONLY",
+    "checks": [
+      {
+        "check": "HASH_LINEAGE_ALL_HISTORICAL_BYTES_AND_THREE_READ_ONLY_DONORS",
+        "status": "PASS",
+        "historical_file_count": 3226
+      },
+      {
+        "check": "FIXED_TIMES_PAIRS_SIGNED_RESIDUAL_INTEGRAL_ADDITIVITY_ORIGINAL_F_D_SCALES_AND_UNCERTAINTY",
+        "status": "PASS",
+        "max_independent_quadrature_difference": 1.7763568394002505e-15,
+        "max_independent_fast_graph_difference": 3.552713784679618e-15
+      },
+      {
+        "check": "BOUNDED_ATTRIBUTION_DECISION_NO_PROMOTION_NO_NEW_MODEL_OR_TRAJECTORY_SOLVE",
+        "status": "PASS",
+        "recommendation": "CK_STARTUP_LAYER_ATTRIBUTION_NOT_SUPPORTED"
+      }
+    ],
+    "recommendation": "CK_STARTUP_LAYER_ATTRIBUTION_NOT_SUPPORTED",
+    "promotion": false,
+    "PURE_reduced_core": "NOT_VALIDATED",
+    "manifest_sha256": "d6f1f4361f8967b97776205e936ce1b4b075fbcfd0d761bfa4706166192aae96",
+    "verifier_sha256": "057f0df1d136610c5ac1abf5f6cfbd515b16cbaea1668dfb91f55c1b7a1361fe",
+    "uncertainty_limitation": "No rigorous continuous-time interpolation bound; attribution uses frozen ledgers and stated envelopes."
+  },
+  "R7_read_only_verifier_receipt_sha256": "0ef2467b63427e9109cdf5516e6d8c543cd530bd66f18d68a9ca618312cf2e4d",
+  "deterministic_rebuild": "PASS_BYTE_IDENTICAL_UTF8_OUTPUT",
+  "python_syntax": "PASS",
+  "inline_javascript_syntax": "PASS",
+  "original_reverse_pair_tests": "5_PASS",
+  "source_coordinate_certificate_tests": "5_PASS",
+  "source_coordinate_jacobian_tests": "2_PASS",
+  "browser_setup_failure_preserved": {
+    "status": "FAIL",
+    "error": "browserType.launch: Executable doesn't exist at C:\\Users\\sean\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝\n    at C:\\Users\\sean\\AppData\\Local\\Temp\\r8-atlas-check.cjs:12:33\n    at Object.<anonymous> (C:\\Users\\sean\\AppData\\Local\\Temp\\r8-atlas-check.cjs:42:3)"
+  },
+  "browser_receipt_field_collision_preserved": {
+    "status": "NOT_VALIDATED",
+    "inlineJavaScriptSyntax": "PASS",
+    "combinationsTested": 96,
+    "pageErrors": [],
+    "decision": "CK_STARTUP_LAYER_ATTRIBUTION_NOT_SUPPORTED",
+    "promotion": false,
+    "conditions": [
+      "R3_BASE",
+      "R3_ATP_LOW",
+      "R3_TRNA_LOW"
+    ],
+    "assertions": 27,
+    "allAssertionsPass": true,
+    "sources": 20,
+    "sourceCommit": "829ce48b044329fd9bc789acef58872b8cd9037e"
+  },
+  "engineering_repairs": [
+    "Used already installed Edge instead of absent bundled Chromium; no download or science change.",
+    "Separated engineering status from modelStatus in test receipt; no scientific equation or evidence change."
+  ],
+  "source_commit": "829ce48b044329fd9bc789acef58872b8cd9037e",
+  "promotion": false,
+  "PURE_reduced_core": "NOT_VALIDATED"
+}

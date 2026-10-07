@@ -1,0 +1,58 @@
+{
+  "files": [
+    {
+      "source_absolute_path": "C:\\Users\\sean\\Desktop\\GUV\\docs\\visualization\\reduction_reasoning_atlas.html",
+      "path": "docs/visualization/reduction_reasoning_atlas.html",
+      "byte_count": 2328309,
+      "original_sha256": "8b57011b32607ee5130810434e9eb75698fa9abd471f3c54eec3c5d1247143a5",
+      "initial_copied_sha256": "8b57011b32607ee5130810434e9eb75698fa9abd471f3c54eec3c5d1247143a5",
+      "classification": "HTML",
+      "role": "Generated Chinese-language reduction reasoning atlas, embedded scientific data and provenance.",
+      "target_before_copy": "ABSENT",
+      "status": "ORIGINAL_UNTRACKED_VISUALIZATION_SOURCE",
+      "final_sha256": "f96d2fc541a6e0cf8f0f6cb02a876d420461934131e8e7cad59848834a45fa62",
+      "final_byte_count": 3121073,
+      "donor_unchanged": true,
+      "final_branch": "codex/r8-ck-startup-layer-20261008",
+      "tracked_after_explicit_staging": true,
+      "update": "Rebuilt atlas from hash-bound R7/R8 canonical evidence; interactive current and extent attribution views."
+    },
+    {
+      "source_absolute_path": "C:\\Users\\sean\\Desktop\\GUV\\scripts\\build_reduction_reasoning_atlas.py",
+      "path": "scripts/build_reduction_reasoning_atlas.py",
+      "byte_count": 41782,
+      "original_sha256": "5d0e1c0ec9a26b754eae2e1417398931468dfc69246392a4a88d3a5ac5c67da0",
+      "initial_copied_sha256": "5d0e1c0ec9a26b754eae2e1417398931468dfc69246392a4a88d3a5ac5c67da0",
+      "classification": "GENERATOR_CODE",
+      "role": "Read-only provenance-bound builder with species/reaction/pair/pool assertions.",
+      "target_before_copy": "ABSENT",
+      "status": "ORIGINAL_UNTRACKED_VISUALIZATION_SOURCE",
+      "final_sha256": "7216ed8d2ebf18f72c80277335ac3aa4914ff917c2bcce0f335359a30969d2e1",
+      "final_byte_count": 47616,
+      "donor_unchanged": true,
+      "final_branch": "codex/r8-ck-startup-layer-20261008",
+      "tracked_after_explicit_staging": true,
+      "update": "Retained original assertions and source structures; added canonical CK evidence loader and deterministic pinned build."
+    },
+    {
+      "source_absolute_path": "C:\\Users\\sean\\Desktop\\GUV\\scripts\\reduction_reasoning_atlas.template.html",
+      "path": "scripts/reduction_reasoning_atlas.template.html",
+      "byte_count": 123380,
+      "original_sha256": "81b6a603cd1ee050fdc712907ae48d1fa58fa7ed3eff98b3dbd18db8b284b157",
+      "initial_copied_sha256": "81b6a603cd1ee050fdc712907ae48d1fa58fa7ed3eff98b3dbd18db8b284b157",
+      "classification": "HTML_TEMPLATE",
+      "role": "Interactive atlas layout and evidence navigation with embedded payload placeholder.",
+      "target_before_copy": "ABSENT",
+      "status": "ORIGINAL_UNTRACKED_VISUALIZATION_SOURCE",
+      "final_sha256": "f1a8adba932d2b294fba890b5d00c0b4be7fbadcae34d5090c72cdb0303a244d",
+      "final_byte_count": 133478,
+      "donor_unchanged": true,
+      "final_branch": "codex/r8-ck-startup-layer-20261008",
+      "tracked_after_explicit_staging": true,
+      "update": "Added CK diagnostics and fixed scientific-status wording; retained original atlas schema and sections."
+    }
+  ],
+  "donor_worktree": "C:\\Users\\sean\\Desktop\\GUV",
+  "donor_branch": "research/aminoacylation-qssa-pilot-v0",
+  "donor_HEAD": "24335fe798e757acb2ca3582916658bfcf5c16f5"
+}
