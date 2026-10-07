@@ -1,0 +1,111 @@
+{
+  "schema": "R8_CK_STARTUP_LAYER_REGISTRATION_V1",
+  "parent_branch": "codex/r7-ck-first-order-20261008",
+  "parent_SHA": "20ca5215d949c9451b3e6fd4435c18991783ac29",
+  "branch": "codex/r8-ck-startup-layer-20261008",
+  "starting_SHA": "20ca5215d949c9451b3e6fd4435c18991783ac29",
+  "R7_found_worktree": "C:\\Users\\sean\\.codex\\worktrees\\r7-ck-first-order\\GUV",
+  "R8_worktree": "C:\\Users\\sean\\.codex\\worktrees\\r7-ck-first-order\\GUV",
+  "origin_main_start": "0b6f9ad649a7e283e440e0294a021123551f6858",
+  "worktrees_at_recovery": "worktree C:/Users/sean/Desktop/GUV\nHEAD 24335fe798e757acb2ca3582916658bfcf5c16f5\nbranch refs/heads/research/aminoacylation-qssa-pilot-v0\n\nworktree C:/Users/sean/.codex/worktrees/g1-pnas-closure/GUV\nHEAD 3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e\nbranch refs/heads/codex/preserve-g1-worktree-20261007\n\nworktree C:/Users/sean/.codex/worktrees/pnas-consolidation/GUV\nHEAD ffe62c4b3f65dd82b789210c653fb5701ee63f8d\nbranch refs/heads/codex/pnas-consolidation-20261007\n\nworktree C:/Users/sean/.codex/worktrees/pnas-reduction-evidence/GUV\nHEAD 95909fdde5f5fb961a82a84ac69e55bc26d62cb1\nbranch refs/heads/codex/pnas-reduction-evidence-v0\n\nworktree C:/Users/sean/.codex/worktrees/pure-conservation-coordinate-audit/GUV\nHEAD 2d74ce12af0e1522d3478551fb9ef400eadab159\ndetached\n\nworktree C:/Users/sean/.codex/worktrees/r5-mechanism-first/GUV\nHEAD 6c11b585df42fb9aa5d5ea5d5e8be44f92e914a6\nbranch refs/heads/codex/r5-mechanism-first-20261007\n\nworktree C:/Users/sean/.codex/worktrees/r5c-corrigendum/GUV\nHEAD 1181ab2f0a04d72cf76fb069be6bb842e3de75d8\nbranch refs/heads/codex/r5c-corrigendum-20261007\n\nworktree C:/Users/sean/.codex/worktrees/r6-ck-validation/GUV\nHEAD 1181ab2f0a04d72cf76fb069be6bb842e3de75d8\nbranch refs/heads/codex/r6-ck-validation-20261007\n\nworktree C:/Users/sean/.codex/worktrees/r7-ck-first-order/GUV\nHEAD 20ca5215d949c9451b3e6fd4435c18991783ac29\nbranch refs/heads/codex/r8-ck-startup-layer-20261008\n\nworktree C:/Users/sean/AppData/Local/Temp/PURE-consolidation-20261007/evidence\nHEAD 95909fdde5f5fb961a82a84ac69e55bc26d62cb1\ndetached\n\nworktree C:/Users/sean/AppData/Local/Temp/PURE-consolidation-20261007/pr3\nHEAD b678a7c951967ecdab1c89e549011bf050307ff9\ndetached\n\nworktree C:/Users/sean/AppData/Local/Temp/PURE-consolidation-20261007/pr4\nHEAD 24335fe798e757acb2ca3582916658bfcf5c16f5\ndetached\n\nworktree C:/Users/sean/AppData/Local/Temp/PURE-consolidation-20261007/simulation\nHEAD 136a9d3cce43e04c55d8b8e2afb02cc645950ff3\ndetached\n\nworktree C:/Users/sean/AppData/Local/Temp/PURE-consolidation-20261007/simulation-clean\nHEAD 1f87d563c78e52973d11536dfed6525874d1ca94\ndetached\n\nworktree C:/Users/sean/AppData/Local/Temp/PURE-consolidation-20261007/simulation-final\nHEAD 136a9d3cce43e04c55d8b8e2afb02cc645950ff3\ndetached\n\nworktree C:/Users/sean/AppData/Local/Temp/PURE-main-audit-20261007\nHEAD 3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e\ndetached\n\nworktree C:/Users/sean/AppData/Local/Temp/PURE-R4-fast-block-20261007\nHEAD 9def91d4a39cad4589bd56e6db67f3a8c17b0d52\nbranch refs/heads/codex/r4-fast-block-screen-20261007",
+  "conditions": [
+    "R3_BASE",
+    "R3_ATP_LOW",
+    "R3_TRNA_LOW"
+  ],
+  "objects": [
+    {
+      "condition": "R3_BASE",
+      "switch_s": 9.906817032876724e-05,
+      "end_s": 1000.0,
+      "boundaries_s": [
+        0,
+        9.906817032876724e-05,
+        0.001,
+        0.05,
+        1000.0
+      ],
+      "comparison_path": "results/reduction/r7_ck_first_order/per_condition/R3_BASE/run_001/comparison.npz",
+      "comparison_sha256": "240bef2d7208062d16d6a0af0410becc047d7709cbdbf0064105267394fe7066",
+      "CK_indices": [
+        233,
+        235
+      ],
+      "CK_pairs": [
+        "re0000000332_MINUS_re0000000333",
+        "re0000000336_MINUS_re0000000337"
+      ],
+      "sample_count": 301,
+      "exact_boundary_storage": {
+        "0.001": false,
+        "0.05": false
+      }
+    },
+    {
+      "condition": "R3_ATP_LOW",
+      "switch_s": 9.906817032876724e-05,
+      "end_s": 1000.0,
+      "boundaries_s": [
+        0,
+        9.906817032876724e-05,
+        0.001,
+        0.05,
+        1000.0
+      ],
+      "comparison_path": "results/reduction/r7_ck_first_order/per_condition/R3_ATP_LOW/run_001/comparison.npz",
+      "comparison_sha256": "29db7c6fadb52db9b685daca716f73daa1efc02a15943f2b26a40fb9b72013cf",
+      "CK_indices": [
+        233,
+        235
+      ],
+      "CK_pairs": [
+        "re0000000332_MINUS_re0000000333",
+        "re0000000336_MINUS_re0000000337"
+      ],
+      "sample_count": 301,
+      "exact_boundary_storage": {
+        "0.001": false,
+        "0.05": false
+      }
+    },
+    {
+      "condition": "R3_TRNA_LOW",
+      "switch_s": 9.906817032876724e-05,
+      "end_s": 1000.0,
+      "boundaries_s": [
+        0,
+        9.906817032876724e-05,
+        0.001,
+        0.05,
+        1000.0
+      ],
+      "comparison_path": "results/reduction/r7_ck_first_order/per_condition/R3_TRNA_LOW/run_001/comparison.npz",
+      "comparison_sha256": "bd4c1c2578f6027847cab91b0495b710f67bbfcd3bc35d506d5471d3536f91d8",
+      "CK_indices": [
+        233,
+        235
+      ],
+      "CK_pairs": [
+        "re0000000332_MINUS_re0000000333",
+        "re0000000336_MINUS_re0000000337"
+      ],
+      "sample_count": 301,
+      "exact_boundary_storage": {
+        "0.001": false,
+        "0.05": false
+      }
+    }
+  ],
+  "input_binding": "EVERY_PRE_R8_TRACKED_FILE_SNAPSHOT_BOUND",
+  "file_hashes": {
+    "docs/reduction/r8_ck_startup_layer_preregistration.md": "43540e5f12433102b7a3842c5aaf71b0f17a5826ec7d1d4858809585fdbc7784",
+    "scripts/register_r8_ck_startup_layer_v1.py": "dd8e3c945a227a6525431a8cbf148a04f88f3cc163cd0f797c9fcb073a5ed76c",
+    "scripts/run_r8_ck_startup_layer_v1.py": "3a9e9dd61a86137a80aea93ea230d9bfa63d5bc5020b383a5004dd8e5bd63ad2",
+    "scripts/verify_r8_ck_startup_layer_v1.py": "057f0df1d136610c5ac1abf5f6cfbd515b16cbaea1668dfb91f55c1b7a1361fe",
+    "results/reduction/r8_ck_startup_layer/pre_r8_snapshot.json": "a7657aebf87fae3593d222f965807467293269c5627a825776733156c999fd92",
+    "results/reduction/r8_ck_startup_layer/visualization_transfer_original.json": "e113d7eebf9bf4983a8f8307fff2b1590d58d8c0594337aa4fc7d495aff15582"
+  },
+  "no_new_trajectory_solve": true,
+  "promotion": false,
+  "PURE_reduced_core": "NOT_VALIDATED"
+}

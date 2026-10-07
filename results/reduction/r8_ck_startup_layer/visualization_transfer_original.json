@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "source_absolute_path": "C:\\Users\\sean\\Desktop\\GUV\\docs\\visualization\\reduction_reasoning_atlas.html",
+      "path": "docs/visualization/reduction_reasoning_atlas.html",
+      "byte_count": 2328309,
+      "original_sha256": "8b57011b32607ee5130810434e9eb75698fa9abd471f3c54eec3c5d1247143a5",
+      "initial_copied_sha256": "8b57011b32607ee5130810434e9eb75698fa9abd471f3c54eec3c5d1247143a5",
+      "classification": "HTML",
+      "role": "Generated Chinese-language reduction reasoning atlas, embedded scientific data and provenance.",
+      "target_before_copy": "ABSENT",
+      "status": "ORIGINAL_UNTRACKED_VISUALIZATION_SOURCE"
+    },
+    {
+      "source_absolute_path": "C:\\Users\\sean\\Desktop\\GUV\\scripts\\build_reduction_reasoning_atlas.py",
+      "path": "scripts/build_reduction_reasoning_atlas.py",
+      "byte_count": 41782,
+      "original_sha256": "5d0e1c0ec9a26b754eae2e1417398931468dfc69246392a4a88d3a5ac5c67da0",
+      "initial_copied_sha256": "5d0e1c0ec9a26b754eae2e1417398931468dfc69246392a4a88d3a5ac5c67da0",
+      "classification": "GENERATOR_CODE",
+      "role": "Read-only provenance-bound builder with species/reaction/pair/pool assertions.",
+      "target_before_copy": "ABSENT",
+      "status": "ORIGINAL_UNTRACKED_VISUALIZATION_SOURCE"
+    },
+    {
+      "source_absolute_path": "C:\\Users\\sean\\Desktop\\GUV\\scripts\\reduction_reasoning_atlas.template.html",
+      "path": "scripts/reduction_reasoning_atlas.template.html",
+      "byte_count": 123380,
+      "original_sha256": "81b6a603cd1ee050fdc712907ae48d1fa58fa7ed3eff98b3dbd18db8b284b157",
+      "initial_copied_sha256": "81b6a603cd1ee050fdc712907ae48d1fa58fa7ed3eff98b3dbd18db8b284b157",
+      "classification": "HTML_TEMPLATE",
+      "role": "Interactive atlas layout and evidence navigation with embedded payload placeholder.",
+      "target_before_copy": "ABSENT",
+      "status": "ORIGINAL_UNTRACKED_VISUALIZATION_SOURCE"
+    }
+  ],
+  "donor_worktree": "C:\\Users\\sean\\Desktop\\GUV",
+  "donor_branch": "research/aminoacylation-qssa-pilot-v0",
+  "donor_HEAD": "24335fe798e757acb2ca3582916658bfcf5c16f5"
+}
