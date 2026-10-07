@@ -1,0 +1,67 @@
+{
+  "analysis_timestamp": "2026-10-02T22:27:30.723876+00:00",
+  "checkout_eol_equivalences": [
+    {
+      "current_checkout_sha256": "9f7827678de46dcfe58a9f555c3b1e7a4637f53ecdf06beb32839a1ca3e1d386",
+      "path": "docs/reduction/aminoacylation_qssa_quick_reference.md",
+      "registered_checkout_sha256": "28c80b0eaa67c5335dc68cbc5c65310f5206ea3b45388e457710155226309ab5",
+      "source_git_blob_sha256": "28c80b0eaa67c5335dc68cbc5c65310f5206ea3b45388e457710155226309ab5",
+      "status": "EXACT_LF_CRLF_EQUIVALENCE_ONLY"
+    }
+  ],
+  "disabled_parameters": 485,
+  "domain": "AUTHOR_REFERENCE_CONDITION_ONLY",
+  "enabled_parameters": 483,
+  "extent_method": "0..1000 s; trapezoidal quadrature on supplemental t0 + 200 stored points; approximate, not an integrated solver extent",
+  "first_stored_state_max_abs_difference_from_author_x0": 0.0,
+  "jacobian_crosscheck": {
+    "jacobian_crosscheck": {
+      "analytic_value_at_worst": -0.05717237886281215,
+      "finite_difference_value_at_worst": -0.05717236490454525,
+      "maximum_scaled_absolute_error": 1.3958266903424388e-08,
+      "method": "independent central difference of full polynomial mass-action RHS",
+      "negative_perturbation_policy": "retained as polynomial derivative probes; no state clipping",
+      "point_count": 1,
+      "reference_sample_index": 100,
+      "reference_time": 0.30367711180354573,
+      "sampling_role": "PRIMARY_AUTHOR_REFERENCE_GRID",
+      "scope": "all source reactions, all species rows and derivative columns",
+      "status": "PASS",
+      "step": "1e-4*max(1,abs(x_j))",
+      "tolerance": 1e-05,
+      "worst_column_index": 121,
+      "worst_row_index": 118
+    }
+  },
+  "minimum_raw_concentration": -2.5155074350561843e-19,
+  "minimum_raw_rate": -2.515507435056184e-16,
+  "negative_concentration_samples": 42,
+  "negative_rate_samples": 42,
+  "preregistration_sha256": "b20d782edcef9a7a70bf3848acd2dbd8c240303e3507cc927f0041c56bc4969b",
+  "rate_crosscheck": {
+    "basis": "RoadRunner effective SBML versus canonical/audit-reactant mass action + author CSV",
+    "directed_reactions": 968,
+    "maximum_absolute_error": 0.0,
+    "maximum_scaled_error": 0.0,
+    "samples": 201,
+    "status": "NUMERICAL_CROSSCHECK_PASS_NOT_KINETIC_APPROVAL",
+    "tolerance": 1e-08,
+    "worst_reaction_id": "re0000000001",
+    "worst_sample_index": 0
+  },
+  "schema": "pnas2017_reduction_evidence_diagnostics/v0",
+  "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e",
+  "status": "EVIDENCE_ONLY_NO_KINETIC_REDUCTION_APPROVED",
+  "stored_time_convention": "First stored timestamp retained as 1e-4; no shift/resimulation; supplemental author x0 at t=0",
+  "versions": {
+    "MATLAB": "NOT_USED",
+    "NumPy": "1.26.4",
+    "Python": "3.12.4",
+    "RoadRunner": "2.10.0",
+    "RoadRunner_numpy": "2.2.6",
+    "RoadRunner_python": "3.11.4",
+    "SymPy": "1.13.1",
+    "libSBML": "NOT_USED_BY_ANALYSIS",
+    "trajectory_RoadRunner": "2.10.0_PRESERVED"
+  }
+}

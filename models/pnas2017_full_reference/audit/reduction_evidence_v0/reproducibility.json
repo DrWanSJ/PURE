@@ -1,0 +1,38 @@
+{
+  "command": "python scripts/analyze_pnas2017_reduction_evidence.py --output-dir <isolated-directory>",
+  "csv_count": 12,
+  "generator_exit_code": 0,
+  "isolated_output_directory": "C:\\Users\\sean\\.codex\\tmp\\pnas-evidence-rebuild-0zkb09b3",
+  "original_csv_sha256": {
+    "pool_evidence.csv": "2187ce89f67a1e57ac33cdd6fe8c272cc65399fb8923541379edfbfcf1c07cc8",
+    "pool_timeseries.csv": "90861e0c3790648d52c4b90ace682a4a6cfe38e5612aeecf385708c7eab14636",
+    "process_eigenvalue_timeseries.csv": "b724dcd8a7abebc2dc83ed6043fb5a43ebfd03a2d045824ba4114eed108ccc8e",
+    "process_timescale_evidence.csv": "96860c1c332e41fcfdc3011467bc795189d07ccef9cd0322ef83093751408989",
+    "process_timescale_timeseries.csv": "5f6bef854718b52d3b1ba1bc67337bfbcb5becab693e4a1e3c2b1d6aafea8d48",
+    "reaction_evidence.csv": "bda9e51bc7b0f7ecdad877fc69924f1f1823d62004c0b82b43eec9c0eb2510f0",
+    "reaction_pool_metrics.csv": "aedc7088efdcbdf3d5b746db1166aa3c760530eb62e1ab3f1d0b71b1d45eaf35",
+    "reverse_pair_equilibrium_timeseries.csv": "c683b6f7a088750fcacc407bbfab3bf16dcf8c6071dc35bc02f720818a7a9775",
+    "reverse_pair_evidence.csv": "85e0d67e290588adfd61a1e66b20c9f665088a931a9df05e730601f647dc185d",
+    "state_evidence.csv": "8e196dede62153e17215c9a4a4aca2189b9353c1f1be1c746d52287fe1b34134",
+    "state_pool_metrics.csv": "61fe4f6c818588a34eda197c60a77dfcd37ad6eda8f2230b6607bed9930ca63f",
+    "state_qss_timeseries.csv": "b2db1caaf3cb0d8868529e7f988094e2b8b0aa7a98c642a49aa04c8d557664d7"
+  },
+  "preregistration_sha256": "b20d782edcef9a7a70bf3848acd2dbd8c240303e3507cc927f0041c56bc4969b",
+  "rebuilt_csv_sha256": {
+    "pool_evidence.csv": "2187ce89f67a1e57ac33cdd6fe8c272cc65399fb8923541379edfbfcf1c07cc8",
+    "pool_timeseries.csv": "90861e0c3790648d52c4b90ace682a4a6cfe38e5612aeecf385708c7eab14636",
+    "process_eigenvalue_timeseries.csv": "b724dcd8a7abebc2dc83ed6043fb5a43ebfd03a2d045824ba4114eed108ccc8e",
+    "process_timescale_evidence.csv": "96860c1c332e41fcfdc3011467bc795189d07ccef9cd0322ef83093751408989",
+    "process_timescale_timeseries.csv": "5f6bef854718b52d3b1ba1bc67337bfbcb5becab693e4a1e3c2b1d6aafea8d48",
+    "reaction_evidence.csv": "bda9e51bc7b0f7ecdad877fc69924f1f1823d62004c0b82b43eec9c0eb2510f0",
+    "reaction_pool_metrics.csv": "aedc7088efdcbdf3d5b746db1166aa3c760530eb62e1ab3f1d0b71b1d45eaf35",
+    "reverse_pair_equilibrium_timeseries.csv": "c683b6f7a088750fcacc407bbfab3bf16dcf8c6071dc35bc02f720818a7a9775",
+    "reverse_pair_evidence.csv": "85e0d67e290588adfd61a1e66b20c9f665088a931a9df05e730601f647dc185d",
+    "state_evidence.csv": "8e196dede62153e17215c9a4a4aca2189b9353c1f1be1c746d52287fe1b34134",
+    "state_pool_metrics.csv": "61fe4f6c818588a34eda197c60a77dfcd37ad6eda8f2230b6607bed9930ca63f",
+    "state_qss_timeseries.csv": "b2db1caaf3cb0d8868529e7f988094e2b8b0aa7a98c642a49aa04c8d557664d7"
+  },
+  "scope": "ALL_GENERATED_CSV_BYTES",
+  "status": "PASS",
+  "timestamp_utc": "2026-10-02T22:29:05.769617+00:00"
+}

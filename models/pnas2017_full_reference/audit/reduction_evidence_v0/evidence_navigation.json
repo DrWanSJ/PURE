@@ -1,0 +1,1533 @@
+{
+  "authority": "NAVIGATION_ONLY_NOT_SOURCE_AUTHORITY",
+  "edges": [
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "docs/reduction/aminoacylation_qssa_quick_reference.md",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "docs/reduction/human_reduction_review.md",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "docs/reduction/reaction_level_annotation_v2.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "docs/reduction/reaction_level_contract_v0.json",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "docs/reduction/reduction_decisions.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "docs/reduction/species_information_contract_detailed.md",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "docs/reduction/species_information_contract_summary.md",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/audit/aminoacylation_enzyme_pool_conservation.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/audit/aminoacylation_fast_states.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/audit/aminoacylation_timescale.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/audit/reactions.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/audit/species.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/audit/species_properties.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/audit/species_reduction_map.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/audit/species_reduction_map.json",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis.m",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis_Sample.m",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Gly.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Met.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_GlyGCC.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_fMetCAU.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Elongation_A_Gly.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Elongation_A_Met.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Elongation_B.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_GlyGCC.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_fMetCAU.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_A.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_B.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_C.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_D.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/FMet_tRNASynthesis.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Initiation_A.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Initiation_B1.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Initiation_B2.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Initiation_C.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/SmallMolecules.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF1.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF2.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Termination_B_RF1.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Termination_B_RF2.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "models/pnas2017_full_reference/original/subsystems/Termination_C.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/matsuura-et-al-2017-reaction-dynamics-analysis-of-a-reconstituted-escherichia-coli-protein-translation-system-by.pdf",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd01.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd02.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd03.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd04.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd05.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd06.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd07.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd08.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd09.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd10.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd11.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd17.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd18.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd19.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd20.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd21.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd22.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd23.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd24.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd25.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd26.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd27.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd28.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd29.xlsx",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "results/pnas2017_reference/rr_cvode_author_csv_20260924/run_manifest.json",
+      "target": "analysis"
+    },
+    {
+      "provenance": "EXTRACTED",
+      "relation": "frozen_input",
+      "source": "results/pnas2017_reference/rr_cvode_author_csv_20260924/trajectory.csv",
+      "target": "analysis"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/pnas2017_reduction_evidence_method.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/pnas2017_reduction_quick_reference.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/01_amino_acid_activation.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/02_trna_aminoacylation.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/03_initiator_trna_formylation.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/04_initiation_factor_preparation.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/05_ribosome_mrna_initiation_assembly.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/06_ef_tu_ternary_complex_delivery.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/07_ef_g_nucleotide_cycle.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/08_peptidyl_trna_ribosome_transitions.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/09_rf1_rf2_peptide_release.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/10_rf3_assisted_termination.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/11_ribosome_recycling.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/12_creatine_kinase_energy_regeneration.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/13_nucleotide_diphosphate_kinase_exchange.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/14_adenylate_kinase_exchange.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/15_pyrophosphate_hydrolysis.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "docs/reduction/process_quick_reference/16_shared_small_molecule_transitions.md"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/analysis_diagnostics.json"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/evidence_preregistration.json"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/pool_evidence.csv"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/pool_timeseries.csv"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/preregistration_receipt.json"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/process_eigenvalue_timeseries.csv"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/process_timescale_evidence.csv"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/process_timescale_timeseries.csv"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reaction_evidence.csv"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reaction_pool_metrics.csv"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reproducibility.json"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reverse_pair_equilibrium_timeseries.csv"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reverse_pair_evidence.csv"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/state_evidence.csv"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/state_pool_metrics.csv"
+    },
+    {
+      "provenance": "INFERRED",
+      "relation": "derived_evidence_or_review_documentation",
+      "source": "analysis",
+      "target": "models/pnas2017_full_reference/audit/reduction_evidence_v0/state_qss_timeseries.csv"
+    },
+    {
+      "provenance": "AMBIGUOUS",
+      "relation": "exposes_unresolved_choices",
+      "source": "analysis",
+      "target": "scientific_questions"
+    }
+  ],
+  "freshness": "Verify preregistered inputs and artifact hashes before use",
+  "nodes": [
+    {
+      "id": "analysis",
+      "meaning": "Derived analysis, subordinate to frozen source evidence",
+      "path": "scripts/analyze_pnas2017_reduction_evidence.py",
+      "provenance": "INFERRED",
+      "sha256": "1a2e4e917a73aaef9302b8c4259d42579a8b110800faa50016a22acba63712e1"
+    },
+    {
+      "id": "docs/reduction/aminoacylation_qssa_quick_reference.md",
+      "path": "docs/reduction/aminoacylation_qssa_quick_reference.md",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "28c80b0eaa67c5335dc68cbc5c65310f5206ea3b45388e457710155226309ab5",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "docs/reduction/human_reduction_review.md",
+      "path": "docs/reduction/human_reduction_review.md",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "b32dcbfa155be5d77411691889e67da7a6a89c7d87ba1406171e74db6c95c2d8",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "docs/reduction/reaction_level_annotation_v2.csv",
+      "path": "docs/reduction/reaction_level_annotation_v2.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "docs/reduction/reaction_level_contract_v0.json",
+      "path": "docs/reduction/reaction_level_contract_v0.json",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "122fbb0c17852e0f7836063bfc4df8529bfb6b3540296574d3a84ac3ab877495",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "docs/reduction/reduction_decisions.csv",
+      "path": "docs/reduction/reduction_decisions.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "70fd3f98de5056a1a63c29db58d310ec5986d4c52b6bfcbae9634b38e2e8d7f8",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "docs/reduction/species_information_contract_detailed.md",
+      "path": "docs/reduction/species_information_contract_detailed.md",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "24340aa5ca1e1fa262124407cd4ed02093066cb09ace89195475a7aa38630210",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "docs/reduction/species_information_contract_summary.md",
+      "path": "docs/reduction/species_information_contract_summary.md",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "751fec6adf3923318c2f5d72bec278e71b4e7199765429c629486768eca43cb1",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/aminoacylation_enzyme_pool_conservation.csv",
+      "path": "models/pnas2017_full_reference/audit/aminoacylation_enzyme_pool_conservation.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "ad30e4d6435da0fa304e2c1c0e1f8496032c82761a0c57ae5f54f75cf9199109",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/aminoacylation_fast_states.csv",
+      "path": "models/pnas2017_full_reference/audit/aminoacylation_fast_states.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "516801bb231e4f7bcafd9a9807742b3acc4295f49198878cfe3761fe2d0701bf",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/aminoacylation_timescale.csv",
+      "path": "models/pnas2017_full_reference/audit/aminoacylation_timescale.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "637e5c904d138598f172184748c778ca18fe550ed395aa86c1e1f48c079e9488",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "path": "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "89c7c5710b4ee46cc2da44442ba49fcc8c3c546289ad4521b11fc50a82eb3962",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reactions.csv",
+      "path": "models/pnas2017_full_reference/audit/reactions.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "626539570e2ddcce45b49b1c53ce8d263c84f6fcd1eb9a40f292fbe2ddf637e4",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/species.csv",
+      "path": "models/pnas2017_full_reference/audit/species.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "0de6f96e9b7fde61c267bfb2b9c770ee38fbf14c5021b70fcd7fd97ae3bc6686",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/species_properties.csv",
+      "path": "models/pnas2017_full_reference/audit/species_properties.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "fcb2ade0d390ec8b08ba3a613a96dfe4ff801b3324f362360534fd504f7ad9d8",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/species_reduction_map.csv",
+      "path": "models/pnas2017_full_reference/audit/species_reduction_map.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "ecf444b81fca0b468cf279853e7804362dab5a3f2ce1fe6eeb134c6e2f5f881e",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/species_reduction_map.json",
+      "path": "models/pnas2017_full_reference/audit/species_reduction_map.json",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "d77ce4e7a443b5ed48692a03168bd350bf7af7436bd5591d6a3f46bf68148b46",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv",
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "845aef2d0b9a46d8e1a2d2eb3b5acb3501bcf69b72229ad02a97b73a9363a929",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis.m",
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis.m",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "5357b16387970d693f730102256c8d4ee30b91a318ad7482fc13e798834889f4",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis_Sample.m",
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis_Sample.m",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "9db2acfd7c5961f2bc52766df75bca619af496f999ad92b9b29a77f4c7fa6fc0",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Gly.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Gly.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "16a7a4ee463a130dab146ed5de90636b9242e6815f0b85a6264fed725d3d454d",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Met.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Met.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "440d2cbe33964e20f6dd5c3b40c8c84ff89e91c34f86de653ea1c48131b747a6",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_GlyGCC.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_GlyGCC.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "314e1c203367957f0d0c6c05dfcb58f496b68845face66bc5682919d030cd75a",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_fMetCAU.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_fMetCAU.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "81e265aec3a630779829d2f734f88a76666004a95b9343835a016455bb57e227",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Elongation_A_Gly.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_A_Gly.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "01bd54f888be77fea1b5c78cddca9e066f6adfa81febffa14da3eb85affc68a5",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Elongation_A_Met.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_A_Met.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "eb7b300b00e0850a8e3e8c2571f3569565dd49290bda9e2cd143ef65e1b948f3",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Elongation_B.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_B.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "0351f98dd5bed6f59bc8fb8e2e54794d1ccdffa59927e98b3b360bec791c80ae",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_GlyGCC.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_GlyGCC.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "01fbdc9aba47a58224aaf2590cec372618045faae134aefd0003af2ee6a4630e",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_fMetCAU.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_fMetCAU.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "a7cbf1ac160720e5c90ea072c53bcd45391f6ad414988123ee0aed3e9d10c420",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "fa183c0a44c8a053e7d5d6f92ece79252f1d867fcc6fd0f56a92f430de02c197",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "7df7ff8869563d50eaf2e49cd7eafc7462421555569560b4efaa3bbd407dda7a",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_A.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_A.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_B.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_B.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_C.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_C.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_D.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_D.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/FMet_tRNASynthesis.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/FMet_tRNASynthesis.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "10633f79d44350c6ab555cb80b85b5068e048b6f52916ca454c066c547db3491",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Initiation_A.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Initiation_A.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "15d151724760ad3f98e2742e48b7c9daaf43f3b37cd4eccd5bd38b96f3bdf320",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Initiation_B1.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Initiation_B1.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "b89b1eac8dbbd4dd0f96a356056b8ae1a999f13f0b398a9516ed1fc50ff4894f",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Initiation_B2.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Initiation_B2.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "fa7b8687b052360e78b7e725cbb0ec93602f7e50da47a6c64d112544a32e96ff",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Initiation_C.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Initiation_C.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "8c983174446b5e2a70922870e150474ac93ffdbf95b658e9864e5e20c95a9fde",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/SmallMolecules.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/SmallMolecules.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "731b0c71057fdc3129c6072a2a3e107e9b908415cd5e227b3ffa7cad09ddbdb2",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF1.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF1.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "bf78f1693fefae5ce2380622922aa5c9285611e22a642f56c5630836bbf25915",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF2.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF2.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "42ac014731f0058f717759e1a90f449d3d563b6c61b91e4ccccf3e766400b656",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Termination_B_RF1.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Termination_B_RF1.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "3db57e09f5a5ce70ce763dd75f23d03f6ab5591f9476f80e49aef7a054f5cc67",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Termination_B_RF2.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Termination_B_RF2.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "3ab9d98e640df2248c673b993b88cbbf61147d4762dd8416cd10f665708042c4",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/subsystems/Termination_C.xml",
+      "path": "models/pnas2017_full_reference/original/subsystems/Termination_C.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "369766462c969ced933af9fbd7dd1fe960c5be5b8996a9d00be0ac528af63b63",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+      "path": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "path": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml",
+      "path": "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/matsuura-et-al-2017-reaction-dynamics-analysis-of-a-reconstituted-escherichia-coli-protein-translation-system-by.pdf",
+      "path": "references/PNAS2017_Matsuura/raw/matsuura-et-al-2017-reaction-dynamics-analysis-of-a-reconstituted-escherichia-coli-protein-translation-system-by.pdf",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "e340ba829f87121e723059aebecc56c342c37c2cc4687692d1447f16b38f2a4e",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd01.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd01.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "ac253974baf41ebf654becca44b4489dbc895d1957b58ee12f6b9c7b4ceeb53e",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd02.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd02.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "b2fadff2b3c078b01bfc4be6f52a5cd5baed4653bb67690debd2ccb99b558f98",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd03.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd03.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "2f88fcd733d9db54b309d4a60882553c02b401edb1b007791ba7b9f00e400a3c",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd04.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd04.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "c1c527b311e659065e8ca7f9cbe1b0eb566e950957669706d11620461c2ab39e",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd05.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd05.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "12cb0bf9e39a2073adc04fdfa48b87502bb428e678d7cbdf618232abd5bc2575",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd06.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd06.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "52120a80f2c5cc0ea60457a2323f4ddd9544ca4abc2c015ee6c323627788ae26",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd07.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd07.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "1384be1989405f75357d1901cedc798e2c5fd1ef21ceb14988a2371f5d237946",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd08.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd08.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "314de60062a4c826fa9f53154be3f40b9f21f0dc722573a0949fb482f778b34b",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd09.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd09.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "85c3eefd010aca9f424ab8d79366cef2bd520a1957f27f783daa45a529f4495a",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd10.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd10.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "47516d9bfdaebcdf973f6d9b92aeaacd733dd46bb804eae9488c2fb9d34870b6",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd11.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd11.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "e5034bf00ac67dba291d54fe30784cb869f974afcde1957d143d6b204f016954",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "87051f1a25498750d16bcaccd9f4c3b8849c2b6a76efa119373b041de1ee54ed",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "f2c6c7c20859cf1fa5cfa78415d4923422e4b2577cc0aa04a110ffe1cb83be56",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "db1207bdabcc43f950fa86dcba4c93e82d7c0fae7af857ca6d5362a67e57c046",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "3e292593b51b7c90b77a6c092c90592cf35311e39375e18a9934ebb839202845",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "4f683eb04f06112b219aba97b246dd2009c3eaccf24e83bd7d51dae9b7c0f695",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd17.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd17.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "cb36d279c3a6d16647d9cc89135b051628cc259b3b2ff677b8ca6d39084cb174",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd18.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd18.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "99da064d8c7ac83559418d44df983b7520f5603f94f703ed12f4d957c227f5ce",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd19.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd19.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "9016df1526033b7ae82b0c25a3d0d62a4c931e1548ca0bb127637b2754381ab2",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd20.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd20.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "87a5320e64c8301322e76b2a5f32966fd9a8a93eb59b6e1039b95f364bba44cd",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd21.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd21.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "fcfdda052ef1f1853ff35b83df3aa0ceb1ccfe91c2ef84ae2d2774a9ef77de96",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd22.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd22.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "3ef78079f08e075ac49ebe4bcb067cff369ebc9c280a029aa9ce1a5a5ee17d62",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd23.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd23.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "75fba1fceccca7fe752acd8096fe41ee2ecacc93e07c9e01234f19c7da846ac6",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd24.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd24.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "fb054f216b3e786658278cf92f7005038d7dad5bdb2318a07720080cb6e60f51",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd25.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd25.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "7c5d9b1ed8ef7d8325968dbb0aefd02dd897d61a889c48c8f782ac68078f1991",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd26.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd26.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "4e2555a85c563d378aedd425c6001bac2712b4a2b4d0099ddff529cdceb71677",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd27.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd27.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "d52052e6ce24ddcd1894e95b3f759f1a047600e6ffccff28cc2dcd2b8d94b227",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd28.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd28.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "8297f2348f5ebdfc3c14083577f2c5f276f35a7ee8ab30f8a37fd8431ef565ec",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd29.xlsx",
+      "path": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd29.xlsx",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "6d8a913d9823a4e387ea8c6fc94ee34641e3b7a4d47b0e00a479207bb813dbd7",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml",
+      "path": "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "results/pnas2017_reference/rr_cvode_author_csv_20260924/run_manifest.json",
+      "path": "results/pnas2017_reference/rr_cvode_author_csv_20260924/run_manifest.json",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "cfffe872a342812d1c23262e8d5400b87ee0024e86850d53ab1e0a38d079445b",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "results/pnas2017_reference/rr_cvode_author_csv_20260924/trajectory.csv",
+      "path": "results/pnas2017_reference/rr_cvode_author_csv_20260924/trajectory.csv",
+      "provenance": "EXTRACTED",
+      "registered_sha256": "5e2ed9c36afb14b69c8b7cf5da95faf45b51f7977c09dd2bfdad1a2d2604a0d4",
+      "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e"
+    },
+    {
+      "id": "docs/reduction/pnas2017_reduction_evidence_method.md",
+      "path": "docs/reduction/pnas2017_reduction_evidence_method.md",
+      "provenance": "INFERRED",
+      "sha256": "ae559baa2379b8718bbf93044ef04c424afccece9aa2e77c1e809628a08e2d74"
+    },
+    {
+      "id": "docs/reduction/pnas2017_reduction_quick_reference.md",
+      "path": "docs/reduction/pnas2017_reduction_quick_reference.md",
+      "provenance": "INFERRED",
+      "sha256": "095746c58fa49f883c43ad8b5bb1151d5bb52b75420d0c1324591672afbe0e7c"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/01_amino_acid_activation.md",
+      "path": "docs/reduction/process_quick_reference/01_amino_acid_activation.md",
+      "provenance": "INFERRED",
+      "sha256": "d7f32c3e8948a46ab0885d3310ee83173e0408b60c855495f7289a28d434f153"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/02_trna_aminoacylation.md",
+      "path": "docs/reduction/process_quick_reference/02_trna_aminoacylation.md",
+      "provenance": "INFERRED",
+      "sha256": "bff91239b4a5b8c30f655b51411fb52703837234337df32c1f31664371c663cd"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/03_initiator_trna_formylation.md",
+      "path": "docs/reduction/process_quick_reference/03_initiator_trna_formylation.md",
+      "provenance": "INFERRED",
+      "sha256": "c4153b3bb3f09a59597db760e1f5a4319ac810ad47f13d914f014520280f3852"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/04_initiation_factor_preparation.md",
+      "path": "docs/reduction/process_quick_reference/04_initiation_factor_preparation.md",
+      "provenance": "INFERRED",
+      "sha256": "0b18e0a67230ae85640852f1b77d499ea005897406d39995f098457d73da9c67"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/05_ribosome_mrna_initiation_assembly.md",
+      "path": "docs/reduction/process_quick_reference/05_ribosome_mrna_initiation_assembly.md",
+      "provenance": "INFERRED",
+      "sha256": "cd7132bc38993e144495ae47ee92f0b968e3956768350a09f2dad740a7cf2c13"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/06_ef_tu_ternary_complex_delivery.md",
+      "path": "docs/reduction/process_quick_reference/06_ef_tu_ternary_complex_delivery.md",
+      "provenance": "INFERRED",
+      "sha256": "0b80ab2850a17872b5e118180a99941546e9bd7aa9e80f4bbf50e403b85a3f00"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/07_ef_g_nucleotide_cycle.md",
+      "path": "docs/reduction/process_quick_reference/07_ef_g_nucleotide_cycle.md",
+      "provenance": "INFERRED",
+      "sha256": "df73d5f854a00df7872b1ff0da4f0fa5f951a2d1ceae679df291d7177c35ac64"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/08_peptidyl_trna_ribosome_transitions.md",
+      "path": "docs/reduction/process_quick_reference/08_peptidyl_trna_ribosome_transitions.md",
+      "provenance": "INFERRED",
+      "sha256": "d25165953224907f0b321b2e88a44a35c172cb6e2aac00fd24fe33c44ce39e53"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/09_rf1_rf2_peptide_release.md",
+      "path": "docs/reduction/process_quick_reference/09_rf1_rf2_peptide_release.md",
+      "provenance": "INFERRED",
+      "sha256": "67eb46b378a59ed01e3df75e3d3d000903ee2ee5b9f24c8c03cd046212eab574"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/10_rf3_assisted_termination.md",
+      "path": "docs/reduction/process_quick_reference/10_rf3_assisted_termination.md",
+      "provenance": "INFERRED",
+      "sha256": "c65d8779f5c1e1332dcc48e3439a7e6b7395d668def6a3c0305d2a8384602a62"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/11_ribosome_recycling.md",
+      "path": "docs/reduction/process_quick_reference/11_ribosome_recycling.md",
+      "provenance": "INFERRED",
+      "sha256": "d4275a84c6ba2f2b3648e0fb5773d2eddb20efc8529d7b8cb990dbd533b44346"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/12_creatine_kinase_energy_regeneration.md",
+      "path": "docs/reduction/process_quick_reference/12_creatine_kinase_energy_regeneration.md",
+      "provenance": "INFERRED",
+      "sha256": "3a5c2cab04a39b0cd0af20ae31b1df34d382f3cef351c9c5744cdb07059fc1aa"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/13_nucleotide_diphosphate_kinase_exchange.md",
+      "path": "docs/reduction/process_quick_reference/13_nucleotide_diphosphate_kinase_exchange.md",
+      "provenance": "INFERRED",
+      "sha256": "b93d74ce219ccd1b4ed4c46a587eb4f4e7e15f977774fb99dcbc12091f20ca7b"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/14_adenylate_kinase_exchange.md",
+      "path": "docs/reduction/process_quick_reference/14_adenylate_kinase_exchange.md",
+      "provenance": "INFERRED",
+      "sha256": "1a0001efeeeb276ffcaf6dfdb55a84ebdd9eaf4275812bf2b5d29875e27b65fb"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/15_pyrophosphate_hydrolysis.md",
+      "path": "docs/reduction/process_quick_reference/15_pyrophosphate_hydrolysis.md",
+      "provenance": "INFERRED",
+      "sha256": "9d731fa9afb26da55610e0a763794e7536e648d8e21e6ac57c70b4f0da8aea15"
+    },
+    {
+      "id": "docs/reduction/process_quick_reference/16_shared_small_molecule_transitions.md",
+      "path": "docs/reduction/process_quick_reference/16_shared_small_molecule_transitions.md",
+      "provenance": "INFERRED",
+      "sha256": "0d0f304d52a10b71d2879f292fa2702127a23f230dab6cb99d10f2129d52d2d7"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/analysis_diagnostics.json",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/analysis_diagnostics.json",
+      "provenance": "INFERRED",
+      "sha256": "861ef548d5b21dceb54ecc8ca9f4b226b3e56260ecb62902e52c848a7f900b55"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/evidence_preregistration.json",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/evidence_preregistration.json",
+      "provenance": "INFERRED",
+      "sha256": "b20d782edcef9a7a70bf3848acd2dbd8c240303e3507cc927f0041c56bc4969b"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/pool_evidence.csv",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/pool_evidence.csv",
+      "provenance": "INFERRED",
+      "sha256": "2187ce89f67a1e57ac33cdd6fe8c272cc65399fb8923541379edfbfcf1c07cc8"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/pool_timeseries.csv",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/pool_timeseries.csv",
+      "provenance": "INFERRED",
+      "sha256": "90861e0c3790648d52c4b90ace682a4a6cfe38e5612aeecf385708c7eab14636"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/preregistration_receipt.json",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/preregistration_receipt.json",
+      "provenance": "INFERRED",
+      "sha256": "27d9e1cf8c3d497b9aa9e959e1ab98b6438af08bec941fe36cbfce780fe6dc59"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/process_eigenvalue_timeseries.csv",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/process_eigenvalue_timeseries.csv",
+      "provenance": "INFERRED",
+      "sha256": "b724dcd8a7abebc2dc83ed6043fb5a43ebfd03a2d045824ba4114eed108ccc8e"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/process_timescale_evidence.csv",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/process_timescale_evidence.csv",
+      "provenance": "INFERRED",
+      "sha256": "96860c1c332e41fcfdc3011467bc795189d07ccef9cd0322ef83093751408989"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/process_timescale_timeseries.csv",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/process_timescale_timeseries.csv",
+      "provenance": "INFERRED",
+      "sha256": "5f6bef854718b52d3b1ba1bc67337bfbcb5becab693e4a1e3c2b1d6aafea8d48"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reaction_evidence.csv",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reaction_evidence.csv",
+      "provenance": "INFERRED",
+      "sha256": "bda9e51bc7b0f7ecdad877fc69924f1f1823d62004c0b82b43eec9c0eb2510f0"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reaction_pool_metrics.csv",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reaction_pool_metrics.csv",
+      "provenance": "INFERRED",
+      "sha256": "aedc7088efdcbdf3d5b746db1166aa3c760530eb62e1ab3f1d0b71b1d45eaf35"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reproducibility.json",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reproducibility.json",
+      "provenance": "INFERRED",
+      "sha256": "b49e5864215a04f6e2e3b0bcdf7d33336964c216c2f2ed32c7faaa9f76368710"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reverse_pair_equilibrium_timeseries.csv",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reverse_pair_equilibrium_timeseries.csv",
+      "provenance": "INFERRED",
+      "sha256": "c683b6f7a088750fcacc407bbfab3bf16dcf8c6071dc35bc02f720818a7a9775"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reverse_pair_evidence.csv",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/reverse_pair_evidence.csv",
+      "provenance": "INFERRED",
+      "sha256": "85e0d67e290588adfd61a1e66b20c9f665088a931a9df05e730601f647dc185d"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/state_evidence.csv",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/state_evidence.csv",
+      "provenance": "INFERRED",
+      "sha256": "8e196dede62153e17215c9a4a4aca2189b9353c1f1be1c746d52287fe1b34134"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/state_pool_metrics.csv",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/state_pool_metrics.csv",
+      "provenance": "INFERRED",
+      "sha256": "61fe4f6c818588a34eda197c60a77dfcd37ad6eda8f2230b6607bed9930ca63f"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reduction_evidence_v0/state_qss_timeseries.csv",
+      "path": "models/pnas2017_full_reference/audit/reduction_evidence_v0/state_qss_timeseries.csv",
+      "provenance": "INFERRED",
+      "sha256": "b2db1caaf3cb0d8868529e7f988094e2b8b0aa7a98c642a49aa04c8d557664d7"
+    },
+    {
+      "id": "scientific_questions",
+      "provenance": "AMBIGUOUS",
+      "questions": [
+        "Fast and slow coordinate choices and validity domain",
+        "Authoritative absolute concentration units",
+        "Unresolved protected substrate-token composition",
+        "Initial-layer resolution and extent quadrature error"
+      ],
+      "status": "PENDING_HUMAN_REVIEW"
+    }
+  ],
+  "schema": "pnas2017_evidence_navigation/v0"
+}

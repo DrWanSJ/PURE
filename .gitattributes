@@ -72,3 +72,14 @@ results/pnas2017_reference/historical_archive_manifest.json text eol=lf diff
 # Preserve their committed bytes, including original line endings and spacing.
 docs/audit/pnas2017_aminoacylation_*/** -text -diff
 docs/audit/pnas2017_research_inputs_025fd34/** -text -diff
+
+# PNAS-wide evidence is reproducible and hash-bound to the frozen inputs.
+models/pnas2017_full_reference/audit/reduction_evidence_v0/** text eol=lf
+scripts/analyze_pnas2017_reduction_evidence.py text eol=lf
+scripts/verify_pnas2017_reduction_evidence.py text eol=lf
+scripts/render_pnas2017_reduction_evidence_docs.py text eol=lf
+scripts/finalize_pnas2017_reduction_evidence.py text eol=lf
+scripts/pnas2017_evidence_*.py text eol=lf
+docs/reduction/pnas2017_reduction_evidence_method.md text eol=lf
+docs/reduction/pnas2017_reduction_quick_reference.md text eol=lf
+docs/reduction/process_quick_reference/** text eol=lf

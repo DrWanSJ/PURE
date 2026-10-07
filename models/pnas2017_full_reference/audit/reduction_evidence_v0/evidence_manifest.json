@@ -1,0 +1,1565 @@
+{
+  "analysis_timestamp": "2026-10-02T22:27:30.723876+00:00",
+  "checkout_eol_equivalences": [
+    {
+      "current_checkout_sha256": "9f7827678de46dcfe58a9f555c3b1e7a4637f53ecdf06beb32839a1ca3e1d386",
+      "path": "docs/reduction/aminoacylation_qssa_quick_reference.md",
+      "registered_checkout_sha256": "28c80b0eaa67c5335dc68cbc5c65310f5206ea3b45388e457710155226309ab5",
+      "source_git_blob_sha256": "28c80b0eaa67c5335dc68cbc5c65310f5206ea3b45388e457710155226309ab5",
+      "status": "EXACT_LF_CRLF_EQUIVALENCE_ONLY"
+    }
+  ],
+  "current_input_sha256": {
+    "docs/reduction/aminoacylation_qssa_quick_reference.md": "9f7827678de46dcfe58a9f555c3b1e7a4637f53ecdf06beb32839a1ca3e1d386",
+    "docs/reduction/human_reduction_review.md": "b32dcbfa155be5d77411691889e67da7a6a89c7d87ba1406171e74db6c95c2d8",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "docs/reduction/reaction_level_contract_v0.json": "122fbb0c17852e0f7836063bfc4df8529bfb6b3540296574d3a84ac3ab877495",
+    "docs/reduction/reduction_decisions.csv": "70fd3f98de5056a1a63c29db58d310ec5986d4c52b6bfcbae9634b38e2e8d7f8",
+    "docs/reduction/species_information_contract_detailed.md": "24340aa5ca1e1fa262124407cd4ed02093066cb09ace89195475a7aa38630210",
+    "docs/reduction/species_information_contract_summary.md": "751fec6adf3923318c2f5d72bec278e71b4e7199765429c629486768eca43cb1",
+    "models/pnas2017_full_reference/audit/aminoacylation_enzyme_pool_conservation.csv": "ad30e4d6435da0fa304e2c1c0e1f8496032c82761a0c57ae5f54f75cf9199109",
+    "models/pnas2017_full_reference/audit/aminoacylation_fast_states.csv": "516801bb231e4f7bcafd9a9807742b3acc4295f49198878cfe3761fe2d0701bf",
+    "models/pnas2017_full_reference/audit/aminoacylation_timescale.csv": "637e5c904d138598f172184748c778ca18fe550ed395aa86c1e1f48c079e9488",
+    "models/pnas2017_full_reference/audit/reaction_balance_audit.csv": "89c7c5710b4ee46cc2da44442ba49fcc8c3c546289ad4521b11fc50a82eb3962",
+    "models/pnas2017_full_reference/audit/reactions.csv": "626539570e2ddcce45b49b1c53ce8d263c84f6fcd1eb9a40f292fbe2ddf637e4",
+    "models/pnas2017_full_reference/audit/species.csv": "0de6f96e9b7fde61c267bfb2b9c770ee38fbf14c5021b70fcd7fd97ae3bc6686",
+    "models/pnas2017_full_reference/audit/species_properties.csv": "fcb2ade0d390ec8b08ba3a613a96dfe4ff801b3324f362360534fd504f7ad9d8",
+    "models/pnas2017_full_reference/audit/species_reduction_map.csv": "ecf444b81fca0b468cf279853e7804362dab5a3f2ce1fe6eeb134c6e2f5f881e",
+    "models/pnas2017_full_reference/audit/species_reduction_map.json": "d77ce4e7a443b5ed48692a03168bd350bf7af7436bd5591d6a3f46bf68148b46",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv": "845aef2d0b9a46d8e1a2d2eb3b5acb3501bcf69b72229ad02a97b73a9363a929",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis.m": "5357b16387970d693f730102256c8d4ee30b91a318ad7482fc13e798834889f4",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis_Sample.m": "9db2acfd7c5961f2bc52766df75bca619af496f999ad92b9b29a77f4c7fa6fc0",
+    "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Gly.xml": "16a7a4ee463a130dab146ed5de90636b9242e6815f0b85a6264fed725d3d454d",
+    "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Met.xml": "440d2cbe33964e20f6dd5c3b40c8c84ff89e91c34f86de653ea1c48131b747a6",
+    "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_GlyGCC.xml": "314e1c203367957f0d0c6c05dfcb58f496b68845face66bc5682919d030cd75a",
+    "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_fMetCAU.xml": "81e265aec3a630779829d2f734f88a76666004a95b9343835a016455bb57e227",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_A_Gly.xml": "01bd54f888be77fea1b5c78cddca9e066f6adfa81febffa14da3eb85affc68a5",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_A_Met.xml": "eb7b300b00e0850a8e3e8c2571f3569565dd49290bda9e2cd143ef65e1b948f3",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_B.xml": "0351f98dd5bed6f59bc8fb8e2e54794d1ccdffa59927e98b3b360bec791c80ae",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_GlyGCC.xml": "01fbdc9aba47a58224aaf2590cec372618045faae134aefd0003af2ee6a4630e",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_fMetCAU.xml": "a7cbf1ac160720e5c90ea072c53bcd45391f6ad414988123ee0aed3e9d10c420",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml": "fa183c0a44c8a053e7d5d6f92ece79252f1d867fcc6fd0f56a92f430de02c197",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml": "7df7ff8869563d50eaf2e49cd7eafc7462421555569560b4efaa3bbd407dda7a",
+    "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_A.xml": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+    "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_B.xml": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+    "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_C.xml": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+    "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_D.xml": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+    "models/pnas2017_full_reference/original/subsystems/FMet_tRNASynthesis.xml": "10633f79d44350c6ab555cb80b85b5068e048b6f52916ca454c066c547db3491",
+    "models/pnas2017_full_reference/original/subsystems/Initiation_A.xml": "15d151724760ad3f98e2742e48b7c9daaf43f3b37cd4eccd5bd38b96f3bdf320",
+    "models/pnas2017_full_reference/original/subsystems/Initiation_B1.xml": "b89b1eac8dbbd4dd0f96a356056b8ae1a999f13f0b398a9516ed1fc50ff4894f",
+    "models/pnas2017_full_reference/original/subsystems/Initiation_B2.xml": "fa7b8687b052360e78b7e725cbb0ec93602f7e50da47a6c64d112544a32e96ff",
+    "models/pnas2017_full_reference/original/subsystems/Initiation_C.xml": "8c983174446b5e2a70922870e150474ac93ffdbf95b658e9864e5e20c95a9fde",
+    "models/pnas2017_full_reference/original/subsystems/SmallMolecules.xml": "731b0c71057fdc3129c6072a2a3e107e9b908415cd5e227b3ffa7cad09ddbdb2",
+    "models/pnas2017_full_reference/original/subsystems/Termination_A_RF1.xml": "bf78f1693fefae5ce2380622922aa5c9285611e22a642f56c5630836bbf25915",
+    "models/pnas2017_full_reference/original/subsystems/Termination_A_RF2.xml": "42ac014731f0058f717759e1a90f449d3d563b6c61b91e4ccccf3e766400b656",
+    "models/pnas2017_full_reference/original/subsystems/Termination_B_RF1.xml": "3db57e09f5a5ce70ce763dd75f23d03f6ab5591f9476f80e49aef7a054f5cc67",
+    "models/pnas2017_full_reference/original/subsystems/Termination_B_RF2.xml": "3ab9d98e640df2248c673b993b88cbbf61147d4762dd8416cd10f665708042c4",
+    "models/pnas2017_full_reference/original/subsystems/Termination_C.xml": "369766462c969ced933af9fbd7dd1fe960c5be5b8996a9d00be0ac528af63b63",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/matsuura-et-al-2017-reaction-dynamics-analysis-of-a-reconstituted-escherichia-coli-protein-translation-system-by.pdf": "e340ba829f87121e723059aebecc56c342c37c2cc4687692d1447f16b38f2a4e",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd01.xlsx": "ac253974baf41ebf654becca44b4489dbc895d1957b58ee12f6b9c7b4ceeb53e",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd02.xlsx": "b2fadff2b3c078b01bfc4be6f52a5cd5baed4653bb67690debd2ccb99b558f98",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd03.xlsx": "2f88fcd733d9db54b309d4a60882553c02b401edb1b007791ba7b9f00e400a3c",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd04.xlsx": "c1c527b311e659065e8ca7f9cbe1b0eb566e950957669706d11620461c2ab39e",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd05.xlsx": "12cb0bf9e39a2073adc04fdfa48b87502bb428e678d7cbdf618232abd5bc2575",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd06.xlsx": "52120a80f2c5cc0ea60457a2323f4ddd9544ca4abc2c015ee6c323627788ae26",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd07.xlsx": "1384be1989405f75357d1901cedc798e2c5fd1ef21ceb14988a2371f5d237946",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd08.xlsx": "314de60062a4c826fa9f53154be3f40b9f21f0dc722573a0949fb482f778b34b",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd09.xlsx": "85c3eefd010aca9f424ab8d79366cef2bd520a1957f27f783daa45a529f4495a",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd10.xlsx": "47516d9bfdaebcdf973f6d9b92aeaacd733dd46bb804eae9488c2fb9d34870b6",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd11.xlsx": "e5034bf00ac67dba291d54fe30784cb869f974afcde1957d143d6b204f016954",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx": "87051f1a25498750d16bcaccd9f4c3b8849c2b6a76efa119373b041de1ee54ed",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx": "f2c6c7c20859cf1fa5cfa78415d4923422e4b2577cc0aa04a110ffe1cb83be56",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx": "db1207bdabcc43f950fa86dcba4c93e82d7c0fae7af857ca6d5362a67e57c046",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx": "3e292593b51b7c90b77a6c092c90592cf35311e39375e18a9934ebb839202845",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx": "4f683eb04f06112b219aba97b246dd2009c3eaccf24e83bd7d51dae9b7c0f695",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd17.xlsx": "cb36d279c3a6d16647d9cc89135b051628cc259b3b2ff677b8ca6d39084cb174",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd18.xlsx": "99da064d8c7ac83559418d44df983b7520f5603f94f703ed12f4d957c227f5ce",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd19.xlsx": "9016df1526033b7ae82b0c25a3d0d62a4c931e1548ca0bb127637b2754381ab2",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd20.xlsx": "87a5320e64c8301322e76b2a5f32966fd9a8a93eb59b6e1039b95f364bba44cd",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd21.xlsx": "fcfdda052ef1f1853ff35b83df3aa0ceb1ccfe91c2ef84ae2d2774a9ef77de96",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd22.xlsx": "3ef78079f08e075ac49ebe4bcb067cff369ebc9c280a029aa9ce1a5a5ee17d62",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd23.xlsx": "75fba1fceccca7fe752acd8096fe41ee2ecacc93e07c9e01234f19c7da846ac6",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd24.xlsx": "fb054f216b3e786658278cf92f7005038d7dad5bdb2318a07720080cb6e60f51",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd25.xlsx": "7c5d9b1ed8ef7d8325968dbb0aefd02dd897d61a889c48c8f782ac68078f1991",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd26.xlsx": "4e2555a85c563d378aedd425c6001bac2712b4a2b4d0099ddff529cdceb71677",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd27.xlsx": "d52052e6ce24ddcd1894e95b3f759f1a047600e6ffccff28cc2dcd2b8d94b227",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd28.xlsx": "8297f2348f5ebdfc3c14083577f2c5f276f35a7ee8ab30f8a37fd8431ef565ec",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd29.xlsx": "6d8a913d9823a4e387ea8c6fc94ee34641e3b7a4d47b0e00a479207bb813dbd7",
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/run_manifest.json": "cfffe872a342812d1c23262e8d5400b87ee0024e86850d53ab1e0a38d079445b",
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/trajectory.csv": "5e2ed9c36afb14b69c8b7cf5da95faf45b51f7977c09dd2bfdad1a2d2604a0d4"
+  },
+  "decisions": {
+    "PR_3_PR_4": "UNTOUCHED",
+    "PURE_reduced_core": "NOT_VALIDATED",
+    "kinetic_pending": 968,
+    "selected_process_boxes": 0
+  },
+  "domain": "AUTHOR_REFERENCE_CONDITION_ONLY",
+  "generated_artifact_sha256": {
+    "docs/reduction/pnas2017_reduction_evidence_method.md": "ae559baa2379b8718bbf93044ef04c424afccece9aa2e77c1e809628a08e2d74",
+    "docs/reduction/pnas2017_reduction_quick_reference.md": "095746c58fa49f883c43ad8b5bb1151d5bb52b75420d0c1324591672afbe0e7c",
+    "docs/reduction/process_quick_reference/01_amino_acid_activation.md": "d7f32c3e8948a46ab0885d3310ee83173e0408b60c855495f7289a28d434f153",
+    "docs/reduction/process_quick_reference/02_trna_aminoacylation.md": "bff91239b4a5b8c30f655b51411fb52703837234337df32c1f31664371c663cd",
+    "docs/reduction/process_quick_reference/03_initiator_trna_formylation.md": "c4153b3bb3f09a59597db760e1f5a4319ac810ad47f13d914f014520280f3852",
+    "docs/reduction/process_quick_reference/04_initiation_factor_preparation.md": "0b18e0a67230ae85640852f1b77d499ea005897406d39995f098457d73da9c67",
+    "docs/reduction/process_quick_reference/05_ribosome_mrna_initiation_assembly.md": "cd7132bc38993e144495ae47ee92f0b968e3956768350a09f2dad740a7cf2c13",
+    "docs/reduction/process_quick_reference/06_ef_tu_ternary_complex_delivery.md": "0b80ab2850a17872b5e118180a99941546e9bd7aa9e80f4bbf50e403b85a3f00",
+    "docs/reduction/process_quick_reference/07_ef_g_nucleotide_cycle.md": "df73d5f854a00df7872b1ff0da4f0fa5f951a2d1ceae679df291d7177c35ac64",
+    "docs/reduction/process_quick_reference/08_peptidyl_trna_ribosome_transitions.md": "d25165953224907f0b321b2e88a44a35c172cb6e2aac00fd24fe33c44ce39e53",
+    "docs/reduction/process_quick_reference/09_rf1_rf2_peptide_release.md": "67eb46b378a59ed01e3df75e3d3d000903ee2ee5b9f24c8c03cd046212eab574",
+    "docs/reduction/process_quick_reference/10_rf3_assisted_termination.md": "c65d8779f5c1e1332dcc48e3439a7e6b7395d668def6a3c0305d2a8384602a62",
+    "docs/reduction/process_quick_reference/11_ribosome_recycling.md": "d4275a84c6ba2f2b3648e0fb5773d2eddb20efc8529d7b8cb990dbd533b44346",
+    "docs/reduction/process_quick_reference/12_creatine_kinase_energy_regeneration.md": "3a5c2cab04a39b0cd0af20ae31b1df34d382f3cef351c9c5744cdb07059fc1aa",
+    "docs/reduction/process_quick_reference/13_nucleotide_diphosphate_kinase_exchange.md": "b93d74ce219ccd1b4ed4c46a587eb4f4e7e15f977774fb99dcbc12091f20ca7b",
+    "docs/reduction/process_quick_reference/14_adenylate_kinase_exchange.md": "1a0001efeeeb276ffcaf6dfdb55a84ebdd9eaf4275812bf2b5d29875e27b65fb",
+    "docs/reduction/process_quick_reference/15_pyrophosphate_hydrolysis.md": "9d731fa9afb26da55610e0a763794e7536e648d8e21e6ac57c70b4f0da8aea15",
+    "docs/reduction/process_quick_reference/16_shared_small_molecule_transitions.md": "0d0f304d52a10b71d2879f292fa2702127a23f230dab6cb99d10f2129d52d2d7",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/analysis_diagnostics.json": "861ef548d5b21dceb54ecc8ca9f4b226b3e56260ecb62902e52c848a7f900b55",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/evidence_navigation.json": "29924407d752c188e57440a5739314598b23e66efd3a8d09e372ffa3cabebba9",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/evidence_preregistration.json": "b20d782edcef9a7a70bf3848acd2dbd8c240303e3507cc927f0041c56bc4969b",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/pool_evidence.csv": "2187ce89f67a1e57ac33cdd6fe8c272cc65399fb8923541379edfbfcf1c07cc8",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/pool_timeseries.csv": "90861e0c3790648d52c4b90ace682a4a6cfe38e5612aeecf385708c7eab14636",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/preregistration_receipt.json": "27d9e1cf8c3d497b9aa9e959e1ab98b6438af08bec941fe36cbfce780fe6dc59",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/process_eigenvalue_timeseries.csv": "b724dcd8a7abebc2dc83ed6043fb5a43ebfd03a2d045824ba4114eed108ccc8e",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/process_timescale_evidence.csv": "96860c1c332e41fcfdc3011467bc795189d07ccef9cd0322ef83093751408989",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/process_timescale_timeseries.csv": "5f6bef854718b52d3b1ba1bc67337bfbcb5becab693e4a1e3c2b1d6aafea8d48",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/reaction_evidence.csv": "bda9e51bc7b0f7ecdad877fc69924f1f1823d62004c0b82b43eec9c0eb2510f0",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/reaction_pool_metrics.csv": "aedc7088efdcbdf3d5b746db1166aa3c760530eb62e1ab3f1d0b71b1d45eaf35",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/reproducibility.json": "b49e5864215a04f6e2e3b0bcdf7d33336964c216c2f2ed32c7faaa9f76368710",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/reverse_pair_equilibrium_timeseries.csv": "c683b6f7a088750fcacc407bbfab3bf16dcf8c6071dc35bc02f720818a7a9775",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/reverse_pair_evidence.csv": "85e0d67e290588adfd61a1e66b20c9f665088a931a9df05e730601f647dc185d",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/state_evidence.csv": "8e196dede62153e17215c9a4a4aca2189b9353c1f1be1c746d52287fe1b34134",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/state_pool_metrics.csv": "61fe4f6c818588a34eda197c60a77dfcd37ad6eda8f2230b6607bed9930ca63f",
+    "models/pnas2017_full_reference/audit/reduction_evidence_v0/state_qss_timeseries.csv": "b2db1caaf3cb0d8868529e7f988094e2b8b0aa7a98c642a49aa04c8d557664d7"
+  },
+  "git_head": "e0c50bf0372a7b83620432801b2b7323a9c11f74",
+  "input_trajectory_hashes": {
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/trajectory.csv": "5e2ed9c36afb14b69c8b7cf5da95faf45b51f7977c09dd2bfdad1a2d2604a0d4"
+  },
+  "metric_availability": {
+    "pool_evidence.csv": {
+      "columns": {
+        "free_counterpart_basis": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 24
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 24
+        },
+        "free_species_id": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 24
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 24
+        },
+        "free_total_ratio_max": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 20,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 24
+          },
+          "numeric_cells": 38,
+          "unavailable_cells": 44
+        },
+        "free_total_ratio_median": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 20,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 24
+          },
+          "numeric_cells": 38,
+          "unavailable_cells": 44
+        },
+        "free_total_ratio_min": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 20,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 24
+          },
+          "numeric_cells": 38,
+          "unavailable_cells": 44
+        },
+        "informative_fraction": {
+          "na_reasons": {},
+          "numeric_cells": 82,
+          "unavailable_cells": 0
+        },
+        "max_bound_fraction": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 20,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 24
+          },
+          "numeric_cells": 38,
+          "unavailable_cells": 44
+        },
+        "member_coefficients": {
+          "na_reasons": {},
+          "numeric_cells": 82,
+          "unavailable_cells": 0
+        },
+        "member_count": {
+          "na_reasons": {},
+          "numeric_cells": 82,
+          "unavailable_cells": 0
+        },
+        "negative_member_sample_count": {
+          "na_reasons": {},
+          "numeric_cells": 82,
+          "unavailable_cells": 0
+        },
+        "occupancy_informative_fraction": {
+          "na_reasons": {},
+          "numeric_cells": 82,
+          "unavailable_cells": 0
+        },
+        "primary_sample_count": {
+          "na_reasons": {},
+          "numeric_cells": 82,
+          "unavailable_cells": 0
+        },
+        "reference_stoichiometric_residual_max_abs": {
+          "na_reasons": {},
+          "numeric_cells": 82,
+          "unavailable_cells": 0
+        },
+        "sequestration_metric_status": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 20,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 24
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 44
+        },
+        "total_initial": {
+          "na_reasons": {},
+          "numeric_cells": 82,
+          "unavailable_cells": 0
+        },
+        "total_max": {
+          "na_reasons": {},
+          "numeric_cells": 82,
+          "unavailable_cells": 0
+        },
+        "total_median": {
+          "na_reasons": {},
+          "numeric_cells": 82,
+          "unavailable_cells": 0
+        },
+        "total_min": {
+          "na_reasons": {},
+          "numeric_cells": 82,
+          "unavailable_cells": 0
+        },
+        "unavailable_reasons": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 20,
+            "N/A_NEGATIVE_POOL_MEMBER": 6,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 24
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 50
+        },
+        "unconditional_stoichiometric_residual_max_abs": {
+          "na_reasons": {},
+          "numeric_cells": 82,
+          "unavailable_cells": 0
+        },
+        "zero_denominator_sample_count": {
+          "na_reasons": {},
+          "numeric_cells": 82,
+          "unavailable_cells": 0
+        }
+      },
+      "sequestration_metric_status": {
+        "COMPUTED_REFERENCE_CONDITION_ONLY": 38,
+        "N/A_FREE_COUNTERPART_UNRESOLVED": 20,
+        "N/A_POOL_NOT_REFERENCE_CONSERVED": 24
+      }
+    },
+    "pool_timeseries.csv": {
+      "columns": {
+        "bound_fraction": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 4020,
+            "N/A_NEGATIVE_POOL_MEMBER": 252,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 4824
+          },
+          "numeric_cells": 7386,
+          "unavailable_cells": 9096
+        },
+        "free_concentration": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 4824
+          },
+          "numeric_cells": 11658,
+          "unavailable_cells": 4824
+        },
+        "free_fraction": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 4020,
+            "N/A_NEGATIVE_POOL_MEMBER": 252,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 4824
+          },
+          "numeric_cells": 7386,
+          "unavailable_cells": 9096
+        },
+        "free_species_id": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 4824
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 4824
+        },
+        "occupancy_reason": {
+          "na_reasons": {
+            "N/A_NEGATIVE_POOL_MEMBER": 252,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 4824,
+            "N/A_ZERO_POOL_TOTAL": 4020
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 9096
+        },
+        "reason": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 4020,
+            "N/A_NEGATIVE_POOL_MEMBER": 252,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 4824
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 9096
+        },
+        "time": {
+          "na_reasons": {},
+          "numeric_cells": 16482,
+          "unavailable_cells": 0
+        },
+        "total_concentration": {
+          "na_reasons": {},
+          "numeric_cells": 16482,
+          "unavailable_cells": 0
+        }
+      },
+      "informative": {
+        "false": 9096,
+        "true": 7386
+      },
+      "reason": {
+        "INFORMATIVE": 7386,
+        "N/A_FREE_COUNTERPART_UNRESOLVED": 4020,
+        "N/A_NEGATIVE_POOL_MEMBER": 252,
+        "N/A_POOL_NOT_REFERENCE_CONSERVED": 4824
+      }
+    },
+    "process_eigenvalue_timeseries.csv": {
+      "columns": {
+        "lambda_abs": {
+          "na_reasons": {},
+          "numeric_cells": 38600,
+          "unavailable_cells": 0
+        },
+        "lambda_imag": {
+          "na_reasons": {},
+          "numeric_cells": 38600,
+          "unavailable_cells": 0
+        },
+        "lambda_real": {
+          "na_reasons": {},
+          "numeric_cells": 38600,
+          "unavailable_cells": 0
+        },
+        "mode_index": {
+          "na_reasons": {},
+          "numeric_cells": 38600,
+          "unavailable_cells": 0
+        },
+        "neutral_threshold": {
+          "na_reasons": {},
+          "numeric_cells": 38600,
+          "unavailable_cells": 0
+        },
+        "relaxation_tau": {
+          "na_reasons": {
+            "N/A_NEAR_ZERO_MODE": 46
+          },
+          "numeric_cells": 38554,
+          "unavailable_cells": 46
+        },
+        "time": {
+          "na_reasons": {},
+          "numeric_cells": 38600,
+          "unavailable_cells": 0
+        }
+      }
+    },
+    "process_timescale_evidence.csv": {
+      "columns": {
+        "R_tau_max": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 1
+          },
+          "numeric_cells": 15,
+          "unavailable_cells": 1
+        },
+        "R_tau_median": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 1
+          },
+          "numeric_cells": 15,
+          "unavailable_cells": 1
+        },
+        "R_tau_min": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 1
+          },
+          "numeric_cells": 15,
+          "unavailable_cells": 1
+        },
+        "candidate_state_count": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "epsilon_tau_max": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 1
+          },
+          "numeric_cells": 15,
+          "unavailable_cells": 1
+        },
+        "epsilon_tau_median": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 1
+          },
+          "numeric_cells": 15,
+          "unavailable_cells": 1
+        },
+        "epsilon_tau_min": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 1
+          },
+          "numeric_cells": 15,
+          "unavailable_cells": 1
+        },
+        "metric_status": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 1
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 1
+        },
+        "near_zero_mode_count_max": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "near_zero_mode_count_min": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "nondecaying_mode_count_max": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "nondecaying_mode_count_min": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "nonzero_fast_mode_count": {
+          "na_reasons": {},
+          "numeric_cells": 15,
+          "unavailable_cells": 0
+        },
+        "primary_sample_count": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "ratio_informative_fraction": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "stable_mode_count_max": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "stable_mode_count_min": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "structural_dependency_reaction_count": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "structural_neutral_mode_count": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "structural_rank": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "tau_fast_max": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 1
+          },
+          "numeric_cells": 15,
+          "unavailable_cells": 1
+        },
+        "tau_fast_median": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 1
+          },
+          "numeric_cells": 15,
+          "unavailable_cells": 1
+        },
+        "tau_fast_min": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 1
+          },
+          "numeric_cells": 15,
+          "unavailable_cells": 1
+        },
+        "tau_slow_max": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "tau_slow_median": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "tau_slow_min": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        },
+        "trajectory_points": {
+          "na_reasons": {},
+          "numeric_cells": 16,
+          "unavailable_cells": 0
+        }
+      },
+      "timescale_status": {
+        "NEED_MORE_INFORMATION": 16
+      }
+    },
+    "process_timescale_timeseries.csv": {
+      "columns": {
+        "R_tau": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 200,
+            "N/A_NO_INFORMATIVE_SLOW_INTERFACE": 1
+          },
+          "numeric_cells": 2999,
+          "unavailable_cells": 201
+        },
+        "epsilon_tau": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 200,
+            "N/A_NO_INFORMATIVE_SLOW_INTERFACE": 1
+          },
+          "numeric_cells": 2999,
+          "unavailable_cells": 201
+        },
+        "metric_status": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 200,
+            "N/A_NO_INFORMATIVE_SLOW_INTERFACE": 1
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 201
+        },
+        "near_zero_mode_count": {
+          "na_reasons": {},
+          "numeric_cells": 3200,
+          "unavailable_cells": 0
+        },
+        "neutral_threshold": {
+          "na_reasons": {},
+          "numeric_cells": 3200,
+          "unavailable_cells": 0
+        },
+        "nondecaying_mode_count": {
+          "na_reasons": {},
+          "numeric_cells": 3200,
+          "unavailable_cells": 0
+        },
+        "slow_informative_state_count": {
+          "na_reasons": {},
+          "numeric_cells": 3200,
+          "unavailable_cells": 0
+        },
+        "stable_mode_count": {
+          "na_reasons": {},
+          "numeric_cells": 3200,
+          "unavailable_cells": 0
+        },
+        "structural_neutral_mode_count": {
+          "na_reasons": {},
+          "numeric_cells": 3200,
+          "unavailable_cells": 0
+        },
+        "tau_fast_max": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 200
+          },
+          "numeric_cells": 3000,
+          "unavailable_cells": 200
+        },
+        "tau_fast_median": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 200
+          },
+          "numeric_cells": 3000,
+          "unavailable_cells": 200
+        },
+        "tau_fast_min": {
+          "na_reasons": {
+            "N/A_NO_CANDIDATE_STATES": 200
+          },
+          "numeric_cells": 3000,
+          "unavailable_cells": 200
+        },
+        "tau_slow_max": {
+          "na_reasons": {
+            "N/A_NO_INFORMATIVE_SLOW_INTERFACE": 1
+          },
+          "numeric_cells": 3199,
+          "unavailable_cells": 1
+        },
+        "tau_slow_median": {
+          "na_reasons": {
+            "N/A_NO_INFORMATIVE_SLOW_INTERFACE": 1
+          },
+          "numeric_cells": 3199,
+          "unavailable_cells": 1
+        },
+        "tau_slow_min": {
+          "na_reasons": {
+            "N/A_NO_INFORMATIVE_SLOW_INTERFACE": 1
+          },
+          "numeric_cells": 3199,
+          "unavailable_cells": 1
+        },
+        "time": {
+          "na_reasons": {},
+          "numeric_cells": 3200,
+          "unavailable_cells": 0
+        }
+      },
+      "timescale_status": {
+        "NEED_MORE_INFORMATION": 3200
+      }
+    },
+    "reaction_evidence.csv": {
+      "columns": {
+        "directed_extent": {
+          "na_reasons": {},
+          "numeric_cells": 968,
+          "unavailable_cells": 0
+        },
+        "equilibrium_metric_status": {
+          "na_reasons": {
+            "N/A_NO_EXACT_REVERSE_PAIR": 388
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 388
+        },
+        "net_tracked_particle_delta": {
+          "na_reasons": {},
+          "numeric_cells": 968,
+          "unavailable_cells": 0
+        },
+        "official_parameter_value": {
+          "na_reasons": {},
+          "numeric_cells": 968,
+          "unavailable_cells": 0
+        },
+        "pair_evidence_id": {
+          "na_reasons": {
+            "N/A_NO_EXACT_REVERSE_PAIR": 388
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 388
+        },
+        "pool_metric_ids": {
+          "na_reasons": {
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 32
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 32
+        },
+        "protected_pool_touched": {
+          "na_reasons": {
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 32
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 32
+        },
+        "qss_metric_status": {
+          "na_reasons": {
+            "N/A_STATE_LEVEL_METRIC": 968
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 968
+        },
+        "rate_max_abs": {
+          "na_reasons": {},
+          "numeric_cells": 968,
+          "unavailable_cells": 0
+        },
+        "rate_median": {
+          "na_reasons": {},
+          "numeric_cells": 968,
+          "unavailable_cells": 0
+        },
+        "reverse_pair_id": {
+          "na_reasons": {
+            "N/A_NO_EXACT_REVERSE_PAIR": 388
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 388
+        },
+        "reverse_pair_status": {
+          "na_reasons": {
+            "N/A_NO_EXACT_REVERSE_PAIR": 388
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 388
+        },
+        "reverse_partner_id": {
+          "na_reasons": {
+            "N/A_NO_EXACT_REVERSE_PAIR": 388
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 388
+        },
+        "timescale_metric_status": {
+          "na_reasons": {
+            "N/A_PROCESS_LEVEL_METRIC": 968
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 968
+        }
+      },
+      "equilibrium_metric_status": {
+        "N/A_NO_EXACT_REVERSE_PAIR": 388,
+        "PAIR_LEVEL_EVIDENCE_AVAILABLE": 418,
+        "REFERENCE_DIRECTION_DISABLED": 162
+      },
+      "qss_metric_status": {
+        "N/A_STATE_LEVEL_METRIC": 968
+      }
+    },
+    "reaction_pool_metrics.csv": {
+      "columns": {
+        "free_fraction_max": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 406,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 1652
+          },
+          "numeric_cells": 4588,
+          "unavailable_cells": 2058
+        },
+        "free_fraction_median": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 406,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 1652
+          },
+          "numeric_cells": 4588,
+          "unavailable_cells": 2058
+        },
+        "free_fraction_min": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 406,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 1652
+          },
+          "numeric_cells": 4588,
+          "unavailable_cells": 2058
+        },
+        "maximum_nonfree_fraction": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 406,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 1652
+          },
+          "numeric_cells": 4588,
+          "unavailable_cells": 2058
+        },
+        "net_pool_token_delta": {
+          "na_reasons": {},
+          "numeric_cells": 6646,
+          "unavailable_cells": 0
+        }
+      }
+    },
+    "reverse_pair_equilibrium_timeseries.csv": {
+      "columns": {
+        "equilibrium_defect": {
+          "na_reasons": {
+            "N/A_LOW_FLUX": 7690,
+            "N/A_REFERENCE_DIRECTION_DISABLED": 16281
+          },
+          "numeric_cells": 34319,
+          "unavailable_cells": 23971
+        },
+        "exchange_flux": {
+          "na_reasons": {},
+          "numeric_cells": 58290,
+          "unavailable_cells": 0
+        },
+        "net_flux": {
+          "na_reasons": {},
+          "numeric_cells": 58290,
+          "unavailable_cells": 0
+        },
+        "time": {
+          "na_reasons": {},
+          "numeric_cells": 58290,
+          "unavailable_cells": 0
+        },
+        "vf": {
+          "na_reasons": {},
+          "numeric_cells": 58290,
+          "unavailable_cells": 0
+        },
+        "vr": {
+          "na_reasons": {},
+          "numeric_cells": 58290,
+          "unavailable_cells": 0
+        }
+      },
+      "informative": {
+        "false": 23971,
+        "true": 34319
+      },
+      "reason": {
+        "INFORMATIVE": 34319,
+        "LOW_FLUX_UNINFORMATIVE": 7690,
+        "REFERENCE_DIRECTION_DISABLED": 16281
+      }
+    },
+    "reverse_pair_evidence.csv": {
+      "columns": {
+        "eq_defect_max": {
+          "na_reasons": {
+            "N/A_REFERENCE_DIRECTION_DISABLED": 81
+          },
+          "numeric_cells": 209,
+          "unavailable_cells": 81
+        },
+        "eq_defect_median": {
+          "na_reasons": {
+            "N/A_REFERENCE_DIRECTION_DISABLED": 81
+          },
+          "numeric_cells": 209,
+          "unavailable_cells": 81
+        },
+        "eq_defect_p95": {
+          "na_reasons": {
+            "N/A_REFERENCE_DIRECTION_DISABLED": 81
+          },
+          "numeric_cells": 209,
+          "unavailable_cells": 81
+        },
+        "exchange_rate_median": {
+          "na_reasons": {},
+          "numeric_cells": 290,
+          "unavailable_cells": 0
+        },
+        "forward_extent": {
+          "na_reasons": {},
+          "numeric_cells": 290,
+          "unavailable_cells": 0
+        },
+        "forward_k": {
+          "na_reasons": {},
+          "numeric_cells": 290,
+          "unavailable_cells": 0
+        },
+        "forward_rate_median": {
+          "na_reasons": {},
+          "numeric_cells": 290,
+          "unavailable_cells": 0
+        },
+        "fraction_delta_below_1e-1": {
+          "na_reasons": {
+            "N/A_REFERENCE_DIRECTION_DISABLED": 81
+          },
+          "numeric_cells": 209,
+          "unavailable_cells": 81
+        },
+        "fraction_delta_below_1e-2": {
+          "na_reasons": {
+            "N/A_REFERENCE_DIRECTION_DISABLED": 81
+          },
+          "numeric_cells": 209,
+          "unavailable_cells": 81
+        },
+        "fraction_delta_below_1e-3": {
+          "na_reasons": {
+            "N/A_REFERENCE_DIRECTION_DISABLED": 81
+          },
+          "numeric_cells": 209,
+          "unavailable_cells": 81
+        },
+        "informative_fraction": {
+          "na_reasons": {},
+          "numeric_cells": 290,
+          "unavailable_cells": 0
+        },
+        "net_extent": {
+          "na_reasons": {},
+          "numeric_cells": 290,
+          "unavailable_cells": 0
+        },
+        "net_rate_median": {
+          "na_reasons": {},
+          "numeric_cells": 290,
+          "unavailable_cells": 0
+        },
+        "reverse_extent": {
+          "na_reasons": {},
+          "numeric_cells": 290,
+          "unavailable_cells": 0
+        },
+        "reverse_k": {
+          "na_reasons": {},
+          "numeric_cells": 290,
+          "unavailable_cells": 0
+        },
+        "reverse_rate_median": {
+          "na_reasons": {},
+          "numeric_cells": 290,
+          "unavailable_cells": 0
+        }
+      }
+    },
+    "state_evidence.csv": {
+      "columns": {
+        "consumption_flux_max": {
+          "na_reasons": {},
+          "numeric_cells": 241,
+          "unavailable_cells": 0
+        },
+        "consumption_flux_median": {
+          "na_reasons": {},
+          "numeric_cells": 241,
+          "unavailable_cells": 0
+        },
+        "free_species_for_pool": {
+          "na_reasons": {
+            "N/A_MULTIPLE_POOLS": 96,
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 56
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 152
+        },
+        "free_total_ratio_max": {
+          "na_reasons": {
+            "N/A_MULTIPLE_POOLS": 96,
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 56
+          },
+          "numeric_cells": 89,
+          "unavailable_cells": 152
+        },
+        "free_total_ratio_median": {
+          "na_reasons": {
+            "N/A_MULTIPLE_POOLS": 96,
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 56
+          },
+          "numeric_cells": 89,
+          "unavailable_cells": 152
+        },
+        "free_total_ratio_min": {
+          "na_reasons": {
+            "N/A_MULTIPLE_POOLS": 96,
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 56
+          },
+          "numeric_cells": 89,
+          "unavailable_cells": 152
+        },
+        "initial_value": {
+          "na_reasons": {},
+          "numeric_cells": 241,
+          "unavailable_cells": 0
+        },
+        "known_pool_ids": {
+          "na_reasons": {
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 35
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 35
+        },
+        "max_bound_fraction": {
+          "na_reasons": {
+            "N/A_MULTIPLE_POOLS": 96,
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 56
+          },
+          "numeric_cells": 89,
+          "unavailable_cells": 152
+        },
+        "occupancy_max": {
+          "na_reasons": {
+            "N/A_MULTIPLE_POOLS": 96,
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 56
+          },
+          "numeric_cells": 89,
+          "unavailable_cells": 152
+        },
+        "occupancy_median": {
+          "na_reasons": {
+            "N/A_MULTIPLE_POOLS": 96,
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 56
+          },
+          "numeric_cells": 89,
+          "unavailable_cells": 152
+        },
+        "occupancy_min": {
+          "na_reasons": {
+            "N/A_MULTIPLE_POOLS": 96,
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 56
+          },
+          "numeric_cells": 89,
+          "unavailable_cells": 152
+        },
+        "production_flux_max": {
+          "na_reasons": {},
+          "numeric_cells": 241,
+          "unavailable_cells": 0
+        },
+        "production_flux_median": {
+          "na_reasons": {},
+          "numeric_cells": 241,
+          "unavailable_cells": 0
+        },
+        "qss_defect_max": {
+          "na_reasons": {
+            "N/A_LOW_FLUX": 36
+          },
+          "numeric_cells": 205,
+          "unavailable_cells": 36
+        },
+        "qss_defect_median": {
+          "na_reasons": {
+            "N/A_LOW_FLUX": 36
+          },
+          "numeric_cells": 205,
+          "unavailable_cells": 36
+        },
+        "qss_defect_p95": {
+          "na_reasons": {
+            "N/A_LOW_FLUX": 36
+          },
+          "numeric_cells": 205,
+          "unavailable_cells": 36
+        },
+        "qss_informative_fraction": {
+          "na_reasons": {},
+          "numeric_cells": 241,
+          "unavailable_cells": 0
+        },
+        "scalar_pool_id": {
+          "na_reasons": {
+            "N/A_MULTIPLE_POOLS": 96,
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 56
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 152
+        },
+        "sequestration_metric_status": {
+          "na_reasons": {
+            "N/A_MULTIPLE_POOLS": 96,
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 56
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 152
+        },
+        "state_pool_metric_ids": {
+          "na_reasons": {
+            "N/A_POOL_MEMBERSHIP_UNRESOLVED": 35
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 35
+        },
+        "trajectory_max": {
+          "na_reasons": {},
+          "numeric_cells": 241,
+          "unavailable_cells": 0
+        },
+        "trajectory_median": {
+          "na_reasons": {},
+          "numeric_cells": 241,
+          "unavailable_cells": 0
+        },
+        "trajectory_min": {
+          "na_reasons": {},
+          "numeric_cells": 241,
+          "unavailable_cells": 0
+        },
+        "turnover_tau_median": {
+          "na_reasons": {
+            "N/A_LOW_FLUX_OR_ZERO_CONCENTRATION": 37
+          },
+          "numeric_cells": 204,
+          "unavailable_cells": 37
+        },
+        "turnover_tau_p05": {
+          "na_reasons": {
+            "N/A_LOW_FLUX_OR_ZERO_CONCENTRATION": 37
+          },
+          "numeric_cells": 204,
+          "unavailable_cells": 37
+        },
+        "turnover_tau_p95": {
+          "na_reasons": {
+            "N/A_LOW_FLUX_OR_ZERO_CONCENTRATION": 37
+          },
+          "numeric_cells": 204,
+          "unavailable_cells": 37
+        }
+      },
+      "pool_membership_status": {
+        "REGISTERED_REFERENCE_CONSERVED": 206,
+        "UNRESOLVED": 35
+      },
+      "sequestration_metric_status": {
+        "COMPUTED_REFERENCE_CONDITION_ONLY": 89,
+        "N/A_MULTIPLE_POOLS": 96,
+        "N/A_POOL_MEMBERSHIP_UNRESOLVED": 56
+      }
+    },
+    "state_pool_metrics.csv": {
+      "columns": {
+        "free_fraction_informative_fraction": {
+          "na_reasons": {},
+          "numeric_cells": 914,
+          "unavailable_cells": 0
+        },
+        "free_species_id": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 117
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 117
+        },
+        "free_total_ratio_max": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 21,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 130
+          },
+          "numeric_cells": 763,
+          "unavailable_cells": 151
+        },
+        "free_total_ratio_median": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 21,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 130
+          },
+          "numeric_cells": 763,
+          "unavailable_cells": 151
+        },
+        "free_total_ratio_min": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 21,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 130
+          },
+          "numeric_cells": 763,
+          "unavailable_cells": 151
+        },
+        "max_bound_fraction": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 21,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 130
+          },
+          "numeric_cells": 763,
+          "unavailable_cells": 151
+        },
+        "member_coefficient": {
+          "na_reasons": {},
+          "numeric_cells": 914,
+          "unavailable_cells": 0
+        },
+        "occupancy_informative_fraction": {
+          "na_reasons": {},
+          "numeric_cells": 914,
+          "unavailable_cells": 0
+        },
+        "occupancy_max": {
+          "na_reasons": {
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 130,
+            "N/A_ZERO_POOL_TOTAL": 21
+          },
+          "numeric_cells": 763,
+          "unavailable_cells": 151
+        },
+        "occupancy_median": {
+          "na_reasons": {
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 130,
+            "N/A_ZERO_POOL_TOTAL": 21
+          },
+          "numeric_cells": 763,
+          "unavailable_cells": 151
+        },
+        "occupancy_metric_status": {
+          "na_reasons": {
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 130,
+            "N/A_ZERO_POOL_TOTAL": 21
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 151
+        },
+        "occupancy_min": {
+          "na_reasons": {
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 130,
+            "N/A_ZERO_POOL_TOTAL": 21
+          },
+          "numeric_cells": 763,
+          "unavailable_cells": 151
+        },
+        "sequestration_metric_status": {
+          "na_reasons": {
+            "N/A_FREE_COUNTERPART_UNRESOLVED": 21,
+            "N/A_POOL_NOT_REFERENCE_CONSERVED": 130
+          },
+          "numeric_cells": 0,
+          "unavailable_cells": 151
+        }
+      },
+      "sequestration_metric_status": {
+        "COMPUTED_REFERENCE_CONDITION_ONLY": 763,
+        "N/A_FREE_COUNTERPART_UNRESOLVED": 21,
+        "N/A_POOL_NOT_REFERENCE_CONSERVED": 130
+      }
+    },
+    "state_qss_timeseries.csv": {
+      "columns": {
+        "consumption_flux": {
+          "na_reasons": {},
+          "numeric_cells": 48441,
+          "unavailable_cells": 0
+        },
+        "dzdt": {
+          "na_reasons": {},
+          "numeric_cells": 48441,
+          "unavailable_cells": 0
+        },
+        "production_flux": {
+          "na_reasons": {},
+          "numeric_cells": 48441,
+          "unavailable_cells": 0
+        },
+        "qss_defect": {
+          "na_reasons": {
+            "N/A_LOW_FLUX": 14979
+          },
+          "numeric_cells": 33462,
+          "unavailable_cells": 14979
+        },
+        "time": {
+          "na_reasons": {},
+          "numeric_cells": 48441,
+          "unavailable_cells": 0
+        }
+      },
+      "informative": {
+        "false": 14979,
+        "true": 33462
+      },
+      "reason": {
+        "INFORMATIVE": 33462,
+        "LOW_FLUX_UNINFORMATIVE": 14979
+      }
+    }
+  },
+  "preregistration_sha256": "b20d782edcef9a7a70bf3848acd2dbd8c240303e3507cc927f0041c56bc4969b",
+  "process_count": 16,
+  "protected_git_blob_sha256": {
+    "docs/reduction/aminoacylation_qssa_quick_reference.md": "28c80b0eaa67c5335dc68cbc5c65310f5206ea3b45388e457710155226309ab5",
+    "docs/reduction/human_reduction_review.md": "b32dcbfa155be5d77411691889e67da7a6a89c7d87ba1406171e74db6c95c2d8",
+    "docs/reduction/reduction_decisions.csv": "70fd3f98de5056a1a63c29db58d310ec5986d4c52b6bfcbae9634b38e2e8d7f8",
+    "docs/reduction/species_information_contract_detailed.md": "ab5c6dbdc7bfc21b2901cb5c921746ad9ac4ce464453662431860b0d2364d24a",
+    "docs/reduction/species_information_contract_summary.md": "42dcc61424d19d461817424cc647f65a56e9e65ba42a662acd6e17c5c7a4a163",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv": "845aef2d0b9a46d8e1a2d2eb3b5acb3501bcf69b72229ad02a97b73a9363a929",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis.m": "5357b16387970d693f730102256c8d4ee30b91a318ad7482fc13e798834889f4",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis_Sample.m": "9db2acfd7c5961f2bc52766df75bca619af496f999ad92b9b29a77f4c7fa6fc0",
+    "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Gly.xml": "16a7a4ee463a130dab146ed5de90636b9242e6815f0b85a6264fed725d3d454d",
+    "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Met.xml": "440d2cbe33964e20f6dd5c3b40c8c84ff89e91c34f86de653ea1c48131b747a6",
+    "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_GlyGCC.xml": "314e1c203367957f0d0c6c05dfcb58f496b68845face66bc5682919d030cd75a",
+    "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_fMetCAU.xml": "81e265aec3a630779829d2f734f88a76666004a95b9343835a016455bb57e227",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_A_Gly.xml": "01bd54f888be77fea1b5c78cddca9e066f6adfa81febffa14da3eb85affc68a5",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_A_Met.xml": "eb7b300b00e0850a8e3e8c2571f3569565dd49290bda9e2cd143ef65e1b948f3",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_B.xml": "0351f98dd5bed6f59bc8fb8e2e54794d1ccdffa59927e98b3b360bec791c80ae",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_GlyGCC.xml": "01fbdc9aba47a58224aaf2590cec372618045faae134aefd0003af2ee6a4630e",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_fMetCAU.xml": "a7cbf1ac160720e5c90ea072c53bcd45391f6ad414988123ee0aed3e9d10c420",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml": "fa183c0a44c8a053e7d5d6f92ece79252f1d867fcc6fd0f56a92f430de02c197",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml": "7df7ff8869563d50eaf2e49cd7eafc7462421555569560b4efaa3bbd407dda7a",
+    "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_A.xml": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+    "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_B.xml": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+    "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_C.xml": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+    "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_D.xml": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+    "models/pnas2017_full_reference/original/subsystems/FMet_tRNASynthesis.xml": "10633f79d44350c6ab555cb80b85b5068e048b6f52916ca454c066c547db3491",
+    "models/pnas2017_full_reference/original/subsystems/Initiation_A.xml": "15d151724760ad3f98e2742e48b7c9daaf43f3b37cd4eccd5bd38b96f3bdf320",
+    "models/pnas2017_full_reference/original/subsystems/Initiation_B1.xml": "b89b1eac8dbbd4dd0f96a356056b8ae1a999f13f0b398a9516ed1fc50ff4894f",
+    "models/pnas2017_full_reference/original/subsystems/Initiation_B2.xml": "fa7b8687b052360e78b7e725cbb0ec93602f7e50da47a6c64d112544a32e96ff",
+    "models/pnas2017_full_reference/original/subsystems/Initiation_C.xml": "8c983174446b5e2a70922870e150474ac93ffdbf95b658e9864e5e20c95a9fde",
+    "models/pnas2017_full_reference/original/subsystems/SmallMolecules.xml": "731b0c71057fdc3129c6072a2a3e107e9b908415cd5e227b3ffa7cad09ddbdb2",
+    "models/pnas2017_full_reference/original/subsystems/Termination_A_RF1.xml": "bf78f1693fefae5ce2380622922aa5c9285611e22a642f56c5630836bbf25915",
+    "models/pnas2017_full_reference/original/subsystems/Termination_A_RF2.xml": "42ac014731f0058f717759e1a90f449d3d563b6c61b91e4ccccf3e766400b656",
+    "models/pnas2017_full_reference/original/subsystems/Termination_B_RF1.xml": "3db57e09f5a5ce70ce763dd75f23d03f6ab5591f9476f80e49aef7a054f5cc67",
+    "models/pnas2017_full_reference/original/subsystems/Termination_B_RF2.xml": "3ab9d98e640df2248c673b993b88cbbf61147d4762dd8416cd10f665708042c4",
+    "models/pnas2017_full_reference/original/subsystems/Termination_C.xml": "369766462c969ced933af9fbd7dd1fe960c5be5b8996a9d00be0ac528af63b63",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/matsuura-et-al-2017-reaction-dynamics-analysis-of-a-reconstituted-escherichia-coli-protein-translation-system-by.pdf": "e340ba829f87121e723059aebecc56c342c37c2cc4687692d1447f16b38f2a4e",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd01.xlsx": "ac253974baf41ebf654becca44b4489dbc895d1957b58ee12f6b9c7b4ceeb53e",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd02.xlsx": "b2fadff2b3c078b01bfc4be6f52a5cd5baed4653bb67690debd2ccb99b558f98",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd03.xlsx": "2f88fcd733d9db54b309d4a60882553c02b401edb1b007791ba7b9f00e400a3c",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd04.xlsx": "c1c527b311e659065e8ca7f9cbe1b0eb566e950957669706d11620461c2ab39e",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd05.xlsx": "12cb0bf9e39a2073adc04fdfa48b87502bb428e678d7cbdf618232abd5bc2575",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd06.xlsx": "52120a80f2c5cc0ea60457a2323f4ddd9544ca4abc2c015ee6c323627788ae26",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd07.xlsx": "1384be1989405f75357d1901cedc798e2c5fd1ef21ceb14988a2371f5d237946",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd08.xlsx": "314de60062a4c826fa9f53154be3f40b9f21f0dc722573a0949fb482f778b34b",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd09.xlsx": "85c3eefd010aca9f424ab8d79366cef2bd520a1957f27f783daa45a529f4495a",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd10.xlsx": "47516d9bfdaebcdf973f6d9b92aeaacd733dd46bb804eae9488c2fb9d34870b6",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd11.xlsx": "e5034bf00ac67dba291d54fe30784cb869f974afcde1957d143d6b204f016954",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx": "87051f1a25498750d16bcaccd9f4c3b8849c2b6a76efa119373b041de1ee54ed",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx": "f2c6c7c20859cf1fa5cfa78415d4923422e4b2577cc0aa04a110ffe1cb83be56",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx": "db1207bdabcc43f950fa86dcba4c93e82d7c0fae7af857ca6d5362a67e57c046",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx": "3e292593b51b7c90b77a6c092c90592cf35311e39375e18a9934ebb839202845",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx": "4f683eb04f06112b219aba97b246dd2009c3eaccf24e83bd7d51dae9b7c0f695",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd17.xlsx": "cb36d279c3a6d16647d9cc89135b051628cc259b3b2ff677b8ca6d39084cb174",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd18.xlsx": "99da064d8c7ac83559418d44df983b7520f5603f94f703ed12f4d957c227f5ce",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd19.xlsx": "9016df1526033b7ae82b0c25a3d0d62a4c931e1548ca0bb127637b2754381ab2",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd20.xlsx": "87a5320e64c8301322e76b2a5f32966fd9a8a93eb59b6e1039b95f364bba44cd",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd21.xlsx": "fcfdda052ef1f1853ff35b83df3aa0ceb1ccfe91c2ef84ae2d2774a9ef77de96",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd22.xlsx": "3ef78079f08e075ac49ebe4bcb067cff369ebc9c280a029aa9ce1a5a5ee17d62",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd23.xlsx": "75fba1fceccca7fe752acd8096fe41ee2ecacc93e07c9e01234f19c7da846ac6",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd24.xlsx": "fb054f216b3e786658278cf92f7005038d7dad5bdb2318a07720080cb6e60f51",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd25.xlsx": "7c5d9b1ed8ef7d8325968dbb0aefd02dd897d61a889c48c8f782ac68078f1991",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd26.xlsx": "4e2555a85c563d378aedd425c6001bac2712b4a2b4d0099ddff529cdceb71677",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd27.xlsx": "d52052e6ce24ddcd1894e95b3f759f1a047600e6ffccff28cc2dcd2b8d94b227",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd28.xlsx": "8297f2348f5ebdfc3c14083577f2c5f276f35a7ee8ab30f8a37fd8431ef565ec",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd29.xlsx": "6d8a913d9823a4e387ea8c6fc94ee34641e3b7a4d47b0e00a479207bb813dbd7"
+  },
+  "reproducibility": "All generated CSV bytes must match a second build from the frozen preregistration and inputs; see reproducibility.json when present",
+  "reverse_pair_count": 290,
+  "row_counts": {
+    "pool_evidence.csv": 82,
+    "pool_timeseries.csv": 16482,
+    "process_eigenvalue_timeseries.csv": 38600,
+    "process_timescale_evidence.csv": 16,
+    "process_timescale_timeseries.csv": 3200,
+    "reaction_evidence.csv": 968,
+    "reaction_pool_metrics.csv": 6646,
+    "reverse_pair_equilibrium_timeseries.csv": 58290,
+    "reverse_pair_evidence.csv": 290,
+    "state_evidence.csv": 241,
+    "state_pool_metrics.csv": 914,
+    "state_qss_timeseries.csv": 48441
+  },
+  "schema": "pnas2017_reduction_evidence_manifest/v0",
+  "scripts_sha256": {
+    "scripts/analyze_pnas2017_reduction_evidence.py": "1a2e4e917a73aaef9302b8c4259d42579a8b110800faa50016a22acba63712e1",
+    "scripts/finalize_pnas2017_reduction_evidence.py": "67cc1853642138614a743e1fdc0e3237c8891b32f31c1826667f6c9658d76259",
+    "scripts/pnas2017_evidence_pools.py": "8c0c8b98818f18e3641f12ea822c0df73059a88fb50858645ad4dff828347a4d",
+    "scripts/pnas2017_evidence_timescales.py": "64ec1c3e677d135136a163276ae77a3ac5b2344e66f7e743d988a82d55fcd6d2",
+    "scripts/render_pnas2017_reduction_evidence_docs.py": "43b3243ecef03fdea66d3540593c4aad987e6254aad5bfb7e2f6ca3f87c90eea",
+    "scripts/verify_pnas2017_artifacts.py": "9e0358c3e2641ad6ce84f96b0b33b8700786444bd762e2ff4cd61356afeb1a8e",
+    "scripts/verify_pnas2017_integration.py": "5560d2f14d1a10b1d44898c5e2cc5b3a8b0c06eaa5b0cdef1c5a9cec0c835220",
+    "scripts/verify_pnas2017_reduction_evidence.py": "6cc2bb8ef71878f4b30b7a456e421e58ffee4cd3de97acd6b195bc49149edc30",
+    "scripts/verify_reaction_level_annotation.py": "833addca81dccecd14bb82ce33408d77f50f3e29d0e1b341213bc328181bbaff",
+    "scripts/verify_reaction_level_annotation_v2.py": "3efa9161d41ed56ebaaddcbff15a1756e6d628c43afa67521729cfb363e8daf6",
+    "scripts/verify_reaction_level_contract.py": "24de52d85acda7fa4bbf86df57afb004369dac632aef86fb283cd4352de6ae68",
+    "scripts/verify_species_information_contract.py": "46e9f90ca35e2e1b6059f98f83f5cd877d98ca5881c8e510476e3e05aed892ef"
+  },
+  "source_hashes": {
+    "docs/reduction/aminoacylation_qssa_quick_reference.md": "28c80b0eaa67c5335dc68cbc5c65310f5206ea3b45388e457710155226309ab5",
+    "docs/reduction/human_reduction_review.md": "b32dcbfa155be5d77411691889e67da7a6a89c7d87ba1406171e74db6c95c2d8",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "docs/reduction/reaction_level_contract_v0.json": "122fbb0c17852e0f7836063bfc4df8529bfb6b3540296574d3a84ac3ab877495",
+    "docs/reduction/reduction_decisions.csv": "70fd3f98de5056a1a63c29db58d310ec5986d4c52b6bfcbae9634b38e2e8d7f8",
+    "docs/reduction/species_information_contract_detailed.md": "24340aa5ca1e1fa262124407cd4ed02093066cb09ace89195475a7aa38630210",
+    "docs/reduction/species_information_contract_summary.md": "751fec6adf3923318c2f5d72bec278e71b4e7199765429c629486768eca43cb1",
+    "models/pnas2017_full_reference/audit/aminoacylation_enzyme_pool_conservation.csv": "ad30e4d6435da0fa304e2c1c0e1f8496032c82761a0c57ae5f54f75cf9199109",
+    "models/pnas2017_full_reference/audit/aminoacylation_fast_states.csv": "516801bb231e4f7bcafd9a9807742b3acc4295f49198878cfe3761fe2d0701bf",
+    "models/pnas2017_full_reference/audit/aminoacylation_timescale.csv": "637e5c904d138598f172184748c778ca18fe550ed395aa86c1e1f48c079e9488",
+    "models/pnas2017_full_reference/audit/reaction_balance_audit.csv": "89c7c5710b4ee46cc2da44442ba49fcc8c3c546289ad4521b11fc50a82eb3962",
+    "models/pnas2017_full_reference/audit/reactions.csv": "626539570e2ddcce45b49b1c53ce8d263c84f6fcd1eb9a40f292fbe2ddf637e4",
+    "models/pnas2017_full_reference/audit/species.csv": "0de6f96e9b7fde61c267bfb2b9c770ee38fbf14c5021b70fcd7fd97ae3bc6686",
+    "models/pnas2017_full_reference/audit/species_properties.csv": "fcb2ade0d390ec8b08ba3a613a96dfe4ff801b3324f362360534fd504f7ad9d8",
+    "models/pnas2017_full_reference/audit/species_reduction_map.csv": "ecf444b81fca0b468cf279853e7804362dab5a3f2ce1fe6eeb134c6e2f5f881e",
+    "models/pnas2017_full_reference/audit/species_reduction_map.json": "d77ce4e7a443b5ed48692a03168bd350bf7af7436bd5591d6a3f46bf68148b46",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv": "845aef2d0b9a46d8e1a2d2eb3b5acb3501bcf69b72229ad02a97b73a9363a929",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis.m": "5357b16387970d693f730102256c8d4ee30b91a318ad7482fc13e798834889f4",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis_Sample.m": "9db2acfd7c5961f2bc52766df75bca619af496f999ad92b9b29a77f4c7fa6fc0",
+    "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Gly.xml": "16a7a4ee463a130dab146ed5de90636b9242e6815f0b85a6264fed725d3d454d",
+    "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Met.xml": "440d2cbe33964e20f6dd5c3b40c8c84ff89e91c34f86de653ea1c48131b747a6",
+    "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_GlyGCC.xml": "314e1c203367957f0d0c6c05dfcb58f496b68845face66bc5682919d030cd75a",
+    "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_fMetCAU.xml": "81e265aec3a630779829d2f734f88a76666004a95b9343835a016455bb57e227",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_A_Gly.xml": "01bd54f888be77fea1b5c78cddca9e066f6adfa81febffa14da3eb85affc68a5",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_A_Met.xml": "eb7b300b00e0850a8e3e8c2571f3569565dd49290bda9e2cd143ef65e1b948f3",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_B.xml": "0351f98dd5bed6f59bc8fb8e2e54794d1ccdffa59927e98b3b360bec791c80ae",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_GlyGCC.xml": "01fbdc9aba47a58224aaf2590cec372618045faae134aefd0003af2ee6a4630e",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_fMetCAU.xml": "a7cbf1ac160720e5c90ea072c53bcd45391f6ad414988123ee0aed3e9d10c420",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml": "fa183c0a44c8a053e7d5d6f92ece79252f1d867fcc6fd0f56a92f430de02c197",
+    "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml": "7df7ff8869563d50eaf2e49cd7eafc7462421555569560b4efaa3bbd407dda7a",
+    "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_A.xml": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+    "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_B.xml": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+    "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_C.xml": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+    "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_D.xml": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+    "models/pnas2017_full_reference/original/subsystems/FMet_tRNASynthesis.xml": "10633f79d44350c6ab555cb80b85b5068e048b6f52916ca454c066c547db3491",
+    "models/pnas2017_full_reference/original/subsystems/Initiation_A.xml": "15d151724760ad3f98e2742e48b7c9daaf43f3b37cd4eccd5bd38b96f3bdf320",
+    "models/pnas2017_full_reference/original/subsystems/Initiation_B1.xml": "b89b1eac8dbbd4dd0f96a356056b8ae1a999f13f0b398a9516ed1fc50ff4894f",
+    "models/pnas2017_full_reference/original/subsystems/Initiation_B2.xml": "fa7b8687b052360e78b7e725cbb0ec93602f7e50da47a6c64d112544a32e96ff",
+    "models/pnas2017_full_reference/original/subsystems/Initiation_C.xml": "8c983174446b5e2a70922870e150474ac93ffdbf95b658e9864e5e20c95a9fde",
+    "models/pnas2017_full_reference/original/subsystems/SmallMolecules.xml": "731b0c71057fdc3129c6072a2a3e107e9b908415cd5e227b3ffa7cad09ddbdb2",
+    "models/pnas2017_full_reference/original/subsystems/Termination_A_RF1.xml": "bf78f1693fefae5ce2380622922aa5c9285611e22a642f56c5630836bbf25915",
+    "models/pnas2017_full_reference/original/subsystems/Termination_A_RF2.xml": "42ac014731f0058f717759e1a90f449d3d563b6c61b91e4ccccf3e766400b656",
+    "models/pnas2017_full_reference/original/subsystems/Termination_B_RF1.xml": "3db57e09f5a5ce70ce763dd75f23d03f6ab5591f9476f80e49aef7a054f5cc67",
+    "models/pnas2017_full_reference/original/subsystems/Termination_B_RF2.xml": "3ab9d98e640df2248c673b993b88cbbf61147d4762dd8416cd10f665708042c4",
+    "models/pnas2017_full_reference/original/subsystems/Termination_C.xml": "369766462c969ced933af9fbd7dd1fe960c5be5b8996a9d00be0ac528af63b63",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/matsuura-et-al-2017-reaction-dynamics-analysis-of-a-reconstituted-escherichia-coli-protein-translation-system-by.pdf": "e340ba829f87121e723059aebecc56c342c37c2cc4687692d1447f16b38f2a4e",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd01.xlsx": "ac253974baf41ebf654becca44b4489dbc895d1957b58ee12f6b9c7b4ceeb53e",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd02.xlsx": "b2fadff2b3c078b01bfc4be6f52a5cd5baed4653bb67690debd2ccb99b558f98",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd03.xlsx": "2f88fcd733d9db54b309d4a60882553c02b401edb1b007791ba7b9f00e400a3c",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd04.xlsx": "c1c527b311e659065e8ca7f9cbe1b0eb566e950957669706d11620461c2ab39e",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd05.xlsx": "12cb0bf9e39a2073adc04fdfa48b87502bb428e678d7cbdf618232abd5bc2575",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd06.xlsx": "52120a80f2c5cc0ea60457a2323f4ddd9544ca4abc2c015ee6c323627788ae26",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd07.xlsx": "1384be1989405f75357d1901cedc798e2c5fd1ef21ceb14988a2371f5d237946",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd08.xlsx": "314de60062a4c826fa9f53154be3f40b9f21f0dc722573a0949fb482f778b34b",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd09.xlsx": "85c3eefd010aca9f424ab8d79366cef2bd520a1957f27f783daa45a529f4495a",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd10.xlsx": "47516d9bfdaebcdf973f6d9b92aeaacd733dd46bb804eae9488c2fb9d34870b6",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd11.xlsx": "e5034bf00ac67dba291d54fe30784cb869f974afcde1957d143d6b204f016954",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx": "87051f1a25498750d16bcaccd9f4c3b8849c2b6a76efa119373b041de1ee54ed",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx": "f2c6c7c20859cf1fa5cfa78415d4923422e4b2577cc0aa04a110ffe1cb83be56",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx": "db1207bdabcc43f950fa86dcba4c93e82d7c0fae7af857ca6d5362a67e57c046",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx": "3e292593b51b7c90b77a6c092c90592cf35311e39375e18a9934ebb839202845",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx": "4f683eb04f06112b219aba97b246dd2009c3eaccf24e83bd7d51dae9b7c0f695",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd17.xlsx": "cb36d279c3a6d16647d9cc89135b051628cc259b3b2ff677b8ca6d39084cb174",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd18.xlsx": "99da064d8c7ac83559418d44df983b7520f5603f94f703ed12f4d957c227f5ce",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd19.xlsx": "9016df1526033b7ae82b0c25a3d0d62a4c931e1548ca0bb127637b2754381ab2",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd20.xlsx": "87a5320e64c8301322e76b2a5f32966fd9a8a93eb59b6e1039b95f364bba44cd",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd21.xlsx": "fcfdda052ef1f1853ff35b83df3aa0ceb1ccfe91c2ef84ae2d2774a9ef77de96",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd22.xlsx": "3ef78079f08e075ac49ebe4bcb067cff369ebc9c280a029aa9ce1a5a5ee17d62",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd23.xlsx": "75fba1fceccca7fe752acd8096fe41ee2ecacc93e07c9e01234f19c7da846ac6",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd24.xlsx": "fb054f216b3e786658278cf92f7005038d7dad5bdb2318a07720080cb6e60f51",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd25.xlsx": "7c5d9b1ed8ef7d8325968dbb0aefd02dd897d61a889c48c8f782ac68078f1991",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd26.xlsx": "4e2555a85c563d378aedd425c6001bac2712b4a2b4d0099ddff529cdceb71677",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd27.xlsx": "d52052e6ce24ddcd1894e95b3f759f1a047600e6ffccff28cc2dcd2b8d94b227",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd28.xlsx": "8297f2348f5ebdfc3c14083577f2c5f276f35a7ee8ab30f8a37fd8431ef565ec",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd29.xlsx": "6d8a913d9823a4e387ea8c6fc94ee34641e3b7a4d47b0e00a479207bb813dbd7",
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/run_manifest.json": "cfffe872a342812d1c23262e8d5400b87ee0024e86850d53ab1e0a38d079445b",
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/trajectory.csv": "5e2ed9c36afb14b69c8b7cf5da95faf45b51f7977c09dd2bfdad1a2d2604a0d4"
+  },
+  "source_head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e",
+  "status": "EVIDENCE_PREPARATION_ONLY_NO_REDUCTION_APPROVAL",
+  "verification_commands": [
+    "python scripts/verify_pnas2017_artifacts.py",
+    "python scripts/verify_pnas2017_integration.py",
+    "python scripts/verify_reaction_level_annotation.py",
+    "python scripts/verify_reaction_level_annotation_v2.py",
+    "python scripts/verify_reaction_level_contract.py",
+    "python scripts/verify_species_information_contract.py",
+    "python scripts/verify_pnas2017_reduction_evidence.py",
+    "git diff --check"
+  ],
+  "verification_report_cycle_policy": "Reports and manifest excluded from generated-artifact hash map; final manifest reverified after result recording",
+  "verification_results": [
+    {
+      "command": "python scripts/verify_pnas2017_artifacts.py",
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "{\n  \"status\": \"PROVENANCE_AND_COVERAGE_VERIFIED_NOT_SCIENTIFIC_VALIDATION\",\n  \"sources\": 3,\n  \"species\": 241,\n  \"reactions\": 968,\n  \"modules\": 26,\n  \"pending_decisions\": 968,\n  \"review_cards\": 16\n}"
+    },
+    {
+      "command": "python scripts/verify_pnas2017_integration.py",
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "{\"pass\": 11, \"fail\": 0}"
+    },
+    {
+      "command": "python scripts/verify_reaction_level_annotation.py",
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "PASS: graph-aware v1 = 968 unique rows\nPASS: 35 active families + RFAM_DEG; 290 reverse channels\nPASS: 846 anchors / 42 propagated / 4 family-propagated / 76 shared junctions\nPASS: EFG/50S pair = shared ELONG_energy_coupling + RECYCLE_component_release\nPASS: historical v1 graph-unresolved=0; v2 functional review and reduction review are separate\nNOTE: graph annotation only; no QSSA/lumping/kinetic validity is tested\nPASS: 968 unique source-identical reactions; 290 symmetric exact reverse channels\nPASS: hard chemistry priority; double-zero edges never functional anchors\nPASS: RFAM_005-010 approved regressions; RFAM_011/012 Gly/Met source and parameter-topology symmetry (52/52)\nPASS: RFAM_025/026 reviewed initiation rules and reverse symmetry\nPASS: nine prior reviewed families = 98 direct rules; RFAM_002/004/014 final reviewed patterns and source equations\nPASS: six approved shared junctions; non-target scientific fingerprint unchanged\nPASS: 22 specific-intermediate cross-family links; 0 live functional-review rows\nPASS: reduction scientific review remains 968/968 PENDING; v0/v1 retained\nSTATUS COUNTS: {\"DIRECT_CHEMISTRY\": 492, \"GRAPH_PROPAGATED\": 50, \"HUMAN_REVIEW_REQUIRED\": 0, \"REFERENCE_DISABLED\": 420, \"SHARED_JUNCTION\": 6}"
+    },
+    {
+      "command": "python scripts/verify_reaction_level_annotation_v2.py",
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "PASS: 968 unique source-identical reactions; 290 symmetric exact reverse channels\nPASS: hard chemistry priority; double-zero edges never functional anchors\nPASS: RFAM_005-010 approved regressions; RFAM_011/012 Gly/Met source and parameter-topology symmetry (52/52)\nPASS: RFAM_025/026 reviewed initiation rules and reverse symmetry\nPASS: nine prior reviewed families = 98 direct rules; RFAM_002/004/014 final reviewed patterns and source equations\nPASS: six approved shared junctions; non-target scientific fingerprint unchanged\nPASS: 22 specific-intermediate cross-family links; 0 live functional-review rows\nPASS: reduction scientific review remains 968/968 PENDING; v0/v1 retained\nSTATUS COUNTS: {\"DIRECT_CHEMISTRY\": 492, \"GRAPH_PROPAGATED\": 50, \"HUMAN_REVIEW_REQUIRED\": 0, \"REFERENCE_DISABLED\": 420, \"SHARED_JUNCTION\": 6}"
+    },
+    {
+      "command": "python scripts/verify_reaction_level_contract.py",
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "PASS: 968 unique source reactions; 26 source subsystems\nPASS: CellDesigner reaction types = association 266, dissociation 266, state transition 436\nPASS: source SBML reversible=true count = 0\nPASS: 290 exact reverse-stoichiometry pairs cover 580 directed reactions; no ambiguous signature groups\nPASS: 388 degradation-related reactions require explicit DEG_sink coverage\nPASS: 29 FMet_tRNASynthesis reactions require the RS-to-INIT formylation bridge\nPASS: Level-C vocabulary = 22 active stages + 1 coverage-only stage; elongation keeps 5 active stages\nPASS: summary/detailed Markdown contain every controlled Level-C label\nNOTE: vocabulary/source-structure verification only; no 968-row functional assignment or kinetic reduction is validated"
+    },
+    {
+      "command": "python scripts/verify_species_information_contract.py",
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "PASS: 241 unique source species\nPASS: class counts I=42, II-A=57, II-B=91, III=22, C=29\nPASS: source species set equals detailed Markdown table\nPASS: degraded/enzyme-intermediate source rules\nPASS: resource Class-I contract\nPASS: Pept0002, RS50S_tRNAGlyGCC and UAA pretermination decisions\nNOTE: structural verification only; QSSA/kinetic validity is not tested"
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "command": "python scripts/verify_pnas2017_reduction_evidence.py",
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "{\n  \"schema\": \"pnas2017_reduction_evidence_verification/v0\",\n  \"status\": \"PASS\",\n  \"source_head\": \"3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e\",\n  \"preregistration_sha256\": \"b20d782edcef9a7a70bf3848acd2dbd8c240303e3507cc927f0041c56bc4969b\",\n  \"reaction_coverage\": 968,\n  \"species_coverage\": 241,\n  \"reverse_pairs\": 290,\n  \"processes\": 16,\n  \"kinetic_decisions_pending\": 968,\n  \"unselected_process_boxes\": 96,\n  \"reduced_model_status\": \"NOT_VALIDATED\",\n  \"eol_only_checkout_differences\": [\n    \"docs/reduction/aminoacylation_qssa_quick_reference.md\"\n  ],\n  \"negative_controls\": [\n    {\n      \"name\": \"missing_reaction\",\n      \"expected_rejection\": \"ROW_COUNT\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": false\n    },\n    {\n      \"name\": \"duplicate_reaction\",\n      \"expected_rejection\": \"DUPLICATE_ID\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": false\n    },\n    {\n      \"name\": \"altered_declared_source_sha\",\n      \"expected_rejection\": \"DECLARED_SBML_HASH\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": true\n    },\n    {\n      \"name\": \"wrong_reverse_partner\",\n      \"expected_rejection\": \"REVERSE_PARTNER\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": false\n    },\n    {\n      \"name\": \"zero_zero_pair_false_equilibrium\",\n      \"expected_rejection\": \"ZERO_EQUILIBRIUM\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": false\n    },\n    {\n      \"name\": \"zero_flux_false_qss\",\n      \"expected_rejection\": \"ZERO_QSS\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": false\n    },\n    {\n      \"name\": \"fabricated_pool\",\n      \"expected_rejection\": \"FABRICATED_POOL\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": false\n    },\n    {\n      \"name\": \"real_pool_fabricated_nonmember\",\n      \"expected_rejection\": \"FABRICATED_POOL\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": false\n    },\n    {\n      \"name\": \"altered_species_classification\",\n      \"expected_rejection\": \"SPECIES_CLASS\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": false\n    },\n    {\n      \"name\": \"altered_scientific_decision\",\n      \"expected_rejection\": \"HUMAN_DECISION\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": false\n    },\n    {\n      \"name\": \"preselected_process_checkbox\",\n      \"expected_rejection\": \"PRESELECTED_BOX\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": false\n    },\n    {\n      \"name\": \"canonical_source_mutation\",\n      \"expected_rejection\": \"SOURCE_HASH\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": true\n    },\n    {\n      \"name\": \"author_parameter_mutation\",\n      \"expected_rejection\": \"SOURCE_HASH\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": true\n    },\n    {\n      \"name\": \"author_initial_value_mutation\",\n      \"expected_rejection\": \"SOURCE_HASH\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": true\n    },\n    {\n      \"name\": \"disabled_direction_false_evidence\",\n      \"expected_rejection\": \"DISABLED_EQUILIBRIUM\",\n      \"result\": \"REJECTED_AS_EXPECTED\",\n      \"hash_checks_used\": false\n    }\n  ],\n  \"hash_checks_separate_from_semantic_controls\": true,\n  \"numerical_check\": \"all 201 samples: independent canonical-stoichiometry and author-CSV mass action; all QSS, pair and concentration/turnover/extent summaries\",\n  \"skipped_checks\": [],\n  \"independent_numerical_crosschecks\": {\n    \"effective_mathml_vs_author_mass_action_max_scaled_error\": 0.0,\n    \"analytic_vs_central_difference_jacobian_max_scaled_error\": 6.908051069385427e-08,\n    \"jacobian_sample_indices\": [\n      0,\n      1,\n      50,\n      100,\n      150,\n      200\n    ],\n    \"finite_difference_state_columns\": 241\n  },\n  \"pool_verification\": {\n    \"pools_checked\": 82,\n    \"state_pool_memberships_checked\": 914,\n    \"pool_samples_checked\": 16482,\n    \"reference_conserved_pools\": 58,\n    \"quantified_pools\": 38\n  },\n  \"process_timescale_verification\": {\n    \"process_sample_rows_checked\": 3200,\n    \"eigenvalue_rows_checked\": 38600,\n    \"independently_resolved_blocks\": 75,\n    \"independent_eigenvalue_max_scaled_error\": 0.0,\n    \"independent_eigenvalue_scaled_tolerance\": 1e-07\n  }\n}"
+    }
+  ],
+  "verification_timestamp": "2026-10-02T23:09:52.887679+00:00",
+  "versions": {
+    "MATLAB": "NOT_USED",
+    "MATLAB_analysis": "NOT_USED",
+    "NumPy": "1.26.4",
+    "Python": "3.12.4",
+    "RoadRunner": "2.10.0",
+    "RoadRunner_numpy": "2.2.6",
+    "RoadRunner_python": "3.11.4",
+    "SymPy": "1.13.1",
+    "libSBML": "NOT_USED_BY_ANALYSIS",
+    "manifest_python": "3.12.4",
+    "trajectory_RoadRunner": "2.10.0 (preserved prior trajectory)"
+  }
+}
