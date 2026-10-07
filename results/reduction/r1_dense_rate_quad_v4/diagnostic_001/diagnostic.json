@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "status": "R1_DENSE_RATE_QUADRATURE_DIAGNOSTIC_NOT_ACCEPTANCE",
+  "acceptance_eligible": false,
+  "canonical_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "coordinate_certificate": "source_coordinate_certificate_v4.json",
+  "coordinate_certificate_sha256": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+  "scipy_version": "1.14.0",
+  "state_solver": {
+    "name": "BDF",
+    "rtol": 1e-12,
+    "atol": 1e-14
+  },
+  "quadrature": {
+    "nodes_per_dense_step": 8,
+    "rule": "Gauss-Legendre",
+    "extent_status": "rate_quadrature_not_model_side_direct_ODE"
+  },
+  "full_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 12081,
+    "njev": 22,
+    "nlu": 898
+  },
+  "reduced_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 46185,
+    "njev": 1017,
+    "nlu": 4922
+  },
+  "dense_intervals": {
+    "full": 5425,
+    "reduced": 17272
+  },
+  "maxima": {
+    "species": 3.0477167456410825e-09,
+    "rates": 1.3751923688687384e-07,
+    "rate_quadrature_extents": 8.784234523773193e-06,
+    "full_balance_absolute": 2.9156581149436533e-08,
+    "reduced_balance_absolute": 7.668243089398175e-07
+  },
+  "physical_domain": {
+    "full": {
+      "minimum": 0.0,
+      "negative_count": 0,
+      "numerical_negative_count": 0,
+      "domain_failure_count": 0
+    },
+    "reduced": {
+      "minimum": -2.9357926487725846e-12,
+      "negative_count": 2516,
+      "numerical_negative_count": 2516,
+      "domain_failure_count": 0
+    }
+  },
+  "thresholds_for_context_only": {
+    "species_E_inf": 1e-06,
+    "rates_E_inf": 1e-06,
+    "direct_extent_E_inf": 1e-06,
+    "balance_absolute": 1e-08,
+    "negative_floor": -1e-11
+  },
+  "trajectory_arrays": "trajectories.npz"
+}

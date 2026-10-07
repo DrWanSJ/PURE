@@ -1,0 +1,3 @@
+PASS: three parameter-reactivation mutants; frozen-law and source-chart scopes distinguished
+PASS: 34 singleton mutants reconstruct nonzero initial constants; stale author b rejected
+PASS: rule/event/initial-assignment/function/constraint and additive/piecewise bypass mutants rejected

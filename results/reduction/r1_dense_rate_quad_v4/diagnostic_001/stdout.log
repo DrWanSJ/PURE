@@ -1,0 +1,21 @@
+Integrating state-only full source with dense output
+full success=True nfev=12081: The solver successfully reached the end of the integration interval.
+Integrating state-only reduced coordinates with dense output
+reduced success=True nfev=46185: The solver successfully reached the end of the integration interval.
+full dense steps 2000/5425
+full dense steps 4000/5425
+reduced dense steps 2000/17272
+reduced dense steps 4000/17272
+reduced dense steps 6000/17272
+reduced dense steps 8000/17272
+reduced dense steps 10000/17272
+reduced dense steps 12000/17272
+reduced dense steps 14000/17272
+reduced dense steps 16000/17272
+{
+  "species": 3.0477167456410825e-09,
+  "rates": 1.3751923688687384e-07,
+  "rate_quadrature_extents": 8.784234523773193e-06,
+  "full_balance_absolute": 2.9156581149436533e-08,
+  "reduced_balance_absolute": 7.668243089398175e-07
+}

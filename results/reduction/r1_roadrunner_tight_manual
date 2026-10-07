@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "status": "R1_INDEPENDENT_ROADRUNNER_TIGHT",
+  "roadrunner_version": "2.10.0",
+  "effective_sbml_sha256": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+  "reference_trajectory_sha256": "5b93df17bf3dd8f528f3aaae009f192b72db3426221df8f95aac192f63f1b1ec",
+  "imported_species": 241,
+  "imported_reactions": 968,
+  "source_stoichiometry_max_absolute_error": 0.0,
+  "author_initial_max_absolute_error": 0.0,
+  "solver": {
+    "name": "libRoadRunner CVODE",
+    "rtol": 1e-12,
+    "atol": 1e-14,
+    "stiff": true,
+    "grid_points": 201
+  },
+  "maxima": {
+    "species_E_inf": 1.2858890841016546e-08,
+    "identical_state_rates_E_inf": 0.0
+  },
+  "thresholds": {
+    "species_E_inf": 1e-06,
+    "identical_state_rates_E_inf": 1e-10
+  },
+  "error_tables": [
+    "roadrunner_species_errors.csv",
+    "identical_state_rate_errors.csv"
+  ],
+  "pass": true
+}

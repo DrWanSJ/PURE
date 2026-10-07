@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "label": "v4_full_coupled_direct_extents",
+  "command": [
+    "python",
+    "scripts/validate_source_coordinates_full_v1.py",
+    "--out",
+    "results/reduction/r1_full_coupled_v4/decisive_001/validation.json",
+    "--chart",
+    "v4",
+    "--method",
+    "v4"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "environment": {
+    "PYTHONHASHSEED": null,
+    "PYTHONPATH": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "GIT_CONFIG_COUNT": "1",
+    "GIT_CONFIG_KEY_0": "safe.directory",
+    "GIT_CONFIG_VALUE_0": "C:/Users/sean/Desktop/GUV"
+  },
+  "python_executable": "C:\\Python311\\python.exe",
+  "python_version": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "package_versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.14.0",
+    "sympy": "1.13.1",
+    "libroadrunner": null
+  },
+  "source_commit": "2d74ce12af0e1522d3478551fb9ef400eadab159",
+  "source_branch": "research/reduction-audit-v0",
+  "canonical_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "started_utc": "2026-09-29T03:37:12.026778+00:00",
+  "ended_utc": "2026-09-29T03:37:42.990075+00:00",
+  "exit_code": 1,
+  "stdout_path": "stdout.log",
+  "stderr_path": "stderr.log"
+}

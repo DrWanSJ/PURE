@@ -83,3 +83,60 @@ scripts/pnas2017_evidence_*.py text eol=lf
 docs/reduction/pnas2017_reduction_evidence_method.md text eol=lf
 docs/reduction/pnas2017_reduction_quick_reference.md text eol=lf
 docs/reduction/process_quick_reference/** text eol=lf
+
+# Preserve the tested union of hash-bound evidence checkout byte policies.
+# Exact reduction audit v0 hashes generated text bytes across fresh checkouts.
+docs/reduction/reduction_audit_v0_*.md text eol=lf
+scripts/build_reduction_audit_v0.py text eol=lf
+scripts/verify_reduction_audit_v0.py text eol=lf
+# R1 exact-coordinate methods and implementation are hash-bound run inputs.
+docs/reduction/source_coordinate_*.md text eol=lf
+docs/reduction/r1_acceptance_v4r3.md text eol=lf
+scripts/*source_coordinate*.py text eol=lf
+scripts/runtime_reconstruction_rhs.py text eol=lf
+scripts/test_reduction_*.py text eol=lf
+scripts/run_reduction_*.py text eol=lf
+scripts/validate_r1_roadrunner_tight.py text eol=lf
+docs/reduction/r2_frozen_reference_domain_v1.md text eol=lf
+scripts/build_frozen_reference_domain_v1.py text eol=lf
+scripts/test_frozen_reference_domain_v1.py text eol=lf
+scripts/run_r2_frozen_reference_validation_v1.py text eol=lf
+docs/reduction/r3_aminoacylation_qssa_method.md text eol=lf
+docs/reduction/r3_validation_grid_v1.csv -text
+scripts/verify_r3_preregistration_v1.py text eol=lf
+scripts/diagnose_r3_candidate_closure_v1.py text eol=lf
+scripts/build_r3_carrier_chart_v1.py text eol=lf
+scripts/test_r3_carrier_chart_v1.py text eol=lf
+docs/reduction/r3_carrier_chart_diagnostic_v1.md text eol=lf
+scripts/r3_candidate_runtime_v1.py text eol=lf
+scripts/screen_r3_closure_grid_v1.py text eol=lf
+scripts/test_r3_candidate_runtime_v1.py text eol=lf
+docs/reduction/r3_initial_closure_screen_v1.md text eol=lf
+scripts/diagnose_r3_coupled_smoke_v1.py text eol=lf
+docs/reduction/r3_coupled_smoke_v1.md text eol=lf
+# Keep raw acceptance and negative-run evidence byte-exact.
+results/reduction/** -text -diff
+scripts/diagnose_r3_adverse_newton_trace_v1.py text eol=lf
+
+# Exact registered checkout bytes across both evidence packages.
+docs/reduction/aminoacylation_qssa_quick_reference.md text eol=lf
+docs/reduction/species_information_contract_detailed.md text eol=crlf
+docs/reduction/species_information_contract_summary.md text eol=crlf
+docs/reduction/r3_coupled_validation_protocol_v1.md text eol=lf
+scripts/r3_resource_total_runtime_v1.py text eol=lf
+scripts/r3_resource_total_runtime_v2.py text eol=lf
+scripts/run_r3_coupled_grid_v1.py text eol=lf
+scripts/finalize_r3_pilot_v1.py text eol=lf
+scripts/seal_r3_stalled_attempt_v1.py text eol=lf
+scripts/probe_r3_running_bdf_v1.py text eol=lf
+docs/reduction/r3_grid_execution_environment_v1.md text eol=lf
+
+# Exact registered checkout bytes across both evidence packages.
+scripts/pnas2017_evidence_pools.py text eol=lf
+scripts/pnas2017_evidence_timescales.py text eol=lf
+scripts/verify_pnas2017_artifacts.py text eol=crlf
+scripts/verify_pnas2017_integration.py text eol=crlf
+scripts/verify_reaction_level_annotation.py text eol=crlf
+scripts/verify_reaction_level_annotation_v2.py text eol=crlf
+scripts/verify_reaction_level_contract.py text eol=crlf
+scripts/verify_species_information_contract.py text eol=crlf

@@ -1,0 +1,50 @@
+Integrating full and reduced states with dense BDF output
+full direct extent segments 50/200
+full direct extent segments 100/200
+full direct extent segments 150/200
+full direct extent segments 200/200
+reduced direct extent segments 50/200
+reduced direct extent segments 100/200
+reduced direct extent segments 150/200
+reduced direct extent segments 200/200
+{
+  "pass": false,
+  "maxima": {
+    "species": 3.816694515990093e-09,
+    "rates": 2.7865837637364166e-07,
+    "direct_extents": 2.9278220608830452e-05,
+    "class_I": 3.816694515990093e-09,
+    "class_C": 5.0458230279589075e-11,
+    "resources": 3.816694515990093e-09,
+    "full_balance_absolute": 2.749402483459562e-08,
+    "reduced_balance_absolute": 1.3874811692904387e-06,
+    "full_law_absolute": 1.0186340659856796e-10,
+    "reduced_law_absolute": 1.8189894035458565e-12
+  },
+  "physical_domain": {
+    "full": {
+      "minimum": 0.0,
+      "negative_count": 0,
+      "numerical_negative_count": 0,
+      "domain_failure_count": 0
+    },
+    "reduced": {
+      "minimum": -5.0458230279589075e-11,
+      "negative_count": 2872,
+      "numerical_negative_count": 2781,
+      "domain_failure_count": 91
+    },
+    "retained": {
+      "minimum": -6.733676944644677e-13,
+      "negative_count": 113,
+      "numerical_negative_count": 113,
+      "domain_failure_count": 0
+    },
+    "reconstructed": {
+      "minimum": -5.0458230279589075e-11,
+      "negative_count": 2759,
+      "numerical_negative_count": 2668,
+      "domain_failure_count": 91
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "field": "solver.direct_extent_rtol",
+  "recorded_value": 1e-12,
+  "actual_value": 3e-14,
+  "evidence": "The split extent solve in scripts/validate_source_coordinates_full_v1.py used solve_ivp(method='DOP853', rtol=3e-14, atol=1e-13); result.json also records solver.split_extent_rtol=3e-14. The generic direct_extent_rtol metadata field was corrected after this diagnostic without altering its raw result or trajectory."
+}

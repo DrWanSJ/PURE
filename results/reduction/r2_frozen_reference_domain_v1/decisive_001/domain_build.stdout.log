@@ -1,0 +1,4 @@
+PASS: 485 frozen-zero directions; 483 author-active directions
+PASS: 37 frozen-only laws, 27 source-general laws; 34 singleton constants recomputed
+PASS: reactivation invalidates 388 unpaired and 8 bidirectional-zero frozen-law cases
+PASS: 65 only-reverse-zero reactivations change profile while preserving the existing invariant span

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\sean\Desktop\GUV\scripts\validate_source_coordinates_full_v1.py", line 348, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "C:\Users\sean\Desktop\GUV\scripts\validate_source_coordinates_full_v1.py", line 257, in main
+    full = solve_ivp(full_rhs, (0.0, end), np.r_[x0, zeros], jac=full_jac, rtol=full_rtol, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sean\AppData\Roaming\Python\Python311\site-packages\scipy\integrate\_ivp\ivp.py", line 621, in solve_ivp
+    solver = method(fun, t0, y0, tf, vectorized=vectorized, **options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sean\AppData\Roaming\Python\Python311\site-packages\scipy\integrate\_ivp\bdf.py", line 216, in __init__
+    self.newton_tol = max(10 * EPS / rtol, min(0.03, rtol ** 0.5))
+                                           ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
