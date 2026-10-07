@@ -1,0 +1,32 @@
+{
+  "schema": "R8_INDEPENDENT_VERIFICATION_V1",
+  "status": "PASS_ENGINEERING_AND_EVIDENCE_ONLY",
+  "checks": [
+    {
+      "check": "HASH_LINEAGE_ALL_HISTORICAL_BYTES_AND_THREE_READ_ONLY_DONORS",
+      "status": "PASS",
+      "historical_file_count": 3226
+    },
+    {
+      "check": "FIXED_TIMES_PAIRS_SIGNED_RESIDUAL_INTEGRAL_ADDITIVITY_ORIGINAL_F_D_SCALES_AND_UNCERTAINTY",
+      "status": "PASS",
+      "max_independent_quadrature_difference": 1.7763568394002505e-15,
+      "max_independent_fast_graph_difference": 3.552713784679618e-15
+    },
+    {
+      "check": "BOUNDED_ATTRIBUTION_DECISION_NO_PROMOTION_NO_NEW_MODEL_OR_TRAJECTORY_SOLVE",
+      "status": "PASS",
+      "recommendation": "CK_STARTUP_LAYER_ATTRIBUTION_NOT_SUPPORTED"
+    },
+    {
+      "check": "EXISTING_R7_VERIFIER_UNCHANGED_BODY_READ_ONLY_OUTPUT_REDIRECTION",
+      "status": "PASS"
+    }
+  ],
+  "recommendation": "CK_STARTUP_LAYER_ATTRIBUTION_NOT_SUPPORTED",
+  "promotion": false,
+  "PURE_reduced_core": "NOT_VALIDATED",
+  "manifest_sha256": "d6f1f4361f8967b97776205e936ce1b4b075fbcfd0d761bfa4706166192aae96",
+  "verifier_sha256": "057f0df1d136610c5ac1abf5f6cfbd515b16cbaea1668dfb91f55c1b7a1361fe",
+  "uncertainty_limitation": "No rigorous continuous-time interpolation bound; attribution uses frozen ledgers and stated envelopes."
+}

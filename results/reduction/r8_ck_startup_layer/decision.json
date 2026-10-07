@@ -1,0 +1,22 @@
+{
+  "recommendation": "CK_STARTUP_LAYER_ATTRIBUTION_NOT_SUPPORTED",
+  "next_step": "INVESTIGATE_SUSTAINED_OUTER_TRUNCATION_OR_MECHANISM_ERROR_BEFORE_MATCHING",
+  "promotion": false,
+  "PURE_reduced_core": "NOT_VALIDATED",
+  "conditions": [
+    "R3_BASE",
+    "R3_ATP_LOW",
+    "R3_TRNA_LOW"
+  ],
+  "new_state_solves": 0,
+  "new_extent_ODE_solves": 0,
+  "matched_layer_implemented": false,
+  "h2_implemented": false,
+  "R7_recommendation": "CK_FIRST_ORDER_IMPROVES_EXTENT_NOT_CURRENT",
+  "R7_scores_unchanged": true,
+  "E_G_status": "DESCRIPTIVE_BUT_NOT_VALIDATED",
+  "mechanistic_decisions": "968_PENDING",
+  "uncertainty_status": "PRIMARY_PROBE_AND_R7_QUADRATURE_CANCELLATION_PLUS_DESCRIPTIVE_INTERPOLATION_ENVELOPE",
+  "optional_linear_check": "SKIPPED_NO_NATIVE_DENSE_POST_SWITCH_SOURCE_FAST_TAIL",
+  "limitation": "Fixed-time interpolation is not a rigorous continuous-source bound; maxima are frozen-grid diagnostics."
+}

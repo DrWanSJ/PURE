@@ -1,0 +1,22 @@
+{
+  "schema": "R8_CK_STARTUP_LAYER_MANIFEST_V1",
+  "registration_sha256": "abca8b8707221aae5222b46d0db1f047bb43d3c5a889754a9f8d0e36c10813d8",
+  "parent_SHA": "20ca5215d949c9451b3e6fd4435c18991783ac29",
+  "branch": "codex/r8-ck-startup-layer-20261008",
+  "recommendation": "CK_STARTUP_LAYER_ATTRIBUTION_NOT_SUPPORTED",
+  "promotion": false,
+  "files": {
+    "docs/reduction/r8_ck_startup_layer_summary.md": "ba58a3d7e5a7d7fc0544c6960d9aa5bb78ad6926704e90d5a0e85ac1d350e44b",
+    "results/reduction/r8_ck_startup_layer/boundary_values.csv": "9e5610fe9c60a319bb51939113255728e03660d25cef885bb22298511bd84c29",
+    "results/reduction/r8_ck_startup_layer/condition_summary.csv": "ced00284adb1df70e7b3cb4424c47e054e78ec316649e9faf9f1fc9f0703d50a",
+    "results/reduction/r8_ck_startup_layer/current_time_localization.csv": "7d457f8fe1903909b7ab4b3f0c1fa7de19b712535e42f81b74ae31b7abca6c38",
+    "results/reduction/r8_ck_startup_layer/decision.json": "d622c7b6172f2f1d83dd0f632b3666911e407e72a438066db53e231efd08051f",
+    "results/reduction/r8_ck_startup_layer/evidence_navigation.json": "c78536183a60f0cce4aacd1ca2343314342757c04050adca2030ff81b1ccf9af",
+    "results/reduction/r8_ck_startup_layer/extent_interval_decomposition.csv": "5d74d1aa612440dbb23aecf6e72f6f804635ba8cc383062426ed05ed9fb12fa3",
+    "results/reduction/r8_ck_startup_layer/fast_state_distance.csv": "0be6b3cb5a405807555fd7dd8967ea76d149a7e83d81be7c9abb5729cdff1b73",
+    "results/reduction/r8_ck_startup_layer/pre_r8_snapshot.json": "a7657aebf87fae3593d222f965807467293269c5627a825776733156c999fd92",
+    "results/reduction/r8_ck_startup_layer/registration.json": "abca8b8707221aae5222b46d0db1f047bb43d3c5a889754a9f8d0e36c10813d8",
+    "results/reduction/r8_ck_startup_layer/visualization_transfer_original.json": "e113d7eebf9bf4983a8f8307fff2b1590d58d8c0594337aa4fc7d495aff15582"
+  },
+  "historical_snapshot_sha256": "a7657aebf87fae3593d222f965807467293269c5627a825776733156c999fd92"
+}

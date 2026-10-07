@@ -1,0 +1,43 @@
+{
+  "schema": "R8_DERIVED_NAVIGATION_V1",
+  "authority": "SUBORDINATE_TO_FROZEN_R7_AND_R8_EVIDENCE",
+  "nodes": [
+    {
+      "id": "R7",
+      "status": "EXTRACTED",
+      "source": "results/reduction/r7_ck_first_order/verification.json",
+      "sha256": "8a536ae803cf0c0ac05dae15119c5eedc544af39b07cdd0bd2716665ad3bb5ef"
+    },
+    {
+      "id": "R8_INTERVALS",
+      "status": "EXTRACTED",
+      "source": "results/reduction/r8_ck_startup_layer/extent_interval_decomposition.csv",
+      "sha256": "5d74d1aa612440dbb23aecf6e72f6f804635ba8cc383062426ed05ed9fb12fa3"
+    },
+    {
+      "id": "R8_ATTRIBUTION",
+      "status": "INFERRED",
+      "source": "results/reduction/r8_ck_startup_layer/decision.json",
+      "sha256": "d622c7b6172f2f1d83dd0f632b3666911e407e72a438066db53e231efd08051f"
+    },
+    {
+      "id": "CONTINUOUS_SUBGRID_SOURCE",
+      "status": "AMBIGUOUS",
+      "reason": "No native dense post-switch source artifact"
+    }
+  ],
+  "edges": [
+    {
+      "source": "R7",
+      "target": "R8_INTERVALS",
+      "relationship": "FROZEN_INPUT"
+    },
+    {
+      "source": "R8_INTERVALS",
+      "target": "R8_ATTRIBUTION",
+      "relationship": "BOUNDED_INFERENCE"
+    }
+  ],
+  "confidence": "BOUNDED_BY_REPORTED_NUMERICAL_AND_INTERPOLATION_UNCERTAINTY",
+  "freshness": "HASH_CHECK_EACH_REFERENCED_SOURCE"
+}
