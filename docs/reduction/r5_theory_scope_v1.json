@@ -1,0 +1,39 @@
+{
+  "schema": "R5_MECHANISM_FIRST_THEORY_SCOPE_V1",
+  "parent_main_sha": "0b6f9ad649a7e283e440e0294a021123551f6858",
+  "execution_parent_sha": "9def91d4a39cad4589bd56e6db67f3a8c17b0d52",
+  "claims": [
+    "ANALYTICAL_STRUCTURAL",
+    "ASYMPTOTIC_LIMIT",
+    "ORIGINAL_PARAMETER_DESCRIPTIVE",
+    "SCIENTIFIC_PROMOTION_NOT_AUTHORIZED"
+  ],
+  "fast_reaction_ids": [
+    "re0000000332",
+    "re0000000333",
+    "re0000000336",
+    "re0000000337"
+  ],
+  "eta": [
+    1,
+    0.3,
+    0.1,
+    0.03,
+    0.01
+  ],
+  "rtol": 1e-10,
+  "atol": 1e-14,
+  "end_s": 1000,
+  "wall_bound_s": 1800,
+  "rhs_bound": 300000,
+  "hybrid_switch": "10*eta*tau0",
+  "new_full_condition_campaign": false,
+  "threshold_mutation": false,
+  "fitting": false,
+  "promotion": false,
+  "historical_snapshot_sha256": "70a82d8578ac5d200fd6d870e922141eccc81a292f98fb73001bb2499928dbff",
+  "registration_hashes": {
+    "r5_mechanism_first_authorization_20261007.md": "579961f3e1d80130201e4dbf95637fc8fd03a352a2b14179685650e30785554a",
+    "r5_mechanism_first_preregistration_v1.md": "1850c35ade96dc44ab9ccf07a180be36d2826beb64aec0c9c72768297cd6d74b"
+  }
+}
