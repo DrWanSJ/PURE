@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "status": "R3_PREREGISTERED_UNVALIDATED",
+  "canonical_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "method_sha256": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+  "grid_sha256": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+  "historical_partition_sha256": "521559bb4e703449135518ddc7b1aa772dd89de4180b379cc70ce10b20447b2f",
+  "historical_failure_classification_sha256": "a7202cc0baf3be601a7a36dd93a4b5d91f312959c0e947ab8cd8ee2611cdd383",
+  "source_reaction_map_sha256": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+  "grid_conditions": [
+    {
+      "condition_id": "R3_BASE",
+      "scaled_species": {},
+      "GlyRS_initial": "7/20",
+      "MetRS_initial": "11/25",
+      "ATP_initial": "3750",
+      "Gly_initial": "300",
+      "Met_initial": "300"
+    },
+    {
+      "condition_id": "R3_GLYRS_LOW",
+      "scaled_species": {
+        "GlyRS": 0.1
+      },
+      "GlyRS_initial": "7/200",
+      "MetRS_initial": "11/25",
+      "ATP_initial": "3750",
+      "Gly_initial": "300",
+      "Met_initial": "300"
+    },
+    {
+      "condition_id": "R3_GLYRS_HIGH",
+      "scaled_species": {
+        "GlyRS": 10
+      },
+      "GlyRS_initial": "7/2",
+      "MetRS_initial": "11/25",
+      "ATP_initial": "3750",
+      "Gly_initial": "300",
+      "Met_initial": "300"
+    },
+    {
+      "condition_id": "R3_METRS_LOW",
+      "scaled_species": {
+        "MetRS": 0.1
+      },
+      "GlyRS_initial": "7/20",
+      "MetRS_initial": "11/250",
+      "ATP_initial": "3750",
+      "Gly_initial": "300",
+      "Met_initial": "300"
+    },
+    {
+      "condition_id": "R3_METRS_HIGH",
+      "scaled_species": {
+        "MetRS": 10
+      },
+      "GlyRS_initial": "7/20",
+      "MetRS_initial": "22/5",
+      "ATP_initial": "3750",
+      "Gly_initial": "300",
+      "Met_initial": "300"
+    },
+    {
+      "condition_id": "R3_GLY_LOW",
+      "scaled_species": {
+        "Gly": 0.1
+      },
+      "GlyRS_initial": "7/20",
+      "MetRS_initial": "11/25",
+      "ATP_initial": "3750",
+      "Gly_initial": "30",
+      "Met_initial": "300"
+    },
+    {
+      "condition_id": "R3_MET_LOW",
+      "scaled_species": {
+        "Met": 0.1
+      },
+      "GlyRS_initial": "7/20",
+      "MetRS_initial": "11/25",
+      "ATP_initial": "3750",
+      "Gly_initial": "300",
+      "Met_initial": "30"
+    },
+    {
+      "condition_id": "R3_TRNA_LOW",
+      "scaled_species": {
+        "tRNAGlyGCC": 0.1,
+        "tRNAfMetCAU": 0.1
+      },
+      "GlyRS_initial": "7/20",
+      "MetRS_initial": "11/25",
+      "ATP_initial": "3750",
+      "Gly_initial": "300",
+      "Met_initial": "300"
+    },
+    {
+      "condition_id": "R3_ATP_LOW",
+      "scaled_species": {
+        "ATP": 0.1
+      },
+      "GlyRS_initial": "7/20",
+      "MetRS_initial": "11/25",
+      "ATP_initial": "375",
+      "Gly_initial": "300",
+      "Met_initial": "300"
+    },
+    {
+      "condition_id": "R3_ADVERSE",
+      "scaled_species": {
+        "GlyRS": 20,
+        "MetRS": 20,
+        "ATP": 0.02,
+        "tRNAGlyGCC": 0.02,
+        "tRNAfMetCAU": 0.02
+      },
+      "GlyRS_initial": "7",
+      "MetRS_initial": "44/5",
+      "ATP_initial": "75",
+      "Gly_initial": "300",
+      "Met_initial": "300"
+    }
+  ],
+  "historical_candidate_selected_complexes": [
+    "GlyRS_AMP_GlytRNAGlyGCC",
+    "GlyRS_ATP",
+    "GlyRS_ATP_tRNAGlyGCC",
+    "GlyRS_Gly",
+    "GlyRS_GlyAMP_PPi",
+    "GlyRS_Gly_ATP",
+    "GlyRS_Gly_ATP_tRNAGlyGCC",
+    "GlyRS_Gly_tRNAGlyGCC",
+    "GlyRS_tRNAGlyGCC",
+    "MetRS_AMP",
+    "MetRS_AMP_MettRNAfMetCAU",
+    "MetRS_ATP",
+    "MetRS_ATP_tRNAfMetCAU",
+    "MetRS_Met",
+    "MetRS_MetAMP_PPi",
+    "MetRS_MetAMP_PPi_tRNAfMetCAU",
+    "MetRS_MetAMP_tRNAfMetCAU",
+    "MetRS_Met_ATP",
+    "MetRS_Met_ATP_tRNAfMetCAU",
+    "MetRS_Met_tRNAfMetCAU",
+    "MetRS_tRNAfMetCAU"
+  ],
+  "historical_candidate_kept_dynamic": [
+    "GlyRS_AMP",
+    "GlyRS_GlyAMP",
+    "GlyRS_GlyAMP_PPi_tRNAGlyGCC",
+    "GlyRS_GlyAMP_tRNAGlyGCC",
+    "GlyRS_GlytRNAGlyGCC",
+    "MetRS_MetAMP",
+    "MetRS_MettRNAfMetCAU",
+    "MetAMP",
+    "GlyAMP"
+  ],
+  "canonical_source_reaction_count": 968,
+  "source_reactions_touching_candidate_fast_states": 103,
+  "source_general_enzyme_pool_laws": [
+    "CONS_001",
+    "CONS_002"
+  ],
+  "scope": "Candidate selection and preregistered grid only; no QSSA closure or coupled validation claim."
+}

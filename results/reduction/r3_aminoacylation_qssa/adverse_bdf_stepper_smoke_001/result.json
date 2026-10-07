@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "status": "DIAGNOSTIC_ONLY_NOT_REGISTERED_GRID_RESULT",
+  "stop_reason": "WALL_TIME_BUDGET",
+  "failure": null,
+  "last_t": 0.003937635702381072,
+  "steps": 742,
+  "nfev": 1656,
+  "njev": 11,
+  "nlu": 139,
+  "wall_elapsed_s": 16.192643299997144,
+  "process_cpu_s": 10.84375,
+  "snapshot_sha256": {
+    "state_0000.npz": "e3796308a5682bf081e4ddc028e69c4a7aab509d339d4d51ec64e2789ffe6f90",
+    "state_0001.npz": "31e70ab227f142487d1ab684f5450a934e6708c07162c69778bf1f9a7d28c4e7",
+    "state_0002.npz": "f481615fcc1464d37c1fdff8e2e826285dd435764819d02e8d3af57379174ca3"
+  },
+  "inputs_sha256": {
+    "canonical_sbml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "grid": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+    "method": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+    "protocol": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+    "runtime_v1": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+    "runtime_v2": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+    "script": "0defb208fdd3c75a83e3f23588b5d90939dbbeb62d78895f7364bd7bb2c8df25"
+  }
+}

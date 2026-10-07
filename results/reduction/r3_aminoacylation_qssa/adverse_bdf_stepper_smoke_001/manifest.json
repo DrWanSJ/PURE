@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "status": "HASH_BOUND_DIAGNOSTIC_NOT_GRID_ACCEPTANCE",
+  "script_sha256": "0defb208fdd3c75a83e3f23588b5d90939dbbeb62d78895f7364bd7bb2c8df25",
+  "result_sha256": "da4c0bd815f531e17e3ff1a6f4dc799ac026ca0e03bbd47f02b1cb7328abc34a",
+  "progress_sha256": "ec12ca9ada9712e228d4349e13ed34e4ff0344a7927060087343737b0cf0c661",
+  "stop_reason": "WALL_TIME_BUDGET",
+  "output_paths": [
+    "result.json",
+    "progress.json",
+    "state_0000.npz",
+    "state_0001.npz",
+    "state_0002.npz"
+  ]
+}

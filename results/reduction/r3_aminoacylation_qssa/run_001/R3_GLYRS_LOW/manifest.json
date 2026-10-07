@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "status": "HASH_VERIFIED_R3_GRID_CONDITION",
+  "condition_id": "R3_GLYRS_LOW",
+  "run_kind": "REGISTERED_R3_GRID_CONDITION",
+  "command": [
+    "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+    "scripts/run_r3_coupled_grid_v1.py",
+    "--condition",
+    "R3_GLYRS_LOW",
+    "--out",
+    "results/reduction/r3_aminoacylation_qssa/run_001/R3_GLYRS_LOW"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "python_executable": "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+  "python_version": "3.11.4",
+  "numpy_version": "2.2.6",
+  "scipy_version": "1.13.1",
+  "exit_code": 0,
+  "result_status": "GRID_CONDITION_EVALUATED",
+  "result_sha256": "d88dbd97063acfde57d47831145ede3127eddc79b32588c4f22c293b1226c014",
+  "inputs_sha256": {
+    "canonical_sbml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "grid": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+    "method": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+    "protocol": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+    "reaction_map": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+    "aminoacylation_reactions": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+    "runtime_v1": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+    "runtime_v2": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+    "runner": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+  },
+  "outputs_sha256": {
+    "directed_extent_errors.csv": "22925364a98756d9df9451cc593e038fcc0b0bd38849323b50f55e831a41bedb",
+    "directed_ledgers.npz": "4b7c0442d968874fcbbeb3e0b4562cca5927cadb48fa5ffef02775e72189cbc0",
+    "directed_rate_errors.csv": "76b0ae30737e0bab0b40cd84bed00e609ecf0858f7ac1aa2b45b8bbb2e9ddda5",
+    "full_state.npz": "a05a3ad582a125771271518ab1cc13127717c18888a26a97b6776a3a46486284",
+    "species_errors.csv": "c4d8e2dcfa8d4282bf5e494a862822048faf3c684e9ed5b459568b7e0a3113ac",
+    "state_trajectories.npz": "4004bd51cff452a3baf5911a7e2be78e326529045ed0959b4a6e5142c7941016",
+    "timescale.csv": "763e13d8af7da0464082cf04ad1979f591cd526a6f7c95117f843cf68693248c",
+    "timescale.json": "332901958fdf5867ef30ad36f066e0a41d75283b6bd3339048566a241dff4df1"
+  }
+}

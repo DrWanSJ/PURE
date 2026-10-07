@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "run_kind": "REGISTERED_R3_TEN_CONDITION_FULL_COUPLED_PILOT",
+  "pilot_status": "R3_PILOT_REJECTED_BY_FULL_COUPLED_VALIDATION",
+  "validated_conditions": [],
+  "failed_or_incomplete_conditions": [
+    "R3_BASE",
+    "R3_GLYRS_LOW",
+    "R3_GLYRS_HIGH",
+    "R3_METRS_LOW",
+    "R3_METRS_HIGH",
+    "R3_GLY_LOW",
+    "R3_MET_LOW",
+    "R3_TRNA_LOW",
+    "R3_ATP_LOW",
+    "R3_ADVERSE"
+  ],
+  "evaluated_failed_conditions": [
+    "R3_BASE",
+    "R3_GLYRS_LOW",
+    "R3_GLYRS_HIGH",
+    "R3_METRS_LOW",
+    "R3_METRS_HIGH",
+    "R3_GLY_LOW",
+    "R3_MET_LOW",
+    "R3_TRNA_LOW",
+    "R3_ATP_LOW"
+  ],
+  "incomplete_conditions": [
+    "R3_ADVERSE"
+  ],
+  "condition_count": 10,
+  "validation_grid_complete": false,
+  "durable_r3_stage_complete": false,
+  "source_and_protocol_sha256": {
+    "canonical_sbml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "grid": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+    "method": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+    "protocol": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689",
+    "reaction_map": "5bc628ef72c9d07bf51ac871d0b61999a3f57e4661ca78982aa77cd7afb2c57b",
+    "aminoacylation_reactions": "765e3425836c7098392b5b683ae2fdd829ffe8ff376cb6997fee0c4c9397ed59",
+    "runtime_v1": "fb08c8ac6ddb9794cc478f7a116cd25af63a3432f953e341e231e00116958a8a",
+    "runtime_v2": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+    "runner": "fcde081e5e26193d2549da4486665faa2bc355cd4b724eea955f4803aca419ed"
+  },
+  "condition_attempts": {
+    "R3_BASE": "run_001/R3_BASE",
+    "R3_GLYRS_LOW": "run_001/R3_GLYRS_LOW",
+    "R3_GLYRS_HIGH": "run_001/R3_GLYRS_HIGH",
+    "R3_METRS_LOW": "run_001/R3_METRS_LOW",
+    "R3_METRS_HIGH": "restart_001/R3_METRS_HIGH",
+    "R3_GLY_LOW": "restart_001/R3_GLY_LOW",
+    "R3_MET_LOW": "restart_001/R3_MET_LOW",
+    "R3_TRNA_LOW": "restart_001/R3_TRNA_LOW",
+    "R3_ATP_LOW": "restart_001/R3_ATP_LOW",
+    "R3_ADVERSE": "restart_001/R3_ADVERSE"
+  },
+  "meaning": "Selective 21-complex GlyRS/MetRS approximation pilot only; not final PURE reduction or R4 approval"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "status": "HASH_BOUND_SNAPSHOT_DIAGNOSTIC_NOT_GRID_ACCEPTANCE",
+  "command": [
+    "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+    "scripts/diagnose_r3_adverse_snapshot_v1.py",
+    "--out",
+    "results/reduction/r3_aminoacylation_qssa/adverse_snapshot_diagnostic_001"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "python_version": "3.11.4",
+  "numpy_version": "2.2.6",
+  "scipy_version": "1.13.1",
+  "inputs_sha256": {
+    "snapshot": "d44a1345f28e8c6e1ff4ee561169839fdd0f2ceea73a7bccd6d18a368bc839d7",
+    "grid": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+    "canonical_sbml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "runtime_v2": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+    "precise_diagnostic": "1560b411407ddd34d5c0263abb417f5940affdcd3b505c86d062c7eaca7bd6d3",
+    "script": "0155b98323773b9ea2f114422ee68ddd4e980f9ec70082b717c2641aedf5f3ce"
+  },
+  "result_sha256": "ba0ec7fcf09858998e004f8d4dc0548c6ae0c6bc61bf95ec519a5316b15aea41",
+  "exit_code": 0
+}

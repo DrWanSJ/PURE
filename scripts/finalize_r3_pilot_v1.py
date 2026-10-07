@@ -1,0 +1,228 @@
+#!/usr/bin/env python3
+"""Aggregate preregistered R3 evidence and expose any noncompletion."""
+from __future__ import annotations
+
+import argparse
+import csv
+import hashlib
+import json
+import sys
+from pathlib import Path
+
+from verify_reduction_audit_v0 import ROOT
+
+
+GRID = ROOT / "docs/reduction/r3_validation_grid_v1.csv"
+EXPECTED = (
+    "R3_BASE", "R3_GLYRS_LOW", "R3_GLYRS_HIGH", "R3_METRS_LOW",
+    "R3_METRS_HIGH", "R3_GLY_LOW", "R3_MET_LOW", "R3_TRNA_LOW",
+    "R3_ATP_LOW", "R3_ADVERSE",
+)
+INPUTS = {
+    "canonical_sbml": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+    "grid": "docs/reduction/r3_validation_grid_v1.csv",
+    "method": "docs/reduction/r3_aminoacylation_qssa_method.md",
+    "protocol": "docs/reduction/r3_coupled_validation_protocol_v1.md",
+    "reaction_map": "docs/reduction/r3_source_reaction_candidate_map_v1.csv",
+    "aminoacylation_reactions": "models/pnas2017_full_reference/audit/aminoacylation_reactions.csv",
+    "runtime_v1": "scripts/r3_resource_total_runtime_v1.py",
+    "runtime_v2": "scripts/r3_resource_total_runtime_v2.py",
+    "runner": "scripts/run_r3_coupled_grid_v1.py",
+}
+NUMERIC_KEYS = (
+    "all_species_E_inf", "class_I_E_inf", "aminoacylation_rate_E_inf",
+    "aminoacylation_extent_E_inf", "all_directed_rate_E_inf",
+    "all_directed_extent_E_inf", "full_material_balance_abs",
+    "reduced_slow_balance_abs", "source_general_inventory_drift_abs",
+    "minimum_full_concentration", "minimum_reduced_concentration",
+)
+
+
+def sha(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def read_json(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def resolve_attempts(run: Path, mapping: dict[str, str]) -> dict[str, Path]:
+    """Bind every registered condition to one immutable attempt under the run parent."""
+    assert set(mapping) == set(EXPECTED), "Attempt map must cover the exact grid"
+    parent = run.parent.resolve()
+    attempts = {}
+    for condition in EXPECTED:
+        relative = Path(mapping[condition])
+        assert not relative.is_absolute() and ".." not in relative.parts
+        assert relative.name == condition, (condition, relative)
+        directory = (parent / relative).resolve()
+        assert directory.is_relative_to(parent), (condition, directory)
+        attempts[condition] = directory
+    assert len(set(attempts.values())) == len(EXPECTED)
+    return attempts
+
+
+def check(condition: str, directory: Path, expected_inputs: dict,
+          registered_row: dict) -> dict:
+    result_path = directory / "result.json"
+    manifest = read_json(directory / "manifest.json")
+    result = read_json(result_path)
+    assert result["condition_id"] == condition == manifest["condition_id"]
+    assert Path(result["command"][-1]).resolve() == directory.resolve()
+    assert result["run_kind"] == "REGISTERED_R3_GRID_CONDITION"
+    assert result["condition_role"] == registered_row["role"]
+    assert json.loads(result["initial_scale_json"]) == json.loads(
+        registered_row["initial_scale_json"])
+    assert result["status"] == manifest["result_status"]
+    assert manifest["result_sha256"] == sha(result_path)
+    assert result["inputs_sha256"] == manifest["inputs_sha256"] == expected_inputs
+    assert result["outputs_sha256"] == manifest["outputs_sha256"]
+    if result["status"] == "GRID_CONDITION_EVALUATED":
+        assert manifest["exit_code"] == 0
+    elif manifest["exit_code"] is None:
+        assert result["status"] == "GRID_CONDITION_INCOMPLETE"
+        assert manifest["termination"] == result["termination"]
+        assert result["termination"]["kind"] == "EXTERNAL_STOP_AFTER_DOCUMENTED_NUMERICAL_STALL"
+        assert result["termination"]["os_exit_code"] is None
+        assert "stall_diagnostic.json" in result["outputs_sha256"]
+        diagnostic = read_json(directory / "stall_diagnostic.json")
+        assert diagnostic["condition_id"] == condition
+        assert diagnostic["full_state_sha256"] == sha(directory / "full_state.npz")
+        assert diagnostic["script_sha256"] == sha(ROOT / "scripts/probe_r3_running_bdf_v1.py")
+        assert manifest["sealer_sha256"] == sha(ROOT / "scripts/seal_r3_stalled_attempt_v1.py")
+        assert diagnostic["samples"][-1]["bdf_time_s"] < 1000
+    else:
+        assert result["status"] == "GRID_CONDITION_INCOMPLETE"
+        assert manifest["exit_code"] == 1
+    for name, digest in result["outputs_sha256"].items():
+        assert sha(directory / name) == digest, (condition, name)
+    solver = result["solver"]
+    assert solver["start"] == 0 and solver["end"] == 1000
+    assert solver["report_points"] == 201
+    assert solver["rtol"] == 1e-10 and solver["atol"] == 1e-14
+    assert solver["state"] == "BDF" and solver["extent"] == "segmented DOP853 ODE states"
+    screen_path = directory / "timescale.json"
+    screen = read_json(screen_path) if screen_path.exists() else None
+    if (directory / "full_state.npz").exists():
+        assert screen is not None, (condition, "missing full-trajectory timescale screen")
+    if screen is not None:
+        assert screen["status"] == "COUPLED_FULL_TRAJECTORY_TIMESCALE_SCREEN_NOT_QSSA_VALIDATION"
+        assert screen["sample_count"] == 201
+        assert screen["full_state_sha256"] == sha(directory / "full_state.npz")
+        assert screen["timescale_csv_sha256"] == sha(directory / "timescale.csv")
+    maxima = result.get("maxima", {})
+    closure = result["closure_counters"].get("max_residual")
+    if result["status"] == "GRID_CONDITION_EVALUATED":
+        limits = result["limits"]
+        assert limits == {"closure": 1e-10, "balance": 1e-8, "state": 0.01,
+                          "process_rate": 0.05, "cumulative_resource_extent": 0.01}
+        passed = bool(
+            closure <= limits["closure"] and
+            maxima["all_species_E_inf"] <= limits["state"] and
+            maxima["aminoacylation_rate_E_inf"] <= limits["process_rate"] and
+            maxima["aminoacylation_extent_E_inf"] <= limits["cumulative_resource_extent"] and
+            maxima["full_material_balance_abs"] <= limits["balance"] and
+            maxima["reduced_slow_balance_abs"] <= limits["balance"] and
+            maxima["source_general_inventory_drift_abs"] <= limits["balance"]
+        )
+        assert result["condition_pass"] is passed
+    else:
+        assert result["status"] == "GRID_CONDITION_INCOMPLETE"
+        assert "failure" in result
+        passed = False
+    row = {
+        "condition_id": condition,
+        "result_status": result["status"],
+        "condition_pass": str(passed).lower(),
+        "failure": result.get("failure", ""),
+        "closure_residual": closure,
+        **{key: maxima.get(key) for key in NUMERIC_KEYS},
+        "epsilon_screen_fail_samples": (screen["epsilon_screen_fail_samples"]
+                                        if screen else None),
+        "nonattracting_samples": (screen["nonattracting_samples"]
+                                  if screen else None),
+        "manifest_sha256": sha(directory / "manifest.json"),
+    }
+    return row
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--run-dir", type=Path, required=True)
+    parser.add_argument("--attempt-map", type=Path,
+                        help="JSON mapping every condition to a relative attempt directory")
+    args = parser.parse_args()
+    run = args.run_dir.resolve()
+    targets = [run / name for name in ("validation_grid.csv", "summary.json", "pilot_manifest.json")]
+    if any(path.exists() for path in targets):
+        parser.error("Refusing to overwrite finalized pilot outputs")
+    with GRID.open(encoding="utf-8", newline="") as stream:
+        grid = list(csv.DictReader(stream))
+    if tuple(row["condition_id"] for row in grid) != EXPECTED:
+        parser.error("Registered grid IDs/order differ from the fixed ten-case protocol")
+    mapping = (read_json(args.attempt_map) if args.attempt_map else
+               {name: f"{run.name}/{name}" for name in EXPECTED})
+    attempts = resolve_attempts(run, mapping)
+    missing = [name for name in EXPECTED if not (attempts[name] / "manifest.json").exists()]
+    if missing:
+        parser.error("Unfinalized conditions: " + ", ".join(missing))
+    inputs = {key: sha(ROOT / path) for key, path in INPUTS.items()}
+    rows = [check(name, attempts[name], inputs, registered_row)
+            for name, registered_row in zip(EXPECTED, grid)]
+    for row in rows:
+        row["evidence_directory"] = mapping[row["condition_id"]]
+    passed = [row["condition_id"] for row in rows if row["condition_pass"] == "true"]
+    failed = [row["condition_id"] for row in rows if row["condition_pass"] == "false"]
+    incomplete = [row["condition_id"] for row in rows
+                  if row["result_status"] == "GRID_CONDITION_INCOMPLETE"]
+    evaluated_failed = [row["condition_id"] for row in rows
+                        if row["result_status"] == "GRID_CONDITION_EVALUATED"
+                        and row["condition_pass"] == "false"]
+    verdict = (
+        "R3_PILOT_ACCEPTED_IN_VALIDATED_DOMAIN" if len(passed) == len(EXPECTED) else
+        "R3_PILOT_PARTIAL_DOMAIN_ONLY" if passed else
+        "R3_PILOT_REJECTED_BY_FULL_COUPLED_VALIDATION"
+    )
+    with targets[0].open("w", encoding="utf-8", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
+        writer.writeheader()
+        writer.writerows(rows)
+    summary = {
+        "schema_version": "1.0",
+        "run_kind": "REGISTERED_R3_TEN_CONDITION_FULL_COUPLED_PILOT",
+        "pilot_status": verdict,
+        "validated_conditions": passed,
+        "failed_or_incomplete_conditions": failed,
+        "evaluated_failed_conditions": evaluated_failed,
+        "incomplete_conditions": incomplete,
+        "condition_count": len(rows),
+        "validation_grid_complete": not incomplete,
+        "durable_r3_stage_complete": not incomplete,
+        "source_and_protocol_sha256": inputs,
+        "condition_attempts": mapping,
+        "meaning": "Selective 21-complex GlyRS/MetRS approximation pilot only; not final PURE reduction or R4 approval",
+    }
+    targets[1].write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8", newline="\n")
+    manifest = {
+        "schema_version": "1.0",
+        "status": ("HASH_VERIFIED_COMPLETE_R3_PILOT_GRID" if not incomplete else
+                   "HASH_VERIFIED_R3_REJECTION_WITH_INCOMPLETE_CONDITION"),
+        "evaluated_condition_count": len(rows) - len(incomplete),
+        "incomplete_condition_count": len(incomplete),
+        "command": [sys.executable, *sys.argv],
+        "cwd": str(ROOT),
+        "script_sha256": sha(Path(__file__)),
+        "execution_environment_sha256": sha(ROOT / "docs/reduction/r3_grid_execution_environment_v1.md"),
+        "attempt_map_sha256": sha(args.attempt_map) if args.attempt_map else None,
+        "condition_manifests_sha256": {row["condition_id"]: row["manifest_sha256"] for row in rows},
+        "outputs_sha256": {path.name: sha(path) for path in targets[:2]},
+        "pilot_status": verdict,
+    }
+    targets[2].write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
+    print(json.dumps({"pilot_status": verdict, "validated": passed,
+                      "failed_or_incomplete": failed}, indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,0 +1,59 @@
+{
+  "status": "EXPLORATORY_RESOURCE_TOTAL_SMOKE_SOLVED_NOT_R3_VALIDATION",
+  "command": [
+    "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+    "scripts/diagnose_r3_resource_total_smoke_v2.py"
+  ],
+  "cwd": "C:\\Users\\sean\\Desktop\\GUV",
+  "python_version": "3.11.4",
+  "numpy_version": "2.2.6",
+  "scipy_version": "1.13.1",
+  "condition_id": "R3_BASE",
+  "time_start": 0.0,
+  "time_end": 0.1,
+  "report_points": 21,
+  "rtol": 1e-10,
+  "atol": 1e-14,
+  "canonical_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "method_sha256": "43ce0d4f5031c43e178881a984037b37694dcc3885ad42e703157d7c36b68341",
+  "grid_sha256": "6ce3c7197dff37666ff54191db08b7cfd989e8815ea055fa558cc33657900e4a",
+  "runtime_sha256": "7dc2aabce33abf72fac64175d4802e7ff303c8877e6809efeaa123ba2d4977cf",
+  "accounting_matrix_sha256": "133e7f5b53f0ce9d5987a00a3333d305670424b699779702e6706342f6c9f7ba",
+  "full_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 3184,
+    "njev": 2,
+    "nlu": 227
+  },
+  "reduced_solver": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 6758,
+    "njev": 196,
+    "nlu": 852
+  },
+  "diagnostics": {
+    "max_all_species_E_inf": 1.0212403501209781,
+    "t0_max_abs_initial_layer_jump": 0.7306322677168282,
+    "min_reduced_state": -1.4927640502826968e-12,
+    "selected_post_0p05_E_inf": {
+      "ATP": 1.9770664902656184e-06,
+      "AMP": 0.029150866128308205,
+      "PPi": 0.046224073877330935,
+      "PO4": 0.04678947840468166,
+      "GlytRNAGlyGCC": 0.00044650511076658,
+      "MettRNAfMetCAU": 0.0856111264728951,
+      "GlyAMP": 0.013272425839613876,
+      "MetAMP": 0.030098744444735558
+    }
+  },
+  "closure_counters": {
+    "closure": 6954,
+    "closure_nfev": 13757,
+    "warm_start_newton": 6954,
+    "hybr_fallback": 0,
+    "max_residual": 9.85700410183199e-11,
+    "min_resource": 0.0
+  }
+}

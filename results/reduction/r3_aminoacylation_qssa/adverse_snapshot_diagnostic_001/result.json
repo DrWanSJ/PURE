@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "status": "REDUCED_SNAPSHOT_DIAGNOSTIC_NOT_REGISTERED_GRID_RESULT",
+  "snapshot_t": 359.0589556421065,
+  "root_residual_max": 1.2079226507921703e-13,
+  "max_float_vs_decimal_rhs_difference": 3.800515457896836e-12,
+  "max_float_vs_decimal_rate_difference": 3.637978807091713e-12,
+  "jacobian_eigen_real_min": -101424.22272216355,
+  "jacobian_eigen_real_max": 8.922450131474058e-07,
+  "directional_checks": [
+    {
+      "h": 0.01,
+      "physical_roots": [
+        true,
+        true
+      ],
+      "max_abs_directional_error": 2.8434456567083544e-07,
+      "max_abs_finite_derivative": 0.004537671969551127
+    },
+    {
+      "h": 0.001,
+      "physical_roots": [
+        true,
+        true
+      ],
+      "max_abs_directional_error": 3.536604772591545e-06,
+      "max_abs_finite_derivative": 0.0045376719737255655
+    },
+    {
+      "h": 0.0001,
+      "physical_roots": [
+        true,
+        true
+      ],
+      "max_abs_directional_error": 5.302414153618429e-05,
+      "max_abs_finite_derivative": 0.004537671989268688
+    },
+    {
+      "h": 1e-05,
+      "physical_roots": [
+        true,
+        true
+      ],
+      "max_abs_directional_error": 0.0006060439296931008,
+      "max_abs_finite_derivative": 0.004649023077618608
+    }
+  ],
+  "rate_cancellation": {
+    "CP": {
+      "gross_abs_rate_sum": 59369.36894610343,
+      "net_rate": -0.3637662123845473,
+      "gross_to_net_abs_ratio": 163207.485810536
+    },
+    "GDP": {
+      "gross_abs_rate_sum": 7075.195337125723,
+      "net_rate": 4.408229226698513,
+      "gross_to_net_abs_ratio": 1604.9971481234884
+    },
+    "ATP": {
+      "gross_abs_rate_sum": 238.95911494476726,
+      "net_rate": -0.00830032597216164,
+      "gross_to_net_abs_ratio": 28789.124155630667
+    },
+    "GlyRS": {
+      "gross_abs_rate_sum": 82.94272910807427,
+      "net_rate": -1.2434074458130847e-05,
+      "gross_to_net_abs_ratio": 6670599.358831783
+    }
+  },
+  "local_trials": [
+    {
+      "name": "bdf",
+      "method": "BDF",
+      "rtol": 1e-10,
+      "atol": 1e-14,
+      "start_t": 359.0589556421065,
+      "target_t": 359.15895564210655,
+      "rhs_call_budget": 5000,
+      "success": false,
+      "error": "RHS call budget",
+      "last_t": 359.06130620909846,
+      "nfev": 5001,
+      "wall_s": 25.50358370000322
+    },
+    {
+      "name": "lsoda",
+      "method": "LSODA",
+      "rtol": 1e-10,
+      "atol": 1e-14,
+      "start_t": 359.0589556421065,
+      "target_t": 359.15895564210655,
+      "rhs_call_budget": 5000,
+      "success": false,
+      "error": "RHS call budget",
+      "last_t": 359.11899040285215,
+      "nfev": 5001,
+      "wall_s": 31.22412230000191
+    },
+    {
+      "name": "decimal_bdf",
+      "method": "BDF",
+      "rtol": 1e-10,
+      "atol": 1e-14,
+      "start_t": 359.0589556421065,
+      "target_t": 359.15895564210655,
+      "rhs_call_budget": 5000,
+      "success": false,
+      "error": "RHS call budget",
+      "last_t": 359.06122600535775,
+      "nfev": 5001,
+      "wall_s": 47.55442349999794
+    }
+  ]
+}
