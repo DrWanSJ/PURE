@@ -1,0 +1,104 @@
+{
+  "nodes": [
+    {
+      "node": "C1",
+      "classification": "INFERRED",
+      "claim": "Global Schur/CSP alignment is SUPPORTING_GEOMETRIC_DIAGNOSTIC, not NECESSARY_QSSA_ACCEPTANCE_GATE.",
+      "evidence_path": "docs/reduction/r4_mixed_csp_mode_diagnostic.md",
+      "source_sha256": "f8d2306dbcfe62db54656caa003181fa3fd83b0be03ab91c8627d19f8f4a45a3",
+      "freshness": "HASH_CHECK_REQUIRED",
+      "authority": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY"
+    },
+    {
+      "node": "C2",
+      "classification": "INFERRED",
+      "claim": "FAST_REACTION_PROCESS_FIRST: derive fast invariants, singular limit, critical manifold and projected slow flow.",
+      "evidence_path": "docs/reduction/r5_ck_fast_reaction_definition_v1.md",
+      "source_sha256": "939587c395f82573a608ef568035bea20b03994501a9bfa2df20829ef5aedc89",
+      "freshness": "HASH_CHECK_REQUIRED",
+      "authority": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY"
+    },
+    {
+      "node": "C3",
+      "classification": "EXTRACTED",
+      "claim": "Separate FULL_WINDOW, POST_INITIAL_LAYER and COMPOSITE_OR_HYBRID.",
+      "evidence_path": "results/reduction/r5_mechanism_first/ck/initial_layer_definition.json",
+      "source_sha256": "44295a35b299ff3c7305217fdb4fffa8f933c351e4ccc466cda4b3570eef2dc0",
+      "freshness": "HASH_CHECK_REQUIRED",
+      "authority": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY"
+    },
+    {
+      "node": "C4",
+      "classification": "EXTRACTED",
+      "claim": "A resolved mandatory fail excludes passing all gates while other metrics remain unresolved.",
+      "evidence_path": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/derived_review_result.json",
+      "source_sha256": "a3ca97102297edc1db69739f11be493f0a52d082e18e09a01c2ddbddae9191d6",
+      "freshness": "HASH_CHECK_REQUIRED",
+      "authority": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY"
+    },
+    {
+      "node": "C5",
+      "classification": "EXTRACTED",
+      "claim": "BOTH_FAMILY_CANDIDATES_FAIL_REGISTERED_GATE_SCREEN; combined-block causal explanation UNDETERMINED.",
+      "evidence_path": "docs/reduction/r4_fast_block_summary.md",
+      "source_sha256": "9350c05e2c5135999ace0ed759a300db543ad09fcdaa8b3299bf84b0caa07869",
+      "freshness": "HASH_CHECK_REQUIRED",
+      "authority": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY"
+    },
+    {
+      "node": "C6",
+      "classification": "INFERRED",
+      "claim": "Only tested zero-order 21-, 9- and 12-state graphs fail the registered requirements on the tested domain.",
+      "evidence_path": "docs/reduction/human_r3_successor_provenance_20261007.md",
+      "source_sha256": "f8cec7cf39ed67051d4b96c204f1250628a9e8f26b1e4ee5d08e674495211af1",
+      "freshness": "HASH_CHECK_REQUIRED",
+      "authority": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY"
+    },
+    {
+      "node": "C7",
+      "classification": "EXTRACTED",
+      "claim": "Separate exact-law drift, directed ledger residual, slow balance and algebraic full reconstruction.",
+      "evidence_path": "results/reduction/r5_mechanism_first/balance/balance_decomposition_summary.json",
+      "source_sha256": "d364eb9134d6a9d0e49c5e3c9af3abc9473411886591857af0751e921d93a692",
+      "freshness": "HASH_CHECK_REQUIRED",
+      "authority": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY"
+    },
+    {
+      "node": "C8",
+      "classification": "INFERRED",
+      "claim": "State convergence does not imply equally conditioned gross directed extent convergence.",
+      "evidence_path": "docs/reduction/r5_ck_reduced_slow_flow_derivation_v1.md",
+      "source_sha256": "4780713baf21e8eb0fb48294574879dcb5587b44a97aca87a9a81668880db340",
+      "freshness": "HASH_CHECK_REQUIRED",
+      "authority": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY"
+    },
+    {
+      "node": "C9",
+      "classification": "EXTRACTED",
+      "claim": "STATE_ACCURACY_VS_FLUX_ORDER_MISMATCH: solve N_qf j=Dh0 zdot-qdot_nonfast.",
+      "evidence_path": "results/reduction/r5c_corrigendum/ck_fast_current_reconstruction.csv",
+      "source_sha256": "670b4637a904a5f26d60407ab6d2c524c8aac550d3fc850174da946661bf096b",
+      "freshness": "HASH_CHECK_REQUIRED",
+      "authority": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY"
+    },
+    {
+      "node": "C10",
+      "classification": "INFERRED",
+      "claim": "SOURCE_PROVENANCE_PRESERVED differs from REDUCED_MODEL_ZERO_ORDER_OBSERVABLE_PRESERVED.",
+      "evidence_path": "docs/reduction/reduction_decisions.csv",
+      "source_sha256": "70fd3f98de5056a1a63c29db58d310ec5986d4c52b6bfcbae9634b38e2e8d7f8",
+      "freshness": "HASH_CHECK_REQUIRED",
+      "authority": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY"
+    }
+  ],
+  "ambiguities": [
+    {
+      "classification": "AMBIGUOUS",
+      "claim": "combined-block causal explanation UNDETERMINED"
+    },
+    {
+      "classification": "AMBIGUOUS",
+      "claim": "state/dense/extent numerical attribution MIXED / UNRESOLVED"
+    }
+  ]
+}

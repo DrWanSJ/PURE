@@ -1,0 +1,9 @@
+# R5-C checkout-byte qualification
+
+The initial new Git worktree converted 25 historical R5 Markdown/Python files from LF to CRLF because their prior commit lacked explicit LF attributes. Independent verification detected this before closeout. The original R5 checkout stayed untouched and clean. For every discrepancy, only the line-ending transformation was checked before restoring that file's exact frozen parent bytes in the execution worktree. No scientific text, equation, parameter, initial value, threshold or result changed. The final Git diff contains no historical-file edits.
+
+The original 2,555-entry `historical_snapshot.json` and original registration binding remain preserved as evidence of the initial checkout. `historical_parent_snapshot.json` binds the authoritative pre-corrigendum R5 bytes; the final verifier compares all 2,555 final historical files with both this snapshot and the untouched R5 source checkout. `checkout_byte_qualification.json` exhaustively records the 25 initial and parent hashes. The initial failed verification and its binding are retained as `verification_attempt_001_*`. They are historical audit attempts, not final scientific results.
+
+The verifier's original no-new-solver check also matched its own prohibited-call string list. It now inspects actual call syntax. Numerical postprocessing was unchanged. No ODE, first-order state model or new candidate campaign was executed.
+
+New successor documents have a narrow additive LF attribute rule in `docs/.gitattributes`. New Python files are stored with exact LF blob bytes using Git's per-command normalization setting; source byte manifests refer to raw file bytes. A future checkout with automatic Python line-ending conversion may need to restore the manifest-bound LF script bytes before verification. Existing attribute files are frozen and were not edited.

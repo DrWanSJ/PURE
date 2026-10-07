@@ -1,0 +1,57 @@
+{
+  "N_qf": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "rank": 2,
+  "nullspace_dimension": 0,
+  "orientations": [
+    {
+      "forward": "re0000000332",
+      "reverse": "re0000000333",
+      "canonical_q_column": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "forward": "re0000000336",
+      "reverse": "re0000000337",
+      "canonical_q_column": [
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "q_coordinates": [
+    "CK_CP",
+    "CK_CP_ADP"
+  ],
+  "unique_net_currents": true,
+  "identity_max_absolute_error": 8.569533971325427e-16,
+  "full_state_tangent_identity_max_error": 3.7052085674540224e-11,
+  "Dh0_fd_scaled_error_max": 2.2780970094008184e-10,
+  "h0_net_roundoff_max": 3.2741809263825417e-10,
+  "post_0p05_representative_comparison": {
+    "source_projected_h0": {
+      "max_absolute_error": 0.7237018109687625,
+      "max_scaled_error": 0.14713031907774207
+    },
+    "outer": {
+      "max_absolute_error": 0.018597762637718063,
+      "max_scaled_error": 0.14712397136294292
+    },
+    "hybrid": {
+      "max_absolute_error": 0.018597762621919145,
+      "max_scaled_error": 0.14712397135760574
+    }
+  },
+  "comparison_is_not_an_accuracy_gate": true,
+  "no_first_order_model_built": true
+}

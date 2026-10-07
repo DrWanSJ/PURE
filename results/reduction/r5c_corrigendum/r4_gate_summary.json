@@ -1,0 +1,34 @@
+{
+  "historical_overall_status_preserved": "NUMERICALLY_UNRESOLVED",
+  "maximum_difference_from_historical_derived_scores_uncertainty": 0.0,
+  "post_0p05_worst": {
+    "HISTORICAL_R3_21": 0.14107676569650346,
+    "R4_GLYRS_ONLY": 0.037171057854316084,
+    "R4_METRS_ONLY": 0.14107676655217458
+  },
+  "family_screen_outcome": "BOTH_FAMILY_CANDIDATES_FAIL_REGISTERED_GATE_SCREEN",
+  "combined_failure_causal_interpretation": "UNDETERMINED",
+  "counts": {
+    "state": {
+      "RESOLVED_FAIL": 18,
+      "RESOLVED_PASS": 0,
+      "NUMERICALLY_UNRESOLVED": 0
+    },
+    "rate": {
+      "RESOLVED_FAIL": 18,
+      "RESOLVED_PASS": 0,
+      "NUMERICALLY_UNRESOLVED": 0
+    },
+    "extent": {
+      "RESOLVED_FAIL": 16,
+      "RESOLVED_PASS": 2,
+      "NUMERICALLY_UNRESOLVED": 0
+    },
+    "balance": {
+      "RESOLVED_FAIL": 0,
+      "RESOLVED_PASS": 0,
+      "NUMERICALLY_UNRESOLVED": 18
+    }
+  },
+  "every_family_condition_has_decisive_state_rate_fail": true
+}

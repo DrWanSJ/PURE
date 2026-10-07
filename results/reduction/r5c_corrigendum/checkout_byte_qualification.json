@@ -1,0 +1,181 @@
+{
+  "status": "EXACT_FROZEN_PARENT_BYTES_RESTORED",
+  "original_worktree_snapshot_preserved": "historical_snapshot.json",
+  "restored_files": [
+    {
+      "path": "docs/reduction/r5_balance_residual_decomposition_v1.md",
+      "initial_checkout_sha256": "08ffc028eb2581a6f87fd4c995218716bacf99728d06714d1f8626b243a771fb",
+      "frozen_parent_sha256": "343a2ffbec51fa97e48bac487fbf3021ffc48d92a09398f7d7263f55f0f752ba",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "docs/reduction/r5_ck_critical_manifold_derivation_v1.md",
+      "initial_checkout_sha256": "d3e4fcdfe63e5f345ec40f5249597d2f9f0e94c36ebd48937928a212907a8b5b",
+      "frozen_parent_sha256": "61552ca76e90529e3cb3260aeaa7db60ee56ee8d499decf621434b737f7d0342",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "docs/reduction/r5_ck_fast_invariants_v1.md",
+      "initial_checkout_sha256": "24129a9867c8a5f210ac62ffec036402796021f811e046f3c9e09fa98d53a4d3",
+      "frozen_parent_sha256": "e3aeb5f3ee41285410e45d5a09e17f37db680694c068cf435353a47c14718f21",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "docs/reduction/r5_ck_fast_layer_stability_v1.md",
+      "initial_checkout_sha256": "fefa6966466720cf1a4e5e65c0799ab5d561ec75466347ba206904dd7b1ee8ec",
+      "frozen_parent_sha256": "4744b7b9146033cb6d6dfa97b40a990666e5c0d6e2787e860704612b01c1f32f",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "docs/reduction/r5_ck_fast_reaction_definition_v1.md",
+      "initial_checkout_sha256": "779cf9fd3edd89699cd385914956a5e0a61ea6a33bc47dfbbd7a5559087eb632",
+      "frozen_parent_sha256": "939587c395f82573a608ef568035bea20b03994501a9bfa2df20829ef5aedc89",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "docs/reduction/r5_ck_reduced_slow_flow_derivation_v1.md",
+      "initial_checkout_sha256": "98407404dda4896fa279c66fdeb83dad15e1ce84fe0d844841aa03c2a81109f5",
+      "frozen_parent_sha256": "4780713baf21e8eb0fb48294574879dcb5587b44a97aca87a9a81668880db340",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "docs/reduction/r5_ck_runtime_qualification_v1.md",
+      "initial_checkout_sha256": "f8803f81dfba085903149aa4db9c5a9ade95458f54f88a56ac64fecc648c72b5",
+      "frozen_parent_sha256": "90d7002172d9399d6d901ebc1bf39e3e1558751d9df4faed70de802dbc29b1b5",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "docs/reduction/r5_ck_singular_family_v1.md",
+      "initial_checkout_sha256": "25e3bff8797bc622254390a9cfe52b10b0fa32fcaec6d06ae62f0a94d6d8b86c",
+      "frozen_parent_sha256": "f070c089a950ced4ddcec40ffa4f0fd9047ad79c885fe31798b304058968ac3f",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "docs/reduction/r5_glyrs_transverse_dynamics_v1.md",
+      "initial_checkout_sha256": "f829082dba772fd787c3a0df6d58f9f04ddb4579563b101b885a3bb298569b8d",
+      "frozen_parent_sha256": "11e57a290d195ee3e2ce22c4a7fe6a4520043a1e7df3f78d59b018b84d2eae6d",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "docs/reduction/r5_mechanism_first_authorization_20261007.md",
+      "initial_checkout_sha256": "28eac4cfec49fdfb0706720d4b39fe7f0d32e887e655803c71c184d45c6ac1f8",
+      "frozen_parent_sha256": "579961f3e1d80130201e4dbf95637fc8fd03a352a2b14179685650e30785554a",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "docs/reduction/r5_mechanism_first_preregistration_v1.md",
+      "initial_checkout_sha256": "c55f4583e60140feb1d15df93425743a3ae6abb644ee1f5bfccdc00bce79c473",
+      "frozen_parent_sha256": "1850c35ade96dc44ab9ccf07a180be36d2826beb64aec0c9c72768297cd6d74b",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "docs/reduction/r5_mechanism_first_summary.md",
+      "initial_checkout_sha256": "450ac333339776c779add503b220f2bde647d2c2220bd0ae34e421f33a82c845",
+      "frozen_parent_sha256": "9a5418671cf72bd79fad209cc88ffbdd139ca2b22232e152237cb883e0868fe6",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "docs/theory/qssa_singular_perturbation_guidance.md",
+      "initial_checkout_sha256": "729a9447fbb61e3f258cfc469e5ce49005f0fd79851014a1edd11a470452eed3",
+      "frozen_parent_sha256": "65b575f6f1da3383656ba610e44eecf71585448e893605126c365091ddf696a2",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "scripts/finalize_r5_mechanism_first_v1.py",
+      "initial_checkout_sha256": "8c9104086ba1f2f5dd96fa035548658b8d0323213394de4c25468a5dec6ed5f9",
+      "frozen_parent_sha256": "d9283d98dc20ae5e6dd8d13688f1b967a4f8149437e8137758968f002bd1bf7a",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "scripts/freeze_r5_registration_v1.py",
+      "initial_checkout_sha256": "e575ae78e09e3939453c2e8d0e847e150e0871f0f6fcbbaeec4bdcd871c06b79",
+      "frozen_parent_sha256": "cacc2d8c14a3ca4f5537fb42eed81af80724c65b6dc01f670cd159e9ea8631dc",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "scripts/r5_balance_decomposition_v1.py",
+      "initial_checkout_sha256": "5eb8ce8f079adefe95d6cac1b803010c0d2e4d8eb70880637c9d77dc0c99d3e4",
+      "frozen_parent_sha256": "a3b4ddc450bc4391e6f1d97c4ba010883d564ce4458ca028030a04da9ca60ced",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "scripts/r5_ck_eta_scan_v1.py",
+      "initial_checkout_sha256": "1c07031ccbe0bac3bf92fbc8abed8d20ed029eb60303df5b8f9b18fd6eaf65cb",
+      "frozen_parent_sha256": "b05c8796a8a2b6ba5f3ccdf3da9275c194a5b43db22059d40d21a783dee76bd2",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "scripts/r5_ck_observables_v1.py",
+      "initial_checkout_sha256": "c60abb6668c396a0e42fc008d48bfced4508d0a7dcdd9eff4262da51646b9f4e",
+      "frozen_parent_sha256": "257bed5960acdd04e7df687708d7251e4ee27ddd61c9b1ac786114b88c1cd3f1",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "scripts/r5_ck_partial_equilibrium_runtime_v1.py",
+      "initial_checkout_sha256": "3c53f4555f0ac3f5a4e67248de8b019da51824c680f83b276906b41d2cb3a05b",
+      "frozen_parent_sha256": "db32bcbea84b4901edae0063434d71dab014acda3f56261cff9c737f3cac2d53",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "scripts/r5_ck_structure_v1.py",
+      "initial_checkout_sha256": "f8ee134cce44dbaf25db7a5513a50b81eb874fe07bfcde9ee8b6acad7df14670",
+      "frozen_parent_sha256": "879015adcdf5c1392ca75529fd0db80648636e04172fddbaf96b1252d0943114",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "scripts/r5_common_v1.py",
+      "initial_checkout_sha256": "f8c95d859938777a75aec07812297d6b9507ae65e683d8cdeef92be397c97dcf",
+      "frozen_parent_sha256": "6092ab46dc2da0434a652f8f0cfc542005c9370320d4ac9219dbdc3ddbde0b59",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "scripts/r5_figures_v1.py",
+      "initial_checkout_sha256": "13ecaaaad3c3ec32dc95f52c45f88068a8104ab2a058fdda41f5709cba947feb",
+      "frozen_parent_sha256": "8597a19cc50997cdabf555e0905d4b01dde7c3dbfad4e7da80477df65314a6fc",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "scripts/r5_glyrs_transverse_dynamics_v1.py",
+      "initial_checkout_sha256": "f5f080cdf95901cd1dc34cb840b16143a61d89941842445a1d432c7410c8d663",
+      "frozen_parent_sha256": "753c9a9cde575153def2bd2ee3cdd788e1a330bc0e2906f1d356a2b8103ae394",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "scripts/verify_r5_ck_critical_manifold_v1.py",
+      "initial_checkout_sha256": "fe8593c32346500582e841a866b86fb7f08415c06c8cf8dcc08ff404b57e4761",
+      "frozen_parent_sha256": "ac6dac6771145ad4a03180a67bf33c32f3b51baaf8a9e2fe3bd64301b734c590",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    },
+    {
+      "path": "scripts/verify_r5_mechanism_first_v1.py",
+      "initial_checkout_sha256": "a0350953d49d2ebde23a00ad90e5667600ebb5fecf7b456536e0411db2702541",
+      "frozen_parent_sha256": "f06a1c6f5c70a62935a71218455166e656dee91ce94193105ba575ba571c8d3f",
+      "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
+      "canonical_content_changed": false
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "self_hash_exclusion": "verification_binding.json; all other new files bound through this index and manifest",
+  "files_sha256": {
+    "results/reduction/r5c_corrigendum/manifest.json": "006a62c570728d300b36d341aa3c55ebff37a47f6901dd1be3902dddf05da5c4",
+    "results/reduction/r5c_corrigendum/verification.json": "cdfe232afc7222f4c23a278403f4556edb202e1cb2dc92d6579f32f33259355f"
+  }
+}
