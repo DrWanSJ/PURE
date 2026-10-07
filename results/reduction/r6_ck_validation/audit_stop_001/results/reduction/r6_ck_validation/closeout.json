@@ -1,0 +1,9 @@
+{
+  "schema": "R6_SCOPE_AUDIT_CLOSEOUT_V1",
+  "decision": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+  "closed_at_utc": "2026-10-07T14:02:33.747789+00:00",
+  "registration_sha256": "854a132b3556a20ffff53dbc342833475afc2a8b7a14bb904bd8dfe34eafc139",
+  "decisive_comparisons": 0,
+  "promotion": false,
+  "verifier_scope": "AMBIGUITY_STOP_PROVENANCE_AND_STRUCTURAL_CHECKS_ONLY"
+}

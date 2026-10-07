@@ -1,0 +1,46 @@
+{
+  "schema": "R6_COMPLETED_STATE_CURRENT_EVIDENCE_V1",
+  "condition": "R3_METRS_LOW",
+  "status": "COMPLETE_INSTANTANEOUS_OBSERVABLES_ONLY",
+  "class_status": {
+    "A": "RESOLVED_PASS",
+    "B": "RESOLVED_PASS",
+    "C": "RESOLVED_PASS",
+    "D": "RESOLVED_FAIL"
+  },
+  "maxima": {
+    "state": 0.0028989954809253804,
+    "slow_total": 5.30108556551285e-05,
+    "retained_coordinate": 0.0003383680891258831,
+    "protein": 3.018319179256746e-07,
+    "ck_net_current": 0.9856607248949745,
+    "net_current": 0.9856607248949745,
+    "ck_net_current_post_0p05": 0.14738539058954525,
+    "conservation": 1.1362592464148058e-10
+  },
+  "state_status": "STATE_VALID",
+  "net_current_status": "NET_CURRENT_NOT_VALIDATED",
+  "extent_status": "NOT_ASSESSED_BY_THIS_EXTRACTOR",
+  "initial_layer_full_gate": "NOT_ASSESSED_BY_THIS_EXTRACTOR",
+  "scientific_status": "CK_STATE_VALID_NET_CURRENT_FAIL",
+  "resolved_fail_count": 6,
+  "unresolved_count": 0,
+  "promotion": false,
+  "no_new_state_solve": true,
+  "no_extent_claim": true,
+  "no_threshold_change": true,
+  "extracted_at_utc": "2026-10-07T14:44:50.236868+00:00",
+  "dense_input_hashes": {
+    "results/reduction/r6_ck_validation/per_condition/R3_METRS_LOW/run_001/startup_primary_dense.npz": "6484cb6cecfddd805cc142e2f37eccad43fa3f92410ee07c311277ea35bff46a",
+    "results/reduction/r6_ck_validation/per_condition/R3_METRS_LOW/run_001/startup_probe_dense.npz": "58c97a2e79e25b83024083439e927f00963376c3d124644eaa6f1164707f5c14",
+    "results/reduction/r6_ck_validation/per_condition/R3_METRS_LOW/run_001/reduced_primary_dense.npz": "b7b33562ce8767367d671802a12fbe9456f72c1c33befecbdb38714eac642305",
+    "results/reduction/r6_ck_validation/per_condition/R3_METRS_LOW/run_001/reduced_probe_dense.npz": "11f5535e1b250e15ef63a6ddd0780d37aaf359edc2899a8c6176bfd08580e9c8"
+  },
+  "output_hashes": {
+    "conservation.csv": "f0a16e6bd6bfe1a7e04bd814f794482dca7b4f22e1fc30e1de496e70f24a4e91",
+    "instantaneous_comparison.npz": "d60b750c0115d7bf563fd366fd6f7218755ff06795c7f7f1fc8ac93184ca8595",
+    "net_current_errors.csv": "be054a462c262a2ca0cfa64309f962fbb7ffada226fcca3661bd8b11c18c83b1",
+    "slow_total_errors.csv": "66de72ec9c4972a9cc273e62b723fa5f297e38ec626c115f2f130c19d5a77973",
+    "state_errors.csv": "2bc23f2004bb6fe52ce63f8817fa7411411e1d559a339b85f0dd44d21fa41396"
+  }
+}

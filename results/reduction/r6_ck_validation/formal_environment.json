@@ -1,0 +1,15 @@
+{
+  "python_executable": "C:\\Python311\\python.exe",
+  "python": "3.11.4",
+  "numpy": "1.26.4",
+  "scipy": "1.14.0",
+  "sympy": "1.13.1",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "historical_source_environment": "R3 Python3.11.4/Numpy2.2.6/Scipy1.13.1; reused original arrays, explicit numerical probe envelope",
+  "no_dependency_installation": true
+}

@@ -1,0 +1,14 @@
+{
+  "condition": "R3_TRNA_LOW",
+  "status": "PASS_INDEPENDENT_COMPLETED_INSTANTANEOUS_TIERS_ONLY",
+  "classes": {
+    "A": "RESOLVED_PASS",
+    "B": "RESOLVED_PASS",
+    "C": "RESOLVED_PASS",
+    "D": "RESOLVED_FAIL",
+    "F": "NUMERICALLY_UNRESOLVED",
+    "H": "NUMERICALLY_UNRESOLVED"
+  },
+  "extent_scope": "NOT_ASSESSED_BY_THIS_PRECHECK",
+  "checked_at_utc": "2026-10-07T15:27:14.780656+00:00"
+}

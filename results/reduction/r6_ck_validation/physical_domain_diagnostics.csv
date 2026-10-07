@@ -1,0 +1,10 @@
+condition_id,minimum_accepted_fast_total,coordinate,accepted_time_s,minimum_reported_ck_state,ck_species,reported_time_s,strict_ck_domain_pass,interpretation
+R3_BASE,3.3298590990460727e-22,T1,9.906817032876724e-05,0.0,CK_ADP,0.0,True,DIAGNOSTIC; frozen strict zero-boundary predicate retained; no clipping or reclassification
+R3_GLYRS_LOW,-7.652682416648693e-17,T1,0.00036026569348864197,-7.544127041654358e-17,CK_CP_ADP,0.00036543830709572547,False,DIAGNOSTIC; frozen strict zero-boundary predicate retained; no clipping or reclassification
+R3_GLYRS_HIGH,2.033412079485942e-21,T1,9.906817032876724e-05,0.0,CK_ADP,0.0,True,DIAGNOSTIC; frozen strict zero-boundary predicate retained; no clipping or reclassification
+R3_METRS_LOW,-1.2290741532172989e-17,T1,0.0003034014378670935,-1.1845794246519799e-17,CK_CP_ADP,0.0003107866187782014,False,DIAGNOSTIC; frozen strict zero-boundary predicate retained; no clipping or reclassification
+R3_METRS_HIGH,1.5476272441426174e-21,T1,9.906817032876724e-05,0.0,CK_ADP,0.0,True,DIAGNOSTIC; frozen strict zero-boundary predicate retained; no clipping or reclassification
+R3_GLY_LOW,-6.655147693189273e-17,T1,0.00035434860243445203,-6.455913896851058e-17,CK_CP_ADP,0.00036543830709572547,False,DIAGNOSTIC; frozen strict zero-boundary predicate retained; no clipping or reclassification
+R3_MET_LOW,-1.644959428803886e-17,T1,0.0003088692894340206,-1.6290611341204116e-17,CK_CP_ADP,0.0003107866187782014,False,DIAGNOSTIC; frozen strict zero-boundary predicate retained; no clipping or reclassification
+R3_TRNA_LOW,3.4520391498211675e-23,T1,9.906817032876724e-05,0.0,CK_ADP,0.0,True,DIAGNOSTIC; frozen strict zero-boundary predicate retained; no clipping or reclassification
+R3_ATP_LOW,2.01532204247352e-23,T1,9.906817032876724e-05,0.0,CK_ADP,0.0,True,DIAGNOSTIC; frozen strict zero-boundary predicate retained; no clipping or reclassification

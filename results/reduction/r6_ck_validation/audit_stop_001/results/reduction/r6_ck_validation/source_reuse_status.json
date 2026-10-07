@@ -1,0 +1,29 @@
+{
+  "status": "NOT_ATTEMPTED_AMBIGUITY_STOP",
+  "selected_trajectories": [],
+  "eligible_conditions": [
+    "R3_BASE",
+    "R3_GLYRS_LOW",
+    "R3_GLYRS_HIGH",
+    "R3_METRS_LOW",
+    "R3_METRS_HIGH",
+    "R3_GLY_LOW",
+    "R3_MET_LOW",
+    "R3_TRNA_LOW",
+    "R3_ATP_LOW"
+  ],
+  "excluded_conditions": [
+    "R3_ADVERSE"
+  ],
+  "prospective_checks": [
+    "canonical_hash",
+    "parameters",
+    "initial_values",
+    "condition_definition",
+    "time_grid",
+    "dense_state_protocol",
+    "extent_protocol",
+    "run_manifest_hashes"
+  ],
+  "note": "No trajectory reuse certificate or new source-reuse verifier is asserted before a numerical branch."
+}

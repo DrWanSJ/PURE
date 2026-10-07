@@ -1,0 +1,145 @@
+{
+  "schema": "R6_CK_FORMAL_INDEPENDENT_VERIFICATION_V1",
+  "status": "PASS_ENGINEERING_AND_EVIDENCE_VERIFICATION",
+  "verified_at_utc": "2026-10-07T15:46:54.636553+00:00",
+  "checks": [
+    {
+      "check": "ALL_2585_PRE_R6_FILES_AND_PRIOR_R6_SCOPE_STOP_PRESERVED",
+      "status": "PASS"
+    },
+    {
+      "check": "LINEAGE_INITIAL_AUDIT_SOURCE_LOCATIONS_AND_UNRELATED_FILES",
+      "status": "PASS"
+    },
+    {
+      "check": "EXPLICIT_HUMAN_SCOPE_PROSPECTIVE_CONTRACT_AND_SOURCE_REUSE",
+      "status": "PASS"
+    },
+    {
+      "check": "INDEPENDENT_CANONICAL_REVERSE_MEMBERSHIP_NQF_AND_EXACT_CONSERVATION",
+      "status": "PASS"
+    },
+    {
+      "check": "INDEPENDENT_CANONICAL_CURRENT_RECONSTRUCTION_AND_SCORE_RECOMPUTATION",
+      "status": "PASS",
+      "max_current_scaled_identity_error": 9.094947017729282e-13,
+      "max_affine_reconstruction_error": 7.275957614183426e-12,
+      "conditions": [
+        {
+          "condition": "R3_BASE",
+          "status": "PASS_INDEPENDENT_NUMERICAL_SCORE_RECOMPUTATION",
+          "classes": {
+            "A": "RESOLVED_PASS",
+            "B": "RESOLVED_PASS",
+            "C": "RESOLVED_PASS",
+            "D": "RESOLVED_FAIL",
+            "F": "RESOLVED_FAIL",
+            "H": "NUMERICALLY_UNRESOLVED"
+          }
+        },
+        {
+          "condition": "R3_GLYRS_LOW",
+          "status": "PASS_INDEPENDENT_NUMERICAL_SCORE_RECOMPUTATION",
+          "classes": {
+            "A": "RESOLVED_PASS",
+            "B": "RESOLVED_PASS",
+            "C": "RESOLVED_PASS",
+            "D": "RESOLVED_FAIL",
+            "F": "RESOLVED_FAIL",
+            "H": "RESOLVED_FAIL"
+          }
+        },
+        {
+          "condition": "R3_GLYRS_HIGH",
+          "status": "PASS_INDEPENDENT_NUMERICAL_SCORE_RECOMPUTATION",
+          "classes": {
+            "A": "RESOLVED_PASS",
+            "B": "RESOLVED_PASS",
+            "C": "RESOLVED_PASS",
+            "D": "RESOLVED_FAIL",
+            "F": "RESOLVED_FAIL",
+            "H": "NUMERICALLY_UNRESOLVED"
+          }
+        },
+        {
+          "condition": "R3_METRS_LOW",
+          "status": "PASS_INDEPENDENT_NUMERICAL_SCORE_RECOMPUTATION",
+          "classes": {
+            "A": "RESOLVED_PASS",
+            "B": "RESOLVED_PASS",
+            "C": "RESOLVED_PASS",
+            "D": "RESOLVED_FAIL",
+            "F": "RESOLVED_FAIL",
+            "H": "RESOLVED_FAIL"
+          }
+        },
+        {
+          "condition": "R3_METRS_HIGH",
+          "status": "PASS_INDEPENDENT_NUMERICAL_SCORE_RECOMPUTATION",
+          "classes": {
+            "A": "RESOLVED_PASS",
+            "B": "RESOLVED_PASS",
+            "C": "RESOLVED_PASS",
+            "D": "RESOLVED_FAIL",
+            "F": "RESOLVED_FAIL",
+            "H": "NUMERICALLY_UNRESOLVED"
+          }
+        },
+        {
+          "condition": "R3_GLY_LOW",
+          "status": "PASS_INDEPENDENT_NUMERICAL_SCORE_RECOMPUTATION",
+          "classes": {
+            "A": "RESOLVED_PASS",
+            "B": "RESOLVED_PASS",
+            "C": "RESOLVED_PASS",
+            "D": "RESOLVED_FAIL",
+            "F": "RESOLVED_FAIL",
+            "H": "RESOLVED_FAIL"
+          }
+        },
+        {
+          "condition": "R3_MET_LOW",
+          "status": "PASS_INDEPENDENT_NUMERICAL_SCORE_RECOMPUTATION",
+          "classes": {
+            "A": "RESOLVED_PASS",
+            "B": "RESOLVED_PASS",
+            "C": "RESOLVED_PASS",
+            "D": "RESOLVED_FAIL",
+            "F": "RESOLVED_FAIL",
+            "H": "RESOLVED_FAIL"
+          }
+        },
+        {
+          "condition": "R3_TRNA_LOW",
+          "status": "PASS_INDEPENDENT_NUMERICAL_SCORE_RECOMPUTATION",
+          "classes": {
+            "A": "RESOLVED_PASS",
+            "B": "RESOLVED_PASS",
+            "C": "RESOLVED_PASS",
+            "D": "RESOLVED_FAIL",
+            "F": "RESOLVED_FAIL",
+            "H": "NUMERICALLY_UNRESOLVED"
+          }
+        },
+        {
+          "condition": "R3_ATP_LOW",
+          "status": "PASS_INDEPENDENT_NUMERICAL_SCORE_RECOMPUTATION",
+          "classes": {
+            "A": "RESOLVED_PASS",
+            "B": "RESOLVED_PASS",
+            "C": "RESOLVED_PASS",
+            "D": "RESOLVED_FAIL",
+            "F": "RESOLVED_FAIL",
+            "H": "RESOLVED_PASS"
+          }
+        }
+      ]
+    }
+  ],
+  "scientific_outcome": "CK_STATE_VALID_NET_CURRENT_FAIL",
+  "recommendation": "CK_STATE_REDUCTION_SUPPORTED_BUT_FLUX_NOT_READY",
+  "conditions_passing_all_mandatory_gates": 0,
+  "scientific_promotion": "NOT_APPROVED",
+  "historical_thresholds_unchanged": true,
+  "gross_not_mandatory": true
+}

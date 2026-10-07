@@ -1,0 +1,10 @@
+{
+  "segments": 200,
+  "rtol": 1e-10,
+  "atol": 1e-14,
+  "elapsed_s": 308.67199999999866,
+  "nfev": 76456,
+  "net_count": 678,
+  "gross_count": 968,
+  "gross_gate": false
+}

@@ -1,0 +1,9 @@
+{
+  "status": "FROZEN_HISTORICAL_DESCRIPTIVE_NOT_R6_VALIDATION",
+  "baseline_hybrid_all241_post_startup_error": 0.0003383575954227056,
+  "baseline_representative_hybrid_net_current_error": 0.14712397135760574,
+  "R6_formal_worst_errors": null,
+  "R6_formal_pass_count": null,
+  "historical_state_summary_sha256": "581c954dbd4c436bd782fdcd5af113dd71eb55a029cb65e5948306b7500ceb34",
+  "historical_current_summary_sha256": "6b9affd034b20a7aef2cbea60ea487bfbc1dd8fa34891a902b66bf84f0381a22"
+}

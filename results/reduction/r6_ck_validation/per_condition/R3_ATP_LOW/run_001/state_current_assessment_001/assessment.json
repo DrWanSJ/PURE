@@ -1,0 +1,46 @@
+{
+  "schema": "R6_COMPLETED_STATE_CURRENT_EVIDENCE_V1",
+  "condition": "R3_ATP_LOW",
+  "status": "COMPLETE_INSTANTANEOUS_OBSERVABLES_ONLY",
+  "class_status": {
+    "A": "RESOLVED_PASS",
+    "B": "RESOLVED_PASS",
+    "C": "RESOLVED_PASS",
+    "D": "RESOLVED_FAIL"
+  },
+  "maxima": {
+    "state": 0.004283351728901257,
+    "slow_total": 9.942108523424766e-06,
+    "retained_coordinate": 0.00033165236346174024,
+    "protein": 2.2508437739391288e-07,
+    "ck_net_current": 0.9933194893774895,
+    "net_current": 0.9933194893774895,
+    "ck_net_current_post_0p05": 0.11349237140391093,
+    "conservation": 1.0336059785842622e-10
+  },
+  "state_status": "STATE_VALID",
+  "net_current_status": "NET_CURRENT_NOT_VALIDATED",
+  "extent_status": "NOT_ASSESSED_BY_THIS_EXTRACTOR",
+  "initial_layer_full_gate": "NOT_ASSESSED_BY_THIS_EXTRACTOR",
+  "scientific_status": "CK_STATE_VALID_NET_CURRENT_FAIL",
+  "resolved_fail_count": 6,
+  "unresolved_count": 0,
+  "promotion": false,
+  "no_new_state_solve": true,
+  "no_extent_claim": true,
+  "no_threshold_change": true,
+  "extracted_at_utc": "2026-10-07T15:05:50.709534+00:00",
+  "dense_input_hashes": {
+    "results/reduction/r6_ck_validation/per_condition/R3_ATP_LOW/run_001/startup_primary_dense.npz": "02bf5476c384616f723367a8f1ddf606838d09509be3455dba28343714c9e001",
+    "results/reduction/r6_ck_validation/per_condition/R3_ATP_LOW/run_001/startup_probe_dense.npz": "457f2711887cb8da115512705aeaf555a998ee207c7fac2b03e5be5234a6950d",
+    "results/reduction/r6_ck_validation/per_condition/R3_ATP_LOW/run_001/reduced_primary_dense.npz": "f6a3fc9ecf76075699649c83f664d812744b7918730ed7096358e6850a7e257f",
+    "results/reduction/r6_ck_validation/per_condition/R3_ATP_LOW/run_001/reduced_probe_dense.npz": "2f4619ac9933aac3740b3a12acbdf58e68af9e0ee4d3127ceedb94b7062420a4"
+  },
+  "output_hashes": {
+    "conservation.csv": "ec4c523f164905cd50586980d3a7e763ba9f7fdc4321885541e083d775c35c36",
+    "instantaneous_comparison.npz": "94d1948180544372f4b6e183a418683c6064b39d45b333d68af6ee993fa7844e",
+    "net_current_errors.csv": "03fd5e5586960003307947dbbea19d95325dde44a7cb72f6f6b6283138e64c65",
+    "slow_total_errors.csv": "8d9e974696d9f2ff0aaead915681e7a34506de4d105cc18d2d77efb4cd60b33d",
+    "state_errors.csv": "30306daae5984bbc36ea5b476f111de48791051451acb27ae8880fa821a6908b"
+  }
+}

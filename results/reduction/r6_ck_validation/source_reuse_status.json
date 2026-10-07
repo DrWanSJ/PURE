@@ -1,0 +1,20 @@
+{
+  "status": "PASS_HASH_VERIFIED_REUSE",
+  "selected_trajectories": [
+    "results/reduction/r3_aminoacylation_qssa/run_001/R3_BASE",
+    "results/reduction/r3_aminoacylation_qssa/run_001/R3_GLYRS_LOW",
+    "results/reduction/r3_aminoacylation_qssa/run_001/R3_GLYRS_HIGH",
+    "results/reduction/r3_aminoacylation_qssa/run_001/R3_METRS_LOW",
+    "results/reduction/r3_aminoacylation_qssa/restart_001/R3_METRS_HIGH",
+    "results/reduction/r3_aminoacylation_qssa/restart_001/R3_GLY_LOW",
+    "results/reduction/r3_aminoacylation_qssa/restart_001/R3_MET_LOW",
+    "results/reduction/r3_aminoacylation_qssa/restart_001/R3_TRNA_LOW",
+    "results/reduction/r3_aminoacylation_qssa/restart_001/R3_ATP_LOW"
+  ],
+  "verification_sha256": "607a3f3fb640cee7cc403f3002f5eac369bc30bd3be2323b8a69e30ab384e5e2",
+  "historical_reduced_reused": false,
+  "fresh_startup_solves": true,
+  "excluded_conditions": [
+    "R3_ADVERSE"
+  ]
+}

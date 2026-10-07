@@ -1,0 +1,24 @@
+{
+  "schema": "R6_CK_BRANCH_A_PROSPECTIVE_BINDING_V1",
+  "frozen_at_utc": "2026-10-07T14:24:07.821128+00:00",
+  "decisive_run_count_before_freeze": 0,
+  "file_hashes": {
+    "docs/reduction/r6_ck_formal_observable_contract_v1.md": "a8aea6bf38f4d538af96eb0a6195eba931ab0ab27ffe6c8d5613b711319ed4b6",
+    "results/reduction/r6_ck_validation/human_branch_a_decision_20261007.txt": "5c6192fef3e147d7e7e98eab7df60b5602e4303dd918c6936d0171206ce04b9d",
+    "results/reduction/r6_ck_validation/formal_numerical_contract.json": "54b504d7eedb2372a98ba7219e74cb5e9dbfe61c87220da6d8b891e0d7d64aae",
+    "results/reduction/r6_ck_validation/formal_net_channel_membership.csv": "83d696ece9ba7076562860a2bf60e24f99f31674ba20e9709b2d0b3bc6de2f87",
+    "results/reduction/r6_ck_validation/formal_environment.json": "7f87c7adef51623e9ab23d0d54503c4d14dff71c6a99db97a670d8cc65e7769d",
+    "results/reduction/r6_ck_validation/source_reuse_verification.json": "607a3f3fb640cee7cc403f3002f5eac369bc30bd3be2323b8a69e30ab384e5e2",
+    "results/reduction/r6_ck_validation/observable_requirement_decision.json": "e467872dac7d72352208713a7178c33d25d11bbee682b89e52f4c0e66b376d33",
+    "scripts/r6_ck_common_v1.py": "d44ce37812a742675bc81d4a37eb789247e30631c9a5697d39a0af99e7417ab8",
+    "scripts/verify_r6_ck_source_reuse_v1.py": "26d764649a2c482b4a8a4f8e23f0ddcbd78d8bba8664893c6d338055a3314860",
+    "scripts/register_r6_ck_branch_a_v1.py": "bcc6a85356802139c903792040c00b00bc34b601e9adabaa64bf3ca02f24fc55",
+    "scripts/run_r6_ck_formal_v1.py": "83e8f2437654920d327096d9bd708ffae429bc2fc036b5fee9a673d9e271912e",
+    "scripts/score_r6_ck_formal_v1.py": "126969e570f6f73b9c34c53222cdae1c5f89176cac81a7482123fd656e373ba0",
+    "scripts/r5_ck_partial_equilibrium_runtime_v1.py": "db32bcbea84b4901edae0063434d71dab014acda3f56261cff9c737f3cac2d53",
+    "scripts/r5_ck_eta_scan_v1.py": "b05c8796a8a2b6ba5f3ccdf3da9275c194a5b43db22059d40d21a783dee76bd2",
+    "docs/reduction/r5_theory_scope_v1.json": "f31956e8e4d6935b1a116cdf27de40b9094a1bbf314c9683b023d1572c20702f",
+    "results/reduction/r6_ck_validation/historical_snapshot.json": "839469bde38b1f45fefaec9717e7e3c2e570c8f573ed885a0689c69dc9400674"
+  },
+  "note": "Finalizer/verifier do not set scientific gates; scoring/runtime/contract are frozen before any fresh comparison."
+}

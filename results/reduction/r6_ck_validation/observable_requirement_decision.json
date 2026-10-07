@@ -1,0 +1,22 @@
+{
+  "decision": "GROSS_FLUX_NOT_REQUIRED_FOR_CK_PROMOTION",
+  "authority": "EXPLICIT_HUMAN_FOLLOWUP",
+  "evidence_status": "EXTRACTED",
+  "human_decision_sha256": "5c6192fef3e147d7e7e98eab7df60b5602e4303dd918c6936d0171206ce04b9d",
+  "mandatory_classes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F",
+    "H"
+  ],
+  "gross_classes": [
+    "E",
+    "G"
+  ],
+  "gross_mandatory": false,
+  "gross_status": "SOURCE_PROVENANCE_PRESERVED;DESCRIPTIVE;BUT_NOT_VALIDATED",
+  "prior_ambiguity_preserved": "audit_stop_001",
+  "promotion": false
+}

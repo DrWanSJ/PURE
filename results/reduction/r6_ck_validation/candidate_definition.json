@@ -1,0 +1,39 @@
+{
+  "schema": "R6_CK_CANDIDATE_DEFINITION_V1",
+  "candidate": "CK_PARTIAL_EQUILIBRIUM_V1",
+  "approximation": "RAPID_EQUILIBRIUM / PARTIAL_EQUILIBRIUM",
+  "fast_reaction_ids": [
+    "re0000000332",
+    "re0000000333",
+    "re0000000336",
+    "re0000000337"
+  ],
+  "nonfast_dynamic_reaction_count": 964,
+  "source_provenance_reaction_count": 968,
+  "retained_slow_coordinate_count": 212,
+  "source_general_law_count": 27,
+  "reconstructed_state_count": 241,
+  "dynamic_fast_totals": [
+    "T0",
+    "T1",
+    "B"
+  ],
+  "algebraically_affected_states": [
+    "CK",
+    "CK_ADP",
+    "CP",
+    "CK_CP",
+    "CK_CP_ADP"
+  ],
+  "physical_root": "p+T0*p/(500+p)+T1*p/(500+p)-B=0; 0<=p<=B",
+  "source_kinetics_unchanged": true,
+  "fitted_parameters": [],
+  "initial_condition_fitting": false,
+  "clipping": false,
+  "time_shift": false,
+  "source_trajectory_projection": false,
+  "canonical_reaction_deletion": false,
+  "promotion": false,
+  "implementation_source": "scripts/r5_ck_partial_equilibrium_runtime_v1.py",
+  "implementation_sha256": "db32bcbea84b4901edae0063434d71dab014acda3f56261cff9c737f3cac2d53"
+}

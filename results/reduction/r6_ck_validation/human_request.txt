@@ -1,0 +1,955 @@
+You are starting the next bounded stage of the PURE reduction project.
+
+TITLE:
+
+R6 — CK FORMAL VALIDATION SCOPE AND GROSS-FLUX DECISION
+
+Repository:
+https://github.com/DrWanSJ/PURE
+
+RUN FROM THE REPOSITORY ROOT.
+
+============================================================
+SCIENTIFIC CONTEXT
+============================================================
+
+R5 and R5-C established the following current interpretation:
+
+1. CK mechanism-first partial-equilibrium reduction is structurally coherent.
+
+2. For the selected CK fast pairs:
+
+       re0000000332 / re0000000333
+       re0000000336 / re0000000337
+
+   the fast subsystem has:
+
+       rank(S_f) = 2
+
+   fast invariants / dynamic totals:
+
+       T0 = CK + CK_CP
+       T1 = CK_ADP + CK_CP_ADP
+       B  = CP + CK_CP + CK_CP_ADP
+
+   and analytical critical manifold:
+
+       q_i = T_i p / (K_i + p)
+
+   with unique physical p root.
+
+3. The frozen CK fast layer is attracting on the tested domain.
+
+4. The eta-scaled singular family shows systematic convergence as eta -> 0.
+
+5. At the actual eta=1 baseline:
+
+       hybrid all-241 scaled state error
+       approximately 3.38e-4
+
+   after explicit initial-layer handling.
+
+6. Therefore CK has strong state-reduction evidence.
+
+7. However:
+
+       state accuracy
+       !=
+       net fast-current accuracy
+       !=
+       individual gross forward/reverse flux accuracy.
+
+8. Zero-order CK does NOT automatically preserve all 968 microscopic gross
+   directed rates/extents.
+
+9. R5-C introduced an observable contract distinguishing:
+
+       A slow states / totals
+       B reconstructed fast states
+       C exact conservation
+       D net currents
+       E gross directed rates
+       F net extents
+       G gross directed extents
+       H initial-layer observables
+
+10. The next decision is therefore:
+
+       Is microscopic gross fast flux preservation actually required
+       for the scientific purpose of the reduced PURE model?
+
+This must be decided before CK formal promotion criteria are frozen.
+
+============================================================
+AUTHORIZATION
+============================================================
+
+The human researcher authorizes:
+
+A. an evidence-based audit of whether gross microscopic forward/reverse
+   fast fluxes are REQUIRED observables for the project;
+
+B. preparation of a CK-specific formal validation contract;
+
+C. if gross microscopic fluxes are NOT required for promotion:
+       execute a bounded formal CK validation across the existing
+       preregistered nine-condition domain;
+
+D. if gross microscopic fluxes ARE required:
+       do NOT run the broad formal validation yet;
+       instead derive and baseline-test a first-order CK flux reconstruction.
+
+This authorization does NOT approve CK reduction.
+
+Do NOT:
+
+- modify canonical source;
+- modify R1–R5-C historical evidence;
+- change historical thresholds;
+- reinterpret R4 retrospectively;
+- automatically promote PURE_reduced_core;
+- delete source reactions;
+- push;
+- merge;
+- run R3_ADVERSE;
+- start aminoacylation reduction work.
+
+============================================================
+PHASE 0 — REPOSITORY / LINEAGE CHECK
+============================================================
+
+Before changing anything run:
+
+    git fetch origin
+    git status
+    git branch -vv
+    git log -20 --oneline --decorate
+    git rev-parse HEAD
+    git rev-parse origin/main
+
+Expected remote main historically:
+
+    0b6f9ad649a7e283e440e0294a021123551f6858
+
+Expected local R5-C final SHA:
+
+    1181ab2f0a04d72cf76fb069be6bb842e3de75d8
+
+Do not assume either value.
+
+Record actual state.
+
+Create an isolated branch/worktree from the actual R5-C execution lineage.
+
+Snapshot all pre-existing files by SHA-256.
+
+All R1/R2/R3/R4/R5/R5-C files must remain byte-identical.
+
+============================================================
+PHASE 1 — FREEZE R6 SCOPE
+============================================================
+
+Create:
+
+    docs/reduction/r6_ck_validation_authorization_20261007.md
+    docs/reduction/r6_ck_observable_scope_preregistration_v1.md
+    results/reduction/r6_ck_validation/input_provenance.json
+
+Do not yet run decisive new comparisons.
+
+The preregistration must explicitly separate:
+
+    scientific-use requirements
+    model-state requirements
+    net accounting requirements
+    microscopic gross-flux requirements
+
+============================================================
+PHASE 2 — DETERMINE WHETHER GROSS MICROSCOPIC FLUX IS ACTUALLY REQUIRED
+============================================================
+
+Inspect the project requirements, including where applicable:
+
+    tasklist
+    model card
+    reduction notes
+    conservation/accounting requirements
+    source observables
+    stated GFP/protein-output goal
+    energy/resource bookkeeping requirements
+    previous acceptance criteria
+    R5-C observable contract
+
+Do not infer project purpose solely from old numerical gates.
+
+For every relevant project requirement, classify whether it requires:
+
+A.
+
+    state / concentration trajectory
+
+B.
+
+    slow total / inventory
+
+C.
+
+    exact conservation
+
+D.
+
+    net biochemical conversion
+
+E.
+
+    net cumulative extent
+
+F.
+
+    microscopic forward rate
+
+G.
+
+    microscopic reverse rate
+
+H.
+
+    gross directed cumulative extent
+
+Create:
+
+    results/reduction/r6_ck_validation/
+        scientific_requirement_to_observable.csv
+
+Columns should include:
+
+    requirement_id
+    source_file
+    source_location
+    scientific_question
+    required_observable_class
+    gross_microscopic_flux_required
+    rationale
+    confidence
+
+============================================================
+PHASE 3 — APPLY A STRICT DECISION RULE
+============================================================
+
+Classify the gross-flux requirement into exactly one of:
+
+    GROSS_FLUX_NOT_REQUIRED_FOR_CK_PROMOTION
+
+    GROSS_FLUX_REQUIRED_FOR_CK_PROMOTION
+
+    GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED
+
+Do NOT decide "required" merely because historical R4 evaluated all 968
+directed rates/extents.
+
+Historical diagnostic coverage is not automatically a scientific requirement.
+
+Likewise, do NOT decide "not required" merely because CK state accuracy is
+good.
+
+The decision must follow the stated scientific purpose.
+
+If ambiguous:
+
+    STOP BEFORE ANY NEW FORMAL CK CAMPAIGN.
+
+Produce the evidence and ask for human decision.
+
+============================================================
+PHASE 4 — DEFINE THE CK REDUCTION CANDIDATE PRECISELY
+============================================================
+
+Regardless of branch, freeze the actual candidate.
+
+Fast reaction subsystem:
+
+    re0000000332
+    re0000000333
+    re0000000336
+    re0000000337
+
+No other source reaction is approximated in this candidate.
+
+Use the already-derived R5 mechanism-first coordinates and manifold.
+
+Candidate type:
+
+    CK_PARTIAL_EQUILIBRIUM_V1
+
+Approximation type:
+
+    RAPID_EQUILIBRIUM / PARTIAL_EQUILIBRIUM
+
+not:
+
+    generic species QSSA.
+
+The candidate must retain:
+
+- every non-fast canonical reaction dynamically;
+- complete source-reaction provenance;
+- exact SOURCE_GENERAL reconstruction;
+- explicit initial-layer treatment;
+- no fitted effective parameters.
+
+============================================================
+PHASE 5 — FREEZE INITIAL-LAYER POLICY
+============================================================
+
+Use the R5 hybrid strategy only if its exact implementation and switch rule
+are reproduced from frozen R5 evidence.
+
+Do not tune the startup time from the new validation results.
+
+The historical R5 startup rule was based on a fixed multiple of the local
+fast relaxation time.
+
+Verify the exact rule before use.
+
+Record:
+
+    FULL_WINDOW
+    POST_INITIAL_LAYER
+    COMPOSITE_OR_HYBRID
+
+as distinct windows.
+
+Do not hide the full-model startup.
+
+Do not project the source trajectory.
+
+Do not fit reduced initial conditions.
+
+============================================================
+BRANCH A
+GROSS_FLUX_NOT_REQUIRED_FOR_CK_PROMOTION
+============================================================
+
+If and only if Phase 3 returns:
+
+    GROSS_FLUX_NOT_REQUIRED_FOR_CK_PROMOTION
+
+proceed with the following formal validation.
+
+============================================================
+A1 — CK FORMAL OBSERVABLE CONTRACT
+============================================================
+
+Create:
+
+    docs/reduction/r6_ck_formal_observable_contract_v1.md
+
+Define mandatory promotion observables.
+
+At minimum evaluate:
+
+CLASS A — retained slow states / totals
+
+    T0
+    T1
+    B
+
+    ATP
+    ADP
+    CP / reconstructed free CP
+    Cr
+
+    relevant energy-regeneration species
+
+    protein output / final product observables
+
+    all retained SOURCE_GENERAL coordinates required for exact reconstruction
+
+CLASS B — reconstructed fast states
+
+    CK_CP
+    CK_CP_ADP
+
+and any other species algebraically altered by the coordinate reconstruction.
+
+CLASS C — exact conservation laws
+
+    all exact SOURCE_GENERAL conservation laws
+
+CLASS D — net fast currents
+
+    j_332_333
+    j_336_337
+
+CLASS F — net cumulative extents
+
+    integral j_332_333 dt
+    integral j_336_337 dt
+
+and scientifically relevant net resource conversions.
+
+CLASS H — initial layer
+
+    initial occupancy mismatch
+    startup duration
+    matched / hybrid continuity
+
+Microscopic gross forward/reverse channels remain:
+
+    SOURCE_PROVENANCE_PRESERVED
+
+but are NOT mandatory promotion observables for this candidate.
+
+Still report them descriptively where available.
+
+Do not claim they are accurately reconstructed.
+
+============================================================
+A2 — FREEZE VALIDATION DOMAIN
+============================================================
+
+Use exactly the same nine completed historical conditions unless repository
+evidence requires a more specific CK-relevant domain:
+
+    R3_BASE
+    R3_GLYRS_LOW
+    R3_GLYRS_HIGH
+    R3_METRS_LOW
+    R3_METRS_HIGH
+    R3_GLY_LOW
+    R3_MET_LOW
+    R3_TRNA_LOW
+    R3_ATP_LOW
+
+R3_ADVERSE remains excluded.
+
+Reuse verified source trajectories where:
+
+- canonical source hash matches;
+- parameters match;
+- initial values match;
+- condition definition matches;
+- time grid/protocol matches.
+
+Write an explicit reuse verifier.
+
+Do not recompute expensive full-source trajectories unnecessarily.
+
+============================================================
+A3 — ACCEPTANCE THRESHOLDS
+============================================================
+
+Do not invent thresholds silently.
+
+Map existing project thresholds only where the observable semantics are
+equivalent.
+
+Default candidate mappings to evaluate and preregister:
+
+STATE / TOTAL trajectory:
+
+    E_inf <= 0.01
+
+PROCESS / NET CURRENT:
+
+    E_inf <= 0.05
+
+NET cumulative extent:
+
+    E_inf <= 0.01
+
+EXACT conservation drift:
+
+    <= 1e-8
+
+These are inherited numerical levels only where scientifically comparable to
+the prior registered tier.
+
+For any newly introduced observable without a justified inherited threshold:
+
+    mark DESCRIPTIVE
+    do not use it as a promotion gate
+
+unless the preregistration explicitly derives and freezes a threshold before
+the decisive run.
+
+Numerical uncertainty must remain <=10% of the corresponding gate budget
+before PASS/FAIL is considered resolved.
+
+============================================================
+A4 — CK CROSS-CONDITION FORMAL RUN
+============================================================
+
+For each of the nine conditions:
+
+solve the fresh CK reduced model using the frozen hybrid/initial-layer policy.
+
+Compare:
+
+1. all relevant source states;
+2. all retained slow totals;
+3. reconstructed CK fast states;
+4. protein-output observables;
+5. ATP / ADP / CP / Cr;
+6. CK net currents;
+7. CK net cumulative extents;
+8. relevant net energy/resource conversions;
+9. exact conservation laws.
+
+Report:
+
+    full-window
+    post-initial-layer
+    post-0.05 s where historically useful
+
+but do not substitute one window for another.
+
+============================================================
+A5 — CURRENT ACCURACY MUST BE SEPARATE FROM STATE ACCURACY
+============================================================
+
+R5-C observed approximately 14.7% representative scaled error for the
+zero-order reconstructed CK net redistribution current.
+
+Therefore do NOT assume CLASS D will pass.
+
+For each condition independently evaluate:
+
+    state error
+    net-current error
+    net-extent error
+
+If state passes but current fails, classify explicitly:
+
+    STATE_VALID
+    NET_CURRENT_NOT_VALIDATED
+
+Do not collapse this into a generic "candidate pass".
+
+============================================================
+A6 — PROMOTION LOGIC
+============================================================
+
+Candidate-level outcomes may include:
+
+    CK_FORMAL_VALIDATION_PASS
+
+    CK_STATE_VALID_NET_CURRENT_FAIL
+
+    CK_STATE_VALID_NET_EXTENT_FAIL
+
+    CK_CONSERVATION_FAIL
+
+    CK_NUMERICALLY_UNRESOLVED
+
+    CK_CONDITION_DEPENDENT
+
+A full formal PASS requires every preregistered mandatory observable gate to
+pass on every registered condition.
+
+Gross microscopic forward/reverse extent is not part of this promotion
+conjunction in Branch A.
+
+But its limitation must remain prominently documented.
+
+============================================================
+BRANCH B
+GROSS_FLUX_REQUIRED_FOR_CK_PROMOTION
+============================================================
+
+If Phase 3 returns:
+
+    GROSS_FLUX_REQUIRED_FOR_CK_PROMOTION
+
+DO NOT launch the nine-condition formal validation yet.
+
+Instead perform a first-order CK flux-reconstruction study.
+
+============================================================
+B1 — DERIVE FIRST-ORDER MANIFOLD DISPLACEMENT
+============================================================
+
+Use the eta-scaled system in a valid slow-fast form.
+
+Write:
+
+    q = h0(z) + eta h1(z) + O(eta^2)
+
+Derive h1 from the invariance equation.
+
+Do not simply use an empirical fit.
+
+Starting from:
+
+    G(z,h) = Dh(z) F(z,h)
+
+or the correctly eta-scaled equivalent,
+
+derive the O(eta) equation symbolically.
+
+Keep explicit contributions from:
+
+    G_q
+    F_q
+    Dh0
+    slow forcing
+    derivative of h1 along the slow flow
+
+Do not omit terms without an order argument.
+
+If the exact h1 problem becomes a transport equation rather than an algebraic
+solve, state that explicitly.
+
+============================================================
+B2 — DERIVE FIRST-ORDER FAST NET CURRENT
+============================================================
+
+Expand:
+
+    v_fast(z,q;eta)
+
+about:
+
+    q = h0(z)
+
+using:
+
+    q = h0 + eta h1 + ...
+
+Show how the finite O(1) redistribution current arises from the O(eta)
+displacement multiplied by O(1/eta) fast kinetics.
+
+Derive:
+
+    j_fast^(0/1)
+
+consistent with the manifold kinematics identity:
+
+    N_qf j_fast
+      =
+      Dh(z) z_dot
+      -
+      q_dot_nonfast
+
+Cross-check both derivations.
+
+============================================================
+B3 — GROSS FORWARD / REVERSE CORRECTIONS
+============================================================
+
+For each fast pair derive separately:
+
+    v_plus
+    v_minus
+
+through the first order required to recover their finite difference.
+
+Determine whether the individual O(1) corrections are uniquely determined by:
+
+- source kinetics;
+- h1;
+- slow coordinates;
+- startup matching.
+
+If yes:
+
+    derive them.
+
+If not:
+
+    classify the missing information precisely.
+
+Do not use an arbitrary split.
+
+============================================================
+B4 — MATCH THE INITIAL LAYER
+============================================================
+
+Gross cumulative extents are sensitive to the initial fast layer.
+
+Therefore derive / compute startup contributions:
+
+    Delta xi_plus_startup
+    Delta xi_minus_startup
+    Delta xi_net_startup
+
+using the full fast-layer solution or a numerically controlled startup solve.
+
+Do not discard the startup turnover.
+
+Construct a composite cumulative-flux approximation:
+
+    startup contribution
+    +
+    slow-manifold first-order contribution.
+
+============================================================
+B5 — BASELINE ONLY
+============================================================
+
+Validate first-order reconstruction on R3_BASE only.
+
+Compare:
+
+- fast states;
+- net current;
+- forward rate;
+- reverse rate;
+- cumulative net extent;
+- cumulative gross forward extent;
+- cumulative gross reverse extent.
+
+Compare:
+
+    zero-order
+    first-order
+    full source
+
+Quantify whether first-order reconstruction materially improves the existing
+approximately 14.7% net-current error.
+
+Do not run the broad nine-condition screen unless baseline evidence is strong.
+
+============================================================
+B6 — FIRST-ORDER DECISION
+============================================================
+
+End Branch B with exactly one of:
+
+    CK_FIRST_ORDER_FLUX_RECONSTRUCTION_SUPPORTED_BASELINE
+
+    CK_FIRST_ORDER_IMPROVES_NET_NOT_GROSS
+
+    CK_FIRST_ORDER_INSUFFICIENT
+
+    CK_FIRST_ORDER_NOT_UNIQUELY_IDENTIFIABLE
+
+    CK_FIRST_ORDER_NUMERICALLY_UNRESOLVED
+
+Do not promote CK.
+
+============================================================
+PHASE 6 — BALANCE / ACCOUNTING POLICY
+============================================================
+
+Regardless of branch, use the R5-C distinction:
+
+    exact conservation
+    !=
+    directed gross ledger closure.
+
+For candidate validation report separately:
+
+A.
+
+    exact SOURCE_GENERAL law drift
+
+B.
+
+    net stoichiometric accounting
+
+C.
+
+    reconstructed algebraic-state accounting
+
+D.
+
+    gross microscopic directed ledger residual
+
+Do not let an unresolved Class-G gross ledger automatically invalidate a
+Branch-A candidate if Class G was prospectively declared non-mandatory.
+
+Likewise, do not hide Class-G failure.
+
+Report:
+
+    NOT_REQUIRED_FOR_PROMOTION
+    BUT_NOT_VALIDATED
+
+where applicable.
+
+============================================================
+PHASE 7 — NO THRESHOLD RETROACTIVITY
+============================================================
+
+R6 is a NEW CK-specific validation protocol.
+
+It does not alter:
+
+    R3 thresholds
+    R4 thresholds
+    R4 classifications
+    R5 descriptive status
+    R5-C corrections
+
+Do not say:
+
+    "the old 968 gate was wrong."
+
+Instead say:
+
+    "R6 prospectively defines which observables are mandatory for the
+     CK candidate based on the scientific use contract."
+
+============================================================
+PHASE 8 — REQUIRED OUTPUTS
+============================================================
+
+Create at minimum:
+
+    docs/reduction/
+        r6_ck_validation_authorization_20261007.md
+        r6_ck_observable_scope_preregistration_v1.md
+        r6_ck_scientific_requirement_audit.md
+
+Branch A additionally:
+
+        r6_ck_formal_observable_contract_v1.md
+        r6_ck_formal_validation_summary.md
+
+Branch B additionally:
+
+        r6_ck_first_order_flux_derivation_v1.md
+        r6_ck_first_order_flux_validation_v1.md
+
+Results:
+
+    results/reduction/r6_ck_validation/
+        input_provenance.json
+        scientific_requirement_to_observable.csv
+        observable_requirement_decision.json
+        condition_summary.csv
+        manifest.json
+
+Branch A:
+
+        per_condition/
+        state_errors.csv
+        slow_total_errors.csv
+        net_current_errors.csv
+        net_extent_errors.csv
+        conservation.csv
+        protein_output.csv
+
+Branch B:
+
+        first_order/
+            h1_diagnostics.csv
+            net_current_comparison.csv
+            gross_rate_comparison.csv
+            gross_extent_comparison.csv
+            startup_flux_matching.csv
+
+============================================================
+PHASE 9 — INDEPENDENT VERIFIER
+============================================================
+
+Write:
+
+    scripts/verify_r6_ck_validation_v1.py
+
+Verify:
+
+- all pre-R6 files byte-identical;
+- canonical source unchanged;
+- parameters unchanged;
+- initial values unchanged;
+- historical thresholds unchanged;
+- R5/R5-C evidence unchanged;
+- scientific-requirement audit source locations valid;
+- gross-flux decision follows documented requirements;
+- observable contract frozen before decisive validation;
+- CK fast reaction membership unchanged;
+- no new hidden fitted parameter;
+- no initial-condition fitting;
+- no clipping;
+- no time shift;
+- no R3_ADVERSE;
+- source reuse is hash-valid;
+- exact conservation tested independently;
+- net-current reconstruction uses canonical stoichiometry;
+- gross-flux limitations are explicitly retained;
+- no PURE_reduced_core promotion occurred automatically.
+
+============================================================
+PHASE 10 — FINAL HUMAN DECISION
+============================================================
+
+At the end STOP.
+
+Report:
+
+1. Is microscopic gross forward/reverse flux scientifically required for
+   CK promotion?
+
+2. Which observable classes A–H are mandatory?
+
+3. If Branch A:
+       how many of nine conditions pass every mandatory CK gate?
+
+4. What is the worst state error?
+
+5. What is the worst slow-total error?
+
+6. What is the worst protein-output error?
+
+7. What is the worst CK net-current error?
+
+8. What is the worst net-extent error?
+
+9. Are exact conservation laws maintained numerically?
+
+10. Does any failure come specifically from:
+        state,
+        current,
+        extent,
+        conservation,
+        numerical uncertainty,
+        domain violation?
+
+11. If Branch B:
+        did first-order reconstruction materially improve net current?
+        did it recover gross forward/reverse rates?
+        did startup matching repair cumulative gross extents?
+
+12. Is CK ready for human scientific promotion?
+
+Allowed final recommendations:
+
+    CK_READY_FOR_HUMAN_PROMOTION_REVIEW
+
+    CK_STATE_REDUCTION_SUPPORTED_BUT_FLUX_NOT_READY
+
+    CK_REQUIRES_FIRST_ORDER_FLUX_RECONSTRUCTION
+
+    CK_CONDITION_DEPENDENT_REDUCTION
+
+    CK_VALIDATION_NUMERICALLY_UNRESOLVED
+
+    CK_NOT_READY
+
+Do not execute the next stage.
+
+No push.
+No merge.
+No automatic promotion.
+
+============================================================
+GOVERNING PRINCIPLE
+============================================================
+
+The question is no longer:
+
+    "Does CK QSSA work?"
+
+R5 already gives strong positive state-level evidence.
+
+R6 asks:
+
+    "For the scientific observables this reduced model is actually intended
+     to preserve, over the declared condition domain, does the CK
+     partial-equilibrium approximation satisfy a prospectively frozen
+     validation contract?"
+
+State accuracy, net-current accuracy and microscopic gross-flux accuracy must
+remain separate questions.

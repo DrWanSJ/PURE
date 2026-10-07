@@ -1,0 +1,17 @@
+{
+  "schema": "R6_CK_REGISTRATION_BINDING_V1",
+  "frozen_at_utc": "2026-10-07T14:02:10.446198+00:00",
+  "decisive_comparisons_before_freeze": 0,
+  "file_hashes": {
+    "docs/reduction/r6_ck_validation_authorization_20261007.md": "86da0b342609d964bf912190190a3370ba6e8b78729a65b616709d69fe7b21c6",
+    "docs/reduction/r6_ck_observable_scope_preregistration_v1.md": "3b5c8004d942213eafce184c179b3658891fc449e7d5c68605a317462a4ebc98",
+    "results/reduction/r6_ck_validation/human_request.txt": "0abef8bfa405eefd04c412d9a6591197936c1f13973152d56c4a0f046c9b0970",
+    "results/reduction/r6_ck_validation/candidate_definition.json": "58e0dc43916035952fa41ed084c017fefdd8b8472a654c0ac952f7183ab56252",
+    "results/reduction/r6_ck_validation/initial_layer_policy.json": "6c1e13e937e3a5c37749352f111606a4d3fa2a22787d06b25c9a30e8d4527148",
+    "results/reduction/r6_ck_validation/prospective_observable_contract.csv": "662e9a4e547efc5f47abe8f36d0074483f90c20c9f26f2aa797320dbd4d51699",
+    "results/reduction/r6_ck_validation/historical_snapshot.json": "839469bde38b1f45fefaec9717e7e3c2e570c8f573ed885a0689c69dc9400674",
+    "results/reduction/r6_ck_validation/input_provenance.json": "6298e480c0121e40c4606f3527c20c2cc51b039265e120b163133a5c231d1abd"
+  },
+  "promotion_conjunction_frozen": false,
+  "purpose": "Freeze audit/candidate/startup; numerical contract waits for gross-use decision"
+}

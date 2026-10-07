@@ -1,0 +1,35 @@
+{
+  "recorded_at_utc": "2026-10-07T14:33:40.859515+00:00",
+  "executor": "C:/Python311/python.exe",
+  "frozen_runner": "scripts/run_r6_ck_formal_v1.py",
+  "initial_driver": "all nine serial; execution claims stop it safely on the first condition already owned by a parallel worker",
+  "additional_workers": [
+    [
+      "R3_GLYRS_HIGH",
+      "R3_METRS_HIGH",
+      "R3_TRNA_LOW"
+    ],
+    [
+      "R3_METRS_LOW",
+      "R3_GLY_LOW",
+      "R3_ATP_LOW"
+    ],
+    [
+      "R3_MET_LOW"
+    ]
+  ],
+  "command_format": "C:/Python311/python.exe scripts/run_r6_ck_formal_v1.py --condition CONDITION",
+  "independent_condition_execution": true,
+  "no_duplicate_scientific_run_or_overwrite": true,
+  "no_change_to_frozen_per_solve_bounds": true,
+  "hardware_logical_processors": 20,
+  "hardware_physical_cores": 14,
+  "independent_additional_condition_processes": [
+    "R3_GLYRS_LOW",
+    "R3_METRS_HIGH",
+    "R3_TRNA_LOW",
+    "R3_GLY_LOW",
+    "R3_ATP_LOW"
+  ],
+  "driver_claim_collision_policy": "Existing execution claims refuse duplicate executions; older serial drivers may exit at those claims. Each condition is assessed from its single owned experiment, not from orchestration-driver exit codes."
+}

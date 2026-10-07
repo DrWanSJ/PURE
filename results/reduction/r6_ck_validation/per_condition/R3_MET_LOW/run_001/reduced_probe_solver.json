@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "start_s": 9.906817032876724e-05,
+  "end_s": 1000.0,
+  "rtol": 1e-11,
+  "atol": 1e-15,
+  "rhs_calls": 22113,
+  "nfev": 22113,
+  "njev": 610,
+  "nlu": 2740,
+  "accepted_steps": 7284,
+  "minimum_accepted_coordinate": -8253.372519931345,
+  "elapsed_s": 51.125
+}

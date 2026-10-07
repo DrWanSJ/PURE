@@ -1,0 +1,59 @@
+{
+  "schema": "R6_INDEPENDENT_VERIFICATION_V1",
+  "status": "PASS_SCOPE_AUDIT_ONLY",
+  "verified_at_utc": "2026-10-07T14:02:38.504054+00:00",
+  "checks": [
+    {
+      "check": "ALL_PRE_R6_BYTES_BOTH_CHECKOUTS",
+      "status": "PASS",
+      "file_count": 2585
+    },
+    {
+      "check": "ISOLATED_LINEAGE_AND_ADDITIVE_SCOPE",
+      "status": "PASS"
+    },
+    {
+      "check": "HUMAN_REQUEST_AND_UNRELATED_DESKTOP_FILES",
+      "status": "PASS"
+    },
+    {
+      "check": "AUDIT_SCOPE_CANDIDATE_STARTUP_FROZEN_NO_DECISIVE_RUN",
+      "status": "PASS"
+    },
+    {
+      "check": "REQUIREMENT_LOCATIONS_AND_AMBIGUITY_RULE",
+      "status": "PASS",
+      "limitation": "Interpretation is reviewable and source-bound; human scientific-use decision remains required"
+    },
+    {
+      "check": "INDEPENDENT_CANONICAL_STOICHIOMETRY_NQF_AND_27_LS_IDENTITIES",
+      "status": "PASS",
+      "reaction_count": 968,
+      "numerical_trajectory_conservation": "NOT_RUN"
+    },
+    {
+      "check": "FROZEN_CANDIDATE_KINETICS_INITIAL_LAYER_AND_GROSS_LIMITATIONS",
+      "status": "PASS"
+    },
+    {
+      "check": "NO_NEW_SOLVER_NO_ADVERSE_NO_REUSE_NO_PROMOTION",
+      "status": "PASS",
+      "campaign": "NOT_RUN",
+      "source_reuse_verification": "NOT_APPLICABLE_NO_REUSE",
+      "no_fitting_no_clipping": "STATIC_CODE_AND_HISTORICAL_HASH_SCOPE"
+    },
+    {
+      "check": "MANIFEST_NAVIGATION_COMPLETENESS_AND_DIFF_CHECK",
+      "status": "PASS"
+    }
+  ],
+  "gross_flux_decision": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+  "scientific_promotion": "NOT_APPROVED",
+  "formal_conditions_executed": 0,
+  "formal_pass_count": null,
+  "scientific_numeric_validation": "NOT_RUN_HUMAN_SCOPE_DECISION_REQUIRED",
+  "first_order_validation": "NOT_RUN",
+  "source_reuse": "NOT_ATTEMPTED",
+  "numerical_conservation": "NOT_RUN",
+  "independent_structural_conservation": "27_LS_IDENTITIES_PASS"
+}

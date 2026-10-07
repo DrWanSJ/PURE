@@ -1,0 +1,11 @@
+{
+  "schema": "R6_FORMAL_BRANCH_A_CLOSEOUT_V1",
+  "decision": "GROSS_FLUX_NOT_REQUIRED_FOR_CK_PROMOTION",
+  "recommendation": "CK_STATE_REDUCTION_SUPPORTED_BUT_FLUX_NOT_READY",
+  "candidate_outcome": "CK_STATE_VALID_NET_CURRENT_FAIL",
+  "completed_conditions": 9,
+  "conditions_passing_all_mandatory_gates": 0,
+  "closed_at_utc": "2026-10-07T15:45:21.710805+00:00",
+  "promotion": false,
+  "no_next_stage": true
+}

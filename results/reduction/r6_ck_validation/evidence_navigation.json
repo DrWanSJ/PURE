@@ -1,0 +1,331 @@
+{
+  "schema": "R6_DERIVED_EVIDENCE_NAVIGATION_V1",
+  "source_authority": false,
+  "freshness": "Verify source_sha256 and excerpt_sha256 before use",
+  "nodes": [
+    {
+      "id": "REQ01",
+      "source": "README.md",
+      "location": "L33-L51",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "b925a72e784363f708d4468e9c010e571ecb8f19a0f2ae39e2535b65e23d9a7d"
+    },
+    {
+      "id": "REQ02",
+      "source": "tasklist.md",
+      "location": "L9-L21",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "de6601fe8107b527ba443f9bcafc6901edff1f0bad278734db6b17336715ea81"
+    },
+    {
+      "id": "REQ03",
+      "source": "tasklist.md",
+      "location": "L112-L122",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "de6601fe8107b527ba443f9bcafc6901edff1f0bad278734db6b17336715ea81"
+    },
+    {
+      "id": "REQ04",
+      "source": "tasklist.md",
+      "location": "L192-L217",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "de6601fe8107b527ba443f9bcafc6901edff1f0bad278734db6b17336715ea81"
+    },
+    {
+      "id": "REQ05",
+      "source": "tasklist.md",
+      "location": "L476-L489",
+      "status": "AMBIGUOUS",
+      "confidence": "HIGH",
+      "sha256": "de6601fe8107b527ba443f9bcafc6901edff1f0bad278734db6b17336715ea81"
+    },
+    {
+      "id": "REQ06",
+      "source": "tasklist.md",
+      "location": "L99-L99",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "de6601fe8107b527ba443f9bcafc6901edff1f0bad278734db6b17336715ea81"
+    },
+    {
+      "id": "REQ07",
+      "source": "tasklist.md",
+      "location": "L580-L580",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "de6601fe8107b527ba443f9bcafc6901edff1f0bad278734db6b17336715ea81"
+    },
+    {
+      "id": "REQ08",
+      "source": "docs/model_card.md",
+      "location": "L1-L24",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "51ca78c801bcc9b24b81d07676fd0bfd7f0b3e8956408963be33133eae42d70d"
+    },
+    {
+      "id": "REQ09",
+      "source": "models/pnas2017_full_reference/README.md",
+      "location": "L1-L19",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "8dad1275bd67aaebc1a760b5057c256d94b40381d5301fab65e9e352b6c16f10"
+    },
+    {
+      "id": "REQ10",
+      "source": "docs/pnas2017/reference_reproduction.md",
+      "location": "L22-L30",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "3731786113095c1657f4e01b5c1861accf1071db4ffd93a5e7ec34ac531176c9"
+    },
+    {
+      "id": "REQ11",
+      "source": "docs/reduction/species_information_contract_detailed.md",
+      "location": "L32-L44",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "24340aa5ca1e1fa262124407cd4ed02093066cb09ace89195475a7aa38630210"
+    },
+    {
+      "id": "REQ12",
+      "source": "docs/reduction/human_audit_sync_20260930.md",
+      "location": "L14-L23",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "22601c2ea9d931db0d0a35e50e91de3128076eed46e5e9157fc1fd3024c99d0e"
+    },
+    {
+      "id": "REQ13",
+      "source": "docs/reduction/human_audit_sync_20260930.md",
+      "location": "L60-L64",
+      "status": "AMBIGUOUS",
+      "confidence": "HIGH",
+      "sha256": "22601c2ea9d931db0d0a35e50e91de3128076eed46e5e9157fc1fd3024c99d0e"
+    },
+    {
+      "id": "REQ14",
+      "source": "docs/reduction/reaction_level_contract_summary.md",
+      "location": "L143-L154",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "484a5fdc989f79c96542ed16ebe11c7173b058da4a92ee7939b09ac3bd99fa9f"
+    },
+    {
+      "id": "REQ15",
+      "source": "docs/reduction/reduction_validation_protocol_v0.md",
+      "location": "L153-L177",
+      "status": "AMBIGUOUS",
+      "confidence": "HIGH",
+      "sha256": "abb40cb7d4b1c8c8e4b8a281df6285b77e240b69bb2b99702d78abd7370183a4"
+    },
+    {
+      "id": "REQ16",
+      "source": "docs/reduction/r3_coupled_validation_protocol_v1.md",
+      "location": "L14-L33",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689"
+    },
+    {
+      "id": "REQ17",
+      "source": "docs/reduction/r4_fast_block_preregistration_v1.md",
+      "location": "L1-L12",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "a7d3e870747975ec47347a55e4dee1b9db3fe780d00f9be7ca03af572f7d0b54"
+    },
+    {
+      "id": "REQ18",
+      "source": "docs/reduction/human_reduction_review.md",
+      "location": "L451-L472",
+      "status": "AMBIGUOUS",
+      "confidence": "HIGH",
+      "sha256": "b32dcbfa155be5d77411691889e67da7a6a89c7d87ba1406171e74db6c95c2d8"
+    },
+    {
+      "id": "REQ19",
+      "source": "docs/pnas2017/chemical_ledger.md",
+      "location": "L3-L21",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "dd607d6127017e4fccfdd377ee4e3f6a541b785fb30447f1b2991eb2b964f8bb"
+    },
+    {
+      "id": "REQ20",
+      "source": "docs/reduction/r5c_reduction_observable_contract_v1.md",
+      "location": "L1-L21",
+      "status": "AMBIGUOUS",
+      "confidence": "HIGH",
+      "sha256": "37cd4152a0f485ac0d440f1de9da4570d7b67a5ad8c87fa28582ef7a51e0bac3"
+    },
+    {
+      "id": "REQ21",
+      "source": "docs/reduction/r5c_fast_ledger_semantics_v1.md",
+      "location": "L3-L19",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "1f9f1238c4dfa7a606f32350ba9af69031569c69d52a7c2a96b79487ecff8d8f"
+    },
+    {
+      "id": "REQ22",
+      "source": "docs/reduction/open_scientific_decisions.md",
+      "location": "L10-L17",
+      "status": "AMBIGUOUS",
+      "confidence": "HIGH",
+      "sha256": "1c00b464bdcf1e4a7cc295935508e925c8933d86973ae68ca79b7f20aa15e45b"
+    },
+    {
+      "id": "REQ23",
+      "source": "docs/reduction/r5_ck_fast_reaction_definition_v1.md",
+      "location": "L1-L5",
+      "status": "INFERRED",
+      "confidence": "HIGH",
+      "sha256": "939587c395f82573a608ef568035bea20b03994501a9bfa2df20829ef5aedc89"
+    }
+  ],
+  "edges": [
+    {
+      "source": "REQ01",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "PURPOSE_NET_RESOURCE",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ02",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "PURPOSE_NET_RESOURCE",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ03",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "PURPOSE_NET_RESOURCE",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ04",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "PURPOSE_NET_RESOURCE",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ05",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "LEDGER_SEMANTICS_UNRESOLVED",
+      "status": "AMBIGUOUS"
+    },
+    {
+      "source": "REQ06",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "ATP_GROSS_NOT_BINDING_TURNOVER",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ07",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "ATP_GROSS_NOT_BINDING_TURNOVER",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ08",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "LEGACY_MODEL",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ09",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "ACTIVE_SOURCE",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ10",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "ACTIVE_SOURCE",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ11",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "STATE_NOT_FLUX_CONTRACT",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ12",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "STATE_NOT_FLUX_CONTRACT",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ13",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "KINETIC_SCOPE_OPEN",
+      "status": "AMBIGUOUS"
+    },
+    {
+      "source": "REQ14",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "EXACT_REWRITE_NOT_APPROXIMATION",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ15",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "LEDGER_SEMANTICS_UNRESOLVED",
+      "status": "AMBIGUOUS"
+    },
+    {
+      "source": "REQ16",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "HISTORICAL_ONLY",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ17",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "HISTORICAL_ONLY",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ18",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "CK_MICROSCOPIC_COMPARISON_NOT_PROMOTION_MANDATE",
+      "status": "AMBIGUOUS"
+    },
+    {
+      "source": "REQ19",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "PURPOSE_NET_RESOURCE",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ20",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "EXPLICIT_FUTURE_MANDATORY_DECISION",
+      "status": "AMBIGUOUS"
+    },
+    {
+      "source": "REQ21",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "CAPABILITY_NOT_REQUIREMENT",
+      "status": "INFERRED"
+    },
+    {
+      "source": "REQ22",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "KINETIC_SCOPE_OPEN",
+      "status": "AMBIGUOUS"
+    },
+    {
+      "source": "REQ23",
+      "target": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+      "relationship": "ATP_GROSS_NOT_BINDING_TURNOVER",
+      "status": "INFERRED"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "recorded_at_utc": "2026-10-07T14:12:30.654617+00:00",
+  "files": {
+    "results/reduction/r6_ck_validation/candidate_definition.json": "58e0dc43916035952fa41ed084c017fefdd8b8472a654c0ac952f7183ab56252",
+    "results/reduction/r6_ck_validation/checkout_byte_qualification.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "results/reduction/r6_ck_validation/closeout.json": "713e127d5e5ccd6959692254c4c6c6b0edd1896a943ff91c739d3d14ed5de4cc",
+    "results/reduction/r6_ck_validation/condition_summary.csv": "d077a6ce84ca7d034c2a40acc10cf8e3800fa35d58b581d58ef4702eaa699c65",
+    "results/reduction/r6_ck_validation/desktop_untracked_snapshot.json": "b22b16cb9ed09f47f901a03f909ed28a92262b69945645fad271b8925cc66721",
+    "results/reduction/r6_ck_validation/evidence_navigation.json": "e9ede61760e128e7cd3a42712f430a06383a19a9aeafc4ff13aa275bb5faa54a",
+    "results/reduction/r6_ck_validation/historical_context.json": "a3380bca5195533a88560ea422ed0cb6b590ef0786d1bcf0c2963219c3451308",
+    "results/reduction/r6_ck_validation/historical_snapshot.json": "839469bde38b1f45fefaec9717e7e3c2e570c8f573ed885a0689c69dc9400674",
+    "results/reduction/r6_ck_validation/human_request.txt": "0abef8bfa405eefd04c412d9a6591197936c1f13973152d56c4a0f046c9b0970",
+    "results/reduction/r6_ck_validation/initial_checkout_snapshot.json": "839469bde38b1f45fefaec9717e7e3c2e570c8f573ed885a0689c69dc9400674",
+    "results/reduction/r6_ck_validation/initial_layer_policy.json": "6c1e13e937e3a5c37749352f111606a4d3fa2a22787d06b25c9a30e8d4527148",
+    "results/reduction/r6_ck_validation/input_provenance.json": "6298e480c0121e40c4606f3527c20c2cc51b039265e120b163133a5c231d1abd",
+    "results/reduction/r6_ck_validation/local_git_byte_policy.json": "f3c371f06541fd67ee14d56f82f9d49f92009372dcac0ca930147bc3106341ef",
+    "results/reduction/r6_ck_validation/manifest.json": "f74fdc8d6047db1dc5ddbfdd43e625854f5f15aa11332982a9c552ca23f14b31",
+    "results/reduction/r6_ck_validation/observable_requirement_decision.json": "c169b8eba755a4c58eb0ff19b4962ff09404e0d0a1e8a915385e5021df80a7ae",
+    "results/reduction/r6_ck_validation/prospective_observable_contract.csv": "662e9a4e547efc5f47abe8f36d0074483f90c20c9f26f2aa797320dbd4d51699",
+    "results/reduction/r6_ck_validation/registration_binding.json": "854a132b3556a20ffff53dbc342833475afc2a8b7a14bb904bd8dfe34eafc139",
+    "results/reduction/r6_ck_validation/repository_lineage.json": "4bdfa8d81b66ff21781f2d8089af16b45f2695796a299fc0feefcd0a4c79fbf0",
+    "results/reduction/r6_ck_validation/scientific_requirement_to_observable.csv": "92b1606870eb2ddca0d93a82d6518bc50e59be25a6cd3b4f15e1abd0df579a17",
+    "results/reduction/r6_ck_validation/source_reuse_status.json": "63ebb5184c3ff632ece49135e955a88f2d59c737ca29cd0e0e3586d36a3755b2",
+    "results/reduction/r6_ck_validation/verification.json": "3c8e51f1af33b4f8a0955b529fc07f9c625abb7e807d960feb7bcac1f3405856",
+    "results/reduction/r6_ck_validation/verification_binding.json": "8540cd0b060889969f8f9ae63526000e31525cc059a813faa6c488278bcdfb4c",
+    "docs/reduction/r6_ck_observable_scope_preregistration_v1.md": "3b5c8004d942213eafce184c179b3658891fc449e7d5c68605a317462a4ebc98",
+    "docs/reduction/r6_ck_scientific_requirement_audit.md": "d1ef78b473d01b90a046d5c405aff98e7c41ea5d1cf1aaeba5ad000928ac456a",
+    "docs/reduction/r6_ck_validation_authorization_20261007.md": "86da0b342609d964bf912190190a3370ba6e8b78729a65b616709d69fe7b21c6",
+    "scripts/build_r6_ck_scope_audit_v1.py": "608a25da4d62c76d384c6641228c45b3540c3ce19a864bb3f782f5bc1338427a",
+    "scripts/verify_r6_ck_validation_v1.py": "209378cdc782ad87c9716a599913a53958241f9979533afc98e1e928ee3bd29a"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "R6_DERIVED_FORMAL_EVIDENCE_NAVIGATION_V1",
+  "source_authority": false,
+  "nodes": [
+    {
+      "id": "HUMAN_BRANCH_A",
+      "path": "human_branch_a_decision_20261007.txt",
+      "status": "EXTRACTED"
+    },
+    {
+      "id": "CONTRACT",
+      "path": "formal_numerical_contract.json",
+      "status": "EXTRACTED"
+    },
+    {
+      "id": "R3_BASE",
+      "path": "per_condition/R3_BASE/run_001/result.json",
+      "status": "EXTRACTED",
+      "outcome": "CK_STATE_VALID_NET_CURRENT_FAIL"
+    },
+    {
+      "id": "R3_GLYRS_LOW",
+      "path": "per_condition/R3_GLYRS_LOW/run_001/result.json",
+      "status": "EXTRACTED",
+      "outcome": "CK_STATE_VALID_NET_CURRENT_FAIL"
+    },
+    {
+      "id": "R3_GLYRS_HIGH",
+      "path": "per_condition/R3_GLYRS_HIGH/run_001/result.json",
+      "status": "EXTRACTED",
+      "outcome": "CK_STATE_VALID_NET_CURRENT_FAIL"
+    },
+    {
+      "id": "R3_METRS_LOW",
+      "path": "per_condition/R3_METRS_LOW/run_001/result.json",
+      "status": "EXTRACTED",
+      "outcome": "CK_STATE_VALID_NET_CURRENT_FAIL"
+    },
+    {
+      "id": "R3_METRS_HIGH",
+      "path": "per_condition/R3_METRS_HIGH/run_001/result.json",
+      "status": "EXTRACTED",
+      "outcome": "CK_STATE_VALID_NET_CURRENT_FAIL"
+    },
+    {
+      "id": "R3_GLY_LOW",
+      "path": "per_condition/R3_GLY_LOW/run_001/result.json",
+      "status": "EXTRACTED",
+      "outcome": "CK_STATE_VALID_NET_CURRENT_FAIL"
+    },
+    {
+      "id": "R3_MET_LOW",
+      "path": "per_condition/R3_MET_LOW/run_001/result.json",
+      "status": "EXTRACTED",
+      "outcome": "CK_STATE_VALID_NET_CURRENT_FAIL"
+    },
+    {
+      "id": "R3_TRNA_LOW",
+      "path": "per_condition/R3_TRNA_LOW/run_001/result.json",
+      "status": "EXTRACTED",
+      "outcome": "CK_STATE_VALID_NET_CURRENT_FAIL"
+    },
+    {
+      "id": "R3_ATP_LOW",
+      "path": "per_condition/R3_ATP_LOW/run_001/result.json",
+      "status": "EXTRACTED",
+      "outcome": "CK_STATE_VALID_NET_CURRENT_FAIL"
+    }
+  ],
+  "edges": [
+    {
+      "source": "HUMAN_BRANCH_A",
+      "target": "CONTRACT",
+      "relationship": "AUTHORIZES"
+    },
+    {
+      "source": "CONTRACT",
+      "target": "R3_BASE",
+      "relationship": "PROSPECTIVE_GATES",
+      "status": "EXTRACTED"
+    },
+    {
+      "source": "CONTRACT",
+      "target": "R3_GLYRS_LOW",
+      "relationship": "PROSPECTIVE_GATES",
+      "status": "EXTRACTED"
+    },
+    {
+      "source": "CONTRACT",
+      "target": "R3_GLYRS_HIGH",
+      "relationship": "PROSPECTIVE_GATES",
+      "status": "EXTRACTED"
+    },
+    {
+      "source": "CONTRACT",
+      "target": "R3_METRS_LOW",
+      "relationship": "PROSPECTIVE_GATES",
+      "status": "EXTRACTED"
+    },
+    {
+      "source": "CONTRACT",
+      "target": "R3_METRS_HIGH",
+      "relationship": "PROSPECTIVE_GATES",
+      "status": "EXTRACTED"
+    },
+    {
+      "source": "CONTRACT",
+      "target": "R3_GLY_LOW",
+      "relationship": "PROSPECTIVE_GATES",
+      "status": "EXTRACTED"
+    },
+    {
+      "source": "CONTRACT",
+      "target": "R3_MET_LOW",
+      "relationship": "PROSPECTIVE_GATES",
+      "status": "EXTRACTED"
+    },
+    {
+      "source": "CONTRACT",
+      "target": "R3_TRNA_LOW",
+      "relationship": "PROSPECTIVE_GATES",
+      "status": "EXTRACTED"
+    },
+    {
+      "source": "CONTRACT",
+      "target": "R3_ATP_LOW",
+      "relationship": "PROSPECTIVE_GATES",
+      "status": "EXTRACTED"
+    }
+  ],
+  "freshness": "Every path is SHA-256-bound by the final manifest; derived navigation does not replace evidence"
+}

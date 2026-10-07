@@ -1,0 +1,293 @@
+{
+  "schema": "R6_CK_FORMAL_CAMPAIGN_SUMMARY_V1",
+  "decision": "GROSS_FLUX_NOT_REQUIRED_FOR_CK_PROMOTION",
+  "mandatory_classes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F",
+    "H"
+  ],
+  "gross_classes": [
+    "E",
+    "G"
+  ],
+  "gross_status": "SOURCE_PROVENANCE_PRESERVED;DESCRIPTIVE;BUT_NOT_VALIDATED",
+  "registered_conditions": 9,
+  "completed_conditions": 9,
+  "conditions_passing_all_mandatory_gates": 0,
+  "candidate_outcome": "CK_STATE_VALID_NET_CURRENT_FAIL",
+  "recommendation": "CK_STATE_REDUCTION_SUPPORTED_BUT_FLUX_NOT_READY",
+  "worst": {
+    "state": {
+      "value": 0.004283351728901257,
+      "condition": "R3_ATP_LOW",
+      "measured_conditions": 9
+    },
+    "slow_total": {
+      "value": 5.327566430809731e-05,
+      "condition": "R3_TRNA_LOW",
+      "measured_conditions": 9
+    },
+    "retained_coordinate": {
+      "value": 0.00034074857953634685,
+      "condition": "R3_TRNA_LOW",
+      "measured_conditions": 9
+    },
+    "protein": {
+      "value": 3.018319179256746e-07,
+      "condition": "R3_METRS_LOW",
+      "measured_conditions": 9
+    },
+    "ck_net_current": {
+      "value": 0.9933194893774895,
+      "condition": "R3_ATP_LOW",
+      "measured_conditions": 9
+    },
+    "net_current": {
+      "value": 0.9933194893774895,
+      "condition": "R3_ATP_LOW",
+      "measured_conditions": 9
+    },
+    "ck_net_extent": {
+      "value": 0.1273620204830512,
+      "condition": "R3_TRNA_LOW",
+      "measured_conditions": 9
+    },
+    "net_extent": {
+      "value": 0.1273620204830512,
+      "condition": "R3_TRNA_LOW",
+      "measured_conditions": 9
+    },
+    "conservation": {
+      "value": 2.3680765681710625e-10,
+      "condition": "R3_TRNA_LOW",
+      "measured_conditions": 9
+    },
+    "switch_jump_scaled": {
+      "value": 4.361294865427413e-05,
+      "condition": "R3_ATP_LOW",
+      "measured_conditions": 9
+    },
+    "ck_net_current_post_0p05": {
+      "value": 0.14817884953497426,
+      "condition": "R3_TRNA_LOW",
+      "measured_conditions": 9
+    }
+  },
+  "state_valid_all_conditions": true,
+  "resolved_net_current_failure": true,
+  "conservation_all_resolved_pass": true,
+  "initial_layer_all_resolved_pass": false,
+  "unresolved_conditions": [
+    "R3_BASE",
+    "R3_GLYRS_LOW",
+    "R3_GLYRS_HIGH",
+    "R3_METRS_LOW",
+    "R3_METRS_HIGH",
+    "R3_GLY_LOW",
+    "R3_MET_LOW",
+    "R3_TRNA_LOW"
+  ],
+  "failure_classes": [
+    "D",
+    "F",
+    "H"
+  ],
+  "state_current_assessments": 9,
+  "numerical_noncompletion_conditions": [],
+  "no_promotion": true,
+  "no_push": true,
+  "no_merge": true,
+  "no_next_stage": true,
+  "closed_at_utc": "2026-10-07T15:45:20.878500+00:00",
+  "balance_summary": [
+    {
+      "accounting": "EXACT_SOURCE_GENERAL_LAW_DRIFT",
+      "model": "source",
+      "max_absolute_residual": 2.3680765681710625e-10,
+      "condition": "R3_TRNA_LOW",
+      "measured_conditions": 9,
+      "status": "MANDATORY_C_GATE_REPORTED_SEPARATELY"
+    },
+    {
+      "accounting": "EXACT_SOURCE_GENERAL_LAW_DRIFT",
+      "model": "reduced",
+      "max_absolute_residual": 7.459632911377161e-11,
+      "condition": "R3_METRS_LOW",
+      "measured_conditions": 9,
+      "status": "MANDATORY_C_GATE_REPORTED_SEPARATELY"
+    },
+    {
+      "accounting": "NET_STOICHIOMETRIC_FULL_STATE_LEDGER",
+      "model": "source",
+      "max_absolute_residual": 7.430298865074292e-07,
+      "condition": "R3_BASE",
+      "measured_conditions": 9,
+      "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+    },
+    {
+      "accounting": "NET_STOICHIOMETRIC_FULL_STATE_LEDGER",
+      "model": "reduced",
+      "max_absolute_residual": 0.0012893561415694421,
+      "condition": "R3_ATP_LOW",
+      "measured_conditions": 9,
+      "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+    },
+    {
+      "accounting": "NET_STOICHIOMETRIC_SLOW_COORDINATE_LEDGER",
+      "model": "source",
+      "max_absolute_residual": 6.910104275448248e-07,
+      "condition": "R3_BASE",
+      "measured_conditions": 9,
+      "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+    },
+    {
+      "accounting": "NET_STOICHIOMETRIC_SLOW_COORDINATE_LEDGER",
+      "model": "reduced",
+      "max_absolute_residual": 7.553844625363126e-07,
+      "condition": "R3_TRNA_LOW",
+      "measured_conditions": 9,
+      "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+    },
+    {
+      "accounting": "ALGEBRAIC_ACCOUNTING_AFTER_DISCLOSED_SWITCH_JUMP",
+      "model": "source",
+      "max_absolute_residual": 7.430298865074292e-07,
+      "condition": "R3_BASE",
+      "measured_conditions": 9,
+      "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+    },
+    {
+      "accounting": "ALGEBRAIC_ACCOUNTING_AFTER_DISCLOSED_SWITCH_JUMP",
+      "model": "reduced",
+      "max_absolute_residual": 7.790295057930052e-07,
+      "condition": "R3_TRNA_LOW",
+      "measured_conditions": 9,
+      "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+    },
+    {
+      "accounting": "GROSS_MICROSCOPIC_DIRECTED_LEDGER",
+      "model": "source",
+      "max_absolute_residual": 7.430298865074292e-07,
+      "condition": "R3_BASE",
+      "measured_conditions": 9,
+      "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+    },
+    {
+      "accounting": "GROSS_MICROSCOPIC_DIRECTED_LEDGER",
+      "model": "reduced",
+      "max_absolute_residual": 8302.949230495564,
+      "condition": "R3_TRNA_LOW",
+      "measured_conditions": 9,
+      "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+    }
+  ],
+  "class_condition_counts": {
+    "A": {
+      "RESOLVED_PASS": 9,
+      "RESOLVED_FAIL": 0,
+      "NUMERICALLY_UNRESOLVED": 0
+    },
+    "B": {
+      "RESOLVED_PASS": 9,
+      "RESOLVED_FAIL": 0,
+      "NUMERICALLY_UNRESOLVED": 0
+    },
+    "C": {
+      "RESOLVED_PASS": 9,
+      "RESOLVED_FAIL": 0,
+      "NUMERICALLY_UNRESOLVED": 0
+    },
+    "D": {
+      "RESOLVED_PASS": 0,
+      "RESOLVED_FAIL": 9,
+      "NUMERICALLY_UNRESOLVED": 0
+    },
+    "F": {
+      "RESOLVED_PASS": 0,
+      "RESOLVED_FAIL": 9,
+      "NUMERICALLY_UNRESOLVED": 0
+    },
+    "H": {
+      "RESOLVED_PASS": 1,
+      "RESOLVED_FAIL": 4,
+      "NUMERICALLY_UNRESOLVED": 4
+    }
+  },
+  "ck_window_maxima": [
+    {
+      "metric": "CK_NET_CURRENT",
+      "window": "FULL_WINDOW",
+      "E_inf": 0.14817884953497426,
+      "condition": "R3_TRNA_LOW",
+      "observable": "re0000000336_MINUS_re0000000337",
+      "measured_conditions": 9,
+      "mandatory": true
+    },
+    {
+      "metric": "CK_NET_CURRENT",
+      "window": "POST_INITIAL_LAYER",
+      "E_inf": 0.9933194893774895,
+      "condition": "R3_ATP_LOW",
+      "observable": "re0000000332_MINUS_re0000000333",
+      "measured_conditions": 9,
+      "mandatory": true
+    },
+    {
+      "metric": "CK_NET_CURRENT",
+      "window": "POST_0P05_DIAGNOSTIC",
+      "E_inf": 0.14817884953497426,
+      "condition": "R3_TRNA_LOW",
+      "observable": "re0000000336_MINUS_re0000000337",
+      "measured_conditions": 9,
+      "mandatory": false
+    },
+    {
+      "metric": "CK_NET_CURRENT",
+      "window": "COMPOSITE_OR_HYBRID",
+      "E_inf": 0.14817884953497426,
+      "condition": "R3_TRNA_LOW",
+      "observable": "re0000000336_MINUS_re0000000337",
+      "measured_conditions": 9,
+      "mandatory": false
+    },
+    {
+      "metric": "CK_NET_EXTENT",
+      "window": "FULL_WINDOW",
+      "E_inf": 0.1273620204830512,
+      "condition": "R3_TRNA_LOW",
+      "observable": "re0000000336_MINUS_re0000000337",
+      "measured_conditions": 9,
+      "mandatory": true
+    },
+    {
+      "metric": "CK_NET_EXTENT",
+      "window": "POST_INITIAL_LAYER",
+      "E_inf": 0.1273620204830512,
+      "condition": "R3_TRNA_LOW",
+      "observable": "re0000000336_MINUS_re0000000337",
+      "measured_conditions": 9,
+      "mandatory": true
+    },
+    {
+      "metric": "CK_NET_EXTENT",
+      "window": "POST_0P05_DIAGNOSTIC",
+      "E_inf": 0.1273620204830512,
+      "condition": "R3_TRNA_LOW",
+      "observable": "re0000000336_MINUS_re0000000337",
+      "measured_conditions": 9,
+      "mandatory": false
+    },
+    {
+      "metric": "CK_NET_EXTENT",
+      "window": "COMPOSITE_OR_HYBRID",
+      "E_inf": 0.1273620204830512,
+      "condition": "R3_TRNA_LOW",
+      "observable": "re0000000336_MINUS_re0000000337",
+      "measured_conditions": 9,
+      "mandatory": false
+    }
+  ]
+}

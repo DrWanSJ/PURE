@@ -1,0 +1,9 @@
+# R6 CK validation authorization — 2026-10-07
+
+The researcher's complete request is retained verbatim as `results/reduction/r6_ck_validation/human_request.txt`; its original attachment and SHA-256 are recorded in `input_provenance.json`. This authorization permits a scientific-use audit and preparation of a CK-specific contract. Branch A is conditional on a documented NOT_REQUIRED decision; Branch B is conditional on a REQUIRED decision. An AMBIGUOUS decision requires a human decision before either numerical branch. It does not authorize CK promotion.
+
+`git fetch origin` succeeded before changes. Actual remote main is `0b6f9ad649a7e283e440e0294a021123551f6858`. The clean R5-C execution parent is `1181ab2f0a04d72cf76fb069be6bb842e3de75d8`, including R5 `6c11b585df42fb9aa5d5ea5d5e8be44f92e914a6` and the bounded R4 lineage. The desktop checkout remains the historical R3 head `24335fe798e757acb2ca3582916658bfcf5c16f5`, with three unrelated untracked atlas files. Full status, branch and log records are in `repository_lineage.json`.
+
+R6 runs in the isolated managed worktree `C:/Users/sean/.codex/worktrees/r6-ck-validation/GUV`. All 2,585 pre-existing lineage files were SHA-256 snapshotted before additive R6 work. The fresh execution checkout exactly matched the clean R5-C checkout; no line-ending restoration was necessary. Git metadata and disposable Python bytecode are excluded from scientific-file inventories. No historical tracked attributes are edited.
+
+Canonical source, parameters, initial values, R1–R5-C evidence, historical gates and reduced-core decisions remain unchanged. No source reaction deletion, push, merge, R3_ADVERSE solve, aminoacylation work or automatic promotion is authorized. The final verifier reports engineering/provenance checks separately from unexecuted scientific validation.

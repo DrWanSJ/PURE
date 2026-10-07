@@ -1,0 +1,327 @@
+requirement_id,source_file,source_location,source_line_start,source_line_end,scientific_question,required_observable_class,gross_microscopic_flux_required,rationale,confidence,evidence_status,requirement_vocabulary,decision_role,source_sha256,excerpt_sha256,source_excerpt
+REQ01,README.md,L33-L51,33,51,What information must the reduced PNAS model preserve?,A;B;C;D;E,NOT_IMPLIED,Explicit chemical/resource identity and occupancy; no requirement here for each CK binding event.,HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,PURPOSE_NET_RESOURCE,b925a72e784363f708d4468e9c010e571ecb8f19a0f2ae39e2535b65e23d9a7d,6defcce5ffbadc95d0e2175428315be0a4e3097ea52f2041dcca6bb14c6a1e24,"The Mavelli benchmark remains valid for its coarse-grained question. It is no
+longer the primary benchmark because the revised question requires the
+detailed translation reaction network and explicit small-molecule/resource
+accounting. The existing Mavelli code and evidence remain in their current
+paths. Historical results retain their original scope and acceptance status;
+they are not evidence that the new PNAS model or a future reduced core has been
+validated. The legacy B1 human source-to-repository audit was completed for
+literature reproduction, not independent experimental validation.
+
+The active sequence is: freeze and inventory the original PNAS sources;
+validate and execute the unchanged SBML where possible; classify reaction
+families and chemical flows; prepare candidate transformations with their
+information loss; obtain **human scientific decisions**; then construct and
+validate a reduced model. Similar protein output alone is not a deletion
+criterion. The proposed reduced core must retain the information needed for
+ATP/GTP, AMP/ADP/GDP, Pi/PPi, creatine phosphate/creatine, amino acids,
+tRNA charging, translation-machine occupancy and an explicitly qualified
+osmotic-particle proxy. Quantitative ionic-strength accounting requires
+defined charges, protonation and Mg-binding conventions."
+REQ02,tasklist.md,L9-L21,9,21,What is the active scientific purpose?,A;B;C;D;E,NOT_IMPLIED,"Detailed translation, resource destinations and human-reviewed information loss; reduced scale is not an acceptance criterion.",HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,PURPOSE_NET_RESOURCE,de6601fe8107b527ba443f9bcafc6901edff1f0bad278734db6b17336715ea81,be2f43e3946ba674d098ad7fa61ea9f402aeddbca34306e828dea12d04bc6479,"**版本：** v2.0，2026-09-24；v1.0（2026-09-17）的理论材料在下文保留，但旧日程不再是当前承诺。
+**首个研究对象：** Matsuura 等 PNAS 2017 的 mRNA 定向 PURE **翻译**网络；完整 SBML 参考模型不包含 DNA → RNA 转录模块。
+**主线：** 来源冻结 → 完整反应网络与 SBML 审计 → 化学/资源账本 → 原 26 个子系统和反应家族分类 → 人工审核降维决策 → 可解释中等规模模型 → 以后耦合转录与 GUV 传质。
+**优先级：** 保留化学身份和资源去向；任何删减、合并、QSSA 或恒定储库假设都要记录所失信息并由研究者决定。
+**本周交付目标：形成可溯源的详细网络库存、资源账本、候选降维地图和人工审核包；几反应至几十反应的规模只是后续工程目标，不是压缩验收门槛。**
+
+**文件性质与证据状态。** 本文是更新后的任务书、理论备份和验收规范，不代替执行日志。原 Mavelli 2015 粗粒化基准已完成至旧 D7 RS-QSSA，作为冻结历史证据保留；它的通过状态不转移到 PNAS 2017。下文保留的数学公式、数值门槛、模板和旧第 2—4 周设想，只是可复用方法或待重新排序的草案，不表示 PNAS 模型已导入、复现、降维、拟合或实验验证。附录 A 是合成解析测试系统。
+
+**AI / 人工分工。** AI 可以整理原文与 SBML 证据、提取库存、分类反应家族并提出附带损失说明的变换候选；对于“为什么可合并/删除”“哪个状态可消去”“什么控制体系”“简化的物理含义”等判断，必须标记 `HUMAN_REVIEW_REQUIRED`，由研究者审核后定案。原模型不因候选标签被改写。每个重要派生表或关系图是导航层，须保留原始标识、来源、提取/推断/歧义状态和新鲜度，不能取代原始 SBML 与来源文件。
+
+---
+
+## 阅读导航"
+REQ03,tasklist.md,L112-L122,112,122,Which resource and reduction deliverables are required?,A;B;C;D;E,NOT_IMPLIED,Chemical/resource ledger and candidate loss audit; this does not identify four microscopic binding turnovers as mandatory outputs.,HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,PURPOSE_NET_RESOURCE,de6601fe8107b527ba443f9bcafc6901edff1f0bad278734db6b17336715ea81,0c76d34ac0899f02e84bb0322f63fc0f12f924ea89dad8345d250a1d6d7ba83f,"| 成果 | 四周内必须达到的水平 |
+| --- | --- |
+| 详细参考基准 | 冻结 Matsuura 等 PNAS 2017 的原始文件和 SBML；原始标识、计量、参数、单位与求解状态可追溯，绝不以手写 ODE 取代原模型 |
+| 化学/资源账本 | 覆盖核苷酸、磷酸、磷酸肌酸/肌酸、氨基酸、tRNA、翻译机器占用及可解释的小溶质颗粒数；未知分子式与电荷留空 |
+| 人工审核降维包 | 968 个反应按模块、原 26 个子系统和反应家族组织；每个候选变换写出守恒、流量、可观测量与不可恢复信息的后果，交由研究者决策 |
+| 后续模型与可视化架构 | 仅形成 `PURE_reduced_core` 结构提案和数据契约；Web、跨膜耦合与 MCP 依审核结果分阶段建设 |
+
+
+**后续科学主问题。** 以下旧版问题保留为研究问题，G1-PNAS 只建立回答它们所需的来源、网络与账本；不在来源审计阶段用 AI 预先定论。
+
+1. 在给定配方和观察时间内，通量主要受表达装置容量、底物/能量供给，还是有证据支持的失活/封存机制限制？"
+REQ04,tasklist.md,L192-L217,192,217,Which free and bound resource identities and fuel conversions are protected?,A;B;C;D;E,NOT_IMPLIED,"ATP/ADP/AMP, CP/Cr, tRNA and occupancy remain chemically explicit; distinguish ATP spend from other conversions.",HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,PURPOSE_NET_RESOURCE,de6601fe8107b527ba443f9bcafc6901edff1f0bad278734db6b17336715ea81,643a9a5f961b159981d2a6c92ac2313c06a277d60a86fdd9edd09e3d8cb34cfc,"| 氨酰化 | AA 和 ATP 如何将未充氨酰 tRNA 转为氨酰-tRNA？ | 先逐反应记录 ATP → AMP、PPi 和 tRNA 去向；不可预设合并 |
+| 能源再生 | ATP/GTP 的再生来自什么燃料，产物去哪里？ | 核对原始磷酸肌酸/肌酸等实际路线与参数，不叠加未在参考模型中的供能体系 |
+| 资源/产物约束 | 是燃料耗尽、产物累积、自由 Mg²⁺变化，还是装置失活？ | 先形成候选机制表，不一开始给所有机制都加参数 |
+| 报告过程 | 实验信号是否滞后于合成产物？ | 按数据需要保留成熟/折叠；不能用成熟常数吸收任意动力学误差 |
+
+
+**必须登记的资源身份。** ATP、ADP、AMP、GTP、GDP、$ P_i/PP_i $、磷酸肌酸/肌酸、氨基酸、未充氨酰/已充氨酰 tRNA 和各类翻译机器占用态都要在原模型库存与候选账本中可追溯。CTP、UTP、氨基酸种类或中间复合物的合并/恒定假设都须列明失去的物质、颗粒数、电荷与可观测信息，再交研究者审核。
+
+### 4.3 “少变量”不等于“少账本”
+高速结合态可以不作为独立 ODE，却仍应在总量、自由浓度和化学势计算中出现。累计生成/消耗量也可由积分输出获得，而不增加反馈动力学维数。
+
+尤其检查以下事项：
+
++ 总核糖体应包含游离和各合并占用态；总 tRNA 应包含未充电、已充电及模型中确有的封存态。
++ ATP 是能量载体，也是转录的物质原料之一。若 RNA 中的腺苷基团增加，不能无条件写自由池 ATP+ADP+AMP 恒定。
++ 所有 mRNA/蛋白合并物种都应登记长度和组成权重；多核苷酸/多氨基酸消耗不能只按“一分子进、一分子出”画物料图。
++ RNA 的降解去向要明确：NMP、短片段或不再利用的外部产物不是同一模型。
+
+**颗粒数与离子强度边界。** 可按原始反应的计量变化构建理想小溶质颗粒浓度代理，但它不是经过活度、非理想性或膜边界验证的渗透压。仅当浓度、电荷、质子化及 Mg 结合约定明确时，才对相应物种计算 $ I=0.5\sum_i c_i z_i^2 $；其他物种保持未知，不发布全体系定量离子强度。任何候选合并必须列出颗粒数变化及被隐藏的电荷信息。
+
+### 4.4 关键化学成本的审计示例
+氨酰化模块的净转化可写为：
+
+$ \mathrm{AA+tRNA+ATP\rightarrow AA\!:\!tRNA+AMP+PP_i}. \quad\text{(4.1)} $
+
+这不等于 ATP→ADP 的一次循环。ATP 的恢复成本取决于 AMP 回收、再生路线和焦磷酸处理。因此前端必须把 ATP 分子消耗数与选定“高能当量”分开。"
+REQ05,tasklist.md,L476-L489,476,489,Do cumulative flows mean net inventories or every microscopic event?,D;E;H,AMBIGUOUS,"Requires cumulative reaction flows and storage terms, but does not scope mandatory microscopic CK binding extents.",HIGH,AMBIGUOUS,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,LEDGER_SEMANTICS_UNRESOLVED,de6601fe8107b527ba443f9bcafc6901edff1f0bad278734db6b17336715ea81,8e83011e41808a1a47933fb00454ddc19a3edd3b7d48386fabe18dd2bc4d2b11,"### 9.2 累计通量与库存不能混淆
+$ \xi_j(t_1,t_2)=\int_{t_1}^{t_2}\mathcal R_j(t)\,dt. \quad\text{(9.3)} $
+
+即时流图展示速率，时间窗口流图展示积分量，库存展示当前 $ n_i $。所有图都要显示单位与时间范围。批次体系中的节点通常有累积，不能为了让 Sankey 两边相等而偷偷按比例归一化；需要显示存储项。
+
+### 9.3 能量显示分三层
+| 层级 | 可以显示 | 不能宣称 |
+| --- | --- | --- |
+| E0：能量载体账本，四周必做 | ATP/ADP/AMP、GTP/GDP 转化，燃料消耗，再生/需求与累计当量 | 真实 W、热量、热力学效率 |
+| E1：有条件自由能计算 | 已有化学势/平衡数据、活度和边界定义的反应或子系统的自由能功率 | 未覆盖过程的总耗散、整体系能效 |
+| E2：完整热力学网络 | 物料、化学势、储库与粗粒化都一致后的完整自由能收支 | 不能只因 ATP 有数据就升级到此层 |
+
+
+第一版必须完成 E0，且至少在一个完整定义的简单热力学测试网络上验证 E1 的单位和功率平衡。完整 PURE 的 E1/E2 是条件完成项。缺数据时显示“未计算：缺少哪些热力学输入”，而不是用一个默认 ATP 能量值生成漂亮的“能量流”。"
+REQ06,tasklist.md,L99-L99,99,99,Are ATP gross production and consumption required?,D;F;G,NOT_IMPLIED_FOR_SELECTED_CK_PAIRS,ATP gross flows and net flow are explicit. Selected CK fast columns have zero ATP/ADP stoichiometry; catalytic energy-transfer reactions are retained.,HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,ATP_GROSS_NOT_BINDING_TURNOVER,de6601fe8107b527ba443f9bcafc6901edff1f0bad278734db6b17336715ea81,aabce12f4896e5e850df2ded1729fc0096b02a6f7191cee324432b6da75952c4,"| $ J_{\rm ATP,prod/cons} $ | ATP 生成/消耗的毛通量 | mol/s；须同时给净通量 |"
+REQ07,tasklist.md,L580-L580,580,580,Does the planned carrier display require gross ATP/GTP turnover?,D;F;G,NOT_IMPLIED_FOR_SELECTED_CK_PAIRS,Carrier gross supply/demand is relevant; binding CP is distinct from ATP generation/consumption.,HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,ATP_GROSS_NOT_BINDING_TURNOVER,de6601fe8107b527ba443f9bcafc6901edff1f0bad278734db6b17336715ea81,cac0d4121f960868b9b0b3403dcb7057f1276dfacb81e0a51306aa10cb4cc57a,| 能量载体与功率 | ATP/GTP 毛生成、毛消耗、净流；已满足条件的子系统功率 | 明确 E0/E1；显示单位、参考态与缺失热力学输入 |
+REQ08,docs/model_card.md,L1-L24,1,24,Is the GFP model card the active CK use contract?,A;C,NOT_APPLICABLE,"This is the frozen Mavelli B1 model card, a different model and scientific purpose.",HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,LEGACY_MODEL,51ca78c801bcc9b24b81d07676fd0bfd7f0b3e8956408963be33133eae42d70d,a15ea69a1c026356cd734b367e7e5771750d6c722601b2f94e95fd4a9904edb1,"# Model Card — PURE_literature_reference
+
+## 1. Identity
+
+- Model ID: PURE_literature_reference
+- Version: 1.0-b1-benchmark
+- Role: B1 literature benchmark only
+- Source: Mavelli, F.; Marangoni, R.; Stano, P. (2015), A Simple Protein Synthesis Model for the PURE System Operation, Bulletin of Mathematical Biology 77:1185–1212
+- DOI: https://doi.org/10.1007/s11538-015-0082-8
+- Relation to source: literal deterministic translation; no refitting and no added mechanism
+- Canonical machine-readable definition: models/literature_reference/model_definition.json
+- Parameter source: models/literature_reference/parameters.json
+- Species ledger: models/literature_reference/species.csv
+- Reaction ledger: models/literature_reference/reactions.csv
+
+This model is deliberately separated from PURE_resource_core. ATP/GTP splitting, explicit AMP/ADP chemistry, mechanistic ribosome states, Mg2+ chemistry, maturation, transport, or other project-specific extensions belong to the working model, not this benchmark.
+
+## 2. Scientific purpose
+
+The model reconstructs the coarse-grained deterministic PURE transcription–translation model of Mavelli et al. It represents four effective modules: transcription (TX), aminoacyl-tRNA charging (RS), translation (TL), and energy regeneration (EN), plus first-order loss of polymerized RNA residues and effective translation machinery.
+
+The benchmark is intended to test faithful model transcription, numerical integration, observable mapping, mass-balance bookkeeping, and reproducibility. It is not a mechanistically complete model of PURE chemistry.
+
+## 3. Evidence and validation status"
+REQ09,models/pnas2017_full_reference/README.md,L1-L19,1,19,Which source product/system is active?,A,NOT_IMPLIED,Active reference is mRNA-directed fMGG; neither mature GFP nor transcription is an active CK observable.,HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,ACTIVE_SOURCE,8dad1275bd67aaebc1a760b5057c256d94b40381d5301fab65e9e352b6c16f10,041865dd110727719e9d51a92a525484798ac5fee07a237ac75310be9298096f,"# PNAS2017_full_reference
+
+The unchanged author-site combined SBML is
+[`original/fMGG_synthesis.xml`](original/fMGG_synthesis.xml). It is byte-identical
+to the captured file under `references/PNAS2017_Matsuura/raw/`. Source URLs,
+checksums and publisher capture notes are recorded there. The `original/`
+subsystem XML and simulation files are byte-identical to members of the two
+author-site ZIP captures and support historical runner inspection; the combined
+SBML remains canonical.
+
+`normalized/` contains a **derived execution compatibility copy**. It replaces
+literal constant `stoichiometryMath` elements with equal numeric stoichiometry
+attributes because tested solver imports read one `2 PO4` coefficient as `1`.
+The source SBML remains the scientific definition. `audit/` contains generated
+inventories and qualified resource annotations; neither directory is a
+scientific modification or a reduced model.
+
+This reference describes mRNA-directed fMGG translation. Transcription and
+membrane transport are outside its source scope."
+REQ10,docs/pnas2017/reference_reproduction.md,L22-L30,22,30,Which protein output maps to the source?,A,NOT_IMPLIED,Released Pept0003 is fMGG. Protein agreement does not resolve microscopic turnover needs.,HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,ACTIVE_SOURCE,3731786113095c1657f4e01b5c1861accf1071db4ffd93a5e7ec34ac531176c9,8a5be7a7a8abf4b5c591590263a21d3d1626449c8bed4f2fab0bf2aac64d7e93,"| Free `Pept0003` at 1000 s | 5.164478733656283 | 5.164582654018584 |
+| Minimum recorded species value | −2.52×10⁻¹⁹ | −3.71×10⁻¹² |
+| Dimensional-analysis warning status | SBML declarations unresolved | 968 rate-dimension warnings, retained in run log |
+
+`Pept0003` is the released fMGG product ID in the original model; bound peptide intermediates have separate IDs. The tiny negative values were recorded as solver diagnostics, with no clipping. SimBiology's run emitted 968 warnings because rates lacked enough units for a verified concentration/time or substance/time dimension; it assumed substance/time. Neither successful solver run resolves the [unit audit](sbml_audit.md).
+
+The [engine comparison](../../results/pnas2017_reference/rr_cvode_author_csv_20260924/engine_comparison.json) aligns species by original ID and linearly interpolates SimBiology output to the RoadRunner times. Absolute difference at the 1000 s product endpoint is **0.0001039204** in the model's reported concentration scale (about 0.0020% of the RoadRunner endpoint); its maximum interpolated product-trajectory difference is 0.00015243. The largest absolute final difference among 241 states is 0.21354 for `PO4` at about 8,375. This diagnostic has **no preregistered acceptance threshold**. Interpolation, solver error controls, nonnegativity behavior and unresolved unit semantics limit numerical equivalence claims.
+
+The [paper](https://doi.org/10.1073/pnas.1615351114) reports 0.15 amino acids/s/mRNA for the fMGG simulation. A descriptive linear fit to the RoadRunner product between 100 and 1000 s gives approximately 0.160 amino acids/s/mRNA when the author's initial `mRNA=0.1` and three amino acids per released product are used. This is a broad sanity anchor, not a fit, acceptance threshold or replacement for Dataset S28."
+REQ11,docs/reduction/species_information_contract_detailed.md,L32-L44,32,44,Are CK microstate trajectories independently protected?,A;B;C,NOT_DECIDED_BY_STATE_CONTRACT,CK/CP/Cr/free carriers are Class I; CK bound intermediates are II-A and reconstructable. No gross-rate promotion decision follows.,HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,STATE_NOT_FLUX_CONTRACT,24340aa5ca1e1fa262124407cd4ed02093066cb09ace89195475a7aa38630210,f299329287cba438eedc0d947566ca73c73db78fea5af31e9eb7b99a3a003a7b,"| 1 | `ADP` | `energy_regeneration` | **I** | `protected dynamic observable` | ADP 是受保护的游离资源/能量载体；本项目要求显式区分 ATP/ADP/AMP、GTP/GDP/GMP、Pi/PPi 与 CP/Cr，不能再退回 Mavelli 的泛化 NTP/NXP。 | 自身浓度轨迹 `ADP(t)` |
+| 2 | `AMP` | `energy_regeneration` | **I** | `protected dynamic observable` | AMP 是受保护的游离资源/能量载体；本项目要求显式区分 ATP/ADP/AMP、GTP/GDP/GMP、Pi/PPi 与 CP/Cr，不能再退回 Mavelli 的泛化 NTP/NXP。 | 自身浓度轨迹 `AMP(t)` |
+| 3 | `ATP` | `aminoacylation` | **I** | `protected dynamic observable` | ATP 是受保护的游离资源/能量载体；本项目要求显式区分 ATP/ADP/AMP、GTP/GDP/GMP、Pi/PPi 与 CP/Cr，不能再退回 Mavelli 的泛化 NTP/NXP。 | 自身浓度轨迹 `ATP(t)` |
+| 4 | `CK` | `energy_regeneration` | **I** | `protected dynamic observable` | CK 的游离浓度被选为第一类动态 observable；其结合态另行归入 II-A/II-B，使 free、bound 与 family/active pool 可以区分。 | 自身浓度轨迹 `CK(t)` |
+| 5 | `CK_ADP` | `energy_regeneration` | **II-A** | `CK_active_pool` | CK_ADP 是 CK_active_pool 中的酶结合/催化中间态；不要求保留独立 microstate，但必须在代数/QSSA/有效速率表示中恢复酶占据与所含物质 moiety。此处是信息合同分类，不代表 QSSA 时标条件已经验证。 | `CK_active_pool`; components/moieties: CK + ADP |
+| 6 | `CK_ATP` | `energy_regeneration` | **II-A** | `CK_active_pool` | CK_ATP 是 CK_active_pool 中的酶结合/催化中间态；不要求保留独立 microstate，但必须在代数/QSSA/有效速率表示中恢复酶占据与所含物质 moiety。此处是信息合同分类，不代表 QSSA 时标条件已经验证。 | `CK_active_pool`; components/moieties: CK + ATP |
+| 7 | `CK_CP` | `energy_regeneration` | **II-A** | `CK_active_pool` | CK_CP 是 CK_active_pool 中的酶结合/催化中间态；不要求保留独立 microstate，但必须在代数/QSSA/有效速率表示中恢复酶占据与所含物质 moiety。此处是信息合同分类，不代表 QSSA 时标条件已经验证。 | `CK_active_pool`; components/moieties: CK + CP |
+| 8 | `CK_CP_ADP` | `energy_regeneration` | **II-A** | `CK_active_pool` | CK_CP_ADP 是 CK_active_pool 中的酶结合/催化中间态；不要求保留独立 microstate，但必须在代数/QSSA/有效速率表示中恢复酶占据与所含物质 moiety。此处是信息合同分类，不代表 QSSA 时标条件已经验证。 | `CK_active_pool`; components/moieties: CK + CP + ADP |
+| 9 | `CK_Cr` | `energy_regeneration` | **II-A** | `CK_active_pool` | CK_Cr 是 CK_active_pool 中的酶结合/催化中间态；不要求保留独立 microstate，但必须在代数/QSSA/有效速率表示中恢复酶占据与所含物质 moiety。此处是信息合同分类，不代表 QSSA 时标条件已经验证。 | `CK_active_pool`; components/moieties: CK + Cr |
+| 10 | `CK_Cr_ATP` | `energy_regeneration` | **II-A** | `CK_active_pool` | CK_Cr_ATP 是 CK_active_pool 中的酶结合/催化中间态；不要求保留独立 microstate，但必须在代数/QSSA/有效速率表示中恢复酶占据与所含物质 moiety。此处是信息合同分类，不代表 QSSA 时标条件已经验证。 | `CK_active_pool`; components/moieties: CK + Cr + ATP |
+| 11 | `CK_degraded` | `degradation` | **C** | `cumulative degradation accounting` | CK_degraded 是 source network 的终端 degradation sink，当前不反馈主反应网络；可从主 ODE 隐去，但必须以 D_CK 或等价 cumulative variable 记录损失，保证 family/material accounting 闭合。 | cumulative loss of `CK` |
+| 12 | `CP` | `energy_regeneration` | **I** | `protected dynamic observable` | CP 是受保护的游离资源/能量载体；本项目要求显式区分 ATP/ADP/AMP、GTP/GDP/GMP、Pi/PPi 与 CP/Cr，不能再退回 Mavelli 的泛化 NTP/NXP。 | 自身浓度轨迹 `CP(t)` |
+| 13 | `Cr` | `energy_regeneration` | **I** | `protected dynamic observable` | Cr 是受保护的游离资源/能量载体；本项目要求显式区分 ATP/ADP/AMP、GTP/GDP/GMP、Pi/PPi 与 CP/Cr，不能再退回 Mavelli 的泛化 NTP/NXP。 | 自身浓度轨迹 `Cr(t)` |"
+REQ12,docs/reduction/human_audit_sync_20260930.md,L14-L23,14,23,What information-level decisions are human approved?,A;B;C;D;E,NOT_DECIDED_BY_STATE_CONTRACT,"Protected trajectories, occupancy and cumulative loss are approved; no selected-CK turnover mandate is specified.",HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,STATE_NOT_FLUX_CONTRACT,22601c2ea9d931db0d0a35e50e91de3128076eed46e5e9157fc1fd3024c99d0e,213310dfc0c95b5ababd2946ecd941cb82bd8ff74e3800c9e0066a73ae96186e,"
+| Class | Count | Approved information-retention meaning |
+| --- | ---: | --- |
+| I | 42 | protected dynamic observable; trajectory must remain outputtable, although exact conservation may later reconstruct it algebraically |
+| II-A | 57 | enzyme/catalytic microstate is not a protected independent trajectory; algebraic/QSSA/effective reconstruction is allowed only if enzyme occupancy and bound resource moieties remain reconstructable |
+| II-B | 91 | microscopic identity may be lumped, but the declared functional occupancy/pool and relevant moieties must remain reconstructable |
+| III | 22 | elongation microstate identity may be discarded; aggregate elongation flux/occupancy, peptide progress, tRNA/ribosome occupancy and resource ledgers remain protected |
+| C | 29 | terminal non-feedback degradation sink may leave the main ODE, but cumulative loss accounting remains required |
+
+This is a **human-approved information contract**, not a candidate kinetic reduction."
+REQ13,docs/reduction/human_audit_sync_20260930.md,L60-L64,60,64,Which kinetic validation choices remain open?,A;C;D;E;F;G;H,AMBIGUOUS,"Validity domains, thresholds, trajectory/flux validation and final reduced-core approval remain pending.",HIGH,AMBIGUOUS,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,KINETIC_SCOPE_OPEN,22601c2ea9d931db0d0a35e50e91de3128076eed46e5e9157fc1fd3024c99d0e,23ef632fb8e63930fd9409037d6cc5fa2b4d729105351b4ecb7eabd4ea8b21e0,"1. which specific reaction families are kept, lumped, eliminated or represented by effective kinetics;
+2. which mathematical operation is used for each elimination;
+3. the validity domain and acceptance thresholds for each reduction;
+4. conservation/moiety closure, protected-output reconstruction and full-vs-reduced trajectory/flux validation;
+5. final approval of any candidate as `PURE_reduced_core`."
+REQ14,docs/reduction/reaction_level_contract_summary.md,L143-L154,143,154,Must exact reverse-pair rewriting retain separate directions?,D;F;G,EXACT_REWRITE_ONLY,Explicit retention of forward/reverse/net rates applies to exact representation rewriting; the text distinguishes it from fast equilibrium and QSSA.,HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,EXACT_REWRITE_NOT_APPROXIMATION,484a5fdc989f79c96542ed16ebe11c7173b058da4a92ee7939b09ac3bd99fa9f,94b4318ef7eb1bd42f147a513eaec7f2bde59eb87fc59931536a9278159e46d3,"若两条 directed reactions 是 exact reverse pair，可精确重写为一个 reversible channel，但必须保留：
+
+```text
+v_forward
+v_reverse
+v_net = v_forward - v_reverse
+original forward ID
+original reverse ID
+original kinetic laws
+```
+
+这只是 **exact representation rewrite**，不是 fast equilibrium、QSSA 或 kinetic reduction。"
+REQ15,docs/reduction/reduction_validation_protocol_v0.md,L153-L177,153,177,What is required by the general validation ledger?,A;B;C;D;E;F;G;H,AMBIGUOUS,"Cumulative extent is mandatory for resource consumption, with xi_j notation; CK gross-binding promotion applicability is not specified.",HIGH,AMBIGUOUS,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,LEDGER_SEMANTICS_UNRESOLVED,abb40cb7d4b1c8c8e4b8a281df6285b77e240b69bb2b99702d78abd7370183a4,ed85a8e71420c6ee3df7470633194b2091427aaa0ce120808e37f9614ab0ad13,"### H. Observable-dependency qualifier (mandatory on every reduction)
+
+Every reduction record declares its observable set and accounting variables. A
+reduction is only valid *relative to those observables*. Product concentration
+alone is an insufficient observable; the energy/moiety ledger is part of the
+contract.
+
+---
+
+## 2. Common validation outputs (Phase 3)
+
+Where relevant, a reduction comparison reports **all** of:
+
+1. product / process output; 2. state trajectories; 3. free energy-carrier
+pools; 4. tRNA pools; 5. machinery occupancy; 6. instantaneous fluxes `v(t)`;
+7. **cumulative reaction extents** `ξ_j(t) = ∫₀ᵗ v_j(τ)dτ`; 8. conservation /
+moiety totals; 9. degradation inventories; 10. a particle-number proxy.
+
+**Cumulative extent is mandatory**, because similar endpoint trajectories can
+conceal very different cumulative resource consumption.
+
+For PNAS translation reductions the accounting set includes, where applicable:
+`ATP, ADP, AMP, GTP, GDP, PPi, Pi/PO4, CP, Cr`; `free tRNA`,
+`aminoacyl-tRNA`, `peptidyl-tRNA`; and the relevant `free ribosome`,
+initiation / elongation / termination-recycling occupancy."
+REQ16,docs/reduction/r3_coupled_validation_protocol_v1.md,L14-L33,14,33,Did historical validation compare all directed channels?,A;C;F;G;H,HISTORICAL_DIAGNOSTIC_NOT_SCIENTIFIC_MANDATE,Preserves old directed-rate/extent criteria and numerical levels; historical coverage alone cannot decide R6 gross-use scope.,HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,HISTORICAL_ONLY,099f24b1f8df428664ff879c53753e9c2d945990c8855a849bbe0704d1a5f689,3dfbb66a215800322ed4cb284baef8709cf3a0849500863b7206a0fbadf00336,"  Preserve invalid roots, solver failure, and all numerical negatives.
+- At each output time reconstruct all 241 species; evaluate all 968 canonical
+  directed source rates for both states. A source-reaction row is retained as
+  its own rate and gross extent even when a reverse partner exists. Score
+  every species and every directed rate with the preregistered E_inf formula
+  and floors; identify the 103 reactions touching selected fast states and
+  the aminoacylation subsystem separately from the remaining source network.
+- Integrate each directed extent as an ODE state `d xi_j/dt = v_j(x(t))`
+  against each dense BDF state trajectory, on each adjacent registered
+  reporting interval. Use SciPy DOP853 with the same `rtol=1e-10`,
+  `atol=1e-14` for this triangular nonstiff extent subsystem, zero local
+  starts, and compensated accumulation of segment increments. This is
+  direct ODE integration of 968 directed gross extents, not a sum over sparse
+  reporting samples. Record the state-solver and extent-solver statistics
+  separately. Evaluate material balance with stable directed summation.
+- Retain full-window errors including the initial layer. Also report a
+  post-0.05 s diagnostic window; it cannot replace the full-window gate.
+  Score state <=0.01, process rate <=0.05, cumulative resource extent
+  <=0.01, closure residual <=1e-10, and balance <=1e-8. Report every
+  condition, including expected adverse failure. A failed physical closure"
+REQ17,docs/reduction/r4_fast_block_preregistration_v1.md,L1-L12,1,12,Does a former family screen define the current scientific use?,A;C;F;G;H,HISTORICAL_DIAGNOSTIC_NOT_SCIENTIFIC_MANDATE,Historical aminoacylation screen remains fixed; it is not the CK scientific-use contract.,HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,HISTORICAL_ONLY,a7d3e870747975ec47347a55e4dee1b9db3fe780d00f9be7ca03af572f7d0b54,46365b676666fb9f5a5bf144397efb7213b0bda426320a7256575d2b70974a2f,"# R4 fast-block preregistration v1
+
+Frozen prospectively before new decisive comparisons. The bound JSON is the machine-readable protocol; no result-dependent edits are allowed. Parent is 241 source states → exact R1 SOURCE_GENERAL 214 → GlyRS 205+9 or MetRS 202+12. R2 177 and its 37 extra laws are cross-check only.
+
+Membership is exactly the canonical historical partition, independently checked. Carrier shifts and adenine/phosphate total coordinates restrict the historical exact map to the selected family; all other retained states stay dynamic. Full RHS and all 968 gross directed rates use author parameters. G is selected source RHS; Dh=-solve(Gq,Gz); closure=G, velocity=Dh F, defect=G-Dh F, predicted lag=solve(Gq,Dh F). Closure is an engineering check, not invariance or scientific approval.
+
+All nine named conditions are mandatory. Historical full states and full directed ledgers may be reused only after source, source-RHS dependency, initial, condition, settings, time-grid and output-manifest verification. Baseline is independently recomputed. Any mismatch requires source recomputation. Every reduced primary and uncertainty solve is fresh. Initial slow inventories equal T x0; the algebraic initialization jump is retained and scored at t=0. No initial fitting, shifting, clipping or projection.
+
+Primary state/extent settings, computational bounds, representative multistart/relaxation probes, engineering guards and the uncertainty comparison are fixed in the JSON. Each state solve is bounded at 1800 wall seconds / 300000 RHS calls; each extent solve at 1800 seconds. Limits are computational closeout bounds, not scientific rejection criteria. BDF step snapshots preserve any numerical noncompletion and it is UNSCORED. Uncertainty probes use the frozen historical 1e-8 versus 1e-10 comparison; they never replace primary 1e-10 evidence. A tighter directed-extent quadrature probe and representational cancellation bounds quantify balance uncertainty. If any relevant tier uncertainty exceeds 10% of its budget, overall NUMERICALLY_UNRESOLVED takes precedence; raw state/rate/extent/balance outcomes remain visible. No scientific PASS from an unresolved probe.
+
+Score all241 states, global aminoacylation process rates and cumulative extents with unchanged historical floors and gates; report all968 rates/extents, family activation/transfer/release descriptively. Report full window, post0.05 and t>=1 lag diagnostics separately. Epsilon is screen only. Resource rows retain exact family and declared adenine/phosphate accounting; full-network accounting derivatives use all968 channels, not assumed global invariants. Particle count is a proxy; ionic strength not assessable.
+"
+REQ18,docs/reduction/human_reduction_review.md,L451-L472,451,472,Does the CK process card require promotion-level gross flux accuracy?,A;B;C;D;F;G,AMBIGUOUS,"CK-specific microscopic flux comparisons and losses are requested, but mandatory promotion accuracy for 332/333/336/337 is not declared.",HIGH,AMBIGUOUS,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,CK_MICROSCOPIC_COMPARISON_NOT_PROMOTION_MANDATE,b32dcbfa155be5d77411691889e67da7a6a89c7d87ba1406171e74db6c95c2d8,eca6ec968268782e710bdc583703a2235435ead13cfb0cce32d7b3047d9f3d75,"## Creatine-kinase energy regeneration
+
+**Chemical process.** CK exchanges phosphoryl groups between creatine phosphate/creatine and ADP/ATP through bound enzyme states.
+
+**Original implementation.** 25 unique combined reactions map to `EnergyRegeneration_A.xml`. Exact combined IDs are below; original module-local IDs are in the decision CSV.
+
+**Intermediates.** 6 candidate complex states participate across these module files. Their source IDs are listed below; classification from IDs is provisional.
+
+**Explicit free resources.** Event-level changes occur for: `ATP`, `ADP`, `CP`, `Cr`. Bound resource moieties, amino-acid incorporation and tRNA recycling must be checked against the full reactant/product JSON, not inferred from this free-species summary.
+
+**Particle number.** Among these event stoichiometries, 14 increase, 8 decrease and 3 leave unchanged the represented-species particle count. This does not weight events by flux or establish osmotic pressure. ATP/GTP and PPi/Pi importance is indicated by the explicit free-resource list, with bound contributions unresolved.
+
+**Representative original reactions.**
+
+- `re0000000330`: `ADP + CK → CK_ADP`; tracked-particle Δ = -1.
+- `re0000000331`: `CK_ADP → ADP + CK`; tracked-particle Δ = 1.
+
+**Candidate lumping.** A reversible net CP + ADP ↔ Cr + ATP candidate could preserve these four explicit resources if supported by kinetics.
+
+**Information lost if applied.** CK occupancy and mechanistic forward/reverse rates would be lost; the ideal-particle effect and proton/Mg chemistry need separate review. Any free-resource, tRNA, moiety or particle delta hidden by a proposed aggregate must reappear explicitly in its reduced reaction or in a validated reconstruction. Formula/charge gaps currently block quantitative ionic-strength consequences.
+
+**Evidence needed.** Compare trajectories and microscopic fluxes of the relevant intermediates over proposed conditions; derive conserved pools and resource/moiety identities; test effective rate laws and time-scale separation; review temperature, units, charge/protonation and Mg binding where ionic claims are sought. No QSSA or chemostat is accepted from the current parameter table alone."
+REQ19,docs/pnas2017/chemical_ledger.md,L3-L21,3,21,Does chemical accounting require fast binding turnover or conserved resources?,A;B;C;D;E,NOT_IMPLIED,Bound carrier moieties and fuel transfer must be accounted for; annotation is not chemical/source authority.,HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,PURPOSE_NET_RESOURCE,dd607d6127017e4fccfdd377ee4e3f6a541b785fb30447f1b2991eb2b964f8bb,fd3dd8b39cda14c63e39b1da2db8d7e3d726f1d38cf2ebd004e651c8f4faca80,"**Source and scope.** `models/pnas2017_full_reference/original/fMGG_synthesis.xml` is the unchanged SBML reaction network; the authors' `Simulate_fMGG_synthesis.zip` contains the reference initial-value and parameter CSVs. The derived tables are [`species_properties.csv`](../../models/pnas2017_full_reference/audit/species_properties.csv) (241 rows) and [`reaction_balance_audit.csv`](../../models/pnas2017_full_reference/audit/reaction_balance_audit.csv) (968 rows). `scripts/build_pnas2017_resource_map.py` regenerates them, and `resource_map_manifest.json` binds input/output bytes with SHA-256. These tables are navigation and bookkeeping aids, **not** chemical source authority or an accepted reduced model.
+
+The combined SBML gives all 241 species `initialConcentration=1` and each reaction a local `k1=1`; those literal values are not the fMGG reference conditions. The author simulator's initial CSV has 241 matching SBML IDs, of which exactly 27 have positive initial values. Its parameter CSV supplies 968 `reaction_id_k1` values. The CSVs omit explicit unit metadata; the concentration interpretation as µM is inferred from the paper's concentration examples (including the 50 mM creatine-phosphate condition corresponding to 50,000 in the CSV), **not** from the SBML unit definitions. Unit conversion and solver semantics require a separate audit.
+
+## What each species row records
+
+Each row retains the original SBML ID/name, compartment, SBML placeholder initial value, author-CSV reference initial value, boundary/constant flags, and candidate Level A/B module membership derived from reaction participation. A molecule-class label and 17 resource/category flags are supplied for browsing. A `true` ATP/ADP/AMP/GTP/GDP/Pi/PPi/CP/Cr flag means the **free species ID equals** the named resource; it does not imply that the resource is absent from complexes. Categories inferred from ID patterns are tagged `INFERRED_FROM_ID` or `AMBIGUOUS` and need biochemical review. The original author IDs remain available for correcting the annotation without changing the SBML.
+
+| Resource question | Explicit free SBML IDs or states | Remaining accounting work |
+| --- | --- | --- |
+| Adenylates | `ATP`, `ADP`, `AMP`; enzyme-bound forms such as `CK_ATP`, `MK_ATP_AMP`, `GlyRS_GlyAMP` | Define adenylate/activation moieties in every complex and intermediate before claiming total-carrier conservation. |
+| Guanylates and phosphate | `GTP`, `GDP`, `GMP`, `PO4` (the model's Pi ID), `PPi` | Include factor-bound GTP/GDP/Pi; determine phosphate and protonation bookkeeping. |
+| Regeneration fuel | `CP`, `Cr`, `CK`, `NDK`, `MK`, `PPiase` and their complexes | Record creatine-phosphate transfer, nucleotide exchange and pyrophosphate hydrolysis with all bound states. |
+| Amino acids and tRNA | `Gly`, `Met`, `fMet`, `tRNAGlyGCC`, `tRNAfMetCAU`, `GlytRNAGlyGCC`, `MettRNAfMetCAU`, `fMettRNAfMetCAU` | Resolve aminoacyl-adenylates, formyl donor, peptide incorporation and all enzyme/ribosome-bound tRNA states. |
+| Translation machinery | 30S/50S/70S species and many initiation, elongation and termination complexes | Derive occupancy pools and conservation laws; do not interpret free-ribosome concentration as total capacity. |
+| Product | `Pept0002`, `Pept0003` and bound/complex forms | Verify which states belong in the published fMGG observable and whether release/degradation changes the readout. |
+
+## What each reaction row records
+"
+REQ20,docs/reduction/r5c_reduction_observable_contract_v1.md,L1-L21,1,21,Has R5-C fixed which gross observables are mandatory?,A;B;C;D;E;F;G;H,AMBIGUOUS,R5-C expressly requires future candidates to declare mandatory status and order; its capability labels are not approval.,HIGH,AMBIGUOUS,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,EXPLICIT_FUTURE_MANDATORY_DECISION,37cd4152a0f485ac0d440f1de9da4570d7b67a5ad8c87fa28582ef7a51e0bac3,da9111d4402ee7d3f0d55086b4a047e065c3649a128c193574ce9edc21dbea69,"# Reduction observable contract v1 — additive R5-C
+
+Every future candidate must freeze an observable contract before validation. This semantics requirement changes no historical R4 gate, threshold, condition, floor or initial value. The CK examples below do not authorize promotion or assign new thresholds. `observable_identifiability.csv` is the machine-readable companion.
+
+For each observable specify: scientific importance; physical definition, units and source reaction/state IDs; directly retained coordinate or reconstruction map; order; expected asymptotic accuracy and hypotheses; domain and time window; validation metric, floor and numerical uncertainty budget; whether it is mandatory for promotion. Declare all required observables and thresholds prospectively. Source kinetics must be preserved and finite-parameter validation must match the intended scientific use.
+
+| Class | CK example | Treatment / obligation |
+|---|---|---|
+| A slow states/totals | ATP, protein output, T0,T1,B, dynamic enzyme totals | List exact retained coordinates. ATP/output can use exact affine reconstruction; free CP is reconstructed, while B is a slow total. Totals are dynamic under non-fast reactions. Validate states, totals and output. |
+| B fast states | CK_CP, CK_CP_ADP | h0 reconstruction, generally post-layer zero order; require explicit startup treatment. |
+| C exact conservation | SOURCE_GENERAL laws | Structural LS=0 and reconstruction preservation; measure L(x-x0) separately. Exact algebra does not certify a numerical ledger. |
+| D net currents | j332-333, j336-337 | Kinematic reconstruction using canonical N_qf, rank and any nullspace; validate finite-parameter accuracy separately. |
+| E gross directed rates | each forward/reverse fast rate | h0 gives leading circulation only. Declare whether O(1) corrections are required and how they are derived. |
+| F net extents | integral j; B0-B(t) for catalytic net conversion | Include matched startup redistribution offset or retain full startup; specify integration error. |
+| G gross directed extents | integral v332, integral v333, all968 source ledgers | Retain canonical provenance mapping. Gross extent accuracy needs its own reconstruction order and uncertainty analysis; it does not follow from state accuracy. |
+| H initial-layer observables | binding occupancy, startup extent and hybrid switch jump | FULL_WINDOW, POST_INITIAL_LAYER and COMPOSITE_OR_HYBRID must be distinct. Fix cutoff/matching/switch policy before scoring. |
+
+Allowed labels: PRESERVED_EXACTLY; PRESERVED_AT_ZERO_ORDER; RECONSTRUCTABLE_NET_CURRENT; DESCRIPTIVE_GROSS_FLUX_FROM_H0; REQUIRES_FIRST_ORDER_FLUX_RECONSTRUCTION; NOT_IDENTIFIABLE_AT_ZERO_ORDER; FULL_MODEL_ONLY. Labels describe capability/order, not approval. PRESERVED_EXACTLY is reserved for proved algebraic identities; zero-order accuracy requires hypotheses and measured original-parameter evidence. NOT_IDENTIFIABLE_AT_ZERO_ORDER is order-specific, not a permanent prohibition on higher-order reconstruction.
+
+CK supports a unique pair net current because N_qf has full rank. Knowing a difference alone leaves a common forward/reverse correction free; h0 kinetics fix leading circulation but do not supply that O(1) correction. CK's full kinetic derivative and attracting fast Jacobian can constrain a first-order displacement and hence separate gross corrections if explicitly derived and validated, with startup matching. No such flux reconstruction model or certificate is built here.
+"
+REQ21,docs/reduction/r5c_fast_ledger_semantics_v1.md,L3-L19,3,19,"Can exact conservation, net current and gross ledger stand in for each other?",B;C;D;E;F;G;H,NOT_DECIDED_BY_CAPABILITY,Four accounting tests and correction orders differ; net identifiability and state accuracy do not decide scientific need.,HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,CAPABILITY_NOT_REQUIREMENT,1f9f1238c4dfa7a606f32350ba9af69031569c69d52a7c2a96b79487ecff8d8f,1b6919ab7fe47c4b5b16eefdef915b5ce47c2f96d0ea93d89851b311578e3b4a,"For each selected reversible pair define oriented j=v_forward-v_reverse from canonical stoichiometry. Directed rates and gross extents xi_forward=integral v_forward dt and xi_reverse=integral v_reverse dt are distinct observables. Slow stoichiometric dynamics see j. In the singular family both directed rates scale as eta^-1; their difference can remain O(1). Gross extents generally have no finite regular eta→0 limit on a fixed slow-time interval. Large opposite extents can produce a finite net change, amplifying cancellation and numerical sensitivity. State convergence alone establishes neither individual O(1) gross correction accuracy nor equally conditioned directed extent convergence. This is an accounting/order issue; no software bug is inferred.
+
+Canonical CK reactions 332/333 bind/unbind CP with CK, and 336/337 bind/unbind CP with CK_ADP. Parsing canonical `models/pnas2017_full_reference/original/fMGG_synthesis.xml` and original author kinetics gives forward orientation toward CK_CP and CK_CP_ADP. The independent q=(CK_CP,CK_CP_ADP) rows yield N_qf=[[1.0, 0.0], [0.0, 1.0]], rank 2, nullspace dimension 0. It happens to be I; that is a derived result, not an assumption. Other coordinate choices must recheck rank and identifiable combinations and explicitly label any pseudoinverse convention.
+
+Fast invariants include T0=CK+CK_CP, T1=CK_ADP+CK_CP_ADP, B=CP+CK_CP+CK_CP_ADP, with all239 full fast invariants or212 within the R1 class. They obey Lf Sf=0 but are not globally constant. q=h0(z); zdot=T S_nonfast v_nonfast(Phi(z)); qdot_manifold=Dh0 zdot. Therefore
+
+    N_qf j_fast = Dh0 zdot - (S_nonfast v_nonfast)_q.
+
+The full action is S_forward j_fast and satisfies dPhi/dz zdot=S_nonfast v_nonfast+S_forward j_fast. Representative R5 baseline rows include all212 z coordinates and their labels, full Dh0 and flow, both q kinematic terms, direct source pair currents and error metrics. Source-projected h0, outer and hybrid are distinguished. Identity max error is 8.56953e-16; full-state tangent identity error 3.70521e-11; Dh0 central-difference max scaled error 2.2781e-10. Eta=1 representative post0.05 max scaled current error is 0.147124 for hybrid using each pair's fixed full-trajectory post-layer scale. This is descriptive, not a flux acceptance certificate; pointwise relative errors become ill-conditioned near zero. Startup rows are explicitly outside outer post-layer validation.
+
+At h0, leading binding equilibrium has v_forward^(0)=v_reverse^(0), hence zero leading net. Finite slow manifold motion generally requires a nonzero current. For q=h0+eta q1, the eta^-1 fast layer gives an O(1) contribution J_fast q1. In the frozen-invariant CK chart its order-one invariance equation is J_fast q1=Dh0 F0-qdot_nonfast, with S_forward action as above. Invertibility permits a conditional higher-order kinetic derivation; no q1 model is implemented. Evaluating rates exactly at h0 instead returns only numerical-roundoff net (measured max 3.27418e-10). This is STATE_ACCURACY_VS_FLUX_ORDER_MISMATCH.
+
+Level1: net stoichiometric current is kinematically identifiable in this chart. Level2: original finite eta kinetics at h0 give descriptive common leading circulation. Level3: individual high-accuracy O(1) gross corrections require displacement/kinetic derivatives and an explicit validated first-order reconstruction. Adding the same finite correction to both directions changes neither j nor its stoichiometric action, so zero-order state values plus net current alone cannot identify it. This does not make CK gross fluxes permanently unidentifiable: additional constitutive/order information can remove the freedom. Strict-limit divergent turnover must not be represented as a finite zero-order gross extent.
+
+Net cumulative extents also need startup matching. A full initial state off h0 redistributes an O(1) amount in the fast layer. An outer integral starting from zero omits that offset; retain full startup or explicitly match it. Gross fast startup turnover and subsequent order-one corrections need separate accounting. No new extent integration has been certified.
+
+Four different balance tests remain separate: L(x-x0) for exact source invariants; x-x0-Sxi for independently integrated directed extents; z-z0-TSxi for reduced slow coordinates; and algebraically reconstructed full-state residual. For x=c+Xz z+Dq, full residual decomposes as Xz times slow residual plus D times q tracking minus ledger change, with a consistently declared initial anchor. R5 measured maximum exact-law drift 2.36808e-10, primary source ledger residual 7.4303e-07, reduced slow residual 5.48669e-06, and same-trajectory tight-extent variation 7.52165e-06. Exact source conservation failure was NOT observed. Complete state/dense-output/extent attribution remains MIXED / UNRESOLVED. R4 balance gates are frozen. Large algebraic full-ledger residuals must not be relabeled as broken source invariants."
+REQ22,docs/reduction/open_scientific_decisions.md,L10-L17,10,17,Are future acceptance scope and promotion already fixed?,A;B;C;D;E;F;G;H,AMBIGUOUS,"Ledger scope, kinetic reconstruction, future acceptance and reduced-model identity remain human decisions.",HIGH,AMBIGUOUS,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,KINETIC_SCOPE_OPEN,1c00b464bdcf1e4a7cc295935508e925c8933d86973ae68ca79b7f20aa15e45b,3c8ffb5d20ee8dcbb5238b559da74c9852006c3a962ebc5ea7a3643497be0ddc,"| OPEN-01 | Whether Dataset S28 becomes a formal reference-comparison gate, with observable mapping and error thresholds | Preserve S28; add no mandatory gate |
+| OPEN-02 | Full-network methionyl, glycyl and adenosyl token membership | Preserve A3b-r12 as blocked evidence |
+| OPEN-03 | Which historical ledgers are exact global invariants, subsystem bookkeeping, interface balances or approximate resource measures | Preserve historical definitions and mark scope unresolved |
+| OPEN-04 | Whether to pursue another preregistered A3b-r12 cycle | Do not continue the candidate during migration |
+| OPEN-05 | Which specific kinetic reductions/reconstruction rules can realize the already-approved information contract for fast complexes, occupancies, charged-tRNA and resource variables? | **Species-level observable/reconstructability classes are resolved** by `species_information_contract_summary.md`; kinetic eliminability, reconstruction accuracy and validity domains remain open |
+| OPEN-06 | How formylation, peptidyl-tRNA and free RS70S should appear at the future process boundary | Preserve source evidence and candidate notes |
+| OPEN-07 | Whether A3b/A3c post-layer microstate scoring becomes a future validation rule | Preserve only the historical rule |
+| OPEN-08 | Which, if any, future candidate becomes the formal reduced model | `PURE_reduced_core = NOT YET APPROVED`; no migrated candidate is validated |"
+REQ23,docs/reduction/r5_ck_fast_reaction_definition_v1.md,L1-L5,1,5,Do selected CK reactions convert ATP?,B;D;F;G,NOT_IMPLIED_FOR_SELECTED_CK_PAIRS,The candidate only approximates CP binding/unbinding; 14 other CK-touching reactions remain slow forcing.,HIGH,INFERRED,R6_AUDIT_A_STATE_B_INVENTORY_C_CONSERVATION_D_NET_E_NET_EXTENT_F_FORWARD_G_REVERSE_H_GROSS_EXTENT,ATP_GROSS_NOT_BINDING_TURNOVER,939587c395f82573a608ef568035bea20b03994501a9bfa2df20829ef5aedc89,313be93adfceb1b7993f875cc2f6d2a5174aefb6dccae34cd7ab5aab29361773,"# CK declared fast reactions
+
+Exactly re0000000332/333: CK+CP ⇌ CK_CP; re0000000336/337: CK_ADP+CP ⇌ CK_CP_ADP. Canonical table, SBML and author CSV agree: k_on=2, k_off=1000 for each pair. K0=K1=500 in reference concentration scale. All 14 other touching reactions are listed in reaction_definition.csv and retained as slow forcing. Original module IDs, rate laws, stoichiometry and hashes are in that table.
+
+Author CSV omits units; docs/pnas2017/chemical_ledger.md supports µM inference from 50mM CP ↔ 50000. docs/pnas2017/sbml_audit.md documents incomplete metadata. Numerical time uses repository seconds convention. These interpretations do not repair the absolute biochemical unit audit."

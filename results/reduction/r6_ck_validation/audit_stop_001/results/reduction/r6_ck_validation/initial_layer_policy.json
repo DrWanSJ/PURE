@@ -1,0 +1,40 @@
+{
+  "q_full_initial": [
+    0.0,
+    0.0
+  ],
+  "q_outer_initial": [
+    29.7027954890137,
+    0.0
+  ],
+  "jump": [
+    -29.7027954890137,
+    0.0
+  ],
+  "tau0_s": 9.906817032876725e-06,
+  "switch_at_eta1_s": 9.906817032876724e-05,
+  "rule": "10*eta*tau0",
+  "outer_initial_total_error": 0.0,
+  "schema": "R6_FROZEN_R5_INITIAL_LAYER_POLICY_V1",
+  "tau_formula": "1/(2*p0+1000)",
+  "switch_formula": "10*eta*tau0",
+  "condition_policy": "Recompute p0 from unchanged condition initial totals; no tuning",
+  "full_startup": "retain x_full(t) for 0<=t<=switch",
+  "reduced_initial": "T*x_full(switch)",
+  "switch_jump": "disclosed; no continuity fitting",
+  "extent_startup": "retain or independently integrate full startup; never discard turnover",
+  "windows": [
+    "FULL_WINDOW",
+    "POST_INITIAL_LAYER",
+    "COMPOSITE_OR_HYBRID",
+    "POST_0P05_DIAGNOSTIC"
+  ],
+  "full_startup_source_implementation": "R5 full solve spans 0..1000 s; dense solution supplies startup",
+  "implementation_reproduced_for_new_run": false,
+  "source_hashes": {
+    "scripts/r5_ck_eta_scan_v1.py": "b05c8796a8a2b6ba5f3ccdf3da9275c194a5b43db22059d40d21a783dee76bd2",
+    "scripts/r5_ck_partial_equilibrium_runtime_v1.py": "db32bcbea84b4901edae0063434d71dab014acda3f56261cff9c737f3cac2d53",
+    "docs/reduction/r5_theory_scope_v1.json": "f31956e8e4d6935b1a116cdf27de40b9094a1bbf314c9683b023d1572c20702f",
+    "results/reduction/r5_mechanism_first/ck/initial_layer_definition.json": "44295a35b299ff3c7305217fdb4fffa8f933c351e4ccc466cda4b3570eef2dc0"
+  }
+}

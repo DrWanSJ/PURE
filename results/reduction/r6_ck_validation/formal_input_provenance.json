@@ -1,0 +1,26 @@
+{
+  "schema": "R6_FORMAL_INPUT_PROVENANCE_V1",
+  "original_phase0_provenance_sha256": "6298e480c0121e40c4606f3527c20c2cc51b039265e120b163133a5c231d1abd",
+  "original_scope_registration_sha256": "854a132b3556a20ffff53dbc342833475afc2a8b7a14bb904bd8dfe34eafc139",
+  "formal_registration_sha256": "5d8162c4e29353f211dc054b01bd61f76e855401d3cbb3da326034c7951c9de8",
+  "human_branch_a_decision_sha256": "5c6192fef3e147d7e7e98eab7df60b5602e4303dd918c6936d0171206ce04b9d",
+  "source_reuse_verification_sha256": "607a3f3fb640cee7cc403f3002f5eac369bc30bd3be2323b8a69e30ab384e5e2",
+  "environment_sha256": "7f87c7adef51623e9ab23d0d54503c4d14dff71c6a99db97a670d8cc65e7769d",
+  "historical_source_arrays_reused": true,
+  "new_decisive_comparisons_run": true,
+  "condition_count": 9,
+  "completed_conditions": 9,
+  "note": "The original phase-0 new_decisive_comparisons_run=false field is an immutable pre-run snapshot; this record describes the formal continuation.",
+  "result_hashes": {
+    "R3_BASE": "fe5aa22c0f9819a74096d07564dffa2e0614f73ec892e44002f6a32f1b65915f",
+    "R3_GLYRS_LOW": "22ff29db167a3f76760f11000b93f849eaa444bbb99edfb576813ff582fd565d",
+    "R3_GLYRS_HIGH": "18bf7c6105813c69a49643be2724bd7d072b107a97247c124e148e00768a9635",
+    "R3_METRS_LOW": "50727dde55bdf65e9e1a879cd6f178153dbfecad944944dbd337844c6e2d2d9e",
+    "R3_METRS_HIGH": "7641da74e46f64653ced491bd73e76c06fbc1a82e50204aafdeba83110e3f823",
+    "R3_GLY_LOW": "28b4ecae01422f8a7b6efdf148f1c9ee5a0daf3c9c0b3cf2826cc6680a246a6a",
+    "R3_MET_LOW": "67e961013dc83c2d31f0a8cfd9a33f3a1f7e0cbda1698dec7aee66cce2d1d450",
+    "R3_TRNA_LOW": "0452829c91da045ec47acc44d9ca7c2349748bb0b51aa68892e6415d3f80c35f",
+    "R3_ATP_LOW": "a3134d57b8901d73d97ce4d4d29a90e4db9d1a32c557f20fd391500022865cb4"
+  },
+  "promotion": false
+}

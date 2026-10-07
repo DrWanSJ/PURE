@@ -1,0 +1,37 @@
+{
+  "decision": "GROSS_FLUX_REQUIREMENT_AMBIGUOUS_HUMAN_DECISION_REQUIRED",
+  "status": "AUDIT_COMPLETE_HUMAN_SCIENTIFIC_USE_DECISION_PENDING",
+  "decisive_r6_comparisons": 0,
+  "branch_a_launched": false,
+  "branch_b_launched": false,
+  "recommendation": "CK_NOT_READY",
+  "promotion": false,
+  "mandatory_classes_final": null,
+  "branch_a_minimum_contract_classes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F",
+    "H"
+  ],
+  "gross_contract_classes_pending": [
+    "E",
+    "G"
+  ],
+  "explicit_selected_ck_gross_promotion_mandate_found": false,
+  "explicit_selected_ck_gross_accuracy_waiver_found": false,
+  "supporting_requirement_ids": [
+    "REQ05",
+    "REQ13",
+    "REQ14",
+    "REQ15",
+    "REQ18",
+    "REQ20",
+    "REQ22"
+  ],
+  "rule": "No explicit selected-CK gross mandate or waiver; CK microscopic comparison and ledger applicability remain unresolved.",
+  "human_question": "For CK 332/333 and 336/337, is accuracy of each forward/reverse binding rate and gross directed extent required for promotion, or may these stay provenance-visible descriptive outputs while state, conservation and net resource observables are mandatory?",
+  "followup_if_not_required": "Freeze a justified full numerical Branch-A contract, verify source reuse, then run nine CK conditions.",
+  "followup_if_required": "Derive first-order corrections and startup matching; test R3_BASE only; no broad campaign."
+}
