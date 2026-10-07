@@ -85,4 +85,3 @@ class CKRuntime:
   needed=dh@F-np.asarray(self.Sslow@v)[self.qix]
   # First-order signed pair-net redistribution in concentration per second.
   return needed
-

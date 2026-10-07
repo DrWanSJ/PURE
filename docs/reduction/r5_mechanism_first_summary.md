@@ -96,4 +96,3 @@ Balance:
 Exactly one next human recommendation: **FIX_BALANCE_ACCOUNTING_BEFORE_ANY_NEW_REDUCTION**. This is evidence for review only; stop before next stage. CK remains NOT_YET_PROMOTED and PURE_reduced_core remains NOT_VALIDATED.
 
 Independent verification: see results/reduction/r5_mechanism_first/verification.json for the measured result. Its PASS, if obtained, establishes engineering/provenance checks only. All2420 pre-R5 files are individually byte-hash checked; new outputs are SHA-256 bound by manifest.json and verifier outputs by verification_binding.json. The evidence_navigation.json graph is derived navigation only. Complete requested documentation, CSVs, retained solver arrays and scripts are in the registered tree; original absolute unit metadata and full-PURE uniform bounds remain unresolved.
-

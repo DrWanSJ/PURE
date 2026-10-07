@@ -15,9 +15,8 @@ def write_csv(p,rows):
  with p.open('w',encoding='utf-8',newline='') as f:
   w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
 def write_doc(name,text):
- p=DOC/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text+'\n',encoding='utf-8',newline='\n')
+ p=DOC/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text.rstrip()+'\n',encoding='utf-8',newline='\n')
 def checked_registration():
  b=json.loads((OUT/'registration_binding.json').read_text())
  for p,h in b.items():assert sha(ROOT/p)==h,p
  return json.loads((DOC/'r5_theory_scope_v1.json').read_text())
-
