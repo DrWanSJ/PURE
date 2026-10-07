@@ -130,3 +130,13 @@ scripts/finalize_r3_pilot_v1.py text eol=lf
 scripts/seal_r3_stalled_attempt_v1.py text eol=lf
 scripts/probe_r3_running_bdf_v1.py text eol=lf
 docs/reduction/r3_grid_execution_environment_v1.md text eol=lf
+
+# Exact registered checkout bytes across both evidence packages.
+scripts/pnas2017_evidence_pools.py text eol=lf
+scripts/pnas2017_evidence_timescales.py text eol=lf
+scripts/verify_pnas2017_artifacts.py text eol=crlf
+scripts/verify_pnas2017_integration.py text eol=crlf
+scripts/verify_reaction_level_annotation.py text eol=crlf
+scripts/verify_reaction_level_annotation_v2.py text eol=crlf
+scripts/verify_reaction_level_contract.py text eol=crlf
+scripts/verify_species_information_contract.py text eol=crlf
