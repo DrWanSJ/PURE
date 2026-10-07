@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1",
+  "status": "R1_R2_AUTOMATED_AUDIT_EXACT_CANDIDATES_NOT_REDUCTION_APPROVAL",
+  "source_sha256": {
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+    "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "docs/reduction/reaction_family_summary_v2.csv": "228ce72fe99b54fc8be69ccca8f94e9892d1f8f53b370c0891c144447477e695",
+    "docs/reduction/reaction_cross_family_links_v2.csv": "7d3551b04a1c7f2a229fec6f2e3656db45da7836c34925f6cb690f85d4b28a50",
+    "docs/reduction/reduction_decisions.csv": "70fd3f98de5056a1a63c29db58d310ec5986d4c52b6bfcbae9634b38e2e8d7f8",
+    "docs/reduction/species_information_contract_detailed.md": "24340aa5ca1e1fa262124407cd4ed02093066cb09ace89195475a7aa38630210",
+    "models/pnas2017_full_reference/audit/species_reduction_map.csv": "ecf444b81fca0b468cf279853e7804362dab5a3f2ce1fe6eeb134c6e2f5f881e",
+    "models/pnas2017_full_reference/audit/reactions.csv": "626539570e2ddcce45b49b1c53ce8d263c84f6fcd1eb9a40f292fbe2ddf637e4",
+    "models/pnas2017_full_reference/audit/reaction_balance_audit.csv": "89c7c5710b4ee46cc2da44442ba49fcc8c3c546289ad4521b11fc50a82eb3962"
+  },
+  "artifact_sha256": {
+    "exact_reverse_channels_v0.csv": "1f2994a54fd76db2a2a78fda77374a633c7f24490ec45d7f56159d50266c8212",
+    "conservation_laws_v0.csv": "f7cc968ddae86bae6bf482eb92a7b4b410f8e0b63ef3af40f513ecf738560146",
+    "conservation_elimination_candidates_v0.csv": "cb70be68223d3329ca21dbed233eeff94a6aaec960c3a5eaecd2ed6f1a587492",
+    "reference_zero_reactions_v0.csv": "38aca3a489c7be6721c780a069a3a6888913008ebed9d48773d55acf0b2998cd",
+    "reference_active_view_v0.csv": "66dc709b310e4b7315663293599416bf73a20999829871e0568b97c8493253ee",
+    "low_confidence_reduction_review_queue_v0.csv": "dcfff4cc80c97771929103ea9e1bfd00005482bc4c901d7cb7dc3c6f8e9e3497",
+    "reduction_audit_v0_summary.md": "577c57250a916181d7aa26da8e5a65c0e755e56a2dd96261401c4aaee43fe2d6",
+    "reduction_audit_v0_method.md": "8f48385fe8bc2a194330b94c96c85fb0071d3fdb6fd2fc60f79d8ea3cf313868"
+  },
+  "source_species": 241,
+  "source_reactions": 968,
+  "exact_reverse_channels": 290,
+  "directed_reactions_in_reverse_channels": 580,
+  "reverse_representation": {
+    "symbolic_exact": true,
+    "scaled_rhs_max_error": 2.649024528040928e-16,
+    "tolerance": 1e-12,
+    "representative_channel": "re0000000457/re0000000458",
+    "trajectory_max_error": 0.0,
+    "trajectory_tolerance": 1e-06,
+    "gross_directed_fluxes_retained": true
+  },
+  "source_general_rank": 214,
+  "source_general_conservation_dimension": 27,
+  "sparse_named_pool_laws": 17,
+  "frozen_reference_active_rank": 177,
+  "frozen_reference_additional_invariants": 37,
+  "exact_elimination_candidate_counts": {
+    "HIGH_EXACT": 0,
+    "MEDIUM_EXACT": 145,
+    "LOW_CONFIDENCE": 752
+  },
+  "frozen_reference_zero_reactions": 485,
+  "zero_classes": {
+    "REFERENCE_ZERO_DEGRADATION": 388,
+    "REFERENCE_ZERO_OTHER": 24,
+    "REFERENCE_ZERO_REVERSE_CHANNEL": 65,
+    "REFERENCE_ZERO_SIDE_PATH": 8
+  },
+  "zero_pair_patterns": {
+    "BIDIRECTIONAL_ZERO": 32,
+    "ONLY_FORWARD_ZERO": 0,
+    "ONLY_REVERSE_ZERO": 65,
+    "UNPAIRED_ZERO": 388
+  },
+  "reference_active_reactions": 483,
+  "zero_pair_channel_counts": {
+    "bidirectional_zero_pairs": 16,
+    "only_forward_zero_pairs": 0,
+    "only_reverse_zero_pairs": 65,
+    "unpaired_zero_reactions": 388
+  },
+  "low_confidence_review_queue": 18,
+  "reduction_decisions_pending": 968,
+  "scientific_boundary": "R1/R2 exact audit only; no QSSA, fast equilibrium, lumping, effective kinetics, deletion, or final reduced model approved."
+}

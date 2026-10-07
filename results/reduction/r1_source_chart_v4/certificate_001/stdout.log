@@ -1,0 +1,5 @@
+PASS: source_coordinate_certificate_17_v1.json: exact affine map and 968 lifted columns
+PASS: source_coordinate_certificate_v1.json: exact affine map and 968 lifted columns
+PASS: source_coordinate_certificate_v2.json: exact affine map and 968 lifted columns
+PASS: source_coordinate_certificate_v3.json: exact affine map and 968 lifted columns
+PASS: source_coordinate_certificate_v4.json: exact affine map and 968 lifted columns

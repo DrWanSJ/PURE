@@ -1,0 +1,30 @@
+{
+  "source_species": 241,
+  "source_reactions": 968,
+  "exact_reverse_channels": 290,
+  "source_general_rank": 214,
+  "source_general_conservation_dimension": 27,
+  "sparse_named_pool_laws": 17,
+  "frozen_reference_active_rank": 177,
+  "frozen_reference_additional_invariants": 37,
+  "exact_elimination_candidate_counts": {
+    "HIGH_EXACT": 0,
+    "MEDIUM_EXACT": 145,
+    "LOW_CONFIDENCE": 752
+  },
+  "frozen_reference_zero_reactions": 485,
+  "zero_classes": {
+    "REFERENCE_ZERO_DEGRADATION": 388,
+    "REFERENCE_ZERO_OTHER": 24,
+    "REFERENCE_ZERO_REVERSE_CHANNEL": 65,
+    "REFERENCE_ZERO_SIDE_PATH": 8
+  },
+  "zero_pair_patterns": {
+    "BIDIRECTIONAL_ZERO": 32,
+    "ONLY_FORWARD_ZERO": 0,
+    "ONLY_REVERSE_ZERO": 65,
+    "UNPAIRED_ZERO": 388
+  },
+  "low_confidence_review_queue": 18,
+  "reduction_decisions_pending": 968
+}

@@ -83,3 +83,23 @@ scripts/pnas2017_evidence_*.py text eol=lf
 docs/reduction/pnas2017_reduction_evidence_method.md text eol=lf
 docs/reduction/pnas2017_reduction_quick_reference.md text eol=lf
 docs/reduction/process_quick_reference/** text eol=lf
+
+# Union for the temporary future-merge simulation; both byte policies retained.
+# Exact reduction audit v0 hashes generated text bytes across fresh checkouts.
+docs/reduction/reduction_audit_v0_*.md text eol=lf
+scripts/build_reduction_audit_v0.py text eol=lf
+scripts/verify_reduction_audit_v0.py text eol=lf
+# R1 exact-coordinate methods and implementation are hash-bound run inputs.
+docs/reduction/source_coordinate_*.md text eol=lf
+docs/reduction/r1_acceptance_v4r3.md text eol=lf
+scripts/*source_coordinate*.py text eol=lf
+scripts/runtime_reconstruction_rhs.py text eol=lf
+scripts/test_reduction_*.py text eol=lf
+scripts/run_reduction_*.py text eol=lf
+scripts/validate_r1_roadrunner_tight.py text eol=lf
+docs/reduction/r2_frozen_reference_domain_v1.md text eol=lf
+scripts/build_frozen_reference_domain_v1.py text eol=lf
+scripts/test_frozen_reference_domain_v1.py text eol=lf
+scripts/run_r2_frozen_reference_validation_v1.py text eol=lf
+# Keep raw acceptance and negative-run evidence byte-exact.
+results/reduction/** -text -diff

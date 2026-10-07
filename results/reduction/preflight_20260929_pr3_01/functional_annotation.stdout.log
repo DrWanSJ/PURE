@@ -1,0 +1,9 @@
+PASS: 968 unique source-identical reactions; 290 symmetric exact reverse channels
+PASS: hard chemistry priority; double-zero edges never functional anchors
+PASS: RFAM_005-010 approved regressions; RFAM_011/012 Gly/Met source and parameter-topology symmetry (52/52)
+PASS: RFAM_025/026 reviewed initiation rules and reverse symmetry
+PASS: nine prior reviewed families = 98 direct rules; RFAM_002/004/014 final reviewed patterns and source equations
+PASS: six approved shared junctions; non-target scientific fingerprint unchanged
+PASS: 22 specific-intermediate cross-family links; 0 live functional-review rows
+PASS: reduction scientific review remains 968/968 PENDING; v0/v1 retained
+STATUS COUNTS: {"DIRECT_CHEMISTRY": 492, "GRAPH_PROPAGATED": 50, "HUMAN_REVIEW_REQUIRED": 0, "REFERENCE_DISABLED": 420, "SHARED_JUNCTION": 6}
