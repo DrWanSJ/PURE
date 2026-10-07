@@ -1,0 +1,59 @@
+{
+  "schema": "R7_DERIVED_NAVIGATION_V1",
+  "nodes": [
+    {
+      "path": "docs/reduction/r7_ck_first_order_derivation_v1.md",
+      "status": "INFERRED",
+      "role": "math derived from exact family",
+      "sha256": "5c8d5724c9ce526c631177cb3dfb101dc79863cf7c71c07e9ccdc13946d00899",
+      "authoritative": false
+    },
+    {
+      "path": "results/reduction/r7_ck_first_order/input_provenance.json",
+      "status": "EXTRACTED",
+      "role": "input hashes and actual lineage",
+      "sha256": "efd13adafc3b622fba4387d6fa6d856d61e1632c299c0028a70f5bf238fff7c4",
+      "authoritative": false
+    },
+    {
+      "path": "results/reduction/r7_ck_first_order/condition_summary.csv",
+      "status": "EXTRACTED",
+      "role": "measured comparisons",
+      "sha256": "a38603f5bdbb7c9ec87c80d2fc241a6c33de014aeb423187116693658aafdee6",
+      "authoritative": false
+    },
+    {
+      "path": "results/reduction/r7_ck_first_order/advancement_decision.json",
+      "status": "INFERRED",
+      "role": "registered bounded decision",
+      "sha256": "9863616c844df06e7591d152cfa9d40b586a745f1bc21185f0ed19854ecea399",
+      "authoritative": false
+    },
+    {
+      "path": "results/reduction/r7_ck_first_order/boundary_interpretation.json",
+      "status": "INFERRED",
+      "role": "signed source startup-tail interpretation",
+      "sha256": "6b4c2b3fef1ee138a78d5f6ac3ec9e497e766fc0e110c3f33ae529681f6fac1d",
+      "authoritative": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs/reduction/r7_ck_first_order_derivation_v1.md",
+      "target": "results/reduction/r7_ck_first_order/condition_summary.csv",
+      "relation": "IMPLEMENTS"
+    },
+    {
+      "source": "results/reduction/r7_ck_first_order/condition_summary.csv",
+      "target": "results/reduction/r7_ck_first_order/advancement_decision.json",
+      "relation": "PREREGISTERED_RULE"
+    }
+  ],
+  "freshness": "SHA256_CHECK_REQUIRED",
+  "source_authority": false,
+  "ambiguities": [
+    "Absolute biochemical unit metadata remains qualified",
+    "R6 final execution was uncommitted"
+  ],
+  "promotion": false
+}

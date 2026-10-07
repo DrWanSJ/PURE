@@ -1,0 +1,12 @@
+{
+  "stage": "INDEPENDENT_FINAL_VERIFIER_ENTRY",
+  "status": "FAIL_IMPORT_ONLY",
+  "error": "NameError: name 'Path' is not defined",
+  "frozen_script": "scripts/verify_r7_ck_first_order_v1.py",
+  "line": 37,
+  "equations_changed": false,
+  "data_changed": false,
+  "gates_changed": false,
+  "candidate_numerical_noncompletion": false,
+  "repair": "Additive entry script supplies pathlib.Path to the unchanged verifier module."
+}

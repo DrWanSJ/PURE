@@ -1,0 +1,86 @@
+{
+  "schema": "R7_INDEPENDENT_VERIFICATION_V1",
+  "status": "PASS_ENGINEERING_AND_EVIDENCE_VERIFICATION",
+  "verified_at_utc": "2026-10-07T17:54:27.599626+00:00",
+  "checks": [
+    {
+      "check": "ALL_3079_PRE_R7_AND_ORIGINAL_R6_BYTES_PRESERVED",
+      "status": "PASS"
+    },
+    {
+      "check": "FROZEN_BRANCH_A_GATES_WINDOWS_PARAMETERS_AND_THREE_AUTHORIZED_EXECUTIONS",
+      "status": "PASS"
+    },
+    {
+      "check": "INDEPENDENT_EXACT_FAMILY_H0_H1_DH1_J0_J1_RANK_AND_FORMAL_TRUNCATION",
+      "status": "PASS",
+      "identities": [
+        {
+          "condition": "R3_BASE",
+          "max_independent_current_scaled_difference": 2.0441109431991476e-10,
+          "max_h1_residual": 1.0096090630185017e-15,
+          "max_j1_abs_identity_difference": 8.256798023076328e-13,
+          "max_h0_affine_difference": 1.4551915228366852e-11,
+          "max_formal_truncation_abs_difference": 7.09405867382884e-11,
+          "resummed_substitution_discrepancy": 1.1368683772161603e-12,
+          "max_eta_family_difference": 1.4551915228366852e-11
+        },
+        {
+          "condition": "R3_ATP_LOW",
+          "max_independent_current_scaled_difference": 1.4228032281706853e-10,
+          "max_h1_residual": 1.0356299151581538e-15,
+          "max_j1_abs_identity_difference": 2.300937218535637e-14,
+          "max_h0_affine_difference": 1.4551915228366852e-11,
+          "max_formal_truncation_abs_difference": 4.765610128742992e-11,
+          "resummed_substitution_discrepancy": 4.926822838591249e-13,
+          "max_eta_family_difference": 1.4551915228366852e-11
+        },
+        {
+          "condition": "R3_TRNA_LOW",
+          "max_independent_current_scaled_difference": 2.047056897180758e-10,
+          "max_h1_residual": 1.214306433183765e-15,
+          "max_j1_abs_identity_difference": 9.220402219511925e-13,
+          "max_h0_affine_difference": 1.4551915228366852e-11,
+          "max_formal_truncation_abs_difference": 1.1459655446799388e-10,
+          "resummed_substitution_discrepancy": 9.103051428968612e-13,
+          "max_eta_family_difference": 1.4551915228366852e-11
+        }
+      ]
+    },
+    {
+      "check": "INDEPENDENT_A_B_C_D_F_SCORING_STARTUP_DOMAIN_AND_UNCERTAINTY",
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_REGISTERED_ADVANCEMENT_NO_GROSS_GATE_NO_PROMOTION",
+      "status": "PASS"
+    },
+    {
+      "check": "CANONICAL_RATE_JACOBIAN_GQ_H1_RESIDUAL_AND_OFF_GRAPH_ETA_FAMILY",
+      "status": "PASS",
+      "receipt_sha256": "dd00a759dccfa1b343a220784d89f530629cfc95482777a006b2090480f3e3d5",
+      "maxima": {
+        "canonical_Gq_max_abs_difference": 2.9103830456733704e-11,
+        "canonical_h1_equation_residual": 2.2737367544323206e-13,
+        "h0_frozen_q_difference": 3.552713678800501e-15,
+        "off_graph_eta_family_max_abs_difference": 5.820766091346741e-11
+      }
+    }
+  ],
+  "manifest_sha256": "a2357860fca1f050ab2afd6cf4c2d75e7e96693dd756cdfe7abf83fbaab3d636",
+  "registration_sha256": "55ab7568b410d68f22c48b1608a6d5428988bbe224756849c0e8953b7128566f",
+  "recommendation": "CK_FIRST_ORDER_IMPROVES_EXTENT_NOT_CURRENT",
+  "promotion": false,
+  "entry_repair": {
+    "scope": "IMPORT_ONLY_PATH_NAME",
+    "frozen_verifier_body_unchanged": true,
+    "frozen_verifier_sha256": "992c0620456c525cc926f1f4337d130ae0329f5f9d7fa0290be56f1c05cef521",
+    "entry_sha256": "e601fed4b96fc11eca33f6529b38cf07347a3f2ede0002d3092d9ca0716b84c8",
+    "original_failure_receipt_sha256": "f23db27b974c5dccd595281fc53b03e7e8430a186b874a4b7394dcf90939be01"
+  },
+  "diagnostic_labels": {
+    "nonlinear_flow_consistency_evaluation": "RESUMMED_SUBSTITUTION_DIAGNOSTIC",
+    "resummed_trajectory_solves": 0,
+    "formal_model": "F0_PLUS_Fq_H1_TAYLOR_TRUNCATION"
+  }
+}

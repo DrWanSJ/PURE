@@ -1,0 +1,15 @@
+{
+  "condition": "R3_ATP_LOW",
+  "guards": {
+    "A": "RESOLVED_PASS",
+    "B": "RESOLVED_PASS",
+    "C": "RESOLVED_PASS"
+  },
+  "D": {
+    "FULL_WINDOW": "RESOLVED_PASS",
+    "POST_INITIAL_LAYER": "RESOLVED_FAIL"
+  },
+  "F": "NOT_ASSESSED_BY_INSTANTANEOUS_EXTRACTOR",
+  "no_new_state_solve": true,
+  "extent_claim": false
+}

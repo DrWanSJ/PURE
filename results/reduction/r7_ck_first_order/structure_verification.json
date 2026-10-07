@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "conditions": [
+    "R3_BASE",
+    "R3_ATP_LOW",
+    "R3_TRNA_LOW"
+  ],
+  "max_Dh1_complex_step_relative_error": 5.5581195636310995e-11,
+  "max_formal_jacobian_relative_error": 2.3392491393247197e-16,
+  "checks_completed_at_utc": "2026-10-07T16:23:50.397622+00:00"
+}

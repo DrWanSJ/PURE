@@ -1,0 +1,43 @@
+{
+  "condition": "R3_TRNA_LOW",
+  "status": "COMPLETED",
+  "started_utc": "2026-10-07T16:24:21.852789+00:00",
+  "promotion": false,
+  "completed_utc": "2026-10-07T17:46:00.923559+00:00",
+  "primary_solver": {
+    "complete": true,
+    "start_s": 9.906817032876724e-05,
+    "end_s": 1000,
+    "rtol": 1e-10,
+    "atol": 1e-14,
+    "rhs_calls": 5523,
+    "nfev": 5523,
+    "njev": 59,
+    "nlu": 425,
+    "accepted_steps": 2057,
+    "minimum_accepted_coordinate": -8305.50038349876,
+    "elapsed_s": 9.953000000001339
+  },
+  "probe_solver": {
+    "complete": true,
+    "start_s": 9.906817032876724e-05,
+    "end_s": 1000,
+    "rtol": 1e-11,
+    "atol": 1e-15,
+    "rhs_calls": 15163,
+    "nfev": 15163,
+    "njev": 347,
+    "nlu": 1646,
+    "accepted_steps": 5275,
+    "minimum_accepted_coordinate": -8305.500383312716,
+    "elapsed_s": 32.09399999999732
+  },
+  "guards": {
+    "A": "RESOLVED_PASS",
+    "B": "RESOLVED_PASS",
+    "C": "RESOLVED_PASS"
+  },
+  "state_max_error": 0.002857338501593088,
+  "conservation_max_drift": 2.3680765681710625e-10,
+  "new_material_domain_failure": false
+}
