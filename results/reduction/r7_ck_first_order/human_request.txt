@@ -1,0 +1,965 @@
+TITLE:
+
+R7 — CK FIRST-ORDER NET-CURRENT / NET-EXTENT CORRECTION
+
+Repository:
+https://github.com/DrWanSJ/PURE
+
+RUN FROM THE REPOSITORY ROOT.
+
+============================================================
+0. SCIENTIFIC STARTING POINT
+============================================================
+
+R6 Branch A is complete.
+
+Frozen CK candidate:
+
+    CK_PARTIAL_EQUILIBRIUM_V1
+
+Fast canonical reactions:
+
+    re0000000332
+    re0000000333
+    re0000000336
+    re0000000337
+
+with all other 964 canonical reactions dynamic.
+
+R6 mandatory classes:
+
+    A slow states / totals
+    B reconstructed fast states
+    C exact conservation
+    D net currents
+    F net cumulative extents
+    H initial-layer / domain / continuity
+
+E/G microscopic gross directed rates/extents are:
+
+    SOURCE_PROVENANCE_PRESERVED
+    DESCRIPTIVE
+    BUT_NOT_VALIDATED
+
+and are NOT CK promotion gates.
+
+R6 outcome:
+
+    CK_STATE_VALID_NET_CURRENT_FAIL
+
+Recommendation:
+
+    CK_STATE_REDUCTION_SUPPORTED_BUT_FLUX_NOT_READY
+
+R6 nine-condition findings:
+
+    A: pass all 9
+    B: pass all 9
+    C: pass all 9
+    D: fail all 9
+    F: fail all 9
+
+Measured worst values:
+
+    all-source-state scaled error:
+        ~0.00428335
+
+    retained-coordinate error:
+        ~0.000340749
+
+    protein Pept0003 error:
+        ~3.02e-7
+
+    exact conservation drift:
+        ~2.37e-10
+
+    CK net current FULL_WINDOW:
+        ~0.14818
+
+    CK net current POST_INITIAL_LAYER:
+        ~0.99332
+
+    CK net extent:
+        ~0.12736
+
+Frozen R6 D gate:
+
+    E_inf <= 0.05
+
+Frozen R6 F gate:
+
+    E_inf <= 0.01
+
+Do NOT alter these results, thresholds, classifications or files.
+
+============================================================
+1. PURPOSE OF R7
+============================================================
+
+R7 asks one narrow question:
+
+    Can a mathematically derived first-order singular-perturbation correction
+    improve CK NET CURRENT and NET EXTENT accuracy while retaining the
+    already-supported CK state reduction?
+
+R7 does NOT ask:
+
+    - whether microscopic forward/reverse gross fluxes can be recovered;
+    - whether CK should be promoted;
+    - whether other fast reactions should be selected;
+    - whether GlyRS/MetRS should be reduced;
+    - whether R6 thresholds should be relaxed.
+
+This stage is a bounded first-order feasibility study.
+
+============================================================
+2. AUTHORIZED CONDITIONS ONLY
+============================================================
+
+Use exactly three diagnostic conditions:
+
+    R3_BASE
+
+    R3_ATP_LOW
+        because R6 has the worst POST_INITIAL_LAYER CK current score
+
+    R3_TRNA_LOW
+        because R6 has the worst stable/full-window CK current
+        and worst CK net-extent score
+
+Do NOT run the remaining six conditions in R7.
+
+Do NOT run R3_ADVERSE.
+
+A broader nine-condition campaign requires a later human decision.
+
+============================================================
+3. REPOSITORY / PROVENANCE SAFETY
+============================================================
+
+Before any change:
+
+    git fetch origin
+    git status
+    git branch -vv
+    git log -20 --oneline --decorate
+    git rev-parse HEAD
+    git rev-parse origin/main
+
+Record the actual R6 execution parent and final SHA.
+
+Create a new isolated worktree / local branch.
+
+Snapshot every pre-R7 file with SHA-256.
+
+NO pre-R7 file may be edited.
+
+R7 must be entirely additive.
+
+No:
+
+    push
+    merge
+    force reset
+    canonical source edits
+    parameter edits
+    initial-value edits
+    threshold edits
+    clipping
+    fitted initial conditions
+    fitted effective parameters
+    fitted switching times
+
+============================================================
+4. FREEZE R7 REGISTRATION BEFORE NUMERICAL TESTING
+============================================================
+
+Create:
+
+    docs/reduction/r7_ck_first_order_authorization_20261008.md
+    docs/reduction/r7_ck_first_order_preregistration_v1.md
+    docs/reduction/r7_ck_first_order_derivation_v1.md
+
+and:
+
+    results/reduction/r7_ck_first_order/
+        input_provenance.json
+        registration_binding.json
+
+The preregistration must be hash-bound before decisive numerical comparison.
+
+============================================================
+5. START FROM THE ACTUAL ETA-SCALED FULL SYSTEM
+============================================================
+
+Do NOT derive h1 from a generic textbook formula and assume it applies.
+
+Recover the exact R5 singular family used for CK.
+
+Transform the canonical eta-scaled full system into the actual coordinates:
+
+    z = retained slow coordinates
+    q = independent CK fast coordinates
+
+Use the exact coordinate definitions already frozen by R5/R6.
+
+Write the equations in the form actually implied by the repository.
+
+Prefer an explicit decomposition such as:
+
+    zdot = F(z,q,eta)
+
+    qdot = (1/eta) G_{-1}(z,q)
+           + G_0(z,q,eta)
+
+if that decomposition is exact.
+
+If explicit eta dependence appears elsewhere, retain it.
+
+Verify independently that:
+
+    G_{-1}(z,h0(z)) = 0
+
+for the existing R5 critical manifold.
+
+Do not assume standard form if the actual coordinate equations differ.
+
+============================================================
+6. RE-DERIVE h0 FROM THE SAME FORMULATION
+============================================================
+
+As an internal consistency check reproduce:
+
+    q = h0(z)
+
+for:
+
+    CK_CP
+    CK_CP_ADP
+
+with the existing physical p root.
+
+Verify that this h0 is numerically identical to the frozen R5/R6 reconstruction.
+
+This is a verifier step, not a new candidate.
+
+============================================================
+7. DERIVE THE FIRST-ORDER MANIFOLD CORRECTION h1
+============================================================
+
+Seek:
+
+    h_eta(z)
+      =
+    h0(z)
+      + eta h1(z)
+      + O(eta^2)
+
+Use the full invariance equation:
+
+    D h_eta(z) * F(z,h_eta,eta)
+      =
+    qdot evaluated on q=h_eta
+
+with the actual eta-scaled equations.
+
+Expand by order in eta.
+
+Do not skip terms.
+
+For the common case:
+
+    zdot = F(z,q)
+
+    qdot = eta^-1 G_{-1}(z,q) + G0(z,q)
+
+the O(1) equation should have the structure:
+
+    Dh0 F0
+      =
+    Gq h1 + G0
+
+where:
+
+    F0 = F(z,h0)
+    Gq = dG_{-1}/dq at q=h0
+
+and therefore:
+
+    h1
+      =
+    Gq^-1 (Dh0 F0 - G0)
+
+ONLY if this is what the exact coordinate expansion produces.
+
+Do not hardcode this expression before deriving it.
+
+If extra eta terms exist, include them.
+
+Record:
+
+    h1
+    Gq condition number
+    h1 scale
+    eta*h1 / relevant state scale
+    eta*h1 / relevant fast-total scale
+
+at representative source states.
+
+============================================================
+8. CHECK WHETHER THE FIRST-ORDER EXPANSION IS ASYMPTOTICALLY PLAUSIBLE AT ETA=1
+============================================================
+
+Because actual PURE uses:
+
+    eta = 1
+
+explicitly quantify the size of the correction.
+
+For every retained diagnostic sample compute metrics such as:
+
+    ||eta h1|| / scale(q)
+
+    ||eta h1|| / scale(fast totals)
+
+    distance(h0 + eta h1, physical fast domain)
+
+    distance to singular/ill-conditioned Gq regions
+
+Do NOT define a new PASS threshold after looking at values.
+
+Report these as descriptive asymptotic-validity diagnostics.
+
+Flag:
+
+    FIRST_ORDER_CORRECTION_NOT_SMALL
+
+if the correction is clearly comparable to or larger than the physical
+fast-state scale.
+
+Do not automatically reject solely from this descriptive flag.
+
+============================================================
+9. CRITICAL MATHEMATICAL POINT:
+   R6 CURRENT IS ALREADY THE LEADING FINITE CURRENT
+============================================================
+
+R6 used:
+
+    N_qf j0
+      =
+    Dh0 F0
+      -
+    qdot_nonfast,0
+
+This is NOT merely "zero current".
+
+It is the leading finite redistribution current associated with the moving
+zero-order manifold.
+
+Therefore R7 must NOT claim that computing h1 alone creates j0.
+
+Instead derive the NEXT correction to net current.
+
+For:
+
+    h_eta = h0 + eta h1 + ...
+
+derive:
+
+    j_eta
+      =
+    j0
+      + eta j1
+      + O(eta^2)
+
+from the invariance expansion.
+
+============================================================
+10. DERIVE j1 WITHOUT GROSS-FLUX RECONSTRUCTION
+============================================================
+
+Use the q-space fast stoichiometric relation:
+
+    N_qf j_fast
+      =
+    qdot_fast
+
+and the invariant graph kinematics.
+
+Derive the O(eta) correction to q-space fast forcing.
+
+In the simple eta-independent F/G0 case, the O(eta) invariance equation has
+the schematic structure:
+
+    Dh1 F0
+      +
+    Dh0 Fq h1
+
+      =
+
+    Gq h2
+      +
+    1/2 Gqq[h1,h1]
+      +
+    G0_q h1
+
+The quantity:
+
+    Gq h2 + 1/2 Gqq[h1,h1]
+
+is precisely the next fast q-space contribution.
+
+Therefore j1 may be derivable from:
+
+    N_qf j1
+      =
+    Dh1 F0
+      +
+    Dh0 Fq h1
+      -
+    G0_q h1
+
+subject to the exact terms produced by the actual PURE eta-scaled equations.
+
+If explicit eta derivatives exist, include them.
+
+Do NOT blindly use the schematic formula.
+
+Derive the exact equation first.
+
+Important:
+
+    h2 need not be constructed explicitly if the combination needed for j1
+    can be obtained directly from the O(eta) invariance equation.
+
+This is preferred if mathematically valid.
+
+============================================================
+11. COMPUTE Dh1 ROBUSTLY
+============================================================
+
+Because j1 depends on the derivative of h1 along the slow flow, compute Dh1
+carefully.
+
+Preferred hierarchy:
+
+1. analytic / symbolic derivative if tractable;
+
+2. automatic differentiation if already supported by the repository;
+
+3. complex-step differentiation if analyticity and implementation permit;
+
+4. high-quality centered finite difference only as fallback.
+
+Whichever method is primary, verify against an independent second method.
+
+Report derivative relative error and conditioning.
+
+Do not use a noisy derivative silently.
+
+============================================================
+12. TWO FIRST-ORDER IMPLEMENTATIONS
+============================================================
+
+Construct two separate objects.
+
+--------------------------------
+12A. POSTPROCESSING DIAGNOSTIC
+--------------------------------
+
+On the EXISTING R6 zero-order slow trajectory z0(t), evaluate:
+
+    j^(0)(t)
+
+and:
+
+    j^(0+1)(t)
+      =
+    j0(t) + eta j1(t)
+
+This isolates whether the missing flux order explains the R6 D/F failure.
+
+Do not call this a self-consistent reduced model.
+
+--------------------------------
+12B. SELF-CONSISTENT FIRST-ORDER REDUCED MODEL
+--------------------------------
+
+Construct a genuine first-order slow model.
+
+Use:
+
+    q1(z)
+      =
+    h0(z) + eta h1(z)
+
+and derive the slow RHS consistently to first order.
+
+If:
+
+    F(z,q)
+
+has no explicit eta dependence, use the mathematically derived truncation:
+
+    zdot
+      =
+    F0
+      +
+    eta Fq h1
+
+or an algebraically equivalent first-order form.
+
+Do NOT simply evaluate the full nonlinear F(z,h0+eta h1) and silently call it
+a first-order truncation.
+
+If you evaluate the nonlinear substituted form as an additional diagnostic,
+label it:
+
+    RESUMMED_SUBSTITUTION_DIAGNOSTIC
+
+not the formal first-order truncation.
+
+============================================================
+13. INITIAL LAYER / SWITCH POLICY
+============================================================
+
+Reuse the exact frozen R6 startup rule:
+
+    tau0 = frozen R5/R6 definition
+    switch = 10 * eta * tau0
+    eta = 1
+
+No retuning.
+
+For t < switch:
+
+    use the canonical full startup solution already required by R6
+
+For t >= switch:
+
+    start the first-order slow model from the exact retained slow coordinates
+    at the switch.
+
+Reconstruct fast states using:
+
+    h0 + eta h1
+
+for the formal first-order candidate.
+
+Record the switch jump.
+
+Do not fit or project the source trajectory.
+
+For net extents:
+
+    retain exact/full startup net extent from t=0 to switch
+
+then append:
+
+    integral of the first-order reconstructed net current
+
+from switch onward.
+
+============================================================
+14. E/G GROSS FLUXES REMAIN OUT OF SCOPE
+============================================================
+
+Do NOT derive:
+
+    individual forward gross correction
+    individual reverse gross correction
+    gross directed cumulative extents
+
+unless needed internally for a consistency identity.
+
+If calculated internally, do not score them.
+
+They remain:
+
+    SOURCE_PROVENANCE_PRESERVED
+    DESCRIPTIVE
+    BUT_NOT_VALIDATED
+
+R7 is about D and F only.
+
+============================================================
+15. CONDITIONS AND SOURCE DATA
+============================================================
+
+Use only:
+
+    R3_BASE
+    R3_ATP_LOW
+    R3_TRNA_LOW
+
+Reuse R6 source trajectories only after verifying hashes and exact condition
+definitions.
+
+Do not recompute full 0-1000 s source trajectories if valid reusable source
+evidence exists.
+
+Fresh first-order reduced solves are allowed and required.
+
+============================================================
+16. PRIMARY COMPARISONS
+============================================================
+
+For each of the three conditions compare:
+
+A. R6 zero-order reduced model
+
+B. first-order postprocessing current on z0(t)
+
+C. formal self-consistent first-order reduced model
+
+against:
+
+D. canonical full source
+
+For each pair current report:
+
+    absolute error
+    scaled error
+    source scale
+    sign
+    zero-crossing behavior
+    time of worst error
+
+Report separately for:
+
+    FULL_WINDOW
+    POST_INITIAL_LAYER
+    POST_0P05_DIAGNOSTIC
+    COMPOSITE_OR_HYBRID
+
+Use the frozen R6 normalization exactly.
+
+Do not change floors or windows.
+
+============================================================
+17. NET EXTENT COMPARISON
+============================================================
+
+For each registered CK net pair compute cumulative:
+
+    Xi(t) = integral j(t) dt
+
+from t=0.
+
+Include the exact startup contribution.
+
+Compare:
+
+    zero-order
+    first-order postprocessed
+    first-order self-consistent
+    source
+
+Use the frozen R6 F normalization:
+
+    E_inf <= 0.01
+
+with the same uncertainty accounting.
+
+============================================================
+18. RETAIN STATE ACCURACY AS A GUARD
+============================================================
+
+Even though R7 targets D/F, the first-order model must not destroy the already
+good state reduction.
+
+For the three conditions re-evaluate:
+
+    A
+    B
+    C
+
+using the frozen R6 gates.
+
+Required guard:
+
+    A/B/C must remain RESOLVED_PASS
+
+for a first-order model to be considered viable.
+
+Do not alter R6 H.
+
+H may be reported descriptively for the new reconstruction, but R7 does not
+repair or reclassify historical R6 H.
+
+============================================================
+19. NUMERICAL UNCERTAINTY
+============================================================
+
+Use at least the same primary/tighter philosophy as R6.
+
+Preserve:
+
+    primary reduced tolerances
+    tighter reduced probe
+    source uncertainty envelope
+    extent quadrature sensitivity
+    cancellation diagnostics
+
+A D/F PASS or FAIL is resolved only under the same frozen R6 rule:
+
+    numerical uncertainty <= 10% of corresponding gate budget
+
+and:
+
+    error + uncertainty <= threshold
+        -> RESOLVED_PASS
+
+    max(0,error-uncertainty) > threshold
+        -> RESOLVED_FAIL
+
+otherwise:
+
+        NUMERICALLY_UNRESOLVED
+
+============================================================
+20. DO NOT LET POST-INITIAL-LAYER NORMALIZATION HIDE THE PHYSICS
+============================================================
+
+R6 observed a ~0.993 POST_INITIAL_LAYER scaled current error in ATP_LOW.
+
+Because the source net current may be small in some windows, also report:
+
+    absolute current error
+    source current scale
+    denominator/floor used
+    zero-crossing locations
+    signed current
+    integrated contribution
+
+Do NOT change the formal score.
+
+This extra report is diagnostic only.
+
+============================================================
+21. PRE-REGISTERED ADVANCEMENT RULE
+============================================================
+
+R7 is a readiness study, not promotion.
+
+Recommend a later full nine-condition first-order validation ONLY if the
+FORMAL SELF-CONSISTENT first-order model satisfies all of the following on
+all three R7 conditions:
+
+1.
+
+    A = RESOLVED_PASS
+
+2.
+
+    B = RESOLVED_PASS
+
+3.
+
+    C = RESOLVED_PASS
+
+4.
+
+    D FULL_WINDOW = RESOLVED_PASS
+
+5.
+
+    D POST_INITIAL_LAYER = RESOLVED_PASS
+
+6.
+
+    F FULL_WINDOW = RESOLVED_PASS
+
+7.
+
+    F POST_INITIAL_LAYER = RESOLVED_PASS
+
+8.
+
+    no numerical noncompletion
+
+9.
+
+    no new material physical-domain failure attributable to the first-order
+    correction
+
+Do not require E/G.
+
+Do not change H historical classification.
+
+If this advancement rule is not met:
+
+    STOP.
+
+No broad campaign.
+
+============================================================
+22. SCIENTIFIC CLASSIFICATIONS
+============================================================
+
+Allowed final classifications:
+
+    CK_FIRST_ORDER_NET_FLUX_READY_FOR_BROAD_VALIDATION
+
+    CK_FIRST_ORDER_STATE_OK_FLUX_IMPROVED_BUT_STILL_FAILS
+
+    CK_FIRST_ORDER_IMPROVES_CURRENT_NOT_EXTENT
+
+    CK_FIRST_ORDER_IMPROVES_EXTENT_NOT_CURRENT
+
+    CK_FIRST_ORDER_NO_MATERIAL_IMPROVEMENT
+
+    CK_FIRST_ORDER_CORRECTION_NOT_SMALL_AT_ETA1
+
+    CK_FIRST_ORDER_NUMERICALLY_UNRESOLVED
+
+    CK_FIRST_ORDER_DERIVATION_NOT_WELL_POSED
+
+Use multiple descriptive flags if needed, but choose exactly ONE primary
+recommendation.
+
+============================================================
+23. REQUIRED OUTPUTS
+============================================================
+
+Create:
+
+docs/reduction/
+    r7_ck_first_order_authorization_20261008.md
+    r7_ck_first_order_preregistration_v1.md
+    r7_ck_first_order_derivation_v1.md
+    r7_ck_first_order_summary.md
+
+results/reduction/r7_ck_first_order/
+    input_provenance.json
+    registration_binding.json
+    h1_samples.csv
+    h1_scale_diagnostics.csv
+    dh1_verification.csv
+    j0_j1_derivation_checks.csv
+    first_order_postprocessing_current.csv
+    first_order_self_consistent_current.csv
+    first_order_net_extent.csv
+    state_guard.csv
+    conservation_guard.csv
+    condition_summary.csv
+    advancement_decision.json
+    manifest.json
+    verification.json
+
+Suggested scripts:
+
+    scripts/r7_ck_first_order_structure_v1.py
+    scripts/r7_ck_h1_v1.py
+    scripts/r7_ck_first_order_current_v1.py
+    scripts/r7_ck_first_order_runtime_v1.py
+    scripts/r7_ck_first_order_extent_v1.py
+    scripts/verify_r7_ck_first_order_v1.py
+
+============================================================
+24. INDEPENDENT VERIFIER
+============================================================
+
+The independent verifier must check at minimum:
+
+- every pre-R7 file byte-identical;
+- R6 Branch A contract unchanged;
+- canonical source unchanged;
+- reaction membership unchanged;
+- parameter values unchanged;
+- eta scaling reproduced from R5;
+- h0 reproduces frozen R5/R6 h0;
+- h1 equation independently residual-checked;
+- Dh1 independently checked;
+- j0 reproduces R6 current reconstruction;
+- j1 follows the derived O(eta) invariance identity;
+- N_qf canonical rank remains two;
+- first-order slow RHS matches the formal truncation;
+- no hidden nonlinear resummation mislabeled as formal first order;
+- startup rule unchanged;
+- no fitting;
+- no clipping;
+- no source projection;
+- no time shift;
+- no threshold mutation;
+- only the 3 authorized conditions executed;
+- no R3_ADVERSE;
+- E/G not promoted to mandatory;
+- A/B/C guard independently rescored;
+- D/F independently rescored;
+- advancement rule applied exactly;
+- no automatic CK promotion;
+- PURE_reduced_core remains NOT_VALIDATED;
+- all 968 mechanistic decisions remain PENDING.
+
+============================================================
+25. FINAL REPORT
+============================================================
+
+Report concisely:
+
+1. actual repository lineage and new commits;
+
+2. whether h1 was derived cleanly from the actual eta-scaled PURE equations;
+
+3. size of eta*h1 at eta=1;
+
+4. conditioning of Gq;
+
+5. independent Dh1 verification error;
+
+6. whether j1 can be derived without explicitly constructing h2;
+
+7. for BASE / ATP_LOW / TRNA_LOW:
+
+       zero-order D error
+       first-order-postprocessed D error
+       self-consistent first-order D error
+
+8. same comparison for F;
+
+9. whether A/B/C remain valid;
+
+10. whether the 99.3% ATP_LOW post-layer current score is mainly a
+    small-denominator/zero-crossing effect or reflects a substantial absolute
+    current discrepancy;
+
+11. whether first-order correction materially improves cumulative extent;
+
+12. whether all preregistered advancement requirements are met;
+
+13. exactly one recommendation.
+
+STOP after this report.
+
+No nine-condition first-order campaign unless separately authorized.
+No scientific promotion.
+No aminoacylation work.
+No push.
+No merge.
+
+============================================================
+GOVERNING INTERPRETATION
+============================================================
+
+R6 already established:
+
+    CK state reduction is supported.
+
+R7 is not allowed to revisit that by changing fast reactions.
+
+The narrow question is:
+
+    Does the next asymptotic order recover the finite CK redistribution
+    current and its cumulative net extent accurately enough for the already
+    frozen Branch A scientific-use contract?
+
+The project must continue to distinguish:
+
+    state accuracy
+    net-current accuracy
+    net-extent accuracy
+    microscopic gross-flux accuracy.
+
+Only the middle two are the scientific target of R7.

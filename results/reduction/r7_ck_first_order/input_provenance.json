@@ -1,0 +1,57 @@
+{
+  "schema": "R7_INPUT_PROVENANCE_V1",
+  "created_at_utc": "2026-10-07T16:21:48.296849+00:00",
+  "r6_execution_parent_sha": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+  "r6_final_commit_sha": null,
+  "r6_final_state": "UNCOMMITTED_HASH_BOUND_WORKTREE",
+  "r6_local_preservation_sha": "9282853a24d716e3021ea85123e9ba1e0bb4c6fc",
+  "origin_main_sha": "0b6f9ad649a7e283e440e0294a021123551f6858",
+  "pre_r7_snapshot_sha256": "81b105aa08bd1680b3f1ddbff5a2672fc0ad30d6a57bd2b6e1a2bd9a80b548b3",
+  "conditions": [
+    {
+      "condition": "R3_BASE",
+      "source_hashes": {
+        "results/reduction/r3_aminoacylation_qssa/run_001/R3_BASE/full_state.npz": "797125c7245bf236f9ad7c015872977af9445be9d1775b2e4005b2d75e5a94d4",
+        "results/reduction/r3_aminoacylation_qssa/run_001/R3_BASE/directed_ledgers.npz": "96715f3f10840cf6d84efc0ffa60ddf83097868565bd53ec8f075e122f753218",
+        "results/reduction/r3_aminoacylation_qssa/run_001/R3_BASE/result.json": "b5467f4d982288f541eae6abd5da48323e8320890a668720549e36737a7d1664",
+        "results/reduction/r3_aminoacylation_qssa/run_001/R3_BASE/manifest.json": "797516d0b4d0f5696e433232072afe3a08010e479d5ab1164e35e374e5e5e64a",
+        "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_state.npz": "65a60aa4ad24e8577741696e6153781038961f0aa1cb46963ae8569f52f017eb",
+        "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_ledgers.npz": "2c81d14937605eef6b4462e77d5c07b3b569449ec7a44379c36e8512b1b48776",
+        "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/result.json": "6579f5ce9f1125787efb7ff238e3edcdd37933fb014de384135da024a578c7b9"
+      },
+      "r6_comparison_sha256": "15dd74761f2e6a76e1e6a0b47e4e5d77eab44fa64e963111569c68befa874bee"
+    },
+    {
+      "condition": "R3_ATP_LOW",
+      "source_hashes": {
+        "results/reduction/r3_aminoacylation_qssa/restart_001/R3_ATP_LOW/full_state.npz": "104c9423394eeae7cf1923b94659020b71868df1c02f61a310fdca8ca1e9f776",
+        "results/reduction/r3_aminoacylation_qssa/restart_001/R3_ATP_LOW/directed_ledgers.npz": "aff2920d33ce7925d756e724a44bd3a1a82b1c120917808c5aaba408a2ce6697",
+        "results/reduction/r3_aminoacylation_qssa/restart_001/R3_ATP_LOW/result.json": "6e9deee8558c4e33ec17a399e824bf2726f40ced22ddbb34d8e91686f7382e30",
+        "results/reduction/r3_aminoacylation_qssa/restart_001/R3_ATP_LOW/manifest.json": "9a6bc282b315ac3021f5a7ef19ebf7ec98de8f1a890e6f7a798d4af2b4274dcf",
+        "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_state.npz": "bc780dea94f5d8c375122328b6e0def5f55fb14180ca48a4e61576880d01f25a",
+        "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_ledgers.npz": "346824dc2fd9816e391393cf6102306d44165e75158411ca11a2ba407c973511",
+        "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/result.json": "166dbdecd58c951ea0f6ff4e5e8d617e7544bf116ded6c4c0a619d53ac389597"
+      },
+      "r6_comparison_sha256": "bcf2c3f22b95f899d91107934477ac5ef30f4faa095f914aa618b9f7fa24db3a"
+    },
+    {
+      "condition": "R3_TRNA_LOW",
+      "source_hashes": {
+        "results/reduction/r3_aminoacylation_qssa/restart_001/R3_TRNA_LOW/full_state.npz": "320a44a09225f81bf8084d4a4cc722d13ebd59dca31f914b83652b0f891bdf32",
+        "results/reduction/r3_aminoacylation_qssa/restart_001/R3_TRNA_LOW/directed_ledgers.npz": "e6d666a36793abe5a477219c2c934a47c2a9b4d3bb1a002df355aa1f538c2879",
+        "results/reduction/r3_aminoacylation_qssa/restart_001/R3_TRNA_LOW/result.json": "b5d5d70960524e79d14ed3fbea6d50d0d87c31bd96444a0ee87f12c7a8795cac",
+        "results/reduction/r3_aminoacylation_qssa/restart_001/R3_TRNA_LOW/manifest.json": "60428a2a52f0c19896fb3081323e1b4798f14d2c9115ed13543672443adc96bb",
+        "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_state.npz": "f547db93b9eb0f4a363a358b5b1e44bb45471aad8cfa15a1a64fbb4f270cc04d",
+        "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_ledgers.npz": "df8acd24a28594cf2247c9e4a9622624f306ddfb29a3b9277dd0dfcfe2c0b508",
+        "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/result.json": "c38c7c434963c9fa12ee814a62c24b116e26a5edb02f8e16d52ab301daad4a58"
+      },
+      "r6_comparison_sha256": "4953c17f40b69ec1b17c09454db929856a54d375755543d305034da54b08d443"
+    }
+  ],
+  "r6_verification_sha256": "31239ae5f735c84402ed82ca6a137095655cccb362ae86fb9ee0da6df57361ba",
+  "r6_registration_sha256": "5d8162c4e29353f211dc054b01bd61f76e855401d3cbb3da326034c7951c9de8",
+  "python": "D:\\Code\\Anaconda\\python.exe",
+  "python_version": "3.12.4",
+  "numpy": "1.26.4",
+  "promotion": false
+}
