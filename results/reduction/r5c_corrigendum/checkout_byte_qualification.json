@@ -177,5 +177,7 @@
       "only_difference": "CHECKOUT_LF_CRLF_CONVERSION",
       "canonical_content_changed": false
     }
-  ]
+  ],
+  "local_git_metadata_policy": "local_git_byte_policy.txt; appended to .git/info/attributes without changing tracked attribute files",
+  "historical_HEAD_blobs_unchanged": true
 }
