@@ -1,0 +1,1064 @@
+You are performing a bounded scientific corrigendum of the PURE reduction
+project.
+
+TITLE:
+
+R5-C — QSSA / singular-perturbation interpretation and fast-ledger corrigendum
+
+This is NOT a new reduction stage.
+
+Do NOT launch another large candidate screen.
+Do NOT change the canonical model.
+Do NOT alter frozen R1/R2/R3/R4/R5 evidence.
+Do NOT promote CK, GlyRS or PURE_reduced_core.
+Do NOT push or merge.
+
+The purpose is to correct several overly strong or logically imprecise
+interpretations made during earlier reduction work, and to establish a
+mathematically correct observable/accounting contract for future reductions.
+
+============================================================
+0. CURRENT SCIENTIFIC BASELINE
+============================================================
+
+Use the actual repository / local branch state.
+
+Expected historical lineage:
+
+    origin/main:
+      0b6f9ad649a7e283e440e0294a021123551f6858
+
+    local R4:
+      88c0bfa
+      9def91d
+
+    local R5:
+      df4a927
+      f7d57d2
+      6c11b58
+
+Do not assume these hashes exist until verified.
+
+R5 status to preserve:
+
+CK:
+    CK_FAST_SUBSYSTEM_STRUCTURE_VERIFIED
+    CK_CRITICAL_MANIFOLD_ANALYTICALLY_DEFINED
+    CK_FAST_LAYER_ATTRACTING_ON_TESTED_DOMAIN
+    CK_SINGULAR_LIMIT_CONSISTENT
+    CK_ETA1_ACCURACY_DESCRIPTIVE
+    CK_REDUCTION_NOT_YET_PROMOTED
+
+GlyRS:
+    ZERO_ORDER_GRAPH_ERROR_NOT_EXPLAINED_BY_LOCAL_TRANSVERSE_FORCING
+
+Balance:
+    MIXED / UNRESOLVED
+
+PURE_reduced_core:
+    NOT_VALIDATED
+
+All 968 mechanistic decisions:
+    PENDING
+
+============================================================
+1. SAFETY / PROVENANCE
+============================================================
+
+Before changing anything:
+
+    git fetch origin
+    git status
+    git branch -vv
+    git log -15 --oneline --decorate
+    git rev-parse HEAD
+    git rev-parse origin/main
+
+Work in an isolated temporary worktree / local branch.
+
+Record hashes of all existing files.
+
+NO EXISTING R1/R2/R3/R4/R5 FILE MAY BE MODIFIED.
+
+This includes previous summaries even where their interpretation will now be
+qualified.
+
+Corrections must be ADDITIVE.
+
+Historical evidence remains historically true as evidence of what was run.
+
+The corrigendum must distinguish:
+
+    historical recorded status
+
+from:
+
+    corrected present interpretation
+
+============================================================
+2. CREATE THE CORRIGENDUM REGISTRATION
+============================================================
+
+Create:
+
+    docs/reduction/r5c_corrigendum_authorization_20261007.md
+    docs/reduction/r5c_qssa_interpretation_corrigendum.md
+    docs/reduction/r5c_reduction_observable_contract_v1.md
+    docs/reduction/r5c_fast_ledger_semantics_v1.md
+
+and:
+
+    results/reduction/r5c_corrigendum/
+        interpretation_corrections.csv
+        r4_decisive_gate_logic.csv
+        ck_fast_current_reconstruction.csv
+        observable_identifiability.csv
+        manifest.json
+
+Suggested scripts:
+
+    scripts/r5c_r4_gate_logic_v1.py
+    scripts/r5c_ck_fast_current_v1.py
+    scripts/verify_r5c_corrigendum_v1.py
+
+Bind all new files by SHA-256.
+
+============================================================
+3. CORRECTION #1 — GLOBAL FASTEST SUBSPACE IS NOT A QSSA THEOREM
+============================================================
+
+Correct the following overly strong interpretation:
+
+INCORRECT / OVERLY STRONG:
+
+    "A candidate m-dimensional QSSA block must align with the globally
+     fastest m-dimensional Schur/CSP subspace."
+
+or:
+
+    "A 90-degree principal angle between the historical candidate tangent
+     and the fastest same-dimensional source subspace disproves QSSA for
+     that candidate."
+
+Replace with:
+
+    Global Schur/CSP alignment is a diagnostic of local source geometry,
+    not a general necessary theorem condition for a mechanistically defined
+    partial-equilibrium or QSSA reduction.
+
+A mechanistic fast subsystem may be reducible if:
+
+    - a defensible singular limit is specified;
+    - its fast invariants are identified;
+    - its frozen fast layer has the required attracting equilibrium;
+    - normal hyperbolicity / attractivity holds on the declared domain;
+    - forcing of the fast subsystem is slow enough;
+    - the original-parameter approximation is quantitatively accurate.
+
+A faster unrelated mode may remain dynamic without invalidating a local
+module QSSA.
+
+Retain all historical R3/R4 principal-angle and CSP results.
+
+Do NOT delete them.
+
+Reclassify their role as:
+
+    SUPPORTING_GEOMETRIC_DIAGNOSTIC
+
+not:
+
+    NECESSARY_QSSA_ACCEPTANCE_GATE
+
+Explicitly state that the R4 mixed m=4 result still DOES rule out the
+particular naive interpretation:
+
+    "replace four fixed chemical species by four CSP modes"
+
+because the local span varies strongly and lacks a justified fixed chemical
+coordinate map.
+
+But it does NOT prove:
+
+    "no nonlinear / moving slow manifold exists."
+
+============================================================
+4. CORRECTION #2 — DISTINGUISH FAST SPECIES FROM FAST REACTIONS
+============================================================
+
+Add the following methodological correction.
+
+OLD HEURISTIC:
+
+    identify apparently fast species q
+    then impose dq/dt = 0
+
+PREFERRED MECHANISM-FIRST FORM:
+
+    identify fast reaction columns S_f
+    derive L_f satisfying L_f S_f = 0
+    define slow totals z = L_f x
+    derive a singular limit
+    derive the fast equilibrium manifold
+    project the non-fast dynamics onto z
+
+Explain using R5 CK as the concrete example.
+
+For:
+
+    re0000000332 / re0000000333
+    re0000000336 / re0000000337
+
+the meaningful statement is:
+
+    the CP-binding/unbinding reaction directions are fast
+
+NOT:
+
+    CK_CP and CK_CP_ADP are globally "fast species".
+
+A species may simultaneously participate in:
+
+    very fast binding,
+    slower catalytic conversion,
+    slow degradation,
+    other network coupling.
+
+Therefore future candidate construction should default to:
+
+    FAST_REACTION_PROCESS_FIRST
+
+rather than:
+
+    FAST_SPECIES_LIST_FIRST
+
+unless the latter is independently derived from a valid singular form.
+
+============================================================
+5. CORRECTION #3 — INITIAL-LAYER ERROR IS NOT THE SAME AS OUTER-SOLUTION ERROR
+============================================================
+
+Correct previous interpretations that treated a large full-window fast-state
+error near t=0 as sufficient evidence against a zero-order outer QSSA.
+
+Use R5 CK as the reference example.
+
+Verify from the stored R5 evidence:
+
+    initial CK_CP mismatch ~29.7
+    fast relaxation time ~O(10 microseconds)
+
+and:
+
+    pure outer solution has a large startup mismatch
+
+while:
+
+    post-initial-layer error becomes small.
+
+Explain the singular-perturbation structure:
+
+    q(0) != h0(z0)
+
+may imply a fast initial layer.
+
+The zero-order OUTER solution is not generally expected to approximate every
+fast species uniformly at t=0.
+
+Therefore all future validation must distinguish at least:
+
+    FULL_WINDOW
+    POST_INITIAL_LAYER
+    COMPOSITE_OR_HYBRID
+
+Do NOT retroactively change R4 acceptance criteria.
+
+Instead state:
+
+    R4 remains historically evaluated under its frozen protocol.
+
+Then separately assess whether each historical R4 candidate failed only
+because of the initial layer or also after the initial layer.
+
+From the actual stored R4 data, independently verify the reported worst
+post-0.05 state errors before writing conclusions.
+
+Expected descriptive values from the R4 summary:
+
+    historical 21-state ~0.1411
+    GlyRS-only         ~0.0372
+    MetRS-only         ~0.1411
+
+Do not hardcode these if source files disagree.
+
+If verified, state:
+
+    R4 family failures cannot be explained solely by startup mismatch.
+
+============================================================
+6. CORRECTION #4 — R4 "NUMERICALLY_UNRESOLVED" DOES NOT ERASE A RESOLVED FAIL
+============================================================
+
+This is a logical correction.
+
+Historical R4 overall numerical status must remain unchanged.
+
+However, independently reconstruct the registered gate logic from raw R4
+evidence.
+
+For every:
+
+    candidate
+    condition
+    gate
+
+record:
+
+    measured error
+    registered threshold
+    numerical uncertainty estimate
+    uncertainty budget
+    lower defensible error bound
+    upper defensible error bound
+    historical tier classification
+
+Do NOT infer from summary prose alone.
+
+Use the actual stored arrays / derived_review_result / uncertainty evidence.
+
+Implement the following logic:
+
+If uncertainty itself exceeds the registered numerical budget:
+
+    gate_characterization = NUMERICALLY_UNRESOLVED
+
+unless the historical formal protocol explicitly dictates otherwise.
+
+If uncertainty is controlled and even the LOWER error bound exceeds threshold:
+
+    gate_characterization = RESOLVED_FAIL
+
+If uncertainty is controlled and the UPPER error bound is below threshold:
+
+    gate_characterization = RESOLVED_PASS
+
+Otherwise:
+
+    gate_characterization = NUMERICALLY_UNRESOLVED
+
+Then distinguish:
+
+A. COMPLETE NUMERICAL CHARACTERIZATION
+
+from:
+
+B. LOGICAL POSSIBILITY OF PASSING ALL MANDATORY GATES
+
+If any mandatory gate is a RESOLVED_FAIL:
+
+    PASS_ALL_REGISTERED_GATES is logically impossible
+
+even if another gate remains numerically unresolved.
+
+This does NOT mean every metric is numerically resolved.
+
+Create:
+
+    results/reduction/r5c_corrigendum/r4_decisive_gate_logic.csv
+
+with columns such as:
+
+    candidate
+    condition
+    gate
+    threshold
+    measured_error
+    uncertainty
+    lower_bound
+    upper_bound
+    gate_status
+    decisive_against_all_gate_pass
+
+============================================================
+7. CORRECTION #5 — REVISIT THE R4 FAMILY OUTCOME TABLE
+============================================================
+
+The previous R4 causal outcome language was too conservative if both family
+candidates already had resolved mandatory state/rate failures.
+
+Re-evaluate, from raw evidence, these two separate questions:
+
+QUESTION A — SCREEN OUTCOME:
+
+    Did GlyRS-only satisfy all registered gates?
+    Did MetRS-only satisfy all registered gates?
+
+QUESTION B — CAUSAL INTERPRETATION:
+
+    What caused the historical 21-state failure?
+
+These are not the same question.
+
+If raw R4 uncertainty evidence confirms that both family candidates have at
+least one resolved mandatory failure on the registered conditions, then the
+family SCREEN outcome is:
+
+    BOTH_FAMILY_CANDIDATES_FAIL_REGISTERED_GATE_SCREEN
+
+This is compatible with:
+
+    balance characterization remains unresolved.
+
+Do NOT state:
+
+    "both family candidates are scientifically fully characterized"
+
+unless all metrics are resolved.
+
+Also do NOT infer:
+
+    "therefore their combination fails because of independent family defects"
+
+or:
+
+    "therefore shared-resource coupling is not causal".
+
+The causal explanation of the historical combined-block failure remains:
+
+    UNDETERMINED
+
+unless separately established.
+
+Write this distinction explicitly.
+
+============================================================
+8. CORRECTION #6 — R3/R4 FAILURE DOES NOT MEAN QSSA IS IMPOSSIBLE
+============================================================
+
+Preserve H5 semantics and strengthen the current explanation.
+
+R3/R4 rejected specific zero-order candidate constructions.
+
+They did NOT establish:
+
+    AMINOACYLATION_QSSA_IMPOSSIBLE
+    ALL_ENZYME_BOUND_STATES_MUST_REMAIN_DYNAMIC
+    ALL_PARTIAL_EQUILIBRIUM_REDUCTIONS_FAIL
+    ALL_QSSA_REDUCTIONS_FAIL
+    GLOBAL_SLOW_MANIFOLD_DOES_NOT_EXIST
+
+The correct claim is narrower:
+
+    the tested historical 21-state zero-order graph and the tested
+    9-state / 12-state family graphs do not satisfy the registered accuracy
+    requirements on the tested domain.
+
+R5 CK demonstrates that mechanism-first singular perturbation can behave very
+differently from state-list QSSA.
+
+Do NOT use CK to prove aminoacylation reducibility.
+
+It is a methodological counterexample to the idea that PURE as a whole is
+intrinsically unreducible by QSSA / partial equilibrium.
+
+============================================================
+9. CORRECTION #7 — DISTINGUISH EXACT CONSERVATION FROM DIRECTED LEDGER CLOSURE
+============================================================
+
+The following quantities must no longer be conflated:
+
+1.
+
+    L x(t) - L x(0)
+
+for an exact conservation law L;
+
+2.
+
+    x(t) - x(0) - S xi(t)
+
+for independently integrated directed reaction extents;
+
+3.
+
+    reduced slow-coordinate balance;
+
+4.
+
+    algebraically reconstructed full-state balance.
+
+Use the R5 balance decomposition.
+
+Preserve the measured conclusion:
+
+    exact source conservation drift is small
+
+while:
+
+    directed-extent ledger residual is much more numerically sensitive.
+
+Do NOT retroactively modify R4 balance gates.
+
+Write explicitly:
+
+    exact conservation failure was NOT observed in R5,
+
+but:
+
+    complete state / dense-output / extent numerical attribution remained
+    unresolved.
+
+============================================================
+10. CORRECTION #8 — RAPID-EQUILIBRIUM STATE REDUCTION DOES NOT AUTOMATICALLY PRESERVE MICROSCOPIC GROSS FLUXES
+============================================================
+
+This is the main accounting correction.
+
+For one selected reversible fast pair:
+
+    forward rate  v+
+    reverse rate  v-
+
+define:
+
+    j = v+ - v-
+
+The slow state dynamics depend on j through stoichiometry.
+
+The gross directed extents are:
+
+    xi+ = integral v+ dt
+    xi- = integral v- dt
+
+These are different observables.
+
+Under the singular scaling:
+
+    v+^eta ~ O(1/eta)
+    v-^eta ~ O(1/eta)
+
+while:
+
+    j^eta = v+^eta - v-^eta
+
+may remain O(1).
+
+Therefore as eta -> 0:
+
+    individual gross forward/reverse turnover can become arbitrarily large
+
+while:
+
+    their net stoichiometric effect remains finite.
+
+Hence:
+
+    state convergence does NOT imply
+    gross directed extent convergence with the same conditioning.
+
+Document the numerical-cancellation consequence.
+
+Do not label it as a software bug unless evidence specifically supports that.
+
+============================================================
+11. DERIVE THE CK NET REDISTRIBUTION CURRENT
+============================================================
+
+For the CK fast subsystem define oriented NET reaction currents.
+
+Let:
+
+    j0 = v332 - v333
+    j1 = v336 - v337
+
+but derive orientation from the canonical stoichiometric matrix rather than
+hardcoding signs.
+
+Let:
+
+    q = [CK_CP, CK_CP_ADP]^T
+
+or the exact independent fast coordinate used by R5.
+
+Let:
+
+    q = h0(z)
+
+on the critical manifold.
+
+Then the manifold kinematics require:
+
+    q_dot_manifold = Dh0(z) z_dot
+
+The non-fast reactions also directly contribute to q:
+
+    q_dot_nonfast
+
+Therefore the required net fast redistribution satisfies:
+
+    N_qf * j_fast
+      =
+      Dh0(z) z_dot
+      -
+      q_dot_nonfast
+
+where N_qf is the fast-reaction stoichiometric matrix restricted to the
+independent q coordinates.
+
+Do NOT assume N_qf = I.
+
+Derive it from the canonical reaction table.
+
+If N_qf has full column rank in the declared coordinate choice, solve for the
+unique pair net currents.
+
+Otherwise:
+
+- characterize the nullspace;
+- report what combinations are identifiable;
+- do not choose an arbitrary pseudoinverse solution without labeling it as a
+  convention.
+
+Create:
+
+    scripts/r5c_ck_fast_current_v1.py
+
+and:
+
+    results/reduction/r5c_corrigendum/ck_fast_current_reconstruction.csv
+
+At representative R5 baseline times report:
+
+    z
+    h0(z)
+    z_dot
+    Dh0
+    q_dot_manifold
+    q_dot_nonfast
+    reconstructed j0
+    reconstructed j1
+    direct full-model net pair current
+    absolute error
+    relative / scaled error
+
+Use existing R5 trajectories first.
+
+No large new solve.
+
+============================================================
+12. EXPLAIN WHY ZERO-ORDER EQUILIBRIUM GIVES ZERO NET FAST CURRENT
+============================================================
+
+At h0(z), leading-order rapid equilibrium gives:
+
+    v+^(0) = v-^(0)
+
+so:
+
+    j^(0) = 0
+
+But a moving equilibrium manifold generally requires:
+
+    Dh0(z) z_dot != q_dot_nonfast
+
+and therefore a finite redistribution current is needed.
+
+That finite O(1) current appears through the next-order displacement away
+from exact equilibrium.
+
+This explains why:
+
+    q ~= h0(z)
+
+can be highly accurate
+
+while:
+
+    evaluating both source rates exactly at h0(z)
+
+incorrectly gives zero net fast redistribution.
+
+Document this as:
+
+    STATE_ACCURACY_VS_FLUX_ORDER_MISMATCH
+
+============================================================
+13. GROSS FORWARD/REVERSE FLUX IDENTIFIABILITY
+============================================================
+
+The corrigendum must distinguish three levels.
+
+LEVEL 1 — NET STOICHIOMETRIC CURRENT
+
+    j = v+ - v-
+
+This can often be reconstructed kinematically from the slow manifold motion.
+
+LEVEL 2 — LEADING EQUILIBRIUM CIRCULATION
+
+At a finite eta / actual parameter point, evaluating source kinetics at h0(z)
+provides a large common leading forward/reverse circulation.
+
+LEVEL 3 — INDIVIDUAL HIGH-ACCURACY GROSS FLUX CORRECTIONS
+
+The O(1) correction to v+ and v- separately is not determined by zero-order
+state reconstruction alone.
+
+In the strict eta -> 0 description, gross forward/reverse extents do not have
+a finite regular limit in general.
+
+Therefore introduce observable labels:
+
+    PRESERVED_EXACTLY
+    PRESERVED_AT_ZERO_ORDER
+    RECONSTRUCTABLE_NET_CURRENT
+    DESCRIPTIVE_GROSS_FLUX_FROM_H0
+    REQUIRES_FIRST_ORDER_FLUX_RECONSTRUCTION
+    NOT_IDENTIFIABLE_AT_ZERO_ORDER
+    FULL_MODEL_ONLY
+
+Do NOT automatically classify every gross fast flux as permanently
+unidentifiable.
+
+For each observable derive what the specific CK structure supports.
+
+============================================================
+14. CREATE A FORMAL REDUCTION OBSERVABLE CONTRACT
+============================================================
+
+Create:
+
+    docs/reduction/r5c_reduction_observable_contract_v1.md
+
+For any future reduction candidate require an observable contract BEFORE
+validation.
+
+The contract must classify at least:
+
+A. SLOW STATES / TOTALS
+
+examples:
+    ATP
+    CP
+    protein output
+    dynamic enzyme totals
+
+B. RECONSTRUCTED FAST STATES
+
+examples:
+    CK_CP
+    CK_CP_ADP
+
+C. EXACT CONSERVATION LAWS
+
+D. NET REACTION CURRENTS
+
+E. GROSS FORWARD / REVERSE RATES
+
+F. CUMULATIVE NET EXTENTS
+
+G. CUMULATIVE GROSS DIRECTED EXTENTS
+
+H. INITIAL-LAYER OBSERVABLES
+
+For every observable declare:
+
+    scientific importance
+    retained directly?
+    reconstructed?
+    reconstruction order
+    expected asymptotic accuracy
+    validation metric
+    whether it is required for candidate promotion
+
+This is an accounting/semantics contract.
+
+It does NOT weaken any previous frozen threshold.
+
+============================================================
+15. CORRECT THE ROLE OF THE 968 DIRECTED REACTIONS
+============================================================
+
+The original 968 directed reaction channels remain canonical source
+provenance.
+
+Do NOT delete them from the reference model or ledger.
+
+But distinguish:
+
+    SOURCE_PROVENANCE_PRESERVED
+
+from:
+
+    REDUCED_MODEL_ZERO_ORDER_OBSERVABLE_PRESERVED
+
+A reduced model may maintain the mapping back to every canonical source
+reaction without being able to reconstruct every microscopic gross extent
+with zero-order accuracy.
+
+This must be explicit in future reduction certificates.
+
+============================================================
+16. CK INTERPRETATION AFTER CORRIGENDUM
+============================================================
+
+Do NOT promote CK.
+
+But update the CURRENT interpretation in the new corrigendum.
+
+If the existing R5 evidence verifies:
+
+    hybrid / post-layer all-241 max scaled error ~3e-4
+
+and systematic eta -> 0 convergence,
+
+then state:
+
+    CK provides positive evidence that the selected mechanism-first
+    partial-equilibrium construction is asymptotically coherent and highly
+    accurate at the baseline eta=1 state level.
+
+This remains:
+
+    DESCRIPTIVE_BASELINE_EVIDENCE
+
+because:
+
+- broad conditions were not validated;
+- authoritative absolute units remain incomplete;
+- full physical-domain bounds are not proven;
+- fast gross flux accounting is not fully reconstructed;
+- no promotion criterion has been approved.
+
+============================================================
+17. GLYRS INTERPRETATION AFTER CORRIGENDUM
+============================================================
+
+Preserve R5 result that:
+
+    Aperp = Gq - Dh0 Fq
+
+improved the local lag predictor in many but not all conditions.
+
+Correct the interpretation to:
+
+    moving-manifold feedback explains part of the historical zero-order
+    discrepancy but does not establish that a first-order correction of the
+    same old fast-state block will be sufficient.
+
+Do NOT proceed automatically to h1.
+
+Recommended future GlyRS methodology:
+
+    inspect reaction mechanism
+    -> identify fast reaction subsets
+    -> derive fast invariants
+    -> distinguish rapid equilibrium from catalytic QSSA
+    -> then construct a new singular limit
+
+Do NOT continue subset enumeration solely by species membership.
+
+============================================================
+18. PRODUCE A CORRECTION MATRIX
+============================================================
+
+Create:
+
+    results/reduction/r5c_corrigendum/interpretation_corrections.csv
+
+Columns:
+
+    issue_id
+    prior_statement_or_implication
+    status
+    corrected_statement
+    historical_evidence_affected
+    frozen_artifact_modified
+    scientific_consequence
+
+Include at minimum:
+
+C1:
+    global-fastest-subspace alignment treated too strongly
+
+C2:
+    fast species vs fast reaction process
+
+C3:
+    initial layer vs outer approximation
+
+C4:
+    numerical unresolved status vs logically decisive fail
+
+C5:
+    family screen outcome vs causal interpretation
+
+C6:
+    R3/R4 rejection vs QSSA impossibility
+
+C7:
+    exact conservation vs directed ledger closure
+
+C8:
+    state reconstruction vs gross flux reconstruction
+
+C9:
+    zero-order equilibrium vs finite redistribution current
+
+C10:
+    968 source provenance vs 968 zero-order observable preservation
+
+============================================================
+19. NO RETROACTIVE DATA EDITING
+============================================================
+
+Do NOT rewrite:
+
+    r3_* result files
+    r4_* result files
+    r5_* result files
+    historical summaries
+    old manifests
+    old verification JSON
+    old preregistrations
+    old acceptance criteria
+
+The correction must use additive successor documents.
+
+Where an earlier sentence was too strong, quote only the minimum necessary
+fragment and identify its source path.
+
+Do not silently edit history.
+
+============================================================
+20. INDEPENDENT VERIFICATION
+============================================================
+
+Write:
+
+    scripts/verify_r5c_corrigendum_v1.py
+
+Verify at minimum:
+
+- all pre-corrigendum files byte-identical;
+- no historical threshold changed;
+- no source model changed;
+- no parameter changed;
+- no initial value changed;
+- all new interpretation claims point to actual evidence;
+- R4 decisive-gate classifications are independently reproducible;
+- no RESOLVED_FAIL is asserted without uncertainty support;
+- CK N_qf comes from canonical stoichiometry;
+- reconstructed net-current equation is algebraically correct;
+- finite-difference check of Dh0 where used;
+- fast-current reconstruction identity holds;
+- observable-identifiability labels are internally consistent;
+- no claim says all 968 gross ledgers are preserved by zero-order CK;
+- no CK promotion occurred;
+- no GlyRS h1 model was built;
+- PURE_reduced_core remains NOT_VALIDATED;
+- 968 decisions remain PENDING.
+
+============================================================
+21. FINAL DECISION TABLE
+============================================================
+
+End with a human-review table answering:
+
+1. Did previous use of global Schur/CSP geometry overstate what QSSA theory
+   requires?
+
+2. Were R4 family candidates still decisively unable to pass registered
+   state/rate gates even though balance remained unresolved?
+
+3. Were R4 post-layer errors still too large to attribute failure only to
+   initial layers?
+
+4. Does R5 CK demonstrate that a mechanism-first fast-reaction singular limit
+   can achieve much smaller state error than the old fast-species blocks?
+
+5. Is exact conservation failure responsible for the R4/R5 balance problem?
+
+6. Can CK net fast redistribution current be reconstructed from manifold
+   kinematics?
+
+7. Can zero-order CK uniquely guarantee accurate individual forward/reverse
+   gross directed extents?
+
+8. What observable contract should future formal reduction validation use?
+
+============================================================
+22. EXPECTED SCIENTIFIC ENDPOINT
+============================================================
+
+The desired endpoint is NOT:
+
+    "CK is approved."
+
+It is:
+
+    "The project now has a corrected theory of what QSSA evidence means."
+
+Specifically the project should end this corrigendum with the following
+methodological hierarchy:
+
+    FAST REACTION PROCESS
+        ->
+    FAST STOICHIOMETRIC INVARIANTS
+        ->
+    SINGULAR LIMIT
+        ->
+    CRITICAL MANIFOLD
+        ->
+    FAST-LAYER ATTRACTIVITY
+        ->
+    INITIAL-LAYER HANDLING
+        ->
+    REDUCED SLOW FLOW
+        ->
+    STATE RECONSTRUCTION
+        ->
+    NET FLUX RECONSTRUCTION
+        ->
+    GROSS-FLUX IDENTIFIABILITY CONTRACT
+        ->
+    ORIGINAL-PARAMETER VALIDATION
+
+and NOT:
+
+    rank species by apparent speed
+        ->
+    set their derivatives to zero
+        ->
+    hope all microscopic observables remain accurate.
+
+============================================================
+23. FINAL REPORT TO USER
+============================================================
+
+Report concisely:
+
+- actual parent / execution SHA;
+- number of historical files verified byte-identical;
+- list of corrected interpretations;
+- R4 decisive gate result after uncertainty-aware re-evaluation;
+- whether "both family candidates fail the registered screen" is logically
+  supported;
+- why this does not identify the cause of the historical 21-state failure;
+- CK initial-layer reinterpretation;
+- CK post-layer / hybrid state accuracy;
+- CK net redistribution-current reconstruction result;
+- whether gross forward/reverse fluxes are zero-order identifiable;
+- balance decomposition conclusion;
+- new observable contract;
+- unresolved scientific questions;
+- independent verifier result;
+- local commits;
+- git status.
+
+STOP.
+
+No push.
+No merge.
+No new reduction campaign.
+No new scientific promotion.
