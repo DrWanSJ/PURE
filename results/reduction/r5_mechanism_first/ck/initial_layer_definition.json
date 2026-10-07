@@ -1,0 +1,18 @@
+{
+  "q_full_initial": [
+    0.0,
+    0.0
+  ],
+  "q_outer_initial": [
+    29.7027954890137,
+    0.0
+  ],
+  "jump": [
+    -29.7027954890137,
+    0.0
+  ],
+  "tau0_s": 9.906817032876725e-06,
+  "switch_at_eta1_s": 9.906817032876724e-05,
+  "rule": "10*eta*tau0",
+  "outer_initial_total_error": 0.0
+}

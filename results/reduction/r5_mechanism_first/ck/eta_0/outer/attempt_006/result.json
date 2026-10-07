@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "message": "complete",
+  "elapsed_s": 14.671999999998661,
+  "rhs_calls": 6872,
+  "nfev": 6872,
+  "njev": 95,
+  "nlu": 550,
+  "accepted_steps": 2662,
+  "rtol": 1e-10,
+  "atol": 1e-14,
+  "start_s": 0,
+  "end_s": 1000.0,
+  "minimum_accepted_coordinate": -8253.345996134916,
+  "coordinate_representation": "CENTERED_FAST_INVARIANT_COORDINATES",
+  "runtime_sha256": "c2278463dff439dffe88562bb1ff86f23028d2101b64cc20a7a9e2dea3359645",
+  "runner_sha256": "b05c8796a8a2b6ba5f3ccdf3da9275c194a5b43db22059d40d21a783dee76bd2",
+  "minimum_reported_physical_state": -1.289025140836696e-13
+}

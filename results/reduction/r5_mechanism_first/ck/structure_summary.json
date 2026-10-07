@@ -1,0 +1,29 @@
+{
+  "rank_Sf": 2,
+  "reaction_nullity": 2,
+  "left_nullity_full": 239,
+  "left_nullity_R1_class": 212,
+  "selected": [
+    "re0000000332",
+    "re0000000333",
+    "re0000000336",
+    "re0000000337"
+  ],
+  "K0": 500,
+  "K1": 500,
+  "parameter_values": [
+    2,
+    1000,
+    2,
+    1000
+  ],
+  "max_tau_s": 1.1857110898678204e-05,
+  "min_abs_real": 84337.576712003,
+  "samples": 1809,
+  "conditions": 9,
+  "source_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "units_status": "INFERRED_REFERENCE_CONVENTION_NOT_AUTHORITATIVE_SBML_UNITS",
+  "physical_normal_hyperbolicity_proof": "equal-rate eigenvalues <= -1000 throughout physical frozen-total domain",
+  "max_raw_source_tau_s": 1.1857110868148985e-05,
+  "min_raw_source_abs_real": 84337.57692915206
+}

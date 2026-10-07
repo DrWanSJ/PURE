@@ -1,0 +1,5 @@
+# CK frozen fast layer
+
+qdot_i=ki_on p(Ti-qi)-ki_off qi, p=B-q0-q1. Jii=-ki_on(p+Ti-qi)-ki_off; Jij=-ki_on(Ti-qi), i≠j. Equal rates give J=-a I-k_on u 1T, a=k_on p+k_off, u=(T0-q0,T1-q1). Eigenvalues -a and -a-k_on(u0+u1). In the physical frozen-total domain these are ≤-1000 s^-1, hence local attractivity and no loss of normal hyperbolicity. The feasible triangle qi≥0, qi≤Ti, sum qi≤B is forward invariant. Q=q0+q1 solves Qdot=k_on(B-Q)(T0+T1-Q)-k_off Q, strictly decreasing RHS derivative on its physical interval, with unique attracting root. At converged Q, the splitting equations are contracting linear equations. This proves global convergence for this equal-rate frozen subsystem, including degenerate zero totals by continuous extension. It does not prove full-PURE Fenichel validity or eta=1 accuracy.
+
+Existing nine-condition domain: 1809 samples; worst equilibrium relaxation 1.18571108987e-05 s, min |Re λ|=84337.576712 s^-1. Per-condition/time eigenvalues and analytic/numeric differences are in fast_layer_stability.csv.

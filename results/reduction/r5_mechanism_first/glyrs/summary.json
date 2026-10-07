@@ -1,0 +1,17 @@
+{
+  "classification": "ZERO_ORDER_GRAPH_ERROR_NOT_EXPLAINED_BY_LOCAL_TRANSVERSE_FORCING",
+  "valid_samples": 1809,
+  "unstable_valid_samples": 0,
+  "improved_conditions": 7,
+  "total_conditions": 9,
+  "feedback_raw_norm_ratio_max": 0.06340510854453421,
+  "feedback_scaled_norm_ratio_max": 0.055245859843672245,
+  "new_over_old_error_range": [
+    0.01689005874032407,
+    1.4113157572736124
+  ],
+  "worst_old_scaled_l2": 0.793750336934905,
+  "worst_new_scaled_l2": 0.13021456370423862,
+  "human_review": "HUMAN_REVIEW_REQUIRED",
+  "higher_order_model_built": false
+}

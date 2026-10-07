@@ -1,0 +1,25 @@
+{
+  "status": "CK_SINGULAR_LIMIT_CONSISTENT",
+  "completed": true,
+  "systematically_decreasing_hybrid": true,
+  "claim": "descriptive baseline convergence, no formal order or promotion",
+  "worst_initial_layer_jump": 29.7027954890137,
+  "tau0_s": 9.906817032876725e-06,
+  "eta1_descriptive_test_executed": true,
+  "full_eta1_uncertainty_scaled": 1.4960482847101157e-09,
+  "outer_uncertainty_scaled": 2.920177635790322e-09,
+  "eta1_outer_post_startup_worst_scaled": 0.9002658494638833,
+  "eta1_hybrid_post_startup_worst_scaled": 0.0004492951313555845,
+  "original_eta1_all241_post_startup_max_scaled": {
+    "outer": 0.9002658494638835,
+    "hybrid": 0.0003383575954227056
+  },
+  "original_eta1_all241_post_0p05_max_scaled": {
+    "outer": 0.0003383575954769899,
+    "hybrid": 0.0003383575954227056
+  },
+  "source_general_conservation_drift_max": 1.1749764919702366e-10,
+  "reduced_source_general_conservation_drift_max": 1.0266435812397807e-11,
+  "net_conversion_extent_max_absolute_difference": 0.0014388781200977974,
+  "strict_physical_domain_not_proven": "Some reconstructed unused/zero-inventory species have retained tiny negative roundoff; hybrid eta0.3 minimum -2.18e-11. No clipping or physical-domain promotion."
+}

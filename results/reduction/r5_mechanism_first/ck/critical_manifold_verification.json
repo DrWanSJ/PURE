@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "cases": 105,
+  "symbolic_Hprime": true,
+  "symbolic_fast_Jacobian": true,
+  "symbolic_eigenvalues": true,
+  "max_jacobian_fd_relative_error": 2.6584995853619695e-08,
+  "max_Hprime_fd_relative_error": 2.7943253006131864e-11
+}

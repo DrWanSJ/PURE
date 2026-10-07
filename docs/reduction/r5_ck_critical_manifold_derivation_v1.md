@@ -1,0 +1,3 @@
+# CK critical manifold and physical uniqueness
+
+With CK=T0-q0, CK_ADP=T1-q1, p=B-q0-q1, each binding equilibrium gives qi=Ti p/(Ki+p). H=p+T0 p/(K0+p)+T1 p/(K1+p)-B. For nonnegative totals and positive Ki, H(0)=-B≤0, H(B)≥0 and Hprime=1+T0 K0/(K0+p)^2+T1 K1/(K1+p)^2>0 for p≥0. Intermediate value plus strict monotonicity proves unique p∈[0,B], including p=0 when B=0; then 0≤qi≤Ti. This is an analytical existence/uniqueness result, not a multistart claim. Equal K reduces to p²+(K+T0+T1-B)p-BK=0; the runtime uses its cancellation-resistant positive root. Numerical direct equation solves and derivatives are independently checked.

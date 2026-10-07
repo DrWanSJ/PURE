@@ -1,0 +1,18 @@
+{
+  "classification": "MIXED / UNRESOLVED",
+  "source_general_laws": 27,
+  "max_exact_law_drift": 2.3680765681710625e-10,
+  "max_primary_source_ledger_residual": 7.430298865074292e-07,
+  "max_reduced_slow_ledger_residual": 5.486685040523298e-06,
+  "max_postprocessing_summation_change": 1.8480932340025902e-09,
+  "max_same_trajectory_tight_extent_change": 7.521652150899172e-06,
+  "max_reconstructed_full_residual": 4.349483736232863,
+  "max_algebraic_tracking_ledger_difference": 2.269915147661213,
+  "max_affine_decomposition_identity_error": 3.3866243143165775e-12,
+  "source_conservation_failure_observed": false,
+  "trajectory_mutation": false,
+  "historical_gate_changed": false,
+  "longdouble_mantissa_bits": 52,
+  "direct_state_vs_dense_vs_extent_error_separately_identified": false,
+  "reason": "Stored step records contain times/counters, not all accepted states/dense polynomials. Tight-ledger variation identifies a numerical component; complete state/dense/extent error attribution is unavailable. Full reduced ledgers require algebraic redistribution policy."
+}

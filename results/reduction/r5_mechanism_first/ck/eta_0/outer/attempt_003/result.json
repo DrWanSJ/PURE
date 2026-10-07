@@ -1,0 +1,7 @@
+{
+  "complete": false,
+  "message": "PREREGISTERED_COMPUTATIONAL_BOUND",
+  "elapsed_s": 482.79699999999866,
+  "rhs_calls": 300001,
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\sean\\.codex\\worktrees\\r5-mechanism-first\\GUV\\scripts\\r5_ck_eta_scan_v1.py\", line 26, in solve\n    steps=[start];states=[solver_initial.copy()]\n         ^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 197, in step\n    success, message = self._step_impl()\n                       ^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\bdf.py\", line 366, in _step_impl\n    converged, n_iter, y_new, d = solve_bdf_system(\n                                  ^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\bdf.py\", line 43, in solve_bdf_system\n    f = fun(t_new, y)\n        ^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 154, in fun\n    return self.fun_single(t, y)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 23, in fun_wrapped\n    return np.asarray(fun(t, y), dtype=dtype)\n                      ^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\r5-mechanism-first\\GUV\\scripts\\r5_ck_eta_scan_v1.py\", line 19, in fun\n    nonlocal calls\n                   \nRuntimeError: PREREGISTERED_COMPUTATIONAL_BOUND\n"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "attempt": "attempt_004",
+    "status": "HUMAN_AGENT_COMPUTATIONAL_STOP_OBSOLETE_ARITHMETIC_IMPLEMENTATION",
+    "scientific_outcome": "UNSCORED",
+    "progress": {
+      "time_s": 7.157714320720077,
+      "rhs_calls": 188863,
+      "steps": 40100,
+      "elapsed_s": 330.1880000000019
+    },
+    "checkpoint_preserved": true
+  },
+  {
+    "attempt": "attempt_005",
+    "status": "HUMAN_AGENT_COMPUTATIONAL_STOP_OBSOLETE_ARITHMETIC_IMPLEMENTATION",
+    "scientific_outcome": "UNSCORED",
+    "progress": {
+      "time_s": 2.3859087808872412,
+      "rhs_calls": 56534,
+      "steps": 13278,
+      "elapsed_s": 150.1559999999954
+    },
+    "checkpoint_preserved": true
+  }
+]

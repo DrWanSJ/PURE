@@ -1,0 +1,7 @@
+# CK projected slow flow and observability
+
+Full fast-invariant map Lf has 239 rows. Within R1 SOURCE_GENERAL class select a rank212 map T from Lf. Append physical fast coordinates q=(CK_CP,CK_CP_ADP); W=[T L_R1; E_q L_R1] is invertible (214×214). The affine reconstruction x=c+Xz z+D q retains all27 exact source laws; T D=0 and T Xz=I. Phi(z)=c+Xz z+D h(z) with h defined by the physical material root. Derive zdot=T S_s v_s(Phi(z)); no source ODE row is deleted. TSf=0; all964 slow columns remain. Four declared fast gross reaction records remain provenance-visible.
+
+Full state reconstruction has 212 dynamic coordinates and two equilibrium coordinates, within the same source-general class. No source trajectory is projected. Initial outer state Phi(Tx0) carries a disclosed fast jump; hybrid retains startup.
+
+MICROSCOPIC_GROSS_FLUXES: A leading equilibrium gross rates are k_on p CK = k_off q (scaled by eta^-1 only for the theory family). B required signed slow net redistribution is n=Dh F-(S_s v_s)_q; this follows from qdot=Dh F, and its complete action is S_forward n. With full derivative of g at frozen totals, a first-order manifold offset solves J_fast h1=Dh F-(S_s v_s)_q, so q=h0+eta h1 yields finite pair-net n. This is a derived reconstruction policy, not an implemented higher-order state model. C exact source gross directed extents require source integration; leading equilibrium ledgers need not match them. No claim that all968 microscopic ledgers are preserved. State, fast-state and gross-flux classes are reported separately.

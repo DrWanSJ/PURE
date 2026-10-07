@@ -1,0 +1,4155 @@
+{
+  "derived_navigation_only": true,
+  "source_authority_not_replaced": true,
+  "ambiguity": "absolute units and separated historical numerical errors remain AMBIGUOUS",
+  "nodes": [
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/baseline_all_species_comparison.csv",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "74766f27a5caf436ceaef8ea234e11f79e8679adbd78893bcd8fc13ffb40a7b3",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/baseline_comparison.npz",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "09a2f2eda47148c5086b2f0dbbca35724c3c9a2b5d33a2336ed11a1479c9ab6d",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/baseline_original_parameter_comparison.csv",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "984a95d96d2faad63a6814e6353bf3170419ab1ac8d12f24297b3215dfb1179e",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/baseline_source_general_conservation.csv",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "679b1b815965574d88cecbdac358a7e21b27c51d7e562aa343e52403f24057ad",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/coordinate_map.npz",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "5e72f524681b0e1a3c5b19f51dbff307852b78f4f8511526e6b4b9080ce8aee5",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/critical_manifold_verification.json",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "e0f5986d5770eec854c05e2496c5fa35171174fdb2352ef0415b603d303cda57",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/energy_regeneration_net_conversion.csv",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "9d0d4738ff93f41955faf8be0a153120bf596719902087d75db24d5205de3719",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/eta_scan_summary.json",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "581c954dbd4c436bd782fdcd5af113dd71eb55a029cb65e5948306b7500ceb34",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/fast_layer_stability.csv",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "cd2259f368182414c0aad6d0454018947059b3336faa9ed11541667cbec33084",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/fast_left_nullspace.csv",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "683908e98aa4a54fa77d6e6e7cdff972503c298bdad6160b2729c3965ee35c77",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/independent_projected_flow_crosscheck.csv",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d8d5b330d6970bdcff85ecdeaa903fca24432244df95d5a193f91a84722b4cf9",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/independent_root_crosscheck.csv",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "ab5f611a8bcffb08cb17d7ce8f3e9f98922d3a7713208b6b113919b2c78faea6",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/initial_layer_comparison.csv",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "8a085397ceea2e6699c74b775cd2a670abcb019ad99e3dd1c32f403d835fb50d",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/initial_layer_definition.json",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "44295a35b299ff3c7305217fdb4fffa8f933c351e4ccc466cda4b3570eef2dc0",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/obsolete_attempt_stops.json",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "ea6a0e3e556af111f23a28b034cace7a328744ee4196e0e34ff1e50e5ea20143",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/reaction_definition.csv",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "cc5ee1f179c2539a59b2c264b46b58cae934f75ea0b3b06576443d1f88e6f5a7",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/singular_eta_scan.csv",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "4d19a1696b1eb200c6aae62ca7e4be76e05e6d1ce5025923d6a9f3e237af217a",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/slow_forcing_of_fast_totals.csv",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "edcc186367d441e28e03c3e4a9681f745dd662dae9785c63f26d025926f59046",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/ck/structure_summary.json",
+      "track": "ck",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "20bc5cd32070805dacf1971fafd3d971f938fb8910bb0cdf63935d70dbbc91eb",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/condition_predictor_comparison.csv",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "12a3b00d9dd43a5dfcef68a6953ccd1238b3a8a1300b3933965fb3369e4ad00d",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/feedback_term.csv",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "230e40e6254b389207c6437c7257cd5c3618e7ccefc6410ec3a3ffda50e1459b",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/independent_derivative_crosscheck.csv",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "9fcb84d4bb4fe675446fd3ad49b4e971c051076f61746e1371bd23c7d69a8db7",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/lag_predictor_comparison.csv",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "7686436a18a2f9ee00e88aa7edb960728626f105484edefedf15ef8ad5392bba",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/lag_predictor_summary.csv",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "aacab63f9cd8fed9869a40563cbf2f053e5f8e3cbcf25f5984ca1a94c6d25c31",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/R3_ATP_LOW_operators.npz",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "bc05991a7a9905a482e9a3695aeb92b1413b69e30f058e2e75c7eb876ad888f2",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/R3_BASE_operators.npz",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "999e01e42b270c59941a2c0254481ca9c408e522f966173e81e2e299833713eb",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/R3_GLY_LOW_operators.npz",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "dd68ff25d7ad92b1bf6198b03979b80960c2018e7445d052bafa8a5e66513e29",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/R3_GLYRS_HIGH_operators.npz",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "455414151baa5f551b73ded50e6c7d99d598d7b78b02afcdbd2e7cdaa3f9a132",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/R3_GLYRS_LOW_operators.npz",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "c6fbdcadd8eafd2e12f7bd518cd352752c3930e84e78f3119a44d7bd41503280",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/R3_MET_LOW_operators.npz",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "99c2226119e0c5b54e02b495b16ae668db368605a78e9ceb66b9aee0d65513be",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/R3_METRS_HIGH_operators.npz",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "b9d826c567fc384308b6e78dd2592b91cde1a6470b4d97b96840cffffe4beae3",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/R3_METRS_LOW_operators.npz",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "213847895def91343ff0e33c5bd79dff2fbbe73e3b9f1ae77d3dfe35ec3dc9e2",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/R3_TRNA_LOW_operators.npz",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f3d20ee615bd3f211833a692ebd6003b867a148b4a41e37e7a53b115c0d90001",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/summary.json",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "81b2be2cfe77cffb06591e3c4ae4cf261c39e62fda3260316a0176a8e8c7738e",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/glyrs/transverse_operator.csv",
+      "track": "glyrs",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "775aa5748205c00bc509ade240688683194d692c0d61c42df2d46e07e539157f",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/balance/balance_decomposition.csv",
+      "track": "balance",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "8b7f889cce168e0cae3d706a96c63aca23c4c758548ba8a1a810675eec9f2649",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/balance/balance_decomposition_summary.json",
+      "track": "balance",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d364eb9134d6a9d0e49c5e3c9af3abc9473411886591857af0751e921d93a692",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/balance/reconstructed_full_state_accounting.csv",
+      "track": "balance",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "db37b1327a1173ad4eee8e6ca722dd0b78b3d8054a975f0cbbebbb9d019bc6ee",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "results/reduction/r5_mechanism_first/balance/source_general_law_drift.csv",
+      "track": "balance",
+      "type": "DERIVED_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "6eb8a96a3ec047e9c174d8519742c83d939ea9fdc00dafe532ee2a24372bf56e",
+      "freshness": "CURRENT_R5_RUN"
+    },
+    {
+      "id": "docs/audit/pnas2017_aminoacylation_reduction_v1/binit_v1r2_matrix.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "133e7f5b53f0ce9d5987a00a3333d305670424b699779702e6706342f6c9f7ba",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "docs/reduction/conservation_laws_v0.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f7cc968ddae86bae6bf482eb92a7b4b410f8e0b63ef3af40f513ecf738560146",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "docs/reduction/r3_carrier_chart_v1.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "0c35c9478c81551cc5ff88ab9ce35b86c7d8c4c039fe74522140d65560909438",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "docs/reduction/r4_fast_block_candidates_v1.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "bf335cbab38c1ce5984aa22d1f7dc511a7b0f3ac9ee73e547bd480333f116d31",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "docs/reduction/source_coordinate_certificate_v4.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "89c7c5710b4ee46cc2da44442ba49fcc8c3c546289ad4521b11fc50a82eb3962",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "models/pnas2017_full_reference/audit/reactions.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "626539570e2ddcce45b49b1c53ce8d263c84f6fcd1eb9a40f292fbe2ddf637e4",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "845aef2d0b9a46d8e1a2d2eb3b5acb3501bcf69b72229ad02a97b73a9363a929",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "bd1029bcb876c052e5a28049ffe16050efbfb518d0fdeac4e57d91ee6fc8327b",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_ATP_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "aff2920d33ce7925d756e724a44bd3a1a82b1c120917808c5aaba408a2ce6697",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_ATP_LOW/full_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "104c9423394eeae7cf1923b94659020b71868df1c02f61a310fdca8ca1e9f776",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_GLY_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "748ab73e9e4f4e1c51a06e0d84d740c78560961b64a575ccdd6cdb8a56ed9e28",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_GLY_LOW/full_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "dead57f696837f330e14ef3523f863de74b8e6e8393040345e188fa16e7d9dc9",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_MET_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "0cda9786fd2d270aa120676f127d9982bd454fdcc39141ed246579bcc13d97ac",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_MET_LOW/full_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "86bbc0ce3ff0b619549c5435c760b8abe3424cbb5b9ec02bf340bce91168cfec",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_METRS_HIGH/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "c56c22be3d9e247321d2ad2b392fc07652ad62a346fa3613d73f4cbac6a82aaa",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_METRS_HIGH/full_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "71512360a2745ee7ed67c100febf12ec20e371eaa6bcdb60ba510343b917da05",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_TRNA_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "e6d666a36793abe5a477219c2c934a47c2a9b4d3bb1a002df355aa1f538c2879",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_TRNA_LOW/full_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "320a44a09225f81bf8084d4a4cc722d13ebd59dca31f914b83652b0f891bdf32",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/run_001/R3_BASE/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "96715f3f10840cf6d84efc0ffa60ddf83097868565bd53ec8f075e122f753218",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/run_001/R3_BASE/full_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "797125c7245bf236f9ad7c015872977af9445be9d1775b2e4005b2d75e5a94d4",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/run_001/R3_GLYRS_HIGH/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "687a3e8899964f95a438cf08abada530ae2aa4097268cbb2c8c63fdfbf909b5b",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/run_001/R3_GLYRS_HIGH/full_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "fb7f984e6c67ac0d3165fb38775abaa6bafe671c79ab421be2013d62cc80ae35",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/run_001/R3_GLYRS_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "4b7c0442d968874fcbbeb3e0b4562cca5927cadb48fa5ffef02775e72189cbc0",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/run_001/R3_GLYRS_LOW/full_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "a05a3ad582a125771271518ab1cc13127717c18888a26a97b6776a3a46486284",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/run_001/R3_METRS_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "4cf2a5d6d3014a3629c215bc58ed48aa3dc94ce31b4d52a486a1bc8467e511d9",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r3_aminoacylation_qssa/run_001/R3_METRS_LOW/full_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "c045b0dd6a857cf111b2c1136efda4920f93134e5c7852d79eccfb53a788006a",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "00eaf598eb7061a00a2bdadf23e5802d1be9bb3da1ffaeb5979144f09f51476b",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "928bcf28ad18ffbabaa607f196dc85f5a0922ecb6265c0fcff6bd08a94be458c",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "e4937bd521cfb963d0aa7140c1d3594408b2444babab5efbc45482509247747e",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "6ce8db3e50099e528a783e35cb6980fb33180d3bc5212c2f313ca0c2c94e3557",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "0fca347e7232db3b81eb260caf72b8ea5f7b10089020cd13168e141aa415aa16",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "76231983a4ee0fa1a520c389e26dc607d1ecd0811a906093436b2dae5b26967a",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "fc2d2e3d3ef70f94674a75cd57a7d3500530a96ff0a8d586db8e9e4e395ab14b",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "fcba48747e4b627cbd48acb12e655ba01914cc2c19a9eb0b9a7fdbcfeae4a369",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "a65b1c273da06912ac7b3cda9f63d51bd4b13f3daa8a936ca7efcab67e8a4413",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "b3d782c3ce10579e5727e748ac4170210526d102592d1701726f7984cc4b953d",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "5ce292cc12fbf05a208f998e9d464f4b0a860f042584d662d7c08067ad2289b4",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "8e9d50a57288b626e573969d73f5e56368d7c613f6ee6ad25a7b9be195ebf7d5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d6adb159e38f1a02497548059a693d8cac9ece1f1d9167e21ebcd15e4f056b07",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "939bbccbd68b776e28fc75a1e401b498fa62420fe87c7b2a5dec73541c96d378",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "da033df998895d44046032cbd217c3e06eb0aaddd4359f5c5511de817248248f",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d147a32e7697809a76a00ba5676dbb7b27c2e22310288914f2dea5f3501a24fb",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "9183349a56f53104308735ac32f37e398528511288288a2631be736b1a1f69da",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "bc6d0f311e2210653da441981e0b77e7f544e338800c58c690c93274f115b8ee",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f5757c504afe652b735272ab8a87ea2949521263dbb90fe0c630b0173b80c82e",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "8dda43fa845bb962fe487dfec7b599b2e2f97fbe0045501497e5a95730126734",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f8b315b1c2bf744aae2ff46f4d5b9743ad8d5e0cf7bef2cde7b8296f16fcdc62",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "a5fc4156a4715319c0c6406be10baa94c42687a7c97012a3540de3b780a161b0",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "cdc7449b8266b13a9726d00dc1be5d5ef3592b9d2bafe678f45fd71e9560db2a",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "616409280f525d22223add93497786f2a853d3c5820e5fc01079e39f5c575120",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "161775dd14b521ebb2f196a01d39f3c8f33e22af32fb4f072e956b0a75ae657a",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "8476434abedf1c232a498a05d08432aa4b94b44af5a3896af837e881950b9bee",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "04a52207b52144676d9050773a5d20182a86895e0ff44e51bc6ea4c1faac005f",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "99e11bb72f6db8538a15fbbca3096911ecca36ac3c97d465a06daa518200c494",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f5611ade0c7d4c0fd4085d5fde8753f9a11f94da58ebdbde7a5ad4d194d76172",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "fef1dace7ce276d1c3052a892f8c26375300037351aa945dac1ef1fb67775afb",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d21893db172cccd31110463b4ac484602e3b89a86e669284fe74a1f64efdde80",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "676cfe2d77ab280a911018cf44565fd073ab81cad4a1845427ffcb08f6e07667",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "06b279de96263096ef065192665fcb3777aaffd8be99e05fd1ca180090c86eb9",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "558a4997f8185f9799f3c578e519f81fcee2aa2745576903f5745e46481a3c54",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "24549f4cacd62b8a065f757dd1e2d3c5c6c4050c30e5bf9c3ff6318178ad3353",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "8cc10bd7cc133fb842cb612d2b213149d1f4c85d72898d5a41e6fb16f2c851f5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "15f876c8bcc103185ff701ab032b2ab7b084f1de4deb8af7c183b37a6ad0b0d3",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "5324f08c8e13579e44f9a738e13911908a872367c23557b6b76f3734bbf620d5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "542d8fc95f20bcebd309e357905cef968799ab97dcfd562025ce9aa9fc4c0e39",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "44451c4a4b5498ea0b1ef89f7de5d3ce1718a2b161ae03d3c07920ad4c25efd5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "13046694cd65ab45cf5808c5f0a723d3d633099ba18cc206dd3dce15e34adf9c",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "5146bcf179b93a3fcabf5f83f6baadf0ea3cb409315ee8b01ff828966ac8ea24",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "dd1acd96cc6c34cc8a65244666585b9162e1a8a95c1731460be5488c3cebc76c",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "af8ab4442e013d261f5be44241169aaf00f28fab9f534f07dc9f4fd0765d7e99",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "74f995f9ed4f2a70f9a8a1f76f98c991d5ca9909d93a68524e1af91afcb85669",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "2f2d051145bd92a9abba4ced2727cd6943fd510d3c265f58d9521d43de38e223",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "2eadd9c6d9fabdb23120bb0fc5ae825f54b8fe25dbbbfe313ed656d3747282cf",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "e4e1ffcb8ee343b519eed3ec56b43b4b36eebe8377ad0c312b89a2bb76e3678a",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "a57401c60f6675a1a6d558a44be920fe69fa0d197e86e7636787553ef219b639",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "47e4418cb5296f983e54332a38ad5ebd59c42cd82ce9f1f78eaedeca0c1a2a23",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "531c8f7412a9153e76d1eaa6ca5f776c4fc558985ea098c0291d27a8550a963c",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "c6b298f4d05ba7842aff9bda6befcb524673b7252857e99d9615e3998624de5b",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "463c7562d662f45ef23dc6d51a7fcb93eaa784fdf06a9bd17362200f77d36119",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "80060f662f5ca8a5a26707895cc21ff7109eecdb5d24a5cb5cfafb9056773928",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "e304c9152b149db3dafd850061b319f2f1e42f9b72c5b23325b3062bdd07e8c6",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "856afaff78ab136d4e26bc9f9c091a6f5772923e1c1ac2915427c8e582360b63",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "97b065de464f50a2e2e85510fadc7b348fc2b1c064282f49048878e268b84d92",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "814fed487c1907088a82172d7fdc6088c8e2d90031213fc1911228ba7c4c7a50",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "667f6c09a1035d66b94e47ff4572de83cefaf567f0f99afa327e8caefbd29342",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "0dade5d7e7a06b43f625e9b0311073e0888a533e87b4e3e3d64d60ac3250056f",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "0e59a7932fc9cde5c6016f7e38659302db49c0647f8df80fe107c84f368c6e1b",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "418a114c52ce8ff4ccde409262bd27fe7d7e161f7036f6c05aa54781f0609fdf",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "415d8ab01fc857dfdc3033afdf74c49bf00d4fde44c55422ef6b8045cf25c564",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "3e984ea00bc97303266e369b280b694450eb3412084c017c52e01b40518de6b7",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f2b2069fc42a9d54665be5b7b541d803c0269a8334295b61f535199081cdd1ce",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "2e5a964814e92eef8a2fb79b08ffdfec775ee782e2b561863c07431dd6515bf0",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "5aaf117b3665e8613b0efb6ed1039eac3f9b9102f17b7dd57c1fb5a5415c23b5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "bf01ed25f22d06246a71a4074690442adf1a8abec685a48ff46203f84a1c303f",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "43c4748b130840774a83cd1e0dfac8d8997daffc015065f7ecfe381c3c122bd2",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "25e690e5c141dfd67a1fcc283a73406e7bdb00cdfb51640933dcf17251b357e3",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "0f1badce2d270ab657ac35743a07ce7c017b96f69856bbc88c08cc1e8a950427",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "0661872ab90d8c79730d70a4e026dae03dbd6c201505d1784e23e8caab7223bd",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "ce94e190eea0798e047879619f9663151891192d3d96a37936ba5ab82479999b",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "6ef5fa3173cb0c515096a90842713f0902757c28383a77d54b140757296585a4",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "43b466bd06759ccf93bb34ae303791888cc64c88d5973020fa19d06b5c772fa8",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "3bc4e12eca38c4640fac7549ee53af9e26ca0bf00a12318fd380e0c6d6a0466c",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "1110ba129c83024e2157cd854fdf1f8f332ef76ec0f386b86d301cf49981c41b",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "be93b0fff0f9326d7cad78d4aa663388e6438e435e3d7f48d9a9f0899fa7ff0c",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "4aee70068dc3a891d64712fb4ce0c235e981559d8f1a7f161854f4ec6c229e45",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "fa4433f54ad4110fefd4ef08e28a5a6b8b3b5dd9b8f48d1fa7be7bc3d1e522bb",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d5b8c9823eca98bab5ad460406e3835ddcf260f986b227d8e860f18f3a7c4ea9",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "9245fe17d086a1fe2a2b1c89828d8bf54b38817441969791d869458d32b0d552",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "00a37e374994d862c463fe864fbd317b56b13954a72adca9e3f45929df96c493",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "6d82babb3f161b07e5c5f05a09fcb7e98369b1779219e9b003bee1919f368748",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "99264e17bb8262e7bd5879da63a0c94e6ae9186a2dd5082bb64b95e4a11213b9",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f525c0a4b3d63bcf72aa392e4d74613c6e0b3841e486f12613bbc0557279a9e5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "a09c658c659d4e0d997c165d275c1f1a9eb8a038e6a34bc1b8bcc206460c2da8",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f67f974d26f9d032be848f3529db1e91d89acb1820c1e64370c214761b2ad68c",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "39b44365e5d6e516e7ac0567dd9c9255ad93acdba4a07540a9152bd29a0669e3",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "e982c31c39463e052a24619b3317be77edc031f2d742aec92b63b57d62bc6593",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "21926ba7ad4fd92f83a14804bb9f90b55a07690c51eaa0daa45b776a620464ce",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "4f21fdfa803662dee3b81348fbceeea6f72d8496de6f46b2d21a52f4f84cadeb",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "0900b110dd3c6f117ef7f0468e4e948d7c673ea4c1eaf285c52008b0d2b2b4ab",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "5abb0abc8f92c98b3de668d412e6f2a93d3405c436459e80ec0f2fc3a28eca8b",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "0738c75fa1445eca538cefd5dbf9f60f3e3164449811cefdf1830f1c4b36b0fc",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "4a424be07d74b41fcb45eb1b62634c1aa74229504e20867d245d3fe22695f6bf",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "0fe40a9022a297a641a40b4c1e096f559c7472672da8fe1c8e0137524dd2f411",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "559943169003c953140172778405eab61ee158b579a09b8d51b91cb0808f0b7d",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "7a7b159640963e295aebd388db51fd562769d831fb0206708544c4206496cb96",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "12830c29293554925bbfb836ff2dc658e3836f345a83ad41e859238d9eeb47b1",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "5f6e0c1cd9ce558cf8db816be2996d0a98eb776a4f6310a07a1bcdd8e9f5cfde",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d08eebf94a88ed5f75546713b37cc989af4ad8afa42b90a022eadb937d50fcb0",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "bc9eb7e859681d1d607c9f9d68fbca382e0b5ffde0a99ad8f3502e75b3cddb1a",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "5f386fdda562e935233126ff9d73eee025b670a414ba7d58d24a813d5e4a1fc7",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "68557ba053cbdc1c287a15d7e5b202e2d001868314047b9cc3667d8495a6a3ce",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "7869eaa2a5f90041a2cfcf60971a50be20e7f4debcd4114dbd6d86b21f3761a0",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "ca01d7005412c8a0f38f212de0138c35e7bf7ba18405237222523b9c2079c259",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "25ad3ff9846ff7ce13f39c59d092f813ca8bf8dfce97ccf8c7c81f506aef8235",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "2372c968ac3974485c6abaf388e5d232af5c814bbadae8b3259c239cc98ed7b6",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "a58be69483e409c2de60cfeff8484ae16bd60a1b6713e4e9a1a7e99fd8d519fe",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "aa3386ecdfcf4cf6017abd0c16918aeafa30e0c9165bd376ad65c98eee2947f5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f8e0fb170fe06f5b28e147298dc8b4290fb16274a9e7b22b5010ff61c3986bc2",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "44be6d26f836ab52b5cd3c9f3bea6b6ff88d5595c0e17a16725b7b5d4a937a14",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "b01484204d6f6e7531f5a877d6e30b57c87da7191aef8f6ca3afe58a30316a48",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "7a4cb33d9645bd48d804638b4958e62f420cae25a90e043e1893d2d6f9682add",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f67720f821ee4c8babdfd25b6f938b55b2b81992500d78f483efdd22fd30ace5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "ca0b90b6d84af61acda3913908fe9615bca4fc490a5cbe4a87bd9045faaee3b9",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "16ffd896a5e97822d6b7d1475a34ab7bfd5cf9ff6b8a893e2bfb1855cde6f913",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "a7900e92c68735a65e03f62c8123cc7e984d934af32f62706b3db68ebbb1e53a",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "38d70874455e87f067f0755244faecb8086fc01affb6877406a4154bea26afa7",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "3d3c2e27b3f58aaec29753f78b5815d23af70cd149bb3ab00e144ace1f3e3db5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "2b684e90e6a643dec942601b9548303c90cb55963a699b5fa2b8e5d0da901665",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "bd5021559f8553ffa28bb4a416305e6d7c0be57c88e9b91d121d50abe4e6063c",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "7ba9ec1c66dc9d5c8d4b4520234d83dc6af8f5200b136870f9ca617d1a9aae7e",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "012bb7094ac88f14bd124b97a83b70fb5e92c96525ceefcc62ba2cd98c7c54ba",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "68f148639bbf3463390c9cc151eb9e7d1c35fd151463c76823ffdc38ba1a0611",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "21904632919856d730fba1fb75a57dc979652a3f0933cfe58345f7a5348fd4d0",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "cbb82103670975fdf10299841813b9a0646ce4c321ce87efd116ec3f0ecd9638",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f2485f4f480ce85bb9d85fc6880979abcd4056dba2ff40e36b20225cc5bfef66",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "3272637026bf3e7a09b445387fbc040ca6565631d831068c3da0713179ffcb99",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "2003bd9311cf5e6b173e8ea967369ee3b69d7fb19bde395d4621f819a7e31784",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "852abc359ad912722519764dbc1eedcdc098cfcf3a674003f71f5dbf51ab4f03",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "5442aad3892209e2eb663499d055b89218470f33d80232e20011050ce64df25e",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "67984b309336e3275378103c9748d9df92ccadf98a2e9ec1bbdd0b53eff8fe4f",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d6eb6bd83ec84e1d90e4cad036a3770f9ef268a3e4a6891b67ee5d20503068a4",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "0fa1680439c7ac110a9d669af45a811cc33fe94eeccc1a86b5ae057e9552da0d",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "8e218ec2b05eb1c4ca9e29b8923dceb8bc5f8a1538408db5ead0667e8f8f2303",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "843ff227877f533ab6867b1fb1cdf1a1770e2873de69eb86f51f48763f721a45",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "4beff4fc2f9911c3f18d1346d57be7f52729e38817fda108e0dea80950650058",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "435a33c84e66e602dff6489a398b64d6344fb3873c11c5f014140cce210f76ee",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "cda0e982f14a66ea85fd0c143b51094b200bca3683ae0c6af6f8c76530e9c491",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "bd53f26161ef9dd655cdbbee20c3ebdd78ef2ac6b9320ae77a9b103833f113cb",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "43350f39038057c1a1fea9fa826619cc8f7cd22be6c905f6ec6642cd83044b00",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "88ee7e99aae1360fc0d1a1741826ad30040c25f5e6e46389039dbf292ed5d4da",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "819afc232b7183b68b30dd08ebbae945c275f423c84b5a49d0b59cb9436f95a0",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "a4c71020383d5316cf867b40060a3839c1064f3ac9e2de9f2bd6d32da34b96aa",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "1b09c594485cb64bdd0675b9db713ab3b58b59df089352666cd2c082847ebc03",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "8598af70f3a4f481503ae30b99b276fa5b2ca0a298df95a0843abb09367f2e92",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "94b8ac04902bbf4407848f078f18473a261ef69c3eba0564a3740fef4fc8d95a",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "a398c89fc89fbf691d1079e8bd9f946c01955e3e8cc3fadefbb222d53756a074",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "36e96b3e5937341e3a9fb69cde7cd2fcb2b8ae92ca10b6d15e610a73221dd234",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "41de604e49a5915ecd2de699a435fba4aa9f608b22b3ac03710c2cbe101eed60",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "871456f0137cc4c50d2455d592f2073fce4981c53136ca9341ff054a57d41cf5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "bee25d9de4854f2edac9f2b5fad965f6d1505e8f22a5dd1761d0925eb37b2d99",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "76de529ba152a090ce7de181a9e803c91956e04764ff8d7c121317960a2c739b",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "5daca455fc1a91b6e0399aabc343fb452ed44073d8ca0abe1f88512b7f75b565",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "708d41ea65a001079a83ff861fa74bb7f56a630fce3cb3c687aab6a388a3ebbe",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "53c6356ddd82c2dbabb613ffc4301e4ba71b727a85323653763e668c4d602b39",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "e0b64ee8cbe727fffc9a616b4b924c3dbb52cbb9f2ba40ee7a6f9d1fe43035da",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "84105aa11e2b7a0b69101920072fa4a85be80808b665826b85b4ea03c7081c15",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "05ad8446a532770f76fc3250a806b0c76d091c2b50e292791781d6bbea24a42a",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d074a55dd2765793eeb9104ec306c99ffe634ca8ec197573abbde4a83a5e7085",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "871d6414bdf1b1ed8c6be6e1773e94fabcb8179e68a110d5606c947e34e9890e",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d9db546eb95110f29fea7ee5863939fbe7f389836323c9c297cb77cc0e9f7efb",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "3e79112efadb76abd94ad6768c016700b80431279ad09f69e2fd993a6914aa13",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "48f7d0ec30dc0e8600dc7c4922831322c8a0fc9d2b7022734afb9c55c52214ed",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d23356d028417378f03d0b3de600ed02a360206372e03ac4c33b5037a179b6ae",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d698a55418dc7344dd572f66b2e0d3f93e41b64131c3210a308333f7341f4a7d",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "fadbdbca02fc5b0d2b432920f79ee08e451146f067c99185698516c176a20f16",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "460c60e048a08261b1e3bdf21786bb337f8f342201d9afe0ce6b9fc0d4f14784",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/directed_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "674d38566a55bc8354866a3ac8920eca5e34a6870547629ddb77b2d722f90199",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/manifold_geometry.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "1b08d8671c79e88245d3f3c6aaba4ede4fdce90248edff3b2e6324553598bbe3",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/primary_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "a9ded19e7d8a563ce7d888b36b0315a8061acb45e27fbd86364d721e112198bd",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/primary_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "6e3cbd59b5a72e2aa9f1f101e096ac09d34b8f95435f47edf313aba6aaf3c467",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "c6b1177e3a6cdd814ee1af67931a5b6c27dcadffd0262967e82c5cbc6b5740a1",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/source_manifold_geometry.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "81db812fb0817e9266d9a881380c3affe8c6fd4c752c14718a0a33d4a749505b",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/state_trajectories.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "b396d259296295d56e91e25a2f0fe5306e700c7f3bfa8883f19cfb7d5113adb4",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/uncertainty_reduced_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "4df001d404b5e18f239aa8887e63ceceb8bd1cbcc736670447863bce6da2261a",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/uncertainty_reduced_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f9121e20fa8d56d0d530ef223437683e9629bcf470b5c1200fc3713525bf2572",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/uncertainty_reduced_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "06aeaf24b7c62184a0dcbbb024f84e21b6dc689709b10a0800abbf5068117ca0",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_reuse_verification.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "2e28173385bbbb183f6ec1458ac72c6c66ba1ab4c9366917fb61f87c22a696e7",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d257f23a4b69cd720f02525f2c4f897f3d551909d6e894e67c7add1a8d955040",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_extent_solver.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "632eb1183a9bcad9a0a7c311404b0b2aaafa7cca7590fc596622196002b8866e",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "346824dc2fd9816e391393cf6102306d44165e75158411ca11a2ba407c973511",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_progress.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "80ee32533fe36578f6df27ab3a5a70b5073f3074386a72cecfd32a9acc2c02d1",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_solver_steps.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "b9520ce4b20b8a7c999a5d6ce365a3d0deca3e0662c6eccd46c6675b3bbdb5d8",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "bc780dea94f5d8c375122328b6e0def5f55fb14180ca48a4e61576880d01f25a",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "166dbdecd58c951ea0f6ff4e5e8d617e7544bf116ded6c4c0a619d53ac389597",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "56d3be14ce7e1cf645940147098bc4cd32c77e98cb6e8b4f519b7be07ca9afac",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_extent_solver.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "2be918f72fe92c1c5e15c0c37c61787b02e32f3e6281111e4dd681dd66cdad53",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "2c81d14937605eef6b4462e77d5c07b3b569449ec7a44379c36e8512b1b48776",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_progress.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "4fd520970bf28894b434ec983bad4d446c83957f7860dd1d1fec305b32ca92f4",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_solver_steps.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "09f6cb08308a3519f2392b6c40b6d0c0ecc058eb4383534bd9776932c5ba064c",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "65a60aa4ad24e8577741696e6153781038961f0aa1cb46963ae8569f52f017eb",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "6579f5ce9f1125787efb7ff238e3edcdd37933fb014de384135da024a578c7b9",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/probe_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "3153365b38307669c8e448b2865e48b1007d3365704a819e6986bbf363d70b1a",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/probe_extent_solver.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "a05e85efce5988ada791a2ba52dd754a3850de461d2dd59693b06176db3adba5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/probe_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "fb7103de6569a837e7788091f4d37d369740e17752b24f34dac4322067aad266",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/probe_progress.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "1bef4e02a1f4f0ca3847b2f3ef07cd0c7c6d8a2e1b80a08711e127e779ddd1c4",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/probe_solver_steps.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "3d91c6028ac0a4fc27d87a6d2a1cc1e93c81d15a924b1c85e40bc4ea76ad9796",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/probe_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "7d2732b55c4bc9bd13114aff54bc88a44fb1286a26ba01c07750b52d13b6a92c",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "425665f5d22d2470c224f81c8a2ca38bab0525389f166f9b8c11a82fda8573d5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/probe_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "1f3a181cc6d89b76f6e4b733d588ad0b1642833e1525cc6f6506fed34c6ab171",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/probe_extent_solver.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "3d3d83837772d28d0d95b8dc05013e4df3ddae2ba9f580ddb443d640f6a373db",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/probe_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "3091a727d79b81fb18dda8087489ec9d47b82bb22421a27daca5f9fee74904f0",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/probe_progress.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "ce8ac04e5a2d13e907ad85500794c45c4c6634d30cdc63206878bc39184d46f0",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/probe_solver_steps.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "bba7411ddf901d9d1e520b0291af9d40e41af09b553d8f8f28ec28bee131a430",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/probe_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "917075e6af0f8c755ba6569071cbda87c89f0601d1245a43a47a46a8001ec30e",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "5ab553cfb6dc120cc19a6d6f5502e747bf429b8b7ed0bbebb7967c277197bcdc",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/probe_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "c6c78be377b0383f689c521b6779d934e2bf18d0c7cbec7fd5240254231f1445",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/probe_extent_solver.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "441a08ecf6e08f1532ae5ed2da862c7a968e17869da360af3a2d95ffc505de63",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/probe_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "03cbb17314b0e851eb25cfe064a0ca2d97c541e5b48bd1d6a03bd9fa7bc1c6ec",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/probe_progress.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "79e34a2dcf9d3e3ac3848ec02ad4e3319e42623bcb4a72f6d7362a89a9e9f7fb",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/probe_solver_steps.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "961f2de04b8680f00126099866dc4e52e3747f4d23190a04e2b76d05ca1b3249",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/probe_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "d9a17391ee99e94e62855d3edc2c603720b7b24bdc0aa6bde876f3b899e396e7",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "dbdf080fa2ba2cfca7c483564bf7954a69eb7370541eee3ed3e109649ca49be2",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/probe_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "15d758293b45bd2a87002e639704c059f945bfc7c21f6e103b1089c4bd261a60",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/probe_extent_solver.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "6bd0191beccca25aa604b3913c79ae47e838b943cb8ce12e5427bcfc653968db",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/probe_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "18212e8c01d4041c1d34309d2b3fc5f433a66736ea8cb1257795705115d5de47",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/probe_progress.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "a6bf82a3df91c17fac263a17bc8b8d552415ed03bb1a72508f9a716b7a088f3f",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/probe_solver_steps.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "ca58372f46d5dc87037ea4ef62efe15c814d401c630c353242f0f47fe4ecd901",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/probe_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "fd964e4bfbc9cc5b268e9999848a91599421a562c1127f36ecae5083851c8130",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f4bf3c69aa5faee0633e14e6d584d09a2dc5c02375a898a4d77bbc69b3aed898",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/probe_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "7e7cf3066d91ccf7225083d3632c612fdd27c40c8c3bb8b78fd8b5bac5699768",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/probe_extent_solver.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "62c647fd5649c4ed0346c2378fbb3cb240cd6a9e611c21276f186baa90767759",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/probe_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "5f0a716f6c0280604331218669631c41b81b118f1ad8bcf09f1c703cbfcd5efc",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/probe_progress.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "3ca7ed6860d2326394fdff8da78647f257157dcb01f00018817202a71c285a4d",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/probe_solver_steps.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "7d3a1c4416bf1c6bdd164cde06bff717002e13ba0ea37a52cecbba9fc937080c",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/probe_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "dd9fefcdeb179256807f3c39c91fa3829d8b447bfcc7c858f5acae301af9a8f5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "58ef0fb9e39bbe42684d9aad6aa3f2e5e5142d9b32ce127888a01b881fc67b83",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/probe_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "70f7fef817310b8695c2ef58a29e6b9d5a2cc371386841b4e6b3d16b5cbac25c",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/probe_extent_solver.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "dbdfde625cb0c50dd9d50f02a9a857bfaaac872d70f13adc8b6d0f286382ba36",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/probe_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "1f5960adabea3a93359a39e76b229a7a52047d39e50415145da4de78d46ecfa3",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/probe_progress.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "e23589e0dbd46af70e31543a655713ab26fed7f0f5182ebd562379200e99d199",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/probe_solver_steps.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "84708e59c1bb71934fc1ab279f24a6e13b7021196fac5c1e9c7c23f02f7b3423",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/probe_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "880816e5b9b971d4dd86fbe2f53845f18e744e07de7573f9e2a8b23fe27064cf",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "fd4368957cd996031dee1828102e6e5b4d2724adf6ee65039b9418d545c2ba9c",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_checkpoint.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "b87b4f212b8f440ee06f20929c6c31822274862cf012b213db9b33e1f684ad8f",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_extent_solver.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "de20577df2b3e0749e3cdddf8843737c077869caaf50b140ec757356cdd990fb",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_ledgers.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "df8acd24a28594cf2247c9e4a9622624f306ddfb29a3b9277dd0dfcfe2c0b508",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_progress.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "c34da3bdbe08454d9636805e70f6c71709ca29153cb902e7f09417bd005b04e5",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_solver_steps.csv",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "543924b1866ef5dbaa500d7cecb1708101ed6bc901887fca5e1ddf04432448dc",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_state.npz",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "f547db93b9eb0f4a363a358b5b1e44bb45471aad8cfa15a1a64fbb4f270cc04d",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/result.json",
+      "type": "SOURCE_OR_FROZEN_EVIDENCE",
+      "confidence": "EXTRACTED",
+      "sha256": "c38c7c434963c9fa12ee814a62c24b116e26a5edb02f8e16d52ab301daad4a58",
+      "freshness": "FROZEN_PRE_R5_SNAPSHOT"
+    },
+    {
+      "id": "R5_CK",
+      "type": "INTERPRETATION",
+      "confidence": "INFERRED",
+      "status": [
+        "CK_FAST_SUBSYSTEM_STRUCTURE_VERIFIED",
+        "CK_CRITICAL_MANIFOLD_ANALYTICALLY_DEFINED",
+        "CK_FAST_LAYER_ATTRACTING_ON_TESTED_DOMAIN",
+        "CK_SINGULAR_LIMIT_CONSISTENT",
+        "CK_ETA1_ACCURACY_DESCRIPTIVE",
+        "CK_REDUCTION_NOT_YET_PROMOTED"
+      ]
+    },
+    {
+      "id": "R5_GLYRS",
+      "type": "INTERPRETATION",
+      "confidence": "INFERRED",
+      "status": "ZERO_ORDER_GRAPH_ERROR_NOT_EXPLAINED_BY_LOCAL_TRANSVERSE_FORCING"
+    },
+    {
+      "id": "R5_BALANCE",
+      "type": "INTERPRETATION",
+      "confidence": "INFERRED",
+      "status": "MIXED / UNRESOLVED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/baseline_all_species_comparison.csv",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/baseline_comparison.npz",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/baseline_original_parameter_comparison.csv",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/baseline_source_general_conservation.csv",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/coordinate_map.npz",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/critical_manifold_verification.json",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/energy_regeneration_net_conversion.csv",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/eta_scan_summary.json",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/fast_layer_stability.csv",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/fast_left_nullspace.csv",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/independent_projected_flow_crosscheck.csv",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/independent_root_crosscheck.csv",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/initial_layer_comparison.csv",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/initial_layer_definition.json",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/obsolete_attempt_stops.json",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/reaction_definition.csv",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/singular_eta_scan.csv",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/slow_forcing_of_fast_totals.csv",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/ck/structure_summary.json",
+      "target": "R5_CK",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/condition_predictor_comparison.csv",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/feedback_term.csv",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/independent_derivative_crosscheck.csv",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/lag_predictor_comparison.csv",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/lag_predictor_summary.csv",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/R3_ATP_LOW_operators.npz",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/R3_BASE_operators.npz",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/R3_GLY_LOW_operators.npz",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/R3_GLYRS_HIGH_operators.npz",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/R3_GLYRS_LOW_operators.npz",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/R3_MET_LOW_operators.npz",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/R3_METRS_HIGH_operators.npz",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/R3_METRS_LOW_operators.npz",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/R3_TRNA_LOW_operators.npz",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/summary.json",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/glyrs/transverse_operator.csv",
+      "target": "R5_GLYRS",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/balance/balance_decomposition.csv",
+      "target": "R5_BALANCE",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/balance/balance_decomposition_summary.json",
+      "target": "R5_BALANCE",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/balance/reconstructed_full_state_accounting.csv",
+      "target": "R5_BALANCE",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "results/reduction/r5_mechanism_first/balance/source_general_law_drift.csv",
+      "target": "R5_BALANCE",
+      "relation": "SUPPORTS_DESCRIPTIVE_INTERPRETATION",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "docs/audit/pnas2017_aminoacylation_reduction_v1/binit_v1r2_matrix.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "docs/reduction/conservation_laws_v0.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "docs/reduction/r3_carrier_chart_v1.json",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "docs/reduction/r4_fast_block_candidates_v1.json",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "docs/reduction/source_coordinate_certificate_v4.json",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "models/pnas2017_full_reference/audit/reactions.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_ATP_LOW/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_ATP_LOW/full_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_GLY_LOW/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_GLY_LOW/full_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_MET_LOW/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_MET_LOW/full_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_METRS_HIGH/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_METRS_HIGH/full_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_TRNA_LOW/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/restart_001/R3_TRNA_LOW/full_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/run_001/R3_BASE/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/run_001/R3_BASE/full_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/run_001/R3_GLYRS_HIGH/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/run_001/R3_GLYRS_HIGH/full_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/run_001/R3_GLYRS_LOW/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/run_001/R3_GLYRS_LOW/full_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/run_001/R3_METRS_LOW/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r3_aminoacylation_qssa/run_001/R3_METRS_LOW/full_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/directed_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/manifold_geometry.csv",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/primary_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/primary_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/result.json",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/source_manifold_geometry.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/state_trajectories.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/uncertainty_reduced_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_ATP_LOW/uncertainty_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/directed_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/manifold_geometry.csv",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/primary_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/primary_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/result.json",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/source_manifold_geometry.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/state_trajectories.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/uncertainty_reduced_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_BASE/uncertainty_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/directed_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/manifold_geometry.csv",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/primary_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/primary_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/result.json",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/source_manifold_geometry.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/state_trajectories.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/uncertainty_reduced_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLY_LOW/uncertainty_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/directed_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/manifold_geometry.csv",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/primary_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/primary_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/result.json",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/source_manifold_geometry.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/state_trajectories.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/uncertainty_reduced_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_HIGH/uncertainty_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/directed_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/manifold_geometry.csv",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/primary_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/primary_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/result.json",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/source_manifold_geometry.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/state_trajectories.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/uncertainty_reduced_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_GLYRS_LOW/uncertainty_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/directed_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/manifold_geometry.csv",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/primary_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/primary_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/result.json",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/source_manifold_geometry.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/state_trajectories.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/uncertainty_reduced_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_MET_LOW/uncertainty_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/directed_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/manifold_geometry.csv",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/primary_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/primary_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/result.json",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/source_manifold_geometry.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/state_trajectories.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/uncertainty_reduced_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_HIGH/uncertainty_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/directed_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/manifold_geometry.csv",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/primary_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/primary_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/result.json",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/source_manifold_geometry.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/state_trajectories.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/uncertainty_reduced_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_METRS_LOW/uncertainty_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/directed_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/manifold_geometry.csv",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/primary_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/primary_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/result.json",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/source_manifold_geometry.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/state_trajectories.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/uncertainty_reduced_ledgers.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/glyrs_only/R3_TRNA_LOW/uncertainty_reduced_state.npz",
+      "target": "R5_GLYRS",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/manifold_geometry.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/primary_reduced_checkpoint.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/primary_reduced_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/result.json",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/source_manifold_geometry.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/state_trajectories.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/uncertainty_reduced_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_ATP_LOW/uncertainty_reduced_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/manifold_geometry.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/primary_reduced_checkpoint.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/primary_reduced_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/result.json",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/source_manifold_geometry.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/state_trajectories.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/uncertainty_reduced_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_BASE/uncertainty_reduced_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/manifold_geometry.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/primary_reduced_checkpoint.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/primary_reduced_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/result.json",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/source_manifold_geometry.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/state_trajectories.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/uncertainty_reduced_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLY_LOW/uncertainty_reduced_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/manifold_geometry.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/primary_reduced_checkpoint.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/primary_reduced_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/result.json",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/source_manifold_geometry.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/state_trajectories.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/uncertainty_reduced_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_HIGH/uncertainty_reduced_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/manifold_geometry.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/primary_reduced_checkpoint.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/primary_reduced_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/result.json",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/source_manifold_geometry.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/state_trajectories.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/uncertainty_reduced_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_GLYRS_LOW/uncertainty_reduced_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/manifold_geometry.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/primary_reduced_checkpoint.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/primary_reduced_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/result.json",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/source_manifold_geometry.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/state_trajectories.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/uncertainty_reduced_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_MET_LOW/uncertainty_reduced_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/manifold_geometry.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/primary_reduced_checkpoint.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/primary_reduced_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/result.json",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/source_manifold_geometry.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/state_trajectories.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/uncertainty_reduced_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_HIGH/uncertainty_reduced_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/manifold_geometry.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/primary_reduced_checkpoint.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/primary_reduced_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/result.json",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/source_manifold_geometry.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/state_trajectories.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/uncertainty_reduced_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_METRS_LOW/uncertainty_reduced_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/directed_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/manifold_geometry.csv",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/primary_reduced_checkpoint.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/primary_reduced_state.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/result.json",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/source_manifold_geometry.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/state_trajectories.npz",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/uncertainty_reduced_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/uncertainty_reduced_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/metrs_only/R3_TRNA_LOW/uncertainty_reduced_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_reuse_verification.json",
+      "target": "R5_CK",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_extent_solver.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_progress.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_solver_steps.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/probe_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_ATP_LOW/result.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_extent_solver.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_progress.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_solver_steps.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/probe_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_BASE/result.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/probe_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/probe_extent_solver.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/probe_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/probe_progress.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/probe_solver_steps.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/probe_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLY_LOW/result.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/probe_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/probe_extent_solver.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/probe_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/probe_progress.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/probe_solver_steps.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/probe_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_HIGH/result.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/probe_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/probe_extent_solver.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/probe_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/probe_progress.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/probe_solver_steps.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/probe_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_GLYRS_LOW/result.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/probe_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/probe_extent_solver.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/probe_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/probe_progress.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/probe_solver_steps.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/probe_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_MET_LOW/result.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/probe_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/probe_extent_solver.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/probe_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/probe_progress.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/probe_solver_steps.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/probe_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_HIGH/result.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/probe_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/probe_extent_solver.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/probe_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/probe_progress.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/probe_solver_steps.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/probe_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_METRS_LOW/result.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_checkpoint.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_extent_solver.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_ledgers.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_progress.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_solver_steps.csv",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/probe_state.npz",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "results/reduction/r4_fast_block_screen/source_uncertainty/R3_TRNA_LOW/result.json",
+      "target": "R5_BALANCE",
+      "relation": "USED_SOURCE_EVIDENCE",
+      "confidence": "EXTRACTED"
+    }
+  ]
+}

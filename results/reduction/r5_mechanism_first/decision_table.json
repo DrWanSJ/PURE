@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "Is CK partial-equilibrium singular limit mathematically coherent?",
+      "answer": "Yes for the declared binding subsystem and physical frozen-total domain; full-PURE uniform theorem hypotheses remain open.",
+      "evidence": "ck/structure_summary.json; CK theory derivations"
+    },
+    {
+      "question": "Does error decrease as eta tends to zero?",
+      "answer": "CK_SINGULAR_LIMIT_CONSISTENT",
+      "evidence": "ck/singular_eta_scan.csv"
+    },
+    {
+      "question": "Is eta=1 accurate enough to justify formal broader validation?",
+      "answer": "No promotion decision. Baseline state and slow-total accuracy is descriptive; numerical budgets, flux reconstruction and broader conditions require human review.",
+      "evidence": "ck/baseline_original_parameter_comparison.csv"
+    },
+    {
+      "question": "Does feedback-aware GlyRS predictor substantially improve R4 lag explanation?",
+      "answer": "7/9 improve; baseline approximately halves error, high GlyRS strongly improves, low GlyRS and low tRNA worsen. Local feedback does not explain every condition.",
+      "evidence": "glyrs/condition_predictor_comparison.csv"
+    },
+    {
+      "question": "Is R4 balance uncertainty mostly ledger numerics or a real reduced accounting problem?",
+      "answer": "Tight-ledger sensitivity exceeds summation-only changes, with no exact-law failure observed. Full reconstructed ledgers require algebraic redistribution. State/dense/extent attribution remains mixed/unresolved.",
+      "evidence": "balance/balance_decomposition_summary.json; reconstructed_full_state_accounting.csv"
+    }
+  ],
+  "recommendation": "FIX_BALANCE_ACCOUNTING_BEFORE_ANY_NEW_REDUCTION",
+  "role": "EVIDENCE_FOR_HUMAN_REVIEW_ONLY",
+  "next_stage_executed": false,
+  "scientific_status": {
+    "CK": [
+      "CK_FAST_SUBSYSTEM_STRUCTURE_VERIFIED",
+      "CK_CRITICAL_MANIFOLD_ANALYTICALLY_DEFINED",
+      "CK_FAST_LAYER_ATTRACTING_ON_TESTED_DOMAIN",
+      "CK_SINGULAR_LIMIT_CONSISTENT",
+      "CK_ETA1_ACCURACY_DESCRIPTIVE",
+      "CK_REDUCTION_NOT_YET_PROMOTED"
+    ],
+    "GlyRS": "ZERO_ORDER_GRAPH_ERROR_NOT_EXPLAINED_BY_LOCAL_TRANSVERSE_FORCING",
+    "balance": "MIXED / UNRESOLVED"
+  }
+}
