@@ -6,7 +6,7 @@ Old active bodies were copied exactly to docs/legacy/mavelli2015/. Frozen origin
 archive tag and pre-PNAS snapshot remain unchanged. No files are moved or deleted.
 Historical CHANGELOG.md and environment_lock.md are preserved; this successor record and current environment document carry the new change.
 Current published-figure status PAUSED_NOT_ESTABLISHED; experiments NOT_ESTABLISHED; reduced model NOT_VALIDATED;968 decisions PENDING.
-Required checks and exact results are recorded in the external validation report and verification_report.md after execution.
+Required checks and exact results are recorded in the external validation report and [verification report](verification_report.md).
 No kinetic/model/scientific promotion is part of this migration.
 
 The first qualification ran21 checks successfully but rejected a historical report rewrite. The current integration verifier
