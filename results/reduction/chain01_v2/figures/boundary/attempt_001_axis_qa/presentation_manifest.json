@@ -1,0 +1,47 @@
+{
+  "source_summary_sha256": "3b2edb783368af6deec89c6c6770a9b87fd71b395efaf7967cfc6f3a1143c6b2",
+  "source_allocation_csv_sha256": "5abb97093621d6dcaa0796416b328450d70f0eaadd5b1ae815869a4aa8db2476",
+  "no_numerical_rerun": true,
+  "artifacts": [
+    {
+      "path": "results/reduction/chain01_v2/figures/boundary/attempt_001_axis_qa/01_product_trajectory_comparison.png",
+      "sha256": "6f2cb296cd706317a03bc0ae1dd4345f523befb6a1bbf43327d6ab8e6c37444f"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/boundary/attempt_001_axis_qa/02_product_flux_comparison.png",
+      "sha256": "5db89248e59900927ee053389a989cdb320d94d4c9b13dd829c5aec07b07fa00"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/boundary/attempt_001_axis_qa/03_pi_release_comparison.png",
+      "sha256": "e53452ade0f3ab4e4ad57241b4c9989306eeb53f552eeb6a6cb2bab168f399e4"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/boundary/attempt_001_axis_qa/04_eftu_gdp_release_comparison.png",
+      "sha256": "4cf89bec81746aac8f3e492d77cc6797cae354d8f7a82176dccdd39920100491"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/boundary/attempt_001_axis_qa/05_internal_occupancy_comparison.png",
+      "sha256": "87f3ff3a1fdbf712ffbeec1c240cea26af1af12e091dddb94137ee717c3ca9a7"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/boundary/attempt_001_axis_qa/06_long_time_output_comparison.png",
+      "sha256": "1a9ee775b990ee6417c48cf37359072ac368afe4a3610e0cb67c001c1bc0ad51"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/boundary/attempt_001_axis_qa/07_slow_input_response.png",
+      "sha256": "baabd1442ed1086dcb1ea560f5373a047ac03a385cdd7daaafb1d141c48c714a"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/boundary/attempt_001_axis_qa/08_resource_ledger_error.png",
+      "sha256": "40e95b30c2b01edd48f25896d6733b489235fbf0e78e8ad9e23e61bf1ab84732"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/boundary/attempt_001_axis_qa/09_complexity_accuracy_tradeoff.png",
+      "sha256": "4f2dc9b8e51b746867d727032ebecec1bddb49684da320c26e6e8b67c4bb1c85"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/boundary/attempt_001_axis_qa/10_competing_boundary_allocation.png",
+      "sha256": "e8e79b47330942b7056837132c975eb574808ea35a91b9cdc41601f8086566b8"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Pin only new V2 implementation files; historical files keep their own rules.
+prepare_chain01_v2.py text eol=lf
+deliver_chain01_v2.py text eol=lf
+validate_chain01_v2.py text eol=lf
+report_chain01_v2.py text eol=lf
+maintain_chain01_v2_artifacts.py text eol=lf

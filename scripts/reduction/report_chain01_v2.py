@@ -61,10 +61,12 @@ def make(final=False):
             'Three-stage: retain S0→S1 and S1→S2+Pi at source rates; S2→S4+EF-Tu.GDP uses kb.',
             'For every model: z0′=u−J0, zi′=J(i−1)−Ji, S4′=Jlast, xi_i′=Ji with Ji=ki zi. '+
             'Pi/GDP currents and extents are read from the designated release stages. All candidate columns equal their exact sums of source columns; all net differences are exactly zero.',
+            'GDP current/extent denotes release of the source EF-Tu.GDP complex (`EFTu_GDP`); bound GDP is its ribosome-associated inventory. Pi uses the source `PO4` species. '+
+            'Escaped GTP inventory belongs to the intact loaded carrier `EFTu_GTP_GlytRNAGlyGCC`.',
             'When re21 is restored, subtract c*z0 from z0′ and add it independently to both exact source products and xi21. c=0.23; no sink or invented chemical product is used.','']
     table(lines,['Model','Chain reactions','Chemical states including S4','Transient states','Extent counters','Mean wait','Variance'],[
         [name,r['reaction_count'],r['chemical_state_count'],r['transient_state_count'],r['extent_counter_count'],number(float(F(r['mean_residence_exact']))),number(float(F(r['variance_exact'])))] for name,r in cert['models'].items()])
-    lines+=['Free Pi/GDP are read from extents. R2 adds two explicit source product amounts and one re21 extent to every model. '+
+    lines+=['Released Pi and EF-Tu.GDP are read from extents. R2 adds two explicit source product amounts and one re21 extent to every model. '+
             'The input and its integral are experiment-driver coordinates, not intrinsic reaction states. These accounting dimensions are not hidden in the reaction/state reduction claim.',
             'All mean-dwell matches are approximate Markov candidates. Waiting variances differ; equal steady current or final cohort yield alone does not establish dynamic equivalence.','',
             '## Frozen experiments and budgets','',
@@ -89,7 +91,7 @@ def make(final=False):
     table(lines,['Phase','Numerical','Independent','Max state/extent vs expm','Max current vs expm','Max fate residual','Max 70-digit checkpoint error'],rows)
     lines+=['Primary Radau (1e-10,1e-12), tighter Radau (1e-12,1e-14), augmented dense expm and independent source-rebuilt exact rational Laplace residues at 70 digits are compared. '+
             'Repeated rate-1000 poles are treated explicitly. All-grid currents and fate identities, required-window scores, exact candidate source-column sums, waiting-time resolvent moments and artifact hashes are checked.',
-            'No negative clipping, state projection or parameter fitting was used. '+str(integrity['protected_file_count'])+' preexisting tracked files retain their raw byte fingerprints. V1 remains LOCAL_CANDIDATE_FAILED_REGISTERED_SCREEN.','',
+            'No negative clipping, dynamic conservation projection or parameter fitting was used. The negative control uses only its explicitly registered initial-coordinate projection. '+str(integrity['protected_file_count'])+' preexisting tracked files retain their raw byte fingerprints. V1 remains LOCAL_CANDIDATE_FAILED_REGISTERED_SCREEN.','',
             '## Long-time product and resource scores','']
     for phase,s in [('base',base)]+([('boundary',boundary)] if final else []):
         lines+=['### '+phase,'']
@@ -117,8 +119,8 @@ def make(final=False):
              number(endpoint['bound_gdp']['signed_absolute'])])
     table(lines,['Model','Analytic S4 offset','Analytic Pi offset','Analytic GDP offset','Pi offset at 10000tau','Pi / fixed scale','Pi cumulative-relative','Bound GDP offset'],rows)
     lines+=['Direct has a persistent Pi deficit despite a shrinking cumulative percentage. Two-stage preserves the mean Pi-release delay but reallocates bound Pi to a longer GTP precursor residence. '+
-            'Three-stage preserves hydrolysis and Pi release exactly in these local tests; combining EF-Tu departure with extension delays free GDP and adds bound GDP by approximately u/1000. '+
-            'Both coarse multi-stage models have a nonzero free-GDP deficit; it is measured against the fixed resource scale.','',
+            'Three-stage preserves hydrolysis and Pi release exactly in these local tests; combining EF-Tu departure with extension delays EF-Tu.GDP release and adds its bound inventory by approximately u/1000. '+
+            'Both coarse multi-stage models have a nonzero released EF-Tu.GDP deficit; it is measured against the fixed resource scale.','',
             '## Applicability and failure mechanisms','']
     if final:
         rows=[]
@@ -128,6 +130,19 @@ def make(final=False):
             rows.append([name,number(alloc['completion_probability']),number(alloc['escape_probability']),number(alloc['completion_relative_error']),number(alloc['escape_relative_error']),
                          number(endpoint['product_extent']['fixed_scale_signed']),number(endpoint['product_extent']['relative_absolute']),alloc['status']])
         table(lines,['Model','Success p','Escape q','p relative error','q relative error','10000tau S4 error / fixed scale','10000tau S4 cumulative-relative','Allocation support'],rows)
+        analytic=load(OUT/'boundary_analytical_certificate.json')
+        lines+=['For each successful resource event R, xi_R=u*p*(t-d_R)+o(1), with d_R the conditional mean delay through that release event. '+
+                'Each undocked product accumulates as u*q*(t-1/(k_in+c))+o(1). '+
+                'Candidate-minus-Full cumulative error is therefore a slope term u*(p_candidate-p_Full)*t plus an explicit intercept; a pure constant offset exists only when those slopes match.','']
+        rows=[]
+        for name,rec in analytic['models'].items():
+            asym=rec['candidate_minus_full_cumulative_success_asymptote_exact']
+            rows.append([name,number(float(F(rec['steady_product_pi_gdp_current_per_unit_input_exact']))),
+                number(float(F(rec['mean_until_success_or_escape_exact']))),number(float(F(rec['conditional_success_mean_exact']))),
+                number(float(F(asym['product']['slope_per_unit_input'])))]+[number(float(F(asym[key]['intercept_per_unit_input']))) for key in ('product','pi','gdp')])
+        table(lines,['Model','Success current/u','Mean residence to either exit','Conditional success mean','Common success-extent slope error/u','S4 intercept/u','Pi intercept/u','EF-Tu.GDP intercept/u'],rows)
+        lines+=['Exact rational source-derived currents, bound inventories and slope/intercept coefficients, checked against the saved 10000tau endpoints, are in '+
+                '[boundary_analytical_certificate.json](../../results/reduction/chain01_v2/boundary_analytical_certificate.json).','']
         lines+=['re21 produces `EFTu_GTP_GlytRNAGlyGCC` and `elRS70SAGGU0002_fMet`. Both are explicit local output reservoirs; neither is called a bare sink or a free ribosome. '+
                 'The escaped loaded carrier retains its GTP, Tu and Gly-tRNA cargo. Source re13 rebinding is not restored in this open boundary test.',
                 'p=k_in/(k_in+c), q=c/(k_in+c). Two-stage changes k_in from 260 to ka, hence the race with undocking; the small instantaneous yield-rate bias accumulates during sustained input. '+
@@ -142,7 +157,7 @@ def make(final=False):
                 number(rec['metrics']['early_0_10']['pi_current']['max_normalized']),number(end['gdp_extent']['signed_absolute']),str(rec['initial_resource_mapping_difference'])])
     table(lines,['Control','Model','Prospective domain','Early product-current error','Early Pi-current error','Final GDP extent difference','Initial ledger projection difference'],rows)
     lines+=['Fast rectangular inputs remain negative controls even when some late measures pass. Arbitrary initial internal mixtures cannot be reconstructed from the retained coordinates. '+
-            'In the initial-inventory control, Three-stage adds 0.25 bound GDP equivalents by assigning initially Tu-free S3 to a GDP-bound reservoir; the subsequent free-GDP extent differs by 0.25. '+
+            'In the initial-inventory control, Three-stage adds 0.25 bound GDP equivalents by assigning initially Tu-free S3 to a GDP-bound reservoir; the subsequent released EF-Tu.GDP extent differs by 0.25. '+
             'This excludes a general nonzero-internal-inventory claim.',
             'Supported input evidence is confined to the declared pulse late windows, steady supply, and the three tested slow supply ratios. All source rates and internal zero side paths are fixed. '+
             'There is no full ATP/GTP shared-pool concentration validation or demonstration of safe arbitrary upstream/downstream coupling.','']
@@ -155,7 +170,8 @@ def make(final=False):
         '`python scripts/reduction/validate_chain01_v2.py`; `python scripts/tests/verify_chain01_v2.py`'+
         ('; `python scripts/reduction/validate_chain01_v2.py --boundary`; `python scripts/tests/verify_chain01_v2.py --boundary`.' if final else '.'),
         'Each completed round runs diff checks, commit, explicit push and live `git ls-remote` confirmation. Exact payload SHA receipts and verification times are in '+
-        '[git_delivery_manifest.json](../../results/reduction/chain01_v2/git_delivery_manifest.json). The receipt is committed subsequently to avoid a circular self hash.','']
+        '[git_delivery_manifest.json](../../results/reduction/chain01_v2/git_delivery_manifest.json). The receipt is committed subsequently to avoid a circular self hash.',
+        'After final delivery, [round_execution_manifest.json](../../results/reduction/chain01_v2/round_execution_manifest.json) records the work, actual commands, tests, file lists, delivery SHAs and remaining scientific limits for each round.','']
     for title,path in [('Frozen protocol',CONFIG),('Source manifest',OUT/'source_manifest.json'),('Exact mathematics',OUT/'mathematical_certificate.json'),('Base summary',bd/'validation_summary.json'),('Base independent checks',bd/'independent_verification.json')]+(
                   [('Boundary summary',rd/'validation_summary.json'),('Boundary independent checks',rd/'independent_verification.json')] if final else []):
         lines+=['- ['+title+']('+link(path)+')']

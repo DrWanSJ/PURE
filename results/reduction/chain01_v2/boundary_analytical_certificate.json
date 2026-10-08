@@ -1,0 +1,247 @@
+{
+  "provenance": "INFERRED_EXACT_SOURCE_DERIVATION",
+  "source_manifest_sha256": "bf80c6e4ee7f3d6540084083bdef0f4cf530d951965b6bcd6762de4fb33ca2da",
+  "c_exact": "23/100",
+  "time_unit": "source model time unit; no seconds interpretation",
+  "models": {
+    "Full": {
+      "completion_probability_exact": "26000/26023",
+      "escape_probability_exact": "23/26023",
+      "conditional_release_delay_exact": {
+        "product": "13543661/91080500",
+        "pi": "126023/26023000",
+        "gdp": "26905161/182161000"
+      },
+      "unit_input_steady_inventory_exact": {
+        "bound_pi": "26/26023",
+        "bound_gdp": "494/3437",
+        "bound_gtp": "100/26023",
+        "tu_bound": "26882/182161",
+        "phosphate_unreleased": "126/26023",
+        "unfinished": "27064/182161"
+      },
+      "steady_product_pi_gdp_current_per_unit_input_exact": "26000/26023",
+      "steady_return_current_per_unit_input_exact": "23/26023",
+      "mean_until_success_or_escape_exact": "27064/182161",
+      "conditional_success_mean_exact": "13543661/91080500",
+      "return_delay_exact": "100/26023",
+      "cumulative_success_rule": "xi_R=u*p*(t-d_R)+o(1); R=product, Pi, or released EF-Tu.GDP",
+      "cumulative_return_rule": "each source re21 product = u*q*(t-1/(k_in+c))+o(1)",
+      "candidate_minus_full_cumulative_success_asymptote_exact": {
+        "product": {
+          "slope_per_unit_input": "0",
+          "intercept_per_unit_input": "0"
+        },
+        "pi": {
+          "slope_per_unit_input": "0",
+          "intercept_per_unit_input": "0"
+        },
+        "gdp": {
+          "slope_per_unit_input": "0",
+          "intercept_per_unit_input": "0"
+        }
+      },
+      "candidate_minus_full_return_asymptote_exact": {
+        "slope_per_unit_input": "0",
+        "intercept_per_unit_input": "0"
+      }
+    },
+    "Direct": {
+      "completion_probability_exact": "2275000/2352809",
+      "escape_probability_exact": "77809/2352809",
+      "conditional_release_delay_exact": {
+        "product": "338300/2352809",
+        "pi": "338300/2352809",
+        "gdp": "338300/2352809"
+      },
+      "unit_input_steady_inventory_exact": {
+        "bound_pi": "0",
+        "bound_gdp": "0",
+        "bound_gtp": "338300/2352809",
+        "tu_bound": "338300/2352809",
+        "phosphate_unreleased": "338300/2352809",
+        "unfinished": "338300/2352809"
+      },
+      "steady_product_pi_gdp_current_per_unit_input_exact": "2275000/2352809",
+      "steady_return_current_per_unit_input_exact": "77809/2352809",
+      "mean_until_success_or_escape_exact": "338300/2352809",
+      "conditional_success_mean_exact": "338300/2352809",
+      "return_delay_exact": "338300/2352809",
+      "cumulative_success_rule": "xi_R=u*p*(t-d_R)+o(1); R=product, Pi, or released EF-Tu.GDP",
+      "cumulative_return_rule": "each source re21 product = u*q*(t-1/(k_in+c))+o(1)",
+      "candidate_minus_full_cumulative_success_asymptote_exact": {
+        "product": {
+          "slope_per_unit_input": "-1970709000/61227148607",
+          "intercept_per_unit_input": "250289471895097228932/26241346085805634283143"
+        },
+        "pi": {
+          "slope_per_unit_input": "-1970709000/61227148607",
+          "intercept_per_unit_input": "-503054160666882836362/3748763726543662040449"
+        },
+        "gdp": {
+          "slope_per_unit_input": "-1970709000/61227148607",
+          "intercept_per_unit_input": "224071318790883783466/26241346085805634283143"
+        }
+      },
+      "candidate_minus_full_return_asymptote_exact": {
+        "slope_per_unit_input": "1970709000/61227148607",
+        "intercept_per_unit_input": "-17812966299016200000/3748763726543662040449"
+      }
+    },
+    "Two-stage": {
+      "completion_probability_exact": "1300000/1301449",
+      "escape_probability_exact": "1449/1301449",
+      "conditional_release_delay_exact": {
+        "product": "1354659143/9110143000",
+        "pi": "6300/1301449",
+        "gdp": "1354659143/9110143000"
+      },
+      "unit_input_steady_inventory_exact": {
+        "bound_pi": "0",
+        "bound_gdp": "1309100/9110143",
+        "bound_gtp": "6300/1301449",
+        "tu_bound": "1353200/9110143",
+        "phosphate_unreleased": "6300/1301449",
+        "unfinished": "1353200/9110143"
+      },
+      "steady_product_pi_gdp_current_per_unit_input_exact": "1300000/1301449",
+      "steady_return_current_per_unit_input_exact": "1449/1301449",
+      "mean_until_success_or_escape_exact": "1353200/9110143",
+      "conditional_success_mean_exact": "1354659143/9110143000",
+      "return_delay_exact": "6300/1301449",
+      "cumulative_success_rule": "xi_R=u*p*(t-d_R)+o(1); R=product, Pi, or released EF-Tu.GDP",
+      "cumulative_return_rule": "each source re21 product = u*q*(t-1/(k_in+c))+o(1)",
+      "candidate_minus_full_cumulative_success_asymptote_exact": {
+        "product": {
+          "slope_per_unit_input": "-7774000/33867607327",
+          "intercept_per_unit_input": "290065063221080472/8029103782391048594503"
+        },
+        "pi": {
+          "slope_per_unit_input": "-7774000/33867607327",
+          "intercept_per_unit_input": "3562182343637398/1147014826055864084929"
+        },
+        "gdp": {
+          "slope_per_unit_input": "-7774000/33867607327",
+          "intercept_per_unit_input": "-7731942328016181314/8029103782391048594503"
+        }
+      },
+      "candidate_minus_full_return_asymptote_exact": {
+        "slope_per_unit_input": "7774000/33867607327",
+        "intercept_per_unit_input": "-2286254105200000/1147014826055864084929"
+      }
+    },
+    "Three-stage": {
+      "completion_probability_exact": "26000/26023",
+      "escape_probability_exact": "23/26023",
+      "conditional_release_delay_exact": {
+        "product": "13543661/91080500",
+        "pi": "126023/26023000",
+        "gdp": "13543661/91080500"
+      },
+      "unit_input_steady_inventory_exact": {
+        "bound_pi": "26/26023",
+        "bound_gdp": "26364/182161",
+        "bound_gtp": "100/26023",
+        "tu_bound": "27064/182161",
+        "phosphate_unreleased": "126/26023",
+        "unfinished": "27064/182161"
+      },
+      "steady_product_pi_gdp_current_per_unit_input_exact": "26000/26023",
+      "steady_return_current_per_unit_input_exact": "23/26023",
+      "mean_until_success_or_escape_exact": "27064/182161",
+      "conditional_success_mean_exact": "13543661/91080500",
+      "return_delay_exact": "100/26023",
+      "cumulative_success_rule": "xi_R=u*p*(t-d_R)+o(1); R=product, Pi, or released EF-Tu.GDP",
+      "cumulative_return_rule": "each source re21 product = u*q*(t-1/(k_in+c))+o(1)",
+      "candidate_minus_full_cumulative_success_asymptote_exact": {
+        "product": {
+          "slope_per_unit_input": "0",
+          "intercept_per_unit_input": "0"
+        },
+        "pi": {
+          "slope_per_unit_input": "0",
+          "intercept_per_unit_input": "0"
+        },
+        "gdp": {
+          "slope_per_unit_input": "0",
+          "intercept_per_unit_input": "-26/26023"
+        }
+      },
+      "candidate_minus_full_return_asymptote_exact": {
+        "slope_per_unit_input": "0",
+        "intercept_per_unit_input": "0"
+      }
+    }
+  },
+  "saved_long_endpoint_checks": {
+    "Full": {
+      "product": {
+        "predicted_signed_offset_at_10000tau": 0.0,
+        "saved_signed_offset": 0.0,
+        "discrepancy": 0.0
+      },
+      "pi": {
+        "predicted_signed_offset_at_10000tau": 0.0,
+        "saved_signed_offset": 0.0,
+        "discrepancy": 0.0
+      },
+      "gdp": {
+        "predicted_signed_offset_at_10000tau": 0.0,
+        "saved_signed_offset": 0.0,
+        "discrepancy": 0.0
+      }
+    },
+    "Direct": {
+      "product": {
+        "predicted_signed_offset_at_10000tau": -47.85336790429327,
+        "saved_signed_offset": -47.85336790429278,
+        "discrepancy": 4.902744876744691e-13
+      },
+      "pi": {
+        "predicted_signed_offset_at_10000tau": -47.99709790138375,
+        "saved_signed_offset": -47.99709790138263,
+        "discrepancy": 1.1226575225009583e-12
+      },
+      "gdp": {
+        "predicted_signed_offset_at_10000tau": -47.85436702045974,
+        "saved_signed_offset": -47.854367020458085,
+        "discrepancy": 1.6555645743210334e-12
+      }
+    },
+    "Two-stage": {
+      "product": {
+        "predicted_signed_offset_at_10000tau": -0.3412987120422451,
+        "saved_signed_offset": -0.34129871204231677,
+        "discrepancy": 7.166489623955385e-14
+      },
+      "pi": {
+        "predicted_signed_offset_at_10000tau": -0.3413317331357571,
+        "saved_signed_offset": -0.3413317331351209,
+        "discrepancy": 6.36213304261446e-13
+      },
+      "gdp": {
+        "predicted_signed_offset_at_10000tau": -0.34229782820871324,
+        "saved_signed_offset": -0.3422978282076201,
+        "discrepancy": 1.0931255900459291e-12
+      }
+    },
+    "Three-stage": {
+      "product": {
+        "predicted_signed_offset_at_10000tau": 0.0,
+        "saved_signed_offset": -2.2737367544323206e-13,
+        "discrepancy": 2.2737367544323206e-13
+      },
+      "pi": {
+        "predicted_signed_offset_at_10000tau": 0.0,
+        "saved_signed_offset": 9.094947017729282e-13,
+        "discrepancy": 9.094947017729282e-13
+      },
+      "gdp": {
+        "predicted_signed_offset_at_10000tau": -0.0009991161664681244,
+        "saved_signed_offset": -0.0009991161655307224,
+        "discrepancy": 9.374020656927051e-13
+      }
+    }
+  },
+  "scope": "Additional analytic explanation of the already frozen boundary experiment; no gate, initial condition, parameter or trajectory changes."
+}

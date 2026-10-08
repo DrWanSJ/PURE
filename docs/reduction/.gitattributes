@@ -1,0 +1,2 @@
+# New V2 reports only; do not change historical report checkout rules.
+chain01_v2_*.md text eol=lf

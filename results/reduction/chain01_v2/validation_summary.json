@@ -31,8 +31,37 @@
       "macro": "LONG_TIME_MACRO_SUPPORTED"
     }
   },
-  "boundary_decisions": null,
-  "selected_local_model": null,
+  "boundary_decisions": {
+    "Full": {
+      "numerical": "PASS",
+      "product": "PRODUCT_OUTPUT_SUPPORTED",
+      "resources": "RESOURCE_LEDGER_SUPPORTED",
+      "boundary": "LOCAL_BOUNDARY_SUPPORTED",
+      "macro": "LONG_TIME_MACRO_SUPPORTED"
+    },
+    "Direct": {
+      "numerical": "PASS",
+      "product": "NOT_SUPPORTED",
+      "resources": "NOT_SUPPORTED",
+      "boundary": "NOT_SUPPORTED",
+      "macro": "NOT_SUPPORTED"
+    },
+    "Two-stage": {
+      "numerical": "PASS",
+      "product": "NOT_SUPPORTED",
+      "resources": "NOT_SUPPORTED",
+      "boundary": "NOT_SUPPORTED",
+      "macro": "NOT_SUPPORTED"
+    },
+    "Three-stage": {
+      "numerical": "PASS",
+      "product": "PRODUCT_OUTPUT_SUPPORTED",
+      "resources": "RESOURCE_LEDGER_SUPPORTED",
+      "boundary": "LOCAL_BOUNDARY_SUPPORTED",
+      "macro": "LONG_TIME_MACRO_SUPPORTED"
+    }
+  },
+  "selected_local_model": "Three-stage",
   "condition_domain": {
     "zero_initial_internal_required": true,
     "author_rates_only": true,
@@ -52,5 +81,5 @@
     "protected_file_count": 1737,
     "binding_count": 6
   },
-  "report": "docs/reduction/chain01_v2_base_validation_report.md"
+  "report": "docs/reduction/chain01_v2_validation_report.md"
 }

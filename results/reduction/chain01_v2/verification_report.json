@@ -2,8 +2,8 @@
   "status": "PASS",
   "base_numerical": "PASS",
   "base_independent": "PASS",
-  "boundary_numerical": "NOT_STARTED",
-  "boundary_independent": "NOT_STARTED",
+  "boundary_numerical": "PASS",
+  "boundary_independent": "PASS",
   "historical_integrity": {
     "status": "PASS",
     "protected_file_count": 1737,

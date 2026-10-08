@@ -91,17 +91,17 @@
       "id": "configs/reduction/chain01_v2_validation.json",
       "type": "derived_evidence",
       "sha256": "831c747c85b712de2bbb8360477f49cea4e15e6898d573205d3c7eb9c53d1960",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.767302+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.953016+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/mathematical_certificate.json",
       "type": "derived_evidence",
       "sha256": "7f5d1ddf6a2ada0aecb4e81ae099db90f77eb3783a738022b05ce9006651315c",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.768360+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.953016+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/protocol_freeze.json",
@@ -109,47 +109,55 @@
       "sha256": "df16d61c1c7e36d4ce6a3fc2a3cf81917c3cf872419968d76110507809041284",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.768360+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.953016+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/validation_summary.json",
       "type": "derived_evidence",
-      "sha256": "0c844f718800de0f397060c63ad6b63fb81f16c124a83483e63659abb75c894b",
-      "provenance": "EXTRACTED",
+      "sha256": "d2ce3bfc41ce5bfc8aca5bc19f0ebafce90446048cd6696fd46b5b7e6819d43e",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.772964+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.954015+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/verification_report.json",
       "type": "derived_evidence",
-      "sha256": "87651d87a2f67e511206d0e08af826740c5db75367a0f81701003d82d4a4bd6c",
-      "provenance": "EXTRACTED",
+      "sha256": "e9c6603dda11399471e0192000e38a3d2d051adb97acf92feef7cf579ddf0f2e",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.780594+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.955016+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/boundary_analytical_certificate.json",
+      "type": "derived_evidence",
+      "sha256": "28adc6403057ee0c8fc2d84685e79d6c7386d9bca64c0ddec5c43b523d15cbe7",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.955016+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/base/attempt_002/validation_summary.json",
       "type": "derived_evidence",
       "sha256": "7b04a802fccbd399de61a660e82549e9813cc31192b524da202633b7b5d8c858",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.784296+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.958016+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/base/attempt_002/verification_report.json",
       "type": "derived_evidence",
       "sha256": "cf00de80aa85f350a14959584fdd18ff2b637bb66de9feba8e40645e3176b084",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.784296+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.959016+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/base/attempt_002/independent_verification.json",
       "type": "derived_evidence",
       "sha256": "c621eb8dae4acda39521ea8c235c8ee0a6cd862f4e1b9c172ca512eef1349bbf",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.784296+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.959016+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/base/attempt_002/artifact_manifest.json",
@@ -157,7 +165,7 @@
       "sha256": "0af4ed740b0f9216b0a57402007dbc2867a49a253241d570942c2d0402c8a572",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.785303+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.959016+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/A_pulse__Direct.csv.gz",
@@ -165,7 +173,7 @@
       "sha256": "6d871f43a298e455bcd2630e2f58fc94dd6a3d4034c0dd12fc186bea14fb5436",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.785303+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.960016+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/A_pulse__Full.csv.gz",
@@ -173,7 +181,7 @@
       "sha256": "50b4f26b11a3a89312551d36d670adfba5d5d727da72a3f1492584a3efefb130",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.787488+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.961016+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/A_pulse__Three-stage.csv.gz",
@@ -181,7 +189,7 @@
       "sha256": "824f0a56684df6c541669499151e86755f5f0dd069267c73a58f687b31d56f1d",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.788507+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.962521+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/A_pulse__Two-stage.csv.gz",
@@ -189,7 +197,7 @@
       "sha256": "7f3ab630f81fc32bde3f4d8b4401fb3bd010c6a244cf64d40f049d7fa1d72f5e",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.789507+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.963526+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/B_constant__Direct.csv.gz",
@@ -197,7 +205,7 @@
       "sha256": "99d1c706d05dfee526981b1fc6c9ca8a353ae419f915110fe8c8aa585f79ced7",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.789507+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.963526+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/B_constant__Full.csv.gz",
@@ -205,7 +213,7 @@
       "sha256": "b98f242f54bc69969121a3d35434b1097b63db78c43217f2c7d4200c99d87c27",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.791508+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.965531+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/B_constant__Three-stage.csv.gz",
@@ -213,7 +221,7 @@
       "sha256": "8fea2664dfd98efebaca4a05f7cf414216b788da7c74e9ee3948d727abc53cd0",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.792505+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.966531+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/B_constant__Two-stage.csv.gz",
@@ -221,7 +229,7 @@
       "sha256": "6884950516d40c5703e8601e7a5f2daacd5b2b047b77040a04ae331690eea40b",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.793507+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.967531+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/C_slow_1000__Direct.csv.gz",
@@ -229,7 +237,7 @@
       "sha256": "8f1396822ac0bf1603bc6657ed0e905fe19818d67e8700a7cc7050160c843c30",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.794779+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.968531+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/C_slow_1000__Full.csv.gz",
@@ -237,7 +245,7 @@
       "sha256": "8b67c97b9a7de71222988dd2ad542ae8061617c4e58f86059f067e2fe59ec267",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.796788+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.970531+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/C_slow_1000__Three-stage.csv.gz",
@@ -245,7 +253,7 @@
       "sha256": "be8fa1ef4e3e505c58dc8638cfd4217bee500873e87b0c2fd52cdebf6daa126d",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.798787+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.972548+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/C_slow_1000__Two-stage.csv.gz",
@@ -253,7 +261,7 @@
       "sha256": "694a85409d353d461bbf316ef864e79109581573b47c9bf1d083b8da7e247a08",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.799786+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.973552+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/C_slow_100__Direct.csv.gz",
@@ -261,7 +269,7 @@
       "sha256": "5567c8a6749688da6ad83a80e4b74952f914c7aa489ded3c4348d976fc4648d7",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.800794+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.974557+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/C_slow_100__Full.csv.gz",
@@ -269,7 +277,7 @@
       "sha256": "e0f378973806df7026d1b5079cf4bca6692711d68d6aae206d00bfc220d7eba4",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.802811+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.976557+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/C_slow_100__Three-stage.csv.gz",
@@ -277,7 +285,7 @@
       "sha256": "a88086aff08478221aa4ac694e5a2e757e7b50a668fce67ebd250715f836bbaf",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.804811+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.978557+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/C_slow_100__Two-stage.csv.gz",
@@ -285,7 +293,7 @@
       "sha256": "4976de22219395937ae70fda5ca2a2ec55c3ad97df6ce54f4959d368a653f7f0",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.805789+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.980557+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/C_slow_20__Direct.csv.gz",
@@ -293,7 +301,7 @@
       "sha256": "3485f5a98ee98df96680299915a8daad735bfacfbd1e8345b097da437ba68127",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.806814+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.981224+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/C_slow_20__Full.csv.gz",
@@ -301,7 +309,7 @@
       "sha256": "2883e0a92e97c4c02336ed0b6aa99bc26fb8ff7b179010630e3d3134a59c7002",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.808788+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.983738+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/C_slow_20__Three-stage.csv.gz",
@@ -309,7 +317,7 @@
       "sha256": "8cefa1baf19e036c4393dbb4f14b0f6739136760273109a7c977825588867147",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.810788+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.985743+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/C_slow_20__Two-stage.csv.gz",
@@ -317,7 +325,7 @@
       "sha256": "57397fd985170fb2950857e39abdc363a52b7b748bb22e3c78538b7d1e6e9f04",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.812943+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.986743+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/D_fast__Direct.csv.gz",
@@ -325,7 +333,7 @@
       "sha256": "251d6f0bf07b653c279748d3f79b3b90873774159cf9a44e35e09eefd54fe1c8",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.812943+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.987742+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/D_fast__Full.csv.gz",
@@ -333,7 +341,7 @@
       "sha256": "242e9fb0abb50591db156b1182c1bce0bfd85f90c54a222e0a3c2f73922baf2b",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.814989+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.988743+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/D_fast__Three-stage.csv.gz",
@@ -341,7 +349,7 @@
       "sha256": "2c6b3a7bfce9f3bf0c25c08d3ebe397f4ffe652c90abab0b1dce57ac60ae25cb",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.815952+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.989743+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/D_fast__Two-stage.csv.gz",
@@ -349,7 +357,7 @@
       "sha256": "bf51ec04e5af938f75e93d900eece47efa1ca12ce3b69f110545c8e69a2fce5c",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.816950+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.990743+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/D_inventory__Direct.csv.gz",
@@ -357,7 +365,7 @@
       "sha256": "a5cb0f72dacaf08358c734455ab2d7b85e11e4441ad4558c30963570da1152b8",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.816950+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.990743+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/D_inventory__Full.csv.gz",
@@ -365,7 +373,7 @@
       "sha256": "8293730008b75358dbdfa449f7852b8ea3768b847bf303875265c090b3865cd1",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.817988+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.992301+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/D_inventory__Three-stage.csv.gz",
@@ -373,7 +381,7 @@
       "sha256": "ebd41d43e1fbb9dc9864af9162480dc0d396bde5774010ac2d99f41c567f8d10",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.818988+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.993252+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/numerical_results/base/attempt_002/D_inventory__Two-stage.csv.gz",
@@ -381,175 +389,599 @@
       "sha256": "8e9da431e8d4e6019c6648bb5c4ccdeb2411e1214fed3110008b1e016ff0ccdb",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.819977+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.994257+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/A_pulse__Direct.csv.gz",
       "type": "derived_evidence",
       "sha256": "98273c40b1583095a736750141f38480551b5f7cda986500cf3ef3c64c239ada",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.822974+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.996257+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/A_pulse__Three-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "9f38efeac2525b00cf15cceae088ecafe3c74d60d7767fbdc8ab784fe51aec85",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.826894+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:08.999257+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/A_pulse__Two-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "da140ec556cf2891a3ce8192170918fda81fe8c4f6db93010d3a4c7f8aac9746",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.830083+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.000762+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/B_constant__Direct.csv.gz",
       "type": "derived_evidence",
       "sha256": "452978966ce287d5fbd2b760601b3061d50d5cd6e30fd4ca712995f50d1c87f2",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.832632+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.003272+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/B_constant__Three-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "032881b9677a808c797d0e6950faa2d621f220214aa6a649653def2ef55b864a",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.835665+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.005276+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/B_constant__Two-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "3011e7d8f4528476d784c51bef1039535f6b8e014f28e2e18bbf0232e3972c41",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.838458+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.007276+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/C_slow_1000__Direct.csv.gz",
       "type": "derived_evidence",
       "sha256": "eb6479570b6bb9b7f785c71456f3a832276df58c34779f595acd0d2fe220bb40",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.843454+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.010276+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/C_slow_1000__Three-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "994487f3cf584209e17db4843b5fe4ef4f65967ecb4f9f0d60155ba6dff8595c",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.846828+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.012789+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/C_slow_1000__Two-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "24b7a3401fa545662db6e7caf1ecad1cb7806789daebea4f9e04032ea29126ab",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.851172+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.015788+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/C_slow_100__Direct.csv.gz",
       "type": "derived_evidence",
       "sha256": "5aa7ce9d59fa26cf3ae72100b8d73f8c89848021ae3809085f6a28e8d12ff3b2",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.855755+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.018788+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/C_slow_100__Three-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "454d837a3c7edf0ce98ec78e95f00e7bc28a0cf6defc804715bbcff5a6da1881",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.859789+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.022297+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/C_slow_100__Two-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "cd958e8d57a4664b72b31a4f6136a7f47a4f3c4f8114d8a55bde1944e47111ad",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.864126+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.025303+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/C_slow_20__Direct.csv.gz",
       "type": "derived_evidence",
       "sha256": "6625e1388eeaf80f64b820f0ee0e9122651c9ed054bdad6b0663a28e2ecf9342",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.868866+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.028438+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/C_slow_20__Three-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "8f0f860cee17425b6273e99669d269e69debac9ffa8b5d69062da730c6f4aa84",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.872381+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.031436+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/C_slow_20__Two-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "8f1f7abd244003ad95948a92d4b3c76c2089250269b1d3f6b569033ef9faa248",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.877816+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.034451+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/D_fast__Direct.csv.gz",
       "type": "derived_evidence",
       "sha256": "16c136ecfc2d3a25d7c1daba2c8a221da48a4593080af68304a401628b2d2b10",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.880810+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.037019+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/D_fast__Three-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "bc5b731af4750b1f3231d76991c5b61bc498ae41430ae0b0bec68b67c0828f19",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.884097+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.038814+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/D_fast__Two-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "b59f9dbd4e03bebadacb8056c5980d1997dfd04535af56913c09cf9e0897a819",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.887644+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.040843+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/D_inventory__Direct.csv.gz",
       "type": "derived_evidence",
       "sha256": "abb6ae6a6bacf83e44663b6431798873ea7f47f268c4a05806fb53faab55347a",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.890288+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.042377+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/D_inventory__Three-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "fb97f5c4dd4289f391894b720ac4fdeb2e6e20022b8725257b5314843b3dbe68",
-      "provenance": "EXTRACTED",
+      "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.892824+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.044391+00:00"
     },
     {
       "id": "results/reduction/chain01_v2/error_tables/base/attempt_002/D_inventory__Two-stage.csv.gz",
       "type": "derived_evidence",
       "sha256": "93c3c9b9875121da223a6f02e39b5972e16329d178a333b7943ff1eb0bdc196b",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.046391+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/boundary/attempt_001/validation_summary.json",
+      "type": "derived_evidence",
+      "sha256": "3b2edb783368af6deec89c6c6770a9b87fd71b395efaf7967cfc6f3a1143c6b2",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.049418+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/boundary/attempt_001/verification_report.json",
+      "type": "derived_evidence",
+      "sha256": "811ed028c757e19e77cd6f25c8d161cde36a182e19623cb7ed17a8372eae4b10",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.050391+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/boundary/attempt_001/independent_verification.json",
+      "type": "derived_evidence",
+      "sha256": "2b243c5ec8ab168998726c3c06fae6408af3d8c1a9ebbb4124809cfbec2e5fb9",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.050391+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/boundary/attempt_001/artifact_manifest.json",
+      "type": "derived_evidence",
+      "sha256": "12d478466e7af10300c0dd863f1010a11c6c04015cc066586f66bcd4045dd9aa",
       "provenance": "EXTRACTED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.895424+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.050391+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/A_pulse__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "f33374daaea3630bbd796a0e8c0f0caccd58442082b1051fde9e8ecf5fb1a276",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.050391+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/A_pulse__Full.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "e3cc092fe88c490c58c98b35d95ae0254ee434915a6fd51c1f5b6b084dff3228",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.052927+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/A_pulse__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "29cf5cfa7ce07ce1128dd925a5446ebe79c6c3a0b01d0b68de968776882e6cd6",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.053928+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/A_pulse__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "607d8f357f9ec4db50d88dbb6a8f79f8aabe42b5519da90172acd430e4494841",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.054919+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/B_constant__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "dede4cded5cf8976fc23884670881ec39ee6f054f798cfb5e2ec70e50a9f5337",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.055919+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/B_constant__Full.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "9bad0d9773895513f057806f73292d3a15bbc583d84273f70bcdcb834abd0d32",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.057919+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/B_constant__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "53e58da26b9de2b3c5e5a3283ca585429b96a27c6dc37f7b2329a9087e1619a7",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.058900+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/B_constant__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "ac30ab1e03475939a46a5d823e2a52bf482e4d76859649ed0139c86fceefa708",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.060901+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_1000__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "5c5a0d55799fd78c0872c2870540485cfe3ab9509c55b022e036ca2c8bff0e64",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.061900+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_1000__Full.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "592fe34cce058f02bd0152d4d00e986183a7703014772676ccc7b136ad80d0ec",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.064414+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_1000__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "fd6279753954874f0ed6d2e70ff2d0ba12405cd354993175003ae5e599984d7a",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.066415+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_1000__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "9b3da9337c3632fc844200de5c723b2f969cb402bb1defd11ca695b5d0c2fc87",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.068415+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_100__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "7f59352ab1877182e67397b41854ef7bb2523578e83578e50c0188492f8a0de3",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.069415+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_100__Full.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "39f8725c9f02a50bf5d9cca5b9f033d60d2fb8de5acd31e588b9c52a5b5a7fe9",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.072046+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_100__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "6d97a2bf8b0f97010a79a4e03004a67c5ec6e1b759f2f799c151d03c5a8fbfd5",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.073926+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_100__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "ea557f257d27f14b33887cb023c512945f5fab78e6defd6c7b974215ea9dfef8",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.075931+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_20__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "baf1961f75bbfa0087b49442d046296ca9b30f64a07ad4abc1d7f7b8ff7d6915",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.076931+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_20__Full.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "063a8f224185e46894f47e8c177fcd7944f9d281c3b386455b7022857cf49ca6",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.078931+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_20__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "d60ef9eedb7ce47d9cc99d023ddc5e72ccb5d693e839e3bb10383eabe6389ece",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.080930+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_20__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "d87cb43f2fc4cabf5adc8185ba7474a905dff840ee9d2cb1be17e9ed410a698c",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.083440+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_fast__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "afa3297232ffa605c77a82ce33ac661672e62f973bd05961d5166447e1e6522d",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.084445+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_fast__Full.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "d033047accf8b282b18b391c4829b69038bad5687b5ba20eda98ddd759f87cc4",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.085445+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_fast__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "377d903a7dd0fb5a3964da8c32de807b52a40c482ab9d78bc4a775ce4da74547",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.086445+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_fast__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "5d7d8a79fbbbc6b37bf2a74627dd1e571ce741df7ef54e4e7f9c819990febe1e",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.088445+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_inventory__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "a73c47873423a6c7eddf925b5d85ea6ce49cb35cbcec75a398165d3d7c332eff",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.088445+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_inventory__Full.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "d01458a7a38311949c51aaf91078db244faaa696872a870c3c176e5a0d46d5f9",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.090450+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_inventory__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "70854874fb2895cbc54bfc2fd78be5f3a8c5dd61a0e00df91129c3d9c93345ab",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.090450+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_inventory__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "3208aad5931aa8185f7b108a3bfbd27812624a3321b5c3fb5057ffb063267ca9",
+      "provenance": "EXTRACTED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.091963+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/A_pulse__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "5d09956d3972cee911cef2e0cc666cf8457bc64c9d7fb6a291e3db6b3f3bbf8b",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.094970+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/A_pulse__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "ea28554cc4e87d01ce492892c5c0e3eb0a0d80bbee9c692222a7843a6221567a",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.096971+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/A_pulse__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "0e357cc1ab915d074ae6dc0a030a331ebe62c974ab56a8cefb51f8509884a627",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.098971+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/B_constant__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "e3940ea7ac2bd0138b6e60e19f674d0bc55a1c6e38b174e1c1484e49379ddc24",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.102076+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/B_constant__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "9bd95e69dd508b5bc410ec2ba2dcbb54f3497c1f8c65d257a038570255179789",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.105022+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/B_constant__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "9915c439fa6cfe133ac38ee210b009f06a2856dc1db6649d62ae3663a80e86cf",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.107023+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_1000__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "1d9e24eb206065e93219f827ae0c5e47b1b39300db3acf8d5c2963035e5a21ea",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.111020+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_1000__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "d2af914f2146b0e39482fae4fbf4be00856a2828ffd664f93498b1aa6de3d658",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.113539+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_1000__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "99c53f2c6d264f396f4f177493533dd0ae961db6dbea4cd3e89d4f7da4d827a8",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.117537+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_100__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "bceb6073785455e8abcc22556c61c3ad98ef5b07586b6beb394f7e0ede2b77f0",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.120539+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_100__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "2ffc869350d2a9312f5bb6b7eb377865907ea8a9d807552f0343349a6f78477e",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.124061+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_100__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "9dd5bb19e84195defe64b9fa43a2dd5e2a8801771b60e6799531c525f8d397dc",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.127060+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_20__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "d001182d90dfd789da5a208ea744dc9a15720baad38a3dc740c53e34669c3599",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.130575+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_20__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "026c5d4267cfe2735d5ed5acf6d64876a7b6708517f95efe9c70eabc9b0a76fa",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.134090+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_20__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "1530b7e36e8c21b84fa58c9ce67c13524006d38c846ecd17f1e9677ec9ec8df2",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.138088+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/D_fast__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "75c097b6cff82d4d1c23dffbc4e353aeb1d8c70944593cbde8e1c60f3e022458",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.140107+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/D_fast__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "3b8b95ec0791c13ca4dbd5780526b5d253dbbe640c36a16f763bfd751c101603",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.142622+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/D_fast__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "4253f77fdc727fc04f10ae40f135149cc55e633e4d9e31297e0e8e1ce34625ed",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.145650+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/D_inventory__Direct.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "729eb92acf5bb1ad4662012d22afc69b269e3fc2b0faa733107889fe7d09870b",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.147637+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/D_inventory__Three-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "34e2a010d0e5861aed359d7c612129cb3ad267981738eb3ed222316e234f52c1",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.148634+00:00"
+    },
+    {
+      "id": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/D_inventory__Two-stage.csv.gz",
+      "type": "derived_evidence",
+      "sha256": "54ad236c57a108cae9baaeb69190108f315df7a7963baa62be2b29461a7f2c14",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.150634+00:00"
     },
     {
       "id": "docs/reduction/chain01_v2_base_validation_report.md",
@@ -557,7 +989,15 @@
       "sha256": "d80dab1d5a4613dceccbde8fc68c7135d6b6a15f05cabc14d15732973148e96a",
       "provenance": "INFERRED",
       "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
-      "freshness": "Current final artifact bytes at 2026-10-08T12:34:44.902956+00:00"
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.150634+00:00"
+    },
+    {
+      "id": "docs/reduction/chain01_v2_validation_report.md",
+      "type": "derived_evidence",
+      "sha256": "2e6a6a17cd245b5960d5991afc942b59a47ca46361c429e130f2fb32d546ad4d",
+      "provenance": "INFERRED",
+      "confidence": "MEASURED_OR_GATE_DERIVED; NOT_SCIENTIFIC_PROMOTION",
+      "freshness": "Current final artifact bytes at 2026-10-08T13:34:09.150634+00:00"
     }
   ],
   "edges": [
@@ -584,6 +1024,11 @@
     {
       "from": "configs/reduction/chain01_v2_validation.json",
       "to": "results/reduction/chain01_v2/verification_report.json",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/boundary_analytical_certificate.json",
       "relation": "frozen observable contract constrains interpretation"
     },
     {
@@ -853,7 +1298,277 @@
     },
     {
       "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/boundary/attempt_001/validation_summary.json",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/boundary/attempt_001/verification_report.json",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/boundary/attempt_001/independent_verification.json",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/boundary/attempt_001/artifact_manifest.json",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/A_pulse__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/A_pulse__Full.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/A_pulse__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/A_pulse__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/B_constant__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/B_constant__Full.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/B_constant__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/B_constant__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_1000__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_1000__Full.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_1000__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_1000__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_100__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_100__Full.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_100__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_100__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_20__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_20__Full.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_20__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/C_slow_20__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_fast__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_fast__Full.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_fast__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_fast__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_inventory__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_inventory__Full.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_inventory__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/numerical_results/boundary/attempt_001/D_inventory__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/A_pulse__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/A_pulse__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/A_pulse__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/B_constant__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/B_constant__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/B_constant__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_1000__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_1000__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_1000__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_100__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_100__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_100__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_20__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_20__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/C_slow_20__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/D_fast__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/D_fast__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/D_fast__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/D_inventory__Direct.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/D_inventory__Three-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "results/reduction/chain01_v2/error_tables/boundary/attempt_001/D_inventory__Two-stage.csv.gz",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
       "to": "docs/reduction/chain01_v2_base_validation_report.md",
+      "relation": "frozen observable contract constrains interpretation"
+    },
+    {
+      "from": "configs/reduction/chain01_v2_validation.json",
+      "to": "docs/reduction/chain01_v2_validation_report.md",
       "relation": "frozen observable contract constrains interpretation"
     },
     {

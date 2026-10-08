@@ -1,0 +1,4 @@
+# V2 verifier and test sources have stable bytes on fresh Windows checkouts.
+test_chain01_v2.py text eol=lf
+verify_chain01_v2.py text eol=lf
+audit_chain01_v2_completion.py text eol=lf
