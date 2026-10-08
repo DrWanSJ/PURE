@@ -1,0 +1,31 @@
+{
+  "schema": "pure/local-runtime-cache-manifest/v1",
+  "date": "2026-10-08",
+  "purpose": "Exact restore metadata for duplicate wheelhouse downloads removed during disk cleanup; installed runtime retained.",
+  "packages": [
+    {
+      "package": "libroadrunner",
+      "version": "2.10.0",
+      "filename": "libroadrunner-2.10.0-cp311-cp311-win_amd64.whl",
+      "bytes": 25073317,
+      "sha256": "248892e12bea20664ac6f002697b4c0b505e482da4da6f31512243a2bc1711f1",
+      "download_url": "https://files.pythonhosted.org/packages/29/71/23919ba7c6149a94de67f3dd42bc54e7c1369806c1b3a6a08ffc5577412c/libroadrunner-2.10.0-cp311-cp311-win_amd64.whl"
+    },
+    {
+      "package": "numpy",
+      "version": "2.2.6",
+      "filename": "numpy-2.2.6-cp311-cp311-win_amd64.whl",
+      "bytes": 12907455,
+      "sha256": "e8213002e427c69c45a52bbd94163084025f533a55a59d6f9c5b820774ef3303",
+      "download_url": "https://files.pythonhosted.org/packages/31/0a/f354fb7176b81747d870f7991dc763e157a934c717b67b58456bc63da3df/numpy-2.2.6-cp311-cp311-win_amd64.whl"
+    },
+    {
+      "package": "scipy",
+      "version": "1.13.1",
+      "filename": "scipy-1.13.1-cp311-cp311-win_amd64.whl",
+      "bytes": 46196227,
+      "sha256": "5713f62f781eebd8d597eb3f88b8bf9274e79eeabf63afb4a737abc6c84ad37b",
+      "download_url": "https://files.pythonhosted.org/packages/4a/48/4513a1a5623a23e95f94abd675ed91cfb19989c58e9f6f7d03990f6caf3d/scipy-1.13.1-cp311-cp311-win_amd64.whl"
+    }
+  ]
+}
