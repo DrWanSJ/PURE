@@ -1,0 +1,15 @@
+{
+  "protocol_id": "CHAIN01_V2_RESOURCE_PRESERVING_STAGED_LUMPING",
+  "frozen_at_utc": "2026-10-08T11:19:19.187559+00:00",
+  "frozen_before_first_V2_numerical_trajectory": true,
+  "bindings": {
+    "configs/reduction/chain01_v2_validation.json": "831c747c85b712de2bbb8360477f49cea4e15e6898d573205d3c7eb9c53d1960",
+    "results/reduction/chain01_v2/source_manifest.json": "bf80c6e4ee7f3d6540084083bdef0f4cf530d951965b6bcd6762de4fb33ca2da",
+    "results/reduction/chain01_v2/mathematical_certificate.json": "7f5d1ddf6a2ada0aecb4e81ae099db90f77eb3783a738022b05ce9006651315c",
+    "results/reduction/chain01_v2/protected_files_before.json": "f5507050a7a18d13574de6962f517f732b97dbea050a9d097e7d58c1dd4d2e9f",
+    "scripts/reduction/audit_chain01_sources.py": "f2646003c3eb3d2fb30db8c0e7b8e178ffd48992d84f1dea8b18723ce6274ced",
+    "scripts/reduction/prepare_chain01_v2.py": "2f5ca0f9845be0e49a02e169f18bf9f685c4f0b767015487021afc531ea9199e"
+  },
+  "first_run_requirement": "R0 commit must be pushed and remote HEAD verified before R1 numerical execution",
+  "thresholds_remain_unchanged_on_failure": true
+}

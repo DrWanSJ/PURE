@@ -1,0 +1,153 @@
+{
+  "role": "Derived navigation only; source files and frozen arrays remain authoritative",
+  "nodes": [
+    {
+      "id": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "type": "source",
+      "provenance": "EXTRACTED",
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "confidence": 1.0,
+      "freshness": "R0 raw-byte audit"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "type": "source",
+      "provenance": "EXTRACTED",
+      "sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+      "confidence": 1.0,
+      "freshness": "R0 raw-byte audit"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "type": "source",
+      "provenance": "EXTRACTED",
+      "sha256": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+      "confidence": 1.0,
+      "freshness": "R0 raw-byte audit"
+    },
+    {
+      "id": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv",
+      "type": "source",
+      "provenance": "EXTRACTED",
+      "sha256": "845aef2d0b9a46d8e1a2d2eb3b5acb3501bcf69b72229ad02a97b73a9363a929",
+      "confidence": 1.0,
+      "freshness": "R0 raw-byte audit"
+    },
+    {
+      "id": "results/topology_audit/reactions_table.csv",
+      "type": "source",
+      "provenance": "EXTRACTED",
+      "sha256": "8b686624e26c39e26b38c262dea65b76b172b8ddbf328d4779eb34536f96ed9c",
+      "confidence": 1.0,
+      "freshness": "R0 raw-byte audit"
+    },
+    {
+      "id": "results/topology_audit/case_study.json",
+      "type": "source",
+      "provenance": "EXTRACTED",
+      "sha256": "e7e1f838bcfd41d6ec11b1a70623a3f2070ab00160b57212342f711405c0e7ad",
+      "confidence": 1.0,
+      "freshness": "R0 raw-byte audit"
+    },
+    {
+      "id": "docs/reduction/one_chain_reduction_case_study.md",
+      "type": "source",
+      "provenance": "EXTRACTED",
+      "sha256": "d5312dc645a798d925e160a30bc26a4db09f4d30d220b452fc75521567c019e3",
+      "confidence": 1.0,
+      "freshness": "R0 raw-byte audit"
+    },
+    {
+      "id": "docs/reduction/topology_first_audit.md",
+      "type": "source",
+      "provenance": "EXTRACTED",
+      "sha256": "65cfc5e6af134b402c47c7f2ac2cd9e9b8ca3c7338d874ffd56ce61fc7e6360f",
+      "confidence": 1.0,
+      "freshness": "R0 raw-byte audit"
+    },
+    {
+      "id": "docs/reduction/reaction_inventory_and_effective_rate_review.md",
+      "type": "source",
+      "provenance": "EXTRACTED",
+      "sha256": "3cfb82186fb132a399100e4d3e8fb6edbdbe4b36d0a7b16761e1fa835c6bac12",
+      "confidence": 1.0,
+      "freshness": "R0 raw-byte audit"
+    },
+    {
+      "id": "docs/reduction/qssa_repositioning_note.md",
+      "type": "source",
+      "provenance": "EXTRACTED",
+      "sha256": "81d5ebe1e30b3bc5980d91f3a8d8e6a9a4bbb923e0eb34e25b0f9bef739685c3",
+      "confidence": 1.0,
+      "freshness": "R0 raw-byte audit"
+    },
+    {
+      "id": "mathematical_certificate.json",
+      "type": "derived",
+      "provenance": "INFERRED",
+      "sha256": "7f5d1ddf6a2ada0aecb4e81ae099db90f77eb3783a738022b05ce9006651315c",
+      "confidence": 1.0,
+      "freshness": "R0 before numerical runs"
+    },
+    {
+      "id": "protocol_freeze.json",
+      "type": "derived",
+      "provenance": "INFERRED",
+      "sha256": "df16d61c1c7e36d4ce6a3fc2a3cf81917c3cf872419968d76110507809041284",
+      "confidence": 1.0,
+      "freshness": "R0 before numerical runs"
+    }
+  ],
+  "edges": [
+    {
+      "from": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "to": "mathematical_certificate.json",
+      "relation": "supports exact source derivation"
+    },
+    {
+      "from": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "to": "mathematical_certificate.json",
+      "relation": "supports exact source derivation"
+    },
+    {
+      "from": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "to": "mathematical_certificate.json",
+      "relation": "supports exact source derivation"
+    },
+    {
+      "from": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv",
+      "to": "mathematical_certificate.json",
+      "relation": "supports exact source derivation"
+    },
+    {
+      "from": "results/topology_audit/reactions_table.csv",
+      "to": "mathematical_certificate.json",
+      "relation": "supports exact source derivation"
+    },
+    {
+      "from": "results/topology_audit/case_study.json",
+      "to": "mathematical_certificate.json",
+      "relation": "supports exact source derivation"
+    },
+    {
+      "from": "docs/reduction/one_chain_reduction_case_study.md",
+      "to": "mathematical_certificate.json",
+      "relation": "supports exact source derivation"
+    },
+    {
+      "from": "docs/reduction/topology_first_audit.md",
+      "to": "mathematical_certificate.json",
+      "relation": "supports exact source derivation"
+    },
+    {
+      "from": "docs/reduction/reaction_inventory_and_effective_rate_review.md",
+      "to": "mathematical_certificate.json",
+      "relation": "supports exact source derivation"
+    },
+    {
+      "from": "docs/reduction/qssa_repositioning_note.md",
+      "to": "mathematical_certificate.json",
+      "relation": "supports exact source derivation"
+    }
+  ]
+}

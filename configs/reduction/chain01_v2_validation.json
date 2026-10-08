@@ -1,0 +1,435 @@
+{
+  "protocol_id": "CHAIN01_V2_RESOURCE_PRESERVING_STAGED_LUMPING",
+  "source_start_head": "3a216aab92e1976f433d9b83641c6ef96b22a6cf",
+  "date": "2026-10-08 Asia/Shanghai",
+  "time_unit": "source model time unit; no seconds interpretation",
+  "amount_unit": "dimensionless imposed local cohort, or amount in source concentration convention; not a calibrated shared-pool concentration",
+  "scope": "Local exogenous nonnegative input; isolate S4 downstream; fixed author internal side paths remain zero. Base suppresses re21; separate R2 restores exact source re21 products without rebinding.",
+  "models": {
+    "Full": {
+      "states": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "rates_exact": [
+        "260",
+        "1000",
+        "7",
+        "1000"
+      ],
+      "segments": [
+        [
+          14
+        ],
+        [
+          16
+        ],
+        [
+          17
+        ],
+        [
+          18
+        ]
+      ],
+      "pi_stage": 1,
+      "gdp_stage": 2,
+      "hydrolysis_stage": 0
+    },
+    "Direct": {
+      "states": [
+        "S0",
+        "S4"
+      ],
+      "rates_exact": [
+        "22750/3383"
+      ],
+      "segments": [
+        [
+          14,
+          16,
+          17,
+          18
+        ]
+      ],
+      "pi_stage": 0,
+      "gdp_stage": 0,
+      "hydrolysis_stage": 0
+    },
+    "Two-stage": {
+      "states": [
+        "S0",
+        "S2",
+        "S4"
+      ],
+      "rates_exact": [
+        "13000/63",
+        "7000/1007"
+      ],
+      "segments": [
+        [
+          14,
+          16
+        ],
+        [
+          17,
+          18
+        ]
+      ],
+      "pi_stage": 0,
+      "gdp_stage": 1,
+      "hydrolysis_stage": 0
+    },
+    "Three-stage": {
+      "states": [
+        "S0",
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "rates_exact": [
+        "260",
+        "1000",
+        "7000/1007"
+      ],
+      "segments": [
+        [
+          14
+        ],
+        [
+          16
+        ],
+        [
+          17,
+          18
+        ]
+      ],
+      "pi_stage": 1,
+      "gdp_stage": 2,
+      "hydrolysis_stage": 0
+    }
+  },
+  "tests": {
+    "A_pulse": {
+      "label": "Unit initial S0 cohort",
+      "initial_full": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_kind": "zero",
+      "end_tau": 100,
+      "amount_scale": "1",
+      "current_scale": "1/tau",
+      "domain": "IN_DOMAIN",
+      "gate_windows": [
+        "late_5_10",
+        "macro_10_end"
+      ]
+    },
+    "B_constant": {
+      "label": "Constant u=1",
+      "initial_full": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_kind": "constant",
+      "amplitude": 1,
+      "end_tau": 10000,
+      "amount_scale": "tau",
+      "current_scale": "1",
+      "domain": "IN_DOMAIN",
+      "gate_windows": [
+        "late_5_10",
+        "macro_10_end"
+      ]
+    },
+    "D_fast": {
+      "label": "V1 two rectangular inputs",
+      "initial_full": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_kind": "rectangular",
+      "input_segments": [
+        [
+          0.5,
+          1,
+          1
+        ],
+        [
+          3,
+          3.5,
+          1
+        ]
+      ],
+      "end_tau": 100,
+      "amount_scale": "tau",
+      "current_scale": "1",
+      "domain": "FAST_INPUT_NEGATIVE_CONTROL",
+      "gate_windows": []
+    },
+    "D_inventory": {
+      "label": "V1 nonzero internal inventory",
+      "initial_full": [
+        0,
+        0.25,
+        0.5,
+        0.25,
+        0
+      ],
+      "input_kind": "zero",
+      "end_tau": 100,
+      "amount_scale": "1",
+      "current_scale": "1/tau",
+      "domain": "OUT_OF_DOMAIN_INITIAL_COMPOSITION",
+      "gate_windows": []
+    },
+    "C_slow_20": {
+      "label": "u=exp(-t/(20 tau))",
+      "initial_full": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_kind": "exponential",
+      "amplitude": 1,
+      "T_slow_tau": 20,
+      "end_tau": 200,
+      "amount_scale": "tau",
+      "current_scale": "1",
+      "domain": "IN_DOMAIN",
+      "gate_windows": [
+        "late_5_10",
+        "macro_10_end"
+      ]
+    },
+    "C_slow_100": {
+      "label": "u=exp(-t/(100 tau))",
+      "initial_full": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_kind": "exponential",
+      "amplitude": 1,
+      "T_slow_tau": 100,
+      "end_tau": 1000,
+      "amount_scale": "tau",
+      "current_scale": "1",
+      "domain": "IN_DOMAIN",
+      "gate_windows": [
+        "late_5_10",
+        "macro_10_end"
+      ]
+    },
+    "C_slow_1000": {
+      "label": "u=exp(-t/(1000 tau))",
+      "initial_full": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_kind": "exponential",
+      "amplitude": 1,
+      "T_slow_tau": 1000,
+      "end_tau": 10000,
+      "amount_scale": "tau",
+      "current_scale": "1",
+      "domain": "IN_DOMAIN",
+      "gate_windows": [
+        "late_5_10",
+        "macro_10_end"
+      ]
+    }
+  },
+  "initial_mapping": {
+    "Full": "[x0,x1,x2,x3,x4]",
+    "Direct": "[x0+x1+x2+x3,x4]",
+    "Two-stage": "[x0+x1,x2+x3,x4]",
+    "Three-stage": "[x0,x1,x2+x3,x4]",
+    "limitation": "Mappings preserve ribosome amount but change chemical composition for D_inventory; no exact resource-inventory reconstruction is asserted."
+  },
+  "sampling": {
+    "first_10_tau_count": 2001,
+    "early_0_025_tau_count": 501,
+    "late_log_count": 301,
+    "slow_linear_count": 401,
+    "switch_local_count": 101,
+    "switch_band_tau": 0.25,
+    "checkpoint_tau": [
+      0.25,
+      0.5,
+      0.75,
+      1,
+      1.25,
+      3,
+      3.25,
+      3.5,
+      3.75,
+      5,
+      10,
+      20,
+      100,
+      1000,
+      10000
+    ],
+    "maxima": "fixed grid maxima only; not a continuum supremum",
+    "convergence_grid": "add all interval midpoints; report maxima change; scientific budgets remain fixed"
+  },
+  "windows": {
+    "early_0_10": [
+      0,
+      10
+    ],
+    "late_5_10": [
+      5,
+      10
+    ],
+    "macro_10_end": [
+      10,
+      null
+    ],
+    "10_100": [
+      10,
+      100
+    ],
+    "100_1000": [
+      100,
+      1000
+    ],
+    "1000_10000": [
+      1000,
+      10000
+    ],
+    "V1_transient": "[0,.25] plus each rectangular switch through switch+.25 tau inclusive",
+    "V1_post": "strict complement of V1_transient within [0,10]"
+  },
+  "gates": {
+    "numerical": {
+      "state_extent_absolute": 1e-08,
+      "current_absolute": 1e-08,
+      "convergence_absolute": 5e-09,
+      "ledger_absolute": 1e-08,
+      "negative_state_absolute": 1e-12,
+      "steady_scaled_absolute": 1e-08,
+      "dense_grid_maxima_change_absolute": 0.0001
+    },
+    "product": {
+      "metrics": [
+        "product_extent",
+        "product_current"
+      ],
+      "max_fixed_scale_error": 0.01
+    },
+    "resources": {
+      "metrics": [
+        "pi_current",
+        "pi_extent",
+        "gdp_current",
+        "gdp_extent",
+        "bound_pi",
+        "bound_gdp",
+        "bound_gtp",
+        "tu_bound",
+        "phosphate_unreleased",
+        "unfinished"
+      ],
+      "max_fixed_scale_error": 0.01
+    },
+    "boundary": {
+      "completion_probability_relative": 0.01,
+      "escape_probability_relative": 0.01,
+      "endpoint_yield_relative": 0.01,
+      "resource_gate_same_as_base": true
+    },
+    "domain": {
+      "zero_initial_internal_required": true,
+      "author_rates_only": true,
+      "internal_side_paths_zero_required": true,
+      "input_T_slow_tau_tested": [
+        20,
+        100,
+        1000
+      ],
+      "S4_downstream_isolated": true
+    },
+    "rule": "Gate 1 resolves numerics before kinetic decisions. Gate 2 and 3 apply to every declared gate window independently. Fast and initial-inventory controls are diagnosed but do not enter the slow-input domain. Local boundary support additionally requires BOTH success and escape allocation budgets."
+  },
+  "V1_diagnostic_thresholds": {
+    "product_extent": 0.01,
+    "product_current": 0.05,
+    "pi_extent": 0.01,
+    "pi_current": 0.05,
+    "gdp_extent": 0.01,
+    "gdp_current": 0.05,
+    "unfinished": 0.05
+  },
+  "error_policy": {
+    "signed": "candidate minus Full",
+    "fixed_scale": "Initial cohort 1, or constant predeclared u0*tau; current 1/tau or u0. No growing cumulative denominator in gates.",
+    "relative": "absolute / abs(Full) only when exactly nonzero; undefined otherwise; no clipping",
+    "rms": "time-weighted trapezoid RMS within each connected fixed window",
+    "production_integral": "integral of formation current equals directed product extent; window production is extent(b)-extent(a)",
+    "endpoint_relative": "report at 10tau and all declared long checkpoints; descriptive except boundary yield"
+  },
+  "rationale": {
+    "macro": "Exploratory 1% resolution for sustained/slow product amount and current after fixed [5,10]tau startup observation. This is an independently registered target, not revision of V1.",
+    "resources": "Same 1% of one input-dwell amount bounds persistent absolute free/bound resource offsets. All early discrepancies retained. No shared ATP/GTP pool trajectory is validated.",
+    "competition": "Apply the same 1% relative resolution to BOTH pathway probabilities so a small escape pathway carrying intact GTP carrier is not hidden by normalization against total input. This gate tests interface allocation, not only dominant product yield.",
+    "windows": "[5,10]tau and [10,end]tau are fixed from source mean dwell before computation; exponential supply at 20,100,1000tau probes progressively slower forcing; 10000tau checks persistent offsets.",
+    "numerics": "Absolute numerical tolerances orders below approximation budgets; noncompletion stays NUMERICALLY_UNRESOLVED."
+  },
+  "solver": {
+    "method": "Radau",
+    "rtol": 1e-10,
+    "atol": 1e-12,
+    "tight_rtol": 1e-12,
+    "tight_atol": 1e-14,
+    "independent": "augmented dense matrix exponential; additionally source-rebuilt high-precision rational Laplace residues in standalone verifier",
+    "long_horizon": "Same ODE through end; exponential input is autonomous augmented coordinate. Matrix exponentials provide independent propagation at sparse long points and dense early points."
+  },
+  "boundary_experiment": {
+    "reaction_id": "re0000000021",
+    "rate_exact": "23/100",
+    "products": {
+      "EFTu_GTP_GlytRNAGlyGCC": "1",
+      "elRS70SAGGU0002_fMet": "1"
+    },
+    "experiments": [
+      "A_pulse",
+      "B_constant",
+      "C_slow_20",
+      "C_slow_100",
+      "C_slow_1000",
+      "D_fast",
+      "D_inventory"
+    ],
+    "outside_boundary": "re13 rebinding and S4 downstream remain isolated; escaped products accumulate explicitly; this is an open local competition test, not full PNAS replacement.",
+    "parameter_range": "Numerics only at original author c=.23. Analytic p=k_in/(k_in+c) establishes dependence on c>=0; no empirical parameter-range promotion."
+  },
+  "prohibited": [
+    "V1 edits",
+    "canonical edits",
+    "author parameter fitting",
+    "threshold or window retuning",
+    "full 968-reaction replacement",
+    "automatic reduced-core promotion"
+  ]
+}
