@@ -1,0 +1,251 @@
+{
+  "counts": {
+    "species": 241,
+    "dynamic_species": 241,
+    "reactions": 968,
+    "sbml_zero_initial": 0,
+    "sbml_zero_k": 0,
+    "sbml_inactive_reactions": 0,
+    "author_zero_initial": 214,
+    "author_positive_initial": 27,
+    "author_zero_k": 485,
+    "author_nonzero_k": 483,
+    "author_initial_zero_rate": 948,
+    "author_nonzero_k_unreachable_reactions": 2,
+    "source_subnetworks": 26,
+    "exact_reverse_pairs": 290,
+    "both_author_positive_reverse_pairs": 209,
+    "full_strict_serial_chains": 0,
+    "author_strict_serial_chains": 12,
+    "degree_hubs_ge30": 18,
+    "full_branch_species": 209,
+    "author_branch_species": 173,
+    "full_largest_species_scc": 209,
+    "author_largest_species_scc": 197,
+    "bipartite_nodes": 1209,
+    "bipartite_edges": 3854,
+    "projected_species_edges": 1886,
+    "projected_reaction_edges": 21124,
+    "full_nontrivial_context_components": 10,
+    "author_nontrivial_context_components": 10,
+    "full_local_cyclic_regions_ge3": 9,
+    "author_local_cyclic_regions_ge3": 14,
+    "motifs": 364,
+    "motif_categories": {
+      "AGGREGATE_STATE_CANDIDATE": 15,
+      "UNSURE": 121,
+      "QSSA_CANDIDATE": 218,
+      "DIRECT_LUMP_CANDIDATE": 1,
+      "KEEP_EXPLICIT": 9
+    }
+  },
+  "full_serial_chains": [],
+  "author_serial_chains": [
+    {
+      "reaction_ids": [
+        "re0000000014",
+        "re0000000016",
+        "re0000000017",
+        "re0000000018"
+      ],
+      "internal_species": [
+        "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+        "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+        "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+      ]
+    },
+    {
+      "reaction_ids": [
+        "re0000000075",
+        "re0000000077",
+        "re0000000078",
+        "re0000000079"
+      ],
+      "internal_species": [
+        "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+        "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+        "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC"
+      ]
+    },
+    {
+      "reaction_ids": [
+        "re0000000024",
+        "re0000000025",
+        "re0000000068"
+      ],
+      "internal_species": [
+        "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+        "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+      ]
+    },
+    {
+      "reaction_ids": [
+        "re0000000902",
+        "re0000000910",
+        "re0000000911"
+      ],
+      "internal_species": [
+        "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP",
+        "termRS30S_mRNA"
+      ]
+    },
+    {
+      "reaction_ids": [
+        "re0000000085",
+        "re0000000086"
+      ],
+      "internal_species": [
+        "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP"
+      ]
+    },
+    {
+      "reaction_ids": [
+        "re0000000147",
+        "re0000000148"
+      ],
+      "internal_species": [
+        "GlyAMP"
+      ]
+    },
+    {
+      "reaction_ids": [
+        "re0000000172",
+        "re0000000173"
+      ],
+      "internal_species": [
+        "MetAMP"
+      ]
+    },
+    {
+      "reaction_ids": [
+        "re0000000288",
+        "re0000000289"
+      ],
+      "internal_species": [
+        "EFTu_GTP_MettRNAfMetCAU"
+      ]
+    },
+    {
+      "reaction_ids": [
+        "re0000000307",
+        "re0000000309"
+      ],
+      "internal_species": [
+        "RS70S_EFG_GDP"
+      ]
+    },
+    {
+      "reaction_ids": [
+        "re0000000428",
+        "re0000000434"
+      ],
+      "internal_species": [
+        "MTF_THF"
+      ]
+    },
+    {
+      "reaction_ids": [
+        "re0000000430",
+        "re0000000432"
+      ],
+      "internal_species": [
+        "MTF_fMettRNAfMetCAU"
+      ]
+    },
+    {
+      "reaction_ids": [
+        "re0000000842",
+        "re0000000847"
+      ],
+      "internal_species": [
+        "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP"
+      ]
+    }
+  ],
+  "context_excluded_species": [
+    "ADP",
+    "AMP",
+    "ATP",
+    "CK_degraded",
+    "CP",
+    "Cr",
+    "EFG",
+    "EFG_GDP",
+    "EFG_GTP",
+    "EFG_degraded",
+    "EFTs_degraded",
+    "EFTu",
+    "EFTu_GDP",
+    "EFTu_GTP",
+    "EFTu_degraded",
+    "FD",
+    "GDP",
+    "GMP",
+    "GTP",
+    "Gly",
+    "GlyRS_degraded",
+    "GlytRNAGlyGCC",
+    "GlytRNAGlyGCC_degraded",
+    "IF1",
+    "IF1_degraded",
+    "IF2",
+    "IF2_degraded",
+    "IF3",
+    "IF3_degraded",
+    "MK_degraded",
+    "MTF_degraded",
+    "Met",
+    "MetRS_degraded",
+    "MettRNAfMetCAU",
+    "MettRNAfMetCAU_degraded",
+    "NDK_degraded",
+    "PO4",
+    "PPi",
+    "PPiase_degraded",
+    "Pept0002_degraded",
+    "Pept0002tRNAGlyGCC_degraded",
+    "Pept0003tRNAGlyGCC_degraded",
+    "RF1",
+    "RF1_degraded",
+    "RF2",
+    "RF2_degraded",
+    "RF3",
+    "RF3_degraded",
+    "RRF",
+    "RRF_degraded",
+    "RS30S",
+    "RS30S_degraded",
+    "RS50S",
+    "RS50S_degraded",
+    "THF",
+    "fMet",
+    "fMet_degraded",
+    "fMettRNAfMetCAU",
+    "fMettRNAfMetCAU_degraded",
+    "mRNA",
+    "mRNA_degraded",
+    "tRNAGlyGCC",
+    "tRNAGlyGCC_degraded",
+    "tRNAfMetCAU",
+    "tRNAfMetCAU_degraded"
+  ],
+  "hub_threshold": 30,
+  "status": "DESCRIPTIVE_TOPOLOGY_AUDIT_NOT_REDUCTION_VALIDATION",
+  "HUMAN_REVIEW_REQUIRED": true,
+  "input_sha256": {
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "scripts/analyze_pnas2017_topology.py": "aca101fadb6ab6c4645f3d4e9d3a08b157d5aebe52783116afefb2306e52c4db"
+  },
+  "author_csv_members": {
+    "Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+    "Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465"
+  },
+  "software": {
+    "python": "3.12.4",
+    "networkx": "3.2.1"
+  },
+  "source_parent_commit": "775607bf9922c6878be0147bd7c64fa97e86a790"
+}

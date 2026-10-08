@@ -1,0 +1,4936 @@
+{
+  "status": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY",
+  "nodes": [
+    {
+      "id": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "kind": "SOURCE",
+      "status": "EXTRACTED",
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "confidence": "BYTE_BOUND"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+      "kind": "SOURCE",
+      "status": "EXTRACTED",
+      "sha256": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+      "confidence": "BYTE_BOUND"
+    },
+    {
+      "id": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "kind": "SOURCE",
+      "status": "EXTRACTED",
+      "sha256": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+      "confidence": "BYTE_BOUND"
+    },
+    {
+      "id": "docs/reduction/reaction_level_annotation_v2.csv",
+      "kind": "SOURCE",
+      "status": "EXTRACTED",
+      "sha256": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+      "confidence": "BYTE_BOUND"
+    },
+    {
+      "id": "scripts/analyze_pnas2017_topology.py",
+      "kind": "SOURCE",
+      "status": "EXTRACTED",
+      "sha256": "aca101fadb6ab6c4645f3d4e9d3a08b157d5aebe52783116afefb2306e52c4db",
+      "confidence": "BYTE_BOUND"
+    },
+    {
+      "id": "SERIAL_AUTHOR_NONZERO_001",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "SERIAL_AUTHOR_NONZERO_002",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "SERIAL_AUTHOR_NONZERO_003",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "SERIAL_AUTHOR_NONZERO_004",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "SERIAL_AUTHOR_NONZERO_005",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "SERIAL_AUTHOR_NONZERO_006",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "SERIAL_AUTHOR_NONZERO_007",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "SERIAL_AUTHOR_NONZERO_008",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "SERIAL_AUTHOR_NONZERO_009",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "SERIAL_AUTHOR_NONZERO_010",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "SERIAL_AUTHOR_NONZERO_011",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "SERIAL_AUTHOR_NONZERO_012",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_001",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_002",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_003",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_004",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_005",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_006",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_007",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_008",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_009",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_010",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_011",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_012",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_013",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_014",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_015",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_016",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_017",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_018",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_019",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_020",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_021",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_022",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_023",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_024",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_025",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_026",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_027",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_028",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_029",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_030",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_031",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_032",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_033",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_034",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_035",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_036",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_037",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_038",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_039",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_040",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_041",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_042",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_043",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_044",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_045",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_046",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_047",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_048",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_049",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_050",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_051",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_052",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_053",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_054",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_055",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_056",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_057",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_058",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_059",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_060",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_061",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_062",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_063",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_064",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_065",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_066",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_067",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_068",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_069",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_070",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_071",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_072",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_073",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_074",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_075",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_076",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_077",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_078",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_079",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_080",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_081",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_082",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_083",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_084",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_085",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_086",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_087",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_088",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_089",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_090",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_091",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_092",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_093",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_094",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_095",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_096",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_097",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_098",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_099",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_100",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_101",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_102",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_103",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_104",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_105",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_106",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_107",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_108",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_109",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_110",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_111",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_112",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_113",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_114",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_115",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_116",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_117",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_118",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_119",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_120",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_121",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_122",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_123",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_124",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_125",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_126",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_127",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_128",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_129",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_130",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_131",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_132",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_133",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_134",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_135",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_136",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_137",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_138",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_139",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_140",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_141",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_142",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_143",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_144",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_145",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_146",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_147",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_148",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_149",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_150",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_151",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_152",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_153",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_154",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_155",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_156",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_157",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_158",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_159",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_160",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_161",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_162",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_163",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_164",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_165",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_166",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_167",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_168",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_169",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_170",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_171",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_172",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_173",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_174",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_175",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_176",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_177",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_178",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_179",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_180",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_181",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_182",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_183",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_184",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_185",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_186",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_187",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_188",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_189",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_190",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_191",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_192",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_193",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_194",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_195",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_196",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_197",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_198",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_199",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_200",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_201",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_202",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_203",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_204",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_205",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_206",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_207",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_208",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_209",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_210",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_211",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_212",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_213",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_214",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_215",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_216",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_217",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_218",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_219",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_220",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_221",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_222",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_223",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_224",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_225",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_226",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_227",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_228",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_229",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_230",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_231",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_232",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_233",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_234",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_235",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_236",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_237",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_238",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_239",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_240",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_241",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_242",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_243",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_244",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_245",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_246",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_247",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_248",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_249",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_250",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_251",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_252",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_253",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_254",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_255",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_256",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_257",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_258",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_259",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_260",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_261",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_262",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_263",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_264",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_265",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_266",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_267",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_268",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_269",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_270",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_271",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_272",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_273",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_274",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_275",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_276",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_277",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_278",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_279",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_280",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_281",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_282",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_283",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_284",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_285",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_286",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_287",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_288",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_289",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "REVERSE_290",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Aminoacylation_A_Gly",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Aminoacylation_A_Met",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Aminoacylation_B_GlyGCC",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Aminoacylation_B_fMetCAU",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Elongation_A_Gly",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Elongation_A_Met",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Elongation_B",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Elongation_Ca1_GlyGCC",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Elongation_Ca1_fMetCAU",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Elongation_Ca2_pept0002",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Elongation_Ca2_pept0003",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_EnergyRegeneration_A",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_EnergyRegeneration_B",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_EnergyRegeneration_C",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_EnergyRegeneration_D",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_FMet_tRNASynthesis",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Initiation_A",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Initiation_B1",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Initiation_B2",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Initiation_C",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_SmallMolecules",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Termination_A_RF1",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Termination_A_RF2",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Termination_B_RF1",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Termination_B_RF2",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "MODULE_Termination_C",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_FULL_CANONICAL_001",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_FULL_CANONICAL_002",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_FULL_CANONICAL_003",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_FULL_CANONICAL_004",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_FULL_CANONICAL_005",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_FULL_CANONICAL_006",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_FULL_CANONICAL_007",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_FULL_CANONICAL_008",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_FULL_CANONICAL_009",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_001",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_002",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_003",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_004",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_005",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_006",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_007",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_008",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_009",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_010",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_011",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_012",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_013",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "LOCAL_SCC_AUTHOR_NONZERO_014",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "FIRST_GLY",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "SECOND_GLY",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "CASE_16_18_DIRECT",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "CASE_16_18_E_MID",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "CASE_16_18_EXPLICIT",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "HUB_ATP",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "HUB_GTP",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "HUB_GDP",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "HUB_ADP",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "HUB_PO4",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "HUB_RS30S",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "HUB_RS50S",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    },
+    {
+      "id": "HUB_tRNAGlyGCC",
+      "kind": "MOTIF",
+      "status": "INFERRED",
+      "confidence": "STRUCTURE_EXTRACTED_REDUCTION_UNVALIDATED",
+      "source": "results/topology_audit/motif_catalog.csv",
+      "HUMAN_REVIEW_REQUIRED": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "SERIAL_AUTHOR_NONZERO_001",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "SERIAL_AUTHOR_NONZERO_002",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "SERIAL_AUTHOR_NONZERO_003",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "SERIAL_AUTHOR_NONZERO_004",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "SERIAL_AUTHOR_NONZERO_005",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "SERIAL_AUTHOR_NONZERO_006",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "SERIAL_AUTHOR_NONZERO_007",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "SERIAL_AUTHOR_NONZERO_008",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "SERIAL_AUTHOR_NONZERO_009",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "SERIAL_AUTHOR_NONZERO_010",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "SERIAL_AUTHOR_NONZERO_011",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "SERIAL_AUTHOR_NONZERO_012",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_001",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_002",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_003",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_004",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_005",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_006",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_007",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_008",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_009",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_010",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_011",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_012",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_013",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_014",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_015",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_016",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_017",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_018",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_019",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_020",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_021",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_022",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_023",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_024",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_025",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_026",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_027",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_028",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_029",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_030",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_031",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_032",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_033",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_034",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_035",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_036",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_037",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_038",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_039",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_040",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_041",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_042",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_043",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_044",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_045",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_046",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_047",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_048",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_049",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_050",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_051",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_052",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_053",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_054",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_055",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_056",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_057",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_058",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_059",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_060",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_061",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_062",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_063",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_064",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_065",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_066",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_067",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_068",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_069",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_070",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_071",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_072",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_073",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_074",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_075",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_076",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_077",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_078",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_079",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_080",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_081",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_082",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_083",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_084",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_085",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_086",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_087",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_088",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_089",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_090",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_091",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_092",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_093",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_094",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_095",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_096",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_097",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_098",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_099",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_100",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_101",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_102",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_103",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_104",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_105",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_106",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_107",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_108",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_109",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_110",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_111",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_112",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_113",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_114",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_115",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_116",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_117",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_118",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_119",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_120",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_121",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_122",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_123",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_124",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_125",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_126",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_127",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_128",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_129",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_130",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_131",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_132",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_133",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_134",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_135",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_136",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_137",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_138",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_139",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_140",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_141",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_142",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_143",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_144",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_145",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_146",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_147",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_148",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_149",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_150",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_151",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_152",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_153",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_154",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_155",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_156",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_157",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_158",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_159",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_160",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_161",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_162",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_163",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_164",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_165",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_166",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_167",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_168",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_169",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_170",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_171",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_172",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_173",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_174",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_175",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_176",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_177",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_178",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_179",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_180",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_181",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_182",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_183",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_184",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_185",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_186",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_187",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_188",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_189",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_190",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_191",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_192",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_193",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_194",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_195",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_196",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_197",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_198",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_199",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_200",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_201",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_202",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_203",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_204",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_205",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_206",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_207",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_208",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_209",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_210",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_211",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_212",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_213",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_214",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_215",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_216",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_217",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_218",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_219",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_220",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_221",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_222",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_223",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_224",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_225",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_226",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_227",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_228",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_229",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_230",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_231",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_232",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_233",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_234",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_235",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_236",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_237",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_238",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_239",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_240",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_241",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_242",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_243",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_244",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_245",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_246",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_247",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_248",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_249",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_250",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_251",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_252",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_253",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_254",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_255",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_256",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_257",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_258",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_259",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_260",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_261",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_262",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_263",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_264",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_265",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_266",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_267",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_268",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_269",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_270",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_271",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_272",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_273",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_274",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_275",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_276",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_277",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_278",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_279",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_280",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_281",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_282",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_283",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_284",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_285",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_286",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_287",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_288",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_289",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "REVERSE_290",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Aminoacylation_A_Gly",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Aminoacylation_A_Met",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Aminoacylation_B_GlyGCC",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Aminoacylation_B_fMetCAU",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Elongation_A_Gly",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Elongation_A_Met",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Elongation_B",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Elongation_Ca1_GlyGCC",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Elongation_Ca1_fMetCAU",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Elongation_Ca2_pept0002",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Elongation_Ca2_pept0003",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_EnergyRegeneration_A",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_EnergyRegeneration_B",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_EnergyRegeneration_C",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_EnergyRegeneration_D",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_FMet_tRNASynthesis",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Initiation_A",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Initiation_B1",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Initiation_B2",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Initiation_C",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_SmallMolecules",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Termination_A_RF1",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Termination_A_RF2",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Termination_B_RF1",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Termination_B_RF2",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "MODULE_Termination_C",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_FULL_CANONICAL_001",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_FULL_CANONICAL_002",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_FULL_CANONICAL_003",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_FULL_CANONICAL_004",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_FULL_CANONICAL_005",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_FULL_CANONICAL_006",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_FULL_CANONICAL_007",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_FULL_CANONICAL_008",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_FULL_CANONICAL_009",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_001",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_002",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_003",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_004",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_005",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_006",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_007",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_008",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_009",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_010",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_011",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_012",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_013",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_014",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "FIRST_GLY",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "SECOND_GLY",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "CASE_16_18_DIRECT",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "CASE_16_18_E_MID",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "CASE_16_18_EXPLICIT",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "HUB_ATP",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "HUB_GTP",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "HUB_GDP",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "HUB_ADP",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "HUB_PO4",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "HUB_RS30S",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "HUB_RS50S",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "target": "HUB_tRNAGlyGCC",
+      "relation": "SUPPORTS_TOPOLOGICAL_CANDIDATE"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "SERIAL_AUTHOR_NONZERO_001",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "SERIAL_AUTHOR_NONZERO_002",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "SERIAL_AUTHOR_NONZERO_003",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "SERIAL_AUTHOR_NONZERO_004",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "SERIAL_AUTHOR_NONZERO_005",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "SERIAL_AUTHOR_NONZERO_006",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "SERIAL_AUTHOR_NONZERO_007",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "SERIAL_AUTHOR_NONZERO_008",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "SERIAL_AUTHOR_NONZERO_009",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "SERIAL_AUTHOR_NONZERO_010",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "SERIAL_AUTHOR_NONZERO_011",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "SERIAL_AUTHOR_NONZERO_012",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_001",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_002",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_003",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_004",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_005",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_006",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_007",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_008",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_009",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_010",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_011",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_012",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_013",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "LOCAL_SCC_AUTHOR_NONZERO_014",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "FIRST_GLY",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "SECOND_GLY",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "CASE_16_18_DIRECT",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "CASE_16_18_E_MID",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    },
+    {
+      "source": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "target": "CASE_16_18_EXPLICIT",
+      "relation": "BINDS_CONDITION_SPECIFIC_NONZERO_VIEW"
+    }
+  ],
+  "role_preserving_graphs": [
+    "bipartite_edges.csv",
+    "kinetic_dependency_edges.csv",
+    "projected_species_edges.csv",
+    "projected_reaction_edges.csv"
+  ],
+  "freshness_rule": "Compare input SHA256 to manifest; regenerate on mismatch; source evidence takes priority."
+}

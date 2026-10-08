@@ -1,0 +1,117 @@
+{
+  "first_backbone_reaction_ids": [
+    "re0000000013",
+    "re0000000014",
+    "re0000000016",
+    "re0000000017",
+    "re0000000018",
+    "re0000000019",
+    "re0000000022",
+    "re0000000024",
+    "re0000000025"
+  ],
+  "second_backbone_reaction_ids": [
+    "re0000000074",
+    "re0000000075",
+    "re0000000077",
+    "re0000000078",
+    "re0000000079",
+    "re0000000080",
+    "re0000000083",
+    "re0000000085",
+    "re0000000086"
+  ],
+  "entry_species": "elRS70SAGGU0002_fMet",
+  "exit_species": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+  "serial_reaction_ids": [
+    "re0000000016",
+    "re0000000017",
+    "re0000000018"
+  ],
+  "serial_species_ids": [
+    "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+    "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+    "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+    "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+  ],
+  "serial_reactions": [
+    {
+      "reaction_id": "re0000000016",
+      "substrates": {
+        "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": 1.0
+      },
+      "products": {
+        "PO4": 1.0,
+        "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": 1.0
+      },
+      "author_k": 1000.0
+    },
+    {
+      "reaction_id": "re0000000017",
+      "substrates": {
+        "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": 1.0
+      },
+      "products": {
+        "EFTu_GDP": 1.0,
+        "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": 1.0
+      },
+      "author_k": 7.0
+    },
+    {
+      "reaction_id": "re0000000018",
+      "substrates": {
+        "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": 1.0
+      },
+      "products": {
+        "elRS70SBGGU0002_Pept0002tRNAGlyGCC": 1.0
+      },
+      "author_k": 1000.0
+    }
+  ],
+  "net_stoichiometry": {
+    "EFG_GDP": 1.0,
+    "EFG_GTP": -1.0,
+    "EFTu_GDP": 1.0,
+    "EFTu_GTP_GlytRNAGlyGCC": -1.0,
+    "PO4": 2.0,
+    "elRS70SAGGU0002_fMet": -1.0,
+    "elRS70SAGGU0003_Pept0002tRNAGlyGCC": 1.0
+  },
+  "serial_net_stoichiometry": {
+    "EFTu_GDP": 1.0,
+    "PO4": 1.0,
+    "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": -1.0,
+    "elRS70SBGGU0002_Pept0002tRNAGlyGCC": 1.0
+  },
+  "internal_side_reactions": {
+    "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": [
+      "re0000000026",
+      "re0000000039",
+      "re0000000040",
+      "re0000000041",
+      "re0000000060",
+      "re0000000061",
+      "re0000000063"
+    ],
+    "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": [
+      "re0000000027",
+      "re0000000045",
+      "re0000000046",
+      "re0000000061",
+      "re0000000062",
+      "re0000000064"
+    ]
+  },
+  "internal_author_side_reactions": {
+    "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": [],
+    "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": []
+  },
+  "aggregate_definition": "E_mid = S1 + S2; retain A=S0 and B=S3",
+  "aggregate_exact_balance": "dE_mid/dt = v16 - v18; PO4 flux=v16; EFTu_GDP flux=v17",
+  "source_default": "AUTHOR_CSV_OVERLAY",
+  "proposal": "AGGREGATE_STATE_CANDIDATE_UNVALIDATED",
+  "direct_mean_dwell_rate": 6.903353057199212,
+  "aggregate_mean_exit_rate": 6.951340615690169,
+  "source_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "HUMAN_REVIEW_REQUIRED": true
+}

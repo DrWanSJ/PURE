@@ -1,0 +1,16 @@
+module_a,module_b,shared_species_count,shared_species_ids,nonhub_shared_species_count,nonhub_shared_species_ids
+aminoacylation,elongation,10,GlytRNAGlyGCC;GlytRNAGlyGCC_degraded;MettRNAfMetCAU;MettRNAfMetCAU_degraded;fMet;fMettRNAfMetCAU;tRNAGlyGCC;tRNAGlyGCC_degraded;tRNAfMetCAU;tRNAfMetCAU_degraded,0,
+aminoacylation,energy,3,AMP;ATP;PPi,0,
+aminoacylation,initiation,1,fMettRNAfMetCAU,0,
+aminoacylation,small_molecules,3,AMP;ATP;PPi,0,
+aminoacylation,termination,2,tRNAGlyGCC;tRNAGlyGCC_degraded,0,
+elongation,energy,3,GDP;GTP;PO4,0,
+elongation,initiation,13,GDP;GTP;PO4;RS30S;RS30S_degraded;RS50S;RS50S_degraded;RS70S;elRS70SAGGU0002_fMettRNAfMetCAU;fMettRNAfMetCAU;fMettRNAfMetCAU_degraded;mRNA;mRNA_degraded,2,RS70S;elRS70SAGGU0002_fMettRNAfMetCAU
+elongation,small_molecules,3,GDP;GTP;PO4,0,
+elongation,termination,19,EFG;EFG_GDP;EFG_GTP;EFG_degraded;GDP;GTP;PO4;Pept0003tRNAGlyGCC;Pept0003tRNAGlyGCC_degraded;RS30S;RS30S_degraded;RS50S;RS50S_EFG_GDP;RS50S_degraded;elRS70SAUAA0004_Pept0003tRNAGlyGCC;mRNA;mRNA_degraded;tRNAGlyGCC;tRNAGlyGCC_degraded,3,Pept0003tRNAGlyGCC;RS50S_EFG_GDP;elRS70SAUAA0004_Pept0003tRNAGlyGCC
+energy,initiation,3,GDP;GTP;PO4,0,
+energy,small_molecules,7,ADP;AMP;ATP;GDP;GTP;PO4;PPi,0,
+energy,termination,3,GDP;GTP;PO4,0,
+initiation,small_molecules,3,GDP;GTP;PO4,0,
+initiation,termination,9,GDP;GTP;PO4;RS30S;RS30S_degraded;RS50S;RS50S_degraded;mRNA;mRNA_degraded,0,
+small_molecules,termination,3,GDP;GTP;PO4,0,

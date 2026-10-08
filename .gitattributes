@@ -106,3 +106,16 @@ docs/reduction/r3_coupled_smoke_v1.md text eol=lf
 # Keep raw acceptance and negative-run evidence byte-exact.
 results/reduction/** -text -diff
 scripts/diagnose_r3_adverse_newton_trace_v1.py text eol=lf
+
+# Additive topology-first audit: preserve new source/report/export bytes across
+# Windows checkouts without changing historical evidence or canonical sources.
+scripts/analyze_pnas2017_topology.py text eol=lf
+scripts/verify_pnas2017_topology.py text eol=lf
+scripts/visualization/*.py text eol=lf
+docs/reduction/topology_*.md text eol=lf
+docs/reduction/motif_catalog.md text eol=lf
+docs/reduction/one_chain_reduction_case_study.md text eol=lf
+docs/reduction/global_reduction_map.md text eol=lf
+docs/reduction/qssa_repositioning_note.md text eol=lf
+results/topology_audit/** text eol=lf
+results/figures/topology_first_*.svg text eol=lf

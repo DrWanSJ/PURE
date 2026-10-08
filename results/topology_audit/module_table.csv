@@ -1,0 +1,7 @@
+module_id,module_name,species_count,reaction_count,author_nonzero_reaction_count,shared_species_count,reduction_route
+aminoacylation,Aminoacylation / formylation,59,167,97,33,QSSA_AFTER_TOPOLOGY
+elongation,Elongation (two Gly additions),72,194,62,48,TOPOLOGY_REDUCE_FIRST
+energy,Energy regeneration,38,87,61,7,QSSA_AFTER_TOPOLOGY
+initiation,Initiation,63,345,197,37,DO_NOT_TOUCH_YET
+small_molecules,Shared small molecules,8,12,0,7,KEEP_EXPLICIT
+termination,Termination / recycling,56,187,67,34,KEEP_EXPLICIT
