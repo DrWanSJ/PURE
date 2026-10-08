@@ -118,6 +118,8 @@ def main():
     original_attributes=subprocess.check_output(['git','show',base+':.gitattributes'],cwd=ROOT,text=True)
     current_attributes=(ROOT/'.gitattributes').read_text(encoding='utf-8')
     check('checkout_policy_is_additive',current_attributes.startswith(original_attributes))
+    whitespace=subprocess.run(['git','diff','--check',base,'--'],cwd=ROOT,capture_output=True,text=True)
+    check('source_and_export_whitespace',whitespace.returncode==0)
     # Existing QSSA note binds external-worktree evidence separately by path/hash.
     note=ROOT/'docs/reduction/qssa_repositioning_note.md'
     check('existing_QSSA_integration_note',note.exists() and 'CK_FIRST_ORDER_IMPROVES_EXTENT_NOT_CURRENT' in note.read_text(encoding='utf-8'))

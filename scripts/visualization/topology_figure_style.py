@@ -121,5 +121,10 @@ def save(fig, basename):
                             Description="Topology-first structural audit; HUMAN_REVIEW_REQUIRED")
         fig.savefig(OUTPUT / f"{basename}.{suffix}", dpi=240,
                     metadata=metadata)
+        if suffix == "svg":
+            # Matplotlib emits trailing spaces in multi-line path attributes.
+            # Normalize the export in code, retaining newline path separators.
+            path = OUTPUT / f"{basename}.svg"
+            cleaned = "\n".join(line.rstrip() for line in path.read_text(encoding="utf-8").splitlines()) + "\n"
+            path.write_text(cleaned, encoding="utf-8", newline="\n")
     plt.close(fig)
-
