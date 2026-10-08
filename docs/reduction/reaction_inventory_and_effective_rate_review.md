@@ -16,26 +16,26 @@
 | C1：作者固定参数（author CSV） | **483 个非零 k 方向**，485 个 k=0 方向保留在 source | 不变 | 指定条件下禁用的方向，不代表 source-general 反应删除；初值为零也不等于永久失活。 |
 | C2：作者条件下的反向方向配对 | **274 个净通量表达式**，代表 483 个非零 k 方向 | 不变 | 209 对两向均非零：483−209=274；只是条件化通量写法。 |
 | P1：仅三个连续反应的 A→D 候选 | **481 个非零 k 方向（483−3+1）** | 尚未实施 | 仅将 `re0000000016/17/18` 变为一条净计量反应的**候选算术**。 |
-| P2：全部 12 条作者条件串联路径若各合成一条 | **465 个非零 k 方向（483−30+12）** | 尚未实施 | 12 组路径互不重叠，但这仅是计数上的假设上界，不意味着能同时建立合法的单步 Markov 速率。 |
+| P2：仅 9 组非零净计量串联候选如均验证并各合为一条 | **468 个非零 k 方向（483−24+9）** | 尚未实施 | 12 组算法候选中 3 组为正反往返对（净计量为零），必须排除；468 只是 9 组串联候选的假设计数，**不是已验证的减少**。 |
 | Goal：模块级中等复杂度 CRN | **未定** | **未定** | 若希望几十条，仍须处理大量结合、解离、循环及跨模块耦合；项目尚未做到。 |
 
-**禁止混算：** L1/C2 是表示数，C1 是固定参数下的活跃方向数，P1/P2 才是待验证的串联反应合并提议；这些行不是可无条件顺次相减的一条已完成工作流。
+**禁止混算：** L1/C2 是表示数，C1 是固定参数下的活跃方向数，P1 与更正后的 P2 才是待验证的串联反应合并提议；这些行不是可无条件顺次相减的一条已完成工作流。
 
 ## 2. 生化模块分组：每条源反应唯一计入一次
 
 这是从已审查的 `level_c_primary_stage` 建立的**互斥展示分区**，专用于可加总的计数；它不同于 26 个可重叠的源 SBML 子系统。`DEG_sink` 单列，因为失活/降解横跨多个生化模块。6 条 `SHARED_MULTI_CONTEXT` 没有被强制塞入单一生化模块。
 
-| 功能组（互斥展示） | 完整有向反应 | 作者条件 k>0 | 作者条件 k=0 | P2 全链合并的**假设**剩余方向 |
+| 功能组（互斥展示） | 完整有向反应 | 作者条件 k>0 | 作者条件 k=0 | 仅9组非零净链假设合并的剩余方向 |
 | --- | ---: | ---: | ---: | ---: |
 | Initiation | 206 | 197 | 9 | 197 |
-| Elongation | 88 | 61 | 27 | 50 |
-| Aminoacylation / formylation | 122 | 93 | 29 | 89 |
+| Elongation | 88 | 61 | 27 | 51 |
+| Aminoacylation / formylation | 122 | 93 | 29 | 91 |
 | Termination | 46 | 42 | 4 | 41 |
 | Ribosome recycling | 38 | 24 | 14 | 22 |
 | Energy regeneration | 74 | 61 | 13 | 61 |
 | Shared multi-context | 6 | 5 | 1 | 5 |
 | Degradation sinks | 388 | 0 | 388 | 0 |
-| **总计** | **968** | **483** | **485** | **465（未验证）** |
+| **总计** | **968** | **483** | **485** | **468（未验证）** |
 
 ### 2.1 如何看 phosphorylation 等化学过程
 
@@ -91,26 +91,26 @@
 | Termination / recycling | `Termination_B_RF2` | 51 | 20 |
 | Termination / recycling | `Termination_C` | 86 | 25 |
 
-## 4. 有据可查的 12 条 A→…→D 串联路径：只给出候选净化学计量
+## 4. 拓扑算法检出的 12 组：9 条非零净计量串联候选 + 3 对正反往返反应
 
-这 12 条路径是在**作者固定参数 `k=0` 方向不传播**的图上识别的。完整 968 通道图中严格串联路径数量为 **0**。各合并式由原源反应向量相加得到，仅能说明 **overall stoichiometry**，并不证明存在某个常数 `k_eff` 使时间轨迹、通量、占据、粒子数及资源释放同时精确一致。
+这 12 组来自**作者固定参数中关闭 k=0 方向**后的拓扑图；完整 968 通道图的严格串联链为 0。经核对源反应，原 CHAIN_06/07/08 是相反方向的**同一结合/解离反应对**，并非 A→…→D 的净化学转化，不能从 ∅ → ∅ 推断可删除动态。其余 9 组有非零的路径净计量，但不自动存在精确的常数 `k_eff`。该算法未排除二步回到起点的回路。
 
-| Candidate | 原有反应 ID（先后） | n→1 | 条件净反应（化学计量） |
+| 分类 | 原有反应 ID（先后） | 类型/表示变化 | 净计量 / 化学意义 |
 | --- | --- | --- | --- |
 | CHAIN_01 | `re0000000014` → `re0000000016` → `re0000000017` → `re0000000018` | 4→1 | `elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC` → `PO4` + `EFTu_GDP` + `elRS70SBGGU0002_Pept0002tRNAGlyGCC` |
 | CHAIN_02 | `re0000000075` → `re0000000077` → `re0000000078` → `re0000000079` | 4→1 | `elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC` → `PO4` + `EFTu_GDP` + `elRS70SBGGU0003_Pept0003tRNAGlyGCC` |
 | CHAIN_03 | `re0000000024` → `re0000000025` → `re0000000068` | 3→1 | `elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4` → `PO4` + `EFG_GDP` + `elRS70SAGGU0003_Pept0002` + `tRNAGlyGCC` |
 | CHAIN_04 | `re0000000902` → `re0000000910` → `re0000000911` | 3→1 | `termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4` → `PO4` + `RS50S_tRNAGlyGCC_RRF_EFG_GDP` + `RS30S` + `mRNA` |
 | CHAIN_05 | `re0000000085` → `re0000000086` | 2→1 | `elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4` → `PO4` + `EFG_GDP` + `elRS70SAUAA0004_Pept0003tRNAGlyGCC` |
-| CHAIN_06 | `re0000000147` → `re0000000148` | 2→1 | ∅ → ∅ |
-| CHAIN_07 | `re0000000172` → `re0000000173` | 2→1 | ∅ → ∅ |
-| CHAIN_08 | `re0000000288` → `re0000000289` | 2→1 | ∅ → ∅ |
+| PAIR_06 (原 CHAIN_06) | `re0000000147` ↔ `re0000000148` | 2→1 净通量写法（L1/C2），不减少物种 | `GlyRS_GlyAMP` ⇄ `GlyRS` + `GlyAMP`；正反结合/解离，**不属于串联约化** |
+| PAIR_07 (原 CHAIN_07) | `re0000000172` ↔ `re0000000173` | 2→1 净通量写法（L1/C2），不减少物种 | `MetRS_MetAMP` ⇄ `MetRS` + `MetAMP`；正反结合/解离，**不属于串联约化** |
+| PAIR_08 (原 CHAIN_08) | `re0000000288` ↔ `re0000000289` | 2→1 净通量写法（L1/C2），不减少物种 | `EFTu_GTP` + `MettRNAfMetCAU` ⇄ `EFTu_GTP_MettRNAfMetCAU`；正反结合/解离，**不属于串联约化** |
 | CHAIN_09 | `re0000000307` → `re0000000309` | 2→1 | `RS70S_EFG_GDP_PO4` → `PO4` + `EFG_GDP` + `RS70S` |
 | CHAIN_10 | `re0000000428` → `re0000000434` | 2→1 | `MTF_THF_fMettRNAfMetCAU` → `fMettRNAfMetCAU` + `MTF` + `THF` |
 | CHAIN_11 | `re0000000430` → `re0000000432` | 2→1 | `MTF_THF_fMettRNAfMetCAU` → `THF` + `MTF` + `fMettRNAfMetCAU` |
 | CHAIN_12 | `re0000000842` → `re0000000847` | 2→1 | `termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4` → `PO4` + `RF3_GDP` + `termRS70SUAA0004_tRNAGlyGCC` |
 
-上述所有 `CHAIN_*` 的处理决定均为 **PENDING / HUMAN_REVIEW_REQUIRED**；没有实施净速率替换，也没有将其写入 `PURE_reduced_core`。
+串联候选只包括 `CHAIN_01–05` 和 `CHAIN_09–12`，共 **9 组**。`PAIR_06–08` 应由 L1/C2 精确反向净通量表示，不是有效速率 A→D 模型；即便两列化学计量之和为零，正反**瞬时净通量**通常仍不为零，不能删除自由/结合状态。9 组串联候选仍全部 **HUMAN_REVIEW_REQUIRED / PENDING**，未改变 SBML 或批准约化。
 
 ### 4.1 优先亲自核查的三步链（原 SBML 真正的化学过程）
 
@@ -141,9 +141,9 @@
 | CHAIN_03 | Elongation | author-k=0 的旁支是否在目标适用域仍为零；中间态是否积累；自由和结合态核苷酸/因子/核糖体收支；参数变化能否定义有效速率 | ☐ KEEP ☐ DIRECT_LUMP ☐ AGGREGATE ☐ QSSA_LATER ☐ REJECT |
 | CHAIN_04 | Ribosome recycling | author-k=0 的旁支是否在目标适用域仍为零；中间态是否积累；自由和结合态核苷酸/因子/核糖体收支；参数变化能否定义有效速率 | ☐ KEEP ☐ DIRECT_LUMP ☐ AGGREGATE ☐ QSSA_LATER ☐ REJECT |
 | CHAIN_05 | Elongation | author-k=0 的旁支是否在目标适用域仍为零；中间态是否积累；自由和结合态核苷酸/因子/核糖体收支；参数变化能否定义有效速率 | ☐ KEEP ☐ DIRECT_LUMP ☐ AGGREGATE ☐ QSSA_LATER ☐ REJECT |
-| CHAIN_06 | Aminoacylation / formylation | author-k=0 的旁支是否在目标适用域仍为零；中间态是否积累；自由和结合态核苷酸/因子/核糖体收支；参数变化能否定义有效速率 | ☐ KEEP ☐ DIRECT_LUMP ☐ AGGREGATE ☐ QSSA_LATER ☐ REJECT |
-| CHAIN_07 | Aminoacylation / formylation | author-k=0 的旁支是否在目标适用域仍为零；中间态是否积累；自由和结合态核苷酸/因子/核糖体收支；参数变化能否定义有效速率 | ☐ KEEP ☐ DIRECT_LUMP ☐ AGGREGATE ☐ QSSA_LATER ☐ REJECT |
-| CHAIN_08 | Elongation | author-k=0 的旁支是否在目标适用域仍为零；中间态是否积累；自由和结合态核苷酸/因子/核糖体收支；参数变化能否定义有效速率 | ☐ KEEP ☐ DIRECT_LUMP ☐ AGGREGATE ☐ QSSA_LATER ☐ REJECT |
+| PAIR_06 (原 CHAIN_06) | Aminoacylation / formylation | 正反结合/解离的闭环，不是串联净转化。保留自由态、结合态和正反通量 | **EXCLUDE_FROM_SERIAL_LUMP**；L1/C2 可精确配对 |
+| PAIR_07 (原 CHAIN_07) | Aminoacylation / formylation | 正反结合/解离的闭环，不是串联净转化。保留自由态、结合态和正反通量 | **EXCLUDE_FROM_SERIAL_LUMP**；L1/C2 可精确配对 |
+| PAIR_08 (原 CHAIN_08) | Elongation | 正反结合/解离的闭环，不是串联净转化。保留自由态、结合态和正反通量 | **EXCLUDE_FROM_SERIAL_LUMP**；L1/C2 可精确配对 |
 | CHAIN_09 | Elongation | author-k=0 的旁支是否在目标适用域仍为零；中间态是否积累；自由和结合态核苷酸/因子/核糖体收支；参数变化能否定义有效速率 | ☐ KEEP ☐ DIRECT_LUMP ☐ AGGREGATE ☐ QSSA_LATER ☐ REJECT |
 | CHAIN_10 | Aminoacylation / formylation | author-k=0 的旁支是否在目标适用域仍为零；中间态是否积累；自由和结合态核苷酸/因子/核糖体收支；参数变化能否定义有效速率 | ☐ KEEP ☐ DIRECT_LUMP ☐ AGGREGATE ☐ QSSA_LATER ☐ REJECT |
 | CHAIN_11 | Aminoacylation / formylation | author-k=0 的旁支是否在目标适用域仍为零；中间态是否积累；自由和结合态核苷酸/因子/核糖体收支；参数变化能否定义有效速率 | ☐ KEEP ☐ DIRECT_LUMP ☐ AGGREGATE ☐ QSSA_LATER ☐ REJECT |
@@ -432,8 +432,8 @@
 | `re0000000123` | `EFTu_GDP` + `elRS70SAGGU0003_Pept0002` → `elRS70SAGGU0003_Pept0002_EFTu_GDP` | `Elongation_Ca2_pept0003` | 0 | binding | `re0000000089` | — |
 | `re0000000275` | `EFTu_GTP` + `GlytRNAGlyGCC` → `EFTu_GTP_GlytRNAGlyGCC` | `Elongation_A_Gly` | 1.5 | binding | `re0000000276` | — |
 | `re0000000276` | `EFTu_GTP_GlytRNAGlyGCC` → `EFTu_GTP` + `GlytRNAGlyGCC` | `Elongation_A_Gly` | 0.0013 | release | `re0000000275` | — |
-| `re0000000288` | `EFTu_GTP` + `MettRNAfMetCAU` → `EFTu_GTP_MettRNAfMetCAU` | `Elongation_A_Met` | 1.5 | binding | `re0000000289` | CHAIN_08 |
-| `re0000000289` | `EFTu_GTP_MettRNAfMetCAU` → `EFTu_GTP` + `MettRNAfMetCAU` | `Elongation_A_Met` | 0.0453 | release | `re0000000288` | CHAIN_08 |
+| `re0000000288` | `EFTu_GTP` + `MettRNAfMetCAU` → `EFTu_GTP_MettRNAfMetCAU` | `Elongation_A_Met` | 1.5 | binding | `re0000000289` | PAIR_08 |
+| `re0000000289` | `EFTu_GTP_MettRNAfMetCAU` → `EFTu_GTP` + `MettRNAfMetCAU` | `Elongation_A_Met` | 0.0453 | release | `re0000000288` | PAIR_08 |
 
 </details>
 
@@ -544,16 +544,16 @@
 | `re0000000140` | `GlyRS_Gly_ATP` → `GlyRS_GlyAMP_PPi` | `Aminoacylation_A_Gly` | 29.0 | transition | `re0000000141` | — |
 | `re0000000141` | `GlyRS_GlyAMP_PPi` → `GlyRS_Gly_ATP` | `Aminoacylation_A_Gly` | 47.0 | transition | `re0000000140` | — |
 | `re0000000143` | `GlyAMP` → `AMP` + `Gly` | `Aminoacylation_A_Gly` | 0 | release | `re0000000149` | — |
-| `re0000000147` | `GlyRS_GlyAMP` → `GlyAMP` + `GlyRS` | `Aminoacylation_A_Gly` | 0.07 | release | `re0000000148` | CHAIN_06 |
-| `re0000000148` | `GlyAMP` + `GlyRS` → `GlyRS_GlyAMP` | `Aminoacylation_A_Gly` | 2.4 | binding | `re0000000147` | CHAIN_06 |
+| `re0000000147` | `GlyRS_GlyAMP` → `GlyAMP` + `GlyRS` | `Aminoacylation_A_Gly` | 0.07 | release | `re0000000148` | PAIR_06 |
+| `re0000000148` | `GlyAMP` + `GlyRS` → `GlyRS_GlyAMP` | `Aminoacylation_A_Gly` | 2.4 | binding | `re0000000147` | PAIR_06 |
 | `re0000000149` | `AMP` + `Gly` → `GlyAMP` | `Aminoacylation_A_Gly` | 0 | binding | `re0000000143` | — |
 | `re0000000150` | `GlyRS_GlyAMP` + `PPi` → `GlyRS_GlyAMP_PPi` | `Aminoacylation_A_Gly` | 0 | binding | `re0000000127` | — |
 | `re0000000152` | `MetRS_MetAMP_PPi` → `MetRS_MetAMP` + `PPi` | `Aminoacylation_A_Met` | 1000.0 | release | `re0000000175` | — |
 | `re0000000165` | `MetRS_Met_ATP` → `MetRS_MetAMP_PPi` | `Aminoacylation_A_Met` | 60.0 | transition | `re0000000166` | — |
 | `re0000000166` | `MetRS_MetAMP_PPi` → `MetRS_Met_ATP` | `Aminoacylation_A_Met` | 150.0 | transition | `re0000000165` | — |
 | `re0000000168` | `MetAMP` → `AMP` + `Met` | `Aminoacylation_A_Met` | 0 | release | `re0000000174` | — |
-| `re0000000172` | `MetRS_MetAMP` → `MetAMP` + `MetRS` | `Aminoacylation_A_Met` | 0.07 | release | `re0000000173` | CHAIN_07 |
-| `re0000000173` | `MetAMP` + `MetRS` → `MetRS_MetAMP` | `Aminoacylation_A_Met` | 2.4 | binding | `re0000000172` | CHAIN_07 |
+| `re0000000172` | `MetRS_MetAMP` → `MetAMP` + `MetRS` | `Aminoacylation_A_Met` | 0.07 | release | `re0000000173` | PAIR_07 |
+| `re0000000173` | `MetAMP` + `MetRS` → `MetRS_MetAMP` | `Aminoacylation_A_Met` | 2.4 | binding | `re0000000172` | PAIR_07 |
 | `re0000000174` | `AMP` + `Met` → `MetAMP` | `Aminoacylation_A_Met` | 0 | binding | `re0000000168` | — |
 | `re0000000175` | `MetRS_MetAMP` + `PPi` → `MetRS_MetAMP_PPi` | `Aminoacylation_A_Met` | 0 | binding | `re0000000152` | — |
 | `re0000000189` | `GlyRS_GlyAMP_PPi_tRNAGlyGCC` → `GlyRS_GlyAMP_tRNAGlyGCC` + `PPi` | `Aminoacylation_B_GlyGCC` | 1000.0 | release | `re0000000217` | — |
@@ -1344,5 +1344,5 @@
 
 - 不重复索引：968 source rows / 968 unique IDs。
 - 互斥功能组总计：968；作者条件非零 k：483；k=0：485。
-- 26 个源子系统以重叠成员关系保存；12 条串联路径包含 30 个不重复源反应；假设全压缩的净减少量为 18。
+- 26 个源子系统成员可重叠。算法的 12 组覆盖 30 条不重复方向；其中 3 组是可逆结合/解离对，合计 6 条，不作为 A→D 约化。余下 9 组含 24 条源方向，若均经动力学验证并各替换 1 条则假设净减少 15 条（483→468），**尚未验证**。
 - 该文件为已有审计数据的可读投影，不更改标准 SBML、作者参数、`reduction_decisions.csv` 或历史 QSSA 结果。
