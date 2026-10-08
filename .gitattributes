@@ -140,3 +140,17 @@ scripts/verify_reaction_level_annotation.py text eol=crlf
 scripts/verify_reaction_level_annotation_v2.py text eol=crlf
 scripts/verify_reaction_level_contract.py text eol=crlf
 scripts/verify_species_information_contract.py text eol=crlf
+
+# Exact byte copies of retired active bodies; preserve native historical bytes.
+docs/legacy/mavelli2015/** -text
+# Native CRLF in exact copies is intentional provenance, not trailing space.
+docs/legacy/mavelli2015/** whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# New authority records and tooling are portable UTF-8/LF.
+scripts/verify_pnas2017_active_authority.py text eol=lf
+scripts/run_pnas2017_preflight.py text eol=lf
+scripts/reproduce_pnas2017_reference.py text eol=lf
+scripts/reproduce_pnas2017_reference.m text eol=lf
+scripts/test_pnas2017_active_authority.py text eol=lf
+docs/migration/** text eol=lf
+docs/pnas2017/s28_observable_mapping.md text eol=lf
+models/pnas2017_full_reference/audit/s28_observable_mapping.csv -text

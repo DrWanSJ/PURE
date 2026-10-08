@@ -1,13 +1,6 @@
-# results/
-
-Simulation outputs, with a strict tiering:
-
-- `baselines/` — **frozen regression baselines** (committed, never overwritten,
-  never extended by ordinary runs). `b1_mavelli2015/` is the B1 reference.
-- `runs/<run_id>/` — ordinary simulation outputs. **Not versioned** (gitignored);
-  each run carries its own `manifest.json` provenance.
-- `releases/` — release evidence for versioned releases (e.g. D20 v0.1).
-
-What does NOT go here: model inputs (`models/`, `configs/`), experimental or
-literature data (`data/`). Nothing in `baselines/` may be regenerated casually;
-compare new runs against a baseline instead of replacing it.
+# Current results — PNAS2017_full_reference
+pnas2017_reference/ contains preserved author-input SBML engine runs and provenance-bound full trajectories.
+New author ODE outputs require a fresh directory; no frozen run is overwritten.
+Published-figure reproduction remains PAUSED_BY_USER / NOT_ESTABLISHED.
+reduction/ retains all existing exact-coordinate and bounded negative/incomplete evidence; no scientific status is changed.
+baselines/b1_mavelli2015/ is LEGACY / FROZEN / NOT_ACTIVE historical coarse evidence.

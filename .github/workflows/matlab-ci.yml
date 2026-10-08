@@ -1,41 +1,38 @@
-# =====================================================================
-# DRAFT WORKFLOW — NOT VERIFIED (do not trust until human-validated)
-#
-# docs/audit/audit_status.md records CI = not_verified. This file has never run:
-# MATLAB on GitHub-hosted runners requires a MATLAB license/setup
-# (e.g. matlab-actions/setup-matlab + license, or MATLAB Batch for public
-# repos). A human must confirm licensing/runner availability, then remove
-# this banner and rename the workflow before relying on it.
-# Manual local equivalent (verified path):
-#   matlab -batch "addpath('scripts'); run_all_tests"
-# =====================================================================
-name: "[draft, not verified] PURE B1 tests"
-
+name: PNAS2017 evidence integrity
 on:
   push:
     branches: ["**"]
   workflow_dispatch:
-
 jobs:
-  matlab-tests:
-    runs-on: ubuntu-latest
+  pnas-integrity:
+    # Frozen eigenvalue certificates are qualified on the original Windows/MKL build.
+    runs-on: windows-2022
+    env:
+      MKL_ENABLE_INSTRUCTIONS: AVX2
+      MKL_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    defaults:
+      run:
+        shell: pwsh
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up MATLAB (placeholder — requires license/runner decision)
-        uses: matlab-actions/setup-matlab@v2
+      - uses: actions/checkout@v4
         with:
-          release: R2025b
-
-      - name: Run all tests (unit + smoke + preflight)
-        uses: matlab-actions/run-command@v2
+          fetch-depth: 0
+      - uses: conda-incubator/setup-miniconda@v4
         with:
-          command: addpath('scripts'); run_all_tests
-
-      - name: Upload test logs
-        uses: actions/upload-artifact@v4
+          activate-environment: pnas-evidence
+          environment-file: .github/environments/pnas2017-windows-mkl-explicit.conda.lock
+          auto-update-conda: false
+      - name: Install the existing symbolic verifier overlay
+        run: python -m pip install sympy==1.13.1
+      - name: Record the qualified numerical runtime
+        run: |
+          Get-CimInstance Win32_Processor | Select-Object Name,Manufacturer,NumberOfCores,NumberOfLogicalProcessors
+          python -c "import sys,numpy,scipy; print(sys.version); print(numpy.__version__,scipy.__version__); numpy.show_config()"
+      - name: Verify current PNAS authority and preserved evidence
+        run: python -B scripts/run_pnas2017_preflight.py --report-dir "${{ runner.temp }}/pnas-preflight"
+      - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: b1-test-logs
-          path: logs/
-          if-no-files-found: error
+          name: pnas-integrity-reports
+          path: ${{ runner.temp }}/pnas-preflight/
