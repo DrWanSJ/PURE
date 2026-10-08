@@ -27,6 +27,19 @@
         "binding_count": 6
       },
       "receipt_scope": "Payload commit delivery; this receipt is included in the next commit to avoid a circular self hash."
+    },
+    {
+      "round": "V2-R2",
+      "local_commit_sha": "c467e4f9dae8fb8a43ce5f4143a25c350c3806f1",
+      "verified_remote_head_sha": "c467e4f9dae8fb8a43ce5f4143a25c350c3806f1",
+      "push_result": "SUCCESS; origin branch HEAD verified directly after git push",
+      "verified_at_utc": "2026-10-08T13:37:36.242308+00:00",
+      "historical_integrity": {
+        "status": "PASS",
+        "protected_file_count": 1737,
+        "binding_count": 6
+      },
+      "receipt_scope": "Payload commit delivery; this receipt is included in the next commit to avoid a circular self hash."
     }
   ]
 }

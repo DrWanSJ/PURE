@@ -1,0 +1,271 @@
+{
+  "status": "COMPLETE",
+  "checks": [
+    {
+      "requirement": "Only authorized branch; source/V1/R1-R8 bytes preserved",
+      "status": "PROVED",
+      "evidence": {
+        "branch": "codex/pnas-topology-first",
+        "historical_integrity": {
+          "status": "PASS",
+          "protected_file_count": 1737,
+          "binding_count": 6
+        }
+      }
+    },
+    {
+      "requirement": "Protocol, rates, windows, scales and all four gates frozen before V2",
+      "status": "PROVED",
+      "evidence": {
+        "sha256": "831c747c85b712de2bbb8360477f49cea4e15e6898d573205d3c7eb9c53d1960",
+        "freeze": "protocol_freeze.json"
+      }
+    },
+    {
+      "requirement": "Four source reactions and re21 audited against SBML/author CSV; aliases and candidate source columns exact",
+      "status": "PROVED",
+      "evidence": {
+        "source_manifest": "source_manifest.json",
+        "math": "mathematical_certificate.json",
+        "species_rows_per_model": 241
+      }
+    },
+    {
+      "requirement": "Pulse, sustained 10000tau, all three slow ratios, and both V1 negative controls retained",
+      "status": "PROVED",
+      "evidence": {
+        "tests": [
+          "A_pulse",
+          "B_constant",
+          "D_fast",
+          "D_inventory",
+          "C_slow_20",
+          "C_slow_100",
+          "C_slow_1000"
+        ]
+      }
+    },
+    {
+      "requirement": "Gate 1: all states/extents, currents, nonnegativity, convergence, fate ledgers and independent analytic checks",
+      "status": "PROVED",
+      "evidence": {
+        "base": {
+          "attempt": 2,
+          "raw_trajectory_count": 28,
+          "numeric": "PASS",
+          "independent": "PASS",
+          "verified_required_window_scores": 480,
+          "required_figures": [
+            "01_product_trajectory_comparison",
+            "02_product_flux_comparison",
+            "03_pi_release_comparison",
+            "04_eftu_gdp_release_comparison",
+            "05_internal_occupancy_comparison",
+            "06_long_time_output_comparison",
+            "07_slow_input_response",
+            "08_resource_ledger_error",
+            "09_complexity_accuracy_tradeoff"
+          ],
+          "figures": "results/reduction/chain01_v2/figures/base/attempt_002_axis_qa"
+        },
+        "boundary": {
+          "attempt": 1,
+          "raw_trajectory_count": 28,
+          "numeric": "PASS",
+          "independent": "PASS",
+          "verified_required_window_scores": 480,
+          "required_figures": [
+            "01_product_trajectory_comparison",
+            "02_product_flux_comparison",
+            "03_pi_release_comparison",
+            "04_eftu_gdp_release_comparison",
+            "05_internal_occupancy_comparison",
+            "06_long_time_output_comparison",
+            "07_slow_input_response",
+            "08_resource_ledger_error",
+            "09_complexity_accuracy_tradeoff"
+          ],
+          "figures": "results/reduction/chain01_v2/figures/boundary/attempt_001_axis_qa"
+        }
+      }
+    },
+    {
+      "requirement": "Gate 2/3: raw current/extent data, all windows/checkpoints, fixed scales and cumulative-relative comparison",
+      "status": "PROVED",
+      "evidence": {
+        "required_window_scores_verified": 960,
+        "raw_trajectories_in_current_attempts": 56,
+        "resource_metrics": [
+          "pi_current",
+          "pi_extent",
+          "gdp_current",
+          "gdp_extent",
+          "bound_pi",
+          "bound_gdp",
+          "bound_gtp",
+          "tu_bound",
+          "phosphate_unreleased",
+          "unfinished"
+        ]
+      }
+    },
+    {
+      "requirement": "Independent steady flux/inventory, mean waits/variances, asymptotic resource offsets and honest complexity counts",
+      "status": "PROVED",
+      "evidence": {
+        "math": "mathematical_certificate.json",
+        "independent": "waiting_time_resolvent_checks in both phase reports"
+      }
+    },
+    {
+      "requirement": "Restored-boundary exact currents, inventories and cumulative slopes/intercepts match saved 10000tau endpoints",
+      "status": "PROVED",
+      "evidence": {
+        "certificate": "boundary_analytical_certificate.json",
+        "models": [
+          "Full",
+          "Direct",
+          "Two-stage",
+          "Three-stage"
+        ]
+      }
+    },
+    {
+      "requirement": "Gate 4: original re21 material mapping, condition-specific minimum-model decision, no full-coupled or reduced-core promotion",
+      "status": "PROVED",
+      "evidence": {
+        "selected": "Three-stage",
+        "domain": {
+          "zero_initial_internal_required": true,
+          "author_rates_only": true,
+          "internal_side_paths_zero_required": true,
+          "input_T_slow_tau_tested": [
+            20,
+            100,
+            1000
+          ],
+          "S4_downstream_isolated": true
+        },
+        "decision_source": "validation_summary.json"
+      }
+    },
+    {
+      "requirement": "Native unresolved first sampling attempt and execution source preserved",
+      "status": "PROVED",
+      "evidence": {
+        "path": "base/attempt_001",
+        "native_status": "NUMERICALLY_UNRESOLVED"
+      }
+    },
+    {
+      "requirement": "Scientific report, figure provenance, artifact bindings and derived evidence navigation",
+      "status": "PROVED",
+      "evidence": {
+        "reports": "docs/reduction/chain01_v2*",
+        "navigation_nodes": 124
+      }
+    },
+    {
+      "requirement": "Each completed round committed, pushed and actual remote SHA verified",
+      "status": "PROVED",
+      "evidence": {
+        "required_rounds": [
+          "V2-R0",
+          "V2-R1",
+          "V2-R2"
+        ],
+        "receipts": [
+          {
+            "round": "V2-R0",
+            "local_commit_sha": "1a97b7307367fe7e93468cea1a2c5349f8fb2811",
+            "verified_remote_head_sha": "1a97b7307367fe7e93468cea1a2c5349f8fb2811",
+            "push_result": "SUCCESS; origin branch HEAD verified directly after git push",
+            "verified_at_utc": "2026-10-08T11:21:29.024497+00:00",
+            "historical_integrity": {
+              "status": "PASS",
+              "protected_file_count": 1737,
+              "binding_count": 6
+            },
+            "receipt_scope": "Payload commit delivery; this receipt is included in the next commit to avoid a circular self hash."
+          },
+          {
+            "round": "V2-R1",
+            "local_commit_sha": "2b3a7c06b6576b7d433593c4df396660261d7b06",
+            "verified_remote_head_sha": "2b3a7c06b6576b7d433593c4df396660261d7b06",
+            "push_result": "SUCCESS; origin branch HEAD verified directly after git push",
+            "verified_at_utc": "2026-10-08T13:07:45.720660+00:00",
+            "historical_integrity": {
+              "status": "PASS",
+              "protected_file_count": 1737,
+              "binding_count": 6
+            },
+            "receipt_scope": "Payload commit delivery; this receipt is included in the next commit to avoid a circular self hash."
+          },
+          {
+            "round": "V2-R2",
+            "local_commit_sha": "c467e4f9dae8fb8a43ce5f4143a25c350c3806f1",
+            "verified_remote_head_sha": "c467e4f9dae8fb8a43ce5f4143a25c350c3806f1",
+            "push_result": "SUCCESS; origin branch HEAD verified directly after git push",
+            "verified_at_utc": "2026-10-08T13:37:36.242308+00:00",
+            "historical_integrity": {
+              "status": "PASS",
+              "protected_file_count": 1737,
+              "binding_count": 6
+            },
+            "receipt_scope": "Payload commit delivery; this receipt is included in the next commit to avoid a circular self hash."
+          }
+        ],
+        "current_local_head": "c467e4f9dae8fb8a43ce5f4143a25c350c3806f1",
+        "live_remote_head": "c467e4f9dae8fb8a43ce5f4143a25c350c3806f1",
+        "R2_delivery_required": true
+      }
+    }
+  ],
+  "scientific_scope": "LOCAL ONLY; no complete PURE protein/shared ATP-GTP validation",
+  "unresolved_scientific_limits": [
+    "arbitrary fast supply not accepted",
+    "nonzero internal composition not reconstructable",
+    "shared-pool/downstream coupling not tested",
+    "empirical parameter range limited to author constants"
+  ],
+  "current_phase_info": {
+    "base": {
+      "attempt": 2,
+      "raw_trajectory_count": 28,
+      "numeric": "PASS",
+      "independent": "PASS",
+      "verified_required_window_scores": 480,
+      "required_figures": [
+        "01_product_trajectory_comparison",
+        "02_product_flux_comparison",
+        "03_pi_release_comparison",
+        "04_eftu_gdp_release_comparison",
+        "05_internal_occupancy_comparison",
+        "06_long_time_output_comparison",
+        "07_slow_input_response",
+        "08_resource_ledger_error",
+        "09_complexity_accuracy_tradeoff"
+      ],
+      "figures": "results/reduction/chain01_v2/figures/base/attempt_002_axis_qa"
+    },
+    "boundary": {
+      "attempt": 1,
+      "raw_trajectory_count": 28,
+      "numeric": "PASS",
+      "independent": "PASS",
+      "verified_required_window_scores": 480,
+      "required_figures": [
+        "01_product_trajectory_comparison",
+        "02_product_flux_comparison",
+        "03_pi_release_comparison",
+        "04_eftu_gdp_release_comparison",
+        "05_internal_occupancy_comparison",
+        "06_long_time_output_comparison",
+        "07_slow_input_response",
+        "08_resource_ledger_error",
+        "09_complexity_accuracy_tradeoff"
+      ],
+      "figures": "results/reduction/chain01_v2/figures/boundary/attempt_001_axis_qa"
+    }
+  }
+}
