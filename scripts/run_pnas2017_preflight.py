@@ -1,5 +1,5 @@
 """Current PNAS evidence qualification, preserving mutating historical verifier outputs."""
-import argparse,hashlib,json,subprocess,sys
+import argparse,hashlib,json,os,platform,subprocess,sys
 from datetime import datetime,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -48,6 +48,8 @@ def main():
         "git_dirty_status":subprocess.check_output(["git","status","--porcelain=v1"],cwd=ROOT,text=True),
         "input_hashes":{("scripts/"+name):hashlib.sha256((ROOT/"scripts"/name).read_bytes()).hexdigest() for name in SCRIPTS},
         "timestamp_utc":datetime.now(timezone.utc).isoformat(),"scope":"ENGINEERING_INTEGRITY_ONLY_FIGURES_PAUSED",
+        "numerical_runtime":{"python_version":sys.version,"platform":platform.platform(),
+                             "environment":{key:os.environ.get(key) for key in ("MKL_ENABLE_INSTRUCTIONS","MKL_NUM_THREADS","OMP_NUM_THREADS")}},
         "results":results,"historical_verifier_rewrites":rewrites,"all_checks_pass":all(r["exit_code"]==0 for r in results) and not rewrites,
         "figure_reproduction":"PAUSED_NOT_RUN","experimental_validation":"NOT_ESTABLISHED"}
         (out/"preflight.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")

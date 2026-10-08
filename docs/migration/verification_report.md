@@ -75,3 +75,11 @@ See [failed hosted run](https://github.com/DrWanSJ/PURE/actions/runs/37717040384
 The CI now registers the exact Windows/MKL package builds from the successful local qualification environment,
 using an explicit package dependency closure and the existing SymPy overlay. Thresholds, protected verifier bytes and scientific inputs remain unchanged.
 The failed Linux check remains a limitation of cross-platform numerical verification; a Windows CI PASS does not establish Linux equivalence.
+
+The first exact-package Windows hosted run also failed P08 at2.4978473990448573e-6:
+[failed Windows run](https://github.com/DrWanSJ/PURE/actions/runs/37717800512).
+Package identity did not establish hardware-dispatch equivalence. The registered CI qualification now fixes AVX2 dispatch and
+one numerical thread, matching the local supported instruction set and removing thread-count variation.
+The unchanged full reduction-evidence verifier passes locally in this fixed mode; all75 independent block spectra match
+the frozen values with maximum scaled error0.0. The1e-7 bound, source/scientific/historical bytes and all negative controls remain unchanged.
+Runtime flags are now recorded in preflight manifests. The hosted qualification remains a separate gate.

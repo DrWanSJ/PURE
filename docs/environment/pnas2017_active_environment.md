@@ -13,3 +13,12 @@ including Python3.12.4,NumPy1.26.4 py312hfd52020_0,SciPy1.13.1 py312hbb039d4_0 a
 Exact package URLs/builds/download hashes are in .github/environments/pnas2017-windows-mkl-explicit.conda.lock
 and pnas2017-windows-mkl-package-provenance.json; SymPy1.13.1 is the existing pip overlay.
 No verifier threshold, historical manifest/output or source byte is changed.
+
+Matching package builds alone still failed on the initial hosted Windows run: P08 scaled error2.4978473990448573e-6.
+The local CPU is Intel i7-12700H with AVX2; its default MKL uses14 threads. Hosted hardware dispatch is a separate variable.
+Qualification now fixes MKL_ENABLE_INSTRUCTIONS=AVX2,MKL_NUM_THREADS=1,OMP_NUM_THREADS=1.
+The unchanged full reduction-evidence verifier passes locally in this mode, including75 independently recomputed blocks
+with maximum eigenvalue scaled error0.0 under the same1e-7 bound. Native hosted failures remain recorded.
+The preflight manifest records these runtime flags; CI also records CPU identity and NumPy build configuration.
+AVX2 dispatch is documented in [Intel's instruction-set guide](https://www.intel.com/content/www/us/en/docs/onemkl/developer-guide-windows/2024-1/instruction-set-specific-dispatch-on-intel-archs.html).
+This bounds numerical qualification to the registered runtime; arbitrary hardware/BLAS equivalence is not claimed.
