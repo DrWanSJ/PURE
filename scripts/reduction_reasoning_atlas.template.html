@@ -1,0 +1,1812 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PNAS2017 → PURE_reduced_core 降维推理图谱 (READ ONLY)</title>
+<style>
+:root{
+  /* ---- 语义 1: 科学状态 (仅用于 chip / pipeline / verdict) ---- */
+  --st-approved:#14713f; --st-approved-bg:#e6f2eb; --st-approved-bd:#a9cdb9;
+  --st-info:#1d5fa6;     --st-info-bg:#e8f0f9;     --st-info-bd:#a8c4e4;
+  --st-cand:#b06a06;     --st-cand-bg:#fbf1e0;     --st-cand-bd:#e0c391;
+  --st-na:#7b828a;       --st-na-bg:#eef0f2;       --st-na-bd:#c6ccd2;
+  /* ---- 语义 2: species 信息类别 (紫系 + 形状) ---- */
+  --cls-I:#453279; --cls-IIA:#63509c; --cls-IIB:#8474b8; --cls-III:#a89bd0; --cls-C:#cfc7e4;
+  /* ---- 语义 3: 功能模块 (土色系 + 双字母代码) ---- */
+  --mod-init:#8a6d4b; --mod-elong:#6d7845; --mod-aa:#a3764f; --mod-term:#5f7278; --mod-en:#8d6a5e;
+  /* ---- 语义 4: 注释证据 (中性灰 + 边框样式) ---- */
+  --ev-dc:#3d444c; --ev-gp:#79838d; --ev-rd:#b6bcc2; --ev-sj:#2c353d;
+  --ink:#1b1f24; --ink2:#4a535d; --ink3:#78828c;
+  --line:#d8dce1; --line2:#eceff2; --bg:#f6f7f9; --card:#ffffff;
+  --mono:ui-monospace,SFMono-Regular,"Cascadia Mono",Consolas,"Liberation Mono",monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);
+  font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Microsoft YaHei",sans-serif;}
+a{color:var(--st-info)}
+code,.mono{font-family:var(--mono);font-size:.92em;overflow-wrap:anywhere}
+.wrap{max-width:1360px;margin:0 auto;padding:0 20px}
+
+/* ---------- masthead ---------- */
+header.masthead{background:#20252b;color:#f2f4f6;padding:26px 0 20px;border-bottom:3px solid #14181c}
+header.masthead h1{margin:0 0 4px;font-size:23px;letter-spacing:.2px}
+header.masthead .sub{color:#b9c2cb;font-size:13.5px;margin:0 0 12px}
+#prov{display:flex;flex-wrap:wrap;gap:6px 8px;font-family:var(--mono);font-size:11.5px}
+#prov span{background:#2c333b;border:1px solid #3c444d;color:#c8d0d8;padding:2px 7px;border-radius:3px;white-space:nowrap}
+#prov b{color:#fff;font-weight:600}
+.readonly{display:inline-block;margin-top:10px;background:#3a2f14;border:1px solid #6d5a22;color:#f0d79a;
+  padding:3px 9px;border-radius:3px;font-size:11.5px;font-family:var(--mono);letter-spacing:.4px}
+
+/* ---------- nav ---------- */
+nav.toc{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:blur(4px);
+  border-bottom:1px solid var(--line);padding:8px 0}
+nav.toc .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+nav.toc a{text-decoration:none;color:var(--ink2);font-size:13px;padding:4px 9px;border-radius:4px;border:1px solid transparent;white-space:nowrap}
+nav.toc a:hover{background:#eef1f4;border-color:var(--line)}
+.seg{margin-left:auto;display:flex;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:#fff}
+.seg button{border:0;background:#fff;color:var(--ink2);font:inherit;font-size:12.5px;padding:5px 11px;cursor:pointer;border-left:1px solid var(--line)}
+.seg button:first-child{border-left:0}
+.seg button[aria-pressed="true"]{background:#2c333b;color:#fff}
+.seg button[data-scope="approved"][aria-pressed="true"]{background:var(--st-approved)}
+
+/* ---------- sections ---------- */
+section{padding:34px 0 8px}
+section>h2{font-size:19px;margin:0 0 2px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+section>h2 .n{font-family:var(--mono);font-size:12px;color:#fff;background:#2c333b;padding:2px 7px;border-radius:3px}
+section>.lede{color:var(--ink2);font-size:13.5px;margin:0 0 18px;max-width:98ch}
+h3{font-size:15px;margin:22px 0 8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:7px;padding:16px;margin-bottom:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.note{font-size:12.5px;color:var(--ink3)}
+.callout{border-left:4px solid var(--st-cand);background:var(--st-cand-bg);padding:12px 14px;border-radius:0 6px 6px 0;margin:14px 0}
+.callout.blue{border-left-color:var(--st-info);background:var(--st-info-bg)}
+.callout.gray{border-left-color:var(--st-na);background:var(--st-na-bg)}
+.callout .big{font-size:16.5px;font-weight:600;color:#7a4a03;margin:0 0 4px}
+.callout.blue .big{color:#164a80}
+.callout.gray .big{color:#4d545b}
+
+/* ---------- status chips ---------- */
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-family:var(--mono);
+  padding:2px 8px;border-radius:11px;border:1px solid;white-space:nowrap;line-height:1.7}
+.chip.approved{color:var(--st-approved);background:var(--st-approved-bg);border-color:var(--st-approved-bd)}
+.chip.info{color:var(--st-info);background:var(--st-info-bg);border-color:var(--st-info-bd)}
+.chip.cand{color:var(--st-cand);background:var(--st-cand-bg);border-color:var(--st-cand-bd);border-style:dashed}
+.chip.na{color:var(--st-na);background:var(--st-na-bg);border-color:var(--st-na-bd)}
+.chip.stop{color:#5c6167;background:repeating-linear-gradient(45deg,#eceff2,#eceff2 5px,#dfe3e8 5px,#dfe3e8 10px);
+  border-color:var(--st-na-bd);border-style:dashed}
+
+/* ---------- pipeline ---------- */
+#pipe{display:flex;align-items:stretch;gap:0;flex-wrap:nowrap;overflow-x:auto;padding:4px 0 10px}
+.pstage{flex:1 1 0;min-width:158px;border:1px solid var(--line);border-radius:6px;background:#fff;padding:10px 11px;position:relative}
+.pstage .pt{font-weight:600;font-size:13px;margin:6px 0 3px}
+.pstage .pd{font-size:11.5px;color:var(--ink2);line-height:1.45}
+.pstage .pi{font-family:var(--mono);font-size:10.5px;color:var(--ink3)}
+.pstage.approved{border-top:4px solid var(--st-approved)}
+.pstage.info{border-top:4px solid var(--st-info)}
+.pstage.cand{border-top:4px dashed var(--st-cand);background:#fffdf8}
+.pstage.na{border-top:4px solid var(--st-na);background:repeating-linear-gradient(45deg,#fff,#fff 7px,#f4f5f7 7px,#f4f5f7 14px)}
+.parrow{flex:0 0 26px;display:flex;align-items:center;justify-content:center;color:var(--ink3);font-size:17px}
+
+/* ---------- legend rows ---------- */
+.legend{display:flex;flex-wrap:wrap;gap:8px}
+.lg{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--line);border-radius:5px;padding:7px 10px;background:#fff;flex:1 1 240px;min-width:240px}
+.lg .sw{flex:0 0 22px;height:22px;border-radius:3px;margin-top:1px}
+.lg .t{font-size:12.5px;line-height:1.45}
+.lg .t b{display:block;font-size:12.5px}
+.lg .t span{color:var(--ink2)}
+
+/* ---------- checklist ---------- */
+#checklist{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
+.ck{border:1px solid var(--line);border-left-width:4px;border-radius:5px;background:#fff;padding:10px 12px}
+.ck.approved{border-left-color:var(--st-approved)}
+.ck.info{border-left-color:var(--st-info)}
+.ck.cand{border-left-color:var(--st-cand);border-left-style:dashed}
+.ck.na{border-left-color:var(--st-na)}
+.ck .h{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:3px}
+.ck .h b{font-size:13px}
+.ck .d{font-size:12px;color:var(--ink2);font-family:var(--mono)}
+
+/* ---------- treemap ---------- */
+#treemap{display:flex;gap:5px;align-items:stretch;width:100%;min-height:150px}
+.band{border:1px solid rgba(0,0,0,.25);border-radius:5px;padding:7px 7px 6px;cursor:pointer;color:#fff;
+  display:flex;flex-direction:column;gap:5px;position:relative;overflow:hidden;transition:filter .12s}
+.band:hover{filter:brightness(1.12)}
+.band[aria-pressed="true"]{outline:3px solid #20252b;outline-offset:1px}
+.band .bh{font-size:12px;font-weight:600;line-height:1.25;display:flex;justify-content:space-between;gap:4px;align-items:baseline}
+.band .bh em{font-style:normal;font-family:var(--mono);font-size:15px;font-weight:700}
+.band .bz{font-size:10.5px;opacity:.9;line-height:1.3}
+.band .cells{display:grid;grid-template-columns:repeat(auto-fill,minmax(7px,1fr));gap:2px;flex:1;align-content:start}
+.band .cells i{display:block;aspect-ratio:1/1;background:rgba(255,255,255,.62);border-radius:1px}
+.band .cells i.rev{background:rgba(255,255,255,.24)}
+.band .cells i.hit{background:#ffd45e;outline:1px solid #7a5b00}
+
+/* ---------- class panel ---------- */
+#clsPanel{border:1px solid var(--line);border-radius:7px;background:#fff;margin-top:12px;overflow:hidden}
+#clsPanel .ph{padding:11px 15px;color:#fff;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+#clsPanel .ph .shp{font-size:20px;line-height:1}
+#clsPanel .ph b{font-size:15px}
+#clsPanel .ph .cnt{margin-left:auto;font-family:var(--mono);font-size:12.5px;background:rgba(255,255,255,.22);padding:2px 9px;border-radius:11px}
+#clsPanel .pb{padding:14px 15px}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.q{border:1px solid var(--line2);border-radius:5px;padding:9px 11px;background:#fcfcfd}
+.q h4{margin:0 0 5px;font-size:12px;letter-spacing:.4px;color:var(--ink3);text-transform:uppercase;font-family:var(--mono)}
+.q ul{margin:0;padding-left:17px}
+.q li{font-size:13px;margin-bottom:3px}
+.q.warn{border-color:#e0c391;background:var(--st-cand-bg)}
+.q.warn h4{color:#8a5405}
+.memlist{display:flex;flex-wrap:wrap;gap:4px;max-height:150px;overflow:auto;padding:2px}
+.memlist button{font-family:var(--mono);font-size:11px;border:1px solid var(--line);background:#fff;color:var(--ink2);
+  padding:1px 6px;border-radius:3px;cursor:pointer}
+.memlist button:hover{border-color:#20252b;color:#20252b}
+.poolline{display:flex;flex-wrap:wrap;gap:5px}
+.poolline .p{font-family:var(--mono);font-size:11px;border:1px dashed var(--st-info-bd);background:var(--st-info-bg);
+  color:#164a80;padding:2px 7px;border-radius:3px}
+
+/* ---------- species browser ---------- */
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:9px}
+input[type=search],select{font:inherit;font-size:13px;padding:5px 9px;border:1px solid var(--line);border-radius:5px;background:#fff;color:var(--ink)}
+input[type=search]{min-width:250px;flex:1 1 250px}
+select{max-width:250px}
+.count{font-family:var(--mono);font-size:12px;color:var(--ink2);margin-left:auto;white-space:nowrap}
+table.rows{width:100%;border-collapse:collapse;font-size:12.5px}
+table.rows th{text-align:left;font-size:11px;letter-spacing:.3px;color:var(--ink3);text-transform:uppercase;
+  font-family:var(--mono);border-bottom:1px solid var(--line);padding:5px 7px;position:sticky;top:0;background:#fff;z-index:2}
+table.rows td{border-bottom:1px solid var(--line2);padding:4px 7px;vertical-align:top}
+table.rows tr.clk{cursor:pointer}
+table.rows tr.clk:hover td{background:#f2f6fb}
+.scroll{max-height:440px;overflow:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.tagm{font-family:var(--mono);font-size:10.5px;padding:1px 5px;border-radius:3px;color:#fff;white-space:nowrap}
+.clstag{font-family:var(--mono);font-size:11px;font-weight:700;padding:1px 6px;border-radius:3px;color:#fff;white-space:nowrap}
+.evtag{font-family:var(--mono);font-size:10.5px;padding:1px 6px;border-radius:3px;white-space:nowrap}
+
+/* ---------- sankey ---------- */
+#sankey{width:100%;overflow-x:auto}
+#sankey svg{display:block;min-width:660px;width:100%;height:auto}
+.sk-lbl{font-size:11.5px;fill:var(--ink)}
+.sk-lbl.m{font-family:var(--mono);font-size:10px;fill:var(--ink3)}
+.ribbon{opacity:.5;transition:opacity .12s}
+.ribbon:hover{opacity:.85}
+
+/* ---------- evidence bar ---------- */
+#evBar{display:flex;height:26px;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#fff}
+#evBar div{display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--mono);font-size:11px;cursor:pointer}
+#evKey{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:9px;margin-top:11px}
+.evcard{border:1px solid var(--line);border-radius:5px;background:#fff;padding:9px 11px}
+.evcard .h{display:flex;gap:7px;align-items:center;margin-bottom:4px}
+.evcard .n{font-family:var(--mono);font-size:14px;font-weight:700;margin-left:auto}
+.evcard p{margin:0;font-size:12px;color:var(--ink2);line-height:1.5}
+
+/* ---------- tree ---------- */
+#tree{font-size:13px}
+.tnode{border:1px solid var(--line);border-radius:5px;background:#fff;margin-bottom:6px;overflow:hidden}
+.tnode>.th{display:flex;gap:9px;align-items:center;padding:8px 11px;cursor:pointer;user-select:none;flex-wrap:wrap}
+.tnode>.th:hover{background:#f6f8fa}
+.tnode>.th .tw{font-family:var(--mono);color:var(--ink3);width:12px;flex:0 0 12px}
+.tnode>.th b{font-size:13px}
+.tnode>.th .meta{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--ink2);display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.tbody{display:none;border-top:1px solid var(--line2);padding:9px 11px 11px 30px;background:#fcfcfd}
+.tnode.open>.tbody{display:block}
+.tsub{margin-bottom:7px}
+.tsub>.sh{font-family:var(--mono);font-size:11.5px;color:var(--ink2);cursor:pointer;display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.tsub>.sh:hover{color:#20252b}
+.fams{display:none;flex-wrap:wrap;gap:5px;margin:5px 0 0 14px}
+.tsub.open .fams{display:flex}
+.fam{font-family:var(--mono);font-size:11px;border:1px solid var(--line);background:#fff;padding:2px 7px;border-radius:3px;cursor:pointer}
+.fam:hover{border-color:#20252b;background:#f2f6fb}
+.fam b{font-weight:700}
+.stagebar{display:flex;gap:3px;flex-wrap:wrap;margin:5px 0 0 14px}
+.stagebar i{font-style:normal;font-family:var(--mono);font-size:10px;background:#eef1f4;border:1px solid var(--line);
+  color:var(--ink2);padding:1px 5px;border-radius:3px}
+
+/* ---------- candidate cards ---------- */
+#concepts,#candCards{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:10px}
+.ccard{border:1.5px dashed var(--st-cand-bd);border-radius:6px;background:#fffdf8;padding:11px 12px;position:relative}
+.ccard .badge{position:absolute;top:-9px;right:9px;font-family:var(--mono);font-size:9.5px;letter-spacing:.3px;
+  background:var(--st-cand);color:#fff;padding:2px 7px;border-radius:9px}
+.ccard h4{margin:2px 0 5px;font-size:13px;font-family:var(--mono);color:#8a5405}
+.ccard p{margin:0;font-size:12px;color:var(--ink2);line-height:1.5}
+.ccard .cnt{font-family:var(--mono);font-size:19px;font-weight:700;color:#8a5405;margin-top:6px}
+.ccard .cnt small{font-size:11px;font-weight:400;color:var(--ink3)}
+
+/* ---------- gates ---------- */
+#gates{display:flex;flex-direction:column;gap:0;align-items:center}
+.gate{border:1px solid var(--line);border-radius:6px;background:#fff;margin-bottom:7px;overflow:hidden}
+.gate .gh{display:flex;gap:10px;align-items:center;padding:9px 12px;cursor:pointer;flex-wrap:wrap}
+.gate .gh:hover{background:#f6f8fa}
+.gate .gn{flex:0 0 26px;height:26px;border-radius:50%;background:#2c333b;color:#fff;font-family:var(--mono);
+  font-size:12px;display:flex;align-items:center;justify-content:center}
+.gate .gt{font-weight:600;font-size:13.5px}
+.gate .gt small{display:block;font-weight:400;font-size:11.5px;color:var(--ink3);font-family:var(--mono)}
+.gate .gs{margin-left:auto;display:flex;gap:5px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.gate .gb{display:none;border-top:1px solid var(--line2);padding:11px 13px;background:#fcfcfd;font-size:13px}
+.gate.open .gb{display:block}
+.gate .gb ul{margin:5px 0 0;padding-left:18px}
+.gate .gb li{margin-bottom:4px}
+.gate .gb .fact{font-family:var(--mono);font-size:11.5px;color:var(--ink2);background:#eef1f4;border:1px solid var(--line);
+  border-radius:4px;padding:6px 9px;margin-top:8px}
+.funnel{height:100%;background:linear-gradient(90deg,#3d444c,#79838d);border-radius:3px}
+.stopbar{margin:16px 0 6px;border:2px dashed var(--st-na);border-radius:7px;padding:14px;text-align:center;
+  background:repeating-linear-gradient(45deg,#f4f5f7,#f4f5f7 9px,#e7eaee 9px,#e7eaee 18px)}
+.stopbar b{font-size:15px;color:#5c6167;font-family:var(--mono);letter-spacing:.4px}
+.stopbar p{margin:5px 0 0;font-size:12.5px;color:var(--ink2)}
+
+/* ---------- case study ---------- */
+#mech{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px}
+.mchip{border:1.5px solid;border-radius:5px;padding:5px 9px;font-family:var(--mono);font-size:11.5px;background:#fff;cursor:pointer;line-height:1.35}
+.mchip small{display:block;font-family:inherit;font-size:9.5px;opacity:.75}
+.mchip.cplx{border-style:dashed}
+.marr{color:var(--ink3);font-size:15px}
+.verdict{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.vcard{border-radius:7px;padding:13px 15px;border:1px solid}
+.vcard.yes{border-color:var(--st-approved-bd);border-top:5px solid var(--st-approved);background:var(--st-approved-bg)}
+.vcard.no{border-color:var(--st-na-bd);border-top:5px solid var(--st-na);
+  background:repeating-linear-gradient(45deg,#f4f5f7,#f4f5f7 8px,#eceef1 8px,#eceef1 16px)}
+.vcard h4{margin:0 0 5px;font-size:14px;font-family:var(--mono)}
+.vcard.yes h4{color:var(--st-approved)} .vcard.no h4{color:#5c6167}
+.vcard p{margin:0;font-size:12.5px;color:var(--ink2);line-height:1.55}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ecol{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px}
+.ecol h4{margin:0 0 8px;font-size:13px;display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.ecol ul{margin:0;padding-left:17px}
+.ecol li{font-size:12.5px;margin-bottom:6px;line-height:1.5}
+.ecol li b{font-family:var(--mono);font-size:12px}
+.ecol.pro h4{color:var(--st-info)} .ecol.pro{border-left:4px solid var(--st-info)}
+.ecol.con h4{color:#8a5405} .ecol.con{border-left:4px solid var(--st-cand)}
+table.mini{width:100%;border-collapse:collapse;font-size:12px;margin-top:6px}
+/* These three containers hold wide evidence tables; they must scroll inside themselves, not stretch the page. */
+#occTable,#tsTable,#histList{overflow-x:auto}
+table.mini th{text-align:left;font-family:var(--mono);font-size:10.5px;color:var(--ink3);text-transform:uppercase;
+  border-bottom:1px solid var(--line);padding:4px 6px}
+table.mini td{border-bottom:1px solid var(--line2);padding:3px 6px;font-family:var(--mono);font-size:11.5px}
+table.mini td.l{font-family:inherit}
+
+/* ---------- footer ---------- */
+footer{margin-top:34px;border-top:1px solid var(--line);background:#fff;padding:22px 0 40px;font-size:12.5px}
+footer h3{margin-top:0}
+#fileList,#assertList{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:3px 16px;
+  font-family:var(--mono);font-size:11px;color:var(--ink2);max-height:250px;overflow:auto}
+#fileList div,#assertList div{border-bottom:1px dotted var(--line2);padding:2px 0;display:flex;gap:7px}
+#fileList div span{margin-left:auto;color:var(--ink3);white-space:nowrap}
+.ok{color:var(--st-approved);font-weight:700}
+
+/* ---------- drawer ---------- */
+#scrim{position:fixed;inset:0;background:rgba(16,20,25,.42);opacity:0;pointer-events:none;transition:opacity .16s;z-index:80}
+#scrim.on{opacity:1;pointer-events:auto}
+#drawer{position:fixed;top:0;right:0;bottom:0;width:min(560px,100%);background:#fff;z-index:90;
+  box-shadow:-6px 0 24px rgba(0,0,0,.18);transform:translateX(102%);transition:transform .18s ease-out;
+  display:flex;flex-direction:column}
+#drawer.on{transform:none}
+#drawer .dh{padding:13px 16px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:flex-start;background:#fcfcfd}
+#drawer .dh b{font-family:var(--mono);font-size:14.5px;word-break:break-all;display:block}
+#drawer .dh .s{font-size:11.5px;color:var(--ink3);font-family:var(--mono);margin-top:2px}
+#dClose{margin-left:auto;border:1px solid var(--line);background:#fff;border-radius:5px;cursor:pointer;
+  font-size:15px;line-height:1;padding:4px 9px;color:var(--ink2);flex:0 0 auto}
+#dClose:hover{background:#eef1f4}
+#dBody{overflow:auto;padding:14px 16px 34px;flex:1}
+.dsec{margin-bottom:15px}
+.dsec>h5{margin:0 0 6px;font-size:11px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);
+  font-family:var(--mono);border-bottom:1px solid var(--line2);padding-bottom:3px}
+.dl{display:grid;grid-template-columns:158px 1fr;gap:3px 10px;font-size:12.5px}
+.dl dt{color:var(--ink2)}
+.dl dd{margin:0;font-family:var(--mono);font-size:11.5px;word-break:break-word}
+.dl dd.txt{font-family:inherit;font-size:12.5px}
+.eq{font-family:var(--mono);font-size:12.5px;background:#f6f7f9;border:1px solid var(--line);border-radius:5px;
+  padding:9px 11px;word-break:break-word;line-height:1.65}
+.whybox{border:1px solid var(--st-info-bd);background:var(--st-info-bg);border-radius:5px;padding:9px 11px;font-size:12.5px;line-height:1.6}
+.warnbox{border:1px dashed var(--st-cand-bd);background:var(--st-cand-bg);border-radius:5px;padding:9px 11px;font-size:12.5px;line-height:1.6}
+.yesno{font-family:var(--mono);font-size:11.5px;padding:1px 7px;border-radius:3px;border:1px solid}
+.yesno.y{color:var(--st-approved);background:var(--st-approved-bg);border-color:var(--st-approved-bd)}
+.yesno.n{color:var(--st-na);background:var(--st-na-bg);border-color:var(--st-na-bd)}
+.yesno.c{color:var(--st-cand);background:var(--st-cand-bg);border-color:var(--st-cand-bd);border-style:dashed}
+.hidden{display:none!important}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .two,.twocol,.verdict{grid-template-columns:1fr}
+  #pipe{flex-direction:column}
+  .parrow{flex:0 0 20px;transform:rotate(90deg)}
+  .pstage{min-width:0}
+  #treemap{flex-direction:column}
+  .band{flex:none!important;width:100%!important}
+  .band .cells{grid-template-columns:repeat(auto-fill,minmax(9px,1fr));max-height:74px}
+  nav.toc .wrap{gap:6px}
+  .seg{margin-left:0;width:100%}
+  .seg button{flex:1}
+  .dl{grid-template-columns:1fr}
+  .dl dt{margin-top:6px}
+  .gate .gb{padding:11px 13px}
+  input[type=search]{min-width:0}
+  .chip{white-space:normal;max-width:100%;overflow-wrap:anywhere}
+  .card,.vcard,.q{min-width:0;overflow-wrap:anywhere}
+  section>.lede{font-size:13px}
+  #gates{align-items:stretch}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <h1>PNAS2017 翻译网络 → <code>PURE_reduced_core</code>：降维推理图谱</h1>
+    <p class="sub">
+      241 species / 968 reaction 的<b>信息分类</b>与<b>功能注释</b>已完成；<b>动力学降维决定尚未批准</b>。
+      本页是只读的科学解释视图，不是 CRN 编辑器，也不是模拟前端。
+    </p>
+    <div id="prov"></div>
+    <span class="readonly">READ ONLY · 不修改任何科学源文件 · 无运行时 fetch · 数据在构建时内嵌</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <a href="#s1">1 状态</a>
+    <a href="#s2">2 物种分类</a>
+    <a href="#s3">3 反应</a>
+    <a href="#s4">4 降维依据</a>
+    <a href="#s5">5 案例：氨酰化</a>
+    <div class="seg" id="scopeSeg" role="group" aria-label="全局显示范围">
+      <button type="button" data-scope="approved" aria-pressed="false">只看已批准</button>
+      <button type="button" data-scope="all" aria-pressed="true">包含候选 / pending</button>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ================= SECTION 1 ================= -->
+<section id="s1">
+  <h2><span class="n">1</span> 当前降维状态 <span class="chip na">CURRENT REDUCTION STATUS</span></h2>
+  <p class="lede">
+    下面的横向流水线显示科学进展到了哪一步。<b>绿色实线</b>=已获科学批准；<b>蓝色</b>=描述性注释已完成（信息性，不是批准）；
+    <b>琥珀色虚线</b>=候选 / pending；<b>灰色</b>=尚不可用或尚未测试。流水线在第 6 步（已批准的 reduced mapping）
+    <b>硬性停止</b>，因为该步骤在仓库中并不存在。
+  </p>
+  <div class="card">
+    <div id="pipe"></div>
+    <div id="statusLegend" class="legend" style="margin-top:6px"></div>
+  </div>
+
+  <h3>状态清单（全部由仓库数据计算，不是硬编码）</h3>
+  <div id="checklist"></div>
+
+  <div class="callout">
+    <p class="big">已经知道一个 species 属于哪类，不等于已经证明它可以用 QSSA 删除。</p>
+    <p style="margin:0;font-size:13px;color:#6a4a12">
+      物种五类划分是<b>信息保留契约</b>（human-approved v1）：它回答“这个量必须保留、还是可以被重建”。
+      它<b>不</b>回答“这个坐标在动力学上可以被消去”。
+      <code>"information retention" IS NOT "kinetic eliminability"</code> —— 后者需要独立的
+      closure、守恒、可行性与全域对比证据，并由人签署决定。
+    </p>
+  </div>
+</section>
+
+<!-- ================= SECTION 2 ================= -->
+<section id="s2">
+  <h2><span class="n">2</span> 物种：241 → 五个信息类别</h2>
+  <p class="lede">
+    下面的比例条带（不是饼图）宽度正比于类别成员数，每一个小方块代表<b>一个原始 SBML species</b>。
+    类别标签、成员归属与逐物种“定位原因”全部来自已批准的信息契约文档
+    <code>docs/reduction/species_information_contract_detailed.md</code>（241 行表格）。
+    颜色（紫系）+ 形状代码 + 类别编号三重编码，不与其他语义共用。
+  </p>
+
+  <div class="card">
+    <div id="treemap"></div>
+    <div id="classLegend" class="legend" style="margin-top:12px"></div>
+    <div id="clsPanel"></div>
+  </div>
+
+  <h3>物种浏览器</h3>
+  <div class="card">
+    <div class="toolbar">
+      <input type="search" id="spSearch" placeholder="按原始 SBML species ID 搜索，例如 GlyRS_GlyAMP / ATP / elRS70S…" aria-label="搜索 species ID">
+      <span class="count" id="spCount"></span>
+    </div>
+    <div class="toolbar" id="spFilters"></div>
+    <div class="scroll">
+      <table class="rows" id="spRows">
+        <thead><tr>
+          <th>SBML species ID</th><th>Class</th><th>Molecule class</th><th>Functional pool</th>
+          <th>x0 (reference)</th><th>Protected</th><th>Reconstruction requirement</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="note" id="spTrunc" style="margin-top:8px"></p>
+    <p class="note" style="margin-top:8px">
+      点击任意一行打开详情抽屉。“为什么归到这里？”优先使用契约中该物种的原始 rationale；
+      若仓库未提供更细的逐物种理由，页面会直接说明<b>“仓库未给出更细的逐 species rationale”</b>，而不会现场编造新的理由。
+    </p>
+  </div>
+</section>
+
+<!-- ================= SECTION 3 ================= -->
+<section id="s3">
+  <h2><span class="n">3</span> 反应：968 条的两层视图</h2>
+  <p class="lede">
+    本节把两个<b>必须分开</b>的问题放在两个可切换的图层里。
+    第一层是<b>已完成的描述性事实</b>：“这个 reaction 在化学机制中做什么？”
+    第二层是<b>未批准的候选</b>：“未来可能怎样简化？”
+    两层使用不同的视觉语言（第一层用中性灰 + 边框样式表示证据类型，第二层一律用琥珀色虚线），绝不混用。
+    任何时候都<b>不会</b>同时绘制 968 条边。
+  </p>
+
+  <div class="seg" id="layerSeg" role="group" aria-label="反应图层" style="margin-bottom:14px;max-width:560px">
+    <button type="button" data-layer="function" aria-pressed="true">第一层 · 功能归属（已完成）</button>
+    <button type="button" data-layer="candidate" aria-pressed="false">第二层 · 降维候选（未批准）</button>
+  </div>
+
+  <!-- ---------- 3A ---------- -->
+  <div id="layerFunction">
+    <div class="card">
+      <h3 style="margin-top:0">第一层：这个 reaction 在化学机制中做什么？</h3>
+      <p class="note" style="margin-bottom:12px">
+        层级：<b>968 reaction → 5 个宽模块 → 26 个原始 SBML subsystem 文件 → 36 个 reaction family → 24 个 functional stage</b>。
+        下面是<b>聚合</b>的模块 × 证据状态流带（最多 20 条，不是 968 条边）；层级树在下一张卡片中。
+      </p>
+      <div id="multiSub"></div>
+      <div id="sankey"></div>
+      <div id="evKey"></div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">层级树：模块 → subsystem 文件 → family</h3>
+      <p class="note" style="margin-bottom:10px">点击 family 按钮可以把下面的反应浏览器过滤到该 family。</p>
+      <div id="tree"></div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">v2 功能注释证据状态</h3>
+      <div id="evBar"></div>
+      <div id="evExplain" style="margin-top:12px"></div>
+      <div class="callout blue" style="margin-bottom:0">
+        <p class="big">“功能注释已完成” ≠ “降维已批准”。</p>
+        <p style="margin:0;font-size:13px;color:#1a3f66">
+          <span id="pendingCount"></span>
+          功能注释只回答<b>这条反应在机制中扮演什么角色</b>；它明确声明不决定是否可以对某个反应或状态做删除、
+          QSSA、快平衡、lumping 或 chemostat。<code>human_functional_review_queue_v2.csv</code> 是功能审查的<b>活队列</b>，
+          审查完成后为空 —— 这只说明<b>功能归属</b>没有待决问题，与降维决定无关。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------- 3B ---------- -->
+  <div id="layerCandidate" class="hidden">
+    <div class="card" style="border-style:dashed;border-color:var(--st-cand-bd);background:#fffdf8">
+      <h3 style="margin-top:0">
+        第二层：未来可能怎样简化？
+        <span class="chip cand">Candidate only — HUMAN_REVIEW_REQUIRED</span>
+      </h3>
+      <p class="note" style="margin-bottom:12px">
+        这一层里的<b>每一个</b>条目都是候选概念，不是已批准的变换。仓库中 968/968 条反应的
+        <code>decision_status = PENDING</code>、<code>HUMAN_REVIEW_REQUIRED = true</code>，
+        16 张过程复核卡的 96 个勾选框<b>全部未勾选</b>。
+      </p>
+      <div id="concepts"></div>
+    </div>
+
+    <div class="card" style="border-style:dashed;border-color:var(--st-cand-bd)">
+      <h3 style="margin-top:0">仓库中实际存在的启发式候选标签</h3>
+      <p class="note" style="margin-bottom:10px">
+        这三个标签来自 <code>docs/reduction/reduction_decisions.csv</code>，是<b>启发式分类</b>，用于组织人审工作量；
+        它们<b>不是</b>决定，也<b>不是</b>动力学结论。注意：候选一律用琥珀色，<b>不使用绿色</b>。
+      </p>
+      <div id="candCards"></div>
+      <div id="candExplain" style="margin-top:12px"></div>
+    </div>
+
+    <div class="card" style="border-style:dashed;border-color:var(--st-cand-bd)">
+      <h3 style="margin-top:0">16 个过程卡：时间尺度证据 vs. 人的决定</h3>
+      <p class="note" style="margin-bottom:10px">
+        证据层 <code>reduction_evidence_v0</code> 已为每个过程计算了 τ / R<sub>τ</sub> / ε<sub>τ</sub> 等诊断量，
+        但<b>全部 16 个过程的 timescale_status 仍是 <code>NEED_MORE_INFORMATION</code></b>，
+        全部 human_decision 仍是 <code>PENDING_HUMAN_REVIEW</code>。诊断量是<b>证据记录</b>，不是批准。
+      </p>
+      <div class="scroll" style="max-height:520px">
+        <table class="rows" id="procTable">
+          <thead><tr>
+            <th>Process</th><th>名称</th><th>reactions</th><th>候选状态</th>
+            <th>τ_fast median (s)</th><th>R_τ median</th><th>ε_τ median</th>
+            <th>metric status</th><th>human decision</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="note" style="margin-top:8px">
+        <code>R_τ = τ_slow / τ_fast</code>，<code>ε_τ = 1 / R_τ</code>。
+        <b>R<sub>τ</sub> 接近或小于 1 表示没有可用的时间尺度分离</b>；这些列的中位数掩盖了区间内的最小值，
+        因此不能作为消去证书。局部 <code>J_zz</code> 块是<b>坐标依赖</b>的，不是已批准的快流形；
+        中性 / 非衰减模态<b>从不</b>被反演成“快时间”。把鼠标停在行上可看到 τ 与 R<sub>τ</sub> 的完整区间。
+      </p>
+    </div>
+  </div>
+
+  <!-- ---------- shared reaction browser ---------- -->
+  <h3>反应浏览器（968 条，全部 <code>decision_status = PENDING</code>）</h3>
+  <div class="card">
+    <div class="toolbar">
+      <input type="search" id="rxSearch" placeholder="按原始 combined reaction ID 搜索，例如 re0000000126…" aria-label="搜索 reaction ID">
+      <span class="count" id="rxCount"></span>
+    </div>
+    <div class="toolbar" id="rxFilters"></div>
+    <div class="scroll">
+      <table class="rows" id="rxRows">
+        <thead><tr>
+          <th>Reaction ID</th><th>模块</th><th>Subsystem</th><th>Family</th><th>Functional stage</th>
+          <th>证据</th><th>参考活性</th><th>候选标签</th><th>决定</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="note" id="rxTrunc" style="margin-top:8px"></p>
+  </div>
+</section>
+
+<!-- ================= SECTION 4 ================= -->
+<section id="s4">
+  <h2><span class="n">4</span> 降维的真正依据 <span class="chip info">THE ACTUAL BASIS FOR REDUCTION</span></h2>
+  <p class="lede">
+    “一个 reaction / species 为什么能简化？” —— 答案是<b>不能只凭一个理由</b>。
+    下面是必须依次通过的 10 道闸门。每一道都标注了仓库中<b>当前实际</b>的完成状态；
+    漏斗越往下越窄，表示能同时满足全部条件的候选越来越少。流水线在最后一道闸门<b>之后</b>硬性停止。
+    点击任意闸门展开其判据与仓库实测事实。
+  </p>
+  <div class="card">
+    <div id="gates"></div>
+    <div class="stopbar">
+      <b>⛔ APPROVED REDUCED MAPPING — 尚未到达</b>
+      <p>
+        仓库中不存在已批准的 reduced model：<code>reduced_model_status = NOT_VALIDATED</code>，
+        <code>kinetic_decisions_pending = 968 / 968</code>，<code>unselected_process_boxes = 96 / 96</code>，
+        <code>candidate_core_v0.md</code> 自我标注为 <code>STRUCTURAL_PROPOSAL_ONLY</code>（约 42–70 条通道，仅结构草图）。
+      </p>
+    </div>
+    <div class="callout gray" style="margin-bottom:0">
+      <p class="big">“protein curve 相似” 只是一个可能的输出检查，并不充分。</p>
+      <p style="margin:0;font-size:13px;color:#4d545b">
+        一条受保护输出曲线吻合，<b>不能</b>证明被隐去的中间态、bound moiety、粒子数账目、
+        反向通量、结合顺序或占用时间也保持一致；更不能证明结论在声明的有效域之外成立。
+        第 8 道闸门要求在<b>全部</b>受保护输出与账目上对比，且必须与第 9 道闸门的有效域声明一起阅读。
+        仓库中已经出现过反例：A3a 在参考域上
+        <code>FAILED_VALIDATION_ON_REFERENCE_DOMAIN</code>（受保护账目出现结构性滑移泄漏）。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 5 ================= -->
+<section id="s5">
+  <h2><span class="n">5</span> 案例研究：氨酰化 <span class="chip info">AMINOACYLATION</span></h2>
+  <p class="lede">
+    选这个案例是因为它<b>同时</b>具备：已批准的物种信息决定、完整的酶结合中间体结构、
+    可量化的时间尺度证据，以及<b>已经失败的</b>动力学消去尝试。它正好演示第 1 节那句话为什么成立。
+    所有数字都来自仓库中的 <code>aminoacylation_*.csv</code> 与证据层 CSV，没有一个是虚构的。
+  </p>
+
+  <div class="card">
+    <h3 style="margin-top:0">机制前后对照（点击任意化学物种打开详情）</h3>
+    <div id="mech"></div>
+    <p class="note" style="margin-top:12px">
+      <b>虚线边框 = 酶结合中间体（Class II-A）</b>，<b>实线边框 = 自由物种（Class I）</b>。
+      注意 GlyRS / MetRS 的活化复合物（<code>GlyRS_Gly_ATP</code>、<code>GlyRS_GlyAMP_PPi</code>、
+      <code>GlyRS_GlyAMP</code>、<code>GlyRS_AMP</code> 及 Met 对应物）全部是 <b>Class II-A</b> ——
+      也就是“QSSA 候选”，而<b>不是</b>“QSSA 已成立”。
+    </p>
+  </div>
+
+  <div class="twocol">
+    <div class="ecol pro">
+      <h4><span class="chip info">SUPPORTING REDUCTION</span> 支持“可以简化”的证据</h4>
+      <ul id="proList"></ul>
+    </div>
+    <div class="ecol con">
+      <h4><span class="chip cand">COUNTEREVIDENCE / OPEN ISSUES</span> 反证与未决问题</h4>
+      <ul id="conList"></ul>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h3 style="margin-top:0">酶占用与 sequestration（参考条件）</h3>
+    <div id="occTable"></div>
+    <h3>快速状态与 QSS 残差</h3>
+    <div id="tsTable"></div>
+    <h3>已经尝试过并被否决 / 阻塞的消去方案</h3>
+    <div id="histList"></div>
+    <div class="warnbox" id="r3Note" style="margin-top:12px"></div>
+  </div>
+
+  <div class="verdict">
+    <div class="vcard yes">
+      <h4>Species information decision: APPROVED</h4>
+      <p id="vYes"></p>
+    </div>
+    <div class="vcard no">
+      <h4>Kinetic elimination: NOT APPROVED</h4>
+      <p id="vNo"></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <h3>构建与数据来源</h3>
+    <div id="fileSummary" class="note" style="margin-bottom:8px"></div>
+    <div id="fileList"></div>
+    <h3 style="margin-top:20px">构建时数据完整性断言</h3>
+    <div id="assertSummary" class="note" style="margin-bottom:8px"></div>
+    <div id="assertList"></div>
+    <div id="footProv" class="note" style="margin-top:18px"></div>
+  </div>
+</footer>
+
+<div id="scrim"></div>
+<aside id="drawer" role="dialog" aria-modal="true" aria-labelledby="dTitle">
+  <div class="dh">
+    <div style="min-width:0">
+      <b id="dTitle"></b>
+      <div class="s" id="dSub"></div>
+    </div>
+    <button type="button" id="dClose" aria-label="关闭">✕</button>
+  </div>
+  <div id="dBody"></div>
+</aside>
+
+<script>
+const DATA = /*__ATLAS_PAYLOAD__*/null;
+(function(){
+"use strict";
+if(!DATA){document.body.innerHTML='<p style="padding:40px;font:15px sans-serif">payload missing — run scripts/build_reduction_reasoning_atlas.py</p>';return;}
+
+// A partial render must never read as an approved conclusion: surface it instead of leaving blank sections.
+window.addEventListener("error",function(e){
+  const d=document.createElement("div");
+  d.setAttribute("style","position:fixed;left:0;right:0;bottom:0;z-index:99;padding:10px 14px;"+
+    "background:#8b1a1a;color:#fff;font:13px/1.5 monospace");
+  d.textContent="RENDER FAILURE — 本页内容不完整，请勿据此阅读结论: "+e.message;
+  document.body.appendChild(d);
+});
+
+/* ============================ helpers ============================ */
+const $=s=>document.querySelector(s);
+const $$=s=>Array.prototype.slice.call(document.querySelectorAll(s));
+function el(tag,cls,html){const n=document.createElement(tag);if(cls)n.className=cls;if(html!=null)n.innerHTML=html;return n;}
+function svgEl(tag,attrs){const n=document.createElementNS("http://www.w3.org/2000/svg",tag);
+  if(attrs)for(const k in attrs){if(attrs[k]!=null)n.setAttribute(k,attrs[k]);}return n;}
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+function fmt(v,sig){sig=sig||4;
+  if(v==null||v==="")return "—";
+  if(typeof v==="string")return v;          /* N/A… / UNKNOWN 哨兵值原样保留，绝不转成 0 */
+  if(typeof v==="boolean")return v?"true":"false";
+  if(!isFinite(v))return String(v);
+  if(v===0)return "0";
+  const a=Math.abs(v);
+  if(a>=1e5||a<1e-4)return v.toExponential(Math.max(1,sig-1));
+  return String(parseFloat(v.toPrecision(sig)));}
+function pct(v,d){d=(d==null)?2:d;
+  if(v==null||v==="")return "—";
+  if(typeof v==="string")return v;
+  return (v*100).toFixed(d)+"%";}
+
+/* ============================ palettes (四套语义互不重叠) ============================ */
+const CLS={
+ "I":   {hex:"#453279",shape:"■",
+         zh:"Class I — 受保护的显式动态状态 / 输出",
+         req:"PROTECTED_DYNAMIC_OUTPUT_MUST_REMAIN_RECONSTRUCTABLE"},
+ "II-A":{hex:"#63509c",shape:"◆",
+         zh:"Class II-A — 酶结合中间体（QSSA 候选，尚未成立）",
+         req:"VALID_CLOSURE_AND_PROTECTED_RESOURCE_RECONSTRUCTION_REQUIRED"},
+ "II-B":{hex:"#8474b8",shape:"●",
+         zh:"Class II-B — 功能占用池成员（聚合重建候选）",
+         req:"FUNCTIONAL_OCCUPANCY_POOL_RECONSTRUCTION_REQUIRED"},
+ "III": {hex:"#a89bd0",shape:"▲",
+         zh:"Class III — 微观身份可丢弃、聚合过程信息受保护",
+         req:"AGGREGATE_FLUX_OCCUPANCY_MOIETY_RECONSTRUCTION_REQUIRED"},
+ "C":   {hex:"#cfc7e4",shape:"▬",
+         zh:"Class C — 终端降解汇（动态坐标可隐去，累计账目必须保留）",
+         req:"CUMULATIVE_DEGRADATION_ACCOUNTING_REQUIRED_NOT_ZEROED"}
+};
+const CLS_ORDER=["I","II-A","II-B","III","C"];
+const MODS={
+ "initiation":{code:"IN",hex:"#8a6d4b",zh:"起始 Initiation"},
+ "elongation":{code:"EL",hex:"#6d7845",zh:"延伸 Elongation"},
+ "aminoacylation":{code:"AA",hex:"#a3764f",zh:"氨酰化 Aminoacylation"},
+ "termination / ribosome recycling":{code:"TE",hex:"#5f7278",zh:"终止 / 核糖体回收"},
+ "energy regeneration":{code:"EN",hex:"#8d6a5e",zh:"能量载体再生"}
+};
+const MOD_ORDER=["initiation","elongation","aminoacylation","termination / ribosome recycling","energy regeneration"];
+const EVS={
+ "DIRECT_CHEMISTRY":{code:"DC",hex:"#3d444c",bd:"solid",fg:"#fff",
+   zh:"显式化学事件 / 已批准的人审反应局部规则",
+   ex:"反应物与产物的化学事件本身就是证据（含人审批准的局部规则，不要求一定发生共价变化）。这是最强的一级证据。"},
+ "GRAPH_PROPAGATED":{code:"GP",hex:"#79838d",bd:"dashed",fg:"#fff",
+   zh:"由硬锚点在 1–3 跳内图传播得到",
+   ex:"v1 的临时上下文在 1–3 个反应跳内找到了匹配的 v2 硬锚点。生成器只用非禁用反应与硬锚点重算路径，绝不复用 v1 的 supporting-anchor ID。它保留图证据出处，但不会把图证据升级成化学证据。"},
+ "REFERENCE_DISABLED":{code:"RD",hex:"#b6bcc2",bd:"solid",fg:"#2c353d",
+   zh:"参考条件下通道被禁用（双向参数皆零）",
+   ex:"该 exact reverse pair 的两个方向官方参数都为零，标为 DISABLED_EXACT。这类反应仍留在源网络中、仍可保留功能上下文，但永远不能作为硬锚点或传播源。这是参考参数事实，不是永久删除决定。"},
+ "SHARED_JUNCTION":{code:"SJ",hex:"#2c353d",bd:"double",fg:"#fff",
+   zh:"反应局部两阶段共享节点",
+   ex:"同一个状态可以出现在两个不同阶段的历史中（例如 0308/0327 的 RS50S_EFG_GDP）。status 列保留所有可信的功能盆地，主 stage 留空；两个 stage 都不被丢弃。"}
+};
+const EV_ORDER=["DIRECT_CHEMISTRY","GRAPH_PROPAGATED","REFERENCE_DISABLED","SHARED_JUNCTION"];
+const CAND={
+ "KEEP":{zh:"KEEP",tone:"na",hint:"保留（启发式标签）"},
+ "LUMP_CANDIDATE":{zh:"LUMP_CANDIDATE",tone:"cand",hint:"合并候选（启发式标签）"},
+ "DROP_CANDIDATE":{zh:"DROP_CANDIDATE",tone:"cand",hint:"删除候选（启发式标签）"}
+};
+const STAGES={approved:"已批准",info:"信息性",cand:"候选 / pending",na:"不可用 / 未测试"};
+
+/* ============================ state ============================ */
+const state={scope:"all",layer:"function",cls:"I",spQuery:"",spCls:null,
+             rxQuery:"",rxF:{mod:"",sub:"",fam:"",ev:"",cand:"",stage:""}};
+function approvedOnly(){return state.scope==="approved";}
+function prose(r,i){return DATA.prose_table[r.prose[i]];}
+function poolById(id){
+  for(let i=0;i<DATA.pools.length;i++){if(DATA.pools[i].id===id||DATA.pools[i].id==="coarse:"+id)return DATA.pools[i];}
+  return null;}
+
+/* ============================ provenance ============================ */
+function renderProv(){
+  const p=DATA.provenance;
+  const items=[["source ref",p.source_ref],["commit",p.source_commit.slice(0,12)],
+   ["evidence HEAD",p.evidence_source_head.slice(0,12)],["SBML sha256",p.canonical_sbml_sha256.slice(0,16)],
+   ["verification",p.verification_status],["reduced model",p.reduced_model_status],["built at",p.built_at]];
+  $("#prov").innerHTML=items.map(function(it){
+    return "<span>"+esc(it[0])+" <b>"+esc(it[1])+"</b></span>";}).join("");
+}
+
+/* ============================ Section 1 ============================ */
+const LEGEND=[
+ ["var(--st-approved)","GREEN · 实线","科学上已批准","人工签署的决定。当前只有物种信息保留契约属于这一级。"],
+ ["var(--st-info)","BLUE","描述性注释已完成（信息性）","事实性标注，例如功能归属。它不构成任何简化许可。"],
+ ["var(--st-cand)","AMBER · 虚线","候选 / pending","启发式标签、待审提案、待决证据。本页从不把候选画成绿色或实线。"],
+ ["var(--st-na)","GRAY","不可用 / 尚未测试","数据缺失、域外，或该步骤在仓库中根本不存在。"]];
+function renderPipeline(){
+  const P=DATA.provenance,cc=DATA.class_counts;
+  const pipe=[
+   {t:"PNAS2017 完整网络",s:"approved",i:"241 species · 968 reactions",
+    d:"源 SBML 已冻结并校验；26 个 subsystem 文件的 1098 条 entry 折叠为 968 个唯一 combined reaction。"},
+   {t:"物种信息分类",s:"approved",i:"241 / 241 · human-approved v1",
+    d:"五个信息类别已由人批准：I "+cc["I"]+" · II-A "+cc["II-A"]+" · II-B "+cc["II-B"]+" · III "+cc["III"]+" · C "+cc["C"]+"。"},
+   {t:"反应功能注释 v2",s:"info",i:"968 / 968 · 活队列为空",
+    d:"功能归属审查已完成，HUMAN_REVIEW_REQUIRED = "+(DATA.annotation_counts.HUMAN_REVIEW_REQUIRED||0)+
+      "。这是描述性注释，不是降维批准。"},
+   {t:"过程级降维决定",s:"cand",i:"0 / 968 approved · 96 框未勾选",
+    d:"全部 968 条 reaction 的 decision_status = PENDING、HUMAN_REVIEW_REQUIRED = true；16 张过程卡 × 6 个勾选框 = "+
+      P.unselected_process_boxes+" 个，全部未选。"},
+   {t:"数学 / 动力学验证",s:"cand",i:"16 / 16 NEED_MORE_INFORMATION",
+    d:"证据层 v0 已生成（16 process · "+DATA.reverse_pairs.total+" exact reverse pair · "+DATA.pools.length+
+      " registered pool），但没有任何过程通过时间尺度判据。"},
+   {t:"PURE_reduced_core",s:"na",i:"NOT_VALIDATED",
+    d:"只存在结构提案（约 42–70 条通道，STRUCTURAL_PROPOSAL_ONLY）。没有 reduced model、没有拟合参数、没有验证。"}];
+  const host=$("#pipe");host.innerHTML="";
+  pipe.forEach(function(st,idx){
+    if(idx>0)host.appendChild(el("div","parrow","→"));
+    const n=el("div","pstage "+st.s);
+    n.innerHTML='<span class="chip '+st.s+'">'+STAGES[st.s]+'</span>'+
+      '<div class="pt">'+esc(st.t)+'</div><div class="pi">'+esc(st.i)+'</div><div class="pd">'+esc(st.d)+'</div>';
+    host.appendChild(n);});
+  $("#statusLegend").innerHTML=LEGEND.map(function(l){
+    return '<div class="lg"><div class="sw" style="background:'+l[0]+
+      (l[1].indexOf("虚线")>=0?";border:2px dashed rgba(0,0,0,.35)":"")+
+      (l[1].indexOf("GRAY")>=0?";background-image:repeating-linear-gradient(45deg,#eceff2,#eceff2 4px,#dfe3e8 4px,#dfe3e8 8px)":"")+
+      '"></div><div class="t"><b>'+esc(l[1])+' · '+esc(l[2])+'</b><span>'+esc(l[3])+'</span></div></div>';}).join("");
+}
+function renderChecklist(){
+  const P=DATA.provenance,A=DATA.annotation_counts,cc=DATA.class_counts;
+  const items=[
+   {s:"approved",t:"物种信息保留契约（五类）",
+    d:"241/241 已归类 · HUMAN-APPROVED v1 · "+cc["I"]+"/"+cc["II-A"]+"/"+cc["II-B"]+"/"+cc["III"]+"/"+cc["C"]},
+   {s:"info",t:"反应功能注释 v2",
+    d:"968/968 已注释 · DC "+A.DIRECT_CHEMISTRY+" · GP "+A.GRAPH_PROPAGATED+" · RD "+A.REFERENCE_DISABLED+
+      " · SJ "+A.SHARED_JUNCTION+" · HUMAN_REVIEW_REQUIRED "+(A.HUMAN_REVIEW_REQUIRED||0)},
+   {s:"cand",t:"Reaction-level 降维决定",
+    d:"decision_status PENDING "+P.kinetic_decisions_pending+"/968 · 未勾选 process box "+P.unselected_process_boxes+"/96"},
+   {s:"cand",t:"动力学证据层 v0（诊断，非批准）",
+    d:"16 process 全部 NEED_MORE_INFORMATION · "+DATA.reverse_pairs.total+" pair（informative "+
+      DATA.reverse_pairs.informative+" / disabled "+DATA.reverse_pairs.disabled+"）· "+DATA.pools.length+
+      " pool（reference-conserved 58 · unconditionally conserved 19）"},
+   {s:"na",t:"已验证的 reduced model",
+    d:"reduced_model_status = NOT_VALIDATED · candidate_core_v0 = STRUCTURAL_PROPOSAL_ONLY（约 42–70 通道）"}];
+  $("#checklist").innerHTML=items.map(function(it){
+    return '<div class="ck '+it.s+'"><div class="h"><b>'+esc(it.t)+'</b><span class="chip '+it.s+'">'+
+      STAGES[it.s]+'</span></div><div class="d">'+esc(it.d)+'</div></div>';}).join("");
+}
+
+/* ============================ Section 2: treemap + class panel ============================ */
+function renderTreemap(){
+  const host=$("#treemap");host.innerHTML="";
+  const tot=DATA.species_total;
+  const q=(state.spQuery||"").trim().toLowerCase();
+  CLS_ORDER.forEach(function(c){
+    const members=DATA.species.filter(function(s){return s.cls===c;});
+    const b=el("div","band");
+    b.style.flex=String(members.length);
+    b.style.background=CLS[c].hex;
+    b.setAttribute("role","button");b.setAttribute("tabindex","0");
+    b.setAttribute("aria-pressed",state.cls===c?"true":"false");
+    b.title=CLS[c].zh+" · "+members.length+" species";
+    const cells=members.map(function(s){
+      const hit=q&&s.id.toLowerCase().indexOf(q)>=0;
+      return '<i class="'+(s.protected_output?"":"rev")+(hit?" hit":"")+'" title="'+esc(s.id)+'"></i>';}).join("");
+    b.innerHTML='<div class="bh"><span>'+CLS[c].shape+' '+esc(c)+'</span><em>'+members.length+'</em></div>'+
+      '<div class="bz">'+pct(members.length/tot,1)+' of '+tot+'</div>'+
+      '<div class="cells">'+cells+'</div>';
+    b.addEventListener("click",function(){selectClass(c);});
+    b.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();selectClass(c);}});
+    host.appendChild(b);});
+}
+function renderClassLegend(){
+  $("#classLegend").innerHTML=CLS_ORDER.map(function(c){
+    const d=CLASS_DETAIL[c];
+    return '<div class="lg" style="cursor:pointer" data-cls="'+c+'" role="button" tabindex="0">'+
+      '<div class="sw" style="background:'+CLS[c].hex+
+      ';display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px">'+CLS[c].shape+'</div>'+
+      '<div class="t"><b>'+esc(c)+' · '+DATA.class_counts[c]+' species</b><span>'+esc(d.short)+'</span></div></div>';}).join("");
+  $$("#classLegend .lg").forEach(function(n){
+    const go=function(){selectClass(n.getAttribute("data-cls"));};
+    n.addEventListener("click",go);
+    n.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}});});
+}
+const CLASS_DETAIL={
+ "I":{short:"必须以显式动态状态保留；包含全部自由资源载体与受保护输出。",
+  why:["契约要求 PROTECTED_DYNAMIC_OUTPUT_MUST_REMAIN_RECONSTRUCTABLE：这 42 个物种就是项目要观察的量本身。",
+       "包括自由载体（ATP / ADP / AMP / GTP / GDP / GMP / PO4 / PPi / CP / Cr）、自由氨基酸、自由与 charged tRNA、mRNA、肽产物、自由核糖体亚基与自由因子。",
+       "构建时断言 A1c 已验证：全部 10 个自由资源载体都落在 Class I。"],
+  keep:["显式浓度轨迹（protected_output = true）",
+        "自由 ATP / ADP / AMP 与 GTP / GDP 的产生 / 消耗账目","Pi / PPi 账目",
+        "氨基酸掺入，以及 charged / uncharged tRNA 的区分","自由 vs 占用核糖体亚基"],
+  may:["本类不允许被隐去、lump 或 QSSA 消去。",
+       "唯一可能的变换是<b>在保留同名显式坐标的前提下</b>改写其上下游反应 —— 而这仍然需要人审。"],
+  not:["不能证明这些坐标的动力学是“慢”的。","不能证明它们不参与快平衡。",
+       "不能替代任何 full-vs-reduced 数值对比。",
+       "不能给出渗透压或离子强度：formula / charge / protonation / Mg 在 241/241 个物种上都是 UNRESOLVED。"],
+  pools:["coarse:R30_free","coarse:R50_free","coarse:R70_active","coarse:peptidyl_tRNA"]},
+ "II-A":{short:"酶结合中间体；QSSA / 快平衡候选，但“候选”不等于“成立”。",
+  why:["这 57 个物种是酶（氨酰-tRNA 合成酶、CK / NDK / MK / PPiase / MTF 等）与底物或产物形成的复合物。",
+       "必须与 Class I 分开，因为它们是<b>可能</b>被代数闭包替代的坐标 —— 但只有在 closure 与受保护资源重建都成立时才可以。",
+       "契约要求 VALID_CLOSURE_AND_PROTECTED_RESOURCE_RECONSTRUCTION_REQUIRED。",
+       "构建时断言 A1b 已验证：source 的 ENZYME_INTERMEDIATE 全部落在 Class II-A。"],
+  keep:["酶总量与 free / bound 占用","bound moiety（AMP、氨基酸、tRNA、磷酸基团）守恒",
+        "ATP → AMP + PPi 等资源账目在变换前后逐项对齐","结合 / 解离顺序所隐含的粒子数变化"],
+  may:["在有效的代数闭包 + 受保护资源重建下，从显式 ODE 状态中隐去。",
+       "这是一个<b>待证明</b>的提案，不是一个已经成立的性质。"],
+  not:["<b>II-A ≠ QSSA 已成立。</b> 归到 II-A 只是信息分类，不是动力学许可。",
+       "证据层 30/30 行 aminoacylation timescale 记录都是 algebraic_manifold_derived = false：从未推导出代数流形。",
+       "局部 J_zz 块是坐标依赖的诊断量，不是已批准的快流形。",
+       "已经失败的三次尝试（A3a / A3b-21 状态 / A3b-r12-9 状态）说明这一类的消去并不平凡。"],
+  pools:["GlyRS_active_pool","MetRS_active_pool","MTF_active_pool","CK_active_pool","NDK_active_pool",
+         "MK_active_pool","PPiase_active_pool"]},
+ "II-B":{short:"功能占用池成员；可按功能性占用池聚合重建。",
+  why:["这 91 个物种是核糖体与翻译因子在各功能阶段的占用态（起始、延伸、终止 / 预终止、回收）。",
+       "数量太大，无法逐个作为独立观察量讨论，因此契约把它们组织成<b>功能占用池</b>以便复核。",
+       "契约要求 FUNCTIONAL_OCCUPANCY_POOL_RECONSTRUCTION_REQUIRED。"],
+  keep:["池总量","free vs occupied 拆分","每个占用态携带的 tRNA / 鸟苷酸 / 肽链代价",
+        "阶段之间的转移顺序在聚合层面仍可追溯"],
+  may:["以派生聚合量 R_init / R_elong / R_term–R_preterm / R_recycle 表示，前提是聚合重建被独立推导并通过测试。"],
+  not:["<b>R_init / R_elong / R_term / R_recycle 是派生 / 聚合量，不是额外的原始 SBML 物种。</b>",
+       "这四个 coarse pool 在证据层中都是 REGISTERED_NOT_REFERENCE_CONSERVED：即使在参考条件下也不是守恒量。",
+       "聚合不蕴含动力学等价；路径停留时间、结合顺序与微观占用可能本质上不可重建。"],
+  pools:["coarse:R_init (42)","coarse:R_elong (25)","coarse:R_term (18)","coarse:R_recycle (11)",
+         "EFTu_active_pool","EFTs_active_pool","EFG_active_pool","IF1_active_pool","IF2_active_pool",
+         "IF3_active_pool","RF1_active_pool","RF2_active_pool","RF3_active_pool","RRF_active_pool"]},
+ "III":{short:"微观身份可以丢弃，但聚合过程信息受保护。",
+  why:["这 22 个物种只在聚合通量 / 占用 / moiety 层面携带项目需要的信息，其逐个微观身份不是观察目标。",
+       "契约要求 AGGREGATE_FLUX_OCCUPANCY_MOIETY_RECONSTRUCTION_REQUIRED。"],
+  keep:["聚合通量","聚合占用","moiety 账目（哪一部分物质去了哪里）"],
+  may:["丢弃微观身份、用聚合过程量表示 —— 措辞是 “microscopic identity may be discarded while aggregate process information is protected”。"],
+  not:["不能证明聚合量在数值上等价于微观量之和的动态行为。",
+       "不能证明被丢弃的身份在<b>非</b>参考条件下无关。",
+       "bound moiety membership 在 968/968 条反应上都是 BOUND_MOIETY_MEMBERSHIP_UNRESOLVED。"],
+  pools:["coarse:peptidyl_tRNA"]},
+ "C":{short:"终端降解汇；动态坐标可隐去，累计账目必须保留。",
+  why:["这 29 个物种是 *_degraded 终端状态：源网络中存在降解坐标，但在作者 fMGG 参考条件下对应通道参数为零。",
+       "契约要求 CUMULATIVE_DEGRADATION_ACCOUNTING_REQUIRED_NOT_ZEROED。",
+       "构建时断言 A1b 已验证：source 的 DEGRADED_SINK 全部落在 Class C。"],
+  keep:["累计损失（cumulative sink ledger，如 D_CK 或等价累计变量）",
+        "*_family_total 层面的 material / family accounting 闭合","重新引入降解通道的规则"],
+  may:["措辞是 “dynamic coordinate may be omitted while cumulative accounting is retained” —— <b>不是 “deleted”</b>。",
+       "隐去动态坐标后，损失必须仍以累计量出现，不能直接置零。"],
+  not:["不能证明在非参考条件下降解仍然为零。",
+       "REFERENCE_DISABLED 是参考参数事实，不是永久删除决定。",
+       "不能证明隐去这些坐标不会改变理想粒子数代理。"],
+  pools:["CK_degraded_pool","*_degraded_pool","*_family_total"]}
+};
+const CLASS_CALLOUT={
+  "C":'<div class="callout gray" style="margin:12px 0 0">'+
+      '<p class="big" style="font-size:14px">dynamic state ↓ degradation → cumulative sink ledger</p>'+
+      '<p style="margin:0;font-size:12.5px;color:#4d545b">Class C 的表述是“动态坐标可隐去、累计账目保留”，'+
+      '<b>不是“已删除”</b>。这些物种仍存在于源 SBML 中，本页也没有从任何源文件里移除它们。</p></div>',
+  "II-B":'<div class="callout blue" style="margin:12px 0 0">'+
+      '<p style="margin:0;font-size:12.5px;color:#1a3f66">'+
+      '<b>R_init / R_elong / R_term–R_preterm / R_recycle 是派生 / 聚合量</b>，用于讨论占用重建；'+
+      '它们<b>不是</b>额外的原始 SBML 物种，也不增加 241 这个总数。证据层把这四个 coarse pool 登记为 '+
+      '<code>REGISTERED_NOT_REFERENCE_CONSERVED</code>。</p></div>',
+  "II-A":'<div class="callout" style="margin:12px 0 0">'+
+      '<p class="big" style="font-size:14px">II-A ≠ QSSA 已成立</p>'+
+      '<p style="margin:0;font-size:12.5px;color:#6a4a12">第 5 节的氨酰化案例正是 Class II-A：它有可量化的快时间尺度证据，'+
+      '却<b>三次</b>未能通过消去验证。分类完成 ≠ 动力学消去被批准。</p></div>'
+};
+
+function renderClassPanel(){
+  const c=state.cls,d=CLASS_DETAIL[c];
+  const members=DATA.species.filter(function(s){return s.cls===c;});
+  const byMod={};
+  members.forEach(function(s){const m=s.contract_module||"—";byMod[m]=(byMod[m]||0)+1;});
+  const modTxt=Object.keys(byMod).sort(function(a,b){return byMod[b]-byMod[a];})
+    .map(function(k){return k+" "+byMod[k];}).join(" · ");
+  const list=function(arr){return "<ul>"+arr.map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>";};
+  const warn=(c==="II-A")?'<span class="chip cand" style="background:rgba(255,255,255,.9)">II-A ≠ QSSA 已成立</span>':"";
+  const extra=CLASS_CALLOUT[c]||"";
+  $("#clsPanel").innerHTML=
+   '<div class="ph" style="background:'+CLS[c].hex+'">'+
+     '<span class="shp">'+CLS[c].shape+'</span><b>'+esc(CLS[c].zh)+'</b>'+warn+
+     '<span class="cnt">'+members.length+' / '+DATA.species_total+' species</span></div>'+
+   '<div class="pb"><div class="qgrid">'+
+     '<div class="q"><h4>定义 · 为什么这一类存在</h4>'+list(d.why)+'</div>'+
+     '<div class="q"><h4>必须保留什么</h4>'+list(d.keep)+'</div>'+
+     '<div class="q"><h4>可能被移除 / 重建的部分</h4>'+list(d.may)+'</div>'+
+     '<div class="q'+(c==="II-A"?" warn":"")+'"><h4>这个分类不能证明什么</h4>'+list(d.not)+'</div>'+
+   '</div>'+
+   '<div class="q" style="margin-top:12px"><h4>相关功能池'+
+     (c==="II-B"?' <span class="chip cand">派生 / 聚合量 · 非额外原始 SBML 物种</span>':"")+'</h4>'+
+     '<div class="poolline">'+d.pools.map(function(p){return '<span class="p">'+esc(p)+'</span>';}).join("")+'</div>'+
+     '<p class="note" style="margin:8px 0 0">契约 reconstruction requirement：<code>'+esc(CLS[c].req)+
+     ';NO_TRANSFORMATION_EVALUATED</code> —— 后缀表示<b>尚未评估任何变换</b>。'+
+     '<br>成员按 source module 分布：'+esc(modTxt)+'。</p></div>'+
+   extra+
+   '<div class="q" style="margin-top:12px"><h4>成员 species（'+members.length+'，点击查看详情）</h4>'+
+     '<div class="memlist">'+members.map(function(s){
+       return '<button type="button" data-sp="'+esc(s.id)+'">'+esc(s.id)+'</button>';}).join("")+'</div></div>'+
+   '</div>';
+  $$("#clsPanel .memlist button").forEach(function(b){
+    b.addEventListener("click",function(){openSpecies(b.getAttribute("data-sp"));});});
+}
+function selectClass(c){state.cls=c;renderTreemap();renderClassPanel();}
+
+/* ============================ Section 2: species browser ============================ */
+function renderSpeciesFilters(){
+  const opts=['<option value="">全部类别</option>'].concat(CLS_ORDER.map(function(c){
+    return '<option value="'+c+'">'+CLS[c].shape+' '+c+' ('+DATA.class_counts[c]+')</option>';})).join("");
+  const mods=Array.from(new Set(DATA.species.map(function(s){return s.contract_module||"—";}))).sort();
+  const mopts=['<option value="">全部 source module</option>'].concat(mods.map(function(m){
+    return '<option value="'+esc(m)+'">'+esc(m)+'</option>';})).join("");
+  $("#spFilters").innerHTML=
+    '<select id="spClsSel" aria-label="按类别筛选">'+opts+'</select>'+
+    '<select id="spModSel" aria-label="按 source module 筛选">'+mopts+'</select>'+
+    '<label style="font-size:12.5px;display:flex;gap:5px;align-items:center;color:var(--ink2)">'+
+    '<input type="checkbox" id="spProt"> 只看 protected_output = true</label>'+
+    '<label style="font-size:12.5px;display:flex;gap:5px;align-items:center;color:var(--ink2)">'+
+    '<input type="checkbox" id="spRev"> 只看 needs_human_review = true</label>'+
+    '<button type="button" id="spReset" style="font:inherit;font-size:12.5px;padding:5px 10px;border:1px solid var(--line);border-radius:5px;background:#fff;cursor:pointer">重置</button>';
+  $("#spClsSel").addEventListener("change",function(e){state.spCls=e.target.value||null;renderSpeciesRows();});
+  $("#spModSel").addEventListener("change",function(){renderSpeciesRows();});
+  $("#spProt").addEventListener("change",function(){renderSpeciesRows();});
+  $("#spRev").addEventListener("change",function(){renderSpeciesRows();});
+  $("#spReset").addEventListener("click",function(){
+    state.spQuery="";state.spCls=null;$("#spSearch").value="";
+    $("#spClsSel").value="";$("#spModSel").value="";$("#spProt").checked=false;$("#spRev").checked=false;
+    renderTreemap();renderSpeciesRows();});
+}
+function spMatches(s){
+  const q=(state.spQuery||"").trim().toLowerCase();
+  if(q&&s.id.toLowerCase().indexOf(q)<0&&String(s.name||"").toLowerCase().indexOf(q)<0)return false;
+  if(state.spCls&&s.cls!==state.spCls)return false;
+  const m=$("#spModSel")?$("#spModSel").value:"";
+  if(m&&(s.contract_module||"—")!==m)return false;
+  if($("#spProt")&&$("#spProt").checked&&!s.protected_output)return false;
+  if($("#spRev")&&$("#spRev").checked&&!s.needs_human_review)return false;
+  return true;
+}
+function renderSpeciesRows(){
+  const rows=DATA.species.filter(spMatches);
+  $("#spCount").textContent=rows.length+" / "+DATA.species_total+" species";
+  const tb=$("#spRows tbody");tb.innerHTML="";
+  rows.slice(0,300).forEach(function(s){
+    const tr=el("tr","clk");
+    tr.innerHTML='<td class="mono">'+esc(s.id)+'</td>'+
+      '<td><span class="clstag" style="background:'+CLS[s.cls].hex+'">'+CLS[s.cls].shape+' '+esc(s.cls)+'</span></td>'+
+      '<td>'+esc(s.molecule_class||"—")+'</td>'+
+      '<td class="mono" style="font-size:11px">'+esc(s.pool||s.conservation_family||"—")+'</td>'+
+      '<td class="mono">'+fmt(s.x0_reference)+'</td>'+
+      '<td>'+(s.protected_output?'<span class="chip approved">YES</span>':'<span class="chip na">no</span>')+'</td>'+
+      '<td class="mono" style="font-size:10px;color:var(--ink2)">'+esc(String(s.reconstruction_requirement).split(";")[0])+'</td>';
+    tr.addEventListener("click",function(){openSpecies(s.id);});
+    tb.appendChild(tr);});
+  $("#spTrunc").innerHTML=rows.length>300?
+    ('仅显示前 300 行（共 '+rows.length+' 行匹配）。请用搜索或筛选缩小范围。'):
+    (rows.length===0?'没有匹配的 species。':"");
+}
+function field(label,value,mono){
+  if(value==null||value==="")value="—";
+  const html=(typeof value==="string"&&value.indexOf("<")>=0)?value:esc(value);
+  return '<dt>'+esc(label)+'</dt><dd class="'+(mono===false?"txt":"")+'">'+html+'</dd>';
+}
+function yn(v){return v?'<span class="yesno y">YES</span>':'<span class="yesno n">no</span>';}
+function ync(v){return '<span class="yesno c">'+esc(v)+'</span>';}
+function openSpecies(id){
+  const s=DATA.species.filter(function(x){return x.id===id;})[0];
+  if(!s)return;
+  const c=CLS[s.cls];
+  const pool=s.pool?s.pool:(s.conservation_family||"—");
+  const po=poolById(pool);
+  let ident;
+  if(s.cls==="I")ident=yn(true);
+  else if(s.cls==="II-A")ident=ync("条件性 · 需 VALID_CLOSURE");
+  else ident=yn(false);
+  const occReq=!!(s.pool&&(/_active_pool$/.test(s.pool)||/^R_(init|elong|term|recycle)$/.test(s.pool)||
+    /^(R30_free|R50_free|R70_active|peptidyl_tRNA)$/.test(s.pool)));
+  const why=(s.why&&String(s.why).trim())?String(s.why).trim():"仓库未给出更细的逐 species rationale";
+  const rows=[
+   field("Original SBML ID",s.id),
+   field("Class",'<span class="clstag" style="background:'+c.hex+'">'+c.shape+" "+esc(s.cls)+'</span> '+esc(c.zh),false),
+   field("Original / display name",s.name),
+   field("Molecule class",s.molecule_class),
+   field("Classification basis",s.classification_basis+" · confidence "+s.confidence+" · rule "+s.rule_used),
+   field("Source module",s.contract_module),
+   field("Functional module (level A)",(s.level_a||[]).join(" | ")||"—"),
+   field("Source subsystems (level B)",(s.level_b||[]).join(" | ")||"—"),
+   field("Functional pool",pool+(po?(" · "+po.count+" members · "+po.membership_status):"")),
+   field("Conservation family",s.conservation_family),
+   field("x0 (author reference)",fmt(s.x0_reference)),
+   field("Concentration unit status",s.unit_status,false),
+   field("x0 (raw SBML)",fmt(s.x0_sbml)+" · 原始 SBML 的 all-one 初值是结构占位符"),
+   field("Initial-condition provenance",s.initial_source,false),
+   field("Protected trajectory?",yn(s.protected_output)),
+   field("Identity required?",ident),
+   field("Occupancy reconstruction required?",occReq?yn(true):yn(false)),
+   field("Resource / moiety obligation",s.resource_token_status),
+   field("Bound moiety map",Object.keys(s.moieties||{}).length?JSON.stringify(s.moieties):"UNRESOLVED（复合物组成向量缺失）"),
+   field("Particle-count relevance",s.particle_relevance),
+   field("Formula / charge completeness","formula="+esc(s.formula||"NULL")+" · net_charge="+esc(s.net_charge||"NULL")+
+     " · "+s.formula_status+"（NULL = 未知，不是 0）"),
+   field("Pool status",s.pool_status),
+   field("Max bound fraction (pool)",fmt(s.max_bound_fraction)),
+   field("QSS defect median / p95",fmt(s.qss_defect_median)+" / "+fmt(s.qss_defect_p95)+
+     " · informative fraction "+fmt(s.qss_informative_fraction)),
+   field("Turnover τ median (s)",fmt(s.turnover_tau_median)),
+   field("Trajectory max / median",fmt(s.traj_max)+" / "+fmt(s.traj_median)),
+   field("Initial-layer flag",s.initial_layer_flag),
+   field("Reconstruction requirement",s.reconstruction_requirement),
+   field("Related process cards",(s.processes||[]).join(" | ")||"—"),
+   field("Human review",s.needs_human_review?"<b>needs_human_review = true</b>":"needs_human_review = false",false),
+   field("Source SBML sha256",s.source_sbml_sha256)];
+  const cand=s.candidate_intermediate?
+    '<div class="warnbox" style="margin-top:8px"><b>candidate_intermediate = true</b> —— 该物种在源文档中被列为候选复合物 / 中间体。'+
+    '这只是<b>候选</b>标记：没有任何 QSSA、快平衡或 lumping 被批准。</div>':"";
+  openDrawer(s.id,c.shape+" Class "+s.cls+" · "+(s.molecule_class||"—")+" · pool "+pool,
+    '<div class="dsec"><h5>为什么归到这里？（来自已批准契约）</h5><div class="whybox">'+esc(why)+'</div>'+
+    '<dl class="dl" style="margin-top:9px">'+
+      field("必须保留的信息 (must_keep)",s.must_keep,false)+
+      field("Reduced representation",s.reduced_repr,false)+
+      field("Source map reason",s.map_reason,false)+
+    '</dl></div>'+
+    '<div class="dsec"><h5>该类别的边界（这个分类不能证明什么）</h5><div class="warnbox">'+
+      CLASS_DETAIL[s.cls].not.map(function(x){return "· "+x;}).join("<br>")+'</div></div>'+
+    '<div class="dsec"><h5>完整字段</h5><dl class="dl">'+rows.join("")+'</dl>'+cand+'</div>');
+}
+/* ============================ Section 3A ============================ */
+function renderMultiSub(){
+  const multi=DATA.reactions.filter(function(r){return r.level_b.length>1;}).length;
+  const multiMod=DATA.reactions.filter(function(r){return r.level_a.length>1;}).length;
+  const totEntries=DATA.subsystems.reduce(function(a,s){return a+s.entries;},0);
+  $("#multiSub").innerHTML='<div class="callout gray" style="margin:0 0 12px">'+
+    '<p style="margin:0;font-size:12.5px;color:#4d545b"><b>多子系统成员关系不是新反应。</b> '+
+    DATA.subsystems.length+' 个原始 subsystem 文件共 '+totEntries+' 条 reaction entry，'+
+    '折叠为 <b>968</b> 个唯一 combined reaction：其中 <b>884</b> 条只属于一个 subsystem，<b>'+multi+
+    '</b> 条属于多个（最多 13 个）。另有 <b>'+multiMod+'</b> 条反应跨越多个宽模块。'+
+    '下面的流带按 <b>membership</b> 计数，因此模块之和会略大于 968；'+
+    '每一条 combined reaction 仍然只有<b>一个</b>科学事件键。</p></div>';
+}
+function renderSankey(){
+  const host=$("#sankey");host.innerHTML="";
+  const W=Math.max(660,host.clientWidth||900),H=430,padT=16,padB=16;
+  const lx=8,lw=178,rx=W-186,rw=178,gapL=10,gapR=12;
+  const flows={};
+  DATA.reactions.forEach(function(r){
+    r.level_a.forEach(function(m){const k=m+"|"+r.ev;flows[k]=(flows[k]||0)+1;});});
+  const modTot={},evTot={};
+  MOD_ORDER.forEach(function(m){modTot[m]=0;});
+  EV_ORDER.forEach(function(e){evTot[e]=0;});
+  MOD_ORDER.forEach(function(m){EV_ORDER.forEach(function(e){
+    const v=flows[m+"|"+e]||0;modTot[m]+=v;evTot[e]+=v;});});
+  const sumMod=MOD_ORDER.reduce(function(a,m){return a+modTot[m];},0);
+  const sumEv=EV_ORDER.reduce(function(a,e){return a+evTot[e];},0);
+  const innerH=H-padT-padB;
+  const availL=innerH-gapL*(MOD_ORDER.length-1);
+  const availR=innerH-gapR*(EV_ORDER.length-1);
+  const svg=svgEl("svg",{viewBox:"0 0 "+W+" "+H,width:"100%",height:H,role:"img",
+    "aria-label":"模块 × 证据状态聚合流带图"});
+  const defs=svgEl("defs");svg.appendChild(defs);
+  const L=[],R=[];
+  let y=padT;
+  MOD_ORDER.forEach(function(m){const h=modTot[m]/sumMod*availL;L.push({k:m,y:y,h:h,tot:modTot[m]});y+=h+gapL;});
+  y=padT;
+  EV_ORDER.forEach(function(e){const h=evTot[e]/sumEv*availR;R.push({k:e,y:y,h:h,tot:evTot[e]});y+=h+gapR;});
+  const offL={},offR={};
+  L.forEach(function(n){offL[n.k]=0;});R.forEach(function(n){offR[n.k]=0;});
+  let ribbons=0;
+  MOD_ORDER.forEach(function(m){
+    const a=L.filter(function(n){return n.k===m;})[0];
+    EV_ORDER.forEach(function(e){
+      const v=flows[m+"|"+e]||0;if(!v)return;
+      const b=R.filter(function(n){return n.k===e;})[0];
+      const hL=v/a.tot*a.h,hR=v/b.tot*b.h;
+      const y0=a.y+offL[m],y1=b.y+offR[e];
+      offL[m]+=hL;offR[e]+=hR;ribbons++;
+      const x0=lx+lw,x1=rx,cx=(x0+x1)/2;
+      const d="M"+x0+","+y0+" C"+cx+","+y0+" "+cx+","+y1+" "+x1+","+y1+
+              " L"+x1+","+(y1+hR)+" C"+cx+","+(y1+hR)+" "+cx+","+(y0+hL)+" "+x0+","+(y0+hL)+" Z";
+      const gid="g_"+ribbons;
+      const gr=svgEl("linearGradient",{id:gid,x1:"0",x2:"1"});
+      gr.appendChild(svgEl("stop",{offset:"0%","stop-color":MODS[m].hex}));
+      gr.appendChild(svgEl("stop",{offset:"100%","stop-color":EVS[e].hex}));
+      defs.appendChild(gr);
+      const pth=svgEl("path",{d:d,fill:"url(#"+gid+")","class":"ribbon"});
+      const tt=svgEl("title");tt.textContent=m+" → "+e+" : "+v+" membership";
+      pth.appendChild(tt);svg.appendChild(pth);});});
+  L.forEach(function(n){
+    const m=MODS[n.k];
+    svg.appendChild(svgEl("rect",{x:lx,y:n.y,width:lw,height:Math.max(2,n.h),rx:3,fill:m.hex}));
+    const t1=svgEl("text",{x:lx+8,y:n.y+Math.min(n.h/2,17)+4,"class":"sk-lbl",fill:"#fff","font-weight":"600"});
+    t1.textContent=m.code+" · "+n.k;svg.appendChild(t1);
+    const t2=svgEl("text",{x:lx+8,y:n.y+Math.min(n.h/2,17)+18,"class":"sk-lbl m",fill:"#efe8df"});
+    t2.textContent=n.tot+" membership · "+(DATA.level_a_counts[n.k]||0)+" mapped";svg.appendChild(t2);});
+  R.forEach(function(n){
+    const e=EVS[n.k];
+    svg.appendChild(svgEl("rect",{x:rx,y:n.y,width:rw,height:Math.max(2,n.h),rx:3,fill:e.hex,
+      stroke:"#20252b","stroke-width":(e.bd==="dashed"?1.6:(e.bd==="double"?2.4:0.6)),
+      "stroke-dasharray":(e.bd==="dashed"?"5 3":null)}));
+    const t1=svgEl("text",{x:rx+8,y:n.y+Math.min(n.h/2,17)+4,"class":"sk-lbl",fill:e.fg,"font-weight":"600"});
+    t1.textContent=e.code+" · "+n.k;svg.appendChild(t1);
+    const t2=svgEl("text",{x:rx+8,y:n.y+Math.min(n.h/2,17)+18,"class":"sk-lbl m",fill:e.fg,opacity:".82"});
+    t2.textContent=(DATA.annotation_counts[n.k]||0)+" reaction";svg.appendChild(t2);});
+  host.appendChild(svg);
+  host.appendChild(el("p","note","共渲染 <b>"+ribbons+"</b> 条聚合流带（≤ 5 × 4 = 20），而<b>不是</b> 968 条边。"+
+    "左列高度是模块 membership 之和（"+sumMod+"，含跨模块反应的额外归属）；"+
+    "右列高度恰好是 968 条反应的证据状态分布（"+sumEv+"）。"+
+    "证据状态用中性灰阶 + 边框样式（实线 / 虚线 / 双线）+ 双字母代码三重区分，与紫系的 species 类别、土色系的模块、"+
+    "以及绿/蓝/琥珀/灰的状态语义<b>互不重叠</b>。"));
+}
+function renderEvKey(){
+  $("#evKey").innerHTML=EV_ORDER.map(function(e){
+    const v=EVS[e],n=DATA.annotation_counts[e]||0;
+    return '<div class="evcard" style="border-style:'+v.bd+';border-color:'+v.hex+'">'+
+      '<div class="h"><span class="evtag" style="background:'+v.hex+';color:'+v.fg+'">'+v.code+'</span>'+
+      '<b style="font-size:12px;font-family:var(--mono)">'+esc(e)+'</b><span class="n">'+n+'</span></div>'+
+      '<p>'+esc(v.ex)+'</p></div>';}).join("");
+}
+function renderEvBar(){
+  const tot=DATA.reaction_total;
+  $("#evBar").innerHTML=EV_ORDER.map(function(e){
+    const v=EVS[e],n=DATA.annotation_counts[e]||0,w=n/tot*100;
+    return '<div data-ev="'+e+'" title="'+esc(e)+": "+n+'" style="width:'+w+'%;background:'+v.hex+
+      ';color:'+v.fg+';border-right:2px solid #fff'+
+      (v.bd==="dashed"?";background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.25) 0 4px,transparent 4px 8px)":"")+
+      ';border-top:3px '+(v.bd==="double"?"double":"solid")+' rgba(0,0,0,.45)">'+
+      (w>9?v.code+" "+n:"")+'</div>';}).join("");
+  $$("#evBar div").forEach(function(d){
+    d.addEventListener("click",function(){
+      const k=d.getAttribute("data-ev");
+      state.rxF.ev=(state.rxF.ev===k)?"":k;
+      setLayer("function");syncRxFilters();renderRxRows();});});
+  $("#evExplain").innerHTML='<div class="qgrid">'+EV_ORDER.map(function(e){
+    const v=EVS[e];
+    return '<div class="q"><h4>'+v.code+' · '+esc(e)+' · '+DATA.annotation_counts[e]+'</h4>'+
+      '<p style="margin:0;font-size:12.5px;color:var(--ink2)">'+esc(v.zh)+'</p></div>';}).join("")+'</div>'+
+    '<p class="note" style="margin-top:9px">四类之和 = '+
+    EV_ORDER.reduce(function(a,e){return a+(DATA.annotation_counts[e]||0);},0)+' = 968（构建时断言 A4 已验证）。'+
+    ' 其中 <code>HUMAN_REVIEW_REQUIRED = '+(DATA.annotation_counts.HUMAN_REVIEW_REQUIRED||0)+
+    '</code>：功能归属审查已完成，<b>但这不代表降维已被批准</b>。点击上面的色块可按证据状态筛选反应浏览器。</p>';
+  $("#pendingCount").innerHTML='<b>968 / 968</b> 条反应的 <code>decision_status = PENDING</code>、'+
+    '<code>HUMAN_REVIEW_REQUIRED = true</code>；<b>0</b> 条被批准。';
+}
+function renderTree(){
+  const host=$("#tree");host.innerHTML="";
+  const byMod={};
+  DATA.reactions.forEach(function(r){r.level_a.forEach(function(m){
+    (byMod[m]=byMod[m]||[]).push(r);});});
+  MOD_ORDER.forEach(function(m){
+    const rs=byMod[m]||[];
+    const bySub={};
+    rs.forEach(function(r){r.level_b.forEach(function(s){(bySub[s]=bySub[s]||[]).push(r);});});
+    const subKeys=Object.keys(bySub).sort();
+    const evc={};EV_ORDER.forEach(function(e){evc[e]=0;});
+    rs.forEach(function(r){evc[r.ev]=(evc[r.ev]||0)+1;});
+    const node=el("div","tnode");
+    const evchips=EV_ORDER.map(function(e){
+      return '<span class="evtag" style="background:'+EVS[e].hex+';color:'+EVS[e].fg+';border:1px '+
+        EVS[e].bd+' '+EVS[e].hex+'">'+EVS[e].code+' '+evc[e]+'</span>';}).join("");
+    node.innerHTML='<div class="th"><span class="tw">▸</span>'+
+      '<span class="tagm" style="background:'+MODS[m].hex+'">'+MODS[m].code+'</span>'+
+      '<b>'+esc(m)+'</b><span class="note">'+esc(MODS[m].zh)+'</span>'+
+      '<span class="meta">'+rs.length+' membership · '+subKeys.length+' subsystem · '+evchips+'</span></div>'+
+      '<div class="tbody"></div>';
+    const body=node.querySelector(".tbody");
+    subKeys.forEach(function(sk){
+      const srs=bySub[sk];
+      const byFam={};srs.forEach(function(r){(byFam[r.family]=byFam[r.family]||[]).push(r);});
+      const famKeys=Object.keys(byFam).sort();
+      const stages={};srs.forEach(function(r){r.contexts.forEach(function(c){stages[c]=(stages[c]||0)+1;});});
+      const fileRow=DATA.subsystems.filter(function(x){return x.file===sk+".xml";})[0];
+      const sub=el("div","tsub");
+      sub.innerHTML='<div class="sh"><span style="font-family:var(--mono);color:var(--ink3)">▸</span>'+
+        '<b>'+esc(sk)+'.xml</b><span class="note">'+srs.length+' reaction'+
+        (fileRow?(" · source entries "+fileRow.entries+" · mapped "+fileRow.mapped):"")+'</span></div>'+
+        '<div class="stagebar">'+Object.keys(stages).sort().map(function(k){
+          return '<i>'+esc(k)+' × '+stages[k]+'</i>';}).join("")+'</div>'+
+        '<div class="fams">'+famKeys.map(function(f){
+          return '<button type="button" class="fam" data-fam="'+esc(f)+'"><b>'+esc(f)+'</b> × '+byFam[f].length+'</button>';
+        }).join("")+'</div>';
+      sub.querySelector(".sh").addEventListener("click",function(){
+        sub.classList.toggle("open");
+        sub.querySelector(".sh span").textContent=sub.classList.contains("open")?"▾":"▸";});
+      sub.querySelectorAll(".fam").forEach(function(b){
+        b.addEventListener("click",function(ev){
+          ev.stopPropagation();
+          state.rxF.fam=b.getAttribute("data-fam");state.rxF.mod=m;state.rxF.sub=sk;
+          syncRxFilters();renderRxRows();});});
+      body.appendChild(sub);});
+    node.querySelector(".th").addEventListener("click",function(){
+      node.classList.toggle("open");
+      node.querySelector(".tw").textContent=node.classList.contains("open")?"▾":"▸";});
+    host.appendChild(node);});
+}
+
+/* ============================ Section 3B ============================ */
+const CONCEPTS=[
+ {k:"KEEP",d:"保留为显式反应 / 状态。仓库中只作为启发式标签存在，仍需人审确认。"},
+ {k:"LUMP",d:"把若干微观步骤合并成一条有效反应，前提是净化学计量、资源账目与占用信息在合并后仍显式可见或可重建。"},
+ {k:"QSSA",d:"准稳态假设：把某个坐标替换为代数方程。需要 closure、可行性与全域对比证据；仓库中<b>没有</b>任何一条通过。"},
+ {k:"FAST EQUILIBRIUM",d:"快平衡假设：把一对正反向反应视为瞬时平衡。注意 —— <b>exact reverse pair 是结构源关系，不是快平衡证据</b>。"},
+ {k:"CHEMOSTAT",d:"把某物种固定为外部恒定浓度。在本封闭 fMGG 参考模拟中<b>没有</b>任何物种被 chemostat；它会隐藏消耗与粒子数变化。"},
+ {k:"DROP",d:"从模型中移除。仓库中只作为 <code>DROP_CANDIDATE</code> 存在，且全部对应参考条件下双向参数为零的通道。"},
+ {k:"NEED MORE INFORMATION",d:"证据不足。这是当前 16 / 16 个过程卡的实际结论。"}];
+function renderConcepts(){
+  $("#concepts").innerHTML=CONCEPTS.map(function(c){
+    return '<div class="ccard"><span class="badge">Candidate only — HUMAN_REVIEW_REQUIRED</span>'+
+      '<h4>'+esc(c.k)+'</h4><p>'+c.d+'</p></div>';}).join("");
+}
+function renderCandCards(){
+  const tot=DATA.reaction_total,order=["KEEP","LUMP_CANDIDATE","DROP_CANDIDATE"];
+  $("#candCards").innerHTML=order.map(function(k){
+    const n=DATA.candidate_counts[k]||0;
+    return '<div class="ccard"><span class="badge">Candidate only — HUMAN_REVIEW_REQUIRED</span>'+
+      '<h4>'+esc(k)+'</h4><p>'+esc(CAND[k].hint)+'</p>'+
+      '<div class="cnt">'+n+' <small>/ '+tot+' reaction · '+pct(n/tot,1)+'</small></div></div>';}).join("");
+}
+function renderCandExplain(){
+  const D=DATA.candidate_counts;
+  $("#candExplain").innerHTML='<div class="qgrid">'+
+    '<div class="q"><h4>DROP_CANDIDATE 的启发式依据（'+D.DROP_CANDIDATE+'）</h4>'+
+     '<p style="margin:0;font-size:12.5px;color:var(--ink2)">全部 '+D.DROP_CANDIDATE+
+     ' 条都是 <code>reference_activity = DISABLED_EXACT</code>：exact reverse pair 的<b>两个</b>方向官方参数都为零，'+
+     '在作者参考条件下没有通量。它们是 <code>REFERENCE_DISABLED</code> 注释状态（420 条）的子集。'+
+     '<b>这是参考参数事实，不是永久删除决定</b>：这些反应仍留在源 SBML 中、仍保留功能上下文，'+
+     '只是永远不能作为硬锚点或传播源。在非参考条件下它们可能重新激活，因此需要显式的重新引入规则。</p></div>'+
+    '<div class="q"><h4>LUMP_CANDIDATE 的启发式依据（'+D.LUMP_CANDIDATE+'）</h4>'+
+     '<p style="margin:0;font-size:12.5px;color:var(--ink2)">主要来自有参数的通道：332 条 DIRECT_CHEMISTRY + 34 条 '+
+     'GRAPH_PROPAGATED + 6 条 SHARED_JUNCTION + 6 条 REFERENCE_DISABLED。启发式的含义是“这条反应<b>可能</b>可以被某条有效反应代表”，'+
+     '前提是合并后的反应显式给出净化学计量、ATP / GTP、Pi / PPi、tRNA 与 moiety 账目，并且占用信息可重建。'+
+     '<b>合并候选不是合并许可</b>：微观通量、结合顺序、阶段特异占用与部分粒子数变化可能本质上不可重建。</p></div>'+
+    '<div class="q"><h4>KEEP 的启发式依据（'+D.KEEP+'）</h4>'+
+     '<p style="margin:0;font-size:12.5px;color:var(--ink2)">160 条 DIRECT_CHEMISTRY + 124 条 ACTIVE_OR_PARAMETERIZED + '+
+     '52 条 FORWARD_ONLY + 16 条 GRAPH_PROPAGATED + 26 条 DISABLED_EXACT。启发式倾向保留：显式化学事件、'+
+     '受保护输出所依赖的通道，以及虽然参考禁用但功能上下文仍需可见的行。'+
+     '<b>KEEP 同样只是标签</b>，968 / 968 条的决定状态仍是 PENDING。</p></div></div>'+
+   '<div class="callout" style="margin-bottom:0"><p style="margin:0;font-size:13px;color:#6a4a12">'+
+   '<b>为什么这些标签不是决定？</b> <code>reduction_decisions.csv</code> 的每一行都同时带有 '+
+   '<code>decision_status = PENDING</code> 与 <code>HUMAN_REVIEW_REQUIRED = true</code>'+
+   '（构建时断言 A5 / A6 已验证：候选标签没有被转换成任何已批准标签）。'+
+   '16 张过程卡的 KEEP / LUMP / QSSA / CHEMOSTAT / DROP / NEED MORE INFORMATION 六个勾选框共 '+
+   DATA.provenance.unselected_process_boxes+' 个，<b>全部未勾选</b>。</p></div>';
+}
+function renderProcTable(){
+  const tb=$("#procTable tbody");tb.innerHTML="";
+  DATA.processes.forEach(function(p){
+    const tr=el("tr");
+    tr.innerHTML='<td class="mono">'+esc(p.id)+'</td><td style="font-family:inherit">'+esc(p.name)+'</td>'+
+      '<td class="mono">'+fmt(p.reaction_count,6)+'</td><td class="mono">'+fmt(p.candidate_state_count,6)+'</td>'+
+      '<td class="mono">'+fmt(p.tau_fast_median)+'</td><td class="mono">'+fmt(p.R_tau_median)+'</td>'+
+      '<td class="mono">'+fmt(p.epsilon_tau_median)+'</td>'+
+      '<td class="mono" style="font-size:10px">'+esc(p.metric_status)+'</td>'+
+      '<td><span class="chip cand">PENDING_HUMAN_REVIEW</span> <span class="chip na">'+esc(p.status)+'</span></td>';
+    tr.title="τ_fast 区间 "+fmt(p.tau_fast_min)+" … "+fmt(p.tau_fast_max)+" s · R_τ 区间 "+
+      fmt(p.R_tau_min)+" … "+fmt(p.R_tau_max)+" · samples "+p.samples+
+      " · stable modes "+p.stable_mode_min+"–"+p.stable_mode_max+" · structural neutral "+p.structural_neutral;
+    tb.appendChild(tr);});
+}
+
+/* ============================ reaction browser ============================ */
+function renderRxFilters(){
+  function sel(id,label,opts){
+    return '<select id="'+id+'" aria-label="'+esc(label)+'"><option value="">'+esc(label)+'</option>'+
+      opts.map(function(o){return '<option value="'+esc(o[0])+'">'+esc(o[1])+'</option>';}).join("")+'</select>';}
+  const subs=Array.from(new Set(DATA.reactions.reduce(function(a,r){return a.concat(r.level_b);},[]))).sort();
+  const fams=DATA.families.map(function(f){return f.id;}).sort();
+  const stages=Array.from(new Set(DATA.reactions.map(function(r){return r.stage;}))).sort();
+  $("#rxFilters").innerHTML=
+    sel("rxMod","全部模块",MOD_ORDER.map(function(m){return [m,MODS[m].code+" · "+m];}))+
+    sel("rxSub","全部 subsystem",subs.map(function(s){return [s,s];}))+
+    sel("rxFam","全部 family",fams.map(function(f){return [f,f];}))+
+    sel("rxEv","全部证据状态",EV_ORDER.map(function(e){
+      return [e,EVS[e].code+" · "+e+" ("+(DATA.annotation_counts[e]||0)+")"];}))+
+    sel("rxCand","全部候选标签",["KEEP","LUMP_CANDIDATE","DROP_CANDIDATE"].map(function(c){
+      return [c,c+" ("+(DATA.candidate_counts[c]||0)+")"];}))+
+    sel("rxStage","全部 functional stage",stages.map(function(s){return [s,s];}))+
+    '<button type="button" id="rxReset" style="font:inherit;font-size:12.5px;padding:5px 10px;border:1px solid var(--line);border-radius:5px;background:#fff;cursor:pointer">重置</button>';
+  const bind=function(id,key){const n=$("#"+id);if(!n)return;
+    n.addEventListener("change",function(e){state.rxF[key]=e.target.value||"";renderRxRows();});};
+  bind("rxMod","mod");bind("rxSub","sub");bind("rxFam","fam");bind("rxEv","ev");
+  bind("rxCand","cand");bind("rxStage","stage");
+  $("#rxReset").addEventListener("click",function(){
+    state.rxQuery="";state.rxF={mod:"",sub:"",fam:"",ev:"",cand:"",stage:""};
+    $("#rxSearch").value="";syncRxFilters();renderRxRows();});
+}
+function syncRxFilters(){
+  const m={mod:"rxMod",sub:"rxSub",fam:"rxFam",ev:"rxEv",cand:"rxCand",stage:"rxStage"};
+  Object.keys(m).forEach(function(k){const n=$("#"+m[k]);if(n)n.value=state.rxF[k]||"";});
+}
+function rxMatches(r){
+  const q=(state.rxQuery||"").trim().toLowerCase();
+  if(q&&r.id.toLowerCase().indexOf(q)<0&&(r.reactants+" "+r.products).toLowerCase().indexOf(q)<0)return false;
+  const f=state.rxF;
+  if(f.mod&&r.level_a.indexOf(f.mod)<0)return false;
+  if(f.sub&&r.level_b.indexOf(f.sub)<0)return false;
+  if(f.fam&&r.family!==f.fam)return false;
+  if(f.ev&&r.ev!==f.ev)return false;
+  if(f.cand&&r.cand!==f.cand)return false;
+  if(f.stage&&r.contexts.indexOf(f.stage)<0)return false;
+  if(approvedOnly()&&r.ev!=="DIRECT_CHEMISTRY")return false;
+  return true;
+}
+function renderRxRows(){
+  const rows=DATA.reactions.filter(rxMatches);
+  $("#rxCount").textContent=rows.length+" / "+DATA.reaction_total+" reaction"+
+    (approvedOnly()?" · 只看已批准":"");
+  const tb=$("#rxRows tbody");tb.innerHTML="";
+  const CAP=300;
+  rows.slice(0,CAP).forEach(function(r){
+    const v=EVS[r.ev];
+    const tr=el("tr","clk");
+    tr.innerHTML='<td class="mono">'+esc(r.id)+'</td>'+
+      '<td>'+r.level_a.map(function(mm){return '<span class="tagm" style="background:'+MODS[mm].hex+'">'+MODS[mm].code+'</span>';}).join(" ")+'</td>'+
+      '<td class="mono" style="font-size:10.5px">'+esc(r.level_b[0])+
+        (r.level_b.length>1?' <span class="chip cand">+'+(r.level_b.length-1)+'</span>':"")+'</td>'+
+      '<td class="mono">'+esc(r.family)+'</td>'+
+      '<td class="mono" style="font-size:10.5px">'+esc(r.stage)+
+        (r.contexts.length>1?' <span class="chip cand">+'+(r.contexts.length-1)+'</span>':"")+'</td>'+
+      '<td><span class="evtag" style="background:'+v.hex+';color:'+v.fg+';border:1px '+v.bd+' '+v.hex+'">'+v.code+'</span></td>'+
+      '<td class="mono" style="font-size:10.5px">'+esc(r.activity)+'</td>'+
+      '<td>'+(approvedOnly()?'<span class="chip na">hidden</span>':'<span class="chip cand">'+esc(r.cand)+'</span>')+'</td>'+
+      '<td><span class="chip cand">'+esc(r.dec)+'</span></td>';
+    tr.addEventListener("click",function(){openReaction(r.id);});
+    tb.appendChild(tr);});
+  $("#rxTrunc").innerHTML=rows.length>CAP?
+    ('仅显示前 '+CAP+' 行（共 '+rows.length+' 行匹配）。请用搜索或筛选缩小范围 —— 本页刻意不一次性渲染 968 行。'):
+    (rows.length===0?'没有匹配的 reaction。':"");
+}
+function openReaction(id){
+  const r=DATA.reactions.filter(function(x){return x.id===id;})[0];
+  if(!r)return;
+  const v=EVS[r.ev];
+  const P={};DATA.prose_keys.forEach(function(k,i){P[k]=prose(r,i);});
+  const candBlock=approvedOnly()?
+    '<div class="warnbox"><b>当前处于「只看已批准」范围。</b> 降维候选信息被隐藏，'+
+    '因为仓库中<b>没有任何</b>已批准的降维变换。切换到「包含候选 / pending」可以看到未批准的候选标签。</div>':
+    '<dl class="dl">'+
+      field("Candidate label (启发式)",'<span class="chip cand">'+esc(r.cand)+'</span>',false)+
+      field("Candidate transformation",P.reason_candidate,false)+
+      field("Required assumption",P.required_assumption,false)+
+      field("Observables unrecoverable if applied",P.observables_unrecoverable_if_applied,false)+
+      field("Data needed to validate",P.data_needed_to_validate,false)+
+    '</dl><div class="warnbox" style="margin-top:8px"><span class="chip cand">Candidate only — HUMAN_REVIEW_REQUIRED</span>'+
+    '<div style="margin-top:6px">以上全部是<b>候选</b>。<code>decision_status = '+esc(r.dec)+
+    '</code>，<code>HUMAN_REVIEW_REQUIRED = '+esc(r.hr)+'</code>。本页不会把候选画成已批准的边。</div></div>';
+  openDrawer(r.id,v.code+" · "+r.stage+" · "+r.family+" · "+r.dec,
+   '<div class="dsec"><h5>化学方程式（原始 combined SBML 计量）</h5>'+
+     '<div class="eq">'+esc(r.reactants)+' &nbsp;⟶&nbsp; '+esc(r.products)+'</div>'+
+     '<dl class="dl" style="margin-top:9px">'+
+       field("Reactants",r.reactants)+field("Products",r.products)+
+       field("Local parameter",r.param_id+" = "+fmt(r.k1,6))+
+       field("Exact reverse",String(r.reverse)+" · "+r.pair_status+(r.pair_id?(" · "+r.pair_id):""))+
+       field("CellDesigner form",r.cd_type+"（描述源反应的形式，不决定功能阶段）",false)+
+     '</dl></div>'+
+   '<div class="dsec"><h5>功能角色（第一层 · 描述性事实）</h5><dl class="dl">'+
+     field("Functional stage",r.stage)+field("All contexts",r.contexts.join(" | "))+
+     field("Biochemical role",P.biochemical_role,false)+
+     field("Level A module",r.level_a.join(" | "))+
+     field("Level B subsystem(s)",r.level_b.join(" | "))+
+     field("Reaction family",r.family)+
+     field("Process cards",(r.processes||[]).join(" | ")||"—")+
+   '</dl></div>'+
+   '<div class="dsec"><h5>证据类型（为什么是这个功能标签）</h5>'+
+     '<div style="margin-bottom:7px"><span class="evtag" style="background:'+v.hex+';color:'+v.fg+
+       ';border:1px '+v.bd+' '+v.hex+'">'+v.code+' · '+esc(r.ev)+'</span></div>'+
+     '<p style="margin:0 0 7px;font-size:12.5px;color:var(--ink2)">'+esc(v.ex)+'</p><dl class="dl">'+
+       field("Anchor basis",r.anchor_basis)+field("Direct chemistry rule",r.direct_rule)+
+       field("Reference activity",r.activity)+field("Timescale evidence",P.timescale_evidence,false)+
+     '</dl></div>'+
+   '<div class="dsec"><h5>资源 / 粒子 / 账目 delta（每个事件）</h5><dl class="dl">'+
+     field("Resource delta",r.resource_delta)+
+     field("ATP / GTP accounting",P.ATP_GTP_accounting_consequence,false)+
+     field("PPi / Pi accounting",P.PPi_Pi_consequence,false)+
+     field("tRNA accounting",P.tRNA_accounting_consequence,false)+
+     field("Particle delta (tracked)",fmt(r.particle_delta,6))+
+     field("Free small-solute delta",fmt(r.solute_delta,6))+
+     field("Osmolarity proxy",P.osmolarity_consequence,false)+
+     field("Ionic strength",P.ionic_strength_consequence,false)+
+     field("Protected species touched",(r.protected_touched||[]).join(", ")||"—")+
+     field("Pools touched",(r.pools_touched||[]).join(", ")||"—")+
+     field("Species classes touched",(r.classes_touched||[]).map(function(x){
+       return (CLS[x]?CLS[x].shape:"")+x;}).join(" ")||"—")+
+     field("Conservation touched",(r.conservation_touched||[]).join(", ")||"—")+
+   '</dl></div>'+
+   '<div class="dsec"><h5>降维候选（第二层 · 未批准）</h5>'+candBlock+'</div>'+
+   '<div class="dsec"><h5>当前决定状态与未解析项</h5><dl class="dl">'+
+     field("decision_status",'<span class="chip cand">'+esc(r.dec)+'</span>',false)+
+     field("HUMAN_REVIEW_REQUIRED",String(r.hr))+
+     field("Ledger evidence",r.ledger_status)+field("Elemental balance",r.elem_status)+
+     field("Moiety balance",r.moiety_status)+field("Bound moiety",r.bound_status)+
+     field("Osmotic proxy",r.osmotic_status)+field("Ionic strength",r.ionic_status)+
+     field("Equilibrium metric",r.eq_status)+
+     field("Rate median / max",fmt(r.rate_median)+" / "+fmt(r.rate_max))+
+     field("Extent (reference)",fmt(r.extent))+
+     field("Source SBML sha256",r.source_sbml_sha256)+
+   '</dl><p class="note" style="margin-top:8px">全部 968 条反应的这些状态列完全一致：'+
+   '账目已知，但<b>没有任何一次变换被评估过</b>（<code>NO_TRANSFORMATION_EVALUATED</code>）。</p></div>');
+}
+
+/* ============================ Section 4: gates ============================ */
+const GATES=[
+ {t:"信息需求",en:"Information requirement",w:100,st:"approved",chip:"已批准",
+  body:"<p>第一问不是“能不能删”，而是<b>“这个量是不是需要被观察的输出？”</b>如果一个量是受保护输出，讨论到此结束。</p>"+
+   "<ul><li>Class I 的 42 个物种 <code>protected_output = true</code>，且这 42 个恰好就是 Class I 全体（构建时逐行核对，无一例外）。</li>"+
+   "<li>Class II-B 的 R_init / R_elong / R_term / R_recycle 是<b>派生聚合量</b>，用于讨论占用，不是新增的观察目标，也不增加 241 这个总数。</li>"+
+   "<li>可视化契约要求：每个显示实体都必须携带原始 <code>sbml_species_id</code> / <code>sbml_reaction_id</code>，不能只有显示标签。</li></ul>",
+  fact:"protected_output: 42 true / 199 false · 全部 42 个 true 都属于 Class I"},
+ {t:"化学 / 资源账目",en:"Chemical & resource accounting",w:94,st:"cand",chip:"账目已知 · 变换未评估",
+  body:"<p>任何聚合反应都必须显式给出净化学计量与资源账目：ATP / ADP / AMP、GTP / GDP、Pi / PPi、CP / Cr、氨基酸掺入、charged / uncharged tRNA、机械池交换。</p>"+
+   "<ul><li>968 / 968 条反应 <code>ledger_evidence_status = EXACT_EVENT_STOICHIOMETRY_KNOWN;NO_TRANSFORMATION_EVALUATED</code>。</li>"+
+   "<li>也就是说：<b>每个事件的精确化学计量已知</b>，但<b>没有任何一次变换被评估过</b>。</li>"+
+   "<li>被聚合隐藏的任何 free-resource / tRNA / moiety / 粒子 delta，必须在缩减反应中重新显式出现，或给出经过验证的重建式。</li></ul>",
+  fact:"ledger_evidence_status = EXACT_EVENT_STOICHIOMETRY_KNOWN;NO_TRANSFORMATION_EVALUATED × 968"},
+ {t:"守恒 / moiety 账目",en:"Conservation & moiety accounting",w:88,st:"cand",
+  chip:["82 pool 已登记","bound moiety 未解析"],
+  body:"<p>候选守恒池必须被<b>推导并测试</b>，不能假定。腺苷酸 / 鸟苷酸 moiety 跨结合态、按身份划分的 tRNA 总量、核糖体亚基总量、肌酸 moiety 与磷酸都是候选。</p>"+
+   "<ul><li>证据层登记 <b>82</b> 个 pool：<b>58</b> 个 <code>REGISTERED_REFERENCE_CONSERVED</code>、<b>24</b> 个 <code>REGISTERED_NOT_REFERENCE_CONSERVED</code>；其中只有 <b>19</b> 个 <code>unconditional_conserved = true</code>。</li>"+
+   "<li>“参考条件下守恒”<b>不是</b>“无条件守恒”。coarse 聚合池 R_init / R_elong / R_term / R_recycle 全部<b>不是</b>参考守恒量。</li>"+
+   "<li>968 / 968 <code>bound_moiety_status = BOUND_MOIETY_MEMBERSHIP_UNRESOLVED</code>、968 / 968 <code>moiety_balance_status = UNRESOLVED_BOUND_MOIETIES_NOT_ANNOTATED</code>：复合物组成向量缺失，因此总载体守恒<b>尚未</b>被证明。</li></ul>",
+  fact:"pools_checked 82 · reference_conserved 58 · quantified 38 · unconditional_conserved 19 / 82 · BOUND_MOIETY_MEMBERSHIP_UNRESOLVED × 968"},
+ {t:"粒子账目",en:"Particle accounting (osmotic / ionic / elemental)",w:82,st:"na",
+  chip:["公式缺失","电荷缺失"],
+  body:"<p>隐去一个结合 / 解离步骤会改变体系中表示出的粒子数，直接影响理想渗透代理。这一步在本仓库中<b>被数据缺口挡住</b>。</p>"+
+   "<ul><li>241 / 241 个物种 <code>formula_status = UNRESOLVED</code>；formula 与 net_charge 字段为 NULL（NULL = 未知，<b>不是</b> 0）。</li>"+
+   "<li>968 / 968 <code>elemental_balance_status = UNRESOLVED_FORMULAS_ABSENT</code>。</li>"+
+   "<li>968 / 968 <code>osmotic_proxy_status = STOICHIOMETRIC_PROXY_ONLY_NOT_VALIDATED_OSMOTIC_PRESSURE</code> —— 只有化学计量代理，<b>没有</b>经过验证的渗透压。</li>"+
+   "<li>968 / 968 <code>ionic_strength_status = UNAVAILABLE_CHARGE_PROTONATION_MG_BINDING_ABSENT</code> —— 离子强度面板必须保持无数值输出。</li></ul>",
+  fact:"formula UNRESOLVED × 241 · elemental UNRESOLVED_FORMULAS_ABSENT × 968 · osmotic STOICHIOMETRIC_PROXY_ONLY × 968 · ionic UNAVAILABLE × 968"},
+ {t:"动力学证据",en:"Kinetic evidence",w:74,st:"cand",chip:"16 / 16 NEED_MORE_INFORMATION",
+  body:"<p>一个大的 <code>k1</code> <b>不是</b>时间尺度分离证书。必须在整个声明域上比较 Jacobian / 本征模态、通量与初始层证据。</p>"+
+   "<ul><li><code>delta_QSS = |f_z| / (P_z + C_z)</code>，<code>tau_turnover = |x_z| / (P_z + C_z)</code>，<code>delta_eq = |vf − vr| / exchange_flux</code>，<code>R_tau = tau_slow / tau_fast</code>，<code>epsilon_tau = 1 / R_tau</code>。</li>"+
+   "<li>分母 ≤ 1e-12 时必须标为 <code>LOW_FLUX_UNINFORMATIVE</code>，<b>绝不允许</b>把 0/0 写成 0。</li>"+
+   "<li>290 个 exact reverse pair：209 个 informative、81 个 disabled。<b>exact reverse pair 是结构源关系，它不说明任何关于快平衡的事。</b></li>"+
+   "<li>全部 16 个过程 <code>timescale_status = NEED_MORE_INFORMATION</code>（构建时断言 A12 验证）。</li>"+
+   "<li>局部 <code>J_zz</code> 块是<b>坐标依赖</b>的诊断量，不是已批准的快流形；中性 / 非衰减模态从不被反演成快时间。</li></ul>",
+  fact:"16 process × NEED_MORE_INFORMATION · 290 pair (209 informative / 81 disabled) · equilibrium_metric_status: PAIR_LEVEL_EVIDENCE_AVAILABLE 418 / REFERENCE_DIRECTION_DISABLED 162 / N/A_NO_EXACT_REVERSE_PAIR 388"},
+ {t:"重建",en:"Reconstruction",w:66,st:"cand",chip:"待推导 · 待测试",
+  body:"<p>“可重建”意味着一个<b>尚待推导并测试</b>的代数或守恒池关系，<b>不是</b>一个已经成立的性质。</p>"+
+   "<ul><li>每个类别的重建要求在契约里都是显式的：Class I 受保护输出保持可重建；II-A 需有效 closure + 受保护资源重建；II-B 需功能占用池重建；III 需聚合通量 / 占用 / moiety 重建；C 需累计降解账目（不得置零）。</li>"+
+   "<li>全部 241 行的 <code>reconstruction_requirement</code> 都带后缀 <code>NO_TRANSFORMATION_EVALUATED</code>。</li>"+
+   "<li>个别微观通量、结合顺序、阶段特异占用与部分小粒子变化在 lumping 之后可能<b>本质上不可重建</b>；这些量必须在最终签署的决定中按 ID 列出。</li></ul>",
+  fact:"reconstruction_requirement × 241，全部以 ;NO_TRANSFORMATION_EVALUATED 结尾"},
+ {t:"物理可行性",en:"Physical feasibility",w:56,st:"cand",chip:"已出现失败实例",
+  body:"<p>缩减系统必须在整个时间窗上保持非负、可行，且闭合残差可控。这一步在本项目中<b>已经真实地失败过</b>。</p>"+
+   "<ul><li>A3a（选择性 / 自由底物 QSSA）：<code>FAILED_VALIDATION_ON_REFERENCE_DOMAIN</code> —— 受保护账目出现结构性滑移泄漏。</li>"+
+   "<li>A3b 21 状态（宽总坐标 closure）：<code>FAILED_SMOKE_CLOSURE_FEASIBILITY</code> —— 在一次 GlyAMP 相关瞬态中约 <b>2.498 s</b> 处失去可行性。</li>"+
+   "<li>A3b-r12 9 状态（受限总坐标候选）：<code>BLOCKED_NUMERICAL_COORDINATE_DEFECT</code> —— 局部表现更好，但整窗未完成。</li></ul>",
+  fact:"3 个历史消去方案：1 FAILED_VALIDATION · 1 FAILED_SMOKE_CLOSURE_FEASIBILITY (~2.498 s) · 1 BLOCKED_NUMERICAL_COORDINATE_DEFECT"},
+ {t:"全量 vs 缩减 对比测试",en:"Full-vs-reduced test",w:44,st:"na",chip:"缩减模型不存在，无从比较",
+  body:"<p>必须在<b>全部</b>受保护输出、资源账目与池守恒上对比，而不是一条曲线相似就算通过；比较本身需要先有一份可运行的缩减模型。</p>"+
+   "<ul><li><code>reduced_model_status = NOT_VALIDATED</code>；不存在 fitted parameter set。</li>"+
+   "<li>现有的“两引擎一致性检查”（RoadRunner CVODE 与 SimBiology ode15s 在 1000 s 时 free Pept0003 分别为 5.164478733656283 与 5.164582654018584）是<b>引擎一致性</b>检查，<b>没有</b>预注册的通过阈值，<b>不是</b>实验验证，也不是 full-vs-reduced 对比。</li>"+
+   "<li>发表用的 S28 轨迹尚未获取，因此连与出版数据的外部对比都还是空缺（G1-PNAS gate = BLOCKED）。</li></ul>",
+  fact:"reduced_model_status NOT_VALIDATED · 两引擎 Pept0003 差 ~1.0e-4（无预注册阈值，属完整性检查）"},
+ {t:"有效域",en:"Validity domain",w:32,st:"cand",chip:"仅 AUTHOR_REFERENCE_CONDITION_ONLY",
+  body:"<p>任何证据目前只在<b>一个</b>冻结条件下成立，域外结论不得外推。</p>"+
+   "<ul><li>域：<code>AUTHOR_REFERENCE_CONDITION_ONLY</code>，200 个存储样本位于 <code>logspace(-4, 3, 200)</code>，至 1000 s。</li>"+
+   "<li>241 / 241 个物种带 <code>UNRESOLVED_INITIAL_LAYER_STORED_X0_AT_1E_MINUS4</code>：最早的存储样本已在 1e-4 s 之后，<b>初始层行为未被解析</b>。</li>"+
+   "<li>候选快态的 τ_fast 下界约 1.9e-5 s <b>小于</b>首个样本时刻 1e-4 s，所以“初值全部为零 → 立即到达流形”的推断在本数据上不可用。</li>"+
+   "<li>参考禁用（DISABLED_EXACT）的 420 条通道在<b>非</b>参考条件下可能重新激活。</li></ul>",
+  fact:"domain AUTHOR_REFERENCE_CONDITION_ONLY · 200 samples on logspace(-4,3,200) · initial-layer UNRESOLVED × 241"},
+ {t:"人的决定",en:"HUMAN DECISION",w:20,st:"cand",chip:"96 / 96 框未勾选",
+  body:"<p>前 9 道闸门全部通过<b>也不</b>自动构成许可。最终必须有人按过程卡逐项签署 KEEP / LUMP / QSSA / CHEMOSTAT / DROP / NEED MORE INFORMATION，并记录不可恢复量。</p>"+
+   "<ul><li>16 张过程卡 × 6 个勾选框 = <b>96</b> 个，全部未勾选。</li>"+
+   "<li>968 / 968 条反应 <code>decision_status = PENDING</code>。</li>"+
+   "<li>已批准的是<b>物种信息保留契约</b>与<b>反应功能注释</b>；两者都明确声明<b>不</b>批准任何 QSSA、快平衡、时间尺度分离、lumping、反应删除、chemostat、动力学等价或缩减核动力学。</li></ul>",
+  fact:"unselected_process_boxes 96 / 96 · kinetic_decisions_pending 968 / 968"}];
+function renderGates(){
+  const host=$("#gates");host.innerHTML="";
+  GATES.forEach(function(g,i){
+    const chips=(Array.isArray(g.chip)?g.chip:[g.chip]).map(function(t){
+      return '<span class="chip '+g.st+'">'+esc(t)+'</span>';}).join("");
+    const n=el("div","gate");
+    n.style.width=g.w+"%";
+    n.innerHTML='<div class="gh"><span class="gn">'+(i+1)+'</span>'+
+      '<span class="gt">'+esc(g.t)+'<small>'+esc(g.en)+'</small></span>'+
+      '<span class="gs">'+chips+'<span class="note" style="font-family:var(--mono)">▾</span></span></div>'+
+      '<div class="gb">'+g.body+'<div class="fact">仓库实测：'+esc(g.fact)+'</div></div>';
+    n.querySelector(".gh").addEventListener("click",function(){
+      n.classList.toggle("open");
+      n.querySelector(".gs .note").textContent=n.classList.contains("open")?"▴":"▾";});
+    host.appendChild(n);});
+  host.appendChild(el("div","chip stop",
+    "⛔ APPROVED REDUCED MAPPING — 流水线在此停止，不进入第 11 步"));
+}
+
+/* ============================ Section 5: case study ============================ */
+const MECH=[
+ {k:"Gly / Met + ATP",ids:["Gly","Met","ATP"],lab:"氨基酸 + ATP",sub:"Class I · 自由底物"},
+ {k:"RS",ids:["GlyRS","MetRS"],lab:"氨酰-tRNA 合成酶",sub:"Class I · 自由酶"},
+ {k:"RS_AA_ATP",ids:["GlyRS_Gly_ATP","MetRS_Met_ATP"],lab:"RS·AA·ATP",sub:"Class II-A"},
+ {k:"RS_AAAMP_PPi",ids:["GlyRS_GlyAMP_PPi","MetRS_MetAMP_PPi"],lab:"RS·AA-AMP·PPi",sub:"Class II-A"},
+ {k:"RS_AAAMP",ids:["GlyRS_GlyAMP","MetRS_MetAMP"],lab:"RS·AA-AMP",sub:"Class II-A · 占酶总量 ~99%"},
+ {k:"PPi",ids:["PPi"],lab:"PPi 释放",sub:"Class I"},
+ {k:"tRNA",ids:["tRNAGlyGCC","tRNAfMetCAU"],lab:"特异 tRNA",sub:"Class I"},
+ {k:"RS_AA_tRNA",ids:["GlyRS_GlyAMP_tRNAGlyGCC","MetRS_MetAMP_tRNAfMetCAU"],lab:"RS·AA-AMP·tRNA",sub:"Class II-A"},
+ {k:"aa-tRNA",ids:["GlytRNAGlyGCC","MettRNAfMetCAU"],lab:"charged tRNA",sub:"Class I · 受保护输出"},
+ {k:"RS_AMP",ids:["GlyRS_AMP","MetRS_AMP"],lab:"RS·AMP",sub:"Class II-A"},
+ {k:"AMP",ids:["AMP"],lab:"AMP 释放",sub:"Class I"}];
+function renderMech(){
+  const host=$("#mech");host.innerHTML="";
+  MECH.forEach(function(step,i){
+    const first=step.ids[0];
+    const s=DATA.species.filter(function(x){return x.id===first;})[0];
+    const cls=s?s.cls:null;
+    const hex=cls?CLS[cls].hex:"#8d6a5e";
+    const c=el("div","mchip"+((cls==="II-A")?" cplx":""));
+    c.style.borderColor=hex;
+    if(cls)c.style.background=hex+"14";
+    c.innerHTML=esc(step.lab)+'<small>'+esc(cls?("Class "+cls+" · "):"")+esc(step.sub)+'</small>';
+    c.title=step.ids.join(" / ");
+    c.addEventListener("click",function(){
+      if(DATA.species.filter(function(x){return x.id===first;}).length)openSpecies(first);});
+    host.appendChild(c);
+    if(i<MECH.length-1)host.appendChild(el("span","marr","→"));});
+}
+function renderCase(){
+  const cs=DATA.case_study,T=cs.timescale,SQ=cs.sequestration,S=cs.states;
+  const P=cs.processes,GP=SQ.GlyRS_active_pool,MP=SQ.MetRS_active_pool;
+  const FS={};cs.fast_states.forEach(function(f){FS[f.id]=f;});
+  const sp=function(id){return DATA.species.filter(function(x){return x.id===id;})[0]||{};};
+  const proc=function(id){for(let i=0;i<DATA.processes.length;i++){if(DATA.processes[i].id===id)return DATA.processes[i];}return {};};
+  function li(h){return "<li>"+h+"</li>";}
+  $("#proList").innerHTML=[
+   li("快特征值 <b>|λ_fast| ≈ "+fmt(T.lambda_fast_min)+" … "+fmt(T.lambda_fast_max)+"</b>（源 <code>aminoacylation_timescale.csv</code>，"+T.samples+" 个样本 × "+T.n_fast_states+" 个快态一致）"),
+   li("对应 <b>τ_fast ≈ "+fmt(T.tau_fast_min)+" … "+fmt(T.tau_fast_max)+" s</b>，比观测窗（"+
+      fmt(T.time_range[0])+" – "+fmt(T.time_range[1])+" s）短约 4 个数量级"),
+   li("刚性比 <b>ε_stiff 从 "+fmt(T.epsilon_max)+" 衰减到 "+fmt(T.epsilon_min)+"</b> —— 随时间变得更“快”"),
+   li("酶几乎完全被占用：<b>GlyRS_GlyAMP max "+fmt(FS.GlyRS_GlyAMP.max)+"</b> = "+
+      pct(FS.GlyRS_GlyAMP.max/GP.total_initial,2)+" of GlyRS_total "+fmt(GP.total_initial,4)+
+      "；<b>MetRS_MetAMP max "+fmt(FS.MetRS_MetAMP.max)+"</b> = "+
+      pct(FS.MetRS_MetAMP.max/MP.total_initial,2)+" of MetRS_total "+fmt(MP.total_initial,4)),
+   li("池占用上限 <b>max_bound_fraction = "+fmt(GP.max_bound_fraction,6)+" (GlyRS)</b> / <b>"+
+      fmt(MP.max_bound_fraction,6)+" (MetRS)</b>，free / total 中位数仅 "+fmt(GP.free_total_ratio_median)+
+      " 与 "+fmt(MP.free_total_ratio_median)),
+   li("两个相关过程的中位时间尺度分离：<b>P01 R_τ median = "+fmt(P.P01.R_tau_median)+"</b>、"+
+      "<b>P02 R_τ median = "+fmt(P.P02.R_tau_median)+"</b>（ε_τ median "+fmt(P.P01.epsilon_tau_median)+
+      " / "+fmt(P.P02.epsilon_tau_median)+"）"),
+   li("酶池 <b>GlyRS_active_pool</b> / <b>MetRS_active_pool</b> 各 "+GP.count+" 个成员，均 <code>reference_conserved = "+
+      GP.reference_conserved+"</code>，为总坐标 closure 提供了候选守恒式"),
+   li("GlyRS / MetRS 的活化复合物全部被明确归为 <b>Class II-A</b>，即“允许讨论代数闭包替代”的那一类")
+  ].join("");
+  $("#conList").innerHTML=[
+   li("<b>从未推导出代数流形</b>：<code>algebraic_manifold_derived = false</code> 出现在 "+T.samples+" / "+T.samples+
+      " 行（构建时断言 A16 逐行验证）"),
+   li("快态并不一致地快：<b>P01 τ_fast 最大 "+fmt(P.P01.tau_fast_max)+" s</b>、<b>P02 τ_fast 最大 "+
+      fmt(P.P02.tau_fast_max)+" s</b> —— 与观测窗同量级"),
+   li("时间尺度分离并不一致：<b>P01 R_τ 最小 "+fmt(P.P01.R_tau_min)+"</b>、<b>P02 R_τ 最小 "+
+      fmt(P.P02.R_tau_min)+"</b>（都 &lt; 1，即某些“快”模态实际比慢代理更慢）"),
+   li("自由氨酰腺苷酸<b>不可忽略</b>：GlyAMP max <b>"+fmt(SQ.glyamp_max)+"</b> = "+pct(SQ.glyamp_fraction_of_gly0,2)+
+      " of Gly0 "+fmt(SQ.gly0)+"；MetAMP max <b>"+fmt(SQ.metamp_max)+"</b> = "+pct(SQ.metamp_fraction_of_met0,2)+
+      " of Met0 "+fmt(SQ.met0)),
+   li("QSS 残差接近 1，即 QSS <b>失败</b>：<b>GlyAMP delta_QSS median "+fmt(S.GlyAMP.qss_defect_median)+
+      "</b>（p95 "+fmt(S.GlyAMP.qss_defect_p95)+"）、<b>MetAMP median "+fmt(S.MetAMP.qss_defect_median)+
+      "</b>（p95 "+fmt(S.MetAMP.qss_defect_p95)+"）"),
+   li("自由资源本身也不满足 QSS：<b>AMP p95 "+fmt(S.AMP.qss_defect_p95)+"</b>、<b>PPi p95 "+
+      fmt(S.PPi.qss_defect_p95)+"</b> —— 正是聚合时必须显式出现的量"),
+   li("初始层未解析：<code>"+esc(sp("Gly").initial_layer_flag)+"</code> 覆盖全部 241 个物种；"+
+      "而 τ_fast ≈ "+fmt(T.tau_fast_min)+" s <b>小于</b>首个存储样本时刻 "+fmt(T.time_range[0])+" s，"+
+      "因此“初值全为零 → 立即到达流形”的推断在本数据上不可用"),
+   li("守恒只在参考条件下成立：pool <code>reference_conserved = true</code> 但 <code>unconditional_conserved = "+
+      GP.unconditional_conserved+"</code>；全局仅 19 / "+DATA.pools.length+" 个池是无条件守恒"),
+   li("账目缺口：<code>UNRESOLVED_FORMULAS_ABSENT</code> × 968、<code>UNRESOLVED_BOUND_MOIETIES_NOT_ANNOTATED</code> × 968、"+
+      "<code>UNAVAILABLE_CHARGE_PROTONATION_MG_BINDING_ABSENT</code> × 968 —— 元素平衡、渗透与离子后果无法量化"),
+   li("诊断量性质受限：局部 <code>J_zz</code> 块是<b>坐标依赖</b>的诊断代理（"+
+      esc(proc(P.P01.id).metric_status)+" / "+esc(proc(P.P02.id).metric_status)+"），"+
+      "且 R_τ 的中位数掩盖了区间内的最小值"),
+   li("三次历史消去尝试全部未通过（见下表）—— 这不是巧合，而是这一步本身的难度")
+  ].join("");
+  $("#occTable").innerHTML='<table class="mini"><thead><tr>'+
+    '<th>Pool</th><th>members</th><th>free</th><th>total initial</th><th>max bound fraction</th>'+
+    '<th>free/total median</th><th>reference conserved</th><th>unconditional</th><th>status</th></tr></thead><tbody>'+
+    [["GlyRS_active_pool",SQ.GlyRS_active_pool],["MetRS_active_pool",SQ.MetRS_active_pool]].map(function(r){
+      const p=r[1];
+      return '<tr><td class="l">'+esc(p.id)+'</td><td>'+p.count+'</td><td>'+esc(p.free)+'</td>'+
+        '<td>'+fmt(p.total_initial)+'</td><td>'+fmt(p.max_bound_fraction,6)+'</td>'+
+        '<td>'+fmt(p.free_total_ratio_median)+'</td><td>'+esc(p.reference_conserved)+'</td>'+
+        '<td>'+esc(p.unconditional_conserved)+'</td><td class="l">'+esc(p.status)+'</td></tr>';}).join("")+
+    '</tbody></table><p class="note" style="margin-top:7px">参考条件初始值：ATP '+fmt(S.ATP.x0)+
+    ' · Gly '+fmt(SQ.gly0)+' · Met '+fmt(SQ.met0)+' · GlyRS '+fmt(GP.total_initial)+
+    ' · MetRS '+fmt(MP.total_initial)+' · tRNAGlyGCC / tRNAfMetCAU '+fmt(S.tRNAGlyGCC.x0)+
+    '（浓度单位元数据缺失：<code>'+esc(sp("ATP").unit_status)+'</code>）。'+
+    '<b>sequestration_status = '+esc(GP.status)+'</b> —— 这些占用比例只在该冻结参考条件下计算，不能外推。</p>';
+  const fastRows=cs.fast_states.map(function(f){
+    const st=S[f.id]||{};
+    return '<tr><td>'+esc(f.id)+'</td><td>'+(st.cls?esc(st.cls):"—")+'</td><td>'+esc(f.enzyme)+'</td>'+
+      '<td>'+esc(f.moiety)+'</td><td>'+fmt(f.median)+'</td><td>'+fmt(f.max)+'</td>'+
+      '<td>'+fmt(st.qss_defect_median)+'</td><td>'+fmt(st.qss_defect_p95)+'</td>'+
+      '<td>'+fmt(st.qss_informative_fraction)+'</td><td>'+f.producing+'/'+f.consuming+'</td></tr>';}).join("");
+  $("#tsTable").innerHTML='<table class="mini"><thead><tr>'+
+    '<th>Fast state</th><th>Class</th><th>Enzyme</th><th>Moiety</th><th>traj median</th><th>traj max</th>'+
+    '<th>delta_QSS median</th><th>delta_QSS p95</th><th>informative frac</th><th>prod/cons</th></tr></thead><tbody>'+
+    fastRows+'</tbody></table>'+
+    '<p class="note" style="margin-top:7px"><code>delta_QSS = |f_z| / (P_z + C_z)</code>；越接近 1 表示该坐标的生成与消耗'+
+    '越不平衡，QSS 越<b>不</b>成立。分母 ≤ 1e-12 的行标为 <code>LOW_FLUX_UNINFORMATIVE</code>，不会被写成 0。'+
+    '时间尺度记录：'+T.samples+' 样本 × '+T.n_fast_states+' 快态 / '+T.n_slow_states+' 慢态，'+
+    '<b>每一行都是 <code>algebraic_manifold_derived = false</code></b>（构建时断言 A16 验证）。</p>';
+  $("#histList").innerHTML='<table class="mini"><thead><tr>'+
+    '<th>方案</th><th>描述</th><th>结果</th><th>失败原因</th><th>出处</th></tr></thead><tbody>'+
+    cs.historical.map(function(h){
+      return '<tr><td>'+esc(h.id)+'</td><td class="l">'+esc(h.label)+'</td>'+
+        '<td><span class="chip na">'+esc(h.status)+'</span></td>'+
+        '<td class="l" style="font-size:11.5px">'+esc(h.issue)+'</td>'+
+        '<td class="l" style="font-size:10.5px;color:var(--ink3)">'+esc(h.source)+'</td></tr>';}).join("")+
+    '</tbody></table>';
+  $("#r3Note").innerHTML='<b>R3 pilot 的原始陈述</b>（逐字提取自 <code>'+esc(cs.r3_source)+'</code>，构建时断言 A18 验证）：<br>'+
+    '<em>“'+esc(cs.r3_statement)+'”</em><br>'+
+    '<span style="margin-top:6px;display:block">也就是说：R3 的九例否决<b>推翻的是那一个具体的动力学消去表述</b>，'+
+    '它<b>不</b>撤销先前已批准的物种信息保留决定，也<b>不</b>把被消去的复合物变成新的受保护观察量。'+
+    '这正是第 1 节那句话的具体体现。</span>';
+  $("#vYes").innerHTML="五类信息契约已由人批准（<code>HUMAN-APPROVED v1</code>），241 / 241 个物种全部归类。"+
+    "在本案例中，GlyRS / MetRS 的 12 个活化复合物与相关氨酰腺苷酸态被定为 <b>Class II-A</b>，"+
+    "自由 ATP / AMP / PPi / 氨基酸 / tRNA / charged tRNA 被定为 <b>Class I</b>（<code>protected_output = true</code>）。"+
+    "这回答的是“哪些信息必须保留、哪些允许被重建”。<br><br>"+
+    "<span class='chip approved'>权威级别：已批准的科学决定</span>";
+  $("#vNo").innerHTML="把 Class II-A 的复合物用代数闭包替换掉 —— 也就是 QSSA / 快平衡消去 —— <b>尚未获批准</b>。"+
+    "证据层 <code>algebraic_manifold_derived = false</code>（"+T.samples+" / "+T.samples+" 行）；"+
+    "P01 / P02 的 <code>timescale_status = "+esc(P.P01.status)+"</code>；"+
+    "反应层面 <code>decision_status = "+esc(cs.verdict.reaction_decision_status)+"</code>（968 / 968）；"+
+    "三次尝试 A3a / A3b-21 / A3b-r12-9 分别 FAILED / FAILED / BLOCKED。<br><br>"+
+    "<span class='chip na'>权威级别：候选，未批准 · reduced_model_status = NOT_VALIDATED</span>";
+}
+
+/* ============================ footer ============================ */
+function renderFooter(){
+  const P=DATA.provenance,A=DATA.assertions;
+  $("#fileSummary").innerHTML="构建时读取并逐文件记录 SHA-256 的输入共 <b>"+P.files.length+
+    "</b> 个（全部通过 <code>git show "+esc(P.source_ref)+":&lt;path&gt;</code> 读取，因此 provenance 被钉在 commit <b>"+
+    esc(P.source_commit.slice(0,12))+"</b> 上，与当前 checkout 所在分支无关。"+
+    "<br>数值交叉校验：EffectiveMathML vs 作者质量作用作用 "+
+    P.numerical_crosschecks.effective_mathml_vs_author_mass_action_max_scaled_error+
+    "；解析 Jacobian vs 中心差分 "+P.numerical_crosschecks.analytic_vs_central_difference_jacobian_max_scaled_error+
+    "；状态列数 "+P.numerical_crosschecks.finite_difference_state_columns+"。"+
+    "<br>池校验：pools "+P.pool_verification.pools_checked+" · memberships "+
+    P.pool_verification.state_pool_memberships_checked+" · pool samples "+P.pool_verification.pool_samples_checked+
+    " · reference-conserved "+P.pool_verification.reference_conserved_pools+" · quantified "+
+    P.pool_verification.quantified_pools+"。";
+  $("#fileList").innerHTML=P.files.map(function(f){
+    return '<div><code>'+esc(f.path)+'</code><span>'+esc(f.sha256.slice(0,16))+'…</span></div>';}).join("");
+  const nPass=A.filter(function(a){return a.status==="PASS";}).length;
+  $("#assertSummary").innerHTML="<b>"+nPass+" / "+A.length+"</b> 条断言 PASS。"+
+    "断言在构建时执行；<b>任何一条失败都会中止构建并不写出任何文件</b>，页面不会静默渲染过期信息。"+
+    "下面 8 条是任务书要求的核心断言（A1–A8），其余为本页额外加严的数据完整性检查。";
+  $("#assertList").innerHTML=A.map(function(a){
+    return '<div><span class="'+(a.status==="PASS"?"ok":"")+'">'+esc(a.status)+'</span> <b>'+esc(a.id)+
+      '</b> '+esc(a.text)+' <span title="'+esc(a.detail)+'">ⓘ</span></div>';}).join("");
+  $("#footProv").innerHTML="生成器 <code>"+esc(P.generator)+"</code> · schema <code>"+esc(DATA.schema)+
+    "</code> · 构建于 "+esc(P.built_at)+
+    " · canonical SBML SHA-256 <code>"+esc(P.canonical_sbml_sha256)+"</code>"+
+    " · verification report <code>"+esc(P.verification_sha256.slice(0,16))+"…</code>"+
+    " · preregistration <code>"+esc(P.preregistration_sha256.slice(0,16))+"…</code>"+
+    "<br><b>科学边界：</b>本页不批准任何 QSSA、快平衡、时间尺度分离、lumping、反应删除、chemostat、动力学等价或缩减核动力学。"+
+    "全部 968 条降维决定仍为 <code>PENDING</code>。源数据只读，未被本页修改。";
+}
+
+/* ============================ drawer ============================ */
+let lastFocus=null;
+function openDrawer(title,sub,html){
+  lastFocus=document.activeElement;
+  $("#dTitle").textContent=title;
+  $("#dSub").textContent=sub;
+  $("#dBody").innerHTML=html;
+  $("#dBody").scrollTop=0;
+  $("#drawer").classList.add("on");
+  $("#scrim").classList.add("on");
+  $("#dClose").focus();
+}
+function closeDrawer(){
+  $("#drawer").classList.remove("on");
+  $("#scrim").classList.remove("on");
+  if(lastFocus&&lastFocus.focus)lastFocus.focus();
+}
+
+/* ============================ scope / layer ============================ */
+function applyScope(){
+  const ap=approvedOnly();
+  $$("#scopeSeg button").forEach(function(b){
+    b.setAttribute("aria-pressed",b.getAttribute("data-scope")===state.scope?"true":"false");});
+  $("#layerCandidate").style.display=ap?"none":"";
+  $$("#layerSeg button").forEach(function(b){
+    if(b.getAttribute("data-layer")==="candidate"){
+      b.disabled=ap;
+      b.title=ap?"「只看已批准」下隐藏：仓库中没有任何已批准的降维候选变换":"";}});
+  if(ap)setLayer("function",true);
+  renderRxRows();
+}
+function setLayer(which,noScroll){
+  state.layer=which;
+  $$("#layerSeg button").forEach(function(b){
+    b.setAttribute("aria-pressed",b.getAttribute("data-layer")===which?"true":"false");});
+  $("#layerFunction").classList.toggle("hidden",which!=="function");
+  $("#layerCandidate").classList.toggle("hidden",which!=="candidate");
+}
+
+/* ============================ init ============================ */
+function init(){
+  renderProv();
+  renderPipeline();
+  renderChecklist();
+  renderTreemap();
+  renderClassLegend();
+  renderClassPanel();
+  renderSpeciesFilters();
+  renderSpeciesRows();
+  renderMultiSub();
+  renderSankey();
+  renderEvKey();
+  renderEvBar();
+  renderTree();
+  renderConcepts();
+  renderCandCards();
+  renderCandExplain();
+  renderProcTable();
+  renderRxFilters();
+  renderRxRows();
+  renderGates();
+  renderMech();
+  renderCase();
+  renderFooter();
+
+  $("#scopeSeg").addEventListener("click",function(e){
+    const b=e.target.closest("button");if(!b)return;
+    state.scope=b.getAttribute("data-scope");applyScope();});
+  $("#layerSeg").addEventListener("click",function(e){
+    const b=e.target.closest("button");if(!b||b.disabled)return;
+    setLayer(b.getAttribute("data-layer"));});
+  $("#spSearch").addEventListener("input",function(e){
+    state.spQuery=e.target.value;renderTreemap();renderSpeciesRows();});
+  $("#rxSearch").addEventListener("input",function(e){state.rxQuery=e.target.value;renderRxRows();});
+  $("#dClose").addEventListener("click",closeDrawer);
+  $("#scrim").addEventListener("click",closeDrawer);
+  document.addEventListener("keydown",function(e){
+    if(e.key==="Escape")closeDrawer();
+    if(e.key==="/"&&document.activeElement&&
+       !/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)){
+      e.preventDefault();$("#spSearch").focus();}});
+  let rt=null;
+  window.addEventListener("resize",function(){
+    clearTimeout(rt);rt=setTimeout(renderSankey,180);});
+  applyScope();
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);
+else init();
+})();
+</script>
+</body>
+</html>
