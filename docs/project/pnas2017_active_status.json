@@ -1,0 +1,49 @@
+{
+  "schema": "pnas2017_active_status/v1",
+  "active_model": "PNAS2017_full_reference",
+  "future_model": "PURE_reduced_core",
+  "legacy_model": "Mavelli2015_coarse_reference",
+  "legacy_active": false,
+  "figure_execution": "PAUSED_BY_USER",
+  "status": {
+    "source_frozen": "VERIFIED",
+    "sbml_audited": "VERIFIED",
+    "inventory_verified": "241_SPECIES_968_REACTIONS_26_SUBSYSTEMS",
+    "author_reference_execution": "PRESERVED_SBML_ENGINE_RUNS_VERIFIED_AUTHOR_MATLAB_RUN_AVAILABLE_NOT_RUN",
+    "cross_engine_check": "COMPLETED_DIAGNOSTIC_NO_ACCEPTANCE_GATE",
+    "dataset_s28_acquired": "ACQUIRED",
+    "dataset_s28_readable": "READABLE",
+    "fig2b_mapping": "DIRECT_IDENTITY_RESOLVED_CONDITION_CONTRADICTED",
+    "fig2b_reproduction": "PAUSED_NOT_RUN",
+    "fig3a_mapping": "UNRESOLVED_EXACT_QSS_TRANSFORM",
+    "fig3a_reproduction": "PAUSED_BLOCKED_SOURCE_DEFINITION",
+    "fig5a_mapping": "DIRECT_IDENTITY_RESOLVED_SOURCE_SUBSET",
+    "fig5a_reproduction": "PAUSED_NOT_RUN",
+    "supplementary_figure_reproduction": "PAUSED_NOT_RUN",
+    "pnas_figure_benchmark_status": "PAUSED_NOT_ESTABLISHED",
+    "experimental_validation_status": "NOT_ESTABLISHED",
+    "reduced_model_status": "NOT_VALIDATED"
+  },
+  "scientific_authority": "Source evidence only; no new scientific decisions",
+  "mechanistic_decisions": "968_PENDING",
+  "navigation": [
+    {
+      "path": "docs/project/benchmark_registry.md",
+      "epistemic_status": "EXTRACTED",
+      "confidence": "SOURCE_BOUND",
+      "freshness": "2026-10-08"
+    },
+    {
+      "path": "docs/pnas2017/s28_observable_mapping.md",
+      "epistemic_status": "AMBIGUOUS",
+      "confidence": "PARTIAL_EXACT_IDENTITY",
+      "freshness": "2026-10-08"
+    },
+    {
+      "path": "docs/reduction/human_r3_successor_provenance_20261007.md",
+      "epistemic_status": "EXTRACTED",
+      "confidence": "HUMAN_RECORDED_BOUNDARY",
+      "freshness": "UNCHANGED_SOURCE"
+    }
+  ]
+}

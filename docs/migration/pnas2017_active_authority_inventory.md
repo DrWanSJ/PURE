@@ -1,3 +1,11 @@
+# PNAS2017 active-authority inventory
+User successor instruction, 2026-10-08: pause figure reproduction; complete remaining authority migration.
+The initial inventory was committed as 2111173 before any active file was edited.
+The CSV preserves the original exact-one classifications and adds post-migration matching-file classifications. Actions are authorized for migration;
+historical bodies and scientific conclusions remain protected by pnas2017_preservation_contract.json.
+The main target remains the audited base below. Filesystem-only older-checkout evidence is preserved outside Git.
+The following initial audit is historical context; its prior NOT_EXECUTED_STOP_BOUNDARY reflects the earlier stop, not current authorization.
+
 # PNAS 2017 active-authority inventory - read-only external deliverable
 
 Current main audited: `0b6f9ad649a7e283e440e0294a021123551f6858`.
@@ -129,3 +137,5 @@ A legacy header inside an otherwise frozen file changes its hash. Use successor 
   - `docs/audit/rs_qssa_d7_20260924/artifact_manifest.json` `/files/56/path|git_blob_sha256`: `fd5bfee5406fe3eadf087eb1b81b360bd49c0f95044c2a2801cf985f268de9e4`; matches current Git bytes `True`.
 
 No verifier was executed; some verifiers mutate repository reports. No repository files were edited. The external artifacts may be copied to repository docs/migration only after resolving STOP boundaries and establishing the authorized successor workflow.
+
+Current CSV rows: 185. Original before-edit base inventory:171 rows, committed before implementation.

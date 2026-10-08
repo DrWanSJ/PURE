@@ -1,3 +1,12 @@
+# 当前执行入口 — PNAS2017_full_reference
+2026-10-08 successor scope: 图复现暂停，其余 active authority 迁移继续。
+当前命令：python -B scripts/reproduce_pnas2017_reference.py --verify
+完整工程检查：python -B scripts/run_pnas2017_preflight.py --report-dir <external-new-directory>
+当前模型卡、registry、config 和理论导航分别位于 docs/model_card.md、docs/project/benchmark_registry.md、
+configs/benchmarks/pnas2017_reference/、docs/pnas2017/theory_notes.md。
+G1-PNAS PASS/CLOSED；S28图比较PAUSED/NOT_RUN；PURE_reduced_core NOT_VALIDATED；968 kinetic decisions PENDING。
+下列原任务书保留原节号和验收文字；旧Mavelli条目属于LEGACY历史，旧提案/时间安排不构成新科学授权。
+
 # PURE 详细翻译网络审计、人工审核降维与物质—能量流工作台
 
 **2026-10-02 当前 G1 状态：** G1-PNAS 正式重跑 **PASS / CLOSED（10/10）**；当前[闭环报告](docs/pnas2017/g1_pnas_report.md)与[机器记录](docs/pnas2017/g1_pnas_gate_20261002.json)已保存，2026-09-27 BLOCKED 快照保留为历史。241 物种信息契约已获人工批准；下一活动阶段为[过程/反应级动力学降维人工审核](docs/reduction/human_reduction_review.md)，本任务未启动或预选任何变换。`PURE_reduced_core` 仍未验证，S28/单位/电荷/Mg 等科学问题继续开放；旧 D8–D10 对 PNAS 不具权威，未宣告 G2 通过。下方 2026-09-27 迁移补注及 v2 日程的待重跑描述保留为当时记录，以本条当前状态为准。

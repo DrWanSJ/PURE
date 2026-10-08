@@ -1,133 +1,81 @@
-# Benchmark registry — B1: `PURE_literature_reference`
+# Benchmark registry — PNAS2017_full_reference
 
-> Historical Mavelli 2015 coarse benchmark record, frozen through the prior
-> D7 RS-QSSA work. The active primary benchmark is now Matsuura et al. PNAS
-> 2017 (`PNAS2017_full_reference`); see `references/PNAS2017_Matsuura/` and
-> `docs/pnas2017/`. Statements below retain their original B1 scope.
-
-Registered: 2026-09-18. Benchmark task: literal reproduction of the
-deterministic coarse-grained PURE model of
-
-> Mavelli, F., Marangoni, R., Stano, P. (2015).
-> *A Simple Protein Synthesis Model for the PURE System Operation.*
-> Bulletin of Mathematical Biology **77**, 1185–1212. DOI: [10.1007/s11538-015-0082-8](https://doi.org/10.1007/s11538-015-0082-8)
-
-## Status (per tasklist Sect. 3.2)
-
-| flag | value | evidence |
-| --- | --- | --- |
-| `bibliography_verified` | **true** | Title, authors, journal, volume/pages, year, DOI read from the source document itself; hashes locked in `environment_lock.md` and `data/provenance.csv` |
-| `equations_verified` | **true** | Sect. 2 transcribed literally and audited against the decrypted normalized PDF; on **2026-09-22** the human B1 checklist was completed with H01-H06 = `Y`, while both MATLAB test suites passed. This source audit is distinct from independent experimental validation. |
-| `reproduced` | **true (with the evidence-level split below)** | All three Fig. 4 DNA conditions executed with MATLAB R2025b `ode15s`; 9/9 baseline tests + hardening tests pass; QC per condition `passed_all_qc`; paper-text anchors matched; on 2026-09-20 the user also completed a 48-point manual visual review of the calculated Fig. 4 curves and reran all three conditions with QC passing. The human reading was non-blind and the local rerun was not Git-commit-bound, so these are recorded separately rather than promoted to independent blind evidence. |
-
-## Source-input completeness (tasklist D1 checklist)
-
-| item | state |
-| --- | --- |
-| Full paper text | available (markdown conversion + **decrypted normalized PDF**, audited page-by-page 2026-09-18) |
-| Supplementary materials | none referenced by the paper |
-| Machine-readable experimental data | **absent** from the repo (Stögbauer et al. 2012 curves exist only as the dotted raster lines inside Fig. 4; they were **not** digitized) |
-| Model equations | complete: Eqs. (1)–(29), Sect. 2 — confirmed against the normalized PDF |
-| Initial conditions | complete: Table 1 (DNA 0.34–6.8 nM; TXcat 0.1; TLcat 2.2±0.3; RScat 0.16; ENcat 0.08; A 300; T 1.9; NTP 1500; CP 20000 µM) — confirmed |
-| Kinetic parameters | complete: Table 2 (6 rate constants, 10 independent MM constants; `K_TL_RNA` derived per Eq. (29)) — confirmed |
-| Units | complete: time implicit s (rate constants s⁻¹), concentrations µM throughout |
-| Temperature / pH / Mg²⁺ | not specified in the paper; not needed by this model (no ion- or temperature-dependent term exists in Eqs. (5)–(14)) |
-| Volume | fixed, implicit (concentration formulation; batch, well-mixed) |
-| Observation window | 0–4 h (paper Figs. 4, 5, 8, 9 and text: "protein produced after 4 h") |
-| Reported protein / template | GFP, L = 238 aa; three DNA template concentrations 0.34 / 1.7 / 6.8 nM |
-
-## Quantitative anchors available from the paper TEXT (used because the raster figure is not machine-readable)
-
-1. **Protein yield at 4 h, standard composition, [DNA] = 6.8 nM = 0.58 µM** (Sect. 4.1, Fig. 5 text; same condition as the red curve of Fig. 4) → `[a](4h) ≈ 0.58 × 238 = 138.0 µM`.
-2. **Energy split** over 0–4 h at 6.8 nM: `Q_TX : Q_TL : Q_RS = 74 : 15 : 11 %` (Sect. 5, Table 4 entry 1; Q's are ∫V_TX, ∫2V_TL, ∫V_RS of chemical energy χ_ε).
-3. **φ dynamics** (Fig. 8 narrative): φ_RS ≈ 85 % at t ≈ 1 min; RS-rate minimum at ≈ 4 min; φ_TL + φ_RS ≈ 36 % (24 % + 12 %) at ≈ 30 min.
-4. Qualitative: mRNA curves reproduced "quite well", protein curves sigmoidal with the model "not completely satisfactory" vs experiment (Sect. 3) — this refers to the *experimental* fit; the *calculated* curves are the reproduction target here.
-
-## Verification layering (acceptance criteria Sect. 14)
-
-No original-author numerical trajectory exists (only the raster Fig. 4). Therefore **no
-"1e-5 against the paper figure" claim is made**, and validation is split as:
-
-1. **Equation-level verification** — `matlab/tests/test_pure_literature_reference.m`, 9/9 pass:
-   parameter double-entry lock (Tables 1–2, exact equality); independent rate-law
-   re-derivation at a random state (agreement 1e-15); balance-derivative identities of
-   Eqs. (15)–(19) at 200 random states (max violation < 1e-9); central finite-difference
-   vs analytic RHS (error 6.5e-10 at h = 0.5 s, dropping 4× at h/2 — O(h²) truncation
-   regime); observable mapping `nt/(3L)`, `a/L`; derived `K_TL_RNA = 226/714 = 0.31653`
-   consistent with the reported 0.32 ± 0.02 µM; initial-rate sanity (V_TL(0) = 0,
-   V_EN(0) = 0, V_TX(0) > 0, V_RS(0) > 0).
-2. **Internal numerical / QC verification** — per run: five conservation relations
-   (Eqs. (15)–(19)) hold to scaled residuals ≈ 4–6e-15; all states nonnegative with no
-   clipping; no NaN/Inf; three repeat runs bitwise identical; tolerance study
-   (RelTol 1e-9→1e-11, AbsTol 1e-12→1e-14) changes trajectories by ≤ 3.8e-9 (scaled).
-3. **Fig. 4 comparison — three evidence streams, kept strictly separate:**
-   - **Tier 3a (independent, text anchors):** protein(4h) at 6.8 nM = 0.589 µM vs paper
-     0.58 µM (+1.5 %); energy split 72.0/15.4/12.5 % vs 74/15/11 (≤ 2 pp); φ_RS(1 min)
-     87.1 % vs ~85 %; RS minimum ≈ 280 s vs ~4 min; φ_TL+φ_RS(32 min) 35.2 % vs ~36 %;
-     correct DNA ordering and sigmoidal a(t). These are usable as reproduction evidence.
-   - **Tier 3b (NOT independent, exploratory only):** automated raster digitization of the
-     calculated curves (`matlab/tools/digitization/digitize_fig4.m` →
-     `data/processed/literature/R01/fig4/fig4_digitized.csv`, provenance `digitized_from_Mavelli_2015_Fig4`).
-     Where the continuous and dotted curves separate, the "calculated" cluster is chosen
-     by **nearest-to-simulation tracking** — `validation_status =
-     non_independent_assignment`. The resulting deviations ([a] panel ≤ 1.8 %, [nt] panel
-     ≤ 1.3 % of full scale) are an envelope/consistency observation and **must not be
-     cited as independent reproduction acceptance evidence**. Raw clusters are preserved
-     in `fig4_digitized_all_clusters.csv` for independent re-assignment.
-   - **Tier 3c (human visual review, non-blind; 2026-09-20):** the user manually read all
-     48 calculated-curve points (3 DNA × 2 panels × 8 times at 0.5 h spacing) and stored them in
-     `data/manual_audit/fig4_human_digitization_sean.csv`. The readings support the reproduced
-     curves' ordering, shape, and magnitude. However, the auditor had already seen simulation
-     outputs and did not declare per-point numerical reading errors, so this is **not** the
-     simulation-blind independent audit defined by `docs/audit/manual_fig4_audit_protocol.md`.
-     The same D4 session reran `run_fig4_benchmark('RunId','d4_human_check')`; all three
-     conditions passed numerical QC, but the local downloaded directory had no readable Git
-     metadata, so the rerun is not commit-bound.
-   - Independent validation still requires the blind human protocol
-     (`docs/audit/manual_fig4_audit_protocol.md`). On 2026-09-22 the human reviewer explicitly decided that this strict blind audit is **not required for B1 literature reproduction**. It remains unperformed and would only be needed for a stronger independent raster-validation claim; no independent experimental-validation claim is made.
-   - The digitized values are NOT experimental data (Stögbauer 2012 data absent).
-
-## Data handling decisions
-
-- **No experimental overlay.** Stögbauer 2012 machine-readable data are absent from the
-  repo; the dotted experimental curves in Fig. 4 were themselves digitized by the paper's
-  authors from Stögbauer et al. 2012. The experimental dotted curves were NOT digitized
-  here (only the paper's calculated continuous curves, as the reproduction target).
-- **Digitization performed (2026-09-18, second pass).** After the decrypted normalized PDF
-  became available, the calculated (continuous) curves of Fig. 4 were extracted
-  automatically from a 300-dpi page render (`matlab/tools/digitization/digitize_fig4.m`) and saved to
-  `data/processed/literature/R01/fig4/fig4_digitized.csv` with provenance `digitized_from_Mavelli_2015_Fig4`,
-  per-point flags, an audit-trail CSV of all raw pixel clusters
-  (`fig4_digitized_all_clusters.csv`), and the comparison table
-  (`results/baselines/b1_mavelli2015/fig4_digitized_comparison.csv`). Reading precision is
-  ~1–2 % of each panel's full scale; the digitized values are an approximation of a raster
-  figure, not experimental data.
-- **Human manual reading recorded (2026-09-20).** All 48 approximate Fig. 4 calculated-curve
-  readings are stored in `data/manual_audit/fig4_human_digitization_sean.csv`. They are marked
-  `simulation_hidden_during_reading=false`; no numerical reading-error bars were declared, so
-  they are D4 human-review evidence rather than a formal blind digitization.
-- **No refitting.** Table 2 central values used as-is; TLcat = 2.2 µM (central value of
-  2.2 ± 0.3); no Hill coefficient; no ATP/GTP split; no additional states.
-
-## Ambiguity / limitation log
-
-| id | item | severity | blocks reproduction? | disposition |
-| --- | --- | --- | --- | --- |
-| L1 | ~~Fig. 4/Fig. 3 rasters not inspectable (password-protected PDF)~~ **RESOLVED 2026-09-18**: decrypted normalized PDF provided (`references/R01_Mavelli2015/A_Simple_Protein_Synthesis_Model_PURE_normalized.pdf`, sha256 locked); pages 5–14 rendered and audited; Fig. 4 digitized | resolved | no | full equation/table audit passed (no discrepancies); quantitative raster comparison added (verification layer 3) |
-| L2 | Paper Eq. (17) LHS superscript 0 lost in the md text conversion | minor | no | **confirmed by the normalized PDF**: it prints `n_T C_T^0`; the inferred reading used in the code was correct |
-| L3 | `K_TL_RNA` reported as 0.32 ± 0.02 µM in Table 2, but Eq. (29) gives `K_TL_nt/(3L) = 226/714 = 0.31653 µM` | minor | no | consistent within uncertainty; treated as derived QC quantity, not an independent parameter, not used in the RHS |
-| L4 | TLcat = 2.2 ± 0.3 µM is a fitted fictitious species with reported uncertainty | minor | no | central value used; uncertainty not propagated (out of B1 scope) |
-| L5 | Initial values of newly-created species (nt, AT, a, NXP, C) not explicitly stated in the paper | minor | no | zeros used; implied by the curves starting at 0 and required by conservation Eqs. (15)–(19) |
-| L6 | OCR artifact "k_TXz" in the text conversion of Eq. (5) prose | trivial | no | resolved as `k_TX` from context; confirmed as k_TX by the normalized PDF |
-| L7 | Fig. 4 x-axis limit is not exactly 4 h (calibration gives ≈ 4.18–4.19 h at the right box edge); the plotted curves end at t = 4 h | trivial | no | handled by tick-mark calibration in the digitization |
-| L8 | Fig. 4 digitization cluster assignment is **simulation-assisted** (`non_independent_assignment`): where continuous/dotted curves separate, the "calculated" cluster is chosen nearest to the new_simulation trajectory, so the digitization-vs-simulation comparison is not an independent check | limitation (validation-status) | no (Tier 3a text anchors remain independent evidence) | status recorded in `data/processed/literature/R01/fig4/fig4_digitized_validation_status.json` and `docs/project/evidence_levels.json`; independent validation = optional blind human protocol (`docs/audit/manual_fig4_audit_protocol.md`); 2026-09-22 human scope decision: not required for B1 literature reproduction |
-
-No ambiguity blocks the reproduction. Nothing was guessed where the paper gives a value;
-no parameter was invented.
-
-## Scope restriction
-
-`PURE_literature_reference` is the B1 benchmark only. Its effective Michaelis–Menten rate
-laws must **not** automatically be read as validated stochastic propensity functions; SSA
-use requires separate validation (tasklist Sect. 10.2). It is not `PURE_resource_core`;
-no equation or parameter may migrate into resource models without re-derivation.
+## Source identity
+Matsuura et al.(2017), Reaction dynamics analysis of a reconstituted Escherichia coli protein translation system by computational modeling.
+PNAS114(8):E1336–E1344. DOI10.1073/pnas.1615351114. This is the active primary benchmark.
+## Frozen source hashes
+- models/pnas2017_full_reference/original/fMGG_synthesis.xml: dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df
+- references/PNAS2017_Matsuura/raw/pnas.1615351114.sd28.xlsx: 8297f2348f5ebdfc3c14083577f2c5f276f35a7ee8ab30f8a37fd8431ef565ec
+- models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis.m: 5357b16387970d693f730102256c8d4ee30b91a318ad7482fc13e798834889f4
+- models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/fMGG_synthesis_Sample.m: 9db2acfd7c5961f2bc52766df75bca619af496f999ad92b9b29a77f4c7fa6fc0
+- models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv: a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec
+- models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv: cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465
+- models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml: 03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6
+## Model boundary
+241 species,968 reactions,26 subsystem XMLs. mRNA-directed translation only; no DNA→RNA transcription module.
+No membrane transport, refit or new kinetic mechanism is introduced.
+## Author execution inputs
+241-row initial CSV:27 positive components.968 local k1 entries plus a default sentinel;483 positive k1 values.
+Raw SBML all-one initial/parameter values are structural placeholders, not the execution condition.
+Author RHS: fMGG_synthesis.m. Solver ode15s,NonNegative1:241,RelTol1e-3,AbsTol1e-9.
+Grid logspace(-4,3,200),0.0001–1000s. Sample comment1e-5 is a documented error.
+## SBML compatibility normalization
+3854 literal stoichiometryMath constants become identical numeric stoichiometry attributes in a derived copy.
+re0000000414→PO4 retains coefficient2. Source bytes/reaction signatures remain authoritative.
+## Reference execution status
+Preserved author-CSV RoadRunner CVODE and SimBiology ode15s executions are documented in docs/pnas2017/reference_reproduction.md.
+The new author-MATLAB entrypoint is available; this migration does not run it.
+G1-PNAS=PASS/CLOSED for curation, not figure or reduced-model approval.
+## Published-figure reproduction status
+User paused figure work on2026-10-08. No published-panel PASS is claimed.
+Machine-readable current statuses: docs/project/pnas2017_active_status.json.
+- source_frozen = VERIFIED
+- sbml_audited = VERIFIED
+- inventory_verified = 241_SPECIES_968_REACTIONS_26_SUBSYSTEMS
+- author_reference_execution = PRESERVED_SBML_ENGINE_RUNS_VERIFIED_AUTHOR_MATLAB_RUN_AVAILABLE_NOT_RUN
+- cross_engine_check = COMPLETED_DIAGNOSTIC_NO_ACCEPTANCE_GATE
+- dataset_s28_acquired = ACQUIRED
+- dataset_s28_readable = READABLE
+- fig2b_mapping = DIRECT_IDENTITY_RESOLVED_CONDITION_CONTRADICTED
+- fig2b_reproduction = PAUSED_NOT_RUN
+- fig3a_mapping = UNRESOLVED_EXACT_QSS_TRANSFORM
+- fig3a_reproduction = PAUSED_BLOCKED_SOURCE_DEFINITION
+- fig5a_mapping = DIRECT_IDENTITY_RESOLVED_SOURCE_SUBSET
+- fig5a_reproduction = PAUSED_NOT_RUN
+- supplementary_figure_reproduction = PAUSED_NOT_RUN
+- pnas_figure_benchmark_status = PAUSED_NOT_ESTABLISHED
+- experimental_validation_status = NOT_ESTABLISHED
+- reduced_model_status = NOT_VALIDATED
+## Dataset S28 mapping
+Seven sheets. Fig2B:241 exact species; Fig3A:derived Boolean QSS indicators with unresolved executable rule;
+Fig5A:43 exact species, same-source subset. See docs/pnas2017/s28_observable_mapping.md.
+S28 RRF1600 differs from author CSV/S27 RRF16. Do not change input or silently convert units.
+## Cross-engine status
+COMPLETED numerical-integrity diagnostic. No preregistered equivalence threshold exists.
+Cross-engine equivalence and paper/S28 reproduction are separate.
+## Numerical limitations
+Author solver tolerances control integration; they do not define a published-figure acceptance tolerance.
+No tolerance is selected from observed S28 error. Nonfinite/negative diagnostics are preserved without clipping.
+## Units limitations
+Source SBML units remain ambiguous. S28 declares microM/time seconds; author CSV has no chemical unit declarations.
+S27 second-order parameter declarations and concentrations require explicit source reconciliation. No silent unit correction.
+## Experimental-validation limitations
+No independent experimental-data comparison is completed. Plotting supplied data would not establish validation.
+## Reduction boundary
+241→214 SOURCE_GENERAL exact conservation-coordinate reduction remains accepted.
+Rank177 is a frozen-author execution view only; no SOURCE_GENERAL deletion authority.
+H1–H5, R3 negative/noncompletion evidence,968 PENDING decisions and96 process boxes remain unchanged.
+PURE_reduced_core=NOT_VALIDATED.
+## Open scientific questions
+Figure definitions/conditions and units remain open. Source mapping/integrity is not promotion.
+## Reproduction commands
+~~~sh
+python -B scripts/reproduce_pnas2017_reference.py --verify
+python -B scripts/run_pnas2017_preflight.py --report-dir <external-new-directory>
+~~~
+Optional primary author ODE, without figure generation:
+~~~sh
+python -B scripts/reproduce_pnas2017_reference.py --execute-author --output-dir <new-external-directory>
+~~~
+Every fresh run uses a new directory, verifies inputs before integration and records git/solver/source/output provenance.
+The old coarse registry is preserved byte-for-byte in docs/legacy/mavelli2015/benchmark_registry.md.

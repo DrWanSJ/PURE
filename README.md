@@ -1,116 +1,41 @@
-# PURE — Cell-Free Expression Modeling Workbench
+# PURE — PNAS2017 translation reference
 
-This repository studies PURE cell-free expression with explicit model,
-source, simulation, audit and decision boundaries. The active detailed
-benchmark is the **mRNA-directed translation** network of Matsuura et al.
-(PNAS 2017, DOI: [10.1073/pnas.1615351114](https://doi.org/10.1073/pnas.1615351114)).
-Transcription and GUV transport are future project extensions; they are not
-part of the imported PNAS reference model.
+The active primary benchmark is **PNAS2017_full_reference**, the mRNA-directed translation model of
+Matsuura et al.(2017), PNAS114(8):E1336–E1344, DOI[10.1073/pnas.1615351114](https://doi.org/10.1073/pnas.1615351114).
 
-## Scientific status and model identities
+Start with the [active benchmark registry](docs/project/benchmark_registry.md),
+[model card](docs/model_card.md), and [current evidence status](docs/project/pnas2017_active_status.json).
 
-| Identity | Role | Status |
-| --- | --- | --- |
-| `PNAS2017_full_reference` | Literal, provenance-bound SBML import of the Matsuura et al. translation network; benchmark and inventory only | **G1-PNAS PASS/CLOSED (2026-10-02)**; paper PDF and S01–S29 captured; scientific interpretation remains open; no source-model modification permitted |
-| `PURE_reduced_core` | Future interpretable project model derived from explicit, human-reviewed reduction decisions | **Proposal only**; no validated model yet |
-| `Mavelli2015_coarse_reference` | Mavelli, Marangoni and Stano (2015) coarse-grained comparator, DOI: [10.1007/s11538-015-0082-8](https://doi.org/10.1007/s11538-015-0082-8) | **Frozen legacy benchmark**, completed through the previous D7 RS-QSSA work |
+~~~sh
+python -B scripts/reproduce_pnas2017_reference.py --verify
+python -B scripts/run_pnas2017_preflight.py --report-dir <new-external-directory>
+~~~
 
-The publisher PDF and S01–S29 files are now preserved with hashes alongside
-the author-site files; see the [source capture](references/PNAS2017_Matsuura/README.md).
-The [G1-PNAS rerun report](docs/pnas2017/g1_pnas_report.md) records
-**PASS/CLOSED on 2026-10-02**: detailed-reference curation and reduction-review
-preparation are complete. The [historical BLOCKED report](docs/pnas2017/g1_pnas_report_20260927_blocked.md)
-preserves the 2026-09-27 pre-integration result. The [241-species information contract](docs/reduction/species_information_contract_summary.md)
-is human approved; all 968 reaction/process kinetic decisions remain pending,
-and `PURE_reduced_core` remains unvalidated. S28 comparison, S27 interpretation,
-absolute chemical units, formulas/charge/protonation/Mg, quantitative ionic
-strength and validated osmotic pressure remain separate open scientific work.
-The migrated [reduction evidence](docs/reduction/pnas2017_historical_evidence.md)
-retains its failed and blocked outcomes; [open decisions](docs/reduction/open_scientific_decisions.md)
-and the [aminoacylation QSSA reference](docs/reduction/aminoacylation_qssa_quick_reference.md)
-do not constitute kinetic or model approval.
+The first command verifies frozen sources,author input mapping,stoichiometry normalization,S28 workbook/header identity,
+current authority and historical preservation. The second runs all applicable current PNAS and exact-coordinate verifiers.
+Neither generates plots or performs a published-figure comparison.
+An optional fresh primary author ODE command is documented in the registry; it requires MATLAB and a new external output directory.
 
-The Mavelli benchmark remains valid for its coarse-grained question. It is no
-longer the primary benchmark because the revised question requires the
-detailed translation reaction network and explicit small-molecule/resource
-accounting. The existing Mavelli code and evidence remain in their current
-paths. Historical results retain their original scope and acceptance status;
-they are not evidence that the new PNAS model or a future reduced core has been
-validated. The legacy B1 human source-to-repository audit was completed for
-literature reproduction, not independent experimental validation.
+**Figure reproduction is paused by the user.** Fig2B/5A comparisons are NOT_RUN; Fig3A's exact QSS transform is UNRESOLVED.
+S28 RRF1600 differs from author CSV/S27 RRF16. No figure PASS or independent experimental validation is claimed.
 
-The active sequence is: freeze and inventory the original PNAS sources;
-validate and execute the unchanged SBML where possible; classify reaction
-families and chemical flows; prepare candidate transformations with their
-information loss; obtain **human scientific decisions**; then construct and
-validate a reduced model. Similar protein output alone is not a deletion
-criterion. The proposed reduced core must retain the information needed for
-ATP/GTP, AMP/ADP/GDP, Pi/PPi, creatine phosphate/creatine, amino acids,
-tRNA charging, translation-machine occupancy and an explicitly qualified
-osmotic-particle proxy. Quantitative ionic-strength accounting requires
-defined charges, protonation and Mg-binding conventions.
+Source frozen;241 species,968 reactions,26 subsystem XMLs;27 positive author initial components.
+G1-PNAS PASS/CLOSED covers curation. Existing cross-engine runs are separate numerical-integrity diagnostics.
+241→214 SOURCE_GENERAL exact coordinate reduction is preserved. Rank177 is only a frozen-author execution view.
+All968 mechanistic decisions remain PENDING. **PURE_reduced_core remains NOT_VALIDATED.**
 
-## Repository layout
+## Repository navigation
+- references/PNAS2017_Matsuura/: frozen publisher/author sources.
+- models/pnas2017_full_reference/: source,compatibility normalization and audit inventories.
+- configs/benchmarks/pnas2017_reference/: active source/solver/time/status configuration.
+- docs/pnas2017/: current source,theory and paused figure evidence.
+- docs/reduction/: unchanged human decisions,exact-coordinate and bounded reduction evidence.
+- results/pnas2017_reference/: preserved full-reference engine evidence; new runs never overwrite it.
+- models/pure_reduced_core/: future human-reviewed model.
+- [Legacy preservation](docs/legacy/mavelli2015/README.md): Mavelli2015_coarse_reference is LEGACY/FROZEN/NOT_ACTIVE.
 
-```text
-references/                         source files and provenance
-  R01_Mavelli2015/                  legacy literature source
-  PNAS2017_Matsuura/                captured publisher and author sources
-models/
-  literature_reference/             frozen Mavelli B1 implementation
-  pnas2017_full_reference/          immutable import, normalization and audit
-  pure_reduced_core/                future human-reviewed model
-  pure_resource_core/               earlier project-model planning material
-  fixtures/                         B0 known-answer models
-configs/                            run conditions
-data/                               raw, processed and audit data
-matlab/                             legacy simulation, generated code and tests
-results/                            baselines, ordinary runs and release evidence
-docs/                               scientific, validation and audit records
-```
-
-The PNAS SBML is the scientific source of truth for the detailed benchmark.
-Normalized inventories and solver outputs are derived artifacts. A handwritten
-MATLAB or Python ODE must not replace the imported reference definition.
-Source files are preserved byte-for-byte with URLs, access notes, sizes and
-SHA-256 hashes. Unsupported solver imports and unresolved scientific checks
-remain recorded rather than reconstructed from descriptions.
-
-## Legacy Mavelli reproduction
-
-The existing B1 workflow remains available for historical comparison:
-
-```bash
-matlab -batch "addpath('scripts'); reproduce_b1"
-```
-
-Ordinary B1 outputs go to `results/runs/<run_id>/`; frozen regression data
-remain under `results/baselines/b1_mavelli2015/`. Its generated-code chain is
-
-`models/literature_reference/model_definition.json` →
-`matlab/codegen/generate_pure_literature_reference.m` →
-`matlab/generated/rhs_pure_literature_reference.m`.
-
-Do not edit generated B1 code by hand or reinterpret it as the PNAS model.
-
-## Existing tests and evidence
-
-```bash
-matlab -batch "addpath('scripts'); run_all_tests"
-```
-
-This is the existing MATLAB suite for B0 fixtures and the Mavelli B1
-workflow. Passing it does not validate the new PNAS reference or future
-project reduction. Reports must distinguish executed tests, failed or pending
-checks, source review, solver integrity and experimental validation.
-
-`data/raw/` and new reference-source directories are immutable inputs.
-Processed data must be reproducible from registered sources and tools, with
-licensing status recorded. B0 synthetic parameters do not become PURE
-experimental inputs. Release preflight requires a clean tree; the only
-long-lived branch is `main`, and tags mark frozen states.
-
-The current execution order and **G1-PNAS** gate are in [tasklist.md](tasklist.md).
-Future phases include a human-approved `PURE_reduced_core`, transcription
-extension, GUV transport, flow visualization and MCP access to audited
-computations.
+The canonical SBML defines model structure. The author's own fMGG_synthesis.m and CSVs define the primary author-ODE execution route.
+Derived inventories,code and navigation cannot replace source authority. Transcription and GUV transport are future reviewed extensions.
+Historical paths and bytes remain valid; their old commands are available only through the explicit legacy index.
+See [migration inventory](docs/migration/pnas2017_active_authority_inventory.md) and
+[remaining-reference audit](docs/migration/mavelli_remaining_reference_audit.md).

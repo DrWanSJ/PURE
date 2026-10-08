@@ -1,19 +1,7 @@
-# matlab/
-
-- `src/` — **hand-maintained, reusable scientific code** (simulators,
-  analysis, provenance utilities). This is the only place where scientific
-  code is written by hand.
-  - `src/simulate/` — deterministic simulator + B1 benchmark driver
-  - `src/provenance/` — git state, SHA-256, run-manifest helpers
-- `codegen/` — model-definition → generated-code generators
-  (`generate_pure_literature_reference.m`).
-- `generated/` — **auto-generated code. Do not edit by hand**; regenerate via
-  `codegen/`. Splitting per model (`generated/literature_reference/`) is
-  deferred; the naming rule already applies.
-- `tools/` — auxiliary tooling (`digitization/`: Fig. 4 raster digitizer).
-- `tests/` — test suite (`runtests('matlab/tests')`). Categorization into
-  unit/integration/acceptance is deferred to avoid breaking test discovery;
-  `fixtures/` holds frozen fixtures (e.g. the baseline RHS snapshot used by
-  the mutation-equivalence test).
-
-Entry points for users live in `scripts/`, not here.
+# MATLAB reference route — PNAS2017_full_reference
+Primary author ODE entrypoint: scripts/reproduce_pnas2017_reference.m with frozen fMGG_synthesis.m and author CSVs.
+The Python entrypoint verifies inputs before optional execution and requires a new external output directory.
+No plots are generated. Figure comparison is paused.
+Preserved SimBiology/RoadRunner diagnostics are documented in docs/pnas2017/reference_reproduction.md.
+Existing src/simulate/run_fig4_benchmark.m,generated/coarse code,digitization tools and B1 tests are LEGACY Mavelli implementation.
+Use docs/legacy/mavelli2015/README.md for historical commands. They are excluded from current default preflight and CI.
