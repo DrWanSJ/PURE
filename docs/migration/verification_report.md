@@ -66,3 +66,12 @@ python -B scripts/run_pnas2017_preflight.py --report-dir <new-external-directory
 ```
 
 These commands generate no figures. A hosted-runner result must be read separately; this local record does not assert hosted CI PASS.
+
+## Hosted environment qualification
+
+The first Ubuntu/pip hosted run at 5bbb300 failed the frozen P08 eigenvalue check at time0.005291978735958442:
+2.5477468286180927e-7 exceeded the unchanged1e-7 requirement. All other20 commands passed; the native failed artifact is preserved.
+See [failed hosted run](https://github.com/DrWanSJ/PURE/actions/runs/37717040384).
+The CI now registers the exact Windows/MKL package builds from the successful local qualification environment,
+using an explicit package dependency closure and the existing SymPy overlay. Thresholds, protected verifier bytes and scientific inputs remain unchanged.
+The failed Linux check remains a limitation of cross-platform numerical verification; a Windows CI PASS does not establish Linux equivalence.
