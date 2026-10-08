@@ -1,0 +1,758 @@
+{
+  "status": "PASS",
+  "config_sha256": "ebae5ef57a51d65e94e08029a421ee9b783f9801f8fa2bbcfa6066a8e61a8ba2",
+  "numerical_threshold": 1e-08,
+  "conservation_threshold": 1e-08,
+  "positivity_threshold": 1e-12,
+  "tests": {
+    "A": {
+      "status": "PASS",
+      "solver_error": {
+        "primary_full_vs_expm_max_absolute": 9.16144937690433e-12,
+        "primary_reduced_vs_expm_max_absolute": 5.9332538882017616e-12,
+        "tight_full_vs_expm_max_absolute": 9.592326932761353e-14,
+        "tight_reduced_vs_expm_max_absolute": 6.156186671546493e-14,
+        "primary_vs_tight_full_max_absolute": 9.171996495638268e-12,
+        "primary_vs_tight_reduced_max_absolute": 5.941913627793838e-12,
+        "augmented_full_input_integral_max_absolute": 0.0,
+        "augmented_reduced_input_integral_max_absolute": 0.0
+      },
+      "derived_current_solver_error": {
+        "product_flux": {
+          "primary_full_vs_expm": 6.816103237383686e-11,
+          "primary_reduced_vs_expm": 3.9894754166880375e-11,
+          "tight_full_vs_expm": 6.590283874174929e-13,
+          "tight_reduced_vs_expm": 4.143352327901084e-13
+        },
+        "pi_current": {
+          "primary_full_vs_expm": 4.167418410361279e-09,
+          "primary_reduced_vs_expm": 3.9894754166880375e-11,
+          "tight_full_vs_expm": 4.359890226623975e-11,
+          "tight_reduced_vs_expm": 4.143352327901084e-13
+        },
+        "eftu_gdp_current": {
+          "primary_full_vs_expm": 6.368061633565958e-11,
+          "primary_reduced_vs_expm": 3.9894754166880375e-11,
+          "tight_full_vs_expm": 6.45261621912141e-13,
+          "tight_reduced_vs_expm": 4.143352327901084e-13
+        }
+      },
+      "invariant_max_absolute": {
+        "full_inventory": 1.7763568394002505e-15,
+        "reduced_inventory": 2.3314683517128287e-15,
+        "xi14_minus_xi18_internal": 2.2069409559392905e-15,
+        "xi16_minus_xi18_x2x3": 9.992007221626409e-16,
+        "xi17_minus_xi18_x3": 1.8497429269174158e-15,
+        "x4_from_xi18": 0.0,
+        "x0_gtp_from_input_hydrolysis": 9.992007221626409e-16,
+        "pi_free_plus_bound_hydrolysis": 1.7763568394002505e-15,
+        "gdp_free_plus_bound_hydrolysis": 1.887379141862766e-15,
+        "eftu_total_free_plus_bound": 1.2212453270876722e-15,
+        "direct_y4_from_extent": 0.0
+      },
+      "minimum_full": 0.0,
+      "minimum_reduced": 0.0,
+      "tightening_convergence_full": true,
+      "tightening_convergence_reduced": true,
+      "solvers": {
+        "primary": {
+          "method": "Radau",
+          "rtol": 1e-10,
+          "atol": 1e-12
+        },
+        "tight": {
+          "method": "Radau",
+          "rtol": 1e-12,
+          "atol": 1e-14
+        },
+        "independent": "augmented scipy.linalg.expm"
+      },
+      "segments": {
+        "primary_full": [
+          {
+            "start": 0.0,
+            "end": 1.4870329670329667,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 10689,
+            "njev": 0,
+            "nlu": 86,
+            "internal_mesh_points": 1526,
+            "elapsed_seconds": 0.21679559999756748
+          }
+        ],
+        "primary_reduced": [
+          {
+            "start": 0.0,
+            "end": 1.4870329670329667,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 5055,
+            "njev": 0,
+            "nlu": 34,
+            "internal_mesh_points": 722,
+            "elapsed_seconds": 0.07592029999796068
+          }
+        ],
+        "tight_full": [
+          {
+            "start": 0.0,
+            "end": 1.4870329670329667,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 33761,
+            "njev": 0,
+            "nlu": 88,
+            "internal_mesh_points": 4822,
+            "elapsed_seconds": 0.5024392000050284
+          }
+        ],
+        "tight_reduced": [
+          {
+            "start": 0.0,
+            "end": 1.4870329670329667,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 16031,
+            "njev": 0,
+            "nlu": 36,
+            "internal_mesh_points": 2290,
+            "elapsed_seconds": 0.23316440000053262
+          }
+        ]
+      }
+    },
+    "B": {
+      "status": "PASS",
+      "solver_error": {
+        "primary_full_vs_expm_max_absolute": 4.957145804951324e-12,
+        "primary_reduced_vs_expm_max_absolute": 3.0324631694611526e-12,
+        "tight_full_vs_expm_max_absolute": 5.551115123125783e-14,
+        "tight_reduced_vs_expm_max_absolute": 3.241851231905457e-14,
+        "primary_vs_tight_full_max_absolute": 4.9650283884261626e-12,
+        "primary_vs_tight_reduced_max_absolute": 3.0502544934307707e-12,
+        "augmented_full_input_integral_max_absolute": 2.220446049250313e-16,
+        "augmented_reduced_input_integral_max_absolute": 2.220446049250313e-16
+      },
+      "derived_current_solver_error": {
+        "product_flux": {
+          "primary_full_vs_expm": 3.467104381371655e-11,
+          "primary_reduced_vs_expm": 2.0392687538617338e-11,
+          "tight_full_vs_expm": 3.6060043839825084e-13,
+          "tight_reduced_vs_expm": 2.1294077612310502e-13
+        },
+        "pi_current": {
+          "primary_full_vs_expm": 2.344054395031492e-10,
+          "primary_reduced_vs_expm": 2.0392687538617338e-11,
+          "tight_full_vs_expm": 2.3067103782636877e-12,
+          "tight_reduced_vs_expm": 2.1294077612310502e-13
+        },
+        "eftu_gdp_current": {
+          "primary_full_vs_expm": 3.4428460082835954e-11,
+          "primary_reduced_vs_expm": 2.0392687538617338e-11,
+          "tight_full_vs_expm": 3.5849101465146305e-13,
+          "tight_reduced_vs_expm": 2.1294077612310502e-13
+        }
+      },
+      "invariant_max_absolute": {
+        "full_inventory": 6.661338147750939e-16,
+        "reduced_inventory": 8.881784197001252e-16,
+        "xi14_minus_xi18_internal": 7.494005416219807e-16,
+        "xi16_minus_xi18_x2x3": 8.604228440844963e-16,
+        "xi17_minus_xi18_x3": 1.2236305718671403e-15,
+        "x4_from_xi18": 0.0,
+        "x0_gtp_from_input_hydrolysis": 5.551115123125783e-17,
+        "pi_free_plus_bound_hydrolysis": 2.220446049250313e-16,
+        "gdp_free_plus_bound_hydrolysis": 6.661338147750939e-16,
+        "eftu_total_free_plus_bound": 6.661338147750939e-16,
+        "direct_y4_from_extent": 0.0
+      },
+      "minimum_full": 0.0,
+      "minimum_reduced": 0.0,
+      "tightening_convergence_full": true,
+      "tightening_convergence_reduced": true,
+      "solvers": {
+        "primary": {
+          "method": "Radau",
+          "rtol": 1e-10,
+          "atol": 1e-12
+        },
+        "tight": {
+          "method": "Radau",
+          "rtol": 1e-12,
+          "atol": 1e-14
+        },
+        "independent": "augmented scipy.linalg.expm"
+      },
+      "segments": {
+        "primary_full": [
+          {
+            "start": 0.0,
+            "end": 1.4870329670329667,
+            "input": 1.0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 4481,
+            "njev": 0,
+            "nlu": 76,
+            "internal_mesh_points": 640,
+            "elapsed_seconds": 0.06725580000056652
+          }
+        ],
+        "primary_reduced": [
+          {
+            "start": 0.0,
+            "end": 1.4870329670329667,
+            "input": 1.0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 3021,
+            "njev": 0,
+            "nlu": 38,
+            "internal_mesh_points": 431,
+            "elapsed_seconds": 0.04505849999986822
+          }
+        ],
+        "tight_full": [
+          {
+            "start": 0.0,
+            "end": 1.4870329670329667,
+            "input": 1.0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 14133,
+            "njev": 0,
+            "nlu": 82,
+            "internal_mesh_points": 2018,
+            "elapsed_seconds": 0.21011089999956312
+          }
+        ],
+        "tight_reduced": [
+          {
+            "start": 0.0,
+            "end": 1.4870329670329667,
+            "input": 1.0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 9507,
+            "njev": 0,
+            "nlu": 44,
+            "internal_mesh_points": 1358,
+            "elapsed_seconds": 0.13721609999629436
+          }
+        ]
+      }
+    },
+    "C": {
+      "status": "PASS",
+      "solver_error": {
+        "primary_full_vs_expm_max_absolute": 1.115121883721315e-12,
+        "primary_reduced_vs_expm_max_absolute": 1.0269285422026542e-12,
+        "tight_full_vs_expm_max_absolute": 1.432187701766452e-14,
+        "tight_reduced_vs_expm_max_absolute": 1.0352829704629585e-14,
+        "primary_vs_tight_full_max_absolute": 1.1164957847142887e-12,
+        "primary_vs_tight_reduced_max_absolute": 1.0215439605332222e-12,
+        "augmented_full_input_integral_max_absolute": 2.7755575615628914e-17,
+        "augmented_reduced_input_integral_max_absolute": 6.938893903907228e-18
+      },
+      "derived_current_solver_error": {
+        "product_flux": {
+          "primary_full_vs_expm": 7.806699731105482e-12,
+          "primary_reduced_vs_expm": 6.905920280075861e-12,
+          "tight_full_vs_expm": 1.0075273948473296e-13,
+          "tight_reduced_vs_expm": 6.922240558537851e-14
+        },
+        "pi_current": {
+          "primary_full_vs_expm": 3.4861069586611393e-10,
+          "primary_reduced_vs_expm": 6.905920280075861e-12,
+          "tight_full_vs_expm": 3.6084468746366838e-12,
+          "tight_reduced_vs_expm": 6.922240558537851e-14
+        },
+        "eftu_gdp_current": {
+          "primary_full_vs_expm": 7.752049002718309e-12,
+          "primary_reduced_vs_expm": 6.905920280075861e-12,
+          "tight_full_vs_expm": 1.0008660566995786e-13,
+          "tight_reduced_vs_expm": 6.922240558537851e-14
+        }
+      },
+      "invariant_max_absolute": {
+        "full_inventory": 3.3306690738754696e-16,
+        "reduced_inventory": 2.7755575615628914e-16,
+        "xi14_minus_xi18_internal": 4.627374872168133e-16,
+        "xi16_minus_xi18_x2x3": 4.349819116011844e-16,
+        "xi17_minus_xi18_x3": 2.3149071635281127e-16,
+        "x4_from_xi18": 0.0,
+        "x0_gtp_from_input_hydrolysis": 2.498001805406602e-16,
+        "pi_free_plus_bound_hydrolysis": 1.942890293094024e-16,
+        "gdp_free_plus_bound_hydrolysis": 3.885780586188048e-16,
+        "eftu_total_free_plus_bound": 2.498001805406602e-16,
+        "direct_y4_from_extent": 0.0
+      },
+      "minimum_full": 0.0,
+      "minimum_reduced": 0.0,
+      "tightening_convergence_full": true,
+      "tightening_convergence_reduced": true,
+      "solvers": {
+        "primary": {
+          "method": "Radau",
+          "rtol": 1e-10,
+          "atol": 1e-12
+        },
+        "tight": {
+          "method": "Radau",
+          "rtol": 1e-12,
+          "atol": 1e-14
+        },
+        "independent": "augmented scipy.linalg.expm"
+      },
+      "segments": {
+        "primary_full": [
+          {
+            "start": 0.0,
+            "end": 0.07435164835164834,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26,
+            "njev": 0,
+            "nlu": 12,
+            "internal_mesh_points": 7,
+            "elapsed_seconds": 0.0009034999966388568
+          },
+          {
+            "start": 0.07435164835164834,
+            "end": 0.14870329670329668,
+            "input": 1.0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 2324,
+            "njev": 0,
+            "nlu": 46,
+            "internal_mesh_points": 331,
+            "elapsed_seconds": 0.03527839999878779
+          },
+          {
+            "start": 0.14870329670329668,
+            "end": 0.44610989010989005,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 2947,
+            "njev": 0,
+            "nlu": 52,
+            "internal_mesh_points": 420,
+            "elapsed_seconds": 0.04518180000013672
+          },
+          {
+            "start": 0.44610989010989005,
+            "end": 0.5204615384615384,
+            "input": 1.0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 2093,
+            "njev": 0,
+            "nlu": 48,
+            "internal_mesh_points": 298,
+            "elapsed_seconds": 0.03246779999608407
+          },
+          {
+            "start": 0.5204615384615384,
+            "end": 1.4870329670329667,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 4340,
+            "njev": 0,
+            "nlu": 62,
+            "internal_mesh_points": 619,
+            "elapsed_seconds": 0.06901339999603806
+          }
+        ],
+        "primary_reduced": [
+          {
+            "start": 0.0,
+            "end": 0.07435164835164834,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26,
+            "njev": 0,
+            "nlu": 12,
+            "internal_mesh_points": 7,
+            "elapsed_seconds": 0.0007573000038973987
+          },
+          {
+            "start": 0.07435164835164834,
+            "end": 0.14870329670329668,
+            "input": 1.0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 631,
+            "njev": 0,
+            "nlu": 12,
+            "internal_mesh_points": 90,
+            "elapsed_seconds": 0.009562999999616295
+          },
+          {
+            "start": 0.14870329670329668,
+            "end": 0.44610989010989005,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 1324,
+            "njev": 0,
+            "nlu": 12,
+            "internal_mesh_points": 189,
+            "elapsed_seconds": 0.020102499998756684
+          },
+          {
+            "start": 0.44610989010989005,
+            "end": 0.5204615384615384,
+            "input": 1.0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 463,
+            "njev": 0,
+            "nlu": 12,
+            "internal_mesh_points": 66,
+            "elapsed_seconds": 0.007130899997719098
+          },
+          {
+            "start": 0.5204615384615384,
+            "end": 1.4870329670329667,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 2878,
+            "njev": 0,
+            "nlu": 20,
+            "internal_mesh_points": 411,
+            "elapsed_seconds": 0.043179000000236556
+          }
+        ],
+        "tight_full": [
+          {
+            "start": 0.0,
+            "end": 0.07435164835164834,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26,
+            "njev": 0,
+            "nlu": 12,
+            "internal_mesh_points": 7,
+            "elapsed_seconds": 0.0008039999956963584
+          },
+          {
+            "start": 0.07435164835164834,
+            "end": 0.14870329670329668,
+            "input": 1.0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 7280,
+            "njev": 0,
+            "nlu": 48,
+            "internal_mesh_points": 1039,
+            "elapsed_seconds": 0.11126759999751812
+          },
+          {
+            "start": 0.14870329670329668,
+            "end": 0.44610989010989005,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 9254,
+            "njev": 0,
+            "nlu": 54,
+            "internal_mesh_points": 1321,
+            "elapsed_seconds": 0.14268930000253022
+          },
+          {
+            "start": 0.44610989010989005,
+            "end": 0.5204615384615384,
+            "input": 1.0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 6524,
+            "njev": 0,
+            "nlu": 46,
+            "internal_mesh_points": 931,
+            "elapsed_seconds": 0.10158159999991767
+          },
+          {
+            "start": 0.5204615384615384,
+            "end": 1.4870329670329667,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 13601,
+            "njev": 0,
+            "nlu": 64,
+            "internal_mesh_points": 1942,
+            "elapsed_seconds": 0.21382689999882132
+          }
+        ],
+        "tight_reduced": [
+          {
+            "start": 0.0,
+            "end": 0.07435164835164834,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26,
+            "njev": 0,
+            "nlu": 12,
+            "internal_mesh_points": 7,
+            "elapsed_seconds": 0.0007925000027171336
+          },
+          {
+            "start": 0.07435164835164834,
+            "end": 0.14870329670329668,
+            "input": 1.0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 1947,
+            "njev": 0,
+            "nlu": 12,
+            "internal_mesh_points": 278,
+            "elapsed_seconds": 0.02887400000327034
+          },
+          {
+            "start": 0.14870329670329668,
+            "end": 0.44610989010989005,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 4131,
+            "njev": 0,
+            "nlu": 12,
+            "internal_mesh_points": 590,
+            "elapsed_seconds": 0.06087440000555944
+          },
+          {
+            "start": 0.44610989010989005,
+            "end": 0.5204615384615384,
+            "input": 1.0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 1408,
+            "njev": 0,
+            "nlu": 8,
+            "internal_mesh_points": 201,
+            "elapsed_seconds": 0.020918499998515472
+          },
+          {
+            "start": 0.5204615384615384,
+            "end": 1.4870329670329667,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 9031,
+            "njev": 0,
+            "nlu": 16,
+            "internal_mesh_points": 1290,
+            "elapsed_seconds": 0.13290970000525704
+          }
+        ]
+      }
+    },
+    "D": {
+      "status": "PASS",
+      "solver_error": {
+        "primary_full_vs_expm_max_absolute": 7.333134099951621e-12,
+        "primary_reduced_vs_expm_max_absolute": 5.9332538882017616e-12,
+        "tight_full_vs_expm_max_absolute": 7.704947790898586e-14,
+        "tight_reduced_vs_expm_max_absolute": 6.156186671546493e-14,
+        "primary_vs_tight_full_max_absolute": 7.377765065541553e-12,
+        "primary_vs_tight_reduced_max_absolute": 5.941913627793838e-12,
+        "augmented_full_input_integral_max_absolute": 0.0,
+        "augmented_reduced_input_integral_max_absolute": 0.0
+      },
+      "derived_current_solver_error": {
+        "product_flux": {
+          "primary_full_vs_expm": 1.6920864709391026e-09,
+          "primary_reduced_vs_expm": 3.9894754166880375e-11,
+          "tight_full_vs_expm": 2.177102942368947e-11,
+          "tight_reduced_vs_expm": 4.143352327901084e-13
+        },
+        "pi_current": {
+          "primary_full_vs_expm": 1.6860326468304265e-09,
+          "primary_reduced_vs_expm": 3.9894754166880375e-11,
+          "tight_full_vs_expm": 2.1785240278404672e-11,
+          "tight_reduced_vs_expm": 4.143352327901084e-13
+        },
+        "eftu_gdp_current": {
+          "primary_full_vs_expm": 5.097078314975079e-11,
+          "primary_reduced_vs_expm": 3.9894754166880375e-11,
+          "tight_full_vs_expm": 5.215827769688985e-13,
+          "tight_reduced_vs_expm": 4.143352327901084e-13
+        }
+      },
+      "invariant_max_absolute": {
+        "full_inventory": 1.3322676295501878e-15,
+        "reduced_inventory": 2.3314683517128287e-15,
+        "xi14_minus_xi18_internal": 1.1657341758564144e-15,
+        "xi16_minus_xi18_x2x3": 9.71445146547012e-16,
+        "xi17_minus_xi18_x3": 1.5265566588595902e-15,
+        "x4_from_xi18": 0.0,
+        "x0_gtp_from_input_hydrolysis": 0.0,
+        "pi_free_plus_bound_hydrolysis": 4.163336342344337e-16,
+        "gdp_free_plus_bound_hydrolysis": 1.2212453270876722e-15,
+        "eftu_total_free_plus_bound": 1.2212453270876722e-15,
+        "direct_y4_from_extent": 0.0
+      },
+      "minimum_full": 0.0,
+      "minimum_reduced": 0.0,
+      "tightening_convergence_full": true,
+      "tightening_convergence_reduced": true,
+      "solvers": {
+        "primary": {
+          "method": "Radau",
+          "rtol": 1e-10,
+          "atol": 1e-12
+        },
+        "tight": {
+          "method": "Radau",
+          "rtol": 1e-12,
+          "atol": 1e-14
+        },
+        "independent": "augmented scipy.linalg.expm"
+      },
+      "segments": {
+        "primary_full": [
+          {
+            "start": 0.0,
+            "end": 1.4870329670329667,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 8505,
+            "njev": 0,
+            "nlu": 82,
+            "internal_mesh_points": 1214,
+            "elapsed_seconds": 0.13478570000006584
+          }
+        ],
+        "primary_reduced": [
+          {
+            "start": 0.0,
+            "end": 1.4870329670329667,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 5055,
+            "njev": 0,
+            "nlu": 34,
+            "internal_mesh_points": 722,
+            "elapsed_seconds": 0.0778716999993776
+          }
+        ],
+        "tight_full": [
+          {
+            "start": 0.0,
+            "end": 1.4870329670329667,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26866,
+            "njev": 0,
+            "nlu": 82,
+            "internal_mesh_points": 3837,
+            "elapsed_seconds": 0.4163819000023068
+          }
+        ],
+        "tight_reduced": [
+          {
+            "start": 0.0,
+            "end": 1.4870329670329667,
+            "input": 0,
+            "status": 0,
+            "success": true,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 16031,
+            "njev": 0,
+            "nlu": 36,
+            "internal_mesh_points": 2290,
+            "elapsed_seconds": 0.24778409999998985
+          }
+        ]
+      }
+    }
+  },
+  "dwell": {
+    "candidate_label": "MEAN_DWELL_MATCHED_CANDIDATE",
+    "exact_markov_lumping": false,
+    "full_analytic_mean": 0.14870329670329668,
+    "reduced_analytic_mean": 0.14870329670329668,
+    "full_analytic_variance": 0.020424956164714406,
+    "reduced_analytic_variance": 0.022112670450428685,
+    "full_numeric_mean": 0.1487032967032967,
+    "full_numeric_variance": 0.02042495616471441,
+    "reduced_numeric_mean": 0.14870329670329666,
+    "reduced_numeric_variance": 0.0221126704504287,
+    "mean_absolute_error": 2.7755575615628914e-17,
+    "mean_relative_error": 1.866507080270641e-16,
+    "reduced_mean_absolute_error": 2.7755575615628914e-17,
+    "reduced_mean_relative_error": 1.866507080270641e-16,
+    "variance_absolute_error": 3.469446951953614e-18,
+    "reduced_variance_absolute_error": 1.3877787807814457e-17,
+    "quadrature_cutoff": 1.4870329670329667,
+    "quadrature_cutoff_tau": 10,
+    "quadrature_epsabs": 1e-12,
+    "quadrature_epsrel": 1e-12,
+    "tail_survival_probability": 3.1425547001481895e-05,
+    "mean_tail_correction": 4.489363857354557e-06,
+    "second_moment_tail_correction": 1.463433950160061e-05,
+    "reduced_mean_tail_correction": 6.751119225779615e-06,
+    "reduced_second_moment_tail_correction": 2.2086101076829606e-05,
+    "quadrature_reported_absolute_error_mean": 1.6508930128649532e-15,
+    "quadrature_reported_absolute_error_half_second": 2.2843804935551348e-14,
+    "reduced_quadrature_reported_absolute_error_mean": 4.212191378721056e-15,
+    "reduced_quadrature_reported_absolute_error_half_second": 4.373958490954881e-14,
+    "numeric_method": "quad of independent expm survival + exact resolvent tail",
+    "coefficient_variation_full": 0.9610809517181494,
+    "coefficient_variation_reduced": 1.0,
+    "slow_stage_mean_fraction": 0.9606857818504287,
+    "status": "PASS",
+    "D_full_remaining_mean": 0.10839285714285714,
+    "D_restart_remaining_mean": 0.14870329670329668,
+    "D_restart_mean_relative_increase": 0.37189202889367623
+  },
+  "approximation_errors_are_separate_from_solver_errors": true,
+  "source_audit_is_separate": true
+}

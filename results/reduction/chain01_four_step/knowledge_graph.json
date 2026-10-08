@@ -1,0 +1,1387 @@
+{
+  "authority": "DERIVED_NAVIGATION_ONLY_SUBORDINATE_TO_SOURCE_AND_RAW_ARRAYS",
+  "nodes": [
+    {
+      "id": "source:0",
+      "kind": "source",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+    },
+    {
+      "id": "source:1",
+      "kind": "source",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465"
+    },
+    {
+      "id": "source:2",
+      "kind": "source",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "sha256": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec"
+    },
+    {
+      "id": "source:3",
+      "kind": "source",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv",
+      "sha256": "845aef2d0b9a46d8e1a2d2eb3b5acb3501bcf69b72229ad02a97b73a9363a929"
+    },
+    {
+      "id": "source:4",
+      "kind": "source",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "results/topology_audit/reactions_table.csv",
+      "sha256": "8b686624e26c39e26b38c262dea65b76b172b8ddbf328d4779eb34536f96ed9c"
+    },
+    {
+      "id": "source:5",
+      "kind": "source",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "results/topology_audit/case_study.json",
+      "sha256": "e7e1f838bcfd41d6ec11b1a70623a3f2070ab00160b57212342f711405c0e7ad"
+    },
+    {
+      "id": "source:6",
+      "kind": "source",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "docs/reduction/one_chain_reduction_case_study.md",
+      "sha256": "d5312dc645a798d925e160a30bc26a4db09f4d30d220b452fc75521567c019e3"
+    },
+    {
+      "id": "source:7",
+      "kind": "source",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "docs/reduction/topology_first_audit.md",
+      "sha256": "65cfc5e6af134b402c47c7f2ac2cd9e9b8ca3c7338d874ffd56ce61fc7e6360f"
+    },
+    {
+      "id": "source:8",
+      "kind": "source",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "docs/reduction/reaction_inventory_and_effective_rate_review.md",
+      "sha256": "1263bd0fea53415aebaf6ee2bfe8e302a9d8d7daa504c4e6c67f97ff5cbac782"
+    },
+    {
+      "id": "source:9",
+      "kind": "source",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "docs/reduction/qssa_repositioning_note.md",
+      "sha256": "81d5ebe1e30b3bc5980d91f3a8d8e6a9a4bbb923e0eb34e25b0f9bef739685c3"
+    },
+    {
+      "id": "source_audit",
+      "kind": "exact_source_audit",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "source_manifest.json",
+      "sha256": "dd35f694dd9e88bccff73d0144efc2be66a495fed246f82bc02cfe664995b073"
+    },
+    {
+      "id": "protocol",
+      "kind": "frozen_protocol",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "configs/reduction/chain01_four_step_validation.json",
+      "sha256": "ebae5ef57a51d65e94e08029a421ee9b783f9801f8fa2bbcfa6066a8e61a8ba2"
+    },
+    {
+      "id": "candidate",
+      "kind": "mean_dwell_candidate",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "validation_summary.json",
+      "status": "LOCAL_CANDIDATE_FAILED_REGISTERED_SCREEN",
+      "label": "MEAN_DWELL_MATCHED_CANDIDATE"
+    },
+    {
+      "id": "test:A",
+      "kind": "local_test",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "numerical_results/test_A.csv",
+      "sha256": "5cbd0f74db962ea8485461a041d71d46f6e98e7127eb4772441f22a483fc9aef",
+      "domain": "IN_DOMAIN",
+      "gates": {
+        "entire": {
+          "product_output": {
+            "status": "FAIL",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.03355566396275432,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "product_flux": {
+                "value": 1.0,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_current": {
+                "value": 23.097025638276396,
+                "threshold": 0.05,
+                "status": "FAIL"
+              },
+              "eftu_gdp_current": {
+                "value": 1.0,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.8770057698100499,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.0274107935248461,
+                "threshold": 0.01,
+                "status": "FAIL"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "PASS",
+            "metrics": {
+              "occupancy": {
+                "value": 0.03355566396275378,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "domain": {
+            "status": "PASS",
+            "checks": {
+              "zero_initial_internal": true,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        },
+        "transient": {
+          "product_output": {
+            "status": "FAIL",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.03355566396275432,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "product_flux": {
+                "value": 1.0,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_current": {
+                "value": 23.097025638276396,
+                "threshold": 0.05,
+                "status": "FAIL"
+              },
+              "eftu_gdp_current": {
+                "value": 1.0,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.8770057698100499,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.0274107935248461,
+                "threshold": 0.01,
+                "status": "FAIL"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "PASS",
+            "metrics": {
+              "occupancy": {
+                "value": 0.03355566396275378,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "domain": {
+            "status": "PASS",
+            "checks": {
+              "zero_initial_internal": true,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        },
+        "post_transient": {
+          "product_output": {
+            "status": "FAIL",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.024463447264410382,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "product_flux": {
+                "value": 0.05714646451684382,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_current": {
+                "value": 0.7738479333497837,
+                "threshold": 0.05,
+                "status": "FAIL"
+              },
+              "eftu_gdp_current": {
+                "value": 0.05133690247322997,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.7767784048442904,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.018854945665265244,
+                "threshold": 0.01,
+                "status": "FAIL"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "PASS",
+            "metrics": {
+              "occupancy": {
+                "value": 0.024463447264410076,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "domain": {
+            "status": "PASS",
+            "checks": {
+              "zero_initial_internal": true,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        },
+        "late": {
+          "product_output": {
+            "status": "PASS",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.0010150149703498368,
+                "threshold": 0.01,
+                "status": "PASS"
+              },
+              "product_flux": {
+                "value": 0.0007808149827079725,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "PASS",
+            "metrics": {
+              "pi_current": {
+                "value": 0.006737946999188177,
+                "threshold": 0.05,
+                "status": "PASS"
+              },
+              "eftu_gdp_current": {
+                "value": 0.0008225149068233354,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "PASS",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.006737946999188615,
+                "threshold": 0.01,
+                "status": "PASS"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.0010550754945524154,
+                "threshold": 0.01,
+                "status": "PASS"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "PASS",
+            "metrics": {
+              "occupancy": {
+                "value": 0.001015014970349672,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "domain": {
+            "status": "PASS",
+            "checks": {
+              "zero_initial_internal": true,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        }
+      }
+    },
+    {
+      "id": "test:B",
+      "kind": "local_test",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "numerical_results/test_B.csv",
+      "sha256": "a45649a3032ffbd80189bee25082d1e8f27ea2d5f008d3447b113cb35f82d624",
+      "domain": "IN_DOMAIN",
+      "gates": {
+        "entire": {
+          "product_output": {
+            "status": "FAIL",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.014315812744975284,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "product_flux": {
+                "value": 0.03355566396297896,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_current": {
+                "value": 0.8770057697624285,
+                "threshold": 0.05,
+                "status": "FAIL"
+              },
+              "eftu_gdp_current": {
+                "value": 0.027410793521480695,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.9673651823934323,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.010271883579695072,
+                "threshold": 0.01,
+                "status": "FAIL"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "PASS",
+            "metrics": {
+              "occupancy": {
+                "value": 0.014315812744975003,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "domain": {
+            "status": "PASS",
+            "checks": {
+              "zero_initial_internal": true,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        },
+        "transient": {
+          "product_output": {
+            "status": "PASS",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.0069757516701468856,
+                "threshold": 0.01,
+                "status": "PASS"
+              },
+              "product_flux": {
+                "value": 0.03355566396297896,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_current": {
+                "value": 0.8770057697624285,
+                "threshold": 0.05,
+                "status": "FAIL"
+              },
+              "eftu_gdp_current": {
+                "value": 0.027410793521480695,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.1886120159592534,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.005653705448151718,
+                "threshold": 0.01,
+                "status": "PASS"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "PASS",
+            "metrics": {
+              "occupancy": {
+                "value": 0.00697575167014702,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "domain": {
+            "status": "PASS",
+            "checks": {
+              "zero_initial_internal": true,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        },
+        "post_transient": {
+          "product_output": {
+            "status": "FAIL",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.014315812744975284,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "product_flux": {
+                "value": 0.02446344726671218,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_current": {
+                "value": 0.7767784048773142,
+                "threshold": 0.05,
+                "status": "FAIL"
+              },
+              "eftu_gdp_current": {
+                "value": 0.01885494566723528,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.9673651823934323,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.010271883579695072,
+                "threshold": 0.01,
+                "status": "FAIL"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "PASS",
+            "metrics": {
+              "occupancy": {
+                "value": 0.014315812744975003,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "domain": {
+            "status": "PASS",
+            "checks": {
+              "zero_initial_internal": true,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        },
+        "late": {
+          "product_output": {
+            "status": "PASS",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.0012400075946255122,
+                "threshold": 0.01,
+                "status": "PASS"
+              },
+              "product_flux": {
+                "value": 0.0010150149967039779,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "PASS",
+            "metrics": {
+              "pi_current": {
+                "value": 0.006737947017615209,
+                "threshold": 0.05,
+                "status": "PASS"
+              },
+              "eftu_gdp_current": {
+                "value": 0.0010550755208502682,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.9673651823934323,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.006709379288997265,
+                "threshold": 0.01,
+                "status": "PASS"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "PASS",
+            "metrics": {
+              "occupancy": {
+                "value": 0.0012400075946292452,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "domain": {
+            "status": "PASS",
+            "checks": {
+              "zero_initial_internal": true,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        }
+      }
+    },
+    {
+      "id": "test:C",
+      "kind": "local_test",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "numerical_results/test_C.csv",
+      "sha256": "6d12bf980422b483dfdee21fb184587631f2e028f4d60df6114bed0ce2ef25cc",
+      "domain": "IN_DOMAIN",
+      "gates": {
+        "entire": {
+          "product_output": {
+            "status": "FAIL",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.01163142828918477,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "product_flux": {
+                "value": 0.0341985820022839,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_current": {
+                "value": 0.8770057697624286,
+                "threshold": 0.05,
+                "status": "FAIL"
+              },
+              "eftu_gdp_current": {
+                "value": 0.028386212873331623,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.40225426483804305,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.009026716404765973,
+                "threshold": 0.01,
+                "status": "PASS"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "PASS",
+            "metrics": {
+              "occupancy": {
+                "value": 0.011631428289184653,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "domain": {
+            "status": "PASS",
+            "checks": {
+              "zero_initial_internal": true,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        },
+        "transient": {
+          "product_output": {
+            "status": "FAIL",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.01163142828918477,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "product_flux": {
+                "value": 0.0341985820022839,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_current": {
+                "value": 0.8770057697624286,
+                "threshold": 0.05,
+                "status": "FAIL"
+              },
+              "eftu_gdp_current": {
+                "value": 0.028386212873331623,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.40225426483804305,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.009026716404765973,
+                "threshold": 0.01,
+                "status": "PASS"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "PASS",
+            "metrics": {
+              "occupancy": {
+                "value": 0.011631428289184653,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "domain": {
+            "status": "PASS",
+            "checks": {
+              "zero_initial_internal": true,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        },
+        "post_transient": {
+          "product_output": {
+            "status": "FAIL",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.011551000230616129,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "product_flux": {
+                "value": 0.025286415677958612,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_current": {
+                "value": 0.776778404877314,
+                "threshold": 0.05,
+                "status": "FAIL"
+              },
+              "eftu_gdp_current": {
+                "value": 0.019961728001624574,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.3931778530073697,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.008991057372707393,
+                "threshold": 0.01,
+                "status": "PASS"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "PASS",
+            "metrics": {
+              "occupancy": {
+                "value": 0.011551000230616107,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "domain": {
+            "status": "PASS",
+            "checks": {
+              "zero_initial_internal": true,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        },
+        "late": {
+          "product_output": {
+            "status": "PASS",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.0034459143869772966,
+                "threshold": 0.01,
+                "status": "PASS"
+              },
+              "product_flux": {
+                "value": 0.0012931862633207072,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_current": {
+                "value": 0.09500151925998326,
+                "threshold": 0.05,
+                "status": "FAIL"
+              },
+              "eftu_gdp_current": {
+                "value": 0.0015353569582478577,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.09500151925998275,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.004074600727187566,
+                "threshold": 0.01,
+                "status": "PASS"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "PASS",
+            "metrics": {
+              "occupancy": {
+                "value": 0.0034459143869761065,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "domain": {
+            "status": "PASS",
+            "checks": {
+              "zero_initial_internal": true,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        }
+      }
+    },
+    {
+      "id": "test:D",
+      "kind": "local_test",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "numerical_results/test_D.csv",
+      "sha256": "fadb64842515d7a7bd18319aea00148808a062e08b3a0b39d59bcaf74219cf30",
+      "domain": "OUT_OF_DOMAIN_NEGATIVE_CONTROL",
+      "gates": {
+        "entire": {
+          "product_output": {
+            "status": "FAIL",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.23434817129159446,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "product_flux": {
+                "value": 36.17582417582417,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_current": {
+                "value": 36.17582417582417,
+                "threshold": 0.05,
+                "status": "FAIL"
+              },
+              "eftu_gdp_current": {
+                "value": 0.47953846153846164,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.7499546000702351,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.2499772678549671,
+                "threshold": 0.01,
+                "status": "FAIL"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "FAIL",
+            "metrics": {
+              "occupancy": {
+                "value": 0.23434817129159513,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "domain": {
+            "status": "FAIL",
+            "checks": {
+              "zero_initial_internal": false,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        },
+        "transient": {
+          "product_output": {
+            "status": "FAIL",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.23434817129159446,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "product_flux": {
+                "value": 36.17582417582417,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_current": {
+                "value": 36.17582417582417,
+                "threshold": 0.05,
+                "status": "FAIL"
+              },
+              "eftu_gdp_current": {
+                "value": 0.47953846153846164,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.21925577252797868,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.050713009136742565,
+                "threshold": 0.01,
+                "status": "FAIL"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "FAIL",
+            "metrics": {
+              "occupancy": {
+                "value": 0.23434817129159513,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "domain": {
+            "status": "FAIL",
+            "checks": {
+              "zero_initial_internal": false,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        },
+        "post_transient": {
+          "product_output": {
+            "status": "FAIL",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.19477395751165524,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "product_flux": {
+                "value": 0.17095336060122074,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_current": {
+                "value": 0.7768562128417915,
+                "threshold": 0.05,
+                "status": "FAIL"
+              },
+              "eftu_gdp_current": {
+                "value": 0.175194680566906,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.7499546000702351,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.2499772678549671,
+                "threshold": 0.01,
+                "status": "FAIL"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "FAIL",
+            "metrics": {
+              "occupancy": {
+                "value": 0.19477395751165527,
+                "threshold": 0.05,
+                "status": "FAIL"
+              }
+            }
+          },
+          "domain": {
+            "status": "FAIL",
+            "checks": {
+              "zero_initial_internal": false,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        },
+        "late": {
+          "product_output": {
+            "status": "PASS",
+            "metrics": {
+              "product_trajectory": {
+                "value": 0.002580798167702514,
+                "threshold": 0.01,
+                "status": "PASS"
+              },
+              "product_flux": {
+                "value": 0.0024106748462901107,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_current": {
+            "status": "PASS",
+            "metrics": {
+              "pi_current": {
+                "value": 0.006737946999188177,
+                "threshold": 0.05,
+                "status": "PASS"
+              },
+              "eftu_gdp_current": {
+                "value": 0.0024409657513603973,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "resource_extent": {
+            "status": "FAIL",
+            "metrics": {
+              "pi_extent": {
+                "value": 0.7499546000702351,
+                "threshold": 0.01,
+                "status": "FAIL"
+              },
+              "eftu_gdp_extent": {
+                "value": 0.2499772678549671,
+                "threshold": 0.01,
+                "status": "FAIL"
+              }
+            }
+          },
+          "occupancy": {
+            "status": "PASS",
+            "metrics": {
+              "occupancy": {
+                "value": 0.0025807981677017098,
+                "threshold": 0.05,
+                "status": "PASS"
+              }
+            }
+          },
+          "domain": {
+            "status": "FAIL",
+            "checks": {
+              "zero_initial_internal": false,
+              "internal_author_side_paths_zero": true,
+              "exogenous_nonnegative_input": true,
+              "no_S4_consumption": true,
+              "declared_boundary_intervention": true
+            },
+            "scope": "LOCAL_BOUNDARY_ONLY"
+          }
+        }
+      }
+    },
+    {
+      "id": "independent",
+      "kind": "independent_verification",
+      "provenance": "EXTRACTED",
+      "confidence": "HIGH",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "independent_verification.json",
+      "sha256": "c221604becafa68e979feff9a1932aae7ad41874c9bd6def70d7b569b980de5b",
+      "status": "PASS"
+    },
+    {
+      "id": "recommendation",
+      "kind": "scientific_recommendation",
+      "provenance": "INFERRED",
+      "confidence": "BOUNDED_INFERENCE",
+      "freshness": "2026-10-08_CURRENT_FROZEN_LOCAL_RUN",
+      "evidence": "docs/reduction/chain01_four_step_validation_report.md",
+      "scope": "local candidate; no human approval",
+      "full_coupled": "NOT_RECOMMENDED_FOR_CURRENT_DIRECT_CANDIDATE",
+      "next": "LOCAL_AGGREGATE_CANDIDATE_REQUIRES_NEW_PREREGISTRATION"
+    }
+  ],
+  "edges": [
+    {
+      "from": "source:0",
+      "to": "source_audit",
+      "relation": "supports"
+    },
+    {
+      "from": "source:1",
+      "to": "source_audit",
+      "relation": "supports"
+    },
+    {
+      "from": "source:2",
+      "to": "source_audit",
+      "relation": "supports"
+    },
+    {
+      "from": "source:3",
+      "to": "source_audit",
+      "relation": "supports"
+    },
+    {
+      "from": "source:4",
+      "to": "source_audit",
+      "relation": "supports"
+    },
+    {
+      "from": "source:5",
+      "to": "source_audit",
+      "relation": "supports"
+    },
+    {
+      "from": "source:6",
+      "to": "source_audit",
+      "relation": "supports"
+    },
+    {
+      "from": "source:7",
+      "to": "source_audit",
+      "relation": "supports"
+    },
+    {
+      "from": "source:8",
+      "to": "source_audit",
+      "relation": "supports"
+    },
+    {
+      "from": "source:9",
+      "to": "source_audit",
+      "relation": "supports"
+    },
+    {
+      "from": "protocol",
+      "to": "test:A",
+      "relation": "defines"
+    },
+    {
+      "from": "test:A",
+      "to": "candidate",
+      "relation": "screens"
+    },
+    {
+      "from": "protocol",
+      "to": "test:B",
+      "relation": "defines"
+    },
+    {
+      "from": "test:B",
+      "to": "candidate",
+      "relation": "screens"
+    },
+    {
+      "from": "protocol",
+      "to": "test:C",
+      "relation": "defines"
+    },
+    {
+      "from": "test:C",
+      "to": "candidate",
+      "relation": "screens"
+    },
+    {
+      "from": "protocol",
+      "to": "test:D",
+      "relation": "defines"
+    },
+    {
+      "from": "test:D",
+      "to": "candidate",
+      "relation": "screens"
+    },
+    {
+      "from": "source_audit",
+      "to": "candidate",
+      "relation": "bounds_chemistry"
+    },
+    {
+      "from": "candidate",
+      "to": "recommendation",
+      "relation": "supports_bounded_inference"
+    },
+    {
+      "from": "independent",
+      "to": "candidate",
+      "relation": "verifies_computation_only"
+    }
+  ]
+}

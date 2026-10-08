@@ -1,0 +1,4304 @@
+{
+  "schema_version": "chain01_source_manifest_v1",
+  "audit_status": "PASSED_EXACT_SOURCE_AUDIT",
+  "provenance_class": "EXTRACTED",
+  "scientific_approval": "HUMAN_REVIEW_REQUIRED",
+  "git_context": {
+    "head": "e05436bbfbe3aa40c6d4db45a931d14401f719ef",
+    "branch": "codex/pnas-topology-first",
+    "source_paths_status_porcelain": "",
+    "note": "Only source-path status is recorded for deterministic regeneration; the final task reports all workspace changes separately."
+  },
+  "sources": [
+    {
+      "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "bytes": 1732620,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "0ee288d479c5fea76224a2f3f773c29599f20419"
+    },
+    {
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+      "bytes": 19566,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "740ef2db9d9b406e57cf90657ea56f935244db1d"
+    },
+    {
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "sha256": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+      "bytes": 6394,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "227e47848b45f5ea288ee89b99766cd6db233085"
+    },
+    {
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv",
+      "sha256": "845aef2d0b9a46d8e1a2d2eb3b5acb3501bcf69b72229ad02a97b73a9363a929",
+      "bytes": 141624,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "f25f17f307a11c838bd6fe20f4426e7f221f2fb9"
+    },
+    {
+      "path": "results/topology_audit/reactions_table.csv",
+      "sha256": "8b686624e26c39e26b38c262dea65b76b172b8ddbf328d4779eb34536f96ed9c",
+      "bytes": 412503,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "519d82028624800303b5751a1782cddc4d94162e"
+    },
+    {
+      "path": "results/topology_audit/case_study.json",
+      "sha256": "e7e1f838bcfd41d6ec11b1a70623a3f2070ab00160b57212342f711405c0e7ad",
+      "bytes": 3108,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "22e0a50045c7f17fc245d86e447fa6f45e447916"
+    },
+    {
+      "path": "docs/reduction/one_chain_reduction_case_study.md",
+      "sha256": "d5312dc645a798d925e160a30bc26a4db09f4d30d220b452fc75521567c019e3",
+      "bytes": 16945,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "d99121b1079be1066e3014621b826a97fcfe7d63"
+    },
+    {
+      "path": "docs/reduction/topology_first_audit.md",
+      "sha256": "65cfc5e6af134b402c47c7f2ac2cd9e9b8ca3c7338d874ffd56ce61fc7e6360f",
+      "bytes": 4191,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "5bc17733fe99682f0c5e43dc4b98bb356fd5822b"
+    },
+    {
+      "path": "docs/reduction/reaction_inventory_and_effective_rate_review.md",
+      "sha256": "1263bd0fea53415aebaf6ee2bfe8e302a9d8d7daa504c4e6c67f97ff5cbac782",
+      "bytes": 172794,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "b51fddc8e71e0206915f44a04fe7f89cdfdf46ac"
+    },
+    {
+      "path": "docs/reduction/qssa_repositioning_note.md",
+      "sha256": "81d5ebe1e30b3bc5980d91f3a8d8e6a9a4bbb923e0eb34e25b0f9bef739685c3",
+      "bytes": 14972,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "481ede9867a2e487eda075d79ebeee447efd472a"
+    }
+  ],
+  "source_model": {
+    "units": {
+      "model_attributes": {
+        "id": "fMGG_synthesis",
+        "name": "fMGG_synthesis"
+      },
+      "compartment_attributes": {
+        "default": {
+          "id": "default",
+          "size": "1",
+          "units": "volume",
+          "constant": "true"
+        }
+      },
+      "unit_definitions": [],
+      "source_kinetic_parameter_units": [
+        "substance"
+      ],
+      "time_unit_label": "source model time unit",
+      "interpretation": "The model has no explicit time-unit declaration or custom unitDefinitions. Local k1 carries the source label 'substance'; retain it as source metadata, not a dimensionally repaired unit. CSV values have no unit column. No conversion to seconds is made."
+    },
+    "counts": {
+      "species": 241,
+      "reactions": 968,
+      "author_parameter_rows": 969
+    }
+  },
+  "species_aliases": {
+    "S0": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+    "S1": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+    "S2": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+    "S3": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+    "S4": "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+  },
+  "chain_reaction_ids": [
+    "re0000000014",
+    "re0000000016",
+    "re0000000017",
+    "re0000000018"
+  ],
+  "chain_reactions": [
+    {
+      "reaction_id": "re0000000014",
+      "source_attributes": {
+        "id": "re0000000014",
+        "reversible": "false",
+        "fast": "false"
+      },
+      "reactants_exact": {
+        "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+      },
+      "products_exact": {
+        "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+      },
+      "net_stoichiometry_exact": {
+        "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1",
+        "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "-1"
+      },
+      "modifiers": [],
+      "kinetic_factors": [
+        "k1",
+        "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+      ],
+      "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+      "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+      "kinetic_species": [
+        "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+      ],
+      "author_parameters": [
+        {
+          "parameter_id": "k1",
+          "source_attributes": {
+            "metaid": "ePID0000000027",
+            "id": "k1",
+            "name": "k1",
+            "value": "1",
+            "units": "substance",
+            "constant": "true"
+          },
+          "author_csv_name": "re0000000014_k1",
+          "author_value_exact": "260",
+          "author_value": 260.0,
+          "sbml_placeholder_exact": "1"
+        }
+      ],
+      "author_activity": "NONZERO_K_POTENTIALLY_ENABLED"
+    },
+    {
+      "reaction_id": "re0000000016",
+      "source_attributes": {
+        "id": "re0000000016",
+        "reversible": "false",
+        "fast": "false"
+      },
+      "reactants_exact": {
+        "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+      },
+      "products_exact": {
+        "PO4": "1",
+        "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+      },
+      "net_stoichiometry_exact": {
+        "PO4": "1",
+        "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1",
+        "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "-1"
+      },
+      "modifiers": [],
+      "kinetic_factors": [
+        "k1",
+        "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+      ],
+      "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+      "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+      "kinetic_species": [
+        "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+      ],
+      "author_parameters": [
+        {
+          "parameter_id": "k1",
+          "source_attributes": {
+            "metaid": "ePID0000000031",
+            "id": "k1",
+            "name": "k1",
+            "value": "1",
+            "units": "substance",
+            "constant": "true"
+          },
+          "author_csv_name": "re0000000016_k1",
+          "author_value_exact": "1000",
+          "author_value": 1000.0,
+          "sbml_placeholder_exact": "1"
+        }
+      ],
+      "author_activity": "NONZERO_K_POTENTIALLY_ENABLED"
+    },
+    {
+      "reaction_id": "re0000000017",
+      "source_attributes": {
+        "id": "re0000000017",
+        "reversible": "false",
+        "fast": "false"
+      },
+      "reactants_exact": {
+        "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+      },
+      "products_exact": {
+        "EFTu_GDP": "1",
+        "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+      },
+      "net_stoichiometry_exact": {
+        "EFTu_GDP": "1",
+        "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "-1",
+        "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+      },
+      "modifiers": [],
+      "kinetic_factors": [
+        "k1",
+        "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+      ],
+      "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+      "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+      "kinetic_species": [
+        "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+      ],
+      "author_parameters": [
+        {
+          "parameter_id": "k1",
+          "source_attributes": {
+            "metaid": "ePID0000000033",
+            "id": "k1",
+            "name": "k1",
+            "value": "1",
+            "units": "substance",
+            "constant": "true"
+          },
+          "author_csv_name": "re0000000017_k1",
+          "author_value_exact": "7",
+          "author_value": 7.0,
+          "sbml_placeholder_exact": "1"
+        }
+      ],
+      "author_activity": "NONZERO_K_POTENTIALLY_ENABLED"
+    },
+    {
+      "reaction_id": "re0000000018",
+      "source_attributes": {
+        "id": "re0000000018",
+        "reversible": "false",
+        "fast": "false"
+      },
+      "reactants_exact": {
+        "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+      },
+      "products_exact": {
+        "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+      },
+      "net_stoichiometry_exact": {
+        "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "-1",
+        "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+      },
+      "modifiers": [],
+      "kinetic_factors": [
+        "k1",
+        "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+      ],
+      "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+      "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+      "kinetic_species": [
+        "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+      ],
+      "author_parameters": [
+        {
+          "parameter_id": "k1",
+          "source_attributes": {
+            "metaid": "ePID0000000035",
+            "id": "k1",
+            "name": "k1",
+            "value": "1",
+            "units": "substance",
+            "constant": "true"
+          },
+          "author_csv_name": "re0000000018_k1",
+          "author_value_exact": "1000",
+          "author_value": 1000.0,
+          "sbml_placeholder_exact": "1"
+        }
+      ],
+      "author_activity": "NONZERO_K_POTENTIALLY_ENABLED"
+    }
+  ],
+  "author_rates": [
+    260.0,
+    1000.0,
+    7.0,
+    1000.0
+  ],
+  "author_rates_exact": [
+    "260",
+    "1000",
+    "7",
+    "1000"
+  ],
+  "tau": 0.1487032967032967,
+  "tau_exact": "3383/22750",
+  "k_eff": 6.724800472953,
+  "k_eff_exact": "22750/3383",
+  "candidate_class": "MEAN_DWELL_MATCHED_CANDIDATE",
+  "stoichiometry_exact": {
+    "status": "PASS",
+    "method": "Fraction evaluation of canonical stoichiometryMath and sum of all four directed columns",
+    "species_compared": 241,
+    "sum_nonzero_exact": {
+      "EFTu_GDP": "1",
+      "PO4": "1",
+      "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "-1",
+      "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+    },
+    "candidate_nonzero_exact": {
+      "EFTu_GDP": "1",
+      "PO4": "1",
+      "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "-1",
+      "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+    },
+    "per_species_comparison": [
+      {
+        "species_id": "fMettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "tRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "fMet",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0002_fMettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0002_fMet",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS50S",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS50S_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "fMettRNAfMetCAU_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "tRNAfMetCAU_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "fMet_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "mRNA_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "PO4",
+        "sum_of_four_columns_exact": "1",
+        "candidate_exact": "1",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFTu_GTP_GlytRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlytRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFG_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFG_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "Pept0002tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFTu",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFTu_GDP",
+        "sum_of_four_columns_exact": "1",
+        "candidate_exact": "1",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFG",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFTu_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFG_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlytRNAGlyGCC_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "Pept0002tRNAGlyGCC_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+        "sum_of_four_columns_exact": "-1",
+        "candidate_exact": "-1",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+        "sum_of_four_columns_exact": "1",
+        "candidate_exact": "1",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "Pept0002",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0003_Pept0002",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "tRNAGlyGCC_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "Pept0002_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "Pept0003tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "Pept0003tRNAGlyGCC_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0003_Pept0002_EFTu_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "AMP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "ATP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "PPi",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "Gly",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_Gly_ATP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_Gly",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_ATP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyAMP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_GlyAMP_PPi",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_GlyAMP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_AMP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "Met",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_Met_ATP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_Met",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_ATP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetAMP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_MetAMP_PPi",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_MetAMP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_AMP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_GlytRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_AMP_GlytRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_GlyAMP_tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_Gly_tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_ATP_tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_Gly_ATP_tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GlyRS_GlyAMP_PPi_tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_MettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_AMP_MettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_MetAMP_tRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_tRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_Met_tRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_ATP_tRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_Met_ATP_tRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MetRS_MetAMP_PPi_tRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MettRNAfMetCAU_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFTs",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFTs_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFTu_EFTs",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFTu_GDP_EFTs",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFTu_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFTu_GTP_EFTs",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "EFTu_GTP_MettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_EFG_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS50S_EFG_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_EFG_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS50S_EFG_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_EFG_GDP_PO4",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS50S_EFG_GDP_PO4",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "CK_ADP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "CK_ATP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "CK_CP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "CK_CP_ADP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "CK_Cr",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "CK_Cr_ATP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "CK_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "CK",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "ADP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "CP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "Cr",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "NDK",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "NDK_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "NDK_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "NDK_ATP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "NDK_GDP_ATP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "NDK_GTP_ADP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "NDK_ADP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "NDK_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MK",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MK_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MK_AMP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MK_ATP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MK_ATP_AMP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MK_ADP_1",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MK_ADP_2",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MK_ADP_ADP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "PPiase",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "PPiase_PPi",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "PPiase_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "PPiase_PO4",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "PPiase_PO4_PO4",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "FD",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MTF",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "THF",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MTF_FD",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MTF_MettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MTF_FD_MettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MTF_THF_fMettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MTF_THF",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MTF_fMettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "MTF_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "IF2_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "IF2_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "IF2_GTP_fMettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "IF2_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "IF2",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1_IF3",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1_IF3_IF2_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1_IF3_IF2_GTP_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1_IF3_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1_IF3_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF3",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF3_IF2_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF3_IF2_GTP_fMettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF3_IF2_GTP_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF3_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF3_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF1",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF1_IF3",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF3",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "IF1_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "IF3_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "IF1",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "IF3",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF2_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF2_GTP_fMettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF2_GTP_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF2_GTP_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1_IF2_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1_IF2_GTP_fMettRNAfMetCAU",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1_IF2_GTP_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS30S_IF1_IF2_GTP_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF1_IF3_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF1_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS70S_IF3_fMettRNAfMetCAU_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "GMP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RF1",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "Pept0003",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RF1_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF1",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RF2",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RF2_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF2",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RF3",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RF3_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RF3_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RF3_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RRF",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RRF_degraded",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS50S_RRF",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS50S_RRF_EFG_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS50S_tRNAGlyGCC",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS50S_tRNAGlyGCC_EFG_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS50S_tRNAGlyGCC_RRF",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "RS50S_tRNAGlyGCC_RRF_EFG_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_EFG_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RRF",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      },
+      {
+        "species_id": "termRS30S_mRNA",
+        "sum_of_four_columns_exact": "0",
+        "candidate_exact": "0",
+        "difference_exact": "0"
+      }
+    ],
+    "limitation": "Source reaction-vector identity only; no atomic/ionic balance or instantaneous release equivalence claimed."
+  },
+  "species_incidence_audit": {
+    "S0": {
+      "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+      "canonical_attributes": {
+        "id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+        "name": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+        "compartment": "default",
+        "initialConcentration": "1"
+      },
+      "author_initial_exact": "0",
+      "all_incidence_count": 7,
+      "incidences": [
+        {
+          "reaction_id": "re0000000013",
+          "source_attributes": {
+            "id": "re0000000013",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "EFTu_GTP_GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu_GTP_GlytRNAGlyGCC": "-1",
+            "elRS70SAGGU0002_fMet": "-1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "EFTu_GTP_GlytRNAGlyGCC",
+            "elRS70SAGGU0002_fMet"
+          ],
+          "kinetic_law_formula": "k1 * EFTu_GTP_GlytRNAGlyGCC * elRS70SAGGU0002_fMet",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> EFTu_GTP_GlytRNAGlyGCC </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "EFTu_GTP_GlytRNAGlyGCC",
+            "elRS70SAGGU0002_fMet"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000025",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000013_k1",
+              "author_value_exact": "140",
+              "author_value": 140.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "NONZERO_K_POTENTIALLY_ENABLED",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "alias": "S0",
+          "roles": [
+            "product"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "BOUNDARY_NETWORK_INCIDENCE"
+        },
+        {
+          "reaction_id": "re0000000014",
+          "source_attributes": {
+            "id": "re0000000014",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "-1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000027",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000014_k1",
+              "author_value_exact": "260",
+              "author_value": 260.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "NONZERO_K_POTENTIALLY_ENABLED",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "alias": "S0",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "CHAIN",
+          "domain_role": "CHAIN"
+        },
+        {
+          "reaction_id": "re0000000015",
+          "source_attributes": {
+            "id": "re0000000015",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "-1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000029",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000015_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "alias": "S0",
+          "roles": [
+            "product"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "BOUNDARY_NETWORK_INCIDENCE"
+        },
+        {
+          "reaction_id": "re0000000021",
+          "source_attributes": {
+            "id": "re0000000021",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "EFTu_GTP_GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu_GTP_GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "-1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000041",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000021_k1",
+              "author_value_exact": "23/100",
+              "author_value": 0.23,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "NONZERO_K_POTENTIALLY_ENABLED",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "alias": "S0",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "BOUNDARY_NETWORK_INCIDENCE"
+        },
+        {
+          "reaction_id": "re0000000033",
+          "source_attributes": {
+            "id": "re0000000033",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "EFTu": "1",
+            "GTP": "1",
+            "GlytRNAGlyGCC": "1",
+            "RS30S": "1",
+            "RS50S_degraded": "1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu": "1",
+            "GTP": "1",
+            "GlytRNAGlyGCC": "1",
+            "RS30S": "1",
+            "RS50S_degraded": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "-1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000065",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000033_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "alias": "S0",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "BOUNDARY_NETWORK_INCIDENCE"
+        },
+        {
+          "reaction_id": "re0000000034",
+          "source_attributes": {
+            "id": "re0000000034",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "EFTu": "1",
+            "GTP": "1",
+            "GlytRNAGlyGCC": "1",
+            "RS30S_degraded": "1",
+            "RS50S": "1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu": "1",
+            "GTP": "1",
+            "GlytRNAGlyGCC": "1",
+            "RS30S_degraded": "1",
+            "RS50S": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "-1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000067",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000034_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "alias": "S0",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "BOUNDARY_NETWORK_INCIDENCE"
+        },
+        {
+          "reaction_id": "re0000000035",
+          "source_attributes": {
+            "id": "re0000000035",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "EFTu_degraded": "1",
+            "GTP": "1",
+            "GlytRNAGlyGCC": "1",
+            "RS30S": "1",
+            "RS50S": "1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu_degraded": "1",
+            "GTP": "1",
+            "GlytRNAGlyGCC": "1",
+            "RS30S": "1",
+            "RS50S": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "-1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000069",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000035_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "alias": "S0",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "BOUNDARY_NETWORK_INCIDENCE"
+        }
+      ],
+      "nonzero_author_reaction_ids": [
+        "re0000000013",
+        "re0000000014",
+        "re0000000021"
+      ],
+      "zero_author_reaction_ids": [
+        "re0000000015",
+        "re0000000033",
+        "re0000000034",
+        "re0000000035"
+      ]
+    },
+    "S1": {
+      "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+      "canonical_attributes": {
+        "id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+        "name": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+        "compartment": "default",
+        "initialConcentration": "1"
+      },
+      "author_initial_exact": "0",
+      "all_incidence_count": 7,
+      "incidences": [
+        {
+          "reaction_id": "re0000000014",
+          "source_attributes": {
+            "id": "re0000000014",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "-1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000027",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000014_k1",
+              "author_value_exact": "260",
+              "author_value": 260.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "NONZERO_K_POTENTIALLY_ENABLED",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "alias": "S1",
+          "roles": [
+            "product"
+          ],
+          "chain_membership": "CHAIN",
+          "domain_role": "CHAIN"
+        },
+        {
+          "reaction_id": "re0000000015",
+          "source_attributes": {
+            "id": "re0000000015",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "-1",
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000029",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000015_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "alias": "S1",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000016",
+          "source_attributes": {
+            "id": "re0000000016",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "PO4": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "PO4": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "-1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000031",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000016_k1",
+              "author_value_exact": "1000",
+              "author_value": 1000.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "NONZERO_K_POTENTIALLY_ENABLED",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "alias": "S1",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "CHAIN",
+          "domain_role": "CHAIN"
+        },
+        {
+          "reaction_id": "re0000000036",
+          "source_attributes": {
+            "id": "re0000000036",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "EFTu": "1",
+            "GDP": "1",
+            "GlytRNAGlyGCC": "1",
+            "PO4": "1",
+            "RS30S": "1",
+            "RS50S_degraded": "1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu": "1",
+            "GDP": "1",
+            "GlytRNAGlyGCC": "1",
+            "PO4": "1",
+            "RS30S": "1",
+            "RS50S_degraded": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "-1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000071",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000036_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "alias": "S1",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000037",
+          "source_attributes": {
+            "id": "re0000000037",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "EFTu": "1",
+            "GDP": "1",
+            "GlytRNAGlyGCC": "1",
+            "PO4": "1",
+            "RS30S_degraded": "1",
+            "RS50S": "1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu": "1",
+            "GDP": "1",
+            "GlytRNAGlyGCC": "1",
+            "PO4": "1",
+            "RS30S_degraded": "1",
+            "RS50S": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "-1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000073",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000037_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "alias": "S1",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000038",
+          "source_attributes": {
+            "id": "re0000000038",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "EFTu_degraded": "1",
+            "GDP": "1",
+            "GlytRNAGlyGCC": "1",
+            "PO4": "1",
+            "RS30S": "1",
+            "RS50S": "1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu_degraded": "1",
+            "GDP": "1",
+            "GlytRNAGlyGCC": "1",
+            "PO4": "1",
+            "RS30S": "1",
+            "RS50S": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "-1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000075",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000038_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "alias": "S1",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000060",
+          "source_attributes": {
+            "id": "re0000000060",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "PO4": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "PO4": "-1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "-1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+            "PO4"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC * PO4",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC </ns0:ci>\n              <ns0:ci> PO4 </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "PO4",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000119",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000060_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "alias": "S1",
+          "roles": [
+            "product"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        }
+      ],
+      "nonzero_author_reaction_ids": [
+        "re0000000014",
+        "re0000000016"
+      ],
+      "zero_author_reaction_ids": [
+        "re0000000015",
+        "re0000000036",
+        "re0000000037",
+        "re0000000038",
+        "re0000000060"
+      ]
+    },
+    "S2": {
+      "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+      "canonical_attributes": {
+        "id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+        "name": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+        "compartment": "default",
+        "initialConcentration": "1"
+      },
+      "author_initial_exact": "0",
+      "all_incidence_count": 9,
+      "incidences": [
+        {
+          "reaction_id": "re0000000016",
+          "source_attributes": {
+            "id": "re0000000016",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "PO4": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "PO4": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "-1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000031",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000016_k1",
+              "author_value_exact": "1000",
+              "author_value": 1000.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "NONZERO_K_POTENTIALLY_ENABLED",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "alias": "S2",
+          "roles": [
+            "product"
+          ],
+          "chain_membership": "CHAIN",
+          "domain_role": "CHAIN"
+        },
+        {
+          "reaction_id": "re0000000017",
+          "source_attributes": {
+            "id": "re0000000017",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "EFTu_GDP": "1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu_GDP": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "-1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000033",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000017_k1",
+              "author_value_exact": "7",
+              "author_value": 7.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "NONZERO_K_POTENTIALLY_ENABLED",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "alias": "S2",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "CHAIN",
+          "domain_role": "CHAIN"
+        },
+        {
+          "reaction_id": "re0000000026",
+          "source_attributes": {
+            "id": "re0000000026",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP": "1"
+          },
+          "net_stoichiometry_exact": {
+            "GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "-1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000051",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000026_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "alias": "S2",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000039",
+          "source_attributes": {
+            "id": "re0000000039",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "EFTu": "1",
+            "GDP": "1",
+            "GlytRNAGlyGCC": "1",
+            "RS30S": "1",
+            "RS50S_degraded": "1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu": "1",
+            "GDP": "1",
+            "GlytRNAGlyGCC": "1",
+            "RS30S": "1",
+            "RS50S_degraded": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "-1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000077",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000039_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "alias": "S2",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000040",
+          "source_attributes": {
+            "id": "re0000000040",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "EFTu": "1",
+            "GDP": "1",
+            "GlytRNAGlyGCC": "1",
+            "RS30S_degraded": "1",
+            "RS50S": "1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu": "1",
+            "GDP": "1",
+            "GlytRNAGlyGCC": "1",
+            "RS30S_degraded": "1",
+            "RS50S": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "-1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000079",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000040_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "alias": "S2",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000041",
+          "source_attributes": {
+            "id": "re0000000041",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "EFTu_degraded": "1",
+            "GDP": "1",
+            "GlytRNAGlyGCC": "1",
+            "RS30S": "1",
+            "RS50S": "1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu_degraded": "1",
+            "GDP": "1",
+            "GlytRNAGlyGCC": "1",
+            "RS30S": "1",
+            "RS50S": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "-1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000081",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000041_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "alias": "S2",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000060",
+          "source_attributes": {
+            "id": "re0000000060",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "PO4": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "PO4": "-1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "-1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+            "PO4"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC * PO4",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC </ns0:ci>\n              <ns0:ci> PO4 </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "PO4",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000119",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000060_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "alias": "S2",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000061",
+          "source_attributes": {
+            "id": "re0000000061",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "EFTu_GDP": "1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu_GDP": "-1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "-1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "EFTu_GDP",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * EFTu_GDP * elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> EFTu_GDP </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "EFTu_GDP",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000121",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000061_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "alias": "S2",
+          "roles": [
+            "product"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000063",
+          "source_attributes": {
+            "id": "re0000000063",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "GlytRNAGlyGCC": "-1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP": "-1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP",
+            "GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP * GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP </ns0:ci>\n              <ns0:ci> GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "GlytRNAGlyGCC",
+            "elRS70SAGGU0002_fMet_EFTu_GDP"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000125",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000063_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "alias": "S2",
+          "roles": [
+            "product"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        }
+      ],
+      "nonzero_author_reaction_ids": [
+        "re0000000016",
+        "re0000000017"
+      ],
+      "zero_author_reaction_ids": [
+        "re0000000026",
+        "re0000000039",
+        "re0000000040",
+        "re0000000041",
+        "re0000000060",
+        "re0000000061",
+        "re0000000063"
+      ]
+    },
+    "S3": {
+      "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+      "canonical_attributes": {
+        "id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+        "name": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+        "compartment": "default",
+        "initialConcentration": "1"
+      },
+      "author_initial_exact": "0",
+      "all_incidence_count": 8,
+      "incidences": [
+        {
+          "reaction_id": "re0000000017",
+          "source_attributes": {
+            "id": "re0000000017",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "EFTu_GDP": "1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu_GDP": "1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "-1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000033",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000017_k1",
+              "author_value_exact": "7",
+              "author_value": 7.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "NONZERO_K_POTENTIALLY_ENABLED",
+          "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "alias": "S3",
+          "roles": [
+            "product"
+          ],
+          "chain_membership": "CHAIN",
+          "domain_role": "CHAIN"
+        },
+        {
+          "reaction_id": "re0000000018",
+          "source_attributes": {
+            "id": "re0000000018",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "-1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000035",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000018_k1",
+              "author_value_exact": "1000",
+              "author_value": 1000.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "NONZERO_K_POTENTIALLY_ENABLED",
+          "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "alias": "S3",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "CHAIN",
+          "domain_role": "CHAIN"
+        },
+        {
+          "reaction_id": "re0000000027",
+          "source_attributes": {
+            "id": "re0000000027",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet": "1"
+          },
+          "net_stoichiometry_exact": {
+            "GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet": "1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "-1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000053",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000027_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "alias": "S3",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000045",
+          "source_attributes": {
+            "id": "re0000000045",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "GlytRNAGlyGCC": "1",
+            "RS30S": "1",
+            "RS50S_degraded": "1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "net_stoichiometry_exact": {
+            "GlytRNAGlyGCC": "1",
+            "RS30S": "1",
+            "RS50S_degraded": "1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "-1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000089",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000045_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "alias": "S3",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000046",
+          "source_attributes": {
+            "id": "re0000000046",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "GlytRNAGlyGCC": "1",
+            "RS30S_degraded": "1",
+            "RS50S": "1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "net_stoichiometry_exact": {
+            "GlytRNAGlyGCC": "1",
+            "RS30S_degraded": "1",
+            "RS50S": "1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "-1",
+            "fMet": "1",
+            "mRNA": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000091",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000046_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "alias": "S3",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000061",
+          "source_attributes": {
+            "id": "re0000000061",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "EFTu_GDP": "1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFTu_GDP": "-1",
+            "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "-1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "EFTu_GDP",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * EFTu_GDP * elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> EFTu_GDP </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "EFTu_GDP",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000121",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000061_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "alias": "S3",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000062",
+          "source_attributes": {
+            "id": "re0000000062",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "-1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SBGGU0002_Pept0002tRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000123",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000062_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "alias": "S3",
+          "roles": [
+            "product"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        },
+        {
+          "reaction_id": "re0000000064",
+          "source_attributes": {
+            "id": "re0000000064",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "GlytRNAGlyGCC": "-1",
+            "elRS70SAGGU0002_fMet": "-1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet",
+            "GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet * GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet </ns0:ci>\n              <ns0:ci> GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "GlytRNAGlyGCC",
+            "elRS70SAGGU0002_fMet"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000127",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000064_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "alias": "S3",
+          "roles": [
+            "product"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "INTERNAL_SIDE_PATH"
+        }
+      ],
+      "nonzero_author_reaction_ids": [
+        "re0000000017",
+        "re0000000018"
+      ],
+      "zero_author_reaction_ids": [
+        "re0000000027",
+        "re0000000045",
+        "re0000000046",
+        "re0000000061",
+        "re0000000062",
+        "re0000000064"
+      ]
+    },
+    "S4": {
+      "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+      "canonical_attributes": {
+        "id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+        "name": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+        "compartment": "default",
+        "initialConcentration": "1"
+      },
+      "author_initial_exact": "0",
+      "all_incidence_count": 6,
+      "incidences": [
+        {
+          "reaction_id": "re0000000018",
+          "source_attributes": {
+            "id": "re0000000018",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "-1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SAGGU0002_fMet_GlytRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000035",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000018_k1",
+              "author_value_exact": "1000",
+              "author_value": 1000.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "NONZERO_K_POTENTIALLY_ENABLED",
+          "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+          "alias": "S4",
+          "roles": [
+            "product"
+          ],
+          "chain_membership": "CHAIN",
+          "domain_role": "CHAIN"
+        },
+        {
+          "reaction_id": "re0000000019",
+          "source_attributes": {
+            "id": "re0000000019",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "EFG_GTP": "1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFG_GTP": "-1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "-1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+            "EFG_GTP"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SBGGU0002_Pept0002tRNAGlyGCC * EFG_GTP",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SBGGU0002_Pept0002tRNAGlyGCC </ns0:ci>\n              <ns0:ci> EFG_GTP </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "EFG_GTP",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000037",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000019_k1",
+              "author_value_exact": "30",
+              "author_value": 30.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "NONZERO_K_POTENTIALLY_ENABLED",
+          "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+          "alias": "S4",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "BOUNDARY_NETWORK_INCIDENCE"
+        },
+        {
+          "reaction_id": "re0000000020",
+          "source_attributes": {
+            "id": "re0000000020",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP": "1"
+          },
+          "products_exact": {
+            "EFG_GTP": "1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "EFG_GTP": "1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP": "-1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000039",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000020_k1",
+              "author_value_exact": "25",
+              "author_value": 25.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "NONZERO_K_POTENTIALLY_ENABLED",
+          "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+          "alias": "S4",
+          "roles": [
+            "product"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "BOUNDARY_NETWORK_INCIDENCE"
+        },
+        {
+          "reaction_id": "re0000000047",
+          "source_attributes": {
+            "id": "re0000000047",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "Pept0002tRNAGlyGCC": "1",
+            "RS30S": "1",
+            "RS50S_degraded": "1",
+            "mRNA": "1"
+          },
+          "net_stoichiometry_exact": {
+            "Pept0002tRNAGlyGCC": "1",
+            "RS30S": "1",
+            "RS50S_degraded": "1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "-1",
+            "mRNA": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SBGGU0002_Pept0002tRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000093",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000047_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+          "alias": "S4",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "BOUNDARY_NETWORK_INCIDENCE"
+        },
+        {
+          "reaction_id": "re0000000048",
+          "source_attributes": {
+            "id": "re0000000048",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "Pept0002tRNAGlyGCC": "1",
+            "RS30S_degraded": "1",
+            "RS50S": "1",
+            "mRNA": "1"
+          },
+          "net_stoichiometry_exact": {
+            "Pept0002tRNAGlyGCC": "1",
+            "RS30S_degraded": "1",
+            "RS50S": "1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "-1",
+            "mRNA": "1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SBGGU0002_Pept0002tRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000095",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000048_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+          "alias": "S4",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "BOUNDARY_NETWORK_INCIDENCE"
+        },
+        {
+          "reaction_id": "re0000000062",
+          "source_attributes": {
+            "id": "re0000000062",
+            "reversible": "false",
+            "fast": "false"
+          },
+          "reactants_exact": {
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+          },
+          "net_stoichiometry_exact": {
+            "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "-1"
+          },
+          "modifiers": [],
+          "kinetic_factors": [
+            "k1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+          "kinetic_mathml": "<ns0:math xmlns:ns0=\"http://www.w3.org/1998/Math/MathML\">\n            <ns0:apply>\n              <ns0:times />\n              <ns0:ci> k1 </ns0:ci>\n              <ns0:ci> elRS70SBGGU0002_Pept0002tRNAGlyGCC </ns0:ci>\n            </ns0:apply>\n          </ns0:math>\n          ",
+          "kinetic_species": [
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+          ],
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000123",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000062_k1",
+              "author_value_exact": "0",
+              "author_value": 0.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "author_activity": "IDENTICALLY_ZERO_FIXED_AUTHOR_PARAMETERS",
+          "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+          "alias": "S4",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "chain_membership": "SURROUNDING_NETWORK",
+          "domain_role": "BOUNDARY_NETWORK_INCIDENCE"
+        }
+      ],
+      "nonzero_author_reaction_ids": [
+        "re0000000018",
+        "re0000000019",
+        "re0000000020"
+      ],
+      "zero_author_reaction_ids": [
+        "re0000000047",
+        "re0000000048",
+        "re0000000062"
+      ]
+    }
+  },
+  "domain_summary": {
+    "internal_states": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "internal_author_active_side_reactions": [],
+    "internal_all_side_reactions": [
+      "re0000000015",
+      "re0000000026",
+      "re0000000027",
+      "re0000000036",
+      "re0000000037",
+      "re0000000038",
+      "re0000000039",
+      "re0000000040",
+      "re0000000041",
+      "re0000000045",
+      "re0000000046",
+      "re0000000060",
+      "re0000000061",
+      "re0000000062",
+      "re0000000063",
+      "re0000000064"
+    ],
+    "boundary_author_active_surrounding": {
+      "S0": [
+        "re0000000013",
+        "re0000000021"
+      ],
+      "S4": [
+        "re0000000019",
+        "re0000000020"
+      ]
+    },
+    "boundary_author_active_details": {
+      "S0": [
+        {
+          "reaction_id": "re0000000013",
+          "roles": [
+            "product"
+          ],
+          "kinetic_law_formula": "k1 * EFTu_GTP_GlytRNAGlyGCC * elRS70SAGGU0002_fMet",
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000025",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000013_k1",
+              "author_value_exact": "140",
+              "author_value": 140.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "reactants_exact": {
+            "EFTu_GTP_GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet": "1"
+          },
+          "products_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          }
+        },
+        {
+          "reaction_id": "re0000000021",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000041",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000021_k1",
+              "author_value_exact": "23/100",
+              "author_value": 0.23,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "reactants_exact": {
+            "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "EFTu_GTP_GlytRNAGlyGCC": "1",
+            "elRS70SAGGU0002_fMet": "1"
+          }
+        }
+      ],
+      "S4": [
+        {
+          "reaction_id": "re0000000019",
+          "roles": [
+            "reactant",
+            "kinetic_dependency"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SBGGU0002_Pept0002tRNAGlyGCC * EFG_GTP",
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000037",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000019_k1",
+              "author_value_exact": "30",
+              "author_value": 30.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "reactants_exact": {
+            "EFG_GTP": "1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+          },
+          "products_exact": {
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP": "1"
+          }
+        },
+        {
+          "reaction_id": "re0000000020",
+          "roles": [
+            "product"
+          ],
+          "kinetic_law_formula": "k1 * elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+          "author_parameters": [
+            {
+              "parameter_id": "k1",
+              "source_attributes": {
+                "metaid": "ePID0000000039",
+                "id": "k1",
+                "name": "k1",
+                "value": "1",
+                "units": "substance",
+                "constant": "true"
+              },
+              "author_csv_name": "re0000000020_k1",
+              "author_value_exact": "25",
+              "author_value": 25.0,
+              "sbml_placeholder_exact": "1"
+            }
+          ],
+          "reactants_exact": {
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP": "1"
+          },
+          "products_exact": {
+            "EFG_GTP": "1",
+            "elRS70SBGGU0002_Pept0002tRNAGlyGCC": "1"
+          }
+        }
+      ]
+    },
+    "active_S0_competing_consuming_reactions": [
+      "re0000000021"
+    ],
+    "local_boundary_intervention": "Replace source S0-producing surrounding-network kinetics with prescribed u(t); suppress the author-active competing S0 exit re0000000021 (k=0.23); omit S4 consumption re0000000019 (k=30) and surrounding return re0000000020 (k=25). These are local experiment assumptions, not source parameter changes. The canonical source and its overlay retain every direction.",
+    "interpretation": "Internal side incidences exist in the canonical network but are identically zero under the fixed author CSV. S0 and S4 have author-active surrounding reactions. The imposed local boundaries, including suppression of the active S0 exit, do not represent the full coupled network. Nonzero k indicates potential activity, not a certified trajectory."
+  },
+  "resource_semantics": {
+    "PO4_free_release": "v16 / xi16",
+    "EFTu_GDP_free_release": "v17 / xi17",
+    "bound_phosphate_inventory": "x1",
+    "ribosome_bound_EFTu_GDP_inventory": "x1+x2",
+    "ribosome_bound_EFTu_GTP_inventory": "x0",
+    "unfinished_ribosome_inventory": "x0+x1+x2+x3",
+    "GTP_gamma_phosphate_precursor_inventory": "x0 (GTP-bound precursor, distinct from the PO4-bound x1)",
+    "phosphate_fate_identity": "x0+x1+xi16 = x0(0)+x1(0)+integral(u)",
+    "Tu_factor_fate_identity": "x0+x1+x2+xi17 = x0(0)+x1(0)+x2(0)+integral(u)",
+    "endpoint_ribosome_inventory": "x4 (still a ribosome-bound peptide state; local completion is not free ribosome or final Pept0003 release)"
+  },
+  "existing_evidence_crosscheck": {
+    "reactions_table_all_rows": 968,
+    "inventory_all_rows": 968,
+    "status": "PASS",
+    "old_three_step_reactions": [
+      "re0000000016",
+      "re0000000017",
+      "re0000000018"
+    ],
+    "old_case_aliases_shift": "old A/X1/X2/B correspond to new S1/S2/S3/S4",
+    "warning": "The old three-step k_eff is not the four-step rate. Historical scientific conclusions remain unchanged."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "method": "Independent exact XML/Fraction and CSV audit; sparse scipy.sparse.linalg.expm_multiply; independent raw metric/mask/RMS/gate reconstruction",
+  "runner_imported": false,
+  "config_sha256": "ebae5ef57a51d65e94e08029a421ee9b783f9801f8fa2bbcfa6066a8e61a8ba2",
+  "protected_file_count": 1660,
+  "internal_zero_side_path_count": 16,
+  "stoichiometry_species_compared": 241,
+  "tau_exact": "3383/22750",
+  "effective_rate_exact": "22750/3383",
+  "waiting_variance_full": 0.020424956164714406,
+  "waiting_variance_direct": 0.022112670450428692,
+  "independent_sparse_moments": {
+    "full_mean": 0.1487032967032941,
+    "full_variance": 0.020424956164712342,
+    "direct_mean": 0.1487032967032966,
+    "direct_variance": 0.022112670450428494
+  },
+  "tests": {
+    "A": {
+      "status": "PASS",
+      "sparse_action_full_max_absolute": 9.156342350991054e-12,
+      "sparse_action_reduced_max_absolute": 5.9401372709544376e-12,
+      "invariant_max_absolute": 2.3314683517128287e-15,
+      "independently_checked_convergence_max_absolute": 9.171996495638268e-12,
+      "raw_error_table_max_absolute_discrepancy": 2.842170943040401e-14,
+      "sample_count": 6870,
+      "event_count": 0
+    },
+    "B": {
+      "status": "PASS",
+      "sparse_action_full_max_absolute": 4.94859708766171e-12,
+      "sparse_action_reduced_max_absolute": 3.0391245076089035e-12,
+      "invariant_max_absolute": 1.2236305718671403e-15,
+      "independently_checked_convergence_max_absolute": 4.9650283884261626e-12,
+      "raw_error_table_max_absolute_discrepancy": 2.220446049250313e-16,
+      "sample_count": 6870,
+      "event_count": 0
+    },
+    "C": {
+      "status": "PASS",
+      "sparse_action_full_max_absolute": 1.1147333056626962e-12,
+      "sparse_action_reduced_max_absolute": 1.0272616091100417e-12,
+      "invariant_max_absolute": 4.627374872168133e-16,
+      "independently_checked_convergence_max_absolute": 1.1164957847142887e-12,
+      "raw_error_table_max_absolute_discrepancy": 1.1102230246251565e-16,
+      "sample_count": 6870,
+      "event_count": 4
+    },
+    "D": {
+      "status": "PASS",
+      "sparse_action_full_max_absolute": 7.331246720809759e-12,
+      "sparse_action_reduced_max_absolute": 5.9401372709544376e-12,
+      "invariant_max_absolute": 2.3314683517128287e-15,
+      "independently_checked_convergence_max_absolute": 7.377765065541553e-12,
+      "raw_error_table_max_absolute_discrepancy": 2.842170943040401e-14,
+      "sample_count": 6870,
+      "event_count": 0
+    }
+  },
+  "scientific_screen_status": "LOCAL_CANDIDATE_FAILED_REGISTERED_SCREEN",
+  "numerical_PASS_does_not_grant_scientific_approval": true
+}

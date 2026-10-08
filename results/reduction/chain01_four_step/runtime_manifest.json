@@ -1,0 +1,14 @@
+{
+  "config_sha256": "ebae5ef57a51d65e94e08029a421ee9b783f9801f8fa2bbcfa6066a8e61a8ba2",
+  "source_manifest_sha256": "dd35f694dd9e88bccff73d0144efc2be66a495fed246f82bc02cfe664995b073",
+  "runner_sha256": "9d983544352fe03f320f8d03bc0449f7a3fa6ed00d3681adc49be09686f5f2f1",
+  "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "matplotlib": "3.8.4",
+  "candidate_label": "MEAN_DWELL_MATCHED_CANDIDATE",
+  "formal_run_started_after_config_hash_check": true,
+  "figure_runner_sha256": "60e830c2a6e53df4117fa5ac1a48fd571c4e5650acbde3f658848c065ab596b7",
+  "figure_regeneration_scope": "Presentation only: independent visible-y autoscale and C first registered input-switch band; numerical rows, errors, windows and gates unchanged"
+}

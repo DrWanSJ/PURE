@@ -1,0 +1,93 @@
+{
+  "protocol_id": "CHAIN01_FOUR_STEP_V1",
+  "frozen_utc": "2026-10-08T09:45:45.851502+00:00",
+  "frozen_before_first_numerical_run": true,
+  "config_path": "configs/reduction/chain01_four_step_validation.json",
+  "config_sha256": "ebae5ef57a51d65e94e08029a421ee9b783f9801f8fa2bbcfa6066a8e61a8ba2",
+  "source_manifest_sha256": "dd35f694dd9e88bccff73d0144efc2be66a495fed246f82bc02cfe664995b073",
+  "audit_script_sha256": "f2646003c3eb3d2fb30db8c0e7b8e178ffd48992d84f1dea8b18723ce6274ced",
+  "protected_snapshot_sha256": "a5a546b59b9fcd90b5ecb9668f425ddcbff75e0088adfa715e859dfac0782c9a",
+  "source_files": [
+    {
+      "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "bytes": 1732620,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "0ee288d479c5fea76224a2f3f773c29599f20419"
+    },
+    {
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+      "bytes": 19566,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "740ef2db9d9b406e57cf90657ea56f935244db1d"
+    },
+    {
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "sha256": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",
+      "bytes": 6394,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "227e47848b45f5ea288ee89b99766cd6db233085"
+    },
+    {
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_reactions.csv",
+      "sha256": "845aef2d0b9a46d8e1a2d2eb3b5acb3501bcf69b72229ad02a97b73a9363a929",
+      "bytes": 141624,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "f25f17f307a11c838bd6fe20f4426e7f221f2fb9"
+    },
+    {
+      "path": "results/topology_audit/reactions_table.csv",
+      "sha256": "8b686624e26c39e26b38c262dea65b76b172b8ddbf328d4779eb34536f96ed9c",
+      "bytes": 412503,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "519d82028624800303b5751a1782cddc4d94162e"
+    },
+    {
+      "path": "results/topology_audit/case_study.json",
+      "sha256": "e7e1f838bcfd41d6ec11b1a70623a3f2070ab00160b57212342f711405c0e7ad",
+      "bytes": 3108,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "22e0a50045c7f17fc245d86e447fa6f45e447916"
+    },
+    {
+      "path": "docs/reduction/one_chain_reduction_case_study.md",
+      "sha256": "d5312dc645a798d925e160a30bc26a4db09f4d30d220b452fc75521567c019e3",
+      "bytes": 16945,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "d99121b1079be1066e3014621b826a97fcfe7d63"
+    },
+    {
+      "path": "docs/reduction/topology_first_audit.md",
+      "sha256": "65cfc5e6af134b402c47c7f2ac2cd9e9b8ca3c7338d874ffd56ce61fc7e6360f",
+      "bytes": 4191,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "5bc17733fe99682f0c5e43dc4b98bb356fd5822b"
+    },
+    {
+      "path": "docs/reduction/reaction_inventory_and_effective_rate_review.md",
+      "sha256": "1263bd0fea53415aebaf6ee2bfe8e302a9d8d7daa504c4e6c67f97ff5cbac782",
+      "bytes": 172794,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "b51fddc8e71e0206915f44a04fe7f89cdfdf46ac"
+    },
+    {
+      "path": "docs/reduction/qssa_repositioning_note.md",
+      "sha256": "81d5ebe1e30b3bc5980d91f3a8d8e6a9a4bbb923e0eb34e25b0f9bef739685c3",
+      "bytes": 14972,
+      "provenance": "EXTRACTED",
+      "freshness": "CURRENT_WORKTREE_BYTES_AT_AUDIT",
+      "git_blob_id": "481ede9867a2e487eda075d79ebeee447efd472a"
+    }
+  ],
+  "rule": "Any protocol revision requires a new config version and separate freeze; never overwrite this lock."
+}

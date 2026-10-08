@@ -1,0 +1,57 @@
+{
+  "protocol_id": "CHAIN01_FOUR_STEP_V1",
+  "candidate_label": "MEAN_DWELL_MATCHED_CANDIDATE",
+  "scope": "LOCAL_BOUNDARY_TEST_AUTHOR_FIXED_PARAMETERS_NO_S4_CONSUMPTION",
+  "time_unit": "source model time unit; no seconds conversion",
+  "parameter_source": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+  "parameters": {"k14": 260.0, "k16": 1000.0, "k17": 7.0, "k18": 1000.0},
+  "effective_rate_rule": "1 / sum(1 / author_rates); no fitting",
+  "solver": {
+    "method": "Radau", "rtol": 1e-10, "atol": 1e-12,
+    "convergence_method": "Radau", "convergence_rtol": 1e-12, "convergence_atol": 1e-14,
+    "benchmark": "independent augmented matrix exponential",
+    "moment_quadrature_epsabs": 1e-12, "moment_quadrature_epsrel": 1e-12
+  },
+  "tests": {
+    "A": {"label": "Initial pulse", "initial_full": [1,0,0,0,0], "initial_reduced": [1,0], "input_segments": [], "domain_status": "IN_DOMAIN", "amount_scale": 1.0, "current_scale_rule": "1/tau"},
+    "B": {"label": "Constant input", "initial_full": [0,0,0,0,0], "initial_reduced": [0,0], "input_segments": [{"start_tau": 0.0,"end_tau": 10.0,"amplitude": 1.0}], "domain_status": "IN_DOMAIN", "amount_scale_rule": "tau", "current_scale": 1.0},
+    "C": {"label": "Two rectangular inputs", "initial_full": [0,0,0,0,0], "initial_reduced": [0,0], "input_segments": [{"start_tau": 0.5,"end_tau": 1.0,"amplitude": 1.0},{"start_tau": 3.0,"end_tau": 3.5,"amplitude": 1.0}], "domain_status": "IN_DOMAIN", "amount_scale_rule": "tau", "current_scale": 1.0},
+    "D": {"label": "Nonzero internal inventory negative control", "initial_full": [0,0.25,0.5,0.25,0], "initial_reduced": [1,0], "input_segments": [], "domain_status": "OUT_OF_DOMAIN_NEGATIVE_CONTROL", "mapping": "y0=sum(x0:x3), y4=x4; restart waiting reservoir; stage composition and remaining waits not preserved", "amount_scale": 1.0, "current_scale_rule": "1/tau"}
+  },
+  "sampling": {
+    "end_tau": 10.0,
+    "intervals": [{"start_tau": 0.0,"end_tau": 10.0,"count": 4001},{"start_tau": 0.0,"end_tau": 0.25,"count": 1001},{"start_tau": 0.5,"end_tau": 0.75,"count": 501},{"start_tau": 1.0,"end_tau": 1.25,"count": 501},{"start_tau": 3.0,"end_tau": 3.25,"count": 501},{"start_tau": 3.5,"end_tau": 3.75,"count": 501}],
+    "extra_times_tau": [0.0,0.25,0.5,0.75,1.0,1.25,3.0,3.25,3.5,3.75,5.0,10.0],
+    "event_flux_convention": "right limit in trajectories; save both limits in event table; state and extent continuous",
+    "maxima_scope": "fixed sampled grid; no claim of continuum supremum"
+  },
+  "windows": {
+    "initial_layer_end_tau": 0.25,
+    "input_switch_duration_tau": 0.25,
+    "post_transient_start_tau": 0.25,
+    "initial_transient_rule": "union of [0,0.25tau] and [event,event+0.25tau] intersect [0,10tau]",
+    "post_transient_rule": "complement of initial/switch union, strictly after included boundary",
+    "late_window_start_tau": 5.0,
+    "late_window_label": "LATE_FIXED_DIAGNOSTIC_WINDOW; supplementary; never substitutes required screen"
+  },
+  "error_policy": {
+    "signed": "candidate minus full",
+    "normalized": "absolute error / predeclared test amount or current scale",
+    "relative": "absolute error / absolute full reference only where reference != 0; undefined otherwise; no denominator clipping",
+    "near_zero_warning": "relative errors at tiny nonzero references retained with raw reference and never used as acceptance gate",
+    "rms": "time-weighted RMS with trapezoid quadrature per contiguous window component"
+  },
+  "gates": {
+    "numerical": {"inventory_absolute": 1e-8,"ledger_absolute": 1e-8,"matrix_exponential_absolute": 1e-8,"convergence_absolute": 5e-9,"negative_state_absolute": 1e-12,"mean_dwell_relative": 1e-8},
+    "product_output": {"trajectory": 0.01,"flux": 0.05},
+    "resource_current": {"pi": 0.05,"eftu_gdp": 0.05},
+    "resource_extent": {"pi": 0.01,"eftu_gdp": 0.01},
+    "occupancy": {"uncompleted": 0.05},
+    "domain": {"zero_initial_internal_required": true,"author_internal_side_paths_zero_required": true,"exogenous_nonnegative_input_required": true,"no_downstream_S4_consumption_required": true,"boundary_intervention_required": "replace surrounding S0 reactions by prescribed u and omit active S0 undocking re0000000021 (author k=0.23); omit S4 surrounding reactions; local boundary experiment only, no source edits"},
+    "screen_rule": "all classes must pass ENTIRE_WINDOW for each in-domain A/B/C; D remains out of domain even if metrics pass; post and late support reported separately",
+    "interpretation": "prospective exploratory screening budgets, not human scientific approval"
+  },
+  "threshold_rationale": {"amount": "1% of an initial cohort or of one mean-dwell input amount is an exploratory cumulative-output/resource budget", "current": "5% of cohort/tau or unit input is an exploratory current-resolution budget", "occupancy": "5% of the same amount scale bounds unfinished inventory discrepancy; hidden microstate inventory is separately descriptive", "numerical": "numerical residual budgets are orders below approximation budgets and do not certify kinetics", "transient": "0.25tau is a declared early/switch observation band, not a fitted equilibration time; slow relaxation may remain in post window", "late": "fixed [5tau,10tau] tests late pulse completion and sustained input; chosen before trajectories"},
+  "sensitivity": {"threshold_factors": [0.5,1.0,2.0],"rule": "multiply kinetic thresholds only; do not move windows/scales or change numerical/domain gates"},
+  "prohibited": ["parameter fitting","threshold/window retuning","canonical edits","historical evidence edits","E_mid simulation in this task","full 968-reaction experiment","automatic scientific promotion"]
+}

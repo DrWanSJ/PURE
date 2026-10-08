@@ -1,0 +1,2 @@
+{"attempt": 1, "event": "STARTED", "utc": "2026-10-08T09:49:30.203105+00:00", "runner_sha256": "b83cc9faa840e5b0a962503cec165e2a20ba526e3a6c2c2ca1ebf448f8d84e34", "config_sha256": "ebae5ef57a51d65e94e08029a421ee9b783f9801f8fa2bbcfa6066a8e61a8ba2", "freeze_sha256": "bbaa4709cba5347bc581c98ca7177d27aa76c9c1f949514f427b31c916655db7"}
+{"attempt": 1, "event": "COMPLETED", "utc": "2026-10-08T09:49:49.285863+00:00", "runner_sha256": "b83cc9faa840e5b0a962503cec165e2a20ba526e3a6c2c2ca1ebf448f8d84e34", "status": "LOCAL_CANDIDATE_FAILED_REGISTERED_SCREEN", "numerical_status": "PASS"}
