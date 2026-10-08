@@ -1,41 +1,24 @@
-# =====================================================================
-# DRAFT WORKFLOW — NOT VERIFIED (do not trust until human-validated)
-#
-# docs/audit/audit_status.md records CI = not_verified. This file has never run:
-# MATLAB on GitHub-hosted runners requires a MATLAB license/setup
-# (e.g. matlab-actions/setup-matlab + license, or MATLAB Batch for public
-# repos). A human must confirm licensing/runner availability, then remove
-# this banner and rename the workflow before relying on it.
-# Manual local equivalent (verified path):
-#   matlab -batch "addpath('scripts'); run_all_tests"
-# =====================================================================
-name: "[draft, not verified] PURE B1 tests"
-
+name: PNAS2017 evidence integrity
 on:
   push:
     branches: ["**"]
   workflow_dispatch:
-
 jobs:
-  matlab-tests:
+  pnas-integrity:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up MATLAB (placeholder — requires license/runner decision)
-        uses: matlab-actions/setup-matlab@v2
+      - uses: actions/checkout@v4
         with:
-          release: R2025b
-
-      - name: Run all tests (unit + smoke + preflight)
-        uses: matlab-actions/run-command@v2
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
         with:
-          command: addpath('scripts'); run_all_tests
-
-      - name: Upload test logs
-        uses: actions/upload-artifact@v4
+          python-version: "3.12"
+      - name: Install existing evidence verifier dependencies
+        run: python -m pip install numpy==1.26.4 scipy==1.13.1 sympy==1.13.1
+      - name: Verify current PNAS authority and preserved evidence
+        run: python -B scripts/run_pnas2017_preflight.py --report-dir "${{ runner.temp }}/pnas-preflight"
+      - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: b1-test-logs
-          path: logs/
-          if-no-files-found: error
+          name: pnas-integrity-reports
+          path: ${{ runner.temp }}/pnas-preflight/
