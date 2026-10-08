@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>topology first branch cycle interfaces</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>topology first branch cycle interfaces</dc:title>
+    <dc:description>Topology-first structural audit; HUMAN_REVIEW_REQUIRED</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.8.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #f7f9fc"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 55.44 357.84 
+L 686.16 357.84 
+Q 694.8 357.84 694.8 349.2 
+L 694.8 133.2 
+Q 694.8 124.56 686.16 124.56 
+L 55.44 124.56 
+Q 46.8 124.56 46.8 133.2 
+L 46.8 349.2 
+Q 46.8 357.84 55.44 357.84 
+z
+" clip-path="url(#p5a1a77fa86)" style="fill: #ffffff; stroke: #d7e1ec; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 99.36 235.8 
+L 188.64 235.8 
+Q 195.12 235.8 195.12 229.32 
+L 195.12 195.48 
+Q 195.12 189 188.64 189 
+L 99.36 189 
+Q 92.88 189 92.88 195.48 
+L 92.88 229.32 
+Q 92.88 235.8 99.36 235.8 
+z
+" clip-path="url(#p5a1a77fa86)" style="fill: #e5f4f1; stroke: #008d8b; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 344.88 235.8 
+L 411.12 235.8 
+Q 417.6 235.8 417.6 229.32 
+L 417.6 195.48 
+Q 417.6 189 411.12 189 
+L 344.88 189 
+Q 338.4 189 338.4 195.48 
+L 338.4 229.32 
+Q 338.4 235.8 344.88 235.8 
+z
+" clip-path="url(#p5a1a77fa86)" style="fill: #fff1de; stroke: #c07a21; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 581.04 235.8 
+L 647.28 235.8 
+Q 653.76 235.8 653.76 229.32 
+L 653.76 195.48 
+Q 653.76 189 647.28 189 
+L 581.04 189 
+Q 574.56 189 574.56 195.48 
+L 574.56 229.32 
+Q 574.56 235.8 581.04 235.8 
+z
+" clip-path="url(#p5a1a77fa86)" style="fill: #eaf1f9; stroke: #336ba5; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 197.844148 212.4 
+Q 266.761357 212.4 333.666104 212.4 
+" clip-path="url(#p5a1a77fa86)" style="fill: none; stroke: #008d8b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 328.066104 209.6 
+L 333.666104 212.4 
+L 328.066104 215.2 
+z
+" clip-path="url(#p5a1a77fa86)" style="fill: #008d8b; stroke: #008d8b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 420.318105 212.4 
+Q 496.07878 212.4 569.826994 212.4 
+" clip-path="url(#p5a1a77fa86)" style="fill: none; stroke: #336ba5; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 564.226994 209.6 
+L 569.826994 212.4 
+L 564.226994 215.2 
+z
+" clip-path="url(#p5a1a77fa86)" style="fill: #336ba5; stroke: #336ba5; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 357.068156 236.771576 
+Q 268.199312 315.433033 181.004828 238.252425 
+" clip-path="url(#p5a1a77fa86)" style="fill: none; stroke: #c07a21; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 183.342245 244.060737 
+L 181.004828 238.252425 
+L 187.053927 239.867478 
+z
+" clip-path="url(#p5a1a77fa86)" style="fill: #c07a21; stroke: #c07a21; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 55.44 567.36 
+L 686.16 567.36 
+Q 694.8 567.36 694.8 558.72 
+L 694.8 387.36 
+Q 694.8 378.72 686.16 378.72 
+L 55.44 378.72 
+Q 46.8 378.72 46.8 387.36 
+L 46.8 558.72 
+Q 46.8 567.36 55.44 567.36 
+z
+" clip-path="url(#p5a1a77fa86)" style="fill: #ffffff; stroke: #d7e1ec; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 728.64 302.4 
+L 1096.56 302.4 
+Q 1105.2 302.4 1105.2 293.76 
+L 1105.2 133.2 
+Q 1105.2 124.56 1096.56 124.56 
+L 728.64 124.56 
+Q 720 124.56 720 133.2 
+L 720 293.76 
+Q 720 302.4 728.64 302.4 
+z
+" clip-path="url(#p5a1a77fa86)" style="fill: #ffffff; stroke: #d7e1ec; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 758.52 220.68 
+L 819.72 220.68 
+Q 826.2 220.68 826.2 214.2 
+L 826.2 187.56 
+Q 826.2 181.08 819.72 181.08 
+L 758.52 181.08 
+Q 752.04 181.08 752.04 187.56 
+L 752.04 214.2 
+Q 752.04 220.68 758.52 220.68 
+z
+" clip-path="url(#p5a1a77fa86)" style="fill: #e5f4f1; stroke: #008d8b; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 881.64 220.68 
+L 942.84 220.68 
+Q 949.32 220.68 949.32 214.2 
+L 949.32 187.56 
+Q 949.32 181.08 942.84 181.08 
+L 881.64 181.08 
+Q 875.16 181.08 875.16 187.56 
+L 875.16 214.2 
+Q 875.16 220.68 881.64 220.68 
+z
+" clip-path="url(#p5a1a77fa86)" style="fill: #e5f4f1; stroke: #008d8b; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 1006.2 220.68 
+L 1067.4 220.68 
+Q 1073.88 220.68 1073.88 214.2 
+L 1073.88 187.56 
+Q 1073.88 181.08 1067.4 181.08 
+L 1006.2 181.08 
+Q 999.72 181.08 999.72 187.56 
+L 999.72 214.2 
+Q 999.72 220.68 1006.2 220.68 
+z
+" clip-path="url(#p5a1a77fa86)" style="fill: #e5f4f1; stroke: #008d8b; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 728.64 567.36 
+L 1096.56 567.36 
+Q 1105.2 567.36 1105.2 558.72 
+L 1105.2 331.92 
+Q 1105.2 323.28 1096.56 323.28 
+L 728.64 323.28 
+Q 720 323.28 720 331.92 
+L 720 558.72 
+Q 720 567.36 728.64 567.36 
+z
+" clip-path="url(#p5a1a77fa86)" style="fill: #ffffff; stroke: #d7e1ec; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 46.8 99.36 
+L 1105.2 99.36 
+" clip-path="url(#p5a1a77fa86)" style="fill: none; stroke: #d7e1ec; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 46.8 600.48 
+L 1105.2 600.48 
+" clip-path="url(#p5a1a77fa86)" style="fill: none; stroke: #d7e1ec; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #162c47; font: 700 27px 'DejaVu Sans'; text-anchor: start" x="46.8" y="44.890312" transform="rotate(-0 46.8 44.890312)">Branches, returns and open subnetworks matter</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #56677d; font: 13.5px 'DejaVu Sans'; text-anchor: start" x="46.8" y="77.165156" transform="rotate(-0 46.8 77.165156)">Actual first-Gly docking branch, an exact reverse pair, and measured shared-resource interfaces</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #56677d; font: 700 10.8px 'DejaVu Sans'; text-anchor: start" x="70.56" y="149.140125" transform="rotate(-0 70.56 149.140125)">AUTHOR-NONZERO BRANCH + BINDING / UNBINDING RETURN</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #162c47; font: 18px 'DejaVu Sans'; text-anchor: middle" x="144" y="217.366875" transform="rotate(-0 144 217.366875)">A + T</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #162c47; font: 20px 'DejaVu Sans'; text-anchor: middle" x="378" y="217.91875" transform="rotate(-0 378 217.91875)">D</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #162c47; font: 20px 'DejaVu Sans'; text-anchor: middle" x="614.16" y="217.91875" transform="rotate(-0 614.16 217.91875)">H</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #162c47; font: 11.3px 'DejaVu Sans Mono'; text-anchor: middle" x="266.4" y="188.188109" transform="rotate(-0 266.4 188.188109)">re0000000013</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #162c47; font: 11.3px 'DejaVu Sans Mono'; text-anchor: middle" x="496.08" y="188.188109" transform="rotate(-0 496.08 188.188109)">re0000000014</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #336ba5; font: 11.2px 'DejaVu Sans'; text-anchor: middle" x="496.08" y="241.4105" transform="rotate(-0 496.08 241.4105)">bound GTP → GDP + PO4</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #c07a21; font: 11.3px 'DejaVu Sans Mono'; text-anchor: middle" x="266.4" y="294.748109" transform="rotate(-0 266.4 294.748109)">re0000000021</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #c07a21; font: 10.8px 'DejaVu Sans'; text-anchor: middle" x="266.4" y="316.180125" transform="rotate(-0 266.4 316.180125)">exact reverse of docking</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #56677d; font: 10.1px 'DejaVu Sans'; text-anchor: start" x="70.56" y="337.586969" transform="rotate(-0 70.56 337.586969)">13 + 21 has zero net ledger.  Two author-nonzero exits from D; no flux split or equilibrium is inferred.</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: #56677d; font: 700 10.5px 'DejaVu Sans'; text-anchor: start" x="70.56" y="403.217344" transform="rotate(-0 70.56 403.217344)">EXACT SPECIES ALIAS KEY</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #162c47; font: 10.1px 'DejaVu Sans Mono'; text-anchor: start" x="72" y="428.193344" transform="rotate(-0 72 428.193344)">A  elRS70SAGGU0002_fMet</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #162c47; font: 10.1px 'DejaVu Sans Mono'; text-anchor: start" x="72" y="447.633344" transform="rotate(-0 72 447.633344)">T  EFTu_GTP_GlytRNAGlyGCC</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #162c47; font: 10.1px 'DejaVu Sans Mono'; text-anchor: start" x="72" y="467.073344" transform="rotate(-0 72 467.073344)">D  elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: #162c47; font: 10.1px 'DejaVu Sans Mono'; text-anchor: start" x="72" y="486.513344" transform="rotate(-0 72 486.513344)">H  elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: #162c47; font: 11px 'DejaVu Sans'; text-anchor: start" x="72" y="511.355312" transform="rotate(-0 72 511.355312)">Author coefficients for reactions 13, 14, 21:  140, 260, 0.23  (all positive)</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: #56677d; font: 10.1px 'DejaVu Sans'; text-anchor: start" x="72" y="542.066969" transform="rotate(-0 72 542.066969)">Positive support does not certify instantaneous flux.  H retains bound PO4 until the later release step.</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: #008d8b; font: 700 10.6px 'DejaVu Sans'; text-anchor: start" x="743.04" y="149.084938" transform="rotate(-0 743.04 149.084938)">SHARED HUBS REQUIRE RESOURCE LEDGERS</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: #162c47; font: 700 14px 'DejaVu Sans'; text-anchor: middle" x="789.12" y="204.743125" transform="rotate(-0 789.12 204.743125)">ATP</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: #56677d; font: 10.4px 'DejaVu Sans'; text-anchor: middle" x="789.12" y="243.34975" transform="rotate(-0 789.12 243.34975)">46 reactions</text>
+   </g>
+   <g id="text_23">
+    <text style="fill: #162c47; font: 700 14px 'DejaVu Sans'; text-anchor: middle" x="912.24" y="204.743125" transform="rotate(-0 912.24 204.743125)">GTP</text>
+   </g>
+   <g id="text_24">
+    <text style="fill: #56677d; font: 10.4px 'DejaVu Sans'; text-anchor: middle" x="912.24" y="243.34975" transform="rotate(-0 912.24 243.34975)">127 reactions</text>
+   </g>
+   <g id="text_25">
+    <text style="fill: #162c47; font: 700 14px 'DejaVu Sans'; text-anchor: middle" x="1036.8" y="204.743125" transform="rotate(-0 1036.8 204.743125)">PO4</text>
+   </g>
+   <g id="text_26">
+    <text style="fill: #56677d; font: 10.4px 'DejaVu Sans'; text-anchor: middle" x="1036.8" y="243.34975" transform="rotate(-0 1036.8 243.34975)">67 reactions</text>
+   </g>
+   <g id="text_27">
+    <text style="fill: #56677d; font: 10.5px 'DejaVu Sans'" transform="translate(743.04 272.78044)">Full-graph incidences; shared across source modules.</text>
+    <text style="fill: #56677d; font: 10.5px 'DejaVu Sans'" transform="translate(743.04 285.974248)">Topology does not establish eliminability or fastness.</text>
+   </g>
+   <g id="text_28">
+    <text style="fill: #336ba5; font: 700 10.6px 'DejaVu Sans'; text-anchor: start" x="743.04" y="349.964938" transform="rotate(-0 743.04 349.964938)">LOCALIZED OPEN ENERGY MODULES</text>
+   </g>
+   <g id="text_29">
+    <text style="fill: #56677d; font: 10.3px 'DejaVu Sans'; text-anchor: start" x="743.04" y="374.362156" transform="rotate(-0 743.04 374.362156)">Full context view after declared hub suppression</text>
+   </g>
+   <g id="text_30">
+    <text style="fill: #162c47; font: 700 11.3px 'DejaVu Sans'; text-anchor: start" x="743.04" y="407.669813" transform="rotate(-0 743.04 407.669813)">Energy A  /  25 r</text>
+   </g>
+   <g id="text_31">
+    <text style="fill: #336ba5; font: 10.8px 'DejaVu Sans'; text-anchor: start" x="892.8" y="407.620125" transform="rotate(-0 892.8 407.620125)">ADP · ATP</text>
+   </g>
+   <g id="text_32">
+    <text style="fill: #162c47; font: 700 11.3px 'DejaVu Sans'; text-anchor: start" x="743.04" y="435.749813" transform="rotate(-0 743.04 435.749813)">Energy B  /  25 r</text>
+   </g>
+   <g id="text_33">
+    <text style="fill: #336ba5; font: 10.8px 'DejaVu Sans'; text-anchor: start" x="892.8" y="435.700125" transform="rotate(-0 892.8 435.700125)">ADP · ATP · GDP · GTP</text>
+   </g>
+   <g id="text_34">
+    <text style="fill: #162c47; font: 700 11.3px 'DejaVu Sans'; text-anchor: start" x="743.04" y="463.829813" transform="rotate(-0 743.04 463.829813)">Energy C  /  25 r</text>
+   </g>
+   <g id="text_35">
+    <text style="fill: #336ba5; font: 10.8px 'DejaVu Sans'; text-anchor: start" x="892.8" y="463.780125" transform="rotate(-0 892.8 463.780125)">ADP · AMP · ATP</text>
+   </g>
+   <g id="text_36">
+    <text style="fill: #162c47; font: 700 11.3px 'DejaVu Sans'; text-anchor: start" x="743.04" y="491.909812" transform="rotate(-0 743.04 491.909812)">Energy D  /  12 r</text>
+   </g>
+   <g id="text_37">
+    <text style="fill: #336ba5; font: 10.8px 'DejaVu Sans'; text-anchor: start" x="892.8" y="491.860125" transform="rotate(-0 892.8 491.860125)">PO4 · PPi</text>
+   </g>
+   <g id="text_38">
+    <text style="fill: #56677d; font: 9.7px 'DejaVu Sans'" transform="translate(743.04 525.782311)">Interfaces restored above; zero nonhub interfaces in this view.</text>
+    <text style="fill: #56677d; font: 9.7px 'DejaVu Sans'" transform="translate(743.04 537.970876)">Localized topology does not imply dynamical independence.</text>
+   </g>
+   <g id="text_39">
+    <text style="fill: #56677d; font: 11.5px 'DejaVu Sans'; text-anchor: start" x="46.8" y="588.533281" transform="rotate(-0 46.8 588.533281)">Preserve branch competition and shared-resource coupling when designing a structural or local-QSSA closure.</text>
+   </g>
+   <g id="text_40">
+    <text style="fill: #56677d; font: 9px 'DejaVu Sans'; text-anchor: start" x="46.8" y="624.438281" transform="rotate(-0 46.8 624.438281)">Reaction and interface records read from results/topology_audit; supplementary topology view</text>
+   </g>
+   <g id="text_41">
+    <text style="fill: #c07a21; font: 700 9px 'DejaVu Sans'; text-anchor: end" x="1105.2" y="624.457969" transform="rotate(-0 1105.2 624.457969)">FIGURE 5  |  HUMAN_REVIEW_REQUIRED</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5a1a77fa86">
+   <rect x="0" y="0" width="1152" height="648"/>
+  </clipPath>
+ </defs>
+</svg>

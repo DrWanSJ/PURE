@@ -237,7 +237,7 @@
     "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
     "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
     "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
-    "scripts/analyze_pnas2017_topology.py": "aca101fadb6ab6c4645f3d4e9d3a08b157d5aebe52783116afefb2306e52c4db"
+    "scripts/analyze_pnas2017_topology.py": "a1fce56e26121f81787f725ce4d745aea0b37cb82e06755f08306b8392d623aa"
   },
   "author_csv_members": {
     "Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec",

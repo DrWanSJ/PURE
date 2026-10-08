@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "scope": "BYTE_STOICHIOMETRY_GRAPH_AND_AGGREGATE_IDENTITIES_ONLY_NOT_SCIENTIFIC_VALIDATION",
+  "generated_at_utc": "2026-10-08T07:39:38.109219+00:00",
+  "checks": [
+    {
+      "check": "fresh_source:models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "status": "PASS"
+    },
+    {
+      "check": "fresh_source:references/PNAS2017_Matsuura/raw/SBML_files.zip",
+      "status": "PASS"
+    },
+    {
+      "check": "fresh_source:references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "status": "PASS"
+    },
+    {
+      "check": "fresh_source:docs/reduction/reaction_level_annotation_v2.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "fresh_source:scripts/analyze_pnas2017_topology.py",
+      "status": "PASS"
+    },
+    {
+      "check": "fresh_archive_member:Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "fresh_archive_member:Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "inventory_ids",
+      "status": "PASS"
+    },
+    {
+      "check": "inventory_roles",
+      "status": "PASS"
+    },
+    {
+      "check": "stoichiometric_matrix_dimensions",
+      "status": "PASS"
+    },
+    {
+      "check": "all_source_stoichiometric_coefficients",
+      "status": "PASS"
+    },
+    {
+      "check": "nonunit_PO4_not_lost",
+      "status": "PASS"
+    },
+    {
+      "check": "role_preserving_bipartite_graph",
+      "status": "PASS"
+    },
+    {
+      "check": "complete_species_projection_with_evidence",
+      "status": "PASS"
+    },
+    {
+      "check": "complete_reaction_projection_with_evidence",
+      "status": "PASS"
+    },
+    {
+      "check": "reverse_pairs_stoichiometric_swap",
+      "status": "PASS"
+    },
+    {
+      "check": "full_serial_path_one_producer_one_consumer",
+      "status": "PASS"
+    },
+    {
+      "check": "author_serial_path_one_producer_one_consumer",
+      "status": "PASS"
+    },
+    {
+      "check": "real_case_net_ledger",
+      "status": "PASS"
+    },
+    {
+      "check": "case_internal_active_side_branches",
+      "status": "PASS"
+    },
+    {
+      "check": "case_full_side_branches_recorded",
+      "status": "PASS"
+    },
+    {
+      "check": "E_mid_exact_row_sum",
+      "status": "PASS"
+    },
+    {
+      "check": "PO4_release_is_admission_not_completion",
+      "status": "PASS"
+    },
+    {
+      "check": "EF_Tu_release_is_internal_stage",
+      "status": "PASS"
+    },
+    {
+      "check": "same_E_distinct_outputs_counterexample",
+      "status": "PASS"
+    },
+    {
+      "check": "all_candidates_pending",
+      "status": "PASS"
+    },
+    {
+      "check": "five_programmatic_figures_three_formats",
+      "status": "PASS"
+    },
+    {
+      "check": "meeting_raster_dimensions",
+      "status": "PASS"
+    },
+    {
+      "check": "vector_PDF_headers",
+      "status": "PASS"
+    },
+    {
+      "check": "five_figure_sources",
+      "status": "PASS"
+    },
+    {
+      "check": "prior_tracked_artifacts_unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "checkout_policy_is_additive",
+      "status": "PASS"
+    },
+    {
+      "check": "existing_QSSA_integration_note",
+      "status": "PASS"
+    },
+    {
+      "check": "QSSA_14_source_hashes_bound",
+      "status": "PASS"
+    }
+  ],
+  "HUMAN_REVIEW_REQUIRED": true
+}

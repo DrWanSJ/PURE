@@ -24,4 +24,4 @@
 - [Figure 4 — real motif](../../results/figures/topology_first_case_study.png)
 - [Figure 5 — real branch, return cycle and interfaces](../../results/figures/topology_first_branch_cycle_interfaces.png)
 
-图的 SVG/PDF 与可重现脚本一并提供。运行分析、四个绘图脚本，再运行 `scripts/verify_pnas2017_topology.py`。验证针对源哈希、图表和代数一致性，**不是 reduced-model scientific validation**。
+图的 SVG/PDF 与可重现脚本一并提供。运行分析、五个绘图脚本，再运行 `scripts/verify_pnas2017_topology.py`。验证针对源哈希、图表和代数一致性，**不是 reduced-model scientific validation**。

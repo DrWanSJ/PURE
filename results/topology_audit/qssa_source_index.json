@@ -1,0 +1,118 @@
+{
+  "status": "DERIVED_NAVIGATION_NOT_SOURCE_AUTHORITY",
+  "sources": [
+    {
+      "title": "R1 acceptance",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\pnas-topology-first\\GUV\\docs\\reduction\\r1_acceptance_v4r3.md",
+      "expected_sha256": "9a7e250f9eb0c167a4a6bf6bcb76cc2a52a288a211c571ccd4def81beacf1d32",
+      "actual_sha256": "9a7e250f9eb0c167a4a6bf6bcb76cc2a52a288a211c571ccd4def81beacf1d32",
+      "scope": "CURRENT_TASK_PARENT",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    },
+    {
+      "title": "R2 frozen-domain certificate",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\pnas-topology-first\\GUV\\docs\\reduction\\r2_frozen_reference_domain_v1.md",
+      "expected_sha256": "9658f8558a5c90abedeb317da6d3db42ff16ecf33957d389fd3a495951d1c46d",
+      "actual_sha256": "9658f8558a5c90abedeb317da6d3db42ff16ecf33957d389fd3a495951d1c46d",
+      "scope": "CURRENT_TASK_PARENT",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    },
+    {
+      "title": "R3 bounded certificate",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\pnas-topology-first\\GUV\\docs\\reduction\\r3_aminoacylation_qssa_certificate.md",
+      "expected_sha256": "0ab43ba7d9625e39d251514bd3b278ee3e16297ba1e351a98a77c41e1aaac994",
+      "actual_sha256": "0ab43ba7d9625e39d251514bd3b278ee3e16297ba1e351a98a77c41e1aaac994",
+      "scope": "CURRENT_TASK_PARENT",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    },
+    {
+      "title": "R3 raw aggregate",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\pnas-topology-first\\GUV\\results\\reduction\\r3_aminoacylation_qssa\\run_001\\summary.json",
+      "expected_sha256": "008296474c91bca70370f19ad07981f4ed899f2270f23b7154059077ee574c39",
+      "actual_sha256": "008296474c91bca70370f19ad07981f4ed899f2270f23b7154059077ee574c39",
+      "scope": "CURRENT_TASK_PARENT",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    },
+    {
+      "title": "R5-C R4 gate reconstruction",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\r7-ck-first-order\\GUV\\results\\reduction\\r5c_corrigendum\\r4_gate_summary.json",
+      "expected_sha256": "58f9baaab93148d7836fa6d04fb340027078d3c884edac2ac04858d4dde0ecf1",
+      "actual_sha256": "58f9baaab93148d7836fa6d04fb340027078d3c884edac2ac04858d4dde0ecf1",
+      "scope": "EXTERNAL_RESEARCH_WORKTREE",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    },
+    {
+      "title": "R5-C interpretation corrigendum",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\r5c-corrigendum\\GUV\\docs\\reduction\\r5c_qssa_interpretation_corrigendum.md",
+      "expected_sha256": "a6b21ac3ed11c00c1f90843fc8a32c55704bb3cc18b946d1daad482a28893f6b",
+      "actual_sha256": "a6b21ac3ed11c00c1f90843fc8a32c55704bb3cc18b946d1daad482a28893f6b",
+      "scope": "EXTERNAL_RESEARCH_WORKTREE",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    },
+    {
+      "title": "R5 mechanism summary",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\r7-ck-first-order\\GUV\\docs\\reduction\\r5_mechanism_first_summary.md",
+      "expected_sha256": "9a5418671cf72bd79fad209cc88ffbdd139ca2b22232e152237cb883e0868fe6",
+      "actual_sha256": "9a5418671cf72bd79fad209cc88ffbdd139ca2b22232e152237cb883e0868fe6",
+      "scope": "EXTERNAL_RESEARCH_WORKTREE",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    },
+    {
+      "title": "R5-C fast ledger semantics",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\r7-ck-first-order\\GUV\\docs\\reduction\\r5c_fast_ledger_semantics_v1.md",
+      "expected_sha256": "1f9f1238c4dfa7a606f32350ba9af69031569c69d52a7c2a96b79487ecff8d8f",
+      "actual_sha256": "1f9f1238c4dfa7a606f32350ba9af69031569c69d52a7c2a96b79487ecff8d8f",
+      "scope": "EXTERNAL_RESEARCH_WORKTREE",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    },
+    {
+      "title": "R6 formal campaign aggregate",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\r7-ck-first-order\\GUV\\results\\reduction\\r6_ck_validation\\formal_campaign_summary.json",
+      "expected_sha256": "74e856780502c91bf051ead8efb7b810bcab0dda345b539f37c2e45efe0b10e6",
+      "actual_sha256": "74e856780502c91bf051ead8efb7b810bcab0dda345b539f37c2e45efe0b10e6",
+      "scope": "EXTERNAL_RESEARCH_WORKTREE",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    },
+    {
+      "title": "R6 formal summary",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\r7-ck-first-order\\GUV\\docs\\reduction\\r6_ck_formal_validation_summary.md",
+      "expected_sha256": "ddd5f47cf9a1b1f72070442a3578412cdaad70e468928cae21fa4fe833b551da",
+      "actual_sha256": "ddd5f47cf9a1b1f72070442a3578412cdaad70e468928cae21fa4fe833b551da",
+      "scope": "EXTERNAL_RESEARCH_WORKTREE",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    },
+    {
+      "title": "R7 advancement decision",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\r7-ck-first-order\\GUV\\results\\reduction\\r7_ck_first_order\\advancement_decision.json",
+      "expected_sha256": "9863616c844df06e7591d152cfa9d40b586a745f1bc21185f0ed19854ecea399",
+      "actual_sha256": "9863616c844df06e7591d152cfa9d40b586a745f1bc21185f0ed19854ecea399",
+      "scope": "EXTERNAL_RESEARCH_WORKTREE",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    },
+    {
+      "title": "R7 first-order summary",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\r7-ck-first-order\\GUV\\docs\\reduction\\r7_ck_first_order_summary.md",
+      "expected_sha256": "22f9e384be1e83f764d2ff1b33372fcdbe530fb8c07c5aede3683547c2f4c33b",
+      "actual_sha256": "22f9e384be1e83f764d2ff1b33372fcdbe530fb8c07c5aede3683547c2f4c33b",
+      "scope": "EXTERNAL_RESEARCH_WORKTREE",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    },
+    {
+      "title": "R8 attribution decision",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\r7-ck-first-order\\GUV\\results\\reduction\\r8_ck_startup_layer\\decision.json",
+      "expected_sha256": "d622c7b6172f2f1d83dd0f632b3666911e407e72a438066db53e231efd08051f",
+      "actual_sha256": "d622c7b6172f2f1d83dd0f632b3666911e407e72a438066db53e231efd08051f",
+      "scope": "EXTERNAL_RESEARCH_WORKTREE",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    },
+    {
+      "title": "R8 attribution summary",
+      "source_path": "C:\\Users\\sean\\.codex\\worktrees\\r7-ck-first-order\\GUV\\docs\\reduction\\r8_ck_startup_layer_summary.md",
+      "expected_sha256": "ba58a3d7e5a7d7fc0544c6960d9aa5bb78ad6926704e90d5a0e85ac1d350e44b",
+      "actual_sha256": "ba58a3d7e5a7d7fc0544c6960d9aa5bb78ad6926704e90d5a0e85ac1d350e44b",
+      "scope": "EXTERNAL_RESEARCH_WORKTREE",
+      "evidence_status": "EXTRACTED_EXISTING_RESULT_NOT_RERUN"
+    }
+  ],
+  "freshness_rule": "External worktrees are mutable; recover pinned commits/hashes from the note on change."
+}
