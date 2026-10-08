@@ -10,7 +10,8 @@ The complete local preflight passed at committed revision `80b5cfa0a157978688d4a
 Its timestamp is `2026-10-08T02:05:44.275715+00:00`.
 The external `pnas2017-authority-migration-validation-03/preflight.json` records 21 successful commands, their exact arguments,
 native log hashes and verifier input hashes. Logs and pointwise reports remain outside Git; hosted CI saves the equivalent artifact.
-The later documentation closeout adds this report and expands the legacy navigation; it makes no implementation or scientific changes.
+The later closeout adds this report, expands the legacy navigation and declares native CRLF whitespace semantics for exact copies;
+it makes no implementation or scientific changes.
 
 ## Results
 
@@ -45,6 +46,10 @@ rewrote a historical detail record. The frozen report described 11 immutable rev
 in validation-01. Historical report bytes were restored. No expected hash or scientific status was relaxed.
 The current preflight redirects only the integration verifier's output destination, preserving every original check.
 Validation-02 and validation-03 passed without any historical report rewrites.
+
+A subsequent full-branch whitespace check initially flagged native CRLF in the new exact legacy copies.
+Those source bytes remain unchanged. The scoped whitespace attribute now recognizes carriage returns at end of line while
+continuing to check actual trailing spaces, trailing blank lines and spaces before tabs. The full-branch check then passed.
 
 ## Scientific boundaries
 
