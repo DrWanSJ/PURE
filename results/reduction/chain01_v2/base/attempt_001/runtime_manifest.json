@@ -1,0 +1,27 @@
+{
+  "phase": "base",
+  "attempt": 1,
+  "started_utc": "2026-10-08T12:14:21.534609+00:00",
+  "runner_sha256": "013ab8d60f9085ccb0ed15b3bb068d1a946c8ff373002d3c92647923dee90d78",
+  "config_sha256": "831c747c85b712de2bbb8360477f49cea4e15e6898d573205d3c7eb9c53d1960",
+  "prior_round_receipt": {
+    "round": "V2-R0",
+    "local_commit_sha": "1a97b7307367fe7e93468cea1a2c5349f8fb2811",
+    "verified_remote_head_sha": "1a97b7307367fe7e93468cea1a2c5349f8fb2811",
+    "push_result": "SUCCESS; origin branch HEAD verified directly after git push",
+    "verified_at_utc": "2026-10-08T11:21:29.024497+00:00",
+    "historical_integrity": {
+      "status": "PASS",
+      "protected_file_count": 1737,
+      "binding_count": 6
+    },
+    "receipt_scope": "Payload commit delivery; this receipt is included in the next commit to avoid a circular self hash."
+  },
+  "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "matplotlib": "3.8.4",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "no_clipping_or_projection": true,
+  "scope": "Local exogenous nonnegative input; isolate S4 downstream; fixed author internal side paths remain zero. Base suppresses re21; separate R2 restores exact source re21 products without rebinding."
+}

@@ -1,0 +1,1420 @@
+{
+  "status": "PASS",
+  "checks": {
+    "A_pulse": {
+      "Full": {
+        "primary_vs_expm": 9.935385847370526e-12,
+        "tight_vs_expm": 9.847678228425139e-14,
+        "primary_vs_tight": 9.956147017931016e-12,
+        "current_vs_expm": 4.5885144572821446e-09,
+        "ledger_max": 2.4424906541753444e-15,
+        "minimum_chemical_or_extent": -3.3070832359680265e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 10970,
+            "nlu": 120,
+            "internal_points": 1567,
+            "elapsed_seconds": 0.7488949000035063
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 34602,
+            "nlu": 136,
+            "internal_points": 4943,
+            "elapsed_seconds": 2.272852199996123
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0,
+        "grid_max_change": 0.0
+      },
+      "Direct": {
+        "primary_vs_expm": 7.606026919404485e-12,
+        "tight_vs_expm": 7.605027718682322e-14,
+        "primary_vs_tight": 7.60225216112076e-12,
+        "current_vs_expm": 5.114619838764156e-11,
+        "ledger_max": 1.1102230246251565e-15,
+        "minimum_chemical_or_extent": -7.432508683714529e-16,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 5399,
+            "nlu": 72,
+            "internal_points": 772,
+            "elapsed_seconds": 0.35452490000170656
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 17082,
+            "nlu": 84,
+            "internal_points": 2441,
+            "elapsed_seconds": 1.094438000000082
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.004296427507668454,
+        "grid_max_change": 6.467195865855757e-05
+      },
+      "Two-stage": {
+        "primary_vs_expm": 8.828215936063089e-12,
+        "tight_vs_expm": 9.037215420448774e-14,
+        "primary_vs_tight": 8.860134848021062e-12,
+        "current_vs_expm": 1.3975380852571107e-09,
+        "ledger_max": 1.6653345369377348e-15,
+        "minimum_chemical_or_extent": -1.6323888310840928e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 9745,
+            "nlu": 108,
+            "internal_points": 1392,
+            "elapsed_seconds": 0.6332639000029303
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 30892,
+            "nlu": 122,
+            "internal_points": 4413,
+            "elapsed_seconds": 2.0761943999968935
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0014273751551087833,
+        "grid_max_change": 2.4196238894134275e-05
+      },
+      "Three-stage": {
+        "primary_vs_expm": 1.0269451955480235e-11,
+        "tight_vs_expm": 1.0152989560197057e-13,
+        "primary_vs_tight": 1.0186962384750586e-11,
+        "current_vs_expm": 4.735511538456194e-09,
+        "ledger_max": 3.219646771412954e-15,
+        "minimum_chemical_or_extent": -2.7389825574086705e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 11229,
+            "nlu": 124,
+            "internal_points": 1604,
+            "elapsed_seconds": 0.7154395000034128
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 35470,
+            "nlu": 136,
+            "internal_points": 5067,
+            "elapsed_seconds": 2.2588877999951364
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 7.63814028296398e-05,
+        "grid_max_change": 1.2081594635907078e-06
+      }
+    },
+    "B_constant": {
+      "Full": {
+        "primary_vs_expm": 7.958078640513122e-12,
+        "tight_vs_expm": 7.73070496506989e-12,
+        "primary_vs_tight": 5.477063247383285e-12,
+        "current_vs_expm": 2.527112149510278e-10,
+        "ledger_max": 1.5916157281026244e-12,
+        "minimum_chemical_or_extent": -5.227176621807786e-14,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 4579,
+            "nlu": 108,
+            "internal_points": 654,
+            "elapsed_seconds": 0.3034149000013713
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 14344,
+            "nlu": 122,
+            "internal_points": 2049,
+            "elapsed_seconds": 0.9336887000026763
+          }
+        ],
+        "steady_inventory_fixed_scale_error": 0.0,
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0,
+        "grid_max_change": 0.0
+      },
+      "Direct": {
+        "primary_vs_expm": 3.921751812185903e-12,
+        "tight_vs_expm": 6.821210263296962e-13,
+        "primary_vs_tight": 3.943873005951559e-12,
+        "current_vs_expm": 2.637190466003858e-11,
+        "ledger_max": 1.5916157281026244e-12,
+        "minimum_chemical_or_extent": 0.0,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 3068,
+            "nlu": 74,
+            "internal_points": 439,
+            "elapsed_seconds": 0.19941040000412613
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 9585,
+            "nlu": 86,
+            "internal_points": 1370,
+            "elapsed_seconds": 0.5975112999949488
+          }
+        ],
+        "steady_inventory_fixed_scale_error": 0.0,
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0038086373036101406,
+        "grid_max_change": 6.0578979150127665e-05
+      },
+      "Two-stage": {
+        "primary_vs_expm": 4.4887427108619704e-12,
+        "tight_vs_expm": 2.2737367544323206e-12,
+        "primary_vs_tight": 4.457739732899313e-12,
+        "current_vs_expm": 7.954126246545457e-11,
+        "ledger_max": 6.821210263296962e-13,
+        "minimum_chemical_or_extent": -1.1632067984734593e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 4460,
+            "nlu": 100,
+            "internal_points": 637,
+            "elapsed_seconds": 0.290932600000815
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 13959,
+            "nlu": 114,
+            "internal_points": 1994,
+            "elapsed_seconds": 0.8733787999954075
+          }
+        ],
+        "steady_inventory_fixed_scale_error": 0.0,
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 5.158710212258e-05,
+        "grid_max_change": 8.555439404700493e-07
+      },
+      "Three-stage": {
+        "primary_vs_expm": 6.821210263296962e-12,
+        "tight_vs_expm": 7.048583938740194e-12,
+        "primary_vs_tight": 5.055067475723263e-12,
+        "current_vs_expm": 2.3449325814439703e-10,
+        "ledger_max": 6.821210263296962e-13,
+        "minimum_chemical_or_extent": -4.286274191371201e-14,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 4628,
+            "nlu": 108,
+            "internal_points": 661,
+            "elapsed_seconds": 0.3026319999989937
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 14491,
+            "nlu": 122,
+            "internal_points": 2070,
+            "elapsed_seconds": 0.9823797999997623
+          }
+        ],
+        "steady_inventory_fixed_scale_error": 0.0,
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 5.0501606135011645e-05,
+        "grid_max_change": 8.045459358452245e-07
+      }
+    },
+    "D_fast": {
+      "Full": {
+        "primary_vs_expm": 1.5528134333919752e-12,
+        "tight_vs_expm": 1.5112910922709943e-14,
+        "primary_vs_tight": 1.5568102362806258e-12,
+        "current_vs_expm": 4.5659165337497143e-10,
+        "ledger_max": 3.0531133177191805e-16,
+        "minimum_chemical_or_extent": -2.8854403293100052e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 0.07435164835164836,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26,
+            "nlu": 12,
+            "internal_points": 7,
+            "elapsed_seconds": 0.0028418000001693144
+          },
+          {
+            "start": 0.07435164835164836,
+            "end": 0.1487032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 2268,
+            "nlu": 46,
+            "internal_points": 323,
+            "elapsed_seconds": 0.1434882000030484
+          },
+          {
+            "start": 0.1487032967032967,
+            "end": 0.4461098901098901,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 2877,
+            "nlu": 52,
+            "internal_points": 410,
+            "elapsed_seconds": 0.1810992000027909
+          },
+          {
+            "start": 0.4461098901098901,
+            "end": 0.5204615384615385,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 2044,
+            "nlu": 48,
+            "internal_points": 291,
+            "elapsed_seconds": 0.1331436999971629
+          },
+          {
+            "start": 0.5204615384615385,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 4894,
+            "nlu": 102,
+            "internal_points": 699,
+            "elapsed_seconds": 0.3156243999983417
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 0.07435164835164836,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26,
+            "nlu": 12,
+            "internal_points": 7,
+            "elapsed_seconds": 0.002537399996072054
+          },
+          {
+            "start": 0.07435164835164836,
+            "end": 0.1487032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 7097,
+            "nlu": 44,
+            "internal_points": 1012,
+            "elapsed_seconds": 0.4538706000021193
+          },
+          {
+            "start": 0.1487032967032967,
+            "end": 0.4461098901098901,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 9030,
+            "nlu": 54,
+            "internal_points": 1289,
+            "elapsed_seconds": 0.5730454000004102
+          },
+          {
+            "start": 0.4461098901098901,
+            "end": 0.5204615384615385,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 6360,
+            "nlu": 46,
+            "internal_points": 908,
+            "elapsed_seconds": 0.40345430000161286
+          },
+          {
+            "start": 0.5204615384615385,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 15380,
+            "nlu": 116,
+            "internal_points": 2197,
+            "elapsed_seconds": 0.9815377999984776
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0,
+        "grid_max_change": 0.0
+      },
+      "Direct": {
+        "primary_vs_expm": 1.3130885267997883e-12,
+        "tight_vs_expm": 1.3052059433249497e-14,
+        "primary_vs_tight": 1.3013895516778007e-12,
+        "current_vs_expm": 8.830269848658645e-12,
+        "ledger_max": 1.942890293094024e-16,
+        "minimum_chemical_or_extent": -1.8951889915963327e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 0.07435164835164836,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26,
+            "nlu": 12,
+            "internal_points": 7,
+            "elapsed_seconds": 0.003267099993536249
+          },
+          {
+            "start": 0.07435164835164836,
+            "end": 0.1487032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 596,
+            "nlu": 12,
+            "internal_points": 85,
+            "elapsed_seconds": 0.03891970000404399
+          },
+          {
+            "start": 0.1487032967032967,
+            "end": 0.4461098901098901,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 1240,
+            "nlu": 12,
+            "internal_points": 177,
+            "elapsed_seconds": 0.08079810000344878
+          },
+          {
+            "start": 0.4461098901098901,
+            "end": 0.5204615384615385,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 431,
+            "nlu": 8,
+            "internal_points": 61,
+            "elapsed_seconds": 0.028761199995642528
+          },
+          {
+            "start": 0.5204615384615385,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 3488,
+            "nlu": 62,
+            "internal_points": 499,
+            "elapsed_seconds": 0.24443350000365172
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 0.07435164835164836,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26,
+            "nlu": 12,
+            "internal_points": 7,
+            "elapsed_seconds": 0.00330250000115484
+          },
+          {
+            "start": 0.07435164835164836,
+            "end": 0.1487032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 1828,
+            "nlu": 12,
+            "internal_points": 261,
+            "elapsed_seconds": 0.1211881999988691
+          },
+          {
+            "start": 0.1487032967032967,
+            "end": 0.4461098901098901,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 3879,
+            "nlu": 12,
+            "internal_points": 554,
+            "elapsed_seconds": 0.2542351000010967
+          },
+          {
+            "start": 0.4461098901098901,
+            "end": 0.5204615384615385,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 1331,
+            "nlu": 12,
+            "internal_points": 190,
+            "elapsed_seconds": 0.08295689999795286
+          },
+          {
+            "start": 0.5204615384615385,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 10943,
+            "nlu": 72,
+            "internal_points": 1564,
+            "elapsed_seconds": 0.6872881000017514
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0038086373036103627,
+        "grid_max_change": 6.05789791497946e-05
+      },
+      "Two-stage": {
+        "primary_vs_expm": 1.3593848269266573e-12,
+        "tight_vs_expm": 1.083855227790309e-14,
+        "primary_vs_tight": 1.3593987047144651e-12,
+        "current_vs_expm": 9.467704398247179e-11,
+        "ledger_max": 3.3306690738754696e-16,
+        "minimum_chemical_or_extent": -2.5535919330866118e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 0.07435164835164836,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26,
+            "nlu": 12,
+            "internal_points": 7,
+            "elapsed_seconds": 0.002944800005934667
+          },
+          {
+            "start": 0.07435164835164836,
+            "end": 0.1487032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 2065,
+            "nlu": 38,
+            "internal_points": 294,
+            "elapsed_seconds": 0.13679150000098161
+          },
+          {
+            "start": 0.1487032967032967,
+            "end": 0.4461098901098901,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 2800,
+            "nlu": 42,
+            "internal_points": 399,
+            "elapsed_seconds": 0.20967209999798797
+          },
+          {
+            "start": 0.4461098901098901,
+            "end": 0.5204615384615385,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 1904,
+            "nlu": 40,
+            "internal_points": 271,
+            "elapsed_seconds": 0.12587789999815868
+          },
+          {
+            "start": 0.5204615384615385,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 4964,
+            "nlu": 92,
+            "internal_points": 709,
+            "elapsed_seconds": 0.33205090000410564
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 0.07435164835164836,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26,
+            "nlu": 12,
+            "internal_points": 7,
+            "elapsed_seconds": 0.002674499999557156
+          },
+          {
+            "start": 0.07435164835164836,
+            "end": 0.1487032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 6482,
+            "nlu": 38,
+            "internal_points": 925,
+            "elapsed_seconds": 0.4151157000014791
+          },
+          {
+            "start": 0.1487032967032967,
+            "end": 0.4461098901098901,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 8813,
+            "nlu": 42,
+            "internal_points": 1258,
+            "elapsed_seconds": 0.5873846000031335
+          },
+          {
+            "start": 0.4461098901098901,
+            "end": 0.5204615384615385,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 5971,
+            "nlu": 40,
+            "internal_points": 852,
+            "elapsed_seconds": 0.39437029999680817
+          },
+          {
+            "start": 0.5204615384615385,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 15597,
+            "nlu": 106,
+            "internal_points": 2228,
+            "elapsed_seconds": 0.9819215000024997
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0005318783454997256,
+        "grid_max_change": 8.555439405810716e-07
+      },
+      "Three-stage": {
+        "primary_vs_expm": 1.1203295235961974e-12,
+        "tight_vs_expm": 1.5140666498325572e-14,
+        "primary_vs_tight": 1.1197084925917977e-12,
+        "current_vs_expm": 4.0989955873982353e-10,
+        "ledger_max": 5.551115123125783e-16,
+        "minimum_chemical_or_extent": -2.685077231421127e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 0.07435164835164836,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26,
+            "nlu": 12,
+            "internal_points": 7,
+            "elapsed_seconds": 0.0031703999993624166
+          },
+          {
+            "start": 0.07435164835164836,
+            "end": 0.1487032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 2310,
+            "nlu": 48,
+            "internal_points": 329,
+            "elapsed_seconds": 0.1523243000046932
+          },
+          {
+            "start": 0.1487032967032967,
+            "end": 0.4461098901098901,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 2926,
+            "nlu": 52,
+            "internal_points": 417,
+            "elapsed_seconds": 0.1976308000012068
+          },
+          {
+            "start": 0.4461098901098901,
+            "end": 0.5204615384615385,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 2093,
+            "nlu": 48,
+            "internal_points": 298,
+            "elapsed_seconds": 0.14074229999823729
+          },
+          {
+            "start": 0.5204615384615385,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 5020,
+            "nlu": 100,
+            "internal_points": 717,
+            "elapsed_seconds": 0.3686627999995835
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 0.07435164835164836,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26,
+            "nlu": 12,
+            "internal_points": 7,
+            "elapsed_seconds": 0.0037086000011186115
+          },
+          {
+            "start": 0.07435164835164836,
+            "end": 0.1487032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 7238,
+            "nlu": 48,
+            "internal_points": 1033,
+            "elapsed_seconds": 0.5057689000022947
+          },
+          {
+            "start": 0.1487032967032967,
+            "end": 0.4461098901098901,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 9177,
+            "nlu": 54,
+            "internal_points": 1310,
+            "elapsed_seconds": 0.6414388999983203
+          },
+          {
+            "start": 0.4461098901098901,
+            "end": 0.5204615384615385,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 6524,
+            "nlu": 50,
+            "internal_points": 931,
+            "elapsed_seconds": 0.43606459999864455
+          },
+          {
+            "start": 0.5204615384615385,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 15723,
+            "nlu": 116,
+            "internal_points": 2246,
+            "elapsed_seconds": 1.0350316000040038
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 4.9824534856052205e-05,
+        "grid_max_change": 7.937139668567905e-07
+      }
+    },
+    "D_inventory": {
+      "Full": {
+        "primary_vs_expm": 9.130474154517287e-12,
+        "tight_vs_expm": 8.071321389024888e-14,
+        "primary_vs_tight": 9.113265697635597e-12,
+        "current_vs_expm": 1.7048762401827844e-09,
+        "ledger_max": 1.7763568394002505e-15,
+        "minimum_chemical_or_extent": -1.1500150273213193e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 8835,
+            "nlu": 114,
+            "internal_points": 1262,
+            "elapsed_seconds": 0.5660976999934064
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 27777,
+            "nlu": 134,
+            "internal_points": 3968,
+            "elapsed_seconds": 1.7022731999968528
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0,
+        "grid_max_change": 0.0
+      },
+      "Direct": {
+        "primary_vs_expm": 7.606026919404485e-12,
+        "tight_vs_expm": 7.605027718682322e-14,
+        "primary_vs_tight": 7.60225216112076e-12,
+        "current_vs_expm": 5.114619838764156e-11,
+        "ledger_max": 1.1102230246251565e-15,
+        "minimum_chemical_or_extent": -7.432508683714529e-16,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 5399,
+            "nlu": 72,
+            "internal_points": 772,
+            "elapsed_seconds": 0.3419664000030025
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 17082,
+            "nlu": 84,
+            "internal_points": 2441,
+            "elapsed_seconds": 1.0384025999956066
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0038234436779333025,
+        "grid_max_change": 6.0836681476605925e-05
+      },
+      "Two-stage": {
+        "primary_vs_expm": 8.513079130523238e-12,
+        "tight_vs_expm": 8.72635297355373e-14,
+        "primary_vs_tight": 8.485934177571153e-12,
+        "current_vs_expm": 5.450679907426093e-10,
+        "ledger_max": 1.2212453270876722e-15,
+        "minimum_chemical_or_extent": -1.0261001805608215e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 8786,
+            "nlu": 102,
+            "internal_points": 1255,
+            "elapsed_seconds": 0.5416667000026791
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 27917,
+            "nlu": 116,
+            "internal_points": 3988,
+            "elapsed_seconds": 1.9055136000024504
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0009911647617724118,
+        "grid_max_change": 1.5770703870376934e-05
+      },
+      "Three-stage": {
+        "primary_vs_expm": 9.29567534058151e-12,
+        "tight_vs_expm": 1.0813572259849025e-13,
+        "primary_vs_tight": 9.217404617345437e-12,
+        "current_vs_expm": 2.509210617063218e-09,
+        "ledger_max": 2.220446049250313e-15,
+        "minimum_chemical_or_extent": -3.2265193989950207e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 8898,
+            "nlu": 114,
+            "internal_points": 1271,
+            "elapsed_seconds": 0.5702441000030376
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 14.87032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 28120,
+            "nlu": 132,
+            "internal_points": 4017,
+            "elapsed_seconds": 1.7936142999969888
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0009754996153741313,
+        "grid_max_change": 1.5522057729949745e-05
+      }
+    },
+    "C_slow_20": {
+      "Full": {
+        "primary_vs_expm": 2.1524115823012835e-11,
+        "tight_vs_expm": 3.632649736573512e-13,
+        "primary_vs_tight": 2.1482593481891854e-11,
+        "current_vs_expm": 2.527167065341343e-10,
+        "ledger_max": 2.0439872017163907e-11,
+        "minimum_chemical_or_extent": -5.2275570054592565e-14,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 29.74065934065934,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 8421,
+            "nlu": 98,
+            "internal_points": 1202,
+            "elapsed_seconds": 0.5348817999984021
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 29.74065934065934,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26544,
+            "nlu": 100,
+            "internal_points": 3791,
+            "elapsed_seconds": 1.73720350000076
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0,
+        "grid_max_change": 0.0
+      },
+      "Direct": {
+        "primary_vs_expm": 1.6170842442875255e-11,
+        "tight_vs_expm": 1.674216321134736e-13,
+        "primary_vs_tight": 1.6190382368108658e-11,
+        "current_vs_expm": 2.1722290632908425e-11,
+        "ledger_max": 1.6172174710504805e-11,
+        "minimum_chemical_or_extent": 0.0,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 29.74065934065934,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 7260,
+            "nlu": 62,
+            "internal_points": 1037,
+            "elapsed_seconds": 0.4654655999984243
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 29.74065934065934,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 22975,
+            "nlu": 64,
+            "internal_points": 3282,
+            "elapsed_seconds": 1.4452879000018584
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.003997458736751058,
+        "grid_max_change": 6.358383363680442e-05
+      },
+      "Two-stage": {
+        "primary_vs_expm": 1.882471956093923e-11,
+        "tight_vs_expm": 1.9051427102567686e-13,
+        "primary_vs_tight": 1.8899548592798965e-11,
+        "current_vs_expm": 7.744793695252383e-11,
+        "ledger_max": 1.7892798354068873e-11,
+        "minimum_chemical_or_extent": -1.1636988036506412e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 29.74065934065934,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 8519,
+            "nlu": 90,
+            "internal_points": 1216,
+            "elapsed_seconds": 0.5419971000010264
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 29.74065934065934,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26824,
+            "nlu": 90,
+            "internal_points": 3831,
+            "elapsed_seconds": 1.717756100006227
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 5.2605624901336245e-05,
+        "grid_max_change": 8.570255205508914e-07
+      },
+      "Three-stage": {
+        "primary_vs_expm": 2.1395996085971092e-11,
+        "tight_vs_expm": 3.4372504842394846e-13,
+        "primary_vs_tight": 2.1499024782656306e-11,
+        "current_vs_expm": 2.3315210873064984e-10,
+        "ledger_max": 2.048672342880309e-11,
+        "minimum_chemical_or_extent": -4.2866215731295236e-14,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 29.74065934065934,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 8554,
+            "nlu": 98,
+            "internal_points": 1221,
+            "elapsed_seconds": 0.5740233000033186
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 29.74065934065934,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 26957,
+            "nlu": 100,
+            "internal_points": 3850,
+            "elapsed_seconds": 1.7399112000057357
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 5.155647564239474e-05,
+        "grid_max_change": 8.213891130037787e-07
+      }
+    },
+    "C_slow_100": {
+      "Full": {
+        "primary_vs_expm": 1.0591350019240053e-10,
+        "tight_vs_expm": 9.512390874988341e-12,
+        "primary_vs_tight": 1.0551559626037488e-10,
+        "current_vs_expm": 2.527123119467859e-10,
+        "ledger_max": 1.0443557130201953e-10,
+        "minimum_chemical_or_extent": -5.227252764553306e-14,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 148.7032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 8806,
+            "nlu": 114,
+            "internal_points": 1257,
+            "elapsed_seconds": 0.5811575999978231
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 148.7032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 27762,
+            "nlu": 118,
+            "internal_points": 3965,
+            "elapsed_seconds": 1.8060347000064212
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0,
+        "grid_max_change": 0.0
+      },
+      "Direct": {
+        "primary_vs_expm": 9.256595490114705e-11,
+        "tight_vs_expm": 8.872902412804251e-13,
+        "primary_vs_tight": 9.192646643896296e-11,
+        "current_vs_expm": 2.5105140188941277e-11,
+        "ledger_max": 9.164935477201652e-11,
+        "minimum_chemical_or_extent": 0.0,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 148.7032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 7673,
+            "nlu": 78,
+            "internal_points": 1096,
+            "elapsed_seconds": 0.5776575999989291
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 148.7032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 24165,
+            "nlu": 80,
+            "internal_points": 3452,
+            "elapsed_seconds": 1.6461103999972693
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0038467742153452944,
+        "grid_max_change": 6.118580675074092e-05
+      },
+      "Two-stage": {
+        "primary_vs_expm": 9.211298390709999e-11,
+        "tight_vs_expm": 1.8403056856186595e-12,
+        "primary_vs_tight": 9.270273437778087e-11,
+        "current_vs_expm": 7.782086086649542e-11,
+        "ledger_max": 9.15125752953827e-11,
+        "minimum_chemical_or_extent": -1.1633057451930512e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 148.7032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 8877,
+            "nlu": 102,
+            "internal_points": 1268,
+            "elapsed_seconds": 0.5953750000044238
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 148.7032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 28036,
+            "nlu": 104,
+            "internal_points": 4005,
+            "elapsed_seconds": 1.8383326999974088
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 5.179340904290508e-05,
+        "grid_max_change": 8.55840175395528e-07
+      },
+      "Three-stage": {
+        "primary_vs_expm": 1.0478551359938137e-10,
+        "tight_vs_expm": 8.58335624798201e-12,
+        "primary_vs_tight": 1.0487077872767259e-10,
+        "current_vs_expm": 2.3423823991564063e-10,
+        "ledger_max": 1.035740382349104e-10,
+        "minimum_chemical_or_extent": -4.286343728414132e-14,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 148.7032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 8946,
+            "nlu": 114,
+            "internal_points": 1277,
+            "elapsed_seconds": 0.6386728999932529
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 148.7032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 28189,
+            "nlu": 118,
+            "internal_points": 4026,
+            "elapsed_seconds": 2.0240713999955915
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 5.071489515739991e-05,
+        "grid_max_change": 8.079509918046401e-07
+      }
+    },
+    "C_slow_1000": {
+      "Full": {
+        "primary_vs_expm": 1.236315938513144e-09,
+        "tight_vs_expm": 1.0033147646026919e-09,
+        "primary_vs_tight": 1.0977032616210636e-09,
+        "current_vs_expm": 2.5271132461850105e-10,
+        "ledger_max": 1.0909388947766274e-09,
+        "minimum_chemical_or_extent": -5.22718423755372e-14,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 9002,
+            "nlu": 130,
+            "internal_points": 1285,
+            "elapsed_seconds": 0.5613128000040888
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 28305,
+            "nlu": 132,
+            "internal_points": 4043,
+            "elapsed_seconds": 1.885804300000018
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0,
+        "grid_max_change": 0.0
+      },
+      "Direct": {
+        "primary_vs_expm": 9.090683761314722e-10,
+        "tight_vs_expm": 7.815970093361102e-12,
+        "primary_vs_tight": 9.033698233906762e-10,
+        "current_vs_expm": 2.6239788120108187e-11,
+        "ledger_max": 9.082441465579905e-10,
+        "minimum_chemical_or_extent": 0.0,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 7862,
+            "nlu": 90,
+            "internal_points": 1123,
+            "elapsed_seconds": 0.5073716000042623
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 24746,
+            "nlu": 100,
+            "internal_points": 3535,
+            "elapsed_seconds": 1.655243100001826
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 0.0038124594264052902,
+        "grid_max_change": 6.063979442616496e-05
+      },
+      "Two-stage": {
+        "primary_vs_expm": 8.382556870856206e-10,
+        "tight_vs_expm": 2.0588686311384663e-10,
+        "primary_vs_tight": 8.444658305961639e-10,
+        "current_vs_expm": 7.947564828469922e-11,
+        "ledger_max": 8.425615760643268e-10,
+        "minimum_chemical_or_extent": -1.163216706947556e-15,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 9065,
+            "nlu": 116,
+            "internal_points": 1294,
+            "elapsed_seconds": 0.585762299997441
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 28651,
+            "nlu": 130,
+            "internal_points": 4092,
+            "elapsed_seconds": 1.9177169000031427
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 5.1607791733160324e-05,
+        "grid_max_change": 8.555735572235434e-07
+      },
+      "Three-stage": {
+        "primary_vs_expm": 1.0203820011156495e-09,
+        "tight_vs_expm": 9.829079772316618e-10,
+        "primary_vs_tight": 9.23336074265535e-10,
+        "current_vs_expm": 2.344679450594356e-10,
+        "ledger_max": 9.232223874278134e-10,
+        "minimum_chemical_or_extent": -4.286281146444382e-14,
+        "segments_primary": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 9135,
+            "nlu": 128,
+            "internal_points": 1304,
+            "elapsed_seconds": 0.6486349000042537
+          }
+        ],
+        "segments_tight": [
+          {
+            "start": 0.0,
+            "end": 1487.032967032967,
+            "success": true,
+            "status": 0,
+            "message": "The solver successfully reached the end of the integration interval.",
+            "nfev": 28805,
+            "nlu": 138,
+            "internal_points": 4114,
+            "elapsed_seconds": 1.9736564999984694
+          }
+        ],
+        "status": "PASS",
+        "registered_to_refined_max_change_diagnostic": 5.0522987410567266e-05,
+        "grid_max_change": 8.048872655874728e-07
+      }
+    }
+  },
+  "thresholds": {
+    "state_extent_absolute": 1e-08,
+    "current_absolute": 1e-08,
+    "convergence_absolute": 5e-09,
+    "ledger_absolute": 1e-08,
+    "negative_state_absolute": 1e-12,
+    "steady_scaled_absolute": 1e-08,
+    "dense_grid_maxima_change_absolute": 0.0001
+  }
+}

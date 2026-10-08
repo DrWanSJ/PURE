@@ -1,0 +1,43 @@
+{
+  "source_summary_sha256": "7b04a802fccbd399de61a660e82549e9813cc31192b524da202633b7b5d8c858",
+  "presentation_runner_sha256": "d9391f42f189ef90cc180898d04648c910d88ad9fcba053ac298a9af5cefadb1",
+  "no_numerical_rerun": true,
+  "artifacts": [
+    {
+      "path": "results/reduction/chain01_v2/figures/base/attempt_002_axis_qa/01_product_trajectory_comparison.png",
+      "sha256": "ec4c8dadc1bc1ae36bc5594e1f59c2154c840d7c071b04e842f42888dd5dac38"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/base/attempt_002_axis_qa/02_product_flux_comparison.png",
+      "sha256": "5b264469827549f51c9c8509b83fd01b6a5821fbbe02db386da8382ab04d0718"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/base/attempt_002_axis_qa/03_pi_release_comparison.png",
+      "sha256": "80da11eddc1a25f445e7bfb303b286672a788acdc492df0e52ea98060c378003"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/base/attempt_002_axis_qa/04_eftu_gdp_release_comparison.png",
+      "sha256": "096fa47b93c8424c5efc2202050e73d142c8c5d8ff98909f08db4c5459c06b7b"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/base/attempt_002_axis_qa/05_internal_occupancy_comparison.png",
+      "sha256": "ec10c1aec7723154e4945250f344a572e7cf99e976831f06ecc073955deac221"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/base/attempt_002_axis_qa/06_long_time_output_comparison.png",
+      "sha256": "933cd7cbc56030de90e37e1cb329c8231e040fc3e8104188d98b2b68f15387f2"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/base/attempt_002_axis_qa/07_slow_input_response.png",
+      "sha256": "a70ee199a3da1f06086d66035aa6b8c65995c03e5221c2d6ceff8f3fdbcc7237"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/base/attempt_002_axis_qa/08_resource_ledger_error.png",
+      "sha256": "073b7883e0371602934561b7ec0c89357cb6c19783a56c8a4302d096901d04d7"
+    },
+    {
+      "path": "results/reduction/chain01_v2/figures/base/attempt_002_axis_qa/09_complexity_accuracy_tradeoff.png",
+      "sha256": "8777e8a7bfa47d0a98556e1162df27202b60ac7eae9d89cf6e6f43279e88cc45"
+    }
+  ]
+}

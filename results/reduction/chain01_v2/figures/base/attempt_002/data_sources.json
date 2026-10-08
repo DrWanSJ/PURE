@@ -1,0 +1,158 @@
+{
+  "model_version": "CHAIN01_V2_RESOURCE_PRESERVING_STAGED_LUMPING",
+  "phase": "base",
+  "time_unit": "source model time unit; no seconds interpretation",
+  "amount_unit": "dimensionless imposed local cohort, or amount in source concentration convention; not a calibrated shared-pool concentration",
+  "raw_data": "results/reduction/chain01_v2/numerical_results/base/attempt_002",
+  "errors": "results/reduction/chain01_v2/error_tables/base/attempt_002",
+  "condition_details": {
+    "A_pulse": {
+      "label": "Unit initial S0 cohort",
+      "initial_full": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_kind": "zero",
+      "end_tau": 100,
+      "amount_scale": "1",
+      "current_scale": "1/tau",
+      "domain": "IN_DOMAIN",
+      "gate_windows": [
+        "late_5_10",
+        "macro_10_end"
+      ]
+    },
+    "B_constant": {
+      "label": "Constant u=1",
+      "initial_full": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_kind": "constant",
+      "amplitude": 1,
+      "end_tau": 10000,
+      "amount_scale": "tau",
+      "current_scale": "1",
+      "domain": "IN_DOMAIN",
+      "gate_windows": [
+        "late_5_10",
+        "macro_10_end"
+      ]
+    },
+    "D_fast": {
+      "label": "V1 two rectangular inputs",
+      "initial_full": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_kind": "rectangular",
+      "input_segments": [
+        [
+          0.5,
+          1,
+          1
+        ],
+        [
+          3,
+          3.5,
+          1
+        ]
+      ],
+      "end_tau": 100,
+      "amount_scale": "tau",
+      "current_scale": "1",
+      "domain": "FAST_INPUT_NEGATIVE_CONTROL",
+      "gate_windows": []
+    },
+    "D_inventory": {
+      "label": "V1 nonzero internal inventory",
+      "initial_full": [
+        0,
+        0.25,
+        0.5,
+        0.25,
+        0
+      ],
+      "input_kind": "zero",
+      "end_tau": 100,
+      "amount_scale": "1",
+      "current_scale": "1/tau",
+      "domain": "OUT_OF_DOMAIN_INITIAL_COMPOSITION",
+      "gate_windows": []
+    },
+    "C_slow_20": {
+      "label": "u=exp(-t/(20 tau))",
+      "initial_full": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_kind": "exponential",
+      "amplitude": 1,
+      "T_slow_tau": 20,
+      "end_tau": 200,
+      "amount_scale": "tau",
+      "current_scale": "1",
+      "domain": "IN_DOMAIN",
+      "gate_windows": [
+        "late_5_10",
+        "macro_10_end"
+      ]
+    },
+    "C_slow_100": {
+      "label": "u=exp(-t/(100 tau))",
+      "initial_full": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_kind": "exponential",
+      "amplitude": 1,
+      "T_slow_tau": 100,
+      "end_tau": 1000,
+      "amount_scale": "tau",
+      "current_scale": "1",
+      "domain": "IN_DOMAIN",
+      "gate_windows": [
+        "late_5_10",
+        "macro_10_end"
+      ]
+    },
+    "C_slow_1000": {
+      "label": "u=exp(-t/(1000 tau))",
+      "initial_full": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_kind": "exponential",
+      "amplitude": 1,
+      "T_slow_tau": 1000,
+      "end_tau": 10000,
+      "amount_scale": "tau",
+      "current_scale": "1",
+      "domain": "IN_DOMAIN",
+      "gate_windows": [
+        "late_5_10",
+        "macro_10_end"
+      ]
+    }
+  },
+  "c_re21": 0.0,
+  "plots_are_actual_saved_numerics": true
+}

@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "registered_grid_unchanged": true,
+  "refinement_history": [
+    {
+      "level": 0,
+      "sample_count": 2974,
+      "max_change_by_model": null
+    },
+    {
+      "level": 1,
+      "sample_count": 5927,
+      "max_change_by_model": {
+        "Full": 0.0,
+        "Direct": 0.0019325462112309566,
+        "Two-stage": 0.000463916848125856,
+        "Three-stage": 2.5262072857773488e-05
+      }
+    },
+    {
+      "level": 2,
+      "sample_count": 6093,
+      "max_change_by_model": {
+        "Full": 0.0,
+        "Direct": 0.0009678247407349794,
+        "Two-stage": 1.3024981401432711e-05,
+        "Three-stage": 1.2666381374537572e-05
+      }
+    },
+    {
+      "level": 3,
+      "sample_count": 6271,
+      "max_change_by_model": {
+        "Full": 0.0,
+        "Direct": 0.0004842970756681053,
+        "Two-stage": 5.9899811820529614e-05,
+        "Three-stage": 6.342007996706922e-06
+      }
+    },
+    {
+      "level": 4,
+      "sample_count": 6450,
+      "max_change_by_model": {
+        "Full": 0.0,
+        "Direct": 0.00024224429157249094,
+        "Two-stage": 3.3883232056775014e-06,
+        "Three-stage": 3.1732057423627946e-06
+      }
+    },
+    {
+      "level": 5,
+      "sample_count": 6637,
+      "max_change_by_model": {
+        "Full": 0.0,
+        "Direct": 0.00012114602996116108,
+        "Two-stage": 1.7054269915162124e-06,
+        "Three-stage": 1.5871529706890097e-06
+      }
+    },
+    {
+      "level": 6,
+      "sample_count": 6824,
+      "max_change_by_model": {
+        "Full": 0.0,
+        "Direct": 6.05789791497946e-05,
+        "Two-stage": 8.555439405810716e-07,
+        "Three-stage": 7.937139668567905e-07
+      }
+    }
+  ],
+  "last_change_by_model": {
+    "Full": 0.0,
+    "Direct": 6.05789791497946e-05,
+    "Two-stage": 8.555439405810716e-07,
+    "Three-stage": 7.937139668567905e-07
+  },
+  "method": "First all interval midpoints, then midpoint neighborhoods of extrema and fixed-window edges; no acceptance-grid changes"
+}

@@ -1,0 +1,56 @@
+{
+  "protocol_id": "CHAIN01_V2_RESOURCE_PRESERVING_STAGED_LUMPING",
+  "config_sha256": "831c747c85b712de2bbb8360477f49cea4e15e6898d573205d3c7eb9c53d1960",
+  "base_decisions": {
+    "Full": {
+      "numerical": "PASS",
+      "product": "PRODUCT_OUTPUT_SUPPORTED",
+      "resources": "RESOURCE_LEDGER_SUPPORTED",
+      "boundary": "NOT_TESTED",
+      "macro": "LONG_TIME_MACRO_SUPPORTED"
+    },
+    "Direct": {
+      "numerical": "PASS",
+      "product": "PRODUCT_OUTPUT_SUPPORTED",
+      "resources": "NOT_SUPPORTED",
+      "boundary": "NOT_TESTED",
+      "macro": "NOT_SUPPORTED"
+    },
+    "Two-stage": {
+      "numerical": "PASS",
+      "product": "PRODUCT_OUTPUT_SUPPORTED",
+      "resources": "RESOURCE_LEDGER_SUPPORTED",
+      "boundary": "NOT_TESTED",
+      "macro": "LONG_TIME_MACRO_SUPPORTED"
+    },
+    "Three-stage": {
+      "numerical": "PASS",
+      "product": "PRODUCT_OUTPUT_SUPPORTED",
+      "resources": "RESOURCE_LEDGER_SUPPORTED",
+      "boundary": "NOT_TESTED",
+      "macro": "LONG_TIME_MACRO_SUPPORTED"
+    }
+  },
+  "boundary_decisions": null,
+  "selected_local_model": null,
+  "condition_domain": {
+    "zero_initial_internal_required": true,
+    "author_rates_only": true,
+    "internal_side_paths_zero_required": true,
+    "input_T_slow_tau_tested": [
+      20,
+      100,
+      1000
+    ],
+    "S4_downstream_isolated": true
+  },
+  "full_coupled_validation": "NOT_STARTED",
+  "PURE_reduced_core": "UNCHANGED; no promotion",
+  "source_semantics": "S4 local Pept0002 formation proxy",
+  "historical_integrity": {
+    "status": "PASS",
+    "protected_file_count": 1737,
+    "binding_count": 6
+  },
+  "report": "docs/reduction/chain01_v2_base_validation_report.md"
+}

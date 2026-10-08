@@ -45,6 +45,36 @@ class StructuralChecks(unittest.TestCase):
         self.assertEqual(config['tests']['B_constant']['end_tau'],10000)
         self.assertEqual(config['gates']['resources']['max_fixed_scale_error'],.01)
 
+    def test_implemented_free_bound_fate_vectors(self):
+        # This tests independently stated conservation vectors, including both
+        # material re21 products, rather than mirroring the RHS calculation.
+        import numpy as np
+        from validate_chain01_v2 import matrix
+        config=json.loads(CONFIG.read_text())
+        for name,spec in config['models'].items():
+            for c in (0.,.23):
+                m,labels,rates=matrix(spec,c,1/(20*.1487032967032967))
+                n=len(spec['states'])
+                vectors=[]
+                rib=np.zeros(len(labels)); rib[:n]=1; rib[-2]=-1
+                if c: rib[labels.index('undocked_ribosome')]=1
+                vectors.append(rib)
+                for states,positive_extent,negative_extent,escape,inlet in [
+                    (['S0'],0,None,True,True),
+                    (['S1'],spec['pi_stage'],0,False,False),
+                    (['S1','S2'],spec['gdp_stage'],0,False,False),
+                    (['S0','S1','S2'],spec['gdp_stage'],None,True,True),
+                ]:
+                    v=np.zeros(len(labels))
+                    for i,state in enumerate(spec['states']): v[i]=int(state in states)
+                    v[n+positive_extent]+=1
+                    if negative_extent is not None: v[n+negative_extent]-=1
+                    if c and escape: v[labels.index('undocked_intact_gtp_carrier')]+=1
+                    if inlet: v[-2]-=1
+                    vectors.append(v)
+                for vector in vectors:
+                    self.assertLessEqual(float(np.max(abs(vector@m))),1e-12,(name,c))
+
 
 if __name__=='__main__':
     if '--verify' in sys.argv:

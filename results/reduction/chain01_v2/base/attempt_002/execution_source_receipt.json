@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "runner_matches_native_execution_hash": true,
+  "attempt_001_runner_matches_native_execution_hash": true,
+  "verifier_source_sha256": "290ae98ba7dbec3e08c2abf23797384dc1f537f46a7bdf4f963dca6f68db5a6f",
+  "note": "Verifier source captured after completed analytic verification; unchanged since that execution. Runner sources are matched to the native pre-run hashes."
+}

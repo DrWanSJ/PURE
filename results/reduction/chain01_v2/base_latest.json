@@ -1,0 +1,7 @@
+{
+  "attempt": 2,
+  "summary": "results/reduction/chain01_v2/base/attempt_002/validation_summary.json",
+  "verification": "results/reduction/chain01_v2/base/attempt_002/verification_report.json",
+  "artifact_manifest": "results/reduction/chain01_v2/base/attempt_002/artifact_manifest.json",
+  "figures": "results/reduction/chain01_v2/figures/base/attempt_002_axis_qa"
+}
