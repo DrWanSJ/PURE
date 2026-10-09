@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>PURE · Reaction Atlas — PNAS2017</title>
+  <style><!--ATLAS_CSS--></style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">P</span><div><div class="eyebrow">PNAS2017 · SOURCE CHEMISTRY</div><h1>PURE Reaction Atlas</h1></div></div>
+    <div class="source-count" id="source-count">241 species / 968 reactions</div>
+    <div class="search-wrap"><label class="sr-only" for="search">搜索 Reaction ID、species、路径或 family</label><input id="search" type="search" autocomplete="off" placeholder="搜索 Reaction ID、species、路径、RFAM…"><kbd>/</kbd></div>
+    <button type="button" class="nav-toggle" data-action="toggle-nav" aria-label="展开功能分类">分类</button>
+  </header>
+  <div class="coverage-bar" aria-label="原始网络与路径覆盖状态">
+    <span class="compact-source-network">Source Network <b>241 species / 968 reactions</b></span>
+    <span>Source index <b id="source-coverage">968 / 968</b></span>
+    <span>Phase A structural reconstruction <b id="phase-coverage">134 / 968</b></span>
+    <span>Remaining <b id="remaining-count">834 not reconstructed</b></span>
+    <span class="review-status">待科研人员审阅 · PHASE_B_NOT_AUTHORIZED</span>
+  </div>
+  <div class="workspace">
+    <aside class="navigation" aria-label="Functional hierarchy">
+      <div class="pane-heading"><span>FUNCTIONAL HIERARCHY</span><button type="button" class="quiet" data-action="all-source">全网索引</button></div>
+      <p class="nav-hint">Level A → Level C → 阅读子过程</p>
+      <nav id="hierarchy"></nav>
+      <div class="nav-footer">23 个已审核 Level-C context。阅读标题不新增科学分类。</div>
+    </aside>
+    <main class="reading" id="reading" tabindex="-1">
+      <div class="reading-toolbar"><div class="view-switch" role="group" aria-label="阅读模式"><button type="button" id="functional-mode" data-action="mode" data-mode="functional" aria-pressed="true">Functional View</button><button type="button" id="pathway-mode" data-action="mode" data-mode="pathway" aria-pressed="false">Pathway View</button></div><label class="reference-filter"><input id="positive-only" type="checkbox">只显示参数非零方向</label></div>
+      <div id="content"></div>
+    </main>
+    <aside class="inspector" id="inspector" aria-label="Reaction Inspector">
+      <div class="pane-heading">REACTION INSPECTOR</div>
+      <div id="inspector-content" class="inspector-empty"><span class="empty-symbol">↗</span><h2>从一条反应开始</h2><p>点击 Reaction ID，即可查看原始方程、必需底物、载体状态和真实出口。</p><p class="small">所有 968 条源反应都可检索；20 条代表路径限于 GlyRS / MetRS。</p></div>
+    </aside>
+  </div>
+  <dialog id="state-dialog" aria-labelledby="state-dialog-title"><div class="dialog-top"><span class="eyebrow">CARRIER STATE / SOURCE INCIDENCE</span><button type="button" class="quiet" data-action="close-state" aria-label="关闭载体状态">关闭 ×</button></div><div id="state-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>本离线图谱需要启用 JavaScript 才能搜索与展开反应。全部数据已内嵌，无需联网。</noscript>
+  <script id="atlas-data" type="application/json"><!--ATLAS_DATA--></script>
+  <script><!--ATLAS_JS--></script>
+</body>
+</html>
