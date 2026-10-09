@@ -438,5 +438,7 @@
       ],
       "verified_after_operation": true
     }
-  ]
+  ],
+  "reference_observation_phase": "after sequential branch cleanup, before final documentation commits",
+  "governance_final_head_location": "open PR6 head and external independently verified delivery receipt; the containing commit SHA cannot be self-embedded"
 }
