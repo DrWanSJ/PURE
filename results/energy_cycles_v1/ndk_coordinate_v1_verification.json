@@ -1,0 +1,131 @@
+{
+  "symbolic": {
+    "status": "INDEPENDENT_CANONICAL_SYMBOLIC_COORDINATE_PROOF_PASS",
+    "resource_cases": {
+      "ATP": {
+        "source_total_factorization_residual": "0",
+        "source_current_equals_total_times_hazard_residual": "0",
+        "depletion_boundary_hazard": "Efree*b*kATP*kf*(b + 2*q)/(Efree*b**2*kATP + 3*Efree*b*kATP*q + Efree*kATP*kf*q + 2*Efree*kATP*q**2 + b*kf*q + b*q**2 + kf*q**2 + 2*q**3)"
+      },
+      "GDP": {
+        "source_total_factorization_residual": "0",
+        "source_current_equals_total_times_hazard_residual": "0",
+        "depletion_boundary_hazard": "Efree*a*kGDP*kf*(a + 2*q)/(Efree*a**2*kGDP + 3*Efree*a*kGDP*q + Efree*kGDP*kf*q + 2*Efree*kGDP*q**2 + a*kf*q + a*q**2 + kf*q**2 + 2*q**3)"
+      }
+    },
+    "remaining_and_extent_coordinate_derivative_residuals": "0",
+    "scope": "Exact coordinate and source-rate factorization at kr=0; finite algebraic root tolerances remain numerical approximations."
+  },
+  "original_preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+  "script_sha256": "c1c822fc96b05a6fcc752cc264b40bfe1fbff0f27d2422fe9899130e51c9e23c",
+  "completed_coordinate_trajectory_pairs_checked": 1,
+  "trajectory_checks": [
+    {
+      "case": "NDK__CHALLENGE_ATP_DOUBLE",
+      "initial_mode": "ORIGINAL_NONEQUILIBRIUM",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "054cdf9dace75361621288a0617191d512d6970682bcf29f06ee17763028725c",
+      "maximum_source_resource_extent_identity_residual": 1.6973537242392922e-07,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 1.5903944827755367e-11,
+        "adenylate": 1.675384976950131e-15,
+        "guanylate": 3.672959372544518e-15,
+        "represented_phosphate_groups": 1.436044265957255e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 99.9999999999999,
+        "reduced": 99.99999998810833
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 0.0,
+        "reduced": 63.62847041444347
+      },
+      "maximum_reconstructed_source_stationarity_residual": 9.094947017729282e-13,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 0.009498431737058013,
+          "max_scaled_retained": 0.0007230959470595622,
+          "max_scaled_bound": 0.8092886679427109,
+          "max_scaled_occupancy": 0.9831738988009836,
+          "normalized_net_flux_rms": 0.7585629808145853,
+          "max_normalized_cumulative_resource_flow": 0.0007230959210956067,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 1.4626948541263118e-11,
+            "flux": 6.207533724658749e-09,
+            "flow": 4.964239241900259e-11
+          }
+        },
+        {
+          "max_scaled_free": 0.0007314146296454282,
+          "max_scaled_retained": 0.0007314634031207845,
+          "max_scaled_bound": 7.482304441450457e-05,
+          "max_scaled_occupancy": 9.368478048308068e-05,
+          "normalized_net_flux_rms": 0.0012832681933301437,
+          "max_normalized_cumulative_resource_flow": 0.0007314633614184984,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 7.736881002529117e-10,
+            "flux": 4.823549388952044e-09,
+            "flow": 7.736859686247044e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.0006478535241774353,
+          "max_scaled_retained": 0.0006483273185111215,
+          "max_scaled_bound": 7.035971645098627e-05,
+          "max_scaled_occupancy": 6.705930398235675e-05,
+          "normalized_net_flux_rms": 0.00010657479047799071,
+          "max_normalized_cumulative_resource_flow": 0.0006483278039709717,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 8.291448239106102e-10,
+            "flux": 1.9523551920858315e-10,
+            "flow": 1.6912474620767171e-09
+          }
+        }
+      ]
+    }
+  ],
+  "status": "INDEPENDENT_SYMBOLIC_AND_NUMERICAL_COORDINATE_CHECK_PASS",
+  "scope": "Additive engineering coordinate verification, preserving original 84 trajectory checks and seven raw NDK failure paths; no scientific promotion or full-model acceptance.",
+  "numerical_directory": "results/energy_cycles_v1/numerical_ndk_coordinate",
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "source_hashes": {
+    "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+  },
+  "environment": {
+    "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4",
+    "sympy": "1.13.1",
+    "platform": "Windows-11-10.0.22631-SP0"
+  },
+  "command": [
+    "D:\\Code\\Anaconda\\python.exe",
+    "C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\ndk_coordinate_verify.py",
+    "--output",
+    "results\\energy_cycles_v1\\ndk_coordinate_v1_verification.json"
+  ],
+  "independent_parser_sha256": "b4abbf9cec0265288d49ca3e1dbded1300c320e529de83b508c558b9a8f7c789",
+  "engineering_addendum_sha256": "e60f0a7615881ff952ffbdff0defd85a4ed280fda0384c51b7334376150b8530",
+  "engineering_addendum_path": "docs/reduction/energy_cycles/ndk_numerical_repair_preregistration.json"
+}

@@ -1,0 +1,64 @@
+{
+  "status": "ENGINEERING_DIAGNOSIS_NOT_REDUCTION_OUTCOME",
+  "native_failures": [
+    {
+      "case": "NDK__CHALLENGE_ATP_DOUBLE",
+      "failure_path": "results/energy_cycles_v1/numerical/NDK__CHALLENGE_ATP_DOUBLE/failure.json",
+      "failure_sha256": "a18bd9a4d8e852199eb93cf94f75c650597192affca088b9c77c7c05cf6fa555",
+      "contains_radau_collocation_trial_y_plus_Z": true,
+      "recorded_trial_time_or_state": false,
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b"
+    },
+    {
+      "case": "NDK__CHALLENGE_ATP_HALF",
+      "failure_path": "results/energy_cycles_v1/numerical/NDK__CHALLENGE_ATP_HALF/failure.json",
+      "failure_sha256": "2f2da65bf21a91245b4dd68a7a1b9dd18863aa326bf04f89661e00dd68fa3e54",
+      "contains_radau_collocation_trial_y_plus_Z": true,
+      "recorded_trial_time_or_state": false,
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b"
+    },
+    {
+      "case": "NDK__CHALLENGE_CATALYST_DOUBLE",
+      "failure_path": "results/energy_cycles_v1/numerical/NDK__CHALLENGE_CATALYST_DOUBLE/failure.json",
+      "failure_sha256": "672adf11c6c97eacbefa1f3bf9dcf8ebd5dd8fb763616d62eac8381f2090dc66",
+      "contains_radau_collocation_trial_y_plus_Z": true,
+      "recorded_trial_time_or_state": false,
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b"
+    },
+    {
+      "case": "NDK__CHALLENGE_CATALYST_HALF",
+      "failure_path": "results/energy_cycles_v1/numerical/NDK__CHALLENGE_CATALYST_HALF/failure.json",
+      "failure_sha256": "62ceeab5babd8c8d95daa27948058585b880663ddc5905374480beb275027e9a",
+      "contains_radau_collocation_trial_y_plus_Z": true,
+      "recorded_trial_time_or_state": false,
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b"
+    },
+    {
+      "case": "NDK__CHALLENGE_GDP_DOUBLE",
+      "failure_path": "results/energy_cycles_v1/numerical/NDK__CHALLENGE_GDP_DOUBLE/failure.json",
+      "failure_sha256": "a98e30ed655ea8e64ed51a309c3688371164ea2a54205316f8ffc4aef164fedf",
+      "contains_radau_collocation_trial_y_plus_Z": true,
+      "recorded_trial_time_or_state": false,
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b"
+    },
+    {
+      "case": "NDK__CHALLENGE_GDP_HALF",
+      "failure_path": "results/energy_cycles_v1/numerical/NDK__CHALLENGE_GDP_HALF/failure.json",
+      "failure_sha256": "54d2ed7cabbd241d83168b7def4615f7c2d0dee986651d8b8c68ac2ababe9ce5",
+      "contains_radau_collocation_trial_y_plus_Z": true,
+      "recorded_trial_time_or_state": false,
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b"
+    },
+    {
+      "case": "NDK__POSITIVE_CHALLENGE",
+      "failure_path": "results/energy_cycles_v1/numerical/NDK__POSITIVE_CHALLENGE/failure.json",
+      "failure_sha256": "fc080fa073ab17baa6cf0b034b050d4b4486ffa798bfa9c8509223fabf37df5e",
+      "contains_radau_collocation_trial_y_plus_Z": true,
+      "recorded_trial_time_or_state": false,
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b"
+    }
+  ],
+  "finding": "All seven failures occur during a Radau internal collocation trial evaluation, before an accepted solver step; stored exception does not identify trial time/inventory or certify a negative accepted physical trajectory.",
+  "proposal": "Exact irreversible-NDK limiting-resource exponential coordinate with unchanged source total-QSSA law; separate frozen engineering addendum required before comparisons.",
+  "comparisons_executed_by_this_diagnosis": false
+}

@@ -1,0 +1,25 @@
+{
+  "symbolic": {
+    "status": "INDEPENDENT_CANONICAL_SYMBOLIC_COORDINATE_PROOF_PASS",
+    "resource_cases": {
+      "ATP": {
+        "source_total_factorization_residual": "0",
+        "source_current_equals_total_times_hazard_residual": "0",
+        "depletion_boundary_hazard": "Efree*b*kATP*kf*(b + 2*q)/(Efree*b**2*kATP + 3*Efree*b*kATP*q + Efree*kATP*kf*q + 2*Efree*kATP*q**2 + b*kf*q + b*q**2 + kf*q**2 + 2*q**3)"
+      },
+      "GDP": {
+        "source_total_factorization_residual": "0",
+        "source_current_equals_total_times_hazard_residual": "0",
+        "depletion_boundary_hazard": "Efree*a*kGDP*kf*(a + 2*q)/(Efree*a**2*kGDP + 3*Efree*a*kGDP*q + Efree*kGDP*kf*q + 2*Efree*kGDP*q**2 + a*kf*q + a*q**2 + kf*q**2 + 2*q**3)"
+      }
+    },
+    "remaining_and_extent_coordinate_derivative_residuals": "0",
+    "scope": "Exact coordinate and source-rate factorization at kr=0; finite algebraic root tolerances remain numerical approximations."
+  },
+  "original_preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+  "script_sha256": "cdb7205229bd9c74d01a15990e31bb3fbb525e7e8d36f78a5c0ed628f04ae45e",
+  "completed_coordinate_trajectory_pairs_checked": 0,
+  "trajectory_checks": [],
+  "status": "INDEPENDENT_SYMBOLIC_PROOF_PASS_NUMERICAL_RESULTS_NOT_YET_AVAILABLE",
+  "scope": "Additive engineering coordinate verification, preserving original84trajectory checks and7rawNDKfailure paths; no scientific promotion or full-model acceptance."
+}

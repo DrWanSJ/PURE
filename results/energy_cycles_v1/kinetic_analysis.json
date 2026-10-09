@@ -1,0 +1,865 @@
+{
+  "command": "python scripts/energy_cycles/kinetics_analysis.py",
+  "diamond_dissociation_source_checks": {
+    "CK": {
+      "dissociation_parameters": [
+        [
+          "re0000000331",
+          1000.0
+        ],
+        [
+          "re0000000333",
+          1000.0
+        ],
+        [
+          "re0000000335",
+          1000.0
+        ],
+        [
+          "re0000000337",
+          1000.0
+        ],
+        [
+          "re0000000340",
+          1000.0
+        ],
+        [
+          "re0000000342",
+          1000.0
+        ],
+        [
+          "re0000000344",
+          1000.0
+        ],
+        [
+          "re0000000346",
+          1000.0
+        ]
+      ],
+      "equal_1000": true
+    },
+    "MK": {
+      "dissociation_parameters": [
+        [
+          "re0000000381",
+          1000.0
+        ],
+        [
+          "re0000000383",
+          1000.0
+        ],
+        [
+          "re0000000385",
+          1000.0
+        ],
+        [
+          "re0000000387",
+          1000.0
+        ],
+        [
+          "re0000000390",
+          1000.0
+        ],
+        [
+          "re0000000392",
+          1000.0
+        ],
+        [
+          "re0000000394",
+          1000.0
+        ],
+        [
+          "re0000000396",
+          1000.0
+        ]
+      ],
+      "equal_1000": true
+    },
+    "NDK": {
+      "dissociation_parameters": [
+        [
+          "re0000000356",
+          1000.0
+        ],
+        [
+          "re0000000358",
+          1000.0
+        ],
+        [
+          "re0000000360",
+          1000.0
+        ],
+        [
+          "re0000000362",
+          1000.0
+        ],
+        [
+          "re0000000365",
+          1000.0
+        ],
+        [
+          "re0000000366",
+          1000.0
+        ],
+        [
+          "re0000000367",
+          1000.0
+        ],
+        [
+          "re0000000368",
+          1000.0
+        ]
+      ],
+      "equal_1000": true
+    }
+  },
+  "dynamical_reduction_validation_performed": false,
+  "environment": {
+    "numpy": "1.26.4",
+    "python": "3.12.4"
+  },
+  "generator_tests": [
+    {
+      "fixed_free_stationarity": [
+        {
+          "fixed_free_relaxation_time": 0.0010000000826716918,
+          "fixed_free_spectral_gap": 999.9999173283151,
+          "free": {
+            "ADP": 0.0,
+            "ATP": 3750.0,
+            "CP": 50000.0,
+            "Cr": 0.0
+          },
+          "generator_column_sum_residual": 3.952393967665557e-14,
+          "generator_residual": 2.2737367544323206e-13,
+          "interpretation": "Frozen-free generator only; not a full-network fast/slow separation certificate.",
+          "label": "author_initial_free",
+          "max_explicit_vs_generator_error": 1.4210854715202004e-14,
+          "net_catalytic_current": 0.0,
+          "nonzero_eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nonzero_eigenvalues_real": [
+            -106136.9863025,
+            -102000.02502460226,
+            -7137.075772066852,
+            -1002.9617228283686,
+            -1000.0000826741609,
+            -999.9999173283151
+          ],
+          "occupancies": {
+            "CK": 0.28265358801970586,
+            "CK_ADP": 0.0,
+            "CK_ATP": 1.4519876100097073,
+            "CK_CP": 28.265358801970585,
+            "CK_CP_ADP": 0.0,
+            "CK_Cr": 0.0,
+            "CK_Cr_ATP": 0.0
+          }
+        },
+        {
+          "fixed_free_relaxation_time": 0.0010751622489020634,
+          "fixed_free_spectral_gap": 930.0921800604348,
+          "free": {
+            "ADP": 100.0,
+            "ATP": 100.0,
+            "CP": 100.0,
+            "Cr": 100.0
+          },
+          "generator_column_sum_residual": 1.5987211554602254e-13,
+          "generator_residual": 3.637978807091713e-12,
+          "interpretation": "Frozen-free generator only; not a full-network fast/slow separation certificate.",
+          "label": "algebraic_interior_probe_100_not_validation_scenario",
+          "max_explicit_vs_generator_error": 1.7763568394002505e-15,
+          "net_catalytic_current": 7.976561665629649,
+          "nonzero_eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nonzero_eigenvalues_real": [
+            -4187.193654130448,
+            -3092.44491431011,
+            -2149.285896649807,
+            -1237.0021682054908,
+            -930.0921800604348,
+            -1043.414961043704
+          ],
+          "occupancies": {
+            "CK": 8.080113367020243,
+            "CK_ADP": 15.837683481250144,
+            "CK_ATP": 1.1110686387811177,
+            "CK_CP": 1.6137221758832934,
+            "CK_CP_ADP": 3.1618606321051557,
+            "CK_Cr": 0.16867304100197794,
+            "CK_Cr_ATP": 0.026878663958067456
+          }
+        }
+      ],
+      "lumpability": {
+        "enzyme_total_both": 1.0,
+        "free_pair": {
+          "free_y_equal": true,
+          "max_projected_rhs_difference": 1196.0784314,
+          "rhs1": {
+            "ADP": -196.0784314,
+            "ATP": -13.69863014,
+            "CP": -20.0,
+            "Cr": -2.04081633
+          },
+          "rhs2": {
+            "ADP": 1000.0,
+            "ATP": 0.0,
+            "CP": 1000.0,
+            "Cr": 0.0
+          },
+          "state1": {
+            "ADP": 10.0,
+            "ATP": 10.0,
+            "CK": 1,
+            "CK_ADP": 0.0,
+            "CK_ATP": 0.0,
+            "CK_CP": 0.0,
+            "CK_CP_ADP": 0.0,
+            "CK_Cr": 0.0,
+            "CK_Cr_ATP": 0.0,
+            "CP": 10.0,
+            "Cr": 10.0
+          },
+          "state2": {
+            "ADP": 10.0,
+            "ATP": 10.0,
+            "CK": 0,
+            "CK_ADP": 0.0,
+            "CK_ATP": 0.0,
+            "CK_CP": 0.0,
+            "CK_CP_ADP": 1,
+            "CK_Cr": 0.0,
+            "CK_Cr_ATP": 0.0,
+            "CP": 10.0,
+            "Cr": 10.0
+          }
+        },
+        "occupied_source_state": "CK_CP_ADP",
+        "status": "NOT_EXACTLY_LUMPABLE_FOR_DECLARED_COORDINATES",
+        "total_pair": {
+          "max_projected_rhs_difference": 2.5274083330000394,
+          "rhs1": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rhs2": [
+            -2.5274083330000394,
+            -2.5274083330000394,
+            2.527408333,
+            2.527408333
+          ],
+          "state1": {
+            "ADP": 10.0,
+            "ATP": 10.0,
+            "CK": 1,
+            "CK_ADP": 0.0,
+            "CK_ATP": 0.0,
+            "CK_CP": 0.0,
+            "CK_CP_ADP": 0.0,
+            "CK_Cr": 0.0,
+            "CK_Cr_ATP": 0.0,
+            "CP": 10.0,
+            "Cr": 10.0
+          },
+          "state2": {
+            "ADP": 9.0,
+            "ATP": 10.0,
+            "CK": 0,
+            "CK_ADP": 0.0,
+            "CK_ATP": 0.0,
+            "CK_CP": 0.0,
+            "CK_CP_ADP": 1,
+            "CK_Cr": 0.0,
+            "CK_Cr_ATP": 0.0,
+            "CP": 9.0,
+            "Cr": 10.0
+          },
+          "total_y1": [
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "total_y2": [
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "total_y_equal": true
+        }
+      },
+      "unit": "CK"
+    },
+    {
+      "fixed_free_stationarity": [
+        {
+          "fixed_free_relaxation_time": 0.0010000000145896372,
+          "fixed_free_spectral_gap": 999.9999854103629,
+          "free": {
+            "ADP": 0.0,
+            "ATP": 3750.0,
+            "GDP": 0.0,
+            "GTP": 2500.0
+          },
+          "generator_column_sum_residual": 0.0,
+          "generator_residual": 2.8421709430404007e-13,
+          "interpretation": "Frozen-free generator only; not a full-network fast/slow separation certificate.",
+          "label": "author_initial_free",
+          "max_explicit_vs_generator_error": 6.128912928254401e-17,
+          "net_catalytic_current": 0.0,
+          "nonzero_eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nonzero_eigenvalues_real": [
+            -19750.0000025,
+            -18666.666667500005,
+            -999.9999854103629,
+            -1000.0000145896377,
+            -4252.260710574028,
+            -1301.07262442597
+          ],
+          "occupancies": {
+            "NDK": 0.0911392404947925,
+            "NDK_ADP": 0.0,
+            "NDK_ATP": 0.18987341784938308,
+            "NDK_GDP": 0.0,
+            "NDK_GDP_ATP": 0.0,
+            "NDK_GTP": 1.5189873416558246,
+            "NDK_GTP_ADP": 0.0
+          }
+        },
+        {
+          "fixed_free_relaxation_time": 0.0012902780068122968,
+          "fixed_free_spectral_gap": 775.0267730832329,
+          "free": {
+            "ADP": 100.0,
+            "ATP": 100.0,
+            "GDP": 100.0,
+            "GTP": 100.0
+          },
+          "generator_column_sum_residual": 1.1368683772161603e-13,
+          "generator_residual": 2.2737367544323206e-13,
+          "interpretation": "Frozen-free generator only; not a full-network fast/slow separation certificate.",
+          "label": "algebraic_interior_probe_100_not_validation_scenario",
+          "max_explicit_vs_generator_error": 5.551115123125783e-17,
+          "net_catalytic_current": 10.935985668039885,
+          "nonzero_eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nonzero_eigenvalues_real": [
+            -5516.143816388259,
+            -4204.760914369921,
+            -3307.3420704322316,
+            -775.0267730832329,
+            -1875.9903396845132,
+            -1347.1162146418494
+          ],
+          "occupancies": {
+            "NDK": 0.28080276873590837,
+            "NDK_ADP": 0.4320361811216112,
+            "NDK_ATP": 0.012782162506453988,
+            "NDK_GDP": 0.5649488807596948,
+            "NDK_GDP_ATP": 0.023268054612850825,
+            "NDK_GTP": 0.19156039084613397,
+            "NDK_GTP_ADP": 0.29460156141734695
+          }
+        }
+      ],
+      "lumpability": {
+        "enzyme_total_both": 1.0,
+        "free_pair": {
+          "free_y_equal": true,
+          "max_projected_rhs_difference": 1204.0816327,
+          "rhs1": {
+            "ADP": -151.5151515,
+            "ATP": -5.555555559999999,
+            "GDP": -204.0816327,
+            "GTP": -66.66666667
+          },
+          "rhs2": {
+            "ADP": 0.0,
+            "ATP": 1000.0,
+            "GDP": 1000.0,
+            "GTP": 0.0
+          },
+          "state1": {
+            "ADP": 10.0,
+            "ATP": 10.0,
+            "GDP": 10.0,
+            "GTP": 10.0,
+            "NDK": 1,
+            "NDK_ADP": 0.0,
+            "NDK_ATP": 0.0,
+            "NDK_GDP": 0.0,
+            "NDK_GDP_ATP": 0.0,
+            "NDK_GTP": 0.0,
+            "NDK_GTP_ADP": 0.0
+          },
+          "state2": {
+            "ADP": 10.0,
+            "ATP": 10.0,
+            "GDP": 10.0,
+            "GTP": 10.0,
+            "NDK": 0,
+            "NDK_ADP": 0.0,
+            "NDK_ATP": 0.0,
+            "NDK_GDP": 0.0,
+            "NDK_GDP_ATP": 1,
+            "NDK_GTP": 0.0,
+            "NDK_GTP_ADP": 0.0
+          }
+        },
+        "occupied_source_state": "NDK_GDP_ATP",
+        "status": "NOT_EXACTLY_LUMPABLE_FOR_DECLARED_COORDINATES",
+        "total_pair": {
+          "max_projected_rhs_difference": 470.0,
+          "rhs1": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rhs2": [
+            -470.0,
+            -470.0,
+            470.0,
+            470.0
+          ],
+          "state1": {
+            "ADP": 10.0,
+            "ATP": 10.0,
+            "GDP": 10.0,
+            "GTP": 10.0,
+            "NDK": 1,
+            "NDK_ADP": 0.0,
+            "NDK_ATP": 0.0,
+            "NDK_GDP": 0.0,
+            "NDK_GDP_ATP": 0.0,
+            "NDK_GTP": 0.0,
+            "NDK_GTP_ADP": 0.0
+          },
+          "state2": {
+            "ADP": 10.0,
+            "ATP": 9.0,
+            "GDP": 9.0,
+            "GTP": 10.0,
+            "NDK": 0,
+            "NDK_ADP": 0.0,
+            "NDK_ATP": 0.0,
+            "NDK_GDP": 0.0,
+            "NDK_GDP_ATP": 1,
+            "NDK_GTP": 0.0,
+            "NDK_GTP_ADP": 0.0
+          },
+          "total_y1": [
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "total_y2": [
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "total_y_equal": true
+        }
+      },
+      "unit": "NDK"
+    },
+    {
+      "fixed_free_stationarity": [
+        {
+          "fixed_free_relaxation_time": 0.001000000000000002,
+          "fixed_free_spectral_gap": 999.9999999999981,
+          "free": {
+            "ADP": 0.0,
+            "AMP": 0.0,
+            "ATP": 3750.0
+          },
+          "generator_column_sum_residual": 1.1368683772161603e-13,
+          "generator_residual": 0.0,
+          "interpretation": "Frozen-free generator only; not a full-network fast/slow separation certificate.",
+          "label": "author_initial_free",
+          "max_explicit_vs_generator_error": 4.960200216712431e-16,
+          "net_catalytic_current": 0.0,
+          "nonzero_eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nonzero_eigenvalues_real": [
+            -63500.0000125,
+            -999.9999999999998,
+            -64504.06377771168,
+            -2419.9796829406982,
+            -999.9999999999981,
+            -1177.1565518476216
+          ],
+          "occupancies": {
+            "MK": 0.0881889763605927,
+            "MK_ADP_1": 0.0,
+            "MK_ADP_2": 0.0,
+            "MK_ADP_ADP": 0.0,
+            "MK_AMP": 0.0,
+            "MK_ATP": 5.511811023639407,
+            "MK_ATP_AMP": 0.0
+          }
+        },
+        {
+          "fixed_free_relaxation_time": 0.0011872530462104427,
+          "fixed_free_spectral_gap": 842.2804247096859,
+          "free": {
+            "ADP": 100.0,
+            "AMP": 100.0,
+            "ATP": 100.0
+          },
+          "generator_column_sum_residual": 4.547473508864641e-13,
+          "generator_residual": 4.547473508864641e-13,
+          "interpretation": "Frozen-free generator only; not a full-network fast/slow separation certificate.",
+          "label": "algebraic_interior_probe_100_not_validation_scenario",
+          "max_explicit_vs_generator_error": 4.440892098500626e-16,
+          "net_catalytic_current": 86.66021419095918,
+          "nonzero_eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nonzero_eigenvalues_real": [
+            -7344.853956112302,
+            -5623.870041587533,
+            -3717.8493793615075,
+            -2102.2410684171214,
+            -1332.742492211846,
+            -842.2804247096859
+          ],
+          "occupancies": {
+            "MK": 0.6266832103332421,
+            "MK_ADP_1": 0.08579603856588854,
+            "MK_ADP_2": 2.3078847848312187,
+            "MK_ADP_ADP": 0.32334417512271596,
+            "MK_AMP": 0.48692999540423215,
+            "MK_ATP": 0.9931178164259195,
+            "MK_ATP_AMP": 0.7762439793167835
+          }
+        }
+      ],
+      "lumpability": {
+        "enzyme_total_both": 1.0,
+        "free_pair": {
+          "free_y_equal": true,
+          "max_projected_rhs_difference": 1166.6666667,
+          "rhs1": {
+            "ADP": -368.13186809,
+            "AMP": -83.33333333,
+            "ATP": -166.6666667
+          },
+          "rhs2": {
+            "ADP": 0.0,
+            "AMP": 1000.0,
+            "ATP": 1000.0
+          },
+          "state1": {
+            "ADP": 10.0,
+            "AMP": 10.0,
+            "ATP": 10.0,
+            "MK": 1,
+            "MK_ADP_1": 0.0,
+            "MK_ADP_2": 0.0,
+            "MK_ADP_ADP": 0.0,
+            "MK_AMP": 0.0,
+            "MK_ATP": 0.0,
+            "MK_ATP_AMP": 0.0
+          },
+          "state2": {
+            "ADP": 10.0,
+            "AMP": 10.0,
+            "ATP": 10.0,
+            "MK": 0,
+            "MK_ADP_1": 0.0,
+            "MK_ADP_2": 0.0,
+            "MK_ADP_ADP": 0.0,
+            "MK_AMP": 0.0,
+            "MK_ATP": 0.0,
+            "MK_ATP_AMP": 1
+          }
+        },
+        "occupied_source_state": "MK_ATP_AMP",
+        "status": "NOT_EXACTLY_LUMPABLE_FOR_DECLARED_COORDINATES",
+        "total_pair": {
+          "max_projected_rhs_difference": 511.2,
+          "rhs1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rhs2": [
+            -255.5999999999999,
+            -255.5999999999999,
+            511.2
+          ],
+          "state1": {
+            "ADP": 10.0,
+            "AMP": 10.0,
+            "ATP": 10.0,
+            "MK": 1,
+            "MK_ADP_1": 0.0,
+            "MK_ADP_2": 0.0,
+            "MK_ADP_ADP": 0.0,
+            "MK_AMP": 0.0,
+            "MK_ATP": 0.0,
+            "MK_ATP_AMP": 0.0
+          },
+          "state2": {
+            "ADP": 10.0,
+            "AMP": 9.0,
+            "ATP": 9.0,
+            "MK": 0,
+            "MK_ADP_1": 0.0,
+            "MK_ADP_2": 0.0,
+            "MK_ADP_ADP": 0.0,
+            "MK_AMP": 0.0,
+            "MK_ATP": 0.0,
+            "MK_ATP_AMP": 1
+          },
+          "total_y1": [
+            10.0,
+            10.0,
+            10.0
+          ],
+          "total_y2": [
+            10.0,
+            10.0,
+            10.0
+          ],
+          "total_y_equal": true
+        }
+      },
+      "unit": "MK"
+    },
+    {
+      "fixed_free_stationarity": [
+        {
+          "fixed_free_relaxation_time": 0.0025322541138948036,
+          "fixed_free_spectral_gap": 394.90507469723184,
+          "free": {
+            "PO4": 0.0,
+            "PPi": 0.0
+          },
+          "generator_column_sum_residual": 0.0,
+          "generator_residual": 0.0,
+          "interpretation": "Frozen-free generator only; not a full-network fast/slow separation certificate.",
+          "label": "author_initial_free",
+          "max_explicit_vs_generator_error": 0.0,
+          "net_catalytic_current": 0.0,
+          "nonzero_eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nonzero_eigenvalues_real": [
+            -400.0,
+            -394.90507469723184,
+            -1185.0949253027682
+          ],
+          "occupancies": {
+            "PPiase": 0.16,
+            "PPiase_PO4": 0.0,
+            "PPiase_PO4_PO4": 0.0,
+            "PPiase_PPi": 0.0
+          }
+        },
+        {
+          "fixed_free_relaxation_time": 0.001152173765143028,
+          "fixed_free_spectral_gap": 867.924639714273,
+          "free": {
+            "PO4": 100.0,
+            "PPi": 100.0
+          },
+          "generator_column_sum_residual": 2.220446049250313e-14,
+          "generator_residual": 3.6637359812630166e-15,
+          "interpretation": "Frozen-free generator only; not a full-network fast/slow separation certificate.",
+          "label": "algebraic_interior_probe_100_not_validation_scenario",
+          "max_explicit_vs_generator_error": 1.3877787807814457e-17,
+          "net_catalytic_current": 23.639850266973752,
+          "nonzero_eigenvalues_imag": [
+            0.0,
+            381.72907934272854,
+            -381.72907934272854
+          ],
+          "nonzero_eigenvalues_real": [
+            -4876.050720571455,
+            -867.924639714273,
+            -867.924639714273
+          ],
+          "occupancies": {
+            "PPiase": 0.006838739264751853,
+            "PPiase_PO4": 0.059544143719643255,
+            "PPiase_PO4_PO4": 0.054525365261181014,
+            "PPiase_PPi": 0.039091751754423865
+          }
+        }
+      ],
+      "lumpability": {
+        "enzyme_total_both": 1.0,
+        "free_pair": {
+          "free_y_equal": true,
+          "max_projected_rhs_difference": 660.0,
+          "rhs1": {
+            "PO4": -2.6,
+            "PPi": -460.0
+          },
+          "rhs2": {
+            "PO4": 0.0,
+            "PPi": 200.0
+          },
+          "state1": {
+            "PO4": 10.0,
+            "PPi": 10.0,
+            "PPiase": 1,
+            "PPiase_PO4": 0.0,
+            "PPiase_PO4_PO4": 0.0,
+            "PPiase_PPi": 0.0
+          },
+          "state2": {
+            "PO4": 10.0,
+            "PPi": 10.0,
+            "PPiase": 0,
+            "PPiase_PO4": 0.0,
+            "PPiase_PO4_PO4": 0.0,
+            "PPiase_PPi": 1
+          }
+        },
+        "occupied_source_state": "PPiase_PPi",
+        "status": "NOT_EXACTLY_LUMPABLE_FOR_DECLARED_COORDINATES",
+        "total_pair": {
+          "max_projected_rhs_difference": 1600.0,
+          "rhs1": [
+            0.0,
+            0.0
+          ],
+          "rhs2": [
+            -800.0,
+            1600.0
+          ],
+          "state1": {
+            "PO4": 10.0,
+            "PPi": 10.0,
+            "PPiase": 1,
+            "PPiase_PO4": 0.0,
+            "PPiase_PO4_PO4": 0.0,
+            "PPiase_PPi": 0.0
+          },
+          "state2": {
+            "PO4": 10.0,
+            "PPi": 9.0,
+            "PPiase": 0,
+            "PPiase_PO4": 0.0,
+            "PPiase_PO4_PO4": 0.0,
+            "PPiase_PPi": 1
+          },
+          "total_y1": [
+            10.0,
+            10.0
+          ],
+          "total_y2": [
+            10.0,
+            10.0
+          ],
+          "total_y_equal": true
+        }
+      },
+      "unit": "PPiase"
+    }
+  ],
+  "script_sha256": "f1efc0024c2e69dca3009f3fdd9ad35ea64f986c10de2feb765fd3f6951fcfc2",
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "source_hashes": {
+    "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+  },
+  "status": "KINETIC_CANDIDATE_AND_ALGEBRAIC_CHECKS_ONLY",
+  "total_closure_corner_domain_obstructions": {
+    "CK": {
+      "contradiction": "Zero product totals force CK_Cr_ATP=0; its stationary equation requires k338*CK_CP_ADP=0, but positive substrate totals force positive substrate free concentrations and CK_CP_ADP>0.",
+      "positive_totals": [
+        "CP",
+        "ADP"
+      ],
+      "zero_totals": [
+        "Cr",
+        "ATP"
+      ]
+    },
+    "MK": {
+      "contradiction": "Zero ADP total forces both MK_ADP site forms and MK_ADP_ADP=0; stationary product-complex balance requires k388*MK_ATP_AMP=0, contradicting positive ATP/AMP totals.",
+      "positive_totals": [
+        "ATP",
+        "AMP"
+      ],
+      "zero_totals": [
+        "ADP"
+      ]
+    },
+    "NDK": {
+      "contradiction": "Zero product totals force NDK_GTP_ADP=0; its stationary equation requires k363*NDK_GDP_ATP=0, but positive substrate totals force positive substrate free concentrations and NDK_GDP_ATP>0.",
+      "positive_totals": [
+        "ATP",
+        "GDP"
+      ],
+      "zero_totals": [
+        "ADP",
+        "GTP"
+      ]
+    },
+    "PPiase": {
+      "contradiction": "Zero PO4 total forces both phosphate-bound states zero; stationary double-phosphate balance requires k407*PPiase_PPi=0, contradicting positive PPi total.",
+      "positive_totals": [
+        "PPi"
+      ],
+      "zero_totals": [
+        "PO4"
+      ]
+    }
+  },
+  "units_warning": "No explicit unit definitions; author CSV concentration/time dimensions are unresolved. Seconds label follows the author numerical interval, not independently certified physical units."
+}

@@ -1,0 +1,10 @@
+{
+  "diagnostic_error": "Wrong dictionary key in progress print, after saved metrics.",
+  "preserved_prior_metrics": {
+    "results/energy_cycles_v1/numerical_ndk_coordinate/NDK__CHALLENGE_ATP_DOUBLE/ORIGINAL_NONEQUILIBRIUM/metrics.json": "04be4f64f795f3117e6219b3d4876ce839fdd584b4187b26d1f364748f01f99a"
+  },
+  "prior_failure": "numerical_ndk_coordinate/NDK__CHALLENGE_ATP_DOUBLE/failure.json",
+  "prior_log": "NDK_coordinate_rerun.log",
+  "new_addendum_sha256": "63fd5e552b09f9d5694cc8ca86e8afc0bb3c84f3822e36678df86d04299717fd",
+  "scientific_model_change": false
+}

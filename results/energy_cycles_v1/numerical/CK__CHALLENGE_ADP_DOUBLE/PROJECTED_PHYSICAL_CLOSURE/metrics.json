@@ -1,0 +1,192 @@
+{
+  "id": "CK__CHALLENGE_ADP_DOUBLE",
+  "initial_mode": "PROJECTED_PHYSICAL_CLOSURE",
+  "execution_status": "COMPLETE",
+  "scientific_status": "SCENARIO_GATES_PASS",
+  "failed_gates": [],
+  "uncertain_gates": [],
+  "windows": [
+    {
+      "window": [
+        0,
+        0.05
+      ],
+      "max_scaled_free": 8.574533315671336e-08,
+      "max_scaled_retained": 1.903828698838576e-08,
+      "max_scaled_bound": 1.5245237977505135e-06,
+      "max_scaled_occupancy": 1.5101364320220986e-06,
+      "normalized_net_flux_rms": 2.119124872125238e-05,
+      "max_normalized_cumulative_resource_flow": 9.51914355636537e-09,
+      "uncertainty": {
+        "concentration": 4.278282024946141e-11,
+        "flux": 3.5087599322187894e-10,
+        "flow": 2.1974392675853476e-12
+      }
+    },
+    {
+      "window": [
+        0.05,
+        1
+      ],
+      "max_scaled_free": 4.5631187523061574e-07,
+      "max_scaled_retained": 4.3737351764624083e-07,
+      "max_scaled_bound": 1.9539143188751495e-06,
+      "max_scaled_occupancy": 1.9352808877215464e-06,
+      "normalized_net_flux_rms": 2.4501802280744176e-05,
+      "max_normalized_cumulative_resource_flow": 2.18686759059968e-07,
+      "uncertainty": {
+        "concentration": 2.2059528722214359e-10,
+        "flux": 1.4576981375121532e-09,
+        "flow": 1.1028432093477629e-10
+      }
+    },
+    {
+      "window": [
+        1,
+        1000
+      ],
+      "max_scaled_free": 3.697706590628513e-05,
+      "max_scaled_retained": 3.668600181489031e-05,
+      "max_scaled_bound": 4.1615882232592936e-05,
+      "max_scaled_occupancy": 4.376852021164742e-05,
+      "normalized_net_flux_rms": 3.9358319255475224e-05,
+      "max_normalized_cumulative_resource_flow": 1.8343000908392543e-05,
+      "uncertainty": {
+        "concentration": 2.2040042798228873e-09,
+        "flux": 5.73249037280688e-09,
+        "flow": 1.1020021399114436e-09
+      }
+    }
+  ],
+  "normalized_conservation_residual": 2.3299288424520153e-11,
+  "minimum_unclipped_inventory": 0.0,
+  "flux_scale": 5.403097535273828,
+  "cumulative_extent_scale": 600.0,
+  "initial_projection_max_free_shift": 29.43832675999147,
+  "endpoint_net_extents": {
+    "microscopic": 599.8102898157822,
+    "reduced": 599.8102898157833
+  },
+  "solver": {
+    "reference": {
+      "method": "Radau",
+      "nfev": 2722,
+      "njev": 111,
+      "nlu": 298,
+      "message": "The solver successfully reached the end of the integration interval."
+    },
+    "reference_tight": {
+      "method": "Radau",
+      "nfev": 10221,
+      "njev": 361,
+      "nlu": 1250,
+      "message": "The solver successfully reached the end of the integration interval."
+    },
+    "independent_BDF": {
+      "method": "BDF",
+      "nfev": 5872,
+      "njev": 336,
+      "nlu": 1439,
+      "message": "The solver successfully reached the end of the integration interval."
+    },
+    "candidate": {
+      "method": "Radau",
+      "nfev": 1051,
+      "njev": 8,
+      "nlu": 84,
+      "maximum_closure_residual": 2.1028512264820165e-11,
+      "minimum_total_jacobian_singular_value": 0.9995291016695624,
+      "maximum_fast_tangent_real_eigenvalue": -684.5250033594665,
+      "minimum_fast_relaxation_rate": 684.5250033594665,
+      "message": "The solver successfully reached the end of the integration interval."
+    },
+    "candidate_tight": {
+      "method": "Radau",
+      "nfev": 2990,
+      "njev": 7,
+      "nlu": 96,
+      "maximum_closure_residual": 2.1026735907980765e-11,
+      "minimum_total_jacobian_singular_value": 0.9995291016696021,
+      "maximum_fast_tangent_real_eigenvalue": -684.5250033606626,
+      "minimum_fast_relaxation_rate": 684.5250033606626,
+      "message": "The solver successfully reached the end of the integration interval."
+    },
+    "initial_multistart_root_spread": 7.73070496506989e-12,
+    "failed_multistart_seeds": []
+  },
+  "code_provenance": {
+    "scripts/energy_cycles/kinetics_analysis.py": "f1efc0024c2e69dca3009f3fdd9ad35ea64f986c10de2feb765fd3f6951fcfc2",
+    "scripts/energy_cycles/preregister.py": "132b53e7bc77caad7909ee6feca6c395322c664d45160fbbc6ca9a017b26403b",
+    "scripts/energy_cycles/runtime.py": "3816068569df177b1f8e604e0ad5840964ec06247fc167117ebed3ef93d77be6",
+    "scripts/energy_cycles/source.py": "92b3d332c9e9be79579ba071e8880ffc7589df4fddc68e83beec197ac33a37b7"
+  },
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "source_hashes": {
+    "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+  },
+  "parameter_set": "Author simulator CSV, unmodified",
+  "initial_conditions": {
+    "id": "CK__CHALLENGE_ADP_DOUBLE",
+    "unit": "CK",
+    "condition": "CHALLENGE_ADP_DOUBLE",
+    "initial_original": {
+      "ADP": 600.0,
+      "ATP": 3750.0,
+      "CK": 30.0,
+      "CK_ADP": 0.0,
+      "CK_ATP": 0.0,
+      "CK_CP": 0.0,
+      "CK_CP_ADP": 0.0,
+      "CK_Cr": 0.0,
+      "CK_Cr_ATP": 0.0,
+      "CK_degraded": 0.0,
+      "CP": 50000.0,
+      "Cr": 300.0
+    },
+    "enzyme_total": 30.0,
+    "initial_modes": [
+      "ORIGINAL_NONEQUILIBRIUM",
+      "PROJECTED_PHYSICAL_CLOSURE"
+    ],
+    "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+    "concentration_scales": {
+      "CP": 50000.0,
+      "ADP": 600.0,
+      "Cr": 300.0,
+      "ATP": 3750.0
+    },
+    "bound_scales": {
+      "CP": 30.0,
+      "ADP": 30.0,
+      "Cr": 30.0,
+      "ATP": 30.0
+    },
+    "occupancy_scale": 30.0,
+    "cumulative_extent_scale": 600.0,
+    "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+  },
+  "command": [
+    "scripts/energy_cycles/runtime.py",
+    "--unit",
+    "CK"
+  ],
+  "environment": {
+    "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.22631-SP0"
+  },
+  "trajectory": {
+    "path": "results/energy_cycles_v1/numerical/CK__CHALLENGE_ADP_DOUBLE/PROJECTED_PHYSICAL_CLOSURE/trajectories.npz",
+    "sha256": "4f735c642266eb95dfde3e8f98c60c06639fbb53af53e2a8bc87efe7f9271ffb",
+    "quadrature_columns": [
+      "forward_extent",
+      "reverse_extent"
+    ]
+  },
+  "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b"
+}

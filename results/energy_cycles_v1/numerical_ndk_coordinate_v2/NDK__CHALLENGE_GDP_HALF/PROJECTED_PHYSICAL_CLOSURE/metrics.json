@@ -1,0 +1,219 @@
+{
+  "id": "NDK__CHALLENGE_GDP_HALF",
+  "initial_mode": "PROJECTED_PHYSICAL_CLOSURE",
+  "execution_status": "COMPLETE",
+  "scientific_status": "SCENARIO_GATES_PASS",
+  "failed_gates": [],
+  "uncertain_gates": [],
+  "windows": [
+    {
+      "window": [
+        0,
+        0.05
+      ],
+      "max_scaled_free": 1.4372101524031678e-05,
+      "max_scaled_retained": 1.351415343407325e-05,
+      "max_scaled_bound": 4.206848980244556e-05,
+      "max_scaled_occupancy": 3.973212640920012e-05,
+      "normalized_net_flux_rms": 0.001607343716600528,
+      "max_normalized_cumulative_resource_flow": 1.3514172510267208e-05,
+      "uncertainty": {
+        "concentration": 4.8732715640653626e-11,
+        "flux": 1.3822802431747049e-09,
+        "flow": 4.8732604618351164e-11
+      }
+    },
+    {
+      "window": [
+        0.05,
+        1
+      ],
+      "max_scaled_free": 0.00015601453755849094,
+      "max_scaled_retained": 0.00015580603508531964,
+      "max_scaled_bound": 3.929969031214576e-05,
+      "max_scaled_occupancy": 3.711456859166616e-05,
+      "normalized_net_flux_rms": 0.0009480426319977075,
+      "max_normalized_cumulative_resource_flow": 0.0001558058117905148,
+      "uncertainty": {
+        "concentration": 7.508593569127697e-10,
+        "flux": 1.3602600346652709e-09,
+        "flow": 7.508594279670434e-10
+      }
+    },
+    {
+      "window": [
+        1,
+        1000
+      ],
+      "max_scaled_free": 0.00018152481232505124,
+      "max_scaled_retained": 0.0001815340551878819,
+      "max_scaled_bound": 1.1330406480084912e-05,
+      "max_scaled_occupancy": 9.389748075985495e-06,
+      "normalized_net_flux_rms": 1.2990627586168896e-05,
+      "max_normalized_cumulative_resource_flow": 0.00018153394762279618,
+      "uncertainty": {
+        "concentration": 8.52077164381626e-10,
+        "flux": 8.884349328433022e-11,
+        "flow": 1.6623154408534902e-09
+      }
+    }
+  ],
+  "normalized_conservation_residual": 8.993299931919158e-12,
+  "minimum_unclipped_inventory": -3.248661472547578e-13,
+  "flux_scale": 8.46,
+  "cumulative_extent_scale": 50.0,
+  "initial_projection_max_free_shift": 1.5696571011308151,
+  "endpoint_net_extents": {
+    "microscopic": 49.99999999999997,
+    "reduced": 49.99999999410787
+  },
+  "solver": {
+    "reference": {
+      "method": "Radau",
+      "nfev": 2615,
+      "njev": 30,
+      "nlu": 164,
+      "message": "The solver successfully reached the end of the integration interval."
+    },
+    "reference_tight": {
+      "method": "Radau",
+      "nfev": 24515,
+      "njev": 354,
+      "nlu": 4478,
+      "message": "The solver successfully reached the end of the integration interval."
+    },
+    "independent_BDF": {
+      "method": "BDF",
+      "nfev": 130603,
+      "njev": 10735,
+      "nlu": 48617,
+      "message": "The solver successfully reached the end of the integration interval."
+    },
+    "candidate": {
+      "method": "Radau",
+      "coordinate": "NDK exponential limiting inventory",
+      "nfev": 1062,
+      "njev": 1,
+      "nlu": 70,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "maximum_closure_residual": 4.547473508864641e-13,
+      "minimum_total_jacobian_singular_value": 0.9998593534778176,
+      "maximum_fast_tangent_real_eigenvalue": -730.4265644694209,
+      "minimum_fast_relaxation_rate": 730.4265644694209,
+      "maximum_extent_coordinate_vs_direct_quadrature_error": 8.370307114091702e-08,
+      "maximum_factored_vs_reconstructed_source_current_error": 1.4210854715202004e-14,
+      "limiting_resource": "GDP",
+      "initial_limiting_inventory": 50.0,
+      "minimum_remaining_inventory": 1.3574877557391367e-186,
+      "maximum_q": 431.8872145492487,
+      "remaining_inventory_underflow_samples": 0,
+      "fast_attractivity_scope": "Initial/output-grid roots, matching frozen runtime; not a uniform global certificate",
+      "no_clipping_or_product_seeding": true,
+      "implementation_sha256": "e2dda344d6121ae62abc92447f50bb877be9442e8f37709164c76ec1d9e62f2c"
+    },
+    "candidate_tight": {
+      "method": "Radau",
+      "coordinate": "NDK exponential limiting inventory",
+      "nfev": 3197,
+      "njev": 1,
+      "nlu": 86,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "maximum_closure_residual": 4.547473508864641e-13,
+      "minimum_total_jacobian_singular_value": 0.9998593534778176,
+      "maximum_fast_tangent_real_eigenvalue": -730.4265644694209,
+      "minimum_fast_relaxation_rate": 730.4265644694209,
+      "maximum_extent_coordinate_vs_direct_quadrature_error": 8.579661425756058e-10,
+      "maximum_factored_vs_reconstructed_source_current_error": 1.4210854715202004e-14,
+      "limiting_resource": "GDP",
+      "initial_limiting_inventory": 50.0,
+      "minimum_remaining_inventory": 1.3574877557412203e-186,
+      "maximum_q": 431.8872145492472,
+      "remaining_inventory_underflow_samples": 0,
+      "fast_attractivity_scope": "Initial/output-grid roots, matching frozen runtime; not a uniform global certificate",
+      "no_clipping_or_product_seeding": true,
+      "implementation_sha256": "e2dda344d6121ae62abc92447f50bb877be9442e8f37709164c76ec1d9e62f2c"
+    },
+    "initial_multistart_root_spread": 1.546851535749738e-10,
+    "failed_multistart_seeds": []
+  },
+  "code_provenance": {
+    "scripts/energy_cycles/kinetics_analysis.py": "f1efc0024c2e69dca3009f3fdd9ad35ea64f986c10de2feb765fd3f6951fcfc2",
+    "scripts/energy_cycles/preregister.py": "132b53e7bc77caad7909ee6feca6c395322c664d45160fbbc6ca9a017b26403b",
+    "scripts/energy_cycles/runtime.py": "3816068569df177b1f8e604e0ad5840964ec06247fc167117ebed3ef93d77be6",
+    "scripts/energy_cycles/source.py": "92b3d332c9e9be79579ba071e8880ffc7589df4fddc68e83beec197ac33a37b7"
+  },
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "source_hashes": {
+    "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+  },
+  "parameter_set": "Author simulator CSV, unmodified",
+  "initial_conditions": {
+    "id": "NDK__CHALLENGE_GDP_HALF",
+    "unit": "NDK",
+    "condition": "CHALLENGE_GDP_HALF",
+    "initial_original": {
+      "ADP": 100.0,
+      "ATP": 3750.0,
+      "GDP": 50.0,
+      "GTP": 2500.0,
+      "NDK": 1.8,
+      "NDK_ADP": 0.0,
+      "NDK_ATP": 0.0,
+      "NDK_GDP": 0.0,
+      "NDK_GDP_ATP": 0.0,
+      "NDK_GTP": 0.0,
+      "NDK_GTP_ADP": 0.0,
+      "NDK_degraded": 0.0
+    },
+    "enzyme_total": 1.8,
+    "initial_modes": [
+      "ORIGINAL_NONEQUILIBRIUM",
+      "PROJECTED_PHYSICAL_CLOSURE"
+    ],
+    "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+    "concentration_scales": {
+      "ATP": 3750.0,
+      "GDP": 50.0,
+      "ADP": 100.0,
+      "GTP": 2500.0
+    },
+    "bound_scales": {
+      "ATP": 1.8,
+      "GDP": 1.8,
+      "ADP": 1.8,
+      "GTP": 1.8
+    },
+    "occupancy_scale": 1.8,
+    "cumulative_extent_scale": 50.0,
+    "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+  },
+  "command": [
+    "scripts/energy_cycles/ndk_coordinate_rerun_v2.py"
+  ],
+  "environment": {
+    "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.22631-SP0"
+  },
+  "trajectory": {
+    "path": "results/energy_cycles_v1/numerical_ndk_coordinate_v2/NDK__CHALLENGE_GDP_HALF/PROJECTED_PHYSICAL_CLOSURE/trajectories.npz",
+    "sha256": "8a7a362b78a04700eacbfbfeadf3b2de858a9f13f84f5ffcbc952c834f5cb64d",
+    "quadrature_columns": [
+      "forward_extent",
+      "reverse_extent"
+    ]
+  },
+  "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+  "engineering_addendum_sha256": "63fd5e552b09f9d5694cc8ca86e8afc0bb3c84f3822e36678df86d04299717fd",
+  "engineering_implementation_sha256": {
+    "scripts/energy_cycles/ndk_depletion_coordinate.py": "e2dda344d6121ae62abc92447f50bb877be9442e8f37709164c76ec1d9e62f2c",
+    "scripts/energy_cycles/ndk_coordinate_rerun_v2.py": "1f7d57aee169b0d21fc00b618009e8fb3b4ef3d651aaf6cc463a791f7d1276ea"
+  },
+  "preserved_native_failure": "results/energy_cycles_v1/numerical/NDK__CHALLENGE_GDP_HALF/failure.json",
+  "wall_seconds": 15.483999999999469
+}

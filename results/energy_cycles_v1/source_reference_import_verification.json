@@ -1,0 +1,63 @@
+{
+  "status": "INDEPENDENT_ENGINE_IMPORT_MATRIX_CHECK_PASS",
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "environment": {
+    "python": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+    "executable": "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "roadrunner": "2.10.0",
+    "numpy": "2.2.6"
+  },
+  "command": [
+    "C:\\Users\\sean\\Desktop\\GUV\\.venv-roadrunner311\\Scripts\\python.exe",
+    "C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\verify_imported_matrix.py"
+  ],
+  "script_sha256": "6962218df4940356b5fb6087c4af7b067eecc8e34dcd7750b6e340a6e9e06751",
+  "canonical_xml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "imports": {
+    "raw_canonical_diagnostic": {
+      "input_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "species": 241,
+      "reactions": 968,
+      "matrix_shape": [
+        241,
+        968
+      ],
+      "source_matrix_exact_equal": false,
+      "differing_entries": [
+        {
+          "species": "PO4",
+          "reaction": "re0000000414",
+          "canonical_MathML_net_coefficient": 2.0,
+          "imported_coefficient": 1.0
+        }
+      ],
+      "PO4_re0000000414_imported_coefficient": 1.0
+    },
+    "normalized_compatibility": {
+      "input_sha256": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+      "species": 241,
+      "reactions": 968,
+      "matrix_shape": [
+        241,
+        968
+      ],
+      "source_matrix_exact_equal": true,
+      "differing_entries": [],
+      "PO4_re0000000414_imported_coefficient": 2.0
+    },
+    "full_author_overlay": {
+      "input_sha256": "475b12c17687f46108f7ebea82dd4c8751776d316e69be25c02606bce56fef2c",
+      "species": 241,
+      "reactions": 968,
+      "matrix_shape": [
+        241,
+        968
+      ],
+      "source_matrix_exact_equal": true,
+      "differing_entries": [],
+      "PO4_re0000000414_imported_coefficient": 2.0
+    }
+  },
+  "scope": "Direct imported full241x968 matrices compared against independently parsed canonical MathML; raw import is diagnostic-only. No new trajectory or scientific reduction acceptance."
+}

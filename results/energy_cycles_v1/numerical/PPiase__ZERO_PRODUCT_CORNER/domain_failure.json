@@ -1,0 +1,55 @@
+{
+  "id": "PPiase__ZERO_PRODUCT_CORNER",
+  "execution_status": "STOPPED_AT_MATHEMATICAL_DOMAIN_CHECK",
+  "scientific_status": "BLOCKED",
+  "error": "Positive PPi total with zero PO4 total forces both PO4 complexes to zero; source k407>0 feeds the double-PO4 state: no stationary physical root.",
+  "failure_kind": "NO_CERTIFIED_PHYSICAL_CLOSURE",
+  "initial_conditions": {
+    "id": "PPiase__ZERO_PRODUCT_CORNER",
+    "unit": "PPiase",
+    "condition": "ZERO_PRODUCT_CORNER",
+    "initial_original": {
+      "PO4": 0.0,
+      "PPi": 100.0,
+      "PPiase": 0.16,
+      "PPiase_PO4": 0.0,
+      "PPiase_PO4_PO4": 0.0,
+      "PPiase_PPi": 0.0,
+      "PPiase_degraded": 0.0
+    },
+    "enzyme_total": 0.16,
+    "initial_modes": [
+      "ORIGINAL_NONEQUILIBRIUM",
+      "PROJECTED_PHYSICAL_CLOSURE"
+    ],
+    "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+    "concentration_scales": {
+      "PPi": 100.0,
+      "PO4": 1.0
+    },
+    "bound_scales": {
+      "PPi": 1.0,
+      "PO4": 1.0
+    },
+    "occupancy_scale": 0.16,
+    "cumulative_extent_scale": 100.0,
+    "note": "Predeclared physically valid microscopic state that can be outside all-enzyme stationary total-closure domain."
+  },
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "source_hashes": {
+    "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+  },
+  "parameter_set": "Author simulator CSV",
+  "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+  "command": [
+    "scripts/energy_cycles/runtime.py",
+    "--unit",
+    "PPiase"
+  ]
+}

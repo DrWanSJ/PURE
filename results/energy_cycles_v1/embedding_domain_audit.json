@@ -1,0 +1,474 @@
+{
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "reference_trajectory_sha256": "7ffbb7eb5f03ebcaf273262140a40f8f17f9622f1db8536665f1587349f66192",
+  "status": "CANDIDATE_GRAPH_FEASIBILITY_DIAGNOSTIC_NOT_FULL_EMBEDDING",
+  "scope": "Every actual source free resource plus that energy enzyme bound-form inventory; other source reactions are external to each module. No reduced ODE is run.",
+  "units": {
+    "CK": {
+      "physical_samples": 362,
+      "failed_samples": 0,
+      "failures": [],
+      "first_failure": null,
+      "first_feasible_after_failure": null,
+      "decision": "SAMPLED_GRAPH_FEASIBLE_NOT_EMBEDDING_VALIDATED"
+    },
+    "NDK": {
+      "physical_samples": 362,
+      "failed_samples": 0,
+      "failures": [],
+      "first_failure": null,
+      "first_feasible_after_failure": null,
+      "decision": "SAMPLED_GRAPH_FEASIBLE_NOT_EMBEDDING_VALIDATED"
+    },
+    "MK": {
+      "physical_samples": 349,
+      "failed_samples": 13,
+      "failures": [
+        {
+          "time": 0.001057371263440564,
+          "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-1.6691e-08, min_bound=6.37597e-10; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.6417538687633,
+            "AMP": 1.0882762699327358e-06,
+            "ADP": 5.295120434282953e-10
+          }
+        },
+        {
+          "time": 0.0012337216990458673,
+          "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-3.55504e-08, min_bound=1.37356e-09; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.639696196533,
+            "AMP": 2.344441294004574e-06,
+            "ADP": 1.5484812341312472e-09
+          }
+        },
+        {
+          "time": 0.0014394842032532458,
+          "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-7.40033e-08, min_bound=2.90401e-09; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.6376094705633,
+            "AMP": 4.956669121195062e-06,
+            "ADP": 4.435745838614183e-09
+          }
+        },
+        {
+          "time": 0.0016795641780623326,
+          "error": "No certified physical algebraic root: residual=3.0257e-18, min_free=-1.50035e-07, min_bound=6.01404e-09; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.6355349118917,
+            "AMP": 1.0264988921847938e-05,
+            "ADP": 1.2418360598041061e-08
+          }
+        },
+        {
+          "time": 0.001959685157957868,
+          "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-2.9503e-07, min_bound=1.21757e-08; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.6335135568825,
+            "AMP": 2.078193403773716e-05,
+            "ADP": 3.389322629933702e-08
+          }
+        },
+        {
+          "time": 0.0022865252596366323,
+          "error": "No certified physical algebraic root: residual=1.2102e-17, min_free=-5.59855e-07, min_bound=2.40507e-08; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.6315803068956,
+            "AMP": 4.105062457826051e-05,
+            "ADP": 8.994218987244552e-08
+          }
+        },
+        {
+          "time": 0.002667876389085135,
+          "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-1.01874e-06, min_bound=4.62657e-08; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.6297572652825,
+            "AMP": 7.896803479147774e-05,
+            "ADP": 2.3144203902773239e-07
+          }
+        },
+        {
+          "time": 0.0031128300015233704,
+          "error": "No certified physical algebraic root: residual=4.35595e-17, min_free=-1.76268e-06, min_bound=8.65294e-08; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.6280478444646,
+            "AMP": 0.00014769158108807442,
+            "ADP": 5.759710700025963e-07
+          }
+        },
+        {
+          "time": 0.0036319938427532587,
+          "error": "No certified physical algebraic root: residual=7.9119e-17, min_free=-2.86482e-06, min_bound=1.57122e-07; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.626433550227,
+            "AMP": 0.0002681821853336232,
+            "ADP": 1.3828515308094233e-06
+          }
+        },
+        {
+          "time": 0.004237744839050607,
+          "error": "No certified physical algebraic root: residual=1.3941e-16, min_free=-4.28683e-06, min_bound=2.76715e-07; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.624875145675,
+            "AMP": 0.00047230747822812853,
+            "ADP": 3.196379469663855e-06
+          }
+        },
+        {
+          "time": 0.004944524164525161,
+          "error": "No certified physical algebraic root: residual=2.38155e-16, min_free=-5.67762e-06, min_bound=4.72361e-07; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.6233187779376,
+            "AMP": 0.0008062457124869771,
+            "ADP": 7.1017918276933875e-06
+          }
+        },
+        {
+          "time": 0.005769181520388665,
+          "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-5.99768e-06, min_bound=7.81403e-07; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.6217057755084,
+            "AMP": 0.001333737869450448,
+            "ADP": 1.5153702564115404e-05
+          }
+        },
+        {
+          "time": 0.00673137683378891,
+          "error": "No certified physical algebraic root: residual=6.3335e-16, min_free=-2.8865e-06, min_bound=1.25295e-06; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.619983000073,
+            "AMP": 0.0021386058838399986,
+            "ADP": 3.1050724701617126e-05
+          }
+        }
+      ],
+      "first_failure": {
+        "time": 0.001057371263440564,
+        "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-1.6691e-08, min_bound=6.37597e-10; solver=The solution converged.",
+        "retained_totals": {
+          "ATP": 3747.6417538687633,
+          "AMP": 1.0882762699327358e-06,
+          "ADP": 5.295120434282953e-10
+        }
+      },
+      "first_feasible_after_failure": {
+        "time": 0.007854048952756373,
+        "max_residual": 4.547473508864641e-13,
+        "min_free": 8.323712577936722e-06
+      },
+      "decision": "FULL_REPLACEMENT_BLOCKED_AT_AUTHOR_INITIAL_LAYER"
+    },
+    "PPiase": {
+      "physical_samples": 326,
+      "failed_samples": 36,
+      "failures": [
+        {
+          "time": 4.144229542831265e-05,
+          "error": "No certified physical algebraic root: residual=2.52355e-24, min_free=-1.43828e-08, min_bound=3.36653e-09; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 3.7244797241997337e-07,
+            "PO4": 1.049137300657382e-11
+          }
+        },
+        {
+          "time": 4.8354122053415e-05,
+          "error": "No certified physical algebraic root: residual=1.05879e-22, min_free=-2.46226e-08, min_bound=5.76366e-09; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 6.376491510828356e-07,
+            "PO4": 1.9449605801045983e-11
+          }
+        },
+        {
+          "time": 5.6418716564603986e-05,
+          "error": "No certified physical algebraic root: residual=2.11758e-22, min_free=-4.17622e-08, min_bound=9.77642e-09; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 1.0815919241324796e-06,
+            "PO4": 3.608142614705244e-11
+          }
+        },
+        {
+          "time": 6.582833983172918e-05,
+          "error": "No certified physical algebraic root: residual=1.79653e-24, min_free=-7.01447e-08, min_bound=1.64222e-08; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 1.8168305799516565e-06,
+            "PO4": 6.69896862800813e-11
+          }
+        },
+        {
+          "time": 7.68073183664071e-05,
+          "error": "No certified physical algebraic root: residual=4.23516e-22, min_free=-1.16637e-07, min_bound=2.731e-08; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 3.0213851499292004e-06,
+            "PO4": 1.2448937847175575e-10
+          }
+        },
+        {
+          "time": 8.961739229211339e-05,
+          "error": "No certified physical algebraic root: residual=9.84862e-24, min_free=-1.91983e-07, min_bound=4.49582e-08; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 4.973849270806721e-06,
+            "PO4": 2.3157468735090977e-10
+          }
+        },
+        {
+          "time": 0.0001045639552591274,
+          "error": "No certified physical algebraic root: residual=3.69646e-23, min_free=-3.12836e-07, min_bound=7.32718e-08; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 8.106265519995723e-06,
+            "PO4": 4.312196936267803e-10
+          }
+        },
+        {
+          "time": 0.00012200333506462636,
+          "error": "No certified physical algebraic root: residual=1.65126e-22, min_free=-5.04816e-07, min_bound=1.18262e-07; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 1.308369756059818e-05,
+            "PO4": 8.03794872369091e-10
+          }
+        },
+        {
+          "time": 0.0001423512885487585,
+          "error": "No certified physical algebraic root: residual=3.38813e-21, min_free=-8.07105e-07, min_bound=1.89129e-07; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 2.0923909133561317e-05,
+            "PO4": 1.4996733119949772e-09
+          }
+        },
+        {
+          "time": 0.00016609291328600057,
+          "error": "No certified physical algebraic root: residual=2.75451e-22, min_free=-1.27932e-06, min_bound=2.99882e-07; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 3.3176949692968725e-05,
+            "PO4": 2.800245250601472e-09
+          }
+        },
+        {
+          "time": 0.00019379421236767977,
+          "error": "No certified physical algebraic root: residual=6.77626e-21, min_free=-2.01176e-06, min_bound=4.71765e-07; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 5.219320737666503e-05,
+            "PO4": 5.232018878863225e-09
+          }
+        },
+        {
+          "time": 0.00022611558798141,
+          "error": "No certified physical algebraic root: residual=1.32349e-23, min_free=-3.14052e-06, min_bound=7.3684e-07; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 8.152008987744097e-05,
+            "PO4": 9.779831705067348e-09
+          }
+        },
+        {
+          "time": 0.00026382758547595115,
+          "error": "No certified physical algebraic root: residual=3.63959e-23, min_free=-4.86951e-06, min_bound=1.14323e-06; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.0001264823624696933,
+            "PO4": 1.8284893863400595e-08
+          }
+        },
+        {
+          "time": 0.00030782926325182406,
+          "error": "No certified physical algebraic root: residual=5.29396e-23, min_free=-7.50205e-06, min_bound=1.76269e-06; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.0001950194411459466,
+            "PO4": 3.418701869918557e-08
+          }
+        },
+        {
+          "time": 0.000359169626418001,
+          "error": "No certified physical algebraic root: residual=4.63221e-22, min_free=-1.14854e-05, min_bound=2.70132e-06; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.0002988737905096039,
+            "PO4": 6.39064525982526e-08
+          }
+        },
+        {
+          "time": 0.00041907263519555033,
+          "error": "No certified physical algebraic root: residual=1.00585e-21, min_free=-1.74719e-05, min_bound=4.11452e-06; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.0004552452108506935,
+            "PO4": 1.1941069790073576e-07
+          }
+        },
+        {
+          "time": 0.000488966384271464,
+          "error": "No certified physical algebraic root: residual=6.35275e-22, min_free=-2.64011e-05, min_bound=6.22724e-06; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.0006890402008684589,
+            "PO4": 2.2296733750532632e-07
+          }
+        },
+        {
+          "time": 0.0005705171487418754,
+          "error": "No certified physical algebraic root: residual=2.75286e-21, min_free=-3.96054e-05, min_bound=9.36079e-06; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.0010358433099388515,
+            "PO4": 4.159049729942792e-07
+          }
+        },
+        {
+          "time": 0.0006656691083038815,
+          "error": "No certified physical algebraic root: residual=6.35275e-22, min_free=-5.89392e-05, min_bound=1.39668e-05; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.0015457027417354599,
+            "PO4": 7.746615176435911e-07
+          }
+        },
+        {
+          "time": 0.000776690696725347,
+          "error": "No certified physical algebraic root: residual=6.35275e-21, min_free=-8.6926e-05, min_bound=2.06683e-05; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.002287734975751061,
+            "PO4": 1.4399317515054504e-06
+          }
+        },
+        {
+          "time": 0.0009062286815694004,
+          "error": "No certified physical algebraic root: residual=8.47033e-22, min_free=-0.000126906, min_bound=3.03069e-05; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.0033553913660628438,
+            "PO4": 2.669008414983754e-06
+          }
+        },
+        {
+          "time": 0.001057371263440564,
+          "error": "No certified physical algebraic root: residual=1.27055e-20, min_free=-0.000183151, min_bound=4.39907e-05; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.00487198042765437,
+            "PO4": 4.928394195695486e-06
+          }
+        },
+        {
+          "time": 0.0012337216990458673,
+          "error": "No certified physical algebraic root: residual=3.38813e-21, min_free=-0.000260885, min_bound=6.31374e-05; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.006995714210197958,
+            "PO4": 9.054620358122492e-06
+          }
+        },
+        {
+          "time": 0.0014394842032532458,
+          "error": "No certified physical algebraic root: residual=4.74338e-20, min_free=-0.00036613, min_bound=8.95013e-05; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.009923201727160942,
+            "PO4": 1.6527064473549078e-05
+          }
+        },
+        {
+          "time": 0.0016795641780623326,
+          "error": "No certified physical algebraic root: residual=1.28749e-19, min_free=-0.000505248, min_bound=0.000125172; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.013890060255137646,
+            "PO4": 2.9917829601463465e-05
+          }
+        },
+        {
+          "time": 0.001959685157957868,
+          "error": "No certified physical algebraic root: residual=2.03288e-19, min_free=-0.000684037, min_bound=0.00017253; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.019167311423104724,
+            "PO4": 5.360901690901395e-05
+          }
+        },
+        {
+          "time": 0.0022865252596366323,
+          "error": "No certified physical algebraic root: residual=3.65918e-19, min_free=-0.000906236, min_bound=0.000234157; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.026052602223625015,
+            "PO4": 9.489239904645411e-05
+          }
+        },
+        {
+          "time": 0.002667876389085135,
+          "error": "No certified physical algebraic root: residual=1.0842e-19, min_free=-0.00117129, min_bound=0.000312683; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.03485602599140684,
+            "PO4": 0.00016558204247198746
+          }
+        },
+        {
+          "time": 0.0031128300015233704,
+          "error": "No certified physical algebraic root: residual=1.6263e-19, min_free=-0.00147128, min_bound=0.000410607; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.045881153463145065,
+            "PO4": 0.0002842655157769128
+          }
+        },
+        {
+          "time": 0.0036319938427532587,
+          "error": "No certified physical algebraic root: residual=4.33681e-19, min_free=-0.00178701, min_bound=0.000530064; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.059402364662342014,
+            "PO4": 0.00047928386059857813
+          }
+        },
+        {
+          "time": 0.004237744839050607,
+          "error": "No certified physical algebraic root: residual=1.0842e-19, min_free=-0.00208327, min_bound=0.0006726; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.07563936988274553,
+            "PO4": 0.0007924609599581298
+          }
+        },
+        {
+          "time": 0.004944524164525161,
+          "error": "No certified physical algebraic root: residual=6.50521e-19, min_free=-0.00230333, min_bound=0.000838912; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.0947291756464914,
+            "PO4": 0.0012835042669443332
+          }
+        },
+        {
+          "time": 0.005769181520388665,
+          "error": "No certified physical algebraic root: residual=1.38778e-17, min_free=-0.00236309, min_bound=0.00102861; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.11669564316450166,
+            "PO4": 0.0020348787982372553
+          }
+        },
+        {
+          "time": 0.00673137683378891,
+          "error": "No certified physical algebraic root: residual=4.33681e-19, min_free=-0.00214506, min_bound=0.00124001; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.14141818423497382,
+            "PO4": 0.003156817515505863
+          }
+        },
+        {
+          "time": 0.007854048952756373,
+          "error": "No certified physical algebraic root: residual=0, min_free=-0.00149304, min_bound=0.00146992; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.1686038979534299,
+            "PO4": 0.004791978847903714
+          }
+        },
+        {
+          "time": 0.00916396251100563,
+          "error": "No certified physical algebraic root: residual=2.77556e-17, min_free=-0.000208254, min_bound=0.00171367; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 0.1977698816753152,
+            "PO4": 0.007119135495315515
+          }
+        }
+      ],
+      "first_failure": {
+        "time": 4.144229542831265e-05,
+        "error": "No certified physical algebraic root: residual=2.52355e-24, min_free=-1.43828e-08, min_bound=3.36653e-09; solver=The solution converged.",
+        "retained_totals": {
+          "PPi": 3.7244797241997337e-07,
+          "PO4": 1.049137300657382e-11
+        }
+      },
+      "first_feasible_after_failure": {
+        "time": 0.010692345999911892,
+        "max_residual": 1.734723475976807e-18,
+        "min_free": 0.0019522509596222183
+      },
+      "decision": "FULL_REPLACEMENT_BLOCKED_AT_AUTHOR_INITIAL_LAYER"
+    }
+  },
+  "command": [
+    "python",
+    "scripts/energy_cycles/embedding_domain_audit.py"
+  ]
+}

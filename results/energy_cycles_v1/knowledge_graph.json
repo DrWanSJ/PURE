@@ -1,0 +1,2730 @@
+{
+  "schema": "evidence_navigation_v1",
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "source_hashes": {
+    "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+  },
+  "freshness": "Bound to current source bytes; verify hashes before reuse",
+  "authority": "Derived navigation only; canonical source and explicit human scientific decisions remain authoritative",
+  "nodes": [
+    {
+      "id": "CK",
+      "type": "reduction_unit",
+      "evidence_status": "INFERRED",
+      "validation": "BLOCKED",
+      "recommendation": "REVISE_WITH_EXTRA_STATE"
+    },
+    {
+      "id": "CK_zero_product_corner",
+      "type": "mathematical_domain_failure",
+      "evidence_status": "INFERRED",
+      "proof": "kinetic_analysis.json and independent_tests.json"
+    },
+    {
+      "id": "CK_human_decision",
+      "type": "scientific_decision",
+      "evidence_status": "AMBIGUOUS",
+      "status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "id": "NDK",
+      "type": "reduction_unit",
+      "evidence_status": "INFERRED",
+      "validation": "BLOCKED",
+      "recommendation": "REVISE_WITH_EXTRA_STATE"
+    },
+    {
+      "id": "NDK_zero_product_corner",
+      "type": "mathematical_domain_failure",
+      "evidence_status": "INFERRED",
+      "proof": "kinetic_analysis.json and independent_tests.json"
+    },
+    {
+      "id": "NDK_human_decision",
+      "type": "scientific_decision",
+      "evidence_status": "AMBIGUOUS",
+      "status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "id": "MK",
+      "type": "reduction_unit",
+      "evidence_status": "INFERRED",
+      "validation": "BLOCKED",
+      "recommendation": "REVISE_WITH_EXTRA_STATE"
+    },
+    {
+      "id": "MK_zero_product_corner",
+      "type": "mathematical_domain_failure",
+      "evidence_status": "INFERRED",
+      "proof": "kinetic_analysis.json and independent_tests.json"
+    },
+    {
+      "id": "MK_human_decision",
+      "type": "scientific_decision",
+      "evidence_status": "AMBIGUOUS",
+      "status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "id": "PPiase",
+      "type": "reduction_unit",
+      "evidence_status": "INFERRED",
+      "validation": "BLOCKED",
+      "recommendation": "REVISE_WITH_EXTRA_STATE"
+    },
+    {
+      "id": "PPiase_zero_product_corner",
+      "type": "mathematical_domain_failure",
+      "evidence_status": "INFERRED",
+      "proof": "kinetic_analysis.json and independent_tests.json"
+    },
+    {
+      "id": "PPiase_human_decision",
+      "type": "scientific_decision",
+      "evidence_status": "AMBIGUOUS",
+      "status": "HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "id": "re0000000329",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re2"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000330",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 19.60784314,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re8"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000331",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re9"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000332",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 2.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re10"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000333",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re11"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000334",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 19.60784314,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re12"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000335",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re13"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000336",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 2.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re14"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000337",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re15"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000338",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 2.527408333,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re16"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000339",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.548808667,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re17"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000340",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re18"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000341",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1.369863014,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re19"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000342",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re20"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000343",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.204081633,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re21"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000344",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re22"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000345",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1.369863014,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re23"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000346",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re24"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000347",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.204081633,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re25"
+        }
+      ],
+      "family": "RFAM_015"
+    },
+    {
+      "id": "re0000000348",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re27"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000349",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re28"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000350",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re29"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000351",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re30"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000352",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re31"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000353",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_A.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_A.xml",
+          "member_sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c",
+          "source_model_id": "EnergyRegeneration_A",
+          "source_reaction_id": "re32"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000354",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re3"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000355",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.555555556,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re4"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000356",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re5"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000357",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 20.40816327,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re6"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000358",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re7"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000359",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.555555556,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re8"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000360",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re9"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000361",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 20.40816327,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re10"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000362",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re11"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000363",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 470.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re12"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000364",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re13"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000365",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re16"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000366",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re18"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000367",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re20"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000368",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re22"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000369",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re24"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000370",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re25"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000371",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re26"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000372",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re28"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000373",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re29"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000374",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re30"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000375",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 15.15151515,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re31"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000376",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 6.666666667,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re32"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000377",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 6.666666667,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re33"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000378",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 15.15151515,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_B.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_B.xml",
+          "member_sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d",
+          "source_model_id": "EnergyRegeneration_B",
+          "source_reaction_id": "re34"
+        }
+      ],
+      "family": "RFAM_016"
+    },
+    {
+      "id": "re0000000379",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re4"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000380",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 16.66666667,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re5"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000381",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re6"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000382",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 8.333333333,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re7"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000383",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re8"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000384",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 16.66666667,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re9"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000385",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re10"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000386",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 8.333333333,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re11"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000387",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re12"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000388",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 255.6,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re13"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000389",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 345.6,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re14"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000390",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re17"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000391",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 35.71428571,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re19"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000392",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re20"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000393",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1.098901099,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re21"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000394",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re22"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000395",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1.098901099,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re23"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000396",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 1000.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re24"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000397",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 35.71428571,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re25"
+        }
+      ],
+      "family": "RFAM_017"
+    },
+    {
+      "id": "re0000000398",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re26"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000399",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re27"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000400",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re28"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000401",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re30"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000402",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re31"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000403",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_C.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_C.xml",
+          "member_sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214",
+          "source_model_id": "EnergyRegeneration_C",
+          "source_reaction_id": "re32"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000404",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_D.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_D.xml",
+          "member_sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+          "source_model_id": "EnergyRegeneration_D",
+          "source_reaction_id": "re1"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000405",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 46.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_D.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_D.xml",
+          "member_sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+          "source_model_id": "EnergyRegeneration_D",
+          "source_reaction_id": "re2"
+        }
+      ],
+      "family": "RFAM_018"
+    },
+    {
+      "id": "re0000000406",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 200.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_D.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_D.xml",
+          "member_sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+          "source_model_id": "EnergyRegeneration_D",
+          "source_reaction_id": "re3"
+        }
+      ],
+      "family": "RFAM_018"
+    },
+    {
+      "id": "re0000000407",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 800.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_D.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_D.xml",
+          "member_sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+          "source_model_id": "EnergyRegeneration_D",
+          "source_reaction_id": "re4"
+        }
+      ],
+      "family": "RFAM_018"
+    },
+    {
+      "id": "re0000000408",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 140.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_D.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_D.xml",
+          "member_sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+          "source_model_id": "EnergyRegeneration_D",
+          "source_reaction_id": "re5"
+        }
+      ],
+      "family": "RFAM_018"
+    },
+    {
+      "id": "re0000000409",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 440.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_D.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_D.xml",
+          "member_sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+          "source_model_id": "EnergyRegeneration_D",
+          "source_reaction_id": "re6"
+        }
+      ],
+      "family": "RFAM_018"
+    },
+    {
+      "id": "re0000000410",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.059,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_D.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_D.xml",
+          "member_sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+          "source_model_id": "EnergyRegeneration_D",
+          "source_reaction_id": "re8"
+        }
+      ],
+      "family": "RFAM_018"
+    },
+    {
+      "id": "re0000000411",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 400.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_D.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_D.xml",
+          "member_sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+          "source_model_id": "EnergyRegeneration_D",
+          "source_reaction_id": "re10"
+        }
+      ],
+      "family": "RFAM_018"
+    },
+    {
+      "id": "re0000000412",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.26,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_D.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_D.xml",
+          "member_sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+          "source_model_id": "EnergyRegeneration_D",
+          "source_reaction_id": "re11"
+        }
+      ],
+      "family": "RFAM_018"
+    },
+    {
+      "id": "re0000000413",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_D.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_D.xml",
+          "member_sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+          "source_model_id": "EnergyRegeneration_D",
+          "source_reaction_id": "re12"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000414",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_D.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_D.xml",
+          "member_sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+          "source_model_id": "EnergyRegeneration_D",
+          "source_reaction_id": "re13"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "re0000000415",
+      "type": "original_directed_reaction",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML plus author operational CSV",
+      "parameter": 0.0,
+      "provenance": [
+        {
+          "archive": "references/PNAS2017_Matsuura/raw/SBML_files.zip",
+          "file": "EnergyRegeneration_D.xml",
+          "mapping_basis": "EXTRACTED_EXACT_STOICHIOMETRIC_SIGNATURE",
+          "member": "EnergyRegeneration_D.xml",
+          "member_sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078",
+          "source_model_id": "EnergyRegeneration_D",
+          "source_reaction_id": "re14"
+        }
+      ],
+      "family": "RFAM_DEG"
+    },
+    {
+      "id": "CK",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "CK_ADP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "CK_ATP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "CK_CP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "CK_CP_ADP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "CK_Cr",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "CK_Cr_ATP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "MK",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "MK_ADP_1",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "MK_ADP_2",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "MK_ADP_ADP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "MK_AMP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "MK_ATP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "MK_ATP_AMP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "NDK",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "NDK_ADP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "NDK_ATP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "NDK_GDP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "NDK_GDP_ATP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "NDK_GTP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "NDK_GTP_ADP",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "PPiase",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "PPiase_PO4",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "PPiase_PO4_PO4",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    },
+    {
+      "id": "PPiase_PPi",
+      "type": "original_species_id",
+      "evidence_status": "EXTRACTED",
+      "source_authority": "Canonical SBML"
+    }
+  ],
+  "edges": [
+    {
+      "source": "re0000000329",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000330",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000331",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000332",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000333",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000334",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000335",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000336",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000337",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000338",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000339",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000340",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000341",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000342",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000343",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000344",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000345",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000346",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000347",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000348",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000349",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000350",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000351",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000352",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "re0000000353",
+      "target": "CK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_A.xml"
+    },
+    {
+      "source": "CK",
+      "target": "CK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "CK_ADP",
+      "target": "CK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "CK_ATP",
+      "target": "CK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "CK_CP",
+      "target": "CK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "CK_CP_ADP",
+      "target": "CK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "CK_Cr",
+      "target": "CK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "CK_Cr_ATP",
+      "target": "CK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "CK_zero_product_corner",
+      "target": "CK",
+      "relation": "blocks_general_all_state_elimination",
+      "evidence_status": "INFERRED"
+    },
+    {
+      "source": "CK_human_decision",
+      "target": "CK",
+      "relation": "approval_pending",
+      "evidence_status": "AMBIGUOUS"
+    },
+    {
+      "source": "re0000000354",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000355",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000356",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000357",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000358",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000359",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000360",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000361",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000362",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000363",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000364",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000365",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000366",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000367",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000368",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000369",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000370",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000371",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000372",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000373",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000374",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000375",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000376",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000377",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "re0000000378",
+      "target": "NDK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_B.xml"
+    },
+    {
+      "source": "NDK",
+      "target": "NDK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "NDK_ADP",
+      "target": "NDK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "NDK_ATP",
+      "target": "NDK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "NDK_GDP",
+      "target": "NDK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "NDK_GDP_ATP",
+      "target": "NDK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "NDK_GTP",
+      "target": "NDK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "NDK_GTP_ADP",
+      "target": "NDK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "NDK_zero_product_corner",
+      "target": "NDK",
+      "relation": "blocks_general_all_state_elimination",
+      "evidence_status": "INFERRED"
+    },
+    {
+      "source": "NDK_human_decision",
+      "target": "NDK",
+      "relation": "approval_pending",
+      "evidence_status": "AMBIGUOUS"
+    },
+    {
+      "source": "re0000000379",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000380",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000381",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000382",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000383",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000384",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000385",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000386",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000387",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000388",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000389",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000390",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000391",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000392",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000393",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000394",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000395",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000396",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000397",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000398",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000399",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000400",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000401",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000402",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "re0000000403",
+      "target": "MK",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_C.xml"
+    },
+    {
+      "source": "MK",
+      "target": "MK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "MK_ADP_1",
+      "target": "MK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "MK_ADP_2",
+      "target": "MK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "MK_ADP_ADP",
+      "target": "MK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "MK_AMP",
+      "target": "MK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "MK_ATP",
+      "target": "MK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "MK_ATP_AMP",
+      "target": "MK",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "MK_zero_product_corner",
+      "target": "MK",
+      "relation": "blocks_general_all_state_elimination",
+      "evidence_status": "INFERRED"
+    },
+    {
+      "source": "MK_human_decision",
+      "target": "MK",
+      "relation": "approval_pending",
+      "evidence_status": "AMBIGUOUS"
+    },
+    {
+      "source": "re0000000404",
+      "target": "PPiase",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_D.xml"
+    },
+    {
+      "source": "re0000000405",
+      "target": "PPiase",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_D.xml"
+    },
+    {
+      "source": "re0000000406",
+      "target": "PPiase",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_D.xml"
+    },
+    {
+      "source": "re0000000407",
+      "target": "PPiase",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_D.xml"
+    },
+    {
+      "source": "re0000000408",
+      "target": "PPiase",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_D.xml"
+    },
+    {
+      "source": "re0000000409",
+      "target": "PPiase",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_D.xml"
+    },
+    {
+      "source": "re0000000410",
+      "target": "PPiase",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_D.xml"
+    },
+    {
+      "source": "re0000000411",
+      "target": "PPiase",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_D.xml"
+    },
+    {
+      "source": "re0000000412",
+      "target": "PPiase",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_D.xml"
+    },
+    {
+      "source": "re0000000413",
+      "target": "PPiase",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_D.xml"
+    },
+    {
+      "source": "re0000000414",
+      "target": "PPiase",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_D.xml"
+    },
+    {
+      "source": "re0000000415",
+      "target": "PPiase",
+      "relation": "source_subsystem_member",
+      "evidence_status": "EXTRACTED",
+      "authority": "EnergyRegeneration_D.xml"
+    },
+    {
+      "source": "PPiase",
+      "target": "PPiase",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "PPiase_PO4",
+      "target": "PPiase",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "PPiase_PO4_PO4",
+      "target": "PPiase",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "PPiase_PPi",
+      "target": "PPiase",
+      "relation": "enzyme_state",
+      "evidence_status": "INFERRED",
+      "basis": "Exact source binding stoichiometry and conserved-enzyme residual"
+    },
+    {
+      "source": "PPiase_zero_product_corner",
+      "target": "PPiase",
+      "relation": "blocks_general_all_state_elimination",
+      "evidence_status": "INFERRED"
+    },
+    {
+      "source": "PPiase_human_decision",
+      "target": "PPiase",
+      "relation": "approval_pending",
+      "evidence_status": "AMBIGUOUS"
+    }
+  ]
+}

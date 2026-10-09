@@ -1,0 +1,109 @@
+{
+  "full_source_reference": {
+    "overlay": {
+      "all968_original_stoichiometries_and_kinetic_laws_equal": true,
+      "all241_initial_values_checked": true,
+      "all968_author_or_declared_zero_parameters_checked": true,
+      "species_metadata_except_initial_values_unchanged": true,
+      "re0000000414_PO4_coefficient": 2,
+      "sha256": "475b12c17687f46108f7ebea82dd4c8751776d316e69be25c02606bce56fef2c"
+    },
+    "runs": {
+      "base": {
+        "Pept0003_endpoint": 5.164491298396926,
+        "minimum_unclipped_inventory": -2.0077001354493122e-25,
+        "maximum_canonical_energy_flux_discrepancy": 5.820766091346741e-11,
+        "trajectory_sha256": "15fc40a26ee467155301c5717f1414c343be380f1569b7f38ac21eb004494709"
+      },
+      "tight": {
+        "Pept0003_endpoint": 5.164491294743647,
+        "minimum_unclipped_inventory": -2.6020679038836823e-27,
+        "maximum_canonical_energy_flux_discrepancy": 5.820766091346741e-11,
+        "trajectory_sha256": "7ffbb7eb5f03ebcaf273262140a40f8f17f9622f1db8536665f1587349f66192"
+      }
+    },
+    "embedding_domain_check": {
+      "status": "INDEPENDENT_SOURCE_GENERATOR_DOMAIN_AUDIT_AGREES",
+      "units": {
+        "CK": {
+          "independent_physical_samples": 362,
+          "independent_unphysical_or_uncertified_samples": 0,
+          "same_failed_times_as_report": true,
+          "worst_root_balance_residual": 3.385164043127873e-09
+        },
+        "NDK": {
+          "independent_physical_samples": 362,
+          "independent_unphysical_or_uncertified_samples": 0,
+          "same_failed_times_as_report": true,
+          "worst_root_balance_residual": 7.237761182194969e-11
+        },
+        "MK": {
+          "independent_physical_samples": 349,
+          "independent_unphysical_or_uncertified_samples": 13,
+          "same_failed_times_as_report": true,
+          "worst_root_balance_residual": 1.819444150896743e-09
+        },
+        "PPiase": {
+          "independent_physical_samples": 326,
+          "independent_unphysical_or_uncertified_samples": 36,
+          "same_failed_times_as_report": true,
+          "worst_root_balance_residual": 9.094947017729282e-13
+        }
+      },
+      "scope": "Sampled local stationary-total inversion; no reduced embedding and no global root-exclusion proof for positive-product samples."
+    },
+    "Pept0003_endpoint_base_tight_difference": 3.6532785685494673e-09,
+    "status": "INDEPENDENT_SOURCE_REFERENCE_CHECK_PASS_NOT_CANDIDATE_VALIDATION"
+  },
+  "coupled_source_reference": {
+    "AUTHOR_BASELINE": {
+      "overlay": {
+        "all968_original_stoichiometries_and_kinetic_laws_equal": true,
+        "all241_initial_values_checked": true,
+        "all968_author_or_declared_zero_parameters_checked": true,
+        "species_metadata_except_initial_values_unchanged": true,
+        "re0000000414_PO4_coefficient": 2,
+        "sha256": "114fd1d3543d44d06bec7f277ca08da1276c5ee4dbac065a0dabe36c952cc5ed"
+      },
+      "status": "INDEPENDENT_COUPLED_SOURCE_REFERENCE_CHECK_PASS",
+      "max_canonical_energy_flux_discrepancy": 5.820766091346741e-11,
+      "no_shared_free_resource_or_catalyst_double_count": true
+    },
+    "SHARED_LIMITATION": {
+      "overlay": {
+        "all968_original_stoichiometries_and_kinetic_laws_equal": true,
+        "all241_initial_values_checked": true,
+        "all968_author_or_declared_zero_parameters_checked": true,
+        "species_metadata_except_initial_values_unchanged": true,
+        "re0000000414_PO4_coefficient": 2,
+        "sha256": "db435eda0956c14ff59dfffd2d6f13d63cfe4e5e282bd1b4f285edb9a617ff3c"
+      },
+      "status": "INDEPENDENT_COUPLED_SOURCE_REFERENCE_CHECK_PASS",
+      "max_canonical_energy_flux_discrepancy": 1.8189894035458565e-12,
+      "no_shared_free_resource_or_catalyst_double_count": true
+    }
+  },
+  "scope": "Source-reference chemistry/input/rate/ledger and stationary-graph domain audit only. Engine numerical import itself is checked by the execution manifest; independent XML and trajectory checks corroborate it without another engine run.",
+  "script_sha256": "091d4667b7f5435cb7f667a74b25cd3ce50ff650a91e38422ad2f439538cfdf4",
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "source_hashes": {
+    "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+  },
+  "environment": {
+    "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4",
+    "sympy": "1.13.1",
+    "platform": "Windows-11-10.0.22631-SP0"
+  },
+  "command": [
+    "D:\\Code\\Anaconda\\python.exe",
+    "C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\source_reference_verify.py"
+  ],
+  "independent_parser_sha256": "b4abbf9cec0265288d49ca3e1dbded1300c320e529de83b508c558b9a8f7c789"
+}

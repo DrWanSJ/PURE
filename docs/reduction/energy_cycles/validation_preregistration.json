@@ -1,0 +1,2511 @@
+{
+  "version": "energy_cycles_v1",
+  "frozen_at_utc": "2026-10-09T02:29:37.202441+00:00",
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "source_hashes": {
+    "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+  },
+  "author_members": {
+    "initial": {
+      "archive": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "member": "Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "member_sha256": "a1b6f832303303c888999968d4652b00205e6adba478b11ceab9cbff4d1c41ec"
+    },
+    "parameter": {
+      "archive": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "member": "Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "member_sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465"
+    }
+  },
+  "candidate_id": "SOURCE_STATIONARY_ENZYME_TOTAL_COORDINATES_V1",
+  "candidate_equations": {
+    "enzyme": "Q(u) h=0; 1^T h=E_total, using every active source kinetic transition and exact zero channels",
+    "resources": "T=u+C h(u); T(t)=T(0)+N*(extent_forward-extent_reverse)",
+    "rate": "Microscopic catalytic forward and actual active reverse currents at reconstructed h,u; never fit constants.",
+    "initial_layer": "No switch or matching correction. Original and stationary projected initial microscopic states are compared separately."
+  },
+  "implementation_sha256": {
+    "scripts/energy_cycles/kinetics_analysis.py": "f1efc0024c2e69dca3009f3fdd9ad35ea64f986c10de2feb765fd3f6951fcfc2",
+    "scripts/energy_cycles/preregister.py": "132b53e7bc77caad7909ee6feca6c395322c664d45160fbbc6ca9a017b26403b",
+    "scripts/energy_cycles/runtime.py": "3816068569df177b1f8e604e0ad5840964ec06247fc167117ebed3ef93d77be6",
+    "scripts/energy_cycles/source.py": "92b3d332c9e9be79579ba071e8880ffc7589df4fddc68e83beec197ac33a37b7"
+  },
+  "environment": {
+    "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "D:\\Code\\Anaconda\\python.exe",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  },
+  "scenarios": [
+    {
+      "id": "CK__AUTHOR_BASELINE",
+      "unit": "CK",
+      "condition": "AUTHOR_BASELINE",
+      "initial_original": {
+        "ADP": 0.0,
+        "ATP": 3750.0,
+        "CK": 30.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 50000.0,
+        "Cr": 0.0
+      },
+      "enzyme_total": 30.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 50000.0,
+        "ADP": 30.0,
+        "Cr": 30.0,
+        "ATP": 3750.0
+      },
+      "bound_scales": {
+        "CP": 30.0,
+        "ADP": 30.0,
+        "Cr": 30.0,
+        "ATP": 30.0
+      },
+      "occupancy_scale": 30.0,
+      "cumulative_extent_scale": 30.0,
+      "note": "Exact author free-resource and catalyst inventories; isolated net catalysis may be dormant."
+    },
+    {
+      "id": "CK__POSITIVE_CHALLENGE",
+      "unit": "CK",
+      "condition": "POSITIVE_CHALLENGE",
+      "initial_original": {
+        "ADP": 300.0,
+        "ATP": 3750.0,
+        "CK": 30.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 50000.0,
+        "Cr": 300.0
+      },
+      "enzyme_total": 30.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 50000.0,
+        "ADP": 300.0,
+        "Cr": 300.0,
+        "ATP": 3750.0
+      },
+      "bound_scales": {
+        "CP": 30.0,
+        "ADP": 30.0,
+        "Cr": 30.0,
+        "ATP": 30.0
+      },
+      "occupancy_scale": 30.0,
+      "cumulative_extent_scale": 300.0,
+      "note": "Explicit positive challenge supplies author-absent pools; no claim of author baseline."
+    },
+    {
+      "id": "CK__AUTHOR_CATALYST_HALF",
+      "unit": "CK",
+      "condition": "AUTHOR_CATALYST_HALF",
+      "initial_original": {
+        "ADP": 0.0,
+        "ATP": 3750.0,
+        "CK": 15.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 50000.0,
+        "Cr": 0.0
+      },
+      "enzyme_total": 15.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 50000.0,
+        "ADP": 15.0,
+        "Cr": 15.0,
+        "ATP": 3750.0
+      },
+      "bound_scales": {
+        "CP": 15.0,
+        "ADP": 15.0,
+        "Cr": 15.0,
+        "ATP": 15.0
+      },
+      "occupancy_scale": 15.0,
+      "cumulative_extent_scale": 15.0,
+      "note": "Individual catalyst perturbation on authored pools."
+    },
+    {
+      "id": "CK__CHALLENGE_CATALYST_HALF",
+      "unit": "CK",
+      "condition": "CHALLENGE_CATALYST_HALF",
+      "initial_original": {
+        "ADP": 300.0,
+        "ATP": 3750.0,
+        "CK": 15.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 50000.0,
+        "Cr": 300.0
+      },
+      "enzyme_total": 15.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 50000.0,
+        "ADP": 300.0,
+        "Cr": 300.0,
+        "ATP": 3750.0
+      },
+      "bound_scales": {
+        "CP": 15.0,
+        "ADP": 15.0,
+        "Cr": 15.0,
+        "ATP": 15.0
+      },
+      "occupancy_scale": 15.0,
+      "cumulative_extent_scale": 300.0,
+      "note": "Individual catalyst perturbation on positive challenge."
+    },
+    {
+      "id": "CK__CHALLENGE_CP_HALF",
+      "unit": "CK",
+      "condition": "CHALLENGE_CP_HALF",
+      "initial_original": {
+        "ADP": 300.0,
+        "ATP": 3750.0,
+        "CK": 30.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 25000.0,
+        "Cr": 300.0
+      },
+      "enzyme_total": 30.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 25000.0,
+        "ADP": 300.0,
+        "Cr": 300.0,
+        "ATP": 3750.0
+      },
+      "bound_scales": {
+        "CP": 30.0,
+        "ADP": 30.0,
+        "Cr": 30.0,
+        "ATP": 30.0
+      },
+      "occupancy_scale": 30.0,
+      "cumulative_extent_scale": 300.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "CK__CHALLENGE_ADP_HALF",
+      "unit": "CK",
+      "condition": "CHALLENGE_ADP_HALF",
+      "initial_original": {
+        "ADP": 150.0,
+        "ATP": 3750.0,
+        "CK": 30.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 50000.0,
+        "Cr": 300.0
+      },
+      "enzyme_total": 30.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 50000.0,
+        "ADP": 150.0,
+        "Cr": 300.0,
+        "ATP": 3750.0
+      },
+      "bound_scales": {
+        "CP": 30.0,
+        "ADP": 30.0,
+        "Cr": 30.0,
+        "ATP": 30.0
+      },
+      "occupancy_scale": 30.0,
+      "cumulative_extent_scale": 150.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "CK__AUTHOR_CATALYST_DOUBLE",
+      "unit": "CK",
+      "condition": "AUTHOR_CATALYST_DOUBLE",
+      "initial_original": {
+        "ADP": 0.0,
+        "ATP": 3750.0,
+        "CK": 60.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 50000.0,
+        "Cr": 0.0
+      },
+      "enzyme_total": 60.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 50000.0,
+        "ADP": 60.0,
+        "Cr": 60.0,
+        "ATP": 3750.0
+      },
+      "bound_scales": {
+        "CP": 60.0,
+        "ADP": 60.0,
+        "Cr": 60.0,
+        "ATP": 60.0
+      },
+      "occupancy_scale": 60.0,
+      "cumulative_extent_scale": 60.0,
+      "note": "Individual catalyst perturbation on authored pools."
+    },
+    {
+      "id": "CK__CHALLENGE_CATALYST_DOUBLE",
+      "unit": "CK",
+      "condition": "CHALLENGE_CATALYST_DOUBLE",
+      "initial_original": {
+        "ADP": 300.0,
+        "ATP": 3750.0,
+        "CK": 60.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 50000.0,
+        "Cr": 300.0
+      },
+      "enzyme_total": 60.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 50000.0,
+        "ADP": 300.0,
+        "Cr": 300.0,
+        "ATP": 3750.0
+      },
+      "bound_scales": {
+        "CP": 60.0,
+        "ADP": 60.0,
+        "Cr": 60.0,
+        "ATP": 60.0
+      },
+      "occupancy_scale": 60.0,
+      "cumulative_extent_scale": 300.0,
+      "note": "Individual catalyst perturbation on positive challenge."
+    },
+    {
+      "id": "CK__CHALLENGE_CP_DOUBLE",
+      "unit": "CK",
+      "condition": "CHALLENGE_CP_DOUBLE",
+      "initial_original": {
+        "ADP": 300.0,
+        "ATP": 3750.0,
+        "CK": 30.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 100000.0,
+        "Cr": 300.0
+      },
+      "enzyme_total": 30.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 100000.0,
+        "ADP": 300.0,
+        "Cr": 300.0,
+        "ATP": 3750.0
+      },
+      "bound_scales": {
+        "CP": 30.0,
+        "ADP": 30.0,
+        "Cr": 30.0,
+        "ATP": 30.0
+      },
+      "occupancy_scale": 30.0,
+      "cumulative_extent_scale": 300.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "CK__CHALLENGE_ADP_DOUBLE",
+      "unit": "CK",
+      "condition": "CHALLENGE_ADP_DOUBLE",
+      "initial_original": {
+        "ADP": 600.0,
+        "ATP": 3750.0,
+        "CK": 30.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 50000.0,
+        "Cr": 300.0
+      },
+      "enzyme_total": 30.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 50000.0,
+        "ADP": 600.0,
+        "Cr": 300.0,
+        "ATP": 3750.0
+      },
+      "bound_scales": {
+        "CP": 30.0,
+        "ADP": 30.0,
+        "Cr": 30.0,
+        "ATP": 30.0
+      },
+      "occupancy_scale": 30.0,
+      "cumulative_extent_scale": 600.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "CK__LOW_FUEL",
+      "unit": "CK",
+      "condition": "LOW_FUEL",
+      "initial_original": {
+        "ADP": 300.0,
+        "ATP": 3750.0,
+        "CK": 30.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 0.3,
+        "Cr": 300.0
+      },
+      "enzyme_total": 30.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 30.0,
+        "ADP": 300.0,
+        "Cr": 300.0,
+        "ATP": 3750.0
+      },
+      "bound_scales": {
+        "CP": 30.0,
+        "ADP": 30.0,
+        "Cr": 30.0,
+        "ATP": 30.0
+      },
+      "occupancy_scale": 30.0,
+      "cumulative_extent_scale": 30.0,
+      "note": "Fuel inventory comparable to or below catalyst; retained as domain stress."
+    },
+    {
+      "id": "CK__PRODUCT_RICH",
+      "unit": "CK",
+      "condition": "PRODUCT_RICH",
+      "initial_original": {
+        "ADP": 30.0,
+        "ATP": 37500.0,
+        "CK": 30.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 5000.0,
+        "Cr": 3000.0
+      },
+      "enzyme_total": 30.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 5000.0,
+        "ADP": 30.0,
+        "Cr": 3000.0,
+        "ATP": 37500.0
+      },
+      "bound_scales": {
+        "CP": 30.0,
+        "ADP": 30.0,
+        "Cr": 30.0,
+        "ATP": 30.0
+      },
+      "occupancy_scale": 30.0,
+      "cumulative_extent_scale": 30.0,
+      "note": "Source-supported reverse driving/product inhibition; NDK reverse remains zero."
+    },
+    {
+      "id": "CK__COUPLED_RESOURCE_LIMITATION",
+      "unit": "CK",
+      "condition": "COUPLED_RESOURCE_LIMITATION",
+      "initial_original": {
+        "ADP": 3.0,
+        "ATP": 3750.0,
+        "CK": 30.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 3.0,
+        "Cr": 300.0
+      },
+      "enzyme_total": 30.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 30.0,
+        "ADP": 30.0,
+        "Cr": 300.0,
+        "ATP": 3750.0
+      },
+      "bound_scales": {
+        "CP": 30.0,
+        "ADP": 30.0,
+        "Cr": 30.0,
+        "ATP": 30.0
+      },
+      "occupancy_scale": 30.0,
+      "cumulative_extent_scale": 30.0,
+      "note": "Simultaneous limiting reactant pools within the isolated unit; separate network-coupling stage."
+    },
+    {
+      "id": "CK__ZERO_PRODUCT_CORNER",
+      "unit": "CK",
+      "condition": "ZERO_PRODUCT_CORNER",
+      "initial_original": {
+        "ADP": 300.0,
+        "ATP": 0.0,
+        "CK": 30.0,
+        "CK_ADP": 0.0,
+        "CK_ATP": 0.0,
+        "CK_CP": 0.0,
+        "CK_CP_ADP": 0.0,
+        "CK_Cr": 0.0,
+        "CK_Cr_ATP": 0.0,
+        "CK_degraded": 0.0,
+        "CP": 50000.0,
+        "Cr": 0.0
+      },
+      "enzyme_total": 30.0,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "CP": 50000.0,
+        "ADP": 300.0,
+        "Cr": 30.0,
+        "ATP": 30.0
+      },
+      "bound_scales": {
+        "CP": 30.0,
+        "ADP": 30.0,
+        "Cr": 30.0,
+        "ATP": 30.0
+      },
+      "occupancy_scale": 30.0,
+      "cumulative_extent_scale": 300.0,
+      "note": "Predeclared physically valid microscopic state that can be outside all-enzyme stationary total-closure domain."
+    },
+    {
+      "id": "NDK__AUTHOR_BASELINE",
+      "unit": "NDK",
+      "condition": "AUTHOR_BASELINE",
+      "initial_original": {
+        "ADP": 0.0,
+        "ATP": 3750.0,
+        "GDP": 0.0,
+        "GTP": 2500.0,
+        "NDK": 1.8,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 1.8,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "GDP": 1.8,
+        "ADP": 1.8,
+        "GTP": 2500.0
+      },
+      "bound_scales": {
+        "ATP": 1.8,
+        "GDP": 1.8,
+        "ADP": 1.8,
+        "GTP": 1.8
+      },
+      "occupancy_scale": 1.8,
+      "cumulative_extent_scale": 1.8,
+      "note": "Exact author free-resource and catalyst inventories; isolated net catalysis may be dormant."
+    },
+    {
+      "id": "NDK__POSITIVE_CHALLENGE",
+      "unit": "NDK",
+      "condition": "POSITIVE_CHALLENGE",
+      "initial_original": {
+        "ADP": 100.0,
+        "ATP": 3750.0,
+        "GDP": 100.0,
+        "GTP": 2500.0,
+        "NDK": 1.8,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 1.8,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "GDP": 100.0,
+        "ADP": 100.0,
+        "GTP": 2500.0
+      },
+      "bound_scales": {
+        "ATP": 1.8,
+        "GDP": 1.8,
+        "ADP": 1.8,
+        "GTP": 1.8
+      },
+      "occupancy_scale": 1.8,
+      "cumulative_extent_scale": 100.0,
+      "note": "Explicit positive challenge supplies author-absent pools; no claim of author baseline."
+    },
+    {
+      "id": "NDK__AUTHOR_CATALYST_HALF",
+      "unit": "NDK",
+      "condition": "AUTHOR_CATALYST_HALF",
+      "initial_original": {
+        "ADP": 0.0,
+        "ATP": 3750.0,
+        "GDP": 0.0,
+        "GTP": 2500.0,
+        "NDK": 0.9,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 0.9,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "GDP": 1.0,
+        "ADP": 1.0,
+        "GTP": 2500.0
+      },
+      "bound_scales": {
+        "ATP": 1.0,
+        "GDP": 1.0,
+        "ADP": 1.0,
+        "GTP": 1.0
+      },
+      "occupancy_scale": 0.9,
+      "cumulative_extent_scale": 1.0,
+      "note": "Individual catalyst perturbation on authored pools."
+    },
+    {
+      "id": "NDK__CHALLENGE_CATALYST_HALF",
+      "unit": "NDK",
+      "condition": "CHALLENGE_CATALYST_HALF",
+      "initial_original": {
+        "ADP": 100.0,
+        "ATP": 3750.0,
+        "GDP": 100.0,
+        "GTP": 2500.0,
+        "NDK": 0.9,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 0.9,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "GDP": 100.0,
+        "ADP": 100.0,
+        "GTP": 2500.0
+      },
+      "bound_scales": {
+        "ATP": 1.0,
+        "GDP": 1.0,
+        "ADP": 1.0,
+        "GTP": 1.0
+      },
+      "occupancy_scale": 0.9,
+      "cumulative_extent_scale": 100.0,
+      "note": "Individual catalyst perturbation on positive challenge."
+    },
+    {
+      "id": "NDK__CHALLENGE_ATP_HALF",
+      "unit": "NDK",
+      "condition": "CHALLENGE_ATP_HALF",
+      "initial_original": {
+        "ADP": 100.0,
+        "ATP": 1875.0,
+        "GDP": 100.0,
+        "GTP": 2500.0,
+        "NDK": 1.8,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 1.8,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 1875.0,
+        "GDP": 100.0,
+        "ADP": 100.0,
+        "GTP": 2500.0
+      },
+      "bound_scales": {
+        "ATP": 1.8,
+        "GDP": 1.8,
+        "ADP": 1.8,
+        "GTP": 1.8
+      },
+      "occupancy_scale": 1.8,
+      "cumulative_extent_scale": 100.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "NDK__CHALLENGE_GDP_HALF",
+      "unit": "NDK",
+      "condition": "CHALLENGE_GDP_HALF",
+      "initial_original": {
+        "ADP": 100.0,
+        "ATP": 3750.0,
+        "GDP": 50.0,
+        "GTP": 2500.0,
+        "NDK": 1.8,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 1.8,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "GDP": 50.0,
+        "ADP": 100.0,
+        "GTP": 2500.0
+      },
+      "bound_scales": {
+        "ATP": 1.8,
+        "GDP": 1.8,
+        "ADP": 1.8,
+        "GTP": 1.8
+      },
+      "occupancy_scale": 1.8,
+      "cumulative_extent_scale": 50.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "NDK__AUTHOR_CATALYST_DOUBLE",
+      "unit": "NDK",
+      "condition": "AUTHOR_CATALYST_DOUBLE",
+      "initial_original": {
+        "ADP": 0.0,
+        "ATP": 3750.0,
+        "GDP": 0.0,
+        "GTP": 2500.0,
+        "NDK": 3.6,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 3.6,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "GDP": 3.6,
+        "ADP": 3.6,
+        "GTP": 2500.0
+      },
+      "bound_scales": {
+        "ATP": 3.6,
+        "GDP": 3.6,
+        "ADP": 3.6,
+        "GTP": 3.6
+      },
+      "occupancy_scale": 3.6,
+      "cumulative_extent_scale": 3.6,
+      "note": "Individual catalyst perturbation on authored pools."
+    },
+    {
+      "id": "NDK__CHALLENGE_CATALYST_DOUBLE",
+      "unit": "NDK",
+      "condition": "CHALLENGE_CATALYST_DOUBLE",
+      "initial_original": {
+        "ADP": 100.0,
+        "ATP": 3750.0,
+        "GDP": 100.0,
+        "GTP": 2500.0,
+        "NDK": 3.6,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 3.6,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "GDP": 100.0,
+        "ADP": 100.0,
+        "GTP": 2500.0
+      },
+      "bound_scales": {
+        "ATP": 3.6,
+        "GDP": 3.6,
+        "ADP": 3.6,
+        "GTP": 3.6
+      },
+      "occupancy_scale": 3.6,
+      "cumulative_extent_scale": 100.0,
+      "note": "Individual catalyst perturbation on positive challenge."
+    },
+    {
+      "id": "NDK__CHALLENGE_ATP_DOUBLE",
+      "unit": "NDK",
+      "condition": "CHALLENGE_ATP_DOUBLE",
+      "initial_original": {
+        "ADP": 100.0,
+        "ATP": 7500.0,
+        "GDP": 100.0,
+        "GTP": 2500.0,
+        "NDK": 1.8,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 1.8,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 7500.0,
+        "GDP": 100.0,
+        "ADP": 100.0,
+        "GTP": 2500.0
+      },
+      "bound_scales": {
+        "ATP": 1.8,
+        "GDP": 1.8,
+        "ADP": 1.8,
+        "GTP": 1.8
+      },
+      "occupancy_scale": 1.8,
+      "cumulative_extent_scale": 100.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "NDK__CHALLENGE_GDP_DOUBLE",
+      "unit": "NDK",
+      "condition": "CHALLENGE_GDP_DOUBLE",
+      "initial_original": {
+        "ADP": 100.0,
+        "ATP": 3750.0,
+        "GDP": 200.0,
+        "GTP": 2500.0,
+        "NDK": 1.8,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 1.8,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "GDP": 200.0,
+        "ADP": 100.0,
+        "GTP": 2500.0
+      },
+      "bound_scales": {
+        "ATP": 1.8,
+        "GDP": 1.8,
+        "ADP": 1.8,
+        "GTP": 1.8
+      },
+      "occupancy_scale": 1.8,
+      "cumulative_extent_scale": 200.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "NDK__LOW_FUEL",
+      "unit": "NDK",
+      "condition": "LOW_FUEL",
+      "initial_original": {
+        "ADP": 100.0,
+        "ATP": 0.018000000000000002,
+        "GDP": 100.0,
+        "GTP": 2500.0,
+        "NDK": 1.8,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 1.8,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 1.8,
+        "GDP": 100.0,
+        "ADP": 100.0,
+        "GTP": 2500.0
+      },
+      "bound_scales": {
+        "ATP": 1.8,
+        "GDP": 1.8,
+        "ADP": 1.8,
+        "GTP": 1.8
+      },
+      "occupancy_scale": 1.8,
+      "cumulative_extent_scale": 1.8,
+      "note": "Fuel inventory comparable to or below catalyst; retained as domain stress."
+    },
+    {
+      "id": "NDK__PRODUCT_RICH",
+      "unit": "NDK",
+      "condition": "PRODUCT_RICH",
+      "initial_original": {
+        "ADP": 1000.0,
+        "ATP": 375.0,
+        "GDP": 10.0,
+        "GTP": 25000.0,
+        "NDK": 1.8,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 1.8,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 375.0,
+        "GDP": 10.0,
+        "ADP": 1000.0,
+        "GTP": 25000.0
+      },
+      "bound_scales": {
+        "ATP": 1.8,
+        "GDP": 1.8,
+        "ADP": 1.8,
+        "GTP": 1.8
+      },
+      "occupancy_scale": 1.8,
+      "cumulative_extent_scale": 10.0,
+      "note": "Source-supported reverse driving/product inhibition; NDK reverse remains zero."
+    },
+    {
+      "id": "NDK__COUPLED_RESOURCE_LIMITATION",
+      "unit": "NDK",
+      "condition": "COUPLED_RESOURCE_LIMITATION",
+      "initial_original": {
+        "ADP": 100.0,
+        "ATP": 0.18000000000000002,
+        "GDP": 0.18000000000000002,
+        "GTP": 2500.0,
+        "NDK": 1.8,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 1.8,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 1.8,
+        "GDP": 1.8,
+        "ADP": 100.0,
+        "GTP": 2500.0
+      },
+      "bound_scales": {
+        "ATP": 1.8,
+        "GDP": 1.8,
+        "ADP": 1.8,
+        "GTP": 1.8
+      },
+      "occupancy_scale": 1.8,
+      "cumulative_extent_scale": 1.8,
+      "note": "Simultaneous limiting reactant pools within the isolated unit; separate network-coupling stage."
+    },
+    {
+      "id": "NDK__ZERO_PRODUCT_CORNER",
+      "unit": "NDK",
+      "condition": "ZERO_PRODUCT_CORNER",
+      "initial_original": {
+        "ADP": 0.0,
+        "ATP": 3750.0,
+        "GDP": 100.0,
+        "GTP": 0.0,
+        "NDK": 1.8,
+        "NDK_ADP": 0.0,
+        "NDK_ATP": 0.0,
+        "NDK_GDP": 0.0,
+        "NDK_GDP_ATP": 0.0,
+        "NDK_GTP": 0.0,
+        "NDK_GTP_ADP": 0.0,
+        "NDK_degraded": 0.0
+      },
+      "enzyme_total": 1.8,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "GDP": 100.0,
+        "ADP": 1.8,
+        "GTP": 1.8
+      },
+      "bound_scales": {
+        "ATP": 1.8,
+        "GDP": 1.8,
+        "ADP": 1.8,
+        "GTP": 1.8
+      },
+      "occupancy_scale": 1.8,
+      "cumulative_extent_scale": 100.0,
+      "note": "Predeclared physically valid microscopic state that can be outside all-enzyme stationary total-closure domain."
+    },
+    {
+      "id": "MK__AUTHOR_BASELINE",
+      "unit": "MK",
+      "condition": "AUTHOR_BASELINE",
+      "initial_original": {
+        "ADP": 0.0,
+        "AMP": 0.0,
+        "ATP": 3750.0,
+        "MK": 5.6,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 5.6,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "AMP": 5.6,
+        "ADP": 5.6
+      },
+      "bound_scales": {
+        "ATP": 5.6,
+        "AMP": 5.6,
+        "ADP": 11.2
+      },
+      "occupancy_scale": 5.6,
+      "cumulative_extent_scale": 5.6,
+      "note": "Exact author free-resource and catalyst inventories; isolated net catalysis may be dormant."
+    },
+    {
+      "id": "MK__POSITIVE_CHALLENGE",
+      "unit": "MK",
+      "condition": "POSITIVE_CHALLENGE",
+      "initial_original": {
+        "ADP": 100.0,
+        "AMP": 100.0,
+        "ATP": 3750.0,
+        "MK": 5.6,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 5.6,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "AMP": 100.0,
+        "ADP": 100.0
+      },
+      "bound_scales": {
+        "ATP": 5.6,
+        "AMP": 5.6,
+        "ADP": 11.2
+      },
+      "occupancy_scale": 5.6,
+      "cumulative_extent_scale": 100.0,
+      "note": "Explicit positive challenge supplies author-absent pools; no claim of author baseline."
+    },
+    {
+      "id": "MK__AUTHOR_CATALYST_HALF",
+      "unit": "MK",
+      "condition": "AUTHOR_CATALYST_HALF",
+      "initial_original": {
+        "ADP": 0.0,
+        "AMP": 0.0,
+        "ATP": 3750.0,
+        "MK": 2.8,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 2.8,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "AMP": 2.8,
+        "ADP": 2.8
+      },
+      "bound_scales": {
+        "ATP": 2.8,
+        "AMP": 2.8,
+        "ADP": 5.6
+      },
+      "occupancy_scale": 2.8,
+      "cumulative_extent_scale": 2.8,
+      "note": "Individual catalyst perturbation on authored pools."
+    },
+    {
+      "id": "MK__CHALLENGE_CATALYST_HALF",
+      "unit": "MK",
+      "condition": "CHALLENGE_CATALYST_HALF",
+      "initial_original": {
+        "ADP": 100.0,
+        "AMP": 100.0,
+        "ATP": 3750.0,
+        "MK": 2.8,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 2.8,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "AMP": 100.0,
+        "ADP": 100.0
+      },
+      "bound_scales": {
+        "ATP": 2.8,
+        "AMP": 2.8,
+        "ADP": 5.6
+      },
+      "occupancy_scale": 2.8,
+      "cumulative_extent_scale": 100.0,
+      "note": "Individual catalyst perturbation on positive challenge."
+    },
+    {
+      "id": "MK__CHALLENGE_ATP_HALF",
+      "unit": "MK",
+      "condition": "CHALLENGE_ATP_HALF",
+      "initial_original": {
+        "ADP": 100.0,
+        "AMP": 100.0,
+        "ATP": 1875.0,
+        "MK": 5.6,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 5.6,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 1875.0,
+        "AMP": 100.0,
+        "ADP": 100.0
+      },
+      "bound_scales": {
+        "ATP": 5.6,
+        "AMP": 5.6,
+        "ADP": 11.2
+      },
+      "occupancy_scale": 5.6,
+      "cumulative_extent_scale": 100.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "MK__CHALLENGE_AMP_HALF",
+      "unit": "MK",
+      "condition": "CHALLENGE_AMP_HALF",
+      "initial_original": {
+        "ADP": 100.0,
+        "AMP": 50.0,
+        "ATP": 3750.0,
+        "MK": 5.6,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 5.6,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "AMP": 50.0,
+        "ADP": 100.0
+      },
+      "bound_scales": {
+        "ATP": 5.6,
+        "AMP": 5.6,
+        "ADP": 11.2
+      },
+      "occupancy_scale": 5.6,
+      "cumulative_extent_scale": 50.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "MK__AUTHOR_CATALYST_DOUBLE",
+      "unit": "MK",
+      "condition": "AUTHOR_CATALYST_DOUBLE",
+      "initial_original": {
+        "ADP": 0.0,
+        "AMP": 0.0,
+        "ATP": 3750.0,
+        "MK": 11.2,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 11.2,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "AMP": 11.2,
+        "ADP": 11.2
+      },
+      "bound_scales": {
+        "ATP": 11.2,
+        "AMP": 11.2,
+        "ADP": 22.4
+      },
+      "occupancy_scale": 11.2,
+      "cumulative_extent_scale": 11.2,
+      "note": "Individual catalyst perturbation on authored pools."
+    },
+    {
+      "id": "MK__CHALLENGE_CATALYST_DOUBLE",
+      "unit": "MK",
+      "condition": "CHALLENGE_CATALYST_DOUBLE",
+      "initial_original": {
+        "ADP": 100.0,
+        "AMP": 100.0,
+        "ATP": 3750.0,
+        "MK": 11.2,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 11.2,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "AMP": 100.0,
+        "ADP": 100.0
+      },
+      "bound_scales": {
+        "ATP": 11.2,
+        "AMP": 11.2,
+        "ADP": 22.4
+      },
+      "occupancy_scale": 11.2,
+      "cumulative_extent_scale": 100.0,
+      "note": "Individual catalyst perturbation on positive challenge."
+    },
+    {
+      "id": "MK__CHALLENGE_ATP_DOUBLE",
+      "unit": "MK",
+      "condition": "CHALLENGE_ATP_DOUBLE",
+      "initial_original": {
+        "ADP": 100.0,
+        "AMP": 100.0,
+        "ATP": 7500.0,
+        "MK": 5.6,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 5.6,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 7500.0,
+        "AMP": 100.0,
+        "ADP": 100.0
+      },
+      "bound_scales": {
+        "ATP": 5.6,
+        "AMP": 5.6,
+        "ADP": 11.2
+      },
+      "occupancy_scale": 5.6,
+      "cumulative_extent_scale": 100.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "MK__CHALLENGE_AMP_DOUBLE",
+      "unit": "MK",
+      "condition": "CHALLENGE_AMP_DOUBLE",
+      "initial_original": {
+        "ADP": 100.0,
+        "AMP": 200.0,
+        "ATP": 3750.0,
+        "MK": 5.6,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 5.6,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "AMP": 200.0,
+        "ADP": 100.0
+      },
+      "bound_scales": {
+        "ATP": 5.6,
+        "AMP": 5.6,
+        "ADP": 11.2
+      },
+      "occupancy_scale": 5.6,
+      "cumulative_extent_scale": 200.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "MK__LOW_FUEL",
+      "unit": "MK",
+      "condition": "LOW_FUEL",
+      "initial_original": {
+        "ADP": 100.0,
+        "AMP": 100.0,
+        "ATP": 0.055999999999999994,
+        "MK": 5.6,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 5.6,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 5.6,
+        "AMP": 100.0,
+        "ADP": 100.0
+      },
+      "bound_scales": {
+        "ATP": 5.6,
+        "AMP": 5.6,
+        "ADP": 11.2
+      },
+      "occupancy_scale": 5.6,
+      "cumulative_extent_scale": 5.6,
+      "note": "Fuel inventory comparable to or below catalyst; retained as domain stress."
+    },
+    {
+      "id": "MK__PRODUCT_RICH",
+      "unit": "MK",
+      "condition": "PRODUCT_RICH",
+      "initial_original": {
+        "ADP": 1000.0,
+        "AMP": 10.0,
+        "ATP": 375.0,
+        "MK": 5.6,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 5.6,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 375.0,
+        "AMP": 10.0,
+        "ADP": 1000.0
+      },
+      "bound_scales": {
+        "ATP": 5.6,
+        "AMP": 5.6,
+        "ADP": 11.2
+      },
+      "occupancy_scale": 5.6,
+      "cumulative_extent_scale": 10.0,
+      "note": "Source-supported reverse driving/product inhibition; NDK reverse remains zero."
+    },
+    {
+      "id": "MK__COUPLED_RESOURCE_LIMITATION",
+      "unit": "MK",
+      "condition": "COUPLED_RESOURCE_LIMITATION",
+      "initial_original": {
+        "ADP": 100.0,
+        "AMP": 0.5599999999999999,
+        "ATP": 0.5599999999999999,
+        "MK": 5.6,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 5.6,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 5.6,
+        "AMP": 5.6,
+        "ADP": 100.0
+      },
+      "bound_scales": {
+        "ATP": 5.6,
+        "AMP": 5.6,
+        "ADP": 11.2
+      },
+      "occupancy_scale": 5.6,
+      "cumulative_extent_scale": 5.6,
+      "note": "Simultaneous limiting reactant pools within the isolated unit; separate network-coupling stage."
+    },
+    {
+      "id": "MK__ZERO_PRODUCT_CORNER",
+      "unit": "MK",
+      "condition": "ZERO_PRODUCT_CORNER",
+      "initial_original": {
+        "ADP": 0.0,
+        "AMP": 100.0,
+        "ATP": 3750.0,
+        "MK": 5.6,
+        "MK_ADP_1": 0.0,
+        "MK_ADP_2": 0.0,
+        "MK_ADP_ADP": 0.0,
+        "MK_AMP": 0.0,
+        "MK_ATP": 0.0,
+        "MK_ATP_AMP": 0.0,
+        "MK_degraded": 0.0
+      },
+      "enzyme_total": 5.6,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "ATP": 3750.0,
+        "AMP": 100.0,
+        "ADP": 5.6
+      },
+      "bound_scales": {
+        "ATP": 5.6,
+        "AMP": 5.6,
+        "ADP": 11.2
+      },
+      "occupancy_scale": 5.6,
+      "cumulative_extent_scale": 100.0,
+      "note": "Predeclared physically valid microscopic state that can be outside all-enzyme stationary total-closure domain."
+    },
+    {
+      "id": "PPiase__AUTHOR_BASELINE",
+      "unit": "PPiase",
+      "condition": "AUTHOR_BASELINE",
+      "initial_original": {
+        "PO4": 0.0,
+        "PPi": 0.0,
+        "PPiase": 0.16,
+        "PPiase_PO4": 0.0,
+        "PPiase_PO4_PO4": 0.0,
+        "PPiase_PPi": 0.0,
+        "PPiase_degraded": 0.0
+      },
+      "enzyme_total": 0.16,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "bound_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "occupancy_scale": 0.16,
+      "cumulative_extent_scale": 1.0,
+      "note": "Exact author free-resource and catalyst inventories; isolated net catalysis may be dormant."
+    },
+    {
+      "id": "PPiase__POSITIVE_CHALLENGE",
+      "unit": "PPiase",
+      "condition": "POSITIVE_CHALLENGE",
+      "initial_original": {
+        "PO4": 100.0,
+        "PPi": 100.0,
+        "PPiase": 0.16,
+        "PPiase_PO4": 0.0,
+        "PPiase_PO4_PO4": 0.0,
+        "PPiase_PPi": 0.0,
+        "PPiase_degraded": 0.0
+      },
+      "enzyme_total": 0.16,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "PPi": 100.0,
+        "PO4": 100.0
+      },
+      "bound_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "occupancy_scale": 0.16,
+      "cumulative_extent_scale": 100.0,
+      "note": "Explicit positive challenge supplies author-absent pools; no claim of author baseline."
+    },
+    {
+      "id": "PPiase__AUTHOR_CATALYST_HALF",
+      "unit": "PPiase",
+      "condition": "AUTHOR_CATALYST_HALF",
+      "initial_original": {
+        "PO4": 0.0,
+        "PPi": 0.0,
+        "PPiase": 0.08,
+        "PPiase_PO4": 0.0,
+        "PPiase_PO4_PO4": 0.0,
+        "PPiase_PPi": 0.0,
+        "PPiase_degraded": 0.0
+      },
+      "enzyme_total": 0.08,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "bound_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "occupancy_scale": 0.08,
+      "cumulative_extent_scale": 1.0,
+      "note": "Individual catalyst perturbation on authored pools."
+    },
+    {
+      "id": "PPiase__CHALLENGE_CATALYST_HALF",
+      "unit": "PPiase",
+      "condition": "CHALLENGE_CATALYST_HALF",
+      "initial_original": {
+        "PO4": 100.0,
+        "PPi": 100.0,
+        "PPiase": 0.08,
+        "PPiase_PO4": 0.0,
+        "PPiase_PO4_PO4": 0.0,
+        "PPiase_PPi": 0.0,
+        "PPiase_degraded": 0.0
+      },
+      "enzyme_total": 0.08,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "PPi": 100.0,
+        "PO4": 100.0
+      },
+      "bound_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "occupancy_scale": 0.08,
+      "cumulative_extent_scale": 100.0,
+      "note": "Individual catalyst perturbation on positive challenge."
+    },
+    {
+      "id": "PPiase__CHALLENGE_PPi_HALF",
+      "unit": "PPiase",
+      "condition": "CHALLENGE_PPi_HALF",
+      "initial_original": {
+        "PO4": 100.0,
+        "PPi": 50.0,
+        "PPiase": 0.16,
+        "PPiase_PO4": 0.0,
+        "PPiase_PO4_PO4": 0.0,
+        "PPiase_PPi": 0.0,
+        "PPiase_degraded": 0.0
+      },
+      "enzyme_total": 0.16,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "PPi": 50.0,
+        "PO4": 100.0
+      },
+      "bound_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "occupancy_scale": 0.16,
+      "cumulative_extent_scale": 50.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "PPiase__AUTHOR_CATALYST_DOUBLE",
+      "unit": "PPiase",
+      "condition": "AUTHOR_CATALYST_DOUBLE",
+      "initial_original": {
+        "PO4": 0.0,
+        "PPi": 0.0,
+        "PPiase": 0.32,
+        "PPiase_PO4": 0.0,
+        "PPiase_PO4_PO4": 0.0,
+        "PPiase_PPi": 0.0,
+        "PPiase_degraded": 0.0
+      },
+      "enzyme_total": 0.32,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "bound_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "occupancy_scale": 0.32,
+      "cumulative_extent_scale": 1.0,
+      "note": "Individual catalyst perturbation on authored pools."
+    },
+    {
+      "id": "PPiase__CHALLENGE_CATALYST_DOUBLE",
+      "unit": "PPiase",
+      "condition": "CHALLENGE_CATALYST_DOUBLE",
+      "initial_original": {
+        "PO4": 100.0,
+        "PPi": 100.0,
+        "PPiase": 0.32,
+        "PPiase_PO4": 0.0,
+        "PPiase_PO4_PO4": 0.0,
+        "PPiase_PPi": 0.0,
+        "PPiase_degraded": 0.0
+      },
+      "enzyme_total": 0.32,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "PPi": 100.0,
+        "PO4": 100.0
+      },
+      "bound_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "occupancy_scale": 0.32,
+      "cumulative_extent_scale": 100.0,
+      "note": "Individual catalyst perturbation on positive challenge."
+    },
+    {
+      "id": "PPiase__CHALLENGE_PPi_DOUBLE",
+      "unit": "PPiase",
+      "condition": "CHALLENGE_PPi_DOUBLE",
+      "initial_original": {
+        "PO4": 100.0,
+        "PPi": 200.0,
+        "PPiase": 0.16,
+        "PPiase_PO4": 0.0,
+        "PPiase_PO4_PO4": 0.0,
+        "PPiase_PPi": 0.0,
+        "PPiase_degraded": 0.0
+      },
+      "enzyme_total": 0.16,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "PPi": 200.0,
+        "PO4": 100.0
+      },
+      "bound_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "occupancy_scale": 0.16,
+      "cumulative_extent_scale": 200.0,
+      "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+    },
+    {
+      "id": "PPiase__LOW_FUEL",
+      "unit": "PPiase",
+      "condition": "LOW_FUEL",
+      "initial_original": {
+        "PO4": 100.0,
+        "PPi": 0.0016,
+        "PPiase": 0.16,
+        "PPiase_PO4": 0.0,
+        "PPiase_PO4_PO4": 0.0,
+        "PPiase_PPi": 0.0,
+        "PPiase_degraded": 0.0
+      },
+      "enzyme_total": 0.16,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "PPi": 1.0,
+        "PO4": 100.0
+      },
+      "bound_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "occupancy_scale": 0.16,
+      "cumulative_extent_scale": 1.0,
+      "note": "Fuel inventory comparable to or below catalyst; retained as domain stress."
+    },
+    {
+      "id": "PPiase__PRODUCT_RICH",
+      "unit": "PPiase",
+      "condition": "PRODUCT_RICH",
+      "initial_original": {
+        "PO4": 1000.0,
+        "PPi": 10.0,
+        "PPiase": 0.16,
+        "PPiase_PO4": 0.0,
+        "PPiase_PO4_PO4": 0.0,
+        "PPiase_PPi": 0.0,
+        "PPiase_degraded": 0.0
+      },
+      "enzyme_total": 0.16,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "PPi": 10.0,
+        "PO4": 1000.0
+      },
+      "bound_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "occupancy_scale": 0.16,
+      "cumulative_extent_scale": 10.0,
+      "note": "Source-supported reverse driving/product inhibition; NDK reverse remains zero."
+    },
+    {
+      "id": "PPiase__COUPLED_RESOURCE_LIMITATION",
+      "unit": "PPiase",
+      "condition": "COUPLED_RESOURCE_LIMITATION",
+      "initial_original": {
+        "PO4": 100.0,
+        "PPi": 0.016,
+        "PPiase": 0.16,
+        "PPiase_PO4": 0.0,
+        "PPiase_PO4_PO4": 0.0,
+        "PPiase_PPi": 0.0,
+        "PPiase_degraded": 0.0
+      },
+      "enzyme_total": 0.16,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "PPi": 1.0,
+        "PO4": 100.0
+      },
+      "bound_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "occupancy_scale": 0.16,
+      "cumulative_extent_scale": 1.0,
+      "note": "Simultaneous limiting reactant pools within the isolated unit; separate network-coupling stage."
+    },
+    {
+      "id": "PPiase__ZERO_PRODUCT_CORNER",
+      "unit": "PPiase",
+      "condition": "ZERO_PRODUCT_CORNER",
+      "initial_original": {
+        "PO4": 0.0,
+        "PPi": 100.0,
+        "PPiase": 0.16,
+        "PPiase_PO4": 0.0,
+        "PPiase_PO4_PO4": 0.0,
+        "PPiase_PPi": 0.0,
+        "PPiase_degraded": 0.0
+      },
+      "enzyme_total": 0.16,
+      "initial_modes": [
+        "ORIGINAL_NONEQUILIBRIUM",
+        "PROJECTED_PHYSICAL_CLOSURE"
+      ],
+      "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+      "concentration_scales": {
+        "PPi": 100.0,
+        "PO4": 1.0
+      },
+      "bound_scales": {
+        "PPi": 1.0,
+        "PO4": 1.0
+      },
+      "occupancy_scale": 0.16,
+      "cumulative_extent_scale": 100.0,
+      "note": "Predeclared physically valid microscopic state that can be outside all-enzyme stationary total-closure domain."
+    }
+  ],
+  "comparison_grid": [
+    0.0,
+    1e-08,
+    1.1667819447177705e-08,
+    1.3613801065193795e-08,
+    1.5884337281847672e-08,
+    1.853355794426717e-08,
+    2.1624620780751532e-08,
+    2.5231217088349532e-08,
+    2.943932854194071e-08,
+    3.4349277007350874e-08,
+    4.0078116226286255e-08,
+    4.67624223911311e-08,
+    5.456155013723765e-08,
+    6.366143157594228e-08,
+    7.427900893769505e-08,
+    8.666740650003249e-08,
+    1.0112196509975323e-07,
+    1.179872830927726e-07,
+    1.376654316189513e-07,
+    1.6062554002477095e-07,
+    1.874149799614443e-07,
+    2.1867241478865552e-07,
+    2.551430253832384e-07,
+    2.976962753378298e-07,
+    3.4734663907390985e-07,
+    4.0527778702983807e-07,
+    4.728708045015879e-07,
+    5.517371168766182e-07,
+    6.437569062022764e-07,
+    7.511239349441874e-07,
+    8.763978455382413e-07,
+    1.0225651825635732e-06,
+    1.193110592312208e-06,
+    1.392099897161406e-06,
+    1.6242770252513903e-06,
+    1.8951771062832123e-06,
+    2.2112584296537233e-06,
+    2.580056410824929e-06,
+    3.0103632365038614e-06,
+    3.5124374713948572e-06,
+    4.098248623573651e-06,
+    4.781762498950181e-06,
+    5.579274147703598e-06,
+    6.509796340171185e-06,
+    7.595512833501544e-06,
+    8.862307235001714e-06,
+    1.0340380070341667e-05,
+    1.2064968767594101e-05,
+    1.407718772161258e-05,
+    1.6425008465980246e-05,
+    1.916440331994227e-05,
+    2.2360679774997894e-05,
+    2.6090037433083308e-05,
+    3.044138461393237e-05,
+    3.551845793974563e-05,
+    4.144229542831265e-05,
+    4.8354122053415e-05,
+    5.6418716564603986e-05,
+    6.582833983172918e-05,
+    7.68073183664071e-05,
+    8.961739229211339e-05,
+    0.0001045639552591274,
+    0.00012200333506462636,
+    0.0001423512885487585,
+    0.00016609291328600057,
+    0.00019379421236767977,
+    0.00022611558798141,
+    0.00026382758547595115,
+    0.00030782926325182406,
+    0.000359169626418001,
+    0.00041907263519555033,
+    0.000488966384271464,
+    0.0005705171487418754,
+    0.0006656691083038815,
+    0.000776690696725347,
+    0.0009062286815694004,
+    0.001057371263440564,
+    0.0012337216990458673,
+    0.0014394842032532458,
+    0.0016795641780623326,
+    0.001959685157957868,
+    0.0022865252596366323,
+    0.002667876389085135,
+    0.0031128300015233704,
+    0.0036319938427532587,
+    0.004237744839050607,
+    0.004944524164525161,
+    0.005769181520388665,
+    0.00673137683378891,
+    0.007854048952756373,
+    0.00916396251100563,
+    0.010692345999911892,
+    0.012475636259372445,
+    0.014556347136302113,
+    0.016984083019681493,
+    0.019816721414952037,
+    0.023121792750467975,
+    0.02697809031075227,
+    0.031477548677551176,
+    0.036727435460941364,
+    0.04285290857161357,
+    0.05,
+    0.05255981617054889,
+    0.05525068551763788,
+    0.0580793174820771,
+    0.06105276500337841,
+    0.0641784421056258,
+    0.06746414238367815,
+    0.07091805843579722,
+    0.07454880229115493,
+    0.07836542688315398,
+    0.08237744862210328,
+    0.08659487112353169,
+    0.09102821015130401,
+    0.09568851983773263,
+    0.10058742024606301,
+    0.1057371263440564,
+    0.11115047846091416,
+    0.11684097430348409,
+    0.12282280261157902,
+    0.1291108785363242,
+    0.13572088082974532,
+    0.14266929093832778,
+    0.14997343409802133,
+    0.15765152253315862,
+    0.16572270086699936,
+    0.17420709385712702,
+    0.1831258565747231,
+    0.19250122715283502,
+    0.20235658223516173,
+    0.21271649526361328,
+    0.22360679774997896,
+    0.23505464368448006,
+    0.24708857724180294,
+    0.25973860395343273,
+    0.27303626552374866,
+    0.2870147184764281,
+    0.30170881682725814,
+    0.31715519898949,
+    0.33339237912842906,
+    0.3504608431930436,
+    0.36840314986403866,
+    0.387264036670101,
+    0.4070905315369044,
+    0.4279320700470148,
+    0.44984061870307107,
+    0.472870804501588,
+    0.4970800511404606,
+    0.5225287221997932,
+    0.549280271653059,
+    0.5774014020838789,
+    0.6069622310029172,
+    0.6380364656795916,
+    0.6707015869245212,
+    0.7050390422809655,
+    0.7411344491069478,
+    0.779077808054444,
+    0.8189637274779156,
+    0.8608916593317348,
+    0.9049661471446963,
+    0.9512970866899026,
+    1.0,
+    1.035142166679344,
+    1.0715193052376064,
+    1.109174815262401,
+    1.1481536214968828,
+    1.1885022274370185,
+    1.2302687708123816,
+    1.2735030810166617,
+    1.318256738556407,
+    1.3645831365889245,
+    1.4125375446227544,
+    1.462177174456718,
+    1.5135612484362082,
+    1.566751070108149,
+    1.62181009735893,
+    1.6788040181225603,
+    1.7378008287493754,
+    1.7988709151287878,
+    1.8620871366628675,
+    1.927524913190936,
+    1.9952623149688795,
+    2.0653801558105296,
+    2.1379620895022318,
+    2.2130947096056377,
+    2.290867652767773,
+    2.371373705661655,
+    2.4547089156850306,
+    2.5409727055493048,
+    2.6302679918953817,
+    2.7227013080779123,
+    2.8183829312644537,
+    2.9174270140011664,
+    3.019951720402016,
+    3.126079367123955,
+    3.2359365692962827,
+    3.3496543915782766,
+    3.4673685045253166,
+    3.5892193464500517,
+    3.715352290971725,
+    3.8459178204535354,
+    3.9810717055349722,
+    4.120975190973302,
+    4.265795188015927,
+    4.4157044735331255,
+    4.57088189614875,
+    4.7315125896148045,
+    4.897788193684462,
+    5.069907082747043,
+    5.248074602497725,
+    5.432503314924332,
+    5.623413251903491,
+    5.821032177708714,
+    6.025595860743578,
+    6.237348354824191,
+    6.456542290346555,
+    6.6834391756861455,
+    6.918309709189364,
+    7.16143410212902,
+    7.413102413009175,
+    7.67361489361819,
+    7.943282347242813,
+    8.22242649947071,
+    8.511380382023763,
+    8.81048873008014,
+    9.120108393559097,
+    9.440608762859233,
+    9.772372209558107,
+    10.115794542598982,
+    10.471285480508996,
+    10.839269140212034,
+    11.220184543019636,
+    11.614486138403427,
+    12.02264434617413,
+    12.44514611771385,
+    12.882495516931336,
+    13.33521432163324,
+    13.803842646028846,
+    14.288939585111029,
+    14.791083881682072,
+    15.310874616820303,
+    15.848931924611133,
+    16.40589773199539,
+    16.982436524617444,
+    17.57923613958692,
+    18.197008586099834,
+    18.836490894898002,
+    19.498445997580454,
+    20.183663636815606,
+    20.892961308540386,
+    21.6271852372702,
+    22.38721138568339,
+    23.173946499684785,
+    23.9883291901949,
+    24.831331052955704,
+    25.703957827688633,
+    26.6072505979881,
+    27.542287033381662,
+    28.510182675039083,
+    29.512092266663856,
+    30.549211132155122,
+    31.622776601683793,
+    32.734069487883815,
+    33.884415613920254,
+    35.0751873952568,
+    36.30780547701014,
+    37.583740428844415,
+    38.904514499428046,
+    40.271703432545905,
+    41.68693834703353,
+    43.151907682776525,
+    44.6683592150963,
+    46.238102139926035,
+    47.86300923226383,
+    49.545019080479,
+    51.28613839913648,
+    53.08844442309882,
+    54.954087385762456,
+    56.88529308438413,
+    58.8843655355589,
+    60.953689724016904,
+    63.0957344480193,
+    65.31305526474723,
+    67.60829753919815,
+    69.98419960022734,
+    72.44359600749898,
+    74.98942093324558,
+    77.62471166286916,
+    80.35261221856173,
+    83.17637711026708,
+    86.09937521846003,
+    89.12509381337455,
+    92.25714271547629,
+    95.49925860214358,
+    98.85530946569386,
+    102.32929922807536,
+    105.92537251772886,
+    109.64781961431851,
+    113.50108156723144,
+    117.48975549395291,
+    121.6186000646368,
+    125.89254117941675,
+    130.31667784522986,
+    134.89628825916532,
+    139.63683610559377,
+    144.5439770745928,
+    149.6235656094433,
+    154.88166189124811,
+    160.32453906900417,
+    165.95869074375597,
+    171.79083871575875,
+    177.82794100389228,
+    184.07720014689562,
+    190.54607179632464,
+    197.24227361148533,
+    204.17379446695296,
+    211.34890398366454,
+    218.77616239495518,
+    226.46443075930597,
+    234.42288153199226,
+    242.66100950824142,
+    251.18864315095797,
+    260.0159563165272,
+    269.1534803926914,
+    278.61211686297696,
+    288.40315031266056,
+    298.538261891796,
+    309.02954325135886,
+    319.88951096913974,
+    331.1311214825911,
+    342.7677865464501,
+    354.8133892335753,
+    367.2823004980846,
+    380.1893963205613,
+    393.55007545577723,
+    407.3802778041126,
+    421.6965034285823,
+    436.51583224016565,
+    451.85594437492216,
+    467.73514128719813,
+    484.1723675840994,
+    501.18723362727195,
+    518.8000389289609,
+    537.0317963702527,
+    555.9042572704037,
+    575.4399373371566,
+    595.6621435290103,
+    616.5950018614822,
+    638.2634861905483,
+    660.6934480075957,
+    683.9116472814293,
+    707.945784384138,
+    732.8245331389037,
+    758.5775750291835,
+    785.2356346100718,
+    812.8305161640986,
+    841.3951416451947,
+    870.9635899560806,
+    901.571137605957,
+    933.2543007969905,
+    966.0508789898131,
+    1000.0
+  ],
+  "windows": [
+    [
+      0,
+      0.05
+    ],
+    [
+      0.05,
+      1
+    ],
+    [
+      1,
+      1000
+    ]
+  ],
+  "solver": {
+    "reference": "scipy solve_ivp Radau generated exactly from checked SBML mass-action laws; independent BDF convergence",
+    "relative_tolerance": 1e-08,
+    "absolute_tolerance": 1e-10,
+    "tight_relative_tolerance": 1e-10,
+    "tight_absolute_tolerance": 1e-12,
+    "reduced": "Radau with source stationary Q linear solves and analytic derivatives, implicit total-inventory root",
+    "closure_absolute_residual": 1e-08,
+    "physical_negative_allowance_absolute": 1e-08,
+    "closure_min_singular_value": 1e-08,
+    "initial_multistart_fractions": [
+      0,
+      0.25,
+      0.75,
+      1.0
+    ],
+    "multistart_root_difference_allowance": 1e-07,
+    "fast_tangent_max_real_eigenvalue": -1e-08
+  },
+  "observations": {
+    "free": "Every boundary resource form",
+    "retained": "Every form-specific total free plus bound",
+    "bound": "C h",
+    "occupancy": "Every enzyme state/Etotal",
+    "flux": "Catalytic forward, reverse, net separately",
+    "cumulative": "Integrated catalytic forward/reverse/net extents from t=0; net resource flow=N*net extent",
+    "losses": "Microscopic release currents are separately recorded; net conversion is not assumed equal to instantaneous free release during storage."
+  },
+  "normalization": {
+    "flux": "max(long-window microscopic RMS net current,0.01*Etotal*(k_forward+k_reverse),1e-12); fixed formula evaluated on reference only",
+    "concentration": "Per scenario max(initial free-form inventory,Etotal,1), positive and fixed before integration",
+    "cumulative": "Per scenario max(initial limiting reactant inventory,Etotal,1) times absolute net coefficient for each resource",
+    "conservation": "max(initial complete invariant magnitude,1)",
+    "uncertainty": "Maximum tight/base and independent-BDF difference; uncertainty must be <=10% of corresponding acceptance threshold. Fail confidently if error-uncertainty > threshold; otherwise numerically inconclusive near gate."
+  },
+  "gates": {
+    "symbolic_residual": 0,
+    "normalized_conservation": 1e-08,
+    "long_concentration": 0.05,
+    "long_flux_rms": 0.1,
+    "cumulative_resource_flow": 0.02,
+    "full_Pept0003_endpoint": 0.05,
+    "negative_inventory_allowance": 1e-08,
+    "initial_windows": "Report separately, do not omit or promote a long-window pass into transient accuracy.",
+    "bound_occupancy": "Report reconstructed errors; scientific status also requires valid physical root, positivity, local uniqueness and attractivity."
+  },
+  "source_reference_diagnostics": {
+    "engine": "libRoadRunner 2.10.0 CVODE stiff; normalized XML read without regeneration, author CSV overlay in results only",
+    "grid": "Same complete grid including t=0 through1000; each source trajectory includes all species and energy-directed rates",
+    "relative_tolerance": 1e-08,
+    "absolute_tolerance": 1e-10,
+    "tight_relative_tolerance": 1e-10,
+    "tight_absolute_tolerance": 1e-12,
+    "E3_conditions": {
+      "AUTHOR_BASELINE": "All author initial values and four energy subsystem channels; all other968-87 channels disabled only in derived isolated execution copy",
+      "SHARED_LIMITATION": {
+        "ATP": 100.0,
+        "ADP": 10.0,
+        "AMP": 10.0,
+        "GTP": 100.0,
+        "GDP": 10.0,
+        "CP": 100.0,
+        "Cr": 100.0,
+        "PPi": 10.0,
+        "PO4": 100.0
+      }
+    },
+    "E4_condition": "Unmodified full968 reaction author reference operational parameters and all241 initial values; no candidate replacement unless prerequisites qualify"
+  },
+  "staging": {
+    "E1_E2": "Execute feasible isolated comparisons for every scenario and both initial modes; domain/solver failures remain explicit.",
+    "E3": "Assembled candidate comparison eligible only if all four constituents pass all required E1/E2 gates and domain checks. Otherwise record BLOCKED_BY_FAILED_PREREQUISITES; source microscopic coupled baseline can run independently.",
+    "E4": "No candidate full-PNAS replacement after prerequisite failure. Source-faithful imported normalized author-overlay full-reference execution is independent diagnostic; if candidate stage unavailable, no FULL_MODEL_VALIDATED claim."
+  },
+  "scientific_status": "HUMAN_REVIEW_REQUIRED; no approval or automatic promotion; all thresholds are engineering targets"
+}

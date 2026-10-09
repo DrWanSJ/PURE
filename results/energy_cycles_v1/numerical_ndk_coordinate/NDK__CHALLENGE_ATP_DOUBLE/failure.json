@@ -1,0 +1,8 @@
+{
+  "id": "NDK__CHALLENGE_ATP_DOUBLE",
+  "scientific_status": "BLOCKED",
+  "error": "'maximum_extent_quadrature_coordinate_difference'",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\ndk_coordinate_rerun.py\", line 42, in main\n    print(json.dumps({'case':cid,'mode':mode,'status':result['scientific_status'],'long':result['windows'][-1],'coordinate_defect':rs['maximum_extent_quadrature_coordinate_difference']}),flush=True)\n                                                                                                                                   ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'maximum_extent_quadrature_coordinate_difference'\n",
+  "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+  "engineering_addendum_sha256": "e60f0a7615881ff952ffbdff0defd85a4ed280fda0384c51b7334376150b8530"
+}

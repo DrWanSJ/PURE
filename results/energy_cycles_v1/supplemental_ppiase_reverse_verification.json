@@ -1,0 +1,192 @@
+{
+  "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+  "completed_trajectory_pairs_checked": 2,
+  "checks": [
+    {
+      "case": "PPiase__SUPPLEMENTAL_REVERSE_DRIVE",
+      "initial_mode": "ORIGINAL_NONEQUILIBRIUM",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "f3e6cd83b2ac4ce268d2dc8394b018550561dee2c8c82024f95c97faa6e3d992",
+      "maximum_source_resource_extent_identity_residual": 2.120259523508139e-11,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 2.604305660014461e-13,
+        "represented_phosphate_groups": 2.182350814092209e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": -5.630205728737565,
+        "reduced": -5.630205728744841
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 0.0,
+        "reduced": -1.8072786277811002
+      },
+      "maximum_reconstructed_source_stationarity_residual": 1.7763568394002505e-14,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 0.011327209050403964,
+          "max_scaled_retained": 0.003810420140490045,
+          "max_scaled_bound": 0.21623465132387476,
+          "max_scaled_occupancy": 0.93703636537029,
+          "normalized_net_flux_rms": 0.2602567975169323,
+          "max_normalized_cumulative_resource_flow": 0.0038104201404911414,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 6.079610148645997e-10,
+            "flux": 3.684562798351159e-09,
+            "flow": 6.079608483311461e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.003784189315689801,
+          "max_scaled_retained": 0.0037850827382517327,
+          "max_scaled_bound": 8.934225619542518e-07,
+          "max_scaled_occupancy": 5.583891012214074e-06,
+          "normalized_net_flux_rms": 0.00044245639191717637,
+          "max_normalized_cumulative_resource_flow": 0.003785082738252399,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 7.598865092717233e-09,
+            "flux": 7.862202007326227e-10,
+            "flow": 7.598867313163282e-09
+          }
+        },
+        {
+          "max_scaled_free": 0.0031524060558099087,
+          "max_scaled_retained": 0.0031532178188746762,
+          "max_scaled_bound": 8.117630646130997e-07,
+          "max_scaled_occupancy": 5.073519153831873e-06,
+          "normalized_net_flux_rms": 2.1666670265922726e-05,
+          "max_normalized_cumulative_resource_flow": 0.0031532178188751203,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 2.5765879740902164e-07,
+            "flux": 4.4786054335509054e-09,
+            "flow": 2.5765879740902164e-07
+          }
+        }
+      ]
+    },
+    {
+      "case": "PPiase__SUPPLEMENTAL_REVERSE_DRIVE",
+      "initial_mode": "PROJECTED_PHYSICAL_CLOSURE",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "3f31759ce8e57379161254ce4d4c41fb4189ec5a3f4d59309c00cc2aa98c94d8",
+      "maximum_source_resource_extent_identity_residual": 2.205524651799351e-11,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 1.2320700015777675e-12,
+        "represented_phosphate_groups": 2.182350814092209e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": -5.630205728723013,
+        "reduced": -5.630205728744841
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": -1.8072786277811002,
+        "reduced": -1.8072786277811002
+      },
+      "maximum_reconstructed_source_stationarity_residual": 1.7763568394002505e-14,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 3.291271792127404e-05,
+          "max_scaled_retained": 3.201217811898971e-05,
+          "max_scaled_bound": 9.303892962737176e-07,
+          "max_scaled_occupancy": 7.82486111977447e-06,
+          "normalized_net_flux_rms": 0.0004278505409049761,
+          "max_normalized_cumulative_resource_flow": 3.201217811915624e-05,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 1.2118710479569472e-09,
+            "flux": 2.448513868750513e-09,
+            "flow": 1.2118711589792497e-09
+          }
+        },
+        {
+          "max_scaled_free": 0.00045204409422883174,
+          "max_scaled_retained": 0.00045163707829321,
+          "max_scaled_bound": 9.005398023190225e-07,
+          "max_scaled_occupancy": 7.610859086709665e-06,
+          "normalized_net_flux_rms": 0.00030158468415005055,
+          "max_normalized_cumulative_resource_flow": 0.0004516370782923218,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 6.8781758066904786e-09,
+            "flux": 7.862202007326227e-10,
+            "flow": 6.8781762507796884e-09
+          }
+        },
+        {
+          "max_scaled_free": 0.0006683211354401308,
+          "max_scaled_retained": 0.0006683029949687835,
+          "max_scaled_bound": 4.070159355159392e-07,
+          "max_scaled_occupancy": 3.948829203600027e-06,
+          "normalized_net_flux_rms": 5.561091125375353e-06,
+          "max_normalized_cumulative_resource_flow": 0.0006683029949705599,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 2.5765879740902164e-07,
+            "flux": 4.4786054335509054e-09,
+            "flow": 2.5765879740902164e-07
+          }
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "preregistration_sha256": "390e10817dda1051b481c7adaf78a249e9e2b12dcdea2d03a9a5771d8e822339",
+  "script_sha256": "a417f001b083f0b49f8b72604ed8e2928ea6ffd46ff60bc47d3aeb5757bb84ee",
+  "authority": "Canonical XML MathML independently parsed by independent_tests.py; author parameters parsed from immutable ZIP; form-specific composition re-derived from exact binding stoichiometry.",
+  "scope": "Independent metric/uncertainty/source-ledger/stationary-RHS verification of emitted trajectories; no scientific promotion and no full-PNAS candidate embedding claim.",
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "source_hashes": {
+    "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+  },
+  "environment": {
+    "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4",
+    "sympy": "1.13.1",
+    "platform": "Windows-11-10.0.22631-SP0"
+  },
+  "command": [
+    "D:\\Code\\Anaconda\\python.exe",
+    "C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\numerical_verify.py",
+    "--registration",
+    "docs\\reduction\\energy_cycles\\ppiase_reverse_probe_preregistration.json",
+    "--numerical-dir",
+    "results\\energy_cycles_v1\\supplemental_ppiase_reverse\\numerical",
+    "--output",
+    "results\\energy_cycles_v1\\supplemental_ppiase_reverse_verification.json"
+  ],
+  "independent_parser_sha256": "b4abbf9cec0265288d49ca3e1dbded1300c320e529de83b508c558b9a8f7c789"
+}

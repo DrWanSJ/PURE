@@ -1,0 +1,61 @@
+{
+  "status": "ENGINEERING_CLOSEOUT_PASS_NOT_SCIENTIFIC_APPROVAL",
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "branch": "codex/energy-cycles-v1",
+  "existing_tracked_inputs_checked": 2013,
+  "protected_byte_changes": [],
+  "tracked_diff_names": "",
+  "missing_deliverables": [],
+  "modified_frozen_candidate_code": [],
+  "original_registration_unchanged": true,
+  "uncovered_scenarios": [],
+  "duplicate_final_comparison_modes": [],
+  "completed_final_comparison_pairs": 98,
+  "registered_scenarios": 54,
+  "domain_stops": 5,
+  "independent_reports": {
+    "independent_tests.json": {
+      "sha256": "edb585f8d4d03edbedd2212bc1824ca4b3fb314c11649245179d8d8d28289de8",
+      "status": "INDEPENDENT_ENGINEERING_CHECKS_PASS_NOT_SCIENTIFIC_ACCEPTANCE",
+      "completed_pairs": null
+    },
+    "numerical_verification.json": {
+      "sha256": "384320f6ecccce26e01782c8eeebd4c3ae5c2583c7d5c3f17b621106c630e07a",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "completed_pairs": 84
+    },
+    "source_reference_verification.json": {
+      "sha256": "5c5629da352f3230e9a2c5fc195b4fc340fb7232c0fed22170cadd9248c26bdb",
+      "status": "INDEPENDENT_SOURCE_REFERENCE_CHECK_PASS_NOT_CANDIDATE_VALIDATION; INDEPENDENT_COUPLED_SOURCE_REFERENCE_CHECK_PASS; INDEPENDENT_COUPLED_SOURCE_REFERENCE_CHECK_PASS",
+      "completed_pairs": null
+    },
+    "source_reference_import_verification.json": {
+      "sha256": "ea4e95b26900c89d28a308f574521b1828a09253e3ba6c38053fc95a9dbc0cd7",
+      "status": "INDEPENDENT_ENGINE_IMPORT_MATRIX_CHECK_PASS",
+      "completed_pairs": null
+    },
+    "ndk_coordinate_v2_verification.json": {
+      "sha256": "54272d1d5956a32e90b2086cdd2b9d6e66205ca092b7ee287071959bb3ed962a",
+      "status": "INDEPENDENT_SYMBOLIC_AND_NUMERICAL_COORDINATE_CHECK_PASS",
+      "completed_pairs": 14
+    },
+    "supplemental_ppiase_reverse_verification.json": {
+      "sha256": "7e7500dd4f871c513ba9d7a7711e3afcbf5e1f061c7153ff17db128f5edef16d",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "completed_pairs": 2
+    }
+  },
+  "no_commit_since_source_head": true,
+  "no_scientific_promotion": true,
+  "missing_independent_reports": [],
+  "independent_report_failures": [],
+  "independently_recomputed_unique_trajectory_pairs": 100,
+  "git_status": "?? docs/reduction/energy_cycles/\n?? docs/reduction/level_c_topology_reduction_protocol_v1.md\n?? results/energy_cycles_v1/\n?? scripts/energy_cycles/",
+  "command": [
+    "scripts/energy_cycles/closeout.py"
+  ],
+  "environment": {
+    "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.22631-SP0"
+  }
+}

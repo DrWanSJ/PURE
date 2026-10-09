@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\sean\.codex\worktrees\energy-cycles-v1\GUV\scripts\energy_cycles\full_reference.py", line 71, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\sean\.codex\worktrees\energy-cycles-v1\GUV\scripts\energy_cycles\full_reference.py", line 47, in main
+    sid=list(rr.getFloatingSpeciesIds());rid=list(rr.getReactionIds());S=np.asarray(rr.getFullStoichiometryMatrix())
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sean\Desktop\GUV\.venv-roadrunner311\Lib\site-packages\roadrunner\roadrunner.py", line 4319, in __getattr__
+    raise AttributeError(name)
+AttributeError: getFloatingSpeciesIds

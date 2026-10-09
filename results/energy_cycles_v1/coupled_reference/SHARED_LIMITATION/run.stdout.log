@@ -1,0 +1,50 @@
+{
+  "condition": "SHARED_LIMITATION",
+  "status": "MICROSCOPIC_COUPLED_REFERENCE_DIAGNOSTIC_ONLY",
+  "uncertainty": 1.7520511583768438e-07,
+  "minimum": -2.4441194952053992e-17,
+  "catalytic_flows": {
+    "CK": {
+      "max_absolute_net_current": 2.830692706803412,
+      "endpoint_net_extent_from_complete_resource_pools": 39.33624426789956,
+      "endpoint_forward_current": 0.05450818069901195,
+      "endpoint_reverse_current": 0.05450818028234535
+    },
+    "NDK": {
+      "max_absolute_net_current": 3.3644969575643597,
+      "endpoint_net_extent_from_complete_resource_pools": 9.999999999808304,
+      "endpoint_forward_current": -3.0800565128575075e-23,
+      "endpoint_reverse_current": 0.0
+    },
+    "MK": {
+      "max_absolute_net_current": 41.90992522794004,
+      "endpoint_net_extent_from_complete_resource_pools": 9.999386913215663,
+      "endpoint_forward_current": 0.004527031215818026,
+      "endpoint_reverse_current": 0.004527031215034297
+    },
+    "PPiase": {
+      "max_absolute_net_current": 28.616615987003602,
+      "endpoint_net_extent_from_complete_resource_pools": 9.999012712883259,
+      "endpoint_forward_current": 0.0260383722311699,
+      "endpoint_reverse_current": 0.0260383722311699
+    }
+  },
+  "enzyme_pool_conservation": {
+    "CK": {
+      "initial": 30.0,
+      "max_normalized_drift": 1.0207100350119921e-10
+    },
+    "NDK": {
+      "initial": 1.8,
+      "max_normalized_drift": 2.5633902408136083e-10
+    },
+    "MK": {
+      "initial": 5.6,
+      "max_normalized_drift": 2.0880027865441012e-10
+    },
+    "PPiase": {
+      "initial": 0.16,
+      "max_normalized_drift": 9.864886685306828e-13
+    }
+  }
+}

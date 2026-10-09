@@ -1,0 +1,1768 @@
+{
+  "schema_version": "energy_cycles_independent_tests_v1",
+  "status": "INDEPENDENT_ENGINEERING_CHECKS_PASS_NOT_SCIENTIFIC_ACCEPTANCE",
+  "executed_at_utc": "2026-10-09T02:58:37.547604+00:00",
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "command": "D:\\Code\\Anaconda\\python.exe C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\independent_tests.py --output C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\results\\energy_cycles_v1\\independent_tests.json",
+  "environment": {
+    "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "sympy": "1.13.1",
+    "scipy": "1.13.1",
+    "numpy": "1.26.4",
+    "xml_parser": "stdlib ElementTree independent of libSBML and source.py"
+  },
+  "source_hashes": {
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "scripts/energy_cycles/independent_tests.py": "b4abbf9cec0265288d49ca3e1dbded1300c320e529de83b508c558b9a8f7c789"
+  },
+  "source_summary": {
+    "species": 241,
+    "reactions": 968,
+    "author_positive_initial_species": 27,
+    "author_nonzero_parameters": 483,
+    "all_original_initial_concentrations_one": true,
+    "all_original_local_k1_one": true,
+    "literal_PO4_re0000000414": "2",
+    "combined_energy_reactions": 87,
+    "combined_energy_nonzero_channels": 61,
+    "structural_local_parameter_count": 968,
+    "energy_degradation_family_channels": 25,
+    "energy_principal_family_channels": 62,
+    "energy_reference_zero_channels": 26
+  },
+  "certificates": {
+    "CK": {
+      "source_subsystem": "EnergyRegeneration_A",
+      "source_file": "EnergyRegeneration_A.xml",
+      "original_count": 25,
+      "active_count": 18,
+      "zero_ids": [
+        "re0000000329",
+        "re0000000348",
+        "re0000000349",
+        "re0000000350",
+        "re0000000351",
+        "re0000000352",
+        "re0000000353"
+      ],
+      "family_counts": {
+        "RFAM_DEG": 7,
+        "RFAM_015": 18
+      },
+      "active_stoichiometric_rank": 7,
+      "internal_rank": 6,
+      "internal_kernel_dimension": 12,
+      "boundary_projection_rank": 1,
+      "nonnegative_cycle_projection_rank": 1,
+      "boundary_species": [
+        "ADP",
+        "ATP",
+        "CP",
+        "Cr"
+      ],
+      "oriented_net": {
+        "ADP": "-1",
+        "ATP": "1",
+        "CP": "-1",
+        "Cr": "1"
+      },
+      "direction_feasibility": {
+        "forward": {
+          "nonnegative_flux_feasible": true,
+          "lp_status": 0,
+          "witness_flux": {
+            "re0000000330": 1.0,
+            "re0000000336": 1.0,
+            "re0000000338": 1.0,
+            "re0000000340": 1.0,
+            "re0000000346": 1.0
+          }
+        },
+        "reverse": {
+          "nonnegative_flux_feasible": true,
+          "lp_status": 0,
+          "witness_flux": {
+            "re0000000333": 1.0,
+            "re0000000335": 1.0,
+            "re0000000339": 1.0,
+            "re0000000341": 1.0,
+            "re0000000347": 1.0
+          }
+        }
+      },
+      "simple_enzyme_state_cycles": [
+        {
+          "ids": [
+            "re0000000330",
+            "re0000000331"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "CP": "0",
+            "Cr": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000330",
+            "re0000000336",
+            "re0000000335",
+            "re0000000333"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "CP": "0",
+            "Cr": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000330",
+            "re0000000336",
+            "re0000000338",
+            "re0000000340",
+            "re0000000346"
+          ],
+          "boundary": {
+            "ADP": "-1",
+            "ATP": "1",
+            "CP": "-1",
+            "Cr": "1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000330",
+            "re0000000336",
+            "re0000000338",
+            "re0000000342",
+            "re0000000344"
+          ],
+          "boundary": {
+            "ADP": "-1",
+            "ATP": "1",
+            "CP": "-1",
+            "Cr": "1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000332",
+            "re0000000333"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "CP": "0",
+            "Cr": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000332",
+            "re0000000334",
+            "re0000000337",
+            "re0000000331"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "CP": "0",
+            "Cr": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000332",
+            "re0000000334",
+            "re0000000338",
+            "re0000000340",
+            "re0000000346"
+          ],
+          "boundary": {
+            "ADP": "-1",
+            "ATP": "1",
+            "CP": "-1",
+            "Cr": "1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000332",
+            "re0000000334",
+            "re0000000338",
+            "re0000000342",
+            "re0000000344"
+          ],
+          "boundary": {
+            "ADP": "-1",
+            "ATP": "1",
+            "CP": "-1",
+            "Cr": "1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000345",
+            "re0000000343",
+            "re0000000339",
+            "re0000000335",
+            "re0000000333"
+          ],
+          "boundary": {
+            "ADP": "1",
+            "ATP": "-1",
+            "CP": "1",
+            "Cr": "-1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000345",
+            "re0000000343",
+            "re0000000339",
+            "re0000000337",
+            "re0000000331"
+          ],
+          "boundary": {
+            "ADP": "1",
+            "ATP": "-1",
+            "CP": "1",
+            "Cr": "-1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000345",
+            "re0000000343",
+            "re0000000340",
+            "re0000000346"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "CP": "0",
+            "Cr": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000345",
+            "re0000000344"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "CP": "0",
+            "Cr": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000347",
+            "re0000000341",
+            "re0000000339",
+            "re0000000335",
+            "re0000000333"
+          ],
+          "boundary": {
+            "ADP": "1",
+            "ATP": "-1",
+            "CP": "1",
+            "Cr": "-1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000347",
+            "re0000000341",
+            "re0000000339",
+            "re0000000337",
+            "re0000000331"
+          ],
+          "boundary": {
+            "ADP": "1",
+            "ATP": "-1",
+            "CP": "1",
+            "Cr": "-1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000347",
+            "re0000000341",
+            "re0000000342",
+            "re0000000344"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "CP": "0",
+            "Cr": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000347",
+            "re0000000346"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "CP": "0",
+            "Cr": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000336",
+            "re0000000337"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "CP": "0",
+            "Cr": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000343",
+            "re0000000342"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "CP": "0",
+            "Cr": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000334",
+            "re0000000335"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "CP": "0",
+            "Cr": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000338",
+            "re0000000339"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "CP": "0",
+            "Cr": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000341",
+            "re0000000340"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "CP": "0",
+            "Cr": "0"
+          }
+        }
+      ],
+      "conserved_weights": {
+        "enzyme": {
+          "CK_ADP": "1",
+          "CK_ATP": "1",
+          "CK_CP": "1",
+          "CK_CP_ADP": "1",
+          "CK_Cr": "1",
+          "CK_Cr_ATP": "1",
+          "CK": "1"
+        },
+        "adenylate": {
+          "CK_ADP": "1",
+          "CK_ATP": "1",
+          "CK_CP_ADP": "1",
+          "CK_Cr_ATP": "1",
+          "ADP": "1",
+          "ATP": "1"
+        },
+        "creatine": {
+          "CK_CP": "1",
+          "CK_CP_ADP": "1",
+          "CK_Cr": "1",
+          "CK_Cr_ATP": "1",
+          "CP": "1",
+          "Cr": "1"
+        },
+        "represented_phosphate_groups": {
+          "CK_ADP": "2",
+          "CK_ATP": "3",
+          "CK_CP": "1",
+          "CK_CP_ADP": "3",
+          "CK_Cr_ATP": "3",
+          "ADP": "2",
+          "ATP": "3",
+          "CP": "1"
+        }
+      },
+      "disabled_channel_group_changes_if_activated": {
+        "enzyme": {
+          "re0000000329": "-1",
+          "re0000000348": "-1",
+          "re0000000349": "-1",
+          "re0000000350": "-1",
+          "re0000000351": "-1",
+          "re0000000352": "-1",
+          "re0000000353": "-1"
+        },
+        "adenylate": {},
+        "creatine": {},
+        "represented_phosphate_groups": {}
+      }
+    },
+    "NDK": {
+      "source_subsystem": "EnergyRegeneration_B",
+      "source_file": "EnergyRegeneration_B.xml",
+      "original_count": 25,
+      "active_count": 17,
+      "zero_ids": [
+        "re0000000354",
+        "re0000000364",
+        "re0000000369",
+        "re0000000370",
+        "re0000000371",
+        "re0000000372",
+        "re0000000373",
+        "re0000000374"
+      ],
+      "family_counts": {
+        "RFAM_DEG": 7,
+        "RFAM_016": 18
+      },
+      "active_stoichiometric_rank": 7,
+      "internal_rank": 6,
+      "internal_kernel_dimension": 11,
+      "boundary_projection_rank": 1,
+      "nonnegative_cycle_projection_rank": 1,
+      "boundary_species": [
+        "ADP",
+        "ATP",
+        "GDP",
+        "GTP"
+      ],
+      "oriented_net": {
+        "ADP": "1",
+        "ATP": "-1",
+        "GDP": "-1",
+        "GTP": "1"
+      },
+      "direction_feasibility": {
+        "forward": {
+          "nonnegative_flux_feasible": true,
+          "lp_status": 0,
+          "witness_flux": {
+            "re0000000357": 1.0,
+            "re0000000359": 1.0,
+            "re0000000363": 1.0,
+            "re0000000366": 1.0,
+            "re0000000368": 1.0
+          }
+        },
+        "reverse": {
+          "nonnegative_flux_feasible": false,
+          "lp_status": 2
+        }
+      },
+      "simple_enzyme_state_cycles": [
+        {
+          "ids": [
+            "re0000000355",
+            "re0000000356"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "GDP": "0",
+            "GTP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000355",
+            "re0000000361",
+            "re0000000360",
+            "re0000000358"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "GDP": "0",
+            "GTP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000355",
+            "re0000000361",
+            "re0000000363",
+            "re0000000365",
+            "re0000000367"
+          ],
+          "boundary": {
+            "ADP": "1",
+            "ATP": "-1",
+            "GDP": "-1",
+            "GTP": "1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000355",
+            "re0000000361",
+            "re0000000363",
+            "re0000000366",
+            "re0000000368"
+          ],
+          "boundary": {
+            "ADP": "1",
+            "ATP": "-1",
+            "GDP": "-1",
+            "GTP": "1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000357",
+            "re0000000358"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "GDP": "0",
+            "GTP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000357",
+            "re0000000359",
+            "re0000000362",
+            "re0000000356"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "GDP": "0",
+            "GTP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000357",
+            "re0000000359",
+            "re0000000363",
+            "re0000000365",
+            "re0000000367"
+          ],
+          "boundary": {
+            "ADP": "1",
+            "ATP": "-1",
+            "GDP": "-1",
+            "GTP": "1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000357",
+            "re0000000359",
+            "re0000000363",
+            "re0000000366",
+            "re0000000368"
+          ],
+          "boundary": {
+            "ADP": "1",
+            "ATP": "-1",
+            "GDP": "-1",
+            "GTP": "1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000377",
+            "re0000000368"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "GDP": "0",
+            "GTP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000377",
+            "re0000000375",
+            "re0000000365",
+            "re0000000367"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "GDP": "0",
+            "GTP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000378",
+            "re0000000367"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "GDP": "0",
+            "GTP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000378",
+            "re0000000376",
+            "re0000000366",
+            "re0000000368"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "GDP": "0",
+            "GTP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000376",
+            "re0000000365"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "GDP": "0",
+            "GTP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000361",
+            "re0000000362"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "GDP": "0",
+            "GTP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000359",
+            "re0000000360"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "GDP": "0",
+            "GTP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000375",
+            "re0000000366"
+          ],
+          "boundary": {
+            "ADP": "0",
+            "ATP": "0",
+            "GDP": "0",
+            "GTP": "0"
+          }
+        }
+      ],
+      "conserved_weights": {
+        "enzyme": {
+          "NDK": "1",
+          "NDK_GDP": "1",
+          "NDK_ATP": "1",
+          "NDK_GDP_ATP": "1",
+          "NDK_GTP_ADP": "1",
+          "NDK_ADP": "1",
+          "NDK_GTP": "1"
+        },
+        "adenylate": {
+          "ADP": "1",
+          "ATP": "1",
+          "NDK_ATP": "1",
+          "NDK_GDP_ATP": "1",
+          "NDK_GTP_ADP": "1",
+          "NDK_ADP": "1"
+        },
+        "guanylate": {
+          "GDP": "1",
+          "GTP": "1",
+          "NDK_GDP": "1",
+          "NDK_GDP_ATP": "1",
+          "NDK_GTP_ADP": "1",
+          "NDK_GTP": "1"
+        },
+        "represented_phosphate_groups": {
+          "ADP": "2",
+          "ATP": "3",
+          "GDP": "2",
+          "GTP": "3",
+          "NDK_GDP": "2",
+          "NDK_ATP": "3",
+          "NDK_GDP_ATP": "5",
+          "NDK_GTP_ADP": "5",
+          "NDK_ADP": "2",
+          "NDK_GTP": "3"
+        }
+      },
+      "disabled_channel_group_changes_if_activated": {
+        "enzyme": {
+          "re0000000354": "-1",
+          "re0000000369": "-1",
+          "re0000000370": "-1",
+          "re0000000371": "-1",
+          "re0000000372": "-1",
+          "re0000000373": "-1",
+          "re0000000374": "-1"
+        },
+        "adenylate": {},
+        "guanylate": {},
+        "represented_phosphate_groups": {}
+      }
+    },
+    "MK": {
+      "source_subsystem": "EnergyRegeneration_C",
+      "source_file": "EnergyRegeneration_C.xml",
+      "original_count": 25,
+      "active_count": 18,
+      "zero_ids": [
+        "re0000000379",
+        "re0000000398",
+        "re0000000399",
+        "re0000000400",
+        "re0000000401",
+        "re0000000402",
+        "re0000000403"
+      ],
+      "family_counts": {
+        "RFAM_DEG": 7,
+        "RFAM_017": 18
+      },
+      "active_stoichiometric_rank": 7,
+      "internal_rank": 6,
+      "internal_kernel_dimension": 12,
+      "boundary_projection_rank": 1,
+      "nonnegative_cycle_projection_rank": 1,
+      "boundary_species": [
+        "AMP",
+        "ADP",
+        "ATP"
+      ],
+      "oriented_net": {
+        "AMP": "-1",
+        "ADP": "2",
+        "ATP": "-1"
+      },
+      "direction_feasibility": {
+        "forward": {
+          "nonnegative_flux_feasible": true,
+          "lp_status": 0,
+          "witness_flux": {
+            "re0000000380": 1.0,
+            "re0000000386": 1.0,
+            "re0000000388": 1.0,
+            "re0000000390": 1.0,
+            "re0000000394": 1.0
+          }
+        },
+        "reverse": {
+          "nonnegative_flux_feasible": true,
+          "lp_status": 0,
+          "witness_flux": {
+            "re0000000383": 1.0,
+            "re0000000385": 1.0,
+            "re0000000389": 1.0,
+            "re0000000393": 1.0,
+            "re0000000397": 1.0
+          }
+        }
+      },
+      "simple_enzyme_state_cycles": [
+        {
+          "ids": [
+            "re0000000380",
+            "re0000000381"
+          ],
+          "boundary": {
+            "AMP": "0",
+            "ADP": "0",
+            "ATP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000380",
+            "re0000000386",
+            "re0000000385",
+            "re0000000383"
+          ],
+          "boundary": {
+            "AMP": "0",
+            "ADP": "0",
+            "ATP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000380",
+            "re0000000386",
+            "re0000000388",
+            "re0000000390",
+            "re0000000394"
+          ],
+          "boundary": {
+            "AMP": "-1",
+            "ADP": "2",
+            "ATP": "-1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000380",
+            "re0000000386",
+            "re0000000388",
+            "re0000000392",
+            "re0000000396"
+          ],
+          "boundary": {
+            "AMP": "-1",
+            "ADP": "2",
+            "ATP": "-1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000382",
+            "re0000000383"
+          ],
+          "boundary": {
+            "AMP": "0",
+            "ADP": "0",
+            "ATP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000382",
+            "re0000000384",
+            "re0000000387",
+            "re0000000381"
+          ],
+          "boundary": {
+            "AMP": "0",
+            "ADP": "0",
+            "ATP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000382",
+            "re0000000384",
+            "re0000000388",
+            "re0000000390",
+            "re0000000394"
+          ],
+          "boundary": {
+            "AMP": "-1",
+            "ADP": "2",
+            "ATP": "-1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000382",
+            "re0000000384",
+            "re0000000388",
+            "re0000000392",
+            "re0000000396"
+          ],
+          "boundary": {
+            "AMP": "-1",
+            "ADP": "2",
+            "ATP": "-1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000395",
+            "re0000000391",
+            "re0000000389",
+            "re0000000385",
+            "re0000000383"
+          ],
+          "boundary": {
+            "AMP": "1",
+            "ADP": "-2",
+            "ATP": "1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000395",
+            "re0000000391",
+            "re0000000389",
+            "re0000000387",
+            "re0000000381"
+          ],
+          "boundary": {
+            "AMP": "1",
+            "ADP": "-2",
+            "ATP": "1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000395",
+            "re0000000391",
+            "re0000000392",
+            "re0000000396"
+          ],
+          "boundary": {
+            "AMP": "0",
+            "ADP": "0",
+            "ATP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000395",
+            "re0000000394"
+          ],
+          "boundary": {
+            "AMP": "0",
+            "ADP": "0",
+            "ATP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000397",
+            "re0000000393",
+            "re0000000389",
+            "re0000000385",
+            "re0000000383"
+          ],
+          "boundary": {
+            "AMP": "1",
+            "ADP": "-2",
+            "ATP": "1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000397",
+            "re0000000393",
+            "re0000000389",
+            "re0000000387",
+            "re0000000381"
+          ],
+          "boundary": {
+            "AMP": "1",
+            "ADP": "-2",
+            "ATP": "1"
+          }
+        },
+        {
+          "ids": [
+            "re0000000397",
+            "re0000000393",
+            "re0000000390",
+            "re0000000394"
+          ],
+          "boundary": {
+            "AMP": "0",
+            "ADP": "0",
+            "ATP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000397",
+            "re0000000396"
+          ],
+          "boundary": {
+            "AMP": "0",
+            "ADP": "0",
+            "ATP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000391",
+            "re0000000390"
+          ],
+          "boundary": {
+            "AMP": "0",
+            "ADP": "0",
+            "ATP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000393",
+            "re0000000392"
+          ],
+          "boundary": {
+            "AMP": "0",
+            "ADP": "0",
+            "ATP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000389",
+            "re0000000388"
+          ],
+          "boundary": {
+            "AMP": "0",
+            "ADP": "0",
+            "ATP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000384",
+            "re0000000385"
+          ],
+          "boundary": {
+            "AMP": "0",
+            "ADP": "0",
+            "ATP": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000386",
+            "re0000000387"
+          ],
+          "boundary": {
+            "AMP": "0",
+            "ADP": "0",
+            "ATP": "0"
+          }
+        }
+      ],
+      "conserved_weights": {
+        "enzyme": {
+          "MK": "1",
+          "MK_AMP": "1",
+          "MK_ATP": "1",
+          "MK_ATP_AMP": "1",
+          "MK_ADP_1": "1",
+          "MK_ADP_2": "1",
+          "MK_ADP_ADP": "1"
+        },
+        "adenylate": {
+          "AMP": "1",
+          "ADP": "1",
+          "ATP": "1",
+          "MK_AMP": "1",
+          "MK_ATP": "1",
+          "MK_ATP_AMP": "2",
+          "MK_ADP_1": "1",
+          "MK_ADP_2": "1",
+          "MK_ADP_ADP": "2"
+        },
+        "represented_phosphate_groups": {
+          "AMP": "1",
+          "ADP": "2",
+          "ATP": "3",
+          "MK_AMP": "1",
+          "MK_ATP": "3",
+          "MK_ATP_AMP": "4",
+          "MK_ADP_1": "2",
+          "MK_ADP_2": "2",
+          "MK_ADP_ADP": "4"
+        }
+      },
+      "disabled_channel_group_changes_if_activated": {
+        "enzyme": {
+          "re0000000379": "-1",
+          "re0000000398": "-1",
+          "re0000000399": "-1",
+          "re0000000400": "-1",
+          "re0000000401": "-1",
+          "re0000000402": "-1",
+          "re0000000403": "-1"
+        },
+        "adenylate": {
+          "re0000000400": "-1",
+          "re0000000401": "-1"
+        },
+        "represented_phosphate_groups": {
+          "re0000000400": "-1",
+          "re0000000401": "-2"
+        }
+      }
+    },
+    "PPiase": {
+      "source_subsystem": "EnergyRegeneration_D",
+      "source_file": "EnergyRegeneration_D.xml",
+      "original_count": 12,
+      "active_count": 8,
+      "zero_ids": [
+        "re0000000404",
+        "re0000000413",
+        "re0000000414",
+        "re0000000415"
+      ],
+      "family_counts": {
+        "RFAM_DEG": 4,
+        "RFAM_018": 8
+      },
+      "active_stoichiometric_rank": 4,
+      "internal_rank": 3,
+      "internal_kernel_dimension": 5,
+      "boundary_projection_rank": 1,
+      "nonnegative_cycle_projection_rank": 1,
+      "boundary_species": [
+        "PPi",
+        "PO4"
+      ],
+      "oriented_net": {
+        "PPi": "-1",
+        "PO4": "2"
+      },
+      "direction_feasibility": {
+        "forward": {
+          "nonnegative_flux_feasible": true,
+          "lp_status": 0,
+          "witness_flux": {
+            "re0000000405": 1.0,
+            "re0000000407": 1.0,
+            "re0000000409": 1.0,
+            "re0000000411": 1.0
+          }
+        },
+        "reverse": {
+          "nonnegative_flux_feasible": true,
+          "lp_status": 0,
+          "witness_flux": {
+            "re0000000406": 1.0,
+            "re0000000408": 1.0,
+            "re0000000410": 1.0,
+            "re0000000412": 1.0
+          }
+        }
+      },
+      "simple_enzyme_state_cycles": [
+        {
+          "ids": [
+            "re0000000405",
+            "re0000000406"
+          ],
+          "boundary": {
+            "PPi": "0",
+            "PO4": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000405",
+            "re0000000407",
+            "re0000000409",
+            "re0000000411"
+          ],
+          "boundary": {
+            "PPi": "-1",
+            "PO4": "2"
+          }
+        },
+        {
+          "ids": [
+            "re0000000412",
+            "re0000000410",
+            "re0000000408",
+            "re0000000406"
+          ],
+          "boundary": {
+            "PPi": "1",
+            "PO4": "-2"
+          }
+        },
+        {
+          "ids": [
+            "re0000000412",
+            "re0000000411"
+          ],
+          "boundary": {
+            "PPi": "0",
+            "PO4": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000410",
+            "re0000000409"
+          ],
+          "boundary": {
+            "PPi": "0",
+            "PO4": "0"
+          }
+        },
+        {
+          "ids": [
+            "re0000000408",
+            "re0000000407"
+          ],
+          "boundary": {
+            "PPi": "0",
+            "PO4": "0"
+          }
+        }
+      ],
+      "conserved_weights": {
+        "enzyme": {
+          "PPiase": "1",
+          "PPiase_PPi": "1",
+          "PPiase_PO4": "1",
+          "PPiase_PO4_PO4": "1"
+        },
+        "represented_phosphate_groups": {
+          "PPi": "2",
+          "PPiase_PPi": "2",
+          "PO4": "1",
+          "PPiase_PO4": "1",
+          "PPiase_PO4_PO4": "2"
+        }
+      },
+      "disabled_channel_group_changes_if_activated": {
+        "enzyme": {
+          "re0000000404": "-1",
+          "re0000000413": "-1",
+          "re0000000414": "-1",
+          "re0000000415": "-1"
+        },
+        "represented_phosphate_groups": {}
+      }
+    }
+  },
+  "source_kinetic_witnesses": {
+    "CK": {
+      "source_form_composition": {
+        "CK": {
+          "ADP": "0",
+          "ATP": "0",
+          "CP": "0",
+          "Cr": "0"
+        },
+        "CK_ADP": {
+          "ADP": "1",
+          "ATP": "0",
+          "CP": "0",
+          "Cr": "0"
+        },
+        "CK_ATP": {
+          "ADP": "0",
+          "ATP": "1",
+          "CP": "0",
+          "Cr": "0"
+        },
+        "CK_CP": {
+          "ADP": "0",
+          "ATP": "0",
+          "CP": "1",
+          "Cr": "0"
+        },
+        "CK_CP_ADP": {
+          "ADP": "1",
+          "ATP": "0",
+          "CP": "1",
+          "Cr": "0"
+        },
+        "CK_Cr": {
+          "ADP": "0",
+          "ATP": "0",
+          "CP": "0",
+          "Cr": "1"
+        },
+        "CK_Cr_ATP": {
+          "ADP": "0",
+          "ATP": "1",
+          "CP": "0",
+          "Cr": "1"
+        }
+      },
+      "same_free_and_enzyme_total_counterexample": {
+        "loaded_state": "CK_CP_ADP",
+        "max_projected_rhs_difference_exact": "5980392157/5000000"
+      },
+      "same_form_totals_and_enzyme_total_counterexample": {
+        "total_coordinates_equal": true,
+        "max_projected_rhs_difference_exact": "2527408333/1000000000"
+      },
+      "zero_product_corner": {
+        "substrate_total_each": 10,
+        "enzyme_total": 1,
+        "free_substrate_lower_bound": 9,
+        "forbidden_product_bound_states": [
+          "CK_ATP",
+          "CK_Cr",
+          "CK_Cr_ATP"
+        ],
+        "positive_substrate_generator_irreducible": true,
+        "stationarity_with_forbidden_zero_solution_set": "EmptySet",
+        "scope": "Nonnegative stationary-total closure infeasible at this source-directed substrate-positive/product-total-zero corner; microscopic state remains physical."
+      }
+    },
+    "NDK": {
+      "source_form_composition": {
+        "NDK": {
+          "ADP": "0",
+          "ATP": "0",
+          "GDP": "0",
+          "GTP": "0"
+        },
+        "NDK_ADP": {
+          "ADP": "1",
+          "ATP": "0",
+          "GDP": "0",
+          "GTP": "0"
+        },
+        "NDK_ATP": {
+          "ADP": "0",
+          "ATP": "1",
+          "GDP": "0",
+          "GTP": "0"
+        },
+        "NDK_GDP": {
+          "ADP": "0",
+          "ATP": "0",
+          "GDP": "1",
+          "GTP": "0"
+        },
+        "NDK_GDP_ATP": {
+          "ADP": "0",
+          "ATP": "1",
+          "GDP": "1",
+          "GTP": "0"
+        },
+        "NDK_GTP": {
+          "ADP": "0",
+          "ATP": "0",
+          "GDP": "0",
+          "GTP": "1"
+        },
+        "NDK_GTP_ADP": {
+          "ADP": "1",
+          "ATP": "0",
+          "GDP": "0",
+          "GTP": "1"
+        }
+      },
+      "same_free_and_enzyme_total_counterexample": {
+        "loaded_state": "NDK_GDP_ATP",
+        "max_projected_rhs_difference_exact": "12040816327/10000000"
+      },
+      "same_form_totals_and_enzyme_total_counterexample": {
+        "total_coordinates_equal": true,
+        "max_projected_rhs_difference_exact": "470"
+      },
+      "zero_product_corner": {
+        "substrate_total_each": 10,
+        "enzyme_total": 1,
+        "free_substrate_lower_bound": 9,
+        "forbidden_product_bound_states": [
+          "NDK_ADP",
+          "NDK_GTP",
+          "NDK_GTP_ADP"
+        ],
+        "positive_substrate_generator_irreducible": true,
+        "stationarity_with_forbidden_zero_solution_set": "EmptySet",
+        "scope": "Nonnegative stationary-total closure infeasible at this source-directed substrate-positive/product-total-zero corner; microscopic state remains physical."
+      }
+    },
+    "MK": {
+      "source_form_composition": {
+        "MK": {
+          "AMP": "0",
+          "ADP": "0",
+          "ATP": "0"
+        },
+        "MK_ADP_1": {
+          "AMP": "0",
+          "ADP": "1",
+          "ATP": "0"
+        },
+        "MK_ADP_2": {
+          "AMP": "0",
+          "ADP": "1",
+          "ATP": "0"
+        },
+        "MK_ADP_ADP": {
+          "AMP": "0",
+          "ADP": "2",
+          "ATP": "0"
+        },
+        "MK_AMP": {
+          "AMP": "1",
+          "ADP": "0",
+          "ATP": "0"
+        },
+        "MK_ATP": {
+          "AMP": "0",
+          "ADP": "0",
+          "ATP": "1"
+        },
+        "MK_ATP_AMP": {
+          "AMP": "1",
+          "ADP": "0",
+          "ATP": "1"
+        }
+      },
+      "same_free_and_enzyme_total_counterexample": {
+        "loaded_state": "MK_ATP_AMP",
+        "max_projected_rhs_difference_exact": "11666666667/10000000"
+      },
+      "same_form_totals_and_enzyme_total_counterexample": {
+        "total_coordinates_equal": true,
+        "max_projected_rhs_difference_exact": "2556/5"
+      },
+      "zero_product_corner": {
+        "substrate_total_each": 10,
+        "enzyme_total": 1,
+        "free_substrate_lower_bound": 9,
+        "forbidden_product_bound_states": [
+          "MK_ADP_1",
+          "MK_ADP_2",
+          "MK_ADP_ADP"
+        ],
+        "positive_substrate_generator_irreducible": true,
+        "stationarity_with_forbidden_zero_solution_set": "EmptySet",
+        "scope": "Nonnegative stationary-total closure infeasible at this source-directed substrate-positive/product-total-zero corner; microscopic state remains physical."
+      }
+    },
+    "PPiase": {
+      "source_form_composition": {
+        "PPiase": {
+          "PPi": "0",
+          "PO4": "0"
+        },
+        "PPiase_PO4": {
+          "PPi": "0",
+          "PO4": "1"
+        },
+        "PPiase_PO4_PO4": {
+          "PPi": "0",
+          "PO4": "2"
+        },
+        "PPiase_PPi": {
+          "PPi": "1",
+          "PO4": "0"
+        }
+      },
+      "same_free_and_enzyme_total_counterexample": {
+        "loaded_state": "PPiase_PPi",
+        "max_projected_rhs_difference_exact": "660"
+      },
+      "same_form_totals_and_enzyme_total_counterexample": {
+        "total_coordinates_equal": true,
+        "max_projected_rhs_difference_exact": "1600"
+      },
+      "zero_product_corner": {
+        "substrate_total_each": 10,
+        "enzyme_total": 1,
+        "free_substrate_lower_bound": 9,
+        "forbidden_product_bound_states": [
+          "PPiase_PO4",
+          "PPiase_PO4_PO4"
+        ],
+        "positive_substrate_generator_irreducible": true,
+        "stationarity_with_forbidden_zero_solution_set": "EmptySet",
+        "scope": "Nonnegative stationary-total closure infeasible at this source-directed substrate-positive/product-total-zero corner; microscopic state remains physical."
+      }
+    }
+  },
+  "synthetic_fixtures": {
+    "exact_lumpable_parallel_losses": {
+      "symbolic_residual": "0"
+    },
+    "nonlumpable_unequal_parallel_losses": {
+      "same_y_derivative_difference": "-a + b"
+    },
+    "analytic_chemostatted_enzyme": {
+      "rate": "Et*S*k1*kc/(S*k1 + kc + km)",
+      "stationary_complex": "Et*S*k1/(S*k1 + kc + km)",
+      "attractivity_eigenvalue": "-S*k1 - kc - km",
+      "numeric_max_absolute_error": 1.3311574065255627e-13,
+      "initial_complex": 0,
+      "equilibrium_complex": 0.8,
+      "root_scope": "chemostatted synthetic E+S enzyme fixture, not a PNAS cycle"
+    }
+  },
+  "negative_controls": [
+    {
+      "number": 1,
+      "name": "remove an active CK reaction",
+      "scope": "actual_source_module",
+      "mutation_entered_semantic_predicate": true,
+      "hash_gate_used": false,
+      "caught": true,
+      "failure_gate": "SOURCE_REACTION_COVERAGE",
+      "failure_detail": [
+        "re0000000330"
+      ]
+    },
+    {
+      "number": 2,
+      "name": "reverse CK catalytic conversion with unchanged source ID mapping",
+      "scope": "actual_source_module",
+      "mutation_entered_semantic_predicate": true,
+      "hash_gate_used": false,
+      "caught": true,
+      "failure_gate": "SOURCE_DIRECTED_STOICHIOMETRY",
+      "failure_detail": "re0000000338"
+    },
+    {
+      "number": 3,
+      "name": "double an ADP stoichiometric coefficient",
+      "scope": "actual_source_module",
+      "mutation_entered_semantic_predicate": true,
+      "hash_gate_used": false,
+      "caught": true,
+      "failure_gate": "EXACT_CONSERVED_POOL_RESIDUAL",
+      "failure_detail": {
+        "re0000000330": "-1"
+      }
+    },
+    {
+      "number": 4,
+      "name": "activate NDK author-zero reverse chemical channel",
+      "scope": "actual_source_module",
+      "mutation_entered_semantic_predicate": true,
+      "hash_gate_used": false,
+      "caught": true,
+      "failure_gate": "AUTHOR_DIRECTED_PARAMETER",
+      "failure_detail": "re0000000364"
+    },
+    {
+      "number": 5,
+      "name": "omit bound CK_CP_ADP nucleotide from adenylate pool",
+      "scope": "actual_source_module",
+      "mutation_entered_semantic_predicate": true,
+      "hash_gate_used": false,
+      "caught": true,
+      "failure_gate": "EXACT_CONSERVED_POOL_RESIDUAL",
+      "failure_detail": {
+        "re0000000334": "-1",
+        "re0000000335": "1",
+        "re0000000336": "-1",
+        "re0000000337": "1",
+        "re0000000338": "1",
+        "re0000000339": "-1"
+      }
+    },
+    {
+      "number": 6,
+      "name": "omit terminal PPiase PO4 release event",
+      "scope": "actual_source_module",
+      "mutation_entered_semantic_predicate": true,
+      "hash_gate_used": false,
+      "caught": true,
+      "failure_gate": "FORWARD_CATALYTIC_CYCLE_REACHABLE",
+      "failure_detail": "PPiase"
+    },
+    {
+      "number": 7,
+      "name": "effective PPi to one PO4 loses a represented phosphate group",
+      "scope": "actual_source_module",
+      "mutation_entered_semantic_predicate": true,
+      "hash_gate_used": false,
+      "caught": true,
+      "failure_gate": "EFFECTIVE_RESOURCE_STOICHIOMETRY",
+      "failure_detail": {
+        "PPi": -1,
+        "PO4": 1
+      }
+    },
+    {
+      "number": 8,
+      "name": "mix all-one structural initial inputs with author parameters",
+      "scope": "actual_author_input_overlay",
+      "mutation_entered_semantic_predicate": true,
+      "hash_gate_used": false,
+      "caught": true,
+      "failure_gate": "AUTHOR_INITIAL_VALUES",
+      "failure_detail": {
+        "mismatched_species": 241,
+        "author_positive_count": 27,
+        "mixed_positive_count": 241
+      }
+    },
+    {
+      "number": 9,
+      "name": "corrupt principal CK family membership",
+      "scope": "actual_source_module",
+      "mutation_entered_semantic_predicate": true,
+      "hash_gate_used": false,
+      "caught": true,
+      "failure_gate": "SOURCE_FAMILY_MEMBERSHIP",
+      "failure_detail": "re0000000338"
+    },
+    {
+      "number": 10,
+      "name": "add a second independent synthetic net direction",
+      "scope": "synthetic_exact_stoichiometric_fixture",
+      "mutation_entered_semantic_predicate": true,
+      "hash_gate_used": false,
+      "caught": true,
+      "failure_gate": "SINGLE_NET_DIRECTION",
+      "failure_detail": {
+        "exact_rank": 2
+      }
+    },
+    {
+      "number": 11,
+      "name": "declare source CK off-manifold enzyme occupancy projected",
+      "scope": "actual_source_CK_initialization_and_frozen_closure_policy",
+      "mutation_entered_semantic_predicate": true,
+      "hash_gate_used": false,
+      "caught": true,
+      "failure_gate": "INITIAL_FAST_MANIFOLD_ASSUMPTION",
+      "failure_detail": {
+        "status": "PROJECTED_FAST_MANIFOLD",
+        "normalized_algebraic_residual": 231.81787787,
+        "allowance": 1e-08,
+        "source_state": {
+          "CK_ADP": 0,
+          "CK_ATP": 0,
+          "CK_CP": 0,
+          "CK_CP_ADP": 0,
+          "CK_Cr": 0,
+          "CK_Cr_ATP": 0,
+          "CK_degraded": 0,
+          "CK": 1,
+          "ADP": 10,
+          "ATP": 10,
+          "CP": 10,
+          "Cr": 10
+        },
+        "normalization": "Etotal=1; absolute source enzyme-stationarity residual"
+      }
+    },
+    {
+      "number": 12,
+      "name": "protein endpoint agrees while cumulative resource gate fails",
+      "scope": "synthetic_numeric_multiobservable_acceptance_policy",
+      "mutation_entered_semantic_predicate": true,
+      "hash_gate_used": false,
+      "caught": true,
+      "failure_gate": "PREREGISTERED_CUMULATIVE_RESOURCE_ERROR",
+      "failure_detail": {
+        "observed": 0.03,
+        "limit": 0.02
+      }
+    }
+  ],
+  "negative_controls_caught": 12,
+  "derived_inventory_check": {
+    "status": "COVERAGE_VERIFIED",
+    "principal_subsystem_reactions": 87,
+    "rows_total": 99,
+    "limitation": "Only coverage checked here; canonical semantic parsing and adversarial checks are independent."
+  },
+  "generated_source_inventory_check": {
+    "status": "INDEPENDENT_SEMANTIC_VERIFICATION_PASS",
+    "all_source_reaction_stoichiometries_and_laws_checked": 968,
+    "author_values_checked": 1209,
+    "enzyme_bound_form_composition_checked_for_all_units": true,
+    "input_sha256": "52ca9f52e639acf2c2595b7cfc8e1ccc080172b2f5006a2eee2806bf80407a8f"
+  },
+  "generated_kinetic_analysis_check": {
+    "status": "INDEPENDENT_CANONICAL_RHS_VERIFICATION_PASS",
+    "tests": {
+      "CK": [
+        {
+          "label": "author_initial_free",
+          "independent_generator_residual": 2.2737367544323206e-13,
+          "independent_source_net_current_error": 0.0
+        },
+        {
+          "label": "algebraic_interior_probe_100_not_validation_scenario",
+          "independent_generator_residual": 3.637978807091713e-12,
+          "independent_source_net_current_error": 0.0
+        }
+      ],
+      "NDK": [
+        {
+          "label": "author_initial_free",
+          "independent_generator_residual": 2.8421709430404007e-13,
+          "independent_source_net_current_error": 0.0
+        },
+        {
+          "label": "algebraic_interior_probe_100_not_validation_scenario",
+          "independent_generator_residual": 2.2737367544323206e-13,
+          "independent_source_net_current_error": 3.552713678800501e-15
+        }
+      ],
+      "MK": [
+        {
+          "label": "author_initial_free",
+          "independent_generator_residual": 9.094947017729282e-13,
+          "independent_source_net_current_error": 0.0
+        },
+        {
+          "label": "algebraic_interior_probe_100_not_validation_scenario",
+          "independent_generator_residual": 4.547473508864641e-13,
+          "independent_source_net_current_error": 8.526512829121202e-14
+        }
+      ],
+      "PPiase": [
+        {
+          "label": "author_initial_free",
+          "independent_generator_residual": 0.0,
+          "independent_source_net_current_error": 0.0
+        },
+        {
+          "label": "algebraic_interior_probe_100_not_validation_scenario",
+          "independent_generator_residual": 3.608224830031759e-15,
+          "independent_source_net_current_error": 7.105427357601002e-15
+        }
+      ]
+    },
+    "input_sha256": "f00ea97a9a70140292f4126ef39550dbe7416ddece9fab052706fd150d468f9c",
+    "scope": "Fixed-free stationary occupancy and nonlumpability checks only; not trajectory validation."
+  },
+  "scope_limits": [
+    "Tests prove source/structural/ledger and specified gate behavior, never scientific reduction acceptance.",
+    "Controls 10 and 12 are labelled synthetic mathematical/multiobservable-policy fixtures. Control 11 computes the canonical CK off-manifold enzyme RHS and applies the frozen candidate closure allowance. No adverse full-PNAS trajectory is claimed.",
+    "Conserved group weights are source-representation moieties, not complete elemental/ionic conservation.",
+    "Candidate trajectory convergence and effective-rate accuracy require separate preregistered numerical evidence."
+  ],
+  "frozen_gate_policy_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b"
+}

@@ -1,0 +1,11 @@
+# Git publication of energy-cycle research v1
+
+On 2026-10-09, after the investigation and its engineering closeout were completed, the researcher explicitly requested: "创建合适的 commit and push". This supersedes the initial instruction to leave the research uncommitted. The earlier no-commit/no-push statements in the source scope, bootstrap audit and frozen outputs describe the authorization and repository state during the investigation; those historical bytes are retained.
+
+The publication branch is `codex/energy-cycles-v1`, based on the verified source commit `60abf1e371e90f70474bc98174035726cc68f064`. Publication adds the four-cycle protocol, research reports, source-derived analysis, preregistrations, numerical results, independent checks and retained failure evidence. It does not synchronize other branches or alter scientific inputs or existing reduction decisions.
+
+`results/energy_cycles_v1/artifact_manifest.json` remains the frozen prepublication snapshot of 299 hash-bound research outputs and the separately recorded protocol. Its historical source commit and `closeout_checks.json` are unchanged. Delivery-only additions outside that snapshot are this note and four scoped attributes files: `docs/.gitattributes`, `docs/reduction/energy_cycles/.gitattributes`, `scripts/energy_cycles/.gitattributes`, and `results/energy_cycles_v1/.gitattributes`. They preserve exact research bytes through Git staging and checkout, including the native mixed line endings, without modifying any of the 2013 protected existing tracked files. The published Git tree binds these delivery additions together with the retained manifest.
+
+The engineering evidence includes 98 unique completed pairs in the original study, five recorded domain stops, and two separately registered PPiase reverse-driving pairs. Independent recomputation covers all 100 unique completed comparisons. Native solver failures and the first NDK coordinate runner's duplicate result and diagnostic failure remain preserved as historical evidence.
+
+The scientific recommendations remain `REVISE_WITH_EXTRA_STATE` and `HUMAN_REVIEW_REQUIRED` for CK, NDK, MK and PPiase. Passing feasible isolated comparison gates and publishing the evidence do not establish coupled or full-network candidate validation, authorize a reduced SBML, or approve a scientific reduction decision.

@@ -1,0 +1,49 @@
+{
+  "id": "NDK__CHALLENGE_ATP_HALF",
+  "execution_status": "FAILED",
+  "scientific_status": "BLOCKED",
+  "error": "Negative retained inventory beyond frozen allowance",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 242, in main\n    try:run_case(d,case,reg)\n        ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 206, in run_case\n    base_red,curr,rs=integrate_reduced(m,T0,E,grid,1e-8,1e-10)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 130, in integrate_reduced\n    q=solve_ivp(rhs,(0,1000),[0.,0.],method='Radau',rtol=rtol,atol=atol,t_eval=grid)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\ivp.py\", line 655, in solve_ivp\n    message = solver.step()\n              ^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 197, in step\n    success, message = self._step_impl()\n                       ^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 460, in _step_impl\n    converged, n_iter, Z, rate = solve_collocation_system(\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 103, in solve_collocation_system\n    F[i] = fun(t + ch[i], y + Z[i])\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 154, in fun\n    return self.fun_single(t, y)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 23, in fun_wrapped\n    return np.asarray(fun(t, y), dtype=dtype)\n                      ^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 129, in rhs\n    def rhs(t,z):return m.closure(T0+m.N*(z[0]-z[1]),E)[1]\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 103, in closure\n    if np.min(T)<-1e-8:raise DomainFailure('Negative retained inventory beyond frozen allowance')\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nDomainFailure: Negative retained inventory beyond frozen allowance\n",
+  "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "initial_conditions": {
+    "id": "NDK__CHALLENGE_ATP_HALF",
+    "unit": "NDK",
+    "condition": "CHALLENGE_ATP_HALF",
+    "initial_original": {
+      "ADP": 100.0,
+      "ATP": 1875.0,
+      "GDP": 100.0,
+      "GTP": 2500.0,
+      "NDK": 1.8,
+      "NDK_ADP": 0.0,
+      "NDK_ATP": 0.0,
+      "NDK_GDP": 0.0,
+      "NDK_GDP_ATP": 0.0,
+      "NDK_GTP": 0.0,
+      "NDK_GTP_ADP": 0.0,
+      "NDK_degraded": 0.0
+    },
+    "enzyme_total": 1.8,
+    "initial_modes": [
+      "ORIGINAL_NONEQUILIBRIUM",
+      "PROJECTED_PHYSICAL_CLOSURE"
+    ],
+    "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+    "concentration_scales": {
+      "ATP": 1875.0,
+      "GDP": 100.0,
+      "ADP": 100.0,
+      "GTP": 2500.0
+    },
+    "bound_scales": {
+      "ATP": 1.8,
+      "GDP": 1.8,
+      "ADP": 1.8,
+      "GTP": 1.8
+    },
+    "occupancy_scale": 1.8,
+    "cumulative_extent_scale": 100.0,
+    "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+  }
+}

@@ -1,0 +1,5528 @@
+{
+  "SmallMolecules": {
+    "activated_four_cycles_plus_small_molecules_net_rank": 6,
+    "activated_small_molecules_net_rank": 5,
+    "all_zero_author_reference": true,
+    "count": 12,
+    "four_cycles_net_rank": 4,
+    "interfaces": [
+      "ADP",
+      "AMP",
+      "ATP",
+      "CP",
+      "Cr",
+      "GDP",
+      "GMP",
+      "GTP",
+      "PO4",
+      "PPi"
+    ],
+    "reaction_ids": [
+      "re0000000784",
+      "re0000000785",
+      "re0000000786",
+      "re0000000787",
+      "re0000000788",
+      "re0000000789",
+      "re0000000790",
+      "re0000000791",
+      "re0000000792",
+      "re0000000793",
+      "re0000000794",
+      "re0000000795"
+    ],
+    "reason_outside_reference_units": "They contain no catalyst or enzyme-state cycle and all 12 author-reference channel parameters are zero. Enabling them changes admissible independent chemical directions."
+  },
+  "command": "python scripts/energy_cycles/inventory.py",
+  "environment": {
+    "networkx": "3.2.1",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+    "sympy": "1.13.1"
+  },
+  "four_cycle": {
+    "active_61_channels": 61,
+    "active_boundary_projection_rank": 4,
+    "active_internal_rank": 21,
+    "all_87_directed_channels": 87,
+    "boundary_species": [
+      "ADP",
+      "AMP",
+      "ATP",
+      "CP",
+      "Cr",
+      "GDP",
+      "GTP",
+      "PO4",
+      "PPi"
+    ],
+    "enzyme_states": [
+      "CK",
+      "CK_ADP",
+      "CK_ATP",
+      "CK_CP",
+      "CK_CP_ADP",
+      "CK_Cr",
+      "CK_Cr_ATP",
+      "MK",
+      "MK_ADP_1",
+      "MK_ADP_2",
+      "MK_ADP_ADP",
+      "MK_AMP",
+      "MK_ATP",
+      "MK_ATP_AMP",
+      "NDK",
+      "NDK_ADP",
+      "NDK_ATP",
+      "NDK_GDP",
+      "NDK_GDP_ATP",
+      "NDK_GTP",
+      "NDK_GTP_ADP",
+      "PPiase",
+      "PPiase_PO4",
+      "PPiase_PO4_PO4",
+      "PPiase_PPi"
+    ],
+    "principal_net_matrix": [
+      [
+        "-1",
+        "1",
+        "2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-1",
+        "0"
+      ],
+      [
+        "1",
+        "-1",
+        "-1",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "2"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1"
+      ]
+    ],
+    "principal_net_rank": 4
+  },
+  "limitations": [
+    "Rational structure certificates do not imply time-dependent free-resource closure.",
+    "Moieties are scoped represented biochemical groups, not complete elemental/charge/ionic certificates.",
+    "Large microscopic rates do not establish time-scale separation or scientific acceptance."
+  ],
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "source_hashes": {
+    "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+  },
+  "source_inventory_sha256": "52ca9f52e639acf2c2595b7cfc8e1ccc080172b2f5006a2eee2806bf80407a8f",
+  "status": "STRUCTURE_VERIFIED_AUTHOR_REFERENCE_ACTIVE_SCOPE",
+  "units": [
+    {
+      "active_boundary_matrix": [
+        [
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "0",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "0"
+        ]
+      ],
+      "active_boundary_projection_rank": 1,
+      "active_channel_count": 18,
+      "active_cycle_counts": {
+        "FORWARD": 4,
+        "REVERSE": 4,
+        "ZERO_BOUNDARY": 13
+      },
+      "active_directed_cycles": [
+        {
+          "boundary_projection": {
+            "ADP": -1,
+            "ATP": 1,
+            "CP": -1,
+            "Cr": 1
+          },
+          "classification": "FORWARD",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "1",
+          "reaction_ids": [
+            "re0000000330",
+            "re0000000336",
+            "re0000000338",
+            "re0000000340",
+            "re0000000346"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": -1,
+            "ATP": 1,
+            "CP": -1,
+            "Cr": 1
+          },
+          "classification": "FORWARD",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "1",
+          "reaction_ids": [
+            "re0000000330",
+            "re0000000336",
+            "re0000000338",
+            "re0000000342",
+            "re0000000344"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": -1,
+            "ATP": 1,
+            "CP": -1,
+            "Cr": 1
+          },
+          "classification": "FORWARD",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "1",
+          "reaction_ids": [
+            "re0000000332",
+            "re0000000334",
+            "re0000000338",
+            "re0000000340",
+            "re0000000346"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": -1,
+            "ATP": 1,
+            "CP": -1,
+            "Cr": 1
+          },
+          "classification": "FORWARD",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "1",
+          "reaction_ids": [
+            "re0000000332",
+            "re0000000334",
+            "re0000000338",
+            "re0000000342",
+            "re0000000344"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 1,
+            "ATP": -1,
+            "CP": 1,
+            "Cr": -1
+          },
+          "classification": "REVERSE",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "-1",
+          "reaction_ids": [
+            "re0000000331",
+            "re0000000345",
+            "re0000000343",
+            "re0000000339",
+            "re0000000337"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 1,
+            "ATP": -1,
+            "CP": 1,
+            "Cr": -1
+          },
+          "classification": "REVERSE",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "-1",
+          "reaction_ids": [
+            "re0000000331",
+            "re0000000347",
+            "re0000000341",
+            "re0000000339",
+            "re0000000337"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 1,
+            "ATP": -1,
+            "CP": 1,
+            "Cr": -1
+          },
+          "classification": "REVERSE",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "-1",
+          "reaction_ids": [
+            "re0000000333",
+            "re0000000345",
+            "re0000000343",
+            "re0000000339",
+            "re0000000335"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 1,
+            "ATP": -1,
+            "CP": 1,
+            "Cr": -1
+          },
+          "classification": "REVERSE",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "-1",
+          "reaction_ids": [
+            "re0000000333",
+            "re0000000347",
+            "re0000000341",
+            "re0000000339",
+            "re0000000335"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "CP": 0,
+            "Cr": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000330",
+            "re0000000331"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "CP": 0,
+            "Cr": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000332",
+            "re0000000333"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "CP": 0,
+            "Cr": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000334",
+            "re0000000335"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "CP": 0,
+            "Cr": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000336",
+            "re0000000337"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "CP": 0,
+            "Cr": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000338",
+            "re0000000339"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "CP": 0,
+            "Cr": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000340",
+            "re0000000341"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "CP": 0,
+            "Cr": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000342",
+            "re0000000343"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "CP": 0,
+            "Cr": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000344",
+            "re0000000345"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "CP": 0,
+            "Cr": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000346",
+            "re0000000347"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "CP": 0,
+            "Cr": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000330",
+            "re0000000336",
+            "re0000000335",
+            "re0000000333"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "CP": 0,
+            "Cr": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000331",
+            "re0000000332",
+            "re0000000334",
+            "re0000000337"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "CP": 0,
+            "Cr": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000340",
+            "re0000000346",
+            "re0000000345",
+            "re0000000343"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "CP": 0,
+            "Cr": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000341",
+            "re0000000342",
+            "re0000000344",
+            "re0000000347"
+          ]
+        }
+      ],
+      "active_full_stoichiometric_rank": 7,
+      "active_internal_matrix": [
+        [
+          "-1",
+          "1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "1",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "-1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "-1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "-1",
+          "1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "active_internal_rank": 6,
+      "active_left_nullity": 4,
+      "active_nullspace_basis": [
+        [
+          "1",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "active_nullspace_dimension": 12,
+      "active_reaction_order": [
+        "re0000000330",
+        "re0000000331",
+        "re0000000332",
+        "re0000000333",
+        "re0000000334",
+        "re0000000335",
+        "re0000000336",
+        "re0000000337",
+        "re0000000338",
+        "re0000000339",
+        "re0000000340",
+        "re0000000341",
+        "re0000000342",
+        "re0000000343",
+        "re0000000344",
+        "re0000000345",
+        "re0000000346",
+        "re0000000347"
+      ],
+      "all_channel_comparison": {
+        "declared_cycles": [
+          {
+            "boundary_projection": {
+              "ADP": -1,
+              "ATP": 1,
+              "CP": -1,
+              "Cr": 1
+            },
+            "classification": "FORWARD",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "1",
+            "reaction_ids": [
+              "re0000000330",
+              "re0000000336",
+              "re0000000338",
+              "re0000000340",
+              "re0000000346"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": -1,
+              "ATP": 1,
+              "CP": -1,
+              "Cr": 1
+            },
+            "classification": "FORWARD",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "1",
+            "reaction_ids": [
+              "re0000000330",
+              "re0000000336",
+              "re0000000338",
+              "re0000000342",
+              "re0000000344"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": -1,
+              "ATP": 1,
+              "CP": -1,
+              "Cr": 1
+            },
+            "classification": "FORWARD",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "1",
+            "reaction_ids": [
+              "re0000000332",
+              "re0000000334",
+              "re0000000338",
+              "re0000000340",
+              "re0000000346"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": -1,
+              "ATP": 1,
+              "CP": -1,
+              "Cr": 1
+            },
+            "classification": "FORWARD",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "1",
+            "reaction_ids": [
+              "re0000000332",
+              "re0000000334",
+              "re0000000338",
+              "re0000000342",
+              "re0000000344"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 1,
+              "ATP": -1,
+              "CP": 1,
+              "Cr": -1
+            },
+            "classification": "REVERSE",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "-1",
+            "reaction_ids": [
+              "re0000000331",
+              "re0000000345",
+              "re0000000343",
+              "re0000000339",
+              "re0000000337"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 1,
+              "ATP": -1,
+              "CP": 1,
+              "Cr": -1
+            },
+            "classification": "REVERSE",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "-1",
+            "reaction_ids": [
+              "re0000000331",
+              "re0000000347",
+              "re0000000341",
+              "re0000000339",
+              "re0000000337"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 1,
+              "ATP": -1,
+              "CP": 1,
+              "Cr": -1
+            },
+            "classification": "REVERSE",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "-1",
+            "reaction_ids": [
+              "re0000000333",
+              "re0000000345",
+              "re0000000343",
+              "re0000000339",
+              "re0000000335"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 1,
+              "ATP": -1,
+              "CP": 1,
+              "Cr": -1
+            },
+            "classification": "REVERSE",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "-1",
+            "reaction_ids": [
+              "re0000000333",
+              "re0000000347",
+              "re0000000341",
+              "re0000000339",
+              "re0000000335"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "CP": 0,
+              "Cr": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000330",
+              "re0000000331"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "CP": 0,
+              "Cr": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000332",
+              "re0000000333"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "CP": 0,
+              "Cr": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000334",
+              "re0000000335"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "CP": 0,
+              "Cr": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000336",
+              "re0000000337"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "CP": 0,
+              "Cr": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000338",
+              "re0000000339"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "CP": 0,
+              "Cr": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000340",
+              "re0000000341"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "CP": 0,
+              "Cr": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000342",
+              "re0000000343"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "CP": 0,
+              "Cr": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000344",
+              "re0000000345"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "CP": 0,
+              "Cr": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000346",
+              "re0000000347"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "CP": 0,
+              "Cr": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000330",
+              "re0000000336",
+              "re0000000335",
+              "re0000000333"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "CP": 0,
+              "Cr": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000331",
+              "re0000000332",
+              "re0000000334",
+              "re0000000337"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "CP": 0,
+              "Cr": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000340",
+              "re0000000346",
+              "re0000000345",
+              "re0000000343"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "CP": 0,
+              "Cr": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000341",
+              "re0000000342",
+              "re0000000344",
+              "re0000000347"
+            ]
+          }
+        ],
+        "degraded_species_included_as_boundary": [
+          "CK_degraded"
+        ],
+        "internal_rank": 7,
+        "live_plus_degraded_enzyme_residuals": {
+          "re0000000329": 0,
+          "re0000000330": 0,
+          "re0000000331": 0,
+          "re0000000332": 0,
+          "re0000000333": 0,
+          "re0000000334": 0,
+          "re0000000335": 0,
+          "re0000000336": 0,
+          "re0000000337": 0,
+          "re0000000338": 0,
+          "re0000000339": 0,
+          "re0000000340": 0,
+          "re0000000341": 0,
+          "re0000000342": 0,
+          "re0000000343": 0,
+          "re0000000344": 0,
+          "re0000000345": 0,
+          "re0000000346": 0,
+          "re0000000347": 0,
+          "re0000000348": 0,
+          "re0000000349": 0,
+          "re0000000350": 0,
+          "re0000000351": 0,
+          "re0000000352": 0,
+          "re0000000353": 0
+        },
+        "meaning": "Signed nullspace permits unphysical reverse degradation currents. Degradation activation is a transient catalyst-loss problem, not a stationary catalytic cycle.",
+        "nonnegative_stationary_degradation_flux": "Exactly zero: summing all live-enzyme rows yields minus sum of directed degradation fluxes; nonnegative stationary balance forces each to vanish.",
+        "signed_boundary_projection_rank": 1,
+        "signed_nullspace_dimension": 18
+      },
+      "boundary_species": [
+        "CP",
+        "ADP",
+        "Cr",
+        "ATP"
+      ],
+      "decision": "ONE_NET_DIRECTION_SUPPORTED",
+      "declared_all_nondegradation_cycle_counts": {
+        "FORWARD": 4,
+        "REVERSE": 4,
+        "ZERO_BOUNDARY": 13
+      },
+      "enzyme_pool_full_author_active_network_conserved": true,
+      "exact_resource_total_channel_ledger": {
+        "re0000000330": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000331": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000332": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000333": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000334": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000335": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000336": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000337": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000338": {
+          "ADP": -1,
+          "ATP": 1,
+          "CP": -1,
+          "Cr": 1
+        },
+        "re0000000339": {
+          "ADP": 1,
+          "ATP": -1,
+          "CP": 1,
+          "Cr": -1
+        },
+        "re0000000340": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000341": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000342": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000343": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000344": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000345": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000346": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000347": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        }
+      },
+      "internal_species": [
+        "CK",
+        "CK_ADP",
+        "CK_ATP",
+        "CK_CP",
+        "CK_CP_ADP",
+        "CK_Cr",
+        "CK_Cr_ATP"
+      ],
+      "moieties": {
+        "adenylate_group": {
+          "active_conserved": true,
+          "active_symbolic_residual": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "all_channel_nonzero_residuals": {},
+          "coefficients": {
+            "ADP": 1,
+            "ATP": 1,
+            "CK_ADP": 1,
+            "CK_ATP": 1,
+            "CK_CP_ADP": 1,
+            "CK_Cr_ATP": 1
+          },
+          "initial_inventory": 3750.0
+        },
+        "creatine_group": {
+          "active_conserved": true,
+          "active_symbolic_residual": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "all_channel_nonzero_residuals": {},
+          "coefficients": {
+            "CK_CP": 1,
+            "CK_CP_ADP": 1,
+            "CK_Cr": 1,
+            "CK_Cr_ATP": 1,
+            "CP": 1,
+            "Cr": 1
+          },
+          "initial_inventory": 50000.0
+        },
+        "live_enzyme_total": {
+          "active_conserved": true,
+          "active_symbolic_residual": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "all_channel_nonzero_residuals": {
+            "re0000000329": -1,
+            "re0000000348": -1,
+            "re0000000349": -1,
+            "re0000000350": -1,
+            "re0000000351": -1,
+            "re0000000352": -1,
+            "re0000000353": -1
+          },
+          "coefficients": {
+            "CK": 1,
+            "CK_ADP": 1,
+            "CK_ATP": 1,
+            "CK_CP": 1,
+            "CK_CP_ADP": 1,
+            "CK_Cr": 1,
+            "CK_Cr_ATP": 1
+          },
+          "initial_inventory": 30.0
+        },
+        "represented_phosphate_groups": {
+          "active_conserved": true,
+          "active_symbolic_residual": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "all_channel_nonzero_residuals": {},
+          "coefficients": {
+            "ADP": 2,
+            "ATP": 3,
+            "CK_ADP": 2,
+            "CK_ATP": 3,
+            "CK_CP": 1,
+            "CK_CP_ADP": 3,
+            "CK_Cr_ATP": 3,
+            "CP": 1
+          },
+          "initial_inventory": 61250.0
+        }
+      },
+      "moiety_basis_complete_for_declared_unit": true,
+      "moiety_basis_rank": 4,
+      "name": "CK",
+      "net_stoichiometry": {
+        "ADP": -1,
+        "ATP": 1,
+        "CP": -1,
+        "Cr": 1
+      },
+      "outside_active_enzyme_interfaces": [],
+      "projected_nullspace_basis": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "-1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "-1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ]
+      ],
+      "resource_total_identity_exact": true,
+      "resource_total_identity_symbolic_residual": {
+        "re0000000330": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000331": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000332": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000333": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000334": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000335": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000336": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000337": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000338": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000339": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000340": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000341": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000342": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000343": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000344": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000345": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000346": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        },
+        "re0000000347": {
+          "ADP": 0,
+          "ATP": 0,
+          "CP": 0,
+          "Cr": 0
+        }
+      },
+      "source_catalytic_channels": [
+        "re0000000338",
+        "re0000000339"
+      ]
+    },
+    {
+      "active_boundary_matrix": [
+        [
+          "-1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "1",
+          "0",
+          "-1",
+          "-1",
+          "0"
+        ]
+      ],
+      "active_boundary_projection_rank": 1,
+      "active_channel_count": 17,
+      "active_cycle_counts": {
+        "FORWARD": 4,
+        "ZERO_BOUNDARY": 12
+      },
+      "active_directed_cycles": [
+        {
+          "boundary_projection": {
+            "ADP": 1,
+            "ATP": -1,
+            "GDP": -1,
+            "GTP": 1
+          },
+          "classification": "FORWARD",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "1",
+          "reaction_ids": [
+            "re0000000355",
+            "re0000000361",
+            "re0000000363",
+            "re0000000365",
+            "re0000000367"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 1,
+            "ATP": -1,
+            "GDP": -1,
+            "GTP": 1
+          },
+          "classification": "FORWARD",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "1",
+          "reaction_ids": [
+            "re0000000355",
+            "re0000000361",
+            "re0000000363",
+            "re0000000366",
+            "re0000000368"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 1,
+            "ATP": -1,
+            "GDP": -1,
+            "GTP": 1
+          },
+          "classification": "FORWARD",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "1",
+          "reaction_ids": [
+            "re0000000357",
+            "re0000000359",
+            "re0000000363",
+            "re0000000365",
+            "re0000000367"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 1,
+            "ATP": -1,
+            "GDP": -1,
+            "GTP": 1
+          },
+          "classification": "FORWARD",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "1",
+          "reaction_ids": [
+            "re0000000357",
+            "re0000000359",
+            "re0000000363",
+            "re0000000366",
+            "re0000000368"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "GDP": 0,
+            "GTP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000355",
+            "re0000000356"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "GDP": 0,
+            "GTP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000357",
+            "re0000000358"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "GDP": 0,
+            "GTP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000359",
+            "re0000000360"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "GDP": 0,
+            "GTP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000361",
+            "re0000000362"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "GDP": 0,
+            "GTP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000365",
+            "re0000000376"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "GDP": 0,
+            "GTP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000366",
+            "re0000000375"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "GDP": 0,
+            "GTP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000367",
+            "re0000000378"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "GDP": 0,
+            "GTP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000368",
+            "re0000000377"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "GDP": 0,
+            "GTP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000355",
+            "re0000000361",
+            "re0000000360",
+            "re0000000358"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "GDP": 0,
+            "GTP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000356",
+            "re0000000357",
+            "re0000000359",
+            "re0000000362"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "GDP": 0,
+            "GTP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000365",
+            "re0000000367",
+            "re0000000377",
+            "re0000000375"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "ATP": 0,
+            "GDP": 0,
+            "GTP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000366",
+            "re0000000368",
+            "re0000000378",
+            "re0000000376"
+          ]
+        }
+      ],
+      "active_full_stoichiometric_rank": 7,
+      "active_internal_matrix": [
+        [
+          "-1",
+          "1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "-1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "-1",
+          "-1",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "-1",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "active_internal_rank": 6,
+      "active_left_nullity": 4,
+      "active_nullspace_basis": [
+        [
+          "1",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "-1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "1",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "active_nullspace_dimension": 11,
+      "active_reaction_order": [
+        "re0000000355",
+        "re0000000356",
+        "re0000000357",
+        "re0000000358",
+        "re0000000359",
+        "re0000000360",
+        "re0000000361",
+        "re0000000362",
+        "re0000000363",
+        "re0000000365",
+        "re0000000366",
+        "re0000000367",
+        "re0000000368",
+        "re0000000375",
+        "re0000000376",
+        "re0000000377",
+        "re0000000378"
+      ],
+      "all_channel_comparison": {
+        "declared_cycles": [
+          {
+            "boundary_projection": {
+              "ADP": 1,
+              "ATP": -1,
+              "GDP": -1,
+              "GTP": 1
+            },
+            "classification": "FORWARD",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "1",
+            "reaction_ids": [
+              "re0000000355",
+              "re0000000361",
+              "re0000000363",
+              "re0000000365",
+              "re0000000367"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 1,
+              "ATP": -1,
+              "GDP": -1,
+              "GTP": 1
+            },
+            "classification": "FORWARD",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "1",
+            "reaction_ids": [
+              "re0000000355",
+              "re0000000361",
+              "re0000000363",
+              "re0000000366",
+              "re0000000368"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 1,
+              "ATP": -1,
+              "GDP": -1,
+              "GTP": 1
+            },
+            "classification": "FORWARD",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "1",
+            "reaction_ids": [
+              "re0000000357",
+              "re0000000359",
+              "re0000000363",
+              "re0000000365",
+              "re0000000367"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 1,
+              "ATP": -1,
+              "GDP": -1,
+              "GTP": 1
+            },
+            "classification": "FORWARD",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "1",
+            "reaction_ids": [
+              "re0000000357",
+              "re0000000359",
+              "re0000000363",
+              "re0000000366",
+              "re0000000368"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": -1,
+              "ATP": 1,
+              "GDP": 1,
+              "GTP": -1
+            },
+            "classification": "REVERSE",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "-1",
+            "reaction_ids": [
+              "re0000000356",
+              "re0000000377",
+              "re0000000375",
+              "re0000000364",
+              "re0000000362"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": -1,
+              "ATP": 1,
+              "GDP": 1,
+              "GTP": -1
+            },
+            "classification": "REVERSE",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "-1",
+            "reaction_ids": [
+              "re0000000356",
+              "re0000000378",
+              "re0000000376",
+              "re0000000364",
+              "re0000000362"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": -1,
+              "ATP": 1,
+              "GDP": 1,
+              "GTP": -1
+            },
+            "classification": "REVERSE",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "-1",
+            "reaction_ids": [
+              "re0000000358",
+              "re0000000377",
+              "re0000000375",
+              "re0000000364",
+              "re0000000360"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": -1,
+              "ATP": 1,
+              "GDP": 1,
+              "GTP": -1
+            },
+            "classification": "REVERSE",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "-1",
+            "reaction_ids": [
+              "re0000000358",
+              "re0000000378",
+              "re0000000376",
+              "re0000000364",
+              "re0000000360"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "GDP": 0,
+              "GTP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000355",
+              "re0000000356"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "GDP": 0,
+              "GTP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000357",
+              "re0000000358"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "GDP": 0,
+              "GTP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000359",
+              "re0000000360"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "GDP": 0,
+              "GTP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000361",
+              "re0000000362"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "GDP": 0,
+              "GTP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000363",
+              "re0000000364"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "GDP": 0,
+              "GTP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000365",
+              "re0000000376"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "GDP": 0,
+              "GTP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000366",
+              "re0000000375"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "GDP": 0,
+              "GTP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000367",
+              "re0000000378"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "GDP": 0,
+              "GTP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000368",
+              "re0000000377"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "GDP": 0,
+              "GTP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000355",
+              "re0000000361",
+              "re0000000360",
+              "re0000000358"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "GDP": 0,
+              "GTP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000356",
+              "re0000000357",
+              "re0000000359",
+              "re0000000362"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "GDP": 0,
+              "GTP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000365",
+              "re0000000367",
+              "re0000000377",
+              "re0000000375"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "ATP": 0,
+              "GDP": 0,
+              "GTP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000366",
+              "re0000000368",
+              "re0000000378",
+              "re0000000376"
+            ]
+          }
+        ],
+        "degraded_species_included_as_boundary": [
+          "NDK_degraded"
+        ],
+        "internal_rank": 7,
+        "live_plus_degraded_enzyme_residuals": {
+          "re0000000354": 0,
+          "re0000000355": 0,
+          "re0000000356": 0,
+          "re0000000357": 0,
+          "re0000000358": 0,
+          "re0000000359": 0,
+          "re0000000360": 0,
+          "re0000000361": 0,
+          "re0000000362": 0,
+          "re0000000363": 0,
+          "re0000000364": 0,
+          "re0000000365": 0,
+          "re0000000366": 0,
+          "re0000000367": 0,
+          "re0000000368": 0,
+          "re0000000369": 0,
+          "re0000000370": 0,
+          "re0000000371": 0,
+          "re0000000372": 0,
+          "re0000000373": 0,
+          "re0000000374": 0,
+          "re0000000375": 0,
+          "re0000000376": 0,
+          "re0000000377": 0,
+          "re0000000378": 0
+        },
+        "meaning": "Signed nullspace permits unphysical reverse degradation currents. Degradation activation is a transient catalyst-loss problem, not a stationary catalytic cycle.",
+        "nonnegative_stationary_degradation_flux": "Exactly zero: summing all live-enzyme rows yields minus sum of directed degradation fluxes; nonnegative stationary balance forces each to vanish.",
+        "signed_boundary_projection_rank": 1,
+        "signed_nullspace_dimension": 18
+      },
+      "boundary_species": [
+        "ATP",
+        "GDP",
+        "ADP",
+        "GTP"
+      ],
+      "decision": "ONE_NET_DIRECTION_SUPPORTED",
+      "declared_all_nondegradation_cycle_counts": {
+        "FORWARD": 4,
+        "REVERSE": 4,
+        "ZERO_BOUNDARY": 13
+      },
+      "enzyme_pool_full_author_active_network_conserved": true,
+      "exact_resource_total_channel_ledger": {
+        "re0000000355": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000356": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000357": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000358": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000359": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000360": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000361": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000362": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000363": {
+          "ADP": 1,
+          "ATP": -1,
+          "GDP": -1,
+          "GTP": 1
+        },
+        "re0000000365": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000366": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000367": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000368": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000375": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000376": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000377": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000378": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        }
+      },
+      "internal_species": [
+        "NDK",
+        "NDK_ADP",
+        "NDK_ATP",
+        "NDK_GDP",
+        "NDK_GDP_ATP",
+        "NDK_GTP",
+        "NDK_GTP_ADP"
+      ],
+      "moieties": {
+        "adenylate_group": {
+          "active_conserved": true,
+          "active_symbolic_residual": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "all_channel_nonzero_residuals": {},
+          "coefficients": {
+            "ADP": 1,
+            "ATP": 1,
+            "NDK_ADP": 1,
+            "NDK_ATP": 1,
+            "NDK_GDP_ATP": 1,
+            "NDK_GTP_ADP": 1
+          },
+          "initial_inventory": 3750.0
+        },
+        "guanylate_group": {
+          "active_conserved": true,
+          "active_symbolic_residual": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "all_channel_nonzero_residuals": {},
+          "coefficients": {
+            "GDP": 1,
+            "GTP": 1,
+            "NDK_GDP": 1,
+            "NDK_GDP_ATP": 1,
+            "NDK_GTP": 1,
+            "NDK_GTP_ADP": 1
+          },
+          "initial_inventory": 2500.0
+        },
+        "live_enzyme_total": {
+          "active_conserved": true,
+          "active_symbolic_residual": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "all_channel_nonzero_residuals": {
+            "re0000000354": -1,
+            "re0000000369": -1,
+            "re0000000370": -1,
+            "re0000000371": -1,
+            "re0000000372": -1,
+            "re0000000373": -1,
+            "re0000000374": -1
+          },
+          "coefficients": {
+            "NDK": 1,
+            "NDK_ADP": 1,
+            "NDK_ATP": 1,
+            "NDK_GDP": 1,
+            "NDK_GDP_ATP": 1,
+            "NDK_GTP": 1,
+            "NDK_GTP_ADP": 1
+          },
+          "initial_inventory": 1.8
+        },
+        "represented_phosphate_groups": {
+          "active_conserved": true,
+          "active_symbolic_residual": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "all_channel_nonzero_residuals": {},
+          "coefficients": {
+            "ADP": 2,
+            "ATP": 3,
+            "GDP": 2,
+            "GTP": 3,
+            "NDK_ADP": 2,
+            "NDK_ATP": 3,
+            "NDK_GDP": 2,
+            "NDK_GDP_ATP": 5,
+            "NDK_GTP": 3,
+            "NDK_GTP_ADP": 5
+          },
+          "initial_inventory": 18750.0
+        }
+      },
+      "moiety_basis_complete_for_declared_unit": true,
+      "moiety_basis_rank": 4,
+      "name": "NDK",
+      "net_stoichiometry": {
+        "ADP": 1,
+        "ATP": -1,
+        "GDP": -1,
+        "GTP": 1
+      },
+      "outside_active_enzyme_interfaces": [],
+      "projected_nullspace_basis": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "-1",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "-1",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "-1"
+        ]
+      ],
+      "resource_total_identity_exact": true,
+      "resource_total_identity_symbolic_residual": {
+        "re0000000355": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000356": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000357": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000358": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000359": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000360": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000361": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000362": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000363": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000365": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000366": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000367": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000368": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000375": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000376": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000377": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        },
+        "re0000000378": {
+          "ADP": 0,
+          "ATP": 0,
+          "GDP": 0,
+          "GTP": 0
+        }
+      },
+      "source_catalytic_channels": [
+        "re0000000363",
+        "re0000000364"
+      ]
+    },
+    {
+      "active_boundary_matrix": [
+        [
+          "-1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1",
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ]
+      ],
+      "active_boundary_projection_rank": 1,
+      "active_channel_count": 18,
+      "active_cycle_counts": {
+        "FORWARD": 4,
+        "REVERSE": 4,
+        "ZERO_BOUNDARY": 13
+      },
+      "active_directed_cycles": [
+        {
+          "boundary_projection": {
+            "ADP": 2,
+            "AMP": -1,
+            "ATP": -1
+          },
+          "classification": "FORWARD",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "1",
+          "reaction_ids": [
+            "re0000000380",
+            "re0000000386",
+            "re0000000388",
+            "re0000000390",
+            "re0000000394"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 2,
+            "AMP": -1,
+            "ATP": -1
+          },
+          "classification": "FORWARD",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "1",
+          "reaction_ids": [
+            "re0000000380",
+            "re0000000386",
+            "re0000000388",
+            "re0000000392",
+            "re0000000396"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 2,
+            "AMP": -1,
+            "ATP": -1
+          },
+          "classification": "FORWARD",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "1",
+          "reaction_ids": [
+            "re0000000382",
+            "re0000000384",
+            "re0000000388",
+            "re0000000390",
+            "re0000000394"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 2,
+            "AMP": -1,
+            "ATP": -1
+          },
+          "classification": "FORWARD",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "1",
+          "reaction_ids": [
+            "re0000000382",
+            "re0000000384",
+            "re0000000388",
+            "re0000000392",
+            "re0000000396"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": -2,
+            "AMP": 1,
+            "ATP": 1
+          },
+          "classification": "REVERSE",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "-1",
+          "reaction_ids": [
+            "re0000000381",
+            "re0000000395",
+            "re0000000391",
+            "re0000000389",
+            "re0000000387"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": -2,
+            "AMP": 1,
+            "ATP": 1
+          },
+          "classification": "REVERSE",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "-1",
+          "reaction_ids": [
+            "re0000000381",
+            "re0000000397",
+            "re0000000393",
+            "re0000000389",
+            "re0000000387"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": -2,
+            "AMP": 1,
+            "ATP": 1
+          },
+          "classification": "REVERSE",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "-1",
+          "reaction_ids": [
+            "re0000000383",
+            "re0000000395",
+            "re0000000391",
+            "re0000000389",
+            "re0000000385"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": -2,
+            "AMP": 1,
+            "ATP": 1
+          },
+          "classification": "REVERSE",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "-1",
+          "reaction_ids": [
+            "re0000000383",
+            "re0000000397",
+            "re0000000393",
+            "re0000000389",
+            "re0000000385"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "AMP": 0,
+            "ATP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000380",
+            "re0000000381"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "AMP": 0,
+            "ATP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000382",
+            "re0000000383"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "AMP": 0,
+            "ATP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000384",
+            "re0000000385"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "AMP": 0,
+            "ATP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000386",
+            "re0000000387"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "AMP": 0,
+            "ATP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000388",
+            "re0000000389"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "AMP": 0,
+            "ATP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000390",
+            "re0000000391"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "AMP": 0,
+            "ATP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000392",
+            "re0000000393"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "AMP": 0,
+            "ATP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000394",
+            "re0000000395"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "AMP": 0,
+            "ATP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000396",
+            "re0000000397"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "AMP": 0,
+            "ATP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000380",
+            "re0000000386",
+            "re0000000385",
+            "re0000000383"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "AMP": 0,
+            "ATP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000381",
+            "re0000000382",
+            "re0000000384",
+            "re0000000387"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "AMP": 0,
+            "ATP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000390",
+            "re0000000394",
+            "re0000000397",
+            "re0000000393"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "ADP": 0,
+            "AMP": 0,
+            "ATP": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000391",
+            "re0000000392",
+            "re0000000396",
+            "re0000000395"
+          ]
+        }
+      ],
+      "active_full_stoichiometric_rank": 7,
+      "active_internal_matrix": [
+        [
+          "-1",
+          "1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "0",
+          "-1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "-1",
+          "1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "-1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "active_internal_rank": 6,
+      "active_left_nullity": 3,
+      "active_nullspace_basis": [
+        [
+          "1",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "active_nullspace_dimension": 12,
+      "active_reaction_order": [
+        "re0000000380",
+        "re0000000381",
+        "re0000000382",
+        "re0000000383",
+        "re0000000384",
+        "re0000000385",
+        "re0000000386",
+        "re0000000387",
+        "re0000000388",
+        "re0000000389",
+        "re0000000390",
+        "re0000000391",
+        "re0000000392",
+        "re0000000393",
+        "re0000000394",
+        "re0000000395",
+        "re0000000396",
+        "re0000000397"
+      ],
+      "all_channel_comparison": {
+        "declared_cycles": [
+          {
+            "boundary_projection": {
+              "ADP": 2,
+              "AMP": -1,
+              "ATP": -1
+            },
+            "classification": "FORWARD",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "1",
+            "reaction_ids": [
+              "re0000000380",
+              "re0000000386",
+              "re0000000388",
+              "re0000000390",
+              "re0000000394"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 2,
+              "AMP": -1,
+              "ATP": -1
+            },
+            "classification": "FORWARD",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "1",
+            "reaction_ids": [
+              "re0000000380",
+              "re0000000386",
+              "re0000000388",
+              "re0000000392",
+              "re0000000396"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 2,
+              "AMP": -1,
+              "ATP": -1
+            },
+            "classification": "FORWARD",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "1",
+            "reaction_ids": [
+              "re0000000382",
+              "re0000000384",
+              "re0000000388",
+              "re0000000390",
+              "re0000000394"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 2,
+              "AMP": -1,
+              "ATP": -1
+            },
+            "classification": "FORWARD",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "1",
+            "reaction_ids": [
+              "re0000000382",
+              "re0000000384",
+              "re0000000388",
+              "re0000000392",
+              "re0000000396"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": -2,
+              "AMP": 1,
+              "ATP": 1
+            },
+            "classification": "REVERSE",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "-1",
+            "reaction_ids": [
+              "re0000000381",
+              "re0000000395",
+              "re0000000391",
+              "re0000000389",
+              "re0000000387"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": -2,
+              "AMP": 1,
+              "ATP": 1
+            },
+            "classification": "REVERSE",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "-1",
+            "reaction_ids": [
+              "re0000000381",
+              "re0000000397",
+              "re0000000393",
+              "re0000000389",
+              "re0000000387"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": -2,
+              "AMP": 1,
+              "ATP": 1
+            },
+            "classification": "REVERSE",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "-1",
+            "reaction_ids": [
+              "re0000000383",
+              "re0000000395",
+              "re0000000391",
+              "re0000000389",
+              "re0000000385"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": -2,
+              "AMP": 1,
+              "ATP": 1
+            },
+            "classification": "REVERSE",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "-1",
+            "reaction_ids": [
+              "re0000000383",
+              "re0000000397",
+              "re0000000393",
+              "re0000000389",
+              "re0000000385"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "AMP": 0,
+              "ATP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000380",
+              "re0000000381"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "AMP": 0,
+              "ATP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000382",
+              "re0000000383"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "AMP": 0,
+              "ATP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000384",
+              "re0000000385"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "AMP": 0,
+              "ATP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000386",
+              "re0000000387"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "AMP": 0,
+              "ATP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000388",
+              "re0000000389"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "AMP": 0,
+              "ATP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000390",
+              "re0000000391"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "AMP": 0,
+              "ATP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000392",
+              "re0000000393"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "AMP": 0,
+              "ATP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000394",
+              "re0000000395"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "AMP": 0,
+              "ATP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000396",
+              "re0000000397"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "AMP": 0,
+              "ATP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000380",
+              "re0000000386",
+              "re0000000385",
+              "re0000000383"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "AMP": 0,
+              "ATP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000381",
+              "re0000000382",
+              "re0000000384",
+              "re0000000387"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "AMP": 0,
+              "ATP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000390",
+              "re0000000394",
+              "re0000000397",
+              "re0000000393"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "ADP": 0,
+              "AMP": 0,
+              "ATP": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000391",
+              "re0000000392",
+              "re0000000396",
+              "re0000000395"
+            ]
+          }
+        ],
+        "degraded_species_included_as_boundary": [
+          "MK_degraded"
+        ],
+        "internal_rank": 7,
+        "live_plus_degraded_enzyme_residuals": {
+          "re0000000379": 0,
+          "re0000000380": 0,
+          "re0000000381": 0,
+          "re0000000382": 0,
+          "re0000000383": 0,
+          "re0000000384": 0,
+          "re0000000385": 0,
+          "re0000000386": 0,
+          "re0000000387": 0,
+          "re0000000388": 0,
+          "re0000000389": 0,
+          "re0000000390": 0,
+          "re0000000391": 0,
+          "re0000000392": 0,
+          "re0000000393": 0,
+          "re0000000394": 0,
+          "re0000000395": 0,
+          "re0000000396": 0,
+          "re0000000397": 0,
+          "re0000000398": 0,
+          "re0000000399": 0,
+          "re0000000400": 0,
+          "re0000000401": 0,
+          "re0000000402": 0,
+          "re0000000403": 0
+        },
+        "meaning": "Signed nullspace permits unphysical reverse degradation currents. Degradation activation is a transient catalyst-loss problem, not a stationary catalytic cycle.",
+        "nonnegative_stationary_degradation_flux": "Exactly zero: summing all live-enzyme rows yields minus sum of directed degradation fluxes; nonnegative stationary balance forces each to vanish.",
+        "signed_boundary_projection_rank": 3,
+        "signed_nullspace_dimension": 18
+      },
+      "boundary_species": [
+        "ATP",
+        "AMP",
+        "ADP"
+      ],
+      "decision": "ONE_NET_DIRECTION_SUPPORTED",
+      "declared_all_nondegradation_cycle_counts": {
+        "FORWARD": 4,
+        "REVERSE": 4,
+        "ZERO_BOUNDARY": 13
+      },
+      "enzyme_pool_full_author_active_network_conserved": true,
+      "exact_resource_total_channel_ledger": {
+        "re0000000380": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000381": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000382": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000383": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000384": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000385": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000386": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000387": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000388": {
+          "ADP": 2,
+          "AMP": -1,
+          "ATP": -1
+        },
+        "re0000000389": {
+          "ADP": -2,
+          "AMP": 1,
+          "ATP": 1
+        },
+        "re0000000390": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000391": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000392": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000393": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000394": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000395": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000396": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000397": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        }
+      },
+      "internal_species": [
+        "MK",
+        "MK_ADP_1",
+        "MK_ADP_2",
+        "MK_ADP_ADP",
+        "MK_AMP",
+        "MK_ATP",
+        "MK_ATP_AMP"
+      ],
+      "moieties": {
+        "adenylate_group": {
+          "active_conserved": true,
+          "active_symbolic_residual": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "all_channel_nonzero_residuals": {
+            "re0000000400": -1,
+            "re0000000401": -1
+          },
+          "coefficients": {
+            "ADP": 1,
+            "AMP": 1,
+            "ATP": 1,
+            "MK_ADP_1": 1,
+            "MK_ADP_2": 1,
+            "MK_ADP_ADP": 2,
+            "MK_AMP": 1,
+            "MK_ATP": 1,
+            "MK_ATP_AMP": 2
+          },
+          "initial_inventory": 3750.0
+        },
+        "live_enzyme_total": {
+          "active_conserved": true,
+          "active_symbolic_residual": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "all_channel_nonzero_residuals": {
+            "re0000000379": -1,
+            "re0000000398": -1,
+            "re0000000399": -1,
+            "re0000000400": -1,
+            "re0000000401": -1,
+            "re0000000402": -1,
+            "re0000000403": -1
+          },
+          "coefficients": {
+            "MK": 1,
+            "MK_ADP_1": 1,
+            "MK_ADP_2": 1,
+            "MK_ADP_ADP": 1,
+            "MK_AMP": 1,
+            "MK_ATP": 1,
+            "MK_ATP_AMP": 1
+          },
+          "initial_inventory": 5.6
+        },
+        "represented_phosphate_groups": {
+          "active_conserved": true,
+          "active_symbolic_residual": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "all_channel_nonzero_residuals": {
+            "re0000000400": -1,
+            "re0000000401": -2
+          },
+          "coefficients": {
+            "ADP": 2,
+            "AMP": 1,
+            "ATP": 3,
+            "MK_ADP_1": 2,
+            "MK_ADP_2": 2,
+            "MK_ADP_ADP": 4,
+            "MK_AMP": 1,
+            "MK_ATP": 3,
+            "MK_ATP_AMP": 4
+          },
+          "initial_inventory": 11250.0
+        }
+      },
+      "moiety_basis_complete_for_declared_unit": true,
+      "moiety_basis_rank": 3,
+      "name": "MK",
+      "net_stoichiometry": {
+        "ADP": 2,
+        "AMP": -1,
+        "ATP": -1
+      },
+      "outside_active_enzyme_interfaces": [],
+      "projected_nullspace_basis": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "-1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "-1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2",
+          "-2",
+          "2",
+          "-2"
+        ]
+      ],
+      "resource_total_identity_exact": true,
+      "resource_total_identity_symbolic_residual": {
+        "re0000000380": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000381": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000382": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000383": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000384": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000385": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000386": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000387": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000388": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000389": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000390": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000391": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000392": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000393": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000394": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000395": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000396": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        },
+        "re0000000397": {
+          "ADP": 0,
+          "AMP": 0,
+          "ATP": 0
+        }
+      },
+      "source_catalytic_channels": [
+        "re0000000388",
+        "re0000000389"
+      ]
+    },
+    {
+      "active_boundary_matrix": [
+        [
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ]
+      ],
+      "active_boundary_projection_rank": 1,
+      "active_channel_count": 8,
+      "active_cycle_counts": {
+        "FORWARD": 1,
+        "REVERSE": 1,
+        "ZERO_BOUNDARY": 4
+      },
+      "active_directed_cycles": [
+        {
+          "boundary_projection": {
+            "PO4": 2,
+            "PPi": -1
+          },
+          "classification": "FORWARD",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "1",
+          "reaction_ids": [
+            "re0000000405",
+            "re0000000407",
+            "re0000000409",
+            "re0000000411"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "PO4": -2,
+            "PPi": 1
+          },
+          "classification": "REVERSE",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "-1",
+          "reaction_ids": [
+            "re0000000406",
+            "re0000000412",
+            "re0000000410",
+            "re0000000408"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "PO4": 0,
+            "PPi": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000405",
+            "re0000000406"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "PO4": 0,
+            "PPi": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000407",
+            "re0000000408"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "PO4": 0,
+            "PPi": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000409",
+            "re0000000410"
+          ]
+        },
+        {
+          "boundary_projection": {
+            "PO4": 0,
+            "PPi": 0
+          },
+          "classification": "ZERO_BOUNDARY",
+          "flux_witness": "Every listed directed channel has flux 1; all others 0",
+          "net_multiple": "0",
+          "reaction_ids": [
+            "re0000000411",
+            "re0000000412"
+          ]
+        }
+      ],
+      "active_full_stoichiometric_rank": 4,
+      "active_internal_matrix": [
+        [
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "-1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "-1",
+          "-1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "-1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "active_internal_rank": 3,
+      "active_left_nullity": 2,
+      "active_nullspace_basis": [
+        [
+          "1",
+          "0",
+          "0",
+          "1",
+          "-1"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "active_nullspace_dimension": 5,
+      "active_reaction_order": [
+        "re0000000405",
+        "re0000000406",
+        "re0000000407",
+        "re0000000408",
+        "re0000000409",
+        "re0000000410",
+        "re0000000411",
+        "re0000000412"
+      ],
+      "all_channel_comparison": {
+        "declared_cycles": [
+          {
+            "boundary_projection": {
+              "PO4": 2,
+              "PPi": -1
+            },
+            "classification": "FORWARD",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "1",
+            "reaction_ids": [
+              "re0000000405",
+              "re0000000407",
+              "re0000000409",
+              "re0000000411"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "PO4": -2,
+              "PPi": 1
+            },
+            "classification": "REVERSE",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "-1",
+            "reaction_ids": [
+              "re0000000406",
+              "re0000000412",
+              "re0000000410",
+              "re0000000408"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "PO4": 0,
+              "PPi": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000405",
+              "re0000000406"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "PO4": 0,
+              "PPi": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000407",
+              "re0000000408"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "PO4": 0,
+              "PPi": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000409",
+              "re0000000410"
+            ]
+          },
+          {
+            "boundary_projection": {
+              "PO4": 0,
+              "PPi": 0
+            },
+            "classification": "ZERO_BOUNDARY",
+            "flux_witness": "Every listed directed channel has flux 1; all others 0",
+            "net_multiple": "0",
+            "reaction_ids": [
+              "re0000000411",
+              "re0000000412"
+            ]
+          }
+        ],
+        "degraded_species_included_as_boundary": [
+          "PPiase_degraded"
+        ],
+        "internal_rank": 4,
+        "live_plus_degraded_enzyme_residuals": {
+          "re0000000404": 0,
+          "re0000000405": 0,
+          "re0000000406": 0,
+          "re0000000407": 0,
+          "re0000000408": 0,
+          "re0000000409": 0,
+          "re0000000410": 0,
+          "re0000000411": 0,
+          "re0000000412": 0,
+          "re0000000413": 0,
+          "re0000000414": 0,
+          "re0000000415": 0
+        },
+        "meaning": "Signed nullspace permits unphysical reverse degradation currents. Degradation activation is a transient catalyst-loss problem, not a stationary catalytic cycle.",
+        "nonnegative_stationary_degradation_flux": "Exactly zero: summing all live-enzyme rows yields minus sum of directed degradation fluxes; nonnegative stationary balance forces each to vanish.",
+        "signed_boundary_projection_rank": 1,
+        "signed_nullspace_dimension": 8
+      },
+      "boundary_species": [
+        "PPi",
+        "PO4"
+      ],
+      "decision": "ONE_NET_DIRECTION_SUPPORTED",
+      "declared_all_nondegradation_cycle_counts": {
+        "FORWARD": 1,
+        "REVERSE": 1,
+        "ZERO_BOUNDARY": 4
+      },
+      "enzyme_pool_full_author_active_network_conserved": true,
+      "exact_resource_total_channel_ledger": {
+        "re0000000405": {
+          "PO4": 0,
+          "PPi": 0
+        },
+        "re0000000406": {
+          "PO4": 0,
+          "PPi": 0
+        },
+        "re0000000407": {
+          "PO4": 2,
+          "PPi": -1
+        },
+        "re0000000408": {
+          "PO4": -2,
+          "PPi": 1
+        },
+        "re0000000409": {
+          "PO4": 0,
+          "PPi": 0
+        },
+        "re0000000410": {
+          "PO4": 0,
+          "PPi": 0
+        },
+        "re0000000411": {
+          "PO4": 0,
+          "PPi": 0
+        },
+        "re0000000412": {
+          "PO4": 0,
+          "PPi": 0
+        }
+      },
+      "internal_species": [
+        "PPiase",
+        "PPiase_PO4",
+        "PPiase_PO4_PO4",
+        "PPiase_PPi"
+      ],
+      "moieties": {
+        "live_enzyme_total": {
+          "active_conserved": true,
+          "active_symbolic_residual": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "all_channel_nonzero_residuals": {
+            "re0000000404": -1,
+            "re0000000413": -1,
+            "re0000000414": -1,
+            "re0000000415": -1
+          },
+          "coefficients": {
+            "PPiase": 1,
+            "PPiase_PO4": 1,
+            "PPiase_PO4_PO4": 1,
+            "PPiase_PPi": 1
+          },
+          "initial_inventory": 0.16
+        },
+        "represented_phosphate_groups": {
+          "active_conserved": true,
+          "active_symbolic_residual": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "all_channel_nonzero_residuals": {},
+          "coefficients": {
+            "PO4": 1,
+            "PPi": 2,
+            "PPiase_PO4": 1,
+            "PPiase_PO4_PO4": 2,
+            "PPiase_PPi": 2
+          },
+          "initial_inventory": 0.0
+        }
+      },
+      "moiety_basis_complete_for_declared_unit": true,
+      "moiety_basis_rank": 2,
+      "name": "PPiase",
+      "net_stoichiometry": {
+        "PO4": 2,
+        "PPi": -1
+      },
+      "outside_active_enzyme_interfaces": [],
+      "projected_nullspace_basis": [
+        [
+          "0",
+          "0",
+          "0",
+          "-1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "2",
+          "-2"
+        ]
+      ],
+      "resource_total_identity_exact": true,
+      "resource_total_identity_symbolic_residual": {
+        "re0000000405": {
+          "PO4": 0,
+          "PPi": 0
+        },
+        "re0000000406": {
+          "PO4": 0,
+          "PPi": 0
+        },
+        "re0000000407": {
+          "PO4": 0,
+          "PPi": 0
+        },
+        "re0000000408": {
+          "PO4": 0,
+          "PPi": 0
+        },
+        "re0000000409": {
+          "PO4": 0,
+          "PPi": 0
+        },
+        "re0000000410": {
+          "PO4": 0,
+          "PPi": 0
+        },
+        "re0000000411": {
+          "PO4": 0,
+          "PPi": 0
+        },
+        "re0000000412": {
+          "PO4": 0,
+          "PPi": 0
+        }
+      },
+      "source_catalytic_channels": [
+        "re0000000407",
+        "re0000000408"
+      ]
+    }
+  ]
+}

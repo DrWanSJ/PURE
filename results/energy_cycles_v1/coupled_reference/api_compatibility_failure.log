@@ -1,0 +1,19 @@
+First source-engine diagnostic attempt, before scientific trajectory execution:
+Command: C:\Users\sean\Desktop\GUV\.venv-roadrunner311\Scripts\python.exe scripts/energy_cycles/coupled_reference.py --condition AUTHOR_BASELINE
+Exit code: 1
+Cause: RoadRunner 2.10.0 exposes species/reaction identifier getters through rr.model, not directly on rr.
+Correction: rr.model.getFloatingSpeciesIds() and rr.model.getReactionIds(). No source parameters, stoichiometry, initial conditions, solver tolerances, grid or scenarios changed.
+
+Traceback (most recent call last):
+  File "C:\Users\sean\.codex\worktrees\energy-cycles-v1\GUV\scripts\energy_cycles\coupled_reference.py", line 136, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "C:\Users\sean\.codex\worktrees\energy-cycles-v1\GUV\scripts\energy_cycles\coupled_reference.py", line 110, in main
+    base,solver,rates=engine_run(xml,data,grid,cfg["relative_tolerance"],cfg["absolute_tolerance"])
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sean\.codex\worktrees\energy-cycles-v1\GUV\scripts\energy_cycles\coupled_reference.py", line 60, in engine_run
+    rr_species=list(rr.getFloatingSpeciesIds());rr_reactions=list(rr.getReactionIds())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sean\Desktop\GUV\.venv-roadrunner311\Lib\site-packages\roadrunner\roadrunner.py", line 4319, in __getattr__
+    raise AttributeError(name)
+AttributeError: getFloatingSpeciesIds

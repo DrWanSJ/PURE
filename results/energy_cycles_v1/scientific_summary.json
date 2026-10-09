@@ -1,0 +1,1484 @@
+{
+  "scientific_status": "KINETIC_CANDIDATES_WITH_BLOCKED_DOMAIN_QUALIFICATION; HUMAN_REVIEW_REQUIRED",
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "source_hashes": {
+    "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+  },
+  "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+  "registered_scenarios": 54,
+  "completed_comparison_pairs": 98,
+  "scenario_gate_statuses": {
+    "SCENARIO_GATES_PASS": 98
+  },
+  "supplemental_reverse_probe": {
+    "scope": "Separate frozen probe, excluded from original54condition qualification",
+    "completed_pairs": 2,
+    "statuses": {
+      "SCENARIO_GATES_PASS": 2
+    },
+    "endpoint_net_extents": {
+      "ORIGINAL_NONEQUILIBRIUM": {
+        "microscopic": -5.630205728737565,
+        "reduced": -5.630205728744841
+      },
+      "PROJECTED_PHYSICAL_CLOSURE": {
+        "microscopic": -5.630205728723013,
+        "reduced": -5.630205728744841
+      }
+    }
+  },
+  "preserved_superseded_ndk_comparison_pairs": 1,
+  "domain_stops": [
+    {
+      "id": "CK__ZERO_PRODUCT_CORNER",
+      "execution_status": "STOPPED_AT_MATHEMATICAL_DOMAIN_CHECK",
+      "scientific_status": "BLOCKED",
+      "error": "Positive substrate totals with zero product-form totals force every product complex to zero, but source-positive catalytic forward conversion feeds those states: no stationary physical root.",
+      "failure_kind": "NO_CERTIFIED_PHYSICAL_CLOSURE",
+      "initial_conditions": {
+        "id": "CK__ZERO_PRODUCT_CORNER",
+        "unit": "CK",
+        "condition": "ZERO_PRODUCT_CORNER",
+        "initial_original": {
+          "ADP": 300.0,
+          "ATP": 0.0,
+          "CK": 30.0,
+          "CK_ADP": 0.0,
+          "CK_ATP": 0.0,
+          "CK_CP": 0.0,
+          "CK_CP_ADP": 0.0,
+          "CK_Cr": 0.0,
+          "CK_Cr_ATP": 0.0,
+          "CK_degraded": 0.0,
+          "CP": 50000.0,
+          "Cr": 0.0
+        },
+        "enzyme_total": 30.0,
+        "initial_modes": [
+          "ORIGINAL_NONEQUILIBRIUM",
+          "PROJECTED_PHYSICAL_CLOSURE"
+        ],
+        "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+        "concentration_scales": {
+          "CP": 50000.0,
+          "ADP": 300.0,
+          "Cr": 30.0,
+          "ATP": 30.0
+        },
+        "bound_scales": {
+          "CP": 30.0,
+          "ADP": 30.0,
+          "Cr": 30.0,
+          "ATP": 30.0
+        },
+        "occupancy_scale": 30.0,
+        "cumulative_extent_scale": 300.0,
+        "note": "Predeclared physically valid microscopic state that can be outside all-enzyme stationary total-closure domain."
+      },
+      "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+      "source_hashes": {
+        "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+        "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+        "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+        "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+        "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+      },
+      "parameter_set": "Author simulator CSV",
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+      "command": [
+        "scripts/energy_cycles/runtime.py",
+        "--unit",
+        "CK"
+      ]
+    },
+    {
+      "id": "MK__LOW_FUEL",
+      "execution_status": "STOPPED_AT_MATHEMATICAL_DOMAIN_CHECK",
+      "scientific_status": "BLOCKED",
+      "error": "No certified physical algebraic root: residual=1.24623e-14, min_free=-0.0267808, min_bound=0.0291408; solver=The solution converged.",
+      "failure_kind": "NO_CERTIFIED_PHYSICAL_CLOSURE",
+      "initial_conditions": {
+        "id": "MK__LOW_FUEL",
+        "unit": "MK",
+        "condition": "LOW_FUEL",
+        "initial_original": {
+          "ADP": 100.0,
+          "AMP": 100.0,
+          "ATP": 0.055999999999999994,
+          "MK": 5.6,
+          "MK_ADP_1": 0.0,
+          "MK_ADP_2": 0.0,
+          "MK_ADP_ADP": 0.0,
+          "MK_AMP": 0.0,
+          "MK_ATP": 0.0,
+          "MK_ATP_AMP": 0.0,
+          "MK_degraded": 0.0
+        },
+        "enzyme_total": 5.6,
+        "initial_modes": [
+          "ORIGINAL_NONEQUILIBRIUM",
+          "PROJECTED_PHYSICAL_CLOSURE"
+        ],
+        "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+        "concentration_scales": {
+          "ATP": 5.6,
+          "AMP": 100.0,
+          "ADP": 100.0
+        },
+        "bound_scales": {
+          "ATP": 5.6,
+          "AMP": 5.6,
+          "ADP": 11.2
+        },
+        "occupancy_scale": 5.6,
+        "cumulative_extent_scale": 5.6,
+        "note": "Fuel inventory comparable to or below catalyst; retained as domain stress."
+      },
+      "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+      "source_hashes": {
+        "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+        "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+        "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+        "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+        "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+      },
+      "parameter_set": "Author simulator CSV",
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+      "command": [
+        "scripts/energy_cycles/runtime.py",
+        "--unit",
+        "MK"
+      ]
+    },
+    {
+      "id": "MK__ZERO_PRODUCT_CORNER",
+      "execution_status": "STOPPED_AT_MATHEMATICAL_DOMAIN_CHECK",
+      "scientific_status": "BLOCKED",
+      "error": "Positive substrate totals with zero product-form totals force every product complex to zero, but source-positive catalytic forward conversion feeds those states: no stationary physical root.",
+      "failure_kind": "NO_CERTIFIED_PHYSICAL_CLOSURE",
+      "initial_conditions": {
+        "id": "MK__ZERO_PRODUCT_CORNER",
+        "unit": "MK",
+        "condition": "ZERO_PRODUCT_CORNER",
+        "initial_original": {
+          "ADP": 0.0,
+          "AMP": 100.0,
+          "ATP": 3750.0,
+          "MK": 5.6,
+          "MK_ADP_1": 0.0,
+          "MK_ADP_2": 0.0,
+          "MK_ADP_ADP": 0.0,
+          "MK_AMP": 0.0,
+          "MK_ATP": 0.0,
+          "MK_ATP_AMP": 0.0,
+          "MK_degraded": 0.0
+        },
+        "enzyme_total": 5.6,
+        "initial_modes": [
+          "ORIGINAL_NONEQUILIBRIUM",
+          "PROJECTED_PHYSICAL_CLOSURE"
+        ],
+        "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+        "concentration_scales": {
+          "ATP": 3750.0,
+          "AMP": 100.0,
+          "ADP": 5.6
+        },
+        "bound_scales": {
+          "ATP": 5.6,
+          "AMP": 5.6,
+          "ADP": 11.2
+        },
+        "occupancy_scale": 5.6,
+        "cumulative_extent_scale": 100.0,
+        "note": "Predeclared physically valid microscopic state that can be outside all-enzyme stationary total-closure domain."
+      },
+      "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+      "source_hashes": {
+        "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+        "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+        "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+        "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+        "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+      },
+      "parameter_set": "Author simulator CSV",
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+      "command": [
+        "scripts/energy_cycles/runtime.py",
+        "--unit",
+        "MK"
+      ]
+    },
+    {
+      "id": "NDK__ZERO_PRODUCT_CORNER",
+      "execution_status": "STOPPED_AT_MATHEMATICAL_DOMAIN_CHECK",
+      "scientific_status": "BLOCKED",
+      "error": "Positive substrate totals with zero product-form totals force every product complex to zero, but source-positive catalytic forward conversion feeds those states: no stationary physical root.",
+      "failure_kind": "NO_CERTIFIED_PHYSICAL_CLOSURE",
+      "initial_conditions": {
+        "id": "NDK__ZERO_PRODUCT_CORNER",
+        "unit": "NDK",
+        "condition": "ZERO_PRODUCT_CORNER",
+        "initial_original": {
+          "ADP": 0.0,
+          "ATP": 3750.0,
+          "GDP": 100.0,
+          "GTP": 0.0,
+          "NDK": 1.8,
+          "NDK_ADP": 0.0,
+          "NDK_ATP": 0.0,
+          "NDK_GDP": 0.0,
+          "NDK_GDP_ATP": 0.0,
+          "NDK_GTP": 0.0,
+          "NDK_GTP_ADP": 0.0,
+          "NDK_degraded": 0.0
+        },
+        "enzyme_total": 1.8,
+        "initial_modes": [
+          "ORIGINAL_NONEQUILIBRIUM",
+          "PROJECTED_PHYSICAL_CLOSURE"
+        ],
+        "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+        "concentration_scales": {
+          "ATP": 3750.0,
+          "GDP": 100.0,
+          "ADP": 1.8,
+          "GTP": 1.8
+        },
+        "bound_scales": {
+          "ATP": 1.8,
+          "GDP": 1.8,
+          "ADP": 1.8,
+          "GTP": 1.8
+        },
+        "occupancy_scale": 1.8,
+        "cumulative_extent_scale": 100.0,
+        "note": "Predeclared physically valid microscopic state that can be outside all-enzyme stationary total-closure domain."
+      },
+      "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+      "source_hashes": {
+        "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+        "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+        "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+        "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+        "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+      },
+      "parameter_set": "Author simulator CSV",
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+      "command": [
+        "scripts/energy_cycles/runtime.py",
+        "--unit",
+        "NDK"
+      ]
+    },
+    {
+      "id": "PPiase__ZERO_PRODUCT_CORNER",
+      "execution_status": "STOPPED_AT_MATHEMATICAL_DOMAIN_CHECK",
+      "scientific_status": "BLOCKED",
+      "error": "Positive PPi total with zero PO4 total forces both PO4 complexes to zero; source k407>0 feeds the double-PO4 state: no stationary physical root.",
+      "failure_kind": "NO_CERTIFIED_PHYSICAL_CLOSURE",
+      "initial_conditions": {
+        "id": "PPiase__ZERO_PRODUCT_CORNER",
+        "unit": "PPiase",
+        "condition": "ZERO_PRODUCT_CORNER",
+        "initial_original": {
+          "PO4": 0.0,
+          "PPi": 100.0,
+          "PPiase": 0.16,
+          "PPiase_PO4": 0.0,
+          "PPiase_PO4_PO4": 0.0,
+          "PPiase_PPi": 0.0,
+          "PPiase_degraded": 0.0
+        },
+        "enzyme_total": 0.16,
+        "initial_modes": [
+          "ORIGINAL_NONEQUILIBRIUM",
+          "PROJECTED_PHYSICAL_CLOSURE"
+        ],
+        "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+        "concentration_scales": {
+          "PPi": 100.0,
+          "PO4": 1.0
+        },
+        "bound_scales": {
+          "PPi": 1.0,
+          "PO4": 1.0
+        },
+        "occupancy_scale": 0.16,
+        "cumulative_extent_scale": 100.0,
+        "note": "Predeclared physically valid microscopic state that can be outside all-enzyme stationary total-closure domain."
+      },
+      "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+      "source_hashes": {
+        "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+        "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+        "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+        "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+        "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+      },
+      "parameter_set": "Author simulator CSV",
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+      "command": [
+        "scripts/energy_cycles/runtime.py",
+        "--unit",
+        "PPiase"
+      ]
+    }
+  ],
+  "native_solver_failures_preserved": [
+    {
+      "id": "NDK__CHALLENGE_ATP_DOUBLE",
+      "execution_status": "FAILED",
+      "scientific_status": "BLOCKED",
+      "error": "Negative retained inventory beyond frozen allowance",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 242, in main\n    try:run_case(d,case,reg)\n        ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 206, in run_case\n    base_red,curr,rs=integrate_reduced(m,T0,E,grid,1e-8,1e-10)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 130, in integrate_reduced\n    q=solve_ivp(rhs,(0,1000),[0.,0.],method='Radau',rtol=rtol,atol=atol,t_eval=grid)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\ivp.py\", line 655, in solve_ivp\n    message = solver.step()\n              ^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 197, in step\n    success, message = self._step_impl()\n                       ^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 460, in _step_impl\n    converged, n_iter, Z, rate = solve_collocation_system(\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 103, in solve_collocation_system\n    F[i] = fun(t + ch[i], y + Z[i])\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 154, in fun\n    return self.fun_single(t, y)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 23, in fun_wrapped\n    return np.asarray(fun(t, y), dtype=dtype)\n                      ^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 129, in rhs\n    def rhs(t,z):return m.closure(T0+m.N*(z[0]-z[1]),E)[1]\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 103, in closure\n    if np.min(T)<-1e-8:raise DomainFailure('Negative retained inventory beyond frozen allowance')\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nDomainFailure: Negative retained inventory beyond frozen allowance\n",
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+      "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+      "initial_conditions": {
+        "id": "NDK__CHALLENGE_ATP_DOUBLE",
+        "unit": "NDK",
+        "condition": "CHALLENGE_ATP_DOUBLE",
+        "initial_original": {
+          "ADP": 100.0,
+          "ATP": 7500.0,
+          "GDP": 100.0,
+          "GTP": 2500.0,
+          "NDK": 1.8,
+          "NDK_ADP": 0.0,
+          "NDK_ATP": 0.0,
+          "NDK_GDP": 0.0,
+          "NDK_GDP_ATP": 0.0,
+          "NDK_GTP": 0.0,
+          "NDK_GTP_ADP": 0.0,
+          "NDK_degraded": 0.0
+        },
+        "enzyme_total": 1.8,
+        "initial_modes": [
+          "ORIGINAL_NONEQUILIBRIUM",
+          "PROJECTED_PHYSICAL_CLOSURE"
+        ],
+        "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+        "concentration_scales": {
+          "ATP": 7500.0,
+          "GDP": 100.0,
+          "ADP": 100.0,
+          "GTP": 2500.0
+        },
+        "bound_scales": {
+          "ATP": 1.8,
+          "GDP": 1.8,
+          "ADP": 1.8,
+          "GTP": 1.8
+        },
+        "occupancy_scale": 1.8,
+        "cumulative_extent_scale": 100.0,
+        "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+      }
+    },
+    {
+      "id": "NDK__CHALLENGE_ATP_HALF",
+      "execution_status": "FAILED",
+      "scientific_status": "BLOCKED",
+      "error": "Negative retained inventory beyond frozen allowance",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 242, in main\n    try:run_case(d,case,reg)\n        ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 206, in run_case\n    base_red,curr,rs=integrate_reduced(m,T0,E,grid,1e-8,1e-10)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 130, in integrate_reduced\n    q=solve_ivp(rhs,(0,1000),[0.,0.],method='Radau',rtol=rtol,atol=atol,t_eval=grid)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\ivp.py\", line 655, in solve_ivp\n    message = solver.step()\n              ^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 197, in step\n    success, message = self._step_impl()\n                       ^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 460, in _step_impl\n    converged, n_iter, Z, rate = solve_collocation_system(\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 103, in solve_collocation_system\n    F[i] = fun(t + ch[i], y + Z[i])\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 154, in fun\n    return self.fun_single(t, y)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 23, in fun_wrapped\n    return np.asarray(fun(t, y), dtype=dtype)\n                      ^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 129, in rhs\n    def rhs(t,z):return m.closure(T0+m.N*(z[0]-z[1]),E)[1]\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 103, in closure\n    if np.min(T)<-1e-8:raise DomainFailure('Negative retained inventory beyond frozen allowance')\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nDomainFailure: Negative retained inventory beyond frozen allowance\n",
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+      "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+      "initial_conditions": {
+        "id": "NDK__CHALLENGE_ATP_HALF",
+        "unit": "NDK",
+        "condition": "CHALLENGE_ATP_HALF",
+        "initial_original": {
+          "ADP": 100.0,
+          "ATP": 1875.0,
+          "GDP": 100.0,
+          "GTP": 2500.0,
+          "NDK": 1.8,
+          "NDK_ADP": 0.0,
+          "NDK_ATP": 0.0,
+          "NDK_GDP": 0.0,
+          "NDK_GDP_ATP": 0.0,
+          "NDK_GTP": 0.0,
+          "NDK_GTP_ADP": 0.0,
+          "NDK_degraded": 0.0
+        },
+        "enzyme_total": 1.8,
+        "initial_modes": [
+          "ORIGINAL_NONEQUILIBRIUM",
+          "PROJECTED_PHYSICAL_CLOSURE"
+        ],
+        "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+        "concentration_scales": {
+          "ATP": 1875.0,
+          "GDP": 100.0,
+          "ADP": 100.0,
+          "GTP": 2500.0
+        },
+        "bound_scales": {
+          "ATP": 1.8,
+          "GDP": 1.8,
+          "ADP": 1.8,
+          "GTP": 1.8
+        },
+        "occupancy_scale": 1.8,
+        "cumulative_extent_scale": 100.0,
+        "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+      }
+    },
+    {
+      "id": "NDK__CHALLENGE_CATALYST_DOUBLE",
+      "execution_status": "FAILED",
+      "scientific_status": "BLOCKED",
+      "error": "Negative retained inventory beyond frozen allowance",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 242, in main\n    try:run_case(d,case,reg)\n        ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 206, in run_case\n    base_red,curr,rs=integrate_reduced(m,T0,E,grid,1e-8,1e-10)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 130, in integrate_reduced\n    q=solve_ivp(rhs,(0,1000),[0.,0.],method='Radau',rtol=rtol,atol=atol,t_eval=grid)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\ivp.py\", line 655, in solve_ivp\n    message = solver.step()\n              ^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 197, in step\n    success, message = self._step_impl()\n                       ^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 460, in _step_impl\n    converged, n_iter, Z, rate = solve_collocation_system(\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 103, in solve_collocation_system\n    F[i] = fun(t + ch[i], y + Z[i])\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 154, in fun\n    return self.fun_single(t, y)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 23, in fun_wrapped\n    return np.asarray(fun(t, y), dtype=dtype)\n                      ^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 129, in rhs\n    def rhs(t,z):return m.closure(T0+m.N*(z[0]-z[1]),E)[1]\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 103, in closure\n    if np.min(T)<-1e-8:raise DomainFailure('Negative retained inventory beyond frozen allowance')\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nDomainFailure: Negative retained inventory beyond frozen allowance\n",
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+      "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+      "initial_conditions": {
+        "id": "NDK__CHALLENGE_CATALYST_DOUBLE",
+        "unit": "NDK",
+        "condition": "CHALLENGE_CATALYST_DOUBLE",
+        "initial_original": {
+          "ADP": 100.0,
+          "ATP": 3750.0,
+          "GDP": 100.0,
+          "GTP": 2500.0,
+          "NDK": 3.6,
+          "NDK_ADP": 0.0,
+          "NDK_ATP": 0.0,
+          "NDK_GDP": 0.0,
+          "NDK_GDP_ATP": 0.0,
+          "NDK_GTP": 0.0,
+          "NDK_GTP_ADP": 0.0,
+          "NDK_degraded": 0.0
+        },
+        "enzyme_total": 3.6,
+        "initial_modes": [
+          "ORIGINAL_NONEQUILIBRIUM",
+          "PROJECTED_PHYSICAL_CLOSURE"
+        ],
+        "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+        "concentration_scales": {
+          "ATP": 3750.0,
+          "GDP": 100.0,
+          "ADP": 100.0,
+          "GTP": 2500.0
+        },
+        "bound_scales": {
+          "ATP": 3.6,
+          "GDP": 3.6,
+          "ADP": 3.6,
+          "GTP": 3.6
+        },
+        "occupancy_scale": 3.6,
+        "cumulative_extent_scale": 100.0,
+        "note": "Individual catalyst perturbation on positive challenge."
+      }
+    },
+    {
+      "id": "NDK__CHALLENGE_CATALYST_HALF",
+      "execution_status": "FAILED",
+      "scientific_status": "BLOCKED",
+      "error": "Negative retained inventory beyond frozen allowance",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 242, in main\n    try:run_case(d,case,reg)\n        ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 206, in run_case\n    base_red,curr,rs=integrate_reduced(m,T0,E,grid,1e-8,1e-10)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 130, in integrate_reduced\n    q=solve_ivp(rhs,(0,1000),[0.,0.],method='Radau',rtol=rtol,atol=atol,t_eval=grid)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\ivp.py\", line 655, in solve_ivp\n    message = solver.step()\n              ^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 197, in step\n    success, message = self._step_impl()\n                       ^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 460, in _step_impl\n    converged, n_iter, Z, rate = solve_collocation_system(\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 103, in solve_collocation_system\n    F[i] = fun(t + ch[i], y + Z[i])\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 154, in fun\n    return self.fun_single(t, y)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 23, in fun_wrapped\n    return np.asarray(fun(t, y), dtype=dtype)\n                      ^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 129, in rhs\n    def rhs(t,z):return m.closure(T0+m.N*(z[0]-z[1]),E)[1]\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 103, in closure\n    if np.min(T)<-1e-8:raise DomainFailure('Negative retained inventory beyond frozen allowance')\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nDomainFailure: Negative retained inventory beyond frozen allowance\n",
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+      "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+      "initial_conditions": {
+        "id": "NDK__CHALLENGE_CATALYST_HALF",
+        "unit": "NDK",
+        "condition": "CHALLENGE_CATALYST_HALF",
+        "initial_original": {
+          "ADP": 100.0,
+          "ATP": 3750.0,
+          "GDP": 100.0,
+          "GTP": 2500.0,
+          "NDK": 0.9,
+          "NDK_ADP": 0.0,
+          "NDK_ATP": 0.0,
+          "NDK_GDP": 0.0,
+          "NDK_GDP_ATP": 0.0,
+          "NDK_GTP": 0.0,
+          "NDK_GTP_ADP": 0.0,
+          "NDK_degraded": 0.0
+        },
+        "enzyme_total": 0.9,
+        "initial_modes": [
+          "ORIGINAL_NONEQUILIBRIUM",
+          "PROJECTED_PHYSICAL_CLOSURE"
+        ],
+        "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+        "concentration_scales": {
+          "ATP": 3750.0,
+          "GDP": 100.0,
+          "ADP": 100.0,
+          "GTP": 2500.0
+        },
+        "bound_scales": {
+          "ATP": 1.0,
+          "GDP": 1.0,
+          "ADP": 1.0,
+          "GTP": 1.0
+        },
+        "occupancy_scale": 0.9,
+        "cumulative_extent_scale": 100.0,
+        "note": "Individual catalyst perturbation on positive challenge."
+      }
+    },
+    {
+      "id": "NDK__CHALLENGE_GDP_DOUBLE",
+      "execution_status": "FAILED",
+      "scientific_status": "BLOCKED",
+      "error": "Negative retained inventory beyond frozen allowance",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 242, in main\n    try:run_case(d,case,reg)\n        ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 206, in run_case\n    base_red,curr,rs=integrate_reduced(m,T0,E,grid,1e-8,1e-10)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 130, in integrate_reduced\n    q=solve_ivp(rhs,(0,1000),[0.,0.],method='Radau',rtol=rtol,atol=atol,t_eval=grid)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\ivp.py\", line 655, in solve_ivp\n    message = solver.step()\n              ^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 197, in step\n    success, message = self._step_impl()\n                       ^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 460, in _step_impl\n    converged, n_iter, Z, rate = solve_collocation_system(\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 103, in solve_collocation_system\n    F[i] = fun(t + ch[i], y + Z[i])\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 154, in fun\n    return self.fun_single(t, y)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 23, in fun_wrapped\n    return np.asarray(fun(t, y), dtype=dtype)\n                      ^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 129, in rhs\n    def rhs(t,z):return m.closure(T0+m.N*(z[0]-z[1]),E)[1]\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 103, in closure\n    if np.min(T)<-1e-8:raise DomainFailure('Negative retained inventory beyond frozen allowance')\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nDomainFailure: Negative retained inventory beyond frozen allowance\n",
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+      "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+      "initial_conditions": {
+        "id": "NDK__CHALLENGE_GDP_DOUBLE",
+        "unit": "NDK",
+        "condition": "CHALLENGE_GDP_DOUBLE",
+        "initial_original": {
+          "ADP": 100.0,
+          "ATP": 3750.0,
+          "GDP": 200.0,
+          "GTP": 2500.0,
+          "NDK": 1.8,
+          "NDK_ADP": 0.0,
+          "NDK_ATP": 0.0,
+          "NDK_GDP": 0.0,
+          "NDK_GDP_ATP": 0.0,
+          "NDK_GTP": 0.0,
+          "NDK_GTP_ADP": 0.0,
+          "NDK_degraded": 0.0
+        },
+        "enzyme_total": 1.8,
+        "initial_modes": [
+          "ORIGINAL_NONEQUILIBRIUM",
+          "PROJECTED_PHYSICAL_CLOSURE"
+        ],
+        "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+        "concentration_scales": {
+          "ATP": 3750.0,
+          "GDP": 200.0,
+          "ADP": 100.0,
+          "GTP": 2500.0
+        },
+        "bound_scales": {
+          "ATP": 1.8,
+          "GDP": 1.8,
+          "ADP": 1.8,
+          "GTP": 1.8
+        },
+        "occupancy_scale": 1.8,
+        "cumulative_extent_scale": 200.0,
+        "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+      }
+    },
+    {
+      "id": "NDK__CHALLENGE_GDP_HALF",
+      "execution_status": "FAILED",
+      "scientific_status": "BLOCKED",
+      "error": "Negative retained inventory beyond frozen allowance",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 242, in main\n    try:run_case(d,case,reg)\n        ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 206, in run_case\n    base_red,curr,rs=integrate_reduced(m,T0,E,grid,1e-8,1e-10)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 130, in integrate_reduced\n    q=solve_ivp(rhs,(0,1000),[0.,0.],method='Radau',rtol=rtol,atol=atol,t_eval=grid)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\ivp.py\", line 655, in solve_ivp\n    message = solver.step()\n              ^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 197, in step\n    success, message = self._step_impl()\n                       ^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 460, in _step_impl\n    converged, n_iter, Z, rate = solve_collocation_system(\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 103, in solve_collocation_system\n    F[i] = fun(t + ch[i], y + Z[i])\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 154, in fun\n    return self.fun_single(t, y)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 23, in fun_wrapped\n    return np.asarray(fun(t, y), dtype=dtype)\n                      ^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 129, in rhs\n    def rhs(t,z):return m.closure(T0+m.N*(z[0]-z[1]),E)[1]\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 103, in closure\n    if np.min(T)<-1e-8:raise DomainFailure('Negative retained inventory beyond frozen allowance')\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nDomainFailure: Negative retained inventory beyond frozen allowance\n",
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+      "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+      "initial_conditions": {
+        "id": "NDK__CHALLENGE_GDP_HALF",
+        "unit": "NDK",
+        "condition": "CHALLENGE_GDP_HALF",
+        "initial_original": {
+          "ADP": 100.0,
+          "ATP": 3750.0,
+          "GDP": 50.0,
+          "GTP": 2500.0,
+          "NDK": 1.8,
+          "NDK_ADP": 0.0,
+          "NDK_ATP": 0.0,
+          "NDK_GDP": 0.0,
+          "NDK_GDP_ATP": 0.0,
+          "NDK_GTP": 0.0,
+          "NDK_GTP_ADP": 0.0,
+          "NDK_degraded": 0.0
+        },
+        "enzyme_total": 1.8,
+        "initial_modes": [
+          "ORIGINAL_NONEQUILIBRIUM",
+          "PROJECTED_PHYSICAL_CLOSURE"
+        ],
+        "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+        "concentration_scales": {
+          "ATP": 3750.0,
+          "GDP": 50.0,
+          "ADP": 100.0,
+          "GTP": 2500.0
+        },
+        "bound_scales": {
+          "ATP": 1.8,
+          "GDP": 1.8,
+          "ADP": 1.8,
+          "GTP": 1.8
+        },
+        "occupancy_scale": 1.8,
+        "cumulative_extent_scale": 50.0,
+        "note": "Individual substrate perturbation; avoids multiplying a zero authored pool."
+      }
+    },
+    {
+      "id": "NDK__POSITIVE_CHALLENGE",
+      "execution_status": "FAILED",
+      "scientific_status": "BLOCKED",
+      "error": "Negative retained inventory beyond frozen allowance",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 242, in main\n    try:run_case(d,case,reg)\n        ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 206, in run_case\n    base_red,curr,rs=integrate_reduced(m,T0,E,grid,1e-8,1e-10)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 130, in integrate_reduced\n    q=solve_ivp(rhs,(0,1000),[0.,0.],method='Radau',rtol=rtol,atol=atol,t_eval=grid)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\ivp.py\", line 655, in solve_ivp\n    message = solver.step()\n              ^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 197, in step\n    success, message = self._step_impl()\n                       ^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 460, in _step_impl\n    converged, n_iter, Z, rate = solve_collocation_system(\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\radau.py\", line 103, in solve_collocation_system\n    F[i] = fun(t + ch[i], y + Z[i])\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 154, in fun\n    return self.fun_single(t, y)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Code\\Anaconda\\Lib\\site-packages\\scipy\\integrate\\_ivp\\base.py\", line 23, in fun_wrapped\n    return np.asarray(fun(t, y), dtype=dtype)\n                      ^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 129, in rhs\n    def rhs(t,z):return m.closure(T0+m.N*(z[0]-z[1]),E)[1]\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\runtime.py\", line 103, in closure\n    if np.min(T)<-1e-8:raise DomainFailure('Negative retained inventory beyond frozen allowance')\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nDomainFailure: Negative retained inventory beyond frozen allowance\n",
+      "preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+      "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+      "initial_conditions": {
+        "id": "NDK__POSITIVE_CHALLENGE",
+        "unit": "NDK",
+        "condition": "POSITIVE_CHALLENGE",
+        "initial_original": {
+          "ADP": 100.0,
+          "ATP": 3750.0,
+          "GDP": 100.0,
+          "GTP": 2500.0,
+          "NDK": 1.8,
+          "NDK_ADP": 0.0,
+          "NDK_ATP": 0.0,
+          "NDK_GDP": 0.0,
+          "NDK_GDP_ATP": 0.0,
+          "NDK_GTP": 0.0,
+          "NDK_GTP_ADP": 0.0,
+          "NDK_degraded": 0.0
+        },
+        "enzyme_total": 1.8,
+        "initial_modes": [
+          "ORIGINAL_NONEQUILIBRIUM",
+          "PROJECTED_PHYSICAL_CLOSURE"
+        ],
+        "projection": "Keep each resource form total T_i and enzyme total fixed; solve T=u+C h(u). If no physical root, preserve mathematical domain failure and no reduced trajectory.",
+        "concentration_scales": {
+          "ATP": 3750.0,
+          "GDP": 100.0,
+          "ADP": 100.0,
+          "GTP": 2500.0
+        },
+        "bound_scales": {
+          "ATP": 1.8,
+          "GDP": 1.8,
+          "ADP": 1.8,
+          "GTP": 1.8
+        },
+        "occupancy_scale": 1.8,
+        "cumulative_extent_scale": 100.0,
+        "note": "Explicit positive challenge supplies author-absent pools; no claim of author baseline."
+      }
+    }
+  ],
+  "units": {
+    "CK": {
+      "net_stoichiometry": "CP + ADP \u21c4 Cr + ATP",
+      "source_status": "SOURCE_VERIFIED",
+      "structure_status": "STRUCTURE_VERIFIED",
+      "kinetic_status": "KINETIC_CANDIDATE",
+      "validation_status": "BLOCKED",
+      "blocked_reason": "Physical total-closure domain qualification is incomplete",
+      "SUBSYSTEM_VALIDATED": false,
+      "FULL_MODEL_VALIDATED": false,
+      "recommendation": "REVISE_WITH_EXTRA_STATE",
+      "comparison_pairs": 26,
+      "long_maxima": {
+        "max_scaled_free": 6.592483016390816e-05,
+        "max_scaled_retained": 7.208567275398536e-05,
+        "normalized_net_flux_rms": 0.0001958884547825266,
+        "max_normalized_cumulative_resource_flow": 7.20856727523748e-05
+      },
+      "initial_layer_maxima": {
+        "max_scaled_free": 0.16395126725537237,
+        "max_scaled_retained": 0.00010315655144059596,
+        "normalized_net_flux_rms": 1.6174385345534679,
+        "max_normalized_cumulative_resource_flow": 0.00010315655144061409
+      },
+      "transition_maxima": {
+        "max_scaled_free": 9.195412098686498e-05,
+        "max_scaled_retained": 0.00010211576329652417,
+        "normalized_net_flux_rms": 0.0028304421553534444,
+        "max_normalized_cumulative_resource_flow": 0.0001021157632971222
+      },
+      "maximum_normalized_conservation_residual": 2.3299288424520153e-11,
+      "maximum_numerical_uncertainty": {
+        "concentration": 9.059215244633378e-09,
+        "flux": 7.966158586056115e-09,
+        "flow": 9.059215244633378e-09
+      },
+      "minimum_sampled_fast_relaxation_rate": 500.16233051585556,
+      "maximum_sampled_fast_relaxation_time": 0.0019993508886777295,
+      "source_original_directed_reactions": 25,
+      "source_active_directed_reactions": 18,
+      "zero_reaction_ids": [
+        "re0000000329",
+        "re0000000348",
+        "re0000000349",
+        "re0000000350",
+        "re0000000351",
+        "re0000000352",
+        "re0000000353"
+      ],
+      "covered_reaction_ids": [
+        "re0000000329",
+        "re0000000330",
+        "re0000000331",
+        "re0000000332",
+        "re0000000333",
+        "re0000000334",
+        "re0000000335",
+        "re0000000336",
+        "re0000000337",
+        "re0000000338",
+        "re0000000339",
+        "re0000000340",
+        "re0000000341",
+        "re0000000342",
+        "re0000000343",
+        "re0000000344",
+        "re0000000345",
+        "re0000000346",
+        "re0000000347",
+        "re0000000348",
+        "re0000000349",
+        "re0000000350",
+        "re0000000351",
+        "re0000000352",
+        "re0000000353"
+      ],
+      "algebraic_enzyme_values": 7,
+      "approximate_independent_occupancy_states_eliminated_in_trials": 6,
+      "full_reference_graph_check": {
+        "physical_samples": 362,
+        "failed_samples": 0,
+        "failures": [],
+        "first_failure": null,
+        "first_feasible_after_failure": null,
+        "decision": "SAMPLED_GRAPH_FEASIBLE_NOT_EMBEDDING_VALIDATED"
+      }
+    },
+    "NDK": {
+      "net_stoichiometry": "ATP + GDP \u2192 ADP + GTP",
+      "source_status": "SOURCE_VERIFIED",
+      "structure_status": "STRUCTURE_VERIFIED",
+      "kinetic_status": "KINETIC_CANDIDATE",
+      "validation_status": "BLOCKED",
+      "blocked_reason": "Physical total-closure domain qualification is incomplete",
+      "SUBSYSTEM_VALIDATED": false,
+      "FULL_MODEL_VALIDATED": false,
+      "recommendation": "REVISE_WITH_EXTRA_STATE",
+      "comparison_pairs": 26,
+      "long_maxima": {
+        "max_scaled_free": 0.0007612785295413005,
+        "max_scaled_retained": 0.0007626905756572455,
+        "normalized_net_flux_rms": 0.00010657479047799071,
+        "max_normalized_cumulative_resource_flow": 0.0007598057127904667
+      },
+      "initial_layer_maxima": {
+        "max_scaled_free": 0.01962856621580926,
+        "max_scaled_retained": 0.0009021229227299443,
+        "normalized_net_flux_rms": 0.7599082373552288,
+        "max_normalized_cumulative_resource_flow": 0.0009021229168285716
+      },
+      "transition_maxima": {
+        "max_scaled_free": 0.0009156960056540697,
+        "max_scaled_retained": 0.000915909956722345,
+        "normalized_net_flux_rms": 0.0037133992880668803,
+        "max_normalized_cumulative_resource_flow": 0.0009159098550637523
+      },
+      "maximum_normalized_conservation_residual": 3.9699243892243885e-11,
+      "maximum_numerical_uncertainty": {
+        "concentration": 1.4748977150702558e-09,
+        "flux": 3.663132696603698e-10,
+        "flow": 1.877017581364271e-09
+      },
+      "minimum_sampled_fast_relaxation_rate": 664.2219702537874,
+      "maximum_sampled_fast_relaxation_time": 0.001505520811992891,
+      "source_original_directed_reactions": 25,
+      "source_active_directed_reactions": 17,
+      "zero_reaction_ids": [
+        "re0000000354",
+        "re0000000364",
+        "re0000000369",
+        "re0000000370",
+        "re0000000371",
+        "re0000000372",
+        "re0000000373",
+        "re0000000374"
+      ],
+      "covered_reaction_ids": [
+        "re0000000354",
+        "re0000000355",
+        "re0000000356",
+        "re0000000357",
+        "re0000000358",
+        "re0000000359",
+        "re0000000360",
+        "re0000000361",
+        "re0000000362",
+        "re0000000363",
+        "re0000000364",
+        "re0000000365",
+        "re0000000366",
+        "re0000000367",
+        "re0000000368",
+        "re0000000369",
+        "re0000000370",
+        "re0000000371",
+        "re0000000372",
+        "re0000000373",
+        "re0000000374",
+        "re0000000375",
+        "re0000000376",
+        "re0000000377",
+        "re0000000378"
+      ],
+      "algebraic_enzyme_values": 7,
+      "approximate_independent_occupancy_states_eliminated_in_trials": 6,
+      "full_reference_graph_check": {
+        "physical_samples": 362,
+        "failed_samples": 0,
+        "failures": [],
+        "first_failure": null,
+        "first_feasible_after_failure": null,
+        "decision": "SAMPLED_GRAPH_FEASIBLE_NOT_EMBEDDING_VALIDATED"
+      }
+    },
+    "MK": {
+      "net_stoichiometry": "ATP + AMP \u21c4 2 ADP",
+      "source_status": "SOURCE_VERIFIED",
+      "structure_status": "STRUCTURE_VERIFIED",
+      "kinetic_status": "KINETIC_CANDIDATE",
+      "validation_status": "BLOCKED",
+      "blocked_reason": "Physical total-closure domain qualification is incomplete",
+      "SUBSYSTEM_VALIDATED": false,
+      "FULL_MODEL_VALIDATED": false,
+      "recommendation": "REVISE_WITH_EXTRA_STATE",
+      "comparison_pairs": 24,
+      "long_maxima": {
+        "max_scaled_free": 0.010726168915795142,
+        "max_scaled_retained": 0.010758728159072462,
+        "normalized_net_flux_rms": 9.124916198460114e-05,
+        "max_normalized_cumulative_resource_flow": 0.01075872815908383
+      },
+      "initial_layer_maxima": {
+        "max_scaled_free": 0.058517757147148686,
+        "max_scaled_retained": 0.011934815889047943,
+        "normalized_net_flux_rms": 0.8318543455501491,
+        "max_normalized_cumulative_resource_flow": 0.011934815889045415
+      },
+      "transition_maxima": {
+        "max_scaled_free": 0.017686491576137088,
+        "max_scaled_retained": 0.017686170415910852,
+        "normalized_net_flux_rms": 0.008156963776924877,
+        "max_normalized_cumulative_resource_flow": 0.017686170415910852
+      },
+      "maximum_normalized_conservation_residual": 2.543172022179923e-11,
+      "maximum_numerical_uncertainty": {
+        "concentration": 1.64692190196547e-07,
+        "flux": 4.850321781530332e-09,
+        "flow": 1.6469218735437608e-07
+      },
+      "minimum_sampled_fast_relaxation_rate": 741.0677600930986,
+      "maximum_sampled_fast_relaxation_time": 0.0013494042702307983,
+      "source_original_directed_reactions": 25,
+      "source_active_directed_reactions": 18,
+      "zero_reaction_ids": [
+        "re0000000379",
+        "re0000000398",
+        "re0000000399",
+        "re0000000400",
+        "re0000000401",
+        "re0000000402",
+        "re0000000403"
+      ],
+      "covered_reaction_ids": [
+        "re0000000379",
+        "re0000000380",
+        "re0000000381",
+        "re0000000382",
+        "re0000000383",
+        "re0000000384",
+        "re0000000385",
+        "re0000000386",
+        "re0000000387",
+        "re0000000388",
+        "re0000000389",
+        "re0000000390",
+        "re0000000391",
+        "re0000000392",
+        "re0000000393",
+        "re0000000394",
+        "re0000000395",
+        "re0000000396",
+        "re0000000397",
+        "re0000000398",
+        "re0000000399",
+        "re0000000400",
+        "re0000000401",
+        "re0000000402",
+        "re0000000403"
+      ],
+      "algebraic_enzyme_values": 7,
+      "approximate_independent_occupancy_states_eliminated_in_trials": 6,
+      "full_reference_graph_check": {
+        "physical_samples": 349,
+        "failed_samples": 13,
+        "failures": [
+          {
+            "time": 0.001057371263440564,
+            "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-1.6691e-08, min_bound=6.37597e-10; solver=The solution converged.",
+            "retained_totals": {
+              "ATP": 3747.6417538687633,
+              "AMP": 1.0882762699327358e-06,
+              "ADP": 5.295120434282953e-10
+            }
+          },
+          {
+            "time": 0.0012337216990458673,
+            "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-3.55504e-08, min_bound=1.37356e-09; solver=The solution converged.",
+            "retained_totals": {
+              "ATP": 3747.639696196533,
+              "AMP": 2.344441294004574e-06,
+              "ADP": 1.5484812341312472e-09
+            }
+          },
+          {
+            "time": 0.0014394842032532458,
+            "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-7.40033e-08, min_bound=2.90401e-09; solver=The solution converged.",
+            "retained_totals": {
+              "ATP": 3747.6376094705633,
+              "AMP": 4.956669121195062e-06,
+              "ADP": 4.435745838614183e-09
+            }
+          },
+          {
+            "time": 0.0016795641780623326,
+            "error": "No certified physical algebraic root: residual=3.0257e-18, min_free=-1.50035e-07, min_bound=6.01404e-09; solver=The solution converged.",
+            "retained_totals": {
+              "ATP": 3747.6355349118917,
+              "AMP": 1.0264988921847938e-05,
+              "ADP": 1.2418360598041061e-08
+            }
+          },
+          {
+            "time": 0.001959685157957868,
+            "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-2.9503e-07, min_bound=1.21757e-08; solver=The solution converged.",
+            "retained_totals": {
+              "ATP": 3747.6335135568825,
+              "AMP": 2.078193403773716e-05,
+              "ADP": 3.389322629933702e-08
+            }
+          },
+          {
+            "time": 0.0022865252596366323,
+            "error": "No certified physical algebraic root: residual=1.2102e-17, min_free=-5.59855e-07, min_bound=2.40507e-08; solver=The solution converged.",
+            "retained_totals": {
+              "ATP": 3747.6315803068956,
+              "AMP": 4.105062457826051e-05,
+              "ADP": 8.994218987244552e-08
+            }
+          },
+          {
+            "time": 0.002667876389085135,
+            "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-1.01874e-06, min_bound=4.62657e-08; solver=The solution converged.",
+            "retained_totals": {
+              "ATP": 3747.6297572652825,
+              "AMP": 7.896803479147774e-05,
+              "ADP": 2.3144203902773239e-07
+            }
+          },
+          {
+            "time": 0.0031128300015233704,
+            "error": "No certified physical algebraic root: residual=4.35595e-17, min_free=-1.76268e-06, min_bound=8.65294e-08; solver=The solution converged.",
+            "retained_totals": {
+              "ATP": 3747.6280478444646,
+              "AMP": 0.00014769158108807442,
+              "ADP": 5.759710700025963e-07
+            }
+          },
+          {
+            "time": 0.0036319938427532587,
+            "error": "No certified physical algebraic root: residual=7.9119e-17, min_free=-2.86482e-06, min_bound=1.57122e-07; solver=The solution converged.",
+            "retained_totals": {
+              "ATP": 3747.626433550227,
+              "AMP": 0.0002681821853336232,
+              "ADP": 1.3828515308094233e-06
+            }
+          },
+          {
+            "time": 0.004237744839050607,
+            "error": "No certified physical algebraic root: residual=1.3941e-16, min_free=-4.28683e-06, min_bound=2.76715e-07; solver=The solution converged.",
+            "retained_totals": {
+              "ATP": 3747.624875145675,
+              "AMP": 0.00047230747822812853,
+              "ADP": 3.196379469663855e-06
+            }
+          },
+          {
+            "time": 0.004944524164525161,
+            "error": "No certified physical algebraic root: residual=2.38155e-16, min_free=-5.67762e-06, min_bound=4.72361e-07; solver=The solution converged.",
+            "retained_totals": {
+              "ATP": 3747.6233187779376,
+              "AMP": 0.0008062457124869771,
+              "ADP": 7.1017918276933875e-06
+            }
+          },
+          {
+            "time": 0.005769181520388665,
+            "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-5.99768e-06, min_bound=7.81403e-07; solver=The solution converged.",
+            "retained_totals": {
+              "ATP": 3747.6217057755084,
+              "AMP": 0.001333737869450448,
+              "ADP": 1.5153702564115404e-05
+            }
+          },
+          {
+            "time": 0.00673137683378891,
+            "error": "No certified physical algebraic root: residual=6.3335e-16, min_free=-2.8865e-06, min_bound=1.25295e-06; solver=The solution converged.",
+            "retained_totals": {
+              "ATP": 3747.619983000073,
+              "AMP": 0.0021386058838399986,
+              "ADP": 3.1050724701617126e-05
+            }
+          }
+        ],
+        "first_failure": {
+          "time": 0.001057371263440564,
+          "error": "No certified physical algebraic root: residual=4.54747e-13, min_free=-1.6691e-08, min_bound=6.37597e-10; solver=The solution converged.",
+          "retained_totals": {
+            "ATP": 3747.6417538687633,
+            "AMP": 1.0882762699327358e-06,
+            "ADP": 5.295120434282953e-10
+          }
+        },
+        "first_feasible_after_failure": {
+          "time": 0.007854048952756373,
+          "max_residual": 4.547473508864641e-13,
+          "min_free": 8.323712577936722e-06
+        },
+        "decision": "FULL_REPLACEMENT_BLOCKED_AT_AUTHOR_INITIAL_LAYER"
+      }
+    },
+    "PPiase": {
+      "net_stoichiometry": "PPi \u21c4 2 PO4",
+      "source_status": "SOURCE_VERIFIED",
+      "structure_status": "STRUCTURE_VERIFIED",
+      "kinetic_status": "KINETIC_CANDIDATE",
+      "validation_status": "BLOCKED",
+      "blocked_reason": "Physical total-closure domain qualification is incomplete",
+      "SUBSYSTEM_VALIDATED": false,
+      "FULL_MODEL_VALIDATED": false,
+      "recommendation": "REVISE_WITH_EXTRA_STATE",
+      "comparison_pairs": 22,
+      "long_maxima": {
+        "max_scaled_free": 0.002327986067484744,
+        "max_scaled_retained": 0.0023276275821308445,
+        "normalized_net_flux_rms": 0.0010531343843638837,
+        "max_normalized_cumulative_resource_flow": 0.0011638137910661328
+      },
+      "initial_layer_maxima": {
+        "max_scaled_free": 0.0033717451374971575,
+        "max_scaled_retained": 0.002710968034532044,
+        "normalized_net_flux_rms": 4.974516132453994,
+        "max_normalized_cumulative_resource_flow": 0.0026110657510280953
+      },
+      "transition_maxima": {
+        "max_scaled_free": 0.002518739918141506,
+        "max_scaled_retained": 0.0025186107084159914,
+        "normalized_net_flux_rms": 0.01215231018061277,
+        "max_normalized_cumulative_resource_flow": 0.002489239773840557
+      },
+      "maximum_normalized_conservation_residual": 5.934697178133774e-13,
+      "maximum_numerical_uncertainty": {
+        "concentration": 7.2957652719196634e-09,
+        "flux": 1.1181129799210975e-08,
+        "flow": 1.8233438936476886e-09
+      },
+      "minimum_sampled_fast_relaxation_rate": 361.32336341452793,
+      "maximum_sampled_fast_relaxation_time": 0.0027676040390799497,
+      "source_original_directed_reactions": 12,
+      "source_active_directed_reactions": 8,
+      "zero_reaction_ids": [
+        "re0000000404",
+        "re0000000413",
+        "re0000000414",
+        "re0000000415"
+      ],
+      "covered_reaction_ids": [
+        "re0000000404",
+        "re0000000405",
+        "re0000000406",
+        "re0000000407",
+        "re0000000408",
+        "re0000000409",
+        "re0000000410",
+        "re0000000411",
+        "re0000000412",
+        "re0000000413",
+        "re0000000414",
+        "re0000000415"
+      ],
+      "algebraic_enzyme_values": 4,
+      "approximate_independent_occupancy_states_eliminated_in_trials": 3,
+      "full_reference_graph_check": {
+        "physical_samples": 326,
+        "failed_samples": 36,
+        "failures": [
+          {
+            "time": 4.144229542831265e-05,
+            "error": "No certified physical algebraic root: residual=2.52355e-24, min_free=-1.43828e-08, min_bound=3.36653e-09; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 3.7244797241997337e-07,
+              "PO4": 1.049137300657382e-11
+            }
+          },
+          {
+            "time": 4.8354122053415e-05,
+            "error": "No certified physical algebraic root: residual=1.05879e-22, min_free=-2.46226e-08, min_bound=5.76366e-09; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 6.376491510828356e-07,
+              "PO4": 1.9449605801045983e-11
+            }
+          },
+          {
+            "time": 5.6418716564603986e-05,
+            "error": "No certified physical algebraic root: residual=2.11758e-22, min_free=-4.17622e-08, min_bound=9.77642e-09; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 1.0815919241324796e-06,
+              "PO4": 3.608142614705244e-11
+            }
+          },
+          {
+            "time": 6.582833983172918e-05,
+            "error": "No certified physical algebraic root: residual=1.79653e-24, min_free=-7.01447e-08, min_bound=1.64222e-08; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 1.8168305799516565e-06,
+              "PO4": 6.69896862800813e-11
+            }
+          },
+          {
+            "time": 7.68073183664071e-05,
+            "error": "No certified physical algebraic root: residual=4.23516e-22, min_free=-1.16637e-07, min_bound=2.731e-08; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 3.0213851499292004e-06,
+              "PO4": 1.2448937847175575e-10
+            }
+          },
+          {
+            "time": 8.961739229211339e-05,
+            "error": "No certified physical algebraic root: residual=9.84862e-24, min_free=-1.91983e-07, min_bound=4.49582e-08; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 4.973849270806721e-06,
+              "PO4": 2.3157468735090977e-10
+            }
+          },
+          {
+            "time": 0.0001045639552591274,
+            "error": "No certified physical algebraic root: residual=3.69646e-23, min_free=-3.12836e-07, min_bound=7.32718e-08; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 8.106265519995723e-06,
+              "PO4": 4.312196936267803e-10
+            }
+          },
+          {
+            "time": 0.00012200333506462636,
+            "error": "No certified physical algebraic root: residual=1.65126e-22, min_free=-5.04816e-07, min_bound=1.18262e-07; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 1.308369756059818e-05,
+              "PO4": 8.03794872369091e-10
+            }
+          },
+          {
+            "time": 0.0001423512885487585,
+            "error": "No certified physical algebraic root: residual=3.38813e-21, min_free=-8.07105e-07, min_bound=1.89129e-07; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 2.0923909133561317e-05,
+              "PO4": 1.4996733119949772e-09
+            }
+          },
+          {
+            "time": 0.00016609291328600057,
+            "error": "No certified physical algebraic root: residual=2.75451e-22, min_free=-1.27932e-06, min_bound=2.99882e-07; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 3.3176949692968725e-05,
+              "PO4": 2.800245250601472e-09
+            }
+          },
+          {
+            "time": 0.00019379421236767977,
+            "error": "No certified physical algebraic root: residual=6.77626e-21, min_free=-2.01176e-06, min_bound=4.71765e-07; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 5.219320737666503e-05,
+              "PO4": 5.232018878863225e-09
+            }
+          },
+          {
+            "time": 0.00022611558798141,
+            "error": "No certified physical algebraic root: residual=1.32349e-23, min_free=-3.14052e-06, min_bound=7.3684e-07; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 8.152008987744097e-05,
+              "PO4": 9.779831705067348e-09
+            }
+          },
+          {
+            "time": 0.00026382758547595115,
+            "error": "No certified physical algebraic root: residual=3.63959e-23, min_free=-4.86951e-06, min_bound=1.14323e-06; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.0001264823624696933,
+              "PO4": 1.8284893863400595e-08
+            }
+          },
+          {
+            "time": 0.00030782926325182406,
+            "error": "No certified physical algebraic root: residual=5.29396e-23, min_free=-7.50205e-06, min_bound=1.76269e-06; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.0001950194411459466,
+              "PO4": 3.418701869918557e-08
+            }
+          },
+          {
+            "time": 0.000359169626418001,
+            "error": "No certified physical algebraic root: residual=4.63221e-22, min_free=-1.14854e-05, min_bound=2.70132e-06; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.0002988737905096039,
+              "PO4": 6.39064525982526e-08
+            }
+          },
+          {
+            "time": 0.00041907263519555033,
+            "error": "No certified physical algebraic root: residual=1.00585e-21, min_free=-1.74719e-05, min_bound=4.11452e-06; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.0004552452108506935,
+              "PO4": 1.1941069790073576e-07
+            }
+          },
+          {
+            "time": 0.000488966384271464,
+            "error": "No certified physical algebraic root: residual=6.35275e-22, min_free=-2.64011e-05, min_bound=6.22724e-06; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.0006890402008684589,
+              "PO4": 2.2296733750532632e-07
+            }
+          },
+          {
+            "time": 0.0005705171487418754,
+            "error": "No certified physical algebraic root: residual=2.75286e-21, min_free=-3.96054e-05, min_bound=9.36079e-06; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.0010358433099388515,
+              "PO4": 4.159049729942792e-07
+            }
+          },
+          {
+            "time": 0.0006656691083038815,
+            "error": "No certified physical algebraic root: residual=6.35275e-22, min_free=-5.89392e-05, min_bound=1.39668e-05; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.0015457027417354599,
+              "PO4": 7.746615176435911e-07
+            }
+          },
+          {
+            "time": 0.000776690696725347,
+            "error": "No certified physical algebraic root: residual=6.35275e-21, min_free=-8.6926e-05, min_bound=2.06683e-05; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.002287734975751061,
+              "PO4": 1.4399317515054504e-06
+            }
+          },
+          {
+            "time": 0.0009062286815694004,
+            "error": "No certified physical algebraic root: residual=8.47033e-22, min_free=-0.000126906, min_bound=3.03069e-05; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.0033553913660628438,
+              "PO4": 2.669008414983754e-06
+            }
+          },
+          {
+            "time": 0.001057371263440564,
+            "error": "No certified physical algebraic root: residual=1.27055e-20, min_free=-0.000183151, min_bound=4.39907e-05; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.00487198042765437,
+              "PO4": 4.928394195695486e-06
+            }
+          },
+          {
+            "time": 0.0012337216990458673,
+            "error": "No certified physical algebraic root: residual=3.38813e-21, min_free=-0.000260885, min_bound=6.31374e-05; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.006995714210197958,
+              "PO4": 9.054620358122492e-06
+            }
+          },
+          {
+            "time": 0.0014394842032532458,
+            "error": "No certified physical algebraic root: residual=4.74338e-20, min_free=-0.00036613, min_bound=8.95013e-05; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.009923201727160942,
+              "PO4": 1.6527064473549078e-05
+            }
+          },
+          {
+            "time": 0.0016795641780623326,
+            "error": "No certified physical algebraic root: residual=1.28749e-19, min_free=-0.000505248, min_bound=0.000125172; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.013890060255137646,
+              "PO4": 2.9917829601463465e-05
+            }
+          },
+          {
+            "time": 0.001959685157957868,
+            "error": "No certified physical algebraic root: residual=2.03288e-19, min_free=-0.000684037, min_bound=0.00017253; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.019167311423104724,
+              "PO4": 5.360901690901395e-05
+            }
+          },
+          {
+            "time": 0.0022865252596366323,
+            "error": "No certified physical algebraic root: residual=3.65918e-19, min_free=-0.000906236, min_bound=0.000234157; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.026052602223625015,
+              "PO4": 9.489239904645411e-05
+            }
+          },
+          {
+            "time": 0.002667876389085135,
+            "error": "No certified physical algebraic root: residual=1.0842e-19, min_free=-0.00117129, min_bound=0.000312683; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.03485602599140684,
+              "PO4": 0.00016558204247198746
+            }
+          },
+          {
+            "time": 0.0031128300015233704,
+            "error": "No certified physical algebraic root: residual=1.6263e-19, min_free=-0.00147128, min_bound=0.000410607; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.045881153463145065,
+              "PO4": 0.0002842655157769128
+            }
+          },
+          {
+            "time": 0.0036319938427532587,
+            "error": "No certified physical algebraic root: residual=4.33681e-19, min_free=-0.00178701, min_bound=0.000530064; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.059402364662342014,
+              "PO4": 0.00047928386059857813
+            }
+          },
+          {
+            "time": 0.004237744839050607,
+            "error": "No certified physical algebraic root: residual=1.0842e-19, min_free=-0.00208327, min_bound=0.0006726; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.07563936988274553,
+              "PO4": 0.0007924609599581298
+            }
+          },
+          {
+            "time": 0.004944524164525161,
+            "error": "No certified physical algebraic root: residual=6.50521e-19, min_free=-0.00230333, min_bound=0.000838912; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.0947291756464914,
+              "PO4": 0.0012835042669443332
+            }
+          },
+          {
+            "time": 0.005769181520388665,
+            "error": "No certified physical algebraic root: residual=1.38778e-17, min_free=-0.00236309, min_bound=0.00102861; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.11669564316450166,
+              "PO4": 0.0020348787982372553
+            }
+          },
+          {
+            "time": 0.00673137683378891,
+            "error": "No certified physical algebraic root: residual=4.33681e-19, min_free=-0.00214506, min_bound=0.00124001; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.14141818423497382,
+              "PO4": 0.003156817515505863
+            }
+          },
+          {
+            "time": 0.007854048952756373,
+            "error": "No certified physical algebraic root: residual=0, min_free=-0.00149304, min_bound=0.00146992; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.1686038979534299,
+              "PO4": 0.004791978847903714
+            }
+          },
+          {
+            "time": 0.00916396251100563,
+            "error": "No certified physical algebraic root: residual=2.77556e-17, min_free=-0.000208254, min_bound=0.00171367; solver=The solution converged.",
+            "retained_totals": {
+              "PPi": 0.1977698816753152,
+              "PO4": 0.007119135495315515
+            }
+          }
+        ],
+        "first_failure": {
+          "time": 4.144229542831265e-05,
+          "error": "No certified physical algebraic root: residual=2.52355e-24, min_free=-1.43828e-08, min_bound=3.36653e-09; solver=The solution converged.",
+          "retained_totals": {
+            "PPi": 3.7244797241997337e-07,
+            "PO4": 1.049137300657382e-11
+          }
+        },
+        "first_feasible_after_failure": {
+          "time": 0.010692345999911892,
+          "max_residual": 1.734723475976807e-18,
+          "min_free": 0.0019522509596222183
+        },
+        "decision": "FULL_REPLACEMENT_BLOCKED_AT_AUTHOR_INITIAL_LAYER"
+      }
+    }
+  },
+  "full_embedding": "BLOCKED; MK/PPiase physical total closures unavailable at actual author startup samples",
+  "full_source_reference": {
+    "base": {
+      "solver": "CVODE stiff",
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-10,
+      "maximum_num_steps": 200000,
+      "imported_stoichiometry_exact": true,
+      "PO4_re414_coefficient": 2,
+      "all241_initial_values_at_t0_exact": true,
+      "minimum_unclipped_species": -2.0077001354493122e-25,
+      "Pept0003_endpoint": 5.164491298396926,
+      "path": "results/energy_cycles_v1/full_reference_retry1/base.npz",
+      "sha256": "15fc40a26ee467155301c5717f1414c343be380f1569b7f38ac21eb004494709",
+      "wall_seconds": 4.233999999999924
+    },
+    "tight": {
+      "solver": "CVODE stiff",
+      "relative_tolerance": 1e-10,
+      "absolute_tolerance": 1e-12,
+      "maximum_num_steps": 200000,
+      "imported_stoichiometry_exact": true,
+      "PO4_re414_coefficient": 2,
+      "all241_initial_values_at_t0_exact": true,
+      "minimum_unclipped_species": -2.6020679038836823e-27,
+      "Pept0003_endpoint": 5.164491294743647,
+      "path": "results/energy_cycles_v1/full_reference_retry1/tight.npz",
+      "sha256": "7ffbb7eb5f03ebcaf273262140a40f8f17f9622f1db8536665f1587349f66192",
+      "wall_seconds": 2.0
+    }
+  },
+  "promotion": false,
+  "approved_reduced_SBML_created": false,
+  "PURE_reduced_core": "UNCHANGED_NOT_APPROVED"
+}

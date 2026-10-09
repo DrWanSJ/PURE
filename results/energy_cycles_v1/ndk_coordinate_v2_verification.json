@@ -1,0 +1,1162 @@
+{
+  "symbolic": {
+    "status": "INDEPENDENT_CANONICAL_SYMBOLIC_COORDINATE_PROOF_PASS",
+    "resource_cases": {
+      "ATP": {
+        "source_total_factorization_residual": "0",
+        "source_current_equals_total_times_hazard_residual": "0",
+        "depletion_boundary_hazard": "Efree*b*kATP*kf*(b + 2*q)/(Efree*b**2*kATP + 3*Efree*b*kATP*q + Efree*kATP*kf*q + 2*Efree*kATP*q**2 + b*kf*q + b*q**2 + kf*q**2 + 2*q**3)"
+      },
+      "GDP": {
+        "source_total_factorization_residual": "0",
+        "source_current_equals_total_times_hazard_residual": "0",
+        "depletion_boundary_hazard": "Efree*a*kGDP*kf*(a + 2*q)/(Efree*a**2*kGDP + 3*Efree*a*kGDP*q + Efree*kGDP*kf*q + 2*Efree*kGDP*q**2 + a*kf*q + a*q**2 + kf*q**2 + 2*q**3)"
+      }
+    },
+    "remaining_and_extent_coordinate_derivative_residuals": "0",
+    "scope": "Exact coordinate and source-rate factorization at kr=0; finite algebraic root tolerances remain numerical approximations."
+  },
+  "original_preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+  "script_sha256": "c1c822fc96b05a6fcc752cc264b40bfe1fbff0f27d2422fe9899130e51c9e23c",
+  "completed_coordinate_trajectory_pairs_checked": 14,
+  "trajectory_checks": [
+    {
+      "case": "NDK__CHALLENGE_ATP_DOUBLE",
+      "initial_mode": "ORIGINAL_NONEQUILIBRIUM",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "054cdf9dace75361621288a0617191d512d6970682bcf29f06ee17763028725c",
+      "maximum_source_resource_extent_identity_residual": 1.6973537242392922e-07,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 1.5903944827755367e-11,
+        "adenylate": 1.675384976950131e-15,
+        "guanylate": 3.672959372544518e-15,
+        "represented_phosphate_groups": 1.436044265957255e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 99.9999999999999,
+        "reduced": 99.99999998810833
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 0.0,
+        "reduced": 63.62847041444347
+      },
+      "maximum_reconstructed_source_stationarity_residual": 9.094947017729282e-13,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 0.009498431737058013,
+          "max_scaled_retained": 0.0007230959470595622,
+          "max_scaled_bound": 0.8092886679427109,
+          "max_scaled_occupancy": 0.9831738988009836,
+          "normalized_net_flux_rms": 0.7585629808145853,
+          "max_normalized_cumulative_resource_flow": 0.0007230959210956067,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 1.4626948541263118e-11,
+            "flux": 6.207533724658749e-09,
+            "flow": 4.964239241900259e-11
+          }
+        },
+        {
+          "max_scaled_free": 0.0007314146296454282,
+          "max_scaled_retained": 0.0007314634031207845,
+          "max_scaled_bound": 7.482304441450457e-05,
+          "max_scaled_occupancy": 9.368478048308068e-05,
+          "normalized_net_flux_rms": 0.0012832681933301437,
+          "max_normalized_cumulative_resource_flow": 0.0007314633614184984,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 7.736881002529117e-10,
+            "flux": 4.823549388952044e-09,
+            "flow": 7.736859686247044e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.0006478535241774353,
+          "max_scaled_retained": 0.0006483273185111215,
+          "max_scaled_bound": 7.035971645098627e-05,
+          "max_scaled_occupancy": 6.705930398235675e-05,
+          "normalized_net_flux_rms": 0.00010657479047799071,
+          "max_normalized_cumulative_resource_flow": 0.0006483278039709717,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 8.291448239106102e-10,
+            "flux": 1.9523551920858315e-10,
+            "flow": 1.6912474620767171e-09
+          }
+        }
+      ]
+    },
+    {
+      "case": "NDK__CHALLENGE_ATP_DOUBLE",
+      "initial_mode": "PROJECTED_PHYSICAL_CLOSURE",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "54674428b70e0b10351e5620f4220495b6d4a1c24c7f1648e37c13b96bc1ccbc",
+      "maximum_source_resource_extent_identity_residual": 1.6973537242392922e-07,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 2.6602177251157218e-11,
+        "adenylate": 8.376924884750655e-16,
+        "guanylate": 1.4866740317442094e-14,
+        "represented_phosphate_groups": 3.7097810203895765e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 99.99999999999987,
+        "reduced": 99.99999998810833
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 63.62847041444347,
+        "reduced": 63.62847041444347
+      },
+      "maximum_reconstructed_source_stationarity_residual": 9.094947017729282e-13,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 3.3077123445224287e-05,
+          "max_scaled_retained": 3.107453514118674e-05,
+          "max_scaled_bound": 0.0001236562661795689,
+          "max_scaled_occupancy": 0.00011671510202494585,
+          "normalized_net_flux_rms": 0.0073979017449099915,
+          "max_normalized_cumulative_resource_flow": 3.107450917759103e-05,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 4.915719387099671e-11,
+            "flux": 3.353697753262464e-09,
+            "flow": 4.964239241900259e-11
+          }
+        },
+        {
+          "max_scaled_free": 0.00027736203002440616,
+          "max_scaled_retained": 0.0002772149144178826,
+          "max_scaled_bound": 0.00011274161969529769,
+          "max_scaled_occupancy": 0.00010499950105614787,
+          "normalized_net_flux_rms": 0.003557983281270843,
+          "max_normalized_cumulative_resource_flow": 0.000277215399878159,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 7.095734133599763e-10,
+            "flux": 5.035480519943316e-09,
+            "flow": 7.095736975770705e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.0002864659911100631,
+          "max_scaled_retained": 0.0002864701676364234,
+          "max_scaled_bound": 2.2593901894962798e-05,
+          "max_scaled_occupancy": 2.5521893452630353e-05,
+          "normalized_net_flux_rms": 4.4474813741644605e-05,
+          "max_normalized_cumulative_resource_flow": 0.00028647013013035407,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 7.930378842502251e-10,
+            "flux": 1.6111807738420467e-10,
+            "flow": 1.6912474620767171e-09
+          }
+        }
+      ]
+    },
+    {
+      "case": "NDK__CHALLENGE_ATP_HALF",
+      "initial_mode": "ORIGINAL_NONEQUILIBRIUM",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "24c6e2fef4557a02733c1a1299d93fee08fdf45ad6136b28b15ff0e76aa1d303",
+      "maximum_source_resource_extent_identity_residual": 1.8620455932705227e-07,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 1.0052576055525403e-11,
+        "adenylate": 2.878147790420659e-15,
+        "guanylate": 5.596890472448789e-15,
+        "represented_phosphate_groups": 4.169217856556122e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 99.99999999999987,
+        "reduced": 99.99999998827464
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 0.0,
+        "reduced": 22.84727544817691
+      },
+      "maximum_reconstructed_source_stationarity_residual": 9.094947017729282e-13,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 0.010070616478940054,
+          "max_scaled_retained": 0.0002677267330201971,
+          "max_scaled_bound": 0.8724129173307885,
+          "max_scaled_occupancy": 0.9799825997672515,
+          "normalized_net_flux_rms": 0.29207979971664466,
+          "max_normalized_cumulative_resource_flow": 0.0002677267283228102,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 9.331415640190244e-12,
+            "flux": 2.3650496741902982e-09,
+            "flow": 1.0531220340226355e-11
+          }
+        },
+        {
+          "max_scaled_free": 0.00027406833360316796,
+          "max_scaled_retained": 0.0002741099284705228,
+          "max_scaled_bound": 3.646161843537696e-05,
+          "max_scaled_occupancy": 3.643574225615293e-05,
+          "normalized_net_flux_rms": 0.00012559305559196816,
+          "max_normalized_cumulative_resource_flow": 0.00027411008053677575,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 4.535243647296738e-10,
+            "flux": 1.4401380563159237e-09,
+            "flow": 4.5352194888437226e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.00027242862889934825,
+          "max_scaled_retained": 0.0002725029796789613,
+          "max_scaled_bound": 3.646410970984763e-05,
+          "max_scaled_occupancy": 3.469683999335338e-05,
+          "normalized_net_flux_rms": 2.403443280417906e-05,
+          "max_normalized_cumulative_resource_flow": 0.0002725031971762704,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 8.333078227451551e-10,
+            "flux": 1.4843246929551272e-10,
+            "flow": 1.871786565743605e-09
+          }
+        }
+      ]
+    },
+    {
+      "case": "NDK__CHALLENGE_ATP_HALF",
+      "initial_mode": "PROJECTED_PHYSICAL_CLOSURE",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "46e9a050f26aa07a36c161f268df2e57bcbbec3e6fffeb3c54d5b8df9a05eec0",
+      "maximum_source_resource_extent_identity_residual": 1.8620455932705227e-07,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 5.0774693091979205e-11,
+        "adenylate": 3.545878077798252e-14,
+        "guanylate": 4.425041529779825e-14,
+        "represented_phosphate_groups": 3.590906992582208e-14
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 100.00000000000007,
+        "reduced": 99.99999998827464
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 22.84727544817691,
+        "reduced": 22.84727544817691
+      },
+      "maximum_reconstructed_source_stationarity_residual": 9.094947017729282e-13,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 6.134847694170275e-06,
+          "max_scaled_retained": 5.442562404880391e-06,
+          "max_scaled_bound": 4.0625455137845e-05,
+          "max_scaled_occupancy": 3.837570768445215e-05,
+          "normalized_net_flux_rms": 0.0012957824575331616,
+          "max_normalized_cumulative_resource_flow": 5.4425577076422375e-06,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 2.1737349698014442e-11,
+            "flux": 1.4797781524527287e-09,
+            "flow": 2.1737023292445202e-11
+          }
+        },
+        {
+          "max_scaled_free": 7.498697355302397e-05,
+          "max_scaled_retained": 7.48024602344799e-05,
+          "max_scaled_bound": 3.846029384919131e-05,
+          "max_scaled_occupancy": 3.6328485864853574e-05,
+          "normalized_net_flux_rms": 0.0008894393228713064,
+          "max_normalized_cumulative_resource_flow": 7.480267773164684e-05,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 4.684328303028451e-10,
+            "flux": 1.4521906756342975e-09,
+            "flow": 4.684321908143829e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.00011508415630608227,
+          "max_scaled_retained": 0.00011509403404460273,
+          "max_scaled_bound": 1.3136726758252355e-05,
+          "max_scaled_occupancy": 1.058304951808944e-05,
+          "normalized_net_flux_rms": 1.5519170008700675e-05,
+          "max_normalized_cumulative_resource_flow": 0.00011509384534100776,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 8.421049813023274e-10,
+            "flux": 1.4770832700220795e-10,
+            "flow": 1.871786565743605e-09
+          }
+        }
+      ]
+    },
+    {
+      "case": "NDK__CHALLENGE_CATALYST_DOUBLE",
+      "initial_mode": "ORIGINAL_NONEQUILIBRIUM",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "49303fff3d8993c2db283caa5da955ef11d4a87036c5b1dfc80c617b9a3e0f27",
+      "maximum_source_resource_extent_identity_residual": 1.846498207669356e-07,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 8.692922924701129e-12,
+        "adenylate": 2.8347886808506854e-15,
+        "guanylate": 2.885896649856407e-14,
+        "represented_phosphate_groups": 1.2158258154249067e-14
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 99.99999999999987,
+        "reduced": 99.99999998814855
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 0.0,
+        "reduced": 78.79504922611795
+      },
+      "maximum_reconstructed_source_stationarity_residual": 1.8189894035458565e-12,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 0.01962856621580926,
+          "max_scaled_retained": 0.0009021229227299443,
+          "max_scaled_bound": 0.84794110399749,
+          "max_scaled_occupancy": 0.9811211800630868,
+          "normalized_net_flux_rms": 0.4835267014157106,
+          "max_normalized_cumulative_resource_flow": 0.0009021229168285716,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 5.3998405746824576e-11,
+            "flux": 3.919546747070641e-09,
+            "flow": 5.3997659676952025e-11
+          }
+        },
+        {
+          "max_scaled_free": 0.0009156960056540697,
+          "max_scaled_retained": 0.000915909956722345,
+          "max_scaled_bound": 0.00011020166364660177,
+          "max_scaled_occupancy": 0.00012044000239747671,
+          "normalized_net_flux_rms": 0.0011630104951093358,
+          "max_normalized_cumulative_resource_flow": 0.0009159098550637523,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 7.781270028317522e-10,
+            "flux": 3.800881594259873e-09,
+            "flow": 7.78128210754403e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.0007588253988641469,
+          "max_scaled_retained": 0.0007598054805805532,
+          "max_scaled_bound": 9.260030922917136e-05,
+          "max_scaled_occupancy": 8.827926606428764e-05,
+          "normalized_net_flux_rms": 6.794262794736345e-05,
+          "max_normalized_cumulative_resource_flow": 0.0007598057127904667,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 7.45331192320009e-10,
+            "flux": 8.142934141752925e-11,
+            "flow": 1.8483648034361977e-09
+          }
+        }
+      ]
+    },
+    {
+      "case": "NDK__CHALLENGE_CATALYST_DOUBLE",
+      "initial_mode": "PROJECTED_PHYSICAL_CLOSURE",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "eb7634020e4fd79e7d1c4860492a4c048baae5031c66e6d9dc9b9c8edbe7b249",
+      "maximum_source_resource_extent_identity_residual": 1.846498207669356e-07,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 1.1186607196123079e-11,
+        "adenylate": 1.063045755319007e-15,
+        "guanylate": 2.868406367130004e-14,
+        "represented_phosphate_groups": 1.1968285370588925e-14
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 100.0,
+        "reduced": 99.99999998814855
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 78.79504922611795,
+        "reduced": 78.79504922611795
+      },
+      "maximum_reconstructed_source_stationarity_residual": 1.8189894035458565e-12,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 5.944593338412574e-05,
+          "max_scaled_retained": 5.5008279701524995e-05,
+          "max_scaled_bound": 0.00014563090447567488,
+          "max_scaled_occupancy": 0.00013749994408772547,
+          "normalized_net_flux_rms": 0.0065487526914430275,
+          "max_normalized_cumulative_resource_flow": 5.500827380037876e-05,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 1.4007255799697304e-10,
+            "flux": 2.959331635380468e-09,
+            "flow": 1.4007257131964935e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.00037962847267039026,
+          "max_scaled_retained": 0.00037964430883789645,
+          "max_scaled_bound": 0.00012326815785150083,
+          "max_scaled_occupancy": 0.00011636332634006812,
+          "normalized_net_flux_rms": 0.002627199989103428,
+          "max_normalized_cumulative_resource_flow": 0.0003796445410467442,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 7.657760647816758e-10,
+            "flux": 3.749901041809249e-09,
+            "flow": 7.657757805645815e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.00037979800857122824,
+          "max_scaled_retained": 0.00037984457178453113,
+          "max_scaled_bound": 3.1752492687140174e-05,
+          "max_scaled_occupancy": 3.3992568909278915e-05,
+          "normalized_net_flux_rms": 3.06956355141158e-05,
+          "max_normalized_cumulative_resource_flow": 0.00037984439720460726,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 6.993255396992027e-10,
+            "flux": 8.685936909912099e-11,
+            "flow": 1.8483648034361977e-09
+          }
+        }
+      ]
+    },
+    {
+      "case": "NDK__CHALLENGE_CATALYST_HALF",
+      "initial_mode": "ORIGINAL_NONEQUILIBRIUM",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "787bbb7582c8f48d55af5be4a33e1854353846658ddc9a218474d66d541429d5",
+      "maximum_source_resource_extent_identity_residual": 1.7355677073283005e-07,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 1.468947186111791e-11,
+        "adenylate": 2.8347886808506854e-15,
+        "guanylate": 5.596890472448789e-15,
+        "represented_phosphate_groups": 2.4696461875818417e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 100.0,
+        "reduced": 99.99999998821363
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 0.0,
+        "reduced": 19.56226781695956
+      },
+      "maximum_reconstructed_source_stationarity_residual": 4.547473508864641e-13,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 0.004938895609432592,
+          "max_scaled_retained": 0.00022744579481440041,
+          "max_scaled_bound": 0.7638297053246939,
+          "max_scaled_occupancy": 0.9812851859908948,
+          "normalized_net_flux_rms": 0.4883717404442002,
+          "max_normalized_cumulative_resource_flow": 0.00022744579052935143,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 6.440075139835244e-12,
+            "flux": 6.1027581965692866e-09,
+            "flow": 9.995364536052876e-12
+          }
+        },
+        {
+          "max_scaled_free": 0.00023218447133871223,
+          "max_scaled_retained": 0.00023219775544021105,
+          "max_scaled_bound": 2.4878379565218545e-05,
+          "max_scaled_occupancy": 3.073718626604253e-05,
+          "normalized_net_flux_rms": 0.00016704171927823307,
+          "max_normalized_cumulative_resource_flow": 0.00023219792802249727,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 3.117884261882864e-10,
+            "flux": 2.1417945632301196e-09,
+            "flow": 3.1178812420762367e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.00023167197374434066,
+          "max_scaled_retained": 0.000231696433376527,
+          "max_scaled_bound": 2.514805585840385e-05,
+          "max_scaled_occupancy": 2.768144496678726e-05,
+          "normalized_net_flux_rms": 3.8638490254114735e-05,
+          "max_normalized_cumulative_resource_flow": 0.00023169632249270933,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 8.902790682441264e-10,
+            "flux": 2.9579287971610937e-10,
+            "flow": 1.741550050837759e-09
+          }
+        }
+      ]
+    },
+    {
+      "case": "NDK__CHALLENGE_CATALYST_HALF",
+      "initial_mode": "PROJECTED_PHYSICAL_CLOSURE",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "5cf6620cd3122965657f7cd08533325f9b2149b92ce9fdaa4e7ec59b996735ab",
+      "maximum_source_resource_extent_identity_residual": 1.7355677073283005e-07,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 3.9699243892243885e-11,
+        "adenylate": 1.181161950354452e-15,
+        "guanylate": 4.722376336128666e-15,
+        "represented_phosphate_groups": 1.3298094856209914e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 100.0,
+        "reduced": 99.99999998821363
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 19.56226781695956,
+        "reduced": 19.56226781695956
+      },
+      "maximum_reconstructed_source_stationarity_residual": 4.547473508864641e-13,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 3.901324096062808e-06,
+          "max_scaled_retained": 3.5831539419461934e-06,
+          "max_scaled_bound": 3.30844765499827e-05,
+          "max_scaled_occupancy": 3.4711783557640606e-05,
+          "normalized_net_flux_rms": 0.001706328143190279,
+          "max_normalized_cumulative_resource_flow": 3.5831496572569234e-06,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 2.3133281956688732e-11,
+            "flux": 2.3948354635247953e-09,
+            "flow": 2.313306213252986e-11
+          }
+        },
+        {
+          "max_scaled_free": 5.3542832537232245e-05,
+          "max_scaled_retained": 5.342880529596528e-05,
+          "max_scaled_bound": 3.181701541382642e-05,
+          "max_scaled_occupancy": 3.338074797903317e-05,
+          "normalized_net_flux_rms": 0.0012641859835684814,
+          "max_normalized_cumulative_resource_flow": 5.3428694412112065e-05,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 3.8323861417666195e-10,
+            "flux": 2.115184803557572e-09,
+            "flow": 3.8323854312238836e-10
+          }
+        },
+        {
+          "max_scaled_free": 9.447933366438121e-05,
+          "max_scaled_retained": 9.448161906931318e-05,
+          "max_scaled_bound": 1.5096286488991417e-05,
+          "max_scaled_occupancy": 1.192927533816896e-05,
+          "normalized_net_flux_rms": 2.67151002419798e-05,
+          "max_normalized_cumulative_resource_flow": 9.448195752376876e-05,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 8.862863865033432e-10,
+            "flux": 2.564798065248428e-10,
+            "flow": 1.741550050837759e-09
+          }
+        }
+      ]
+    },
+    {
+      "case": "NDK__CHALLENGE_GDP_DOUBLE",
+      "initial_mode": "ORIGINAL_NONEQUILIBRIUM",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "8abe8316c8c6d5ea708fd51f5a6c444b0b61347e1eb789dbcfe601ec52fa7faf",
+      "maximum_source_resource_extent_identity_residual": 3.74972955796693e-07,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 1.644992783964325e-11,
+        "adenylate": 2.598556290779795e-15,
+        "guanylate": 4.7158984536374055e-15,
+        "represented_phosphate_groups": 2.256110888118892e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 200.0000000000002,
+        "reduced": 199.99999997703654
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 0.0,
+        "reduced": 63.63535761610994
+      },
+      "maximum_reconstructed_source_stationarity_residual": 9.094947017729282e-13,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 0.009505331749773803,
+          "max_scaled_retained": 0.0007279957934500203,
+          "max_scaled_bound": 0.8098912025584418,
+          "max_scaled_occupancy": 0.9831596313388414,
+          "normalized_net_flux_rms": 0.7599082373552288,
+          "max_normalized_cumulative_resource_flow": 0.00036399791037545093,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 8.997645295494294e-11,
+            "flux": 7.188647278500171e-09,
+            "flow": 4.4988068825801975e-11
+          }
+        },
+        {
+          "max_scaled_free": 0.0007698893100734949,
+          "max_scaled_retained": 0.0007713278720549965,
+          "max_scaled_bound": 7.998001716802428e-05,
+          "max_scaled_occupancy": 9.47545043544773e-05,
+          "normalized_net_flux_rms": 0.0008617799082884948,
+          "max_normalized_cumulative_resource_flow": 0.00038566387151696803,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 1.0471467248862608e-09,
+            "flux": 6.52448099145423e-09,
+            "flow": 5.235737177144983e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.0007612785295413005,
+          "max_scaled_retained": 0.0007626905756572455,
+          "max_scaled_bound": 7.844700645496002e-05,
+          "max_scaled_occupancy": 7.491000071851378e-05,
+          "normalized_net_flux_rms": 7.679801270497602e-05,
+          "max_normalized_cumulative_resource_flow": 0.0003813454328277288,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 1.3876430671189155e-09,
+            "flux": 3.663132696603698e-10,
+            "flow": 1.877017581364271e-09
+          }
+        }
+      ]
+    },
+    {
+      "case": "NDK__CHALLENGE_GDP_DOUBLE",
+      "initial_mode": "PROJECTED_PHYSICAL_CLOSURE",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "a953201077e73116504effcbaee47b21e45e44f32c09cdf3baa13d011c90a2a0",
+      "maximum_source_resource_extent_identity_residual": 3.74972955796693e-07,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 2.0344220135686753e-11,
+        "adenylate": 2.9529048758861304e-15,
+        "guanylate": 4.210623619319111e-15,
+        "represented_phosphate_groups": 3.1961570915017628e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 199.99999999999932,
+        "reduced": 199.99999997703654
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 63.63535761610994,
+        "reduced": 63.63535761610994
+      },
+      "maximum_reconstructed_source_stationarity_residual": 9.094947017729282e-13,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 3.0168527771365917e-05,
+          "max_scaled_retained": 2.8183489369553172e-05,
+          "max_scaled_bound": 0.00012134669782676916,
+          "max_scaled_occupancy": 0.00011455012950831486,
+          "normalized_net_flux_rms": 0.006713357660757818,
+          "max_normalized_cumulative_resource_flow": 1.4091758335152971e-05,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 6.25553298050363e-11,
+            "flux": 3.2760742530333755e-09,
+            "flow": 3.127743064545996e-11
+          }
+        },
+        {
+          "max_scaled_free": 0.0003040511013020364,
+          "max_scaled_retained": 0.0003040439494378688,
+          "max_scaled_bound": 0.0001102799112104005,
+          "max_scaled_occupancy": 0.00010409306763862572,
+          "normalized_net_flux_rms": 0.0037133992880668803,
+          "max_normalized_cumulative_resource_flow": 0.00015202211971825362,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 1.0409445394543583e-09,
+            "flux": 6.411477751328065e-09,
+            "flow": 5.204713460216226e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.00037034020872738437,
+          "max_scaled_retained": 0.00037075815204048014,
+          "max_scaled_bound": 2.6997773722170493e-05,
+          "max_scaled_occupancy": 2.7397186016242525e-05,
+          "normalized_net_flux_rms": 4.4396586022352796e-05,
+          "max_normalized_cumulative_resource_flow": 0.0001853793980856011,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 1.4748977150702558e-09,
+            "flux": 3.6248579599809333e-10,
+            "flow": 1.877017581364271e-09
+          }
+        }
+      ]
+    },
+    {
+      "case": "NDK__CHALLENGE_GDP_HALF",
+      "initial_mode": "ORIGINAL_NONEQUILIBRIUM",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "49d3b95fde1aeedcf1335cc2382fa0cfb70c9ed01b03b234aaec2d86e9f65a19",
+      "maximum_source_resource_extent_identity_residual": 8.370307114091702e-08,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 2.4204095517966883e-11,
+        "adenylate": 1.6536267304962332e-15,
+        "guanylate": 1.0343273078986242e-14,
+        "represented_phosphate_groups": 4.965220419127797e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 49.99999999999999,
+        "reduced": 49.99999999410787
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 0.0,
+        "reduced": 22.83520091160057
+      },
+      "maximum_reconstructed_source_stationarity_residual": 9.094947017729282e-13,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 0.010066225884083053,
+          "max_scaled_retained": 0.0005324178459684959,
+          "max_scaled_bound": 0.8720317228504885,
+          "max_scaled_occupancy": 0.9799913209054356,
+          "normalized_net_flux_rms": 0.2914668483435906,
+          "max_normalized_cumulative_resource_flow": 0.0005324178650447032,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 5.87630211157375e-11,
+            "flux": 2.515414597073556e-09,
+            "flow": 5.876219066891508e-11
+          }
+        },
+        {
+          "max_scaled_free": 0.000532438592439064,
+          "max_scaled_retained": 0.0005324852825174275,
+          "max_scaled_bound": 3.420710435637137e-05,
+          "max_scaled_occupancy": 3.626841427258517e-05,
+          "normalized_net_flux_rms": 0.0003364871929383682,
+          "max_normalized_cumulative_resource_flow": 0.0005324852612920816,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 7.626036335750541e-10,
+            "flux": 1.4108507313372236e-09,
+            "flow": 7.626026032880872e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.0004836964243777686,
+          "max_scaled_retained": 0.00048399711610947805,
+          "max_scaled_bound": 3.369702714331149e-05,
+          "max_scaled_occupancy": 3.203311059518654e-05,
+          "normalized_net_flux_rms": 3.3040759015314307e-05,
+          "max_normalized_cumulative_resource_flow": 0.00048399689281460214,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 8.910666338124429e-10,
+            "flux": 8.855478591440082e-11,
+            "flow": 1.6623154408534902e-09
+          }
+        }
+      ]
+    },
+    {
+      "case": "NDK__CHALLENGE_GDP_HALF",
+      "initial_mode": "PROJECTED_PHYSICAL_CLOSURE",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "8a7a362b78a04700eacbfbfeadf3b2de858a9f13f84f5ffcbc952c834f5cb64d",
+      "maximum_source_resource_extent_identity_residual": 8.370307114091702e-08,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 8.993299931919158e-12,
+        "adenylate": 2.126091510638014e-15,
+        "guanylate": 5.349968833958402e-15,
+        "represented_phosphate_groups": 1.9097001612029993e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 49.99999999999997,
+        "reduced": 49.99999999410787
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 22.83520091160057,
+        "reduced": 22.83520091160057
+      },
+      "maximum_reconstructed_source_stationarity_residual": 9.094947017729282e-13,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 1.4372101524031678e-05,
+          "max_scaled_retained": 1.351415343407325e-05,
+          "max_scaled_bound": 4.206848980244556e-05,
+          "max_scaled_occupancy": 3.973212640920012e-05,
+          "normalized_net_flux_rms": 0.001607343716600528,
+          "max_normalized_cumulative_resource_flow": 1.3514172510267208e-05,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 4.8732715640653626e-11,
+            "flux": 1.3822802431747049e-09,
+            "flow": 4.8732604618351164e-11
+          }
+        },
+        {
+          "max_scaled_free": 0.00015601453755849094,
+          "max_scaled_retained": 0.00015580603508531964,
+          "max_scaled_bound": 3.929969031214576e-05,
+          "max_scaled_occupancy": 3.711456859166616e-05,
+          "normalized_net_flux_rms": 0.0009480426319977075,
+          "max_normalized_cumulative_resource_flow": 0.0001558058117905148,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 7.508593569127697e-10,
+            "flux": 1.3602600346652709e-09,
+            "flow": 7.508594279670434e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.00018152481232505124,
+          "max_scaled_retained": 0.0001815340551878819,
+          "max_scaled_bound": 1.1330406480084912e-05,
+          "max_scaled_occupancy": 9.389748075985495e-06,
+          "normalized_net_flux_rms": 1.2990627586168896e-05,
+          "max_normalized_cumulative_resource_flow": 0.00018153394762279618,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 8.52077164381626e-10,
+            "flux": 8.884349328433022e-11,
+            "flow": 1.6623154408534902e-09
+          }
+        }
+      ]
+    },
+    {
+      "case": "NDK__POSITIVE_CHALLENGE",
+      "initial_mode": "ORIGINAL_NONEQUILIBRIUM",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "98994bda5c00b7e8a47877d93c4df6a4571453774c9ab4295068be70d1396705",
+      "maximum_source_resource_extent_identity_residual": 1.8301517457075533e-07,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 1.2709093037225708e-11,
+        "adenylate": 2.7166724858152404e-15,
+        "guanylate": 7.345918745089036e-15,
+        "represented_phosphate_groups": 4.179401240523116e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 100.00000000000003,
+        "reduced": 99.99999998808164
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 0.0,
+        "reduced": 39.2155993334526
+      },
+      "maximum_reconstructed_source_stationarity_residual": 6.821210263296962e-13,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 0.009856639742415468,
+          "max_scaled_retained": 0.0004536592011534424,
+          "max_scaled_bound": 0.8484468371317204,
+          "max_scaled_occupancy": 0.9812306016257999,
+          "normalized_net_flux_rms": 0.48674819762539867,
+          "max_normalized_cumulative_resource_flow": 0.0004536591923536237,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 6.002139230076864e-11,
+            "flux": 5.498185143688253e-09,
+            "flow": 6.00213767576463e-11
+          }
+        },
+        {
+          "max_scaled_free": 0.0004621785379869436,
+          "max_scaled_retained": 0.00046223361214330793,
+          "max_scaled_bound": 5.5619575510442346e-05,
+          "max_scaled_occupancy": 6.105649542589544e-05,
+          "normalized_net_flux_rms": 0.0003728890709349565,
+          "max_normalized_cumulative_resource_flow": 0.0004622337561758627,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 6.62685408769903e-10,
+            "flux": 2.766671749740858e-09,
+            "flow": 6.626845561186201e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.0004442610988633078,
+          "max_scaled_retained": 0.00044445798453125463,
+          "max_scaled_bound": 5.48333074554572e-05,
+          "max_scaled_occupancy": 5.221880008349839e-05,
+          "normalized_net_flux_rms": 5.363188004001359e-05,
+          "max_normalized_cumulative_resource_flow": 0.0004444579219594047,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 8.359376124644768e-10,
+            "flux": 1.8748301516733212e-10,
+            "flow": 1.833100640169505e-09
+          }
+        }
+      ]
+    },
+    {
+      "case": "NDK__POSITIVE_CHALLENGE",
+      "initial_mode": "PROJECTED_PHYSICAL_CLOSURE",
+      "reported_scientific_status": "SCENARIO_GATES_PASS",
+      "status": "INDEPENDENT_NUMERICAL_RECOMPUTATION_PASS",
+      "trajectory_sha256": "4433e2669d605904cecb445e2a3f38cfb91005974ec45ab3db8e7e651f9e4fed",
+      "maximum_source_resource_extent_identity_residual": 1.8301517457075533e-07,
+      "maximum_reported_metric_difference": 0.0,
+      "source_moiety_normalized_conservation_residuals": {
+        "enzyme": 1.2565380834593675e-11,
+        "adenylate": 3.5434858510633568e-15,
+        "guanylate": 8.22043288140916e-15,
+        "represented_phosphate_groups": 3.609482889542691e-15
+      },
+      "independently_recomputed_scientific_status": "SCENARIO_GATES_PASS",
+      "independently_recomputed_failed_gates": [],
+      "endpoint_net_conversion_extents_from_t0": {
+        "microscopic": 99.99999999999999,
+        "reduced": 99.99999998808164
+      },
+      "initial_net_catalytic_currents_from_canonical_laws": {
+        "microscopic": 39.2155993334526,
+        "reduced": 39.2155993334526
+      },
+      "maximum_reconstructed_source_stationarity_residual": 6.821210263296962e-13,
+      "recomputed_windows": [
+        {
+          "max_scaled_free": 1.5352099615171256e-05,
+          "max_scaled_retained": 1.413571981373707e-05,
+          "max_scaled_bound": 7.324418924290229e-05,
+          "max_scaled_occupancy": 6.915964069517974e-05,
+          "normalized_net_flux_rms": 0.003365401981436995,
+          "max_normalized_cumulative_resource_flow": 1.4135711013405493e-05,
+          "window": [
+            0,
+            0.05
+          ],
+          "uncertainty": {
+            "concentration": 5.512760026249453e-11,
+            "flux": 2.0008715781974096e-09,
+            "flow": 5.51276757576602e-11
+          }
+        },
+        {
+          "max_scaled_free": 0.0001593109529400749,
+          "max_scaled_retained": 0.0001591043839439976,
+          "max_scaled_bound": 6.757665564281911e-05,
+          "max_scaled_occupancy": 6.380295003765518e-05,
+          "normalized_net_flux_rms": 0.0019379890299841757,
+          "max_normalized_cumulative_resource_flow": 0.00015910432137122398,
+          "window": [
+            0.05,
+            1
+          ],
+          "uncertainty": {
+            "concentration": 7.468420903933292e-10,
+            "flux": 2.776931964872095e-09,
+            "flow": 7.468422680290132e-10
+          }
+        },
+        {
+          "max_scaled_free": 0.00018927676157780128,
+          "max_scaled_retained": 0.00018928690441299522,
+          "max_scaled_bound": 1.8165193947310912e-05,
+          "max_scaled_occupancy": 1.7039004797535383e-05,
+          "normalized_net_flux_rms": 2.5352031213580017e-05,
+          "max_normalized_cumulative_resource_flow": 0.00018928689369374752,
+          "window": [
+            1,
+            1000
+          ],
+          "uncertainty": {
+            "concentration": 8.413522323280631e-10,
+            "flux": 1.7066937575310522e-10,
+            "flow": 1.833100640169505e-09
+          }
+        }
+      ]
+    }
+  ],
+  "status": "INDEPENDENT_SYMBOLIC_AND_NUMERICAL_COORDINATE_CHECK_PASS",
+  "scope": "Additive engineering coordinate verification, preserving original 84 trajectory checks and seven raw NDK failure paths; no scientific promotion or full-model acceptance.",
+  "numerical_directory": "results/energy_cycles_v1/numerical_ndk_coordinate_v2",
+  "source_commit": "60abf1e371e90f70474bc98174035726cc68f064",
+  "source_hashes": {
+    "docs/reduction/reaction_index.csv": "7a1f3b9936c1d1f5266776e62af886fadc39e6caedad72d098c2fbe9b881cc9c",
+    "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+    "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml": "03d1413719847c4e13890b5f7ccf32713a5694f37f34b0c188e22fd9087379f6",
+    "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+    "references/PNAS2017_Matsuura/raw/SBML_files.zip": "24f0748c883eb6dcb748c20de7fdb2c8e495397f4b8ffb6c82246a03f0a93b03",
+    "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52",
+    "references/PNAS2017_Matsuura/raw/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+  },
+  "environment": {
+    "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4",
+    "sympy": "1.13.1",
+    "platform": "Windows-11-10.0.22631-SP0"
+  },
+  "command": [
+    "D:\\Code\\Anaconda\\python.exe",
+    "C:\\Users\\sean\\.codex\\worktrees\\energy-cycles-v1\\GUV\\scripts\\energy_cycles\\ndk_coordinate_verify.py",
+    "--numerical-dir",
+    "results\\energy_cycles_v1\\numerical_ndk_coordinate_v2",
+    "--output",
+    "results\\energy_cycles_v1\\ndk_coordinate_v2_verification.json",
+    "--addendum",
+    "docs\\reduction\\energy_cycles\\ndk_numerical_repair_preregistration_v2.json"
+  ],
+  "independent_parser_sha256": "b4abbf9cec0265288d49ca3e1dbded1300c320e529de83b508c558b9a8f7c789",
+  "engineering_addendum_sha256": "63fd5e552b09f9d5694cc8ca86e8afc0bb3c84f3822e36678df86d04299717fd",
+  "engineering_addendum_path": "docs/reduction/energy_cycles/ndk_numerical_repair_preregistration_v2.json"
+}

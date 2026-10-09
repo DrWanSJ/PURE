@@ -1,0 +1,27 @@
+{
+  "frozen_at_utc": "2026-10-09T02:42:53.463822+00:00",
+  "kind": "ADDITIVE_ENGINEERING_SOLVER_COORDINATE_REPAIR",
+  "original_preregistration_sha256": "fee6ae44f33d28a98ada5949e72d97ccf61f17e7111d47e22ad071ccc6ccfa5b",
+  "unchanged": "Source/model/effective rate laws, microscopic parameters, initial conditions, all54scenarios, observation maps, scales,362grid,tolerances,gates,windows and t=0 cumulative flows. No new scientific rate or acceptance claim.",
+  "reason": "Seven Radau internal nonlinear trial states entered an invalid retained-inventory domain; no accepted negative trajectory was observed.",
+  "coordinate": "L0=min(TATP0,TGDP0),R=L0 exp(-q),extent=L0-R; source-equivalent rational hazard gives qdot=v/R continuously atdepletion. No clipping or parameter refitting. Original catalytic extent quadratures retained independently.",
+  "rerun_case_ids": [
+    "NDK__CHALLENGE_ATP_DOUBLE",
+    "NDK__CHALLENGE_ATP_HALF",
+    "NDK__CHALLENGE_CATALYST_DOUBLE",
+    "NDK__CHALLENGE_CATALYST_HALF",
+    "NDK__CHALLENGE_GDP_DOUBLE",
+    "NDK__CHALLENGE_GDP_HALF",
+    "NDK__POSITIVE_CHALLENGE"
+  ],
+  "implementation_sha256": {
+    "scripts/energy_cycles/ndk_depletion_coordinate.py": "e2dda344d6121ae62abc92447f50bb877be9442e8f37709164c76ec1d9e62f2c",
+    "scripts/energy_cycles/ndk_coordinate_rerun.py": "76eea4fd464906fc2cffe49bdc8884835f05da984a6d60e2ab0481001938adf2"
+  },
+  "native_failures": "Preserve all original numerical/ failure files and their diagnosis hashes. New outputs numerical_ndk_coordinate only.",
+  "no_repair_comparisons_executed_before_freeze": true,
+  "commands": [
+    "python scripts/energy_cycles/ndk_coordinate_rerun.py"
+  ],
+  "scientific_status": "KINETIC_CANDIDATE unchanged; corner/fullstartup evidence not altered"
+}
