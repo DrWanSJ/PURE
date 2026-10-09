@@ -25,14 +25,16 @@ The frozen R8 verifier asserts a local branch label. It does not fetch a same-na
 git -C D:/Code/GUV worktree add -b codex/r8-ck-startup-layer-20261008 D:/Code/GUV-r8-verifier refs/tags/archive/branches/20261009/codex/r8-ck-startup-layer-20261008
 ```
 
-The frozen R6 verifiers assert codex/r6-ck-validation-20261007. Its historical branch tip is pre-R6; use the already published R6 preservation commit for the complete evidence:
+The frozen R6 verifiers assert codex/r6-ck-validation-20261007. They also require the original execution-parent HEAD 1181ab2. Its archived branch tip is pre-R6; preserve that HEAD and overlay the 479 originally untracked files from the already published preservation commit:
 
 ```powershell
 git -C D:/Code/GUV merge-base --is-ancestor 9282853a24d716e3021ea85123e9ba1e0bb4c6fc refs/tags/archive/branches/20261009/codex/r8-ck-startup-layer-20261008
-git -C D:/Code/GUV worktree add -b codex/r6-ck-validation-20261007 D:/Code/GUV-r6-verifier 9282853a24d716e3021ea85123e9ba1e0bb4c6fc
+git -C D:/Code/GUV worktree add -b codex/r6-ck-validation-20261007 D:/Code/GUV-r6-verifier refs/tags/archive/branches/20261009/codex/r6-ck-validation-20261007
+git -C D:/Code/GUV archive --format=zip --output=D:/Code/GUV-r6-overlay.zip 9282853a24d716e3021ea85123e9ba1e0bb4c6fc "docs/reduction/r6*" "scripts/*r6*.py" results/reduction/r6_ck_validation
+Expand-Archive -LiteralPath D:/Code/GUV-r6-overlay.zip -DestinationPath D:/Code/GUV-r6-verifier
 ```
 
-These recipes restore local labels and bytes without moving the archive tags or modifying scientific verifiers. On Sean's existing machine those local branches/worktrees already exist: reuse them, do not run branch-creation commands over existing names. Check each historical verifier's execution-parent and environment contract before any execution; checkout tests do not establish numerical equivalence. Some old verifier writes would update evidence, so no verifier or ODE solve is run merely to test Git recovery.
+The overlay paths are absent from the parent and must remain untracked, with HEAD/index still at 1181ab2; verify the 479 paths against the archived synchronization inventory. A direct checkout of 9282853 is useful for evidence inspection, but does not recreate the original R6 execution HEAD. These recipes restore local labels and bytes without moving archive tags or modifying scientific verifiers. Frozen R6 checks also bind historical absolute paths, external request bytes and the original execution environment; restoring Git state does not make them portable automatically or claim a fresh numerical verification. On Sean's existing machine those local branches/worktrees already exist: reuse them, do not run branch-creation commands over existing names. Check each historical verifier's execution-parent and environment contract before any execution; checkout tests do not establish numerical equivalence. Some old verifier writes would update evidence, so no verifier or ODE solve is run merely to test Git recovery.
 
 ## All sixteen archives
 
@@ -165,3 +167,7 @@ Original SHA: `18dfddb7fd888d08ca21ea832fcab04b6739c359`. Scope: `REVIEWED_FUNCT
 ```powershell
 git -C D:/Code/GUV worktree add --detach D:/Code/GUV-archive-16 refs/tags/archive/branches/20261009/research/reaction-level-annotation-v0-20260928
 ```
+
+## Observed recovery verification
+
+Six complete independent checkouts passed: topology, energy, archived R8, simulation, synchronization audit, and exact original R6 execution parent plus its 479 raw-byte overlay files. All 16 annotations and peeled heads were fetched and verified in the independent repository. R6 476 manifest entries, energy 299 outputs plus seven source inputs, and the R8 manifest were hash-verified. The original GitHub filtered-clone metadata fetch succeeded, but its bulk lazy-blob checkout did not finish; that read-only network helper was cancelled and the partial checkout retained. Completed recovery tests used a fresh standalone clone of the verified recovery bundle, then fetched current origin refs/tags from GitHub. No original checkout was used as a shared object/index donor. This is verified offline-plus-remote-reference recovery, not a claim that the first bulk network download succeeded.
