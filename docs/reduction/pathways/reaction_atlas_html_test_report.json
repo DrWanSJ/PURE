@@ -1495,7 +1495,7 @@
           "paths": 20
         },
         "resource_entries": 0,
-        "screenshot_directory": "C:\\Users\\sean\\.codex\\visualizations\\2026\\10\\09\\01a11fe1-75f1-7de3-86c6-8e4635196995\\pathway-cards-v2-accepted",
+        "screenshot_directory": "C:\\Users\\sean\\.codex\\visualizations\\2026\\10\\09\\01a11fe1-75f1-7de3-86c6-8e4635196995\\pathway-cards-v2-release",
         "status": "PASS",
         "unexecuted_required_browser_checks": [],
         "zoom_method": "Native Chromium Settings / Page zoom / 200%, disposable profile"
@@ -1818,7 +1818,7 @@
   "reproducibility": {
     "independent_runs": 2,
     "matches_deliverable_bytes": true,
-    "sha256": "c884c33654c22ced9a700866a1c9f0e4ded362c4960b565bc65fdfb9a8a4c960",
+    "sha256": "fbab6959b9216a84398db633e38b43f7676fa52ee66efde228790e4ee6c0d515",
     "status": "PASS"
   },
   "schema_version": 1,

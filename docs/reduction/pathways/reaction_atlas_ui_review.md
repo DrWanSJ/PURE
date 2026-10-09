@@ -84,7 +84,7 @@ the builder's data adapter nor `template.html` needed modification.
 
 Each card retains its numbered vertical connection, full original ID(s) and
 the current direction's reviewed Level-C labels. It has **one complete source
-equation**, a short Chinese mechanism description, the actual directed path
+equation**, one short Chinese mechanism sentence, the actual directed path
 step, independent directional reference markers, “查看竞争出口 (N)” and
 “技术详情”. The redundant carrier-before/after equation, other-participant lists,
 empty sets, RFAM and nested duplicate reverse equation were removed from the
@@ -142,7 +142,7 @@ The current machine-readable record is `reaction_atlas_html_test_report.json`:
 | Current check | Result | Actual executed evidence |
 |---|---|---|
 | Source / Phase A / algebra / topology | PASS | Existing independent Gates A–D, plus equality of the entire previous scientific payload and all 20 previous path sequences/nets. |
-| All representative cards | PASS | Actual DOM inspected for all 20 paths / 94 directed step occurrences: one full source equation, correct pairing, original labels, no projection lists, correct current direction, activity and source outlet count. |
+| All representative cards | PASS | Actual DOM inspected for all 20 paths / 94 directed step occurrences: one full source equation and one mechanism sentence, correct pairing, original labels, no projection lists, correct current direction, activity and source outlet count. |
 | Inspector and graph interactions | PASS | 0126 projection/other-participant values from data, carrier state entrance, independent 0126 / 0131 / 0197 / 0198 details and parameters; five parallel outlets, disabled sink, 15 sink inlets, inverse returns, rejoin, search, copy and filter regression. |
 | Exact pair decisions / negative controls | PASS | All 968 decisions independently compared with fresh SBML; 290 unique full-side reverse pairs exist in the source. Rejected almost-equal coefficients, catalyst/net-only matches, duplicate inverse and forward partners, missing/nonreciprocal pointers and absent partners. A real one-way degradation card remains single-arrow. |
 | Chrome / Edge offline browser checks | PASS | 222 named checks; Chrome 154.0.8037.98 full regression and Edge 154.0.4258.53 core compatibility, each opening all 968 source directions; both check all 20 paths / 94 cards. No external requests or blocking page/console errors. |
@@ -155,11 +155,11 @@ No required test was unexecuted. Firefox/Safari compatibility and native Edge
 zoom were not separately tested; native 200% zoom was tested in Chrome.
 
 Delivered HTML SHA-256:
-`c884c33654c22ced9a700866a1c9f0e4ded362c4960b565bc65fdfb9a8a4c960`.
+`fbab6959b9216a84398db633e38b43f7676fa52ee66efde228790e4ee6c0d515`.
 
 Actual screenshots, including the numbered GlyRS-P01 first card, parallel
 branches, narrow complex cards and native zoom complex cards, are in:
-`C:\Users\sean\.codex\visualizations\2026\10\09\01a11fe1-75f1-7de3-86c6-8e4635196995\pathway-cards-v2-accepted`.
+`C:\Users\sean\.codex\visualizations\2026\10\09\01a11fe1-75f1-7de3-86c6-8e4635196995\pathway-cards-v2-release`.
 Screenshots are UI review aids; they supply no scientific approval.
 An intermediate Playwright document screenshot after native zoom/scroll was
 blank despite the card being visible in the actual viewport. Those intermediate

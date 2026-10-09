@@ -453,6 +453,7 @@ def run_browser(html_path, data, source, screenshot_dir=None):
                         ("另外必须消耗", "另外释放", "∅", "RFAM")), "No redundant projection or audit fields")
                 require(card["tags"] == data["reactions"][rid]["level_c"], "Reviewed current-direction Level-C retained")
                 require(card["description"] and card["technical"] == ["技术详情"], "Mechanism explanation and technical action")
+                require(card["description"].count("。") == 1, "One concise mechanism sentence per card")
                 direction = "→" if rid == ids[0] else "←"
                 require(card["direction"] == "当前路径：" + direction + " " + rid, "Actual path direction, independent of pair orientation")
                 if paired:

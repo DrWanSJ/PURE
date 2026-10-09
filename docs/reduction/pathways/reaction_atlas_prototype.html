@@ -162,10 +162,10 @@ dialog{width:min(850px,calc(100vw - 28px));max-height:86vh;border:1px solid #bbc
     const inputs=Object.keys(t.other_reactants),outputs=Object.keys(t.other_products);
     if(r.mechanism==="HETERODIMER_ASSOCIATION" && inputs.length && !outputs.length){
       const carrier=t.carrier_before.length===1 && t.carrier_before[0]===t.enzyme?`游离 ${t.enzyme} `:"酶结合态复合物";
-      return `${plainSide(t.other_reactants)} 与${carrier}结合形成复合物。${bidirectional?"逆向通道对应复合物解离。":""}`;
+      return `${plainSide(t.other_reactants)} 与${carrier}结合形成复合物${bidirectional?"；逆向通道对应复合物解离。":"。"}`;
     }
     if(r.mechanism==="DISSOCIATION" && outputs.length && !inputs.length)
-      return `酶结合态复合物释放 ${plainSide(t.other_products)}。${bidirectional?"逆向通道对应该组分重新结合。":""}`;
+      return `酶结合态复合物释放 ${plainSide(t.other_products)}${bidirectional?"；逆向通道对应该组分重新结合。":"。"}`;
     if(r.mechanism==="STATE_TRANSITION" && r.level_c.includes("RS_activation"))
       return "酶结合态在 ATP 装配状态与 aminoacyl-AMP / PPi 中间体之间转换。";
     if(r.mechanism==="STATE_TRANSITION" && r.level_c.includes("RS_charging"))
