@@ -1,0 +1,122 @@
+{
+  "authority": "USER_SUPPLIED_RESEARCHER_REVIEW",
+  "b0_1_snapshot": {
+    "files_preserved": 17,
+    "path": "docs/reduction/pathways/phase_b0_b0_1_pre_b0_2_2026-10-09.zip",
+    "sha256": "e2f57abf4086fccd8f29042411b6f1a0076a7212ec7a7ad8f8112c65ef27c057"
+  },
+  "commit_push_authorized": false,
+  "decisions": [
+    {
+      "id": 1,
+      "item": "W1 independent EF-Tu/ribosome interface",
+      "scope": "Explicit external supply and binding interface; complete elongation not required",
+      "user_judgment": "接受"
+    },
+    {
+      "id": 2,
+      "item": "MTF two binding entries",
+      "scope": "0418/0422 and 0420/0424 source-supported, correct shared rejoin",
+      "user_judgment": "通过"
+    },
+    {
+      "id": 3,
+      "item": "MTF formylation, product release and enzyme recovery",
+      "scope": "0426/0428/0434 accepted; identify FD from Matsuura 2017 before final signoff",
+      "user_judgment": "通过，需修订文档"
+    },
+    {
+      "id": 4,
+      "item": "W3 IF2 interface",
+      "scope": "0449 uses IF2_GTP and fMettRNAfMetCAU; no completed initiation; 0449/0450 both reference-enabled",
+      "user_judgment": "建议通过"
+    },
+    {
+      "id": 5,
+      "item": "Cross-complex molecular identity",
+      "scope": "Accept source-supported exact species handoffs; full complex composition remains INFERRED",
+      "user_judgment": "限定接受"
+    }
+  ],
+  "document_correction_condition": {
+    "required_identity": "10-formyltetrahydrofolate",
+    "required_source": "Matsuura et al. 2017, DOI 10.1073/pnas.1615351114, SI Results, Model construction for formylation of initiator tRNA",
+    "species_id": "FD",
+    "status": "FD_IDENTITY_CONFIRMED_AND_DOCUMENTED_REVALIDATION_RESULT_IN_EXECUTION_REPORT"
+  },
+  "engineering_review_basis": "Researcher explicitly relies on Codex executed reports and has not independently rerun the unpublished B0 code",
+  "formal_signoff_status": "PENDING_FINAL_RESEARCHER_CONFIRMATION",
+  "future_b1_constraints": {
+    "competing_source_reactions": [
+      "re0000000420",
+      "re0000000422",
+      "re0000000288"
+    ],
+    "implementation_authorized": false,
+    "kinetic_validation_status": "NOT_ESTABLISHED_BY_B0",
+    "rule": "All consume the same original species pool. Do not duplicate Met-tRNA supply across independently assembled modules or simply sum isolated B0 nets.",
+    "shared_substrate_species": "MettRNAfMetCAU"
+  },
+  "if2_direction_constraint": {
+    "forward_id": "re0000000449",
+    "reverse_id": "re0000000450",
+    "rule": "Preserve both directions; nonzero forward/reverse reference parameters do not establish equilibrium or irreversibility.",
+    "user_confirmed_forward_k1": "40",
+    "user_confirmed_reverse_k1": "40"
+  },
+  "overall_user_judgment": "B0-2 在限定的源反应化学计量、催化剂回收及多载体结构交接意义上，没有发现阻断性科学错误，可以条件通过。",
+  "phase": "B0-2",
+  "phase_b1_authorized": false,
+  "review_date": "2026-10-09",
+  "schema_version": 1,
+  "scientific_status": "B0_2_CONDITIONALLY_ACCEPTED",
+  "sources": {
+    "access_failures": [
+      {
+        "error": "All scraping engines failed to retrieve content",
+        "resolved_by": "Publisher metadata and abstract successfully read",
+        "tool": "Firecrawl",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42206977/"
+      }
+    ],
+    "eftu_2026": {
+      "authors": [
+        "Ban, Shunnosuke",
+        "Himeoka, Yusuke",
+        "Kagawa, Ako",
+        "Shimizu, Yoshihiro",
+        "Matsuura, Tomoaki",
+        "Furusawa, Chikara"
+      ],
+      "coverage": "PUBLISHER_METADATA_AND_ABSTRACT_ONLY_FULL_TEXT_NOT_READ",
+      "doi": "10.1021/acssynbio.6c00333",
+      "interpretation": "The published abstract attributes high-EF-Tu suppression to sequestration of unformylated initiator Met-tRNA in EF-Tu/GTP complexes; this mechanism is supported by model analysis and an experimentally confirmed tRNAfMet/MTF supplementation prediction. It supports retaining competition; it does not validate this repository's kinetic predictions.",
+      "issue": "6",
+      "issue_date": "2026-06-19",
+      "journal": "ACS Synthetic Biology",
+      "pages": "2675–2683",
+      "published_online": "2026-05-28",
+      "retrieval_date": "2026-10-09",
+      "retrieval_tool": "Firecrawl",
+      "short_quote": "excess EF-Tu sequesters the initiator tRNA",
+      "title": "Elucidating the Bell-Shaped Dependence of Protein Translation Activity on EF-Tu Concentration in a Reconstituted Cell-Free System Using a Mechanistic Model",
+      "url": "https://pubs.acs.org/asbcd6/article/15/6/2675/5161912/Elucidating-the-Bell-Shaped-Dependence-of-Protein",
+      "volume": "15"
+    },
+    "matsuura": {
+      "dataset_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5338406/#d35e1396",
+      "definition": "10-formyltetrahydrofolate",
+      "doi": "10.1073/pnas.1615351114",
+      "frozen_pdf_path": "references/PNAS2017_Matsuura/raw/matsuura-et-al-2017-reaction-dynamics-analysis-of-a-reconstituted-escherichia-coli-protein-translation-system-by.pdf",
+      "frozen_pdf_sha256": "e340ba829f87121e723059aebecc56c342c37c2cc4687692d1447f16b38f2a4e",
+      "identity_scope": "Published FD biochemical identity; no new formula, protonation or ionic parameters and no global complex-composition certificate",
+      "retrieval_date": "2026-10-09",
+      "retrieval_tool": "Firecrawl",
+      "sbml_species_id": "FD",
+      "section": "SI Results — Model Construction — Model construction for formylation of initiator tRNA",
+      "short_quote": "transfer of a formyl group of 10-formyltetrahydrofolate (FD)",
+      "source_status": "ORIGINAL_ARTICLE_PLUS_INLINE_SI_TEXT_READ",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5338406/"
+    }
+  }
+}

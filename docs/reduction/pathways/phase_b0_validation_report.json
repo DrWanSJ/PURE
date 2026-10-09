@@ -1,0 +1,424 @@
+{
+  "automated_b0_1_scientific_status": "PENDING_HUMAN_REVIEW",
+  "commands": [
+    {
+      "command": "D:\\Code\\Anaconda\\python.exe C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b0\\build_phase_b0_witnesses.py",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\"execution_status\": \"BUILT\", \"witnesses\": {\"W1\": 10, \"W2\": 13, \"W3\": 14, \"W2-MTF\": 5, \"W2-ALT\": 13}, \"scientific_status\": \"PENDING_HUMAN_REVIEW\"}\n"
+    },
+    {
+      "command": "D:\\Code\\Anaconda\\python.exe C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b0\\verify_phase_b0_witnesses.py",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\"status\": \"PASS\", \"witness_events\": {\"W1\": 10, \"W2\": 13, \"W3\": 14, \"W2-MTF\": 5, \"W2-ALT\": 13}, \"error\": null}\n"
+    },
+    {
+      "command": "D:\\Code\\Anaconda\\python.exe C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b0\\test_phase_b0_negative_controls.py",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\"status\": \"PASS\", \"required_controls_run\": 12, \"required_controls_passed\": 12, \"required_controls_failed\": 0, \"controls_run\": 18, \"controls_passed\": 18, \"controls_failed\": 0}\n"
+    },
+    {
+      "command": "D:\\Code\\Anaconda\\python.exe C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b0\\verify_phase_b0_witnesses.py",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\"status\": \"PASS\", \"witness_events\": {\"W1\": 10, \"W2\": 13, \"W3\": 14, \"W2-MTF\": 5, \"W2-ALT\": 13}, \"error\": null}\n"
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "engineering_status": "PASS",
+  "execution_status": "COMPLETED",
+  "fd_document_correction_status": "DOCUMENTED_AND_REVALIDATED",
+  "formal_signoff_status": "PENDING_FINAL_RESEARCHER_CONFIRMATION",
+  "gates": [
+    {
+      "command": "python scripts/pathways/phase_b0/verify_phase_b0_witnesses.py",
+      "evidence_file": "phase_b0_independent_verification.json",
+      "gate": "A",
+      "name": "Source Integrity",
+      "status": "PASS"
+    },
+    {
+      "command": "python scripts/pathways/phase_b0/verify_phase_b0_witnesses.py",
+      "evidence_file": "phase_b0_independent_verification.json",
+      "gate": "B",
+      "name": "W1 Structural Handoff",
+      "status": "PASS"
+    },
+    {
+      "command": "python scripts/pathways/phase_b0/verify_phase_b0_witnesses.py",
+      "evidence_file": "phase_b0_independent_verification.json",
+      "gate": "C",
+      "name": "W2 Multi-Precursor / Alternative Entry",
+      "status": "PASS"
+    },
+    {
+      "command": "python scripts/pathways/phase_b0/verify_phase_b0_witnesses.py",
+      "evidence_file": "phase_b0_independent_verification.json",
+      "gate": "D",
+      "name": "W3 Formylated-tRNA Handoff",
+      "status": "PASS"
+    },
+    {
+      "command": "python scripts/pathways/phase_b0/verify_phase_b0_witnesses.py",
+      "evidence_file": "phase_b0_independent_verification.json",
+      "gate": "E",
+      "name": "Net Stoichiometry",
+      "status": "PASS"
+    },
+    {
+      "command": "python scripts/pathways/phase_b0/test_phase_b0_negative_controls.py",
+      "evidence_file": "phase_b0_negative_controls.json",
+      "gate": "F",
+      "name": "Negative Controls",
+      "status": "PASS"
+    },
+    {
+      "command": "python scripts/pathways/verify_pathway_atlas.py; python scripts/pathways/phase_b0/run_phase_b0_validation.py",
+      "evidence_file": "phase_b0_phase_a_regression.json; phase_b0_html_regression.json",
+      "gate": "G",
+      "name": "Phase A Regression / Preservation",
+      "status": "PASS"
+    }
+  ],
+  "html_regression_status": "PASS",
+  "negative_control_status": "PASS",
+  "negative_controls": {
+    "canonical_mutation": false,
+    "controls_failed": 0,
+    "controls_passed": 18,
+    "controls_run": 18,
+    "required_controls_failed": 0,
+    "required_controls_passed": 12,
+    "required_controls_run": 12,
+    "scientific_status": "PENDING_HUMAN_REVIEW",
+    "status": "PASS"
+  },
+  "phase": "B0-2_DOCUMENT_CORRECTION_AND_REVALIDATION",
+  "phase_a_regression_status": "PASS",
+  "phase_b1_authorized": false,
+  "positive_verification": {
+    "contract": {
+      "alternative_rejoin_status": "PASS",
+      "appendix_equations_checked": 297,
+      "expectation_nets_checked": 5,
+      "fd_identity_context": "ORIGINAL_ARTICLE_CITATION_RECORDED_NOT_A_GLOBAL_COMPOSITION_CERTIFICATE",
+      "if2_reference_enabled_directions": 2,
+      "independent_precursor_joins_checked": 2,
+      "researcher_review_authority": "USER_SUPPLIED_RESEARCHER_REVIEW",
+      "shared_met_trna_source_consumers": [
+        "re0000000288",
+        "re0000000420",
+        "re0000000422"
+      ]
+    },
+    "phase": "B0-1",
+    "phase_b1_authorized": false,
+    "preservation": {
+      "changed_files": [],
+      "existing_tracked_files_unchanged": 2342,
+      "starting_head": "14c61055775421e9f30342507cc4fffdceed1607",
+      "status": "PASS"
+    },
+    "scientific_status": "PENDING_HUMAN_REVIEW",
+    "source_integrity": {
+      "approved_hash_authority": "Published Phase A protocol/graph, independently pinned in verifier",
+      "directed_reactions": 968,
+      "hashes": {
+        "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+        "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52"
+      },
+      "re0000000414_PO4": "2",
+      "species": 241,
+      "weighted_petri_arcs": 3854,
+      "zero_author_parameters": 485
+    },
+    "structural_verification_status": "PASS",
+    "witnesses": {
+      "W1": {
+        "carrier_lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "catalysts_recovered": [
+          "GlyRS"
+        ],
+        "classification": "INTERFACE_ONLY",
+        "composite_identity_status": "HUMAN_REVIEW_REQUIRED",
+        "event_dag_edges": 9,
+        "events_checked": 10,
+        "exact_net": {
+          "AMP": "1",
+          "ATP": "-1",
+          "EFTu_GTP": "-1",
+          "Gly": "-1",
+          "PPi": "1",
+          "elRS70SAGGU0002_fMet": "-1",
+          "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1",
+          "tRNAGlyGCC": "-1"
+        },
+        "petri_status": "PASS",
+        "reference_disabled_directions": 0,
+        "reference_enabled_directions": 10,
+        "resource_net": {
+          "ADP": "0",
+          "AMP": "1",
+          "ATP": "-1",
+          "FD": "0",
+          "GDP": "0",
+          "GTP": "0",
+          "Gly": "-1",
+          "GlytRNAGlyGCC": "0",
+          "Met": "0",
+          "MettRNAfMetCAU": "0",
+          "PO4": "0",
+          "PPi": "1",
+          "THF": "0",
+          "fMettRNAfMetCAU": "0",
+          "tRNAGlyGCC": "-1",
+          "tRNAfMetCAU": "0"
+        },
+        "source_reaction_status": "SOURCE_REACTION_VERIFIED",
+        "status": "PASS",
+        "structural_status": "STRUCTURAL_HANDOFF_WITNESS"
+      },
+      "W2": {
+        "carrier_lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "catalysts_recovered": [
+          "MetRS",
+          "MTF"
+        ],
+        "classification": "STRUCTURAL_HANDOFF_WITNESS",
+        "composite_identity_status": "HUMAN_REVIEW_REQUIRED",
+        "event_dag_edges": 12,
+        "events_checked": 13,
+        "exact_net": {
+          "AMP": "1",
+          "ATP": "-1",
+          "FD": "-1",
+          "Met": "-1",
+          "PPi": "1",
+          "THF": "1",
+          "fMettRNAfMetCAU": "1",
+          "tRNAfMetCAU": "-1"
+        },
+        "petri_status": "PASS",
+        "reference_disabled_directions": 0,
+        "reference_enabled_directions": 13,
+        "resource_net": {
+          "ADP": "0",
+          "AMP": "1",
+          "ATP": "-1",
+          "FD": "-1",
+          "GDP": "0",
+          "GTP": "0",
+          "Gly": "0",
+          "GlytRNAGlyGCC": "0",
+          "Met": "-1",
+          "MettRNAfMetCAU": "0",
+          "PO4": "0",
+          "PPi": "1",
+          "THF": "1",
+          "fMettRNAfMetCAU": "1",
+          "tRNAGlyGCC": "0",
+          "tRNAfMetCAU": "-1"
+        },
+        "source_reaction_status": "SOURCE_REACTION_VERIFIED",
+        "status": "PASS",
+        "structural_status": "STRUCTURAL_HANDOFF_WITNESS"
+      },
+      "W2-ALT": {
+        "carrier_lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "catalysts_recovered": [
+          "MetRS",
+          "MTF"
+        ],
+        "classification": "STRUCTURAL_HANDOFF_WITNESS",
+        "composite_identity_status": "HUMAN_REVIEW_REQUIRED",
+        "event_dag_edges": 12,
+        "events_checked": 13,
+        "exact_net": {
+          "AMP": "1",
+          "ATP": "-1",
+          "FD": "-1",
+          "Met": "-1",
+          "PPi": "1",
+          "THF": "1",
+          "fMettRNAfMetCAU": "1",
+          "tRNAfMetCAU": "-1"
+        },
+        "petri_status": "PASS",
+        "reference_disabled_directions": 0,
+        "reference_enabled_directions": 13,
+        "resource_net": {
+          "ADP": "0",
+          "AMP": "1",
+          "ATP": "-1",
+          "FD": "-1",
+          "GDP": "0",
+          "GTP": "0",
+          "Gly": "0",
+          "GlytRNAGlyGCC": "0",
+          "Met": "-1",
+          "MettRNAfMetCAU": "0",
+          "PO4": "0",
+          "PPi": "1",
+          "THF": "1",
+          "fMettRNAfMetCAU": "1",
+          "tRNAGlyGCC": "0",
+          "tRNAfMetCAU": "-1"
+        },
+        "source_reaction_status": "SOURCE_REACTION_VERIFIED",
+        "status": "PASS",
+        "structural_status": "STRUCTURAL_HANDOFF_WITNESS"
+      },
+      "W2-MTF": {
+        "carrier_lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "catalysts_recovered": [
+          "MTF"
+        ],
+        "classification": "COMPLETE_CATALYTIC_CYCLE",
+        "composite_identity_status": "HUMAN_REVIEW_REQUIRED",
+        "event_dag_edges": 4,
+        "events_checked": 5,
+        "exact_net": {
+          "FD": "-1",
+          "MettRNAfMetCAU": "-1",
+          "THF": "1",
+          "fMettRNAfMetCAU": "1"
+        },
+        "petri_status": "PASS",
+        "reference_disabled_directions": 0,
+        "reference_enabled_directions": 5,
+        "resource_net": {
+          "ADP": "0",
+          "AMP": "0",
+          "ATP": "0",
+          "FD": "-1",
+          "GDP": "0",
+          "GTP": "0",
+          "Gly": "0",
+          "GlytRNAGlyGCC": "0",
+          "Met": "0",
+          "MettRNAfMetCAU": "-1",
+          "PO4": "0",
+          "PPi": "0",
+          "THF": "1",
+          "fMettRNAfMetCAU": "1",
+          "tRNAGlyGCC": "0",
+          "tRNAfMetCAU": "0"
+        },
+        "source_reaction_status": "SOURCE_REACTION_VERIFIED",
+        "status": "PASS",
+        "structural_status": "STRUCTURAL_HANDOFF_WITNESS"
+      },
+      "W3": {
+        "carrier_lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "catalysts_recovered": [
+          "MetRS",
+          "MTF"
+        ],
+        "classification": "INTERFACE_ONLY",
+        "composite_identity_status": "HUMAN_REVIEW_REQUIRED",
+        "event_dag_edges": 13,
+        "events_checked": 14,
+        "exact_net": {
+          "AMP": "1",
+          "ATP": "-1",
+          "FD": "-1",
+          "IF2_GTP": "-1",
+          "IF2_GTP_fMettRNAfMetCAU": "1",
+          "Met": "-1",
+          "PPi": "1",
+          "THF": "1",
+          "tRNAfMetCAU": "-1"
+        },
+        "petri_status": "PASS",
+        "reference_disabled_directions": 0,
+        "reference_enabled_directions": 14,
+        "resource_net": {
+          "ADP": "0",
+          "AMP": "1",
+          "ATP": "-1",
+          "FD": "-1",
+          "GDP": "0",
+          "GTP": "0",
+          "Gly": "0",
+          "GlytRNAGlyGCC": "0",
+          "Met": "-1",
+          "MettRNAfMetCAU": "0",
+          "PO4": "0",
+          "PPi": "1",
+          "THF": "1",
+          "fMettRNAfMetCAU": "0",
+          "tRNAGlyGCC": "0",
+          "tRNAfMetCAU": "-1"
+        },
+        "source_reaction_status": "SOURCE_REACTION_VERIFIED",
+        "status": "PASS",
+        "structural_status": "STRUCTURAL_HANDOFF_WITNESS"
+      }
+    }
+  },
+  "regression_status": "PASS",
+  "regressions_reused_after_b0_only_verifier_change": false,
+  "repository": {
+    "branch": "codex/energy-cycles-v1",
+    "commit_push": "NOT_ATTEMPTED — B0-1 review hold",
+    "ending_head": "14c61055775421e9f30342507cc4fffdceed1607",
+    "final_git_status": {
+      "command": "git status --short --untracked-files=all",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "?? docs/reduction/pathways/phase_a_human_signoff_2026-10-09.md\n?? docs/reduction/pathways/phase_b0_b0_1_pre_b0_2_2026-10-09.zip\n?? docs/reduction/pathways/phase_b0_b0_2_review_record.json\n?? docs/reduction/pathways/phase_b0_b0_2_review_record.md\n?? docs/reduction/pathways/phase_b0_execution_log.txt\n?? docs/reduction/pathways/phase_b0_failure_evidence.jsonl\n?? docs/reduction/pathways/phase_b0_handoff_witnesses.json\n?? docs/reduction/pathways/phase_b0_handoff_witnesses.md\n?? docs/reduction/pathways/phase_b0_html_regression.json\n?? docs/reduction/pathways/phase_b0_independent_verification.json\n?? docs/reduction/pathways/phase_b0_multicarrier_protocol.md\n?? docs/reduction/pathways/phase_b0_negative_controls.json\n?? docs/reduction/pathways/phase_b0_phase_a_regression.json\n?? docs/reduction/pathways/phase_b0_review.md\n?? docs/reduction/pathways/phase_b0_source_baseline.json\n?? docs/reduction/pathways/phase_b0_validation_report.json\n?? scripts/pathways/phase_b0/build_phase_b0_witnesses.py\n?? scripts/pathways/phase_b0/run_phase_b0_validation.py\n?? scripts/pathways/phase_b0/test_phase_b0_negative_controls.py\n?? scripts/pathways/phase_b0/verify_phase_b0_witnesses.py\n"
+    },
+    "machine": "sean",
+    "origin": "https://github.com/DrWanSJ/PURE.git",
+    "root": "C:\\Users\\sean\\Desktop\\GUV",
+    "starting_head": "14c61055775421e9f30342507cc4fffdceed1607",
+    "upstream_initial_ahead_behind": [
+      0,
+      0
+    ]
+  },
+  "reproducibility": {
+    "commands": [
+      {
+        "command": "D:\\Code\\Anaconda\\python.exe C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b0\\build_phase_b0_witnesses.py --output-dir C:\\Users\\sean\\AppData\\Local\\Temp\\phase-b0-reproduce-asx5w3kl\\1",
+        "exit_code": 0,
+        "stderr": "",
+        "stdout": "{\"execution_status\": \"BUILT\", \"witnesses\": {\"W1\": 10, \"W2\": 13, \"W3\": 14, \"W2-MTF\": 5, \"W2-ALT\": 13}, \"scientific_status\": \"PENDING_HUMAN_REVIEW\"}\n"
+      },
+      {
+        "command": "D:\\Code\\Anaconda\\python.exe C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b0\\build_phase_b0_witnesses.py --output-dir C:\\Users\\sean\\AppData\\Local\\Temp\\phase-b0-reproduce-asx5w3kl\\2",
+        "exit_code": 0,
+        "stderr": "",
+        "stdout": "{\"execution_status\": \"BUILT\", \"witnesses\": {\"W1\": 10, \"W2\": 13, \"W3\": 14, \"W2-MTF\": 5, \"W2-ALT\": 13}, \"scientific_status\": \"PENDING_HUMAN_REVIEW\"}\n"
+      }
+    ],
+    "delivered_hashes": {
+      "phase_b0_handoff_witnesses.json": "f1e2c36dbe782bac4fa02cf9c5d6d45457141b650345753f403339bb4e23e0d7",
+      "phase_b0_handoff_witnesses.md": "906e2a5cbb16c9b3bd59d54b53152ac3382aa139bd2933cdfd5ca5d082173ce2"
+    },
+    "hashes": [
+      {
+        "phase_b0_handoff_witnesses.json": "f1e2c36dbe782bac4fa02cf9c5d6d45457141b650345753f403339bb4e23e0d7",
+        "phase_b0_handoff_witnesses.md": "906e2a5cbb16c9b3bd59d54b53152ac3382aa139bd2933cdfd5ca5d082173ce2"
+      },
+      {
+        "phase_b0_handoff_witnesses.json": "f1e2c36dbe782bac4fa02cf9c5d6d45457141b650345753f403339bb4e23e0d7",
+        "phase_b0_handoff_witnesses.md": "906e2a5cbb16c9b3bd59d54b53152ac3382aa139bd2933cdfd5ca5d082173ce2"
+      }
+    ],
+    "independent_builds": 2,
+    "status": "PASS"
+  },
+  "scientific_status": "B0_2_CONDITIONALLY_ACCEPTED",
+  "source_integrity_status": "PASS",
+  "structural_verification_status": "PASS"
+}

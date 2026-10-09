@@ -1,0 +1,262 @@
+{
+  "contract": {
+    "alternative_rejoin_status": "PASS",
+    "appendix_equations_checked": 297,
+    "expectation_nets_checked": 5,
+    "fd_identity_context": "ORIGINAL_ARTICLE_CITATION_RECORDED_NOT_A_GLOBAL_COMPOSITION_CERTIFICATE",
+    "if2_reference_enabled_directions": 2,
+    "independent_precursor_joins_checked": 2,
+    "researcher_review_authority": "USER_SUPPLIED_RESEARCHER_REVIEW",
+    "shared_met_trna_source_consumers": [
+      "re0000000288",
+      "re0000000420",
+      "re0000000422"
+    ]
+  },
+  "phase": "B0-1",
+  "phase_b1_authorized": false,
+  "preservation": {
+    "changed_files": [],
+    "existing_tracked_files_unchanged": 2342,
+    "starting_head": "14c61055775421e9f30342507cc4fffdceed1607",
+    "status": "PASS"
+  },
+  "scientific_status": "PENDING_HUMAN_REVIEW",
+  "source_integrity": {
+    "approved_hash_authority": "Published Phase A protocol/graph, independently pinned in verifier",
+    "directed_reactions": 968,
+    "hashes": {
+      "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+      "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+      "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52"
+    },
+    "re0000000414_PO4": "2",
+    "species": 241,
+    "weighted_petri_arcs": 3854,
+    "zero_author_parameters": 485
+  },
+  "structural_verification_status": "PASS",
+  "witnesses": {
+    "W1": {
+      "carrier_lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+      "catalysts_recovered": [
+        "GlyRS"
+      ],
+      "classification": "INTERFACE_ONLY",
+      "composite_identity_status": "HUMAN_REVIEW_REQUIRED",
+      "event_dag_edges": 9,
+      "events_checked": 10,
+      "exact_net": {
+        "AMP": "1",
+        "ATP": "-1",
+        "EFTu_GTP": "-1",
+        "Gly": "-1",
+        "PPi": "1",
+        "elRS70SAGGU0002_fMet": "-1",
+        "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1",
+        "tRNAGlyGCC": "-1"
+      },
+      "petri_status": "PASS",
+      "reference_disabled_directions": 0,
+      "reference_enabled_directions": 10,
+      "resource_net": {
+        "ADP": "0",
+        "AMP": "1",
+        "ATP": "-1",
+        "FD": "0",
+        "GDP": "0",
+        "GTP": "0",
+        "Gly": "-1",
+        "GlytRNAGlyGCC": "0",
+        "Met": "0",
+        "MettRNAfMetCAU": "0",
+        "PO4": "0",
+        "PPi": "1",
+        "THF": "0",
+        "fMettRNAfMetCAU": "0",
+        "tRNAGlyGCC": "-1",
+        "tRNAfMetCAU": "0"
+      },
+      "source_reaction_status": "SOURCE_REACTION_VERIFIED",
+      "status": "PASS",
+      "structural_status": "STRUCTURAL_HANDOFF_WITNESS"
+    },
+    "W2": {
+      "carrier_lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+      "catalysts_recovered": [
+        "MetRS",
+        "MTF"
+      ],
+      "classification": "STRUCTURAL_HANDOFF_WITNESS",
+      "composite_identity_status": "HUMAN_REVIEW_REQUIRED",
+      "event_dag_edges": 12,
+      "events_checked": 13,
+      "exact_net": {
+        "AMP": "1",
+        "ATP": "-1",
+        "FD": "-1",
+        "Met": "-1",
+        "PPi": "1",
+        "THF": "1",
+        "fMettRNAfMetCAU": "1",
+        "tRNAfMetCAU": "-1"
+      },
+      "petri_status": "PASS",
+      "reference_disabled_directions": 0,
+      "reference_enabled_directions": 13,
+      "resource_net": {
+        "ADP": "0",
+        "AMP": "1",
+        "ATP": "-1",
+        "FD": "-1",
+        "GDP": "0",
+        "GTP": "0",
+        "Gly": "0",
+        "GlytRNAGlyGCC": "0",
+        "Met": "-1",
+        "MettRNAfMetCAU": "0",
+        "PO4": "0",
+        "PPi": "1",
+        "THF": "1",
+        "fMettRNAfMetCAU": "1",
+        "tRNAGlyGCC": "0",
+        "tRNAfMetCAU": "-1"
+      },
+      "source_reaction_status": "SOURCE_REACTION_VERIFIED",
+      "status": "PASS",
+      "structural_status": "STRUCTURAL_HANDOFF_WITNESS"
+    },
+    "W2-ALT": {
+      "carrier_lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+      "catalysts_recovered": [
+        "MetRS",
+        "MTF"
+      ],
+      "classification": "STRUCTURAL_HANDOFF_WITNESS",
+      "composite_identity_status": "HUMAN_REVIEW_REQUIRED",
+      "event_dag_edges": 12,
+      "events_checked": 13,
+      "exact_net": {
+        "AMP": "1",
+        "ATP": "-1",
+        "FD": "-1",
+        "Met": "-1",
+        "PPi": "1",
+        "THF": "1",
+        "fMettRNAfMetCAU": "1",
+        "tRNAfMetCAU": "-1"
+      },
+      "petri_status": "PASS",
+      "reference_disabled_directions": 0,
+      "reference_enabled_directions": 13,
+      "resource_net": {
+        "ADP": "0",
+        "AMP": "1",
+        "ATP": "-1",
+        "FD": "-1",
+        "GDP": "0",
+        "GTP": "0",
+        "Gly": "0",
+        "GlytRNAGlyGCC": "0",
+        "Met": "-1",
+        "MettRNAfMetCAU": "0",
+        "PO4": "0",
+        "PPi": "1",
+        "THF": "1",
+        "fMettRNAfMetCAU": "1",
+        "tRNAGlyGCC": "0",
+        "tRNAfMetCAU": "-1"
+      },
+      "source_reaction_status": "SOURCE_REACTION_VERIFIED",
+      "status": "PASS",
+      "structural_status": "STRUCTURAL_HANDOFF_WITNESS"
+    },
+    "W2-MTF": {
+      "carrier_lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+      "catalysts_recovered": [
+        "MTF"
+      ],
+      "classification": "COMPLETE_CATALYTIC_CYCLE",
+      "composite_identity_status": "HUMAN_REVIEW_REQUIRED",
+      "event_dag_edges": 4,
+      "events_checked": 5,
+      "exact_net": {
+        "FD": "-1",
+        "MettRNAfMetCAU": "-1",
+        "THF": "1",
+        "fMettRNAfMetCAU": "1"
+      },
+      "petri_status": "PASS",
+      "reference_disabled_directions": 0,
+      "reference_enabled_directions": 5,
+      "resource_net": {
+        "ADP": "0",
+        "AMP": "0",
+        "ATP": "0",
+        "FD": "-1",
+        "GDP": "0",
+        "GTP": "0",
+        "Gly": "0",
+        "GlytRNAGlyGCC": "0",
+        "Met": "0",
+        "MettRNAfMetCAU": "-1",
+        "PO4": "0",
+        "PPi": "0",
+        "THF": "1",
+        "fMettRNAfMetCAU": "1",
+        "tRNAGlyGCC": "0",
+        "tRNAfMetCAU": "0"
+      },
+      "source_reaction_status": "SOURCE_REACTION_VERIFIED",
+      "status": "PASS",
+      "structural_status": "STRUCTURAL_HANDOFF_WITNESS"
+    },
+    "W3": {
+      "carrier_lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+      "catalysts_recovered": [
+        "MetRS",
+        "MTF"
+      ],
+      "classification": "INTERFACE_ONLY",
+      "composite_identity_status": "HUMAN_REVIEW_REQUIRED",
+      "event_dag_edges": 13,
+      "events_checked": 14,
+      "exact_net": {
+        "AMP": "1",
+        "ATP": "-1",
+        "FD": "-1",
+        "IF2_GTP": "-1",
+        "IF2_GTP_fMettRNAfMetCAU": "1",
+        "Met": "-1",
+        "PPi": "1",
+        "THF": "1",
+        "tRNAfMetCAU": "-1"
+      },
+      "petri_status": "PASS",
+      "reference_disabled_directions": 0,
+      "reference_enabled_directions": 14,
+      "resource_net": {
+        "ADP": "0",
+        "AMP": "1",
+        "ATP": "-1",
+        "FD": "-1",
+        "GDP": "0",
+        "GTP": "0",
+        "Gly": "0",
+        "GlytRNAGlyGCC": "0",
+        "Met": "-1",
+        "MettRNAfMetCAU": "0",
+        "PO4": "0",
+        "PPi": "1",
+        "THF": "1",
+        "fMettRNAfMetCAU": "0",
+        "tRNAGlyGCC": "0",
+        "tRNAfMetCAU": "-1"
+      },
+      "source_reaction_status": "SOURCE_REACTION_VERIFIED",
+      "status": "PASS",
+      "structural_status": "STRUCTURAL_HANDOFF_WITNESS"
+    }
+  }
+}
