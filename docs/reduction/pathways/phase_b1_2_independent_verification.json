@@ -1,0 +1,2117 @@
+{
+  "P7_read_only_revalidation": {
+    "catalysts_recovered": [
+      "IF1",
+      "IF3"
+    ],
+    "event_dag_edges": 11,
+    "events_checked": 12,
+    "exact_net": {
+      "EFTu_GTP_GlytRNAGlyGCC": "-1",
+      "IF2_GDP": "1",
+      "IF2_GTP_fMettRNAfMetCAU": "-1",
+      "PO4": "1",
+      "RS30S": "-1",
+      "RS50S": "-1",
+      "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1",
+      "mRNA": "-1",
+      "tRNAfMetCAU": "1"
+    },
+    "lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+    "petri_status": "PASS",
+    "resource_ledger": {
+      "ADP": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "AMP": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "ATP": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "FD": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "GDP": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "GTP": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "Gly": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "IF1": {
+        "final": "1",
+        "initial": "1",
+        "net": "0"
+      },
+      "IF2": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "IF2_GDP": {
+        "final": "1",
+        "initial": "0",
+        "net": "1"
+      },
+      "IF2_GTP": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "IF3": {
+        "final": "1",
+        "initial": "1",
+        "net": "0"
+      },
+      "MTF": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "Met": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "MetRS": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "MettRNAfMetCAU": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "PO4": {
+        "final": "1",
+        "initial": "0",
+        "net": "1"
+      },
+      "PPi": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "RS30S": {
+        "final": "0",
+        "initial": "1",
+        "net": "-1"
+      },
+      "RS50S": {
+        "final": "0",
+        "initial": "1",
+        "net": "-1"
+      },
+      "THF": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "fMettRNAfMetCAU": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "mRNA": {
+        "final": "0",
+        "initial": "1",
+        "net": "-1"
+      },
+      "tRNAfMetCAU": {
+        "final": "1",
+        "initial": "0",
+        "net": "1"
+      }
+    },
+    "status": "PASS",
+    "target": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+    "target_produced_tokens": "1"
+  },
+  "boundary_verification": {
+    "E2": "elRS70SAGGU0002_fMet",
+    "RF1_RF2_binding_context": [
+      "re0000000796",
+      "re0000000811"
+    ],
+    "T_pre": "elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+    "T_pre_producer": "re0000000086",
+    "termination_executed": false
+  },
+  "builder_imported": false,
+  "external_reference_example": {
+    "expectation_agrees": true,
+    "independently_derived_net": {
+      "EFG_GDP": "2",
+      "EFG_GTP": "-2",
+      "EFTu_GDP": "2",
+      "EFTu_GTP_GlytRNAGlyGCC": "-2",
+      "PO4": "4",
+      "elRS70SAGGU0002_fMet": "-1",
+      "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "1",
+      "tRNAGlyGCC": "1"
+    },
+    "original_ids": [
+      "re0000000013",
+      "re0000000014",
+      "re0000000016",
+      "re0000000017",
+      "re0000000018",
+      "re0000000019",
+      "re0000000022",
+      "re0000000024",
+      "re0000000025",
+      "re0000000068",
+      "re0000000074",
+      "re0000000075",
+      "re0000000077",
+      "re0000000078",
+      "re0000000079",
+      "re0000000080",
+      "re0000000083",
+      "re0000000085",
+      "re0000000086"
+    ],
+    "status": "PASS"
+  },
+  "scientific_status": "PENDING_HUMAN_REVIEW",
+  "scope": {
+    "coverage": {
+      "classification_counts": {
+        "BOUNDARY_CONTEXT_ONLY": 47,
+        "DISABLED_SOURCE_CONTEXT": 232,
+        "ELONGATION_SEARCH_SCOPE": 62,
+        "OUT_OF_B1_2_SCOPE": 627
+      },
+      "context_only_directions": 147,
+      "core_directions": 194,
+      "core_positive": 62,
+      "core_zero": 132,
+      "entire_model_inventory": 968,
+      "inventory_positive": 109,
+      "inventory_zero": 232,
+      "search_directions": 61,
+      "selected_family_ids": [
+        "RFAM_001",
+        "RFAM_002",
+        "RFAM_003",
+        "RFAM_004",
+        "RFAM_009",
+        "RFAM_010",
+        "RFAM_011",
+        "RFAM_012",
+        "RFAM_013",
+        "RFAM_014",
+        "RFAM_019",
+        "RFAM_025",
+        "RFAM_033",
+        "RFAM_034",
+        "RFAM_DEG"
+      ],
+      "selected_inventory": 341
+    },
+    "inventory_rows_checked": 968,
+    "status": "PASS",
+    "subsystem_local_entries_checked": 1098
+  },
+  "source_integrity": {
+    "approved_hash_authority": "Published Phase A protocol/graph, independently pinned in verifier",
+    "directed_reactions": 968,
+    "hashes": {
+      "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+      "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+      "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52"
+    },
+    "re0000000414_PO4": "2",
+    "species": 241,
+    "weighted_petri_arcs": 3854,
+    "zero_author_parameters": 485
+  },
+  "status": "PASS",
+  "witnesses": [
+    {
+      "events_checked": 1,
+      "exact_net": {
+        "EFTu_GTP_GlytRNAGlyGCC": "-1",
+        "elRS70SAGGU0002_fMet": "-1",
+        "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+      },
+      "final_marking": {
+        "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+      },
+      "independently_reconstructed_lineage": {
+        "all_input_allocations_reconstructed": true,
+        "dependency_edges": [],
+        "endpoint_attached_gly_delivery_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01",
+        "factor_source_port_histories": [
+          {
+            "events": [
+              {
+                "event_id": "W1:E01",
+                "source_input": "elRS70SAGGU0002_fMet",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+              }
+            ],
+            "factor": "EFTu",
+            "source_supply_species": "EFTu_GTP_GlytRNAGlyGCC",
+            "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01",
+            "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+          }
+        ],
+        "factor_supply_bindings": {
+          "EFG_GTP": [],
+          "EFTu_GTP_GlytRNAGlyGCC": [
+            {
+              "binding_event": "W1:E01",
+              "quantity": "1",
+              "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01"
+            }
+          ]
+        },
+        "free_source_release_events": [],
+        "gly_trna_source_port_histories": [
+          {
+            "composition_certificate": false,
+            "delivery_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01",
+            "events": [
+              {
+                "event_id": "W1:E01",
+                "source_input": "elRS70SAGGU0002_fMet",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+              }
+            ],
+            "meaning": "SOURCE_TOKENS_AND_AUTHOR_VIRTUAL_STATE_CONVENTION",
+            "source_delivery_species": "EFTu_GTP_GlytRNAGlyGCC"
+          }
+        ],
+        "ribosomal_source_history": [
+          {
+            "event_id": "W1:E01",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01",
+            "input_source_state": "elRS70SAGGU0002_fMet",
+            "output_source_state": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          }
+        ],
+        "status": "PASS",
+        "unspent_origin_lots": [
+          {
+            "amount": "1",
+            "origin": "W1:E01",
+            "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          }
+        ]
+      },
+      "status": "PASS",
+      "witness_id": "W1"
+    },
+    {
+      "events_checked": 10,
+      "exact_net": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "EFTu_GDP": "1",
+        "EFTu_GTP_GlytRNAGlyGCC": "-1",
+        "PO4": "2",
+        "elRS70SAGGU0002_fMet": "-1",
+        "elRS70SAGGU0003_Pept0002": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "final_marking": {
+        "EFG_GDP": "1",
+        "EFTu_GDP": "1",
+        "PO4": "2",
+        "elRS70SAGGU0003_Pept0002": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "independently_reconstructed_lineage": {
+        "all_input_allocations_reconstructed": true,
+        "dependency_edges": [
+          {
+            "amount": "1",
+            "consumer_event_id": "W2:E02",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W2:E01",
+            "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W2:E03",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W2:E02",
+            "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W2:E04",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W2:E03",
+            "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W2:E05",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W2:E04",
+            "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W2:E06",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W2:E05",
+            "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W2:E07",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W2:E06",
+            "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W2:E08",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W2:E07",
+            "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W2:E09",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W2:E08",
+            "species_id": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W2:E10",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W2:E09",
+            "species_id": "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+          }
+        ],
+        "endpoint_attached_gly_delivery_origin": null,
+        "factor_source_port_histories": [
+          {
+            "events": [
+              {
+                "event_id": "W2:E01",
+                "source_input": "elRS70SAGGU0002_fMet",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W2:E02",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W2:E03",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W2:E04",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+              }
+            ],
+            "factor": "EFTu",
+            "release_event": "W2:E04",
+            "released_source_species": "EFTu_GDP",
+            "source_supply_species": "EFTu_GTP_GlytRNAGlyGCC",
+            "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01",
+            "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+          },
+          {
+            "events": [
+              {
+                "event_id": "W2:E06",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+              },
+              {
+                "event_id": "W2:E07",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4"
+              },
+              {
+                "event_id": "W2:E08",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+                "source_output": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP"
+              },
+              {
+                "event_id": "W2:E09",
+                "source_input": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+                "source_output": "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+              }
+            ],
+            "factor": "EFG",
+            "release_event": "W2:E09",
+            "released_source_species": "EFG_GDP",
+            "source_supply_species": "EFG_GTP",
+            "source_token_origin": "BOUNDARY:EFG_GTP:01",
+            "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+          }
+        ],
+        "factor_supply_bindings": {
+          "EFG_GTP": [
+            {
+              "binding_event": "W2:E06",
+              "quantity": "1",
+              "source_token_origin": "BOUNDARY:EFG_GTP:01"
+            }
+          ],
+          "EFTu_GTP_GlytRNAGlyGCC": [
+            {
+              "binding_event": "W2:E01",
+              "quantity": "1",
+              "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01"
+            }
+          ]
+        },
+        "free_source_release_events": [
+          {
+            "amount": "1",
+            "event_id": "W2:E04",
+            "species_id": "EFTu_GDP"
+          },
+          {
+            "amount": "1",
+            "event_id": "W2:E09",
+            "species_id": "EFG_GDP"
+          },
+          {
+            "amount": "1",
+            "event_id": "W2:E10",
+            "species_id": "tRNAGlyGCC"
+          }
+        ],
+        "gly_trna_source_port_histories": [
+          {
+            "composition_certificate": false,
+            "delivery_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01",
+            "events": [
+              {
+                "event_id": "W2:E01",
+                "source_input": "elRS70SAGGU0002_fMet",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W2:E02",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W2:E03",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W2:E04",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W2:E05",
+                "source_input": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+              },
+              {
+                "event_id": "W2:E06",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+              },
+              {
+                "event_id": "W2:E07",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4"
+              },
+              {
+                "event_id": "W2:E08",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+                "source_output": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP"
+              },
+              {
+                "event_id": "W2:E09",
+                "source_input": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+                "source_output": "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+              },
+              {
+                "event_id": "W2:E10",
+                "source_input": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002"
+              }
+            ],
+            "meaning": "SOURCE_TOKENS_AND_AUTHOR_VIRTUAL_STATE_CONVENTION",
+            "release_event": "W2:E10",
+            "released_source_species": "tRNAGlyGCC",
+            "source_delivery_species": "EFTu_GTP_GlytRNAGlyGCC"
+          }
+        ],
+        "ribosomal_source_history": [
+          {
+            "event_id": "W2:E01",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01",
+            "input_source_state": "elRS70SAGGU0002_fMet",
+            "output_source_state": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W2:E02",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W2:E01",
+            "input_source_state": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W2:E03",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W2:E02",
+            "input_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W2:E04",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W2:E03",
+            "input_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W2:E05",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W2:E04",
+            "input_source_state": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W2:E06",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W2:E05",
+            "input_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+            "output_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W2:E07",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W2:E06",
+            "input_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+            "output_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W2:E08",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W2:E07",
+            "input_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+            "output_source_state": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W2:E09",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W2:E08",
+            "input_source_state": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+            "output_source_state": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W2:E10",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W2:E09",
+            "input_source_state": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0003_Pept0002",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          }
+        ],
+        "status": "PASS",
+        "unspent_origin_lots": [
+          {
+            "amount": "1",
+            "origin": "W2:E03",
+            "species_id": "PO4"
+          },
+          {
+            "amount": "1",
+            "origin": "W2:E04",
+            "species_id": "EFTu_GDP"
+          },
+          {
+            "amount": "1",
+            "origin": "W2:E08",
+            "species_id": "PO4"
+          },
+          {
+            "amount": "1",
+            "origin": "W2:E09",
+            "species_id": "EFG_GDP"
+          },
+          {
+            "amount": "1",
+            "origin": "W2:E10",
+            "species_id": "elRS70SAGGU0003_Pept0002"
+          },
+          {
+            "amount": "1",
+            "origin": "W2:E10",
+            "species_id": "tRNAGlyGCC"
+          }
+        ]
+      },
+      "status": "PASS",
+      "witness_id": "W2"
+    },
+    {
+      "events_checked": 19,
+      "exact_net": {
+        "EFG_GDP": "2",
+        "EFG_GTP": "-2",
+        "EFTu_GDP": "2",
+        "EFTu_GTP_GlytRNAGlyGCC": "-2",
+        "PO4": "4",
+        "elRS70SAGGU0002_fMet": "-1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "final_marking": {
+        "EFG_GDP": "2",
+        "EFTu_GDP": "2",
+        "PO4": "4",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "independently_reconstructed_lineage": {
+        "all_input_allocations_reconstructed": true,
+        "dependency_edges": [
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E02",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E01",
+            "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E03",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E02",
+            "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E04",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E03",
+            "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E05",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E04",
+            "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E06",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E05",
+            "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E07",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E06",
+            "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E08",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E07",
+            "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E09",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E08",
+            "species_id": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E10",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E09",
+            "species_id": "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E11",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E10",
+            "species_id": "elRS70SAGGU0003_Pept0002"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E12",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E11",
+            "species_id": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E13",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E12",
+            "species_id": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E14",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E13",
+            "species_id": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E15",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E14",
+            "species_id": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E16",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E15",
+            "species_id": "elRS70SBGGU0003_Pept0003tRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E17",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E16",
+            "species_id": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E18",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E17",
+            "species_id": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W3:E19",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W3:E18",
+            "species_id": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP"
+          }
+        ],
+        "endpoint_attached_gly_delivery_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:02",
+        "factor_source_port_histories": [
+          {
+            "events": [
+              {
+                "event_id": "W3:E01",
+                "source_input": "elRS70SAGGU0002_fMet",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E02",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E03",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E04",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+              }
+            ],
+            "factor": "EFTu",
+            "release_event": "W3:E04",
+            "released_source_species": "EFTu_GDP",
+            "source_supply_species": "EFTu_GTP_GlytRNAGlyGCC",
+            "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01",
+            "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+          },
+          {
+            "events": [
+              {
+                "event_id": "W3:E06",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+              },
+              {
+                "event_id": "W3:E07",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4"
+              },
+              {
+                "event_id": "W3:E08",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+                "source_output": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP"
+              },
+              {
+                "event_id": "W3:E09",
+                "source_input": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+                "source_output": "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+              }
+            ],
+            "factor": "EFG",
+            "release_event": "W3:E09",
+            "released_source_species": "EFG_GDP",
+            "source_supply_species": "EFG_GTP",
+            "source_token_origin": "BOUNDARY:EFG_GTP:01",
+            "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+          },
+          {
+            "events": [
+              {
+                "event_id": "W3:E11",
+                "source_input": "elRS70SAGGU0003_Pept0002",
+                "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E12",
+                "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E13",
+                "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E14",
+                "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC"
+              }
+            ],
+            "factor": "EFTu",
+            "release_event": "W3:E14",
+            "released_source_species": "EFTu_GDP",
+            "source_supply_species": "EFTu_GTP_GlytRNAGlyGCC",
+            "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:02",
+            "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+          },
+          {
+            "events": [
+              {
+                "event_id": "W3:E16",
+                "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+                "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP"
+              },
+              {
+                "event_id": "W3:E17",
+                "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+                "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4"
+              },
+              {
+                "event_id": "W3:E18",
+                "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+                "source_output": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP"
+              },
+              {
+                "event_id": "W3:E19",
+                "source_input": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+                "source_output": "elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+              }
+            ],
+            "factor": "EFG",
+            "release_event": "W3:E19",
+            "released_source_species": "EFG_GDP",
+            "source_supply_species": "EFG_GTP",
+            "source_token_origin": "BOUNDARY:EFG_GTP:02",
+            "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+          }
+        ],
+        "factor_supply_bindings": {
+          "EFG_GTP": [
+            {
+              "binding_event": "W3:E06",
+              "quantity": "1",
+              "source_token_origin": "BOUNDARY:EFG_GTP:01"
+            },
+            {
+              "binding_event": "W3:E16",
+              "quantity": "1",
+              "source_token_origin": "BOUNDARY:EFG_GTP:02"
+            }
+          ],
+          "EFTu_GTP_GlytRNAGlyGCC": [
+            {
+              "binding_event": "W3:E01",
+              "quantity": "1",
+              "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01"
+            },
+            {
+              "binding_event": "W3:E11",
+              "quantity": "1",
+              "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:02"
+            }
+          ]
+        },
+        "free_source_release_events": [
+          {
+            "amount": "1",
+            "event_id": "W3:E04",
+            "species_id": "EFTu_GDP"
+          },
+          {
+            "amount": "1",
+            "event_id": "W3:E09",
+            "species_id": "EFG_GDP"
+          },
+          {
+            "amount": "1",
+            "event_id": "W3:E10",
+            "species_id": "tRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "event_id": "W3:E14",
+            "species_id": "EFTu_GDP"
+          },
+          {
+            "amount": "1",
+            "event_id": "W3:E19",
+            "species_id": "EFG_GDP"
+          }
+        ],
+        "gly_trna_source_port_histories": [
+          {
+            "composition_certificate": false,
+            "delivery_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01",
+            "events": [
+              {
+                "event_id": "W3:E01",
+                "source_input": "elRS70SAGGU0002_fMet",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E02",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E03",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E04",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E05",
+                "source_input": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E06",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+              },
+              {
+                "event_id": "W3:E07",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4"
+              },
+              {
+                "event_id": "W3:E08",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+                "source_output": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP"
+              },
+              {
+                "event_id": "W3:E09",
+                "source_input": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+                "source_output": "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E10",
+                "source_input": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002"
+              }
+            ],
+            "meaning": "SOURCE_TOKENS_AND_AUTHOR_VIRTUAL_STATE_CONVENTION",
+            "release_event": "W3:E10",
+            "released_source_species": "tRNAGlyGCC",
+            "source_delivery_species": "EFTu_GTP_GlytRNAGlyGCC"
+          },
+          {
+            "composition_certificate": false,
+            "delivery_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:02",
+            "events": [
+              {
+                "event_id": "W3:E11",
+                "source_input": "elRS70SAGGU0003_Pept0002",
+                "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E12",
+                "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E13",
+                "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E14",
+                "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E15",
+                "source_input": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC",
+                "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC"
+              },
+              {
+                "event_id": "W3:E16",
+                "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+                "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP"
+              },
+              {
+                "event_id": "W3:E17",
+                "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+                "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4"
+              },
+              {
+                "event_id": "W3:E18",
+                "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+                "source_output": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP"
+              },
+              {
+                "event_id": "W3:E19",
+                "source_input": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+                "source_output": "elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+              }
+            ],
+            "meaning": "SOURCE_TOKENS_AND_AUTHOR_VIRTUAL_STATE_CONVENTION",
+            "source_delivery_species": "EFTu_GTP_GlytRNAGlyGCC"
+          }
+        ],
+        "ribosomal_source_history": [
+          {
+            "event_id": "W3:E01",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01",
+            "input_source_state": "elRS70SAGGU0002_fMet",
+            "output_source_state": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E02",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E01",
+            "input_source_state": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E03",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E02",
+            "input_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E04",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E03",
+            "input_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E05",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E04",
+            "input_source_state": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E06",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E05",
+            "input_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+            "output_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E07",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E06",
+            "input_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+            "output_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E08",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E07",
+            "input_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+            "output_source_state": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E09",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E08",
+            "input_source_state": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+            "output_source_state": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E10",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E09",
+            "input_source_state": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0003_Pept0002",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E11",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E10",
+            "input_source_state": "elRS70SAGGU0003_Pept0002",
+            "output_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E12",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E11",
+            "input_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E13",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E12",
+            "input_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E14",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E13",
+            "input_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E15",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E14",
+            "input_source_state": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E16",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E15",
+            "input_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+            "output_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E17",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E16",
+            "input_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+            "output_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E18",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E17",
+            "input_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+            "output_source_state": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          },
+          {
+            "event_id": "W3:E19",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W3:E18",
+            "input_source_state": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+            "output_source_state": "elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+            "root_source_origin": "BOUNDARY:elRS70SAGGU0002_fMet:01"
+          }
+        ],
+        "status": "PASS",
+        "unspent_origin_lots": [
+          {
+            "amount": "1",
+            "origin": "W3:E03",
+            "species_id": "PO4"
+          },
+          {
+            "amount": "1",
+            "origin": "W3:E04",
+            "species_id": "EFTu_GDP"
+          },
+          {
+            "amount": "1",
+            "origin": "W3:E08",
+            "species_id": "PO4"
+          },
+          {
+            "amount": "1",
+            "origin": "W3:E09",
+            "species_id": "EFG_GDP"
+          },
+          {
+            "amount": "1",
+            "origin": "W3:E10",
+            "species_id": "tRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "origin": "W3:E13",
+            "species_id": "PO4"
+          },
+          {
+            "amount": "1",
+            "origin": "W3:E14",
+            "species_id": "EFTu_GDP"
+          },
+          {
+            "amount": "1",
+            "origin": "W3:E18",
+            "species_id": "PO4"
+          },
+          {
+            "amount": "1",
+            "origin": "W3:E19",
+            "species_id": "EFG_GDP"
+          },
+          {
+            "amount": "1",
+            "origin": "W3:E19",
+            "species_id": "elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+          }
+        ]
+      },
+      "status": "PASS",
+      "witness_id": "W3"
+    },
+    {
+      "events_checked": 30,
+      "exact_net": {
+        "EFG_GDP": "2",
+        "EFG_GTP": "-2",
+        "EFTu_GDP": "2",
+        "EFTu_GTP_GlytRNAGlyGCC": "-2",
+        "IF2_GDP": "1",
+        "IF2_GTP_fMettRNAfMetCAU": "-1",
+        "PO4": "5",
+        "RS30S": "-1",
+        "RS50S": "-1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "1",
+        "mRNA": "-1",
+        "tRNAGlyGCC": "1",
+        "tRNAfMetCAU": "1"
+      },
+      "final_marking": {
+        "EFG_GDP": "2",
+        "EFTu_GDP": "2",
+        "IF1": "1",
+        "IF2_GDP": "1",
+        "IF3": "1",
+        "PO4": "5",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "1",
+        "tRNAGlyGCC": "1",
+        "tRNAfMetCAU": "1"
+      },
+      "independently_reconstructed_lineage": {
+        "all_input_allocations_reconstructed": true,
+        "dependency_edges": [
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E02",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E01",
+            "species_id": "RS30S_IF3"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E03",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E02",
+            "species_id": "RS30S_IF1_IF3"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E04",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E03",
+            "species_id": "RS30S_IF1_IF3_mRNA"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E05",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E04",
+            "species_id": "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E06",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E05",
+            "species_id": "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E07",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E06",
+            "species_id": "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E08",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E07",
+            "species_id": "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E09",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E08",
+            "species_id": "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E10",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E09",
+            "species_id": "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E11",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E10",
+            "species_id": "elRS70SAGGU0002_fMettRNAfMetCAU"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E12",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E11",
+            "species_id": "elRS70SAGGU0002_fMet"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E13",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E12",
+            "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E14",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E13",
+            "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E15",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E14",
+            "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E16",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E15",
+            "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E17",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E16",
+            "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E18",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E17",
+            "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E19",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E18",
+            "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E20",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E19",
+            "species_id": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E21",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E20",
+            "species_id": "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E22",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E21",
+            "species_id": "elRS70SAGGU0003_Pept0002"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E23",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E22",
+            "species_id": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E24",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E23",
+            "species_id": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E25",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E24",
+            "species_id": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E26",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E25",
+            "species_id": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E27",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E26",
+            "species_id": "elRS70SBGGU0003_Pept0003tRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E28",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E27",
+            "species_id": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E29",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E28",
+            "species_id": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4"
+          },
+          {
+            "amount": "1",
+            "consumer_event_id": "W4:E30",
+            "evidence_status": "EXTRACTED",
+            "producer_event_id": "W4:E29",
+            "species_id": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP"
+          }
+        ],
+        "endpoint_attached_gly_delivery_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:02",
+        "factor_source_port_histories": [
+          {
+            "events": [
+              {
+                "event_id": "W4:E12",
+                "source_input": "elRS70SAGGU0002_fMet",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E13",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E14",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E15",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+              }
+            ],
+            "factor": "EFTu",
+            "release_event": "W4:E15",
+            "released_source_species": "EFTu_GDP",
+            "source_supply_species": "EFTu_GTP_GlytRNAGlyGCC",
+            "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01",
+            "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+          },
+          {
+            "events": [
+              {
+                "event_id": "W4:E17",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+              },
+              {
+                "event_id": "W4:E18",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4"
+              },
+              {
+                "event_id": "W4:E19",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+                "source_output": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP"
+              },
+              {
+                "event_id": "W4:E20",
+                "source_input": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+                "source_output": "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+              }
+            ],
+            "factor": "EFG",
+            "release_event": "W4:E20",
+            "released_source_species": "EFG_GDP",
+            "source_supply_species": "EFG_GTP",
+            "source_token_origin": "BOUNDARY:EFG_GTP:01",
+            "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+          },
+          {
+            "events": [
+              {
+                "event_id": "W4:E22",
+                "source_input": "elRS70SAGGU0003_Pept0002",
+                "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E23",
+                "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E24",
+                "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E25",
+                "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC"
+              }
+            ],
+            "factor": "EFTu",
+            "release_event": "W4:E25",
+            "released_source_species": "EFTu_GDP",
+            "source_supply_species": "EFTu_GTP_GlytRNAGlyGCC",
+            "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:02",
+            "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+          },
+          {
+            "events": [
+              {
+                "event_id": "W4:E27",
+                "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+                "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP"
+              },
+              {
+                "event_id": "W4:E28",
+                "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+                "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4"
+              },
+              {
+                "event_id": "W4:E29",
+                "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+                "source_output": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP"
+              },
+              {
+                "event_id": "W4:E30",
+                "source_input": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+                "source_output": "elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+              }
+            ],
+            "factor": "EFG",
+            "release_event": "W4:E30",
+            "released_source_species": "EFG_GDP",
+            "source_supply_species": "EFG_GTP",
+            "source_token_origin": "BOUNDARY:EFG_GTP:02",
+            "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+          }
+        ],
+        "factor_supply_bindings": {
+          "EFG_GTP": [
+            {
+              "binding_event": "W4:E17",
+              "quantity": "1",
+              "source_token_origin": "BOUNDARY:EFG_GTP:01"
+            },
+            {
+              "binding_event": "W4:E27",
+              "quantity": "1",
+              "source_token_origin": "BOUNDARY:EFG_GTP:02"
+            }
+          ],
+          "EFTu_GTP_GlytRNAGlyGCC": [
+            {
+              "binding_event": "W4:E12",
+              "quantity": "1",
+              "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01"
+            },
+            {
+              "binding_event": "W4:E22",
+              "quantity": "1",
+              "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:02"
+            }
+          ]
+        },
+        "free_source_release_events": [
+          {
+            "amount": "1",
+            "event_id": "W4:E11",
+            "species_id": "tRNAfMetCAU"
+          },
+          {
+            "amount": "1",
+            "event_id": "W4:E15",
+            "species_id": "EFTu_GDP"
+          },
+          {
+            "amount": "1",
+            "event_id": "W4:E20",
+            "species_id": "EFG_GDP"
+          },
+          {
+            "amount": "1",
+            "event_id": "W4:E21",
+            "species_id": "tRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "event_id": "W4:E25",
+            "species_id": "EFTu_GDP"
+          },
+          {
+            "amount": "1",
+            "event_id": "W4:E30",
+            "species_id": "EFG_GDP"
+          }
+        ],
+        "gly_trna_source_port_histories": [
+          {
+            "composition_certificate": false,
+            "delivery_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01",
+            "events": [
+              {
+                "event_id": "W4:E12",
+                "source_input": "elRS70SAGGU0002_fMet",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E13",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E14",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E15",
+                "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E16",
+                "source_input": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E17",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+              },
+              {
+                "event_id": "W4:E18",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+                "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4"
+              },
+              {
+                "event_id": "W4:E19",
+                "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+                "source_output": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP"
+              },
+              {
+                "event_id": "W4:E20",
+                "source_input": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+                "source_output": "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E21",
+                "source_input": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002"
+              }
+            ],
+            "meaning": "SOURCE_TOKENS_AND_AUTHOR_VIRTUAL_STATE_CONVENTION",
+            "release_event": "W4:E21",
+            "released_source_species": "tRNAGlyGCC",
+            "source_delivery_species": "EFTu_GTP_GlytRNAGlyGCC"
+          },
+          {
+            "composition_certificate": false,
+            "delivery_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:02",
+            "events": [
+              {
+                "event_id": "W4:E22",
+                "source_input": "elRS70SAGGU0003_Pept0002",
+                "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E23",
+                "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E24",
+                "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E25",
+                "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+                "source_output": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E26",
+                "source_input": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC",
+                "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC"
+              },
+              {
+                "event_id": "W4:E27",
+                "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+                "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP"
+              },
+              {
+                "event_id": "W4:E28",
+                "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+                "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4"
+              },
+              {
+                "event_id": "W4:E29",
+                "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+                "source_output": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP"
+              },
+              {
+                "event_id": "W4:E30",
+                "source_input": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+                "source_output": "elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+              }
+            ],
+            "meaning": "SOURCE_TOKENS_AND_AUTHOR_VIRTUAL_STATE_CONVENTION",
+            "source_delivery_species": "EFTu_GTP_GlytRNAGlyGCC"
+          }
+        ],
+        "ribosomal_source_history": [
+          {
+            "event_id": "W4:E11",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E10",
+            "input_source_state": "elRS70SAGGU0002_fMettRNAfMetCAU",
+            "output_source_state": "elRS70SAGGU0002_fMet",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E12",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E11",
+            "input_source_state": "elRS70SAGGU0002_fMet",
+            "output_source_state": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E13",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E12",
+            "input_source_state": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E14",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E13",
+            "input_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E15",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E14",
+            "input_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E16",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E15",
+            "input_source_state": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E17",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E16",
+            "input_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+            "output_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E18",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E17",
+            "input_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+            "output_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E19",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E18",
+            "input_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+            "output_source_state": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E20",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E19",
+            "input_source_state": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+            "output_source_state": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E21",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E20",
+            "input_source_state": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0003_Pept0002",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E22",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E21",
+            "input_source_state": "elRS70SAGGU0003_Pept0002",
+            "output_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E23",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E22",
+            "input_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E24",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E23",
+            "input_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E25",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E24",
+            "input_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E26",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E25",
+            "input_source_state": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC",
+            "output_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E27",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E26",
+            "input_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+            "output_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E28",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E27",
+            "input_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+            "output_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E29",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E28",
+            "input_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+            "output_source_state": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+            "root_source_origin": "W4:E10"
+          },
+          {
+            "event_id": "W4:E30",
+            "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+            "input_origin": "W4:E29",
+            "input_source_state": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+            "output_source_state": "elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+            "root_source_origin": "W4:E10"
+          }
+        ],
+        "status": "PASS",
+        "unspent_origin_lots": [
+          {
+            "amount": "1",
+            "origin": "W4:E07",
+            "species_id": "PO4"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E08",
+            "species_id": "IF3"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E09",
+            "species_id": "IF1"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E10",
+            "species_id": "IF2_GDP"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E11",
+            "species_id": "tRNAfMetCAU"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E14",
+            "species_id": "PO4"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E15",
+            "species_id": "EFTu_GDP"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E19",
+            "species_id": "PO4"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E20",
+            "species_id": "EFG_GDP"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E21",
+            "species_id": "tRNAGlyGCC"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E24",
+            "species_id": "PO4"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E25",
+            "species_id": "EFTu_GDP"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E29",
+            "species_id": "PO4"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E30",
+            "species_id": "EFG_GDP"
+          },
+          {
+            "amount": "1",
+            "origin": "W4:E30",
+            "species_id": "elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+          }
+        ]
+      },
+      "status": "PASS",
+      "witness_id": "W4"
+    }
+  ]
+}

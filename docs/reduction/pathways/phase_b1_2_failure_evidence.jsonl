@@ -1,0 +1,3 @@
+{"stage": "read_only_source_inspection", "command": "system Python import pypdf", "exit_code": 1, "stderr": "ModuleNotFoundError: No module named 'pypdf'", "resolution": "Use bundled Python runtime; no dependency installation"}
+{"stage": "read_only_subsystem_inspection", "command": "direct lookup of subsystem local IDs in canonical annotations", "exit_code": 1, "stderr": "KeyError: 're25'", "resolution": "Exact both-side stoichiometric mapping from local IDs to canonical IDs"}
+{"stage": "read_only_article_inspection", "command": "bundled pypdf extraction to default terminal encoding", "exit_code": 1, "stderr": "UnicodeEncodeError: gbk cannot encode U+223C", "resolution": "Explicit UTF-8 stdout; source bytes preserved"}

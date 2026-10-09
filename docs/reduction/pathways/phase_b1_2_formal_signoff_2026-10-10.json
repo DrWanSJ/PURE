@@ -1,0 +1,2232 @@
+{
+  "B1_1_B1_2_handoff": {
+    "E1": "elRS70SAGGU0002_fMettRNAfMetCAU",
+    "E2": "elRS70SAGGU0002_fMet",
+    "W4_composition": "ONE_ACCEPTED_IF3_FIRST_E1_SCENARIO + re0000000001_ONCE + W3",
+    "initiator_release_context": "ELONG_tRNA_release",
+    "mutually_exclusive_routes_concatenated": false,
+    "upstream_signoff": "docs/reduction/pathways/phase_b1_1_formal_signoff_2026-10-09.json",
+    "upstream_witness": "docs/reduction/pathways/phase_b1_1_followup_witness.json"
+  },
+  "T_pre_alias": {
+    "RF_bound_successor_author_label": "pre-termination complex",
+    "author_S27_label": "elongation complex",
+    "definition": "RF-free termination entry",
+    "is_author_original_species_name": false,
+    "original_source_species": "elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+    "producer": "re0000000086",
+    "project_alias": "T_pre",
+    "termination_completed": false
+  },
+  "accepted_scope": "source-exact structural reconstruction",
+  "authorization": {
+    "commit_push_authorized": true,
+    "full_phase_b_authorized": false,
+    "kinetic_reduction_authorized": false,
+    "phase_b1_2_formally_accepted": true,
+    "phase_b1_2_scientific_status": "B1_2_FORMALLY_ACCEPTED_LIMITED_SCOPE",
+    "phase_b1_3_authorized": false,
+    "qssa_authorized": false,
+    "researcher_formally_signed": true,
+    "termination_authorized": false,
+    "topology_reduction_authorized": false
+  },
+  "decision_counts": {
+    "CONDITIONAL": 3,
+    "N": 0,
+    "PENDING": 0,
+    "Y": 4
+  },
+  "decision_history": [
+    {
+      "disposition": "IMMUTABLE_HISTORICAL_ENGINEERING_RECORD",
+      "path": "docs/reduction/pathways/phase_b1_2_validation_report.json",
+      "scientific_status": "PENDING_HUMAN_REVIEW",
+      "sha256": "f5f344570c96fe91b388d2adbee37db13bd7d65c822a9050317a7828963d5d5c"
+    },
+    {
+      "disposition": "CURRENT_FORMAL_SCIENTIFIC_DECISION",
+      "path": "docs/reduction/pathways/phase_b1_2_formal_signoff_2026-10-10.json",
+      "scientific_status": "B1_2_FORMALLY_ACCEPTED_LIMITED_SCOPE"
+    }
+  ],
+  "engineering_evidence": {
+    "fresh_A_L_gates": {
+      "A": "PASS",
+      "B": "PASS",
+      "C": "PASS",
+      "D": "PASS",
+      "E": "PASS",
+      "F": "PASS",
+      "G": "PASS",
+      "H": "PASS",
+      "I": "PASS",
+      "J": "PASS",
+      "K": "PASS",
+      "L": "PASS"
+    },
+    "fresh_execution_policy": "Unchanged B1-2 runner acceptance functions, CLI output overrides and temporary sinks; old main not called",
+    "fresh_publication_validation": {
+      "B0": "PASS",
+      "B0_negative_count": 18,
+      "B1_1_negative_counts": {
+        "followup_passed": 12,
+        "followup_run": 12,
+        "historical_passed": 23,
+        "historical_run": 23,
+        "total_passed": 35,
+        "total_run": 35
+      },
+      "B1_2_negative_failed": 0,
+      "B1_2_negative_not_run": 0,
+      "B1_2_negative_passed": 30,
+      "B1_2_negative_run": 30,
+      "Petri_enabled_INVALID_LINEAGE_passed": 5,
+      "Petri_enabled_INVALID_LINEAGE_run": 5,
+      "actual_failed_commands": 0,
+      "browser_checks": 222,
+      "browser_status": "PASS",
+      "determinism_status": "PASS",
+      "not_run_items": [],
+      "phase_A": "PASS",
+      "phase_A_negative_count": 10,
+      "source_documents_status": "PASS",
+      "witness_events": {
+        "W1": 1,
+        "W2": 10,
+        "W3": 19,
+        "W4": 30
+      }
+    },
+    "historical_gate_status": "A-L PASS",
+    "publication_checks_path": "docs/reduction/pathways/phase_b1_2_formal_acceptance_publication_checks.json",
+    "scientific_approval_is_separate_from_engineering_PASS": true
+  },
+  "evidence_navigation": [
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_elongation_pathways.md",
+      "sha256": "7f96d3c08dcb429d793ec0471ccad6df4d3a52126aa78b421847a30a6c62cf67"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_execution_log.txt",
+      "sha256": "e102ba2b4f8eec84380af309832b47d1b72677a0dcd15304eb095889393f0a4e"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_failure_evidence.jsonl",
+      "sha256": "a3dbf271ba2c38317917a9894c7700477f8ada1f23769a2bb61b2c68b08bf191"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_independent_verification.json",
+      "sha256": "60c087c6977068f1f181a49439be6463d74b629d5e9a1874235f87f7503d736b"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_negative_controls.json",
+      "sha256": "ba14d04a8f53e075134b37a49e7c38365bff2aa340b41654f6a4a285d260f940"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_original_source_evidence.json",
+      "sha256": "137b6757f2b2272f8bf0206dad4c953795998f30a2670d28cda8570348bc6023"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_original_source_evidence.md",
+      "sha256": "8d712d4e6bc54aaf7952a724d0e5bb28658ec7f612f7f0cf7898222a5c0e816c"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_protocol.md",
+      "sha256": "598b11fdbaedb24b78faa13cd64e8449832f47b743c80155cc651eec573f97c9"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_regression.json",
+      "sha256": "03adbb980d23d85e6dc19971ac6ac41ecad01da08f1da902bc9236106739ace8"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_review.md",
+      "sha256": "ea9a48ba5dd91b3d930d6af2c16db9036464808c74deb36e2198814e003c22f9"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_source_baseline.json",
+      "sha256": "199e1bde248ab081259e8a98265ba9061fc796c69aa1896895f008ff1d8b9002"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_source_scope.json",
+      "sha256": "c43677961114fe78eccf57567ccd978d13c13d8f4d8b9ff0f80392cbf29712de"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_validation_report.json",
+      "sha256": "f5f344570c96fe91b388d2adbee37db13bd7d65c822a9050317a7828963d5d5c"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_2_witnesses.json",
+      "sha256": "a1f091f481784d1a65f17e7db46500e60f35d880c6acbaaa937601cfb9e83094"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "scripts/pathways/phase_b1_2/build_elongation_witnesses.py",
+      "sha256": "1c656e9d837ba8e8f5d86d7159248c77360ac5154ed458f0fa8c451c4b65f280"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "scripts/pathways/phase_b1_2/inspect_source_evidence.py",
+      "sha256": "280c3733ebf3d12bc8a2f2dc0df983507ccc571b9e1ecd8c6120feb49087a9a2"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "scripts/pathways/phase_b1_2/run_phase_b1_2_validation.py",
+      "sha256": "c3101c29eae1df4c6225f80b5709ed5a642ecb0b921ff8de4aafcefebc58fe66"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "scripts/pathways/phase_b1_2/test_elongation_negative_controls.py",
+      "sha256": "cc35cf02b95d6e4a217798233a4545f7dcf44d2e3d8ca0859582d67d2171a577"
+    },
+    {
+      "authority": "IMMUTABLE_B1_2_ENGINEERING_EVIDENCE",
+      "evidence_status": "EXTRACTED",
+      "freshness": "RAW_SHA256_RECHECKED_AT_FORMAL_PUBLICATION",
+      "path": "scripts/pathways/phase_b1_2/verify_elongation_witnesses.py",
+      "sha256": "450795161f0be2dbd0de50d7b996468a7b3ea0bf6a711134f26ba5d68e5b1c4f"
+    }
+  ],
+  "excluded_scope": [
+    "完整复合物及虚拟状态的分子组成和真实肽基转移化学未认证",
+    "全网络元素和核苷酸基团守恒未认证",
+    "作者参考参数下主导通量、路径概率和完整生理时序未认证",
+    "时间尺度分离、QSSA、部分平衡和降阶精度未验证",
+    "完整路径枚举和全模型可达性覆盖未证明",
+    "独立完整 SI 文本/PDF 来源仍未建立；已检查的原论文和 S05-S11/S27 不能填补该缺口",
+    "RF1/RF2 后续释放、Termination 和回收尚未执行",
+    "继承 MATLAB CI 99 passed / 3 failed / 1 incomplete 问题未修复或重跑，不算本轮 PASS"
+  ],
+  "history_policy": "Keep all existing 19 B1-2 files byte unchanged, including historical PENDING_HUMAN_REVIEW states; this separately authorized record is the newer scientific authority.",
+  "human_review": [
+    {
+      "checkpoint": "H1",
+      "conditional_not_promoted_to_Y": false,
+      "decision_authority": "EXPLICIT_HUMAN_RESEARCHER_MESSAGE_2026-10-10",
+      "exact_source_reactions": [
+        {
+          "equation": "elRS70SAGGU0002_fMettRNAfMetCAU -> elRS70SAGGU0002_fMet + tRNAfMetCAU",
+          "level_c_contexts": "ELONG_tRNA_release",
+          "reaction_id": "re0000000001",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re1",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca1",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_fMetCAU.xml"
+            }
+          ]
+        },
+        {
+          "equation": "EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0002_fMet -> elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_aa_tRNA_delivery",
+          "reaction_id": "re0000000013",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re1",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        }
+      ],
+      "researcher_decision": "Y",
+      "scope_and_conditions": "接受 0001→0013 的精确源状态连续；0001 在 W4 仅出现一次。E2 保持作者虚拟复合物的解释边界。",
+      "title": "E2 continuity"
+    },
+    {
+      "checkpoint": "H2",
+      "conditional_not_promoted_to_Y": false,
+      "decision_authority": "EXPLICIT_HUMAN_RESEARCHER_MESSAGE_2026-10-10",
+      "exact_source_reactions": [
+        {
+          "equation": "EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0002_fMet -> elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_aa_tRNA_delivery",
+          "reaction_id": "re0000000013",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re1",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC -> elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000014",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re3",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC -> PO4 + elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000016",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re7",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC -> EFTu_GDP + elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_aa_tRNA_delivery",
+          "reaction_id": "re0000000017",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re9",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0003_Pept0002 -> elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_aa_tRNA_delivery",
+          "reaction_id": "re0000000074",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re1",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC -> elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000075",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re3",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC -> PO4 + elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000077",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re7",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC -> EFTu_GDP + elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_aa_tRNA_delivery",
+          "reaction_id": "re0000000078",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re9",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        }
+      ],
+      "researcher_decision": "Y",
+      "scope_and_conditions": "接受两次独立 EF-Tu/Gly-tRNA 递送、有限来源分配及载体连续性；两份复合递送供应和两份 EF-G_GTP 供应仍是条件输入，不认证作者初始条件下必然可用。",
+      "title": "EF-Tu and two Gly deliveries"
+    },
+    {
+      "checkpoint": "H3",
+      "conditional_not_promoted_to_Y": true,
+      "decision_authority": "EXPLICIT_HUMAN_RESEARCHER_MESSAGE_2026-10-10",
+      "exact_source_reactions": [
+        {
+          "equation": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC -> elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+          "level_c_contexts": "ELONG_peptide_formation",
+          "reaction_id": "re0000000018",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re10",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC -> elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+          "level_c_contexts": "ELONG_peptide_formation",
+          "reaction_id": "re0000000079",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re10",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        }
+      ],
+      "researcher_decision": "CONDITIONAL",
+      "scope_and_conditions": "接受 0018/0079 对 fMet→Pept0002→Pept0003 的源模型状态表达；不认证完整真实肽基转移分子机理、虚拟状态完整化学组成或全局基团守恒。",
+      "title": "Two peptide formations"
+    },
+    {
+      "checkpoint": "H4",
+      "conditional_not_promoted_to_Y": true,
+      "decision_authority": "EXPLICIT_HUMAN_RESEARCHER_MESSAGE_2026-10-10",
+      "exact_source_reactions": [
+        {
+          "equation": "EFG_GTP + elRS70SBGGU0002_Pept0002tRNAGlyGCC -> elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000019",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re12",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP -> elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000022",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re16",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4 -> PO4 + elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+          "level_c_contexts": "ELONG_translocation",
+          "reaction_id": "re0000000024",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re18",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP -> EFG_GDP + elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+          "level_c_contexts": "ELONG_translocation",
+          "reaction_id": "re0000000025",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re19",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "EFG_GTP + elRS70SBGGU0003_Pept0003tRNAGlyGCC -> elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000080",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re12",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP -> elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000083",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re16",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4 -> PO4 + elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+          "level_c_contexts": "ELONG_translocation",
+          "reaction_id": "re0000000085",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re18",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP -> EFG_GDP + elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+          "level_c_contexts": "ELONG_translocation",
+          "reaction_id": "re0000000086",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re19",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        }
+      ],
+      "researcher_decision": "CONDITIONAL",
+      "scope_and_conditions": "接受两轮 EF-G 结合、GDP_PO4 复合状态、PO4 释放、转位和 EFG_GDP 释放的源反应连续性；保留正参数逆向及竞争出口。不认证真实动力学优势、完整生理时间顺序或 QSSA。",
+      "title": "EF-G and translocation"
+    },
+    {
+      "checkpoint": "H5",
+      "conditional_not_promoted_to_Y": false,
+      "decision_authority": "EXPLICIT_HUMAN_RESEARCHER_MESSAGE_2026-10-10",
+      "exact_source_reactions": [
+        {
+          "equation": "EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0002_fMet -> elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_aa_tRNA_delivery",
+          "reaction_id": "re0000000013",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re1",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC -> PO4 + elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000016",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re7",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC -> EFTu_GDP + elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_aa_tRNA_delivery",
+          "reaction_id": "re0000000017",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re9",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "EFG_GTP + elRS70SBGGU0002_Pept0002tRNAGlyGCC -> elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000019",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re12",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4 -> PO4 + elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+          "level_c_contexts": "ELONG_translocation",
+          "reaction_id": "re0000000024",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re18",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP -> EFG_GDP + elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+          "level_c_contexts": "ELONG_translocation",
+          "reaction_id": "re0000000025",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re19",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0003_Pept0002tRNAGlyGCC -> elRS70SAGGU0003_Pept0002 + tRNAGlyGCC",
+          "level_c_contexts": "ELONG_tRNA_release",
+          "reaction_id": "re0000000068",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re1",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca1",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_GlyGCC.xml"
+            }
+          ]
+        },
+        {
+          "equation": "EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0003_Pept0002 -> elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_aa_tRNA_delivery",
+          "reaction_id": "re0000000074",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re1",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC -> PO4 + elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000077",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re7",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC -> EFTu_GDP + elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_aa_tRNA_delivery",
+          "reaction_id": "re0000000078",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re9",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "EFG_GTP + elRS70SBGGU0003_Pept0003tRNAGlyGCC -> elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000080",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re12",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4 -> PO4 + elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+          "level_c_contexts": "ELONG_translocation",
+          "reaction_id": "re0000000085",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re18",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP -> EFG_GDP + elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+          "level_c_contexts": "ELONG_translocation",
+          "reaction_id": "re0000000086",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re19",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        }
+      ],
+      "researcher_decision": "Y",
+      "scope_and_conditions": "接受 W3/W4 精确源物种净式；复合状态内的 GTP 不重复计为游离 GTP。GDP-form 释放不等于 GTP-form 恢复；不扩展为全局元素或核苷酸基团守恒证明。",
+      "title": "Two-round material and energy ledger"
+    },
+    {
+      "checkpoint": "H6",
+      "conditional_not_promoted_to_Y": true,
+      "decision_authority": "EXPLICIT_HUMAN_RESEARCHER_MESSAGE_2026-10-10",
+      "exact_source_reactions": [
+        {
+          "equation": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP -> EFG_GDP + elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+          "level_c_contexts": "ELONG_translocation",
+          "reaction_id": "re0000000086",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re19",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "EFG_GDP + elRS70SAUAA0004_Pept0003tRNAGlyGCC -> elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+          "level_c_contexts": "ELONG_translocation",
+          "reaction_id": "re0000000125",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re86",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "RF1 + elRS70SAUAA0004_Pept0003tRNAGlyGCC -> elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1",
+          "level_c_contexts": "TERM_factor_binding",
+          "reaction_id": "re0000000796",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re210",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Termination_A",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF1.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1 -> RF1 + elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+          "level_c_contexts": "TERM_factor_binding",
+          "reaction_id": "re0000000797",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re211",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Termination_A",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF1.xml"
+            }
+          ]
+        },
+        {
+          "equation": "RF2 + elRS70SAUAA0004_Pept0003tRNAGlyGCC -> elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2",
+          "level_c_contexts": "TERM_factor_binding",
+          "reaction_id": "re0000000811",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re210",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Termination_A",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF2.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2 -> RF2 + elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+          "level_c_contexts": "TERM_factor_binding",
+          "reaction_id": "re0000000812",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re211",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Termination_A",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF2.xml"
+            }
+          ]
+        }
+      ],
+      "researcher_decision": "CONDITIONAL",
+      "scope_and_conditions": "接受 0086 产生的源物种及 RF1/RF2 终止入口。T_pre 仅为项目内部 RF-free termination entry 简称。S27 对无 RF 状态使用 elongation complex，对 RF-bound 后续状态使用 pre-termination complex；不得混淆。",
+      "title": "T_pre and termination boundary"
+    },
+    {
+      "checkpoint": "H7",
+      "conditional_not_promoted_to_Y": false,
+      "decision_authority": "EXPLICIT_HUMAN_RESEARCHER_MESSAGE_2026-10-10",
+      "exact_source_reactions": [
+        {
+          "equation": "EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0002_fMet -> elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_aa_tRNA_delivery",
+          "reaction_id": "re0000000013",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re1",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC -> EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0002_fMet",
+          "level_c_contexts": "ELONG_aa_tRNA_delivery",
+          "reaction_id": "re0000000021",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re15",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "EFG_GTP + elRS70SBGGU0002_Pept0002tRNAGlyGCC -> elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000019",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re12",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP -> EFG_GTP + elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000020",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re13",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP -> elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000022",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re16",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4 -> elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000023",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re17",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0003_Pept0002tRNAGlyGCC -> elRS70SAGGU0003_Pept0002 + tRNAGlyGCC",
+          "level_c_contexts": "ELONG_tRNA_release",
+          "reaction_id": "re0000000068",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re1",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca1",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_GlyGCC.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0003_Pept0002 + tRNAGlyGCC -> elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+          "level_c_contexts": "ELONG_tRNA_release",
+          "reaction_id": "re0000000069",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re2",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca1",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_GlyGCC.xml"
+            }
+          ]
+        },
+        {
+          "equation": "EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0003_Pept0002 -> elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+          "level_c_contexts": "ELONG_aa_tRNA_delivery",
+          "reaction_id": "re0000000074",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re1",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC -> EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0003_Pept0002",
+          "level_c_contexts": "ELONG_aa_tRNA_delivery",
+          "reaction_id": "re0000000082",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re15",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "EFG_GTP + elRS70SBGGU0003_Pept0003tRNAGlyGCC -> elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000080",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re12",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP -> EFG_GTP + elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000081",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re13",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP -> elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000083",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re16",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        },
+        {
+          "equation": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4 -> elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+          "level_c_contexts": "ELONG_energy_coupling",
+          "reaction_id": "re0000000084",
+          "subsystem_memberships": [
+            {
+              "evidence_status": "EXTRACTED",
+              "local_reaction_id": "re17",
+              "mapping_basis": "EXACT_BOTH_SIDES_RATIONAL_STOICHIOMETRY",
+              "model_id": "Elongation_Ca",
+              "source_file": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml"
+            }
+          ]
+        }
+      ],
+      "researcher_decision": "Y",
+      "scope_and_conditions": "接受已审计范围内竞争出口、正参数逆向、零参数方向和资源共享记录；不宣称全部路径已穷举、源 ID 排序表示动力学偏好或一个到达见证证明全模型覆盖。",
+      "title": "Alternative topology and limitations"
+    }
+  ],
+  "phase": "B1-2",
+  "publication_authorization": {
+    "branch": "codex/energy-cycles-v1",
+    "commit_push_authorized": true,
+    "expected_added_file_count": 22,
+    "file_whitelist": [
+      "docs/reduction/pathways/phase_b1_2_elongation_pathways.md",
+      "docs/reduction/pathways/phase_b1_2_execution_log.txt",
+      "docs/reduction/pathways/phase_b1_2_failure_evidence.jsonl",
+      "docs/reduction/pathways/phase_b1_2_formal_acceptance_publication_checks.json",
+      "docs/reduction/pathways/phase_b1_2_formal_signoff_2026-10-10.json",
+      "docs/reduction/pathways/phase_b1_2_formal_signoff_2026-10-10.md",
+      "docs/reduction/pathways/phase_b1_2_independent_verification.json",
+      "docs/reduction/pathways/phase_b1_2_negative_controls.json",
+      "docs/reduction/pathways/phase_b1_2_original_source_evidence.json",
+      "docs/reduction/pathways/phase_b1_2_original_source_evidence.md",
+      "docs/reduction/pathways/phase_b1_2_protocol.md",
+      "docs/reduction/pathways/phase_b1_2_regression.json",
+      "docs/reduction/pathways/phase_b1_2_review.md",
+      "docs/reduction/pathways/phase_b1_2_source_baseline.json",
+      "docs/reduction/pathways/phase_b1_2_source_scope.json",
+      "docs/reduction/pathways/phase_b1_2_validation_report.json",
+      "docs/reduction/pathways/phase_b1_2_witnesses.json",
+      "scripts/pathways/phase_b1_2/build_elongation_witnesses.py",
+      "scripts/pathways/phase_b1_2/inspect_source_evidence.py",
+      "scripts/pathways/phase_b1_2/run_phase_b1_2_validation.py",
+      "scripts/pathways/phase_b1_2/test_elongation_negative_controls.py",
+      "scripts/pathways/phase_b1_2/verify_elongation_witnesses.py"
+    ],
+    "force_push_authorized": false,
+    "ordinary_push_only": true,
+    "prepublication_stage_and_whitespace_checks_required": true
+  },
+  "record_type": "ADDITIVE_RESEARCHER_FORMAL_SCIENTIFIC_SIGNOFF",
+  "recorded_at_Asia_Shanghai": "2026-10-10T01:34:16.735785+08:00",
+  "researcher_decision_sequence": "Y / Y / CONDITIONAL / CONDITIONAL / Y / CONDITIONAL / Y",
+  "scientific_status": "B1_2_FORMALLY_ACCEPTED_LIMITED_SCOPE",
+  "signature_kind": "EXPLICIT_HUMAN_APPROVAL_RECORDED_BY_SEAN_CODEX",
+  "signoff_authority": "USER_DIRECT_MESSAGE: Codex — B1-2 正式签署、Commit & Push",
+  "source_provenance": [
+    {
+      "authority": "CANONICAL_SBML",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+    },
+    {
+      "authority": "AUTHOR_CSV",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465"
+    },
+    {
+      "authority": "AUTHOR_ZIP",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "sha256": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52"
+    },
+    {
+      "authority": "REVIEWED_CONTEXT_ONLY",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "docs/reduction/reaction_level_annotation_v2.csv",
+      "sha256": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Gly.xml",
+      "sha256": "16a7a4ee463a130dab146ed5de90636b9242e6815f0b85a6264fed725d3d454d"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_A_Met.xml",
+      "sha256": "440d2cbe33964e20f6dd5c3b40c8c84ff89e91c34f86de653ea1c48131b747a6"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_fMetCAU.xml",
+      "sha256": "81e265aec3a630779829d2f734f88a76666004a95b9343835a016455bb57e227"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Aminoacylation_B_GlyGCC.xml",
+      "sha256": "314e1c203367957f0d0c6c05dfcb58f496b68845face66bc5682919d030cd75a"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_A_Gly.xml",
+      "sha256": "01bd54f888be77fea1b5c78cddca9e066f6adfa81febffa14da3eb85affc68a5"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_A_Met.xml",
+      "sha256": "eb7b300b00e0850a8e3e8c2571f3569565dd49290bda9e2cd143ef65e1b948f3"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_B.xml",
+      "sha256": "0351f98dd5bed6f59bc8fb8e2e54794d1ccdffa59927e98b3b360bec791c80ae"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_fMetCAU.xml",
+      "sha256": "a7cbf1ac160720e5c90ea072c53bcd45391f6ad414988123ee0aed3e9d10c420"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca1_GlyGCC.xml",
+      "sha256": "01fbdc9aba47a58224aaf2590cec372618045faae134aefd0003af2ee6a4630e"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0002.xml",
+      "sha256": "fa183c0a44c8a053e7d5d6f92ece79252f1d867fcc6fd0f56a92f430de02c197"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Elongation_Ca2_pept0003.xml",
+      "sha256": "7df7ff8869563d50eaf2e49cd7eafc7462421555569560b4efaa3bbd407dda7a"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_A.xml",
+      "sha256": "9829bb77dcb1e5a880b61cf5e03c56a963f5079c00fe7c3cb9370881e1e5466c"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_B.xml",
+      "sha256": "8127762b512860a0532b1c76ef29da608e45b6221379aace824e2ab6d3a0f61d"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_C.xml",
+      "sha256": "105fd1c028b76fffe1c5eab4e24b70cdaf2d8517b8c6be570f3dfe3266494214"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/EnergyRegeneration_D.xml",
+      "sha256": "8c6f315098381d5bfce16176060fd8cf9c9f7dfd3cd2e05714cabe7de24ce078"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/FMet_tRNASynthesis.xml",
+      "sha256": "10633f79d44350c6ab555cb80b85b5068e048b6f52916ca454c066c547db3491"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Initiation_A.xml",
+      "sha256": "15d151724760ad3f98e2742e48b7c9daaf43f3b37cd4eccd5bd38b96f3bdf320"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Initiation_B1.xml",
+      "sha256": "b89b1eac8dbbd4dd0f96a356056b8ae1a999f13f0b398a9516ed1fc50ff4894f"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Initiation_B2.xml",
+      "sha256": "fa7b8687b052360e78b7e725cbb0ec93602f7e50da47a6c64d112544a32e96ff"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Initiation_C.xml",
+      "sha256": "8c983174446b5e2a70922870e150474ac93ffdbf95b658e9864e5e20c95a9fde"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/SmallMolecules.xml",
+      "sha256": "731b0c71057fdc3129c6072a2a3e107e9b908415cd5e227b3ffa7cad09ddbdb2"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF1.xml",
+      "sha256": "bf78f1693fefae5ce2380622922aa5c9285611e22a642f56c5630836bbf25915"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Termination_A_RF2.xml",
+      "sha256": "42ac014731f0058f717759e1a90f449d3d563b6c61b91e4ccccf3e766400b656"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Termination_B_RF1.xml",
+      "sha256": "3db57e09f5a5ce70ce763dd75f23d03f6ab5591f9476f80e49aef7a054f5cc67"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Termination_B_RF2.xml",
+      "sha256": "3ab9d98e640df2248c673b993b88cbbf61147d4762dd8416cd10f665708042c4"
+    },
+    {
+      "authority": "ORIGINAL_SUBSYSTEM",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/subsystems/Termination_C.xml",
+      "sha256": "369766462c969ced933af9fbd7dd1fe960c5be5b8996a9d00be0ac528af63b63"
+    }
+  ],
+  "starting_repository": {
+    "baseline_head": "672ed34c27956f50c0913efc0b153937b250c2d0",
+    "branch": "codex/energy-cycles-v1",
+    "machine": "sean",
+    "origin": "https://github.com/DrWanSJ/PURE.git",
+    "root": "C:\\Users\\sean\\Desktop\\GUV",
+    "tracked_files_protected": 2395,
+    "upstream_ahead_behind": [
+      0,
+      0
+    ]
+  },
+  "stop_instruction": "After ordinary commit/push and remote verification STOP; do not start B1-3, Termination, topology reduction, QSSA or kinetic reduction.",
+  "user_confirmation_date": "2026-10-10",
+  "witnesses": [
+    {
+      "event_count": 1,
+      "evidence_path": "docs/reduction/pathways/phase_b1_2_witnesses.json",
+      "evidence_pointer": "witnesses/0",
+      "exact_net_stoichiometry": {
+        "EFTu_GTP_GlytRNAGlyGCC": "-1",
+        "elRS70SAGGU0002_fMet": "-1",
+        "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+      },
+      "final_marking": {
+        "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+      },
+      "initial_marking": {
+        "EFTu_GTP_GlytRNAGlyGCC": "1",
+        "elRS70SAGGU0002_fMet": "1"
+      },
+      "net_reaction": "EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0002_fMet -> elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+      "original_reaction_sequence": [
+        "re0000000013"
+      ],
+      "resource_ledger": {
+        "ADP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "AMP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "ATP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFG": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFG_GDP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFG_GTP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFTu": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFTu_GDP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFTu_GTP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFTu_GTP_GlytRNAGlyGCC": {
+          "event_membership": [
+            "W1:E01"
+          ],
+          "final": "0",
+          "initial": "1",
+          "net": "-1"
+        },
+        "FD": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GDP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GTP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "Gly": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GlytRNAGlyGCC": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "Met": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "PO4": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "PPi": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "THF": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "elRS70SAGGU0002_fMet": {
+          "event_membership": [
+            "W1:E01"
+          ],
+          "final": "0",
+          "initial": "1",
+          "net": "-1"
+        },
+        "elRS70SAGGU0002_fMettRNAfMetCAU": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "elRS70SAGGU0003_Pept0002": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "fMettRNAfMetCAU": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "tRNAGlyGCC": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "tRNAfMetCAU": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        }
+      },
+      "witness_id": "W1"
+    },
+    {
+      "event_count": 10,
+      "evidence_path": "docs/reduction/pathways/phase_b1_2_witnesses.json",
+      "evidence_pointer": "witnesses/1",
+      "exact_net_stoichiometry": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "EFTu_GDP": "1",
+        "EFTu_GTP_GlytRNAGlyGCC": "-1",
+        "PO4": "2",
+        "elRS70SAGGU0002_fMet": "-1",
+        "elRS70SAGGU0003_Pept0002": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "final_marking": {
+        "EFG_GDP": "1",
+        "EFTu_GDP": "1",
+        "PO4": "2",
+        "elRS70SAGGU0003_Pept0002": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "initial_marking": {
+        "EFG_GTP": "1",
+        "EFTu_GTP_GlytRNAGlyGCC": "1",
+        "elRS70SAGGU0002_fMet": "1"
+      },
+      "net_reaction": "EFG_GTP + EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0002_fMet -> EFG_GDP + EFTu_GDP + 2 PO4 + elRS70SAGGU0003_Pept0002 + tRNAGlyGCC",
+      "original_reaction_sequence": [
+        "re0000000013",
+        "re0000000014",
+        "re0000000016",
+        "re0000000017",
+        "re0000000018",
+        "re0000000019",
+        "re0000000022",
+        "re0000000024",
+        "re0000000025",
+        "re0000000068"
+      ],
+      "resource_ledger": {
+        "ADP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "AMP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "ATP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFG": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFG_GDP": {
+          "event_membership": [
+            "W2:E09"
+          ],
+          "final": "1",
+          "initial": "0",
+          "net": "1"
+        },
+        "EFG_GTP": {
+          "event_membership": [
+            "W2:E06"
+          ],
+          "final": "0",
+          "initial": "1",
+          "net": "-1"
+        },
+        "EFTu": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFTu_GDP": {
+          "event_membership": [
+            "W2:E04"
+          ],
+          "final": "1",
+          "initial": "0",
+          "net": "1"
+        },
+        "EFTu_GTP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFTu_GTP_GlytRNAGlyGCC": {
+          "event_membership": [
+            "W2:E01"
+          ],
+          "final": "0",
+          "initial": "1",
+          "net": "-1"
+        },
+        "FD": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GDP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GTP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "Gly": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GlytRNAGlyGCC": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "Met": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "PO4": {
+          "event_membership": [
+            "W2:E03",
+            "W2:E08"
+          ],
+          "final": "2",
+          "initial": "0",
+          "net": "2"
+        },
+        "PPi": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "THF": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "elRS70SAGGU0002_fMet": {
+          "event_membership": [
+            "W2:E01"
+          ],
+          "final": "0",
+          "initial": "1",
+          "net": "-1"
+        },
+        "elRS70SAGGU0002_fMettRNAfMetCAU": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "elRS70SAGGU0003_Pept0002": {
+          "event_membership": [
+            "W2:E10"
+          ],
+          "final": "1",
+          "initial": "0",
+          "net": "1"
+        },
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "fMettRNAfMetCAU": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "tRNAGlyGCC": {
+          "event_membership": [
+            "W2:E10"
+          ],
+          "final": "1",
+          "initial": "0",
+          "net": "1"
+        },
+        "tRNAfMetCAU": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        }
+      },
+      "witness_id": "W2"
+    },
+    {
+      "event_count": 19,
+      "evidence_path": "docs/reduction/pathways/phase_b1_2_witnesses.json",
+      "evidence_pointer": "witnesses/2",
+      "exact_net_stoichiometry": {
+        "EFG_GDP": "2",
+        "EFG_GTP": "-2",
+        "EFTu_GDP": "2",
+        "EFTu_GTP_GlytRNAGlyGCC": "-2",
+        "PO4": "4",
+        "elRS70SAGGU0002_fMet": "-1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "final_marking": {
+        "EFG_GDP": "2",
+        "EFTu_GDP": "2",
+        "PO4": "4",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "initial_marking": {
+        "EFG_GTP": "2",
+        "EFTu_GTP_GlytRNAGlyGCC": "2",
+        "elRS70SAGGU0002_fMet": "1"
+      },
+      "net_reaction": "2 EFG_GTP + 2 EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0002_fMet -> 2 EFG_GDP + 2 EFTu_GDP + 4 PO4 + elRS70SAUAA0004_Pept0003tRNAGlyGCC + tRNAGlyGCC",
+      "original_reaction_sequence": [
+        "re0000000013",
+        "re0000000014",
+        "re0000000016",
+        "re0000000017",
+        "re0000000018",
+        "re0000000019",
+        "re0000000022",
+        "re0000000024",
+        "re0000000025",
+        "re0000000068",
+        "re0000000074",
+        "re0000000075",
+        "re0000000077",
+        "re0000000078",
+        "re0000000079",
+        "re0000000080",
+        "re0000000083",
+        "re0000000085",
+        "re0000000086"
+      ],
+      "resource_ledger": {
+        "ADP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "AMP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "ATP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFG": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFG_GDP": {
+          "event_membership": [
+            "W3:E09",
+            "W3:E19"
+          ],
+          "final": "2",
+          "initial": "0",
+          "net": "2"
+        },
+        "EFG_GTP": {
+          "event_membership": [
+            "W3:E06",
+            "W3:E16"
+          ],
+          "final": "0",
+          "initial": "2",
+          "net": "-2"
+        },
+        "EFTu": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFTu_GDP": {
+          "event_membership": [
+            "W3:E04",
+            "W3:E14"
+          ],
+          "final": "2",
+          "initial": "0",
+          "net": "2"
+        },
+        "EFTu_GTP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFTu_GTP_GlytRNAGlyGCC": {
+          "event_membership": [
+            "W3:E01",
+            "W3:E11"
+          ],
+          "final": "0",
+          "initial": "2",
+          "net": "-2"
+        },
+        "FD": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GDP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GTP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "Gly": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GlytRNAGlyGCC": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "Met": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "PO4": {
+          "event_membership": [
+            "W3:E03",
+            "W3:E08",
+            "W3:E13",
+            "W3:E18"
+          ],
+          "final": "4",
+          "initial": "0",
+          "net": "4"
+        },
+        "PPi": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "THF": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "elRS70SAGGU0002_fMet": {
+          "event_membership": [
+            "W3:E01"
+          ],
+          "final": "0",
+          "initial": "1",
+          "net": "-1"
+        },
+        "elRS70SAGGU0002_fMettRNAfMetCAU": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "elRS70SAGGU0003_Pept0002": {
+          "event_membership": [
+            "W3:E10",
+            "W3:E11"
+          ],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": {
+          "event_membership": [
+            "W3:E19"
+          ],
+          "final": "1",
+          "initial": "0",
+          "net": "1"
+        },
+        "fMettRNAfMetCAU": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "tRNAGlyGCC": {
+          "event_membership": [
+            "W3:E10"
+          ],
+          "final": "1",
+          "initial": "0",
+          "net": "1"
+        },
+        "tRNAfMetCAU": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        }
+      },
+      "witness_id": "W3"
+    },
+    {
+      "event_count": 30,
+      "evidence_path": "docs/reduction/pathways/phase_b1_2_witnesses.json",
+      "evidence_pointer": "witnesses/3",
+      "exact_net_stoichiometry": {
+        "EFG_GDP": "2",
+        "EFG_GTP": "-2",
+        "EFTu_GDP": "2",
+        "EFTu_GTP_GlytRNAGlyGCC": "-2",
+        "IF2_GDP": "1",
+        "IF2_GTP_fMettRNAfMetCAU": "-1",
+        "PO4": "5",
+        "RS30S": "-1",
+        "RS50S": "-1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "1",
+        "mRNA": "-1",
+        "tRNAGlyGCC": "1",
+        "tRNAfMetCAU": "1"
+      },
+      "final_marking": {
+        "EFG_GDP": "2",
+        "EFTu_GDP": "2",
+        "IF1": "1",
+        "IF2_GDP": "1",
+        "IF3": "1",
+        "PO4": "5",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "1",
+        "tRNAGlyGCC": "1",
+        "tRNAfMetCAU": "1"
+      },
+      "initial_marking": {
+        "EFG_GTP": "2",
+        "EFTu_GTP_GlytRNAGlyGCC": "2",
+        "IF1": "1",
+        "IF2_GTP_fMettRNAfMetCAU": "1",
+        "IF3": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1"
+      },
+      "net_reaction": "2 EFG_GTP + 2 EFTu_GTP_GlytRNAGlyGCC + IF2_GTP_fMettRNAfMetCAU + RS30S + RS50S + mRNA -> 2 EFG_GDP + 2 EFTu_GDP + IF2_GDP + 5 PO4 + elRS70SAUAA0004_Pept0003tRNAGlyGCC + tRNAGlyGCC + tRNAfMetCAU",
+      "original_reaction_sequence": [
+        "re0000000459",
+        "re0000000507",
+        "re0000000513",
+        "re0000000519",
+        "re0000000529",
+        "re0000000717",
+        "re0000000722",
+        "re0000000747",
+        "re0000000757",
+        "re0000000726",
+        "re0000000001",
+        "re0000000013",
+        "re0000000014",
+        "re0000000016",
+        "re0000000017",
+        "re0000000018",
+        "re0000000019",
+        "re0000000022",
+        "re0000000024",
+        "re0000000025",
+        "re0000000068",
+        "re0000000074",
+        "re0000000075",
+        "re0000000077",
+        "re0000000078",
+        "re0000000079",
+        "re0000000080",
+        "re0000000083",
+        "re0000000085",
+        "re0000000086"
+      ],
+      "resource_ledger": {
+        "ADP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "AMP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "ATP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFG": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFG_GDP": {
+          "event_membership": [
+            "W4:E20",
+            "W4:E30"
+          ],
+          "final": "2",
+          "initial": "0",
+          "net": "2"
+        },
+        "EFG_GTP": {
+          "event_membership": [
+            "W4:E17",
+            "W4:E27"
+          ],
+          "final": "0",
+          "initial": "2",
+          "net": "-2"
+        },
+        "EFTu": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFTu_GDP": {
+          "event_membership": [
+            "W4:E15",
+            "W4:E25"
+          ],
+          "final": "2",
+          "initial": "0",
+          "net": "2"
+        },
+        "EFTu_GTP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "EFTu_GTP_GlytRNAGlyGCC": {
+          "event_membership": [
+            "W4:E12",
+            "W4:E22"
+          ],
+          "final": "0",
+          "initial": "2",
+          "net": "-2"
+        },
+        "FD": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GDP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GTP": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "Gly": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GlytRNAGlyGCC": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "Met": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "PO4": {
+          "event_membership": [
+            "W4:E07",
+            "W4:E14",
+            "W4:E19",
+            "W4:E24",
+            "W4:E29"
+          ],
+          "final": "5",
+          "initial": "0",
+          "net": "5"
+        },
+        "PPi": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "THF": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "elRS70SAGGU0002_fMet": {
+          "event_membership": [
+            "W4:E11",
+            "W4:E12"
+          ],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "elRS70SAGGU0002_fMettRNAfMetCAU": {
+          "event_membership": [
+            "W4:E10",
+            "W4:E11"
+          ],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "elRS70SAGGU0003_Pept0002": {
+          "event_membership": [
+            "W4:E21",
+            "W4:E22"
+          ],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": {
+          "event_membership": [
+            "W4:E30"
+          ],
+          "final": "1",
+          "initial": "0",
+          "net": "1"
+        },
+        "fMettRNAfMetCAU": {
+          "event_membership": [],
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "tRNAGlyGCC": {
+          "event_membership": [
+            "W4:E21"
+          ],
+          "final": "1",
+          "initial": "0",
+          "net": "1"
+        },
+        "tRNAfMetCAU": {
+          "event_membership": [
+            "W4:E11"
+          ],
+          "final": "1",
+          "initial": "0",
+          "net": "1"
+        }
+      },
+      "witness_id": "W4"
+    }
+  ]
+}
