@@ -9,6 +9,7 @@ Playwright uses an existing system browser; it never installs a browser.
 from __future__ import annotations
 
 import argparse
+import base64
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from fractions import Fraction
@@ -34,6 +35,7 @@ OUT = ROOT / "docs/reduction/pathways"
 SOURCE = ROOT / "models/pnas2017_full_reference/original/fMGG_synthesis.xml"
 V2 = ROOT / "docs/reduction/reaction_level_annotation_v2.csv"
 AUTHOR = ROOT / "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip"
+PRESENTATION_BASELINE = "f2cd0aacf345f029c907b0690d0fabb9e30f8b66"
 SB = "{http://www.sbml.org/sbml/level2/version4}"
 MM = "{http://www.w3.org/1998/Math/MathML}"
 NEW_NAMES = {"reaction_atlas_prototype.html", "reaction_atlas_ui_review.md",
@@ -162,6 +164,20 @@ def extract(html):
     match = re.search(r'<script id="atlas-data" type="application/json">(.*?)</script>', html, re.S)
     require(match is not None, "Offline source payload missing")
     return json.loads(match.group(1))
+
+
+def previous_version_integrity(data):
+    """Compare the entire scientific payload with the committed pre-UI version."""
+    original = subprocess.check_output(["git", "show", PRESENTATION_BASELINE +
+        ":docs/reduction/pathways/reaction_atlas_prototype.html"], cwd=ROOT).decode("utf-8")
+    old = extract(original)
+    require(data == old, "UI changes must leave the full embedded scientific payload unchanged")
+    return {"status": "PASS", "baseline_commit": PRESENTATION_BASELINE,
+            "entire_embedded_scientific_payload_identical": True,
+            "path_order_and_nets_unchanged": 20,
+            "directed_path_step_occurrences": sum(len(p["reaction_ids"]) for p in old["paths"].values()),
+            "phase_a_reactions": len(old["phase_a_ids"]),
+            "return_witnesses": sum(len(m["return_loops"]) for m in old["modules"].values())}
 
 
 def gate_a(data, species, source, v2, parameters):
@@ -394,6 +410,75 @@ def run_browser(html_path, data, source, screenshot_dir=None):
             require(page.locator("#inspector-rid").inner_text() == rid, "Actual inspector Reaction ID")
             require(page.locator("#inspector-equation").inner_text() == data["reactions"][rid]["equation"], "Actual inspector source equation " + rid)
 
+        def presentation_cards(test_page, path):
+            cards = test_page.locator(".path-step").evaluate_all("""xs=>xs.map(e=>({
+              rid:e.dataset.rid,number:Number(e.dataset.step),pairStatus:e.dataset.pairStatus,
+              displayIds:e.dataset.displayIds.split(','),
+              equations:[...e.querySelectorAll('.equation')].map(x=>x.textContent.trim()),
+              headerIds:[...e.querySelectorAll('.card-top [data-action="reaction"]')].map(x=>x.dataset.rid),
+              tags:[...e.querySelectorAll('.tag.code')].map(x=>x.textContent),
+              description:e.querySelector('.mechanism-description')?.textContent,
+              direction:e.querySelector('.path-direction')?.textContent,
+              activities:[...e.querySelectorAll('[data-direction-rid]')].map(x=>({
+                rid:x.dataset.directionRid,label:x.querySelector('.activity-label').textContent,
+                disabled:x.classList.contains('disabled-direction')})),
+              competition:[...e.querySelectorAll('.competition-button')].map(x=>({
+                state:x.dataset.state,count:Number(x.dataset.outgoingCount),label:x.textContent,aria:x.getAttribute('aria-label')})),
+              projection:e.querySelectorAll('.carrier-transition,.co-substrates,.card-meta').length,
+              text:e.textContent,technical:[...e.querySelectorAll('.step-tools [data-action="reaction"]')].map(x=>x.textContent)
+            }))""")
+            require(len(cards) == len(path["reaction_ids"]), "One card per actual directed step")
+            displayed_ids, paired_cards = set(), 0
+            for i, (card, rid) in enumerate(zip(cards, path["reaction_ids"])):
+                r = source[rid]
+                matches = [other for other, candidate in source.items() if other != rid and
+                           r["reactants"] == candidate["products"] and r["products"] == candidate["reactants"]]
+                reciprocal = ([other for other, candidate in source.items() if other != matches[0] and
+                               source[matches[0]]["reactants"] == candidate["products"] and
+                               source[matches[0]]["products"] == candidate["reactants"]] if len(matches) == 1 else [])
+                paired = (len(matches) == len(reciprocal) == 1 and data["reactions"][rid]["reverse"] == matches[0]
+                          and data["reactions"][matches[0]]["reverse"] == rid)
+                ids = sorted([rid, matches[0]]) if paired else [rid]
+                displayed_ids.update(ids)
+                paired_cards += paired
+                require(card["rid"] == rid and card["number"] == i + 1, "Original step identity and number")
+                require(card["headerIds"] == card["displayIds"] == ids, "Both original IDs independently linked")
+                require(card["pairStatus"] == ("EXACT_UNIQUE_SOURCE_PAIR" if paired else "UNPAIRED"), "Independent exact pair status")
+                require(len(card["equations"]) == 1, "Only one equation per step")
+                equation = card["equations"][0]
+                require(("⇌" in equation) == paired, "No invented bidirectional arrow")
+                require(parse_equation(equation.replace("⇌", "->").replace("→", "->")) ==
+                        [source[ids[0]]["reactants"], source[ids[0]]["products"]], "Canonical source sides and coefficients")
+                require(card["projection"] == 0 and not any(x in card["text"] for x in
+                        ("另外必须消耗", "另外释放", "∅", "RFAM")), "No redundant projection or audit fields")
+                require(card["tags"] == data["reactions"][rid]["level_c"], "Reviewed current-direction Level-C retained")
+                require(card["description"] and card["technical"] == ["技术详情"], "Mechanism explanation and technical action")
+                direction = "→" if rid == ids[0] else "←"
+                require(card["direction"] == "当前路径：" + direction + " " + rid, "Actual path direction, independent of pair orientation")
+                if paired:
+                    require(card["activities"] == [{"rid": id, "label": "REFERENCE_DISABLED" if
+                            data["reactions"][id]["reference_activity"] == "REFERENCE_DISABLED" else "REFERENCE_ENABLED",
+                            "disabled": data["reactions"][id]["reference_activity"] == "REFERENCE_DISABLED"} for id in ids],
+                            "Separate directional reference activity and disabled styling")
+                before = path["states"][i]
+                # Count from fresh SBML sides within the published carrier module,
+                # independently of JS and the parameter filter.
+                m = data["modules"][data["transitions"][rid]["enzyme"]]
+                outlets = [id for id in m["reaction_ids"] if before in source[id]["reactants"] and
+                           set(source[id]["products"]) & set(m["carrier_states"])]
+                if len(outlets) > 1:
+                    require(len(card["competition"]) == 1 and card["competition"][0]["state"] == before and
+                            card["competition"][0]["count"] == len(outlets) and
+                            card["competition"][0]["label"] == f"查看竞争出口 ({len(outlets)})" and
+                            before in card["competition"][0]["aria"], "Original precursor and outlet count")
+                else:
+                    require(not card["competition"], "No misleading competition action")
+            counts = test_page.locator(".path-counts")
+            require(int(counts.get_attribute("data-path-step-count")) == len(cards) and
+                    int(counts.get_attribute("data-paired-card-count")) == paired_cards and
+                    int(counts.get_attribute("data-displayed-id-count")) == len(displayed_ids), "Three separate UI counts")
+            return {"cards": len(cards), "bidirectional_cards": paired_cards, "displayed_original_ids": len(displayed_ids)}
+
         try:
             page.goto(html_path.resolve().as_uri(), wait_until="load")
             check("offline file:// load", page.url.startswith("file:") and page.locator("#content h2").first.inner_text() == "RS_binding")
@@ -427,21 +512,56 @@ def run_browser(html_path, data, source, screenshot_dir=None):
                 kind = "CATALYTIC_CYCLE" if path["complete_catalytic_cycle"] else "PATH_NET"
                 check("summary type " + pid, page.locator(f'[data-summary-kind="{kind}"]').count() == 1)
                 check("reference support " + pid, page.locator("[data-reference-supported]").get_attribute("data-reference-supported") == str(path["reference_feasible"]).lower())
+                check("single source equation and exact reverse card " + pid, True, presentation_cards(page, path))
+            evidence["representative_card_coverage"] = {"paths": 20,
+                "actual_directed_step_occurrences": sum(len(p["reaction_ids"]) for p in data["paths"].values()),
+                "one_equation_per_step": True, "independent_direction_activity": True,
+                "carrier_projection_hidden_only_in_main_cards": True}
             choose_path("GlyRS-P01")
             check("GlyRS-P01 has eight steps", page.locator(".path-step").count() == 8)
-            check("reverse details default closed", page.locator(".path-step details[open]").count() == 0)
-            reverse = page.locator(".path-step details.reverse-box").first
-            reverse.locator(":scope > summary").click()
+            first_step = page.locator(".path-step").first
+            check("0126 centered on one reversible source equation", first_step.locator(".equation").inner_text() == "Gly + GlyRS ⇌ GlyRS_Gly" and
+                  first_step.locator(".carrier-transition,.co-substrates").count() == 0 and "RS_binding" in first_step.inner_text())
+            first_step.locator('.step-tools [data-action="reaction"]').click()
+            t = data["transitions"]["re0000000126"]
+            check("0126 inspector preserves carrier projection", all(
+                json.loads(page.locator("#inspector-carrier-" + side).get_attribute("data-species")) == t["carrier_" + side]
+                for side in ("before", "after")))
+            check("0126 inspector preserves other participants", page.locator("#inspector-other-reactants li").inner_text().split() == [t["other_reactants"]["Gly"], "Gly"] and
+                  page.locator("#inspector-other-products").inner_text() == "无" and not t["other_products"])
+            page.locator('#inspector-carrier-before [data-action="state"]').click()
+            check("carrier state remains accessible through inspector", page.locator("#state-dialog-title").inner_text() == t["carrier_before"][0])
+            page.locator('[data-action="close-state"]').click()
             partner = data["reactions"][data["paths"]["GlyRS-P01"]["reaction_ids"][0]]["reverse"]
-            reverse.locator('[data-action="reaction"]').click()
+            first_step.locator(f'.card-top [data-action="reaction"][data-rid="{partner}"]').click()
             check("reverse partner inspected without changing main chain", page.locator("#inspector-rid").inner_text() == partner and page.locator(".path-step").count() == 8)
-            reverse.locator(":scope > summary").click()
+            check("0131 has its own original direction and parameter", page.locator("#inspector-equation").inner_text() == data["reactions"][partner]["equation"] and
+                  json.loads(page.locator("#inspector-carrier-before").get_attribute("data-species")) == data["transitions"][partner]["carrier_before"])
+            page.locator("#source-provenance > summary").click()
+            check("inverse original rate remains separate", "原始参数: " + data["reactions"][partner]["reference_parameter"] in page.locator(".provenance").inner_text())
             page.locator('.path-step[data-rid="re0000000197"] [data-action="reaction"]').first.click()
             check("0197 exact inspector", page.locator("#inspector-equation").inner_text() == data["reactions"]["re0000000197"]["equation"])
             check("provenance collapsed", not page.locator("#source-provenance").evaluate("e=>e.open"))
+            disabled_row = page.locator('.path-step[data-rid="re0000000197"] [data-direction-rid="re0000000198"]')
+            check("0198 disabled direction explicit in bidirectional card", disabled_row.locator(".activity-label").inner_text() == "REFERENCE_DISABLED" and
+                  disabled_row.evaluate("e=>e.classList.contains('disabled-direction')") and disabled_row.is_visible())
+            page.locator('.path-step[data-rid="re0000000197"] .card-top [data-rid="re0000000198"]').click()
+            check("0198 independently opens disabled inverse inspector", page.locator("#inspector-rid").inner_text() == "re0000000198" and
+                  page.locator("#inspector-equation").inner_text() == data["reactions"]["re0000000198"]["equation"] and
+                  "REFERENCE_DISABLED" in page.locator("#inspector-content").inner_text())
+            first_step.scroll_into_view_if_needed()
+            page.locator("#reading").evaluate("e=>e.scrollTop+=document.querySelector('.path-steps').getBoundingClientRect().top-e.getBoundingClientRect().top-24")
+            shot("atlas-glyrs-p01-new-cards")
+            if screenshot_dir:
+                box = first_step.bounding_box()
+                page.screenshot(path=str(screenshot_dir / "atlas-glyrs-p01-first-card.png"),
+                    clip={"x": box["x"] - 40, "y": box["y"], "width": box["width"] + 40, "height": box["height"]})
             shot("atlas-glyrs-p01")
             precursor = "GlyRS_Gly_ATP_tRNAGlyGCC"
-            page.locator(f'.path-step[data-rid="re0000000197"] [data-action="state"][data-state="{precursor}"]').first.click()
+            page.locator("#positive-only").check()
+            competition = page.locator(f'.path-step[data-rid="re0000000197"] .competition-button[data-state="{precursor}"]')
+            check("parameter filter preserves five original precursor exits", competition.inner_text() == "查看竞争出口 (5)")
+            competition.click()
             grid = page.locator("#state-dialog .branch-grid")
             actual = grid.locator("[data-outgoing-rid]").evaluate_all("xs=>xs.map(e=>e.dataset.outgoingRid).sort()")
             expected = sorted(f"re{i:010d}" for i in (197, 206, 196, 194, 214))
@@ -457,6 +577,7 @@ def run_browser(html_path, data, source, screenshot_dir=None):
                   "PRODUCTIVE_REJOIN" not in page.locator("#state-content .tag-row").first.inner_text())
             check("all 15 sink inlets accessible", page.locator("#state-content > .jump-list [data-action='reaction']").count() == 15)
             page.locator('[data-action="close-state"]').click()
+            page.locator("#positive-only").uncheck()
             choose_path("GlyRS-P02")
             page.locator('[data-action="rejoin"][data-state="GlyRS_Gly_ATP"]').click()
             check("alternate entrance rejoin focuses next 0205", page.locator("#selected-path-title").inner_text() == "GlyRS-P01" and
@@ -464,6 +585,63 @@ def run_browser(html_path, data, source, screenshot_dir=None):
             choose_path("GlyRS-P07")
             page.locator('[data-action="rejoin"][data-state="GlyRS_GlyAMP_tRNAGlyGCC"]').click()
             check("shared suffix rejoin focuses 0178", page.locator(".focused-step").get_attribute("data-rid") == "re0000000178")
+
+            displays = page.evaluate("() => Object.fromEntries(Object.keys(Atlas.data.reactions).map(rid=>[rid,Atlas.getExactReverseDisplay(rid,Atlas.data)]))")
+            paired_ids = []
+            for rid, display in displays.items():
+                matches = [id for id, r in source.items() if id != rid and source[rid]["reactants"] == r["products"] and
+                           source[rid]["products"] == r["reactants"]]
+                if display["reverseId"]:
+                    a, b = display["forwardId"], display["reverseId"]
+                    require(matches == [b if rid == a else a] and a < b, "Every displayed pair uses full exact source sides")
+                    require(source[a]["reactants"] == source[b]["products"] and source[a]["products"] == source[b]["reactants"], "No net-only reverse matching")
+                    require(exact(display["reactants"]) == source[a]["reactants"] and exact(display["products"]) == source[a]["products"], "Deterministic original orientation")
+                    paired_ids.append(rid)
+                else:
+                    require(not matches, "Unique published exact partners must be displayed")
+            check("all 968 reverse display decisions independently checked against SBML", True,
+                  {"paired_directed_ids": len(paired_ids), "unique_exact_pairs": len(paired_ids) // 2})
+            controls = page.evaluate("""() => {
+              const tiny=()=>({reactions:{F:structuredClone(Atlas.data.reactions.re0000000126),
+                R:structuredClone(Atlas.data.reactions.re0000000131)}});
+              const fixture=()=>{const d=tiny();d.reactions.F.reverse='R';d.reactions.R.reverse='F';return d;};
+              const paired=(d,id='F')=>Boolean(Atlas.getExactReverseDisplay(id,d).reverseId);
+              const result={},d=fixture();
+              const a=Atlas.getExactReverseDisplay('F',d),b=Atlas.getExactReverseDisplay('R',d);
+              result.canonicalBothDirections=a.forwardId===b.forwardId && a.reverseId===b.reverseId &&
+                a.currentDirection==='→' && b.currentDirection==='←';
+              const near=fixture();near.reactions.R.products.Gly='1.00000000000000000001';result.nearCoefficientRejected=!paired(near);
+              const netOnly=fixture();netOnly.reactions.R.reactants.Catalyst='1';netOnly.reactions.R.products.Catalyst='1';
+              result.netOnlyReverseRejected=!paired(netOnly);
+              const amb=fixture();amb.reactions.R2=structuredClone(amb.reactions.R);result.ambiguousReverseRejected=!paired(amb);
+              const ambForward=fixture();ambForward.reactions.F2=structuredClone(ambForward.reactions.F);
+              result.ambiguousForwardRejected=!paired(ambForward);
+              const stale=fixture();stale.reactions.R.reverse=null;result.nonreciprocalPointerRejected=!paired(stale);
+              const missing=fixture();missing.reactions.F.reverse=null;result.unreviewedPointerRejected=!paired(missing);
+              const absent=fixture();delete absent.reactions.R;result.absentPartnerRejected=!paired(absent);
+              const reordered=fixture();reordered.reactions.R.products={GlyRS:'1.0',Gly:'1e0'};
+              result.exactRationalAndOrderAccepted=paired(reordered);
+              const single=document.createElement('div');single.innerHTML=Atlas.pathStep('re0000000214',
+                'GlyRS_Gly_ATP_tRNAGlyGCC','GlyRS_degraded',1);
+              result.realUnpairedUsesSingleArrow=single.querySelector('.arrow').textContent.trim()==='→' &&
+                single.querySelectorAll('.card-top [data-action="reaction"]').length===1;
+              const saved=Atlas.data.transitions;
+              try {Atlas.data.transitions={re0000000126:saved.re0000000126};
+                const one=document.createElement('div');one.innerHTML=Atlas.pathStep('re0000000126','GlyRS','GlyRS_Gly',1);
+                result.singleOutletHasNoCompetition=one.querySelectorAll('.competition-button').length===0;
+                result.sinkHasNoOutgoing=Atlas.getCompetingOutlets('GlyRS_degraded','GlyRS',Atlas.data).length===0;
+              } finally {Atlas.data.transitions=saved;}
+              const foreign=Object.keys(Atlas.data.reactions).filter(rid=>!Atlas.data.phase_a_ids.includes(rid));
+              result.noForeignMechanismNarratives=foreign.every(rid=>Atlas.mechanismDescription(rid,Atlas.data,true)==='');
+              const descriptions=Object.fromEntries(Object.keys(saved).map(rid=>[rid,Atlas.mechanismDescription(rid,Atlas.data)]));
+              result.associationUsesReviewedTemplate=descriptions.re0000000126==='Gly 与游离 GlyRS 结合形成复合物。';
+              result.dissociationUsesReviewedTemplate=descriptions.re0000000189==='酶结合态复合物释放 PPi。';
+              result.chargingUsesReviewedTemplate=descriptions.re0000000178.includes('aminoacyl-tRNA');
+              result.activationUsesReviewedTemplate=descriptions.re0000000197.includes('aminoacyl-AMP / PPi');
+              return result;
+            }""")
+            for name, condition in controls.items():
+                check("pair and narrative control " + name, condition)
 
             # Runtime algebra counterexamples: repeated real cycles and source
             # data perturbation. Changes exist only in this disposable page.
@@ -492,6 +670,8 @@ def run_browser(html_path, data, source, screenshot_dir=None):
                 loop_details.locator(f'[data-loop="{disabled_loop["id"]}"]').click()
                 check("disabled return not promoted " + e, page.locator('[data-summary-kind="PATH_NET"][data-reference-supported="false"]').count() == 1)
                 check("return witness independent net " + e, json.loads(page.locator("#net-equation").get_attribute("data-net-vector")) == net(disabled_loop["reaction_ids"], source))
+                check("local return keeps two real directions with one canonical orientation " + e, True,
+                      presentation_cards(page, disabled_loop))
             witness_vectors = page.evaluate("() => Object.fromEntries(Object.values(Atlas.data.modules).flatMap(m=>m.return_loops.map(l=>[l.id,Atlas.netForIds(l.reaction_ids)])))")
             check("all 48 executed return nets", witness_vectors == {l["id"]: net(l["reaction_ids"], source) for m in data["modules"].values() for l in m["return_loops"]})
 
@@ -582,12 +762,17 @@ def run_browser(html_path, data, source, screenshot_dir=None):
             # Browser layout at narrow widths.
             page.set_viewport_size({"width": 390, "height": 844})
             check("narrow viewport has no horizontal overflow", page.evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth"))
+            check("narrow step equations retain exact complete sides", True, presentation_cards(page, data["paths"]["MetRS-P01"]))
+            check("narrow equations wrap without clipping", page.locator(".path-step .equation").evaluate_all(
+                "xs=>xs.every(e=>e.scrollWidth<=e.clientWidth && !['hidden','clip'].includes(getComputedStyle(e).overflowX))"))
             check("narrow source inventory remains visible", page.locator(".compact-source-network").is_visible())
             page.locator('[data-action="toggle-nav"]').click()
             check("narrow navigation opens", page.locator(".navigation").is_visible())
             page.locator('[data-action="toggle-nav"]').click()
             check("narrow navigation closes", not page.locator(".navigation").is_visible())
             shot("atlas-narrow")
+            page.locator('.path-step[data-rid="re0000000239"]').scroll_into_view_if_needed()
+            shot("atlas-narrow-cards")
             # Native page zoom is changed through Chromium's own Settings in
             # a fresh disposable profile. This never touches the user's profile.
             # CSS zoom is not equivalent: it leaves viewport media queries at
@@ -613,15 +798,87 @@ def run_browser(html_path, data, source, screenshot_dir=None):
                     check("200 percent native zoom has no horizontal overflow", metrics["scrollWidth"] <= metrics["clientWidth"])
                     check("200 percent native zoom preserves net and eight steps", zoom_page.locator(".path-step").count() == 8 and
                           json.loads(zoom_page.locator("#net-equation").get_attribute("data-net-vector")) == net(data["paths"]["MetRS-P01"]["reaction_ids"], source))
+                    check("200 percent native zoom preserves readable exact cards", True, presentation_cards(zoom_page, data["paths"]["MetRS-P01"]))
+                    check("200 percent equations wrap without clipping", zoom_page.locator(".path-step .equation").evaluate_all(
+                        "xs=>xs.every(e=>e.scrollWidth<=e.clientWidth && !['hidden','clip'].includes(getComputedStyle(e).overflowX))"))
                     check("native zoom page has no resource requests", zoom_page.evaluate("performance.getEntriesByType('resource').length") == 0)
                     if screenshot_dir:
                         zoom_page.screenshot(path=str(screenshot_dir / "atlas-zoom-200.png"))
+                    zoom_page.locator('.path-step[data-rid="re0000000239"]').evaluate("e=>e.scrollIntoView({block:'center',behavior:'instant'})")
+                    zoom_page.evaluate("()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))")
+                    visible_box = zoom_page.locator('.path-step[data-rid="re0000000239"]').evaluate("e=>({top:e.getBoundingClientRect().top,bottom:e.getBoundingClientRect().bottom,height:innerHeight})")
+                    check("native 200 percent complex card visible in actual viewport", visible_box["top"] >= 0 and
+                          visible_box["bottom"] <= visible_box["height"], visible_box)
+                    if screenshot_dir:
+                        # Playwright's document clipping can return a blank image
+                        # after scrolling a natively zoomed page. Capture the real
+                        # Chromium surface instead, with no document-coordinate clip.
+                        cdp = zoom_context.new_cdp_session(zoom_page)
+                        capture = cdp.send("Page.captureScreenshot", {"format": "png", "captureBeyondViewport": False, "fromSurface": True})
+                        (screenshot_dir / "atlas-zoom-200-cards-native-surface.png").write_bytes(base64.b64decode(capture["data"]))
+                        cdp.detach()
+                        evidence["native_zoom_card_screenshot_method"] = "Native Chromium surface, captureBeyondViewport=false, no document clip"
                     evidence["native_zoom_metrics"] = metrics
                 finally:
                     zoom_context.close()
             check("no external resources or network attempts", not requests and page.evaluate("performance.getEntriesByType('resource').length") == 0)
+            # A second existing Chromium distribution: core file:// compatibility
+            # on Edge, with all 20 cards/nets and all 968 independent source IDs.
+            edge_path = Path(r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe")
+            if edge_path.is_file() and str(edge_path) != executable:
+                edge = p.chromium.launch(headless=True, executable_path=str(edge_path))
+                try:
+                    edge_context = edge.new_context(offline=True, viewport={"width": 1600, "height": 1000})
+                    edge_page = edge_context.new_page()
+                    edge_page.on("pageerror", lambda error: errors.append(str(error)))
+                    edge_page.on("console", lambda message: console_errors.append(message.text) if message.type == "error" else None)
+                    edge_page.on("request", lambda request: requests.append(request.url) if not request.url.startswith("file:") else None)
+                    edge_page.goto(html_path.resolve().as_uri())
+                    for pid, path in data["paths"].items():
+                        edge_page.locator("#search").fill(pid)
+                        edge_page.wait_for_function("q=>Atlas.getState().query===q", arg=pid)
+                        edge_page.locator(f'[data-action="path"][data-path="{pid}"]').click()
+                        require(json.loads(edge_page.locator("#net-equation").get_attribute("data-net-vector")) == net(path["reaction_ids"], source), "Edge net " + pid)
+                        presentation_cards(edge_page, path)
+                    check("Edge all 20 paths and 94 exact cards offline", True)
+                    edge_page.locator("#search").fill("GlyRS-P01")
+                    edge_page.wait_for_function("()=>Atlas.getState().query==='GlyRS-P01'")
+                    edge_page.locator('[data-action="path"][data-path="GlyRS-P01"]').click()
+                    for rid in ("re0000000126", "re0000000131", "re0000000197", "re0000000198"):
+                        edge_page.locator(f'.path-step .card-top [data-rid="{rid}"]').click()
+                        require(edge_page.locator("#inspector-rid").inner_text() == rid and
+                                edge_page.locator("#inspector-equation").inner_text() == data["reactions"][rid]["equation"], "Edge independent direction inspector " + rid)
+                    check("Edge independent direction inspector links", True)
+                    edge_page.locator("#positive-only").check()
+                    edge_page.locator('.path-step[data-rid="re0000000197"] .competition-button').click()
+                    check("Edge five parallel exits including disabled 0214", edge_page.locator(".branch-outlet").count() == 5 and
+                          "REFERENCE_DISABLED" in edge_page.locator('[data-outgoing-rid="re0000000214"]').inner_text())
+                    edge_page.locator('[data-action="close-state"]').click()
+                    edge_page.locator("#positive-only").uncheck()
+                    edge_page.locator('[data-action="all-source"]').click()
+                    edge_ids = []
+                    while True:
+                        ids = edge_page.locator(".reaction-list .reaction-card").evaluate_all("xs=>xs.map(e=>e.dataset.reactionCard)")
+                        for rid in ids:
+                            edge_page.locator(f'.reaction-list [data-rid="{rid}"]').click()
+                            require(edge_page.locator("#inspector-equation").inner_text() == data["reactions"][rid]["equation"], "Edge source equation " + rid)
+                        edge_ids.extend(ids)
+                        button = edge_page.locator('.pager [data-delta="1"]')
+                        if button.is_disabled():
+                            break
+                        button.click()
+                    check("Edge all 968 original directed reactions independently accessible", len(edge_ids) == 968 and set(edge_ids) == set(source))
+                    check("Edge offline has no resource requests", edge_page.evaluate("performance.getEntriesByType('resource').length") == 0)
+                    evidence["edge_compatibility"] = {"status": "PASS", "browser_version": edge.version,
+                        "executable": str(edge_path), "paths": 20, "step_cards": 94, "source_inspector_clicks": 968,
+                        "scope": "Core file URL, cards, nets, direction links, branches, filtering and full source index"}
+                finally:
+                    edge.close()
+            else:
+                evidence["edge_compatibility"] = {"status": "NOT_RUN", "reason": "No second Edge binary available"}
             check("no blocking browser console exceptions", not errors and not console_errors, {"page_errors": errors, "console_errors": console_errors})
             evidence["resource_entries"] = page.evaluate("performance.getEntriesByType('resource').length")
+            evidence["screenshot_directory"] = str(screenshot_dir) if screenshot_dir else None
             evidence["unexecuted_required_browser_checks"] = []
             evidence["zoom_method"] = "Native Chromium Settings / Page zoom / 200%, disposable profile"
             evidence["status"] = "PASS"
@@ -653,7 +910,8 @@ def main():
             report["gates"].append({"gate": name, "status": "PASS", "evidence": operation()})
         except Exception:
             report["gates"].append({"gate": name, "status": "FAIL", "traceback": traceback.format_exc()})
-    for name, operation in (("phase_a_regression", old_regression), ("reproducibility", lambda: rebuild(args.html))):
+    for name, operation in (("phase_a_regression", old_regression), ("reproducibility", lambda: rebuild(args.html)),
+                            ("presentation_data_integrity", lambda: previous_version_integrity(data))):
         try:
             report[name] = operation()
         except Exception:
@@ -670,7 +928,7 @@ def main():
     changed = sorted(n for n in set(before) | set(after) if before.get(n) != after.get(n))
     report["preservation"] = {"status": "PASS" if not changed else "FAIL", "protected_tracked_files": len(before), "changed_files": changed,
                               "phase_a_inputs_byte_unchanged": all(before.get("docs/reduction/pathways/" + n) == v for n, v in data["metadata"]["phase_a_inputs"].items())}
-    passed = all(g["status"] == "PASS" for g in report["gates"]) and all(report[n]["status"] == "PASS" for n in ("phase_a_regression", "reproducibility", "preservation"))
+    passed = all(g["status"] == "PASS" for g in report["gates"]) and all(report[n]["status"] == "PASS" for n in ("phase_a_regression", "reproducibility", "preservation", "presentation_data_integrity"))
     report["acceptance_status"] = "PASS" if passed else "FAIL"
     report["scientific_status"] = "HTML_PROTOTYPE_READY_FOR_HUMAN_REVIEW" if passed else "HTML_PROTOTYPE_NOT_ACCEPTED"
     args.report.write_bytes((json.dumps(report, indent=2, ensure_ascii=False, sort_keys=True) + "\n").encode("utf-8"))

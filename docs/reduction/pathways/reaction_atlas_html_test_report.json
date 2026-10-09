@@ -420,6 +420,15 @@
           },
           {
             "details": {
+              "bidirectional_cards": 8,
+              "cards": 8,
+              "displayed_original_ids": 16
+            },
+            "name": "single source equation and exact reverse card GlyRS-P01",
+            "status": "PASS"
+          },
+          {
+            "details": {
               "steps": 2
             },
             "name": "ordered path GlyRS-P02",
@@ -435,6 +444,15 @@
           },
           {
             "name": "reference support GlyRS-P02",
+            "status": "PASS"
+          },
+          {
+            "details": {
+              "bidirectional_cards": 2,
+              "cards": 2,
+              "displayed_original_ids": 4
+            },
+            "name": "single source equation and exact reverse card GlyRS-P02",
             "status": "PASS"
           },
           {
@@ -458,6 +476,15 @@
           },
           {
             "details": {
+              "bidirectional_cards": 3,
+              "cards": 3,
+              "displayed_original_ids": 6
+            },
+            "name": "single source equation and exact reverse card GlyRS-P03",
+            "status": "PASS"
+          },
+          {
+            "details": {
               "steps": 3
             },
             "name": "ordered path GlyRS-P04",
@@ -473,6 +500,15 @@
           },
           {
             "name": "reference support GlyRS-P04",
+            "status": "PASS"
+          },
+          {
+            "details": {
+              "bidirectional_cards": 3,
+              "cards": 3,
+              "displayed_original_ids": 6
+            },
+            "name": "single source equation and exact reverse card GlyRS-P04",
             "status": "PASS"
           },
           {
@@ -496,6 +532,15 @@
           },
           {
             "details": {
+              "bidirectional_cards": 3,
+              "cards": 3,
+              "displayed_original_ids": 6
+            },
+            "name": "single source equation and exact reverse card GlyRS-P05",
+            "status": "PASS"
+          },
+          {
+            "details": {
               "steps": 3
             },
             "name": "ordered path GlyRS-P06",
@@ -511,6 +556,15 @@
           },
           {
             "name": "reference support GlyRS-P06",
+            "status": "PASS"
+          },
+          {
+            "details": {
+              "bidirectional_cards": 3,
+              "cards": 3,
+              "displayed_original_ids": 6
+            },
+            "name": "single source equation and exact reverse card GlyRS-P06",
             "status": "PASS"
           },
           {
@@ -534,6 +588,15 @@
           },
           {
             "details": {
+              "bidirectional_cards": 8,
+              "cards": 8,
+              "displayed_original_ids": 16
+            },
+            "name": "single source equation and exact reverse card GlyRS-P07",
+            "status": "PASS"
+          },
+          {
+            "details": {
               "steps": 8
             },
             "name": "ordered path GlyRS-P08",
@@ -549,6 +612,15 @@
           },
           {
             "name": "reference support GlyRS-P08",
+            "status": "PASS"
+          },
+          {
+            "details": {
+              "bidirectional_cards": 8,
+              "cards": 8,
+              "displayed_original_ids": 16
+            },
+            "name": "single source equation and exact reverse card GlyRS-P08",
             "status": "PASS"
           },
           {
@@ -572,6 +644,15 @@
           },
           {
             "details": {
+              "bidirectional_cards": 8,
+              "cards": 8,
+              "displayed_original_ids": 16
+            },
+            "name": "single source equation and exact reverse card GlyRS-P09",
+            "status": "PASS"
+          },
+          {
+            "details": {
               "steps": 1
             },
             "name": "ordered path GlyRS-P10",
@@ -587,6 +668,15 @@
           },
           {
             "name": "reference support GlyRS-P10",
+            "status": "PASS"
+          },
+          {
+            "details": {
+              "bidirectional_cards": 1,
+              "cards": 1,
+              "displayed_original_ids": 2
+            },
+            "name": "single source equation and exact reverse card GlyRS-P10",
             "status": "PASS"
           },
           {
@@ -610,6 +700,15 @@
           },
           {
             "details": {
+              "bidirectional_cards": 8,
+              "cards": 8,
+              "displayed_original_ids": 16
+            },
+            "name": "single source equation and exact reverse card MetRS-P01",
+            "status": "PASS"
+          },
+          {
+            "details": {
               "steps": 2
             },
             "name": "ordered path MetRS-P02",
@@ -625,6 +724,15 @@
           },
           {
             "name": "reference support MetRS-P02",
+            "status": "PASS"
+          },
+          {
+            "details": {
+              "bidirectional_cards": 2,
+              "cards": 2,
+              "displayed_original_ids": 4
+            },
+            "name": "single source equation and exact reverse card MetRS-P02",
             "status": "PASS"
           },
           {
@@ -648,6 +756,15 @@
           },
           {
             "details": {
+              "bidirectional_cards": 3,
+              "cards": 3,
+              "displayed_original_ids": 6
+            },
+            "name": "single source equation and exact reverse card MetRS-P03",
+            "status": "PASS"
+          },
+          {
+            "details": {
               "steps": 3
             },
             "name": "ordered path MetRS-P04",
@@ -663,6 +780,15 @@
           },
           {
             "name": "reference support MetRS-P04",
+            "status": "PASS"
+          },
+          {
+            "details": {
+              "bidirectional_cards": 3,
+              "cards": 3,
+              "displayed_original_ids": 6
+            },
+            "name": "single source equation and exact reverse card MetRS-P04",
             "status": "PASS"
           },
           {
@@ -686,6 +812,15 @@
           },
           {
             "details": {
+              "bidirectional_cards": 3,
+              "cards": 3,
+              "displayed_original_ids": 6
+            },
+            "name": "single source equation and exact reverse card MetRS-P05",
+            "status": "PASS"
+          },
+          {
+            "details": {
               "steps": 3
             },
             "name": "ordered path MetRS-P06",
@@ -701,6 +836,15 @@
           },
           {
             "name": "reference support MetRS-P06",
+            "status": "PASS"
+          },
+          {
+            "details": {
+              "bidirectional_cards": 3,
+              "cards": 3,
+              "displayed_original_ids": 6
+            },
+            "name": "single source equation and exact reverse card MetRS-P06",
             "status": "PASS"
           },
           {
@@ -724,6 +868,15 @@
           },
           {
             "details": {
+              "bidirectional_cards": 8,
+              "cards": 8,
+              "displayed_original_ids": 16
+            },
+            "name": "single source equation and exact reverse card MetRS-P07",
+            "status": "PASS"
+          },
+          {
+            "details": {
               "steps": 8
             },
             "name": "ordered path MetRS-P08",
@@ -739,6 +892,15 @@
           },
           {
             "name": "reference support MetRS-P08",
+            "status": "PASS"
+          },
+          {
+            "details": {
+              "bidirectional_cards": 8,
+              "cards": 8,
+              "displayed_original_ids": 16
+            },
+            "name": "single source equation and exact reverse card MetRS-P08",
             "status": "PASS"
           },
           {
@@ -762,6 +924,15 @@
           },
           {
             "details": {
+              "bidirectional_cards": 8,
+              "cards": 8,
+              "displayed_original_ids": 16
+            },
+            "name": "single source equation and exact reverse card MetRS-P09",
+            "status": "PASS"
+          },
+          {
+            "details": {
               "steps": 1
             },
             "name": "ordered path MetRS-P10",
@@ -780,15 +951,44 @@
             "status": "PASS"
           },
           {
+            "details": {
+              "bidirectional_cards": 1,
+              "cards": 1,
+              "displayed_original_ids": 2
+            },
+            "name": "single source equation and exact reverse card MetRS-P10",
+            "status": "PASS"
+          },
+          {
             "name": "GlyRS-P01 has eight steps",
             "status": "PASS"
           },
           {
-            "name": "reverse details default closed",
+            "name": "0126 centered on one reversible source equation",
+            "status": "PASS"
+          },
+          {
+            "name": "0126 inspector preserves carrier projection",
+            "status": "PASS"
+          },
+          {
+            "name": "0126 inspector preserves other participants",
+            "status": "PASS"
+          },
+          {
+            "name": "carrier state remains accessible through inspector",
             "status": "PASS"
           },
           {
             "name": "reverse partner inspected without changing main chain",
+            "status": "PASS"
+          },
+          {
+            "name": "0131 has its own original direction and parameter",
+            "status": "PASS"
+          },
+          {
+            "name": "inverse original rate remains separate",
             "status": "PASS"
           },
           {
@@ -797,6 +997,18 @@
           },
           {
             "name": "provenance collapsed",
+            "status": "PASS"
+          },
+          {
+            "name": "0198 disabled direction explicit in bidirectional card",
+            "status": "PASS"
+          },
+          {
+            "name": "0198 independently opens disabled inverse inspector",
+            "status": "PASS"
+          },
+          {
+            "name": "parameter filter preserves five original precursor exits",
             "status": "PASS"
           },
           {
@@ -828,6 +1040,82 @@
             "status": "PASS"
           },
           {
+            "details": {
+              "paired_directed_ids": 580,
+              "unique_exact_pairs": 290
+            },
+            "name": "all 968 reverse display decisions independently checked against SBML",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control canonicalBothDirections",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control nearCoefficientRejected",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control netOnlyReverseRejected",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control ambiguousReverseRejected",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control ambiguousForwardRejected",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control nonreciprocalPointerRejected",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control unreviewedPointerRejected",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control absentPartnerRejected",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control exactRationalAndOrderAccepted",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control realUnpairedUsesSingleArrow",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control singleOutletHasNoCompetition",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control sinkHasNoOutgoing",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control noForeignMechanismNarratives",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control associationUsesReviewedTemplate",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control dissociationUsesReviewedTemplate",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control chargingUsesReviewedTemplate",
+            "status": "PASS"
+          },
+          {
+            "name": "pair and narrative control activationUsesReviewedTemplate",
+            "status": "PASS"
+          },
+          {
             "name": "executed JS counts repeated occurrences",
             "status": "PASS"
           },
@@ -856,6 +1144,15 @@
             "status": "PASS"
           },
           {
+            "details": {
+              "bidirectional_cards": 2,
+              "cards": 2,
+              "displayed_original_ids": 2
+            },
+            "name": "local return keeps two real directions with one canonical orientation GlyRS",
+            "status": "PASS"
+          },
+          {
             "name": "all finite return witnesses selectable MetRS",
             "status": "PASS"
           },
@@ -865,6 +1162,15 @@
           },
           {
             "name": "return witness independent net MetRS",
+            "status": "PASS"
+          },
+          {
+            "details": {
+              "bidirectional_cards": 2,
+              "cards": 2,
+              "displayed_original_ids": 2
+            },
+            "name": "local return keeps two real directions with one canonical orientation MetRS",
             "status": "PASS"
           },
           {
@@ -1058,6 +1364,19 @@
             "status": "PASS"
           },
           {
+            "details": {
+              "bidirectional_cards": 8,
+              "cards": 8,
+              "displayed_original_ids": 16
+            },
+            "name": "narrow step equations retain exact complete sides",
+            "status": "PASS"
+          },
+          {
+            "name": "narrow equations wrap without clipping",
+            "status": "PASS"
+          },
+          {
             "name": "narrow source inventory remains visible",
             "status": "PASS"
           },
@@ -1089,11 +1408,53 @@
             "status": "PASS"
           },
           {
+            "details": {
+              "bidirectional_cards": 8,
+              "cards": 8,
+              "displayed_original_ids": 16
+            },
+            "name": "200 percent native zoom preserves readable exact cards",
+            "status": "PASS"
+          },
+          {
+            "name": "200 percent equations wrap without clipping",
+            "status": "PASS"
+          },
+          {
             "name": "native zoom page has no resource requests",
             "status": "PASS"
           },
           {
+            "details": {
+              "bottom": 398.65625,
+              "height": 500,
+              "top": 101.421875
+            },
+            "name": "native 200 percent complex card visible in actual viewport",
+            "status": "PASS"
+          },
+          {
             "name": "no external resources or network attempts",
+            "status": "PASS"
+          },
+          {
+            "name": "Edge all 20 paths and 94 exact cards offline",
+            "status": "PASS"
+          },
+          {
+            "name": "Edge independent direction inspector links",
+            "status": "PASS"
+          },
+          {
+            "name": "Edge five parallel exits including disabled 0214",
+            "status": "PASS"
+          },
+          {
+            "name": "Edge all 968 original directed reactions independently accessible",
+            "status": "PASS"
+          },
+          {
+            "name": "Edge offline has no resource requests",
             "status": "PASS"
           },
           {
@@ -1106,7 +1467,17 @@
           }
         ],
         "console_errors": [],
+        "edge_compatibility": {
+          "browser_version": "154.0.4258.53",
+          "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+          "paths": 20,
+          "scope": "Core file URL, cards, nets, direction links, branches, filtering and full source index",
+          "source_inspector_clicks": 968,
+          "status": "PASS",
+          "step_cards": 94
+        },
         "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "native_zoom_card_screenshot_method": "Native Chromium surface, captureBeyondViewport=false, no document clip",
         "native_zoom_metrics": {
           "clientWidth": 800,
           "cssZoom": "1",
@@ -1116,7 +1487,15 @@
         },
         "network_requests": [],
         "page_errors": [],
+        "representative_card_coverage": {
+          "actual_directed_step_occurrences": 94,
+          "carrier_projection_hidden_only_in_main_cards": true,
+          "independent_direction_activity": true,
+          "one_equation_per_step": true,
+          "paths": 20
+        },
         "resource_entries": 0,
+        "screenshot_directory": "C:\\Users\\sean\\.codex\\visualizations\\2026\\10\\09\\01a11fe1-75f1-7de3-86c6-8e4635196995\\pathway-cards-v2-accepted",
         "status": "PASS",
         "unexecuted_required_browser_checks": [],
         "zoom_method": "Native Chromium Settings / Page zoom / 200%, disposable profile"
@@ -1421,6 +1800,15 @@
     }
   },
   "phase_b": "PHASE_B_NOT_AUTHORIZED",
+  "presentation_data_integrity": {
+    "baseline_commit": "f2cd0aacf345f029c907b0690d0fabb9e30f8b66",
+    "directed_path_step_occurrences": 94,
+    "entire_embedded_scientific_payload_identical": true,
+    "path_order_and_nets_unchanged": 20,
+    "phase_a_reactions": 134,
+    "return_witnesses": 48,
+    "status": "PASS"
+  },
   "preservation": {
     "changed_files": [],
     "phase_a_inputs_byte_unchanged": true,
@@ -1430,7 +1818,7 @@
   "reproducibility": {
     "independent_runs": 2,
     "matches_deliverable_bytes": true,
-    "sha256": "51a9d707893643fa700fadfc8904fd95a504bb20831c78cd2fa2bd1c25d8a4f5",
+    "sha256": "c884c33654c22ced9a700866a1c9f0e4ded362c4960b565bc65fdfb9a8a4c960",
     "status": "PASS"
   },
   "schema_version": 1,

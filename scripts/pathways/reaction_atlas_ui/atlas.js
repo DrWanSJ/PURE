@@ -54,6 +54,53 @@
   function netEquation(net) {const [a,b]=netSides(net);return plainSide(a)+" -> "+plainSide(b);}
   function htmlSide(side) {return Object.entries(side).map(([s,n])=>(rational(n)[0]===rational(n)[1]?"":esc(n)+" ")+speciesButton(s)).join(" + ")||"∅";}
   const equationHTML = rid => `<span>${htmlSide(data.reactions[rid].reactants)}</span><span class="arrow"> → </span><span>${htmlSide(data.reactions[rid].products)}</span>`;
+  function sameExactSide(a,b) {
+    const keys=Object.keys(a).sort(),other=Object.keys(b).sort();
+    return keys.length===other.length && keys.every((s,i)=>s===other[i] && ratString(rational(a[s]))===ratString(rational(b[s])));
+  }
+  function getExactReverseDisplay(reactionId,sourceData) {
+    const reactions=sourceData.reactions,r=reactions[reactionId];
+    if(!r)throw Error("Unknown original Reaction ID: "+reactionId);
+    const partners=rid=>Object.keys(reactions).filter(id=>id!==rid &&
+      sameExactSide(reactions[rid].reactants,reactions[id].products) &&
+      sameExactSide(reactions[rid].products,reactions[id].reactants));
+    const matches=partners(reactionId),partner=matches[0];
+    // A reviewed pointer alone is insufficient: require complete side swaps,
+    // reciprocal pointers and uniqueness on BOTH sides. Never use net vectors.
+    const paired=matches.length===1 && r.reverse===partner && reactions[partner].reverse===reactionId &&
+      partners(partner).length===1;
+    const [forwardId,reverseId]=paired?[reactionId,partner].sort():[reactionId,null];
+    const orientation=reactions[forwardId];
+    return {forwardId,reverseId,reactants:orientation.reactants,products:orientation.products,
+      currentId:reactionId,currentDirection:reactionId===forwardId?"→":"←",
+      pairValidationStatus:paired?"EXACT_UNIQUE_SOURCE_PAIR":"UNPAIRED",
+      directionalActivity:Object.fromEntries([forwardId,reverseId].filter(Boolean).map(id=>
+        [id,reactions[id].reference_activity==="REFERENCE_DISABLED"?"REFERENCE_DISABLED":"REFERENCE_ENABLED"]))};
+  }
+  function mechanismDescription(reactionId,sourceData,bidirectional=false) {
+    const r=sourceData.reactions[reactionId],t=sourceData.transitions[reactionId];
+    // Reading templates apply only to the published Phase A enzyme projection
+    // and reviewed RS labels. Species names alone never create a mechanism.
+    if(!r || !t || !sourceData.phase_a_ids.includes(reactionId) ||
+      !r.level_c.some(c=>["RS_binding","RS_activation","RS_charging"].includes(c)))return "";
+    const inputs=Object.keys(t.other_reactants),outputs=Object.keys(t.other_products);
+    if(r.mechanism==="HETERODIMER_ASSOCIATION" && inputs.length && !outputs.length){
+      const carrier=t.carrier_before.length===1 && t.carrier_before[0]===t.enzyme?`游离 ${t.enzyme} `:"酶结合态复合物";
+      return `${plainSide(t.other_reactants)} 与${carrier}结合形成复合物。${bidirectional?"逆向通道对应复合物解离。":""}`;
+    }
+    if(r.mechanism==="DISSOCIATION" && outputs.length && !inputs.length)
+      return `酶结合态复合物释放 ${plainSide(t.other_products)}。${bidirectional?"逆向通道对应该组分重新结合。":""}`;
+    if(r.mechanism==="STATE_TRANSITION" && r.level_c.includes("RS_activation"))
+      return "酶结合态在 ATP 装配状态与 aminoacyl-AMP / PPi 中间体之间转换。";
+    if(r.mechanism==="STATE_TRANSITION" && r.level_c.includes("RS_charging"))
+      return "酶结合态在 aminoacyl-AMP 与 aminoacyl-tRNA 状态之间转换。";
+    return "按原始方程发生载体状态变化。";
+  }
+  function getCompetingOutlets(before,enzyme,sourceData) {
+    return Object.keys(sourceData.transitions).filter(rid=>{
+      const t=sourceData.transitions[rid];return t.enzyme===enzyme && t.carrier_before.includes(before);
+    }).sort();
+  }
   function cycleCertificate(path,net) {
     return Boolean(path.target_product && path.types.includes("PRODUCTIVE_PATH") && path.start===path.end && path.start===path.enzyme &&
       data.modules[path.enzyme].carrier_states.every(s=>!net[s]) && rational(net[path.target_product]||"0")[0]>0n);
@@ -112,9 +159,18 @@
     return body;
   }
   function pathStep(rid,before,after,number) {
-    const t=data.transitions[rid],r=data.reactions[rid];
-    return `<article class="path-step ${state.focusState===before?"focused-step":""}" data-step="${number}" data-rid="${rid}" data-before="${esc(before)}" data-after="${esc(after)}"><span class="step-number">${String(number).padStart(2,"0")}</span><div class="card-top">${ridButton(rid)}<span class="card-meta">${esc(r.family)}</span></div><div class="tag-row">${reactionTags(rid)}</div><div class="equation">${equationHTML(rid)}</div><div class="carrier-transition"><button type="button" data-action="state" data-state="${esc(before)}">${esc(before)}</button><span>→</span><button type="button" data-action="state" data-state="${esc(after)}">${esc(after)}</button></div><div class="co-substrates">另外必须消耗：<code>${esc(plainSide(t?.other_reactants||{}))}</code><br>另外释放：<code>${esc(plainSide(t?.other_products||{}))}</code></div><div class="step-tools"><button type="button" data-action="state" data-state="${esc(before)}">展开此前体的竞争出口</button><button type="button" data-action="reaction" data-rid="${rid}">查看原始详情</button></div>`+
-      (r.reverse?`<details class="reverse-box"><summary>精确逆向伙伴 · ${esc(r.reverse)}${isDisabled(r.reverse)?" · REFERENCE_DISABLED":""}</summary>${reactionCard(r.reverse)}</details>`:"")+`</article>`;
+    const t=data.transitions[rid],display=getExactReverseDisplay(rid,data),paired=Boolean(display.reverseId);
+    const outlets=t?getCompetingOutlets(before,t.enzyme,data):[];
+    const description=mechanismDescription(display.forwardId,data,paired);
+    const pairIds=[display.forwardId,display.reverseId].filter(Boolean);
+    return `<article class="path-step ${state.focusState===before?"focused-step":""}" data-step="${number}" data-rid="${rid}" data-before="${esc(before)}" data-after="${esc(after)}" data-pair-status="${display.pairValidationStatus}" data-display-ids="${pairIds.join(",")}"><span class="step-number">${String(number).padStart(2,"0")}</span>`+
+      `<div class="card-top">${ridButton(display.forwardId)}${paired?`<span class="pair-link" aria-hidden="true">↔</span>${ridButton(display.reverseId)}`:""}</div>`+
+      `<div class="tag-row">${data.reactions[rid].level_c.map(c=>tag(c,"code")).join("")}</div>`+
+      `<div class="equation"><span>${htmlSide(display.reactants)}</span><span class="arrow"> ${paired?"⇌":"→"} </span><span>${htmlSide(display.products)}</span></div>`+
+      (description?`<p class="mechanism-description">${esc(description)}</p>`:"")+
+      `<div class="path-direction">当前路径：<b>${display.currentDirection} ${esc(rid)}</b></div>`+
+      (paired?`<div class="directional-activity" aria-label="两个方向的参考参数状态">${pairIds.map((id,i)=>`<div data-direction-rid="${id}" class="${isDisabled(id)?"disabled-direction":""}"><span>${i===0?"→":"←"} ${id}</span><span class="activity-label">${display.directionalActivity[id]}</span></div>`).join("")}</div>`:isDisabled(rid)?`<div class="tag-row">${tag("REFERENCE_DISABLED","disabled")}</div>`:"")+
+      `<div class="step-tools">${outlets.length>1?`<button type="button" class="competition-button" data-action="state" data-state="${esc(before)}" data-outgoing-count="${outlets.length}" aria-label="查看 ${esc(before)} 的竞争出口（${outlets.length}）" title="前体状态：${esc(before)}">查看竞争出口 (${outlets.length})</button>`:""}<button type="button" data-action="reaction" data-rid="${rid}">技术详情</button></div></article>`;
   }
   function netSummary(path,net,complete) {
     const [a,b]=netSides(net),supported=path.reaction_ids.every(rid=>!isDisabled(rid));
@@ -128,6 +184,9 @@
     const net=netForIds(p.reaction_ids),complete=cycleCertificate(p,net);
     let body=`<div class="path-header"><div class="section-kicker">${esc(p.enzyme)} · CARRIER-STATE PATHWAY</div><h2 id="selected-path-title">${esc(p.id)}</h2><p class="subtitle">${esc(p.title)}</p><div class="tag-row">${p.types.map(t=>tag(t)).join("")}${tag("PHASE_A_PATHWAYS_ONLY")}${tag("HUMAN_REVIEW_REQUIRED","pending")}</div><div class="endpoints"><div>起点<b>${esc(p.start)}</b></div><span>→</span><div>终点<b>${esc(p.end)}</b></div></div></div>`+netSummary(p,net,complete);
     if(state.positiveOnly)body+=`<p class="small">参数筛选只作用于源反应列表；此处保留所选路径的每个原始步骤。</p>`;
+    const displays=p.reaction_ids.map(rid=>getExactReverseDisplay(rid,data));
+    const pairedCards=displays.filter(d=>d.reverseId).length,displayIds=sortedUnique(displays.flatMap(d=>[d.forwardId,d.reverseId].filter(Boolean)));
+    body+=`<p class="path-counts" data-path-step-count="${p.reaction_ids.length}" data-paired-card-count="${pairedCards}" data-displayed-id-count="${displayIds.length}">${p.reaction_ids.length} 个有向路径步骤 · ${pairedCards} 张双向卡片 · 卡片涉及 ${displayIds.length} 个原始方向</p><p class="pair-note">⇌ 表示源模型存在两个精确相反的通道；不表示平衡、相同速率或两向均启用。REFERENCE_ENABLED 仅表示该方向参考参数非零。</p>`;
     body+=`<div class="path-steps" id="path-steps" data-path-id="${esc(p.id)}">`+p.reaction_ids.map((rid,i)=>pathStep(rid,p.states[i],p.states[i+1],i+1)).join("")+`</div>`;
     for(const link of p.rejoins){
       const target=data.paths[link.path_id],index=target.states.indexOf(link.state),next=target.reaction_ids[index];
@@ -164,9 +223,9 @@
     const paths=pathMembership[rid],coeffList=side=>`<ul class="coefficients">${Object.entries(side).map(([s,n])=>`<li><b>${esc(n)}</b><span>${esc(s)}</span></li>`).join("")||"<li>无</li>"}</ul>`;
     let html=`<h2 id="inspector-rid">${rid}</h2><code class="inspector-equation" id="inspector-equation">${esc(r.equation)}</code><div class="copy-row"><button type="button" data-action="copy" data-copy="rid">复制 Reaction ID</button><button type="button" data-action="copy" data-copy="equation">复制方程</button></div><div class="tag-row">${reactionTags(rid)}</div><div class="field-title">REACTION FAMILY</div><code>${esc(r.family)}</code><div class="field-title">路径状态</div><div class="status-note" id="inspector-pathway-status">${phaseStatus(rid)}${!phaseIds.has(rid)?" · ORIGINAL_REACTIONS_AVAILABLE · HUMAN_REVIEW_REQUIRED":" · STRUCTURALLY_SUPPORTED · HUMAN_REVIEW_REQUIRED"}</div><div class="field-title">REACTANTS · 原始计量系数</div>${coeffList(r.reactants)}<div class="field-title">PRODUCTS · 原始计量系数</div>${coeffList(r.products)}`;
     html+=`<div class="field-title">CARRIER BEFORE / AFTER</div>`;
-    if(t){html+=`<div class="small"><code>${esc(t.carrier_before.join(" + "))}</code> → <code>${esc(t.carrier_after.join(" + "))}</code></div>`;
+    if(t){html+=`<div class="carrier-field"><span>Carrier before</span><div id="inspector-carrier-before" data-species="${esc(JSON.stringify(t.carrier_before))}">${t.carrier_before.map(speciesButton).join(" + ")}</div><span>Carrier after</span><div id="inspector-carrier-after" data-species="${esc(JSON.stringify(t.carrier_after))}">${t.carrier_after.map(speciesButton).join(" + ")}</div></div>`;
       html+=t.tracked_carriers.map(p=>`<div class="tracked-carrier"><b>${esc(p.carrier)}</b><br>${p.before.map(esc).join(" + ")||"∅"} → ${p.after.map(esc).join(" + ")||"∅"}<br><span class="small">INFERRED_IDENTITY_PROJECTION · 同时保留</span></div>`).join("");
-      html+=`<div class="field-title">OTHER REQUIRED REACTANTS</div>${coeffList(t.other_reactants)}<div class="field-title">OTHER RELEASED PRODUCTS</div>${coeffList(t.other_products)}<div class="tag-row">${topologyTypes(t).map(x=>tag(x,isSink(t.carrier_after[0])&&x==="SINK_CONVERGENCE"?"sink":"pending")).join("")}</div>`;
+      html+=`<div class="field-title">OTHER REQUIRED REACTANTS</div><div id="inspector-other-reactants">${coeffList(t.other_reactants)}</div><div class="field-title">OTHER RELEASED PRODUCTS</div><div id="inspector-other-products">${coeffList(t.other_products)}</div><div class="tag-row">${topologyTypes(t).map(x=>tag(x,isSink(t.carrier_after[0])&&x==="SINK_CONVERGENCE"?"sink":"pending")).join("")}</div>`;
     }else html+=`<p class="small">${data.noncarrier_ids.includes(rid)?"样板的游离通道：没有虚构酶载体边；完整底物与产物见上方。":"PATHWAY_NOT_RECONSTRUCTED：尚未批准该模块的载体映射；完整源底物和产物见上方。"}</p>`;
     html+=`<div class="field-title">REVERSE REACTION</div>${r.reverse?ridButton(r.reverse):'<span class="small">无精确逆向伙伴</span>'}`;
     if(t){const m=data.modules[t.enzyme],out=sortedUnique(t.carrier_before.flatMap(s=>m.branches[s]||[])),down=sortedUnique(t.carrier_after.flatMap(s=>m.branches[s]||[]));
@@ -233,5 +292,5 @@
   renderHierarchy();render();
   // Public pure algebra functions also let the independent browser tests
   // compare the executed JavaScript with a fresh canonical-SBML calculation.
-  window.Atlas={data,netForIds,netEquation,cycleCertificate,getState:()=>({...state}),pageSize:PAGE_SIZE};
+  window.Atlas={data,netForIds,netEquation,cycleCertificate,getExactReverseDisplay,mechanismDescription,getCompetingOutlets,pathStep,getState:()=>({...state}),pageSize:PAGE_SIZE};
 })();
