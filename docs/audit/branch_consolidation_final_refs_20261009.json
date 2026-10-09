@@ -1,0 +1,444 @@
+{
+  "heads": {
+    "codex/energy-cycles-v1": "152047da1fea4e80b1b5231594c5f70122c06e98",
+    "codex/pnas-active-authority": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+    "codex/pnas-topology-first": "60abf1e371e90f70474bc98174035726cc68f064",
+    "main": "0b6f9ad649a7e283e440e0294a021123551f6858",
+    "ops/topology-research-baseline-20261009": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30"
+  },
+  "tags": {
+    "refs/tags/archive-mavelli2015-d7-20260924": "b5693ae7c3730b8e8b1b6f01e6733a4fc72579c3",
+    "refs/tags/archive-mavelli2015-d7-20260924^{}": "876d5adce13fbf7b833a889d7e22507b96f15aa1",
+    "refs/tags/archive/branches/20261009/backup/sean-simulation-20261009": "c92e74216a4f9a943a8523e5c3fb2eac198ce8a8",
+    "refs/tags/archive/branches/20261009/backup/sean-simulation-20261009^{}": "136a9d3cce43e04c55d8b8e2afb02cc645950ff3",
+    "refs/tags/archive/branches/20261009/backup/sean-simulation-clean-20261009": "7e3281a87040c7397219d59fbad94b12336a7dbd",
+    "refs/tags/archive/branches/20261009/backup/sean-simulation-clean-20261009^{}": "1f87d563c78e52973d11536dfed6525874d1ca94",
+    "refs/tags/archive/branches/20261009/codex/pnas-active-authority": "58bb85ad7601cd154de6557d2283291b4d91c8c4",
+    "refs/tags/archive/branches/20261009/codex/pnas-active-authority^{}": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+    "refs/tags/archive/branches/20261009/codex/pnas-consolidation-20261007": "62381c7dc80783135f99e3f9907742d6107eafc8",
+    "refs/tags/archive/branches/20261009/codex/pnas-consolidation-20261007^{}": "ffe62c4b3f65dd82b789210c653fb5701ee63f8d",
+    "refs/tags/archive/branches/20261009/codex/pnas-reduction-evidence-v0": "7dbbb63aed32a82585ff8495a861a874c60484fe",
+    "refs/tags/archive/branches/20261009/codex/pnas-reduction-evidence-v0^{}": "95909fdde5f5fb961a82a84ac69e55bc26d62cb1",
+    "refs/tags/archive/branches/20261009/codex/preserve-g1-worktree-20261007": "430647f2fc48f2a68fa72fcc49b90d0cba978532",
+    "refs/tags/archive/branches/20261009/codex/preserve-g1-worktree-20261007^{}": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e",
+    "refs/tags/archive/branches/20261009/codex/r3-diagnostics-visualizations": "714d2d62f9a811dd0a57b5cc77ee49d43d6c0cd1",
+    "refs/tags/archive/branches/20261009/codex/r3-diagnostics-visualizations^{}": "775607bf9922c6878be0147bd7c64fa97e86a790",
+    "refs/tags/archive/branches/20261009/codex/r4-fast-block-screen-20261007": "d1c10899b2ad3f200c56ee94e72cb750ffb8208e",
+    "refs/tags/archive/branches/20261009/codex/r4-fast-block-screen-20261007^{}": "9def91d4a39cad4589bd56e6db67f3a8c17b0d52",
+    "refs/tags/archive/branches/20261009/codex/r5-mechanism-first-20261007": "16cb883f7dca02d212be3de172fb49f60aef1509",
+    "refs/tags/archive/branches/20261009/codex/r5-mechanism-first-20261007^{}": "6c11b585df42fb9aa5d5ea5d5e8be44f92e914a6",
+    "refs/tags/archive/branches/20261009/codex/r5c-corrigendum-20261007": "ccaccf4af07650fa0b36a53476918d2231beeb6c",
+    "refs/tags/archive/branches/20261009/codex/r5c-corrigendum-20261007^{}": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+    "refs/tags/archive/branches/20261009/codex/r6-ck-validation-20261007": "ecf3a6666c1c868306f4357d602a97c74e91a4d0",
+    "refs/tags/archive/branches/20261009/codex/r6-ck-validation-20261007^{}": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+    "refs/tags/archive/branches/20261009/codex/r7-ck-first-order-20261008": "fed0dbb9dbf50e6f2f7dabf854c2a66ceab17b93",
+    "refs/tags/archive/branches/20261009/codex/r7-ck-first-order-20261008^{}": "20ca5215d949c9451b3e6fd4435c18991783ac29",
+    "refs/tags/archive/branches/20261009/codex/r8-ck-startup-layer-20261008": "0276af3de0ca5ece4aceeba13cb51c8cca0d93e1",
+    "refs/tags/archive/branches/20261009/codex/r8-ck-startup-layer-20261008^{}": "9ac0143b7ab6ed3b04de9d8a29a5e5732a761c7e",
+    "refs/tags/archive/branches/20261009/codex/sean-sync-audit-20261009": "b1a07fffbbe3b9f69805ff1357344a9e9367f45f",
+    "refs/tags/archive/branches/20261009/codex/sean-sync-audit-20261009^{}": "c56ee72407f69ee91d1c4ed04cbb8a7c613f3a3f",
+    "refs/tags/archive/branches/20261009/research/aminoacylation-qssa-pilot-v0": "d9e6574fce62fa728a636eecebfb843c1f14545f",
+    "refs/tags/archive/branches/20261009/research/aminoacylation-qssa-pilot-v0^{}": "24335fe798e757acb2ca3582916658bfcf5c16f5",
+    "refs/tags/archive/branches/20261009/research/reaction-level-annotation-v0-20260928": "91afce751f749c95da59e90067771bd47f609309",
+    "refs/tags/archive/branches/20261009/research/reaction-level-annotation-v0-20260928^{}": "18dfddb7fd888d08ca21ea832fcab04b6739c359",
+    "refs/tags/archive/pnas2017-full-network-reduction-20260927": "6db793af11273126de8796201d6d9f016d8f5b2e",
+    "refs/tags/archive/pnas2017-full-network-reduction-20260927^{}": "025fd340300a56f069c2136ea8bb0ff542b046d4",
+    "refs/tags/b1-reference-v1": "df427a35317a115df26b0d87c630b74e831502f0",
+    "refs/tags/b1-reference-v1^{}": "2ece5321269ba65181f7aeeb1e326d306ae67fee",
+    "refs/tags/checkpoint/astra-pnas-evidence-20261003": "47bcebbdf3f9b3870dbefee93a5b09eae2c13731",
+    "refs/tags/checkpoint/astra-pnas-evidence-20261003^{}": "e0c50bf0372a7b83620432801b2b7323a9c11f74"
+  },
+  "branch_count": 5,
+  "tag_count": 20,
+  "deleted": [
+    "backup/sean-simulation-20261009",
+    "backup/sean-simulation-clean-20261009",
+    "codex/pnas-consolidation-20261007",
+    "codex/pnas-reduction-evidence-v0",
+    "codex/preserve-g1-worktree-20261007",
+    "codex/r3-diagnostics-visualizations",
+    "codex/r4-fast-block-screen-20261007",
+    "codex/r5-mechanism-first-20261007",
+    "codex/r5c-corrigendum-20261007",
+    "codex/r6-ck-validation-20261007",
+    "codex/r7-ck-first-order-20261008",
+    "codex/r8-ck-startup-layer-20261008",
+    "codex/sean-sync-audit-20261009",
+    "research/aminoacylation-qssa-pilot-v0",
+    "research/reaction-level-annotation-v0-20260928"
+  ],
+  "retained_original_archival_candidates": [
+    "codex/pnas-active-authority"
+  ],
+  "all_16_tag_heads_verified": true,
+  "all_4_original_tags_unchanged": true,
+  "open_prs": [
+    {
+      "number": 6,
+      "head": "ops/topology-research-baseline-20261009",
+      "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+      "url": "https://github.com/DrWanSJ/PURE/pull/6"
+    },
+    {
+      "number": 5,
+      "head": "codex/pnas-active-authority",
+      "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+      "url": "https://github.com/DrWanSJ/PURE/pull/5"
+    }
+  ],
+  "original_branch_count": 19,
+  "original_tag_count": 4,
+  "governance_pr_url": "https://github.com/DrWanSJ/PURE/pull/6",
+  "status": "ARCHIVE_TAGS_VERIFIED_PARTIAL_BRANCH_CLEANUP",
+  "all_original_local_branches_retained": true,
+  "all_21_original_worktrees_head_status_dirty_bytes_index_unchanged": true,
+  "sequential_deletion_receipts": [
+    {
+      "branch": "backup/sean-simulation-20261009",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "136a9d3cce43e04c55d8b8e2afb02cc645950ff3",
+      "archive_tag": "archive/branches/20261009/backup/sean-simulation-20261009",
+      "remote_tag_object_sha": "c92e74216a4f9a943a8523e5c3fb2eac198ce8a8",
+      "remote_peeled_sha": "136a9d3cce43e04c55d8b8e2afb02cc645950ff3",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "backup/sean-simulation-clean-20261009",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "1f87d563c78e52973d11536dfed6525874d1ca94",
+      "archive_tag": "archive/branches/20261009/backup/sean-simulation-clean-20261009",
+      "remote_tag_object_sha": "7e3281a87040c7397219d59fbad94b12336a7dbd",
+      "remote_peeled_sha": "1f87d563c78e52973d11536dfed6525874d1ca94",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "codex/pnas-consolidation-20261007",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "ffe62c4b3f65dd82b789210c653fb5701ee63f8d",
+      "archive_tag": "archive/branches/20261009/codex/pnas-consolidation-20261007",
+      "remote_tag_object_sha": "62381c7dc80783135f99e3f9907742d6107eafc8",
+      "remote_peeled_sha": "ffe62c4b3f65dd82b789210c653fb5701ee63f8d",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "codex/pnas-reduction-evidence-v0",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "95909fdde5f5fb961a82a84ac69e55bc26d62cb1",
+      "archive_tag": "archive/branches/20261009/codex/pnas-reduction-evidence-v0",
+      "remote_tag_object_sha": "7dbbb63aed32a82585ff8495a861a874c60484fe",
+      "remote_peeled_sha": "95909fdde5f5fb961a82a84ac69e55bc26d62cb1",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "codex/preserve-g1-worktree-20261007",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e",
+      "archive_tag": "archive/branches/20261009/codex/preserve-g1-worktree-20261007",
+      "remote_tag_object_sha": "430647f2fc48f2a68fa72fcc49b90d0cba978532",
+      "remote_peeled_sha": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "codex/r3-diagnostics-visualizations",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "775607bf9922c6878be0147bd7c64fa97e86a790",
+      "archive_tag": "archive/branches/20261009/codex/r3-diagnostics-visualizations",
+      "remote_tag_object_sha": "714d2d62f9a811dd0a57b5cc77ee49d43d6c0cd1",
+      "remote_peeled_sha": "775607bf9922c6878be0147bd7c64fa97e86a790",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "codex/r4-fast-block-screen-20261007",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "9def91d4a39cad4589bd56e6db67f3a8c17b0d52",
+      "archive_tag": "archive/branches/20261009/codex/r4-fast-block-screen-20261007",
+      "remote_tag_object_sha": "d1c10899b2ad3f200c56ee94e72cb750ffb8208e",
+      "remote_peeled_sha": "9def91d4a39cad4589bd56e6db67f3a8c17b0d52",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "codex/r5-mechanism-first-20261007",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "6c11b585df42fb9aa5d5ea5d5e8be44f92e914a6",
+      "archive_tag": "archive/branches/20261009/codex/r5-mechanism-first-20261007",
+      "remote_tag_object_sha": "16cb883f7dca02d212be3de172fb49f60aef1509",
+      "remote_peeled_sha": "6c11b585df42fb9aa5d5ea5d5e8be44f92e914a6",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "codex/r5c-corrigendum-20261007",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+      "archive_tag": "archive/branches/20261009/codex/r5c-corrigendum-20261007",
+      "remote_tag_object_sha": "ccaccf4af07650fa0b36a53476918d2231beeb6c",
+      "remote_peeled_sha": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "codex/r6-ck-validation-20261007",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+      "archive_tag": "archive/branches/20261009/codex/r6-ck-validation-20261007",
+      "remote_tag_object_sha": "ecf3a6666c1c868306f4357d602a97c74e91a4d0",
+      "remote_peeled_sha": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "codex/r7-ck-first-order-20261008",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "20ca5215d949c9451b3e6fd4435c18991783ac29",
+      "archive_tag": "archive/branches/20261009/codex/r7-ck-first-order-20261008",
+      "remote_tag_object_sha": "fed0dbb9dbf50e6f2f7dabf854c2a66ceab17b93",
+      "remote_peeled_sha": "20ca5215d949c9451b3e6fd4435c18991783ac29",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "codex/r8-ck-startup-layer-20261008",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "9ac0143b7ab6ed3b04de9d8a29a5e5732a761c7e",
+      "archive_tag": "archive/branches/20261009/codex/r8-ck-startup-layer-20261008",
+      "remote_tag_object_sha": "0276af3de0ca5ece4aceeba13cb51c8cca0d93e1",
+      "remote_peeled_sha": "9ac0143b7ab6ed3b04de9d8a29a5e5732a761c7e",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "codex/sean-sync-audit-20261009",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "c56ee72407f69ee91d1c4ed04cbb8a7c613f3a3f",
+      "archive_tag": "archive/branches/20261009/codex/sean-sync-audit-20261009",
+      "remote_tag_object_sha": "b1a07fffbbe3b9f69805ff1357344a9e9367f45f",
+      "remote_peeled_sha": "c56ee72407f69ee91d1c4ed04cbb8a7c613f3a3f",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "research/aminoacylation-qssa-pilot-v0",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "24335fe798e757acb2ca3582916658bfcf5c16f5",
+      "archive_tag": "archive/branches/20261009/research/aminoacylation-qssa-pilot-v0",
+      "remote_tag_object_sha": "d9e6574fce62fa728a636eecebfb843c1f14545f",
+      "remote_peeled_sha": "24335fe798e757acb2ca3582916658bfcf5c16f5",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    },
+    {
+      "branch": "research/reaction-level-annotation-v0-20260928",
+      "status": "DELETED_REMOTE_HEAD_ONLY",
+      "head_sha": "18dfddb7fd888d08ca21ea832fcab04b6739c359",
+      "archive_tag": "archive/branches/20261009/research/reaction-level-annotation-v0-20260928",
+      "remote_tag_object_sha": "91afce751f749c95da59e90067771bd47f609309",
+      "remote_peeled_sha": "18dfddb7fd888d08ca21ea832fcab04b6739c359",
+      "open_pr_check": [
+        {
+          "number": 6,
+          "head": "ops/topology-research-baseline-20261009",
+          "head_sha": "b6fbad55eb4088cac5db34f07edc3c6302ac5a30",
+          "url": "https://github.com/DrWanSJ/PURE/pull/6"
+        },
+        {
+          "number": 5,
+          "head": "codex/pnas-active-authority",
+          "head_sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+          "url": "https://github.com/DrWanSJ/PURE/pull/5"
+        }
+      ],
+      "verified_after_operation": true
+    }
+  ],
+  "reference_observation_phase": "after sequential branch cleanup, before final documentation commits",
+  "governance_final_head_location": "open PR6 head and external independently verified delivery receipt; the containing commit SHA cannot be self-embedded"
+}

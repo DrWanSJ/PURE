@@ -1,0 +1,192 @@
+{
+  "all_16_tags_annotated_and_exact": true,
+  "checkout_results": [
+    {
+      "checkout": "topology",
+      "head_sha": "60abf1e371e90f70474bc98174035726cc68f064",
+      "reference": "origin/codex/pnas-topology-first",
+      "passed": true,
+      "local_branch_label": ""
+    },
+    {
+      "checkout": "energy",
+      "head_sha": "152047da1fea4e80b1b5231594c5f70122c06e98",
+      "reference": "origin/codex/energy-cycles-v1",
+      "passed": true,
+      "local_branch_label": ""
+    },
+    {
+      "checkout": "r8",
+      "head_sha": "9ac0143b7ab6ed3b04de9d8a29a5e5732a761c7e",
+      "reference": "refs/tags/archive/branches/20261009/codex/r8-ck-startup-layer-20261008",
+      "passed": true,
+      "local_branch_label": "codex/r8-ck-startup-layer-20261008"
+    },
+    {
+      "checkout": "simulation",
+      "head_sha": "136a9d3cce43e04c55d8b8e2afb02cc645950ff3",
+      "reference": "refs/tags/archive/branches/20261009/backup/sean-simulation-20261009",
+      "passed": true,
+      "local_branch_label": ""
+    },
+    {
+      "checkout": "sync",
+      "head_sha": "c56ee72407f69ee91d1c4ed04cbb8a7c613f3a3f",
+      "reference": "refs/tags/archive/branches/20261009/codex/sean-sync-audit-20261009",
+      "passed": true,
+      "local_branch_label": ""
+    },
+    {
+      "checkout": "r6-complete",
+      "head_sha": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+      "reference": "refs/tags/archive/branches/20261009/codex/r6-ck-validation-20261007",
+      "passed": true,
+      "local_branch_label": "codex/r6-ck-validation-20261007"
+    }
+  ],
+  "r6_manifest_count": 476,
+  "r6_manifest_pass": true,
+  "r6_completed": 9,
+  "r6_all_mandatory_passes": 0,
+  "r8_not_promoted": true,
+  "energy_all_four_revise_human_review": true,
+  "canonical_pnas_sources_equal_main": true,
+  "numerical_campaign_rerun": false,
+  "origin": "https://github.com/DrWanSJ/PURE.git",
+  "method": "fresh independent clone of the previously verified immutable bundle, then fetched all current branch/tag refs from GitHub; complete checkout materialization; no shared Git object database or worktree indexes",
+  "initial_network_checkout_attempt": "filtered GitHub clone succeeded; bulk lazy-blob checkout did not complete and its read-only network helper was cancelled; partial checkout and evidence retained",
+  "energy_manifest_outputs_checked": 299,
+  "energy_source_hashes_checked": 7,
+  "r8_manifest_files_checked": 11,
+  "all_original_heads_canonical_source_tree": "8c34f328ab6a726f0bdc7e7da3d62afbc06f8480",
+  "all_21_original_worktrees_unchanged": true,
+  "original_worktree_checks": [
+    {
+      "worktree": "Desktop/GUV",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "energy-cycles-v1/GUV",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "g1-pnas-closure/GUV",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "pnas-active-authority/GUV",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "pnas-consolidation/GUV",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "pnas-reduction-evidence/GUV",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "pnas-topology-first/GUV",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "pure-conservation-coordinate-audit/GUV",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "r5-mechanism-first/GUV",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "r5c-corrigendum/GUV",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "r6-ck-validation/GUV",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "r7-ck-first-order/GUV",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "sean-sync-audit-20261009/GUV",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/evidence",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/pr3",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/pr4",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/simulation",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/simulation-clean",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/simulation-final",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "Temp/PURE-main-audit-20261007",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    {
+      "worktree": "Temp/PURE-R4-fast-block-20261007",
+      "head_unchanged": true,
+      "dirty_file_bytes_unchanged": true,
+      "index_bytes_unchanged": true
+    }
+  ],
+  "r6_original_execution_parent_and_479_untracked_overlay_verified": true
+}

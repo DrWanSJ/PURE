@@ -1,0 +1,40 @@
+{
+  "schema": "BRANCH_GOVERNANCE_NAVIGATION_V1",
+  "source_authority": "GitHub advertisements and frozen commit trees; registry is derived navigation",
+  "freshness": "2026-10-09 post-deletion; documentation PR remains open",
+  "facts": [
+    {
+      "claim": "topology ancestor of energy; ahead 1 behind 0",
+      "status": "EXTRACTED",
+      "source": "research_branch_policy.md"
+    },
+    {
+      "claim": "16 exact annotated archives",
+      "status": "EXTRACTED",
+      "source": "branch_archive_registry.csv"
+    },
+    {
+      "claim": "five local-label assertions do not require same-named remote heads",
+      "status": "INFERRED",
+      "source": "../audit/branch_consolidation_dependencies_20261009.csv"
+    },
+    {
+      "claim": "PR5 open; hosted qualification failed; head retained",
+      "status": "EXTRACTED",
+      "source": "../audit/branch_consolidation_20261009.md"
+    },
+    {
+      "claim": "19 initial branches to 5 final; 4 initial tags to 20 final; 15 eligible remote deletions; PR5 and PR6 retained",
+      "status": "EXTRACTED",
+      "source": "../audit/branch_consolidation_final_refs_20261009.json"
+    }
+  ],
+  "fingerprints": {
+    "branch_archive_registry.csv": "5cc4c26d29881fe860e8aedf1035d9fb8b0e56c21ad6272858ffd234b61269c0",
+    "restore_archived_research.md": "bb4466465f5caf53ea564f814f3a9faceb81bcd139e32b40d940f12c7ecc7c99",
+    "branch_consolidation_20261009.md": "9f5ae17f16e5445d7e9d73d841a6d8ec605af0c6c2e63a64b3904635da361529",
+    "branch_consolidation_recovery_verification_20261009.json": "78f5d89733ee7dab38fc949c49be8671f31108665737d5c030d7860ea2a767ca",
+    "branch_consolidation_final_refs_20261009.json": "a009bba0ca6512c764ea102d21fffa61d634047b32eb7bbe0c44b8770590dea3"
+  },
+  "fingerprint_policy": "SHA-256 of canonical published Git/index blob bytes; working-tree EOL materialization may differ"
+}
