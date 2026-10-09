@@ -1,0 +1,13 @@
+# Branch consolidation audit — 2026-10-09
+
+Observation began with 19 GitHub branches, four annotated tags and 21 Sean worktrees. All live heads matched the preceding synchronization record. Default branch is main. Energy inherits topology exactly (ahead 1 / behind 0); main/topology divergence is 14 / 17 and remains unresolved by design.
+
+All 16 archival heads received separate annotated archive/branches/20261009 tags. GitHub tag-object and peeled commit advertisements were independently checked after push/fetch; all original head SHAs match and all four prior tag objects/peeled targets remain unchanged. See ../project/branch_archive_registry.csv.
+
+PR #5 remains OPEN at bd2326078fd7d2c2307e7d2db084cf08f0c11922, targeting unchanged main. Live pnas-integrity check 113120311200 failed in run 37718451449. No reviews were present. Its remote head is retained with reason OPEN_PR_5_PENDING_HUMAN_DECISION. No PR merge/closure or CI rerun is part of this task.
+
+Dependency scan covered all 19 original remote-tip snapshots across source scripts, docs, configs, README, tasklist and GitHub Actions: 210 mentions. Most are historical provenance. No archival-name CI/deployment dependency was found. Two active old restore commands used R8/sync-audit origin names. They are superseded by the current tag recovery guide, published in this documentation branch before any affected deletion; frozen historical records are unchanged. Four R6 local branch assertions and one R8 local branch assertion are migrated operationally through documented/tested local branch recreation, without altering the scientific scripts. An R7 parent_branch string in R8 registration is provenance metadata, not a remote fetch dependency.
+
+Independent recovery, original-worktree and scientific byte checks are pending at this initial documentation commit. Remote deletions are prohibited until those results pass and the replacement recovery document is pushed and inspectable. Local branches/worktrees and scientific files will not be deleted or rewritten. Human merge of this documentation PR remains a governance publication blocker for official main; public PR-branch recovery instructions can support independently verified reference archival.
+
+Scientific regression scope: raw source/evidence/manifest hashes and recorded status fields, without any expensive numerical rerun. R6 mandatory passes remain 0/9; R8 promotion=false; all four energy modules retain HUMAN_REVIEW_REQUIRED/REVISE_WITH_EXTRA_STATE and no coupled/full approval; original PNAS sources and reduced-core status remain unchanged.
