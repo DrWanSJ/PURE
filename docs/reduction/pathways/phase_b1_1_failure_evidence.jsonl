@@ -1,0 +1,1 @@
+{"stage": "read_only_console_inspection", "exit_code": 1, "error": "UnicodeEncodeError: 'gbk' codec can't encode character '\\u2212' in position 2792: illegal multibyte sequence", "scientific_gate_failure": false, "resolution": "Repeat read-only extraction with PYTHONIOENCODING=utf-8; source bytes unchanged"}

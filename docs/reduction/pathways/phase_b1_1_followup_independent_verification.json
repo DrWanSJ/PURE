@@ -1,0 +1,1591 @@
+{
+  "followup_acceptance": {
+    "E1_E2_full_composition": "INFERRED",
+    "E1_reached": true,
+    "IF1_IF3_free_states_recovered": true,
+    "P1_overlay": "LEXICOGRAPHIC_STRUCTURAL_WITNESS",
+    "new_inventory_directions": 28,
+    "new_witness": {
+      "catalysts_recovered": [
+        "IF1",
+        "IF3"
+      ],
+      "event_dag_edges": 9,
+      "events_checked": 10,
+      "exact_net": {
+        "IF2_GDP": "1",
+        "IF2_GTP_fMettRNAfMetCAU": "-1",
+        "PO4": "1",
+        "RS30S": "-1",
+        "RS50S": "-1",
+        "elRS70SAGGU0002_fMettRNAfMetCAU": "1",
+        "mRNA": "-1"
+      },
+      "lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+      "petri_status": "PASS",
+      "resource_ledger": {
+        "ADP": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "AMP": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "ATP": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "FD": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GDP": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "GTP": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "Gly": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "IF1": {
+          "final": "1",
+          "initial": "1",
+          "net": "0"
+        },
+        "IF2": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "IF2_GDP": {
+          "final": "1",
+          "initial": "0",
+          "net": "1"
+        },
+        "IF2_GTP": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "IF3": {
+          "final": "1",
+          "initial": "1",
+          "net": "0"
+        },
+        "MTF": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "Met": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "MetRS": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "MettRNAfMetCAU": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "PO4": {
+          "final": "1",
+          "initial": "0",
+          "net": "1"
+        },
+        "PPi": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "RS30S": {
+          "final": "0",
+          "initial": "1",
+          "net": "-1"
+        },
+        "RS50S": {
+          "final": "0",
+          "initial": "1",
+          "net": "-1"
+        },
+        "THF": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "fMettRNAfMetCAU": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        },
+        "mRNA": {
+          "final": "0",
+          "initial": "1",
+          "net": "-1"
+        },
+        "tRNAfMetCAU": {
+          "final": "0",
+          "initial": "0",
+          "net": "0"
+        }
+      },
+      "status": "PASS",
+      "target": "elRS70SAGGU0002_fMettRNAfMetCAU",
+      "target_produced_tokens": "1"
+    },
+    "physical_mechanism_certified": false,
+    "release_reference_parameters": {
+      "re0000000724": "1/400",
+      "re0000000747": "1000",
+      "re0000000749": "4"
+    },
+    "shared_release_state": {
+      "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+    },
+    "source_model_0001_before_0013_verified": true,
+    "status": "PASS"
+  },
+  "historical_B1_1_independent_rerun": {
+    "contract": {
+      "0001_context": "ELONG_tRNA_release",
+      "0001_parameter": "1000",
+      "0013_E2_input_verified": true,
+      "E1_reached": true,
+      "E2_reached": true,
+      "alternatives_checked": 3,
+      "coverage_independently_recomputed": {
+        "bounded_inventory": 559,
+        "bounded_search_scope": 206,
+        "initiation_classified": 206,
+        "inventory_disabled": 323,
+        "inventory_enabled": 236,
+        "original_species_in_inventory": 170,
+        "participating_families": [
+          "RFAM_001",
+          "RFAM_002",
+          "RFAM_007",
+          "RFAM_008",
+          "RFAM_011",
+          "RFAM_012",
+          "RFAM_013",
+          "RFAM_014",
+          "RFAM_019",
+          "RFAM_020",
+          "RFAM_022",
+          "RFAM_023",
+          "RFAM_024",
+          "RFAM_025",
+          "RFAM_026",
+          "RFAM_DEG"
+        ],
+        "search_disabled": 9,
+        "search_enabled": 197,
+        "unique_witness_directions": 37
+      },
+      "membership_checked": 559,
+      "shared_pool_status": "ONE_SOURCE_POOL"
+    },
+    "phase": "B1-1",
+    "preservation": {
+      "changed_files": [],
+      "starting_HEAD": "50888efa205837dabb621e42bf117738af661150",
+      "status": "PASS",
+      "tracked_files_unchanged": 2362
+    },
+    "scientific_status": "PENDING_HUMAN_REVIEW",
+    "source_integrity": {
+      "approved_hash_authority": "Published Phase A protocol/graph, independently pinned in verifier",
+      "directed_reactions": 968,
+      "hashes": {
+        "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+        "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52"
+      },
+      "re0000000414_PO4": "2",
+      "species": 241,
+      "weighted_petri_arcs": 3854,
+      "zero_author_parameters": 485
+    },
+    "structural_verification_status": "PASS",
+    "witnesses": {
+      "P1": {
+        "catalysts_recovered": [
+          "IF1",
+          "IF3"
+        ],
+        "event_dag_edges": 9,
+        "events_checked": 10,
+        "exact_net": {
+          "IF2_GDP": "1",
+          "IF2_GTP_fMettRNAfMetCAU": "-1",
+          "PO4": "1",
+          "RS30S": "-1",
+          "RS50S": "-1",
+          "elRS70SAGGU0002_fMettRNAfMetCAU": "1",
+          "mRNA": "-1"
+        },
+        "lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "petri_status": "PASS",
+        "resource_ledger": {
+          "ADP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "AMP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "ATP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "FD": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GDP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Gly": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF1": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "IF2": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF2_GDP": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "IF2_GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF3": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "MTF": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Met": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "MetRS": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "MettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "PO4": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "PPi": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "RS30S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "RS50S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "THF": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "fMettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "mRNA": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "tRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          }
+        },
+        "status": "PASS",
+        "target": "elRS70SAGGU0002_fMettRNAfMetCAU",
+        "target_produced_tokens": "1"
+      },
+      "P1-RELEASE-ALT": {
+        "catalysts_recovered": [
+          "IF1",
+          "IF3"
+        ],
+        "event_dag_edges": 9,
+        "events_checked": 10,
+        "exact_net": {
+          "IF2_GDP": "1",
+          "IF2_GTP_fMettRNAfMetCAU": "-1",
+          "PO4": "1",
+          "RS30S": "-1",
+          "RS50S": "-1",
+          "elRS70SAGGU0002_fMettRNAfMetCAU": "1",
+          "mRNA": "-1"
+        },
+        "lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "petri_status": "PASS",
+        "resource_ledger": {
+          "ADP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "AMP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "ATP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "FD": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GDP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Gly": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF1": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "IF2": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF2_GDP": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "IF2_GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF3": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "MTF": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Met": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "MetRS": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "MettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "PO4": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "PPi": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "RS30S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "RS50S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "THF": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "fMettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "mRNA": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "tRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          }
+        },
+        "status": "PASS",
+        "target": "elRS70SAGGU0002_fMettRNAfMetCAU",
+        "target_produced_tokens": "1"
+      },
+      "P2": {
+        "catalysts_recovered": [
+          "IF1",
+          "IF3"
+        ],
+        "event_dag_edges": 10,
+        "events_checked": 11,
+        "exact_net": {
+          "IF2_GDP": "1",
+          "IF2_GTP_fMettRNAfMetCAU": "-1",
+          "PO4": "1",
+          "RS30S": "-1",
+          "RS50S": "-1",
+          "elRS70SAGGU0002_fMet": "1",
+          "mRNA": "-1",
+          "tRNAfMetCAU": "1"
+        },
+        "lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "petri_status": "PASS",
+        "resource_ledger": {
+          "ADP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "AMP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "ATP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "FD": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GDP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Gly": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF1": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "IF2": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF2_GDP": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "IF2_GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF3": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "MTF": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Met": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "MetRS": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "MettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "PO4": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "PPi": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "RS30S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "RS50S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "THF": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "fMettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "mRNA": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "tRNAfMetCAU": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          }
+        },
+        "status": "PASS",
+        "target": "elRS70SAGGU0002_fMet",
+        "target_produced_tokens": "1"
+      },
+      "P3": {
+        "catalysts_recovered": [
+          "IF3"
+        ],
+        "event_dag_edges": 7,
+        "events_checked": 8,
+        "exact_net": {
+          "IF2_GDP": "1",
+          "IF2_GTP_fMettRNAfMetCAU": "-1",
+          "PO4": "1",
+          "RS30S": "-1",
+          "RS50S": "-1",
+          "elRS70SAGGU0002_fMettRNAfMetCAU": "1",
+          "mRNA": "-1"
+        },
+        "lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "petri_status": "PASS",
+        "resource_ledger": {
+          "ADP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "AMP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "ATP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "FD": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GDP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Gly": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF1": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF2": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF2_GDP": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "IF2_GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF3": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "MTF": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Met": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "MetRS": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "MettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "PO4": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "PPi": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "RS30S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "RS50S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "THF": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "fMettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "mRNA": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "tRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          }
+        },
+        "status": "PASS",
+        "target": "elRS70SAGGU0002_fMettRNAfMetCAU",
+        "target_produced_tokens": "1"
+      },
+      "P4": {
+        "catalysts_recovered": [
+          "IF1",
+          "IF3"
+        ],
+        "event_dag_edges": 9,
+        "events_checked": 10,
+        "exact_net": {
+          "IF2_GDP": "1",
+          "IF2_GTP_fMettRNAfMetCAU": "-1",
+          "PO4": "1",
+          "RS30S": "-1",
+          "RS50S": "-1",
+          "elRS70SAGGU0002_fMettRNAfMetCAU": "1",
+          "mRNA": "-1"
+        },
+        "lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "petri_status": "PASS",
+        "resource_ledger": {
+          "ADP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "AMP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "ATP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "FD": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GDP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Gly": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF1": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "IF2": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF2_GDP": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "IF2_GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF3": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "MTF": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Met": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "MetRS": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "MettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "PO4": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "PPi": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "RS30S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "RS50S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "THF": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "fMettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "mRNA": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "tRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          }
+        },
+        "status": "PASS",
+        "target": "elRS70SAGGU0002_fMettRNAfMetCAU",
+        "target_produced_tokens": "1"
+      },
+      "P5": {
+        "catalysts_recovered": [
+          "MetRS",
+          "MTF",
+          "IF1",
+          "IF3"
+        ],
+        "event_dag_edges": 23,
+        "events_checked": 24,
+        "exact_net": {
+          "AMP": "1",
+          "ATP": "-1",
+          "FD": "-1",
+          "IF2_GDP": "1",
+          "IF2_GTP": "-1",
+          "Met": "-1",
+          "PO4": "1",
+          "PPi": "1",
+          "RS30S": "-1",
+          "RS50S": "-1",
+          "THF": "1",
+          "elRS70SAGGU0002_fMettRNAfMetCAU": "1",
+          "mRNA": "-1",
+          "tRNAfMetCAU": "-1"
+        },
+        "lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "petri_status": "PASS",
+        "resource_ledger": {
+          "ADP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "AMP": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "ATP": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "FD": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "GDP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Gly": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF1": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "IF2": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF2_GDP": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "IF2_GTP": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "IF3": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "MTF": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "Met": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "MetRS": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "MettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "PO4": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "PPi": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "RS30S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "RS50S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "THF": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "fMettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "mRNA": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "tRNAfMetCAU": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          }
+        },
+        "status": "PASS",
+        "target": "elRS70SAGGU0002_fMettRNAfMetCAU",
+        "target_produced_tokens": "1"
+      },
+      "P5-E2": {
+        "catalysts_recovered": [
+          "MetRS",
+          "MTF",
+          "IF1",
+          "IF3"
+        ],
+        "event_dag_edges": 24,
+        "events_checked": 25,
+        "exact_net": {
+          "AMP": "1",
+          "ATP": "-1",
+          "FD": "-1",
+          "IF2_GDP": "1",
+          "IF2_GTP": "-1",
+          "Met": "-1",
+          "PO4": "1",
+          "PPi": "1",
+          "RS30S": "-1",
+          "RS50S": "-1",
+          "THF": "1",
+          "elRS70SAGGU0002_fMet": "1",
+          "mRNA": "-1"
+        },
+        "lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "petri_status": "PASS",
+        "resource_ledger": {
+          "ADP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "AMP": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "ATP": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "FD": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "GDP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Gly": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF1": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "IF2": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF2_GDP": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "IF2_GTP": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "IF3": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "MTF": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "Met": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "MetRS": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "MettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "PO4": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "PPi": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "RS30S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "RS50S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "THF": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "fMettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "mRNA": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "tRNAfMetCAU": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          }
+        },
+        "status": "PASS",
+        "target": "elRS70SAGGU0002_fMet",
+        "target_produced_tokens": "1"
+      },
+      "P6": {
+        "catalysts_recovered": [
+          "MetRS",
+          "MTF",
+          "IF1",
+          "IF3"
+        ],
+        "event_dag_edges": 24,
+        "events_checked": 25,
+        "exact_net": {
+          "AMP": "1",
+          "ATP": "-1",
+          "FD": "-1",
+          "GTP": "-1",
+          "IF2": "-1",
+          "IF2_GDP": "1",
+          "Met": "-1",
+          "PO4": "1",
+          "PPi": "1",
+          "RS30S": "-1",
+          "RS50S": "-1",
+          "THF": "1",
+          "elRS70SAGGU0002_fMettRNAfMetCAU": "1",
+          "mRNA": "-1",
+          "tRNAfMetCAU": "-1"
+        },
+        "lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "petri_status": "PASS",
+        "resource_ledger": {
+          "ADP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "AMP": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "ATP": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "FD": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "GDP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GTP": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "Gly": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF1": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "IF2": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "IF2_GDP": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "IF2_GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF3": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "MTF": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "Met": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "MetRS": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "MettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "PO4": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "PPi": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "RS30S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "RS50S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "THF": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "fMettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "mRNA": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "tRNAfMetCAU": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          }
+        },
+        "status": "PASS",
+        "target": "elRS70SAGGU0002_fMettRNAfMetCAU",
+        "target_produced_tokens": "1"
+      },
+      "P7": {
+        "catalysts_recovered": [
+          "IF1",
+          "IF3"
+        ],
+        "event_dag_edges": 11,
+        "events_checked": 12,
+        "exact_net": {
+          "EFTu_GTP_GlytRNAGlyGCC": "-1",
+          "IF2_GDP": "1",
+          "IF2_GTP_fMettRNAfMetCAU": "-1",
+          "PO4": "1",
+          "RS30S": "-1",
+          "RS50S": "-1",
+          "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1",
+          "mRNA": "-1",
+          "tRNAfMetCAU": "1"
+        },
+        "lineage_status": "EXACT_PRODUCER_TOKEN_FLOW_VERIFIED",
+        "petri_status": "PASS",
+        "resource_ledger": {
+          "ADP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "AMP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "ATP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "FD": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GDP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Gly": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF1": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "IF2": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF2_GDP": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "IF2_GTP": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "IF3": {
+            "final": "1",
+            "initial": "1",
+            "net": "0"
+          },
+          "MTF": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "Met": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "MetRS": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "MettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "PO4": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          },
+          "PPi": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "RS30S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "RS50S": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "THF": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "fMettRNAfMetCAU": {
+            "final": "0",
+            "initial": "0",
+            "net": "0"
+          },
+          "mRNA": {
+            "final": "0",
+            "initial": "1",
+            "net": "-1"
+          },
+          "tRNAfMetCAU": {
+            "final": "1",
+            "initial": "0",
+            "net": "1"
+          }
+        },
+        "status": "PASS",
+        "target": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+        "target_produced_tokens": "1"
+      }
+    }
+  },
+  "preservation": {
+    "changed_files": [],
+    "historical_A_J": {
+      "A": "PASS",
+      "B": "PASS",
+      "C": "PASS",
+      "D": "PASS",
+      "E": "PASS",
+      "F": "PASS",
+      "G": "PASS",
+      "H": "PASS",
+      "I": "PASS",
+      "J": "PASS"
+    },
+    "historical_B1_1_files_unchanged": 16,
+    "historical_report_sha256": "33ba187e1a2706a4ce01ecc168860ddc89f76bba95229d5a9a4aaac7858036dc",
+    "protected_files_unchanged": 2378,
+    "status": "PASS",
+    "tracked_files_unchanged": 2362
+  },
+  "researcher_formally_signed": false,
+  "source_integrity": {
+    "approved_hash_authority": "Published Phase A protocol/graph, independently pinned in verifier",
+    "directed_reactions": 968,
+    "hashes": {
+      "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+      "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+      "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52"
+    },
+    "re0000000414_PO4": "2",
+    "species": 241,
+    "weighted_petri_arcs": 3854,
+    "zero_author_parameters": 485
+  },
+  "status": "PASS"
+}

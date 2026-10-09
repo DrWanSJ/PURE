@@ -1,0 +1,579 @@
+{
+  "E1_E2_composition": {
+    "elRS70SAGGU0002_fMet": {
+      "full_complex_components": "INFERRED",
+      "mRNA": "INFERRED",
+      "peptidyl_state": "INFERRED"
+    },
+    "elRS70SAGGU0002_fMettRNAfMetCAU": {
+      "full_complex_components": "INFERRED",
+      "mRNA": "INFERRED",
+      "peptidyl_state": "INFERRED"
+    }
+  },
+  "IF2_GDP_release_equals_IF2_GTP_recovery": false,
+  "IF3_first_witness": {
+    "IF1_IF3_free_states_recovered": true,
+    "evidence_status": "EXTRACTED_AND_INDEPENDENTLY_VERIFIED",
+    "exact_net_stoichiometry": {
+      "IF2_GDP": "1",
+      "IF2_GTP_fMettRNAfMetCAU": "-1",
+      "PO4": "1",
+      "RS30S": "-1",
+      "RS50S": "-1",
+      "elRS70SAGGU0002_fMettRNAfMetCAU": "1",
+      "mRNA": "-1"
+    },
+    "net_reaction": "IF2_GTP_fMettRNAfMetCAU + RS30S + RS50S + mRNA -> IF2_GDP + PO4 + elRS70SAGGU0002_fMettRNAfMetCAU",
+    "original_reaction_sequence": [
+      "re0000000459",
+      "re0000000507",
+      "re0000000513",
+      "re0000000519",
+      "re0000000529",
+      "re0000000717",
+      "re0000000722",
+      "re0000000747",
+      "re0000000757",
+      "re0000000726"
+    ],
+    "target_milestone": "elRS70SAGGU0002_fMettRNAfMetCAU",
+    "witness_id": "B1-1-FOLLOWUP-IF3-FIRST"
+  },
+  "accepted_items": [
+    "E1/E2 源模型状态",
+    "独立 IF3-first 释放路径",
+    "替代装配和因子释放顺序",
+    "精确净化学计量",
+    "多载体结构交接"
+  ],
+  "accepted_scope": "source-exact structural pathways",
+  "confirmation_text": "正式确认：批准 PURE Reaction Atlas Phase B1-1 的限定范围科学验收。",
+  "decision_history": [
+    {
+      "disposition": "IMMUTABLE_HISTORICAL_RECORD",
+      "path": "docs/reduction/pathways/phase_b1_1_validation_report.json",
+      "sha256": "33ba187e1a2706a4ce01ecc168860ddc89f76bba95229d5a9a4aaac7858036dc",
+      "status": "PENDING_HUMAN_REVIEW"
+    },
+    {
+      "disposition": "IMMUTABLE_HISTORICAL_RECORD",
+      "path": "docs/reduction/pathways/phase_b1_1_followup_validation_report.json",
+      "sha256": "b823e33c1d16ae9b076826fe1bf34d705c67a8ecefcfbf4e64393ca75f6c400c",
+      "status": "B1_1_CONDITIONALLY_ACCEPTED"
+    },
+    {
+      "authority": "EXPLICIT_RESEARCHER_CONFIRMATION",
+      "disposition": "CURRENT_B1_1_DECISION",
+      "path": "docs/reduction/pathways/phase_b1_1_formal_signoff_2026-10-09.json",
+      "status": "B1_1_FORMALLY_ACCEPTED_LIMITED_SCOPE"
+    }
+  ],
+  "engineering_status": "PASS",
+  "evidence_navigation": [
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_execution_log.txt",
+      "sha256": "cc3eda4ab63ace4241016841d4271b62f3909c377a67c553238d6ff6c1c4ce30"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_failure_evidence.jsonl",
+      "sha256": "47402b3bf30e26f4889ff45318ca6937af615b7f5965719a5a79a857044fa844"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_followup_baseline.json",
+      "sha256": "f65e403331a0a64477f1b64be1f3e8b9ebce3eeded5ee14a238836b5e0c91fd4"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_followup_execution_log.txt",
+      "sha256": "94c6633fb3377cc6428709c04861922b7297da9b4ad73edaabc99d47ca0edc22"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_followup_independent_verification.json",
+      "sha256": "1d34360d559b0ac5523a04c71db20647957b4d8c5f5e68f268f9036ad29bf4d3"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_followup_negative_controls.json",
+      "sha256": "27fe96d6194461529848f8008dd10c6266736e64daa9278c2044261b14a1af4c"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_followup_pathway.md",
+      "sha256": "ad3529106c57f5f672c2c94142c71d1b07428c6ea6473a12a782a64dc481db2c"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_followup_protocol.md",
+      "sha256": "071e00f3e39bc09bfc64978a0d4d073582bbc515459e8a15d5d84866ca0fb1c7"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_followup_regression.json",
+      "sha256": "c2717964d2f722d30119896ec6ec59823a393e621fc0d36a2f15174007a2fe45"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_followup_review.md",
+      "sha256": "1b611375de28ee8c36f9fa4fce880ba851811e41de03a3633dac4d74d54806cb"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_followup_validation_report.json",
+      "sha256": "b823e33c1d16ae9b076826fe1bf34d705c67a8ecefcfbf4e64393ca75f6c400c"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_followup_witness.json",
+      "sha256": "9e793f39ee3122119aa8e6fad9b7cc82029a6ec19a97ec8f5afb31c64244bb59"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_independent_verification.json",
+      "sha256": "3fb6b3fac3203dd109f6351e6f82ea8534d4f39ee8e498e997df729d9b3494c4"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_initiation_pathways.md",
+      "sha256": "b5763a741ea4425a066b5fa973ed6478051f684c09b1ee6742c5fe9539a3da6e"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_negative_controls.json",
+      "sha256": "cb0f30bc374eae5466bea4d62534ee85667d4c643dd4a11fdcd703d5e70272e3"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_protocol.md",
+      "sha256": "1bd8d1a602ba74b664cb37615893e665705c43e0988009845bf3ed4276c09ee9"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_regression.json",
+      "sha256": "9e4de4dbd5931196062bbe30cab030b0282113bbce36ea31756b1e96b1787ae5"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_review.md",
+      "sha256": "5110e1dbd0b39313177846bfa522d5c46b755e7d4010b44a46e34c1597dc1e04"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_source_baseline.json",
+      "sha256": "c58615585402dac14fd6661f399c07f9fea936e5cba6bc858c6c6b5960ffec8c"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_source_scope.json",
+      "sha256": "6871bc13ff7dff6b6ba454f3404d3596df9f300a15508ab20db0991568a192ec"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_validation_report.json",
+      "sha256": "33ba187e1a2706a4ce01ecc168860ddc89f76bba95229d5a9a4aaac7858036dc"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "docs/reduction/pathways/phase_b1_1_witnesses.json",
+      "sha256": "546badd98657cf2029a75da476a5fa9874af6db52b1f32dc4f8d6ff1702ed1d2"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "scripts/pathways/phase_b1_1/build_initiation_witnesses.py",
+      "sha256": "6e83801a90b1a9f6f45b2458f0011c5725fc360cf82865e0965406e49e2863a4"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "scripts/pathways/phase_b1_1/followup/build_followup.py",
+      "sha256": "90cd8da590b8b636348d2abe7abd37e7091ad2e2ce9f597a8413eaaca957ea6e"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "scripts/pathways/phase_b1_1/followup/run_followup_validation.py",
+      "sha256": "f32b633e4c114bf88d6dc7df7995f8ba3d0683b7acc637b9c1158398345151e1"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "scripts/pathways/phase_b1_1/followup/test_followup_negative_controls.py",
+      "sha256": "b5b199f8b7a40dc4db2185e718136cd3d85475fb69c3a544f44f1e51646506ce"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "scripts/pathways/phase_b1_1/followup/verify_followup.py",
+      "sha256": "6fd519c6d9e961238e02fb999909ece6608f190c799814a0b67ace1c4349989f"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "scripts/pathways/phase_b1_1/run_phase_b1_1_validation.py",
+      "sha256": "22ab63ca266cc0cea33585fdea5470533347ed2965a67ae86f32147438287cce"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "scripts/pathways/phase_b1_1/test_initiation_negative_controls.py",
+      "sha256": "9bb2906c80d8393e92cc5348b9bef383a7d74f1c620ef9711bdbc289299a1018"
+    },
+    {
+      "authority": "IMMUTABLE_B1_1_OR_FOLLOWUP_EVIDENCE",
+      "freshness": "HASH_RECHECKED_FOR_THIS_PUBLICATION",
+      "path": "scripts/pathways/phase_b1_1/verify_initiation_witnesses.py",
+      "sha256": "b866d9d66c21257b383011b66ca1351593a37cdf7e86cc1569cfad1d11379565"
+    }
+  ],
+  "fresh_publication_validation": {
+    "browser_interaction_checks": 222,
+    "deterministic_rebuilds": "PASS",
+    "independent_historical_witnesses": 9,
+    "negative_summary": {
+      "followup_passed": 12,
+      "followup_run": 12,
+      "historical_passed": 23,
+      "historical_run": 23,
+      "not_run": 0,
+      "total_passed": 35,
+      "total_run": 35
+    },
+    "new_IF3_first_events": 10,
+    "path": "docs/reduction/pathways/phase_b1_1_formal_acceptance_publication_checks.json",
+    "preservation": {
+      "changed_files": [],
+      "historical_A_J": {
+        "A": "PASS",
+        "B": "PASS",
+        "C": "PASS",
+        "D": "PASS",
+        "E": "PASS",
+        "F": "PASS",
+        "G": "PASS",
+        "H": "PASS",
+        "I": "PASS",
+        "J": "PASS"
+      },
+      "historical_B1_1_files_unchanged": 16,
+      "historical_report_sha256": "33ba187e1a2706a4ce01ecc168860ddc89f76bba95229d5a9a4aaac7858036dc",
+      "protected_files_unchanged": 2378,
+      "status": "PASS",
+      "tracked_files_unchanged": 2362
+    },
+    "publication_whitespace_status": "PASS_WITH_FROZEN_LOG_EOF_EXCEPTIONS",
+    "regression": {
+      "b0": "PASS",
+      "html": "PASS",
+      "phase_a": "PASS"
+    },
+    "sha256": "cd1650338c8f8ffb1d7a77f793580adaa1a97ee8130c63f15497aa58a2016282",
+    "status": "PASS"
+  },
+  "full_phase_b_authorized": false,
+  "future_original_source_evidence_required": [
+    {
+      "id": "Q1",
+      "question": "Locate original article/SI/state definitions explaining why 0001 precedes first Gly-tRNA encounter 0013",
+      "status": "UNRESOLVED_NOT_SEARCHED_IN_THIS_STRUCTURAL_FOLLOWUP"
+    },
+    {
+      "id": "Q2",
+      "question": "Obtain explicit E1/E2 mappings for mRNA, peptide/initiator-tRNA and complete ribosome composition",
+      "status": "UNRESOLVED_FULL_COMPOSITION_INFERRED"
+    },
+    {
+      "id": "Q3",
+      "question": "Require original-source mechanistic evidence before mapping model states to initiator release, peptide-bond formation and translocation",
+      "status": "NO_COMPLETE_PHYSIOLOGICAL_MECHANISM_CERTIFIED"
+    }
+  ],
+  "historical_P1_annotation": {
+    "classification": "LEXICOGRAPHIC_STRUCTURAL_WITNESS",
+    "historical_source_reaction_ids": [
+      "re0000000459",
+      "re0000000507",
+      "re0000000513",
+      "re0000000519",
+      "re0000000529",
+      "re0000000717",
+      "re0000000722",
+      "re0000000724",
+      "re0000000726",
+      "re0000000755"
+    ],
+    "kinetic_dominance_claimed": false,
+    "measured_path_flux_claimed": false,
+    "overlay_semantics": "ADDITIVE_ANNOTATION; ORIGINAL_P1_AND_HISTORICAL_PASS_BYTES_UNCHANGED",
+    "selected_release_direction": "re0000000724",
+    "selection_basis": "SORTED_ORIGINAL_ID_TIE_BREAK_IN_SOURCE_MARKING_SEARCH",
+    "source_file": "docs/reduction/pathways/phase_b1_1_witnesses.json",
+    "witness_id": "P1"
+  },
+  "history_policy": "Prior pending/conditional statuses, publication holds, A-J PASS and all failure records remain intact as historical evidence. This additive decision supplies the current limited acceptance and publication authority.",
+  "human_review": [
+    {
+      "conclusion": "Y",
+      "id": "H1",
+      "item": "E1 起始出口",
+      "scope": "源模型定义的 E1 起始出口及其原始物种边界。"
+    },
+    {
+      "conclusion": "Y，源模型限定",
+      "id": "H2",
+      "item": "E1 → E2 交接",
+      "scope": "0001 是作者模型 ELONG_tRNA_release，先产生 E2，随后由第一次 Gly-tRNA 结合 0013 消耗；不认证完整生理机理。"
+    },
+    {
+      "conclusion": "Y",
+      "id": "H3",
+      "item": "替代装配与释放路径",
+      "scope": "源精确替代装配和因子释放顺序，包括独立 IF3-first 正例；P1 保留为 LEXICOGRAPHIC_STRUCTURAL_WITNESS。"
+    },
+    {
+      "conclusion": "Y",
+      "id": "H4",
+      "item": "核苷酸及资源账本",
+      "scope": "精确净化学计量、游离物种恢复及源核苷酸状态区分；IF2_GDP 释放不等于 IF2_GTP 恢复。"
+    },
+    {
+      "conclusion": "Y，限定于源物种交接，完整组成仍 INFERRED",
+      "id": "H5",
+      "item": "复合物完整分子组成",
+      "scope": "接受 source-exact 物种和多载体结构交接；E1/E2 的 mRNA、肽基状态及完整复合物组分继续 INFERRED。"
+    }
+  ],
+  "kinetic_reduction_authorized": false,
+  "model_state_order": {
+    "E1_E2_composition": {
+      "elRS70SAGGU0002_fMet": {
+        "full_complex_components": "INFERRED",
+        "mRNA": "INFERRED",
+        "peptidyl_state": "INFERRED"
+      },
+      "elRS70SAGGU0002_fMettRNAfMetCAU": {
+        "full_complex_components": "INFERRED",
+        "mRNA": "INFERRED",
+        "peptidyl_state": "INFERRED"
+      }
+    },
+    "IF2_GDP_release_equals_IF2_GTP_recovery": false,
+    "initiator_release_peptide_bond_translocation_complete_physical_mechanism_claimed": false,
+    "model_0001_context": "ELONG_tRNA_release",
+    "model_order": [
+      "re0000000001",
+      "re0000000013"
+    ],
+    "model_order_is_complete_physiological_mechanism": false,
+    "order_evidence": "E2_EXACT_SOURCE_PRODUCTION_AND_CONSUMPTION; NOT_PHYSIOLOGICAL_TIME_CERTIFICATE",
+    "source_species_continuity_is_global_composition_certificate": false
+  },
+  "not_certified": [
+    "真实轨迹通量",
+    "动力学优势",
+    "0001/0013 的完整生理机理",
+    "QSSA",
+    "动力学降阶"
+  ],
+  "phase": "PURE Reaction Atlas B1-1",
+  "phase_b1_1_formally_accepted": true,
+  "phase_b1_2_authorized": false,
+  "publication_authorization": {
+    "authorized_by": "CURRENT_EXPLICIT_USER_MESSAGE",
+    "branch": "codex/energy-cycles-v1",
+    "commit_push_authorized": true,
+    "delivery_evidence_policy": "Commit identity and remote delivery checks are reported after publication; this pre-commit signoff does not claim push completion.",
+    "force_push_authorized": false,
+    "frozen_log_EOF_whitespace_exceptions": [
+      {
+        "byte_preservation": "PASS",
+        "finding": "docs/reduction/pathways/phase_b1_1_execution_log.txt:399: new blank line at EOF.",
+        "path": "docs/reduction/pathways/phase_b1_1_execution_log.txt",
+        "reason": "IMMUTABLE_HISTORICAL_NATIVE_EXECUTION_LOG; EXACT_BASELINE_BYTES_PRESERVED",
+        "sha256": "cc3eda4ab63ace4241016841d4271b62f3909c377a67c553238d6ff6c1c4ce30"
+      },
+      {
+        "byte_preservation": "PASS",
+        "finding": "docs/reduction/pathways/phase_b1_1_followup_execution_log.txt:366: new blank line at EOF.",
+        "path": "docs/reduction/pathways/phase_b1_1_followup_execution_log.txt",
+        "reason": "IMMUTABLE_HISTORICAL_NATIVE_EXECUTION_LOG; EXACT_BASELINE_BYTES_PRESERVED",
+        "sha256": "94c6633fb3377cc6428709c04861922b7297da9b4ad73edaabc99d47ca0edc22"
+      }
+    ],
+    "machine": "sean",
+    "modified_or_deleted_existing_files_allowed": 0,
+    "operation": "COMMIT_AND_ORDINARY_PUSH_AFTER_PASSING_PREFLIGHT_WHITELIST_AND_RELATED_VALIDATION",
+    "origin": "https://github.com/DrWanSJ/PURE.git",
+    "post_push_ahead_behind_and_worktree_check_required": true,
+    "publication_file_count": 33,
+    "publication_file_whitelist": [
+      "docs/reduction/pathways/phase_b1_1_execution_log.txt",
+      "docs/reduction/pathways/phase_b1_1_failure_evidence.jsonl",
+      "docs/reduction/pathways/phase_b1_1_followup_baseline.json",
+      "docs/reduction/pathways/phase_b1_1_followup_execution_log.txt",
+      "docs/reduction/pathways/phase_b1_1_followup_independent_verification.json",
+      "docs/reduction/pathways/phase_b1_1_followup_negative_controls.json",
+      "docs/reduction/pathways/phase_b1_1_followup_pathway.md",
+      "docs/reduction/pathways/phase_b1_1_followup_protocol.md",
+      "docs/reduction/pathways/phase_b1_1_followup_regression.json",
+      "docs/reduction/pathways/phase_b1_1_followup_review.md",
+      "docs/reduction/pathways/phase_b1_1_followup_validation_report.json",
+      "docs/reduction/pathways/phase_b1_1_followup_witness.json",
+      "docs/reduction/pathways/phase_b1_1_formal_acceptance_publication_checks.json",
+      "docs/reduction/pathways/phase_b1_1_formal_signoff_2026-10-09.json",
+      "docs/reduction/pathways/phase_b1_1_formal_signoff_2026-10-09.md",
+      "docs/reduction/pathways/phase_b1_1_independent_verification.json",
+      "docs/reduction/pathways/phase_b1_1_initiation_pathways.md",
+      "docs/reduction/pathways/phase_b1_1_negative_controls.json",
+      "docs/reduction/pathways/phase_b1_1_protocol.md",
+      "docs/reduction/pathways/phase_b1_1_regression.json",
+      "docs/reduction/pathways/phase_b1_1_review.md",
+      "docs/reduction/pathways/phase_b1_1_source_baseline.json",
+      "docs/reduction/pathways/phase_b1_1_source_scope.json",
+      "docs/reduction/pathways/phase_b1_1_validation_report.json",
+      "docs/reduction/pathways/phase_b1_1_witnesses.json",
+      "scripts/pathways/phase_b1_1/build_initiation_witnesses.py",
+      "scripts/pathways/phase_b1_1/followup/build_followup.py",
+      "scripts/pathways/phase_b1_1/followup/run_followup_validation.py",
+      "scripts/pathways/phase_b1_1/followup/test_followup_negative_controls.py",
+      "scripts/pathways/phase_b1_1/followup/verify_followup.py",
+      "scripts/pathways/phase_b1_1/run_phase_b1_1_validation.py",
+      "scripts/pathways/phase_b1_1/test_initiation_negative_controls.py",
+      "scripts/pathways/phase_b1_1/verify_initiation_witnesses.py"
+    ],
+    "remote_HEAD_and_commit_file_list_check_required": true,
+    "staged_blob_byte_check_required": true,
+    "starting_HEAD": "50888efa205837dabb621e42bf117738af661150",
+    "starting_ahead": 0,
+    "starting_behind": 0
+  },
+  "qssa_authorized": false,
+  "record_type": "ADDITIVE_RESEARCHER_FORMAL_SIGNOFF",
+  "recorded_at": "2026-10-09T23:57:17.663644+08:00",
+  "release_branch_inventory": [
+    {
+      "evidence_status": "EXTRACTED",
+      "outputs": {
+        "IF1": "1",
+        "RS70S_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_id": "re0000000724",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "0.0025",
+      "reverse_reaction_ids": [
+        "re0000000723"
+      ],
+      "source_states": {
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      }
+    },
+    {
+      "evidence_status": "EXTRACTED",
+      "outputs": {
+        "IF3": "1",
+        "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_id": "re0000000747",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "1000",
+      "reverse_reaction_ids": [
+        "re0000000748"
+      ],
+      "source_states": {
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      }
+    },
+    {
+      "evidence_status": "EXTRACTED",
+      "outputs": {
+        "IF2_GDP": "1",
+        "RS70S_IF1_IF3_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_id": "re0000000749",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "4",
+      "reverse_reaction_ids": [
+        "re0000000750"
+      ],
+      "source_states": {
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      }
+    }
+  ],
+  "researcher_formally_signed": true,
+  "scientific_status": "B1_1_FORMALLY_ACCEPTED_LIMITED_SCOPE",
+  "signature_kind": "USER_PROVIDED_SCIENTIFIC_DECISION_RECORDED_BY_CODEX",
+  "signoff_authority": "EXPLICIT_RESEARCHER_CONFIRMATION_IN_CURRENT_USER_MESSAGE",
+  "source_provenance": [
+    {
+      "authority": "IMMUTABLE_HISTORICAL_WITNESSES",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "docs/reduction/pathways/phase_b1_1_witnesses.json",
+      "sha256": "546badd98657cf2029a75da476a5fa9874af6db52b1f32dc4f8d6ff1702ed1d2"
+    },
+    {
+      "authority": "IMMUTABLE_HISTORICAL_A_J_RESULTS",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "docs/reduction/pathways/phase_b1_1_validation_report.json",
+      "sha256": "33ba187e1a2706a4ce01ecc168860ddc89f76bba95229d5a9a4aaac7858036dc"
+    },
+    {
+      "authority": "CANONICAL_SBML",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+    },
+    {
+      "authority": "AUTHOR_PARAMETERS",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465"
+    },
+    {
+      "authority": "AUTHOR_ARCHIVE",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "sha256": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52"
+    },
+    {
+      "authority": "REVIEWED_LEVEL_C_V2",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "docs/reduction/reaction_level_annotation_v2.csv",
+      "sha256": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335"
+    }
+  ],
+  "stop_instruction": "STOP_AFTER_AUTHORIZED_COMMIT_AND_ORDINARY_PUSH; DO_NOT_START_B1_2_QSSA_OR_KINETIC_REDUCTION",
+  "user_confirmation_date": "2026-10-09"
+}

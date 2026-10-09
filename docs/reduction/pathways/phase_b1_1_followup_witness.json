@@ -1,0 +1,2720 @@
+{
+  "authority": "EXPLICIT_USER_SUPPLIED_REVIEW_CONCLUSIONS_AND_FOLLOWUP_AUTHORIZATION",
+  "commit_push_authorized": false,
+  "formal_signoff_status": "PENDING_FINAL_RESEARCHER_CONFIRMATION",
+  "future_original_source_evidence_required": [
+    {
+      "id": "Q1",
+      "question": "Locate original article/SI/state definitions explaining why 0001 precedes first Gly-tRNA encounter 0013",
+      "status": "UNRESOLVED_NOT_SEARCHED_IN_THIS_STRUCTURAL_FOLLOWUP"
+    },
+    {
+      "id": "Q2",
+      "question": "Obtain explicit E1/E2 mappings for mRNA, peptide/initiator-tRNA and complete ribosome composition",
+      "status": "UNRESOLVED_FULL_COMPOSITION_INFERRED"
+    },
+    {
+      "id": "Q3",
+      "question": "Require original-source mechanistic evidence before mapping model states to initiator release, peptide-bond formation and translocation",
+      "status": "NO_COMPLETE_PHYSIOLOGICAL_MECHANISM_CERTIFIED"
+    }
+  ],
+  "historical_P1_annotation": {
+    "classification": "LEXICOGRAPHIC_STRUCTURAL_WITNESS",
+    "historical_source_reaction_ids": [
+      "re0000000459",
+      "re0000000507",
+      "re0000000513",
+      "re0000000519",
+      "re0000000529",
+      "re0000000717",
+      "re0000000722",
+      "re0000000724",
+      "re0000000726",
+      "re0000000755"
+    ],
+    "kinetic_dominance_claimed": false,
+    "measured_path_flux_claimed": false,
+    "overlay_semantics": "ADDITIVE_ANNOTATION; ORIGINAL_P1_AND_HISTORICAL_PASS_BYTES_UNCHANGED",
+    "selected_release_direction": "re0000000724",
+    "selection_basis": "SORTED_ORIGINAL_ID_TIE_BREAK_IN_SOURCE_MARKING_SEARCH",
+    "source_file": "docs/reduction/pathways/phase_b1_1_witnesses.json",
+    "witness_id": "P1"
+  },
+  "human_review": [
+    {
+      "id": "H1",
+      "item": "E1 initiation exit",
+      "required_treatment": "RETAIN_SOURCE_MODEL_BOUNDARY",
+      "user_conclusion": "Y"
+    },
+    {
+      "id": "H2",
+      "item": "0001 elongation handoff",
+      "required_treatment": "DISTINGUISH_MODEL_ORDER_FROM_PHYSIOLOGICAL_MECHANISM",
+      "user_conclusion": "Y"
+    },
+    {
+      "id": "H3",
+      "item": "Alternative assembly/release routes",
+      "required_treatment": "LABEL_ID_ORDER_AND_TEST_0747_0757",
+      "user_conclusion": "Y，限定"
+    },
+    {
+      "id": "H4",
+      "item": "Nucleotide/resource ledger",
+      "required_treatment": "RETAIN_IF2_GDP_VS_IF2_GTP_DISTINCTION",
+      "user_conclusion": "Y"
+    },
+    {
+      "id": "H5",
+      "item": "Composite molecular identity",
+      "required_treatment": "FULL_COMPOSITION_REMAINS_INFERRED",
+      "user_conclusion": "限定接受"
+    }
+  ],
+  "interpretation_limits": {
+    "E1_E2_composition": {
+      "elRS70SAGGU0002_fMet": {
+        "full_complex_components": "INFERRED",
+        "mRNA": "INFERRED",
+        "peptidyl_state": "INFERRED"
+      },
+      "elRS70SAGGU0002_fMettRNAfMetCAU": {
+        "full_complex_components": "INFERRED",
+        "mRNA": "INFERRED",
+        "peptidyl_state": "INFERRED"
+      }
+    },
+    "IF2_GDP_release_equals_IF2_GTP_recovery": false,
+    "initiator_release_peptide_bond_translocation_complete_physical_mechanism_claimed": false,
+    "model_0001_context": "ELONG_tRNA_release",
+    "model_order": [
+      "re0000000001",
+      "re0000000013"
+    ],
+    "model_order_is_complete_physiological_mechanism": false,
+    "order_evidence": "E2_EXACT_SOURCE_PRODUCTION_AND_CONSUMPTION; NOT_PHYSIOLOGICAL_TIME_CERTIFICATE",
+    "source_species_continuity_is_global_composition_certificate": false
+  },
+  "kinetic_reduction_authorized": false,
+  "new_witness": {
+    "alternative_entry_links": [],
+    "boundary_supplies": [
+      {
+        "amount": "1",
+        "evidence_status": "AMBIGUOUS",
+        "full_model_availability_verified": false,
+        "justification": "Explicit finite conditional test supply; no experimental availability assertion",
+        "species_id": "IF1",
+        "token_origin": "BOUNDARY:IF1"
+      },
+      {
+        "amount": "1",
+        "evidence_status": "AMBIGUOUS",
+        "full_model_availability_verified": false,
+        "justification": "Explicit finite conditional test supply; no experimental availability assertion",
+        "species_id": "IF2_GTP_fMettRNAfMetCAU",
+        "token_origin": "BOUNDARY:IF2_GTP_fMettRNAfMetCAU"
+      },
+      {
+        "amount": "1",
+        "evidence_status": "AMBIGUOUS",
+        "full_model_availability_verified": false,
+        "justification": "Explicit finite conditional test supply; no experimental availability assertion",
+        "species_id": "IF3",
+        "token_origin": "BOUNDARY:IF3"
+      },
+      {
+        "amount": "1",
+        "evidence_status": "AMBIGUOUS",
+        "full_model_availability_verified": false,
+        "justification": "Explicit finite conditional test supply; no experimental availability assertion",
+        "species_id": "RS30S",
+        "token_origin": "BOUNDARY:RS30S"
+      },
+      {
+        "amount": "1",
+        "evidence_status": "AMBIGUOUS",
+        "full_model_availability_verified": false,
+        "justification": "Explicit finite conditional test supply; no experimental availability assertion",
+        "species_id": "RS50S",
+        "token_origin": "BOUNDARY:RS50S"
+      },
+      {
+        "amount": "1",
+        "evidence_status": "AMBIGUOUS",
+        "full_model_availability_verified": false,
+        "justification": "Explicit finite conditional test supply; no experimental availability assertion",
+        "species_id": "mRNA",
+        "token_origin": "BOUNDARY:mRNA"
+      }
+    ],
+    "carrier_evidence_status": "INFERRED",
+    "carrier_streams": [
+      {
+        "after_species": [
+          "RS30S_IF3"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S"
+        ],
+        "carrier": "ribosome",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E01",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF3"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "IF3"
+        ],
+        "carrier": "IF3",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E01",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF3"
+        ],
+        "carrier": "ribosome",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E02",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "IF1"
+        ],
+        "carrier": "IF1",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E02",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF3"
+        ],
+        "carrier": "IF3",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E02",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3"
+        ],
+        "carrier": "ribosome",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E03",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "mRNA"
+        ],
+        "carrier": "mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E03",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3"
+        ],
+        "carrier": "IF1",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E03",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3"
+        ],
+        "carrier": "IF3",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E03",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "IF2_GTP_fMettRNAfMetCAU"
+        ],
+        "carrier": "initiator_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "IF2_GTP_fMettRNAfMetCAU"
+        ],
+        "carrier": "formylated_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "IF2_GTP_fMettRNAfMetCAU"
+        ],
+        "carrier": "IF2_nucleotide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3_mRNA"
+        ],
+        "carrier": "ribosome",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3_mRNA"
+        ],
+        "carrier": "mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3_mRNA"
+        ],
+        "carrier": "IF1",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3_mRNA"
+        ],
+        "carrier": "IF3",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "IF2_GTP_fMettRNAfMetCAU"
+        ],
+        "carrier": "amino_acid_peptide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "initiator_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "formylated_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF2_nucleotide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+          "RS50S"
+        ],
+        "carrier": "ribosome",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF1",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF3",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "amino_acid_peptide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "initiator_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "formylated_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF2_nucleotide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "ribosome",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF1",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF3",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "amino_acid_peptide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "initiator_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "formylated_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF2_nucleotide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "ribosome",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF1",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF3",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "amino_acid_peptide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "initiator_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "formylated_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF2_nucleotide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "ribosome",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF1",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "IF3"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF3",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "amino_acid_peptide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "initiator_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "formylated_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF2_nucleotide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "ribosome",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "IF1"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF1",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "amino_acid_peptide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "elRS70SAGGU0002_fMettRNAfMetCAU"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "initiator_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E10",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "elRS70SAGGU0002_fMettRNAfMetCAU"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "formylated_tRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E10",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "IF2_GDP"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "IF2_nucleotide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E10",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "elRS70SAGGU0002_fMettRNAfMetCAU"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "ribosome",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E10",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E10",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      },
+      {
+        "after_species": [
+          "elRS70SAGGU0002_fMettRNAfMetCAU"
+        ],
+        "basis": "SOURCE_NAME_CONTEXT_PROJECTION_ONLY",
+        "before_species": [
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "carrier": "amino_acid_peptide",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E10",
+        "evidence_status": "INFERRED",
+        "scientific_status": "PENDING_HUMAN_REVIEW"
+      }
+    ],
+    "catalyst_recovery_claims": [
+      {
+        "claim": "SOURCE_FREE_STATE_RECOVERED",
+        "species_id": "IF1"
+      },
+      {
+        "claim": "SOURCE_FREE_STATE_RECOVERED",
+        "species_id": "IF3"
+      }
+    ],
+    "classification": "SOURCE_SUPPORTED_IF3_FIRST_RELEASE_WITNESS",
+    "composition_with_B0_W3": false,
+    "event_dependencies": [
+      {
+        "carrier_role": "EXACT_SPECIES_HANDOFF",
+        "consumer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E02",
+        "evidence_status": "EXTRACTED",
+        "original_species_id": "RS30S_IF3",
+        "producer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E01",
+        "stoichiometric_amount": "1",
+        "token_provenance": "EXACT_PRODUCER_OUTPUT"
+      },
+      {
+        "carrier_role": "EXACT_SPECIES_HANDOFF",
+        "consumer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E03",
+        "evidence_status": "EXTRACTED",
+        "original_species_id": "RS30S_IF1_IF3",
+        "producer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E02",
+        "stoichiometric_amount": "1",
+        "token_provenance": "EXACT_PRODUCER_OUTPUT"
+      },
+      {
+        "carrier_role": "EXACT_SPECIES_HANDOFF",
+        "consumer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "evidence_status": "EXTRACTED",
+        "original_species_id": "RS30S_IF1_IF3_mRNA",
+        "producer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E03",
+        "stoichiometric_amount": "1",
+        "token_provenance": "EXACT_PRODUCER_OUTPUT"
+      },
+      {
+        "carrier_role": "EXACT_SPECIES_HANDOFF",
+        "consumer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "evidence_status": "EXTRACTED",
+        "original_species_id": "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+        "producer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "stoichiometric_amount": "1",
+        "token_provenance": "EXACT_PRODUCER_OUTPUT"
+      },
+      {
+        "carrier_role": "EXACT_SPECIES_HANDOFF",
+        "consumer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "evidence_status": "EXTRACTED",
+        "original_species_id": "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+        "producer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "stoichiometric_amount": "1",
+        "token_provenance": "EXACT_PRODUCER_OUTPUT"
+      },
+      {
+        "carrier_role": "EXACT_SPECIES_HANDOFF",
+        "consumer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "evidence_status": "EXTRACTED",
+        "original_species_id": "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA",
+        "producer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "stoichiometric_amount": "1",
+        "token_provenance": "EXACT_PRODUCER_OUTPUT"
+      },
+      {
+        "carrier_role": "EXACT_SPECIES_HANDOFF",
+        "consumer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "evidence_status": "EXTRACTED",
+        "original_species_id": "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA",
+        "producer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "stoichiometric_amount": "1",
+        "token_provenance": "EXACT_PRODUCER_OUTPUT"
+      },
+      {
+        "carrier_role": "EXACT_SPECIES_HANDOFF",
+        "consumer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+        "evidence_status": "EXTRACTED",
+        "original_species_id": "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA",
+        "producer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "stoichiometric_amount": "1",
+        "token_provenance": "EXACT_PRODUCER_OUTPUT"
+      },
+      {
+        "carrier_role": "EXACT_SPECIES_HANDOFF",
+        "consumer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E10",
+        "evidence_status": "EXTRACTED",
+        "original_species_id": "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA",
+        "producer_event_id": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+        "stoichiometric_amount": "1",
+        "token_provenance": "EXACT_PRODUCER_OUTPUT"
+      }
+    ],
+    "exact_net_stoichiometry": {
+      "IF2_GDP": "1",
+      "IF2_GTP_fMettRNAfMetCAU": "-1",
+      "PO4": "1",
+      "RS30S": "-1",
+      "RS50S": "-1",
+      "elRS70SAGGU0002_fMettRNAfMetCAU": "1",
+      "mRNA": "-1"
+    },
+    "exact_reverse_partners": {
+      "re0000000459": [
+        "re0000000460"
+      ],
+      "re0000000507": [
+        "re0000000508"
+      ],
+      "re0000000513": [
+        "re0000000514"
+      ],
+      "re0000000519": [
+        "re0000000520"
+      ],
+      "re0000000529": [
+        "re0000000530"
+      ],
+      "re0000000717": [
+        "re0000000718"
+      ],
+      "re0000000722": [
+        "re0000000746"
+      ],
+      "re0000000726": [
+        "re0000000752"
+      ],
+      "re0000000747": [
+        "re0000000748"
+      ],
+      "re0000000757": [
+        "re0000000758"
+      ]
+    },
+    "factor_release_claims": [
+      "IF1",
+      "IF3",
+      "IF2_GDP"
+    ],
+    "final_marking": {
+      "IF1": "1",
+      "IF2_GDP": "1",
+      "IF3": "1",
+      "PO4": "1",
+      "elRS70SAGGU0002_fMettRNAfMetCAU": "1"
+    },
+    "initial_marking": {
+      "IF1": "1",
+      "IF2_GTP_fMettRNAfMetCAU": "1",
+      "IF3": "1",
+      "RS30S": "1",
+      "RS50S": "1",
+      "mRNA": "1"
+    },
+    "net_reaction": "IF2_GTP_fMettRNAfMetCAU + RS30S + RS50S + mRNA -> IF2_GDP + PO4 + elRS70SAGGU0002_fMettRNAfMetCAU",
+    "nucleotide_composite_transitions": [
+      {
+        "after": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "before": [
+          "IF2_GTP_fMettRNAfMetCAU",
+          "RS30S_IF1_IF3_mRNA"
+        ],
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "evidence_status": "EXTRACTED_STATES_INFERRED_NUCLEOTIDE_MOIETY"
+      },
+      {
+        "after": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "before": [
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+          "RS50S"
+        ],
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "evidence_status": "EXTRACTED_STATES_INFERRED_NUCLEOTIDE_MOIETY"
+      },
+      {
+        "after": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "before": [
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "evidence_status": "EXTRACTED_STATES_INFERRED_NUCLEOTIDE_MOIETY"
+      },
+      {
+        "after": [
+          "PO4",
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "before": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "evidence_status": "EXTRACTED_STATES_INFERRED_NUCLEOTIDE_MOIETY"
+      },
+      {
+        "after": [
+          "IF3",
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "before": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "evidence_status": "EXTRACTED_STATES_INFERRED_NUCLEOTIDE_MOIETY"
+      },
+      {
+        "after": [
+          "IF1",
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "before": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+        "evidence_status": "EXTRACTED_STATES_INFERRED_NUCLEOTIDE_MOIETY"
+      },
+      {
+        "after": [
+          "IF2_GDP",
+          "elRS70SAGGU0002_fMettRNAfMetCAU"
+        ],
+        "before": [
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E10",
+        "evidence_status": "EXTRACTED_STATES_INFERRED_NUCLEOTIDE_MOIETY"
+      }
+    ],
+    "per_event_markings": [
+      {
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E01",
+        "marking_after": {
+          "IF1": "1",
+          "IF2_GTP_fMettRNAfMetCAU": "1",
+          "RS30S_IF3": "1",
+          "RS50S": "1",
+          "mRNA": "1"
+        },
+        "marking_before": {
+          "IF1": "1",
+          "IF2_GTP_fMettRNAfMetCAU": "1",
+          "IF3": "1",
+          "RS30S": "1",
+          "RS50S": "1",
+          "mRNA": "1"
+        }
+      },
+      {
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E02",
+        "marking_after": {
+          "IF2_GTP_fMettRNAfMetCAU": "1",
+          "RS30S_IF1_IF3": "1",
+          "RS50S": "1",
+          "mRNA": "1"
+        },
+        "marking_before": {
+          "IF1": "1",
+          "IF2_GTP_fMettRNAfMetCAU": "1",
+          "RS30S_IF3": "1",
+          "RS50S": "1",
+          "mRNA": "1"
+        }
+      },
+      {
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E03",
+        "marking_after": {
+          "IF2_GTP_fMettRNAfMetCAU": "1",
+          "RS30S_IF1_IF3_mRNA": "1",
+          "RS50S": "1"
+        },
+        "marking_before": {
+          "IF2_GTP_fMettRNAfMetCAU": "1",
+          "RS30S_IF1_IF3": "1",
+          "RS50S": "1",
+          "mRNA": "1"
+        }
+      },
+      {
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "marking_after": {
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1",
+          "RS50S": "1"
+        },
+        "marking_before": {
+          "IF2_GTP_fMettRNAfMetCAU": "1",
+          "RS30S_IF1_IF3_mRNA": "1",
+          "RS50S": "1"
+        }
+      },
+      {
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "marking_after": {
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "marking_before": {
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1",
+          "RS50S": "1"
+        }
+      },
+      {
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "marking_after": {
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "marking_before": {
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1"
+        }
+      },
+      {
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "marking_after": {
+          "PO4": "1",
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "marking_before": {
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA": "1"
+        }
+      },
+      {
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "marking_after": {
+          "IF3": "1",
+          "PO4": "1",
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "marking_before": {
+          "PO4": "1",
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+        }
+      },
+      {
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+        "marking_after": {
+          "IF1": "1",
+          "IF3": "1",
+          "PO4": "1",
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "marking_before": {
+          "IF3": "1",
+          "PO4": "1",
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+        }
+      },
+      {
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E10",
+        "marking_after": {
+          "IF1": "1",
+          "IF2_GDP": "1",
+          "IF3": "1",
+          "PO4": "1",
+          "elRS70SAGGU0002_fMettRNAfMetCAU": "1"
+        },
+        "marking_before": {
+          "IF1": "1",
+          "IF3": "1",
+          "PO4": "1",
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+        }
+      }
+    ],
+    "reaction_occurrences": [
+      {
+        "equation": "IF3 + RS30S -> RS30S_IF3",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E01",
+        "input_origins": [
+          {
+            "amount": "1",
+            "origin": "BOUNDARY:IF3",
+            "species_id": "IF3"
+          },
+          {
+            "amount": "1",
+            "origin": "BOUNDARY:RS30S",
+            "species_id": "RS30S"
+          }
+        ],
+        "inputs": {
+          "IF3": "1",
+          "RS30S": "1"
+        },
+        "occurrence_origin": "B1-1-FOLLOWUP-IF3-FIRST:E01",
+        "outputs": {
+          "RS30S_IF3": "1"
+        },
+        "reaction_id": "re0000000459"
+      },
+      {
+        "equation": "IF1 + RS30S_IF3 -> RS30S_IF1_IF3",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E02",
+        "input_origins": [
+          {
+            "amount": "1",
+            "origin": "BOUNDARY:IF1",
+            "species_id": "IF1"
+          },
+          {
+            "amount": "1",
+            "origin": "B1-1-FOLLOWUP-IF3-FIRST:E01",
+            "species_id": "RS30S_IF3"
+          }
+        ],
+        "inputs": {
+          "IF1": "1",
+          "RS30S_IF3": "1"
+        },
+        "occurrence_origin": "B1-1-FOLLOWUP-IF3-FIRST:E02",
+        "outputs": {
+          "RS30S_IF1_IF3": "1"
+        },
+        "reaction_id": "re0000000507"
+      },
+      {
+        "equation": "RS30S_IF1_IF3 + mRNA -> RS30S_IF1_IF3_mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E03",
+        "input_origins": [
+          {
+            "amount": "1",
+            "origin": "B1-1-FOLLOWUP-IF3-FIRST:E02",
+            "species_id": "RS30S_IF1_IF3"
+          },
+          {
+            "amount": "1",
+            "origin": "BOUNDARY:mRNA",
+            "species_id": "mRNA"
+          }
+        ],
+        "inputs": {
+          "RS30S_IF1_IF3": "1",
+          "mRNA": "1"
+        },
+        "occurrence_origin": "B1-1-FOLLOWUP-IF3-FIRST:E03",
+        "outputs": {
+          "RS30S_IF1_IF3_mRNA": "1"
+        },
+        "reaction_id": "re0000000513"
+      },
+      {
+        "equation": "IF2_GTP_fMettRNAfMetCAU + RS30S_IF1_IF3_mRNA -> RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "input_origins": [
+          {
+            "amount": "1",
+            "origin": "BOUNDARY:IF2_GTP_fMettRNAfMetCAU",
+            "species_id": "IF2_GTP_fMettRNAfMetCAU"
+          },
+          {
+            "amount": "1",
+            "origin": "B1-1-FOLLOWUP-IF3-FIRST:E03",
+            "species_id": "RS30S_IF1_IF3_mRNA"
+          }
+        ],
+        "inputs": {
+          "IF2_GTP_fMettRNAfMetCAU": "1",
+          "RS30S_IF1_IF3_mRNA": "1"
+        },
+        "occurrence_origin": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+        "outputs": {
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "reaction_id": "re0000000519"
+      },
+      {
+        "equation": "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA + RS50S -> RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "input_origins": [
+          {
+            "amount": "1",
+            "origin": "B1-1-FOLLOWUP-IF3-FIRST:E04",
+            "species_id": "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+          },
+          {
+            "amount": "1",
+            "origin": "BOUNDARY:RS50S",
+            "species_id": "RS50S"
+          }
+        ],
+        "inputs": {
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1",
+          "RS50S": "1"
+        },
+        "occurrence_origin": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+        "outputs": {
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "reaction_id": "re0000000529"
+      },
+      {
+        "equation": "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA -> RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "input_origins": [
+          {
+            "amount": "1",
+            "origin": "B1-1-FOLLOWUP-IF3-FIRST:E05",
+            "species_id": "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+          }
+        ],
+        "inputs": {
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "occurrence_origin": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+        "outputs": {
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "reaction_id": "re0000000717"
+      },
+      {
+        "equation": "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA -> PO4 + RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "input_origins": [
+          {
+            "amount": "1",
+            "origin": "B1-1-FOLLOWUP-IF3-FIRST:E06",
+            "species_id": "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+          }
+        ],
+        "inputs": {
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "occurrence_origin": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+        "outputs": {
+          "PO4": "1",
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "reaction_id": "re0000000722"
+      },
+      {
+        "equation": "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA -> IF3 + RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "input_origins": [
+          {
+            "amount": "1",
+            "origin": "B1-1-FOLLOWUP-IF3-FIRST:E07",
+            "species_id": "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+          }
+        ],
+        "inputs": {
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "occurrence_origin": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+        "outputs": {
+          "IF3": "1",
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "reaction_id": "re0000000747"
+      },
+      {
+        "equation": "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA -> IF1 + RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+        "input_origins": [
+          {
+            "amount": "1",
+            "origin": "B1-1-FOLLOWUP-IF3-FIRST:E08",
+            "species_id": "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+          }
+        ],
+        "inputs": {
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "occurrence_origin": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+        "outputs": {
+          "IF1": "1",
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "reaction_id": "re0000000757"
+      },
+      {
+        "equation": "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA -> IF2_GDP + elRS70SAGGU0002_fMettRNAfMetCAU",
+        "event_id": "B1-1-FOLLOWUP-IF3-FIRST:E10",
+        "input_origins": [
+          {
+            "amount": "1",
+            "origin": "B1-1-FOLLOWUP-IF3-FIRST:E09",
+            "species_id": "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+          }
+        ],
+        "inputs": {
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+        },
+        "occurrence_origin": "B1-1-FOLLOWUP-IF3-FIRST:E10",
+        "outputs": {
+          "IF2_GDP": "1",
+          "elRS70SAGGU0002_fMettRNAfMetCAU": "1"
+        },
+        "reaction_id": "re0000000726"
+      }
+    ],
+    "reference_direction_statuses": {
+      "re0000000459": {
+        "parameter": "1160",
+        "status": "REFERENCE_ENABLED"
+      },
+      "re0000000507": {
+        "parameter": "20",
+        "status": "REFERENCE_ENABLED"
+      },
+      "re0000000513": {
+        "parameter": "36",
+        "status": "REFERENCE_ENABLED"
+      },
+      "re0000000519": {
+        "parameter": "220",
+        "status": "REFERENCE_ENABLED"
+      },
+      "re0000000529": {
+        "parameter": "34",
+        "status": "REFERENCE_ENABLED"
+      },
+      "re0000000717": {
+        "parameter": "2.3",
+        "status": "REFERENCE_ENABLED"
+      },
+      "re0000000722": {
+        "parameter": "12",
+        "status": "REFERENCE_ENABLED"
+      },
+      "re0000000726": {
+        "parameter": "4",
+        "status": "REFERENCE_ENABLED"
+      },
+      "re0000000747": {
+        "parameter": "1000",
+        "status": "REFERENCE_ENABLED"
+      },
+      "re0000000757": {
+        "parameter": "1000",
+        "status": "REFERENCE_ENABLED"
+      }
+    },
+    "resource_ledger": {
+      "ADP": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "AMP": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "ATP": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "FD": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "GDP": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "GTP": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "Gly": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "IF1": {
+        "final": "1",
+        "initial": "1",
+        "net": "0"
+      },
+      "IF2": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "IF2_GDP": {
+        "final": "1",
+        "initial": "0",
+        "net": "1"
+      },
+      "IF2_GTP": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "IF3": {
+        "final": "1",
+        "initial": "1",
+        "net": "0"
+      },
+      "MTF": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "Met": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "MetRS": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "MettRNAfMetCAU": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "PO4": {
+        "final": "1",
+        "initial": "0",
+        "net": "1"
+      },
+      "PPi": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "RS30S": {
+        "final": "0",
+        "initial": "1",
+        "net": "-1"
+      },
+      "RS50S": {
+        "final": "0",
+        "initial": "1",
+        "net": "-1"
+      },
+      "THF": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "fMettRNAfMetCAU": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      },
+      "mRNA": {
+        "final": "0",
+        "initial": "1",
+        "net": "-1"
+      },
+      "tRNAfMetCAU": {
+        "final": "0",
+        "initial": "0",
+        "net": "0"
+      }
+    },
+    "scientific_status": "PENDING_HUMAN_REVIEW",
+    "selection_basis": "SOURCE_STATE_WAYPOINT_FOR_IF3_RELEASE; SHORTEST_ENABLED_ROUTE; SORTED_ORIGINAL_IDS",
+    "source_contexts": {
+      "re0000000459": "INIT_assembly",
+      "re0000000507": "INIT_assembly",
+      "re0000000513": "INIT_assembly",
+      "re0000000519": "INIT_tRNA_recruitment",
+      "re0000000529": "INIT_70S_formation",
+      "re0000000717": "INIT_energy_commitment",
+      "re0000000722": "INIT_energy_commitment",
+      "re0000000726": "INIT_factor_release",
+      "re0000000747": "INIT_factor_release",
+      "re0000000757": "INIT_factor_release"
+    },
+    "source_provenance": [
+      {
+        "authority": "CANONICAL_SBML",
+        "evidence": "EXTRACTED",
+        "freshness": "HASH_CHECKED_AT_BUILD",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+      },
+      {
+        "authority": "AUTHOR_PARAMETER_COPY",
+        "evidence": "EXTRACTED",
+        "freshness": "HASH_CHECKED_AT_BUILD",
+        "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+        "sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465"
+      }
+    ],
+    "source_reaction_ids": [
+      "re0000000459",
+      "re0000000507",
+      "re0000000513",
+      "re0000000519",
+      "re0000000529",
+      "re0000000717",
+      "re0000000722",
+      "re0000000726",
+      "re0000000747",
+      "re0000000757"
+    ],
+    "starting_interface": "IF2_GTP_fMettRNAfMetCAU",
+    "structural_status": "CANDIDATE_AWAITING_INDEPENDENT_VERIFICATION",
+    "target_milestone": "elRS70SAGGU0002_fMettRNAfMetCAU",
+    "true_rejoin_species": [],
+    "unresolved_assumptions": [
+      "Boundary supplies conditional; no trajectory feasibility",
+      "Composite molecular identity and mRNA/peptide moieties remain INFERRED",
+      "RS30S/RS50S incorporation is not ribosome recovery; IF2_GDP release is not IF2_GTP recycling",
+      "IF3-first is a structural positive, not a measured physiological route or flux ranking"
+    ],
+    "witness_id": "B1-1-FOLLOWUP-IF3-FIRST"
+  },
+  "phase": "B1-1 Human Review Follow-up",
+  "phase_b1_2_authorized": false,
+  "qssa_authorized": false,
+  "reactions": {
+    "re0000000001": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "elRS70SAGGU0002_fMettRNAfMetCAU -> elRS70SAGGU0002_fMet + tRNAfMetCAU",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "ELONG_tRNA_release",
+      "products": {
+        "elRS70SAGGU0002_fMet": "1",
+        "tRNAfMetCAU": "1"
+      },
+      "reactants": {
+        "elRS70SAGGU0002_fMettRNAfMetCAU": "1"
+      },
+      "reaction_family_id": "RFAM_001",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "1000",
+      "reverse_reaction_ids": [
+        "re0000000002"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000001"
+      },
+      "source_subsystems": "Elongation_Ca1_fMetCAU"
+    },
+    "re0000000002": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "elRS70SAGGU0002_fMet + tRNAfMetCAU -> elRS70SAGGU0002_fMettRNAfMetCAU",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "ELONG_tRNA_release",
+      "products": {
+        "elRS70SAGGU0002_fMettRNAfMetCAU": "1"
+      },
+      "reactants": {
+        "elRS70SAGGU0002_fMet": "1",
+        "tRNAfMetCAU": "1"
+      },
+      "reaction_family_id": "RFAM_001",
+      "reference_activity": "REFERENCE_DISABLED",
+      "reference_parameter": "0",
+      "reverse_reaction_ids": [
+        "re0000000001"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000002"
+      },
+      "source_subsystems": "Elongation_Ca1_fMetCAU"
+    },
+    "re0000000013": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0002_fMet -> elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "ELONG_aa_tRNA_delivery",
+      "products": {
+        "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+      },
+      "reactants": {
+        "EFTu_GTP_GlytRNAGlyGCC": "1",
+        "elRS70SAGGU0002_fMet": "1"
+      },
+      "reaction_family_id": "RFAM_002",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "140",
+      "reverse_reaction_ids": [
+        "re0000000021"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000013"
+      },
+      "source_subsystems": "Elongation_Ca2_pept0002"
+    },
+    "re0000000021": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC -> EFTu_GTP_GlytRNAGlyGCC + elRS70SAGGU0002_fMet",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "ELONG_aa_tRNA_delivery",
+      "products": {
+        "EFTu_GTP_GlytRNAGlyGCC": "1",
+        "elRS70SAGGU0002_fMet": "1"
+      },
+      "reactants": {
+        "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": "1"
+      },
+      "reaction_family_id": "RFAM_002",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "0.23",
+      "reverse_reaction_ids": [
+        "re0000000013"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000021"
+      },
+      "source_subsystems": "Elongation_Ca2_pept0002"
+    },
+    "re0000000459": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "IF3 + RS30S -> RS30S_IF3",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_assembly",
+      "products": {
+        "RS30S_IF3": "1"
+      },
+      "reactants": {
+        "IF3": "1",
+        "RS30S": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "1160",
+      "reverse_reaction_ids": [
+        "re0000000460"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000459"
+      },
+      "source_subsystems": "Initiation_B1"
+    },
+    "re0000000460": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS30S_IF3 -> IF3 + RS30S",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_assembly",
+      "products": {
+        "IF3": "1",
+        "RS30S": "1"
+      },
+      "reactants": {
+        "RS30S_IF3": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "0.8",
+      "reverse_reaction_ids": [
+        "re0000000459"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000460"
+      },
+      "source_subsystems": "Initiation_B1"
+    },
+    "re0000000507": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "IF1 + RS30S_IF3 -> RS30S_IF1_IF3",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_assembly",
+      "products": {
+        "RS30S_IF1_IF3": "1"
+      },
+      "reactants": {
+        "IF1": "1",
+        "RS30S_IF3": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "20",
+      "reverse_reaction_ids": [
+        "re0000000508"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000507"
+      },
+      "source_subsystems": "Initiation_B1"
+    },
+    "re0000000508": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS30S_IF1_IF3 -> IF1 + RS30S_IF3",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_assembly",
+      "products": {
+        "IF1": "1",
+        "RS30S_IF3": "1"
+      },
+      "reactants": {
+        "RS30S_IF1_IF3": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "0.7",
+      "reverse_reaction_ids": [
+        "re0000000507"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000508"
+      },
+      "source_subsystems": "Initiation_B1"
+    },
+    "re0000000513": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS30S_IF1_IF3 + mRNA -> RS30S_IF1_IF3_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_assembly",
+      "products": {
+        "RS30S_IF1_IF3_mRNA": "1"
+      },
+      "reactants": {
+        "RS30S_IF1_IF3": "1",
+        "mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "36",
+      "reverse_reaction_ids": [
+        "re0000000514"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000513"
+      },
+      "source_subsystems": "Initiation_B1"
+    },
+    "re0000000514": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS30S_IF1_IF3_mRNA -> RS30S_IF1_IF3 + mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_assembly",
+      "products": {
+        "RS30S_IF1_IF3": "1",
+        "mRNA": "1"
+      },
+      "reactants": {
+        "RS30S_IF1_IF3_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "0.7",
+      "reverse_reaction_ids": [
+        "re0000000513"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000514"
+      },
+      "source_subsystems": "Initiation_B1"
+    },
+    "re0000000519": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "IF2_GTP_fMettRNAfMetCAU + RS30S_IF1_IF3_mRNA -> RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_tRNA_recruitment",
+      "products": {
+        "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "IF2_GTP_fMettRNAfMetCAU": "1",
+        "RS30S_IF1_IF3_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "220",
+      "reverse_reaction_ids": [
+        "re0000000520"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000519"
+      },
+      "source_subsystems": "Initiation_B1"
+    },
+    "re0000000520": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA -> IF2_GTP_fMettRNAfMetCAU + RS30S_IF1_IF3_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_tRNA_recruitment",
+      "products": {
+        "IF2_GTP_fMettRNAfMetCAU": "1",
+        "RS30S_IF1_IF3_mRNA": "1"
+      },
+      "reactants": {
+        "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "1",
+      "reverse_reaction_ids": [
+        "re0000000519"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000520"
+      },
+      "source_subsystems": "Initiation_B1"
+    },
+    "re0000000529": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA + RS50S -> RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_70S_formation",
+      "products": {
+        "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1",
+        "RS50S": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "34",
+      "reverse_reaction_ids": [
+        "re0000000530"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000529"
+      },
+      "source_subsystems": "Initiation_B1"
+    },
+    "re0000000530": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA -> RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA + RS50S",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_70S_formation",
+      "products": {
+        "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1",
+        "RS50S": "1"
+      },
+      "reactants": {
+        "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "35",
+      "reverse_reaction_ids": [
+        "re0000000529"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000530"
+      },
+      "source_subsystems": "Initiation_B1"
+    },
+    "re0000000717": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA -> RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_energy_commitment",
+      "products": {
+        "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "2.3",
+      "reverse_reaction_ids": [
+        "re0000000718"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000717"
+      },
+      "source_subsystems": "Initiation_C"
+    },
+    "re0000000718": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA -> RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_energy_commitment",
+      "products": {
+        "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "2.1",
+      "reverse_reaction_ids": [
+        "re0000000717"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000718"
+      },
+      "source_subsystems": "Initiation_C"
+    },
+    "re0000000722": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA -> PO4 + RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_energy_commitment",
+      "products": {
+        "PO4": "1",
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "12",
+      "reverse_reaction_ids": [
+        "re0000000746"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000722"
+      },
+      "source_subsystems": "Initiation_C"
+    },
+    "re0000000723": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "IF1 + RS70S_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA -> RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_factor_release",
+      "products": {
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "IF1": "1",
+        "RS70S_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "16",
+      "reverse_reaction_ids": [
+        "re0000000724"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000723"
+      },
+      "source_subsystems": "Initiation_C"
+    },
+    "re0000000724": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA -> IF1 + RS70S_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_factor_release",
+      "products": {
+        "IF1": "1",
+        "RS70S_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "0.0025",
+      "reverse_reaction_ids": [
+        "re0000000723"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000724"
+      },
+      "source_subsystems": "Initiation_C"
+    },
+    "re0000000726": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA -> IF2_GDP + elRS70SAGGU0002_fMettRNAfMetCAU",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_factor_release",
+      "products": {
+        "IF2_GDP": "1",
+        "elRS70SAGGU0002_fMettRNAfMetCAU": "1"
+      },
+      "reactants": {
+        "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "4",
+      "reverse_reaction_ids": [
+        "re0000000752"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000726"
+      },
+      "source_subsystems": "Initiation_C"
+    },
+    "re0000000746": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "PO4 + RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA -> RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_energy_commitment",
+      "products": {
+        "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "PO4": "1",
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_DISABLED",
+      "reference_parameter": "0",
+      "reverse_reaction_ids": [
+        "re0000000722"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000746"
+      },
+      "source_subsystems": "Initiation_C"
+    },
+    "re0000000747": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA -> IF3 + RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_factor_release",
+      "products": {
+        "IF3": "1",
+        "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "1000",
+      "reverse_reaction_ids": [
+        "re0000000748"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000747"
+      },
+      "source_subsystems": "Initiation_C"
+    },
+    "re0000000748": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "IF3 + RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA -> RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_factor_release",
+      "products": {
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "IF3": "1",
+        "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_DISABLED",
+      "reference_parameter": "0",
+      "reverse_reaction_ids": [
+        "re0000000747"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000748"
+      },
+      "source_subsystems": "Initiation_C"
+    },
+    "re0000000749": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA -> IF2_GDP + RS70S_IF1_IF3_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_factor_release",
+      "products": {
+        "IF2_GDP": "1",
+        "RS70S_IF1_IF3_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "4",
+      "reverse_reaction_ids": [
+        "re0000000750"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000749"
+      },
+      "source_subsystems": "Initiation_C"
+    },
+    "re0000000750": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "IF2_GDP + RS70S_IF1_IF3_fMettRNAfMetCAU_mRNA -> RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_factor_release",
+      "products": {
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "IF2_GDP": "1",
+        "RS70S_IF1_IF3_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "200",
+      "reverse_reaction_ids": [
+        "re0000000749"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000750"
+      },
+      "source_subsystems": "Initiation_C"
+    },
+    "re0000000752": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "IF2_GDP + elRS70SAGGU0002_fMettRNAfMetCAU -> RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_factor_release",
+      "products": {
+        "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "IF2_GDP": "1",
+        "elRS70SAGGU0002_fMettRNAfMetCAU": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "200",
+      "reverse_reaction_ids": [
+        "re0000000726"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000752"
+      },
+      "source_subsystems": "Initiation_C"
+    },
+    "re0000000757": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA -> IF1 + RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_factor_release",
+      "products": {
+        "IF1": "1",
+        "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "1000",
+      "reverse_reaction_ids": [
+        "re0000000758"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000757"
+      },
+      "source_subsystems": "Initiation_C"
+    },
+    "re0000000758": {
+      "confidence": "EXACT_SOURCE_REACTION_VERIFIED",
+      "equation": "IF1 + RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA -> RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA",
+      "evidence_status": "EXTRACTED",
+      "freshness": "CANONICAL_HASH_CHECKED_AT_BUILD",
+      "identity_evidence": "EXACT_SOURCE_SPECIES_TRANSITION_NOT_COMPOSITION_CERTIFICATE",
+      "level_c": "INIT_factor_release",
+      "products": {
+        "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reactants": {
+        "IF1": "1",
+        "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_family_id": "RFAM_025",
+      "reference_activity": "REFERENCE_DISABLED",
+      "reference_parameter": "0",
+      "reverse_reaction_ids": [
+        "re0000000757"
+      ],
+      "source_provenance": {
+        "evidence": "EXTRACTED",
+        "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+        "reaction_id": "re0000000758"
+      },
+      "source_subsystems": "Initiation_C"
+    }
+  },
+  "release_branch_inventory": [
+    {
+      "evidence_status": "EXTRACTED",
+      "outputs": {
+        "IF1": "1",
+        "RS70S_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_id": "re0000000724",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "0.0025",
+      "reverse_reaction_ids": [
+        "re0000000723"
+      ],
+      "source_states": {
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      }
+    },
+    {
+      "evidence_status": "EXTRACTED",
+      "outputs": {
+        "IF3": "1",
+        "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_id": "re0000000747",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "1000",
+      "reverse_reaction_ids": [
+        "re0000000748"
+      ],
+      "source_states": {
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      }
+    },
+    {
+      "evidence_status": "EXTRACTED",
+      "outputs": {
+        "IF2_GDP": "1",
+        "RS70S_IF1_IF3_fMettRNAfMetCAU_mRNA": "1"
+      },
+      "reaction_id": "re0000000749",
+      "reference_activity": "REFERENCE_ENABLED",
+      "reference_parameter": "4",
+      "reverse_reaction_ids": [
+        "re0000000750"
+      ],
+      "source_states": {
+        "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA": "1"
+      }
+    }
+  ],
+  "researcher_formally_signed": false,
+  "review_date": "2026-10-09",
+  "schema": "B1_1_HUMAN_REVIEW_FOLLOWUP_V1",
+  "search_evidence": {
+    "enabled_scope_count": 197,
+    "legs": [
+      {
+        "selected_reaction_ids": [
+          "re0000000459"
+        ],
+        "target_source_state": "RS30S_IF3",
+        "visited_markings": 15
+      },
+      {
+        "selected_reaction_ids": [
+          "re0000000507"
+        ],
+        "target_source_state": "RS30S_IF1_IF3",
+        "visited_markings": 21
+      },
+      {
+        "selected_reaction_ids": [
+          "re0000000513"
+        ],
+        "target_source_state": "RS30S_IF1_IF3_mRNA",
+        "visited_markings": 21
+      },
+      {
+        "selected_reaction_ids": [
+          "re0000000519"
+        ],
+        "target_source_state": "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+        "visited_markings": 16
+      },
+      {
+        "selected_reaction_ids": [
+          "re0000000529"
+        ],
+        "target_source_state": "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+        "visited_markings": 20
+      },
+      {
+        "selected_reaction_ids": [
+          "re0000000717"
+        ],
+        "target_source_state": "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA",
+        "visited_markings": 11
+      },
+      {
+        "selected_reaction_ids": [
+          "re0000000722"
+        ],
+        "target_source_state": "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA",
+        "visited_markings": 7
+      },
+      {
+        "selected_reaction_ids": [
+          "re0000000747"
+        ],
+        "target_source_state": "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA",
+        "visited_markings": 6
+      },
+      {
+        "selected_reaction_ids": [
+          "re0000000757"
+        ],
+        "target_source_state": "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA",
+        "visited_markings": 3
+      },
+      {
+        "selected_reaction_ids": [
+          "re0000000726"
+        ],
+        "target_source_state": "elRS70SAGGU0002_fMettRNAfMetCAU",
+        "visited_markings": 2
+      }
+    ],
+    "max_depth_per_leg": 16,
+    "max_states_per_leg": 50000,
+    "scope_direction_count": 206,
+    "waypoints": [
+      "RS30S_IF3",
+      "RS30S_IF1_IF3",
+      "RS30S_IF1_IF3_mRNA",
+      "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+      "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+      "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA",
+      "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA",
+      "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA",
+      "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA",
+      "elRS70SAGGU0002_fMettRNAfMetCAU"
+    ]
+  },
+  "source_provenance": [
+    {
+      "authority": "IMMUTABLE_HISTORICAL_WITNESSES",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "docs/reduction/pathways/phase_b1_1_witnesses.json",
+      "sha256": "546badd98657cf2029a75da476a5fa9874af6db52b1f32dc4f8d6ff1702ed1d2"
+    },
+    {
+      "authority": "IMMUTABLE_HISTORICAL_A_J_RESULTS",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "docs/reduction/pathways/phase_b1_1_validation_report.json",
+      "sha256": "33ba187e1a2706a4ce01ecc168860ddc89f76bba95229d5a9a4aaac7858036dc"
+    },
+    {
+      "authority": "CANONICAL_SBML",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+    },
+    {
+      "authority": "AUTHOR_PARAMETERS",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465"
+    },
+    {
+      "authority": "AUTHOR_ARCHIVE",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip",
+      "sha256": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52"
+    },
+    {
+      "authority": "REVIEWED_LEVEL_C_V2",
+      "evidence": "EXTRACTED",
+      "freshness": "HASH_CHECKED_AT_BUILD",
+      "path": "docs/reduction/reaction_level_annotation_v2.csv",
+      "sha256": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335"
+    }
+  ],
+  "suggested_review_status": "B1_1_CONDITIONALLY_ACCEPTED"
+}

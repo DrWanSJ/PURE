@@ -1,0 +1,399 @@
+B1-1 run Asia/Shanghai: 2026-10-09T22:59:14.466714+08:00
+BEGINNING_PREFLIGHT: {"machine": "sean", "branch": "codex/energy-cycles-v1", "origin": "https://github.com/DrWanSJ/PURE.git", "starting_HEAD": "50888efa205837dabb621e42bf117738af661150", "upstream_status_at_start": "0/0", "initial_git_status": "## codex/energy-cycles-v1...origin/codex/energy-cycles-v1"}
+Actual startup: rev-parse root; origin; status; branch; HEAD; fetch origin --prune; status; rev-list HEAD...@{upstream}. All succeeded; 0/0. No pull needed.
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b1_1\build_initiation_witnesses.py
+EXIT_CODE: 0
+STDOUT:
+{"status": "BUILT", "coverage": {"initiation_classified": 206, "bounded_search_scope": 206, "bounded_inventory": 559, "unique_witness_directions": 37, "inventory_enabled": 236, "inventory_disabled": 323, "search_enabled": 197, "search_disabled": 9, "original_species_in_inventory": 170, "participating_families": ["RFAM_001", "RFAM_002", "RFAM_007", "RFAM_008", "RFAM_011", "RFAM_012", "RFAM_013", "RFAM_014", "RFAM_019", "RFAM_020", "RFAM_022", "RFAM_023", "RFAM_024", "RFAM_025", "RFAM_026", "RFAM_DEG"]}, "events": {"P1": 10, "P1-RELEASE-ALT": 10, "P2": 11, "P3": 8, "P4": 10, "P5": 24, "P5-E2": 25, "P6": 25, "P7": 12}}
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b1_1\verify_initiation_witnesses.py
+EXIT_CODE: 0
+STDOUT:
+{"status": "PASS", "events": {"P1": 10, "P1-RELEASE-ALT": 10, "P2": 11, "P3": 8, "P4": 10, "P5": 24, "P5-E2": 25, "P6": 25, "P7": 12}, "error": null}
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b1_1\test_initiation_negative_controls.py
+EXIT_CODE: 0
+STDOUT:
+{"status": "PASS", "required_controls_run": 20, "required_controls_passed": 20, "controls_run": 21, "controls_passed": 21, "controls_failed": 0}
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\verify_pathway_atlas.py --help
+EXIT_CODE: 0
+STDOUT:
+usage: verify_pathway_atlas.py [-h] [--output-dir OUTPUT_DIR]
+                               [--report REPORT]
+
+Independent, source-based acceptance checks for the Phase A pathway atlas.
+This verifier does not import the builder. It reparses canonical SBML,
+evaluates stoichiometryMath exactly, and reads the archived author parameter
+CSV itself. Passing these checks establishes bounded structural consistency,
+never kinetics or human approval of Phase B.
+
+options:
+  -h, --help            show this help message and exit
+  --output-dir OUTPUT_DIR
+  --report REPORT
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\test_pathway_atlas.py --help
+EXIT_CODE: 0
+STDOUT:
+usage: test_pathway_atlas.py [-h] [--output-dir OUTPUT_DIR]
+
+Run independent Phase A gates, ten actual mutation controls and rebuilds. Each
+counterexample mutates the generated artifact in memory and invokes the same
+source-based validator used on the real outputs. No control has a special
+test-only detector. Failures append to failure_evidence.jsonl and are
+retained.
+
+options:
+  -h, --help            show this help message and exit
+  --output-dir OUTPUT_DIR
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b0\verify_phase_b0_witnesses.py --help
+EXIT_CODE: 0
+STDOUT:
+usage: verify_phase_b0_witnesses.py [-h] [--input INPUT] [--report REPORT]
+
+Independent exact SBML/author-CSV and token-origin verifier. Never imports
+builder.
+
+options:
+  -h, --help       show this help message and exit
+  --input INPUT
+  --report REPORT
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b0\test_phase_b0_negative_controls.py --help
+EXIT_CODE: 0
+STDOUT:
+usage: test_phase_b0_negative_controls.py [-h] [--input INPUT]
+                                          [--report REPORT]
+
+Execute mutations through the independent positive acceptance routines.
+
+options:
+  -h, --help       show this help message and exit
+  --input INPUT
+  --report REPORT
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\verify_pathway_atlas.py --report C:\Users\sean\AppData\Local\Temp\phase-b1-1-safe-regression-h3hj3iir\phase_a\independent.json
+EXIT_CODE: 0
+STDOUT:
+{
+  "gates": [
+    {
+      "evidence": {
+        "actual_markdown_equations": 134,
+        "directed_zero_parameters": 485,
+        "original_reactions": 968,
+        "petri_arcs": 3854,
+        "species": 241
+      },
+      "gate": 1,
+      "name": "Source Integrity",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "enzyme_recovery": "CHECKED",
+        "representative_paths": 20,
+        "required_glyrs_fixture_steps": 8,
+        "scope": "PHASE_A_STRUCTURAL_ONLY"
+      },
+      "gate": 2,
+      "name": "Path Continuity",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "branch_states": 30,
+        "carrier_transitions": 126,
+        "cross_family_links": 92,
+        "cyclic_sccs": 2,
+        "degraded_sink_convergences": 2,
+        "nondegraded_rejoin_states": 30,
+        "rejoin_states": 32,
+        "return_certificates": 48,
+        "strongly_connected_components": 4
+      },
+      "gate": 3,
+      "name": "Branch Completeness",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "external_boundary_incidences": 127,
+        "independent_glyrs_metrs_comparison": {
+          "different_reference_parameters": 32,
+          "equal_reference_parameters": 35,
+          "glyrs_scoped_reactions": 67,
+          "kinetic_equivalence_claimed": false,
+          "mapping": {
+            "re0000000126": "re0000000151",
+            "re0000000127": "re0000000152",
+            "re0000000128": "re0000000153",
+            "re0000000129": "re0000000154",
+            "re0000000130": "re0000000155",
+            "re0000000131": "re0000000156",
+            "re0000000132": "re0000000157",
+            "re0000000133": "re0000000158",
+            "re0000000134": "re0000000159",
+            "re0000000135": "re0000000160",
+            "re0000000136": "re0000000161",
+            "re0000000137": "re0000000162",
+            "re0000000138": "re0000000163",
+            "re0000000139": "re0000000164",
+            "re0000000140": "re0000000165",
+            "re0000000141": "re0000000166",
+            "re0000000142": "re0000000167",
+            "re0000000143": "re0000000168",
+            "re0000000144": "re0000000169",
+            "re0000000145": "re0000000170",
+            "re0000000146": "re0000000171",
+            "re0000000147": "re0000000172",
+            "re0000000148": "re0000000173",
+            "re0000000149": "re0000000174",
+            "re0000000150": "re0000000175",
+            "re0000000176": "re0000000218",
+            "re0000000177": "re0000000219",
+            "re0000000178": "re0000000220",
+            "re0000000179": "re0000000221",
+            "re0000000180": "re0000000222",
+            "re0000000181": "re0000000223",
+            "re0000000182": "re0000000224",
+            "re0000000183": "re0000000225",
+            "re0000000184": "re0000000226",
+            "re0000000185": "re0000000227",
+            "re0000000186": "re0000000228",
+            "re0000000187": "re0000000229",
+            "re0000000188": "re0000000230",
+            "re0000000189": "re0000000231",
+            "re0000000190": "re0000000232",
+            "re0000000191": "re0000000233",
+            "re0000000192": "re0000000234",
+            "re0000000193": "re0000000235",
+            "re0000000194": "re0000000236",
+            "re0000000195": "re0000000237",
+            "re0000000196": "re0000000238",
+            "re0000000197": "re0000000239",
+            "re0000000198": "re0000000240",
+            "re0000000199": "re0000000241",
+            "re0000000200": "re0000000242",
+            "re0000000201": "re0000000243",
+            "re0000000202": "re0000000244",
+            "re0000000203": "re0000000245",
+            "re0000000204": "re0000000246",
+            "re0000000205": "re0000000247",
+            "re0000000206": "re0000000248",
+            "re0000000207": "re0000000249",
+            "re0000000208": "re0000000250",
+            "re0000000209": "re0000000251",
+            "re0000000210": "re0000000252",
+            "re0000000211": "re0000000253",
+            "re0000000212": "re0000000254",
+            "re0000000213": "re0000000255",
+            "re0000000214": "re0000000256",
+            "re0000000215": "re0000000257",
+            "re0000000216": "re0000000259",
+            "re0000000217": "re0000000260"
+          },
+          "metrs_scoped_reactions": 67,
+          "renamed_local_stoichiometry": "BIJECTIVE",
+          "same_reviewed_level_c": true,
+          "same_zero_pattern": true,
+          "scope": "LOCAL_RENAMED_CHEMISTRY_ONLY"
+        },
+        "level_c_contexts_preserved": 23,
+        "markdown_references": 2058,
+        "out_of_phase_a": 834,
+        "phase_a_unique_reactions": 134,
+        "phase_b_status": "NOT_ATTEMPTED",
+        "shared_path_reactions": 26,
+        "source_unique_reactions": 968,
+        "unassigned_phase_a": 0,
+        "unprojected_free_ligand_reactions": 8
+      },
+      "gate": 4,
+      "name": "Reaction Coverage",
+      "status": "PASS"
+    }
+  ],
+  "independence": "Canonical XML and author ZIP parsed independently; builder not imported",
+  "phase": "A",
+  "schema_version": 1,
+  "scientific_status": "HUMAN_REVIEW_REQUIRED",
+  "structural_status": "PASS"
+}
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\test_pathway_atlas.py --output-dir C:\Users\sean\AppData\Local\Temp\phase-b1-1-safe-regression-h3hj3iir\phase_a
+EXIT_CODE: 0
+STDOUT:
+{
+  "gates": [
+    {
+      "gate": 1,
+      "status": "PASS"
+    },
+    {
+      "gate": 2,
+      "status": "PASS"
+    },
+    {
+      "gate": 3,
+      "status": "PASS"
+    },
+    {
+      "gate": 4,
+      "status": "PASS"
+    },
+    {
+      "gate": 5,
+      "status": "PASS"
+    }
+  ],
+  "negative_controls": "PASS",
+  "phase": "A",
+  "reproducibility": {
+    "artifact_sha256": {
+      "glyrs_metrs_graph.json": "776be701f4a43c5ced582cff221dde5cb9c169e34224bf69d9c0418fb2000808",
+      "glyrs_metrs_pathway_index.csv": "9d08673cb00ed1e9366fdca0579310bc661e17a5322b0af6e4ca7b76630a5b1a",
+      "glyrs_metrs_sample.md": "29ca81643ee2d3f8b8a2927b95b994056c76983b43e9a7eeeb623d566cb26648"
+    },
+    "independent_builder_runs": 2,
+    "matches_published_artifact_bytes": true,
+    "protected_existing_files_unchanged": 1678,
+    "runs": [
+      {
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "{\"scope\": \"PHASE_A_ONLY\", \"scientific_status\": \"HUMAN_REVIEW_REQUIRED\", \"coverage\": {\"source_unique_reaction_count\": 968, \"unique_reaction_count\": 134, \"markdown_reaction_reference_count\": 2058, \"shared_path_reaction_count\": 26}, \"modules\": {\"GlyRS\": {\"paths\": 10, \"branches\": 15, \"rejoins\": 16, \"sccs\": 2, \"cyclic_sccs\": 1, \"return_loops\": 24}, \"MetRS\": {\"paths\": 10, \"branches\": 15, \"rejoins\": 16, \"sccs\": 2, \"cyclic_sccs\": 1, \"return_loops\": 24}}}\n"
+      },
+      {
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "{\"scope\": \"PHASE_A_ONLY\", \"scientific_status\": \"HUMAN_REVIEW_REQUIRED\", \"coverage\": {\"source_unique_reaction_count\": 968, \"unique_reaction_count\": 134, \"markdown_reaction_reference_count\": 2058, \"shared_path_reaction_count\": 26}, \"modules\": {\"GlyRS\": {\"paths\": 10, \"branches\": 15, \"rejoins\": 16, \"sccs\": 2, \"cyclic_sccs\": 1, \"return_loops\": 24}, \"MetRS\": {\"paths\": 10, \"branches\": 15, \"rejoins\": 16, \"sccs\": 2, \"cyclic_sccs\": 1, \"return_loops\": 24}}}\n"
+      }
+    ],
+    "status": "PASS"
+  },
+  "scientific_status": "HUMAN_REVIEW_REQUIRED",
+  "structural_status": "PASS",
+  "supplemental_checks": {
+    "actual_markdown_equation_mutation": "Actual Markdown equation re0000000136, line 41",
+    "constant_mathml_regressions": 5,
+    "required_trna_mutation": "Required other reactants omitted or changed at re0000000205",
+    "status": "PASS"
+  }
+}
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe -c "import sys; from pathlib import Path; sys.path.insert(0,str(Path.cwd()/\"scripts/pathways/phase_b0\")); import verify_phase_b0_witnesses as verify; verify.OUT=Path(sys.argv[1]); entry=sys.argv[2]; sys.argv=[entry]+sys.argv[3:]; import importlib; mod=importlib.import_module(entry); raise SystemExit(mod.main())" C:\Users\sean\AppData\Local\Temp\phase-b1-1-safe-regression-h3hj3iir\phase_b0 verify_phase_b0_witnesses --input C:\Users\sean\Desktop\GUV\docs\reduction\pathways\phase_b0_handoff_witnesses.json --report C:\Users\sean\AppData\Local\Temp\phase-b1-1-safe-regression-h3hj3iir\phase_b0\positive.json
+EXIT_CODE: 0
+STDOUT:
+{"status": "PASS", "witness_events": {"W1": 10, "W2": 13, "W3": 14, "W2-MTF": 5, "W2-ALT": 13}, "error": null}
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe -c "import sys; from pathlib import Path; sys.path.insert(0,str(Path.cwd()/\"scripts/pathways/phase_b0\")); import verify_phase_b0_witnesses as verify; verify.OUT=Path(sys.argv[1]); entry=sys.argv[2]; sys.argv=[entry]+sys.argv[3:]; import importlib; mod=importlib.import_module(entry); raise SystemExit(mod.main())" C:\Users\sean\AppData\Local\Temp\phase-b1-1-safe-regression-h3hj3iir\phase_b0 test_phase_b0_negative_controls --report C:\Users\sean\AppData\Local\Temp\phase-b1-1-safe-regression-h3hj3iir\phase_b0\negative.json
+EXIT_CODE: 0
+STDOUT:
+{"status": "PASS", "required_controls_run": 12, "required_controls_passed": 12, "required_controls_failed": 0, "controls_run": 18, "controls_passed": 18, "controls_failed": 0}
+
+STDERR:
+
+HTML_ACCEPTANCE:
+{"actual_command": "run_phase_b1_1_validation.py -> existing test_reaction_atlas_html.py acceptance functions", "exit_code": 0, "gates": [{"evidence": {"author_archive_sha256": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52", "canonical_sbml_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df", "contexts": 23, "directional_zero_parameters": 485, "equations_checked": 968, "multi_label_reactions": 6, "nonunit_coefficients": [{"coefficient": "2", "rid": "re0000000414", "side": "products", "species": "PO4"}], "reviewed_v2_sha256": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335", "species": 241, "unique_reactions": 968}, "gate": "A", "status": "PASS"}, {"evidence": {"binding_counts": {"enzyme + ATP association / GlyRS": 4, "enzyme + ATP association / MetRS": 4, "enzyme + amino acid association / GlyRS": 4, "enzyme + amino acid association / MetRS": 4, "enzyme + tRNA association / GlyRS": 4, "enzyme + tRNA association / MetRS": 4}, "original_transition_projection_count": 126, "outside_phase_a": 834, "phase_a_hashes": {"glyrs_metrs_graph.json": "776be701f4a43c5ced582cff221dde5cb9c169e34224bf69d9c0418fb2000808", "glyrs_metrs_pathway_index.csv": "9d08673cb00ed1e9366fdca0579310bc661e17a5322b0af6e4ca7b76630a5b1a", "glyrs_metrs_review.md": "d1622c5bfdbc98849f85ab375d009b400fe65f3e4585c8bb6ff09bef82df27c2", "glyrs_metrs_sample.md": "29ca81643ee2d3f8b8a2927b95b994056c76983b43e9a7eeeb623d566cb26648", "pathway_first_protocol_v1.md": "fe74b2a038550a3bfb4224569536616f84e1a6c070a71cad2dada10e1ffd8e30", "validation_report.json": "03f2e7ade3d4ba277195d80ab9133c13dca3795fdbeab6225e3da899d8ba535b"}, "representative_paths": 20, "return_witnesses": 48, "scoped_reactions": 134}, "gate": "B", "status": "PASS"}, {"evidence": {"algebra_scope": "STOICHIOMETRY_ONLY_NOT_KINETICS_OR_REDUCTION", "complete_productive_cycles": ["GlyRS-P01", "GlyRS-P07", "GlyRS-P08", "GlyRS-P09", "MetRS-P01", "MetRS-P07", "MetRS-P08", "MetRS-P09"], "incomplete_entries": 12, "path_nets": {"GlyRS-P01": {"cycle": true, "net": {"AMP": "1", "ATP": "-1", "Gly": "-1", "GlytRNAGlyGCC": "1", "PPi": "1", "tRNAGlyGCC": "-1"}, "reference_feasible": true}, "GlyRS-P02": {"cycle": false, "net": {"ATP": "-1", "Gly": "-1", "GlyRS": "-1", "GlyRS_Gly_ATP": "1"}, "reference_feasible": true}, "GlyRS-P03": {"cycle": false, "net": {"ATP": "-1", "Gly": "-1", "GlyRS": "-1", "GlyRS_Gly_ATP_tRNAGlyGCC": "1", "tRNAGlyGCC": "-1"}, "reference_feasible": true}, "GlyRS-P04": {"cycle": false, "net": {"ATP": "-1", "Gly": "-1", "GlyRS": "-1", "GlyRS_Gly_ATP_tRNAGlyGCC": "1", "tRNAGlyGCC": "-1"}, "reference_feasible": true}, "GlyRS-P05": {"cycle": false, "net": {"ATP": "-1", "Gly": "-1", "GlyRS": "-1", "GlyRS_Gly_ATP_tRNAGlyGCC": "1", "tRNAGlyGCC": "-1"}, "reference_feasible": true}, "GlyRS-P06": {"cycle": false, "net": {"ATP": "-1", "Gly": "-1", "GlyRS": "-1", "GlyRS_Gly_ATP_tRNAGlyGCC": "1", "tRNAGlyGCC": "-1"}, "reference_feasible": true}, "GlyRS-P07": {"cycle": true, "net": {"AMP": "1", "ATP": "-1", "Gly": "-1", "GlytRNAGlyGCC": "1", "PPi": "1", "tRNAGlyGCC": "-1"}, "reference_feasible": true}, "GlyRS-P08": {"cycle": true, "net": {"AMP": "1", "ATP": "-1", "Gly": "-1", "GlytRNAGlyGCC": "1", "PPi": "1", "tRNAGlyGCC": "-1"}, "reference_feasible": true}, "GlyRS-P09": {"cycle": true, "net": {"AMP": "1", "ATP": "-1", "Gly": "-1", "GlytRNAGlyGCC": "1", "PPi": "1", "tRNAGlyGCC": "-1"}, "reference_feasible": true}, "GlyRS-P10": {"cycle": false, "net": {"GlyAMP": "-1", "GlyRS": "-1", "GlyRS_GlyAMP": "1"}, "reference_feasible": true}, "MetRS-P01": {"cycle": true, "net": {"AMP": "1", "ATP": "-1", "Met": "-1", "MettRNAfMetCAU": "1", "PPi": "1", "tRNAfMetCAU": "-1"}, "reference_feasible": true}, "MetRS-P02": {"cycle": false, "net": {"ATP": "-1", "Met": "-1", "MetRS": "-1", "MetRS_Met_ATP": "1"}, "reference_feasible": true}, "MetRS-P03": {"cycle": false, "net": {"ATP": "-1", "Met": "-1", "MetRS": "-1", "MetRS_Met_ATP_tRNAfMetCAU": "1", "tRNAfMetCAU": "-1"}, "reference_feasible": true}, "MetRS-P04": {"cycle": false, "net": {"ATP": "-1", "Met": "-1", "MetRS": "-1", "MetRS_Met_ATP_tRNAfMetCAU": "1", "tRNAfMetCAU": "-1"}, "reference_feasible": true}, "MetRS-P05": {"cycle": false, "net": {"ATP": "-1", "Met": "-1", "MetRS": "-1", "MetRS_Met_ATP_tRNAfMetCAU": "1", "tRNAfMetCAU": "-1"}, "reference_feasible": true}, "MetRS-P06": {"cycle": false, "net": {"ATP": "-1", "Met": "-1", "MetRS": "-1", "MetRS_Met_ATP_tRNAfMetCAU": "1", "tRNAfMetCAU": "-1"}, "reference_feasible": true}, "MetRS-P07": {"cycle": true, "net": {"AMP": "1", "ATP": "-1", "Met": "-1", "MettRNAfMetCAU": "1", "PPi": "1", "tRNAfMetCAU": "-1"}, "reference_feasible": true}, "MetRS-P08": {"cycle": true, "net": {"AMP": "1", "ATP": "-1", "Met": "-1", "MettRNAfMetCAU": "1", "PPi": "1", "tRNAfMetCAU": "-1"}, "reference_feasible": true}, "MetRS-P09": {"cycle": true, "net": {"AMP": "1", "ATP": "-1", "Met": "-1", "MettRNAfMetCAU": "1", "PPi": "1", "tRNAfMetCAU": "-1"}, "reference_feasible": true}, "MetRS-P10": {"cycle": false, "net": {"MetAMP": "-1", "MetRS": "-1", "MetRS_MetAMP": "1"}, "reference_feasible": true}}, "return_witness_nets": {"GlyRS-L01": {}, "GlyRS-L02": {}, "GlyRS-L03": {}, "GlyRS-L04": {}, "GlyRS-L05": {}, "GlyRS-L06": {}, "GlyRS-L07": {}, "GlyRS-L08": {}, "GlyRS-L09": {}, "GlyRS-L10": {}, "GlyRS-L11": {}, "GlyRS-L12": {}, "GlyRS-L13": {}, "GlyRS-L14": {}, "GlyRS-L15": {}, "GlyRS-L16": {}, "GlyRS-L17": {}, "GlyRS-L18": {}, "GlyRS-L19": {}, "GlyRS-L20": {}, "GlyRS-L21": {}, "GlyRS-L22": {}, "GlyRS-L23": {}, "GlyRS-L24": {}, "MetRS-L01": {}, "MetRS-L02": {}, "MetRS-L03": {}, "MetRS-L04": {}, "MetRS-L05": {}, "MetRS-L06": {}, "MetRS-L07": {}, "MetRS-L08": {}, "MetRS-L09": {}, "MetRS-L10": {}, "MetRS-L11": {}, "MetRS-L12": {}, "MetRS-L13": {}, "MetRS-L14": {}, "MetRS-L15": {}, "MetRS-L16": {}, "MetRS-L17": {}, "MetRS-L18": {}, "MetRS-L19": {}, "MetRS-L20": {}, "MetRS-L21": {}, "MetRS-L22": {}, "MetRS-L23": {}, "MetRS-L24": {}}, "shared_suffix_entrance_checks": 2}, "gate": "C", "status": "PASS"}, {"evidence": {"alternate_rejoin": "GlyRS-P01 / re0000000205", "disabled_sink": "re0000000214", "foreign_incidence_records": 127, "foreign_status": "PATHWAY_NOT_RECONSTRUCTED / HUMAN_REVIEW_REQUIRED", "parallel_outlets": ["re0000000194", "re0000000196", "re0000000197", "re0000000206", "re0000000214"], "parallel_precursor": "GlyRS_Gly_ATP_tRNAGlyGCC"}, "gate": "D", "status": "PASS"}, {"evidence": {"independent_runs": 2, "matches_deliverable_bytes": true, "sha256": "fbab6959b9216a84398db633e38b43f7676fa52ee66efde228790e4ee6c0d515", "status": "PASS"}, "gate": "REPRODUCTION", "status": "PASS"}, {"evidence": {"baseline_commit": "f2cd0aacf345f029c907b0690d0fabb9e30f8b66", "directed_path_step_occurrences": 94, "entire_embedded_scientific_payload_identical": true, "path_order_and_nets_unchanged": 20, "phase_a_reactions": 134, "return_witnesses": 48, "status": "PASS"}, "gate": "PRESENTATION_PRESERVATION", "status": "PASS"}, {"evidence": {"browser_test_mode": "OFFLINE_FILE_URL_REAL_INTERACTION", "browser_version": "154.0.8037.98", "checks": [{"name": "offline file:// load", "status": "PASS"}, {"name": "default functional summary without a unique net", "status": "PASS"}, {"name": "23 Level-C navigation entries", "status": "PASS"}, {"name": "Level A collapses", "status": "PASS"}, {"name": "Level C collapses", "status": "PASS"}, {"name": "source binding count GlyRS", "status": "PASS"}, {"name": "source binding count MetRS", "status": "PASS"}, {"name": "subprocess collapses", "status": "PASS"}, {"details": {"steps": 8}, "name": "ordered path GlyRS-P01", "status": "PASS"}, {"name": "visible canonical net GlyRS-P01", "status": "PASS"}, {"name": "summary type GlyRS-P01", "status": "PASS"}, {"name": "reference support GlyRS-P01", "status": "PASS"}, {"details": {"bidirectional_cards": 8, "cards": 8, "displayed_original_ids": 16}, "name": "single source equation and exact reverse card GlyRS-P01", "status": "PASS"}, {"details": {"steps": 2}, "name": "ordered path GlyRS-P02", "status": "PASS"}, {"name": "visible canonical net GlyRS-P02", "status": "PASS"}, {"name": "summary type GlyRS-P02", "status": "PASS"}, {"name": "reference support GlyRS-P02", "status": "PASS"}, {"details": {"bidirectional_cards": 2, "cards": 2, "displayed_original_ids": 4}, "name": "single source equation and exact reverse card GlyRS-P02", "status": "PASS"}, {"details": {"steps": 3}, "name": "ordered path GlyRS-P03", "status": "PASS"}, {"name": "visible canonical net GlyRS-P03", "status": "PASS"}, {"name": "summary type GlyRS-P03", "status": "PASS"}, {"name": "reference support GlyRS-P03", "status": "PASS"}, {"details": {"bidirectional_cards": 3, "cards": 3, "displayed_original_ids": 6}, "name": "single source equation and exact reverse card GlyRS-P03", "status": "PASS"}, {"details": {"steps": 3}, "name": "ordered path GlyRS-P04", "status": "PASS"}, {"name": "visible canonical net GlyRS-P04", "status": "PASS"}, {"name": "summary type GlyRS-P04", "status": "PASS"}, {"name": "reference support GlyRS-P04", "status": "PASS"}, {"details": {"bidirectional_cards": 3, "cards": 3, "displayed_original_ids": 6}, "name": "single source equation and exact reverse card GlyRS-P04", "status": "PASS"}, {"details": {"steps": 3}, "name": "ordered path GlyRS-P05", "status": "PASS"}, {"name": "visible canonical net GlyRS-P05", "status": "PASS"}, {"name": "summary type GlyRS-P05", "status": "PASS"}, {"name": "reference support GlyRS-P05", "status": "PASS"}, {"details": {"bidirectional_cards": 3, "cards": 3, "displayed_original_ids": 6}, "name": "single source equation and exact reverse card GlyRS-P05", "status": "PASS"}, {"details": {"steps": 3}, "name": "ordered path GlyRS-P06", "status": "PASS"}, {"name": "visible canonical net GlyRS-P06", "status": "PASS"}, {"name": "summary type GlyRS-P06", "status": "PASS"}, {"name": "reference support GlyRS-P06", "status": "PASS"}, {"details": {"bidirectional_cards": 3, "cards": 3, "displayed_original_ids": 6}, "name": "single source equation and exact reverse card GlyRS-P06", "status": "PASS"}, {"details": {"steps": 8}, "name": "ordered path GlyRS-P07", "status": "PASS"}, {"name": "visible canonical net GlyRS-P07", "status": "PASS"}, {"name": "summary type GlyRS-P07", "status": "PASS"}, {"name": "reference support GlyRS-P07", "status": "PASS"}, {"details": {"bidirectional_cards": 8, "cards": 8, "displayed_original_ids": 16}, "name": "single source equation and exact reverse card GlyRS-P07", "status": "PASS"}, {"details": {"steps": 8}, "name": "ordered path GlyRS-P08", "status": "PASS"}, {"name": "visible canonical net GlyRS-P08", "status": "PASS"}, {"name": "summary type GlyRS-P08", "status": "PASS"}, {"name": "reference support GlyRS-P08", "status": "PASS"}, {"details": {"bidirectional_cards": 8, "cards": 8, "displayed_original_ids": 16}, "name": "single source equation and exact reverse card GlyRS-P08", "status": "PASS"}, {"details": {"steps": 8}, "name": "ordered path GlyRS-P09", "status": "PASS"}, {"name": "visible canonical net GlyRS-P09", "status": "PASS"}, {"name": "summary type GlyRS-P09", "status": "PASS"}, {"name": "reference support GlyRS-P09", "status": "PASS"}, {"details": {"bidirectional_cards": 8, "cards": 8, "displayed_original_ids": 16}, "name": "single source equation and exact reverse card GlyRS-P09", "status": "PASS"}, {"details": {"steps": 1}, "name": "ordered path GlyRS-P10", "status": "PASS"}, {"name": "visible canonical net GlyRS-P10", "status": "PASS"}, {"name": "summary type GlyRS-P10", "status": "PASS"}, {"name": "reference support GlyRS-P10", "status": "PASS"}, {"details": {"bidirectional_cards": 1, "cards": 1, "displayed_original_ids": 2}, "name": "single source equation and exact reverse card GlyRS-P10", "status": "PASS"}, {"details": {"steps": 8}, "name": "ordered path MetRS-P01", "status": "PASS"}, {"name": "visible canonical net MetRS-P01", "status": "PASS"}, {"name": "summary type MetRS-P01", "status": "PASS"}, {"name": "reference support MetRS-P01", "status": "PASS"}, {"details": {"bidirectional_cards": 8, "cards": 8, "displayed_original_ids": 16}, "name": "single source equation and exact reverse card MetRS-P01", "status": "PASS"}, {"details": {"steps": 2}, "name": "ordered path MetRS-P02", "status": "PASS"}, {"name": "visible canonical net MetRS-P02", "status": "PASS"}, {"name": "summary type MetRS-P02", "status": "PASS"}, {"name": "reference support MetRS-P02", "status": "PASS"}, {"details": {"bidirectional_cards": 2, "cards": 2, "displayed_original_ids": 4}, "name": "single source equation and exact reverse card MetRS-P02", "status": "PASS"}, {"details": {"steps": 3}, "name": "ordered path MetRS-P03", "status": "PASS"}, {"name": "visible canonical net MetRS-P03", "status": "PASS"}, {"name": "summary type MetRS-P03", "status": "PASS"}, {"name": "reference support MetRS-P03", "status": "PASS"}, {"details": {"bidirectional_cards": 3, "cards": 3, "displayed_original_ids": 6}, "name": "single source equation and exact reverse card MetRS-P03", "status": "PASS"}, {"details": {"steps": 3}, "name": "ordered path MetRS-P04", "status": "PASS"}, {"name": "visible canonical net MetRS-P04", "status": "PASS"}, {"name": "summary type MetRS-P04", "status": "PASS"}, {"name": "reference support MetRS-P04", "status": "PASS"}, {"details": {"bidirectional_cards": 3, "cards": 3, "displayed_original_ids": 6}, "name": "single source equation and exact reverse card MetRS-P04", "status": "PASS"}, {"details": {"steps": 3}, "name": "ordered path MetRS-P05", "status": "PASS"}, {"name": "visible canonical net MetRS-P05", "status": "PASS"}, {"name": "summary type MetRS-P05", "status": "PASS"}, {"name": "reference support MetRS-P05", "status": "PASS"}, {"details": {"bidirectional_cards": 3, "cards": 3, "displayed_original_ids": 6}, "name": "single source equation and exact reverse card MetRS-P05", "status": "PASS"}, {"details": {"steps": 3}, "name": "ordered path MetRS-P06", "status": "PASS"}, {"name": "visible canonical net MetRS-P06", "status": "PASS"}, {"name": "summary type MetRS-P06", "status": "PASS"}, {"name": "reference support MetRS-P06", "status": "PASS"}, {"details": {"bidirectional_cards": 3, "cards": 3, "displayed_original_ids": 6}, "name": "single source equation and exact reverse card MetRS-P06", "status": "PASS"}, {"details": {"steps": 8}, "name": "ordered path MetRS-P07", "status": "PASS"}, {"name": "visible canonical net MetRS-P07", "status": "PASS"}, {"name": "summary type MetRS-P07", "status": "PASS"}, {"name": "reference support MetRS-P07", "status": "PASS"}, {"details": {"bidirectional_cards": 8, "cards": 8, "displayed_original_ids": 16}, "name": "single source equation and exact reverse card MetRS-P07", "status": "PASS"}, {"details": {"steps": 8}, "name": "ordered path MetRS-P08", "status": "PASS"}, {"name": "visible canonical net MetRS-P08", "status": "PASS"}, {"name": "summary type MetRS-P08", "status": "PASS"}, {"name": "reference support MetRS-P08", "status": "PASS"}, {"details": {"bidirectional_cards": 8, "cards": 8, "displayed_original_ids": 16}, "name": "single source equation and exact reverse card MetRS-P08", "status": "PASS"}, {"details": {"steps": 8}, "name": "ordered path MetRS-P09", "status": "PASS"}, {"name": "visible canonical net MetRS-P09", "status": "PASS"}, {"name": "summary type MetRS-P09", "status": "PASS"}, {"name": "reference support MetRS-P09", "status": "PASS"}, {"details": {"bidirectional_cards": 8, "cards": 8, "displayed_original_ids": 16}, "name": "single source equation and exact reverse card MetRS-P09", "status": "PASS"}, {"details": {"steps": 1}, "name": "ordered path MetRS-P10", "status": "PASS"}, {"name": "visible canonical net MetRS-P10", "status": "PASS"}, {"name": "summary type MetRS-P10", "status": "PASS"}, {"name": "reference support MetRS-P10", "status": "PASS"}, {"details": {"bidirectional_cards": 1, "cards": 1, "displayed_original_ids": 2}, "name": "single source equation and exact reverse card MetRS-P10", "status": "PASS"}, {"name": "GlyRS-P01 has eight steps", "status": "PASS"}, {"name": "0126 centered on one reversible source equation", "status": "PASS"}, {"name": "0126 inspector preserves carrier projection", "status": "PASS"}, {"name": "0126 inspector preserves other participants", "status": "PASS"}, {"name": "carrier state remains accessible through inspector", "status": "PASS"}, {"name": "reverse partner inspected without changing main chain", "status": "PASS"}, {"name": "0131 has its own original direction and parameter", "status": "PASS"}, {"name": "inverse original rate remains separate", "status": "PASS"}, {"name": "0197 exact inspector", "status": "PASS"}, {"name": "provenance collapsed", "status": "PASS"}, {"name": "0198 disabled direction explicit in bidirectional card", "status": "PASS"}, {"name": "0198 independently opens disabled inverse inspector", "status": "PASS"}, {"name": "parameter filter preserves five original precursor exits", "status": "PASS"}, {"name": "five parallel outlets", "status": "PASS"}, {"name": "parallel layout has two columns, not a serial chain", "status": "PASS"}, {"name": "0214 disabled sink default collapsed", "status": "PASS"}, {"name": "sink convergence distinguished", "status": "PASS"}, {"name": "all 15 sink inlets accessible", "status": "PASS"}, {"name": "alternate entrance rejoin focuses next 0205", "status": "PASS"}, {"name": "shared suffix rejoin focuses 0178", "status": "PASS"}, {"details": {"paired_directed_ids": 580, "unique_exact_pairs": 290}, "name": "all 968 reverse display decisions independently checked against SBML", "status": "PASS"}, {"name": "pair and narrative control canonicalBothDirections", "status": "PASS"}, {"name": "pair and narrative control nearCoefficientRejected", "status": "PASS"}, {"name": "pair and narrative control netOnlyReverseRejected", "status": "PASS"}, {"name": "pair and narrative control ambiguousReverseRejected", "status": "PASS"}, {"name": "pair and narrative control ambiguousForwardRejected", "status": "PASS"}, {"name": "pair and narrative control nonreciprocalPointerRejected", "status": "PASS"}, {"name": "pair and narrative control unreviewedPointerRejected", "status": "PASS"}, {"name": "pair and narrative control absentPartnerRejected", "status": "PASS"}, {"name": "pair and narrative control exactRationalAndOrderAccepted", "status": "PASS"}, {"name": "pair and narrative control realUnpairedUsesSingleArrow", "status": "PASS"}, {"name": "pair and narrative control singleOutletHasNoCompetition", "status": "PASS"}, {"name": "pair and narrative control sinkHasNoOutgoing", "status": "PASS"}, {"name": "pair and narrative control noForeignMechanismNarratives", "status": "PASS"}, {"name": "pair and narrative control associationUsesReviewedTemplate", "status": "PASS"}, {"name": "pair and narrative control dissociationUsesReviewedTemplate", "status": "PASS"}, {"name": "pair and narrative control chargingUsesReviewedTemplate", "status": "PASS"}, {"name": "pair and narrative control activationUsesReviewedTemplate", "status": "PASS"}, {"name": "executed JS counts repeated occurrences", "status": "PASS"}, {"name": "no hardcoded cycle equation", "status": "PASS"}, {"name": "nonclosed cycle rejected by executed JS", "status": "PASS"}, {"name": "cycle without actual target production rejected", "status": "PASS"}, {"name": "all finite return witnesses selectable GlyRS", "status": "PASS"}, {"name": "disabled return not promoted GlyRS", "status": "PASS"}, {"name": "return witness independent net GlyRS", "status": "PASS"}, {"details": {"bidirectional_cards": 2, "cards": 2, "displayed_original_ids": 2}, "name": "local return keeps two real directions with one canonical orientation GlyRS", "status": "PASS"}, {"name": "all finite return witnesses selectable MetRS", "status": "PASS"}, {"name": "disabled return not promoted MetRS", "status": "PASS"}, {"name": "return witness independent net MetRS", "status": "PASS"}, {"details": {"bidirectional_cards": 2, "cards": 2, "displayed_original_ids": 2}, "name": "local return keeps two real directions with one canonical orientation MetRS", "status": "PASS"}, {"name": "all 48 executed return nets", "status": "PASS"}, {"name": "exact Reaction ID search", "status": "PASS"}, {"name": "copy Reaction ID", "status": "PASS"}, {"name": "copy full equation", "status": "PASS"}, {"name": "species search returns actual incident source IDs", "status": "PASS"}, {"name": "species tab finds exact species", "status": "PASS"}, {"name": "species incidence opens source list", "status": "PASS"}, {"name": "0414 visible 2 PO4", "status": "PASS"}, {"name": "outside inspector explicitly pending", "status": "PASS"}, {"name": "source inspector across DEG_sink", "status": "PASS"}, {"name": "source inspector across ELONG_aa_tRNA_delivery", "status": "PASS"}, {"name": "source inspector across ELONG_energy_coupling", "status": "PASS"}, {"name": "source inspector across ELONG_peptide_formation", "status": "PASS"}, {"name": "source inspector across ELONG_tRNA_release", "status": "PASS"}, {"name": "source inspector across ELONG_translocation", "status": "PASS"}, {"name": "source inspector across EN_binding", "status": "PASS"}, {"name": "source inspector across EN_byproduct_processing", "status": "PASS"}, {"name": "source inspector across EN_energy_transfer", "status": "PASS"}, {"name": "source inspector across INIT_70S_formation", "status": "PASS"}, {"name": "source inspector across INIT_assembly", "status": "PASS"}, {"name": "source inspector across INIT_energy_commitment", "status": "PASS"}, {"name": "source inspector across INIT_factor_release", "status": "PASS"}, {"name": "source inspector across INIT_tRNA_recruitment", "status": "PASS"}, {"name": "source inspector across RECYCLE_component_release", "status": "PASS"}, {"name": "source inspector across RECYCLE_disassembly", "status": "PASS"}, {"name": "source inspector across RS_activation", "status": "PASS"}, {"name": "source inspector across RS_binding", "status": "PASS"}, {"name": "source inspector across RS_charging", "status": "PASS"}, {"name": "source inspector across RS_to_INIT_formylation", "status": "PASS"}, {"name": "source inspector across TERM_energy_coupling", "status": "PASS"}, {"name": "source inspector across TERM_factor_binding", "status": "PASS"}, {"name": "source inspector across TERM_peptide_release", "status": "PASS"}, {"name": "family search", "status": "PASS"}, {"name": "zero parameter filter changes list", "status": "PASS"}, {"details": ["241 species / 968 reactions", "968 / 968", "134 / 968", "834 not reconstructed"], "name": "filter preserves original coverage", "status": "PASS"}, {"name": "disabled search hidden under filter", "status": "PASS"}, {"name": "disabled reaction retained in complete index", "status": "PASS"}, {"name": "unreconstructed MTF context explicit", "status": "PASS"}, {"name": "unreviewed substep visibly marked", "status": "PASS"}, {"name": "no new MTF pathway", "status": "PASS"}, {"name": "handoff source incidence scope", "status": "PASS"}, {"name": "foreign handoff has source list, no path", "status": "PASS"}, {"details": {"max_cards_per_page": 24, "pages": 41}, "name": "all 968 source equations opened by real card clicks", "status": "PASS"}, {"name": "paging coverage invariant", "status": "PASS"}, {"name": "narrow viewport has no horizontal overflow", "status": "PASS"}, {"details": {"bidirectional_cards": 8, "cards": 8, "displayed_original_ids": 16}, "name": "narrow step equations retain exact complete sides", "status": "PASS"}, {"name": "narrow equations wrap without clipping", "status": "PASS"}, {"name": "narrow source inventory remains visible", "status": "PASS"}, {"name": "narrow navigation opens", "status": "PASS"}, {"name": "narrow navigation closes", "status": "PASS"}, {"details": {"clientWidth": 800, "cssZoom": "1", "dpr": 2, "scrollWidth": 800, "width": 800}, "name": "native browser page zoom is 200 percent", "status": "PASS"}, {"name": "200 percent native zoom has no horizontal overflow", "status": "PASS"}, {"name": "200 percent native zoom preserves net and eight steps", "status": "PASS"}, {"details": {"bidirectional_cards": 8, "cards": 8, "displayed_original_ids": 16}, "name": "200 percent native zoom preserves readable exact cards", "status": "PASS"}, {"name": "200 percent equations wrap without clipping", "status": "PASS"}, {"name": "native zoom page has no resource requests", "status": "PASS"}, {"details": {"bottom": 398.65625, "height": 500, "top": 101.421875}, "name": "native 200 percent complex card visible in actual viewport", "status": "PASS"}, {"name": "no external resources or network attempts", "status": "PASS"}, {"name": "Edge all 20 paths and 94 exact cards offline", "status": "PASS"}, {"name": "Edge independent direction inspector links", "status": "PASS"}, {"name": "Edge five parallel exits including disabled 0214", "status": "PASS"}, {"name": "Edge all 968 original directed reactions independently accessible", "status": "PASS"}, {"name": "Edge offline has no resource requests", "status": "PASS"}, {"details": {"console_errors": [], "page_errors": []}, "name": "no blocking browser console exceptions", "status": "PASS"}], "console_errors": [], "edge_compatibility": {"browser_version": "154.0.4258.53", "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe", "paths": 20, "scope": "Core file URL, cards, nets, direction links, branches, filtering and full source index", "source_inspector_clicks": 968, "status": "PASS", "step_cards": 94}, "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "native_zoom_metrics": {"clientWidth": 800, "cssZoom": "1", "dpr": 2, "scrollWidth": 800, "width": 800}, "network_requests": [], "page_errors": [], "representative_card_coverage": {"actual_directed_step_occurrences": 94, "carrier_projection_hidden_only_in_main_cards": true, "independent_direction_activity": true, "one_equation_per_step": true, "paths": 20}, "resource_entries": 0, "screenshot_directory": null, "status": "PASS", "unexecuted_required_browser_checks": [], "zoom_method": "Native Chromium Settings / Page zoom / 200%, disposable profile"}, "gate": "BROWSER", "status": "PASS"}], "mode": "READ_ONLY; NO MAIN OR DEFAULT REPORT DESTINATION", "status": "PASS"}
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b1_1\build_initiation_witnesses.py --output-dir C:\Users\sean\AppData\Local\Temp\phase-b1-1-reproduce-3d1t77ii\0
+EXIT_CODE: 0
+STDOUT:
+{"status": "BUILT", "coverage": {"initiation_classified": 206, "bounded_search_scope": 206, "bounded_inventory": 559, "unique_witness_directions": 37, "inventory_enabled": 236, "inventory_disabled": 323, "search_enabled": 197, "search_disabled": 9, "original_species_in_inventory": 170, "participating_families": ["RFAM_001", "RFAM_002", "RFAM_007", "RFAM_008", "RFAM_011", "RFAM_012", "RFAM_013", "RFAM_014", "RFAM_019", "RFAM_020", "RFAM_022", "RFAM_023", "RFAM_024", "RFAM_025", "RFAM_026", "RFAM_DEG"]}, "events": {"P1": 10, "P1-RELEASE-ALT": 10, "P2": 11, "P3": 8, "P4": 10, "P5": 24, "P5-E2": 25, "P6": 25, "P7": 12}}
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b1_1\build_initiation_witnesses.py --output-dir C:\Users\sean\AppData\Local\Temp\phase-b1-1-reproduce-3d1t77ii\1
+EXIT_CODE: 0
+STDOUT:
+{"status": "BUILT", "coverage": {"initiation_classified": 206, "bounded_search_scope": 206, "bounded_inventory": 559, "unique_witness_directions": 37, "inventory_enabled": 236, "inventory_disabled": 323, "search_enabled": 197, "search_disabled": 9, "original_species_in_inventory": 170, "participating_families": ["RFAM_001", "RFAM_002", "RFAM_007", "RFAM_008", "RFAM_011", "RFAM_012", "RFAM_013", "RFAM_014", "RFAM_019", "RFAM_020", "RFAM_022", "RFAM_023", "RFAM_024", "RFAM_025", "RFAM_026", "RFAM_DEG"]}, "events": {"P1": 10, "P1-RELEASE-ALT": 10, "P2": 11, "P3": 8, "P4": 10, "P5": 24, "P5-E2": 25, "P6": 25, "P7": 12}}
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b1_1\verify_initiation_witnesses.py
+EXIT_CODE: 0
+STDOUT:
+{"status": "PASS", "events": {"P1": 10, "P1-RELEASE-ALT": 10, "P2": 11, "P3": 8, "P4": 10, "P5": 24, "P5-E2": 25, "P6": 25, "P7": 12}, "error": null}
+
+STDERR:
+
+COMMAND: git diff --check
+EXIT_CODE: 0
+STDOUT:
+
+STDERR:
+
+B1-1 run Asia/Shanghai: 2026-10-09T23:04:20.864522+08:00
+BEGINNING_PREFLIGHT: {"machine": "sean", "branch": "codex/energy-cycles-v1", "origin": "https://github.com/DrWanSJ/PURE.git", "starting_HEAD": "50888efa205837dabb621e42bf117738af661150", "upstream_status_at_start": "0/0", "initial_git_status": "## codex/energy-cycles-v1...origin/codex/energy-cycles-v1"}
+Actual startup: rev-parse root; origin; status; branch; HEAD; fetch origin --prune; status; rev-list HEAD...@{upstream}. All succeeded; 0/0. No pull needed.
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b1_1\build_initiation_witnesses.py
+EXIT_CODE: 0
+STDOUT:
+{"status": "BUILT", "coverage": {"initiation_classified": 206, "bounded_search_scope": 206, "bounded_inventory": 559, "unique_witness_directions": 37, "inventory_enabled": 236, "inventory_disabled": 323, "search_enabled": 197, "search_disabled": 9, "original_species_in_inventory": 170, "participating_families": ["RFAM_001", "RFAM_002", "RFAM_007", "RFAM_008", "RFAM_011", "RFAM_012", "RFAM_013", "RFAM_014", "RFAM_019", "RFAM_020", "RFAM_022", "RFAM_023", "RFAM_024", "RFAM_025", "RFAM_026", "RFAM_DEG"]}, "events": {"P1": 10, "P1-RELEASE-ALT": 10, "P2": 11, "P3": 8, "P4": 10, "P5": 24, "P5-E2": 25, "P6": 25, "P7": 12}}
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b1_1\verify_initiation_witnesses.py
+EXIT_CODE: 0
+STDOUT:
+{"status": "PASS", "events": {"P1": 10, "P1-RELEASE-ALT": 10, "P2": 11, "P3": 8, "P4": 10, "P5": 24, "P5-E2": 25, "P6": 25, "P7": 12}, "error": null}
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b1_1\test_initiation_negative_controls.py
+EXIT_CODE: 0
+STDOUT:
+{"status": "PASS", "required_controls_run": 20, "required_controls_passed": 20, "controls_run": 23, "controls_passed": 23, "controls_failed": 0}
+
+STDERR:
+
+LEGACY_REGRESSION_REUSE: earlier actual results retained; all original tracked inputs rehashed unchanged. No legacy acceptance check removed or weakened.
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b1_1\build_initiation_witnesses.py --output-dir C:\Users\sean\AppData\Local\Temp\phase-b1-1-reproduce-7ii_u4al\0
+EXIT_CODE: 0
+STDOUT:
+{"status": "BUILT", "coverage": {"initiation_classified": 206, "bounded_search_scope": 206, "bounded_inventory": 559, "unique_witness_directions": 37, "inventory_enabled": 236, "inventory_disabled": 323, "search_enabled": 197, "search_disabled": 9, "original_species_in_inventory": 170, "participating_families": ["RFAM_001", "RFAM_002", "RFAM_007", "RFAM_008", "RFAM_011", "RFAM_012", "RFAM_013", "RFAM_014", "RFAM_019", "RFAM_020", "RFAM_022", "RFAM_023", "RFAM_024", "RFAM_025", "RFAM_026", "RFAM_DEG"]}, "events": {"P1": 10, "P1-RELEASE-ALT": 10, "P2": 11, "P3": 8, "P4": 10, "P5": 24, "P5-E2": 25, "P6": 25, "P7": 12}}
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b1_1\build_initiation_witnesses.py --output-dir C:\Users\sean\AppData\Local\Temp\phase-b1-1-reproduce-7ii_u4al\1
+EXIT_CODE: 0
+STDOUT:
+{"status": "BUILT", "coverage": {"initiation_classified": 206, "bounded_search_scope": 206, "bounded_inventory": 559, "unique_witness_directions": 37, "inventory_enabled": 236, "inventory_disabled": 323, "search_enabled": 197, "search_disabled": 9, "original_species_in_inventory": 170, "participating_families": ["RFAM_001", "RFAM_002", "RFAM_007", "RFAM_008", "RFAM_011", "RFAM_012", "RFAM_013", "RFAM_014", "RFAM_019", "RFAM_020", "RFAM_022", "RFAM_023", "RFAM_024", "RFAM_025", "RFAM_026", "RFAM_DEG"]}, "events": {"P1": 10, "P1-RELEASE-ALT": 10, "P2": 11, "P3": 8, "P4": 10, "P5": 24, "P5-E2": 25, "P6": 25, "P7": 12}}
+
+STDERR:
+
+COMMAND: D:\Code\Anaconda\python.exe C:\Users\sean\Desktop\GUV\scripts\pathways\phase_b1_1\verify_initiation_witnesses.py
+EXIT_CODE: 0
+STDOUT:
+{"status": "PASS", "events": {"P1": 10, "P1-RELEASE-ALT": 10, "P2": 11, "P3": 8, "P4": 10, "P5": 24, "P5-E2": 25, "P6": 25, "P7": 12}, "error": null}
+
+STDERR:
+
+COMMAND: git diff --check
+EXIT_CODE: 0
+STDOUT:
+
+STDERR:
+
