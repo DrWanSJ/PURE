@@ -1,0 +1,90 @@
+{
+  "original_worktrees": [
+    {
+      "worktree": "Desktop/GUV",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "energy-cycles-v1/GUV",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "g1-pnas-closure/GUV",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "pnas-active-authority/GUV",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "pnas-consolidation/GUV",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "pnas-reduction-evidence/GUV",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "pnas-topology-first/GUV",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "pure-conservation-coordinate-audit/GUV",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "r5-mechanism-first/GUV",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "r5c-corrigendum/GUV",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "r6-ck-validation/GUV",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "r7-ck-first-order/GUV",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/evidence",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/pr3",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/pr4",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/simulation",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/simulation-clean",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/simulation-final",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "Temp/PURE-main-audit-20261007",
+      "original_status_unchanged": true
+    },
+    {
+      "worktree": "Temp/PURE-R4-fast-block-20261007",
+      "original_status_unchanged": true
+    }
+  ],
+  "all_203_anomaly_raw_bytes_unchanged": true,
+  "corrupted_inventory_rejected": true,
+  "reference_and_480_blob_verification": "PASS",
+  "repository_connectivity_check": "git fsck --connectivity-only --no-dangling PASS",
+  "scientific_models_or_parameters_edited": false,
+  "scientific_numerical_rerun": false
+}

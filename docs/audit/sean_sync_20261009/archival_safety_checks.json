@@ -1,0 +1,13 @@
+{
+  "new_objects": 18,
+  "oversized": [],
+  "secret_pattern_findings": [],
+  "scope": "all newly introduced blob objects; known remote objects not rescanned; not a guarantee against every secret",
+  "tree_diff_vs_main": "M\t.gitattributes\nD\tdocs/reduction/human_r3_successor_provenance_20261007.md",
+  "unique_commits": [
+    "136a9d3cce43e04c55d8b8e2afb02cc645950ff3",
+    "1f87d563c78e52973d11536dfed6525874d1ca94",
+    "8b7bcc356d78abcb15678e8462df890dafc84e41",
+    "5204643a933b72ce2871eb9e79783d727543bbac"
+  ]
+}

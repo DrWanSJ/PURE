@@ -1,0 +1,53 @@
+{
+  "schema": "SYNC_EVIDENCE_NAVIGATION_V1",
+  "authority": "derived navigation; subordinate to Git objects and original scientific evidence",
+  "facts": [
+    {
+      "id": "REMOTE_REFS",
+      "status": "EXTRACTED",
+      "source": "remote_verified_refs.json",
+      "claim": "18 original branch heads and 4 tags match advertisements"
+    },
+    {
+      "id": "R6_BYTES",
+      "status": "EXTRACTED",
+      "source": "r6_untracked_inventory.csv",
+      "claim": "479 original bytes present in remote reachable history"
+    },
+    {
+      "id": "R6_SCIENCE",
+      "status": "EXTRACTED",
+      "source": "r6_review_checks.json",
+      "claim": "0/9 mandatory pass; no promotion"
+    },
+    {
+      "id": "STATUS_ANOMALY",
+      "status": "INFERRED",
+      "source": "status_anomalies.csv",
+      "claim": "195 metadata differences; 8 EOL differences; no scientific content change"
+    },
+    {
+      "id": "EXTERNAL_BACKUP",
+      "status": "AMBIGUOUS",
+      "source": "backup_integrity_report.md",
+      "claim": "supplied D destination is on same physical disk; independent copy unverified"
+    }
+  ],
+  "source_fingerprints": {
+    "archival_new_objects.csv": "06249d3f77dfb51e3e662ee86b01b186746a995df7da3dcb7befdd302fe1b8fd",
+    "archival_safety_checks.json": "9d24b58abccf8626de7989d537d44cf730a87d0b11695fd66f1cb5e2a313eb92",
+    "branch_inventory.csv": "befb28234a64c2747a1a77f03ff3f6f7e366fe6e2a1a6f309f10bfe8573f5f61",
+    "g1_review_checks.json": "1837285031ac0d5bbe23df08f484668e75de4f60e2d805a15c8f928e3e5e05a7",
+    "g1_untracked_inventory.csv": "1bcd3ff27157044104410a2f57ff4686259c625429396d0587240618efa68205",
+    "r6_manifest_verification.csv": "66804934e5ca863a24f8273e97015d58f7abd94ae43b1aea6aef91d896cbce15",
+    "r6_review_checks.json": "7c94988f0a3987103fbd93b770578de587292fe578687f27f75ae89175f4788f",
+    "r6_untracked_inventory.csv": "f107dcadac639145f37b6d18c511679354002f6e100a8b8221b5639f6315e5c2",
+    "reference_verification.json": "636ef638ae70211555ed42b222a37b0d5b47702548d7e99ce5ca2c2d8b71197e",
+    "refs_before.json": "d47cb4ae40f09f0c7421cb2f72a6c0bb67e90b59027737bb752bd9723a621872",
+    "remote_verified_refs.json": "b2ac42526597e979efbbc52aad7945a41141f3ebc48c1a019f643d3026451875",
+    "status_anomalies.csv": "f689de888139166651a9e254cb48920882c2be664c768ba418fb2f721f71a1c3",
+    "summary.json": "0bea271ebb013ed41bee89ce29345b76971ab9070369ea58f7f631687cfbf232",
+    "worktree_inventory.csv": "835c7ec3315a4bd710ff10715f1e423fa3e9acefe8c402f5a12df846ea006f74"
+  },
+  "freshness": "observed 2026-10-09; historical tables explicitly pre-push"
+}

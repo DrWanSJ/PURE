@@ -1,0 +1,410 @@
+{
+  "main": "0b6f9ad649a7e283e440e0294a021123551f6858",
+  "worktrees": [
+    {
+      "worktree": "Desktop/GUV",
+      "branch": "refs/heads/codex/r3-diagnostics-visualizations",
+      "head": "775607bf9922c6878be0147bd7c64fa97e86a790",
+      "detached": false,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 3553,
+      "remote_reachable": "refs/remotes/origin/codex/energy-cycles-v1;refs/remotes/origin/codex/pnas-topology-first;refs/remotes/origin/codex/r3-diagnostics-visualizations",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "energy-cycles-v1/GUV",
+      "branch": "refs/heads/codex/energy-cycles-v1",
+      "head": "152047da1fea4e80b1b5231594c5f70122c06e98",
+      "detached": false,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 11,
+      "remote_reachable": "refs/remotes/origin/codex/energy-cycles-v1",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "g1-pnas-closure/GUV",
+      "branch": "refs/heads/codex/preserve-g1-worktree-20261007",
+      "head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e",
+      "detached": false,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 1,
+      "ignored_files": 4,
+      "remote_reachable": "refs/remotes/origin/HEAD;refs/remotes/origin/codex/pnas-active-authority;refs/remotes/origin/codex/r8-ck-startup-layer-20261008;refs/remotes/origin/main;refs/tags/checkpoint/astra-pnas-evidence-20261003",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "pnas-active-authority/GUV",
+      "branch": "refs/heads/codex/pnas-active-authority",
+      "head": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+      "detached": false,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 0,
+      "remote_reachable": "refs/remotes/origin/codex/pnas-active-authority",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "pnas-consolidation/GUV",
+      "branch": "refs/heads/codex/pnas-consolidation-20261007",
+      "head": "ffe62c4b3f65dd82b789210c653fb5701ee63f8d",
+      "detached": false,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 5,
+      "remote_reachable": "refs/remotes/origin/HEAD;refs/remotes/origin/codex/pnas-active-authority;refs/remotes/origin/codex/r8-ck-startup-layer-20261008;refs/remotes/origin/main",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "pnas-reduction-evidence/GUV",
+      "branch": "refs/heads/codex/pnas-reduction-evidence-v0",
+      "head": "95909fdde5f5fb961a82a84ac69e55bc26d62cb1",
+      "detached": false,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 8,
+      "remote_reachable": "refs/remotes/origin/HEAD;refs/remotes/origin/codex/pnas-active-authority;refs/remotes/origin/codex/r8-ck-startup-layer-20261008;refs/remotes/origin/main",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "pnas-topology-first/GUV",
+      "branch": "refs/heads/codex/pnas-topology-first",
+      "head": "60abf1e371e90f70474bc98174035726cc68f064",
+      "detached": false,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 16,
+      "remote_reachable": "refs/remotes/origin/codex/energy-cycles-v1;refs/remotes/origin/codex/pnas-topology-first",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "pure-conservation-coordinate-audit/GUV",
+      "branch": "DETACHED",
+      "head": "2d74ce12af0e1522d3478551fb9ef400eadab159",
+      "detached": true,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 0,
+      "remote_reachable": "refs/remotes/origin/HEAD;refs/remotes/origin/codex/energy-cycles-v1;refs/remotes/origin/codex/pnas-active-authority;refs/remotes/origin/codex/pnas-topology-first;refs/remotes/origin/codex/r3-diagnostics-visualizations;refs/remotes/origin/codex/r8-ck-startup-layer-20261008;refs/remotes/origin/main",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "r5-mechanism-first/GUV",
+      "branch": "refs/heads/codex/r5-mechanism-first-20261007",
+      "head": "6c11b585df42fb9aa5d5ea5d5e8be44f92e914a6",
+      "detached": false,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 10,
+      "remote_reachable": "refs/remotes/origin/codex/r8-ck-startup-layer-20261008",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "r5c-corrigendum/GUV",
+      "branch": "refs/heads/codex/r5c-corrigendum-20261007",
+      "head": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+      "detached": false,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 12,
+      "remote_reachable": "refs/remotes/origin/codex/r8-ck-startup-layer-20261008",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "r6-ck-validation/GUV",
+      "branch": "refs/heads/codex/r6-ck-validation-20261007",
+      "head": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+      "detached": false,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 479,
+      "ignored_files": 15,
+      "remote_reachable": "refs/remotes/origin/codex/r8-ck-startup-layer-20261008",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "r7-ck-first-order/GUV",
+      "branch": "refs/heads/codex/r8-ck-startup-layer-20261008",
+      "head": "9ac0143b7ab6ed3b04de9d8a29a5e5732a761c7e",
+      "detached": false,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 15,
+      "remote_reachable": "refs/remotes/origin/codex/r8-ck-startup-layer-20261008",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "sean-sync-audit-20261009/GUV",
+      "branch": "refs/heads/codex/sean-sync-audit-20261009",
+      "head": "0b6f9ad649a7e283e440e0294a021123551f6858",
+      "detached": false,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 3,
+      "ignored_files": 0,
+      "remote_reachable": "refs/remotes/origin/HEAD;refs/remotes/origin/codex/pnas-active-authority;refs/remotes/origin/codex/r8-ck-startup-layer-20261008;refs/remotes/origin/main",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/evidence",
+      "branch": "DETACHED",
+      "head": "95909fdde5f5fb961a82a84ac69e55bc26d62cb1",
+      "detached": true,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 5,
+      "remote_reachable": "refs/remotes/origin/HEAD;refs/remotes/origin/codex/pnas-active-authority;refs/remotes/origin/codex/r8-ck-startup-layer-20261008;refs/remotes/origin/main",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/pr3",
+      "branch": "DETACHED",
+      "head": "b678a7c951967ecdab1c89e549011bf050307ff9",
+      "detached": true,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 9,
+      "remote_reachable": "refs/remotes/origin/HEAD;refs/remotes/origin/codex/energy-cycles-v1;refs/remotes/origin/codex/pnas-active-authority;refs/remotes/origin/codex/pnas-topology-first;refs/remotes/origin/codex/r3-diagnostics-visualizations;refs/remotes/origin/codex/r8-ck-startup-layer-20261008;refs/remotes/origin/main",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/pr4",
+      "branch": "DETACHED",
+      "head": "24335fe798e757acb2ca3582916658bfcf5c16f5",
+      "detached": true,
+      "tracked_modifications": 195,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 8,
+      "remote_reachable": "refs/remotes/origin/HEAD;refs/remotes/origin/codex/energy-cycles-v1;refs/remotes/origin/codex/pnas-active-authority;refs/remotes/origin/codex/pnas-topology-first;refs/remotes/origin/codex/r3-diagnostics-visualizations;refs/remotes/origin/codex/r8-ck-startup-layer-20261008;refs/remotes/origin/main",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/simulation",
+      "branch": "DETACHED",
+      "head": "136a9d3cce43e04c55d8b8e2afb02cc645950ff3",
+      "detached": true,
+      "tracked_modifications": 8,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 12,
+      "remote_reachable": "",
+      "local_only_commits": 4
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/simulation-clean",
+      "branch": "DETACHED",
+      "head": "1f87d563c78e52973d11536dfed6525874d1ca94",
+      "detached": true,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 12,
+      "remote_reachable": "",
+      "local_only_commits": 3
+    },
+    {
+      "worktree": "PURE-consolidation-20261007/simulation-final",
+      "branch": "DETACHED",
+      "head": "136a9d3cce43e04c55d8b8e2afb02cc645950ff3",
+      "detached": true,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 12,
+      "remote_reachable": "",
+      "local_only_commits": 4
+    },
+    {
+      "worktree": "Temp/PURE-main-audit-20261007",
+      "branch": "DETACHED",
+      "head": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e",
+      "detached": true,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 0,
+      "remote_reachable": "refs/remotes/origin/HEAD;refs/remotes/origin/codex/pnas-active-authority;refs/remotes/origin/codex/r8-ck-startup-layer-20261008;refs/remotes/origin/main;refs/tags/checkpoint/astra-pnas-evidence-20261003",
+      "local_only_commits": 0
+    },
+    {
+      "worktree": "Temp/PURE-R4-fast-block-20261007",
+      "branch": "refs/heads/codex/r4-fast-block-screen-20261007",
+      "head": "9def91d4a39cad4589bd56e6db67f3a8c17b0d52",
+      "detached": false,
+      "tracked_modifications": 0,
+      "staged_modifications": 0,
+      "untracked_files": 0,
+      "ignored_files": 16,
+      "remote_reachable": "refs/remotes/origin/codex/r8-ck-startup-layer-20261008",
+      "local_only_commits": 0
+    }
+  ],
+  "branches": [
+    {
+      "branch": "backup/sean-simulation-20261009",
+      "sha": "136a9d3cce43e04c55d8b8e2afb02cc645950ff3",
+      "name_on_remote": false,
+      "local_only_commits": 4,
+      "remote_contains": ""
+    },
+    {
+      "branch": "backup/sean-simulation-clean-20261009",
+      "sha": "1f87d563c78e52973d11536dfed6525874d1ca94",
+      "name_on_remote": false,
+      "local_only_commits": 3,
+      "remote_contains": ""
+    },
+    {
+      "branch": "codex/energy-cycles-v1",
+      "sha": "152047da1fea4e80b1b5231594c5f70122c06e98",
+      "name_on_remote": true,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/codex/energy-cycles-v1"
+    },
+    {
+      "branch": "codex/pnas-active-authority",
+      "sha": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+      "name_on_remote": true,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/codex/pnas-active-authority"
+    },
+    {
+      "branch": "codex/pnas-consolidation-20261007",
+      "sha": "ffe62c4b3f65dd82b789210c653fb5701ee63f8d",
+      "name_on_remote": false,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/HEAD\nrefs/remotes/origin/codex/pnas-active-authority\nrefs/remotes/origin/codex/r8-ck-startup-layer-20261008\nrefs/remotes/origin/main"
+    },
+    {
+      "branch": "codex/pnas-reduction-evidence-v0",
+      "sha": "95909fdde5f5fb961a82a84ac69e55bc26d62cb1",
+      "name_on_remote": false,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/HEAD\nrefs/remotes/origin/codex/pnas-active-authority\nrefs/remotes/origin/codex/r8-ck-startup-layer-20261008\nrefs/remotes/origin/main"
+    },
+    {
+      "branch": "codex/pnas-topology-first",
+      "sha": "60abf1e371e90f70474bc98174035726cc68f064",
+      "name_on_remote": true,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/codex/energy-cycles-v1\nrefs/remotes/origin/codex/pnas-topology-first"
+    },
+    {
+      "branch": "codex/preserve-g1-worktree-20261007",
+      "sha": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e",
+      "name_on_remote": false,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/HEAD\nrefs/remotes/origin/codex/pnas-active-authority\nrefs/remotes/origin/codex/r8-ck-startup-layer-20261008\nrefs/remotes/origin/main\nrefs/tags/checkpoint/astra-pnas-evidence-20261003"
+    },
+    {
+      "branch": "codex/r3-diagnostics-visualizations",
+      "sha": "775607bf9922c6878be0147bd7c64fa97e86a790",
+      "name_on_remote": true,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/codex/energy-cycles-v1\nrefs/remotes/origin/codex/pnas-topology-first\nrefs/remotes/origin/codex/r3-diagnostics-visualizations"
+    },
+    {
+      "branch": "codex/r4-fast-block-screen-20261007",
+      "sha": "9def91d4a39cad4589bd56e6db67f3a8c17b0d52",
+      "name_on_remote": false,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/codex/r8-ck-startup-layer-20261008"
+    },
+    {
+      "branch": "codex/r5-mechanism-first-20261007",
+      "sha": "6c11b585df42fb9aa5d5ea5d5e8be44f92e914a6",
+      "name_on_remote": false,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/codex/r8-ck-startup-layer-20261008"
+    },
+    {
+      "branch": "codex/r5c-corrigendum-20261007",
+      "sha": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+      "name_on_remote": false,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/codex/r8-ck-startup-layer-20261008"
+    },
+    {
+      "branch": "codex/r6-ck-validation-20261007",
+      "sha": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+      "name_on_remote": false,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/codex/r8-ck-startup-layer-20261008"
+    },
+    {
+      "branch": "codex/r7-ck-first-order-20261008",
+      "sha": "20ca5215d949c9451b3e6fd4435c18991783ac29",
+      "name_on_remote": false,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/codex/r8-ck-startup-layer-20261008"
+    },
+    {
+      "branch": "codex/r8-ck-startup-layer-20261008",
+      "sha": "9ac0143b7ab6ed3b04de9d8a29a5e5732a761c7e",
+      "name_on_remote": true,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/codex/r8-ck-startup-layer-20261008"
+    },
+    {
+      "branch": "codex/sean-sync-audit-20261009",
+      "sha": "0b6f9ad649a7e283e440e0294a021123551f6858",
+      "name_on_remote": false,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/HEAD\nrefs/remotes/origin/codex/pnas-active-authority\nrefs/remotes/origin/codex/r8-ck-startup-layer-20261008\nrefs/remotes/origin/main"
+    },
+    {
+      "branch": "main",
+      "sha": "0b6f9ad649a7e283e440e0294a021123551f6858",
+      "name_on_remote": true,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/HEAD\nrefs/remotes/origin/codex/pnas-active-authority\nrefs/remotes/origin/codex/r8-ck-startup-layer-20261008\nrefs/remotes/origin/main"
+    },
+    {
+      "branch": "research/aminoacylation-qssa-pilot-v0",
+      "sha": "24335fe798e757acb2ca3582916658bfcf5c16f5",
+      "name_on_remote": false,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/HEAD\nrefs/remotes/origin/codex/energy-cycles-v1\nrefs/remotes/origin/codex/pnas-active-authority\nrefs/remotes/origin/codex/pnas-topology-first\nrefs/remotes/origin/codex/r3-diagnostics-visualizations\nrefs/remotes/origin/codex/r8-ck-startup-layer-20261008\nrefs/remotes/origin/main"
+    },
+    {
+      "branch": "research/reaction-level-annotation-v0-20260928",
+      "sha": "18dfddb7fd888d08ca21ea832fcab04b6739c359",
+      "name_on_remote": false,
+      "local_only_commits": 0,
+      "remote_contains": "refs/remotes/origin/HEAD\nrefs/remotes/origin/codex/energy-cycles-v1\nrefs/remotes/origin/codex/pnas-active-authority\nrefs/remotes/origin/codex/pnas-topology-first\nrefs/remotes/origin/codex/r3-diagnostics-visualizations\nrefs/remotes/origin/codex/r8-ck-startup-layer-20261008\nrefs/remotes/origin/main\nrefs/tags/checkpoint/astra-pnas-evidence-20261003"
+    }
+  ],
+  "anomalies": {
+    "INDEX_METADATA_DIFFERENCE": 195,
+    "FILTER_OR_EOL_DIFFERENCE": 8
+  },
+  "inventories": {
+    "g1": {
+      "ALREADY_IN_REMOTE": 1
+    },
+    "r6": {
+      "ALREADY_IN_REMOTE": 479
+    }
+  },
+  "backup": {
+    "MATCH": 7248
+  },
+  "stash": "",
+  "lfs_files": "",
+  "submodules": ""
+}

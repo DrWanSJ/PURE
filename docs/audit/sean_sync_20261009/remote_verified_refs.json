@@ -1,0 +1,27 @@
+{
+  "refs": {
+    "refs/heads/backup/sean-simulation-20261009": "136a9d3cce43e04c55d8b8e2afb02cc645950ff3",
+    "refs/heads/backup/sean-simulation-clean-20261009": "1f87d563c78e52973d11536dfed6525874d1ca94",
+    "refs/heads/codex/energy-cycles-v1": "152047da1fea4e80b1b5231594c5f70122c06e98",
+    "refs/heads/codex/pnas-active-authority": "bd2326078fd7d2c2307e7d2db084cf08f0c11922",
+    "refs/heads/codex/pnas-consolidation-20261007": "ffe62c4b3f65dd82b789210c653fb5701ee63f8d",
+    "refs/heads/codex/pnas-reduction-evidence-v0": "95909fdde5f5fb961a82a84ac69e55bc26d62cb1",
+    "refs/heads/codex/pnas-topology-first": "60abf1e371e90f70474bc98174035726cc68f064",
+    "refs/heads/codex/preserve-g1-worktree-20261007": "3e22aeeb6124e2ad7d3373e0cf056383bf9c8c1e",
+    "refs/heads/codex/r3-diagnostics-visualizations": "775607bf9922c6878be0147bd7c64fa97e86a790",
+    "refs/heads/codex/r4-fast-block-screen-20261007": "9def91d4a39cad4589bd56e6db67f3a8c17b0d52",
+    "refs/heads/codex/r5-mechanism-first-20261007": "6c11b585df42fb9aa5d5ea5d5e8be44f92e914a6",
+    "refs/heads/codex/r5c-corrigendum-20261007": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+    "refs/heads/codex/r6-ck-validation-20261007": "1181ab2f0a04d72cf76fb069be6bb842e3de75d8",
+    "refs/heads/codex/r7-ck-first-order-20261008": "20ca5215d949c9451b3e6fd4435c18991783ac29",
+    "refs/heads/codex/r8-ck-startup-layer-20261008": "9ac0143b7ab6ed3b04de9d8a29a5e5732a761c7e",
+    "refs/heads/main": "0b6f9ad649a7e283e440e0294a021123551f6858",
+    "refs/heads/research/aminoacylation-qssa-pilot-v0": "24335fe798e757acb2ca3582916658bfcf5c16f5",
+    "refs/heads/research/reaction-level-annotation-v0-20260928": "18dfddb7fd888d08ca21ea832fcab04b6739c359",
+    "refs/tags/archive-mavelli2015-d7-20260924": "b5693ae7c3730b8e8b1b6f01e6733a4fc72579c3",
+    "refs/tags/archive/pnas2017-full-network-reduction-20260927": "6db793af11273126de8796201d6d9f016d8f5b2e",
+    "refs/tags/b1-reference-v1": "df427a35317a115df26b0d87c630b74e831502f0",
+    "refs/tags/checkpoint/astra-pnas-evidence-20261003": "47bcebbdf3f9b3870dbefee93a5b09eae2c13731"
+  },
+  "method": "git ls-remote independently checked after fresh fetch; audit branch checked separately in receipt"
+}

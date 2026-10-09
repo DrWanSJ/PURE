@@ -1,0 +1,557 @@
+{
+  "manifest_count": 476,
+  "manifest_failed": [],
+  "binding_checks": {
+    "manifest_sha256": true,
+    "verifier_sha256": true,
+    "dispatch_verifier_sha256": true,
+    "verification_sha256": true
+  },
+  "campaign_summary": {
+    "schema": "R6_CK_FORMAL_CAMPAIGN_SUMMARY_V1",
+    "decision": "GROSS_FLUX_NOT_REQUIRED_FOR_CK_PROMOTION",
+    "mandatory_classes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "F",
+      "H"
+    ],
+    "gross_classes": [
+      "E",
+      "G"
+    ],
+    "gross_status": "SOURCE_PROVENANCE_PRESERVED;DESCRIPTIVE;BUT_NOT_VALIDATED",
+    "registered_conditions": 9,
+    "completed_conditions": 9,
+    "conditions_passing_all_mandatory_gates": 0,
+    "candidate_outcome": "CK_STATE_VALID_NET_CURRENT_FAIL",
+    "recommendation": "CK_STATE_REDUCTION_SUPPORTED_BUT_FLUX_NOT_READY",
+    "worst": {
+      "state": {
+        "value": 0.004283351728901257,
+        "condition": "R3_ATP_LOW",
+        "measured_conditions": 9
+      },
+      "slow_total": {
+        "value": 5.327566430809731e-05,
+        "condition": "R3_TRNA_LOW",
+        "measured_conditions": 9
+      },
+      "retained_coordinate": {
+        "value": 0.00034074857953634685,
+        "condition": "R3_TRNA_LOW",
+        "measured_conditions": 9
+      },
+      "protein": {
+        "value": 3.018319179256746e-07,
+        "condition": "R3_METRS_LOW",
+        "measured_conditions": 9
+      },
+      "ck_net_current": {
+        "value": 0.9933194893774895,
+        "condition": "R3_ATP_LOW",
+        "measured_conditions": 9
+      },
+      "net_current": {
+        "value": 0.9933194893774895,
+        "condition": "R3_ATP_LOW",
+        "measured_conditions": 9
+      },
+      "ck_net_extent": {
+        "value": 0.1273620204830512,
+        "condition": "R3_TRNA_LOW",
+        "measured_conditions": 9
+      },
+      "net_extent": {
+        "value": 0.1273620204830512,
+        "condition": "R3_TRNA_LOW",
+        "measured_conditions": 9
+      },
+      "conservation": {
+        "value": 2.3680765681710625e-10,
+        "condition": "R3_TRNA_LOW",
+        "measured_conditions": 9
+      },
+      "switch_jump_scaled": {
+        "value": 4.361294865427413e-05,
+        "condition": "R3_ATP_LOW",
+        "measured_conditions": 9
+      },
+      "ck_net_current_post_0p05": {
+        "value": 0.14817884953497426,
+        "condition": "R3_TRNA_LOW",
+        "measured_conditions": 9
+      }
+    },
+    "state_valid_all_conditions": true,
+    "resolved_net_current_failure": true,
+    "conservation_all_resolved_pass": true,
+    "initial_layer_all_resolved_pass": false,
+    "unresolved_conditions": [
+      "R3_BASE",
+      "R3_GLYRS_LOW",
+      "R3_GLYRS_HIGH",
+      "R3_METRS_LOW",
+      "R3_METRS_HIGH",
+      "R3_GLY_LOW",
+      "R3_MET_LOW",
+      "R3_TRNA_LOW"
+    ],
+    "failure_classes": [
+      "D",
+      "F",
+      "H"
+    ],
+    "state_current_assessments": 9,
+    "numerical_noncompletion_conditions": [],
+    "no_promotion": true,
+    "no_push": true,
+    "no_merge": true,
+    "no_next_stage": true,
+    "closed_at_utc": "2026-10-07T15:45:20.878500+00:00",
+    "balance_summary": [
+      {
+        "accounting": "EXACT_SOURCE_GENERAL_LAW_DRIFT",
+        "model": "source",
+        "max_absolute_residual": 2.3680765681710625e-10,
+        "condition": "R3_TRNA_LOW",
+        "measured_conditions": 9,
+        "status": "MANDATORY_C_GATE_REPORTED_SEPARATELY"
+      },
+      {
+        "accounting": "EXACT_SOURCE_GENERAL_LAW_DRIFT",
+        "model": "reduced",
+        "max_absolute_residual": 7.459632911377161e-11,
+        "condition": "R3_METRS_LOW",
+        "measured_conditions": 9,
+        "status": "MANDATORY_C_GATE_REPORTED_SEPARATELY"
+      },
+      {
+        "accounting": "NET_STOICHIOMETRIC_FULL_STATE_LEDGER",
+        "model": "source",
+        "max_absolute_residual": 7.430298865074292e-07,
+        "condition": "R3_BASE",
+        "measured_conditions": 9,
+        "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+      },
+      {
+        "accounting": "NET_STOICHIOMETRIC_FULL_STATE_LEDGER",
+        "model": "reduced",
+        "max_absolute_residual": 0.0012893561415694421,
+        "condition": "R3_ATP_LOW",
+        "measured_conditions": 9,
+        "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+      },
+      {
+        "accounting": "NET_STOICHIOMETRIC_SLOW_COORDINATE_LEDGER",
+        "model": "source",
+        "max_absolute_residual": 6.910104275448248e-07,
+        "condition": "R3_BASE",
+        "measured_conditions": 9,
+        "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+      },
+      {
+        "accounting": "NET_STOICHIOMETRIC_SLOW_COORDINATE_LEDGER",
+        "model": "reduced",
+        "max_absolute_residual": 7.553844625363126e-07,
+        "condition": "R3_TRNA_LOW",
+        "measured_conditions": 9,
+        "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+      },
+      {
+        "accounting": "ALGEBRAIC_ACCOUNTING_AFTER_DISCLOSED_SWITCH_JUMP",
+        "model": "source",
+        "max_absolute_residual": 7.430298865074292e-07,
+        "condition": "R3_BASE",
+        "measured_conditions": 9,
+        "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+      },
+      {
+        "accounting": "ALGEBRAIC_ACCOUNTING_AFTER_DISCLOSED_SWITCH_JUMP",
+        "model": "reduced",
+        "max_absolute_residual": 7.790295057930052e-07,
+        "condition": "R3_TRNA_LOW",
+        "measured_conditions": 9,
+        "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+      },
+      {
+        "accounting": "GROSS_MICROSCOPIC_DIRECTED_LEDGER",
+        "model": "source",
+        "max_absolute_residual": 7.430298865074292e-07,
+        "condition": "R3_BASE",
+        "measured_conditions": 9,
+        "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+      },
+      {
+        "accounting": "GROSS_MICROSCOPIC_DIRECTED_LEDGER",
+        "model": "reduced",
+        "max_absolute_residual": 8302.949230495564,
+        "condition": "R3_TRNA_LOW",
+        "measured_conditions": 9,
+        "status": "DESCRIPTIVE;NOT_REQUIRED_FOR_PROMOTION;BUT_NOT_VALIDATED"
+      }
+    ],
+    "class_condition_counts": {
+      "A": {
+        "RESOLVED_PASS": 9,
+        "RESOLVED_FAIL": 0,
+        "NUMERICALLY_UNRESOLVED": 0
+      },
+      "B": {
+        "RESOLVED_PASS": 9,
+        "RESOLVED_FAIL": 0,
+        "NUMERICALLY_UNRESOLVED": 0
+      },
+      "C": {
+        "RESOLVED_PASS": 9,
+        "RESOLVED_FAIL": 0,
+        "NUMERICALLY_UNRESOLVED": 0
+      },
+      "D": {
+        "RESOLVED_PASS": 0,
+        "RESOLVED_FAIL": 9,
+        "NUMERICALLY_UNRESOLVED": 0
+      },
+      "F": {
+        "RESOLVED_PASS": 0,
+        "RESOLVED_FAIL": 9,
+        "NUMERICALLY_UNRESOLVED": 0
+      },
+      "H": {
+        "RESOLVED_PASS": 1,
+        "RESOLVED_FAIL": 4,
+        "NUMERICALLY_UNRESOLVED": 4
+      }
+    },
+    "ck_window_maxima": [
+      {
+        "metric": "CK_NET_CURRENT",
+        "window": "FULL_WINDOW",
+        "E_inf": 0.14817884953497426,
+        "condition": "R3_TRNA_LOW",
+        "observable": "re0000000336_MINUS_re0000000337",
+        "measured_conditions": 9,
+        "mandatory": true
+      },
+      {
+        "metric": "CK_NET_CURRENT",
+        "window": "POST_INITIAL_LAYER",
+        "E_inf": 0.9933194893774895,
+        "condition": "R3_ATP_LOW",
+        "observable": "re0000000332_MINUS_re0000000333",
+        "measured_conditions": 9,
+        "mandatory": true
+      },
+      {
+        "metric": "CK_NET_CURRENT",
+        "window": "POST_0P05_DIAGNOSTIC",
+        "E_inf": 0.14817884953497426,
+        "condition": "R3_TRNA_LOW",
+        "observable": "re0000000336_MINUS_re0000000337",
+        "measured_conditions": 9,
+        "mandatory": false
+      },
+      {
+        "metric": "CK_NET_CURRENT",
+        "window": "COMPOSITE_OR_HYBRID",
+        "E_inf": 0.14817884953497426,
+        "condition": "R3_TRNA_LOW",
+        "observable": "re0000000336_MINUS_re0000000337",
+        "measured_conditions": 9,
+        "mandatory": false
+      },
+      {
+        "metric": "CK_NET_EXTENT",
+        "window": "FULL_WINDOW",
+        "E_inf": 0.1273620204830512,
+        "condition": "R3_TRNA_LOW",
+        "observable": "re0000000336_MINUS_re0000000337",
+        "measured_conditions": 9,
+        "mandatory": true
+      },
+      {
+        "metric": "CK_NET_EXTENT",
+        "window": "POST_INITIAL_LAYER",
+        "E_inf": 0.1273620204830512,
+        "condition": "R3_TRNA_LOW",
+        "observable": "re0000000336_MINUS_re0000000337",
+        "measured_conditions": 9,
+        "mandatory": true
+      },
+      {
+        "metric": "CK_NET_EXTENT",
+        "window": "POST_0P05_DIAGNOSTIC",
+        "E_inf": 0.1273620204830512,
+        "condition": "R3_TRNA_LOW",
+        "observable": "re0000000336_MINUS_re0000000337",
+        "measured_conditions": 9,
+        "mandatory": false
+      },
+      {
+        "metric": "CK_NET_EXTENT",
+        "window": "COMPOSITE_OR_HYBRID",
+        "E_inf": 0.1273620204830512,
+        "condition": "R3_TRNA_LOW",
+        "observable": "re0000000336_MINUS_re0000000337",
+        "measured_conditions": 9,
+        "mandatory": false
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "condition_id": "R3_BASE",
+      "status": "COMPLETED",
+      "scientific_status": "CK_STATE_VALID_NET_CURRENT_FAIL",
+      "all_mandatory_gates_pass": "False",
+      "state_status": "STATE_VALID",
+      "net_current_status": "NET_CURRENT_NOT_VALIDATED",
+      "A": "RESOLVED_PASS",
+      "B": "RESOLVED_PASS",
+      "C": "RESOLVED_PASS",
+      "D": "RESOLVED_FAIL",
+      "F": "RESOLVED_FAIL",
+      "H": "NUMERICALLY_UNRESOLVED",
+      "state_error": "0.002902187132463912",
+      "slow_total_error": "5.2705318873826776e-05",
+      "protein_output_error": "2.991443282815159e-07",
+      "ck_net_current_error": "0.984546627940516",
+      "ck_net_current_post_0p05": "0.14712397135886232",
+      "ck_net_extent_error": "0.12629496259252762",
+      "all_mandatory_net_extent_error": "0.12629496259252762",
+      "conservation_drift": "1.1485876700671197e-10",
+      "switch_jump_scaled": "2.912152204869968e-05",
+      "resolved_failures": "10",
+      "unresolved": "1",
+      "failure_classes": "D;F",
+      "unresolved_classes": "H",
+      "gross_status": "SOURCE_PROVENANCE_PRESERVED;DESCRIPTIVE;BUT_NOT_VALIDATED"
+    },
+    {
+      "condition_id": "R3_GLYRS_LOW",
+      "status": "COMPLETED",
+      "scientific_status": "CK_STATE_VALID_NET_CURRENT_FAIL",
+      "all_mandatory_gates_pass": "False",
+      "state_status": "STATE_VALID",
+      "net_current_status": "NET_CURRENT_NOT_VALIDATED",
+      "A": "RESOLVED_PASS",
+      "B": "RESOLVED_PASS",
+      "C": "RESOLVED_PASS",
+      "D": "RESOLVED_FAIL",
+      "F": "RESOLVED_FAIL",
+      "H": "RESOLVED_FAIL",
+      "state_error": "0.002900017091017014",
+      "slow_total_error": "5.2938895535321186e-05",
+      "protein_output_error": "2.993859573275454e-07",
+      "ck_net_current_error": "0.985299795943549",
+      "ck_net_current_post_0p05": "0.14732313396347155",
+      "ck_net_extent_error": "0.12636967358767373",
+      "all_mandatory_net_extent_error": "0.12636967358767373",
+      "conservation_drift": "1.7428299255162205e-10",
+      "switch_jump_scaled": "2.9099754678072784e-05",
+      "resolved_failures": "11",
+      "unresolved": "1",
+      "failure_classes": "D;F;H",
+      "unresolved_classes": "",
+      "gross_status": "SOURCE_PROVENANCE_PRESERVED;DESCRIPTIVE;BUT_NOT_VALIDATED"
+    },
+    {
+      "condition_id": "R3_GLYRS_HIGH",
+      "status": "COMPLETED",
+      "scientific_status": "CK_STATE_VALID_NET_CURRENT_FAIL",
+      "all_mandatory_gates_pass": "False",
+      "state_status": "STATE_VALID",
+      "net_current_status": "NET_CURRENT_NOT_VALIDATED",
+      "A": "RESOLVED_PASS",
+      "B": "RESOLVED_PASS",
+      "C": "RESOLVED_PASS",
+      "D": "RESOLVED_FAIL",
+      "F": "RESOLVED_FAIL",
+      "H": "NUMERICALLY_UNRESOLVED",
+      "state_error": "0.0029238834374697704",
+      "slow_total_error": "5.085177288782484e-05",
+      "protein_output_error": "2.97250844841674e-07",
+      "ck_net_current_error": "0.977077924993425",
+      "ck_net_current_post_0p05": "0.14555282275421239",
+      "ck_net_extent_error": "0.12561984860584965",
+      "all_mandatory_net_extent_error": "0.12561984860584965",
+      "conservation_drift": "8.823774545231589e-11",
+      "switch_jump_scaled": "2.9339150466482994e-05",
+      "resolved_failures": "10",
+      "unresolved": "1",
+      "failure_classes": "D;F",
+      "unresolved_classes": "H",
+      "gross_status": "SOURCE_PROVENANCE_PRESERVED;DESCRIPTIVE;BUT_NOT_VALIDATED"
+    },
+    {
+      "condition_id": "R3_METRS_LOW",
+      "status": "COMPLETED",
+      "scientific_status": "CK_STATE_VALID_NET_CURRENT_FAIL",
+      "all_mandatory_gates_pass": "False",
+      "state_status": "STATE_VALID",
+      "net_current_status": "NET_CURRENT_NOT_VALIDATED",
+      "A": "RESOLVED_PASS",
+      "B": "RESOLVED_PASS",
+      "C": "RESOLVED_PASS",
+      "D": "RESOLVED_FAIL",
+      "F": "RESOLVED_FAIL",
+      "H": "RESOLVED_FAIL",
+      "state_error": "0.0028989954809253804",
+      "slow_total_error": "5.30108556551285e-05",
+      "protein_output_error": "3.018319179256746e-07",
+      "ck_net_current_error": "0.9856607248949745",
+      "ck_net_current_post_0p05": "0.14738539058954525",
+      "ck_net_extent_error": "0.12641286382415517",
+      "all_mandatory_net_extent_error": "0.12641286382415517",
+      "conservation_drift": "1.1362592464148058e-10",
+      "switch_jump_scaled": "2.9089496871798204e-05",
+      "resolved_failures": "11",
+      "unresolved": "1",
+      "failure_classes": "D;F;H",
+      "unresolved_classes": "",
+      "gross_status": "SOURCE_PROVENANCE_PRESERVED;DESCRIPTIVE;BUT_NOT_VALIDATED"
+    },
+    {
+      "condition_id": "R3_METRS_HIGH",
+      "status": "COMPLETED",
+      "scientific_status": "CK_STATE_VALID_NET_CURRENT_FAIL",
+      "all_mandatory_gates_pass": "False",
+      "state_status": "STATE_VALID",
+      "net_current_status": "NET_CURRENT_NOT_VALIDATED",
+      "A": "RESOLVED_PASS",
+      "B": "RESOLVED_PASS",
+      "C": "RESOLVED_PASS",
+      "D": "RESOLVED_FAIL",
+      "F": "RESOLVED_FAIL",
+      "H": "NUMERICALLY_UNRESOLVED",
+      "state_error": "0.002934099944020496",
+      "slow_total_error": "5.0422260073152805e-05",
+      "protein_output_error": "2.967024008386113e-07",
+      "ck_net_current_error": "0.973540462647933",
+      "ck_net_current_post_0p05": "0.14519116807375632",
+      "ck_net_extent_error": "0.12545799110342692",
+      "all_mandatory_net_extent_error": "0.12545799110342692",
+      "conservation_drift": "1.0156875340783245e-10",
+      "switch_jump_scaled": "2.9441724631771394e-05",
+      "resolved_failures": "10",
+      "unresolved": "1",
+      "failure_classes": "D;F",
+      "unresolved_classes": "H",
+      "gross_status": "SOURCE_PROVENANCE_PRESERVED;DESCRIPTIVE;BUT_NOT_VALIDATED"
+    },
+    {
+      "condition_id": "R3_GLY_LOW",
+      "status": "COMPLETED",
+      "scientific_status": "CK_STATE_VALID_NET_CURRENT_FAIL",
+      "all_mandatory_gates_pass": "False",
+      "state_status": "STATE_VALID",
+      "net_current_status": "NET_CURRENT_NOT_VALIDATED",
+      "A": "RESOLVED_PASS",
+      "B": "RESOLVED_PASS",
+      "C": "RESOLVED_PASS",
+      "D": "RESOLVED_FAIL",
+      "F": "RESOLVED_FAIL",
+      "H": "RESOLVED_FAIL",
+      "state_error": "0.00290214930805093",
+      "slow_total_error": "5.281153409444614e-05",
+      "protein_output_error": "2.992182387398145e-07",
+      "ck_net_current_error": "0.9845614123190896",
+      "ck_net_current_post_0p05": "0.1472147271075849",
+      "ck_net_extent_error": "0.12631815784150183",
+      "all_mandatory_net_extent_error": "0.12631815784150183",
+      "conservation_drift": "1.3655092681585934e-10",
+      "switch_jump_scaled": "2.9121146872906318e-05",
+      "resolved_failures": "11",
+      "unresolved": "1",
+      "failure_classes": "D;F;H",
+      "unresolved_classes": "",
+      "gross_status": "SOURCE_PROVENANCE_PRESERVED;DESCRIPTIVE;BUT_NOT_VALIDATED"
+    },
+    {
+      "condition_id": "R3_MET_LOW",
+      "status": "COMPLETED",
+      "scientific_status": "CK_STATE_VALID_NET_CURRENT_FAIL",
+      "all_mandatory_gates_pass": "False",
+      "state_status": "STATE_VALID",
+      "net_current_status": "NET_CURRENT_NOT_VALIDATED",
+      "A": "RESOLVED_PASS",
+      "B": "RESOLVED_PASS",
+      "C": "RESOLVED_PASS",
+      "D": "RESOLVED_FAIL",
+      "F": "RESOLVED_FAIL",
+      "H": "RESOLVED_FAIL",
+      "state_error": "0.0029021870652590114",
+      "slow_total_error": "5.2816338168042685e-05",
+      "protein_output_error": "2.992199209141822e-07",
+      "ck_net_current_error": "0.9845466506837959",
+      "ck_net_current_post_0p05": "0.14721882475724032",
+      "ck_net_extent_error": "0.12631937995911313",
+      "all_mandatory_net_extent_error": "0.12631937995911313",
+      "conservation_drift": "9.607451980340805e-11",
+      "switch_jump_scaled": "2.9121520842208126e-05",
+      "resolved_failures": "11",
+      "unresolved": "1",
+      "failure_classes": "D;F;H",
+      "unresolved_classes": "",
+      "gross_status": "SOURCE_PROVENANCE_PRESERVED;DESCRIPTIVE;BUT_NOT_VALIDATED"
+    },
+    {
+      "condition_id": "R3_TRNA_LOW",
+      "status": "COMPLETED",
+      "scientific_status": "CK_STATE_VALID_NET_CURRENT_FAIL",
+      "all_mandatory_gates_pass": "False",
+      "state_status": "STATE_VALID",
+      "net_current_status": "NET_CURRENT_NOT_VALIDATED",
+      "A": "RESOLVED_PASS",
+      "B": "RESOLVED_PASS",
+      "C": "RESOLVED_PASS",
+      "D": "RESOLVED_FAIL",
+      "F": "RESOLVED_FAIL",
+      "H": "NUMERICALLY_UNRESOLVED",
+      "state_error": "0.002902187082268644",
+      "slow_total_error": "5.327566430809731e-05",
+      "protein_output_error": "2.2885471707053672e-07",
+      "ck_net_current_error": "0.984546626846333",
+      "ck_net_current_post_0p05": "0.14817884953497426",
+      "ck_net_extent_error": "0.1273620204830512",
+      "all_mandatory_net_extent_error": "0.1273620204830512",
+      "conservation_drift": "2.3680765681710625e-10",
+      "switch_jump_scaled": "2.912151750918443e-05",
+      "resolved_failures": "10",
+      "unresolved": "1",
+      "failure_classes": "D;F",
+      "unresolved_classes": "H",
+      "gross_status": "SOURCE_PROVENANCE_PRESERVED;DESCRIPTIVE;BUT_NOT_VALIDATED"
+    },
+    {
+      "condition_id": "R3_ATP_LOW",
+      "status": "COMPLETED",
+      "scientific_status": "CK_STATE_VALID_NET_CURRENT_FAIL",
+      "all_mandatory_gates_pass": "False",
+      "state_status": "STATE_VALID",
+      "net_current_status": "NET_CURRENT_NOT_VALIDATED",
+      "A": "RESOLVED_PASS",
+      "B": "RESOLVED_PASS",
+      "C": "RESOLVED_PASS",
+      "D": "RESOLVED_FAIL",
+      "F": "RESOLVED_FAIL",
+      "H": "RESOLVED_PASS",
+      "state_error": "0.004283351728901257",
+      "slow_total_error": "9.942108523424766e-06",
+      "protein_output_error": "2.2508437739391288e-07",
+      "ck_net_current_error": "0.9933194893774895",
+      "ck_net_current_post_0p05": "0.11349237140391093",
+      "ck_net_extent_error": "0.10641311351340957",
+      "all_mandatory_net_extent_error": "0.10641311351340957",
+      "conservation_drift": "1.0336059785842622e-10",
+      "switch_jump_scaled": "4.361294865427413e-05",
+      "resolved_failures": "10",
+      "unresolved": "0",
+      "failure_classes": "D;F",
+      "unresolved_classes": "",
+      "gross_status": "SOURCE_PROVENANCE_PRESERVED;DESCRIPTIVE;BUT_NOT_VALIDATED"
+    }
+  ]
+}

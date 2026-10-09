@@ -1,0 +1,7 @@
+# Backup integrity
+
+The original GUV-safety-20261009 snapshot was left unchanged. Its 2,723,313,446-byte all-refs bundle passes git bundle verify, reports 65 references and complete history, and includes both simulation protection heads. All 7,248 non-Git-metadata snapshot files match their current source SHA-256 across the four mapped worktrees. No source-only new files or missing/changed snapshot files were found. Full file comparison CSV remains in the local evidence archive; its checksum is retained in the archive delivery receipt.
+
+The supplied D-drive destination initially contained audit inventories, not the historical bundle and four snapshots. C: and D: both map to Windows DiskNumber 0. A second verified copy there is useful but is not an independent physical-disk backup. Physical external-copy verification remains pending; no independent-drive checkmark is asserted.
+
+The new timestamped backup generation and verified D copy are described in the delivery receipt. The historical snapshot is not overwritten. New recovery bundle contains branch/tag histories and excludes Codex internal turn-diff checkpoint refs and runtime environments. Selective local automation/task context is archived separately, not published on GitHub. Neither ordinary temporary run outputs nor environment binaries are required to recover version-controlled science. No tracked LFS payload or submodule dependency was found.
