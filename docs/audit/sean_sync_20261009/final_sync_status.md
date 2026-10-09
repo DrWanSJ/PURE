@@ -6,7 +6,7 @@
 | Research artifact preservation | PASS for identified 480 untracked scientific files | All raw bytes remotely reachable; original safety snapshots match 7,248 files |
 | Scientific publication status | No new scientific publication/approval | R6 remains 0/9 mandatory passes; reduced core NOT_APPROVED; existing open human decisions remain |
 | Historical local safety backup | PASS for checked bundle/reference and file scope | Bundle verify; raw SHA-256 comparison |
-| New backup generation / D copy | See independently verified delivery receipt | Backup occurs after final audit push |
+| New backup generation / D copy | PASS for actually checked files and bundles | 7,323 copied files; fresh bare restore/full fsck; backup_delivery_verification.json |
 | Independent physical external backup | PENDING | Supplied C/D locations are on the same physical disk |
 | Three-way alignment | VERSION_CONTROL_ALIGNED_WITH_ARCHIVED_LOCAL_ARTIFACTS | GitHub availability verified; physical independence unverified; not FULLY_VERIFIED |
 

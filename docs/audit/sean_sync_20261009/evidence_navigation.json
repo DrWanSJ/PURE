@@ -47,7 +47,10 @@
     "remote_verified_refs.json": "b2ac42526597e979efbbc52aad7945a41141f3ebc48c1a019f643d3026451875",
     "status_anomalies.csv": "f689de888139166651a9e254cb48920882c2be664c768ba418fb2f721f71a1c3",
     "summary.json": "0bea271ebb013ed41bee89ce29345b76971ab9070369ea58f7f631687cfbf232",
-    "worktree_inventory.csv": "835c7ec3315a4bd710ff10715f1e423fa3e9acefe8c402f5a12df846ea006f74"
+    "worktree_inventory.csv": "835c7ec3315a4bd710ff10715f1e423fa3e9acefe8c402f5a12df846ea006f74",
+    "backup_integrity_report.md": "a251aae6bc61c1b170d8f3044d1b879c8aca7d47c9b5d170afcc00751d7d5d5b",
+    "final_sync_status.md": "5bc7164820167f05dd2acfd19ad21d11f49137cba1245c33fa7eab6e4514262c",
+    "backup_delivery_verification.json": "dbae506d791125e3dfe8fcfe89fccde78b0285f2d5e863ba5ac6e22b65054eb0"
   },
   "freshness": "observed 2026-10-09; historical tables explicitly pre-push"
 }

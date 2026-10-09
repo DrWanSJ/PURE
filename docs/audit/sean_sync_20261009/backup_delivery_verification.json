@@ -1,0 +1,21 @@
+{
+  "audit_branch": "codex/sean-sync-audit-20261009",
+  "main_sha": "0b6f9ad649a7e283e440e0294a021123551f6858",
+  "local_backup_generation": "GUV-recovery-20261009-124250",
+  "second_copy": "user-confirmed D-drive destination; same physical disk",
+  "copy_files_verified": 7323,
+  "copy_manifest_sha256": "8949abc3a225625be6c59f50d3eecf9f7fe3124ec780d9d234cd8cf4cb32dcf5",
+  "new_bundle_sha256": "6bc0008b14647d2528c5d362d8d9622784a6b3741d15933691565b2558bddd7f",
+  "new_bundle_bytes": 2723343324,
+  "fresh_bare_restore_and_full_fsck": "PASS",
+  "new_and_historical_copied_bundle_verify": "PASS",
+  "original_branches": 18,
+  "all_branches_including_audit": 19,
+  "tags": 4,
+  "all_exact_remote_refs": true,
+  "worktrees": 21,
+  "historical_snapshots_sha256_match_files": 7248,
+  "independent_physical_disk": "NOT_VERIFIED_C_AND_D_ARE_DISK_0",
+  "three_way_alignment": "VERSION_CONTROL_ALIGNED_WITH_ARCHIVED_LOCAL_ARTIFACTS",
+  "audit_sha_at_base_backup": "6bec0d63a9362bc1ca1fd2e5fc378eb4bba63c49"
+}
