@@ -1,0 +1,4 @@
+# Preserve generated reports, native execution logs and retained failure bytes.
+* -text
+# CRLF is a native line ending; retain the ordinary whitespace checks.
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

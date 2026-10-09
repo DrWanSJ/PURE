@@ -1,0 +1,108 @@
+{
+  "controls": [
+    {
+      "actual": "REJECT",
+      "control": 1,
+      "expected": "REJECT",
+      "expected_detection": "carrier continuity",
+      "gate": 2,
+      "name": "Forced 0206 -> 0196",
+      "observed_error": "Carrier not consumed at re0000000196",
+      "status": "PASS"
+    },
+    {
+      "actual": "REJECT",
+      "control": 2,
+      "expected": "REJECT",
+      "expected_detection": "carrier continuity",
+      "gate": 2,
+      "name": "Mutually exclusive exits presented as four serial steps",
+      "observed_error": "Carrier not consumed at re0000000206",
+      "status": "PASS"
+    },
+    {
+      "actual": "REJECT",
+      "control": 3,
+      "expected": "REJECT",
+      "expected_detection": "required other reactants",
+      "gate": 2,
+      "name": "Required ATP omitted from a real pathway step",
+      "observed_error": "Required other reactants omitted or changed at re0000000136",
+      "status": "PASS"
+    },
+    {
+      "actual": "REJECT",
+      "control": 4,
+      "expected": "REJECT",
+      "expected_detection": "reference feasibility",
+      "gate": 2,
+      "name": "Zero author-reference parameter claimed enabled",
+      "observed_error": "A disabled reaction cannot represent a parameter-enabled reference path: GlyRS-P01",
+      "status": "PASS"
+    },
+    {
+      "actual": "REJECT",
+      "control": 5,
+      "expected": "REJECT",
+      "expected_detection": "wrong carrier",
+      "gate": 2,
+      "name": "Different enzyme carriers linked by shared ordinary ATP",
+      "observed_error": "Walk contains nonexistent or wrong carrier for GlyRS",
+      "status": "PASS"
+    },
+    {
+      "actual": "REJECT",
+      "control": 6,
+      "expected": "REJECT",
+      "expected_detection": "cross-RFAM completeness",
+      "gate": 3,
+      "name": "Real cross-RFAM connection deleted: {'from_reaction_id': 're0000000131', 'state': 'GlyRS', 'to_reaction_id': 're0000000146'}",
+      "observed_error": "Complete carrier-mediated cross-RFAM connections GlyRS",
+      "status": "PASS"
+    },
+    {
+      "actual": "REJECT",
+      "control": 7,
+      "expected": "REJECT",
+      "expected_detection": "SCC cycle evidence",
+      "gate": 3,
+      "name": "Directed cyclic SCC misrepresented as DAG component",
+      "observed_error": "Directed SCC cycle flag GlyRS/GlyRS-SCC01",
+      "status": "PASS"
+    },
+    {
+      "actual": "REJECT",
+      "control": 8,
+      "expected": "REJECT",
+      "expected_detection": "source coefficient",
+      "gate": 1,
+      "name": "Original PPiase outlet 0414 changed from 2 PO4 to PO4",
+      "observed_error": "Source stoichiometry re0000000414 products",
+      "status": "PASS"
+    },
+    {
+      "actual": "REJECT",
+      "control": 9,
+      "expected": "REJECT",
+      "expected_detection": "unique coverage",
+      "gate": 4,
+      "name": "Shared reaction IDs double-counted as unique coverage",
+      "observed_error": "Phase A unique count cannot count shared reaction occurrences",
+      "status": "PASS"
+    },
+    {
+      "actual": "REJECT",
+      "control": 10,
+      "expected": "REJECT",
+      "expected_detection": "scientific evidence boundary",
+      "gate": 2,
+      "name": "Path promoted beyond bounded structural evidence",
+      "observed_error": "Path lacks bounded structural evidence: GlyRS-P01",
+      "status": "PASS"
+    }
+  ],
+  "controls_executed": 10,
+  "phase": "A",
+  "schema_version": 1,
+  "status": "PASS"
+}
