@@ -1,0 +1,1280 @@
+{
+  "authorization": {
+    "branch_worktree_creation": false,
+    "commit": false,
+    "kinetics_QSSA_reduction": false,
+    "local_structural_B1_3": true,
+    "push": false,
+    "scientific_signoff": false
+  },
+  "browser_status": "PASS",
+  "commands": [
+    {
+      "actual_command": "D:\\Code\\Anaconda\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\build_witnesses.py",
+      "ended_Asia_Shanghai": "2026-10-10T02:17:08.526721+08:00",
+      "exit_code": 0,
+      "started_Asia_Shanghai": "2026-10-10T02:17:07.477767+08:00",
+      "stderr": "",
+      "stdout": "{\"witnesses\": 34, \"inventory\": {\"all_directions\": 968, \"selected\": 258, \"core\": 187, \"search_positive\": 67, \"selected_positive\": 83, \"selected_zero\": 175, \"classification_counts\": {\"AUTHOR_DISABLED_CONTEXT\": 175, \"OUT_OF_B1_3_SCOPE\": 710, \"RECYCLE_SEARCH_SCOPE\": 25, \"SHARED_BOUNDARY_CONTEXT\": 16, \"TERM_SEARCH_SCOPE\": 42}}, \"events\": {\"W_T1_RF1_RELEASE\": 2, \"W_D1_RF1_DIRECT\": 1, \"W_F1_RF1_RF3_EXCHANGE\": 7, \"W_F1_RF1_RF3_GTP_SUPPLY\": 5, \"W_F1_RF1_RF3_APO_SUPPLY\": 6, \"W_R1_RF1_TO_RECYCLING\": 10, \"W_R1_RF1_EFG_FIRST\": 10, \"W_R1_RF1_AFTER_RF3\": 9, \"W_JOINT_RF1\": 42, \"W_JOINT_RF1_RF3\": 48, \"W_T2_RF2_RELEASE\": 2, \"W_D2_RF2_DIRECT\": 1, \"W_F2_RF2_RF3_EXCHANGE\": 7, \"W_F2_RF2_RF3_GTP_SUPPLY\": 5, \"W_F2_RF2_RF3_APO_SUPPLY\": 6, \"W_R2_RF2_TO_RECYCLING\": 10, \"W_R2_RF2_EFG_FIRST\": 10, \"W_R2_RF2_AFTER_RF3\": 9, \"W_JOINT_RF2\": 42, \"W_JOINT_RF2_RF3\": 48, \"W_C_W_D1_RF1_DIRECT\": 3, \"W_C_W_F1_RF1_RF3_EXCHANGE\": 9, \"W_C_W_F1_RF1_RF3_GTP_SUPPLY\": 7, \"W_C_W_F1_RF1_RF3_APO_SUPPLY\": 8, \"W_C_W_R1_RF1_TO_RECYCLING\": 12, \"W_C_W_R1_RF1_EFG_FIRST\": 12, \"W_C_W_R1_RF1_AFTER_RF3\": 18, \"W_C_W_D2_RF2_DIRECT\": 3, \"W_C_W_F2_RF2_RF3_EXCHANGE\": 9, \"W_C_W_F2_RF2_RF3_GTP_SUPPLY\": 7, \"W_C_W_F2_RF2_RF3_APO_SUPPLY\": 8, \"W_C_W_R2_RF2_TO_RECYCLING\": 12, \"W_C_W_R2_RF2_EFG_FIRST\": 12, \"W_C_W_R2_RF2_AFTER_RF3\": 18}}\n"
+    },
+    {
+      "actual_command": "D:\\Code\\Anaconda\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\verify_witnesses.py",
+      "ended_Asia_Shanghai": "2026-10-10T02:17:09.414186+08:00",
+      "exit_code": 0,
+      "started_Asia_Shanghai": "2026-10-10T02:17:08.526721+08:00",
+      "stderr": "",
+      "stdout": "{\"status\": \"PASS\", \"witnesses_checked\": 34, \"error\": null}\n"
+    },
+    {
+      "actual_command": "D:\\Code\\Anaconda\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\test_negative_controls.py",
+      "ended_Asia_Shanghai": "2026-10-10T02:17:11.595943+08:00",
+      "exit_code": 0,
+      "started_Asia_Shanghai": "2026-10-10T02:17:09.415185+08:00",
+      "stderr": "",
+      "stdout": "{\"status\": \"PASS\", \"controls_run\": 36, \"controls_passed\": 36, \"controls_failed\": 0, \"petri_enabled_lineage_invalid_count\": 11}\n"
+    },
+    {
+      "actual_command": "C:\\Users\\sean\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\inspect_original_evidence.py",
+      "ended_Asia_Shanghai": "2026-10-10T02:17:12.505647+08:00",
+      "exit_code": 0,
+      "started_Asia_Shanghai": "2026-10-10T02:17:11.595943+08:00",
+      "stderr": "",
+      "stdout": "{\"status\": \"PASS\", \"subsystem_rows\": 232, \"S27_parameters\": 64, \"S27_definitions\": 40, \"unchanged_files\": 7}\n"
+    }
+  ],
+  "determinism": {
+    "delivered_hashes": {
+      "phase_b1_3_independent_verification.json": "fdd4a54480dfa194d88e93127f82802e805debaf9d09ef5ff21f6562d031230b",
+      "phase_b1_3_matrix_verification.json": "1e81071162ed2a235926d6192bdc529a84df269f8232e2404fff30cff0e61297",
+      "phase_b1_3_negative_controls.json": "ba9297dc5140261debb3b50d83e5cd72440f93e6f85c3ed03bb61b65a1abc064",
+      "phase_b1_3_original_source_evidence.json": "506d5642dad2662d726f04b17e48d05a8db71e3988f0aa42eef294f484668d96",
+      "phase_b1_3_original_source_evidence.md": "05fadfab05957194a6bfda4b9da75e1b117e0290442bf84e99efac8a61e20e83",
+      "phase_b1_3_source_matrices.json": "7fc9af3f85670eca1b5ca0c91cd3e0692bea3e8ed5ef18fe008cbd63a897d627",
+      "phase_b1_3_source_scope.json": "d30bde807c7b3176aeee9fe8c86210008f906232f53e41f1b5f1b1c7bf02be24",
+      "phase_b1_3_termination_recycling_pathways.md": "22e739d50466a44cc6703b5be5332474d65123c3db4cbd7f3a1202c7a37231b5",
+      "phase_b1_3_witnesses.json": "91f492af2b7b72bf253c3fe0fba583b6d6a980d6c107017ea29fbc3c2abd000d"
+    },
+    "deterministic_deliverables": [
+      "phase_b1_3_source_scope.json",
+      "phase_b1_3_witnesses.json",
+      "phase_b1_3_termination_recycling_pathways.md",
+      "phase_b1_3_independent_verification.json",
+      "phase_b1_3_negative_controls.json",
+      "phase_b1_3_original_source_evidence.json",
+      "phase_b1_3_original_source_evidence.md",
+      "phase_b1_3_source_matrices.json",
+      "phase_b1_3_matrix_verification.json"
+    ],
+    "executions": [
+      {
+        "actual_command": "D:\\Code\\Anaconda\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\build_witnesses.py --output-dir C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-determinism-a171gt34\\0",
+        "ended_Asia_Shanghai": "2026-10-10T02:19:36.706029+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:19:35.661444+08:00",
+        "stderr": "",
+        "stdout": "{\"witnesses\": 34, \"inventory\": {\"all_directions\": 968, \"selected\": 258, \"core\": 187, \"search_positive\": 67, \"selected_positive\": 83, \"selected_zero\": 175, \"classification_counts\": {\"AUTHOR_DISABLED_CONTEXT\": 175, \"OUT_OF_B1_3_SCOPE\": 710, \"RECYCLE_SEARCH_SCOPE\": 25, \"SHARED_BOUNDARY_CONTEXT\": 16, \"TERM_SEARCH_SCOPE\": 42}}, \"events\": {\"W_T1_RF1_RELEASE\": 2, \"W_D1_RF1_DIRECT\": 1, \"W_F1_RF1_RF3_EXCHANGE\": 7, \"W_F1_RF1_RF3_GTP_SUPPLY\": 5, \"W_F1_RF1_RF3_APO_SUPPLY\": 6, \"W_R1_RF1_TO_RECYCLING\": 10, \"W_R1_RF1_EFG_FIRST\": 10, \"W_R1_RF1_AFTER_RF3\": 9, \"W_JOINT_RF1\": 42, \"W_JOINT_RF1_RF3\": 48, \"W_T2_RF2_RELEASE\": 2, \"W_D2_RF2_DIRECT\": 1, \"W_F2_RF2_RF3_EXCHANGE\": 7, \"W_F2_RF2_RF3_GTP_SUPPLY\": 5, \"W_F2_RF2_RF3_APO_SUPPLY\": 6, \"W_R2_RF2_TO_RECYCLING\": 10, \"W_R2_RF2_EFG_FIRST\": 10, \"W_R2_RF2_AFTER_RF3\": 9, \"W_JOINT_RF2\": 42, \"W_JOINT_RF2_RF3\": 48, \"W_C_W_D1_RF1_DIRECT\": 3, \"W_C_W_F1_RF1_RF3_EXCHANGE\": 9, \"W_C_W_F1_RF1_RF3_GTP_SUPPLY\": 7, \"W_C_W_F1_RF1_RF3_APO_SUPPLY\": 8, \"W_C_W_R1_RF1_TO_RECYCLING\": 12, \"W_C_W_R1_RF1_EFG_FIRST\": 12, \"W_C_W_R1_RF1_AFTER_RF3\": 18, \"W_C_W_D2_RF2_DIRECT\": 3, \"W_C_W_F2_RF2_RF3_EXCHANGE\": 9, \"W_C_W_F2_RF2_RF3_GTP_SUPPLY\": 7, \"W_C_W_F2_RF2_RF3_APO_SUPPLY\": 8, \"W_C_W_R2_RF2_TO_RECYCLING\": 12, \"W_C_W_R2_RF2_EFG_FIRST\": 12, \"W_C_W_R2_RF2_AFTER_RF3\": 18}}\n"
+      },
+      {
+        "actual_command": "D:\\Code\\Anaconda\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\verify_witnesses.py --input-dir C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-determinism-a171gt34\\0 --report C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-determinism-a171gt34\\0\\phase_b1_3_independent_verification.json",
+        "ended_Asia_Shanghai": "2026-10-10T02:19:37.610846+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:19:36.706029+08:00",
+        "stderr": "",
+        "stdout": "{\"status\": \"PASS\", \"witnesses_checked\": 34, \"error\": null}\n"
+      },
+      {
+        "actual_command": "D:\\Code\\Anaconda\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\test_negative_controls.py --input-dir C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-determinism-a171gt34\\0 --report C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-determinism-a171gt34\\0\\phase_b1_3_negative_controls.json",
+        "ended_Asia_Shanghai": "2026-10-10T02:19:39.819826+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:19:37.610846+08:00",
+        "stderr": "",
+        "stdout": "{\"status\": \"PASS\", \"controls_run\": 36, \"controls_passed\": 36, \"controls_failed\": 0, \"petri_enabled_lineage_invalid_count\": 11}\n"
+      },
+      {
+        "actual_command": "C:\\Users\\sean\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\inspect_original_evidence.py --output-dir C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-determinism-a171gt34\\0",
+        "ended_Asia_Shanghai": "2026-10-10T02:19:40.825702+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:19:39.819826+08:00",
+        "stderr": "",
+        "stdout": "{\"status\": \"PASS\", \"subsystem_rows\": 232, \"S27_parameters\": 64, \"S27_definitions\": 40, \"unchanged_files\": 7}\n"
+      },
+      {
+        "actual_command": "D:\\Code\\Anaconda\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\build_witnesses.py --output-dir C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-determinism-a171gt34\\1",
+        "ended_Asia_Shanghai": "2026-10-10T02:19:41.931216+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:19:40.866701+08:00",
+        "stderr": "",
+        "stdout": "{\"witnesses\": 34, \"inventory\": {\"all_directions\": 968, \"selected\": 258, \"core\": 187, \"search_positive\": 67, \"selected_positive\": 83, \"selected_zero\": 175, \"classification_counts\": {\"AUTHOR_DISABLED_CONTEXT\": 175, \"OUT_OF_B1_3_SCOPE\": 710, \"RECYCLE_SEARCH_SCOPE\": 25, \"SHARED_BOUNDARY_CONTEXT\": 16, \"TERM_SEARCH_SCOPE\": 42}}, \"events\": {\"W_T1_RF1_RELEASE\": 2, \"W_D1_RF1_DIRECT\": 1, \"W_F1_RF1_RF3_EXCHANGE\": 7, \"W_F1_RF1_RF3_GTP_SUPPLY\": 5, \"W_F1_RF1_RF3_APO_SUPPLY\": 6, \"W_R1_RF1_TO_RECYCLING\": 10, \"W_R1_RF1_EFG_FIRST\": 10, \"W_R1_RF1_AFTER_RF3\": 9, \"W_JOINT_RF1\": 42, \"W_JOINT_RF1_RF3\": 48, \"W_T2_RF2_RELEASE\": 2, \"W_D2_RF2_DIRECT\": 1, \"W_F2_RF2_RF3_EXCHANGE\": 7, \"W_F2_RF2_RF3_GTP_SUPPLY\": 5, \"W_F2_RF2_RF3_APO_SUPPLY\": 6, \"W_R2_RF2_TO_RECYCLING\": 10, \"W_R2_RF2_EFG_FIRST\": 10, \"W_R2_RF2_AFTER_RF3\": 9, \"W_JOINT_RF2\": 42, \"W_JOINT_RF2_RF3\": 48, \"W_C_W_D1_RF1_DIRECT\": 3, \"W_C_W_F1_RF1_RF3_EXCHANGE\": 9, \"W_C_W_F1_RF1_RF3_GTP_SUPPLY\": 7, \"W_C_W_F1_RF1_RF3_APO_SUPPLY\": 8, \"W_C_W_R1_RF1_TO_RECYCLING\": 12, \"W_C_W_R1_RF1_EFG_FIRST\": 12, \"W_C_W_R1_RF1_AFTER_RF3\": 18, \"W_C_W_D2_RF2_DIRECT\": 3, \"W_C_W_F2_RF2_RF3_EXCHANGE\": 9, \"W_C_W_F2_RF2_RF3_GTP_SUPPLY\": 7, \"W_C_W_F2_RF2_RF3_APO_SUPPLY\": 8, \"W_C_W_R2_RF2_TO_RECYCLING\": 12, \"W_C_W_R2_RF2_EFG_FIRST\": 12, \"W_C_W_R2_RF2_AFTER_RF3\": 18}}\n"
+      },
+      {
+        "actual_command": "D:\\Code\\Anaconda\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\verify_witnesses.py --input-dir C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-determinism-a171gt34\\1 --report C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-determinism-a171gt34\\1\\phase_b1_3_independent_verification.json",
+        "ended_Asia_Shanghai": "2026-10-10T02:19:42.852528+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:19:41.931216+08:00",
+        "stderr": "",
+        "stdout": "{\"status\": \"PASS\", \"witnesses_checked\": 34, \"error\": null}\n"
+      },
+      {
+        "actual_command": "D:\\Code\\Anaconda\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\test_negative_controls.py --input-dir C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-determinism-a171gt34\\1 --report C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-determinism-a171gt34\\1\\phase_b1_3_negative_controls.json",
+        "ended_Asia_Shanghai": "2026-10-10T02:19:45.042377+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:19:42.853519+08:00",
+        "stderr": "",
+        "stdout": "{\"status\": \"PASS\", \"controls_run\": 36, \"controls_passed\": 36, \"controls_failed\": 0, \"petri_enabled_lineage_invalid_count\": 11}\n"
+      },
+      {
+        "actual_command": "C:\\Users\\sean\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\inspect_original_evidence.py --output-dir C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-determinism-a171gt34\\1",
+        "ended_Asia_Shanghai": "2026-10-10T02:19:45.977367+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:19:45.042377+08:00",
+        "stderr": "",
+        "stdout": "{\"status\": \"PASS\", \"subsystem_rows\": 232, \"S27_parameters\": 64, \"S27_definitions\": 40, \"unchanged_files\": 7}\n"
+      }
+    ],
+    "fresh_builds": 2,
+    "fresh_hashes": [
+      {
+        "phase_b1_3_independent_verification.json": "fdd4a54480dfa194d88e93127f82802e805debaf9d09ef5ff21f6562d031230b",
+        "phase_b1_3_matrix_verification.json": "1e81071162ed2a235926d6192bdc529a84df269f8232e2404fff30cff0e61297",
+        "phase_b1_3_negative_controls.json": "ba9297dc5140261debb3b50d83e5cd72440f93e6f85c3ed03bb61b65a1abc064",
+        "phase_b1_3_original_source_evidence.json": "506d5642dad2662d726f04b17e48d05a8db71e3988f0aa42eef294f484668d96",
+        "phase_b1_3_original_source_evidence.md": "05fadfab05957194a6bfda4b9da75e1b117e0290442bf84e99efac8a61e20e83",
+        "phase_b1_3_source_matrices.json": "7fc9af3f85670eca1b5ca0c91cd3e0692bea3e8ed5ef18fe008cbd63a897d627",
+        "phase_b1_3_source_scope.json": "d30bde807c7b3176aeee9fe8c86210008f906232f53e41f1b5f1b1c7bf02be24",
+        "phase_b1_3_termination_recycling_pathways.md": "22e739d50466a44cc6703b5be5332474d65123c3db4cbd7f3a1202c7a37231b5",
+        "phase_b1_3_witnesses.json": "91f492af2b7b72bf253c3fe0fba583b6d6a980d6c107017ea29fbc3c2abd000d"
+      },
+      {
+        "phase_b1_3_independent_verification.json": "fdd4a54480dfa194d88e93127f82802e805debaf9d09ef5ff21f6562d031230b",
+        "phase_b1_3_matrix_verification.json": "1e81071162ed2a235926d6192bdc529a84df269f8232e2404fff30cff0e61297",
+        "phase_b1_3_negative_controls.json": "ba9297dc5140261debb3b50d83e5cd72440f93e6f85c3ed03bb61b65a1abc064",
+        "phase_b1_3_original_source_evidence.json": "506d5642dad2662d726f04b17e48d05a8db71e3988f0aa42eef294f484668d96",
+        "phase_b1_3_original_source_evidence.md": "05fadfab05957194a6bfda4b9da75e1b117e0290442bf84e99efac8a61e20e83",
+        "phase_b1_3_source_matrices.json": "7fc9af3f85670eca1b5ca0c91cd3e0692bea3e8ed5ef18fe008cbd63a897d627",
+        "phase_b1_3_source_scope.json": "d30bde807c7b3176aeee9fe8c86210008f906232f53e41f1b5f1b1c7bf02be24",
+        "phase_b1_3_termination_recycling_pathways.md": "22e739d50466a44cc6703b5be5332474d65123c3db4cbd7f3a1202c7a37231b5",
+        "phase_b1_3_witnesses.json": "91f492af2b7b72bf253c3fe0fba583b6d6a980d6c107017ea29fbc3c2abd000d"
+      }
+    ],
+    "matrix_determinism": {
+      "delivered_hashes": {
+        "phase_b1_3_matrix_verification.json": "1e81071162ed2a235926d6192bdc529a84df269f8232e2404fff30cff0e61297",
+        "phase_b1_3_source_matrices.json": "7fc9af3f85670eca1b5ca0c91cd3e0692bea3e8ed5ef18fe008cbd63a897d627"
+      },
+      "executions": [
+        {
+          "actual_command": "D:\\Code\\Anaconda\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\audit_full_matrices.py --input-dir C:\\Users\\sean\\Desktop\\GUV\\docs\\reduction\\pathways --output-dir C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-matrix-determinism-ucr24008\\0",
+          "ended_Asia_Shanghai": "2026-10-10T02:21:24.867590+08:00",
+          "exit_code": 0,
+          "started_Asia_Shanghai": "2026-10-10T02:21:24.063078+08:00",
+          "stderr": "",
+          "stdout": "{\"status\": \"PASS\", \"matrix_shape\": [241, 968], \"raw_arc_entries\": 3854, \"arc_coefficient_sum\": \"3855\", \"witnesses_checked\": 34}\n"
+        },
+        {
+          "actual_command": "D:\\Code\\Anaconda\\python.exe -B C:\\Users\\sean\\Desktop\\GUV\\scripts\\pathways\\phase_b1_3\\audit_full_matrices.py --input-dir C:\\Users\\sean\\Desktop\\GUV\\docs\\reduction\\pathways --output-dir C:\\Users\\sean\\AppData\\Local\\Temp\\b1-3-matrix-determinism-ucr24008\\1",
+          "ended_Asia_Shanghai": "2026-10-10T02:21:25.699361+08:00",
+          "exit_code": 0,
+          "started_Asia_Shanghai": "2026-10-10T02:21:24.889712+08:00",
+          "stderr": "",
+          "stdout": "{\"status\": \"PASS\", \"matrix_shape\": [241, 968], \"raw_arc_entries\": 3854, \"arc_coefficient_sum\": \"3855\", \"witnesses_checked\": 34}\n"
+        }
+      ],
+      "fresh_hashes": [
+        {
+          "phase_b1_3_matrix_verification.json": "1e81071162ed2a235926d6192bdc529a84df269f8232e2404fff30cff0e61297",
+          "phase_b1_3_source_matrices.json": "7fc9af3f85670eca1b5ca0c91cd3e0692bea3e8ed5ef18fe008cbd63a897d627"
+        },
+        {
+          "phase_b1_3_matrix_verification.json": "1e81071162ed2a235926d6192bdc529a84df269f8232e2404fff30cff0e61297",
+          "phase_b1_3_source_matrices.json": "7fc9af3f85670eca1b5ca0c91cd3e0692bea3e8ed5ef18fe008cbd63a897d627"
+        }
+      ],
+      "status": "PASS"
+    },
+    "status": "PASS"
+  },
+  "ended_Asia_Shanghai": "2026-10-10T02:21:27.778835+08:00",
+  "execution_status": "B1_3_ENGINEERING_COMPLETE_PENDING_HUMAN_REVIEW",
+  "explicit_full_matrix_audit": {
+    "arc_coefficient_sum": "3855",
+    "arc_count_semantics": "3854 species-reference edges carrying exact weights; sum of edge coefficients is 3855 because PO4 coefficient 2 in re0000000414.",
+    "matrix_shape": [
+      241,
+      968
+    ],
+    "raw_arc_entries": 3854,
+    "status": "PASS",
+    "witnesses_checked": 34
+  },
+  "gates": [
+    {
+      "criterion": "Source hashes/counts and source provenance",
+      "evidence": "phase_b1_3_independent_verification.json; phase_b1_3_original_source_evidence.json",
+      "gate": "A",
+      "status": "PASS"
+    },
+    {
+      "criterion": "All 968 classified; 258 exact selected contexts",
+      "evidence": "phase_b1_3_independent_verification.json; phase_b1_3_original_source_evidence.json",
+      "gate": "B",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Shared T_pre and RF1/RF2 exclusive competition",
+      "evidence": "phase_b1_3_independent_verification.json; phase_b1_3_original_source_evidence.json",
+      "gate": "C",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Independent free Pept0003 release in both branches",
+      "evidence": "phase_b1_3_independent_verification.json; phase_b1_3_original_source_evidence.json",
+      "gate": "D",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Direct/RF3 alternatives and finite nucleotide carriers",
+      "evidence": "phase_b1_3_independent_verification.json; phase_b1_3_original_source_evidence.json",
+      "gate": "E",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Both source-supported full ribosome recycling endpoints",
+      "evidence": "phase_b1_3_independent_verification.json; phase_b1_3_original_source_evidence.json",
+      "gate": "F",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Exact S_full*w and per-event Petri execution",
+      "evidence": "phase_b1_3_independent_verification.json; phase_b1_3_matrix_verification.json; phase_b1_3_source_matrices.json",
+      "gate": "G",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Origin tokens and ribosome/factor/tRNA/peptide lineage",
+      "evidence": "phase_b1_3_independent_verification.json; phase_b1_3_original_source_evidence.json",
+      "gate": "H",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Full source-species resource ledgers and cumulative histories",
+      "evidence": "phase_b1_3_independent_verification.json; phase_b1_3_original_source_evidence.json",
+      "gate": "I",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Reverse/alternative/zero parameter topology preserved",
+      "evidence": "phase_b1_3_independent_verification.json; phase_b1_3_original_source_evidence.json",
+      "gate": "J",
+      "status": "PASS"
+    },
+    {
+      "criterion": "36 intended-invariant adversarial controls, >=5 Petri-enabled lineage-invalid",
+      "evidence": "phase_b1_3_negative_controls.json",
+      "gate": "K",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Old source/witness/negative/browser regressions; two fresh identical builds",
+      "evidence": "phase_b1_3_regression.json; validation_report/determinism",
+      "gate": "L",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Tracked raw SHA unchanged; additions only; no commit/push/promotion",
+      "evidence": "validation_report/git_protection; source_baseline/protected_file_hashes",
+      "gate": "M",
+      "status": "PASS"
+    }
+  ],
+  "git_protection": {
+    "beginning_head": "7a95c29b6bf80b567863cc70a631859016144924",
+    "branch": "codex/energy-cycles-v1",
+    "changed_existing_files": [],
+    "commit": "NOT_ATTEMPTED",
+    "ending_git_status": "## codex/energy-cycles-v1...origin/codex/energy-cycles-v1\n?? docs/reduction/pathways/phase_b1_3_evidence_navigation.json\n?? docs/reduction/pathways/phase_b1_3_execution_log.txt\n?? docs/reduction/pathways/phase_b1_3_failure_evidence.jsonl\n?? docs/reduction/pathways/phase_b1_3_independent_verification.json\n?? docs/reduction/pathways/phase_b1_3_matrix_verification.json\n?? docs/reduction/pathways/phase_b1_3_negative_controls.json\n?? docs/reduction/pathways/phase_b1_3_original_source_evidence.json\n?? docs/reduction/pathways/phase_b1_3_original_source_evidence.md\n?? docs/reduction/pathways/phase_b1_3_protocol.md\n?? docs/reduction/pathways/phase_b1_3_regression.json\n?? docs/reduction/pathways/phase_b1_3_review.md\n?? docs/reduction/pathways/phase_b1_3_source_baseline.json\n?? docs/reduction/pathways/phase_b1_3_source_matrices.json\n?? docs/reduction/pathways/phase_b1_3_source_scope.json\n?? docs/reduction/pathways/phase_b1_3_termination_recycling_pathways.md\n?? docs/reduction/pathways/phase_b1_3_validation_report.json\n?? docs/reduction/pathways/phase_b1_3_verification_contract.json\n?? docs/reduction/pathways/phase_b1_3_witnesses.json\n?? scripts/pathways/phase_b1_3/\n",
+    "ending_head": "7a95c29b6bf80b567863cc70a631859016144924",
+    "executions": [
+      {
+        "actual_command": "git rev-parse --show-toplevel",
+        "ended_Asia_Shanghai": "2026-10-10T02:21:26.701565+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:21:26.675562+08:00",
+        "stderr": "",
+        "stdout": "C:/Users/sean/Desktop/GUV\n"
+      },
+      {
+        "actual_command": "git remote get-url origin",
+        "ended_Asia_Shanghai": "2026-10-10T02:21:26.727563+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:21:26.701565+08:00",
+        "stderr": "",
+        "stdout": "https://github.com/DrWanSJ/PURE.git\n"
+      },
+      {
+        "actual_command": "git branch --show-current",
+        "ended_Asia_Shanghai": "2026-10-10T02:21:26.753563+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:21:26.728565+08:00",
+        "stderr": "",
+        "stdout": "codex/energy-cycles-v1\n"
+      },
+      {
+        "actual_command": "git rev-parse HEAD",
+        "ended_Asia_Shanghai": "2026-10-10T02:21:26.782564+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:21:26.753563+08:00",
+        "stderr": "",
+        "stdout": "7a95c29b6bf80b567863cc70a631859016144924\n"
+      },
+      {
+        "actual_command": "git rev-list --left-right --count HEAD...@{upstream}",
+        "ended_Asia_Shanghai": "2026-10-10T02:21:26.813447+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:21:26.782564+08:00",
+        "stderr": "",
+        "stdout": "0\t0\n"
+      },
+      {
+        "actual_command": "git ls-remote --heads origin codex/energy-cycles-v1",
+        "ended_Asia_Shanghai": "2026-10-10T02:21:27.571025+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:21:26.813447+08:00",
+        "stderr": "",
+        "stdout": "7a95c29b6bf80b567863cc70a631859016144924\trefs/heads/codex/energy-cycles-v1\n"
+      },
+      {
+        "actual_command": "git status -sb",
+        "ended_Asia_Shanghai": "2026-10-10T02:21:27.615025+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:21:27.571025+08:00",
+        "stderr": "",
+        "stdout": "## codex/energy-cycles-v1...origin/codex/energy-cycles-v1\n?? docs/reduction/pathways/phase_b1_3_evidence_navigation.json\n?? docs/reduction/pathways/phase_b1_3_execution_log.txt\n?? docs/reduction/pathways/phase_b1_3_failure_evidence.jsonl\n?? docs/reduction/pathways/phase_b1_3_independent_verification.json\n?? docs/reduction/pathways/phase_b1_3_matrix_verification.json\n?? docs/reduction/pathways/phase_b1_3_negative_controls.json\n?? docs/reduction/pathways/phase_b1_3_original_source_evidence.json\n?? docs/reduction/pathways/phase_b1_3_original_source_evidence.md\n?? docs/reduction/pathways/phase_b1_3_protocol.md\n?? docs/reduction/pathways/phase_b1_3_regression.json\n?? docs/reduction/pathways/phase_b1_3_review.md\n?? docs/reduction/pathways/phase_b1_3_source_baseline.json\n?? docs/reduction/pathways/phase_b1_3_source_matrices.json\n?? docs/reduction/pathways/phase_b1_3_source_scope.json\n?? docs/reduction/pathways/phase_b1_3_termination_recycling_pathways.md\n?? docs/reduction/pathways/phase_b1_3_validation_report.json\n?? docs/reduction/pathways/phase_b1_3_verification_contract.json\n?? docs/reduction/pathways/phase_b1_3_witnesses.json\n?? scripts/pathways/phase_b1_3/\n"
+      },
+      {
+        "actual_command": "git diff --name-status",
+        "ended_Asia_Shanghai": "2026-10-10T02:21:27.655024+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:21:27.616048+08:00",
+        "stderr": "",
+        "stdout": ""
+      },
+      {
+        "actual_command": "git diff --cached --name-status",
+        "ended_Asia_Shanghai": "2026-10-10T02:21:27.683990+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:21:27.655024+08:00",
+        "stderr": "",
+        "stdout": ""
+      },
+      {
+        "actual_command": "git ls-files --others --exclude-standard",
+        "ended_Asia_Shanghai": "2026-10-10T02:21:27.739834+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:21:27.685011+08:00",
+        "stderr": "",
+        "stdout": "docs/reduction/pathways/phase_b1_3_evidence_navigation.json\ndocs/reduction/pathways/phase_b1_3_execution_log.txt\ndocs/reduction/pathways/phase_b1_3_failure_evidence.jsonl\ndocs/reduction/pathways/phase_b1_3_independent_verification.json\ndocs/reduction/pathways/phase_b1_3_matrix_verification.json\ndocs/reduction/pathways/phase_b1_3_negative_controls.json\ndocs/reduction/pathways/phase_b1_3_original_source_evidence.json\ndocs/reduction/pathways/phase_b1_3_original_source_evidence.md\ndocs/reduction/pathways/phase_b1_3_protocol.md\ndocs/reduction/pathways/phase_b1_3_regression.json\ndocs/reduction/pathways/phase_b1_3_review.md\ndocs/reduction/pathways/phase_b1_3_source_baseline.json\ndocs/reduction/pathways/phase_b1_3_source_matrices.json\ndocs/reduction/pathways/phase_b1_3_source_scope.json\ndocs/reduction/pathways/phase_b1_3_termination_recycling_pathways.md\ndocs/reduction/pathways/phase_b1_3_validation_report.json\ndocs/reduction/pathways/phase_b1_3_verification_contract.json\ndocs/reduction/pathways/phase_b1_3_witnesses.json\nscripts/pathways/phase_b1_3/audit_full_matrices.py\nscripts/pathways/phase_b1_3/build_witnesses.py\nscripts/pathways/phase_b1_3/finalize_evidence.py\nscripts/pathways/phase_b1_3/inspect_original_evidence.py\nscripts/pathways/phase_b1_3/inspect_source.py\nscripts/pathways/phase_b1_3/run_validation.py\nscripts/pathways/phase_b1_3/test_negative_controls.py\nscripts/pathways/phase_b1_3/verify_witnesses.py\n"
+      },
+      {
+        "actual_command": "git diff --check",
+        "ended_Asia_Shanghai": "2026-10-10T02:21:27.778835+08:00",
+        "exit_code": 0,
+        "started_Asia_Shanghai": "2026-10-10T02:21:27.739834+08:00",
+        "stderr": "",
+        "stdout": ""
+      }
+    ],
+    "live_remote_head": "7a95c29b6bf80b567863cc70a631859016144924",
+    "machine_hostname": "WSJ",
+    "new_authorized_files": [
+      "docs/reduction/pathways/phase_b1_3_evidence_navigation.json",
+      "docs/reduction/pathways/phase_b1_3_execution_log.txt",
+      "docs/reduction/pathways/phase_b1_3_failure_evidence.jsonl",
+      "docs/reduction/pathways/phase_b1_3_independent_verification.json",
+      "docs/reduction/pathways/phase_b1_3_matrix_verification.json",
+      "docs/reduction/pathways/phase_b1_3_negative_controls.json",
+      "docs/reduction/pathways/phase_b1_3_original_source_evidence.json",
+      "docs/reduction/pathways/phase_b1_3_original_source_evidence.md",
+      "docs/reduction/pathways/phase_b1_3_protocol.md",
+      "docs/reduction/pathways/phase_b1_3_regression.json",
+      "docs/reduction/pathways/phase_b1_3_review.md",
+      "docs/reduction/pathways/phase_b1_3_source_baseline.json",
+      "docs/reduction/pathways/phase_b1_3_source_matrices.json",
+      "docs/reduction/pathways/phase_b1_3_source_scope.json",
+      "docs/reduction/pathways/phase_b1_3_termination_recycling_pathways.md",
+      "docs/reduction/pathways/phase_b1_3_validation_report.json",
+      "docs/reduction/pathways/phase_b1_3_verification_contract.json",
+      "docs/reduction/pathways/phase_b1_3_witnesses.json",
+      "scripts/pathways/phase_b1_3/audit_full_matrices.py",
+      "scripts/pathways/phase_b1_3/build_witnesses.py",
+      "scripts/pathways/phase_b1_3/finalize_evidence.py",
+      "scripts/pathways/phase_b1_3/inspect_original_evidence.py",
+      "scripts/pathways/phase_b1_3/inspect_source.py",
+      "scripts/pathways/phase_b1_3/run_validation.py",
+      "scripts/pathways/phase_b1_3/test_negative_controls.py",
+      "scripts/pathways/phase_b1_3/verify_witnesses.py"
+    ],
+    "protected_tracked_files": 2417,
+    "push": "NOT_ATTEMPTED",
+    "repository_root": "C:\\Users\\sean\\Desktop\\GUV",
+    "status": "PASS",
+    "synchronization": [
+      "0",
+      "0"
+    ],
+    "unexpected_new_files": [],
+    "windows_user": "sean"
+  },
+  "independent_verification_summary": {
+    "competition": {
+      "physiological_ranking": "NOT_ESTABLISHED",
+      "second_binding_after_first": "NOT_PETRI_ENABLED",
+      "shared_T_pre": "elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+      "status": "PASS"
+    },
+    "inventory": {
+      "all_directions": 968,
+      "classification_counts": {
+        "AUTHOR_DISABLED_CONTEXT": 175,
+        "OUT_OF_B1_3_SCOPE": 710,
+        "RECYCLE_SEARCH_SCOPE": 25,
+        "SHARED_BOUNDARY_CONTEXT": 16,
+        "TERM_SEARCH_SCOPE": 42
+      },
+      "core": 187,
+      "search_positive": 67,
+      "selected": 258,
+      "selected_positive": 83,
+      "selected_zero": 175
+    },
+    "signed_upstream": {
+      "H3_H4_H6": "CONDITIONAL_UNCHANGED",
+      "accepted_W4_events": 30,
+      "independent_old_W4_check": {
+        "events_checked": 30,
+        "exact_net": {
+          "EFG_GDP": "2",
+          "EFG_GTP": "-2",
+          "EFTu_GDP": "2",
+          "EFTu_GTP_GlytRNAGlyGCC": "-2",
+          "IF2_GDP": "1",
+          "IF2_GTP_fMettRNAfMetCAU": "-1",
+          "PO4": "5",
+          "RS30S": "-1",
+          "RS50S": "-1",
+          "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "1",
+          "mRNA": "-1",
+          "tRNAGlyGCC": "1",
+          "tRNAfMetCAU": "1"
+        },
+        "final_marking": {
+          "EFG_GDP": "2",
+          "EFTu_GDP": "2",
+          "IF1": "1",
+          "IF2_GDP": "1",
+          "IF3": "1",
+          "PO4": "5",
+          "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "1",
+          "tRNAGlyGCC": "1",
+          "tRNAfMetCAU": "1"
+        },
+        "independently_reconstructed_lineage": {
+          "all_input_allocations_reconstructed": true,
+          "dependency_edges": [
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E02",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E01",
+              "species_id": "RS30S_IF3"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E03",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E02",
+              "species_id": "RS30S_IF1_IF3"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E04",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E03",
+              "species_id": "RS30S_IF1_IF3_mRNA"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E05",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E04",
+              "species_id": "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E06",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E05",
+              "species_id": "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E07",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E06",
+              "species_id": "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E08",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E07",
+              "species_id": "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E09",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E08",
+              "species_id": "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E10",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E09",
+              "species_id": "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E11",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E10",
+              "species_id": "elRS70SAGGU0002_fMettRNAfMetCAU"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E12",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E11",
+              "species_id": "elRS70SAGGU0002_fMet"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E13",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E12",
+              "species_id": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E14",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E13",
+              "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E15",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E14",
+              "species_id": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E16",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E15",
+              "species_id": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E17",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E16",
+              "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E18",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E17",
+              "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E19",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E18",
+              "species_id": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E20",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E19",
+              "species_id": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E21",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E20",
+              "species_id": "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E22",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E21",
+              "species_id": "elRS70SAGGU0003_Pept0002"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E23",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E22",
+              "species_id": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E24",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E23",
+              "species_id": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E25",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E24",
+              "species_id": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E26",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E25",
+              "species_id": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E27",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E26",
+              "species_id": "elRS70SBGGU0003_Pept0003tRNAGlyGCC"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E28",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E27",
+              "species_id": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E29",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E28",
+              "species_id": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4"
+            },
+            {
+              "amount": "1",
+              "consumer_event_id": "W4:E30",
+              "evidence_status": "EXTRACTED",
+              "producer_event_id": "W4:E29",
+              "species_id": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP"
+            }
+          ],
+          "endpoint_attached_gly_delivery_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:02",
+          "factor_source_port_histories": [
+            {
+              "events": [
+                {
+                  "event_id": "W4:E12",
+                  "source_input": "elRS70SAGGU0002_fMet",
+                  "source_output": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E13",
+                  "source_input": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+                  "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E14",
+                  "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                  "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E15",
+                  "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+                  "source_output": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+                }
+              ],
+              "factor": "EFTu",
+              "release_event": "W4:E15",
+              "released_source_species": "EFTu_GDP",
+              "source_supply_species": "EFTu_GTP_GlytRNAGlyGCC",
+              "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01",
+              "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+            },
+            {
+              "events": [
+                {
+                  "event_id": "W4:E17",
+                  "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+                  "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+                },
+                {
+                  "event_id": "W4:E18",
+                  "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+                  "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4"
+                },
+                {
+                  "event_id": "W4:E19",
+                  "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+                  "source_output": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP"
+                },
+                {
+                  "event_id": "W4:E20",
+                  "source_input": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+                  "source_output": "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+                }
+              ],
+              "factor": "EFG",
+              "release_event": "W4:E20",
+              "released_source_species": "EFG_GDP",
+              "source_supply_species": "EFG_GTP",
+              "source_token_origin": "BOUNDARY:EFG_GTP:01",
+              "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+            },
+            {
+              "events": [
+                {
+                  "event_id": "W4:E22",
+                  "source_input": "elRS70SAGGU0003_Pept0002",
+                  "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E23",
+                  "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+                  "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E24",
+                  "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                  "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E25",
+                  "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+                  "source_output": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC"
+                }
+              ],
+              "factor": "EFTu",
+              "release_event": "W4:E25",
+              "released_source_species": "EFTu_GDP",
+              "source_supply_species": "EFTu_GTP_GlytRNAGlyGCC",
+              "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:02",
+              "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+            },
+            {
+              "events": [
+                {
+                  "event_id": "W4:E27",
+                  "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+                  "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP"
+                },
+                {
+                  "event_id": "W4:E28",
+                  "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+                  "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4"
+                },
+                {
+                  "event_id": "W4:E29",
+                  "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+                  "source_output": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP"
+                },
+                {
+                  "event_id": "W4:E30",
+                  "source_input": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+                  "source_output": "elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+                }
+              ],
+              "factor": "EFG",
+              "release_event": "W4:E30",
+              "released_source_species": "EFG_GDP",
+              "source_supply_species": "EFG_GTP",
+              "source_token_origin": "BOUNDARY:EFG_GTP:02",
+              "status": "SOURCE_PORT_CONTINUITY; MOLECULAR_IDENTITY_INFERRED"
+            }
+          ],
+          "factor_supply_bindings": {
+            "EFG_GTP": [
+              {
+                "binding_event": "W4:E17",
+                "quantity": "1",
+                "source_token_origin": "BOUNDARY:EFG_GTP:01"
+              },
+              {
+                "binding_event": "W4:E27",
+                "quantity": "1",
+                "source_token_origin": "BOUNDARY:EFG_GTP:02"
+              }
+            ],
+            "EFTu_GTP_GlytRNAGlyGCC": [
+              {
+                "binding_event": "W4:E12",
+                "quantity": "1",
+                "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01"
+              },
+              {
+                "binding_event": "W4:E22",
+                "quantity": "1",
+                "source_token_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:02"
+              }
+            ]
+          },
+          "free_source_release_events": [
+            {
+              "amount": "1",
+              "event_id": "W4:E11",
+              "species_id": "tRNAfMetCAU"
+            },
+            {
+              "amount": "1",
+              "event_id": "W4:E15",
+              "species_id": "EFTu_GDP"
+            },
+            {
+              "amount": "1",
+              "event_id": "W4:E20",
+              "species_id": "EFG_GDP"
+            },
+            {
+              "amount": "1",
+              "event_id": "W4:E21",
+              "species_id": "tRNAGlyGCC"
+            },
+            {
+              "amount": "1",
+              "event_id": "W4:E25",
+              "species_id": "EFTu_GDP"
+            },
+            {
+              "amount": "1",
+              "event_id": "W4:E30",
+              "species_id": "EFG_GDP"
+            }
+          ],
+          "gly_trna_source_port_histories": [
+            {
+              "composition_certificate": false,
+              "delivery_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:01",
+              "events": [
+                {
+                  "event_id": "W4:E12",
+                  "source_input": "elRS70SAGGU0002_fMet",
+                  "source_output": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E13",
+                  "source_input": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+                  "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E14",
+                  "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                  "source_output": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E15",
+                  "source_input": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+                  "source_output": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E16",
+                  "source_input": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+                  "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E17",
+                  "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+                  "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+                },
+                {
+                  "event_id": "W4:E18",
+                  "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+                  "source_output": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4"
+                },
+                {
+                  "event_id": "W4:E19",
+                  "source_input": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+                  "source_output": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP"
+                },
+                {
+                  "event_id": "W4:E20",
+                  "source_input": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+                  "source_output": "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E21",
+                  "source_input": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+                  "source_output": "elRS70SAGGU0003_Pept0002"
+                }
+              ],
+              "meaning": "SOURCE_TOKENS_AND_AUTHOR_VIRTUAL_STATE_CONVENTION",
+              "release_event": "W4:E21",
+              "released_source_species": "tRNAGlyGCC",
+              "source_delivery_species": "EFTu_GTP_GlytRNAGlyGCC"
+            },
+            {
+              "composition_certificate": false,
+              "delivery_origin": "BOUNDARY:EFTu_GTP_GlytRNAGlyGCC:02",
+              "events": [
+                {
+                  "event_id": "W4:E22",
+                  "source_input": "elRS70SAGGU0003_Pept0002",
+                  "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E23",
+                  "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+                  "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E24",
+                  "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+                  "source_output": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E25",
+                  "source_input": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+                  "source_output": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E26",
+                  "source_input": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC",
+                  "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC"
+                },
+                {
+                  "event_id": "W4:E27",
+                  "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+                  "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP"
+                },
+                {
+                  "event_id": "W4:E28",
+                  "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+                  "source_output": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4"
+                },
+                {
+                  "event_id": "W4:E29",
+                  "source_input": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+                  "source_output": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP"
+                },
+                {
+                  "event_id": "W4:E30",
+                  "source_input": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+                  "source_output": "elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+                }
+              ],
+              "meaning": "SOURCE_TOKENS_AND_AUTHOR_VIRTUAL_STATE_CONVENTION",
+              "source_delivery_species": "EFTu_GTP_GlytRNAGlyGCC"
+            }
+          ],
+          "ribosomal_source_history": [
+            {
+              "event_id": "W4:E11",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E10",
+              "input_source_state": "elRS70SAGGU0002_fMettRNAfMetCAU",
+              "output_source_state": "elRS70SAGGU0002_fMet",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E12",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E11",
+              "input_source_state": "elRS70SAGGU0002_fMet",
+              "output_source_state": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E13",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E12",
+              "input_source_state": "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC",
+              "output_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E14",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E13",
+              "input_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC",
+              "output_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E15",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E14",
+              "input_source_state": "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC",
+              "output_source_state": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E16",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E15",
+              "input_source_state": "elRS70SAGGU0002_fMet_GlytRNAGlyGCC",
+              "output_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E17",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E16",
+              "input_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC",
+              "output_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E18",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E17",
+              "input_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP",
+              "output_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E19",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E18",
+              "input_source_state": "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4",
+              "output_source_state": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E20",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E19",
+              "input_source_state": "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP",
+              "output_source_state": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E21",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E20",
+              "input_source_state": "elRS70SAGGU0003_Pept0002tRNAGlyGCC",
+              "output_source_state": "elRS70SAGGU0003_Pept0002",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E22",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E21",
+              "input_source_state": "elRS70SAGGU0003_Pept0002",
+              "output_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E23",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E22",
+              "input_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC",
+              "output_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E24",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E23",
+              "input_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC",
+              "output_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E25",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E24",
+              "input_source_state": "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC",
+              "output_source_state": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E26",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E25",
+              "input_source_state": "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC",
+              "output_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E27",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E26",
+              "input_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC",
+              "output_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E28",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E27",
+              "input_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP",
+              "output_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E29",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E28",
+              "input_source_state": "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4",
+              "output_source_state": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+              "root_source_origin": "W4:E10"
+            },
+            {
+              "event_id": "W4:E30",
+              "identity_status": "EXACT_SOURCE_STATE_CONTINUITY_NOT_MOLECULAR_IDENTITY",
+              "input_origin": "W4:E29",
+              "input_source_state": "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP",
+              "output_source_state": "elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+              "root_source_origin": "W4:E10"
+            }
+          ],
+          "status": "PASS",
+          "unspent_origin_lots": [
+            {
+              "amount": "1",
+              "origin": "W4:E07",
+              "species_id": "PO4"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E08",
+              "species_id": "IF3"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E09",
+              "species_id": "IF1"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E10",
+              "species_id": "IF2_GDP"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E11",
+              "species_id": "tRNAfMetCAU"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E14",
+              "species_id": "PO4"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E15",
+              "species_id": "EFTu_GDP"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E19",
+              "species_id": "PO4"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E20",
+              "species_id": "EFG_GDP"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E21",
+              "species_id": "tRNAGlyGCC"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E24",
+              "species_id": "PO4"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E25",
+              "species_id": "EFTu_GDP"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E29",
+              "species_id": "PO4"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E30",
+              "species_id": "EFG_GDP"
+            },
+            {
+              "amount": "1",
+              "origin": "W4:E30",
+              "species_id": "elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+            }
+          ]
+        },
+        "status": "PASS",
+        "witness_id": "W4"
+      },
+      "status": "PASS"
+    },
+    "source_integrity": {
+      "approved_hash_authority": "Published Phase A protocol/graph, independently pinned in verifier",
+      "arc_coefficient_sum": "3855",
+      "directed_reactions": 968,
+      "hashes": {
+        "docs/reduction/reaction_level_annotation_v2.csv": "ee2f80a3354199a03d3072464cbc301736afad72fba01e4bfcc499c0525f3335",
+        "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+        "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+        "references/PNAS2017_Matsuura/raw/Simulate_fMGG_synthesis.zip": "beb27ebbd314133fbd83f68dcf8ad2ebe08cb16a1adda170b6b7b408ad355b52"
+      },
+      "positive_author_parameters": 483,
+      "re0000000414_PO4": "2",
+      "species": 241,
+      "weighted_petri_arcs": 3854,
+      "zero_author_parameters": 485
+    },
+    "status": "PASS"
+  },
+  "inherited_MATLAB": {
+    "counted_as_B1_3_PASS": false,
+    "fixed": false,
+    "reported_prior_result": "99 passed / 3 failed / 1 incomplete",
+    "status": "NOT_RUN"
+  },
+  "negative_controls_summary": {
+    "controls_failed": 0,
+    "controls_passed": 36,
+    "controls_run": 36,
+    "petri_enabled_lineage_invalid_count": 11,
+    "status": "PASS"
+  },
+  "prior_failed_harness_evidence_retained": "regression/b1_2_positive/previous_attempts and append-only failure_evidence",
+  "regression_status": "PASS",
+  "scientific_limitations": [
+    "No physiological branch ranking or kinetic validation",
+    "Conditional finite supply, not endogenous regeneration",
+    "B1-2 H3/H4/H6 remain conditional",
+    "No complete molecular/elemental/phosphate-moiety certificate",
+    "Standalone complete SI text/PDF not established locally",
+    "No complete route enumeration",
+    "H1-H9 all PENDING_HUMAN_REVIEW"
+  ],
+  "scientific_status": "PENDING_HUMAN_REVIEW",
+  "source_evidence_summary": {
+    "S27_definitions": 40,
+    "S27_parameter_rows": 64,
+    "status": "PASS",
+    "subsystem_rows": 232
+  },
+  "started_Asia_Shanghai": "2026-10-10T02:17:07.475759+08:00",
+  "witness_count": 34
+}

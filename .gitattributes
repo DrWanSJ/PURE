@@ -124,3 +124,21 @@ results/figures/topology_first_*.svg text eol=lf
 docs/reduction/reaction.md text eol=lf
 scripts/render_pnas2017_reaction_atlas.py text eol=lf
 scripts/test_pnas2017_reaction_atlas.py text eol=lf
+
+# 2026-10-10 B1-3 / Phase C release: preserve all hash-bound original bytes.
+docs/reduction/pathways/phase_b1_3_* -text
+scripts/pathways/phase_b1_3/** -text
+configs/reduction/rapid_v1.json -text
+docs/reduction/rapid_reduction/** -text whitespace=cr-at-eol
+scripts/reduction/rapid_v1/** -text
+docs/visualization/phase_c_release_v1.json -text
+docs/visualization/reduction_reasoning_atlas.html -text
+scripts/reduction_reasoning_atlas.template.html -text
+scripts/build_reduction_reasoning_atlas.py -text
+scripts/build_phase_c_dashboard.py -text
+scripts/test_phase_c_dashboard.py -text
+scripts/phase_c_dashboard.* -text
+README.md -text
+docs/README.md -text
+tasklist.md -text
+docs/visualization/visualization_plan.md -text

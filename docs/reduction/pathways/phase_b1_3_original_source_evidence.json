@@ -1,0 +1,4033 @@
+{
+  "S27_definitions": [
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "ribosomal 50S subunit",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 7,
+      "sheet": "initial concentrations",
+      "species_id": "RS50S"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "ribosomal 30S subunit",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 8,
+      "sheet": "initial concentrations",
+      "species_id": "RS30S"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "mRNA",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0.1,
+      "row": 9,
+      "sheet": "initial concentrations",
+      "species_id": "mRNA"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "phosphate",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 16,
+      "sheet": "initial concentrations",
+      "species_id": "PO4"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a complex composed of EF-G and GTP",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 19,
+      "sheet": "initial concentrations",
+      "species_id": "EFG_GTP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a complex composed of EF-G and GDP",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 20,
+      "sheet": "initial concentrations",
+      "species_id": "EFG_GDP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "GTP (guanosine-5'-triphosphate)",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 2500,
+      "row": 24,
+      "sheet": "initial concentrations",
+      "species_id": "GTP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "GDP (guanosine-5'-diphosphate)",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 25,
+      "sheet": "initial concentrations",
+      "species_id": "GDP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "tRNAGlyGCC",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 3.5476718403547673,
+      "row": 41,
+      "sheet": "initial concentrations",
+      "species_id": "tRNAGlyGCC"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "an elongation complex with fMet-Gly-Gly-tRNAGlyGCC at the P site and UAA codon (stop codon in the ORF) at the A site",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 46,
+      "sheet": "initial concentrations",
+      "species_id": "elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "RF1 (release factor 1)",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0.2,
+      "row": 206,
+      "sheet": "initial concentrations",
+      "species_id": "RF1"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "fMet-Gly-Gly",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 207,
+      "sheet": "initial concentrations",
+      "species_id": "Pept0003"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a post-termination complex with tRNAGlyGCC at the P site and UAA stop codon at the A site",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 209,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a pre-termination complex with fMet-Gly-Gly-tRNAGlyGCC at the P site and UAA stop codon and RF1 at the A site",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 210,
+      "sheet": "initial concentrations",
+      "species_id": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a post-termination complex after the peptidyl-tRNA hydrolysis in No. 209 complex",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 211,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF1"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "RF2 (release factor 2)",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0.2,
+      "row": 212,
+      "sheet": "initial concentrations",
+      "species_id": "RF2"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a pre-termination complex with fMet-Gly-Gly-tRNAGlyGCC at the P site and UAA stop codon and RF2 at the A site",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 214,
+      "sheet": "initial concentrations",
+      "species_id": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a post-termination complex after the peptidyl-tRNA hydrolysis in No. 213 complex",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 215,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF2"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "RF3 (release factor 3)",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0.7,
+      "row": 216,
+      "sheet": "initial concentrations",
+      "species_id": "RF3"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a complex composed of RF3 and GDP",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 218,
+      "sheet": "initial concentrations",
+      "species_id": "RF3_GDP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a complex composed of RF3 and GTP",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 219,
+      "sheet": "initial concentrations",
+      "species_id": "RF3_GTP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a post-termination complex with tRNAGlyGCC at the P site, UAA stop codon and RF1 at the A site, and RF3 complex with GDP",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 220,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a post-termination complex with tRNAGlyGCC at the P site, UAA stop codon and RF1 at the A site, and RF3 complex with GTP",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 221,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a post-termination complex with tRNAGlyGCC at the P site, UAA stop codon and RF1 at the A site, and RF3",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 222,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a post-termination complex with tRNAGlyGCC at the P site, UAA stop codon at the A site, and RF3 complex with GTP, after RF1 or RF2 dissociation from No. 220 or No. 226 complex, respectively",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 223,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a complex after phophate is dissociated from No. 224 complex",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 224,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a complex just after GTP hydrolysis in No. 222 complex",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 225,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a post-termination complex with tRNAGlyGCC at the P site, UAA stop codon and RF2 at the A site, and RF3 complex with GDP",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 226,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a post-termination complex with tRNAGlyGCC at the P site, UAA stop codon and RF2 at the A site, and RF3 complex with GTP",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 227,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a post-termination complex with tRNAGlyGCC at the P site, UAA stop codon and RF2 at the A site, and RF3",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 228,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "RRF (ribosome recycling factor)",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 16,
+      "row": 229,
+      "sheet": "initial concentrations",
+      "species_id": "RRF"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a complex composed of 50S ribosomal subunit and RRF",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 231,
+      "sheet": "initial concentrations",
+      "species_id": "RS50S_RRF"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a complex composed of 50S ribosomal subunit, tRNAGlyGCC, and RRF",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 235,
+      "sheet": "initial concentrations",
+      "species_id": "RS50S_tRNAGlyGCC_RRF"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a complex composed of 50S ribosomal subunit, tRNAGlyGCC, RRF, and EF-G complex with GDP",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 236,
+      "sheet": "initial concentrations",
+      "species_id": "RS50S_tRNAGlyGCC_RRF_EFG_GDP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a post-termination complex with tRNAGlyGCC at the P site, UAA stop codon at the A site, and EF-G complex with GTP",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 237,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_EFG_GTP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a post-termination complex with tRNAGlyGCC at the P site, UAA stop codon at the A site, and RRF",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 238,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RRF"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a complex after phosphate is dissociated from No. 239 complex",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 239,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a complex just after GTP is hydrolyzed in No. 240 complex",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 240,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a post-termination complex with tRNAGlyGCC at the P site, UAA stop codon at the A site, RRF, and EF-G complex with GTP",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 241,
+      "sheet": "initial concentrations",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP"
+    },
+    {
+      "authority": "AUTHOR_S27_DEFINITION",
+      "definition": "a complex composed of 30S ribosomal subunit and mRNA, which is formed by the ribosome recycling step",
+      "evidence_status": "EXTRACTED",
+      "initial_uM": 0,
+      "row": 242,
+      "sheet": "initial concentrations",
+      "species_id": "termRS30S_mRNA"
+    }
+  ],
+  "S27_parameters": [
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1",
+      "reactants_cell": "elRS70SAUAA0004_Pept0003tRNAGlyGCC,RF1",
+      "reaction_id": "re0000000796",
+      "reference_number": 25,
+      "reverse_cell": "re0000000797",
+      "row": 797,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 60
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "elRS70SAUAA0004_Pept0003tRNAGlyGCC,RF1",
+      "reactants_cell": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1",
+      "reaction_id": "re0000000797",
+      "reference_number": 25,
+      "reverse_cell": "re0000000796",
+      "row": 798,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 0.0028
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1,Pept0003",
+      "reactants_cell": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1",
+      "reaction_id": "re0000000798",
+      "reference_number": 25,
+      "reverse_cell": "re0000000810",
+      "row": 799,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 0.5
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC,RF1",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1",
+      "reaction_id": "re0000000799",
+      "reference_number": 25,
+      "reverse_cell": "re0000000800",
+      "row": 800,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 0.0028
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC,RF1",
+      "reaction_id": "re0000000800",
+      "reference_number": 25,
+      "reverse_cell": "re0000000799",
+      "row": 801,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 60
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be an irreversible reaction",
+      "parameter_tag": 3,
+      "products_cell": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1,Pept0003",
+      "reaction_id": "re0000000810",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000798",
+      "row": 811,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 0
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2",
+      "reactants_cell": "elRS70SAUAA0004_Pept0003tRNAGlyGCC,RF2",
+      "reaction_id": "re0000000811",
+      "reference_number": 25,
+      "reverse_cell": "re0000000812",
+      "row": 812,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 23
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "elRS70SAUAA0004_Pept0003tRNAGlyGCC,RF2",
+      "reactants_cell": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2",
+      "reaction_id": "re0000000812",
+      "reference_number": 25,
+      "reverse_cell": "re0000000811",
+      "row": 813,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 0.016
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2,Pept0003",
+      "reactants_cell": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2",
+      "reaction_id": "re0000000813",
+      "reference_number": 25,
+      "reverse_cell": "re0000000823",
+      "row": 814,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 1.5
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC,RF2",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2",
+      "reaction_id": "re0000000814",
+      "reference_number": 25,
+      "reverse_cell": "re0000000815",
+      "row": 815,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 0.016
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC,RF2",
+      "reaction_id": "re0000000815",
+      "reference_number": 25,
+      "reverse_cell": "re0000000814",
+      "row": 816,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 23
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be an irreversible reaction",
+      "parameter_tag": 3,
+      "products_cell": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2,Pept0003",
+      "reaction_id": "re0000000823",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000813",
+      "row": 824,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 0
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP",
+      "reactants_cell": "RF3_GDP,termRS70SUAA0004_tRNAGlyGCC_RF1",
+      "reaction_id": "re0000000829",
+      "reference_number": 2,
+      "reverse_cell": "re0000000830",
+      "row": 830,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 30
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1,RF3_GDP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP",
+      "reaction_id": "re0000000830",
+      "reference_number": 2,
+      "reverse_cell": "re0000000829",
+      "row": 831,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 25
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1,RF3_GTP",
+      "reaction_id": "re0000000831",
+      "reference_number": 2,
+      "reverse_cell": "re0000000832",
+      "row": 832,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 30
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1,RF3_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP",
+      "reaction_id": "re0000000832",
+      "reference_number": 2,
+      "reverse_cell": "re0000000831",
+      "row": 833,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 25
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1,RF3",
+      "reaction_id": "re0000000833",
+      "reference_number": 2,
+      "reverse_cell": "re0000000834",
+      "row": 834,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 30
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1,RF3",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3",
+      "reaction_id": "re0000000834",
+      "reference_number": 2,
+      "reverse_cell": "re0000000833",
+      "row": 835,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 25
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP,RF1",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP",
+      "reaction_id": "re0000000838",
+      "reference_number": 25,
+      "reverse_cell": "re0000000839",
+      "row": 839,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 0.3
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP,RF1",
+      "reaction_id": "re0000000839",
+      "reference_number": 25,
+      "reverse_cell": "re0000000838",
+      "row": 840,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 60
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP",
+      "reaction_id": "re0000000840",
+      "reference_number": 2,
+      "reverse_cell": "re0000000841",
+      "row": 841,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 31
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4",
+      "reaction_id": "re0000000841",
+      "reference_number": 2,
+      "reverse_cell": "re0000000840",
+      "row": 842,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 5
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP,PO4",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4",
+      "reaction_id": "re0000000842",
+      "reference_number": 2,
+      "reverse_cell": "re0000000868",
+      "row": 843,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 5
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3,GDP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP",
+      "reaction_id": "re0000000843",
+      "reference_number": 27,
+      "reverse_cell": "re0000000844",
+      "row": 844,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 10.5
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3,GDP",
+      "reaction_id": "re0000000844",
+      "reference_number": 26,
+      "reverse_cell": "re0000000843",
+      "row": 845,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 5.82
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3,GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP",
+      "reaction_id": "re0000000845",
+      "reference_number": 26,
+      "reverse_cell": "re0000000846",
+      "row": 846,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 10
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3,GTP",
+      "reaction_id": "re0000000846",
+      "reference_number": 26,
+      "reverse_cell": "re0000000845",
+      "row": 847,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 25
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be a fast reaction",
+      "parameter_tag": 2,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC,RF3_GDP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP",
+      "reaction_id": "re0000000847",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000869",
+      "row": 848,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 1000
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be an irreversible reaction",
+      "parameter_tag": 3,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP,PO4",
+      "reaction_id": "re0000000868",
+      "reference_number": 2,
+      "reverse_cell": "re0000000842",
+      "row": 869,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 0
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed that RF3 does not bind to the ribosome without RF1 or RF2",
+      "parameter_tag": 3,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP",
+      "reactants_cell": "RF3_GDP,termRS70SUAA0004_tRNAGlyGCC",
+      "reaction_id": "re0000000869",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000847",
+      "row": 870,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 0
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP",
+      "reactants_cell": "RF3_GDP,termRS70SUAA0004_tRNAGlyGCC_RF2",
+      "reaction_id": "re0000000870",
+      "reference_number": 2,
+      "reverse_cell": "re0000000871",
+      "row": 871,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 30
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2,RF3_GDP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP",
+      "reaction_id": "re0000000871",
+      "reference_number": 2,
+      "reverse_cell": "re0000000870",
+      "row": 872,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 25
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2,RF3_GTP",
+      "reaction_id": "re0000000872",
+      "reference_number": 2,
+      "reverse_cell": "re0000000873",
+      "row": 873,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 30
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2,RF3_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP",
+      "reaction_id": "re0000000873",
+      "reference_number": 2,
+      "reverse_cell": "re0000000872",
+      "row": 874,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 25
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2,RF3",
+      "reaction_id": "re0000000874",
+      "reference_number": 2,
+      "reverse_cell": "re0000000875",
+      "row": 875,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 30
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "the value was obtained from EF-G, a similar GTPase factor",
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2,RF3",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3",
+      "reaction_id": "re0000000875",
+      "reference_number": 2,
+      "reverse_cell": "re0000000874",
+      "row": 876,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 25
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP,RF2",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP",
+      "reaction_id": "re0000000879",
+      "reference_number": 26,
+      "reverse_cell": "re0000000880",
+      "row": 880,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 0.77
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP,RF2",
+      "reaction_id": "re0000000880",
+      "reference_number": 26,
+      "reverse_cell": "re0000000879",
+      "row": 881,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 23
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3,GDP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP",
+      "reaction_id": "re0000000881",
+      "reference_number": 27,
+      "reverse_cell": "re0000000882",
+      "row": 882,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 10.5
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3,GDP",
+      "reaction_id": "re0000000882",
+      "reference_number": 26,
+      "reverse_cell": "re0000000881",
+      "row": 883,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 5.82
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3,GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP",
+      "reaction_id": "re0000000883",
+      "reference_number": 26,
+      "reverse_cell": "re0000000884",
+      "row": 884,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 10
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3,GTP",
+      "reaction_id": "re0000000884",
+      "reference_number": 26,
+      "reverse_cell": "re0000000883",
+      "row": 885,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 25
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF,EFG_GTP",
+      "reaction_id": "re0000000895",
+      "reference_number": 28,
+      "reverse_cell": "re0000000896",
+      "row": 896,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 31
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF,EFG_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP",
+      "reaction_id": "re0000000896",
+      "reference_number": 28,
+      "reverse_cell": "re0000000895",
+      "row": 897,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 2.4
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_EFG_GTP,RRF",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP",
+      "reaction_id": "re0000000900",
+      "reference_number": 28,
+      "reverse_cell": "re0000000901",
+      "row": 901,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 0.6
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_EFG_GTP,RRF",
+      "reaction_id": "re0000000901",
+      "reference_number": 28,
+      "reverse_cell": "re0000000900",
+      "row": 902,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 3.1
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP,PO4",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4",
+      "reaction_id": "re0000000902",
+      "reference_number": 2,
+      "reverse_cell": "re0000000956",
+      "row": 903,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 5
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC,RRF",
+      "reaction_id": "re0000000904",
+      "reference_number": 28,
+      "reverse_cell": "re0000000905",
+      "row": 905,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 3.1
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC,RRF",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF",
+      "reaction_id": "re0000000905",
+      "reference_number": 28,
+      "reverse_cell": "re0000000904",
+      "row": 906,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 0.6
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_EFG_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC,EFG_GTP",
+      "reaction_id": "re0000000906",
+      "reference_number": 28,
+      "reverse_cell": "re0000000907",
+      "row": 907,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 31
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC,EFG_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_EFG_GTP",
+      "reaction_id": "re0000000907",
+      "reference_number": 28,
+      "reverse_cell": "re0000000906",
+      "row": 908,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 2.4
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP",
+      "reaction_id": "re0000000908",
+      "reference_number": 2,
+      "reverse_cell": "re0000000909",
+      "row": 909,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 31
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": null,
+      "parameter_tag": 1,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4",
+      "reaction_id": "re0000000909",
+      "reference_number": 2,
+      "reverse_cell": "re0000000908",
+      "row": 910,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 5
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be a fast reaction",
+      "parameter_tag": 2,
+      "products_cell": "RS50S_tRNAGlyGCC_RRF_EFG_GDP,termRS30S_mRNA",
+      "reactants_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP",
+      "reaction_id": "re0000000910",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000957",
+      "row": 911,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 1000
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be a fast reaction",
+      "parameter_tag": 2,
+      "products_cell": "RS30S,mRNA",
+      "reactants_cell": "termRS30S_mRNA",
+      "reaction_id": "re0000000911",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000912",
+      "row": 912,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 1000
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be an irreversible reaction",
+      "parameter_tag": 3,
+      "products_cell": "termRS30S_mRNA",
+      "reactants_cell": "RS30S,mRNA",
+      "reaction_id": "re0000000912",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000911",
+      "row": 913,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 0
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be a fast reaction",
+      "parameter_tag": 2,
+      "products_cell": "RS50S_tRNAGlyGCC_RRF,EFG_GDP",
+      "reactants_cell": "RS50S_tRNAGlyGCC_RRF_EFG_GDP",
+      "reaction_id": "re0000000913",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000959",
+      "row": 914,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 1000
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be a fast reaction",
+      "parameter_tag": 2,
+      "products_cell": "RS50S_RRF,tRNAGlyGCC",
+      "reactants_cell": "RS50S_tRNAGlyGCC_RRF",
+      "reaction_id": "re0000000916",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000965",
+      "row": 917,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 1000
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be a fast reaction",
+      "parameter_tag": 2,
+      "products_cell": "RS50S,RRF",
+      "reactants_cell": "RS50S_RRF",
+      "reaction_id": "re0000000918",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000968",
+      "row": 919,
+      "sheet": "reactions and parameters",
+      "unit": "s-1",
+      "value": 1000
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be an irreversible reaction",
+      "parameter_tag": 3,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4",
+      "reactants_cell": "PO4,termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP",
+      "reaction_id": "re0000000956",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000902",
+      "row": 957,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 0
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be an irreversible reaction",
+      "parameter_tag": 3,
+      "products_cell": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP",
+      "reactants_cell": "RS50S_tRNAGlyGCC_RRF_EFG_GDP,termRS30S_mRNA",
+      "reaction_id": "re0000000957",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000910",
+      "row": 958,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 0
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be an irreversible reaction",
+      "parameter_tag": 3,
+      "products_cell": "RS50S_tRNAGlyGCC_RRF_EFG_GDP",
+      "reactants_cell": "EFG_GDP,RS50S_tRNAGlyGCC_RRF",
+      "reaction_id": "re0000000959",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000913",
+      "row": 960,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 0
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be an irreversible reaction",
+      "parameter_tag": 3,
+      "products_cell": "RS50S_tRNAGlyGCC_RRF",
+      "reactants_cell": "tRNAGlyGCC,RS50S_RRF",
+      "reaction_id": "re0000000965",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000916",
+      "row": 966,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 0
+    },
+    {
+      "canonical_parameter_agrees": true,
+      "note": "assumed to be an irreversible reaction",
+      "parameter_tag": 3,
+      "products_cell": "RS50S_RRF",
+      "reactants_cell": "RRF,RS50S",
+      "reaction_id": "re0000000968",
+      "reference_number": "n/a",
+      "reverse_cell": "re0000000918",
+      "row": 969,
+      "sheet": "reactions and parameters",
+      "unit": "mM-1s-1",
+      "value": 0
+    }
+  ],
+  "author_operational_initial_values": {
+    "EFG_GDP": "0",
+    "EFG_GTP": "0",
+    "GDP": "0",
+    "GTP": "2500",
+    "PO4": "0",
+    "Pept0003": "0",
+    "RF1": "0.2",
+    "RF2": "0.2",
+    "RF3": "0.7",
+    "RF3_GDP": "0",
+    "RF3_GTP": "0",
+    "RRF": "16",
+    "RS30S": "0",
+    "RS50S": "0",
+    "RS50S_RRF": "0",
+    "RS50S_tRNAGlyGCC_RRF": "0",
+    "RS50S_tRNAGlyGCC_RRF_EFG_GDP": "0",
+    "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "0",
+    "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1": "0",
+    "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2": "0",
+    "mRNA": "0.1",
+    "tRNAGlyGCC": "3.54767184",
+    "termRS30S_mRNA": "0",
+    "termRS70SUAA0004_tRNAGlyGCC": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_EFG_GTP": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RF1": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RF2": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RRF": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4": "0",
+    "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP": "0"
+  },
+  "complete_standalone_SI_text_pdf": "NOT_ESTABLISHED_LOCALLY",
+  "composition_certificate": "NOT_ESTABLISHED",
+  "initial_concentration_comparison": [
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "RS50S"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "RS30S"
+    },
+    {
+      "S27_uM": "0.1",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0.1",
+      "species_id": "mRNA"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "PO4"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "EFG_GTP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "EFG_GDP"
+    },
+    {
+      "S27_uM": "2500",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "2500",
+      "species_id": "GTP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "GDP"
+    },
+    {
+      "S27_uM": "3.5476718403547673",
+      "agrees": false,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "3.54767184",
+      "species_id": "tRNAGlyGCC"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+    },
+    {
+      "S27_uM": "0.2",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0.2",
+      "species_id": "RF1"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "Pept0003"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF1"
+    },
+    {
+      "S27_uM": "0.2",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0.2",
+      "species_id": "RF2"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF2"
+    },
+    {
+      "S27_uM": "0.7",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0.7",
+      "species_id": "RF3"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "RF3_GDP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "RF3_GTP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3"
+    },
+    {
+      "S27_uM": "16",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "16",
+      "species_id": "RRF"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "RS50S_RRF"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "RS50S_tRNAGlyGCC_RRF"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "RS50S_tRNAGlyGCC_RRF_EFG_GDP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_EFG_GTP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RRF"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP"
+    },
+    {
+      "S27_uM": "0",
+      "agrees": true,
+      "authority": "OPERATIONAL_CSV_FOR_OPERATION; S27_RETAINED_AS_ORIGINAL_DEFINITION",
+      "operational_CSV_value": "0",
+      "species_id": "termRS30S_mRNA"
+    }
+  ],
+  "paper": {
+    "claims": "Article establishes combined model architecture; exact B1-3 steps are established by canonical SBML/S12-S16/S27, not by a physiological inference from paper figures.",
+    "doi": "10.1073/pnas.1615351114",
+    "evidence_status": "EXTRACTED_LIMITED_CONTEXT",
+    "full_pages_read": [
+      2,
+      7,
+      8
+    ],
+    "keyword_locators": [
+      {
+        "keyword": "termination",
+        "page": 2,
+        "present": true
+      },
+      {
+        "keyword": "recycling",
+        "page": 2,
+        "present": false
+      },
+      {
+        "keyword": "RF3",
+        "page": 2,
+        "present": false
+      },
+      {
+        "keyword": "EF-G",
+        "page": 2,
+        "present": false
+      },
+      {
+        "keyword": "termination",
+        "page": 7,
+        "present": true
+      },
+      {
+        "keyword": "recycling",
+        "page": 7,
+        "present": false
+      },
+      {
+        "keyword": "RF3",
+        "page": 7,
+        "present": false
+      },
+      {
+        "keyword": "EF-G",
+        "page": 7,
+        "present": true
+      },
+      {
+        "keyword": "termination",
+        "page": 8,
+        "present": false
+      },
+      {
+        "keyword": "recycling",
+        "page": 8,
+        "present": false
+      },
+      {
+        "keyword": "RF3",
+        "page": 8,
+        "present": false
+      },
+      {
+        "keyword": "EF-G",
+        "page": 8,
+        "present": false
+      }
+    ],
+    "path": "references/PNAS2017_Matsuura/raw/matsuura-et-al-2017-reaction-dynamics-analysis-of-a-reconstituted-escherichia-coli-protein-translation-system-by.pdf"
+  },
+  "parameter_references": [
+    {
+      "PMID": 16489743,
+      "number": 2,
+      "reference": "Seo, H. S., Abedin, S., Kamp, D., Wilson, D. N., Nierhaus, K. H., and Cooperman, B. S. (2006) EF-G-dependent GTPase on the ribosome. Conformational change and fusidic acid inhibition. Biochemistry 45: 2504-2514",
+      "row": 3
+    },
+    {
+      "PMID": 12419223,
+      "number": 25,
+      "reference": "Zavialov, A. V., Mora, L., Buckingham, R. H., and Ehrenberg, M. (2002) Release of peptide promoted by the GGQ motif of class 1 release factors regulates the GTPase activity of RF3. Mol. Cell 10: 789-798",
+      "row": 26
+    },
+    {
+      "PMID": 11595190,
+      "number": 26,
+      "reference": "Zavialov, A. V., Buckingham, R. H., and Ehrenberg, M. (2001) A posttermination ribosomal complex is the guanine nucleotide exchange factor for peptide release factor RF3. Cell 107: 115-124",
+      "row": 27
+    },
+    {
+      "PMID": 17540173,
+      "number": 27,
+      "reference": "Gao, H., Zhou, Z., Rawat, U., Huang, C., Bouakaz, L., Wang, C., Cheng, Z., Liu, Y., Zavialov, A., Gursky, R., Sanyal, S., Ehrenberg, M., Frank, J., and Song, H. (2007) RF3 induces ribosomal conformational changes responsible for dissociation of class I release factors. Cell 129: 929-941",
+      "row": 28
+    },
+    {
+      "PMID": 15461445,
+      "number": 28,
+      "reference": "Seo, H. S., Kiel, M., Pan, D., Raj, V. S., Kaji, A., and Cooperman, B. S. (2004) Kinetics and thermodynamics of RRF, EF-G, and thiostrepton interaction on the Escherichia coli ribosome. Biochemistry 43: 12728-12740",
+      "row": 29
+    }
+  ],
+  "reader_warnings": [
+    {
+      "file": "pnas.1615351114.sd27.xlsx",
+      "warning": "Unknown extension is not supported and will be removed"
+    }
+  ],
+  "source_hashes": {
+    "references/PNAS2017_Matsuura/raw/matsuura-et-al-2017-reaction-dynamics-analysis-of-a-reconstituted-escherichia-coli-protein-translation-system-by.pdf": "e340ba829f87121e723059aebecc56c342c37c2cc4687692d1447f16b38f2a4e",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx": "87051f1a25498750d16bcaccd9f4c3b8849c2b6a76efa119373b041de1ee54ed",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx": "f2c6c7c20859cf1fa5cfa78415d4923422e4b2577cc0aa04a110ffe1cb83be56",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx": "db1207bdabcc43f950fa86dcba4c93e82d7c0fae7af857ca6d5362a67e57c046",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx": "3e292593b51b7c90b77a6c092c90592cf35311e39375e18a9934ebb839202845",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx": "4f683eb04f06112b219aba97b246dd2009c3eaccf24e83bd7d51dae9b7c0f695",
+    "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd27.xlsx": "d52052e6ce24ddcd1894e95b3f759f1a047600e6ffccff28cc2dcd2b8d94b227"
+  },
+  "source_state_contract": "Opaque finite carrier lineage projected from original source IDs; molecular interpretation remains qualified.",
+  "status": "PASS",
+  "subsystem_reaction_rows": [
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000003",
+      "canonical_sides_agree": true,
+      "equation": "RS50S -> RS50S_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re91",
+      "row": 2,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000004",
+      "canonical_sides_agree": true,
+      "equation": "RS30S -> RS30S_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re92",
+      "row": 3,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000117",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC -> Pept0003tRNAGlyGCC + RS30S_degraded + RS50S + mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re206",
+      "row": 4,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000116",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC -> Pept0003tRNAGlyGCC + RS30S + RS50S_degraded + mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re207",
+      "row": 5,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000008",
+      "canonical_sides_agree": true,
+      "equation": "mRNA -> mRNA_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re208",
+      "row": 6,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000090",
+      "canonical_sides_agree": true,
+      "equation": "Pept0003tRNAGlyGCC -> Pept0003tRNAGlyGCC_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re209",
+      "row": 7,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000796",
+      "canonical_sides_agree": true,
+      "equation": "RF1 + elRS70SAUAA0004_Pept0003tRNAGlyGCC -> elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re210",
+      "row": 8,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000797",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1 -> RF1 + elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re211",
+      "row": 9,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000798",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1 -> Pept0003 + termRS70SUAA0004_tRNAGlyGCC_RF1",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re212",
+      "row": 10,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000799",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1 -> RF1 + termRS70SUAA0004_tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re213",
+      "row": 11,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000800",
+      "canonical_sides_agree": true,
+      "equation": "RF1 + termRS70SUAA0004_tRNAGlyGCC -> termRS70SUAA0004_tRNAGlyGCC_RF1",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re214",
+      "row": 12,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000801",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1 -> Pept0003tRNAGlyGCC + RF1 + RS30S_degraded + RS50S + mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re217",
+      "row": 13,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000802",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1 -> Pept0003tRNAGlyGCC + RF1 + RS30S + RS50S_degraded + mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re218",
+      "row": 14,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000803",
+      "canonical_sides_agree": true,
+      "equation": "RF1 -> RF1_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re219",
+      "row": 15,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000070",
+      "canonical_sides_agree": true,
+      "equation": "tRNAGlyGCC -> tRNAGlyGCC_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re220",
+      "row": 16,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000804",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1 -> Pept0003tRNAGlyGCC + RF1_degraded + RS30S + RS50S + mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re222",
+      "row": 17,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000805",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1 -> RF1 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re223",
+      "row": 18,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000806",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1 -> RF1 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re224",
+      "row": 19,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000807",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1 -> RF1_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re225",
+      "row": 20,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000808",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC -> RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re226",
+      "row": 21,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000809",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC -> RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re227",
+      "row": 22,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000810",
+      "canonical_sides_agree": true,
+      "equation": "Pept0003 + termRS70SUAA0004_tRNAGlyGCC_RF1 -> elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd12.xlsx",
+      "local_id": "re228",
+      "row": 23,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000003",
+      "canonical_sides_agree": true,
+      "equation": "RS50S -> RS50S_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re91",
+      "row": 2,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000004",
+      "canonical_sides_agree": true,
+      "equation": "RS30S -> RS30S_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re92",
+      "row": 3,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000117",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC -> Pept0003tRNAGlyGCC + RS30S_degraded + RS50S + mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re206",
+      "row": 4,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000116",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC -> Pept0003tRNAGlyGCC + RS30S + RS50S_degraded + mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re207",
+      "row": 5,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000008",
+      "canonical_sides_agree": true,
+      "equation": "mRNA -> mRNA_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re208",
+      "row": 6,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000090",
+      "canonical_sides_agree": true,
+      "equation": "Pept0003tRNAGlyGCC -> Pept0003tRNAGlyGCC_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re209",
+      "row": 7,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000811",
+      "canonical_sides_agree": true,
+      "equation": "RF2 + elRS70SAUAA0004_Pept0003tRNAGlyGCC -> elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re210",
+      "row": 8,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000812",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2 -> RF2 + elRS70SAUAA0004_Pept0003tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re211",
+      "row": 9,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000813",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2 -> Pept0003 + termRS70SUAA0004_tRNAGlyGCC_RF2",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re212",
+      "row": 10,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000814",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2 -> RF2 + termRS70SUAA0004_tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re213",
+      "row": 11,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000815",
+      "canonical_sides_agree": true,
+      "equation": "RF2 + termRS70SUAA0004_tRNAGlyGCC -> termRS70SUAA0004_tRNAGlyGCC_RF2",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re214",
+      "row": 12,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000816",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2 -> Pept0003tRNAGlyGCC + RF2 + RS30S_degraded + RS50S + mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re217",
+      "row": 13,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000817",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2 -> Pept0003tRNAGlyGCC + RF2 + RS30S + RS50S_degraded + mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re218",
+      "row": 14,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000818",
+      "canonical_sides_agree": true,
+      "equation": "RF2 -> RF2_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re219",
+      "row": 15,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000070",
+      "canonical_sides_agree": true,
+      "equation": "tRNAGlyGCC -> tRNAGlyGCC_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re220",
+      "row": 16,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000819",
+      "canonical_sides_agree": true,
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2 -> Pept0003tRNAGlyGCC + RF2_degraded + RS30S + RS50S + mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re222",
+      "row": 17,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000820",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2 -> RF2 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re223",
+      "row": 18,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000821",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2 -> RF2 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re224",
+      "row": 19,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000822",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2 -> RF2_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re225",
+      "row": 20,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000808",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC -> RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re226",
+      "row": 21,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000809",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC -> RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re227",
+      "row": 22,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000823",
+      "canonical_sides_agree": true,
+      "equation": "Pept0003 + termRS70SUAA0004_tRNAGlyGCC_RF2 -> elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd13.xlsx",
+      "local_id": "re228",
+      "row": 23,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000003",
+      "canonical_sides_agree": true,
+      "equation": "RS50S -> RS50S_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re91",
+      "row": 2,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000004",
+      "canonical_sides_agree": true,
+      "equation": "RS30S -> RS30S_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re92",
+      "row": 3,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000008",
+      "canonical_sides_agree": true,
+      "equation": "mRNA -> mRNA_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re208",
+      "row": 4,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000803",
+      "canonical_sides_agree": true,
+      "equation": "RF1 -> RF1_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re219",
+      "row": 5,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000070",
+      "canonical_sides_agree": true,
+      "equation": "tRNAGlyGCC -> tRNAGlyGCC_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re220",
+      "row": 6,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000824",
+      "canonical_sides_agree": true,
+      "equation": "RF3 -> RF3_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re228",
+      "row": 7,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000825",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GDP -> GDP + RF3",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re230",
+      "row": 8,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000826",
+      "canonical_sides_agree": true,
+      "equation": "GDP + RF3 -> RF3_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re231",
+      "row": 9,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000827",
+      "canonical_sides_agree": true,
+      "equation": "GTP + RF3 -> RF3_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re232",
+      "row": 10,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000828",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GTP -> GTP + RF3",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re233",
+      "row": 11,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000829",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GDP + termRS70SUAA0004_tRNAGlyGCC_RF1 -> termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re234",
+      "row": 12,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000830",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP -> RF3_GDP + termRS70SUAA0004_tRNAGlyGCC_RF1",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re235",
+      "row": 13,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000831",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GTP + termRS70SUAA0004_tRNAGlyGCC_RF1 -> termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re236",
+      "row": 14,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000832",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP -> RF3_GTP + termRS70SUAA0004_tRNAGlyGCC_RF1",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re237",
+      "row": 15,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000833",
+      "canonical_sides_agree": true,
+      "equation": "RF3 + termRS70SUAA0004_tRNAGlyGCC_RF1 -> termRS70SUAA0004_tRNAGlyGCC_RF1_RF3",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re242",
+      "row": 16,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000834",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3 -> RF3 + termRS70SUAA0004_tRNAGlyGCC_RF1",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re243",
+      "row": 17,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000835",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP -> GTP + RF1 + RF3 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re259",
+      "row": 18,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000836",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP -> GTP + RF1 + RF3 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re260",
+      "row": 19,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000837",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP -> GTP + RF1_degraded + RF3 + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re261",
+      "row": 20,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000838",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP -> RF1 + termRS70SUAA0004_tRNAGlyGCC_RF3_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re264",
+      "row": 21,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000839",
+      "canonical_sides_agree": true,
+      "equation": "RF1 + termRS70SUAA0004_tRNAGlyGCC_RF3_GTP -> termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re265",
+      "row": 22,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000840",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP -> termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re266",
+      "row": 23,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000841",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4 -> termRS70SUAA0004_tRNAGlyGCC_RF3_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re267",
+      "row": 24,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000842",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4 -> PO4 + termRS70SUAA0004_tRNAGlyGCC_RF3_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re268",
+      "row": 25,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000843",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP -> GDP + termRS70SUAA0004_tRNAGlyGCC_RF1_RF3",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re269",
+      "row": 26,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000844",
+      "canonical_sides_agree": true,
+      "equation": "GDP + termRS70SUAA0004_tRNAGlyGCC_RF1_RF3 -> termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re270",
+      "row": 27,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000845",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP -> GTP + termRS70SUAA0004_tRNAGlyGCC_RF1_RF3",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re271",
+      "row": 28,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000846",
+      "canonical_sides_agree": true,
+      "equation": "GTP + termRS70SUAA0004_tRNAGlyGCC_RF1_RF3 -> termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re272",
+      "row": 29,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000847",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP -> RF3_GDP + termRS70SUAA0004_tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re273",
+      "row": 30,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000848",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GDP -> GDP + RF3_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re274",
+      "row": 31,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000849",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GTP -> GTP + RF3_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re275",
+      "row": 32,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000850",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP -> GTP + RF1 + RF3_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re276",
+      "row": 33,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000851",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP -> GDP + RF1 + RF3 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re277",
+      "row": 34,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000852",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP -> GDP + RF1 + RF3 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re278",
+      "row": 35,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000853",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP -> GDP + RF1_degraded + RF3 + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re279",
+      "row": 36,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000854",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP -> GDP + RF1 + RF3_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re280",
+      "row": 37,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000855",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3 -> RF1 + RF3 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re281",
+      "row": 38,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000856",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3 -> RF1 + RF3 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re282",
+      "row": 39,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000857",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3 -> RF1_degraded + RF3 + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re283",
+      "row": 40,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000858",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3 -> RF1 + RF3_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re284",
+      "row": 41,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000859",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP -> GTP + RF3 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re289",
+      "row": 42,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000860",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP -> GTP + RF3 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re290",
+      "row": 43,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000861",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP -> GTP + RF3_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re291",
+      "row": 44,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000862",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4 -> GDP + PO4 + RF3 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re296",
+      "row": 45,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000863",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4 -> GDP + PO4 + RF3 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re297",
+      "row": 46,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000864",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4 -> GDP + PO4 + RF3_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re298",
+      "row": 47,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000865",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP -> GDP + RF3 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re299",
+      "row": 48,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000866",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP -> GDP + RF3 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re300",
+      "row": 49,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000867",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP -> GDP + RF3_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re301",
+      "row": 50,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000868",
+      "canonical_sides_agree": true,
+      "equation": "PO4 + termRS70SUAA0004_tRNAGlyGCC_RF3_GDP -> termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re302",
+      "row": 51,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000869",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GDP + termRS70SUAA0004_tRNAGlyGCC -> termRS70SUAA0004_tRNAGlyGCC_RF3_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd14.xlsx",
+      "local_id": "re303",
+      "row": 52,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000003",
+      "canonical_sides_agree": true,
+      "equation": "RS50S -> RS50S_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re91",
+      "row": 2,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000004",
+      "canonical_sides_agree": true,
+      "equation": "RS30S -> RS30S_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re92",
+      "row": 3,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000008",
+      "canonical_sides_agree": true,
+      "equation": "mRNA -> mRNA_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re208",
+      "row": 4,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000818",
+      "canonical_sides_agree": true,
+      "equation": "RF2 -> RF2_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re219",
+      "row": 5,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000070",
+      "canonical_sides_agree": true,
+      "equation": "tRNAGlyGCC -> tRNAGlyGCC_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re220",
+      "row": 6,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000824",
+      "canonical_sides_agree": true,
+      "equation": "RF3 -> RF3_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re228",
+      "row": 7,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000825",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GDP -> GDP + RF3",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re230",
+      "row": 8,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000826",
+      "canonical_sides_agree": true,
+      "equation": "GDP + RF3 -> RF3_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re231",
+      "row": 9,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000827",
+      "canonical_sides_agree": true,
+      "equation": "GTP + RF3 -> RF3_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re232",
+      "row": 10,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000828",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GTP -> GTP + RF3",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re233",
+      "row": 11,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000870",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GDP + termRS70SUAA0004_tRNAGlyGCC_RF2 -> termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re234",
+      "row": 12,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000871",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP -> RF3_GDP + termRS70SUAA0004_tRNAGlyGCC_RF2",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re235",
+      "row": 13,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000872",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GTP + termRS70SUAA0004_tRNAGlyGCC_RF2 -> termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re236",
+      "row": 14,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000873",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP -> RF3_GTP + termRS70SUAA0004_tRNAGlyGCC_RF2",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re237",
+      "row": 15,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000874",
+      "canonical_sides_agree": true,
+      "equation": "RF3 + termRS70SUAA0004_tRNAGlyGCC_RF2 -> termRS70SUAA0004_tRNAGlyGCC_RF2_RF3",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re242",
+      "row": 16,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000875",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3 -> RF3 + termRS70SUAA0004_tRNAGlyGCC_RF2",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re243",
+      "row": 17,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000876",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP -> GTP + RF2 + RF3 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re259",
+      "row": 18,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000877",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP -> GTP + RF2 + RF3 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re260",
+      "row": 19,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000878",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP -> GTP + RF2_degraded + RF3 + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re261",
+      "row": 20,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000879",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP -> RF2 + termRS70SUAA0004_tRNAGlyGCC_RF3_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re264",
+      "row": 21,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000880",
+      "canonical_sides_agree": true,
+      "equation": "RF2 + termRS70SUAA0004_tRNAGlyGCC_RF3_GTP -> termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re265",
+      "row": 22,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000840",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP -> termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re266",
+      "row": 23,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000841",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4 -> termRS70SUAA0004_tRNAGlyGCC_RF3_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re267",
+      "row": 24,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000842",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4 -> PO4 + termRS70SUAA0004_tRNAGlyGCC_RF3_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re268",
+      "row": 25,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000881",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP -> GDP + termRS70SUAA0004_tRNAGlyGCC_RF2_RF3",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re269",
+      "row": 26,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000882",
+      "canonical_sides_agree": true,
+      "equation": "GDP + termRS70SUAA0004_tRNAGlyGCC_RF2_RF3 -> termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re270",
+      "row": 27,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000883",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP -> GTP + termRS70SUAA0004_tRNAGlyGCC_RF2_RF3",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re271",
+      "row": 28,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000884",
+      "canonical_sides_agree": true,
+      "equation": "GTP + termRS70SUAA0004_tRNAGlyGCC_RF2_RF3 -> termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re272",
+      "row": 29,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000847",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP -> RF3_GDP + termRS70SUAA0004_tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re273",
+      "row": 30,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000848",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GDP -> GDP + RF3_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re274",
+      "row": 31,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000849",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GTP -> GTP + RF3_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re275",
+      "row": 32,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000885",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP -> GTP + RF2 + RF3_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re276",
+      "row": 33,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000886",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP -> GDP + RF2 + RF3 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re277",
+      "row": 34,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000887",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP -> GDP + RF2 + RF3 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re278",
+      "row": 35,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000888",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP -> GDP + RF2_degraded + RF3 + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re279",
+      "row": 36,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000889",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP -> GDP + RF2 + RF3_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re280",
+      "row": 37,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000890",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3 -> RF2 + RF3 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re281",
+      "row": 38,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000891",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3 -> RF2 + RF3 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re282",
+      "row": 39,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000892",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3 -> RF2_degraded + RF3 + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re283",
+      "row": 40,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000893",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3 -> RF2 + RF3_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re284",
+      "row": 41,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000859",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP -> GTP + RF3 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re289",
+      "row": 42,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000860",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP -> GTP + RF3 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re290",
+      "row": 43,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000861",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP -> GTP + RF3_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re291",
+      "row": 44,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000862",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4 -> GDP + PO4 + RF3 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re296",
+      "row": 45,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000863",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4 -> GDP + PO4 + RF3 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re297",
+      "row": 46,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000864",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4 -> GDP + PO4 + RF3_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re298",
+      "row": 47,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000865",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP -> GDP + RF3 + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re299",
+      "row": 48,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000866",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP -> GDP + RF3 + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re300",
+      "row": 49,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000867",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP -> GDP + RF3_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re301",
+      "row": 50,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000868",
+      "canonical_sides_agree": true,
+      "equation": "PO4 + termRS70SUAA0004_tRNAGlyGCC_RF3_GDP -> termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re302",
+      "row": 51,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000869",
+      "canonical_sides_agree": true,
+      "equation": "RF3_GDP + termRS70SUAA0004_tRNAGlyGCC -> termRS70SUAA0004_tRNAGlyGCC_RF3_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd15.xlsx",
+      "local_id": "re303",
+      "row": 52,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000003",
+      "canonical_sides_agree": true,
+      "equation": "RS50S -> RS50S_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re91",
+      "row": 2,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000004",
+      "canonical_sides_agree": true,
+      "equation": "RS30S -> RS30S_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re92",
+      "row": 3,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000008",
+      "canonical_sides_agree": true,
+      "equation": "mRNA -> mRNA_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re208",
+      "row": 4,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000894",
+      "canonical_sides_agree": true,
+      "equation": "RRF -> RRF_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re219",
+      "row": 5,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000070",
+      "canonical_sides_agree": true,
+      "equation": "tRNAGlyGCC -> tRNAGlyGCC_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re220",
+      "row": 6,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000030",
+      "canonical_sides_agree": true,
+      "equation": "EFG -> EFG_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re228",
+      "row": 7,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000895",
+      "canonical_sides_agree": true,
+      "equation": "EFG_GTP + termRS70SUAA0004_tRNAGlyGCC_RRF -> termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re236",
+      "row": 8,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000896",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP -> EFG_GTP + termRS70SUAA0004_tRNAGlyGCC_RRF",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re237",
+      "row": 9,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000897",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP -> EFG + GTP + RRF + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re259",
+      "row": 10,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000898",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP -> EFG + GTP + RRF + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re260",
+      "row": 11,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000899",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP -> EFG + GTP + RRF_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re261",
+      "row": 12,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000900",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP -> RRF + termRS70SUAA0004_tRNAGlyGCC_EFG_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re264",
+      "row": 13,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000901",
+      "canonical_sides_agree": true,
+      "equation": "RRF + termRS70SUAA0004_tRNAGlyGCC_EFG_GTP -> termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re265",
+      "row": 14,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000902",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4 -> PO4 + termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re268",
+      "row": 15,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000297",
+      "canonical_sides_agree": true,
+      "equation": "EFG_GDP -> EFG_degraded + GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re274",
+      "row": 16,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000296",
+      "canonical_sides_agree": true,
+      "equation": "EFG_GTP -> EFG_degraded + GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re275",
+      "row": 17,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000903",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP -> EFG_degraded + GTP + RRF + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re276",
+      "row": 18,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000904",
+      "canonical_sides_agree": true,
+      "equation": "RRF + termRS70SUAA0004_tRNAGlyGCC -> termRS70SUAA0004_tRNAGlyGCC_RRF",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re302",
+      "row": 19,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000905",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF -> RRF + termRS70SUAA0004_tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re303",
+      "row": 20,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000906",
+      "canonical_sides_agree": true,
+      "equation": "EFG_GTP + termRS70SUAA0004_tRNAGlyGCC -> termRS70SUAA0004_tRNAGlyGCC_EFG_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re304",
+      "row": 21,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000907",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_EFG_GTP -> EFG_GTP + termRS70SUAA0004_tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re305",
+      "row": 22,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000908",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP -> termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re306",
+      "row": 23,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000909",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4 -> termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re307",
+      "row": 24,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000910",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP -> RS50S_tRNAGlyGCC_RRF_EFG_GDP + termRS30S_mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re308",
+      "row": 25,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000911",
+      "canonical_sides_agree": true,
+      "equation": "termRS30S_mRNA -> RS30S + mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re309",
+      "row": 26,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000912",
+      "canonical_sides_agree": true,
+      "equation": "RS30S + mRNA -> termRS30S_mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re310",
+      "row": 27,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000913",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_RRF_EFG_GDP -> EFG_GDP + RS50S_tRNAGlyGCC_RRF",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re311",
+      "row": 28,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000914",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_RRF_EFG_GDP -> RRF + RS50S_tRNAGlyGCC_EFG_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re312",
+      "row": 29,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000915",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_RRF_EFG_GDP -> RS50S_RRF_EFG_GDP + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re313",
+      "row": 30,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000916",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_RRF -> RS50S_RRF + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re314",
+      "row": 31,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000917",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_RRF -> RRF + RS50S_tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re315",
+      "row": 32,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000918",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_RRF -> RRF + RS50S",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re316",
+      "row": 33,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000919",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC -> RS50S + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re317",
+      "row": 34,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000920",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_EFG_GDP -> EFG_GDP + RS50S_tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re318",
+      "row": 35,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000921",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_EFG_GDP -> RS50S_EFG_GDP + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re319",
+      "row": 36,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000922",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_RRF_EFG_GDP -> EFG_GDP + RS50S_RRF",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re320",
+      "row": 37,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000923",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_RRF_EFG_GDP -> RRF + RS50S_EFG_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re321",
+      "row": 38,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000308",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_EFG_GDP -> EFG_GDP + RS50S",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re322",
+      "row": 39,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000924",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC -> RS50S_degraded + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re323",
+      "row": 40,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000925",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_RRF -> RRF + RS50S_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re324",
+      "row": 41,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000315",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_EFG_GDP -> EFG + GDP + RS50S_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re325",
+      "row": 42,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000926",
+      "canonical_sides_agree": true,
+      "equation": "termRS30S_mRNA -> RS30S_degraded + mRNA",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re326",
+      "row": 43,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000927",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC -> RS50S + tRNAGlyGCC_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re327",
+      "row": 44,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000928",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_RRF -> RRF_degraded + RS50S",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re328",
+      "row": 45,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000314",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_EFG_GDP -> EFG_degraded + GDP + RS50S",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re329",
+      "row": 46,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000929",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_RRF -> RRF + RS50S + tRNAGlyGCC_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re331",
+      "row": 47,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000930",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_RRF -> RRF + RS50S_degraded + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re332",
+      "row": 48,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000931",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_RRF -> RRF_degraded + RS50S + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re333",
+      "row": 49,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000932",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_EFG_GDP -> EFG + GDP + RS50S + tRNAGlyGCC_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re337",
+      "row": 50,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000933",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_EFG_GDP -> EFG + GDP + RS50S_degraded + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re338",
+      "row": 51,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000934",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_EFG_GDP -> EFG_degraded + GDP + RS50S + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re339",
+      "row": 52,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000935",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_RRF_EFG_GDP -> EFG + GDP + RRF_degraded + RS50S",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re340",
+      "row": 53,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000936",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_RRF_EFG_GDP -> EFG + GDP + RRF + RS50S_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re341",
+      "row": 54,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000937",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_RRF_EFG_GDP -> EFG_degraded + GDP + RRF + RS50S",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re342",
+      "row": 55,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000938",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF -> RRF + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re343",
+      "row": 56,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000939",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF -> RRF + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re344",
+      "row": 57,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000940",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF -> RRF_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re345",
+      "row": 58,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000941",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_EFG_GTP -> EFG + GTP + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re347",
+      "row": 59,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000942",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_EFG_GTP -> EFG + GTP + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re348",
+      "row": 60,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000943",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_EFG_GTP -> EFG_degraded + GTP + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re349",
+      "row": 61,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000944",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP -> EFG + GDP + RRF + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re351",
+      "row": 62,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000945",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP -> EFG + GDP + RRF + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re352",
+      "row": 63,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000946",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP -> EFG + GDP + RRF_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re353",
+      "row": 64,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000947",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP -> EFG_degraded + GDP + RRF + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re354",
+      "row": 65,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000948",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4 -> EFG + GDP + PO4 + RRF + RS30S_degraded + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re355",
+      "row": 66,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000949",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4 -> EFG + GDP + PO4 + RRF + RS30S + RS50S_degraded + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re356",
+      "row": 67,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000950",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4 -> EFG + GDP + PO4 + RRF_degraded + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re357",
+      "row": 68,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000951",
+      "canonical_sides_agree": true,
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4 -> EFG_degraded + GDP + PO4 + RRF + RS30S + RS50S + mRNA + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re358",
+      "row": 69,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000952",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_RRF_EFG_GDP -> EFG + GDP + RRF + RS50S + tRNAGlyGCC_degraded",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re359",
+      "row": 70,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000953",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_RRF_EFG_GDP -> EFG + GDP + RRF + RS50S_degraded + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re360",
+      "row": 71,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000954",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_RRF_EFG_GDP -> EFG_degraded + GDP + RRF + RS50S + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re361",
+      "row": 72,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000955",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_RRF_EFG_GDP -> EFG + GDP + RRF_degraded + RS50S + tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re362",
+      "row": 73,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000956",
+      "canonical_sides_agree": true,
+      "equation": "PO4 + termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP -> termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re363",
+      "row": 74,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000957",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_tRNAGlyGCC_RRF_EFG_GDP + termRS30S_mRNA -> termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re364",
+      "row": 75,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000958",
+      "canonical_sides_agree": true,
+      "equation": "RRF + RS50S_tRNAGlyGCC_EFG_GDP -> RS50S_tRNAGlyGCC_RRF_EFG_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re365",
+      "row": 76,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000959",
+      "canonical_sides_agree": true,
+      "equation": "EFG_GDP + RS50S_tRNAGlyGCC_RRF -> RS50S_tRNAGlyGCC_RRF_EFG_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re366",
+      "row": 77,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000960",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_RRF_EFG_GDP + tRNAGlyGCC -> RS50S_tRNAGlyGCC_RRF_EFG_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re367",
+      "row": 78,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000961",
+      "canonical_sides_agree": true,
+      "equation": "EFG_GDP + RS50S_tRNAGlyGCC -> RS50S_tRNAGlyGCC_EFG_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re368",
+      "row": 79,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000962",
+      "canonical_sides_agree": true,
+      "equation": "RRF + RS50S_tRNAGlyGCC -> RS50S_tRNAGlyGCC_RRF",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re369",
+      "row": 80,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000963",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_EFG_GDP + tRNAGlyGCC -> RS50S_tRNAGlyGCC_EFG_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re370",
+      "row": 81,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000964",
+      "canonical_sides_agree": true,
+      "equation": "RRF + RS50S_EFG_GDP -> RS50S_RRF_EFG_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re371",
+      "row": 82,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000965",
+      "canonical_sides_agree": true,
+      "equation": "RS50S_RRF + tRNAGlyGCC -> RS50S_tRNAGlyGCC_RRF",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re372",
+      "row": 83,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000966",
+      "canonical_sides_agree": true,
+      "equation": "EFG_GDP + RS50S_RRF -> RS50S_RRF_EFG_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re373",
+      "row": 84,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000967",
+      "canonical_sides_agree": true,
+      "equation": "RS50S + tRNAGlyGCC -> RS50S_tRNAGlyGCC",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re374",
+      "row": 85,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000327",
+      "canonical_sides_agree": true,
+      "equation": "EFG_GDP + RS50S -> RS50S_EFG_GDP",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re375",
+      "row": 86,
+      "sheet": "Reactions"
+    },
+    {
+      "authority": "AUTHOR_SUBSYSTEM_WORKBOOK_CONTEXT",
+      "canonical_id": "re0000000968",
+      "canonical_sides_agree": true,
+      "equation": "RRF + RS50S -> RS50S_RRF",
+      "file": "references/PNAS2017_Matsuura/raw/pnas.1615351114.sd16.xlsx",
+      "local_id": "re376",
+      "row": 87,
+      "sheet": "Reactions"
+    }
+  ],
+  "unchanged_original_files": 7
+}
