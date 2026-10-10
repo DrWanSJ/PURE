@@ -1,0 +1,298 @@
+[
+  {
+    "actual_source_ids": [
+      "re0000000014",
+      "re0000000016",
+      "re0000000017",
+      "re0000000018",
+      "re0000000021"
+    ],
+    "candidate": "CHAIN_1",
+    "competition_split_reduced": 0.0008838335318756489,
+    "competition_split_source": 0.0008838335318756491,
+    "fixture": "UPSTREAM_PULSE",
+    "local_not_full_coupled": true,
+    "solver": {
+      "atol": 1e-13,
+      "method": "BDF",
+      "rtol": 1e-11
+    },
+    "status": "PASS",
+    "stock": {
+      "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": 1
+    },
+    "unit_scale": 1,
+    "windows": [
+      {
+        "product_error": 0.005842464389801905,
+        "range": [
+          0,
+          0.05
+        ],
+        "resource_error": 0.0015987820160024424
+      },
+      {
+        "product_error": 0.0035375393206630856,
+        "range": [
+          0.05,
+          1
+        ],
+        "resource_error": 0.0025628879084809153
+      },
+      {
+        "product_error": 4.012835672118076e-05,
+        "range": [
+          1,
+          1000
+        ],
+        "resource_error": 4.677490819260388e-05
+      }
+    ]
+  },
+  {
+    "actual_source_ids": [
+      "re0000000014",
+      "re0000000016",
+      "re0000000017",
+      "re0000000018",
+      "re0000000021"
+    ],
+    "candidate": "CHAIN_1",
+    "competition_split_reduced": 0.0005303001191253895,
+    "competition_split_source": 0.0005303001191253887,
+    "fixture": "INTERNAL_NONZERO",
+    "local_not_full_coupled": true,
+    "solver": {
+      "atol": 1e-13,
+      "method": "BDF",
+      "rtol": 1e-11
+    },
+    "status": "PASS",
+    "stock": {
+      "EFTu_GDP": 0.1,
+      "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": 0.3,
+      "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC": 0.6,
+      "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": 0.1
+    },
+    "unit_scale": 1,
+    "windows": [
+      {
+        "product_error": 0.09195865576566706,
+        "range": [
+          0,
+          0.05
+        ],
+        "resource_error": 0.1
+      },
+      {
+        "product_error": 0.06754263715866071,
+        "range": [
+          0.05,
+          1
+        ],
+        "resource_error": 0.07211470688754895
+      },
+      {
+        "product_error": 0.0001315243155907142,
+        "range": [
+          1,
+          1000
+        ],
+        "resource_error": 0.00013744069781085333
+      }
+    ]
+  },
+  {
+    "candidate": "CHAIN_1",
+    "fixture": "CHAIN_INTERNAL_DOMAIN",
+    "reason": "Projected free EFTu_GDP=-1; no physically nonnegative reduced initial inventory. Cannot claim arbitrary internal-state domain.",
+    "status": "BLOCKED",
+    "stock": {
+      "EFTu_GDP": 0,
+      "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": 1
+    }
+  },
+  {
+    "actual_source_ids": [
+      "re0000000075",
+      "re0000000077",
+      "re0000000078",
+      "re0000000079",
+      "re0000000082"
+    ],
+    "candidate": "CHAIN_2",
+    "competition_split_reduced": 0.0008838335318756493,
+    "competition_split_source": 0.0008838335318756479,
+    "fixture": "UPSTREAM_PULSE",
+    "local_not_full_coupled": true,
+    "solver": {
+      "atol": 1e-13,
+      "method": "BDF",
+      "rtol": 1e-11
+    },
+    "status": "PASS",
+    "stock": {
+      "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC": 1
+    },
+    "unit_scale": 1,
+    "windows": [
+      {
+        "product_error": 0.005842464389801912,
+        "range": [
+          0,
+          0.05
+        ],
+        "resource_error": 0.0015987820160023314
+      },
+      {
+        "product_error": 0.003537539320662586,
+        "range": [
+          0.05,
+          1
+        ],
+        "resource_error": 0.0025628879084812484
+      },
+      {
+        "product_error": 4.012835672129178e-05,
+        "range": [
+          1,
+          1000
+        ],
+        "resource_error": 4.677490819204877e-05
+      }
+    ]
+  },
+  {
+    "actual_source_ids": [
+      "re0000000075",
+      "re0000000077",
+      "re0000000078",
+      "re0000000079",
+      "re0000000082"
+    ],
+    "candidate": "CHAIN_2",
+    "competition_split_reduced": 0.0005303001191253898,
+    "competition_split_source": 0.000530300119125388,
+    "fixture": "INTERNAL_NONZERO",
+    "local_not_full_coupled": true,
+    "solver": {
+      "atol": 1e-13,
+      "method": "BDF",
+      "rtol": 1e-11
+    },
+    "status": "PASS",
+    "stock": {
+      "EFTu_GDP": 0.1,
+      "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC": 0.3,
+      "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC": 0.6,
+      "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC": 0.1
+    },
+    "unit_scale": 1,
+    "windows": [
+      {
+        "product_error": 0.09195865576566707,
+        "range": [
+          0,
+          0.05
+        ],
+        "resource_error": 0.1
+      },
+      {
+        "product_error": 0.06754263715866088,
+        "range": [
+          0.05,
+          1
+        ],
+        "resource_error": 0.07211470688754895
+      },
+      {
+        "product_error": 0.0001315243155902701,
+        "range": [
+          1,
+          1000
+        ],
+        "resource_error": 0.0001374406978087439
+      }
+    ]
+  },
+  {
+    "candidate": "CHAIN_2",
+    "fixture": "CHAIN_INTERNAL_DOMAIN",
+    "reason": "Projected free EFTu_GDP=-1; no physically nonnegative reduced initial inventory. Cannot claim arbitrary internal-state domain.",
+    "status": "BLOCKED",
+    "stock": {
+      "EFTu_GDP": 0,
+      "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC": 1
+    }
+  },
+  {
+    "candidate": "RECYCLE",
+    "fixture": "TAIL_UNOBSERVABLE",
+    "individual_release_direction_flux_difference": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1000",
+      "1000",
+      "-1000",
+      "-1000",
+      "1000",
+      "1000"
+    ],
+    "microstate_exact_reconstruction": "REJECTED",
+    "projected_derivative_difference_max": 0.0,
+    "protected_aggregate_closure": "EXACT",
+    "same_aggregate": [
+      "10",
+      "30",
+      "40",
+      "40",
+      "40"
+    ],
+    "state_a": {
+      "RS50S_EFG_GDP": "10",
+      "RS50S_RRF": "10",
+      "RS50S_RRF_EFG_GDP": "10",
+      "RS50S_tRNAGlyGCC": "10",
+      "RS50S_tRNAGlyGCC_EFG_GDP": "10",
+      "RS50S_tRNAGlyGCC_RRF": "10",
+      "RS50S_tRNAGlyGCC_RRF_EFG_GDP": "10"
+    },
+    "state_b": {
+      "RS50S_EFG_GDP": "10",
+      "RS50S_RRF": "11",
+      "RS50S_RRF_EFG_GDP": "9",
+      "RS50S_tRNAGlyGCC": "9",
+      "RS50S_tRNAGlyGCC_EFG_GDP": "11",
+      "RS50S_tRNAGlyGCC_RRF": "10",
+      "RS50S_tRNAGlyGCC_RRF_EFG_GDP": "10"
+    },
+    "status": "PASS"
+  },
+  {
+    "candidate": "RECYCLE",
+    "fixture": "COUPLED_INPUT_PULSES_0306_0910",
+    "max_projection_error": 7.034517413018193e-11,
+    "physical_full_concentrations_min": -5.913006005685457e-14,
+    "source_directions": [
+      "re0000000306",
+      "re0000000308",
+      "re0000000910",
+      "re0000000913",
+      "re0000000914",
+      "re0000000915",
+      "re0000000916",
+      "re0000000917",
+      "re0000000918",
+      "re0000000919",
+      "re0000000920",
+      "re0000000921",
+      "re0000000922",
+      "re0000000923"
+    ],
+    "status": "PASS"
+  }
+]

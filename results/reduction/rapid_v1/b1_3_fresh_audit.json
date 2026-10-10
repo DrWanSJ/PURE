@@ -1,0 +1,1337 @@
+{
+  "canonical_SBML_sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+  "fresh_source_anchors": {
+    "re0000000796": {
+      "author_k": "60",
+      "equation": "RF1 + elRS70SAUAA0004_Pept0003tRNAGlyGCC -> elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1"
+    },
+    "re0000000797": {
+      "author_k": "7/2500",
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1 -> RF1 + elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+    },
+    "re0000000798": {
+      "author_k": "1/2",
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1 -> Pept0003 + termRS70SUAA0004_tRNAGlyGCC_RF1"
+    },
+    "re0000000799": {
+      "author_k": "7/2500",
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1 -> RF1 + termRS70SUAA0004_tRNAGlyGCC"
+    },
+    "re0000000810": {
+      "author_k": "0",
+      "equation": "Pept0003 + termRS70SUAA0004_tRNAGlyGCC_RF1 -> elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1"
+    },
+    "re0000000811": {
+      "author_k": "23",
+      "equation": "RF2 + elRS70SAUAA0004_Pept0003tRNAGlyGCC -> elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2"
+    },
+    "re0000000812": {
+      "author_k": "2/125",
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2 -> RF2 + elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+    },
+    "re0000000813": {
+      "author_k": "3/2",
+      "equation": "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2 -> Pept0003 + termRS70SUAA0004_tRNAGlyGCC_RF2"
+    },
+    "re0000000814": {
+      "author_k": "2/125",
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2 -> RF2 + termRS70SUAA0004_tRNAGlyGCC"
+    },
+    "re0000000823": {
+      "author_k": "0",
+      "equation": "Pept0003 + termRS70SUAA0004_tRNAGlyGCC_RF2 -> elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2"
+    },
+    "re0000000829": {
+      "author_k": "30",
+      "equation": "RF3_GDP + termRS70SUAA0004_tRNAGlyGCC_RF1 -> termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP"
+    },
+    "re0000000838": {
+      "author_k": "3/10",
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP -> RF1 + termRS70SUAA0004_tRNAGlyGCC_RF3_GTP"
+    },
+    "re0000000840": {
+      "author_k": "31",
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP -> termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4"
+    },
+    "re0000000842": {
+      "author_k": "5",
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4 -> PO4 + termRS70SUAA0004_tRNAGlyGCC_RF3_GDP"
+    },
+    "re0000000843": {
+      "author_k": "21/2",
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP -> GDP + termRS70SUAA0004_tRNAGlyGCC_RF1_RF3"
+    },
+    "re0000000846": {
+      "author_k": "25",
+      "equation": "GTP + termRS70SUAA0004_tRNAGlyGCC_RF1_RF3 -> termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP"
+    },
+    "re0000000847": {
+      "author_k": "1000",
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP -> RF3_GDP + termRS70SUAA0004_tRNAGlyGCC"
+    },
+    "re0000000870": {
+      "author_k": "30",
+      "equation": "RF3_GDP + termRS70SUAA0004_tRNAGlyGCC_RF2 -> termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP"
+    },
+    "re0000000879": {
+      "author_k": "77/100",
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP -> RF2 + termRS70SUAA0004_tRNAGlyGCC_RF3_GTP"
+    },
+    "re0000000881": {
+      "author_k": "21/2",
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP -> GDP + termRS70SUAA0004_tRNAGlyGCC_RF2_RF3"
+    },
+    "re0000000884": {
+      "author_k": "25",
+      "equation": "GTP + termRS70SUAA0004_tRNAGlyGCC_RF2_RF3 -> termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP"
+    },
+    "re0000000895": {
+      "author_k": "31",
+      "equation": "EFG_GTP + termRS70SUAA0004_tRNAGlyGCC_RRF -> termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP"
+    },
+    "re0000000902": {
+      "author_k": "5",
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4 -> PO4 + termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP"
+    },
+    "re0000000904": {
+      "author_k": "31/10",
+      "equation": "RRF + termRS70SUAA0004_tRNAGlyGCC -> termRS70SUAA0004_tRNAGlyGCC_RRF"
+    },
+    "re0000000908": {
+      "author_k": "31",
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP -> termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4"
+    },
+    "re0000000910": {
+      "author_k": "1000",
+      "equation": "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP -> RS50S_tRNAGlyGCC_RRF_EFG_GDP + termRS30S_mRNA"
+    },
+    "re0000000911": {
+      "author_k": "1000",
+      "equation": "termRS30S_mRNA -> RS30S + mRNA"
+    },
+    "re0000000913": {
+      "author_k": "1000",
+      "equation": "RS50S_tRNAGlyGCC_RRF_EFG_GDP -> EFG_GDP + RS50S_tRNAGlyGCC_RRF"
+    },
+    "re0000000916": {
+      "author_k": "1000",
+      "equation": "RS50S_tRNAGlyGCC_RRF -> RS50S_RRF + tRNAGlyGCC"
+    },
+    "re0000000918": {
+      "author_k": "1000",
+      "equation": "RS50S_RRF -> RRF + RS50S"
+    }
+  },
+  "inherited_negative_controls": "36 stored controls hash verified; intentionally not regenerated",
+  "protection": {
+    "B1_3_files": 26,
+    "changed": [],
+    "protected_existing_files": 2443,
+    "status": "PASS"
+  },
+  "review": [
+    {
+      "AI_recommendation": "Y",
+      "id": "H1",
+      "limitations": "继承B1-2 H3/H4/H6限制。",
+      "reason": "W4末态逐字等于两支共同入口；延长复合物与项目T_pre缩写分开。",
+      "researcher_decision": "",
+      "researcher_notes": "",
+      "source_ID_suffixes": "0796;0811"
+    },
+    {
+      "AI_recommendation": "Y",
+      "id": "H2",
+      "limitations": "不能据孤立速率判断生理主导支。",
+      "reason": "同一枚入口token经一次结合即被消费；可逆重新选择不等于同时进入两支。",
+      "researcher_decision": "",
+      "researcher_notes": "",
+      "source_ID_suffixes": "0796;0797;0811;0812"
+    },
+    {
+      "AI_recommendation": "Y",
+      "id": "H3",
+      "limitations": "肽释放与因子释放、核糖体回收分开。",
+      "reason": "两支各释放唯一的原始自由Pept0003，留下不同RF-bound终止复合物。",
+      "researcher_decision": "",
+      "researcher_notes": "",
+      "source_ID_suffixes": "0798;0813"
+    },
+    {
+      "AI_recommendation": "CONDITIONAL",
+      "id": "H4",
+      "limitations": "RF3_GDP不计作自由RF3+GDP；不穷举全部替代路线。",
+      "reason": "直接解离汇合到同一源终止态；RF3-GDP交换路径独立且需有限GTP供应，最终RF3_GDP。",
+      "researcher_decision": "",
+      "researcher_notes": "",
+      "source_ID_suffixes": "0799;0814;0829;0843;0846;0838;0840;0842;0847;0870;0881;0884;0879"
+    },
+    {
+      "AI_recommendation": "CONDITIONAL",
+      "id": "H5",
+      "limitations": "附加有限EFG_GTP不是B1-2已消费载体的内源再生。",
+      "reason": "0910拆分成bound-50S与termRS30S_mRNA，随后源步骤才释放亚基、mRNA、tRNA、RRF、EFG_GDP。",
+      "researcher_decision": "",
+      "researcher_notes": "",
+      "source_ID_suffixes": "0904;0895;0908;0902;0910;0911;0913;0916;0918"
+    },
+    {
+      "AI_recommendation": "CONDITIONAL",
+      "id": "H6",
+      "limitations": "源种账本不是完整元素、磷酸基团、H+/H2O或电荷证书。",
+      "reason": "完整S*w独立相等，联合W4仅计一次5PO4，直接回收共6、RF3交换回收共7。",
+      "researcher_decision": "",
+      "researcher_notes": "",
+      "source_ID_suffixes": "0016;0077;0902;0842"
+    },
+    {
+      "AI_recommendation": "CONDITIONAL",
+      "id": "H7",
+      "limitations": "结构witness非唯一、非通量主导证明；作者零模式不可泛化。",
+      "reason": "源逆向、零参数方向与可执行路径分开；本次检查全部事件的实际作者参数。",
+      "researcher_decision": "",
+      "researcher_notes": "",
+      "source_ID_suffixes": "0797;0812;0810;0823;0912;0924–0968"
+    },
+    {
+      "AI_recommendation": "CONDITIONAL",
+      "id": "H8",
+      "limitations": "所有科学决定仍待研究者；本轮未重跑继承MATLAB99/3/1。",
+      "reason": "字面源结构、有限载体分配与数值模型证据分别记录。",
+      "researcher_decision": "",
+      "researcher_notes": "",
+      "source_ID_suffixes": "0796–0923"
+    },
+    {
+      "AI_recommendation": "CONDITIONAL",
+      "id": "H9",
+      "limitations": "回收两维微观相关性不能恢复；上游B1-3未正式签署。",
+      "reason": "Three-stage为近似；回收7→5投影对受保护边际量闭合；RF1/RF2合并有明确反例。",
+      "researcher_decision": "",
+      "researcher_notes": "",
+      "source_ID_suffixes": "0017;0018;0078;0079;0306;0910;0913–0923"
+    }
+  ],
+  "scientific_status": "HUMAN_REVIEW_REQUIRED",
+  "source_reader_agreement": "PASS",
+  "witnesses": [
+    {
+      "event_count": 2,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "Pept0003": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF1": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 2,
+        "finite_final_tokens": 2,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "Pept0003": "1",
+        "RF1": "-1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF1": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_T1_RF1_RELEASE"
+    },
+    {
+      "event_count": 1,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "Pept0003": "1",
+        "RF1": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 1,
+        "finite_final_tokens": 3,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "RF1": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF1": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_D1_RF1_DIRECT"
+    },
+    {
+      "event_count": 7,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "GDP": "1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 7,
+        "finite_final_tokens": 6,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "GDP": "1",
+        "GTP": "-1",
+        "PO4": "1",
+        "RF1": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF1": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_F1_RF1_RF3_EXCHANGE"
+    },
+    {
+      "event_count": 5,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 5,
+        "finite_final_tokens": 5,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "PO4": "1",
+        "RF1": "1",
+        "RF3_GDP": "1",
+        "RF3_GTP": "-1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF1": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_F1_RF1_RF3_GTP_SUPPLY"
+    },
+    {
+      "event_count": 6,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 6,
+        "finite_final_tokens": 5,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "GTP": "-1",
+        "PO4": "1",
+        "RF1": "1",
+        "RF3": "-1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF1": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_F1_RF1_RF3_APO_SUPPLY"
+    },
+    {
+      "event_count": 10,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 10,
+        "finite_final_tokens": 9,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "PO4": "1",
+        "RF1": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF1": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_R1_RF1_TO_RECYCLING"
+    },
+    {
+      "event_count": 10,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 10,
+        "finite_final_tokens": 9,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "PO4": "1",
+        "RF1": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF1": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_R1_RF1_EFG_FIRST"
+    },
+    {
+      "event_count": 9,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "1",
+        "GDP": "1",
+        "PO4": "2",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RF3_GDP": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 9,
+        "finite_final_tokens": 12,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "PO4": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_R1_RF1_AFTER_RF3"
+    },
+    {
+      "event_count": 42,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "3",
+        "EFTu_GDP": "2",
+        "IF1": "1",
+        "IF2_GDP": "1",
+        "IF3": "1",
+        "PO4": "6",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "2",
+        "tRNAfMetCAU": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 12,
+        "finite_final_tokens": 23,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "3",
+        "EFG_GTP": "-3",
+        "EFTu_GDP": "2",
+        "EFTu_GTP_GlytRNAGlyGCC": "-2",
+        "IF2_GDP": "1",
+        "IF2_GTP_fMettRNAfMetCAU": "-1",
+        "PO4": "6",
+        "Pept0003": "1",
+        "tRNAGlyGCC": "2",
+        "tRNAfMetCAU": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_JOINT_RF1"
+    },
+    {
+      "event_count": 48,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "3",
+        "EFTu_GDP": "2",
+        "GDP": "1",
+        "IF1": "1",
+        "IF2_GDP": "1",
+        "IF3": "1",
+        "PO4": "7",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RF3_GDP": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "2",
+        "tRNAfMetCAU": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 18,
+        "finite_final_tokens": 26,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "3",
+        "EFG_GTP": "-3",
+        "EFTu_GDP": "2",
+        "EFTu_GTP_GlytRNAGlyGCC": "-2",
+        "GDP": "1",
+        "GTP": "-1",
+        "IF2_GDP": "1",
+        "IF2_GTP_fMettRNAfMetCAU": "-1",
+        "PO4": "7",
+        "Pept0003": "1",
+        "tRNAGlyGCC": "2",
+        "tRNAfMetCAU": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_JOINT_RF1_RF3"
+    },
+    {
+      "event_count": 2,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "Pept0003": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF2": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 2,
+        "finite_final_tokens": 2,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "Pept0003": "1",
+        "RF2": "-1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF2": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_T2_RF2_RELEASE"
+    },
+    {
+      "event_count": 1,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "Pept0003": "1",
+        "RF2": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 1,
+        "finite_final_tokens": 3,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "RF2": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF2": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_D2_RF2_DIRECT"
+    },
+    {
+      "event_count": 7,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "GDP": "1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 7,
+        "finite_final_tokens": 6,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "GDP": "1",
+        "GTP": "-1",
+        "PO4": "1",
+        "RF2": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF2": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_F2_RF2_RF3_EXCHANGE"
+    },
+    {
+      "event_count": 5,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 5,
+        "finite_final_tokens": 5,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "PO4": "1",
+        "RF2": "1",
+        "RF3_GDP": "1",
+        "RF3_GTP": "-1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF2": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_F2_RF2_RF3_GTP_SUPPLY"
+    },
+    {
+      "event_count": 6,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 6,
+        "finite_final_tokens": 5,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "GTP": "-1",
+        "PO4": "1",
+        "RF2": "1",
+        "RF3": "-1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF2": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_F2_RF2_RF3_APO_SUPPLY"
+    },
+    {
+      "event_count": 10,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 10,
+        "finite_final_tokens": 9,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "PO4": "1",
+        "RF2": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF2": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_R2_RF2_TO_RECYCLING"
+    },
+    {
+      "event_count": 10,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 10,
+        "finite_final_tokens": 9,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "PO4": "1",
+        "RF2": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC_RF2": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_R2_RF2_EFG_FIRST"
+    },
+    {
+      "event_count": 9,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "1",
+        "GDP": "1",
+        "PO4": "2",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RF3_GDP": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 9,
+        "finite_final_tokens": 12,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "PO4": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "-1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_R2_RF2_AFTER_RF3"
+    },
+    {
+      "event_count": 42,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "3",
+        "EFTu_GDP": "2",
+        "IF1": "1",
+        "IF2_GDP": "1",
+        "IF3": "1",
+        "PO4": "6",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "2",
+        "tRNAfMetCAU": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 12,
+        "finite_final_tokens": 23,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "3",
+        "EFG_GTP": "-3",
+        "EFTu_GDP": "2",
+        "EFTu_GTP_GlytRNAGlyGCC": "-2",
+        "IF2_GDP": "1",
+        "IF2_GTP_fMettRNAfMetCAU": "-1",
+        "PO4": "6",
+        "Pept0003": "1",
+        "tRNAGlyGCC": "2",
+        "tRNAfMetCAU": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_JOINT_RF2"
+    },
+    {
+      "event_count": 48,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "3",
+        "EFTu_GDP": "2",
+        "GDP": "1",
+        "IF1": "1",
+        "IF2_GDP": "1",
+        "IF3": "1",
+        "PO4": "7",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RF3_GDP": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "2",
+        "tRNAfMetCAU": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 18,
+        "finite_final_tokens": 26,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "3",
+        "EFG_GTP": "-3",
+        "EFTu_GDP": "2",
+        "EFTu_GTP_GlytRNAGlyGCC": "-2",
+        "GDP": "1",
+        "GTP": "-1",
+        "IF2_GDP": "1",
+        "IF2_GTP_fMettRNAfMetCAU": "-1",
+        "PO4": "7",
+        "Pept0003": "1",
+        "tRNAGlyGCC": "2",
+        "tRNAfMetCAU": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_JOINT_RF2_RF3"
+    },
+    {
+      "event_count": 3,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "Pept0003": "1",
+        "RF1": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 3,
+        "finite_final_tokens": 3,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "Pept0003": "1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_D1_RF1_DIRECT"
+    },
+    {
+      "event_count": 9,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "GDP": "1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 9,
+        "finite_final_tokens": 6,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "GDP": "1",
+        "GTP": "-1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_F1_RF1_RF3_EXCHANGE"
+    },
+    {
+      "event_count": 7,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 7,
+        "finite_final_tokens": 5,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF3_GDP": "1",
+        "RF3_GTP": "-1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_F1_RF1_RF3_GTP_SUPPLY"
+    },
+    {
+      "event_count": 8,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 8,
+        "finite_final_tokens": 5,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "GTP": "-1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF3": "-1",
+        "RF3_GDP": "1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_F1_RF1_RF3_APO_SUPPLY"
+    },
+    {
+      "event_count": 12,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 12,
+        "finite_final_tokens": 9,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_R1_RF1_TO_RECYCLING"
+    },
+    {
+      "event_count": 12,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 12,
+        "finite_final_tokens": 9,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_R1_RF1_EFG_FIRST"
+    },
+    {
+      "event_count": 18,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "1",
+        "GDP": "1",
+        "PO4": "2",
+        "Pept0003": "1",
+        "RF1": "1",
+        "RF3_GDP": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 18,
+        "finite_final_tokens": 12,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "GDP": "1",
+        "GTP": "-1",
+        "PO4": "2",
+        "Pept0003": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_R1_RF1_AFTER_RF3"
+    },
+    {
+      "event_count": 3,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "Pept0003": "1",
+        "RF2": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 3,
+        "finite_final_tokens": 3,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "Pept0003": "1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_D2_RF2_DIRECT"
+    },
+    {
+      "event_count": 9,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "GDP": "1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 9,
+        "finite_final_tokens": 6,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "GDP": "1",
+        "GTP": "-1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_F2_RF2_RF3_EXCHANGE"
+    },
+    {
+      "event_count": 7,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 7,
+        "finite_final_tokens": 5,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF3_GDP": "1",
+        "RF3_GTP": "-1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_F2_RF2_RF3_GTP_SUPPLY"
+    },
+    {
+      "event_count": 8,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RF3_GDP": "1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 8,
+        "finite_final_tokens": 5,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "GTP": "-1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF3": "-1",
+        "RF3_GDP": "1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "termRS70SUAA0004_tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_F2_RF2_RF3_APO_SUPPLY"
+    },
+    {
+      "event_count": 12,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 12,
+        "finite_final_tokens": 9,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_R2_RF2_TO_RECYCLING"
+    },
+    {
+      "event_count": 12,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 12,
+        "finite_final_tokens": 9,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "PO4": "1",
+        "Pept0003": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_R2_RF2_EFG_FIRST"
+    },
+    {
+      "event_count": 18,
+      "exact_S_full_w": true,
+      "final_marking": {
+        "EFG_GDP": "1",
+        "GDP": "1",
+        "PO4": "2",
+        "Pept0003": "1",
+        "RF2": "1",
+        "RF3_GDP": "1",
+        "RRF": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "lineage": {
+        "carrier_events_checked": 18,
+        "finite_final_tokens": 12,
+        "molecular_composition_status": "NOT_CERTIFIED; SOURCE_STATE_IDENTITY_PROJECTION_ONLY",
+        "status": "PASS"
+      },
+      "net": {
+        "EFG_GDP": "1",
+        "EFG_GTP": "-1",
+        "GDP": "1",
+        "GTP": "-1",
+        "PO4": "2",
+        "Pept0003": "1",
+        "RS30S": "1",
+        "RS50S": "1",
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC": "-1",
+        "mRNA": "1",
+        "tRNAGlyGCC": "1"
+      },
+      "nonnegative_stock": true,
+      "per_event_Petri": true,
+      "status": "PASS",
+      "witness_id": "W_C_W_R2_RF2_AFTER_RF3"
+    }
+  ]
+}

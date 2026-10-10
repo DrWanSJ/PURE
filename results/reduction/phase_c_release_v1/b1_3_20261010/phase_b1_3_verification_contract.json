@@ -1,0 +1,14 @@
+{
+  "acceptance_logic_may_be_weakened_after_results": false,
+  "frozen_before_any_negative_control_execution": true,
+  "protocol_sha256": "b5761ec8af0108949bdc070ef4593f8f7512cf106004008cef7d24671b251ddb",
+  "registered_control_source_sha256": "91843b87573fe5170f0f3b3254dae60c37636a257708fa6dbdf8ca0593907afd",
+  "registered_minimum": 24,
+  "registered_minimum_petri_enabled_lineage_invalid": 5,
+  "syntax_only_repair_before_any_controls_ran": {
+    "control_source_sha256": "07b9fc7fc10c6a2a69cf40cc58e5118bf9b3f0be446b92c9b9d49d709d726069",
+    "reason": "unmatched closing parenthesis on N27 fixture registration",
+    "verifier_acceptance_logic_unchanged": true
+  },
+  "verifier_sha256": "4e7d79bccf1136f9fee3e34374f40b188cb2b2bd7c395895a0c56aeda463b768"
+}

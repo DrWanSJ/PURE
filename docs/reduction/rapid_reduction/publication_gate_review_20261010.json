@@ -1,0 +1,88 @@
+{
+  "schema": "PHASE_C_PUBLICATION_GATE_REVIEW_V1",
+  "milestone": "PNAS2017_PHASE_C_REDUCTION_V1_20261010",
+  "decision_date": "2026-10-10",
+  "status": "READY_FOR_PUBLICATION_WITH_AUTHORIZED_FROZEN_EOF_EXCEPTIONS",
+  "scientific_verification": "PASS",
+  "original_277_bytes": "PASS",
+  "validation_reports": [
+    {
+      "path": "results/reduction/phase_c_release_v1/closure_20261010/verification_report.json",
+      "status": "PASS",
+      "sha256": "5c639a00326380b5c85da0331f62359d2f28f8db554a8535e98366c1ea28d788"
+    },
+    {
+      "path": "results/reduction/phase_c_release_v1/b1_3_20261010/verification_report.json",
+      "status": "PASS",
+      "sha256": "b95f364b8f5bc8d508be8844263bcfc22dbfc02d269d2a60c8d3d5cf0538ea37"
+    },
+    {
+      "path": "results/reduction/phase_c_release_v1/cross_parser_matrix.json",
+      "status": "PASS",
+      "sha256": "1e0bb55d40b33352b8eeaafe8686cbe73f9ce7e60653a70edf858118aec8b61e"
+    },
+    {
+      "path": "results/reduction/phase_c_release_v1/dashboard/static_validation.json",
+      "status": "PASS",
+      "sha256": "d14fa21c63e24f576496618632d5fd582ad53fb5fab099f56fd6d40b4d165615"
+    },
+    {
+      "path": "results/reduction/phase_c_release_v1/dashboard/browser_validation.json",
+      "status": "PASS",
+      "sha256": "9c823eff634146a7deb271b50574501d65d4c348f52a909a877f5f3a084ce41d"
+    },
+    {
+      "path": "results/reduction/phase_c_release_v1/dashboard/local_link_validation.json",
+      "status": "PASS",
+      "sha256": "83547be8cf726bd9e66e708e65baf8dcca127df6581b345333a6067a26b8b6a3"
+    },
+    {
+      "path": "results/reduction/phase_c_release_v1/publication_verify_20261010_final/verification_report.json",
+      "status": "PASS",
+      "sha256": "4e95453e50949050c2a0546ccb04fcaf3a039210a101e71d44d9b9852b2a3dd0"
+    }
+  ],
+  "format_check": {
+    "status": "PASS_WITH_THREE_EXPLICIT_FROZEN_EOF_EXCEPTIONS",
+    "remaining_diagnostics": [
+      {
+        "path": "docs/reduction/pathways/phase_b1_3_original_source_evidence.md",
+        "line": 138,
+        "diagnostic": "new blank line at EOF.",
+        "sha256": "05fadfab05957194a6bfda4b9da75e1b117e0290442bf84e99efac8a61e20e83",
+        "original_bytes_unchanged": true
+      },
+      {
+        "path": "docs/reduction/pathways/phase_b1_3_review.md",
+        "line": 304,
+        "diagnostic": "new blank line at EOF.",
+        "sha256": "355b0de3bb20bb0605fff6b827005a7ea8c48e5af886002b7e8ee82de32d94da",
+        "original_bytes_unchanged": true
+      },
+      {
+        "path": "docs/reduction/pathways/phase_b1_3_termination_recycling_pathways.md",
+        "line": 942,
+        "diagnostic": "new blank line at EOF.",
+        "sha256": "22e739d50466a44cc6703b5be5332474d65123c3db4cbd7f3a1202c7a37231b5",
+        "original_bytes_unchanged": true
+      }
+    ],
+    "all_other_release_paths": "PASS",
+    "native_CRLF": "Preserved byte-for-byte; scoped whitespace=cr-at-eol recognizes existing Windows line endings while retaining trailing-space checks.",
+    "human_authorization": {
+      "date": "2026-10-10",
+      "source": "Researcher message in the current conversation",
+      "quote": "允许三处 EOF 例外并继续发布",
+      "scope": "Only the three path/line/SHA-256 entries above; retain original bytes and all other checks. No scientific scope or other publication constraint is expanded."
+    }
+  },
+  "git": {
+    "authorized_branch": "codex/energy-cycles-v1",
+    "starting_head": "7a95c29b6bf80b567863cc70a631859016144924",
+    "last_verified_remote_head": "7a95c29b6bf80b567863cc70a631859016144924",
+    "commit_status": "NOT_ATTEMPTED",
+    "push_status": "NOT_ATTEMPTED"
+  },
+  "note": "This is a pre-publication gate record. Final delivery is established by verified Git commit IDs; no future remote hash or approval is invented.",
+  "previous_gate_status": "READY_EXCEPT_FROZEN_EOF_AUTHORIZATION"
+}

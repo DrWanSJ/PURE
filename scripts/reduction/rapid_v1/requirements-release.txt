@@ -1,0 +1,6 @@
+# Reproduced on Python 3.12.4. Install in a dedicated environment if needed.
+numpy==1.26.4
+scipy==1.13.1
+sympy==1.13.1
+numba==0.59.1
+threadpoolctl==2.2.0

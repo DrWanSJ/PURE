@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "milestone_id": "PNAS2017_PHASE_C_REDUCTION_V1_20261010",
+  "decision_date": "2026-10-10",
+  "decision_source": {
+    "kind": "RESEARCHER_CONVERSATION_AUTHORIZATION_RECORDED_IN_USER_PROVIDED_TASK_TEXT",
+    "path": "docs/reduction/rapid_reduction/human_decision_source_20261010.txt",
+    "sha256": "f713e35ee626b69aaaf0cce6ab291c6d9e629e78506cdcfa37ae41c46fad3cd4",
+    "quote": "我觉得没问题，正式接受，然后给我一个 sean codex prompt 把当前降维简化正式收束，还要更新之前的 html 方便展示。",
+    "handwritten_signature": null,
+    "approval_clock_time": null,
+    "external_approval_url": null
+  },
+  "historical_evidence_policy": "Additive current decision; historical PENDING/HUMAN_REVIEW_REQUIRED records retain original bytes and historical meaning.",
+  "b1_3": {
+    "scientific_status": "B1_3_FORMALLY_ACCEPTED_LIMITED_SCOPE",
+    "acceptance_scope": "SOURCE_EXACT_STRUCTURAL_RECONSTRUCTION",
+    "record": "docs/reduction/pathways/phase_b1_3_formal_acceptance_20261010.md",
+    "gates": {
+      "H1": "Y",
+      "H2": "Y",
+      "H3": "Y",
+      "H4": "CONDITIONAL",
+      "H5": "CONDITIONAL",
+      "H6": "CONDITIONAL",
+      "H7": "CONDITIONAL",
+      "H8": "CONDITIONAL",
+      "H9": "CONDITIONAL"
+    },
+    "gate_conditions": {
+      "H1": "Source-exact RF-free termination-entry continuity; preserve B1-2 terminology and virtual-state limits.",
+      "H2": "RF1/RF2 compete for the same source entry; active reverse binding preserves branch choice.",
+      "H3": "Free Pept0003 release through the two distinct original events and residual RF-bound states.",
+      "H4": "RF3 exchange, pre-supplied RF3-GTP, apo-RF3 and direct release are alternatives; finite RF3/nucleotide supplies, no physiological dominance ranking.",
+      "H5": "Source recycling including actual re0000000910 splitting before free-component releases; finite RRF and EFG_GTP supplies.",
+      "H6": "Exact source-species token ledger only; joint direct/exchange PO4 totals 6/7 with W4 counted once; no molecular/elemental/ionic/charge certification.",
+      "H7": "Retain RF1/RF2 competition, active reverse paths and author-disabled directions; no exhaustive route or dominant-flux claim.",
+      "H8": "Original source identity does not independently certify physiology, complete composition or detailed peptide chemistry; extraction and inference remain distinct.",
+      "H9": "Topology aggregation questions remain scoped; Phase C exact observable quotient and approximate Gly aggregation are separate; RF1/RF2 merger rejected."
+    },
+    "inherited_b1_2_conditions": [
+      "H3",
+      "H4",
+      "H6"
+    ],
+    "kinetic_validation": "NOT_GRANTED_BY_STRUCTURAL_ACCEPTANCE",
+    "accepted_witness_count": 34,
+    "witness_evidence": "docs/reduction/pathways/phase_b1_3_witnesses.json"
+  },
+  "phase_c": {
+    "scientific_status": "PHASE_C_FORMALLY_ACCEPTED_WITH_SCOPE_CONDITIONS",
+    "numerical_gate_status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+    "record": "docs/reduction/rapid_reduction/phase_c_formal_acceptance_20261010.md",
+    "models": [
+      {
+        "id": "R0",
+        "chemical_dimension": 241,
+        "decision": "REFERENCE_UNCHANGED",
+        "classification": "CANONICAL_REFERENCE",
+        "scope": "Original canonical 241-state benchmark; no model renaming.",
+        "integration_counters": 20,
+        "total_integrated_coordinates": 261
+      },
+      {
+        "id": "R1",
+        "chemical_dimension": 214,
+        "decision": "ACCEPTED",
+        "classification": "SOURCE_GENERAL_EXACT_CONSERVATION_REDUCTION",
+        "scope": "All 968 canonical reaction columns; 27 conservation relations; exact full-state reconstruction on the conserved manifold for each initial condition.",
+        "integration_counters": 20,
+        "total_integrated_coordinates": 234
+      },
+      {
+        "id": "R2",
+        "chemical_dimension": 175,
+        "decision": "ACCEPTED",
+        "classification": "AUTHOR_CONDITION_EXACT_SUPPORT_REDUCTION",
+        "scope": "Declared fixed author parameter zero pattern and initial support face; 205 supported species, 36 invariantly zero species, support rank 175 and 30 conservation relations.",
+        "integration_counters": 20,
+        "total_integrated_coordinates": 195
+      },
+      {
+        "id": "R3_RECYCLE",
+        "chemical_dimension": 173,
+        "decision": "CONDITIONALLY_ACCEPTED",
+        "classification": "EXACT_AUTHOR_PARAMETER_OBSERVABLE_QUOTIENT",
+        "scope": "Seven microscopic tail states to five protected observables; fixed author equal release rates and disabled reverse/degradation directions; no unique microscopic inverse.",
+        "integration_counters": 20,
+        "total_integrated_coordinates": 193
+      },
+      {
+        "id": "R3_CHAIN1",
+        "chemical_dimension": 174,
+        "decision": "CONDITIONALLY_ACCEPTED",
+        "classification": "ONE_ROUND_APPROXIMATE_GLY_AGGREGATION",
+        "scope": "First Gly round re0000000017+re0000000018; mean waiting time matched, not exact kinetic lumpability; tested long-window domain and feasible projected initial states.",
+        "integration_counters": 20,
+        "total_integrated_coordinates": 194
+      },
+      {
+        "id": "R3_CHAIN12",
+        "chemical_dimension": 173,
+        "decision": "CONDITIONALLY_ACCEPTED",
+        "classification": "TWO_ROUND_APPROXIMATE_GLY_AGGREGATION",
+        "scope": "First and second Gly rounds, adding re0000000078+re0000000079; distinct from the 173-dimensional recycling quotient; tested long-window domain and feasible projected initial states.",
+        "integration_counters": 20,
+        "total_integrated_coordinates": 193
+      },
+      {
+        "id": "R3_CHAIN12_RECYCLE",
+        "chemical_dimension": 171,
+        "decision": "CONDITIONALLY_ACCEPTED",
+        "classification": "CONDITIONAL_FULL_COUPLED_NUMERICAL_CANDIDATE",
+        "scope": "Two Gly approximations plus exact recycling observable quotient; four frozen scenarios over source-time window 1-1000; not universal PURE validation.",
+        "integration_counters": 20,
+        "total_integrated_coordinates": 191
+      }
+    ],
+    "accepted_scenarios": [
+      {
+        "id": "AUTHOR_BASELINE",
+        "role": "SCREENING",
+        "reported_numerical_status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+        "source": "results/reduction/rapid_v1/validation_results.json#/scenarios/AUTHOR_BASELINE/models/R3_CHAIN12_RECYCLE"
+      },
+      {
+        "id": "FLOW_CHALLENGE",
+        "role": "HOLDOUT_VALIDATION",
+        "reported_numerical_status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+        "source": "results/reduction/rapid_v1/validation_results.json#/scenarios/FLOW_CHALLENGE/models/R3_CHAIN12_RECYCLE"
+      },
+      {
+        "id": "ENERGY_FACTOR_LIMITED",
+        "role": "HOLDOUT_VALIDATION",
+        "reported_numerical_status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+        "source": "results/reduction/rapid_v1/validation_results.json#/scenarios/ENERGY_FACTOR_LIMITED/models/R3_CHAIN12_RECYCLE"
+      },
+      {
+        "id": "COMPETITION_OCCUPANCY",
+        "role": "HOLDOUT_VALIDATION",
+        "reported_numerical_status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+        "source": "results/reduction/rapid_v1/validation_results.json#/scenarios/COMPETITION_OCCUPANCY/models/R3_CHAIN12_RECYCLE"
+      }
+    ],
+    "accepted_numerical_window": [
+      1,
+      1000
+    ],
+    "time_unit": "SOURCE_NUMERICAL_TIME_UNIT_NOT_ASSUMED_SECONDS",
+    "canonical_directed_reactions": 968,
+    "positive_author_parameter_directions": 483,
+    "potentially_active_support_directions": 481,
+    "final_effective_monomials": 443,
+    "general_pure_reduced_core_approval": false,
+    "computational_acceleration_claim": false
+  },
+  "independent_audit": {
+    "path": "docs/reduction/rapid_reduction/independent_mathematical_audit_20261010.md",
+    "original_source_path": "C:\\Users\\sean\\Desktop\\phase_c_independent_audit_20261010.md",
+    "bytes": 7209,
+    "sha256": "a5f61011bdd89b1bcbf4ba980a992f741127f58b6998dd3467cd3a4d2e49e73a",
+    "copy_method": "BYTE_FOR_BYTE",
+    "reported_status": "INDEPENDENT_MATHEMATICAL_AUDIT_PASS_WITH_SCOPE_CONDITIONS",
+    "historical_human_status": "HUMAN_SIGNOFF_PENDING",
+    "reviewed_source": "source-derived reaction_level_annotation_v2.csv at 7a95c29b6bf80b567863cc70a631859016144924 and supplied certificate",
+    "canonical_xml_reparsed": false,
+    "canonical_xml_or_initial_csv_rehashed": false,
+    "local_runtime_reviewed": false,
+    "npz_trajectories_read": false,
+    "full_coupled_numerical_rerun": false
+  },
+  "explicit_exclusions": [
+    "General parameter-independent validity of R2/R3",
+    "Initial-layer accuracy for all initial conditions",
+    "Physical feasibility for every projected state",
+    "Exact microscopic reconstruction from the 173/171-dimensional quotient",
+    "Exact kinetic lumpability of the Gly stages",
+    "RF1/RF2 merger",
+    "Previously rejected 21-state QSSA",
+    "Unconditional steady-enzyme elimination of CK/NDK/MK/PPiase",
+    "Experimental validation of general PURE expression",
+    "Quantitative osmosis, ionic strength or molecular charge claims",
+    "Computational acceleration",
+    "Universal validated PURE_reduced_core identity"
+  ],
+  "retained_failure_evidence": {
+    "fast_state_initial_layer_resource_error_up_to": 0.1,
+    "infeasible_projected_initial_states": "BLOCKED",
+    "reactivated_re0000000952_for_R2_R3": "BLOCKED",
+    "rf_merge_product_derivatives": [
+      0.5,
+      1.5
+    ],
+    "individual_microscopic_gross_extents": "NOT_UNIQUELY_RECONSTRUCTIBLE",
+    "historical_matlab": "99 passed / 3 failed / 1 incomplete; not rerun or fixed by this decision"
+  },
+  "evidence_fingerprints": [
+    {
+      "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "bytes": 1732620,
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df"
+    },
+    {
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "bytes": 19566,
+      "sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465"
+    },
+    {
+      "path": "docs/reduction/pathways/phase_b1_3_review.md",
+      "bytes": 23348,
+      "sha256": "355b0de3bb20bb0605fff6b827005a7ea8c48e5af886002b7e8ee82de32d94da"
+    },
+    {
+      "path": "docs/reduction/pathways/phase_b1_3_witnesses.json",
+      "bytes": 2424115,
+      "sha256": "91f492af2b7b72bf253c3fe0fba583b6d6a980d6c107017ea29fbc3c2abd000d"
+    },
+    {
+      "path": "docs/reduction/pathways/phase_b1_3_validation_report.json",
+      "bytes": 64219,
+      "sha256": "10e3da2c48074e5121e1b242bfd3263cddd855a9be0a55baf26376f5030fce2f"
+    },
+    {
+      "path": "docs/reduction/pathways/phase_b1_3_independent_verification.json",
+      "bytes": 77301,
+      "sha256": "fdd4a54480dfa194d88e93127f82802e805debaf9d09ef5ff21f6562d031230b"
+    },
+    {
+      "path": "docs/reduction/pathways/phase_b1_3_matrix_verification.json",
+      "bytes": 524263,
+      "sha256": "1e81071162ed2a235926d6192bdc529a84df269f8232e2404fff30cff0e61297"
+    },
+    {
+      "path": "docs/reduction/pathways/phase_b1_3_original_source_evidence.json",
+      "bytes": 145769,
+      "sha256": "506d5642dad2662d726f04b17e48d05a8db71e3988f0aa42eef294f484668d96"
+    },
+    {
+      "path": "docs/reduction/pathways/phase_b1_3_source_scope.json",
+      "bytes": 1670315,
+      "sha256": "d30bde807c7b3176aeee9fe8c86210008f906232f53e41f1b5f1b1c7bf02be24"
+    },
+    {
+      "path": "docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "bytes": 113107,
+      "sha256": "c698ca685bf1052f529c9b8b2bb3626c2a3176818e868469cf9b29e6f3e26df0"
+    },
+    {
+      "path": "results/reduction/chain01_v2/mathematical_certificate.json",
+      "bytes": 46649,
+      "sha256": "7f5d1ddf6a2ada0aecb4e81ae099db90f77eb3783a738022b05ce9006651315c"
+    },
+    {
+      "path": "configs/reduction/rapid_v1.json",
+      "bytes": 42772,
+      "sha256": "9076b2b3fcaa57b7b2c9fd2f8a92e5f37422ce47c9c633cd64fcaa6a2b187659"
+    },
+    {
+      "path": "docs/reduction/rapid_reduction/protocol.md",
+      "bytes": 5761,
+      "sha256": "20015209ce29ced32b0f650771bcf03d252c2df456d8b69f99dd5a3f6daf6feb"
+    },
+    {
+      "path": "docs/reduction/rapid_reduction/reduction_report.md",
+      "bytes": 10341,
+      "sha256": "3d38d3dc76b51dc26871f8406cb583c3a79afb918a54135bb2a1798061e14c5f"
+    },
+    {
+      "path": "results/reduction/rapid_v1/validation_results.json",
+      "bytes": 296372,
+      "sha256": "d7874c666e2e024788fb26b64885453aed8e3a50773f4951aab0b13658785321"
+    },
+    {
+      "path": "results/reduction/rapid_v1/window_errors.csv",
+      "bytes": 17124,
+      "sha256": "6b0e3f38b2f888aad3785e83e6255504fd561283fa89da51022646803522c242"
+    },
+    {
+      "path": "results/reduction/rapid_v1/reduced_solver_crosschecks.json",
+      "bytes": 46490,
+      "sha256": "75ea7522e1ebdc2af481c1c41fe3d4e96ffdc3069105a8196369963fb397ba68"
+    },
+    {
+      "path": "scripts/reduction/rapid_v1/runtime.py",
+      "bytes": 16686,
+      "sha256": "1fdceaa62538aa8fc9da36866da8cea26116c5762214864dd34c90f81411263c"
+    },
+    {
+      "path": "scripts/reduction/rapid_v1/mathematics.py",
+      "bytes": 13838,
+      "sha256": "cdba04b5987ff4714ea1ff4a987f29037a2f4ee3c001308aa73727faa63d1730"
+    },
+    {
+      "path": "scripts/reduction/rapid_v1/validate.py",
+      "bytes": 11711,
+      "sha256": "01182a85cfd274e0d1b3b5a02f1b1136b666037fc5ccd856d4f608332a94b051"
+    },
+    {
+      "path": "scripts/reduction/rapid_v1/score_saved.py",
+      "bytes": 4062,
+      "sha256": "fbeee3f7feb7b84d32bd0e93b45125bd371368a41ce9f0eed5f4c4fa14e835d6"
+    }
+  ],
+  "complete_original_file_inventory": "docs/reduction/rapid_reduction/release_manifest_v1.json",
+  "publication_status_authority": "Execution results and verified Git remote synchronization; this scientific record alone is not RELEASE_CLOSED."
+}

@@ -1,0 +1,356 @@
+{
+  "checks": [
+    {
+      "chemical_dimensions": 241,
+      "evaluated_mass_action_expressions": 454,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R0",
+      "new_solver_execution": true,
+      "scenario": "AUTHOR_BASELINE",
+      "status": "REFERENCE_CONVERGED",
+      "total_integrated_coordinates": 261
+    },
+    {
+      "chemical_dimensions": 214,
+      "evaluated_mass_action_expressions": 454,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R1",
+      "new_solver_execution": true,
+      "scenario": "AUTHOR_BASELINE",
+      "status": "EXACT_REDUCTION_VERIFIED",
+      "total_integrated_coordinates": 234
+    },
+    {
+      "chemical_dimensions": 175,
+      "evaluated_mass_action_expressions": 452,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R2",
+      "new_solver_execution": true,
+      "scenario": "AUTHOR_BASELINE",
+      "status": "EXACT_REDUCTION_VERIFIED",
+      "total_integrated_coordinates": 195
+    },
+    {
+      "chemical_dimensions": 174,
+      "evaluated_mass_action_expressions": 451,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_CHAIN1",
+      "new_solver_execution": true,
+      "scenario": "AUTHOR_BASELINE",
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+      "total_integrated_coordinates": 194
+    },
+    {
+      "chemical_dimensions": 173,
+      "evaluated_mass_action_expressions": 450,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_CHAIN12",
+      "new_solver_execution": true,
+      "scenario": "AUTHOR_BASELINE",
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+      "total_integrated_coordinates": 193
+    },
+    {
+      "chemical_dimensions": 173,
+      "evaluated_mass_action_expressions": 445,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_RECYCLE",
+      "new_solver_execution": true,
+      "scenario": "AUTHOR_BASELINE",
+      "status": "EXACT_REDUCTION_VERIFIED",
+      "total_integrated_coordinates": 193
+    },
+    {
+      "chemical_dimensions": 171,
+      "evaluated_mass_action_expressions": 443,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_CHAIN12_RECYCLE",
+      "new_solver_execution": true,
+      "scenario": "AUTHOR_BASELINE",
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+      "total_integrated_coordinates": 191
+    },
+    {
+      "chemical_dimensions": 241,
+      "evaluated_mass_action_expressions": 454,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R0",
+      "new_solver_execution": true,
+      "scenario": "FLOW_CHALLENGE",
+      "status": "REFERENCE_CONVERGED",
+      "total_integrated_coordinates": 261
+    },
+    {
+      "chemical_dimensions": 214,
+      "evaluated_mass_action_expressions": 454,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R1",
+      "new_solver_execution": true,
+      "scenario": "FLOW_CHALLENGE",
+      "status": "EXACT_REDUCTION_VERIFIED",
+      "total_integrated_coordinates": 234
+    },
+    {
+      "chemical_dimensions": 175,
+      "evaluated_mass_action_expressions": 452,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R2",
+      "new_solver_execution": true,
+      "scenario": "FLOW_CHALLENGE",
+      "status": "EXACT_REDUCTION_VERIFIED",
+      "total_integrated_coordinates": 195
+    },
+    {
+      "chemical_dimensions": 174,
+      "evaluated_mass_action_expressions": 451,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_CHAIN1",
+      "new_solver_execution": true,
+      "scenario": "FLOW_CHALLENGE",
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+      "total_integrated_coordinates": 194
+    },
+    {
+      "chemical_dimensions": 173,
+      "evaluated_mass_action_expressions": 450,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_CHAIN12",
+      "new_solver_execution": true,
+      "scenario": "FLOW_CHALLENGE",
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+      "total_integrated_coordinates": 193
+    },
+    {
+      "chemical_dimensions": 173,
+      "evaluated_mass_action_expressions": 445,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_RECYCLE",
+      "new_solver_execution": true,
+      "scenario": "FLOW_CHALLENGE",
+      "status": "EXACT_REDUCTION_VERIFIED",
+      "total_integrated_coordinates": 193
+    },
+    {
+      "chemical_dimensions": 171,
+      "evaluated_mass_action_expressions": 443,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_CHAIN12_RECYCLE",
+      "new_solver_execution": true,
+      "scenario": "FLOW_CHALLENGE",
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+      "total_integrated_coordinates": 191
+    },
+    {
+      "chemical_dimensions": 241,
+      "evaluated_mass_action_expressions": 454,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R0",
+      "new_solver_execution": true,
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "status": "REFERENCE_CONVERGED",
+      "total_integrated_coordinates": 261
+    },
+    {
+      "chemical_dimensions": 214,
+      "evaluated_mass_action_expressions": 454,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R1",
+      "new_solver_execution": true,
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "status": "EXACT_REDUCTION_VERIFIED",
+      "total_integrated_coordinates": 234
+    },
+    {
+      "chemical_dimensions": 175,
+      "evaluated_mass_action_expressions": 452,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R2",
+      "new_solver_execution": true,
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "status": "EXACT_REDUCTION_VERIFIED",
+      "total_integrated_coordinates": 195
+    },
+    {
+      "chemical_dimensions": 174,
+      "evaluated_mass_action_expressions": 451,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_CHAIN1",
+      "new_solver_execution": true,
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+      "total_integrated_coordinates": 194
+    },
+    {
+      "chemical_dimensions": 173,
+      "evaluated_mass_action_expressions": 450,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_CHAIN12",
+      "new_solver_execution": true,
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+      "total_integrated_coordinates": 193
+    },
+    {
+      "chemical_dimensions": 173,
+      "evaluated_mass_action_expressions": 445,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_RECYCLE",
+      "new_solver_execution": true,
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "status": "EXACT_REDUCTION_VERIFIED",
+      "total_integrated_coordinates": 193
+    },
+    {
+      "chemical_dimensions": 171,
+      "evaluated_mass_action_expressions": 443,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_CHAIN12_RECYCLE",
+      "new_solver_execution": true,
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+      "total_integrated_coordinates": 191
+    },
+    {
+      "chemical_dimensions": 241,
+      "evaluated_mass_action_expressions": 454,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R0",
+      "new_solver_execution": true,
+      "scenario": "COMPETITION_OCCUPANCY",
+      "status": "REFERENCE_CONVERGED",
+      "total_integrated_coordinates": 261
+    },
+    {
+      "chemical_dimensions": 214,
+      "evaluated_mass_action_expressions": 454,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R1",
+      "new_solver_execution": true,
+      "scenario": "COMPETITION_OCCUPANCY",
+      "status": "EXACT_REDUCTION_VERIFIED",
+      "total_integrated_coordinates": 234
+    },
+    {
+      "chemical_dimensions": 175,
+      "evaluated_mass_action_expressions": 452,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R2",
+      "new_solver_execution": true,
+      "scenario": "COMPETITION_OCCUPANCY",
+      "status": "EXACT_REDUCTION_VERIFIED",
+      "total_integrated_coordinates": 195
+    },
+    {
+      "chemical_dimensions": 174,
+      "evaluated_mass_action_expressions": 451,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_CHAIN1",
+      "new_solver_execution": true,
+      "scenario": "COMPETITION_OCCUPANCY",
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+      "total_integrated_coordinates": 194
+    },
+    {
+      "chemical_dimensions": 173,
+      "evaluated_mass_action_expressions": 450,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_CHAIN12",
+      "new_solver_execution": true,
+      "scenario": "COMPETITION_OCCUPANCY",
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+      "total_integrated_coordinates": 193
+    },
+    {
+      "chemical_dimensions": 173,
+      "evaluated_mass_action_expressions": 445,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_RECYCLE",
+      "new_solver_execution": true,
+      "scenario": "COMPETITION_OCCUPANCY",
+      "status": "EXACT_REDUCTION_VERIFIED",
+      "total_integrated_coordinates": 193
+    },
+    {
+      "chemical_dimensions": 171,
+      "evaluated_mass_action_expressions": 443,
+      "fresh_vs_frozen_source_numeric_error": 0.0,
+      "model": "R3_CHAIN12_RECYCLE",
+      "new_solver_execution": true,
+      "scenario": "COMPETITION_OCCUPANCY",
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS",
+      "total_integrated_coordinates": 191
+    }
+  ],
+  "counter_count": 20,
+  "counter_names": [
+    "NET_Pept0003",
+    "NET_ATP",
+    "NET_ADP",
+    "NET_AMP",
+    "NET_GTP",
+    "NET_GDP",
+    "NET_PO4",
+    "NET_PPi",
+    "NET_CP",
+    "CONSUMED_ATP",
+    "CONSUMED_GTP",
+    "RELEASED_GDP",
+    "RELEASED_PO4",
+    "RELEASED_PPi",
+    "RELEASED_EFG_GDP",
+    "RELEASED_RRF",
+    "RELEASED_tRNAGlyGCC",
+    "RELEASED_RS50S",
+    "RESIDUE_re0000000018",
+    "RESIDUE_re0000000079"
+  ],
+  "formal_scientific_decision": "Separate dated acceptance records; numerical PASS does not extend their scope.",
+  "four_scenarios": [
+    "AUTHOR_BASELINE",
+    "FLOW_CHALLENGE",
+    "ENERGY_FACTOR_LIMITED",
+    "COMPETITION_OCCUPANCY"
+  ],
+  "gates_unchanged": {
+    "conservation_abs": 1e-08,
+    "cumulative": 0.02,
+    "exact_numeric_error": 1e-06,
+    "negative_floor": -1e-09,
+    "net_flux_rms": 0.1,
+    "peptide": 0.05,
+    "resources": 0.05
+  },
+  "historical_solver_failures": "Retained in original failure_evidence.jsonl; none silently converted to a completed solve.",
+  "inherited_MATLAB": "Historical 99 passed / 3 failed / 1 incomplete; not rerun or fixed by this Python campaign.",
+  "mode": "FRESH_FULL_CAMPAIGN",
+  "models_per_scenario": 7,
+  "normalization_detail": "Per-scenario numeric observable and counter scales are in validation_results.json comparison.fixed_scales and comparison.counter_fixed_scales; the frozen runtime is authoritative.",
+  "normalization_rules_unchanged": {
+    "ATP_ADP_AMP": "max(1,initial ATP+ADP+AMP)",
+    "GTP_GDP": "max(1,initial GTP+GDP)",
+    "PO4": "max(1,initial ATP+GTP+PO4)",
+    "PPi": "max(1,initial Gly+Met)",
+    "factors": "initial role-pool totals, floor1e-3",
+    "peptide": "max(1,min(initial Gly/2,initial Met))",
+    "resource_current": "fixed source concentration scale / 1 source time unit",
+    "ribosome": "initial sum source ribosomal carriers, with source-state projection recorded",
+    "translation_cumulative": "max(1,initial Gly+Met)"
+  },
+  "source_time_unit": "SOURCE_NUMERICAL_TIME_UNIT_NOT_INTERPRETED_AS_SECONDS",
+  "status": "PASS",
+  "windows": [
+    [
+      0,
+      0.05
+    ],
+    [
+      0.05,
+      1
+    ],
+    [
+      1,
+      1000
+    ]
+  ],
+  "zero_branch_reactivation_R2_R3": "BLOCKED_AS_REQUIRED"
+}

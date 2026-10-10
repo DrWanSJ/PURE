@@ -1,0 +1,830 @@
+# Sean Codex — B1-3 / Phase C Formal Acceptance, Release Closure & HTML Dashboard Upgrade
+
+## 0. Mission
+
+Project: SynCell / PURE / PNAS2017
+
+Machine: WSJ / sean
+
+Repository: `C:\Users\sean\Desktop\GUV`
+
+Active branch: `codex/energy-cycles-v1`
+
+Previously observed upstream HEAD: `7a95c29b6bf80b567863cc70a631859016144924`
+
+**This task is a FORMAL CLOSURE AND PRESENTATION task, not a new reduction research campaign.**
+
+The researcher has now formally accepted the scoped scientific conclusions from B1-3 and Phase C.
+
+Your objectives are:
+
+1. Record the researcher's formal B1-3 and Phase C scientific decisions with exact scope.
+2. Freeze and publish the reproducible 214/175/173/171-dimensional research results.
+3. Organize the existing 26 B1-3 and 251 Phase C files without losing evidence.
+4. Upgrade the project's existing HTML presentation, prioritizing the previous dashboard rather than creating a competing frontend.
+5. Run validation, protect historical results, update documentation and publish on the authorized active branch.
+
+**Do not conduct new QSSA research, energy-cycle reduction, parameter fitting, or further state elimination in this task.**
+
+The deliverable is a reproducible, versioned, scientifically qualified research milestone with a usable HTML demonstration.
+
+---
+
+## 1. Human scientific authorization — already granted
+
+This is an explicit scientific acceptance decision from the researcher.
+
+Researcher's latest instruction, dated 2026-10-10:
+
+> 我觉得没问题，正式接受，然后给我一个 sean codex prompt 把当前降维简化正式收束，还要更新之前的 html 方便展示。
+
+The researcher confirmed acceptance in response to the already reviewed decision table and the independent mathematical audit.
+
+Record the decision accurately. Do not claim the researcher approved any broader model, kinetic mechanism, untested scenario or future work.
+
+### 1.1 B1-3 decisions
+
+| Gate | Formal decision |
+|---|---|
+| H1 | Y |
+| H2 | Y |
+| H3 | Y |
+| H4 | CONDITIONAL |
+| H5 | CONDITIONAL |
+| H6 | CONDITIONAL |
+| H7 | CONDITIONAL |
+| H8 | CONDITIONAL |
+| H9 | CONDITIONAL |
+
+The accepted scope is source-exact structural reconstruction of RF1/RF2 termination, RF3 alternatives, free Pept0003 release, and source-supported ribosome recycling.
+
+Preserve the following conditions:
+
+- RF3 exchange and direct release are alternative routes, not an experimentally ranked dominant mechanism.
+- Finite EF-G–GTP, RRF, RF3 and nucleotide supplies are explicit pathway boundary assumptions where applicable.
+- Structural token accounting is not full molecular, elemental, ionic or charge certification.
+- RF1/RF2 competition, active reverse paths and author-disabled directions must retain their distinctions.
+- Original SBML species identity does not independently certify physiological timing or detailed peptide chemistry.
+- B1-2's H3/H4/H6 restrictions remain unchanged.
+
+New formal status:
+
+`B1_3_FORMALLY_ACCEPTED_LIMITED_SCOPE`
+
+This supersedes `PENDING_HUMAN_REVIEW` as the **current decision**, without overwriting historical pending evidence.
+
+### 1.2 Phase C decisions
+
+| Model | Formal research decision |
+|---|---|
+| R1 — 214 chemical dimensions | ACCEPTED: SOURCE_GENERAL exact conservation reduction |
+| R2 — 175 dimensions | ACCEPTED: exact reduction on the author-parameter and initial-support domain |
+| R3_RECYCLE — 173 dimensions | CONDITIONALLY ACCEPTED: exact observable quotient, not full microscopic reconstruction |
+| R3_CHAIN1 — 174 dimensions | CONDITIONALLY ACCEPTED: one-round approximate Gly aggregation |
+| R3_CHAIN12 — 173 dimensions | CONDITIONALLY ACCEPTED: two-round approximate Gly aggregation |
+| R3_CHAIN12_RECYCLE — 171 dimensions | CONDITIONALLY ACCEPTED: four-scenario, long-window, fully coupled numerical candidate |
+
+The final 171-dimensional model is an accepted **conditional research candidate**, not a universal validated PURE model.
+
+Recommended umbrella status:
+
+`PHASE_C_FORMALLY_ACCEPTED_WITH_SCOPE_CONDITIONS`
+
+Preserve the numerical gate result:
+
+`FULL_COUPLED_CANDIDATE_GATES_PASS`
+
+These are two different statements: one is a human scientific decision; the other is a numerical evaluation result.
+
+### 1.3 Explicitly NOT approved
+
+The researcher has NOT accepted:
+
+- General parameter-independent validity of R2/R3.
+- Initial-layer accuracy for all initial conditions.
+- Physical feasibility for every projected state.
+- Exact microscopic reconstruction from the 173/171-dimensional quotient.
+- Exact kinetic lumpability of the Gly stages.
+- RF1/RF2 merger.
+- Previously rejected 21-state QSSA.
+- Unconditional steady-enzyme elimination of CK/NDK/MK/PPiase.
+- Any experimental validation of general PURE expression.
+- Quantitative osmosis, ionic strength or molecular charge claims.
+- Any claim of computational acceleration.
+- Renaming the current model as a generally validated `PURE_reduced_core`.
+
+Scientific acceptance is limited to the explicitly reviewed evidence and its applicable domain.
+
+Record the decision as approved through the researcher's 2026-10-10 conversation. Do not invent a handwritten signature, researcher identity, exact approval clock time, external approval URL or undisclosed personal signoff.
+
+---
+
+## 2. Git preflight and historical evidence protection
+
+Follow `PURE_two_computer_git_rules.txt`, version 2026-10-09.
+
+Use only the existing sean checkout.
+
+Verify:
+
+```powershell
+git rev-parse --show-toplevel
+git remote get-url origin
+git branch --show-current
+git rev-parse HEAD
+git status -sb
+git status --porcelain=v1 -uall
+git fetch origin --prune
+git rev-list --left-right --count "HEAD...@{upstream}"
+```
+
+Expected active branch:
+
+`codex/energy-cycles-v1`
+
+The previous execution reported:
+
+- Upstream and local HEAD both `7a95c29`.
+- No tracked changes.
+- 26 untracked B1-3 research files.
+- 251 additional Phase C files.
+- Previously existing tracked files and B1-3 evidence remained byte-for-byte unchanged.
+- No earlier commit/push attempted for these two phases.
+
+**Specific dirty-worktree exception:** These already reported B1-3 and Phase C outputs may be present as untracked files. Identify every path and verify its role before continuing.
+
+Do not treat arbitrary dirty files as authorized.
+
+If the remote has advanced, history has diverged, tracked scientific evidence differs unexpectedly, or the untracked inventory contains unknown external work, stop and report. Do not automatically pull into this populated dirty worktree.
+
+Do not:
+
+- Clone the repository.
+- Create a new worktree or branch.
+- Reset, clean or force-push.
+- Merge main.
+- Rewrite the frozen topology branch.
+- Alter canonical source files.
+- Rewrite accepted B1-1/B1-2 historical evidence.
+- Delete untracked results to make Git appear clean.
+
+Prepare a SHA-256 inventory before modifying anything.
+
+Permitted edits are limited to formal release records, project status/index files, the identified existing HTML/dashboard and its generator/data adapters, necessary tests, and clearly documented release packaging.
+
+Old original experiment outputs must not be silently regenerated in place.
+
+---
+
+## 3. Resolve the two similarly named mathematical certificates
+
+There have been two distinct files named `mathematical_certificate.json` in the review context.
+
+The current Phase C certificate is:
+
+- Size: 113,107 bytes.
+- SHA-256: `c698ca685bf1052f529c9b8b2bb3626c2a3176818e868469cf9b29e6f3e26df0`
+
+The older CHAIN_01 local certificate is:
+
+- Size: 46,649 bytes.
+- SHA-256: `7f5d1ddf6a2ada0aecb4e81ae099db90f77eb3783a738022b05ce9006651315c`
+
+Only the first is the Phase C dimension certificate.
+
+Verify the actual local files and preserve both under their existing historical paths.
+
+Do not replace one with the other.
+
+Canonical scientific inputs:
+
+```text
+SBML SHA-256:
+dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df
+
+Author parameters SHA-256:
+cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465
+```
+
+These are immutable source inputs for this milestone.
+
+---
+
+## 4. Formal scientific acceptance records
+
+Use the existing repository's B1-2 formal acceptance/publication convention where available.
+
+Create additive, versioned documents, for example:
+
+```text
+docs/reduction/pathways/phase_b1_3_formal_acceptance_20261010.md
+
+docs/reduction/rapid_reduction/phase_c_formal_acceptance_20261010.md
+
+docs/reduction/rapid_reduction/release_manifest_v1.json
+
+docs/reduction/rapid_reduction/release_notes_v1.md
+```
+
+Adapt exact paths to existing conventions. Do not create duplicate names if equivalent files already exist.
+
+### The B1-3 formal acceptance must record
+
+- Human decision date and decision source.
+- H1–H9 exactly as authorized.
+- Original species/reaction identity scope.
+- RF1/RF2 alternative releases and competition.
+- RF3 alternate paths and finite supply conditions.
+- Actual `re0000000910` recycling event.
+- Accepted source-species resource ledger.
+- All retained limitations.
+- Original engineering evidence references and hashes.
+- Separate status for structural acceptance versus kinetic validation.
+
+### Phase C formal acceptance must record
+
+- R0 original canonical model.
+- R1 source-general exact coordinate elimination.
+- R2 author-condition exact support restriction.
+- R3_RECYCLE exact observable quotient.
+- R3_CHAIN1 and R3_CHAIN12 conditional kinetic approximations.
+- Final R3_CHAIN12_RECYCLE 171-dimensional candidate.
+- Every accepted scope and exclusion.
+- The independent mathematical review provenance.
+- Four preregistered validation scenarios and actual reported gate status.
+- Runtime and non-acceleration result.
+- Source, configuration, certificates, code, trajectory and numerical report hashes.
+
+Do not alter historical review files merely to erase their former `PENDING` state.
+
+Instead, link historical pending decisions to the new dated formal acceptance records and clearly distinguish the historical state from the current decision.
+
+**Historical evidence remains historical evidence.**
+
+---
+
+## 5. Freeze the scientific model hierarchy
+
+The release must present the hierarchy accurately:
+
+| Version | Chemical dimensions | Transformation |
+|---|---:|---|
+| R0 | 241 | Canonical reference |
+| R1 | 214 | Exact SOURCE_GENERAL conservation |
+| R2 | 175 | Exact AUTHOR_CONDITION support reduction |
+| R3_RECYCLE | 173 | Exact protected-observable quotient |
+| R3_CHAIN1 | 174 | One approximate Gly aggregation |
+| R3_CHAIN12 | 173 | Two approximate Gly aggregations |
+| R3_CHAIN12_RECYCLE | 171 | Two Gly approximations plus recycling quotient |
+
+Do not confuse the two different 173-dimensional models.
+
+Also report:
+
+- 20 additional integration counters in every version.
+- 191 total integrated coordinates for the 171-dimensional chemical model.
+- 968 original canonical directed reactions.
+- 483 positive author-parameter directions.
+- 481 potentially active directions on the author support face.
+- 443 effective monomials for the final 171-dimensional runtime.
+
+A reduction in chemical state dimension is not the same as reducing 968 chemical reactions to 171 reactions.
+
+### 5.1 Preserve exact mathematical distinctions
+
+SOURCE_GENERAL:
+
+\[
+S\in\mathbb Q^{241\times968}
+\]
+
+\[
+\operatorname{rank}(S)=214
+\]
+
+\[
+\dim\ker(S^\mathsf T)=27
+\]
+
+AUTHOR_CONDITION:
+
+\[
+241=205+36
+\]
+
+\[
+\operatorname{rank}(S_{\mathrm{support}})=175
+\]
+
+\[
+205-175=30
+\]
+
+The 36 excluded species are invariantly zero only under the declared author condition.
+
+Reconstruction is exact for R1 and R2 on their stated domains.
+
+For the recycling quotient:
+
+\[
+P A_{\mathrm{tail}}=Q P
+\]
+
+with seven microstates and five independent observables.
+
+This is an exact projection but not a unique microscopic inverse.
+
+For each Gly approximation:
+
+\[
+k_b=\left(\frac{1}{7}+\frac{1}{1000}\right)^{-1}
+=\frac{7000}{1007}
+\]
+
+The approximation matches mean waiting time, not the full waiting-time distribution.
+
+The combined 171-dimensional model remains approximate.
+
+### 5.2 Preserve genuine failure evidence
+
+Explicitly carry forward:
+
+- Up to 10% initial-layer resource error for nonzero fast-state occupancy.
+- Some physically infeasible projected initial states.
+- R2/R3 blocked if author-disabled `re0000000952` is reactivated.
+- RF1/RF2 aggregation counterexample: peptide-release rates 0.5 versus 1.5.
+- Unrecoverable individual microscopic gross extents from the recycling quotient.
+- Existing 21-state QSSA failures.
+- Energy-cycle physical-root and fast-layer limitations.
+
+Do not suppress rejected candidates from the scientific history.
+
+---
+
+## 6. Consolidate Phase C into a reproducible research milestone
+
+Prefer a versioned milestone label such as:
+
+`PNAS2017_PHASE_C_REDUCTION_V1_20261010`
+
+This is a research-release identity, NOT the creation of a fully validated `PURE_reduced_core`.
+
+Reuse the existing implementation:
+
+```text
+scripts/reduction/rapid_v1/
+configs/reduction/rapid_v1.json
+docs/reduction/rapid_reduction/
+results/reduction/rapid_v1/
+```
+
+Verify actual paths before proceeding.
+
+Do not duplicate the entire runtime implementation under another folder.
+
+The released entry point must allow another computer to:
+
+1. Verify source and author parameter hashes.
+2. Rebuild mathematical objects.
+3. Execute R0/R1/R2/R3 simulations.
+4. Reproduce the reported outputs.
+5. Recompute observed errors.
+6. Identify which claims are exact and which are conditionally approximate.
+
+Provide one discoverable command or wrapper for the milestone, while preserving the existing individual commands.
+
+Use deterministic output destinations. Never let a verification run silently overwrite frozen scientific evidence.
+
+### File classification is mandatory
+
+Before staging Git, classify all 26 B1-3 and 251 Phase C files into:
+
+- `VERSION_CONTROL_REQUIRED`: source code, configs, proof certificates, review evidence, critical summaries, reproducibility metadata and modest essential derived data.
+- `REGENERABLE_OUTPUT`: files reproducible from versioned inputs.
+- `ARCHIVAL_SCIENTIFIC_DATA`: large raw trajectories or other required original evidence.
+- `CACHE_OR_TEMPORARY`: actual machine-generated disposable caches.
+
+Create a complete manifest containing original path, category, size, SHA-256, origin, reproduction command and preservation location.
+
+Do not automatically delete or ignore existing research files.
+
+If important evidence is too large for Git, arrange and verify a durable archive with an explicit manifest, retrieval instructions and SHA-256 validation before excluding it from publication.
+
+A local-only file on sean is not automatically available to CZ.
+
+If durable evidence preservation cannot be completed, do not claim the release is fully closed. Report the specific archival blocker.
+
+Do not stage all 277 files blindly.
+
+---
+
+## 7. Update the PREVIOUS HTML — highest presentation priority
+
+The researcher specifically wants the existing HTML updated for demonstration.
+
+### 7.1 Discover the real existing HTML first
+
+Inspect the current repository, including tracked, untracked and ignored files where appropriate:
+
+```powershell
+git ls-files "*.html" "*.htm"
+
+Get-ChildItem -Path . -Recurse -File -Include *.html,*.htm |
+  Select-Object FullName,Length,LastWriteTime
+```
+
+Also inspect existing HTML generators, current presentation entry points, relative data directories and links.
+
+Relevant repository context includes:
+
+- `docs/visualization/visualization_plan.md`
+- `scripts/render_pnas2017_review.py`
+- Existing results figures and any HTML presentation assets.
+- Existing human-review and network-visualization navigation.
+
+The GitHub visualization plan is currently an architectural contract, not proof of an implemented frontend.
+
+**Prefer editing the existing main HTML and its generator in place.**
+
+Do not create a second competing dashboard if a usable earlier one exists.
+
+Preserve working legacy tabs, hyperlinks, filters and diagrams.
+
+If no previous actual HTML can be identified in the local checkout, document that finding and create exactly one minimal new static reduction overview under the existing visualization structure, linked from the project documentation.
+
+Do not falsely claim the original HTML was updated if it was not found.
+
+### 7.2 Primary presentation objective
+
+The HTML must answer, within one minute of opening:
+
+**What was reduced, why was it mathematically legal, how accurate is it, and what remains unvalidated?**
+
+Use a clear Chinese presentation, with English technical terms and original IDs where necessary.
+
+The default view should show:
+
+`241 → 214 → 175 → 171`
+
+But distinguish the branching 173-dimensional alternatives explicitly.
+
+Show:
+
+- Source-general exact.
+- Author-condition exact.
+- Exact observable quotient.
+- Approximate topology aggregation.
+
+Do not depict the full sequence as four identical types of mathematical simplification.
+
+### 7.3 Required dashboard sections
+
+#### A. Research overview
+
+Display:
+
+- Source: Matsuura et al. PNAS 2017, fMet–Gly–Gly.
+- 241 original species.
+- 968 canonical reaction directions.
+- 483 positive author parameters.
+- 481 potentially active directions on the author support face.
+- R1 214 dimensions.
+- R2 175 dimensions.
+- Final conditional R3 171 dimensions.
+- 20 shared integration counters.
+- The formally accepted scientific status and its scope.
+
+Add an explicit clarification:
+
+**171 = chemical state dimensions, not reaction count.**
+
+#### B. Reduction flow
+
+Show the distinct transformations:
+
+`R0 → R1 → R2`
+
+Then branch into:
+
+- Gly first round.
+- Gly second round.
+- Recycling quotient.
+
+Show their recombination into the final 171-dimensional candidate.
+
+Every node must include its reduction type, input/output dimensions, source IDs and approval scope.
+
+#### C. Interactive trajectory comparison
+
+Let the user choose among:
+
+- `AUTHOR_BASELINE`
+- `FLOW_CHALLENGE`
+- `ENERGY_FACTOR_LIMITED`
+- `COMPETITION_OCCUPANCY`
+
+Where recorded trajectories are available, compare source and reduced models for:
+
+- Free Pept0003.
+- ATP/GTP/GDP/PO4/PPi or other relevant resources.
+- RS30S/RS50S and ribosome occupancy.
+- EF-Tu/EF-G and selected factor inventories.
+- Integrated resource-event counters.
+
+Allow time-window switching:
+
+`0–0.05`, `0.05–1`, `1–1000`.
+
+These are original source-time intervals. Do not automatically label them as seconds.
+
+Plot actual saved trajectory data, not fabricated schematic curves.
+
+If detailed trajectories are not packaged into the offline dashboard, show only verified aggregate results and label the unavailable curves honestly.
+
+Preserve early-window errors rather than hiding them by default.
+
+#### D. Numerical results
+
+Show the four frozen scenarios with the original report values.
+
+The final 171-dimensional long-window maximum reported errors are approximately:
+
+- Pept0003: `0.0000589%`
+- Resource/factor: `0.052502%`
+- Ribosome inventory/occupancy: `0.0000237%`
+- Cumulative resource-event amount: `0.0464469%`
+
+Make clear that these are **long-window normalized-error results**, not universal errors over all time and all initial states.
+
+Preserve the registered numerical gates and the exact normalizations/scales.
+
+Do not modify tolerances, fitted parameters, source reaction rates or acceptance thresholds to produce a better figure.
+
+#### E. Runtime comparison
+
+Show the measured median times:
+
+| Model | Median time | Relative speed |
+|---|---:|---:|
+| Full 241 | 0.5061 s | 1.000× |
+| R1 214 | 0.5663 s | 0.894× |
+| R2 175 | 0.5548 s | 0.912× |
+| R3 171 | 0.5344 s | 0.947× |
+
+Mark explicitly:
+
+**No computational speedup yet.**
+
+Explain visually why this may occur by showing reported Jacobian nonzero counts, including the final reported 6,986 versus original 1,723 at the terminal comparison point.
+
+Do not claim that these counts prove a unique causal explanation; label sparse-coordinate reconstruction and Jacobian fill-in as an engineering hypothesis supported by the observed matrix structure.
+
+#### F. Mechanistic drill-down
+
+Show compact source-linked process views for:
+
+- Initiation interface.
+- Two Gly elongation rounds.
+- RF1/RF2 termination.
+- RF3 alternatives.
+- RRF/EF-G ribosome recycling.
+- The exact 7-to-5 recycling quotient.
+
+For RF1/RF2 display the actual distinct peptide-release rates:
+
+`RF1: k = 0.5`
+
+`RF2: k = 1.5`
+
+Show why the branches cannot be merged into a single exact state.
+
+For the Gly aggregation show:
+
+`re0000000017 + re0000000018`
+
+`re0000000078 + re0000000079`
+
+and:
+
+`kb = 7000/1007`
+
+For the recycling quotient, distinguish:
+
+`re0000000910`: 70S splitting
+
+from the subsequent free-component releases.
+
+Provide drill-down links from every displayed reduced transformation to original reaction IDs, source mappings, scientific notes and mathematical certificates.
+
+Do not repeat the 968 original reactions as one unreadable graph.
+
+#### G. Scientific limitations
+
+Display a persistent, readable limitations section:
+
+- Author fixed zero-parameter condition.
+- Early transient inaccuracies.
+- Invalid projected initial conditions.
+- Unrecoverable microscopic path fluxes.
+- Exact versus approximate distinctions.
+- No established speed improvement.
+- No general protein-sequence validity.
+- No charge/osmotic-pressure certification.
+
+The limitation section is part of the approved result, not an optional hidden disclaimer.
+
+### 7.4 Presentation implementation requirements
+
+- Static HTML capable of working offline.
+- No mandatory cloud service, paid UI backend or remote CDN.
+- Reuse existing CSS/JavaScript conventions when possible.
+- Responsive layout suitable for desktop group meetings and smaller screens.
+- Readable scientific equations, labels, figure legends and units.
+- Clear navigation and print/PDF-friendly styling.
+- Actual numeric data sourced from the frozen experiment outputs.
+- Charts and tables consistent with the same versioned data contract.
+- All input data hashes and freshness checks visible or accessible.
+- Do not expose irrelevant system-specific Windows paths as if they were portable URLs.
+
+Use a small reproducible adapter/generator for the presentation data rather than embedding independent, manually typed scientific result copies throughout the HTML.
+
+Avoid unnecessary frontend frameworks or rebuilding the whole visualization stack.
+
+---
+
+## 8. Documentation consolidation
+
+Update only the appropriate current navigation/status documents, such as:
+
+- Main repository `README.md`.
+- `docs/README.md`.
+- Existing `docs/reduction/` entry point, if present.
+- Existing visualization navigation.
+- Current project tasklist milestone status, only where consistent with the active research plan.
+
+Link:
+
+1. Canonical source/model provenance.
+2. B1-2 accepted limited-scope structure.
+3. B1-3 formal acceptance.
+4. Phase C formal acceptance.
+5. Mathematical certificate.
+6. Actual reduced runtime.
+7. Validation report.
+8. HTML dashboard.
+9. Reproducibility commands.
+10. Future engineering and scientific limitations.
+
+Do not rewrite frozen historical reports just because they describe an earlier unapproved or blocked state.
+
+An earlier `R3_PILOT_UNVALIDATED` report remains historically correct for the pilot it documented; it should link to the later milestone instead of being silently overwritten.
+
+The README must distinguish:
+
+- `PNAS2017_full_reference`: unchanged benchmark.
+- `PNAS2017_PHASE_C_REDUCTION_V1_20261010`: formally accepted limited-domain research milestone.
+- `PURE_reduced_core`: still not a universally validated or separately approved model identity.
+- `Mavelli2015_coarse_reference`: frozen legacy model.
+
+No source status may be silently upgraded beyond the reviewed evidence.
+
+---
+
+## 9. Release verification
+
+Run a focused, actual verification campaign before final publication.
+
+### Scientific requirements
+
+1. Recompute or independently verify the source hashes.
+2. Confirm 241 species, 968 reactions and correct coefficient `2 PO4` for `re0000000414`.
+3. Confirm 27 SOURCE_GENERAL conservation relations and rank 214.
+4. Confirm the author-condition invariant support face, 36 zero species and rank 175.
+5. Verify the 7-to-5 recycling quotient identity.
+6. Verify the separate non-exact Gly-lumping counterexamples.
+7. Rerun or check reproducibility for the four frozen scenario validation outputs using the recorded numerical configuration.
+8. Check stored reduced-vs-full errors against the original thresholds.
+9. Confirm the 20 integration counters are consistently represented.
+10. Confirm no source-driven runtime secretly substitutes reference trajectories as inputs.
+
+Do not silently score historical solver failures as successes.
+
+Retain inherited MATLAB `99 passed / 3 failed / 1 incomplete` as historical evidence unless actually rerun; do not claim it was fixed.
+
+If full numerical reruns are too expensive for the closure budget, distinguish exact verification of saved frozen artifacts from newly executed reruns. Do not claim fresh execution without performing it.
+
+### HTML requirements
+
+- All dashboard links resolve.
+- All figures use the correct model/scenario/observable data.
+- No misleading 968-to-171 reaction-count graphic.
+- Exact and approximate statuses are visibly distinct.
+- The 173-dimensional alternatives are not conflated.
+- Limitations remain visible.
+- Source-time units are not guessed.
+- Group-meeting desktop presentation renders properly.
+- Browser smoke test and screenshots if a browser/testing framework is already available.
+- Automated data/schema freshness tests pass.
+
+If graphical browser validation is unavailable, run static structural/data checks and explicitly state which visual checks still require a human.
+
+---
+
+## 10. Commit and push protocol
+
+This task follows the normal commit/push workflow of the 2026-10-09 two-computer Git rules, limited to the already authorized active research branch.
+
+After all applicable release acceptance gates pass:
+
+1. Review every modified and added path.
+2. Confirm scientific evidence files were not overwritten.
+3. Confirm required large evidence is either versioned or durably archived with validated hashes.
+4. Confirm the new formal acceptance records accurately reproduce the human decisions.
+5. Stage only approved release files.
+6. Make descriptive commits on `codex/energy-cycles-v1`.
+
+Prefer separate logical commits for:
+
+- B1-3 formal acceptance and evidence publication.
+- Phase C research release and evidence packaging.
+- HTML/dashboard upgrade and navigation.
+
+Use ordinary Git push:
+
+```powershell
+git push origin codex/energy-cycles-v1
+```
+
+Verify local and remote HEAD and upstream synchronization after pushing.
+
+Do not merge main, create a new PR automatically, close existing PRs, create a new branch or rewrite history.
+
+If scientific verification, artifact integrity or essential archival requirements fail, stop before publication and report the blocker. Do not create an apparently complete release by omitting evidence.
+
+If a subset is safely committable but the full release is blocked, state the precise partial-publication status; do not claim `RELEASE_CLOSED`.
+
+---
+
+## 11. Final delivery format
+
+Return a concise Chinese completion report containing:
+
+### A. Scientific closure
+
+- B1-3 formal acceptance status.
+- H1–H9 final decisions.
+- R1/R2/R3 final scientific classifications.
+- Evidence locations and signed-decision provenance.
+- Remaining limitations.
+
+### B. Model release
+
+- Frozen milestone identifier.
+- Full/214/175/173/171 model dimensions.
+- Reproduction commands.
+- Source and certificate SHA-256.
+- Validation statuses.
+- Raw-data archival completeness.
+
+### C. HTML presentation
+
+- Exact updated HTML path.
+- Whether it was an existing file upgraded in place.
+- Local Windows open command or URL.
+- Supported interactive sections.
+- Screenshot/browser-test result.
+- Whether the page functions offline.
+
+### D. Git
+
+- Starting and final HEAD.
+- Files committed and intentionally excluded.
+- Commit SHAs.
+- Push result.
+- Remote verification.
+- Final working-tree status.
+
+### E. Next-stage handoff
+
+Only prepare recommendations; do not begin new scientific work.
+
+Priority 1: optimize sparse reduced coordinates, sparse Jacobian and runtime speed.
+
+Priority 2: investigate further reductions in energy-regeneration modules while retaining explicit dynamic resource storage.
+
+Priority 3: widen the parameter and initial-condition validity domain of the conditional 171-dimensional model.
+
+### Completion criterion
+
+The task is complete only if:
+
+1. The researcher's B1-3 and Phase C decisions have been formally recorded.
+2. Historical source and research evidence remains intact.
+3. The accepted candidate model is reproducible and its limitations are explicit.
+4. The existing HTML presentation has been upgraded, or a documented single-entry fallback has been created after verifying none existed.
+5. All required validation and packaging gates pass.
+6. Git publication is completed and verified on the authorized branch.
+
+Do not turn this closure task into another open-ended model-reduction campaign.
+
+**Start with Git and HTML discovery, then scientific acceptance records, evidence packaging, dashboard update, verification and publication.**

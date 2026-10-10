@@ -1,0 +1,134 @@
+{
+  "Gly_source_vector_field_counterexamples": [
+    {
+      "effective_rate": "7000/1007",
+      "effective_waiting_variance": "1014049/49000000",
+      "exact_lumpability": false,
+      "projected_derivative_max_difference": "1000",
+      "round": 1,
+      "same_projected_state": true,
+      "source_ids": [
+        "re0000000017",
+        "re0000000018"
+      ],
+      "source_waiting_variance": "1000049/49000000"
+    },
+    {
+      "effective_rate": "7000/1007",
+      "effective_waiting_variance": "1014049/49000000",
+      "exact_lumpability": false,
+      "projected_derivative_max_difference": "1000",
+      "round": 2,
+      "same_projected_state": true,
+      "source_ids": [
+        "re0000000078",
+        "re0000000079"
+      ],
+      "source_waiting_variance": "1000049/49000000"
+    }
+  ],
+  "author_support_species": 205,
+  "author_zero_species": 36,
+  "canonical_directed_reactions": 968,
+  "positive_parameter_directions": 483,
+  "re0000000414_PO4_coefficient": 2,
+  "rebuilt_certificate_semantically_identical": true,
+  "rebuilt_charts_semantically_identical": true,
+  "recycling": {
+    "P": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "0",
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "1",
+        "1",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "Q": [
+      [
+        "-3000",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "3000",
+        "-2000",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-1000",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1000",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1000"
+      ]
+    ],
+    "exact_zero_residual": true,
+    "identity": "P A_tail = Q P",
+    "microstates": 7,
+    "nonunique_inverse_dimension": 2,
+    "observables": 5
+  },
+  "source_left_nullity": 27,
+  "source_rank": 214,
+  "species": 241,
+  "status": "PASS",
+  "support_live_directions": 481,
+  "support_rank": 175
+}

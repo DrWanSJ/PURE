@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "species": 241,
+  "reactions": 968,
+  "nonzero_coefficients": 3854,
+  "comparison": "Exact rational coefficients aligned by original species/reaction IDs",
+  "independent_parser": "scripts/pathways/phase_b0/verify_phase_b0_witnesses.py",
+  "runtime_parser": "scripts/verify_reduction_audit_v0.py",
+  "matrix_file": "results/reduction/phase_c_release_v1/b1_3_20261010/phase_b1_3_source_matrices.json",
+  "matrix_sha256": "7fc9af3f85670eca1b5ca0c91cd3e0692bea3e8ed5ef18fe008cbd63a897d627"
+}

@@ -1,0 +1,3579 @@
+{
+  "edges": [
+    {
+      "from": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "relation": "RECOMPUTED_FROM",
+      "to": "docs/reduction/rapid_reduction/mathematical_certificate.json"
+    },
+    {
+      "from": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "relation": "RECOMPUTED_FROM",
+      "to": "docs/reduction/rapid_reduction/mathematical_certificate.json"
+    },
+    {
+      "from": "docs/reduction/source_coordinate_certificate_v4.json",
+      "relation": "RECOMPUTED_FROM",
+      "to": "docs/reduction/rapid_reduction/mathematical_certificate.json"
+    },
+    {
+      "from": "candidate:AUTHOR_SUPPORT_CONSERVATION",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:SOURCE_GENERAL",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:RECYCLE_TAIL_7_TO_5",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:GLY_CHAIN_1",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:GLY_CHAIN_2",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:RF1_RF2_COMMON_ENDPOINT",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:AA_GlyRS_BOUND_14",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:AA_MetRS_BOUND_14",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:AA_RESTRICTED_9",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:FORMYLATION",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:INITIATION_ORDER_POOL",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:ENERGY_CK_EXTRA_STORAGE",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:ENERGY_MK_EXTRA_STORAGE",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:ENERGY_NDK_EXTRA_STORAGE",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "candidate:ENERGY_PPiase_EXTRA_STORAGE",
+      "relation": "DETAILS_AND_COMPLETE_SOURCE_EQUATIONS",
+      "to": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "from": "results/reduction/rapid_v1/validation_results.json",
+      "relation": "NUMERICAL_EVIDENCE_FOR_HUMAN_DECISION",
+      "to": "docs/reduction/rapid_reduction/review_and_decision.md"
+    },
+    {
+      "from": "results/reduction/rapid_v1/b1_3_fresh_audit.json",
+      "relation": "AI_RECOMMENDATION_NOT_HUMAN_SIGNATURE",
+      "to": "docs/reduction/rapid_reduction/review_and_decision.md"
+    }
+  ],
+  "final_added_files_manifest": "results/reduction/rapid_v1/file_manifest.csv",
+  "manifest_self_hash_exclusions": [
+    "results/reduction/rapid_v1/file_manifest.csv",
+    "docs/reduction/rapid_reduction/evidence_navigation.json"
+  ],
+  "nodes": [
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "configs/reduction/rapid_v1.json",
+      "path": "configs/reduction/rapid_v1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "9076b2b3fcaa57b7b2c9fd2f8a92e5f37422ce47c9c633cd64fcaa6a2b187659",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "docs/reduction/rapid_reduction/b1_3_independent_scientific_audit.md",
+      "path": "docs/reduction/rapid_reduction/b1_3_independent_scientific_audit.md",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "df5ea95bb27c0d46baf3afd57ab01eef9d7eec243342e4eed2e6906911890cf2",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "docs/reduction/rapid_reduction/candidate_matrix.csv",
+      "path": "docs/reduction/rapid_reduction/candidate_matrix.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "1c7f017280c59cfd9eec4fb1b302c5856de08edc8970b5584e714d2364e79e20",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "path": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3212c8d9b2127375b9f3e70b53f5debe8f956010c8f5f36faeb3ebf189c38898",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "path": "docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c698ca685bf1052f529c9b8b2bb3626c2a3176818e868469cf9b29e6f3e26df0",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "docs/reduction/rapid_reduction/protocol.md",
+      "path": "docs/reduction/rapid_reduction/protocol.md",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "20015209ce29ced32b0f650771bcf03d252c2df456d8b69f99dd5a3f6daf6feb",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "docs/reduction/rapid_reduction/reduction_report.md",
+      "path": "docs/reduction/rapid_reduction/reduction_report.md",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3d38d3dc76b51dc26871f8406cb583c3a79afb918a54135bb2a1798061e14c5f",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "docs/reduction/rapid_reduction/review_and_decision.md",
+      "path": "docs/reduction/rapid_reduction/review_and_decision.md",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "24e53b5e1c9347ee283e9c13fa2409f014d9e240b7decbb1a591e2482ff3dc45",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "docs/reduction/rapid_reduction/review_and_decision.pdf",
+      "path": "docs/reduction/rapid_reduction/review_and_decision.pdf",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "cff3c25844215bbf5760636fbe2a3f7e45288ea74c73ef9d567b6967468896e4",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/b1_3_fresh_audit.json",
+      "path": "results/reduction/rapid_v1/b1_3_fresh_audit.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "5cc527eee20a96200b02df8a3592ddd184f5b5dbcad397011c99ae5fb1d8618c",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/baseline.json",
+      "path": "results/reduction/rapid_v1/baseline.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "4315267fd7c101f8bc0ccd6d120fde3459533d9f23f248ae43d98b6c7a9d56e6",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/baseline_preview.json",
+      "path": "results/reduction/rapid_v1/baseline_preview.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3cf04318507fa3294ec60bee8fc65b18abd338315c34336fc51b4ec51066f280",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R0.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R0.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "fa5898bb4f23697e4f9d0c4fee8ce0d278bbf13ba879d3b6d5741a456768ece0",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R0.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R0.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "ea55d1ac31c6b5fe447353f34985a7a7d7fdd3e283bb12102974549f33cb4570",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R0_RADAU.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R0_RADAU.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "9b10d193522a868572b99ac650a280127bdd181f90646f1a392ad9302e91e044",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R0_RADAU.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R0_RADAU.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "7b5a249d2868e6473f3bce953ada01a48fcbe06712c027a973c821f69243bf1c",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R0_TIGHT.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R0_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "5e34227325bc648fced60e7bd7771b0a73e5c8ddf311c8d4944d3e9b331f265e",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R0_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R0_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "6e3087a813ffa83c73ec0647c04d36bc9b77582ae38df99229ea7a7abcaa62fc",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R1.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "af376f545233890d3c4fb33a78c1d4230fa61fb8bf1ead9b655c47d71a534564",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R1.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "8383ee01f423d85e7aee2eba4d23b7ff3025f4c7d44bb0bcb708f75d185b6d6b",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R2.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R2.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "8ede3464ac02cc1c63047761ae1be0ba30cf32f81e37cd877700a4f94d297fde",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R2.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R2.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "04e95dd2060a6519fa93602b1b5ab41f5c03383a6eee6fb3f5179b34e806c99f",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN1.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "1ca3098c4538405932a57b507433c334c1c39decc33359a80dc47805fe5eb2f7",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN1.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "07fa41229ac03e846eb37dda1434a983875d07971ba8fcc3d2268f540f7f9b74",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c1b47616d7817bbf205e10c06c0a0d24ce2693b8d92ae318a758007ec77b1ce5",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "2cbee3c02fc138d14c245f293827f18a17a4c432539c9b33dbfa62987300249a",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "35de831cca947165d8049051b9accf9e8ec47746e6eeb0e0716ebf7ebeead536",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c265ffd53f8e9f8cf7713ee448163cd4d3fa756ddfd0cdde64579509b3f7f190",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c2d328f581ad75aeefd190277369780e7183bee69e3a0d266a839fe65ab222b5",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/AUTHOR_BASELINE__R3_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "ba810dc53b3c6d2683a6696df22fde5ec5c28bf474d2f342d5f25f6a31a789f9",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R0.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R0.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "e55094f6f3fe5dc7945d69ff3d292dff64289f781f22607a517599b7e7b03223",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R0.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R0.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "d942a3f81eb4ec4e16fb8c0a27a928291327827796cf9ca19af5837dd333f8c1",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "d2f16b12286cc718823f511cd8126d10800e77f0b1387576b107e489dffe1771",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3bc3c1e88794c04315f1b494c26800ca9e52ccb2e732ba402dd5e3ff32f537eb",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R1.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "55512f6668b52aa36187a35d24778bd3a7e18553186de6c79aab024ed27d294d",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R1.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "2958c66c5f6a8de22dfcd0ab5cbfaf344809e8d93f9e460cb361764a396de2ab",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R2.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R2.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "0b0a67f96917ca7fafa796c44a3be547936fa292198d81cfe46097d49954ab2e",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R2.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R2.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "e03ee41775d591714448fe8f2bfbf0e56a2f6902a63f7a41dc1374c35c226b92",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN1.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "e1f70248aacee701e1f0fa1b959ac2c13389f7fd645c25d3d6110387fa6a0392",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN1.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "be28b9adf65ac587fdf319d544510fdfe70c584377fbd71ea3dff0d779d57a85",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "32c834cb673eeeebc22e7840eebe670f7aa8be21fa6d7337c072595ec4f8f81f",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "1bbdcca5bd7a139973a866d49474cfafad554da144dc10f680381b1f681397f2",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "8942d58d47e92ee8eee83bff27a3ab50f1c313212d1e1f7d1df7b1917f64888c",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c0e5ae80d57322830bafe73e296f08526546a64b25e3e0c351f4ab7fd4b3f68f",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c141d5d94185ad94a8b9383a04ce038e02a36fdb99fcff1d5c34b03cdc74d2cd",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/COMPETITION_OCCUPANCY__R3_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "90d9d3979b5341ecadeb917f0e815605c184ac4cd12da23cb9564eb578210c6a",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R0.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R0.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "331b2c5b97159abddfac99426b4fcf299b0544fedba6e47d02063a01df851c47",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R0.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R0.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "08537b8b5a4c0a3ee5feb0425a8d0d34ff4d09e2eccf71df5331019b3e65ce31",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_RADAU.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_RADAU.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "14c1c383b248c54a449c0c43d0de4980d778ec4609de42f0d560b912786b1e5c",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_RADAU.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_RADAU.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "419702c6fcb01680c3f73c35a22d864abc3854df19aa4b29695597455bbb49fe",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "1837fafd980294815860640b70e2b49ca54a524b1382f3c8ee62b47af070c5b7",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "2e88b5f20bf3f16134dc74ded4b3a3c108fb63817a081fefc24e2bb2234db337",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R1.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "ef8baa32cd1ea5f5477d69f2590a57e33ecf5aa74414c54f7707a4a81d55f3b4",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R1.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "53121174b2c7af86b57039dc07f78f5869619321a4268b5ae7ba399961dbc7e7",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R2.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R2.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "b5a490fb7a9ef49cc8d599cded0249aa42974890cfde1718f65ac0ff34b6888f",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R2.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R2.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "483d0512f36c61e4fdeca6f10804a670775248ab2b67e6b30fdff52d2b0ce1cb",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN1.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "b9e6c6147fee0cfb4f7987a308bb09a1e5f2a748f081cf36a67d6aae1dde37b5",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN1.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "1acd0b2320f91fc26a13ff900f19d59a7531f2bed99e0cb177f1ffdafd9e55ec",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "cc807fc0dcba68e8520db70ed4925eb1bece1fabecfc2937116f7607c4313878",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "b86f46501974ad6e6ddd279c98dc7e27edcf9410209625dabc88bf100ea9555f",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "edf36108a23419d6dba29131254715063d82fdd26a303f08ad52f5eba350de10",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3a37c0dbbbe88e27fa462fe03bc0aa42de4bef443111d9a91223dd808f0c1798",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "0ac600efc379d97773ed44350e7461e1e35a66a1a98cfdadc567a5e131cda29d",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "6f823192bebc78f732756a057ae56971ade698928b3c53ad9ee8edbbc9b65284",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R0.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R0.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "bff3fdd7672800d948dd7e88c834c5f4ae02253691e7aabc429e35533aa51bc5",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R0.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R0.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "ff05d5cffb519e3741690d0735faa46312dab0ec63108292f2f10d109051f5a9",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R0_TIGHT.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R0_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "e261ad518879e8e08c5074f98530b393b078a4e4eeef6904fa55534a8faa2b2c",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R0_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R0_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "21242705544c0a662b5e801f1bda4609821c96b533c22472f3035cafaa2cc1bb",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R1.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "79d6a131cb838c54e2e6de539ca7f5ddcb38bc605940e04f76cd576d7a7e1d7f",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R1.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "b68723b668cbe4164250e8459bea855eb32b1217fb80bf272f16ae680c5deb4b",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R2.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R2.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "9f7b5f0b482be5a32bccfd434bfa41dc138ba8b89c79b69fb64a1ec8ff23dd1a",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R2.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R2.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "cf028689f1b37a46053810414f84f70b4eddb5970d4ea75df533f7f66636f912",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN1.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "cd49158c23d4cac5985d3b5ade48c261dfe62237eeb1028c78090eb386a3a3b3",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN1.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "add130adaff250b2c586bbefe00f86f7fb33d3492140d4b1d8e5bdbc2f05e8f3",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "7bcf72c0447e4c848cf5876f0d12f32d427fe6fb7a803e033b10e98a629e1bcf",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "5195cc5f4625d9d5f3201b31f3b398dd09a9146644db619c8c718fb5aa8bb906",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "9e5d4efd7ccc9c49c06a5fde427a5bf6174faf359f61db47ede139fbc69fc517",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "7e068589416af9c342f761372efd2fd2fc2d352174639c21e0fd00f7a965dc30",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "0b936163da40da493faf16bca0386dbcb4e616ef9fc6826246c17e0397b9c735",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/FLOW_CHALLENGE__R3_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "6df88ea6a198426f0f1b22f3f2f76afaacacd5b7b868b303b4deb1ef0aa75077",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/LOCAL_CHAIN1_INTERNAL_NONZERO.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/LOCAL_CHAIN1_INTERNAL_NONZERO.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "68d2b94d4f61f1afdd93503f958987e45045bb6ee2bbeebe64daa6ad5b400762",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/LOCAL_CHAIN1_UPSTREAM_PULSE.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/LOCAL_CHAIN1_UPSTREAM_PULSE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "8b3b9e40bade303d1e7cec434c929d72da57afcb8d82811fac499309336c4394",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/LOCAL_CHAIN2_INTERNAL_NONZERO.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/LOCAL_CHAIN2_INTERNAL_NONZERO.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3d42254305220b6cbc0f38ccdde5deb1ae7b81db3c549f2d08c0a16e5a83fb4e",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/LOCAL_CHAIN2_UPSTREAM_PULSE.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/LOCAL_CHAIN2_UPSTREAM_PULSE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "b5392372222becce947daf6168505effcab3c0f218bdd905f191b62a1b79ab9b",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "2e795a1c43059ccaa2753fbb7628b0ffb45e60e6f78c939cede1301757830833",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "4b19bf66f0a5689db17ab74bdb2173fbc3850dd8d28fd956ebb50d6c63e28b88",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0_TIGHT.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "0970995a68b699437e48c1f468428aaf908151de2dd0641d737fc71a55a4e1d8",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "78e62644c9001ac520c2b729861b5818857fe848c547f051cb4aeb7a877b0056",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ZERO_BRANCH_REACTIVATION__R1.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ZERO_BRANCH_REACTIVATION__R1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "7bf6596484ef727b4dd5ed096a7126160acd20413340301221ce86e67bbfaff1",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ZERO_BRANCH_REACTIVATION__R1.npz",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/trajectories/ZERO_BRANCH_REACTIVATION__R1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "fca1f5b0cfd5098c82275898b764f0180adb45487358d77c810c978ff5990041",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/campaign_scoring_v1/validation_results.json",
+      "path": "results/reduction/rapid_v1/campaign_scoring_v1/validation_results.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "9787accdbc7c74f71d5024528b4b3f5ee20e9d0fb5bf6a46fe9a28a30529142b",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/charts.json",
+      "path": "results/reduction/rapid_v1/charts.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "947ecdb5ab18454aa46d8cd552763ba6d66e9369d8dedc5ef0bd32b22a4d5021",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/cost_and_feasibility.csv",
+      "path": "results/reduction/rapid_v1/cost_and_feasibility.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "78157d63af911899a23aef0110450bc7591f8a2b8130780ba622fc1ef8c72796",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/decision_pdf_check.json",
+      "path": "results/reduction/rapid_v1/decision_pdf_check.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "f666f77de7765c434a19c11240d115b50a47c97de49ff6b1623f91f13d8165d1",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R0.csv",
+      "path": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R0.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "ef533c8dccb57e2c5f3c45dacd44b2c3449948e32acb477addaf78cebc0ce1b1",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R1.csv",
+      "path": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R1.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "7da141fb43c3b5c748f5396d053dac1097aee6014df7774f2bbaa2f9412e4c68",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R2.csv",
+      "path": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R2.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "0ee630cabc6e2e613f2e65bbbf291cb482eaf05279ca2ccb6651047c313739d5",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R3_CHAIN1.csv",
+      "path": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R3_CHAIN1.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "e7a5cdb50beff477c492b5715812e866606d44aab7bc743a74e0c485babd4c76",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R3_CHAIN12.csv",
+      "path": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R3_CHAIN12.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "086a322b6a879b57c3432cfaf2f2382de3fc633ed7625f7c49a7923622c86e1d",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.csv",
+      "path": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "1525bdf7c4febf02de2bbd4580b0790d1574c2eb104e62667d7677b25656e5e8",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R3_RECYCLE.csv",
+      "path": "results/reduction/rapid_v1/errors/AUTHOR_BASELINE__R3_RECYCLE.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "e8e376dbd4786e2f8862f2fec515636973ff480dd23e84da2f31f34dacd944cd",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R0.csv",
+      "path": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R0.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "afd2cb687db15dafc67b8622e44d64890dca7a87edc44c789a49317aa237fa32",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R1.csv",
+      "path": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R1.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "84bfc7b10b9819195a842b8f3911f85422f506d08a2ca0bc69bb9d31c1c07b34",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R2.csv",
+      "path": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R2.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "9375b93a9d89b729d185d10e152674920ec430c26cf89d531e46ff15dfa59594",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R3_CHAIN1.csv",
+      "path": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R3_CHAIN1.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "b95a456af47f868beceabcbfc78b8660b45d4deb7978578cba9a596d7569289d",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R3_CHAIN12.csv",
+      "path": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R3_CHAIN12.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "824e313c5b3703485d46378c254803b1b9bf98289966975ff084c0f2b47c7277",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.csv",
+      "path": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "8c15847f3b8892f7cbbd40dfe066e3b14fbe9d97bf9c20e9f2166afd821d61bb",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R3_RECYCLE.csv",
+      "path": "results/reduction/rapid_v1/errors/COMPETITION_OCCUPANCY__R3_RECYCLE.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "b5425ee487148b564444dc5a7685c40bad04a342cda079757cc40f36f6656ddb",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R0.csv",
+      "path": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R0.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3e455bddbc6d02189cd1eb9d81232501d1d31e46f34f615c8a4a126634bb9d81",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R1.csv",
+      "path": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R1.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c60b84243b10457d9093558b9921408272ac2e415b47b50826fa1fa16d2d40f5",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R2.csv",
+      "path": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R2.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "69dca30f030a37c293f2d7c0cb1071190de16ecc6d1b7602e02d60c91789eb70",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R3_CHAIN1.csv",
+      "path": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R3_CHAIN1.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "85e4cf4f0f53e15088998b0595444696697b8d45e74e9f5924f6d974f87c454d",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R3_CHAIN12.csv",
+      "path": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R3_CHAIN12.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "09b4614ad4323d98bc55e90f7e7826bb8ee4c8b18833faa6fa820fb33a6adc8a",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.csv",
+      "path": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "cb1b704014a87e98db1dc218cd38ae1550ce0e6327e8d02327b2b58945df96f6",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R3_RECYCLE.csv",
+      "path": "results/reduction/rapid_v1/errors/ENERGY_FACTOR_LIMITED__R3_RECYCLE.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "4ab83972cd62535e18919c45dfe784c93e7bd01e339a7b17213e02f8aac81501",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R0.csv",
+      "path": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R0.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "90272573ca85205b1a0dfe7794f4745cb62c0323227f267793089a826a4e07cc",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R1.csv",
+      "path": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R1.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "a9ac8199d680b0ca4d6e6eebe63b475ecb86bc28f4e345e77569e43700a3b149",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R2.csv",
+      "path": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R2.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "aac164942a19cae395117a903db042bfaf76de962abb160d47e2c65477f2068a",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R3_CHAIN1.csv",
+      "path": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R3_CHAIN1.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "761a2c59819246052da6321a75cddb49ae9e0c658360a073ae3b03bd1682a389",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R3_CHAIN12.csv",
+      "path": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R3_CHAIN12.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3f2dff43d92adb708db53de8ab298672665f316f3e7ed971fd2d4b7214cf2d8a",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.csv",
+      "path": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "47495bd2111b3f8d2388b2be6ee6e131465b287799aad817366264252288087d",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R3_RECYCLE.csv",
+      "path": "results/reduction/rapid_v1/errors/FLOW_CHALLENGE__R3_RECYCLE.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "a043edf39e44c26de50bbc535119aead3e07abc310fd337a3c5f12d80bfce14b",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/ZERO_BRANCH_REACTIVATION__R0.csv",
+      "path": "results/reduction/rapid_v1/errors/ZERO_BRANCH_REACTIVATION__R0.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "6f11fdcc91c70d8114a0d52dd234cbbbd2010910dbf8212648f7fda9f99d0afa",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/errors/ZERO_BRANCH_REACTIVATION__R1.csv",
+      "path": "results/reduction/rapid_v1/errors/ZERO_BRANCH_REACTIVATION__R1.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "970c950fca8f6577292a3172170b72278f8e59ca8a8a9af7684599b39d3aaf2c",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/execution_log.jsonl",
+      "path": "results/reduction/rapid_v1/execution_log.jsonl",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "4a11093529f0452669f5292fb43b3d060175391b5e99dafa8346db5a18bd8c08",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/failure_evidence.jsonl",
+      "path": "results/reduction/rapid_v1/failure_evidence.jsonl",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "7ef8cff6bc1b0c5e299ed17f84cb3f03caa200cb3600542155fe79ec9a2cfcaa",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/figures/complexity.png",
+      "path": "results/reduction/rapid_v1/figures/complexity.png",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "d0f0b79f255e2c476405813f799204f31049a41cd7b436e29cd288f6457c53ed",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/figures/decision_page-1.png",
+      "path": "results/reduction/rapid_v1/figures/decision_page-1.png",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "f7d030a6ffcc85301686dd96fd322803863237784ac41badd03c177b0f3a85b6",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/figures/decision_page-2.png",
+      "path": "results/reduction/rapid_v1/figures/decision_page-2.png",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "88814223eda7eae594bca61016c0b95827bd078399cb768eda9773535014d8ad",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/figures/peptide.png",
+      "path": "results/reduction/rapid_v1/figures/peptide.png",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c931f179f9a694f4ef6b5401b58c9aa99493488c77e03be0e356ede2bfc4fc18",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/figures/resources.png",
+      "path": "results/reduction/rapid_v1/figures/resources.png",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c9b179d8aeec5865d353978f40846ecbde2bda3751450708b466cdb96a980290",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/final_git_status.txt",
+      "path": "results/reduction/rapid_v1/final_git_status.txt",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "93ddf5ecdd943685980ca127b86806f7eaeb7081ca9816dccc7da88e0ec9dbcd",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/freeze.json",
+      "path": "results/reduction/rapid_v1/freeze.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3b02b7c33e224e5d8108c5a4c07bbb45eb836d9d6428ea7c658f07b1d8b568c8",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/git_and_protection.json",
+      "path": "results/reduction/rapid_v1/git_and_protection.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "cde2ded3a7006d744a0301e6c5d3b164ee4632726d00bdbcb399f9f7f337a741",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/local_validation.json",
+      "path": "results/reduction/rapid_v1/local_validation.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "d2d379e5f604378f72b62fdf3cf5511d6b486de040faa5d7f1650d7394524437",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/model_summary.json",
+      "path": "results/reduction/rapid_v1/model_summary.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "1c63275feac6ee64865fdc49b172a14a4bd305d0231cd670e806f669289751f3",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/reduced_solver_crosschecks.json",
+      "path": "results/reduction/rapid_v1/reduced_solver_crosschecks.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "75ea7522e1ebdc2af481c1c41fe3d4e96ffdc3069105a8196369963fb397ba68",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/report_completion.json",
+      "path": "results/reduction/rapid_v1/report_completion.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "03a6d91d4223b59211bd4087c28c90f8b8c7f99aabb52d8effe31d17fe03013c",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/ribosome_errors.json",
+      "path": "results/reduction/rapid_v1/ribosome_errors.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "d0c194355790da44a152c9aa1c7d5350fed1b39138f70f494a4d8ca5a8168ca2",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/runtime_independent_checks.json",
+      "path": "results/reduction/rapid_v1/runtime_independent_checks.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "650f0c99c3999b2bfb3d8e9977ec3979d2f2850fd06b36ba7e4ef51a6e20983d",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/smoke_R0.json",
+      "path": "results/reduction/rapid_v1/smoke_R0.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "515a88bc570667f1c36a3aa3dfd40e41bea5f4ec3fae749094be721f855aa6b5",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/smoke_R0.npz",
+      "path": "results/reduction/rapid_v1/smoke_R0.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "fb588a15e3bb91d2adce34895045e0d316a33ca2c5ef494c0cdba52580708994",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0.json",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c3b5d28e69bfa3b33f2bc211f506fa1dc53a05a62523027fee137bd4b8f7ec24",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0.npz",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "00b4eaabb949214c958b5643c6718a1d5f167bfbf5a0fb929df3ff6db1539ecf",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_RADAU.json",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_RADAU.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "f18d26986b84cd118240755cf6ce53cb7c4af2ce87917879e288dafe83a301c9",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_RADAU.npz",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_RADAU.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "7475ab1c1e2a43dfeca564372f1c43774f3fff374f1187d3c7f7b71e5b73fbd9",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_TIGHT.json",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "172e5d1730be7d6930fffb00baf662c231fa60267e80adf3f903486c64ffa0d3",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "a750ff770eae95e4342f2bd678ffe2388e8bc31b56fdd1a356fd7dac57620862",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R1.json",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "522f9f7f97061624baba93c1f6ccb87dc4060b3d242b486bdca26a950f1cca80",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R1.npz",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c8b9f57ae6045acf622a96441c000ca028957a8f731f66edb3485e3d360bc6c7",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2.json",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "52325fdb02865623cf7474396c2f330dbc930872a6fda5b4409749d6e6a43a00",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2.npz",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "d48899fb5d02de4ef78935a7f891d93b112da6237c72fc01043372cf70113d60",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2_RADAU.json",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2_RADAU.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "b7e44164d145f60d4cf51f44bf8511c0fdaa6cda043611b45acff87650895765",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2_RADAU.npz",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2_RADAU.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "66f874e622825e465f695429a209ad1a53b33060202b37fed3861efbacb90cc0",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2_TIGHT.json",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "a9e8632a6c80caa7ff693da365294960ac1159beb9ac75356e0b7d349bf9b192",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "9e0a497cd2b9cfa3c1dae42d748af5e2e97b17e2cfc04003f2421ed0e60d4c70",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN1.json",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3047f84f69e8211f7a145da6a22217c8da13dcc8a82cbc493061f424c84563a9",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN1.npz",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "fae9da470edf7969211a6a59933b411c22fc2c49bf999e95325abd807128465b",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12.json",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "af981a27cd2be1fb98113821901a3af93757b9ea771402ac8a0414e632866da3",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12.npz",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "389858ad099bcfa051edb8038b60fe8e620bfd920a66e81c16fb024bbf3b80ca",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "89c4349a893f3fe86801bb5364eda6dcd1580780c40996272dec0051acd78f6e",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "b3c06cb3d795a43b5606b575bcbb61dd026896bc671cd5e0cfbd14f4d7c324a4",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE_RADAU.json",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE_RADAU.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "b1764f4231ff289664fee142f80b7e596cdd9a03bdd3206ca291344bf60fbd5e",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE_RADAU.npz",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE_RADAU.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "7f8e4fba273b2396e666082f327eb89a063733208dafa354bf912fa1cbcac565",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE_TIGHT.json",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "e1b5de3070c891388f6d0c2422112596c70660445f2cdae987407aa27317b3ee",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c0b22c6e5c4c463169bba770172186fa320b97a20be6f2479c012523940715a3",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "6cc2c35c07b2176d4ea1a06c5d2afd7b5a53d476ac522cb45b7c951b8718a9bb",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "9eff8ed42fb4091e5911f0ca50008ad0acf93269394a78ccc3ad6237eb8b02b4",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0.json",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "901c1d44aba068403030c0e12ef177cd72d46efe9bd9fdd7af8ded3cf475f0c3",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0.npz",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c75aaefb0985d73d1425c7f319d7ff2c3f527f22d2edd77f01c05b56b75b7445",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.json",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "cbd8b782cd79884273adcc2c2fda09b0bf6cc4722d99fc1bc5ed2949d9f99c9e",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "a533c29faa912b7044fdc2d2b9b9b616f1b60e5b2d98d58a37bf7a3ffc0c7f69",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R1.json",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c86567510c04e30b2e9db1f71fb134475a46607f45f7bea7ac242356ddc71ccf",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R1.npz",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "e53b9600130b6e083efec39e88bf5bd8170b54123e8e8b06bc8cd84935303140",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R2.json",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R2.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3aadc3710542e3159204a4b1a0d289c98c919aa255d3b311950feb7c99529a95",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R2.npz",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R2.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "5166e8462de36578095ef1d557f8e9113410dc75397b16de51859aa3d7f04595",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN1.json",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "d46dd25b6be0d7e8255549c094c154866e655d60d3e3b175ca5e3b0862d8acb4",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN1.npz",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "d7ccf2f5edcecdfbe294e161572f4464aa1c7c896f13eaf7149a7343ba439eae",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12.json",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "11b69d074896b7ffb48c75099c18ffcf14627af5fa79a12a21d9a8c78343f498",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12.npz",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "7f42301c28fbb2e950b3d41ec1278940e233ff7d32dfa39b37b8ca141d091093",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "8da08bdd85b150455b78a13f5e3773d960e9292077b2afa7261f7b1848a0fc44",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "1be6ecb8c2aa4d3fb997350e5f998352209e91563b0da15af87066ec54477a99",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "6bef9bc753dd900ac51d130b25f40af74242b1cede0547fbe3bd883327480687",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "ac52d6d641e406d6979150f2e3df71d1231f40ff3ed7099dbde4e046d8ee3cac",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0.json",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "f45b58f23977ec90685a7c89f58b0cd30700faa46f6e7444bab7ed9fc05ad21e",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "78eb9f5324ef9ab76d39f0714b75726542456d0d8e03dce4c22ca712c95db09e",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_RADAU.json",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_RADAU.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "b6a87fedd3fe9e0488afb59d99e10dd234ec98aaad3ae74cdd25e4382c154300",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_RADAU.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_RADAU.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "41862b2892e60b2078b18c1e192083c679ccc6494ed523cbd703d456b7c741c2",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.json",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "41b29d311f4f79aafc2bd8f5e2b8565f8831df64624f8824e5ce4f953df85e77",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "5f114bedafa9478b76dba43bb54be35b05a4da2902bec45cee33674b7ba66893",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R1.json",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "76db24d3ff580e1d84853bb9d53a38daaabf1039d40bebad655232c355109035",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R1.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "1856d563ce31ffe468a9eca1102fc5e18d1fd3a8a255de7b43fb9ee750a8fdc8",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2.json",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c2a32e663ca62e8daaa22f4d4bd5790e1325bf6cb589dd3f3e4132d74687ba3b",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "e92e67bf380cd4c695112e1522c15d47b3c61c93c877ac76a9c8aa9911aa2ed9",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2_RADAU.json",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2_RADAU.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "18be8e0160fd85e91bd68a97d09b679a2a25f6b111f2712d0e698021c7b708c7",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2_RADAU.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2_RADAU.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "ce72306e159ab92906981c58ae92b99947d5ced148f67e9939f98ec3989ea937",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2_TIGHT.json",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c9a05804d091d1d19f2447181bffb85d8fbddcce87a80483533ce7ea5c5df116",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "d21994e5932fdf97d6e48796b808b670e8360b21bbfef2ac2e30f2ee2169dedb",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN1.json",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "339db9f88a310b08debe0e34b7f014c2c6a48a37ab3b60daf5ba2f7485de14b5",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN1.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "05900ce99d7bfaae2c1b06e8db725f5ef9784973e52742f04edc194d439e20ad",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12.json",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3bf446387aeb280fba034f80007eeec502e102d752b8dbb0c58a5f68fd65960c",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "0140b1f5a1be809e98554c5a03bd35a2d34914b259e82367c421e17b90ca35b2",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "7ba9a95d1c2d3ea68830c98d70f9ed8d9a157cafcfc1768f2331841ed68ffc29",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c961f67b607948495d05824fe385ad9038dedf6fb72c9ef257283d6a06b8c5d3",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE_RADAU.json",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE_RADAU.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c8b7040efe5ebc6764ddae8e82ed964036cb74f932c7f63e309c27f138ada5d5",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE_RADAU.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE_RADAU.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "e483ab544c6e74fd2789017e8ed2d81ca90af194ff54f357c4af8d08c313511e",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE_TIGHT.json",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "8e14df92a46224b2722ff2c3a20d197c2d01d66aa4384658f86aa97a2dcd8a2b",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "22e63e5c051673ed777db43f05f589ba754348caf2b181829bd67718a34419f2",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "308b9e59f45a9b560d34128629a1d685d29e2ef082b0a7b78a80ddc7096dc19a",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "9eff1ab19a23767cbbfcab6e778e41c5c38a86bfb49a0150b79ef4c4f205ef38",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0.json",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "944fe59bdcbc11451893c16a6329faebe2a36550523efff0d9ee669b91f8f685",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0.npz",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "e84ef92f7765de2dc308c5465afe7201cd9764e3e606fe0432b10d7026cfaa40",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0_TIGHT.json",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "31efb96da56290f008da097b2b845e145dc2de2e1e53b64723f2c6ebfcbc24ad",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "a59017b1a7e9d4f83462865bdbf9cf1a41f22da57015875f8a2257237d8ea611",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R1.json",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "fd5a3ade5a9808a865d4fa325132dc9a5e8a4fce4fc4d6d03921419b156cc079",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R1.npz",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "d3495d288c5f8917509c4a013bd25f3a2fe450f30c6a47597d9bf9fab2f821f0",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R2.json",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R2.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "7d914bda20704b3039f9226c0f63e44e3b4a9d59b99f3a963673f910f7238367",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R2.npz",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R2.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "25375243c704fce9ce3a328ba46b64d2f3965c2de8e5f954ae16aa4c2c57a1c8",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN1.json",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "451557c8795931ade975706ddc2dbc5cafe0f24fdc1a6311d3df057256652d69",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN1.npz",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "428db3674eced54a22ceec93e6fdbd4dc44a542ea8aed8dbabab27f16f79f6ca",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12.json",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "5278ebc63524435f0aa9b938c15c37cea3ace292eaa0122291de04050a7564a3",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12.npz",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "207012a53dbb9b071551851d36f860b862a9b2a79af782182bf16443f4a31bf8",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "5a6de0c0bb468c73f518856b5cfade665ac0e50d7621145430bcebb19f7a68e0",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "22b20386655ddaafcf317e0fb64dfa9e85e47c0e654e833b96d6b8af6d8f119c",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_RECYCLE.json",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_RECYCLE.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "b4d42ca5cd104d15ba2a25ae51488afd416695216a2690634e1af4138c7441b2",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_RECYCLE.npz",
+      "path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_RECYCLE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c6f85f961ac98f757437dc5df6ec877c3b52b9791f0ded7dc9279a5da9dd89e0",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/LOCAL_CHAIN1_INTERNAL_NONZERO.npz",
+      "path": "results/reduction/rapid_v1/trajectories/LOCAL_CHAIN1_INTERNAL_NONZERO.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "68d2b94d4f61f1afdd93503f958987e45045bb6ee2bbeebe64daa6ad5b400762",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/LOCAL_CHAIN1_UPSTREAM_PULSE.npz",
+      "path": "results/reduction/rapid_v1/trajectories/LOCAL_CHAIN1_UPSTREAM_PULSE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "8b3b9e40bade303d1e7cec434c929d72da57afcb8d82811fac499309336c4394",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/LOCAL_CHAIN2_INTERNAL_NONZERO.npz",
+      "path": "results/reduction/rapid_v1/trajectories/LOCAL_CHAIN2_INTERNAL_NONZERO.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3d42254305220b6cbc0f38ccdde5deb1ae7b81db3c549f2d08c0a16e5a83fb4e",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/LOCAL_CHAIN2_UPSTREAM_PULSE.npz",
+      "path": "results/reduction/rapid_v1/trajectories/LOCAL_CHAIN2_UPSTREAM_PULSE.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "b5392372222becce947daf6168505effcab3c0f218bdd905f191b62a1b79ab9b",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0.json",
+      "path": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "d11ac2f1a1c25cd583c39eb80156f1493e498dd0fb2fdab06aab623e27696926",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "3627c86d2cc65c23ccdd5b5236b06327917a27f6af146ed07c6c9bf7c01ab455",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0_TIGHT.json",
+      "path": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0_TIGHT.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "6f55dc068e2164f1f569357ca815967505e8db38b0ea73574469cc04f285c56e",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0_TIGHT.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0_TIGHT.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "05d9fda045aa0d78fd04a16e3a9e0d4d97126c81f5e907f9ca889fff2707148a",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R1.json",
+      "path": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "be56dd1e98961a34c928ae85fa882f19eb9e28090c8a33e98b07b213305ed68a",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R1.npz",
+      "path": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R1.npz",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "de4e6ab913b270ee5fa429e7993624a7343e5066ccc31da1316e037ccd8e004d",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/validation_results.json",
+      "path": "results/reduction/rapid_v1/validation_results.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "d7874c666e2e024788fb26b64885453aed8e3a50773f4951aab0b13658785321",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/validation_results_scoring_implementation_v1.json",
+      "path": "results/reduction/rapid_v1/validation_results_scoring_implementation_v1.json",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "9787accdbc7c74f71d5024528b4b3f5ee20e9d0fb5bf6a46fe9a28a30529142b",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "results/reduction/rapid_v1/window_errors.csv",
+      "path": "results/reduction/rapid_v1/window_errors.csv",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "6b0e3f38b2f888aad3785e83e6255504fd561283fa89da51022646803522c242",
+      "source_authority": "NUMERICAL_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "scripts/reduction/rapid_v1/audit_and_candidates.py",
+      "path": "scripts/reduction/rapid_v1/audit_and_candidates.py",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "bd4c615ab0557aa20823511f70bf6e4488d759ffa4a8ce9b8a14c215fe20778a",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "scripts/reduction/rapid_v1/common.py",
+      "path": "scripts/reduction/rapid_v1/common.py",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "f098855bc8c189dfedde6277f3db3ccdd84ac6e3c3d51406e0e9034f86d93514",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "scripts/reduction/rapid_v1/decision_pdf.py",
+      "path": "scripts/reduction/rapid_v1/decision_pdf.py",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "8cda4c5f27edc17bb5ac9e791267f914f2d24e77a7404cacf58534ea7c059d4f",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "scripts/reduction/rapid_v1/finalize.py",
+      "path": "scripts/reduction/rapid_v1/finalize.py",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "f8102be4c62cc6ae2683dd33b5153a4b342d59c26775f30e3c0e5c92a4d71d11",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "scripts/reduction/rapid_v1/mathematics.py",
+      "path": "scripts/reduction/rapid_v1/mathematics.py",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "cdba04b5987ff4714ea1ff4a987f29037a2f4ee3c001308aa73727faa63d1730",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "scripts/reduction/rapid_v1/report.py",
+      "path": "scripts/reduction/rapid_v1/report.py",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "e28186066fd595ca28977f27405bec8818b868b370f9e638f7289e2e9a0c3026",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "scripts/reduction/rapid_v1/runtime.py",
+      "path": "scripts/reduction/rapid_v1/runtime.py",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "1fdceaa62538aa8fc9da36866da8cea26116c5762214864dd34c90f81411263c",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "scripts/reduction/rapid_v1/score_saved.py",
+      "path": "scripts/reduction/rapid_v1/score_saved.py",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "fbeee3f7feb7b84d32bd0e93b45125bd371368a41ce9f0eed5f4c4fa14e835d6",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "scripts/reduction/rapid_v1/solver_crosschecks.py",
+      "path": "scripts/reduction/rapid_v1/solver_crosschecks.py",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "c6b61b1c013bb001da2bce0bed7e19d7e11fb1f2cd3ae8b29aa1207bd2ace802",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "FILE_INTEGRITY_VERIFIED; SCIENTIFIC_APPROVAL_SEPARATE",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "scripts/reduction/rapid_v1/validate.py",
+      "path": "scripts/reduction/rapid_v1/validate.py",
+      "scientific_status": "HUMAN_REVIEW_REQUIRED",
+      "sha256": "01182a85cfd274e0d1b3b5a02f1b1136b666037fc5ccd856d4f608332a94b051",
+      "source_authority": "DERIVED_EVIDENCE"
+    },
+    {
+      "confidence": "SOURCE_IDENTITY_VERIFIED",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "path": "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "sha256": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "source_authority": "CANONICAL_SOURCE_OR_PREVIOUSLY_ACCEPTED_CERTIFICATE"
+    },
+    {
+      "confidence": "SOURCE_IDENTITY_VERIFIED",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "path": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "sha256": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465",
+      "source_authority": "CANONICAL_SOURCE_OR_PREVIOUSLY_ACCEPTED_CERTIFICATE"
+    },
+    {
+      "confidence": "SOURCE_IDENTITY_VERIFIED",
+      "evidence_status": "EXTRACTED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "docs/reduction/source_coordinate_certificate_v4.json",
+      "path": "docs/reduction/source_coordinate_certificate_v4.json",
+      "sha256": "0162c0fcdecd1fd4017180eccacdfc33b2c34141cf3df7d4b2118ed7c6c05b06",
+      "source_authority": "CANONICAL_SOURCE_OR_PREVIOUSLY_ACCEPTED_CERTIFICATE"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:AUTHOR_SUPPORT_CONSERVATION",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "EXACT"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:SOURCE_GENERAL",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "EXACT"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:RECYCLE_TAIL_7_TO_5",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "EXACT"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:GLY_CHAIN_1",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "CONDITIONAL_CANDIDATE"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:GLY_CHAIN_2",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "CONDITIONAL_CANDIDATE"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:RF1_RF2_COMMON_ENDPOINT",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "REJECTED"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:AA_GlyRS_BOUND_14",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "BLOCKED"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:AA_MetRS_BOUND_14",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "BLOCKED"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:AA_RESTRICTED_9",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "BLOCKED"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:FORMYLATION",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "BLOCKED"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:INITIATION_ORDER_POOL",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "BLOCKED"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:ENERGY_CK_EXTRA_STORAGE",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "BLOCKED"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:ENERGY_MK_EXTRA_STORAGE",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "BLOCKED"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:ENERGY_NDK_EXTRA_STORAGE",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "BLOCKED"
+    },
+    {
+      "confidence": "EXACT_IDS; VALIDATION_SCOPE_SEPARATE",
+      "evidence_status": "INFERRED",
+      "freshness": {
+        "checked_at": "2026-10-10T06:15:32.565449+08:00",
+        "source_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+      },
+      "id": "candidate:ENERGY_PPiase_EXTRA_STORAGE",
+      "provenance": "docs/reduction/rapid_reduction/candidate_source_map.json",
+      "source_authority": "DERIVED_SOURCE_TOPOLOGY",
+      "status": "BLOCKED"
+    }
+  ],
+  "protected_existing_files_manifest": "results/reduction/rapid_v1/baseline.json",
+  "schema": "PHASE_C_EVIDENCE_NAVIGATION_V1",
+  "scientific_status": "HUMAN_REVIEW_REQUIRED",
+  "uncertainties": [
+    {
+      "effect": "No elemental or charge approval claimed.",
+      "status": "AMBIGUOUS",
+      "subject": "Full biochemical composition of original complexes"
+    },
+    {
+      "effect": "Exact protected quotient does not recover individual source release paths.",
+      "status": "AMBIGUOUS",
+      "subject": "Two discarded recycling micro correlations"
+    }
+  ]
+}

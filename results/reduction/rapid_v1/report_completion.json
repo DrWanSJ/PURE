@@ -1,0 +1,157 @@
+{
+  "171_max_long_errors": {
+    "cumulative_max": 0.00046446938573370985,
+    "net_flux_rms_max": 1.1531093347260396e-05,
+    "peptide_max": 5.893150943919791e-07,
+    "resource_max": 0.0005250201320997309
+  },
+  "all_four_coupled_pass": true,
+  "exact_protected_quotient_dimension": 173,
+  "largest_tested_approximate_dimension": 171,
+  "protection": {
+    "B1_3_files": 26,
+    "changed": [],
+    "protected_existing_files": 2443,
+    "status": "PASS"
+  },
+  "researcher_decisions": "ALL_BLANK",
+  "strict_full_state_author_dimension": 175,
+  "strict_source_general_dimension": 214,
+  "summary": [
+    {
+      "Jacobian_nnz_final": 1723,
+      "Jacobian_nnz_initial": 1207,
+      "counter_dimension": 20,
+      "independent_dimension": 241,
+      "mapped_source_directions": 483,
+      "mass_action_expressions": 454,
+      "maxima_long": {},
+      "median_seconds": 0.5060892000037711,
+      "model": "R0",
+      "nfev": 5081,
+      "reduction_vs_241_percent": 0.0,
+      "speedup": 1.0,
+      "status": "REFERENCE_CONVERGED"
+    },
+    {
+      "Jacobian_nnz_final": 2225,
+      "Jacobian_nnz_initial": 1698,
+      "counter_dimension": 20,
+      "independent_dimension": 214,
+      "mapped_source_directions": 483,
+      "mass_action_expressions": 454,
+      "maxima_long": {
+        "cumulative_max": 2.3567831703985576e-06,
+        "net_flux_rms_max": 4.504080788167107e-09,
+        "peptide_max": 2.2718409375954706e-11,
+        "resource_max": 5.0633277084988215e-09
+      },
+      "median_seconds": 0.5663079000078142,
+      "model": "R1",
+      "nfev": 4917,
+      "reduction_vs_241_percent": 11.20331950207469,
+      "speedup": 0.8936643829210009,
+      "status": "EXACT_REDUCTION_VERIFIED"
+    },
+    {
+      "Jacobian_nnz_final": 7249,
+      "Jacobian_nnz_initial": 2089,
+      "counter_dimension": 20,
+      "independent_dimension": 175,
+      "mapped_source_directions": 481,
+      "mass_action_expressions": 452,
+      "maxima_long": {
+        "cumulative_max": 1.8642203940544277e-06,
+        "net_flux_rms_max": 3.905578892709151e-09,
+        "peptide_max": 1.770629864950024e-11,
+        "resource_max": 5.667935326809925e-09
+      },
+      "median_seconds": 0.554819500001031,
+      "model": "R2",
+      "nfev": 4318,
+      "reduction_vs_241_percent": 27.385892116182575,
+      "speedup": 0.912169092836194,
+      "status": "EXACT_REDUCTION_VERIFIED"
+    },
+    {
+      "Jacobian_nnz_final": 7190,
+      "Jacobian_nnz_initial": 2080,
+      "counter_dimension": 20,
+      "independent_dimension": 174,
+      "mapped_source_directions": 481,
+      "mass_action_expressions": 451,
+      "maxima_long": {
+        "cumulative_max": 0.0004648050967076016,
+        "net_flux_rms_max": 1.1542897852672719e-05,
+        "peptide_max": 5.912566538641741e-07,
+        "resource_max": 0.0005181632434522454
+      },
+      "median_seconds": 0.5468615999998292,
+      "model": "R3_CHAIN1",
+      "nfev": 4326,
+      "reduction_vs_241_percent": 27.800829875518673,
+      "speedup": 0.925442927431601,
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS"
+    },
+    {
+      "Jacobian_nnz_final": 7131,
+      "Jacobian_nnz_initial": 2071,
+      "counter_dimension": 20,
+      "independent_dimension": 173,
+      "mapped_source_directions": 481,
+      "mass_action_expressions": 450,
+      "maxima_long": {
+        "cumulative_max": 0.00046446912924889914,
+        "net_flux_rms_max": 1.1531074904649007e-05,
+        "peptide_max": 5.893150903714163e-07,
+        "resource_max": 0.0005250201310758971
+      },
+      "median_seconds": 0.5427516000054311,
+      "model": "R3_CHAIN12",
+      "nfev": 4328,
+      "reduction_vs_241_percent": 28.21576763485477,
+      "speedup": 0.9324508670240804,
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS"
+    },
+    {
+      "Jacobian_nnz_final": 7104,
+      "Jacobian_nnz_initial": 2042,
+      "counter_dimension": 20,
+      "independent_dimension": 173,
+      "mapped_source_directions": 481,
+      "mass_action_expressions": 445,
+      "maxima_long": {
+        "cumulative_max": 1.8349577051897843e-06,
+        "net_flux_rms_max": 3.960672955410139e-09,
+        "peptide_max": 1.586608622261565e-11,
+        "resource_max": 5.1710314849517935e-09
+      },
+      "median_seconds": 0.5388464999996359,
+      "model": "R3_RECYCLE",
+      "nfev": 4334,
+      "reduction_vs_241_percent": 28.21576763485477,
+      "speedup": 0.9392084758908392,
+      "status": "EXACT_REDUCTION_VERIFIED"
+    },
+    {
+      "Jacobian_nnz_final": 6986,
+      "Jacobian_nnz_initial": 2024,
+      "counter_dimension": 20,
+      "independent_dimension": 171,
+      "mapped_source_directions": 481,
+      "mass_action_expressions": 443,
+      "maxima_long": {
+        "cumulative_max": 0.00046446938573370985,
+        "net_flux_rms_max": 1.1531093347260396e-05,
+        "peptide_max": 5.893150943919791e-07,
+        "resource_max": 0.0005250201320997309
+      },
+      "median_seconds": 0.5344260999991093,
+      "model": "R3_CHAIN12_RECYCLE",
+      "nfev": 4330,
+      "reduction_vs_241_percent": 29.045643153526974,
+      "speedup": 0.9469769534171601,
+      "status": "FULL_COUPLED_CANDIDATE_GATES_PASS"
+    }
+  ]
+}

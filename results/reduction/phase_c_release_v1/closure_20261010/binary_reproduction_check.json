@@ -1,0 +1,350 @@
+{
+  "status": "PASS",
+  "npz_files": 49,
+  "all_binary_identical": true,
+  "files": [
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/AUTHOR_BASELINE__R0.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0.npz",
+      "bytes": 4165237,
+      "sha256": "00b4eaabb949214c958b5643c6718a1d5f167bfbf5a0fb929df3ff6db1539ecf",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/AUTHOR_BASELINE__R0_RADAU.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_RADAU.npz",
+      "bytes": 11825797,
+      "sha256": "7475ab1c1e2a43dfeca564372f1c43774f3fff374f1187d3c7f7b71e5b73fbd9",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/AUTHOR_BASELINE__R0_TIGHT.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_TIGHT.npz",
+      "bytes": 7039762,
+      "sha256": "a750ff770eae95e4342f2bd678ffe2388e8bc31b56fdd1a356fd7dac57620862",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/AUTHOR_BASELINE__R1.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R1.npz",
+      "bytes": 4226966,
+      "sha256": "c8b9f57ae6045acf622a96441c000ca028957a8f731f66edb3485e3d360bc6c7",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/AUTHOR_BASELINE__R2.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2.npz",
+      "bytes": 3749287,
+      "sha256": "d48899fb5d02de4ef78935a7f891d93b112da6237c72fc01043372cf70113d60",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/AUTHOR_BASELINE__R2_RADAU.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2_RADAU.npz",
+      "bytes": 10145087,
+      "sha256": "66f874e622825e465f695429a209ad1a53b33060202b37fed3861efbacb90cc0",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/AUTHOR_BASELINE__R2_TIGHT.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R2_TIGHT.npz",
+      "bytes": 6338483,
+      "sha256": "9e0a497cd2b9cfa3c1dae42d748af5e2e97b17e2cfc04003f2421ed0e60d4c70",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/AUTHOR_BASELINE__R3_CHAIN1.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN1.npz",
+      "bytes": 3734291,
+      "sha256": "fae9da470edf7969211a6a59933b411c22fc2c49bf999e95325abd807128465b",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/AUTHOR_BASELINE__R3_CHAIN12.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12.npz",
+      "bytes": 3721466,
+      "sha256": "389858ad099bcfa051edb8038b60fe8e620bfd920a66e81c16fb024bbf3b80ca",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.npz",
+      "bytes": 3718271,
+      "sha256": "b3c06cb3d795a43b5606b575bcbb61dd026896bc671cd5e0cfbd14f4d7c324a4",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE_RADAU.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE_RADAU.npz",
+      "bytes": 10067934,
+      "sha256": "7f8e4fba273b2396e666082f327eb89a063733208dafa354bf912fa1cbcac565",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE_TIGHT.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE_TIGHT.npz",
+      "bytes": 6279645,
+      "sha256": "c0b22c6e5c4c463169bba770172186fa320b97a20be6f2479c012523940715a3",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/AUTHOR_BASELINE__R3_RECYCLE.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_RECYCLE.npz",
+      "bytes": 3750810,
+      "sha256": "9eff8ed42fb4091e5911f0ca50008ad0acf93269394a78ccc3ad6237eb8b02b4",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/COMPETITION_OCCUPANCY__R0.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0.npz",
+      "bytes": 4210208,
+      "sha256": "c75aaefb0985d73d1425c7f319d7ff2c3f527f22d2edd77f01c05b56b75b7445",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.npz",
+      "bytes": 7141620,
+      "sha256": "a533c29faa912b7044fdc2d2b9b9b616f1b60e5b2d98d58a37bf7a3ffc0c7f69",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/COMPETITION_OCCUPANCY__R1.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R1.npz",
+      "bytes": 4267457,
+      "sha256": "e53b9600130b6e083efec39e88bf5bd8170b54123e8e8b06bc8cd84935303140",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/COMPETITION_OCCUPANCY__R2.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R2.npz",
+      "bytes": 3796181,
+      "sha256": "5166e8462de36578095ef1d557f8e9113410dc75397b16de51859aa3d7f04595",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN1.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN1.npz",
+      "bytes": 3778926,
+      "sha256": "d7ccf2f5edcecdfbe294e161572f4464aa1c7c896f13eaf7149a7343ba439eae",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12.npz",
+      "bytes": 3760412,
+      "sha256": "7f42301c28fbb2e950b3d41ec1278940e233ff7d32dfa39b37b8ca141d091093",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.npz",
+      "bytes": 3762958,
+      "sha256": "1be6ecb8c2aa4d3fb997350e5f998352209e91563b0da15af87066ec54477a99",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/COMPETITION_OCCUPANCY__R3_RECYCLE.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_RECYCLE.npz",
+      "bytes": 3792430,
+      "sha256": "ac52d6d641e406d6979150f2e3df71d1231f40ff3ed7099dbde4e046d8ee3cac",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ENERGY_FACTOR_LIMITED__R0.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0.npz",
+      "bytes": 3910811,
+      "sha256": "78eb9f5324ef9ab76d39f0714b75726542456d0d8e03dce4c22ca712c95db09e",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ENERGY_FACTOR_LIMITED__R0_RADAU.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_RADAU.npz",
+      "bytes": 10589832,
+      "sha256": "41862b2892e60b2078b18c1e192083c679ccc6494ed523cbd703d456b7c741c2",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.npz",
+      "bytes": 6525174,
+      "sha256": "5f114bedafa9478b76dba43bb54be35b05a4da2902bec45cee33674b7ba66893",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ENERGY_FACTOR_LIMITED__R1.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R1.npz",
+      "bytes": 3990738,
+      "sha256": "1856d563ce31ffe468a9eca1102fc5e18d1fd3a8a255de7b43fb9ee750a8fdc8",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ENERGY_FACTOR_LIMITED__R2.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2.npz",
+      "bytes": 3637525,
+      "sha256": "e92e67bf380cd4c695112e1522c15d47b3c61c93c877ac76a9c8aa9911aa2ed9",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ENERGY_FACTOR_LIMITED__R2_RADAU.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2_RADAU.npz",
+      "bytes": 9546462,
+      "sha256": "ce72306e159ab92906981c58ae92b99947d5ced148f67e9939f98ec3989ea937",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ENERGY_FACTOR_LIMITED__R2_TIGHT.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R2_TIGHT.npz",
+      "bytes": 6062653,
+      "sha256": "d21994e5932fdf97d6e48796b808b670e8360b21bbfef2ac2e30f2ee2169dedb",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN1.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN1.npz",
+      "bytes": 3641787,
+      "sha256": "05900ce99d7bfaae2c1b06e8db725f5ef9784973e52742f04edc194d439e20ad",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12.npz",
+      "bytes": 3606081,
+      "sha256": "0140b1f5a1be809e98554c5a03bd35a2d34914b259e82367c421e17b90ca35b2",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.npz",
+      "bytes": 3600157,
+      "sha256": "c961f67b607948495d05824fe385ad9038dedf6fb72c9ef257283d6a06b8c5d3",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE_RADAU.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE_RADAU.npz",
+      "bytes": 9477683,
+      "sha256": "e483ab544c6e74fd2789017e8ed2d81ca90af194ff54f357c4af8d08c313511e",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE_TIGHT.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE_TIGHT.npz",
+      "bytes": 6038150,
+      "sha256": "22e63e5c051673ed777db43f05f589ba754348caf2b181829bd67718a34419f2",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ENERGY_FACTOR_LIMITED__R3_RECYCLE.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_RECYCLE.npz",
+      "bytes": 3635444,
+      "sha256": "9eff1ab19a23767cbbfcab6e778e41c5c38a86bfb49a0150b79ef4c4f205ef38",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/FLOW_CHALLENGE__R0.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0.npz",
+      "bytes": 4219900,
+      "sha256": "e84ef92f7765de2dc308c5465afe7201cd9764e3e606fe0432b10d7026cfaa40",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/FLOW_CHALLENGE__R0_TIGHT.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0_TIGHT.npz",
+      "bytes": 7154387,
+      "sha256": "a59017b1a7e9d4f83462865bdbf9cf1a41f22da57015875f8a2257237d8ea611",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/FLOW_CHALLENGE__R1.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R1.npz",
+      "bytes": 4266867,
+      "sha256": "d3495d288c5f8917509c4a013bd25f3a2fe450f30c6a47597d9bf9fab2f821f0",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/FLOW_CHALLENGE__R2.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R2.npz",
+      "bytes": 3773262,
+      "sha256": "25375243c704fce9ce3a328ba46b64d2f3965c2de8e5f954ae16aa4c2c57a1c8",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/FLOW_CHALLENGE__R3_CHAIN1.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN1.npz",
+      "bytes": 3756753,
+      "sha256": "428db3674eced54a22ceec93e6fdbd4dc44a542ea8aed8dbabab27f16f79f6ca",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/FLOW_CHALLENGE__R3_CHAIN12.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12.npz",
+      "bytes": 3745725,
+      "sha256": "207012a53dbb9b071551851d36f860b862a9b2a79af782182bf16443f4a31bf8",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.npz",
+      "bytes": 3742723,
+      "sha256": "22b20386655ddaafcf317e0fb64dfa9e85e47c0e654e833b96d6b8af6d8f119c",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/FLOW_CHALLENGE__R3_RECYCLE.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_RECYCLE.npz",
+      "bytes": 3777012,
+      "sha256": "c6f85f961ac98f757437dc5df6ec877c3b52b9791f0ded7dc9279a5da9dd89e0",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/LOCAL_CHAIN1_INTERNAL_NONZERO.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/LOCAL_CHAIN1_INTERNAL_NONZERO.npz",
+      "bytes": 25957,
+      "sha256": "68d2b94d4f61f1afdd93503f958987e45045bb6ee2bbeebe64daa6ad5b400762",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/LOCAL_CHAIN1_UPSTREAM_PULSE.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/LOCAL_CHAIN1_UPSTREAM_PULSE.npz",
+      "bytes": 26132,
+      "sha256": "8b3b9e40bade303d1e7cec434c929d72da57afcb8d82811fac499309336c4394",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/LOCAL_CHAIN2_INTERNAL_NONZERO.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/LOCAL_CHAIN2_INTERNAL_NONZERO.npz",
+      "bytes": 28271,
+      "sha256": "3d42254305220b6cbc0f38ccdde5deb1ae7b81db3c549f2d08c0a16e5a83fb4e",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/LOCAL_CHAIN2_UPSTREAM_PULSE.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/LOCAL_CHAIN2_UPSTREAM_PULSE.npz",
+      "bytes": 28425,
+      "sha256": "b5392372222becce947daf6168505effcab3c0f218bdd905f191b62a1b79ab9b",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ZERO_BRANCH_REACTIVATION__R0.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0.npz",
+      "bytes": 4186087,
+      "sha256": "3627c86d2cc65c23ccdd5b5236b06327917a27f6af146ed07c6c9bf7c01ab455",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ZERO_BRANCH_REACTIVATION__R0_TIGHT.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R0_TIGHT.npz",
+      "bytes": 7072644,
+      "sha256": "05d9fda045aa0d78fd04a16e3a9e0d4d97126c81f5e907f9ca889fff2707148a",
+      "byte_identical": true
+    },
+    {
+      "fresh_path": "results/reduction/phase_c_release_v1/closure_20261010/trajectories/ZERO_BRANCH_REACTIVATION__R1.npz",
+      "original_path": "results/reduction/rapid_v1/trajectories/ZERO_BRANCH_REACTIVATION__R1.npz",
+      "bytes": 4243495,
+      "sha256": "de4e6ab913b270ee5fa429e7993624a7343e5066ccc31da1316e037ccd8e004d",
+      "byte_identical": true
+    }
+  ]
+}

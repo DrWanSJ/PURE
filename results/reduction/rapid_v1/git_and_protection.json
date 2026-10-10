@@ -1,0 +1,27 @@
+{
+  "account": "sean",
+  "ahead_behind": "0\t0",
+  "branch": "codex/energy-cycles-v1",
+  "checked_at": "2026-10-10T06:15:32.565449+08:00",
+  "commit": "NOT_ATTEMPTED",
+  "final_local_HEAD": "7a95c29b6bf80b567863cc70a631859016144924",
+  "final_remote_HEAD": "7a95c29b6bf80b567863cc70a631859016144924",
+  "machine": "WSJ",
+  "merge": "NOT_ATTEMPTED",
+  "new_branch_worktree_clone": "NOT_ATTEMPTED",
+  "origin": "https://github.com/DrWanSJ/PURE.git",
+  "push": "NOT_ATTEMPTED",
+  "repository_root": "C:\\Users\\sean\\Desktop\\GUV",
+  "researcher_signatures": "BLANK",
+  "scientific_status": "HUMAN_REVIEW_REQUIRED",
+  "source_and_inherited_protection": {
+    "B1_3_files": 26,
+    "changed": [],
+    "protected_existing_files": 2443,
+    "status": "PASS"
+  },
+  "starting_HEAD": "7a95c29b6bf80b567863cc70a631859016144924",
+  "syntax_checked_scripts": 10,
+  "unknown_changes": [],
+  "upstream_HEAD": "7a95c29b6bf80b567863cc70a631859016144924"
+}

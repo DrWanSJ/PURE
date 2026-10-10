@@ -1,0 +1,91 @@
+{
+  "blocked_trajectory_read_attempts": [],
+  "runtime_repository_reads": {
+    "R0.__init__": [
+      "configs/reduction/rapid_v1.json",
+      "docs/reduction/conservation_laws_v0.csv",
+      "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "models/pnas2017_full_reference/audit/reactions.csv",
+      "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml",
+      "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml",
+      "results/reduction/phase_c_release_v1/closure_20261010/charts.json",
+      "scripts/reduction/rapid_v1/runtime.py"
+    ],
+    "R1.__init__": [
+      "configs/reduction/rapid_v1.json",
+      "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "models/pnas2017_full_reference/audit/reactions.csv",
+      "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml",
+      "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml",
+      "results/reduction/phase_c_release_v1/closure_20261010/charts.json"
+    ],
+    "R2.__init__": [
+      "configs/reduction/rapid_v1.json",
+      "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "models/pnas2017_full_reference/audit/reactions.csv",
+      "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml",
+      "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml",
+      "results/reduction/phase_c_release_v1/closure_20261010/charts.json"
+    ],
+    "R3_CHAIN1.__init__": [
+      "configs/reduction/rapid_v1.json",
+      "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "models/pnas2017_full_reference/audit/reactions.csv",
+      "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml",
+      "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml",
+      "results/reduction/phase_c_release_v1/closure_20261010/charts.json"
+    ],
+    "R3_CHAIN12.__init__": [
+      "configs/reduction/rapid_v1.json",
+      "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "models/pnas2017_full_reference/audit/reactions.csv",
+      "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml",
+      "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml",
+      "results/reduction/phase_c_release_v1/closure_20261010/charts.json"
+    ],
+    "R3_CHAIN12_RECYCLE.__init__": [
+      "configs/reduction/rapid_v1.json",
+      "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "models/pnas2017_full_reference/audit/reactions.csv",
+      "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml",
+      "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml",
+      "results/reduction/phase_c_release_v1/closure_20261010/charts.json"
+    ],
+    "R3_RECYCLE.__init__": [
+      "configs/reduction/rapid_v1.json",
+      "models/pnas2017_full_reference/audit/reaction_balance_audit.csv",
+      "models/pnas2017_full_reference/audit/reactions.csv",
+      "models/pnas2017_full_reference/normalized/fMGG_synthesis_constant_stoichiometry.xml",
+      "models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_initial_values.csv",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "results/pnas2017_reference/rr_cvode_author_csv_20260924/effective_author_conditions.xml",
+      "results/reduction/phase_c_release_v1/closure_20261010/charts.json"
+    ]
+  },
+  "runtime_source_sha256": "1fdceaa62538aa8fc9da36866da8cea26116c5762214864dd34c90f81411263c",
+  "scope": "Actual Runtime construction and simulation were audited. Saved arrays are read only by the separate comparison/scoring stage. Counters are integrated in each runtime.",
+  "static_file_read_call_sites": [
+    "load"
+  ],
+  "status": "PASS",
+  "write_policy": "All Python open-for-write calls are confined to this fresh output directory."
+}

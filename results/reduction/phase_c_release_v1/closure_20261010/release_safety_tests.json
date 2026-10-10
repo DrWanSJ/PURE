@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "test_count": 5,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.125s\n\nOK\n",
+  "command": "python scripts/reduction/rapid_v1/test_release.py",
+  "tested_sha256": {
+    "scripts/reduction/rapid_v1/test_release.py": "eaa32e67be5bc4cf037908f5457725b3622206423ee6c3256da8165db631ea55",
+    "scripts/reduction/rapid_v1/release.py": "f3a6cae954a3bbed5bfd50bb65a495bf75da137e3392a0d4a79181f20815107b"
+  }
+}

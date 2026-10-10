@@ -1,0 +1,3855 @@
+{
+  "B1_3_upstream_status": "ENGINEERING_COMPLETE_PENDING_HUMAN_REVIEW; NO_FORMAL_H1_H9_SIGNOFF",
+  "R1_accepted_chart_reverified": true,
+  "active_rank": 177,
+  "all_initial_constants_rebased_per_scenario": true,
+  "author_condition_full_reconstruction_dimension": 175,
+  "author_support_species": 205,
+  "charts": {
+    "R1": {
+      "dimension": 214,
+      "law_rank": 27,
+      "physical_dimension": 241
+    },
+    "R2": {
+      "dimension": 175,
+      "law_rank": 30,
+      "physical_dimension": 205,
+      "scope": "AUTHOR_CONDITION_EXACT"
+    },
+    "R3_CHAIN1": {
+      "dimension": 174,
+      "law_rank": 30,
+      "physical_dimension": 204,
+      "scope": "CONDITIONAL_APPROXIMATE_CHAIN"
+    },
+    "R3_CHAIN12": {
+      "dimension": 173,
+      "law_rank": 30,
+      "physical_dimension": 203,
+      "scope": "CONDITIONAL_APPROXIMATE_CHAIN"
+    },
+    "R3_CHAIN12_RECYCLE": {
+      "dimension": 171,
+      "law_rank": 30,
+      "physical_dimension": 201,
+      "scope": "CONDITIONAL_APPROXIMATE_CHAIN"
+    },
+    "R3_RECYCLE": {
+      "dimension": 173,
+      "law_rank": 30,
+      "physical_dimension": 203,
+      "scope": "AUTHOR_CONDITION_EXACT"
+    }
+  },
+  "closure_counterexamples": [
+    {
+      "approximate_rate": "7000/1007",
+      "candidate": "CHAIN_ROUND_1",
+      "exact_lumping": "REJECTED",
+      "mean_wait": "1007/7000",
+      "projected_product_derivative_a": "0",
+      "projected_product_derivative_b": "1000",
+      "same_projected_state": "Z=Xslow+Xfast=1; free EFTuGDP adjusted to preserve the aggregate carrier inventory",
+      "state_a": {
+        "EFTu_GDP": "0",
+        "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC": "1"
+      },
+      "state_b": {
+        "EFTu_GDP": "1",
+        "elRS70SAGGU0002_fMet_GlytRNAGlyGCC": "1"
+      },
+      "waiting_variance_effective": "1014049/49000000",
+      "waiting_variance_source": "1000049/49000000"
+    },
+    {
+      "approximate_rate": "7000/1007",
+      "candidate": "CHAIN_ROUND_2",
+      "exact_lumping": "REJECTED",
+      "mean_wait": "1007/7000",
+      "projected_product_derivative_a": "0",
+      "projected_product_derivative_b": "1000",
+      "same_projected_state": "Z=Xslow+Xfast=1; free EFTuGDP adjusted to preserve the aggregate carrier inventory",
+      "state_a": {
+        "EFTu_GDP": "0",
+        "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC": "1"
+      },
+      "state_b": {
+        "EFTu_GDP": "1",
+        "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC": "1"
+      },
+      "waiting_variance_effective": "1014049/49000000",
+      "waiting_variance_source": "1000049/49000000"
+    },
+    {
+      "Pept0003_derivative_a": "1/2",
+      "Pept0003_derivative_b": "3/2",
+      "candidate": "RF1_RF2_SHARED_POST_ENDPOINT_MERGE",
+      "same_aggregate_bound_ribosome": "1",
+      "state_a": {
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1": "1"
+      },
+      "state_b": {
+        "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2": "1"
+      },
+      "status": "REJECTED; RF identities and competing source entrances must remain"
+    }
+  ],
+  "exact_source_matrix_shape": [
+    241,
+    968
+  ],
+  "positive_parameter_full_source_rank": 177,
+  "projection_proofs": {
+    "R3_CHAIN12_RECYCLE": {
+      "P_rank": 5,
+      "closure_identity": "P*S_tail*diag(k)*E = Q*P_tail over Q",
+      "cross_subsystem_input": "re0000000306",
+      "kernel_dimension": 2,
+      "main_input": "re0000000910",
+      "microscopic_path_gross_extents": "NOT_UNIQUELY_RECONSTRUCTED; protected aggregate resource/factor currents exact.",
+      "outside_rate_dependencies_on_tail": false,
+      "physical_representative": "Pair lower bounds max(0,N3+N2-B_other); residual N2 distributed equally; singleton inventories derived exactly. No output clipping.",
+      "status": "EXACT_AUTHOR_PARAMETER_QUOTIENT"
+    },
+    "R3_RECYCLE": {
+      "P_rank": 5,
+      "closure_identity": "P*S_tail*diag(k)*E = Q*P_tail over Q",
+      "cross_subsystem_input": "re0000000306",
+      "kernel_dimension": 2,
+      "main_input": "re0000000910",
+      "microscopic_path_gross_extents": "NOT_UNIQUELY_RECONSTRUCTED; protected aggregate resource/factor currents exact.",
+      "outside_rate_dependencies_on_tail": false,
+      "physical_representative": "Pair lower bounds max(0,N3+N2-B_other); residual N2 distributed equally; singleton inventories derived exactly. No output clipping.",
+      "status": "EXACT_AUTHOR_PARAMETER_QUOTIENT"
+    }
+  },
+  "rank_lower_bound_mod_prime": 1000003,
+  "scientific_status": "HUMAN_REVIEW_REQUIRED",
+  "source_general_LS_zero": true,
+  "source_left_nullity": 27,
+  "source_rank": 214,
+  "support_invariance": {
+    "closure_count": 205,
+    "external_input_rules_events_modifiers": "ABSENT_AS_CHECKED_BY_CANONICAL_PARSER_AND_RAW_XML",
+    "initial_positive": 27,
+    "iterations": [
+      {
+        "new_species": [
+          "CK_ATP",
+          "CK_CP",
+          "EFG_GTP",
+          "EFTu_EFTs",
+          "EFTu_GTP",
+          "GlyRS_ATP",
+          "GlyRS_Gly",
+          "GlyRS_tRNAGlyGCC",
+          "IF2_GTP",
+          "MK_ATP",
+          "MTF_FD",
+          "MetRS_ATP",
+          "MetRS_Met",
+          "MetRS_tRNAfMetCAU",
+          "NDK_ATP",
+          "NDK_GTP",
+          "RF3_GTP",
+          "RS30S",
+          "RS50S",
+          "RS70S_IF1",
+          "RS70S_IF3"
+        ],
+        "source_direction_ids": [
+          "re0000000126",
+          "re0000000132",
+          "re0000000151",
+          "re0000000157",
+          "re0000000199",
+          "re0000000241",
+          "re0000000261",
+          "re0000000273",
+          "re0000000294",
+          "re0000000332",
+          "re0000000345",
+          "re0000000355",
+          "re0000000377",
+          "re0000000380",
+          "re0000000418",
+          "re0000000445",
+          "re0000000455",
+          "re0000000457",
+          "re0000000501",
+          "re0000000827"
+        ]
+      },
+      {
+        "new_species": [
+          "EFTu_GTP_EFTs",
+          "GlyRS_ATP_tRNAGlyGCC",
+          "GlyRS_Gly_ATP",
+          "GlyRS_Gly_tRNAGlyGCC",
+          "MetRS_ATP_tRNAfMetCAU",
+          "MetRS_Met_ATP",
+          "MetRS_Met_tRNAfMetCAU",
+          "RS30S_IF1",
+          "RS30S_IF2_GTP",
+          "RS30S_IF3",
+          "RS30S_mRNA",
+          "RS50S_EFG_GTP",
+          "RS70S_EFG_GTP",
+          "RS70S_IF1_IF3"
+        ],
+        "source_direction_ids": [
+          "re0000000134",
+          "re0000000136",
+          "re0000000159",
+          "re0000000161",
+          "re0000000188",
+          "re0000000191",
+          "re0000000200",
+          "re0000000203",
+          "re0000000230",
+          "re0000000233",
+          "re0000000242",
+          "re0000000245",
+          "re0000000269",
+          "re0000000272",
+          "re0000000298",
+          "re0000000300",
+          "re0000000459",
+          "re0000000461",
+          "re0000000487",
+          "re0000000489",
+          "re0000000503",
+          "re0000000505",
+          "re0000000609",
+          "re0000000619"
+        ]
+      },
+      {
+        "new_species": [
+          "GlyRS_GlyAMP_PPi",
+          "GlyRS_Gly_ATP_tRNAGlyGCC",
+          "MetRS_MetAMP_PPi",
+          "MetRS_Met_ATP_tRNAfMetCAU",
+          "RS30S_IF1_IF2_GTP",
+          "RS30S_IF1_IF3",
+          "RS30S_IF1_mRNA",
+          "RS30S_IF2_GTP_mRNA",
+          "RS30S_IF3_IF2_GTP",
+          "RS30S_IF3_mRNA",
+          "RS50S_EFG_GDP_PO4",
+          "RS70S_EFG_GDP_PO4"
+        ],
+        "source_direction_ids": [
+          "re0000000140",
+          "re0000000165",
+          "re0000000193",
+          "re0000000195",
+          "re0000000205",
+          "re0000000235",
+          "re0000000237",
+          "re0000000247",
+          "re0000000302",
+          "re0000000304",
+          "re0000000463",
+          "re0000000469",
+          "re0000000491",
+          "re0000000493",
+          "re0000000507",
+          "re0000000615",
+          "re0000000625",
+          "re0000000631",
+          "re0000000635",
+          "re0000000643",
+          "re0000000649",
+          "re0000000675",
+          "re0000000677"
+        ]
+      },
+      {
+        "new_species": [
+          "GlyRS_GlyAMP",
+          "GlyRS_GlyAMP_PPi_tRNAGlyGCC",
+          "MetRS_MetAMP",
+          "MetRS_MetAMP_PPi_tRNAfMetCAU",
+          "PO4",
+          "PPi",
+          "RS30S_IF1_IF2_GTP_mRNA",
+          "RS30S_IF1_IF3_IF2_GTP",
+          "RS30S_IF1_IF3_mRNA",
+          "RS30S_IF3_IF2_GTP_mRNA",
+          "RS50S_EFG_GDP",
+          "RS70S_EFG_GDP"
+        ],
+        "source_direction_ids": [
+          "re0000000127",
+          "re0000000152",
+          "re0000000197",
+          "re0000000207",
+          "re0000000239",
+          "re0000000249",
+          "re0000000306",
+          "re0000000307",
+          "re0000000471",
+          "re0000000481",
+          "re0000000495",
+          "re0000000509",
+          "re0000000513",
+          "re0000000531",
+          "re0000000639",
+          "re0000000653",
+          "re0000000657",
+          "re0000000667",
+          "re0000000679",
+          "re0000000681"
+        ]
+      },
+      {
+        "new_species": [
+          "EFG_GDP",
+          "GlyAMP",
+          "GlyRS_GlyAMP_tRNAGlyGCC",
+          "MetAMP",
+          "MetRS_MetAMP_tRNAfMetCAU",
+          "PPiase_PO4",
+          "PPiase_PPi",
+          "RS30S_IF1_IF3_IF2_GTP_mRNA"
+        ],
+        "source_direction_ids": [
+          "re0000000147",
+          "re0000000172",
+          "re0000000189",
+          "re0000000209",
+          "re0000000231",
+          "re0000000251",
+          "re0000000308",
+          "re0000000309",
+          "re0000000405",
+          "re0000000412",
+          "re0000000515",
+          "re0000000525",
+          "re0000000535",
+          "re0000000671"
+        ]
+      },
+      {
+        "new_species": [
+          "GDP",
+          "GlyRS_AMP_GlytRNAGlyGCC",
+          "MetRS_AMP_MettRNAfMetCAU",
+          "PPiase_PO4_PO4"
+        ],
+        "source_direction_ids": [
+          "re0000000178",
+          "re0000000220",
+          "re0000000292",
+          "re0000000407",
+          "re0000000410"
+        ]
+      },
+      {
+        "new_species": [
+          "AMP",
+          "EFTu_GDP",
+          "EFTu_GDP_EFTs",
+          "GlyRS_AMP",
+          "GlyRS_GlytRNAGlyGCC",
+          "GlytRNAGlyGCC",
+          "IF2_GDP",
+          "MetRS_AMP",
+          "MetRS_MettRNAfMetCAU",
+          "MettRNAfMetCAU",
+          "NDK_GDP",
+          "NDK_GDP_ATP",
+          "RF3_GDP"
+        ],
+        "source_direction_ids": [
+          "re0000000180",
+          "re0000000182",
+          "re0000000222",
+          "re0000000224",
+          "re0000000263",
+          "re0000000268",
+          "re0000000357",
+          "re0000000361",
+          "re0000000447",
+          "re0000000826"
+        ]
+      },
+      {
+        "new_species": [
+          "EFTu_GTP_GlytRNAGlyGCC",
+          "EFTu_GTP_MettRNAfMetCAU",
+          "MK_AMP",
+          "MK_ATP_AMP",
+          "MTF_FD_MettRNAfMetCAU",
+          "MTF_MettRNAfMetCAU",
+          "NDK_GTP_ADP"
+        ],
+        "source_direction_ids": [
+          "re0000000275",
+          "re0000000288",
+          "re0000000363",
+          "re0000000382",
+          "re0000000386",
+          "re0000000420",
+          "re0000000422"
+        ]
+      },
+      {
+        "new_species": [
+          "ADP",
+          "MK_ADP_ADP",
+          "MTF_THF_fMettRNAfMetCAU",
+          "NDK_ADP"
+        ],
+        "source_direction_ids": [
+          "re0000000365",
+          "re0000000366",
+          "re0000000388",
+          "re0000000426"
+        ]
+      },
+      {
+        "new_species": [
+          "CK_ADP",
+          "CK_CP_ADP",
+          "MK_ADP_1",
+          "MK_ADP_2",
+          "MTF_THF",
+          "MTF_fMettRNAfMetCAU",
+          "THF",
+          "fMettRNAfMetCAU"
+        ],
+        "source_direction_ids": [
+          "re0000000330",
+          "re0000000334",
+          "re0000000390",
+          "re0000000392",
+          "re0000000395",
+          "re0000000397",
+          "re0000000428",
+          "re0000000430"
+        ]
+      },
+      {
+        "new_species": [
+          "CK_Cr_ATP",
+          "IF2_GTP_fMettRNAfMetCAU",
+          "RS30S_IF1_IF2_GTP_fMettRNAfMetCAU",
+          "RS30S_IF1_IF2_GTP_fMettRNAfMetCAU_mRNA",
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU",
+          "RS30S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+          "RS30S_IF1_IF3_fMettRNAfMetCAU_mRNA",
+          "RS30S_IF1_fMettRNAfMetCAU_mRNA",
+          "RS30S_IF2_GTP_fMettRNAfMetCAU",
+          "RS30S_IF2_GTP_fMettRNAfMetCAU_mRNA",
+          "RS30S_IF3_IF2_GTP_fMettRNAfMetCAU",
+          "RS30S_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+          "RS30S_IF3_fMettRNAfMetCAU_mRNA",
+          "RS30S_fMettRNAfMetCAU_mRNA"
+        ],
+        "source_direction_ids": [
+          "re0000000338",
+          "re0000000449",
+          "re0000000467",
+          "re0000000473",
+          "re0000000479",
+          "re0000000499",
+          "re0000000517",
+          "re0000000523",
+          "re0000000613",
+          "re0000000621",
+          "re0000000629",
+          "re0000000647",
+          "re0000000659",
+          "re0000000661"
+        ]
+      },
+      {
+        "new_species": [
+          "CK_Cr",
+          "Cr",
+          "RS70S_IF1_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA",
+          "RS70S_IF3_IF2_GTP_fMettRNAfMetCAU_mRNA"
+        ],
+        "source_direction_ids": [
+          "re0000000340",
+          "re0000000342",
+          "re0000000485",
+          "re0000000529"
+        ]
+      },
+      {
+        "new_species": [
+          "RS70S_IF1_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA",
+          "RS70S_IF3_IF2_GDP_PO4_fMettRNAfMetCAU_mRNA"
+        ],
+        "source_direction_ids": [
+          "re0000000715",
+          "re0000000717"
+        ]
+      },
+      {
+        "new_species": [
+          "RS70S_IF1_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA",
+          "RS70S_IF3_IF2_GDP_fMettRNAfMetCAU_mRNA"
+        ],
+        "source_direction_ids": [
+          "re0000000721",
+          "re0000000722"
+        ]
+      },
+      {
+        "new_species": [
+          "RS70S_IF1_IF2_GDP_fMettRNAfMetCAU_mRNA",
+          "RS70S_IF1_IF3_fMettRNAfMetCAU_mRNA",
+          "RS70S_IF2_GDP_fMettRNAfMetCAU_mRNA",
+          "RS70S_IF3_fMettRNAfMetCAU_mRNA"
+        ],
+        "source_direction_ids": [
+          "re0000000725",
+          "re0000000747",
+          "re0000000749",
+          "re0000000755"
+        ]
+      },
+      {
+        "new_species": [
+          "RS70S_IF1_fMettRNAfMetCAU_mRNA",
+          "elRS70SAGGU0002_fMettRNAfMetCAU"
+        ],
+        "source_direction_ids": [
+          "re0000000726",
+          "re0000000759",
+          "re0000000761",
+          "re0000000763"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SAGGU0002_fMet"
+        ],
+        "source_direction_ids": [
+          "re0000000001"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SAGGU0002_fMet_EFTu_GTP_GlytRNAGlyGCC"
+        ],
+        "source_direction_ids": [
+          "re0000000013"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SAGGU0002_fMet_EFTu_GDP_PO4_GlytRNAGlyGCC"
+        ],
+        "source_direction_ids": [
+          "re0000000014"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SAGGU0002_fMet_EFTu_GDP_GlytRNAGlyGCC"
+        ],
+        "source_direction_ids": [
+          "re0000000016"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SAGGU0002_fMet_GlytRNAGlyGCC"
+        ],
+        "source_direction_ids": [
+          "re0000000017"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SBGGU0002_Pept0002tRNAGlyGCC"
+        ],
+        "source_direction_ids": [
+          "re0000000018"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GTP"
+        ],
+        "source_direction_ids": [
+          "re0000000019"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SBGGU0002_Pept0002tRNAGlyGCC_EFG_GDP_PO4"
+        ],
+        "source_direction_ids": [
+          "re0000000022"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SCGGU0003_Pept0002tRNAGlyGCC_EFG_GDP"
+        ],
+        "source_direction_ids": [
+          "re0000000024"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SAGGU0003_Pept0002tRNAGlyGCC"
+        ],
+        "source_direction_ids": [
+          "re0000000025"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SAGGU0003_Pept0002"
+        ],
+        "source_direction_ids": [
+          "re0000000068"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SAGGU0003_Pept0002_EFTu_GTP_GlytRNAGlyGCC"
+        ],
+        "source_direction_ids": [
+          "re0000000074"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SAGGU0003_Pept0002_EFTu_GDP_PO4_GlytRNAGlyGCC"
+        ],
+        "source_direction_ids": [
+          "re0000000075"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SAGGU0003_Pept0002_EFTu_GDP_GlytRNAGlyGCC"
+        ],
+        "source_direction_ids": [
+          "re0000000077"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SAGGU0003_Pept0002_GlytRNAGlyGCC"
+        ],
+        "source_direction_ids": [
+          "re0000000078"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SBGGU0003_Pept0003tRNAGlyGCC"
+        ],
+        "source_direction_ids": [
+          "re0000000079"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GTP"
+        ],
+        "source_direction_ids": [
+          "re0000000080"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SBGGU0003_Pept0003tRNAGlyGCC_EFG_GDP_PO4"
+        ],
+        "source_direction_ids": [
+          "re0000000083"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SCUAA0004_Pept0003tRNAGlyGCC_EFG_GDP"
+        ],
+        "source_direction_ids": [
+          "re0000000085"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SAUAA0004_Pept0003tRNAGlyGCC"
+        ],
+        "source_direction_ids": [
+          "re0000000086"
+        ]
+      },
+      {
+        "new_species": [
+          "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF1",
+          "elRS70SAUAA0004_Pept0003tRNAGlyGCC_RF2"
+        ],
+        "source_direction_ids": [
+          "re0000000796",
+          "re0000000811"
+        ]
+      },
+      {
+        "new_species": [
+          "Pept0003",
+          "termRS70SUAA0004_tRNAGlyGCC_RF1",
+          "termRS70SUAA0004_tRNAGlyGCC_RF2"
+        ],
+        "source_direction_ids": [
+          "re0000000798",
+          "re0000000813"
+        ]
+      },
+      {
+        "new_species": [
+          "termRS70SUAA0004_tRNAGlyGCC",
+          "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3",
+          "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GDP",
+          "termRS70SUAA0004_tRNAGlyGCC_RF1_RF3_GTP",
+          "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3",
+          "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GDP",
+          "termRS70SUAA0004_tRNAGlyGCC_RF2_RF3_GTP"
+        ],
+        "source_direction_ids": [
+          "re0000000799",
+          "re0000000814",
+          "re0000000829",
+          "re0000000831",
+          "re0000000833",
+          "re0000000870",
+          "re0000000872",
+          "re0000000874"
+        ]
+      },
+      {
+        "new_species": [
+          "termRS70SUAA0004_tRNAGlyGCC_EFG_GTP",
+          "termRS70SUAA0004_tRNAGlyGCC_RF3_GTP",
+          "termRS70SUAA0004_tRNAGlyGCC_RRF"
+        ],
+        "source_direction_ids": [
+          "re0000000838",
+          "re0000000879",
+          "re0000000904",
+          "re0000000906"
+        ]
+      },
+      {
+        "new_species": [
+          "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP_PO4",
+          "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GTP"
+        ],
+        "source_direction_ids": [
+          "re0000000840",
+          "re0000000895",
+          "re0000000901"
+        ]
+      },
+      {
+        "new_species": [
+          "termRS70SUAA0004_tRNAGlyGCC_RF3_GDP",
+          "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP_PO4"
+        ],
+        "source_direction_ids": [
+          "re0000000842",
+          "re0000000908"
+        ]
+      },
+      {
+        "new_species": [
+          "termRS70SUAA0004_tRNAGlyGCC_RRF_EFG_GDP"
+        ],
+        "source_direction_ids": [
+          "re0000000902"
+        ]
+      },
+      {
+        "new_species": [
+          "RS50S_tRNAGlyGCC_RRF_EFG_GDP",
+          "termRS30S_mRNA"
+        ],
+        "source_direction_ids": [
+          "re0000000910"
+        ]
+      },
+      {
+        "new_species": [
+          "RS50S_RRF_EFG_GDP",
+          "RS50S_tRNAGlyGCC_EFG_GDP",
+          "RS50S_tRNAGlyGCC_RRF"
+        ],
+        "source_direction_ids": [
+          "re0000000913",
+          "re0000000914",
+          "re0000000915"
+        ]
+      },
+      {
+        "new_species": [
+          "RS50S_RRF",
+          "RS50S_tRNAGlyGCC"
+        ],
+        "source_direction_ids": [
+          "re0000000916",
+          "re0000000917",
+          "re0000000920",
+          "re0000000922"
+        ]
+      }
+    ],
+    "scope": "AUTHOR_CONDITION_EXACT",
+    "zero_proof": {
+      "CK_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000329",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000348",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000349",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000350",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000351",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000352",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000353",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "EFG_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000030",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000051",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000054",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000057",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000109",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000112",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000115",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000296",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000297",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000310",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000312",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000314",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000316",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000318",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000323",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000903",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000934",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000937",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000943",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000947",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000951",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000954",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "EFTs_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000277",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000281",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000283",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000285",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "EFTu_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000029",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000035",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000038",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000041",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "elRS70SAGGU0002_fMet_EFTu_GDP"
+            ],
+            "reaction_id": "re0000000044",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000093",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000096",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000099",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "elRS70SAGGU0003_Pept0002_EFTu_GDP"
+            ],
+            "reaction_id": "re0000000102",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000278",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000279",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000280",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000282",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000284",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000286",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000290",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "GMP": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000788",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000789",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "GlyRS_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000128",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000129",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000130",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000138",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000139",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000142",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000144",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000177",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000186",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000187",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000211",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000212",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000213",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000214",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000215",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "GlytRNAGlyGCC_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000031",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000287",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "IF1_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000541",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000545",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000558",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000561",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000570",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000576",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000582",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000586",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000590",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000595",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000599",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000607",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000701",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000704",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000706",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000708",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000711",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000714",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000734",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000743",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000775",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000779",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000783",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "IF2_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000451",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000452",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000453",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000454",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000563",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000566",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000573",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000578",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000585",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000589",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000594",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000598",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000600",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000605",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000690",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000692",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000696",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000698",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000700",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000703",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000710",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000713",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000727",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000732",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000736",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000741",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000768",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000781",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "IF3_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000542",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000547",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000549",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000551",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000555",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000559",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000564",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000567",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000568",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000572",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000574",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000579",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000580",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000584",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000588",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000592",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000596",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000602",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000608",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000729",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000735",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000738",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000744",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000772",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000776",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "MK_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000379",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000398",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000399",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000400",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000401",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000402",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000403",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "MTF_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000416",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000436",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000437",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000438",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000439",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000440",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000441",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "MetRS_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000153",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000154",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000155",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000163",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000164",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000167",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000169",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000219",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000228",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000229",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000253",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000254",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000255",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000256",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000257",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "MettRNAfMetCAU_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000258",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000291",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "NDK_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000354",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000369",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000370",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000371",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000372",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000373",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000374",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "PPiase_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000404",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000413",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000414",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000415",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "Pept0002": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000072",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000073",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000091",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000092",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000093",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000094",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000095",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000096",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000097",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000098",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000099",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "elRS70SAGGU0003_Pept0002_EFTu_GDP"
+            ],
+            "reaction_id": "re0000000100",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "elRS70SAGGU0003_Pept0002_EFTu_GDP"
+            ],
+            "reaction_id": "re0000000101",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "elRS70SAGGU0003_Pept0002_EFTu_GDP"
+            ],
+            "reaction_id": "re0000000102",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000103",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000104",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "Pept0002_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "Pept0002"
+            ],
+            "reaction_id": "re0000000071",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "Pept0002tRNAGlyGCC": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000047",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000048",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000049",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000050",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000051",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000052",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000053",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000054",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000055",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000056",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000057",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000058",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000059",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "Pept0002tRNAGlyGCC_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "Pept0002tRNAGlyGCC"
+            ],
+            "reaction_id": "re0000000032",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "Pept0003tRNAGlyGCC": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000105",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000106",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000107",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000108",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000109",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000110",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000111",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000112",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000113",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000114",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000115",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000116",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000117",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000801",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000802",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000804",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000816",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000817",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000819",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "Pept0003tRNAGlyGCC_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "Pept0003tRNAGlyGCC"
+            ],
+            "reaction_id": "re0000000090",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "RF1_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000803",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000804",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000807",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000837",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000853",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000857",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "RF2_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000818",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000819",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000822",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000878",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000888",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000892",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "RF3_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000824",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000848",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000849",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000850",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000854",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000858",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000861",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000864",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000867",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000885",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000889",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000893",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "RRF_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000894",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000899",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000928",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000931",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000935",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000940",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000946",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000950",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000955",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "RS30S_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000004",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000010",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000012",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000034",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000037",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000040",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "elRS70SAGGU0002_fMet_EFTu_GDP"
+            ],
+            "reaction_id": "re0000000043",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000046",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000048",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000050",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000053",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000056",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000059",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000073",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000092",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000095",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000098",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "elRS70SAGGU0003_Pept0002_EFTu_GDP"
+            ],
+            "reaction_id": "re0000000101",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000104",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000106",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000108",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000111",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000114",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000117",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000320",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000321",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000324",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000543",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000546",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000548",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000550",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000552",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000553",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000556",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000560",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000562",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000565",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000569",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000571",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000575",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000577",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000583",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000587",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000591",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000593",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000597",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000603",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000604",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000689",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000691",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000693",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000694",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000695",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000697",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000699",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000702",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000705",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000707",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000709",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000712",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000730",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000731",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000739",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000740",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000767",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000770",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000773",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000777",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000780",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000801",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000805",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000808",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000816",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000820",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000835",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000851",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000855",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000859",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000862",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000865",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000876",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000886",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000890",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000897",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000926",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000938",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000941",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000944",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000948",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "RS50S_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000003",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000009",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000011",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000033",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000036",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000039",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "elRS70SAGGU0002_fMet_EFTu_GDP"
+            ],
+            "reaction_id": "re0000000042",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000045",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000047",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000049",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000052",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000055",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000058",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000072",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000091",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000094",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000097",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "elRS70SAGGU0003_Pept0002_EFTu_GDP"
+            ],
+            "reaction_id": "re0000000100",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000103",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000105",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000107",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000110",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000113",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000116",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000311",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000313",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000315",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000317",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000319",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000322",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000544",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000554",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000557",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000581",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000601",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000606",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000728",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000733",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000737",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000742",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000769",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000771",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000774",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000778",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000782",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000802",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000806",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000809",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000817",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000821",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000836",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000852",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000856",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000860",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000863",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000866",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000877",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000887",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000891",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000898",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000924",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000925",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000930",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000933",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000936",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000939",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000942",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000945",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000949",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000953",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "elRS70SAGGU0002_fMet_EFTu_GDP": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000026",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000065",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "elRS70SAGGU0003_Pept0002_EFTu_GDP": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000087",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000123",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "fMet": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000011",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000012",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000033",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000034",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000035",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000036",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000037",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000038",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000039",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000040",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000041",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "elRS70SAGGU0002_fMet_EFTu_GDP"
+            ],
+            "reaction_id": "re0000000042",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "elRS70SAGGU0002_fMet_EFTu_GDP"
+            ],
+            "reaction_id": "re0000000043",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "elRS70SAGGU0002_fMet_EFTu_GDP"
+            ],
+            "reaction_id": "re0000000044",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000045",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000046",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000417",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "fMet_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [
+              "fMet"
+            ],
+            "reaction_id": "re0000000007",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "fMettRNAfMetCAU_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000005",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "mRNA_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000008",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "tRNAGlyGCC_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000070",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000927",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000929",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000932",
+            "zero_parameter": true
+          },
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000952",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      },
+      "tRNAfMetCAU_degraded": {
+        "all_original_producers": [
+          {
+            "exact_k": "0",
+            "missing_support_dependencies": [],
+            "reaction_id": "re0000000006",
+            "zero_parameter": true
+          }
+        ],
+        "initial": "0",
+        "invariance": "Each production monomial is identically zero on the declared nonnegative support face."
+      }
+    },
+    "zero_species": [
+      "CK_degraded",
+      "EFG_degraded",
+      "EFTs_degraded",
+      "EFTu_degraded",
+      "GMP",
+      "GlyRS_degraded",
+      "GlytRNAGlyGCC_degraded",
+      "IF1_degraded",
+      "IF2_degraded",
+      "IF3_degraded",
+      "MK_degraded",
+      "MTF_degraded",
+      "MetRS_degraded",
+      "MettRNAfMetCAU_degraded",
+      "NDK_degraded",
+      "PPiase_degraded",
+      "Pept0002",
+      "Pept0002_degraded",
+      "Pept0002tRNAGlyGCC",
+      "Pept0002tRNAGlyGCC_degraded",
+      "Pept0003tRNAGlyGCC",
+      "Pept0003tRNAGlyGCC_degraded",
+      "RF1_degraded",
+      "RF2_degraded",
+      "RF3_degraded",
+      "RRF_degraded",
+      "RS30S_degraded",
+      "RS50S_degraded",
+      "elRS70SAGGU0002_fMet_EFTu_GDP",
+      "elRS70SAGGU0003_Pept0002_EFTu_GDP",
+      "fMet",
+      "fMet_degraded",
+      "fMettRNAfMetCAU_degraded",
+      "mRNA_degraded",
+      "tRNAGlyGCC_degraded",
+      "tRNAfMetCAU_degraded"
+    ]
+  },
+  "support_live_rank": 175,
+  "support_live_rank_independent_modular_lower_bound": 175,
+  "support_live_rank_nullspace_upper_bound": 175,
+  "zero_count": 36
+}

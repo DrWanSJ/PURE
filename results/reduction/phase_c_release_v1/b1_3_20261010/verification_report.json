@@ -1,0 +1,18 @@
+{
+  "changed_original_files": [],
+  "historical_pending_fields": "Preserved and tested as original evidence",
+  "human_decision": "Separate additive 2026-10-10 formal acceptance",
+  "lineage_invalid_cases": 11,
+  "matrix_semantically_identical": true,
+  "negative_controls_passed": 36,
+  "negative_controls_run": 36,
+  "protected_original_files": 277,
+  "schema": "B1_3_RELEASE_REPLAY_V1",
+  "source_matrix_shape": [
+    241,
+    968
+  ],
+  "source_parser": "Independent canonical XML and author parameter extraction; B1-3 builder not imported",
+  "status": "PASS",
+  "witnesses_checked": 34
+}

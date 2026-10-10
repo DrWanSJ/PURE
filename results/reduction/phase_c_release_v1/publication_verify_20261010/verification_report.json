@@ -1,0 +1,30 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\sean\\Desktop\\GUV\\scripts\\reduction\\rapid_v1\\release.py\", line 349, in main\n    result[\"publication_manifest\"] = manifest_check(args.require_manifest)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sean\\Desktop\\GUV\\scripts\\reduction\\rapid_v1\\release.py\", line 116, in manifest_check\n    require(not changed, \"RELEASE_MANIFEST_MISMATCH: \" + repr(changed))\n  File \"C:\\Users\\sean\\Desktop\\GUV\\scripts\\reduction\\rapid_v1\\release.py\", line 69, in require\n    raise RuntimeError(reason)\nRuntimeError: RELEASE_MANIFEST_MISMATCH: ['docs/reduction/rapid_reduction/release_notes_v1.md', 'docs/visualization/phase_c_release_v1.json', 'docs/visualization/reduction_reasoning_atlas.html', 'scripts/phase_c_dashboard.css', 'scripts/phase_c_dashboard.inc', 'scripts/phase_c_dashboard.js', 'scripts/reduction/rapid_v1/package_release.py', 'scripts/reduction_reasoning_atlas.template.html']\n",
+  "milestone": "PNAS2017_PHASE_C_REDUCTION_V1_20261010",
+  "mode": "verify",
+  "output_directory": "results/reduction/phase_c_release_v1/publication_verify_20261010",
+  "pre_run_protection": {
+    "changed": [],
+    "original_research_files": 277,
+    "pinned_sha256": {
+      "docs/reduction/rapid_reduction/mathematical_certificate.json": "c698ca685bf1052f529c9b8b2bb3626c2a3176818e868469cf9b29e6f3e26df0",
+      "models/pnas2017_full_reference/original/fMGG_synthesis.xml": "dc43bcec367f52105fe8d1ba328e59b064935df5faf8f880e078b212a40183df",
+      "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv": "cfb24e2cb9f70168e30355d51dd4a4036686ceefab1a2b26bac122448c81b465"
+    },
+    "protected_original_files": 2198,
+    "status": "PASS"
+  },
+  "run_id": "publication_verify_20261010",
+  "runtime_input_audit": {
+    "blocked_trajectory_read_attempts": [],
+    "runtime_repository_reads": {},
+    "runtime_source_sha256": "1fdceaa62538aa8fc9da36866da8cea26116c5762214864dd34c90f81411263c",
+    "scope": "Actual Runtime construction and simulation were audited. Saved arrays are read only by the separate comparison/scoring stage. Counters are integrated in each runtime.",
+    "static_file_read_call_sites": [
+      "load"
+    ],
+    "status": "PASS",
+    "write_policy": "All Python open-for-write calls are confined to this fresh output directory."
+  },
+  "status": "FAIL"
+}

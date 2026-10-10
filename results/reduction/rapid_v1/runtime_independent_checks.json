@@ -1,0 +1,58 @@
+[
+  {
+    "independent_existing_runtime_RHS_error": 2.1659285526952862e-16,
+    "sample": 0,
+    "scenario": "AUTHOR_BASELINE"
+  },
+  {
+    "independent_existing_runtime_RHS_error": 1.5265566588595902e-15,
+    "sample": 1,
+    "scenario": "AUTHOR_BASELINE"
+  },
+  {
+    "independent_existing_runtime_RHS_error": 2.1659285526952862e-16,
+    "sample": 0,
+    "scenario": "FLOW_CHALLENGE"
+  },
+  {
+    "independent_existing_runtime_RHS_error": 2.5757174171303632e-14,
+    "sample": 1,
+    "scenario": "FLOW_CHALLENGE"
+  },
+  {
+    "independent_existing_runtime_RHS_error": 1.4479690531906822e-16,
+    "sample": 0,
+    "scenario": "ENERGY_FACTOR_LIMITED"
+  },
+  {
+    "independent_existing_runtime_RHS_error": 1.5265566588595902e-15,
+    "sample": 1,
+    "scenario": "ENERGY_FACTOR_LIMITED"
+  },
+  {
+    "independent_existing_runtime_RHS_error": 2.1659285526952862e-16,
+    "sample": 0,
+    "scenario": "COMPETITION_OCCUPANCY"
+  },
+  {
+    "independent_existing_runtime_RHS_error": 1.5265566588595902e-15,
+    "sample": 1,
+    "scenario": "COMPETITION_OCCUPANCY"
+  },
+  {
+    "analytical_jacobian_directional_error": 1.7795145176987288e-08,
+    "model": "R0"
+  },
+  {
+    "analytical_jacobian_directional_error": 7.63863475074017e-08,
+    "model": "R1"
+  },
+  {
+    "analytical_jacobian_directional_error": 4.235026750822732e-08,
+    "model": "R2"
+  },
+  {
+    "analytical_jacobian_directional_error": 3.597200388354867e-08,
+    "model": "R3_CHAIN12_RECYCLE"
+  }
+]

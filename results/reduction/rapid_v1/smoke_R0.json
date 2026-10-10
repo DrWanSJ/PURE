@@ -1,0 +1,30 @@
+{
+  "chemical_dimension": 241,
+  "evaluated_mass_action_expressions": 483,
+  "extra_counter_dimension": 20,
+  "final_time": 1000.0,
+  "jacobian_nnz_at_final": 1723,
+  "jacobian_nnz_at_initial": 1207,
+  "max_conservation_abs": 2.2919266484677792e-10,
+  "message": "The solver successfully reached the end of the integration interval.",
+  "minimum_physical": 0.0,
+  "minimum_source_representative": 0.0,
+  "model": "R0",
+  "nfev": 5081,
+  "njev": 46,
+  "nlu": 348,
+  "physical_coordinate_count": 241,
+  "positive_source_parameter_directions": 483,
+  "scenario": "AUTHOR_BASELINE",
+  "seconds": 0.5741142999904696,
+  "solver": {
+    "atol": 1e-11,
+    "method": "BDF",
+    "rtol": 1e-09
+  },
+  "source_mapping_directions": 483,
+  "success": true,
+  "tail_linear_coordinates": 0,
+  "tail_microstate_reconstruction": "SOURCE_EXACT_OR_CHAIN_FAST_ZERO_APPROXIMATION",
+  "tail_protected_counter_closure": true
+}
