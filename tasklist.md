@@ -1,5 +1,7 @@
 # PURE 详细翻译网络审计、人工审核降维与物质—能量流工作台
 
+**2026-10-10 当前里程碑：** 研究者会话正式接受 B1-3 限定结构结论（H1–H3=Y，H4–H9=CONDITIONAL）及 Phase C 限定科研结果，身份为 `PNAS2017_PHASE_C_REDUCTION_V1_20261010`。见 [B1-3 当前决定](docs/reduction/pathways/phase_b1_3_formal_acceptance_20261010.md)、[Phase C 当前决定](docs/reduction/rapid_reduction/phase_c_formal_acceptance_20261010.md)与[原位升级的 HTML](docs/visualization/reduction_reasoning_atlas.html)。R1 214 为源一般精确守恒坐标，R2 175 为作者支持面精确坐标，R3_RECYCLE 173 为精确观测商，Gly 一轮174/两轮173与组合171含近似；最终171为四情景长期数值门通过的条件科研候选。20个计数器另计，不是171个反应，没有速度改善，不升级为普遍验证的 `PURE_reduced_core`。旧待审、QSSA失败、MATLAB历史99通过/3失败/1未完成均保留；本次未重跑MATLAB。后续仅建议：稀疏坐标与Jacobian工程优化→保留动态资源储存的能量模块研究→扩展参数/初值域；本次不启动新研究。下文旧计划按历史原样保留。
+
 **2026-09-27 迁移状态补注：** PNAS 论文 PDF 与 S01–S29 已按研究者 R1 决定从研究分支保存，来源字节和哈希见 `references/PNAS2017_Matsuura/provenance/publisher_capture.json`。下文 v2 计划中“尚需取得”这些文件的句子保留为当时任务，不再代表当前缺口。S28 数值对照、化学单位和人工降维审核仍未完成；G1 须重新验收，不能从文件已保存推断通过。A3a 与 A3b-21 为失败证据，A3b-r12 被阻断且未验证，A3c 仅在既定规则下 0/21；`PURE_reduced_core` 仍未批准。历史证据与未决科学问题分别见 `docs/reduction/pnas2017_historical_evidence.md` 和 `docs/reduction/open_scientific_decisions.md`。
 ## v2：以 Matsuura 等 PNAS 2017 为主基准的分阶段执行计划
 **执行对象：** 1 名已熟悉相关反应动力学、计算或前端工作的博士生；不是 MD 方向学生的追加任务。  

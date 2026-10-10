@@ -1,5 +1,14 @@
 # PNAS translation-network visualization plan (architecture only)
 
+> **2026-10-10 当前实现导航：** 下文保留原架构契约。已有
+> [reduction_reasoning_atlas.html](reduction_reasoning_atlas.html) 已原位加入 Phase C
+> 限定科研发布总览、四情景实际轨迹、源时间窗口、运行时间和持续可见的限制。
+> [数据契约与输入哈希](phase_c_release_v1.json)由适配器生成；
+> [正式接受](../reduction/rapid_reduction/phase_c_formal_acceptance_20261010.md)与
+> [发布清单](../reduction/rapid_reduction/release_manifest_v1.json)单独记录。
+> 原始反应图谱仍在 [reaction_atlas_prototype.html](../reduction/pathways/reaction_atlas_prototype.html)。
+> 这些实现不代表下列渗透压、离子强度等所有设想已被实现或认证。
+
 No large frontend is built at this stage. Views consume immutable original SBML IDs and derived, provenance-tagged annotations. A visual grouping is a display operation and cannot edit, merge or delete a scientific species/reaction.
 
 ## Proposed views

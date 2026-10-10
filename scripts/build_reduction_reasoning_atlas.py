@@ -871,7 +871,7 @@ def build_payload(src: Source, a: AssertionLog) -> dict:
     return payload
 
 
-def render(payload: dict) -> str:
+def render(payload: dict, phase_c: dict) -> str:
     with open(TEMPLATE, encoding="utf-8") as fh:
         template = fh.read()
     blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
@@ -880,7 +880,15 @@ def render(payload: dict) -> str:
     marker = "/*__ATLAS_PAYLOAD__*/null"
     if marker not in template:
         raise IntegrityError(f"template placeholder {marker!r} not found in {TEMPLATE}")
-    return template.replace(marker, blob)
+    from build_phase_c_dashboard import serialize
+    template = template.replace(marker, blob)
+    template = template.replace("/*__PHASE_C_PAYLOAD__*/null", serialize(phase_c).strip().replace("</", "<\\/"))
+    for marker, name in [("/*__PHASE_C_STYLE__*/", "phase_c_dashboard.css"),
+                         ("<!--__PHASE_C_SECTION__-->", "phase_c_dashboard.inc"),
+                         ("/*__PHASE_C_SCRIPT__*/", "phase_c_dashboard.js")]:
+        with open(os.path.join(REPO_ROOT, "scripts", name), encoding="utf-8") as fh:
+            template = template.replace(marker, fh.read())
+    return template
 
 
 def main() -> int:
@@ -908,6 +916,9 @@ def main() -> int:
             print(f"  [{row['status']}] {row['id']}: {row['text']}", file=sys.stderr)
         return 1
 
+    from build_phase_c_dashboard import build_data, serialize, DATA_PATH
+    phase_c = build_data()
+
     print(f"source ref      : {payload['provenance']['source_ref']}")
     print(f"source commit   : {payload['provenance']['source_commit']}")
     print(f"evidence HEAD   : {payload['provenance']['evidence_source_head']}")
@@ -924,7 +935,8 @@ def main() -> int:
         print("\n--check: no files written.")
         return 0
 
-    html = render(payload)
+    html = render(payload, phase_c)
+    DATA_PATH.write_bytes(serialize(phase_c).encode("utf-8"))
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     with open(args.output, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(html)

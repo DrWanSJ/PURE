@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "html": "docs/visualization/reduction_reasoning_atlas.html",
+  "html_sha256": "e6a181693b391814d8d0babaae2a887fc28412387cb5214793d1e36ebc7434a6",
+  "checks": [
+    {
+      "check": "freshness_and_embedded_contract",
+      "status": "PASS",
+      "evidence": {
+        "input_files": 41,
+        "data_sha256": "f4838d0191e3804f838080fe7e4b1f7e2a4acffd3befac9daa31e05ede78b813"
+      }
+    },
+    {
+      "check": "legacy_preserved",
+      "status": "PASS",
+      "evidence": {
+        "legacy_html_ref": "7a95c29b6bf80b567863cc70a631859016144924",
+        "old_ids": 58,
+        "historical_scientific_payload": "IDENTICAL_VALUES_EXCEPT_BUILD_TIMESTAMP_AND_REF_ALIAS_SAME_COMMIT"
+      }
+    },
+    {
+      "check": "offline_structure_and_scope",
+      "status": "PASS",
+      "evidence": "No external assets, fetch, CDN, duplicate IDs; legacy scope explicit and early window default"
+    },
+    {
+      "check": "scientific_dimensions_and_boundaries",
+      "status": "PASS",
+      "evidence": "Distinct 173 branches, 171+20=191, 7-to-5 quotient, RF 0.5/1.5, 2 PO4 and no speedup"
+    },
+    {
+      "check": "saved_trajectory_identity",
+      "status": "PASS",
+      "evidence": {
+        "direct_series_compared": 240,
+        "samples_per_series": 269,
+        "scenarios": [
+          "AUTHOR_BASELINE",
+          "FLOW_CHALLENGE",
+          "ENERGY_FACTOR_LIMITED",
+          "COMPETITION_OCCUPANCY"
+        ]
+      }
+    },
+    {
+      "check": "local_links",
+      "status": "PASS",
+      "checked": 59,
+      "missing": []
+    },
+    {
+      "check": "javascript_syntax",
+      "status": "PASS",
+      "evidence": "node --check: all embedded JavaScript"
+    }
+  ],
+  "browser_visual_verification": "SEPARATE_REPORT_REQUIRED",
+  "fresh_ODE_execution": false
+}

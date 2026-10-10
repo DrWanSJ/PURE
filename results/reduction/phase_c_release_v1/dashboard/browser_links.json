@@ -1,0 +1,405 @@
+{
+  "links": [
+    {
+      "href": "#phase-c",
+      "label": "正式发布"
+    },
+    {
+      "href": "#phase-curves",
+      "label": "轨迹"
+    },
+    {
+      "href": "#phase-numbers",
+      "label": "数值门"
+    },
+    {
+      "href": "#s1",
+      "label": "历史 1 状态"
+    },
+    {
+      "href": "#s2",
+      "label": "2 物种分类"
+    },
+    {
+      "href": "#s3",
+      "label": "3 反应"
+    },
+    {
+      "href": "#s4",
+      "label": "4 降维依据"
+    },
+    {
+      "href": "#s5",
+      "label": "5 案例：氨酰化"
+    },
+    {
+      "href": "#phase-flow",
+      "label": "降维依据"
+    },
+    {
+      "href": "#phase-curves",
+      "label": "真实轨迹"
+    },
+    {
+      "href": "#phase-numbers",
+      "label": "数值门与尺度"
+    },
+    {
+      "href": "#phase-speed",
+      "label": "运行时"
+    },
+    {
+      "href": "#phase-mechanism",
+      "label": "源机制"
+    },
+    {
+      "href": "#phase-provenance",
+      "label": "证据与 freshness"
+    },
+    {
+      "href": "#s1",
+      "label": "历史图谱与筛选器 ↓"
+    },
+    {
+      "href": "../../models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "label": "规范 SBML"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "数学证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "源映射"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "数学证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "源映射"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "数学证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "源映射"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "数学证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "源映射"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "数学证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "源映射"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "查看两个变换的独立源映射"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "数学证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "逐变换源映射"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/phase_c_formal_acceptance_20261010.md",
+      "label": "完整接受范围"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "完整源映射 / 边界"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "数学证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/reduction_report.md",
+      "label": "历史科学报告"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "完整源映射 / 边界"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "数学证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/reduction_report.md",
+      "label": "历史科学报告"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "完整源映射 / 边界"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "数学证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/reduction_report.md",
+      "label": "历史科学报告"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "完整源映射 / 边界"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "数学证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/reduction_report.md",
+      "label": "历史科学报告"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "完整源映射 / 边界"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "数学证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/reduction_report.md",
+      "label": "历史科学报告"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "完整源映射 / 边界"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "数学证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/reduction_report.md",
+      "label": "历史科学报告"
+    },
+    {
+      "href": "../../docs/reduction/pathways/phase_b1_3_formal_acceptance_20261010.md",
+      "label": "B1-3 正式接受"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/phase_c_formal_acceptance_20261010.md",
+      "label": "Phase C 正式接受"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "当前 Phase C 数学证书"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "候选源映射"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/release_manifest_v1.json",
+      "label": "完整发布清单"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/release_evidence_navigation_v1.json",
+      "label": "证据导航"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/validation_results.json",
+      "label": "原始数值报告"
+    },
+    {
+      "href": "../../scripts/reduction/rapid_v1/runtime.py",
+      "label": "实际运行实现"
+    },
+    {
+      "href": "../../docs/visualization/phase_c_release_v1.json",
+      "label": "本页数据 contract"
+    },
+    {
+      "href": "../../docs/reduction/pathways/reaction_atlas_prototype.html",
+      "label": "既有反应路径图谱"
+    },
+    {
+      "href": "../../configs/reduction/rapid_v1.json",
+      "label": "configs/reduction/rapid_v1.json"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/b1_3_independent_scientific_audit.md",
+      "label": "docs/reduction/rapid_reduction/b1_3_independent_scientific_audit.md"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/candidate_source_map.json",
+      "label": "docs/reduction/rapid_reduction/candidate_source_map.json"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/current_decision_v1.json",
+      "label": "docs/reduction/rapid_reduction/current_decision_v1.json"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/mathematical_certificate.json",
+      "label": "docs/reduction/rapid_reduction/mathematical_certificate.json"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/protocol.md",
+      "label": "docs/reduction/rapid_reduction/protocol.md"
+    },
+    {
+      "href": "../../docs/reduction/rapid_reduction/reduction_report.md",
+      "label": "docs/reduction/rapid_reduction/reduction_report.md"
+    },
+    {
+      "href": "../../models/pnas2017_full_reference/original/fMGG_synthesis.xml",
+      "label": "models/pnas2017_full_reference/original/fMGG_synthesis.xml"
+    },
+    {
+      "href": "../../models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv",
+      "label": "models/pnas2017_full_reference/original/simulate/Simulate_fMGG_synthesis/dat/fMGG_synthesis_parameters.csv"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/freeze.json",
+      "label": "results/reduction/rapid_v1/freeze.json"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/local_validation.json",
+      "label": "results/reduction/rapid_v1/local_validation.json"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/model_summary.json",
+      "label": "results/reduction/rapid_v1/model_summary.json"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/ribosome_errors.json",
+      "label": "results/reduction/rapid_v1/ribosome_errors.json"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_TIGHT.json",
+      "label": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_TIGHT.json"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_TIGHT.npz",
+      "label": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R0_TIGHT.npz"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.json",
+      "label": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.json"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.npz",
+      "label": "results/reduction/rapid_v1/trajectories/AUTHOR_BASELINE__R3_CHAIN12_RECYCLE.npz"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.json",
+      "label": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.json"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.npz",
+      "label": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R0_TIGHT.npz"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.json",
+      "label": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.json"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.npz",
+      "label": "results/reduction/rapid_v1/trajectories/COMPETITION_OCCUPANCY__R3_CHAIN12_RECYCLE.npz"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.json",
+      "label": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.json"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.npz",
+      "label": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R0_TIGHT.npz"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.json",
+      "label": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.json"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.npz",
+      "label": "results/reduction/rapid_v1/trajectories/ENERGY_FACTOR_LIMITED__R3_CHAIN12_RECYCLE.npz"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0_TIGHT.json",
+      "label": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0_TIGHT.json"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0_TIGHT.npz",
+      "label": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R0_TIGHT.npz"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.json",
+      "label": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.json"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.npz",
+      "label": "results/reduction/rapid_v1/trajectories/FLOW_CHALLENGE__R3_CHAIN12_RECYCLE.npz"
+    },
+    {
+      "href": "../../results/reduction/rapid_v1/validation_results.json",
+      "label": "results/reduction/rapid_v1/validation_results.json"
+    },
+    {
+      "href": "../../scripts/build_phase_c_dashboard.py",
+      "label": "scripts/build_phase_c_dashboard.py"
+    },
+    {
+      "href": "../../scripts/build_reduction_reasoning_atlas.py",
+      "label": "scripts/build_reduction_reasoning_atlas.py"
+    },
+    {
+      "href": "../../scripts/phase_c_dashboard.css",
+      "label": "scripts/phase_c_dashboard.css"
+    },
+    {
+      "href": "../../scripts/phase_c_dashboard.inc",
+      "label": "scripts/phase_c_dashboard.inc"
+    },
+    {
+      "href": "../../scripts/phase_c_dashboard.js",
+      "label": "scripts/phase_c_dashboard.js"
+    },
+    {
+      "href": "../../scripts/reduction/rapid_v1/common.py",
+      "label": "scripts/reduction/rapid_v1/common.py"
+    },
+    {
+      "href": "../../scripts/reduction/rapid_v1/mathematics.py",
+      "label": "scripts/reduction/rapid_v1/mathematics.py"
+    },
+    {
+      "href": "../../scripts/reduction/rapid_v1/runtime.py",
+      "label": "scripts/reduction/rapid_v1/runtime.py"
+    },
+    {
+      "href": "../../scripts/reduction/rapid_v1/score_saved.py",
+      "label": "scripts/reduction/rapid_v1/score_saved.py"
+    },
+    {
+      "href": "../../scripts/reduction_reasoning_atlas.template.html",
+      "label": "scripts/reduction_reasoning_atlas.template.html"
+    },
+    {
+      "href": "../../scripts/verify_reduction_audit_v0.py",
+      "label": "scripts/verify_reduction_audit_v0.py"
+    }
+  ],
+  "missingLocalAnchors": []
+}

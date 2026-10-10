@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PNAS2017 → PURE_reduced_core 降维推理图谱 (READ ONLY)</title>
+<title>PNAS2017 Phase C 研究发布与降维推理图谱</title>
 <style>
 :root{
   /* ---- 语义 1: 科学状态 (仅用于 chip / pipeline / verdict) ---- */
@@ -323,30 +323,35 @@ footer h3{margin-top:0}
   section>.lede{font-size:13px}
   #gates{align-items:stretch}
 }
+/*__PHASE_C_STYLE__*/
 </style>
 </head>
 <body>
 
 <header class="masthead">
   <div class="wrap">
-    <h1>PNAS2017 翻译网络 → <code>PURE_reduced_core</code>：降维推理图谱</h1>
+    <h1>PNAS2017 翻译网络：Phase C 研究发布与降维推理图谱</h1>
     <p class="sub">
-      241 species / 968 reaction 的<b>信息分类</b>与<b>功能注释</b>已完成；<b>动力学降维决定尚未批准</b>。
-      本页是只读的科学解释视图，不是 CRN 编辑器，也不是模拟前端。
+      首屏展示限定范围正式接受的研究里程碑；下方保留此前的信息分类、源反应筛选与历史推理视图。
+      本页展示冻结证据与实际保存轨迹；既有 <code>PURE_reduced_core</code> 身份未被普适验证。
     </p>
-    <div id="prov"></div>
+    <p class="sub" style="margin-bottom:5px">下列 provenance 仅属于旧图谱历史快照；当前 Phase C 决策与数据 hashes 见正式发布区。</p>
+    <div id="prov" aria-label="旧图谱历史快照 provenance"></div>
     <span class="readonly">READ ONLY · 不修改任何科学源文件 · 无运行时 fetch · 数据在构建时内嵌</span>
   </div>
 </header>
 
 <nav class="toc">
   <div class="wrap">
-    <a href="#s1">1 状态</a>
+    <a href="#phase-c"><b>正式发布</b></a>
+    <a href="#phase-curves">轨迹</a>
+    <a href="#phase-numbers">数值门</a>
+    <a href="#s1">历史 1 状态</a>
     <a href="#s2">2 物种分类</a>
     <a href="#s3">3 反应</a>
     <a href="#s4">4 降维依据</a>
     <a href="#s5">5 案例：氨酰化</a>
-    <div class="seg" id="scopeSeg" role="group" aria-label="全局显示范围">
+    <div class="seg" id="scopeSeg" role="group" aria-label="历史图谱显示范围">
       <button type="button" data-scope="approved" aria-pressed="false">只看已批准</button>
       <button type="button" data-scope="all" aria-pressed="true">包含候选 / pending</button>
     </div>
@@ -355,20 +360,22 @@ footer h3{margin-top:0}
 
 <main class="wrap">
 
+<!--__PHASE_C_SECTION__-->
+
 <!-- ================= SECTION 1 ================= -->
 <section id="s1">
-  <h2><span class="n">1</span> 当前降维状态 <span class="chip na">CURRENT REDUCTION STATUS</span></h2>
+  <h2><span class="n">1</span> 历史图谱快照 <span class="chip na">HISTORICAL SNAPSHOT</span></h2>
   <p class="lede">
-    下面的横向流水线显示科学进展到了哪一步。<b>绿色实线</b>=已获科学批准；<b>蓝色</b>=描述性注释已完成（信息性，不是批准）；
-    <b>琥珀色虚线</b>=候选 / pending；<b>灰色</b>=尚不可用或尚未测试。流水线在第 6 步（已批准的 reduced mapping）
-    <b>硬性停止</b>，因为该步骤在仓库中并不存在。
+    下面各栏目保留原图谱的 pinned commit、注释、筛选和历史候选状态；其中 pending、未批准及不可用仅描述当时快照。
+    当前 B1-3 / Phase C 人工决定见上方正式发布区，不回写历史报告。
+    <b>绿色实线</b>=该历史范围已批准；<b>蓝色</b>=描述性注释；<b>琥珀虚线</b>=当时的候选；<b>灰色</b>=当时不可用或未测试。
   </p>
   <div class="card">
     <div id="pipe"></div>
     <div id="statusLegend" class="legend" style="margin-top:6px"></div>
   </div>
 
-  <h3>状态清单（全部由仓库数据计算，不是硬编码）</h3>
+  <h3>历史快照状态清单（从固定版本数据计算）</h3>
   <div id="checklist"></div>
 
   <div class="callout">
@@ -550,16 +557,16 @@ footer h3{margin-top:0}
   <h2><span class="n">4</span> 降维的真正依据 <span class="chip info">THE ACTUAL BASIS FOR REDUCTION</span></h2>
   <p class="lede">
     “一个 reaction / species 为什么能简化？” —— 答案是<b>不能只凭一个理由</b>。
-    下面是必须依次通过的 10 道闸门。每一道都标注了仓库中<b>当前实际</b>的完成状态；
+    下面是旧图谱当时记录的 10 道闸门。每一道标注<b>历史快照</b>的完成状态；当前 Phase C 的独立验证与决定在上方发布区。
     漏斗越往下越窄，表示能同时满足全部条件的候选越来越少。流水线在最后一道闸门<b>之后</b>硬性停止。
     点击任意闸门展开其判据与仓库实测事实。
   </p>
   <div class="card">
     <div id="gates"></div>
     <div class="stopbar">
-      <b>⛔ APPROVED REDUCED MAPPING — 尚未到达</b>
+      <b>历史快照：APPROVED REDUCED MAPPING — 当时尚未到达</b>
       <p>
-        仓库中不存在已批准的 reduced model：<code>reduced_model_status = NOT_VALIDATED</code>，
+        该历史快照中不存在已批准的 reduced model：<code>reduced_model_status = NOT_VALIDATED</code>，
         <code>kinetic_decisions_pending = 968 / 968</code>，<code>unselected_process_boxes = 96 / 96</code>，
         <code>candidate_core_v0.md</code> 自我标注为 <code>STRUCTURAL_PROPOSAL_ONLY</code>（约 42–70 条通道，仅结构草图）。
       </p>
@@ -658,6 +665,7 @@ footer h3{margin-top:0}
 
 <script>
 const DATA = /*__ATLAS_PAYLOAD__*/null;
+const PHASE_C = /*__PHASE_C_PAYLOAD__*/null;
 (function(){
 "use strict";
 if(!DATA){document.body.innerHTML='<p style="padding:40px;font:15px sans-serif">payload missing — run scripts/build_reduction_reasoning_atlas.py</p>';return;}
@@ -753,16 +761,16 @@ function poolById(id){
 /* ============================ provenance ============================ */
 function renderProv(){
   const p=DATA.provenance;
-  const items=[["source ref",p.source_ref],["commit",p.source_commit.slice(0,12)],
+  const items=[["历史 source ref",p.source_ref],["历史 commit",p.source_commit.slice(0,12)],
    ["evidence HEAD",p.evidence_source_head.slice(0,12)],["SBML sha256",p.canonical_sbml_sha256.slice(0,16)],
-   ["verification",p.verification_status],["reduced model",p.reduced_model_status],["built at",p.built_at]];
+   ["历史 verification",p.verification_status],["历史 reduced model",p.reduced_model_status],["built at",p.built_at]];
   $("#prov").innerHTML=items.map(function(it){
     return "<span>"+esc(it[0])+" <b>"+esc(it[1])+"</b></span>";}).join("");
 }
 
 /* ============================ Section 1 ============================ */
 const LEGEND=[
- ["var(--st-approved)","GREEN · 实线","科学上已批准","人工签署的决定。当前只有物种信息保留契约属于这一级。"],
+ ["var(--st-approved)","GREEN · 实线","历史范围已批准","该历史快照中只有物种信息保留契约属于这一级；当前决定见正式发布区。"],
  ["var(--st-info)","BLUE","描述性注释已完成（信息性）","事实性标注，例如功能归属。它不构成任何简化许可。"],
  ["var(--st-cand)","AMBER · 虚线","候选 / pending","启发式标签、待审提案、待决证据。本页从不把候选画成绿色或实线。"],
  ["var(--st-na)","GRAY","不可用 / 尚未测试","数据缺失、域外，或该步骤在仓库中根本不存在。"]];
@@ -783,7 +791,7 @@ function renderPipeline(){
     d:"证据层 v0 已生成（16 process · "+DATA.reverse_pairs.total+" exact reverse pair · "+DATA.pools.length+
       " registered pool），但没有任何过程通过时间尺度判据。"},
    {t:"PURE_reduced_core",s:"na",i:"NOT_VALIDATED",
-    d:"只存在结构提案（约 42–70 条通道，STRUCTURAL_PROPOSAL_ONLY）。没有 reduced model、没有拟合参数、没有验证。"}];
+    d:"该历史快照只有结构提案（约 42–70 条通道，STRUCTURAL_PROPOSAL_ONLY），当时没有 reduced model、拟合参数或验证。"}];
   const host=$("#pipe");host.innerHTML="";
   pipe.forEach(function(st,idx){
     if(idx>0)host.appendChild(el("div","parrow","→"));
@@ -1266,7 +1274,7 @@ const CONCEPTS=[
  {k:"FAST EQUILIBRIUM",d:"快平衡假设：把一对正反向反应视为瞬时平衡。注意 —— <b>exact reverse pair 是结构源关系，不是快平衡证据</b>。"},
  {k:"CHEMOSTAT",d:"把某物种固定为外部恒定浓度。在本封闭 fMGG 参考模拟中<b>没有</b>任何物种被 chemostat；它会隐藏消耗与粒子数变化。"},
  {k:"DROP",d:"从模型中移除。仓库中只作为 <code>DROP_CANDIDATE</code> 存在，且全部对应参考条件下双向参数为零的通道。"},
- {k:"NEED MORE INFORMATION",d:"证据不足。这是当前 16 / 16 个过程卡的实际结论。"}];
+ {k:"NEED MORE INFORMATION",d:"证据不足。这是该历史快照中 16 / 16 个过程卡的实际结论。"}];
 function renderConcepts(){
   $("#concepts").innerHTML=CONCEPTS.map(function(c){
     return '<div class="ccard"><span class="badge">Candidate only — HUMAN_REVIEW_REQUIRED</span>'+
@@ -1448,7 +1456,7 @@ function openReaction(id){
      field("Conservation touched",(r.conservation_touched||[]).join(", ")||"—")+
    '</dl></div>'+
    '<div class="dsec"><h5>降维候选（第二层 · 未批准）</h5>'+candBlock+'</div>'+
-   '<div class="dsec"><h5>当前决定状态与未解析项</h5><dl class="dl">'+
+   '<div class="dsec"><h5>历史快照决定状态与未解析项（当前 Phase C 决策见发布区）</h5><dl class="dl">'+
      field("decision_status",'<span class="chip cand">'+esc(r.dec)+'</span>',false)+
      field("HUMAN_REVIEW_REQUIRED",String(r.hr))+
      field("Ledger evidence",r.ledger_status)+field("Elemental balance",r.elem_status)+
@@ -1511,7 +1519,7 @@ const GATES=[
    "<li>A3b 21 状态（宽总坐标 closure）：<code>FAILED_SMOKE_CLOSURE_FEASIBILITY</code> —— 在一次 GlyAMP 相关瞬态中约 <b>2.498 s</b> 处失去可行性。</li>"+
    "<li>A3b-r12 9 状态（受限总坐标候选）：<code>BLOCKED_NUMERICAL_COORDINATE_DEFECT</code> —— 局部表现更好，但整窗未完成。</li></ul>",
   fact:"3 个历史消去方案：1 FAILED_VALIDATION · 1 FAILED_SMOKE_CLOSURE_FEASIBILITY (~2.498 s) · 1 BLOCKED_NUMERICAL_COORDINATE_DEFECT"},
- {t:"全量 vs 缩减 对比测试",en:"Full-vs-reduced test",w:44,st:"na",chip:"缩减模型不存在，无从比较",
+ {t:"历史全量 vs 缩减 对比测试",en:"Full-vs-reduced test",w:44,st:"na",chip:"当时缩减模型不存在，无从比较",
   body:"<p>必须在<b>全部</b>受保护输出、资源账目与池守恒上对比，而不是一条曲线相似就算通过；比较本身需要先有一份可运行的缩减模型。</p>"+
    "<ul><li><code>reduced_model_status = NOT_VALIDATED</code>；不存在 fitted parameter set。</li>"+
    "<li>现有的“两引擎一致性检查”（RoadRunner CVODE 与 SimBiology ode15s 在 1000 s 时 free Pept0003 分别为 5.164478733656283 与 5.164582654018584）是<b>引擎一致性</b>检查，<b>没有</b>预注册的通过阈值，<b>不是</b>实验验证，也不是 full-vs-reduced 对比。</li>"+
@@ -1689,7 +1697,7 @@ function renderCase(){
 /* ============================ footer ============================ */
 function renderFooter(){
   const P=DATA.provenance,A=DATA.assertions;
-  $("#fileSummary").innerHTML="构建时读取并逐文件记录 SHA-256 的输入共 <b>"+P.files.length+
+  $("#fileSummary").innerHTML="旧图谱历史快照：构建时读取并逐文件记录 SHA-256 的输入共 <b>"+P.files.length+
     "</b> 个（全部通过 <code>git show "+esc(P.source_ref)+":&lt;path&gt;</code> 读取，因此 provenance 被钉在 commit <b>"+
     esc(P.source_commit.slice(0,12))+"</b> 上，与当前 checkout 所在分支无关。"+
     "<br>数值交叉校验：EffectiveMathML vs 作者质量作用作用 "+
@@ -1714,8 +1722,8 @@ function renderFooter(){
     " · canonical SBML SHA-256 <code>"+esc(P.canonical_sbml_sha256)+"</code>"+
     " · verification report <code>"+esc(P.verification_sha256.slice(0,16))+"…</code>"+
     " · preregistration <code>"+esc(P.preregistration_sha256.slice(0,16))+"…</code>"+
-    "<br><b>科学边界：</b>本页不批准任何 QSSA、快平衡、时间尺度分离、lumping、反应删除、chemostat、动力学等价或缩减核动力学。"+
-    "全部 968 条降维决定仍为 <code>PENDING</code>。源数据只读，未被本页修改。";
+    "<br><b>历史快照科学边界：</b>这组历史注释不构成 QSSA、快平衡、时间尺度分离、lumping、反应删除、chemostat 或缩减核动力学批准。"+
+    "历史 reaction-level 记录全部 968 条仍为 <code>PENDING</code>。当前 B1-3 / Phase C 的模型层级决定见上方正式发布区；原历史源数据保持不变。";
 }
 
 /* ============================ drawer ============================ */
@@ -1724,7 +1732,7 @@ function openDrawer(title,sub,html){
   lastFocus=document.activeElement;
   $("#dTitle").textContent=title;
   $("#dSub").textContent=sub;
-  $("#dBody").innerHTML=html;
+  $("#dBody").innerHTML='<div class="callout blue" style="margin:0 0 12px;font-size:12px"><b>旧图谱历史快照</b>：以下注释和 pending 状态属于原固定版本。当前 B1-3 / Phase C 的限定范围接受记录见顶部正式发布区。</div>'+html;
   $("#dBody").scrollTop=0;
   $("#drawer").classList.add("on");
   $("#scrim").classList.add("on");
@@ -1745,7 +1753,7 @@ function applyScope(){
   $$("#layerSeg button").forEach(function(b){
     if(b.getAttribute("data-layer")==="candidate"){
       b.disabled=ap;
-      b.title=ap?"「只看已批准」下隐藏：仓库中没有任何已批准的降维候选变换":"";}});
+      b.title=ap?"历史快照筛选：该快照中没有已批准的降维候选变换；当前 Phase C 见发布区":"";}});
   if(ap)setLayer("function",true);
   renderRxRows();
 }
@@ -1794,6 +1802,10 @@ function init(){
   $("#rxSearch").addEventListener("input",function(e){state.rxQuery=e.target.value;renderRxRows();});
   $("#dClose").addEventListener("click",closeDrawer);
   $("#scrim").addEventListener("click",closeDrawer);
+  document.addEventListener("click",function(e){
+    const button=e.target.closest("[data-phase-reaction]");
+    if(button)openReaction(button.getAttribute("data-phase-reaction"));
+  });
   document.addEventListener("keydown",function(e){
     if(e.key==="Escape")closeDrawer();
     if(e.key==="/"&&document.activeElement&&
@@ -1807,6 +1819,7 @@ function init(){
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);
 else init();
 })();
+/*__PHASE_C_SCRIPT__*/
 </script>
 </body>
 </html>

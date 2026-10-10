@@ -1,0 +1,266 @@
+{
+  "schema": "PHASE_C_BROWSER_SMOKE_V1",
+  "status": "PASS",
+  "html": "docs/visualization/reduction_reasoning_atlas.html",
+  "html_sha256": "e6a181693b391814d8d0babaae2a887fc28412387cb5214793d1e36ebc7434a6",
+  "browser": "Codex in-app browser",
+  "transport": "Loopback HTTP; no remote assets",
+  "desktop_viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "mobile_viewport": {
+    "width": 390,
+    "height": 844,
+    "client_width": 375,
+    "document_scroll_width": 375
+  },
+  "interactive_cases": [
+    {
+      "scenario": "AUTHOR_BASELINE",
+      "window": "0",
+      "observable": "Pept0003",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 150.00000 = 1.928039e-40%；66 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "AUTHOR_BASELINE",
+      "window": "0",
+      "observable": "ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 1.580047e-9%；66 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "AUTHOR_BASELINE",
+      "window": "0",
+      "observable": "CONSUMED_ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 1.555168e-9%；66 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "AUTHOR_BASELINE",
+      "window": "1",
+      "observable": "Pept0003",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 150.00000 = 1.460601e-12%；45 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "AUTHOR_BASELINE",
+      "window": "1",
+      "observable": "ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 5.942032e-11%；45 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "AUTHOR_BASELINE",
+      "window": "1",
+      "observable": "CONSUMED_ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 2.108991e-9%；45 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "AUTHOR_BASELINE",
+      "window": "2",
+      "observable": "Pept0003",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 150.00000 = 5.347088e-8%；160 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "AUTHOR_BASELINE",
+      "window": "2",
+      "observable": "ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 1.620439e-8%；160 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "AUTHOR_BASELINE",
+      "window": "2",
+      "observable": "CONSUMED_ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 0.00004112336%；160 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "FLOW_CHALLENGE",
+      "window": "0",
+      "observable": "Pept0003",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 200.00000 = 4.434065e-40%；66 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "FLOW_CHALLENGE",
+      "window": "0",
+      "observable": "ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 1.329269e-9%；66 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "FLOW_CHALLENGE",
+      "window": "0",
+      "observable": "CONSUMED_ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 1.300388e-9%；66 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "FLOW_CHALLENGE",
+      "window": "1",
+      "observable": "Pept0003",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 200.00000 = 2.456817e-12%；45 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "FLOW_CHALLENGE",
+      "window": "1",
+      "observable": "ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 5.486072e-11%；45 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "FLOW_CHALLENGE",
+      "window": "1",
+      "observable": "CONSUMED_ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 2.104886e-9%；45 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "FLOW_CHALLENGE",
+      "window": "2",
+      "observable": "Pept0003",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 200.00000 = 8.036271e-8%；160 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "FLOW_CHALLENGE",
+      "window": "2",
+      "observable": "ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 3.252677e-8%；160 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "FLOW_CHALLENGE",
+      "window": "2",
+      "observable": "CONSUMED_ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 0.00004603366%；160 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "window": "0",
+      "observable": "Pept0003",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 150.00000 = 1.505090e-42%；66 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "window": "0",
+      "observable": "ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 750.00000 = 6.917465e-9%；66 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "window": "0",
+      "observable": "CONSUMED_ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 750.00000 = 6.385928e-9%；66 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "window": "1",
+      "observable": "Pept0003",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 150.00000 = 7.398441e-13%；45 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "window": "1",
+      "observable": "ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 750.00000 = 2.696349e-10%；45 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "window": "1",
+      "observable": "CONSUMED_ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 750.00000 = 5.921387e-9%；45 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "window": "2",
+      "observable": "Pept0003",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 150.00000 = 1.871515e-7%；160 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "window": "2",
+      "observable": "ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 750.00000 = 2.842934e-7%；160 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "ENERGY_FACTOR_LIMITED",
+      "window": "2",
+      "observable": "CONSUMED_ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 750.00000 = 0.001409903%；160 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "COMPETITION_OCCUPANCY",
+      "window": "0",
+      "observable": "Pept0003",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 150.00000 = 7.182442e-15%；66 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "COMPETITION_OCCUPANCY",
+      "window": "0",
+      "observable": "ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 7.260329e-7%；66 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "COMPETITION_OCCUPANCY",
+      "window": "0",
+      "observable": "CONSUMED_ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 0.000001445423%；66 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "COMPETITION_OCCUPANCY",
+      "window": "1",
+      "observable": "Pept0003",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 150.00000 = 0.00004695473%；45 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "COMPETITION_OCCUPANCY",
+      "window": "1",
+      "observable": "ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 0.00001034462%；45 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "COMPETITION_OCCUPANCY",
+      "window": "1",
+      "observable": "CONSUMED_ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 0.0001719788%；45 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "COMPETITION_OCCUPANCY",
+      "window": "2",
+      "observable": "Pept0003",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 150.00000 = 0.00005893151%；160 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "COMPETITION_OCCUPANCY",
+      "window": "2",
+      "observable": "ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 0.000007846203%；160 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    },
+    {
+      "scenario": "COMPETITION_OCCUPANCY",
+      "window": "2",
+      "observable": "CONSUMED_ATP",
+      "note": "所选窗口最大 |171 − R0| / 固定初值尺度 3750.0000 = 0.005478217%；160 个原始保存点。默认展示初始层；曲线重合不代表数学精确。"
+    }
+  ],
+  "legacy_search": {
+    "query": "re0000000910",
+    "result": "one matching reaction; resetting restored 300 displayed reaction rows"
+  },
+  "reaction_drilldown": {
+    "id": "re0000000910",
+    "rate": 1000,
+    "reverse": "re0000000957",
+    "source_equation": "verified in drawer",
+    "historical_scope_label": "present"
+  },
+  "offline": {
+    "test": "Network.emulateNetworkConditions offline=true after initial load; scenario/resource/window controls continued to render actual data",
+    "network_restored": true,
+    "local_file_navigation": "NOT_TESTED: browser URL policy allows http/https only; no bypass attempted",
+    "static_offline_dependencies": "No remote assets or runtime fetch; all CSS/JS/data inlined"
+  },
+  "browser_console_errors": [],
+  "links": {
+    "observed": 100,
+    "missing_local_files": 0,
+    "missing_local_anchors": []
+  },
+  "screenshots": [
+    "desktop-overview.jpg",
+    "desktop-trajectory-initial.jpg",
+    "desktop-competition-long.jpg",
+    "mobile-overview.jpg"
+  ],
+  "viewport_override_reset": true
+}
